@@ -1,0 +1,11 @@
+{
+  "reply-notifier": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python C:\\Users\\Irak\\.gemini\\config\\notify_reply.py",
+        "timeout": 15
+      }
+    ]
+  }
+}
