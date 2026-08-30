@@ -4,8 +4,35 @@ import os
 import subprocess
 import threading
 import time
+import hashlib
+import tempfile
 
-def show_popup(workspace_path="অজানা ওয়ার্কস্পেস", conversation_id=""):
+LOCK_DIR = os.path.join(tempfile.gettempdir(), "agy_notifier_locks")
+os.makedirs(LOCK_DIR, exist_ok=True)
+
+def get_lock_path(workspace_path):
+    h = hashlib.md5(workspace_path.encode('utf-8', errors='ignore')).hexdigest()
+    return os.path.join(LOCK_DIR, f"lock_{h}.txt")
+
+def is_debounced(workspace_path, cooldown_sec=5.0):
+    lock_file = get_lock_path(workspace_path)
+    now = time.time()
+    if os.path.exists(lock_file):
+        try:
+            with open(lock_file, "r") as f:
+                last_time = float(f.read().strip())
+            if (now - last_time) < cooldown_sec:
+                return True
+        except Exception:
+            pass
+    try:
+        with open(lock_file, "w") as f:
+            f.write(str(now))
+    except Exception:
+        pass
+    return False
+
+def show_popup(workspace_path="অজানা ওয়ার্কস্পেস"):
     import tkinter as tk
     import winsound
 
@@ -15,7 +42,6 @@ def show_popup(workspace_path="অজানা ওয়ার্কস্পে
         except Exception:
             pass
 
-    # Play sound in background thread
     threading.Thread(target=play_sound, daemon=True).start()
 
     root = tk.Tk()
@@ -25,13 +51,13 @@ def show_popup(workspace_path="অজানা ওয়ার্কস্পে
     root.attributes("-topmost", True)
     root.configure(bg="#181825")
 
-    # Center window
+    # Center window on screen
     root.update_idletasks()
     x = (root.winfo_screenwidth() - 540) // 2
     y = (root.winfo_screenheight() - 260) // 2
     root.geometry(f"+{x}+{y}")
 
-    # Header frame
+    # Header
     header_frame = tk.Frame(root, bg="#313244", padx=18, pady=12)
     header_frame.pack(fill="x")
 
@@ -53,7 +79,7 @@ def show_popup(workspace_path="অজানা ওয়ার্কস্পে
     )
     subtitle_label.pack(anchor="w")
 
-    # Content frame
+    # Content
     content_frame = tk.Frame(root, bg="#181825", padx=18, pady=14)
     content_frame.pack(fill="both", expand=True)
 
@@ -144,20 +170,35 @@ def main():
         return
 
     ws_path = os.getcwd()
+    should_notify = True
+
     try:
         if not sys.stdin.isatty():
             stdin_data = sys.stdin.read()
             if stdin_data.strip():
                 payload = json.loads(stdin_data)
+                
+                # Check termination reason: only trigger if model finished
+                term_reason = payload.get("terminationReason", "")
+                if term_reason and term_reason != "model_stop":
+                    should_notify = False
+
                 ws_paths = payload.get("workspacePaths", [])
                 if ws_paths:
                     ws_path = ws_paths[0]
     except Exception:
         pass
 
-    # Satisfy hook contract immediately
+    # Satisfy hook contract immediately so AGY is not blocked
     print(json.dumps({}))
     sys.stdout.flush()
+
+    if not should_notify:
+        return
+
+    # Check 5-second debounce so double calls from hooks are ignored
+    if is_debounced(ws_path, cooldown_sec=5.0):
+        return
 
     script_path = os.path.abspath(__file__)
     cmd = [sys.executable, script_path, "--show-ui", ws_path]

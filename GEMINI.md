@@ -30,7 +30,7 @@
    - NEVER kill, stop, or terminate the `run_openrecall.py` process or any process with "openrecall" in its name.
    - Path: `C:\Users\Irak\Desktop\AI_Agent\DigitalHistory\run_openrecall.py`.
    - Exclude OpenRecall from any process cleanup commands.
-9. **EVERY REPLY & COMPLETION NOTIFICATION (UNIVERSAL POPUP & SNOOZE):** Always inform and alert the user on EVERY turn when an agent finishes its reply / awaits user input (not just big tasks). Trigger the desktop sound alert and interactive popup modal (with workspace folder name, full path, and 5-minute snooze) so that no time is wasted across any of the running terminals.
+9. **EVERY REPLY & COMPLETION NOTIFICATION (GLOBAL ENGINE HOOK & 5-MIN SNOOZE):** Notifications are fully automated by the Antigravity Engine lifecycle hook (`hooks.json` -> `notify_reply.py`). Agents MUST NOT manually invoke `notify_reply.py` via `run_command` to prevent duplicate popups. The engine hook automatically triggers the single, debounced desktop popup modal (with workspace folder name, full path, sound, and 5-minute snooze) on every turn.
 
 ---
 
