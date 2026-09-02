@@ -1,8 +1,9 @@
 # ==============================================================================
-# Antigravity Terminal Customizer & Theme Randomizer
+# Antigravity Terminal Customizer & Per-Folder Permanent Theme Engine
 # 1. Auto-sets terminal/tab title to current folder name dynamically on launch & cd
-# 2. Assigns a random aesthetic terminal background & tab theme (different from previous)
-# 3. Uses in-process C# TitleGuardian engine to permanently prevent 'cmd.exe' hijacking
+# 2. Generates a random aesthetic theme on 1st open and saves permanently in folder (.terminal_theme.json)
+# 3. Loads the exact saved theme on 2nd+ open without external dependencies
+# 4. Uses in-process C# TitleGuardian engine to permanently prevent 'cmd.exe' hijacking
 # ==============================================================================
 
 # 1. UTF-8 Support
@@ -53,7 +54,7 @@ public class TitleGuardian {
     Add-Type -TypeDefinition $guardianSource -ErrorAction SilentlyContinue
 }
 
-# 3. Curated Aesthetic Terminal Themes (Vibrant, Distinct Backgrounds & Tabs)
+# 3. Curated Aesthetic Terminal Themes (Vibrant & Distinct Backgrounds, Texts & Tabs)
 $global:TerminalThemes = @(
     @{ Name = 'Deep Ocean Blue';    Bg = '#0B192C'; Fg = '#F8FAFC'; Tab = '#38BDF8' },
     @{ Name = 'Forest Emerald';     Bg = '#062E25'; Fg = '#ECFDF5'; Tab = '#34D399' },
@@ -72,25 +73,61 @@ $global:TerminalThemes = @(
     @{ Name = 'Tokyo Night Dark';   Bg = '#1A1B26'; Fg = '#C0CAF5'; Tab = '#7AA2F7' }
 )
 
-# 4. Function to Set Random Terminal Background & Tab Color (different from previous)
-function Set-RandomTerminalTheme {
+# 4. Function to Apply or Save Permanent Folder Theme (.terminal_theme.json)
+function Apply-FolderTerminalTheme {
+    param([string]$FolderPath = $executionContext.SessionState.Path.CurrentLocation.Path)
     try {
-        $trackerFile = Join-Path $env:TEMP '.terminal_last_theme'
-        $lastTheme = if (Test-Path $trackerFile) { (Get-Content $trackerFile -Raw -ErrorAction SilentlyContinue).Trim() } else { '' }
-        $availableThemes = $global:TerminalThemes | Where-Object { $_.Name -ne $lastTheme }
-        if (-not $availableThemes -or $availableThemes.Count -eq 0) { $availableThemes = $global:TerminalThemes }
-        $chosen = $availableThemes | Get-Random
-        Set-Content -Path $trackerFile -Value $chosen.Name -Force -ErrorAction SilentlyContinue
+        if (-not (Test-Path -LiteralPath $FolderPath)) { return }
 
+        $themeFile = Join-Path $FolderPath ".terminal_theme.json"
+        $chosen = $null
+
+        # Check if this folder already has a permanent saved theme
+        if (Test-Path -LiteralPath $themeFile) {
+            try {
+                $raw = Get-Content -LiteralPath $themeFile -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
+                if ($raw) {
+                    $saved = ConvertFrom-Json $raw -ErrorAction SilentlyContinue
+                    if ($saved -and $saved.bg -and $saved.fg) {
+                        $chosen = $saved
+                    }
+                }
+            } catch {}
+        }
+
+        # If 1st time opening this folder, pick random theme (different from previous) & save in folder
+        if (-not $chosen) {
+            $trackerFile = Join-Path $env:TEMP '.terminal_last_theme'
+            $lastTheme = if (Test-Path $trackerFile) { (Get-Content $trackerFile -Raw -ErrorAction SilentlyContinue).Trim() } else { '' }
+            $availableThemes = $global:TerminalThemes | Where-Object { $_.Name -ne $lastTheme }
+            if (-not $availableThemes -or $availableThemes.Count -eq 0) { $availableThemes = $global:TerminalThemes }
+            $chosenTheme = $availableThemes | Get-Random
+            Set-Content -Path $trackerFile -Value $chosenTheme.Name -Force -ErrorAction SilentlyContinue
+
+            $chosen = [PSCustomObject]@{
+                name = $chosenTheme.Name
+                bg   = $chosenTheme.Bg
+                fg   = $chosenTheme.Fg
+                tab  = $chosenTheme.Tab
+            }
+
+            # Save permanently inside the folder
+            try {
+                $jsonStr = ConvertTo-Json $chosen -Depth 2
+                [System.IO.File]::WriteAllText($themeFile, $jsonStr, [System.Text.Encoding]::UTF8)
+            } catch {}
+        }
+
+        # Apply OSC sequences to Windows Terminal / Console
         $esc = [char]27
         $bel = [char]7
 
         # 1. Set Terminal Window Background Color (OSC 11)
-        [Console]::Write("$esc]11;$($chosen.Bg)$bel")
+        [Console]::Write("$esc]11;$($chosen.bg)$bel")
         # 2. Set Terminal Window Foreground Text Color (OSC 10)
-        [Console]::Write("$esc]10;$($chosen.Fg)$bel")
+        [Console]::Write("$esc]10;$($chosen.fg)$bel")
         # 3. Set Windows Terminal Tab Color (OSC 9;4;3)
-        [Console]::Write("$esc]9;4;3;$($chosen.Tab)$bel")
+        [Console]::Write("$esc]9;4;3;$($chosen.tab)$bel")
     } catch {}
 }
 
@@ -117,9 +154,10 @@ function Update-TerminalTitle {
 # 6. Hook into PowerShell Prompt for dynamic updates on 'cd'
 function prompt {
     Update-TerminalTitle
+    Apply-FolderTerminalTheme
     "PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) "
 }
 
 # 7. Initialize immediately on terminal session launch
-Set-RandomTerminalTheme
 Update-TerminalTitle
+Apply-FolderTerminalTheme
