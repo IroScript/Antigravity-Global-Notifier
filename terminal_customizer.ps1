@@ -54,23 +54,23 @@ public class TitleGuardian {
     Add-Type -TypeDefinition $guardianSource -ErrorAction SilentlyContinue
 }
 
-# 3. Curated Aesthetic Terminal Themes (Vibrant & Distinct Backgrounds, Texts & Tabs)
+# 3. Curated Ultra-Lightweight Pastel Themes (Near-White Backgrounds, High-Contrast Text)
 $global:TerminalThemes = @(
-    @{ Name = 'Deep Ocean Blue';    Bg = '#0B192C'; Fg = '#F8FAFC'; Tab = '#38BDF8' },
-    @{ Name = 'Forest Emerald';     Bg = '#062E25'; Fg = '#ECFDF5'; Tab = '#34D399' },
-    @{ Name = 'Velvet Purple';      Bg = '#1E1035'; Fg = '#FAF5FF'; Tab = '#C084FC' },
-    @{ Name = 'Cyber Mocha Dark';   Bg = '#181825'; Fg = '#CDD6F4'; Tab = '#89B4FA' },
-    @{ Name = 'Crimson Maroon';     Bg = '#2A0808'; Fg = '#FEF2F2'; Tab = '#F87171' },
-    @{ Name = 'Deep Abyss Teal';    Bg = '#042F2E'; Fg = '#F0FDFA'; Tab = '#2DD4BF' },
-    @{ Name = 'Warm Espresso Dark'; Bg = '#27180B'; Fg = '#FFFBEB'; Tab = '#FBBF24' },
-    @{ Name = 'Synthwave Violet';   Bg = '#1F0B38'; Fg = '#FDF4FF'; Tab = '#F472B6' },
-    @{ Name = 'Dark Sapphire';      Bg = '#0C1838'; Fg = '#EFF6FF'; Tab = '#60A5FA' },
-    @{ Name = 'Obsidian Matrix';    Bg = '#0A0A0A'; Fg = '#4ADE80'; Tab = '#22C55E' },
-    @{ Name = 'Charcoal Slate';     Bg = '#1E293B'; Fg = '#F1F5F9'; Tab = '#94A3B8' },
-    @{ Name = 'Royal Indigo';       Bg = '#1E1B4B'; Fg = '#EEF2FF'; Tab = '#818CF8' },
-    @{ Name = 'Nord Dark Arctic';   Bg = '#2E3440'; Fg = '#ECEFF4'; Tab = '#88C0D0' },
-    @{ Name = 'Dracula Night';      Bg = '#282A36'; Fg = '#F8F8F2'; Tab = '#BD93F9' },
-    @{ Name = 'Tokyo Night Dark';   Bg = '#1A1B26'; Fg = '#C0CAF5'; Tab = '#7AA2F7' }
+    @{ Name = 'Pastel Soft Yellow';    Bg = '#FEFCE8'; Fg = '#1C1917'; Tab = '#EAB308' },
+    @{ Name = 'Pastel Mint Green';     Bg = '#F0FDF4'; Fg = '#14532D'; Tab = '#22C55E' },
+    @{ Name = 'Pastel Blush Rose';     Bg = '#FFF1F2'; Fg = '#881337'; Tab = '#F43F5E' },
+    @{ Name = 'Pastel Sky Blue';       Bg = '#F0F9FF'; Fg = '#0C4A6E'; Tab = '#0EA5E9' },
+    @{ Name = 'Pastel Peach Coral';    Bg = '#FFF7ED'; Fg = '#7C2D12'; Tab = '#F97316' },
+    @{ Name = 'Pastel Lavender';       Bg = '#FAF5FF'; Fg = '#581C87'; Tab = '#A855F7' },
+    @{ Name = 'Pastel Glacier Teal';   Bg = '#ECFEFF'; Fg = '#164E63'; Tab = '#06B6D4' },
+    @{ Name = 'Pastel Warm Honey';     Bg = '#FFFBEB'; Fg = '#78350F'; Tab = '#F59E0B' },
+    @{ Name = 'Pastel Matcha Lime';    Bg = '#F7FEE7'; Fg = '#365314'; Tab = '#84CC16' },
+    @{ Name = 'Pastel Soft Pink';      Bg = '#FDF2F8'; Fg = '#831843'; Tab = '#EC4899' },
+    @{ Name = 'Pastel Powder Violet';  Bg = '#F5F3FF'; Fg = '#4C1D95'; Tab = '#8B5CF6' },
+    @{ Name = 'Pastel Clean Slate';    Bg = '#F8FAFC'; Fg = '#0F172A'; Tab = '#64748B' },
+    @{ Name = 'Pastel Soft Crimson';   Bg = '#FEF2F2'; Fg = '#7F1D1D'; Tab = '#EF4444' },
+    @{ Name = 'Pastel Ivory Sand';     Bg = '#FDFBF7'; Fg = '#1C1917'; Tab = '#D97706' },
+    @{ Name = 'Pastel Aqua Marine';    Bg = '#F0FDFA'; Fg = '#134E4A'; Tab = '#14B8A6' }
 )
 
 # 4. Function to Apply or Save Permanent Folder Theme (.terminal_theme.json)
