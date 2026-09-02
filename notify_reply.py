@@ -191,6 +191,17 @@ def main():
     except Exception:
         pass
 
+    # Enforce console title to current folder name
+    try:
+        norm_ws = os.path.normpath(ws_path)
+        clean_ws = norm_ws.rstrip(r"\/")
+        folder_name = os.path.basename(clean_ws) or clean_ws
+        ctypes.windll.kernel32.SetConsoleTitleW(folder_name)
+        sys.stderr.write(f"\x1b]0;{folder_name}\x07")
+        sys.stderr.flush()
+    except Exception:
+        pass
+
     # Satisfy hook contract immediately
     print(json.dumps({}))
     sys.stdout.flush()

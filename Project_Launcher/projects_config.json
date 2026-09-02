@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "1",
+    "Name": "YouTube Pipeline",
+    "Folder": "C:\\Users\\Irak\\Desktop\\Youtube Pipeline",
+    "BgColor": "DarkRed",
+    "FgColor": "White",
+    "Tag": "YOUTUBE AUTOMATION"
+  },
+  {
+    "Id": "2",
+    "Name": "AI Agent & DigitalHistory",
+    "Folder": "C:\\Users\\Irak\\Desktop\\AI_Agent",
+    "BgColor": "DarkBlue",
+    "FgColor": "White",
+    "Tag": "AI AGENT WORKSPACE"
+  },
+  {
+    "Id": "3",
+    "Name": "AntiBot Browser (Flowboard)",
+    "Folder": "C:\\Users\\Irak\\Desktop\\AntiBotBrowser",
+    "BgColor": "DarkGreen",
+    "FgColor": "White",
+    "Tag": "BROWSER AUTOMATION"
+  },
+  {
+    "Id": "4",
+    "Name": "Frappe & ERPNext v16",
+    "Folder": "C:\\Users\\Irak\\Desktop\\frappeERP-Next",
+    "BgColor": "DarkMagenta",
+    "FgColor": "White",
+    "Tag": "ERPNEXT V16 FRAMEWORK"
+  },
+  {
+    "Id": "5",
+    "Name": "LLM Unlimited Tool",
+    "Folder": "C:\\Users\\Irak\\Desktop\\LLM Unlimited Tool",
+    "BgColor": "DarkCyan",
+    "FgColor": "White",
+    "Tag": "LLM & NIM TOOLS"
+  },
+  {
+    "Id": "6",
+    "Name": "OpenClaw Automation",
+    "Folder": "C:\\Users\\Irak\\Desktop\\openClaw",
+    "BgColor": "DarkYellow",
+    "FgColor": "Black",
+    "Tag": "OPENCLAW BOT"
+  },
+  {
+    "Id": "7",
+    "Name": "Alco Depot Data Extractor",
+    "Folder": "C:\\Users\\Irak\\Desktop\\Alco_Depot_Data_Extractor_From_Git",
+    "BgColor": "DarkGray",
+    "FgColor": "White",
+    "Tag": "DATA SCRAPER"
+  },
+  {
+    "Id": "8",
+    "Name": "SALES 2026",
+    "Folder": "C:\\Users\\Irak\\Desktop\\SALES 2026",
+    "BgColor": "DarkBlue",
+    "FgColor": "Cyan",
+    "Tag": "SALES & CRM"
+  },
+  {
+    "Id": "9",
+    "Name": "YouTube Video Creator",
+    "Folder": "C:\\Users\\Irak\\Desktop\\Youtube",
+    "BgColor": "DarkRed",
+    "FgColor": "Yellow",
+    "Tag": "VIDEO PRODUCTION"
+  },
+  {
+    "Id": "10",
+    "Name": "Main Desktop Root",
+    "Folder": "C:\\Users\\Irak\\Desktop",
+    "BgColor": "Black",
+    "FgColor": "Green",
+    "Tag": "GENERAL WORKSPACE"
+  }
+]
