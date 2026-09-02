@@ -54,23 +54,23 @@ public class TitleGuardian {
     Add-Type -TypeDefinition $guardianSource -ErrorAction SilentlyContinue
 }
 
-# 3. Curated Ultra-Lightweight Pastel Themes (Near-White Backgrounds, High-Contrast Text)
+# 3. Curated Rich Pastel Themes (~15% deeper pastel backgrounds, high-contrast text)
 $global:TerminalThemes = @(
-    @{ Name = 'Pastel Soft Yellow';    Bg = '#FEFCE8'; Fg = '#1C1917'; Tab = '#EAB308' },
-    @{ Name = 'Pastel Mint Green';     Bg = '#F0FDF4'; Fg = '#14532D'; Tab = '#22C55E' },
-    @{ Name = 'Pastel Blush Rose';     Bg = '#FFF1F2'; Fg = '#881337'; Tab = '#F43F5E' },
-    @{ Name = 'Pastel Sky Blue';       Bg = '#F0F9FF'; Fg = '#0C4A6E'; Tab = '#0EA5E9' },
-    @{ Name = 'Pastel Peach Coral';    Bg = '#FFF7ED'; Fg = '#7C2D12'; Tab = '#F97316' },
-    @{ Name = 'Pastel Lavender';       Bg = '#FAF5FF'; Fg = '#581C87'; Tab = '#A855F7' },
-    @{ Name = 'Pastel Glacier Teal';   Bg = '#ECFEFF'; Fg = '#164E63'; Tab = '#06B6D4' },
-    @{ Name = 'Pastel Warm Honey';     Bg = '#FFFBEB'; Fg = '#78350F'; Tab = '#F59E0B' },
-    @{ Name = 'Pastel Matcha Lime';    Bg = '#F7FEE7'; Fg = '#365314'; Tab = '#84CC16' },
-    @{ Name = 'Pastel Soft Pink';      Bg = '#FDF2F8'; Fg = '#831843'; Tab = '#EC4899' },
-    @{ Name = 'Pastel Powder Violet';  Bg = '#F5F3FF'; Fg = '#4C1D95'; Tab = '#8B5CF6' },
-    @{ Name = 'Pastel Clean Slate';    Bg = '#F8FAFC'; Fg = '#0F172A'; Tab = '#64748B' },
-    @{ Name = 'Pastel Soft Crimson';   Bg = '#FEF2F2'; Fg = '#7F1D1D'; Tab = '#EF4444' },
-    @{ Name = 'Pastel Ivory Sand';     Bg = '#FDFBF7'; Fg = '#1C1917'; Tab = '#D97706' },
-    @{ Name = 'Pastel Aqua Marine';    Bg = '#F0FDFA'; Fg = '#134E4A'; Tab = '#14B8A6' }
+    @{ Name = 'Pastel Soft Yellow';    Bg = '#FEF08A'; Fg = '#713F12'; Tab = '#CA8A04' },
+    @{ Name = 'Pastel Mint Green';     Bg = '#DCFCE7'; Fg = '#14532D'; Tab = '#16A34A' },
+    @{ Name = 'Pastel Blush Rose';     Bg = '#FECDD3'; Fg = '#881337'; Tab = '#E11D48' },
+    @{ Name = 'Pastel Sky Blue';       Bg = '#BAE6FD'; Fg = '#0369A1'; Tab = '#0284C7' },
+    @{ Name = 'Pastel Peach Coral';    Bg = '#FFEDD5'; Fg = '#7C2D12'; Tab = '#EA580C' },
+    @{ Name = 'Pastel Lavender';       Bg = '#E9D5FF'; Fg = '#581C87'; Tab = '#9333EA' },
+    @{ Name = 'Pastel Glacier Teal';   Bg = '#CFFAFE'; Fg = '#164E63'; Tab = '#0891B2' },
+    @{ Name = 'Pastel Warm Honey';     Bg = '#FEF3C7'; Fg = '#78350F'; Tab = '#D97706' },
+    @{ Name = 'Pastel Matcha Lime';    Bg = '#ECFCCB'; Fg = '#365314'; Tab = '#65A30D' },
+    @{ Name = 'Pastel Soft Pink';      Bg = '#FBCFE8'; Fg = '#831843'; Tab = '#DB2777' },
+    @{ Name = 'Pastel Powder Violet';  Bg = '#DDD6FE'; Fg = '#4C1D95'; Tab = '#7C3AED' },
+    @{ Name = 'Pastel Clean Slate';    Bg = '#E2E8F0'; Fg = '#0F172A'; Tab = '#475569' },
+    @{ Name = 'Pastel Soft Crimson';   Bg = '#FECACA'; Fg = '#7F1D1D'; Tab = '#DC2626' },
+    @{ Name = 'Pastel Ivory Sand';     Bg = '#F5EBE1'; Fg = '#1C1917'; Tab = '#B45309' },
+    @{ Name = 'Pastel Aqua Marine';    Bg = '#CCFBF1'; Fg = '#134E4A'; Tab = '#0D9488' }
 )
 
 # 4. Function to Apply or Save Permanent Folder Theme (.terminal_theme.json)
@@ -128,6 +128,7 @@ function Apply-FolderTerminalTheme {
         [Console]::Write("$esc]10;$($chosen.fg)$bel")
         # 3. Set Windows Terminal Tab Color (OSC 9;4;3)
         [Console]::Write("$esc]9;4;3;$($chosen.tab)$bel")
+        [Console]::Out.Flush()
     } catch {}
 }
 
