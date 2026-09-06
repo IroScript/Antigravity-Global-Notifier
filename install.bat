@@ -1,16 +1,24 @@
 @echo off
 echo ====================================================
-echo Installing Antigravity Global Notifier & Rules...
+echo Installing Antigravity Global Notifier, Verification Gate & Rules...
 echo ====================================================
 
 set TARGET_CONFIG=%USERPROFILE%\.gemini\config
 set TARGET_GEMINI=%USERPROFILE%\.gemini
+set TARGET_CLI=%USERPROFILE%\.gemini\antigravity-cli
 
 if not exist "%TARGET_CONFIG%" mkdir "%TARGET_CONFIG%"
 if not exist "%TARGET_GEMINI%" mkdir "%TARGET_GEMINI%"
+if not exist "%TARGET_CLI%" mkdir "%TARGET_CLI%"
 
 copy /Y "%~dp0notify_reply.py" "%TARGET_CONFIG%\notify_reply.py"
+copy /Y "%~dp0force_verify.py" "%TARGET_CONFIG%\force_verify.py"
+copy /Y "%~dp0record_tool_edit.py" "%TARGET_CONFIG%\record_tool_edit.py"
+
 copy /Y "%~dp0hooks.json" "%TARGET_CONFIG%\hooks.json"
+copy /Y "%~dp0hooks.json" "%TARGET_GEMINI%\hooks.json"
+copy /Y "%~dp0hooks.json" "%TARGET_CLI%\hooks.json"
+
 copy /Y "%~dp0AGENTS.md" "%TARGET_GEMINI%\AGENTS.md"
 copy /Y "%~dp0GEMINI.md" "%TARGET_GEMINI%\GEMINI.md"
 
@@ -23,7 +31,7 @@ echo if (Test-Path '%~dp0terminal_customizer.ps1') { . '%~dp0terminal_customizer
 echo if (Test-Path '%~dp0terminal_customizer.ps1') { . '%~dp0terminal_customizer.ps1' } > "%PS5_DIR%\Microsoft.PowerShell_profile.ps1"
 
 echo.
-echo [SUCCESS] Antigravity Global Notifier & Terminal Customizer installed successfully!
-echo Any running or future AGY terminals will now alert on every reply and auto-rename tabs with random colors.
+echo [SUCCESS] Antigravity Global Notifier, Verification Gate & Rules installed successfully!
+echo Any running or future AGY terminals will now alert on every reply, enforce verification gates, and auto-rename tabs with random colors.
 pause
 

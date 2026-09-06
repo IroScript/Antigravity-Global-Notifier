@@ -7,5 +7,26 @@
         "timeout": 15
       }
     ]
+  },
+  "verification-gate": {
+    "PostToolUse": [
+      {
+        "matcher": "write_to_file|replace_file_content",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:\\Users\\Irak\\.gemini\\config\\record_tool_edit.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python C:\\Users\\Irak\\.gemini\\config\\force_verify.py",
+        "timeout": 30
+      }
+    ]
   }
 }

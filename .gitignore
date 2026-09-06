@@ -3,3 +3,4 @@ Thumbs.db
 __pycache__/
 *.pyc
 .wt_last_tab_color
+.agy_evidence/
