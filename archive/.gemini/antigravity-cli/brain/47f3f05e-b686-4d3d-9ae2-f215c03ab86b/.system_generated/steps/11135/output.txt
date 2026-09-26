@@ -1,0 +1,42 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1417,6 +1417,36 @@
+     <div id="statusLeft">Loading...</div>
+     <div id="statusRight">Microsoft Windows 11 · Azure Cloud VM (FatehAli)</div>
+   </div>
++
++  <!-- FIXED BOTTOM NAVIGATION BAR REQUESTED BY IRAK BHAI (BACK, HOME, CPU) -->
++  <div class="bottom-nav-bar" id="bottomNavBar">
++    <!-- 1. BACK BUTTON -->
++    <button class="bottom-nav-item" id="btnBottomBack" onclick="handleBottomBack()" title="পেছনে যান (Back)">
++      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
++        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
++      </svg>
++      <span>ব্যাক</span>
++    </button>
++
++    <!-- 2. HOME BUTTON (THIS PC) -->
++    <button class="bottom-nav-item active" id="btnBottomHome" onclick="handleBottomHome()" title="This PC / হোম">
++      <svg viewBox="0 0 24 24" width="22" height="22" fill="#60cdff">
++        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
++      </svg>
++      <span>হোম (This PC)</span>
++    </button>
++
++    <!-- 3. CPU BUTTON -->
++    <button class="bottom-nav-item" id="btnBottomMonitor" onclick="handleBottomMonitor()" title="রিসোর্স ও CPU মনিটর">
++      <div class="bottom-cpu-icon-wrap">
++        <svg viewBox="0 0 24 24" width="22" height="22" fill="#f0883e">
++          <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
++        </svg>
++        <span class="bottom-cpu-pill" id="bottomCpuBadge">0.0%</span>
++      </div>
++      <span>CPU মনিটর</span>
++    </button>
++  </div>
+ </div>
+ 
+ <!-- Windows 11 Notepad / Preview Modal -->
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

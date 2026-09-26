@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 1149601564 Sep 25 19:37 /home/azureuser/GCP_FULL_BACKUP/parts/gcp_home_backup_part_05.tar.gz
+

@@ -1,0 +1,18 @@
+debugfs 1.47.2 (1-Jan-2025)
+WARNING: terminal is not fully functional
+Press RETURN to continue 
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000
+Generation: 2221566127    Version: 0x00000000:00000152
+User:  1000   Group:  1000   Project:     0   Size: 4096
+File ACL: 0
+Links: 15   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab64795:e785d0b8 -- Fri Sep 25 10:06:13 2026
+ atime: 0x6ab64a09:5fd43574 -- Fri Sep 25 10:16:41 2026
+ mtime: 0x6ab64795:e785d0b8 -- Fri Sep 25 10:06:13 2026
+crtime: 0x6ab2585c:16756108 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+Inode checksum: 0xae669471
+EXTENTS:
+(0):55582752
+(END)

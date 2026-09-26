@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 468
+drwxrwxr-x  3 azureuser azureuser   4096 Sep 25 08:02 .
+drwxr-xr-x 15 azureuser azureuser   4096 Sep 25 10:06 ..
+drwxrwxr-x  3 azureuser azureuser   4096 Sep 25 07:59 node-compile-cache
+-rw-rw-r--  1 azureuser azureuser 463641 Sep 25 08:02 unleash-repo-schema-v1-codeium-language-server.json
+

@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+{
+  "boundary-guard": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "manage_task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /home/azureuser/AGY-MASTER/POLICIES/hook_experiment/test_hook_behavior.py",
+            "timeout": 2
+          }
+        ]
+      }
+    ]
+  }
+}
+

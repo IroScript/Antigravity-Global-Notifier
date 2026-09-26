@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:52168 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56246 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34548 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56248 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:35056 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:35066 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:46004 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:46016 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:47156 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60718 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:47168 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:45256 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:45272 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:60664 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:60670 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:54254 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54374 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:54268 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58348 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58350 - "GET /health HTTP/1.1" 200 OK
+

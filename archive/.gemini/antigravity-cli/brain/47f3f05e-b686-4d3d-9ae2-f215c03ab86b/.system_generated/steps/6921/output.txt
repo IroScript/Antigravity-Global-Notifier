@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+inotify-tools:
+  Installed: (none)
+  Candidate: 4.23.9.0-2+b1
+  Version table:
+     4.23.9.0-2+b1 500
+        500 mirror+file:/etc/apt/mirrors/debian.list trixie/main amd64 Packages
+lsyncd:
+  Installed: (none)
+  Candidate: 2.2.3-1+b1
+  Version table:
+     2.2.3-1+b1 500
+        500 mirror+file:/etc/apt/mirrors/debian.list trixie/main amd64 Packages
+

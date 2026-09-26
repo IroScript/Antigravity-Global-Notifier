@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+protected_registry.json
+delete_guard.py
+ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+safe_archive.py
+hooks.json
+AGENTS.md
+safety_levels.json
+PROJECT_REGISTRY.md
+GEMINI.md
+README_ENFORCEMENT_GUIDE.md
+Size: 90.92 KB
+

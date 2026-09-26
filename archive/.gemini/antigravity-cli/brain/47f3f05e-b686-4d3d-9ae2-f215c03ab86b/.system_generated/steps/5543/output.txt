@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+UID          PID    PPID  C STIME TTY          TIME CMD
+azureus+    1351    1246  0 Sep22 pts/4    00:00:00 -bash
+azureus+    1359    1246  0 Sep22 pts/5    00:00:00 -bash
+azureus+    1368    1246  0 Sep22 pts/6    00:00:00 -bash
+azureus+    1376    1246  0 Sep22 pts/7    00:00:00 -bash
+azureus+    1384    1246  0 Sep22 pts/8    00:00:00 -bash
+azureus+    1393    1246  0 Sep22 pts/9    00:00:00 -bash
+azureus+    1499    1246  0 Sep22 pts/10   00:00:00 -bash
+azureus+  215828    1246  0 Sep24 pts/13   00:00:00 -bash
+

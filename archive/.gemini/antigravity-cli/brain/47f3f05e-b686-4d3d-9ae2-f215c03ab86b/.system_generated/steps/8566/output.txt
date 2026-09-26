@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    ELAPSED %CPU %MEM COMMAND
+      01:01  1.6  0.4 rclone copy /home/azureuser/GCP_FULL_BACKUP/parts/ persona
+

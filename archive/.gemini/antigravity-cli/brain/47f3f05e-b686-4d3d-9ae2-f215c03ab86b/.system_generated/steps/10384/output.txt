@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 404 
+date: Sat, 26 Sep 2026 10:41:33 GMT
+content-type: text/html;charset=utf-8
+cf-ray: a411a8297918c983-IAD
+cf-cache-status: DYNAMIC
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 404</p>
+        <p>Message: File not found.</p>
+        <p>Error code explanation: 404 - Nothing matches the given URI.</p>
+    </body>
+</html>
+

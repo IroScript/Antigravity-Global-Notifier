@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+14:const LATEST_REPLY_FILE = '/home/azureuser/.webterminal/latest_reply.json';
+47:    const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 2000 });
+125:          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
+144:    const paneLines = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 3000 }).split('\n');
+609:// Dynamic transcript tracking
+617:function getTargetInfoForTranscript(transcriptPath) {
+618:  const match = transcriptPath.match(/\/brain\/([a-f0-9-]+)\//);
+619:  const convId = match ? match[1] : transcriptPath;
+624:  // 1. Direct step 0 prompt inspection from transcript.jsonl
+626:    const firstLine = fs.readFileSync(transcriptPath, 'utf8').split('\n')[0];
+714:  const brainDir = '/home/azureuser/.gemini/antigravity-cli/brain';
+715:  if (!fs.existsSync(brainDir)) return [];
+722:    const convDirs = fs.readdirSync(brainDir);
+724:      const p = path.join(brainDir, d, '.system_generated/logs/transcript.jsonl');
+1055:          const screen = execSync(`tmux capture-pane -p -t ${targetWindow}`, { encoding: 'utf8' });
+1217:// Watch transcript for real-time live streaming to WhatsApp
+1223:async function processSingleTranscript(transcriptPath) {
+1224:  if (!fs.existsSync(transcriptPath)) return;
+1226:  let tracker = convTrackers.get(transcriptPath);
+1231:      const initialContent = fs.readFileSync(transcriptPath, 'utf8');
+1251:    convTrackers.set(transcriptPath, tracker);
+1255:  const targetInfo = getTargetInfoForTranscript(transcriptPath);
+1261:    content = fs.readFileSync(transcriptPath, 'utf8');
+1390:          const fullPath = transcriptPath.replace('transcript.jsonl', 'transcript_full.jsonl');
+1467:      for (const transcriptPath of recentTranscripts) {
+1468:        if (activeTranscriptJobs.has(transcriptPath)) continue;
+1470:        activeTranscriptJobs.add(transcriptPath);
+1471:        processSingleTranscript(transcriptPath)
+1476:            activeTranscriptJobs.delete(transcriptPath);
+

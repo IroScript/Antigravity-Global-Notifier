@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Offset 223606734848: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00'
+Offset 223610929152: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00'
+Offset 223615123456: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00'
+Offset 223619317760: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00'
+Offset 223623512064: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00'
+

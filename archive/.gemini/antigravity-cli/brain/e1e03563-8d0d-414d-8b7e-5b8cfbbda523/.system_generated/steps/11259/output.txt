@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+578-
+579-            curr_len = res['length']
+580-            curr_text = res.get('text', '').strip()
+581-
+582-            if curr_len > 0:
+583-                if curr_len == prev_len:
+584-                    stable_count += 1
+585-                else:
+586-                    stable_count = 0
+587-                prev_len = curr_len
+588-
+589-                if (stable_count >= 3 and not res['isStop']) or (stable_count >= 5 and curr_len > 200):
+590-                    output_text = curr_text
+591-                    logger.info(f"Stream generation completed! ({len(output_text)} chars)")
+592-                    break
+593-
+594-        if not output_text and prev_len > 0:
+595-            output_text = curr_text
+596-
+597-        if not output_text:
+598:            raise RuntimeError("ChatGPT stream completed but no output text could be captured.")
+599-
+600-        elapsed_total = time.time() - start_time
+601-        return PromptResponse(
+602-            success=True,
+603-            worker_id=WORKER_ID,
+604-            output_text=output_text,
+605-            char_count=len(output_text),
+606-            elapsed_seconds=elapsed_total
+607-        )
+608-
+

@@ -1,0 +1,98 @@
+
+The command exited with code 0.
+Output:
+383-    if (app1Ram) app1Ram.innerText = '0 MB RAM';
+384-  }
+385-
+386-  if (pt.app2) {
+387-    if (app2Name) app2Name.innerText = pt.app2.name || 'N/A';
+388-    if (app2Cpu) app2Cpu.innerText = `${pt.app2.cpu}% CPU`;
+389-    const r2 = (pt.app2.ram_gb !== undefined && pt.app2.ram_gb >= 1.0) ? (pt.app2.ram_gb + ' GB') : ((pt.app2.ram_mb || 0) + ' MB');
+390-    if (app2Ram) app2Ram.innerText = `${r2} RAM`;
+391-  } else {
+392-    if (app2Name) app2Name.innerText = '—';
+393-    if (app2Cpu) app2Cpu.innerText = '0% CPU';
+394-    if (app2Ram) app2Ram.innerText = '0 MB RAM';
+395-  }
+396-}
+397-
+398-async function fetchHistory() {
+399-  try {
+400-    const res = await fetch(`/api/history?range=${currentRange}`);
+401-    if (!res.ok) return;
+402-    historyData = await res.json();
+403:    renderChart();
+404-    if (!isScrubbing && historyData && historyData.length > 0) {
+405-      updateGraphReport(historyData[historyData.length - 1], false);
+406-    }
+407-  } catch (e) {
+408-    console.error(e);
+409-  }
+410-}
+411-
+412-function updateChartDatasets() {
+413-  if (!chartInstance) {
+414:    renderChart();
+415-    return;
+416-  }
+417-  const datasets = getDatasetsForCurrentMode();
+418-  chartInstance.data.labels = historyData.map(p => p.t);
+419-  chartInstance.data.datasets = datasets;
+420-  chartInstance.update();
+421-}
+422-
+423-function getDatasetsForCurrentMode() {
+424-  if (currentMode === 'cpu') {
+425-    return [
+426-      {
+427-        label: 'সার্বিক CPU %',
+428-        data: historyData.map(p => p.cpu),
+429-        borderColor: '#f0883e',
+430-        backgroundColor: 'rgba(240, 136, 62, 0.1)',
+431-        borderWidth: 2.2,
+432-        tension: 0.3,
+433-        fill: true,
+434-        pointRadius: 0,
+--
+497-        data: historyData.map(p => p.cpu),
+498-        borderColor: '#f0883e',
+499-        borderWidth: 2,
+500-        tension: 0.3,
+501-        pointRadius: 0,
+502-        pointHoverRadius: 5
+503-      },
+504-      {
+505-        label: 'সার্বিক RAM %',
+506-        data: historyData.map(p => p.ram_pct),
+507-        borderColor: '#58a6ff',
+508-        borderWidth: 2,
+509-        tension: 0.3,
+510-        pointRadius: 0,
+511-        pointHoverRadius: 5
+512-      }
+513-    ];
+514-  }
+515-}
+516-
+517:function renderChart() {
+518-  const ctx = document.getElementById('resourceChart').getContext('2d');
+519-  const labels = historyData.map(p => p.t);
+520-  const datasets = getDatasetsForCurrentMode();
+521-
+522-  if (chartInstance) {
+523-    chartInstance.data.labels = labels;
+524-    chartInstance.data.datasets = datasets;
+525-    chartInstance.update();
+526-    return;
+527-  }
+528-
+529-  chartInstance = new Chart(ctx, {
+530-    type: 'line',
+531-    data: {
+532-      labels: labels,
+533-      datasets: datasets
+534-    },
+535-    options: {
+536-      responsive: true,
+537-      maintainAspectRatio: false,
+

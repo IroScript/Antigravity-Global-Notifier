@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+  mkdir           Make the path if it doesn't already exist.
+

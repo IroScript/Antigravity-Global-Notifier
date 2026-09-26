@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 /proc/669951/fd/5 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-wal (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 /proc/669951/fd/7 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db (deleted)'
+

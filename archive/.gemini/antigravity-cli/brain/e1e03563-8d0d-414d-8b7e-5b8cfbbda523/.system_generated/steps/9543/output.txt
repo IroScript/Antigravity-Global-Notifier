@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Prefix: Exactly 8 seconds, 9:16 vertical aspect ratio, photorealistic cinematic render, smooth continuous motion, no cuts, maxim
+Suffix: a full Earth view where artificial ocean currents glow across the planet, unbroken motion, zero cuts, exactly 8 seconds.
+

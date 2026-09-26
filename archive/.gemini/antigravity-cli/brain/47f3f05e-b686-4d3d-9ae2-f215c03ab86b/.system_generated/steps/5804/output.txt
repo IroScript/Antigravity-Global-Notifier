@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+Warning: error-NR 2133571476 can not found file: azureuser/tmp/node-compile-cache/v26.10.0-x64-310b2ce3-1000
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Cache/Cache_Data
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Cache/Cache_Data
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Code Cache/js
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/History
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Code Cache/js
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Cookies/js
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/Code Cache/js
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/Cache/Cache_Data
+476 /tmp/deleted_0753_files.txt
+

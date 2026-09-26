@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 32
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 25 10:46 .
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 25 08:01 ..
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 25 08:02 .agents
+-rw-r--r-- 1 azureuser azureuser  204 Sep 25 08:01 hook.py
+-rw-rw-r-- 1 azureuser azureuser 6810 Sep 25 20:17 hook_runs.log
+-rw-r--r-- 1 azureuser azureuser    6 Sep 25 08:02 mode.txt
+-rw-r--r-- 1 azureuser azureuser 1330 Sep 25 08:02 test_hook_behavior.py
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+fatal: unable to read config file '/home/azureuser/.gitconfig': No such file or directory
+You are not logged into any GitHub hosts. To log in, run: gh auth login
+

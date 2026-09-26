@@ -1,0 +1,32 @@
+
+The command exited with code 0.
+Output:
+Total recovered data: 1742.20 MB (13662 files)
+
+Top extensions:
+   .unknown       : 5464
+   .txt           : 4496
+                  : 3170
+   .pyc           : 162
+   .old           : 91
+   .sh            : 76
+   .diff          : 32
+   .png           : 29
+   .html          : 28
+   .jpg           : 22
+   .js            : 16
+   .mp4           : 16
+   .db-journal    : 13
+   .log           : 10
+   .jsonl         : 7
+   .css           : 6
+   .journal       : 4
+   .exe           : 3
+   .man           : 2
+   .aiff          : 2
+
+Size buckets:
+   >1MB           : 172
+   <1KB           : 8097
+   1KB-1MB        : 5393
+

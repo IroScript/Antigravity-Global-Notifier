@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+297:let currentMode = 'cpu'; // 'cpu', 'ram', 'both'
+310:  currentMode = mode;
+424:  if (currentMode === 'cpu') {
+458:  } else if (currentMode === 'ram') {
+

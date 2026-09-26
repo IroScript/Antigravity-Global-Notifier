@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+root         637  0.0  0.3  41600 14744 ?        Ss   13:32   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+mdkamru+    1202  0.0  0.0   7444   336 ?        Ss   13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/Frappe-erp-Alco/start_tunnel.sh
+mdkamru+    1205  0.0  0.0   7444   352 ?        Ss   13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_csv_tunnel.sh
+mdkamru+    1208  0.0  0.0   7444   340 ?        Ss   13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.openclaw/start_tunnel.sh
+mdkamru+    1212  0.0  0.4 1518932 18908 ?       Ssl  13:33   0:00 npm run start
+mdkamru+    1219  0.0  0.0   7444   352 ?        Ss   13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_chrome_tunnel.sh
+mdkamru+    1233  0.0  0.0   7576   436 ?        S    13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_csv_tunnel.sh
+mdkamru+    1254  0.0  0.0   7576   432 ?        S    13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.openclaw/start_tunnel.sh
+mdkamru+    1262  0.0  0.0   7576   432 ?        S    13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_chrome_tunnel.sh
+mdkamru+    1659  0.0  0.0   2672   188 ?        S    13:33   0:00 sh -c cross-env NODE_OPTIONS=--no-deprecation next start -p 3100
+mdkamru+    1663  0.0  0.3 1416772 12852 ?       Sl   13:33   0:00 node /home/mdkamruzzamanirak_gmail_com/Article-Publishing-Platform/node_modules/.bin/cross-env NODE_OPTIONS=--no-deprecation next start -p 3100
+root        1817  0.0  0.0  11752  3568 ?        Ss   13:33   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+mdkamru+    1836  0.0  0.0   7444   344 ?        Ss   13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_tunnel.sh
+mdkamru+    1843  0.0  0.0   7576   436 ?        S    13:33   0:00 /bin/bash /home/mdkamruzzamanirak_gmail_com/.webterminal/start_tunnel.sh
+root       95401  0.0  0.2  35440 11800 ?        Ss   18:13   0:00 sudo tar -czf - --exclude=*/DeferredBrowserMetrics* --exclude=*/.cache* --exclude=*/google-chrome/*/Cache* --exclude=*/google-chrome/*/Code Cache* -C /home mdkamruzzamanirak_gmail_com
+root       95403  7.1  0.3  33648 12576 ?        D    18:13   0:48 tar -czf - --exclude=*/DeferredBrowserMetrics* --exclude=*/.cache* --exclude=*/google-chrome/*/Cache* --exclude=*/google-chrome/*/Code Cache* -C /home mdkamruzzamanirak_gmail_com
+

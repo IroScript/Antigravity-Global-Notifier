@@ -1,0 +1,16 @@
+The search for "azure linux vm cloud-init default user account home directory site:learn.microsoft.com" returned the following summary:
+On Linux virtual machines in Azure, the home directory for the default user account (and other user accounts) follows the standard Linux convention:
+
+*   **Default location:** `/home/<username>`
+
+When you create a Linux VM in Azure, the provisioning process—which typically utilizes `cloud-init` on supported images—creates the user account specified during deployment. By default, this user is assigned a home directory located at `/home/<username>` and is configured with `/bin/bash` as the default shell.
+
+### Key Details
+*   **User Configuration:** You can customize user accounts using the `users` module in your `cloud-config` file. If you do not explicitly define a home directory in your configuration, `cloud-init` defaults to the standard `/home/<username>` path.
+*   **Default User:** If you use the `- default` parameter in your `cloud-config` (to append to the existing user rather than overwrite it), the existing user provisioned by the Azure platform will retain its standard `/home` location.
+*   **Provisioning:** Because `cloud-init` runs during the initial boot process, it handles the creation of these directories as part of the system setup. If you need to verify the home directory for an existing user on a running VM, you can typically check the `/etc/passwd` file:
+    ```bash
+    grep <username> /etc/passwd
+    ```
+
+For more information on configuring users and using `cloud-init` on Azure, you can refer to the official [Azure documentation on cloud-init support](https://learn.microsoft.com/azure/virtual-machines/linux/using-cloud-init) and the tutorial on [adding a user to a Linux VM](https://learn.microsoft.com/azure/virtual-machines/linux/cloudinit-add-user).

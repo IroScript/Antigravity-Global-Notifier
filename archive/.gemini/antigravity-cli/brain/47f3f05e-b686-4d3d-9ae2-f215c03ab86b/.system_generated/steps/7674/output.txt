@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+[testdrive]
+type = drive
+team_drive = 
+

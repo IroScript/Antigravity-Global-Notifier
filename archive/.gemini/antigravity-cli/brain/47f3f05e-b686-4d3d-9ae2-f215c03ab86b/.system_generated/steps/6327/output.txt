@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+    1718  0.0  0.0   7612  2088 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_csv_tunnel.sh
+azureus+  757698  0.0  0.0   7484  3380 pts/12   Ss+  11:36   0:00 bash -c ps aux | grep 1718
+azureus+  757700  0.0  0.0   7060  2308 pts/12   S+   11:36   0:00 grep 1718
+

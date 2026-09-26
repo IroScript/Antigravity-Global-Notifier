@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Dumped large_db_0.sqlite (18862080 bytes)
+Dumped large_db_2.sqlite (2236416 bytes)
+Dumped large_db_4.sqlite (14053376 bytes)
+total 34M
+-rw-r--r-- 1 root root  84K Sep 25 11:00 db_1_21p.sqlite
+-rw-r--r-- 1 root root  84K Sep 25 11:00 db_3_21p.sqlite
+-rw-r--r-- 1 root root  44K Sep 25 11:00 db_5_11p.sqlite
+-rw-r--r-- 1 root root  18M Sep 25 11:00 large_db_0.sqlite
+-rw-r--r-- 1 root root 2.2M Sep 25 11:00 large_db_2.sqlite
+-rw-r--r-- 1 root root  14M Sep 25 11:00 large_db_4.sqlite
+

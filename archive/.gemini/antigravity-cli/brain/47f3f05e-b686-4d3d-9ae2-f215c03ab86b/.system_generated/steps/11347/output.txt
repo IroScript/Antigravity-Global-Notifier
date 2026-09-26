@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Count took 0.0904s: files=4551, dirs=3544
+

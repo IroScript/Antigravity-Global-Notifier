@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+total 512
+drwxrwxr-x  8 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 20 18:38 .
+drwx------ 43 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 25 13:33 ..
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  62445 Sep 18 06:59 AGENTS.md
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 20 16:55 .agy_evidence
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep  7 09:16 alco_ecommerce
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      0 Sep 14 14:13 alco_server.log
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4474 Sep  7 09:16 CREDENTIALS_GUIDELINES.md
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 16 18:26 data
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 151070 Sep  7 09:16 erpnext-launch.ico
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  33083 Sep  7 09:16 erpnext-launch.png
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   5898 Sep  7 09:16 gemini.md
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  62445 Sep 18 06:59 GEMINI.md
+drwxrwxr-x  8 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 22 16:25 .git
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    600 Sep 13 13:28 .gitignore
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   6630 Sep  7 09:16 HOW_TO_RUN.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  86957 Sep 20 18:23 media_input3.jpeg
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep  7 09:16 myCustomFolder
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   4096 Sep 15 18:10 __pycache__
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  31701 Sep 20 17:34 run_alco_server.py
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     66 Sep  7 17:00 server.log
+-rwxrwxr-x  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    127 Sep  7 17:01 start_tunnel.sh
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   5826 Sep 25 13:33 tunnel.log
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     61 Sep 20 16:55 tunnel_url.txt
+

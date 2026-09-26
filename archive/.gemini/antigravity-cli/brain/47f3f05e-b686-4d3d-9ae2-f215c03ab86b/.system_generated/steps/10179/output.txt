@@ -1,0 +1,238 @@
+
+The command exited with code 0.
+Output:
+<truncated 90 lines>
+
+PHASE 3 — AZURE APPLICATION-CONSISTENT RESTORE POINT
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Azure "FatehAli"-এর জন্য VM Restore Point তৈরি করবে।
+
+সম্ভব হলে Application-consistent restore point ব্যবহার করবে।
+
+কিন্তু UI/API-তে application consistency actually enabled হয়েছে কিনা evidence ছাড়া claim করবে না।
+
+Verify করবে:
+
+1. Restore Point exists
+2. Restore Point creation succeeded
+3. consistency type/state
+4. OS disk included
+5. "/home" data disk included
+6. disk resource IDs match authoritative VM disk inventory
+7. disk count matches
+8. no managed disk is missing
+9. Restore Point remains an independent backup resource
+
+যদি application-consistent mode unavailable হয়, নিজে থেকে crash-consistent backup-কে application-consistent বলে mark করবে না।
+
+সেক্ষেত্রে exact limitation report করবে।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 4 — GCS DATABASE BACKUP AUDIT
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+আগে তৈরি করা database backups-এর inventory পুনরায় verify করবে।
+
+Azure:
+
+- PostgreSQL dump
+- SQLite database
+- Redis persistence backup
+
+GCP:
+
+- MariaDB dump
+- PostgreSQL export
+- CockroachDB native/logical backup
+
+প্রতিটির জন্য report করবে:
+
+- source
+- backup filename
+- source size
+- backup size
+- SHA-256
+- GCS object path
+- upload completion
+- object existence
+- verification result
+
+যে SHA-256 আগে তৈরি হয়েছিল, সম্ভব হলে source-side hash এবং uploaded-object verification-এর মধ্যে exact match verify করবে।
+
+কোনো hash না মিললে বা verification করা না গেলে সেটিকে VERIFIED বলবে না।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 5 — GCS SECURITY BOUNDARY
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com" credential দিয়ে আবার adversarial test করবে।
+
+এই identity দিয়ে:
+
+CREATE
+
+একটি নতুন uniquely named test object তৈরি করার চেষ্টা।
+
+Expected: SUCCESS
+
+DELETE
+
+ওই object delete করার চেষ্টা।
+
+Expected: HTTP 403 / permission denied
+
+OVERWRITE
+
+একই object name-এ দ্বিতীয়বার content replace করার চেষ্টা।
+
+Expected: DENIED
+
+READ
+
+যদি intended security model অনুযায়ী VM service account-এর read access না থাকে, সেই একই identity দিয়ে object read করার চেষ্টা।
+
+Expected: DENIED
+
+প্রতিটি test-এর exact result record করবে।
+
+Admin/user credential দিয়ে test করে VM service account-এর security claim করবে না।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 6 — COVERAGE RECONCILIATION
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+এখন দুই VM-এর authoritative inventory তৈরি করবে।
+
+প্রতিটি VM-এর জন্য:
+
+VM
+→ disks
+→ filesystems
+→ persistent mount points
+→ application data
+→ databases
+→ Docker volumes/bind mounts
+→ important configuration
+→ native VM backup
+→ logical/application backup
+
+তারপর প্রতিটি item তিনটির একটিতে classify করবে:
+
+A — DIRECTLY BACKED UP
+
+GCS/application backup-এ independently recoverable
+
+B — NATIVE VM BACKUP COVERED
+
+Full Machine Image / Azure Restore Point-এর persistent disk snapshot-এর মধ্যে covered
+
+C — NOT COVERED
+
+কোনো backup layer-এ নেই
+
+আমাদের target: C = 0
+
+কিন্তু "/proc", "/sys", "/dev", "/run"-এর মতো runtime/kernel-generated virtual filesystems-কে missing persistent data হিসেবে গণনা করবে না। এগুলো আলাদাভাবে explain করবে।
+
+Docker ব্যবহার থাকলে Docker volumes/bind mounts-এর actual storage location verify করবে।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 7 — NO-GUESS RESTORE VALIDATION
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Backup creation successful হলেই কাজ শেষ বলবে না।
+
+যতটা সম্ভব non-destructively verify করবে যে:
+
+- GCP Machine Image থেকে instance creation possible
+- Azure Restore Point থেকে disk restoration possible
+- database dumps structurally valid
+- SQLite integrity check passed
+- logical database backups are restorable according to their native tools
+
+যদি full restore test এখন cloud cost/time-এর কারণে করা না হয়, সেটা স্পষ্টভাবে:
+
+"RESTORE-CAPABILITY VERIFIED"
+
+এবং
+
+"ACTUAL RESTORE TESTED"
+
+—এই দুই category-তে আলাদা করবে।
+
+একটিকে আরেকটির বদলে claim করবে না।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 8 — FINAL BACKUP MANIFEST
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+শেষে একটি machine-readable এবং human-readable manifest তৈরি করবে:
+
+VM
+├── Disk inventory
+├── Filesystem inventory
+├── Persistent data
+├── Database backups
+├── GCS object paths
+├── SHA-256
+├── Native VM backup
+├── Backup state
+├── Coverage classification
+├── Restore capability
+├── Actual restore test
+└── Uncovered items
+
+Final summary-তে অবশ্যই দেখাবে:
+
+AZURE:
+Persistent disks: X
+Native backup: VERIFIED / NOT VERIFIED
+Application backup: VERIFIED / NOT VERIFIED
+Uncovered persistent items: X
+
+GCP:
+Persistent disks: X
+Native backup: VERIFIED / NOT VERIFIED
+Application backup: VERIFIED / NOT VERIFIED
+Uncovered persistent items: X
+
+GCS:
+Database/application objects: X
+CREATE: PASS/FAIL
+DELETE: DENIED/PASS
+OVERWRITE: DENIED/PASS
+READ: DENIED/PASS
+
+FINAL:
+Uncovered persistent data = 0 / NOT 0
+Restore capability = VERIFIED / NOT VERIFIED
+Actual restore test = PASS / NOT TESTED
+
+FINAL HARD STOP
+
+এই চারটি condition পূরণ না হওয়া পর্যন্ত কোনোভাবেই VM delete/format/rebuild-এর recommendation দেবে না:
+
+1. GCP Machine Image = READY + disk inventory matched
+2. Azure Restore Point = successfully created + both managed disks verified
+3. GCS application/database backups = hash/integrity verified
+4. Uncovered persistent data = 0
+
+সবকিছু সম্পন্ন হলে শুধু “backup complete” বলবে না।
+
+প্রমাণসহ final audit report দেবে।এই prompt-টাই এখন পাঠানো ভালো। বিশেষ করে “C = 0” + disk-resource-ID reconciliation + restore capability বনাম actual restore test আলাদা করা—এই তিনটা আগের রিপোর্টের চেয়ে অনেক বেশি শক্ত verification তৈরি করবে।
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-25T15:57:53Z.
+</ADDITIONAL_METADATA>

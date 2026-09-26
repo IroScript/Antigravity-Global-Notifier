@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+<truncated 4 lines>
+307:{"step_index":9679,"source":"MODEL","type":"PLANNER_RESPONSE","status":"DONE","created_at":"2026-09-25T12:00:44Z","tool_calls":[{"name":"run_command","args":{"CommandLine":"ps aux | grep run_cluster_pipeline.py | grep -v grep","Cwd":"/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube","WaitMsBeforeAsync":5000,"toolAction":"Checking cluster pipeline process","toolSummary":"Check pipeline process"}}]}
+

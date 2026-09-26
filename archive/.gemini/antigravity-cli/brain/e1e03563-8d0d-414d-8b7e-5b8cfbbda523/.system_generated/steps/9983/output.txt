@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 14:26:47,522 [INFO] [worker_3] [Idea #633: 'Solar Gear Furnace Array'] Generating real SEO via http://localhost:8003...
+2026-09-25 14:26:51,207 [WARNING] [worker_3] [worker_3] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:26:51,456 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #576: No module named 'seo_engine.seo_models'
+2026-09-25 14:27:01,209 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:06,462 [INFO] [worker_2] [Idea #577: 'DNA Quantum Mutation Forge'] Generating real SEO via http://localhost:8002...
+2026-09-25 14:27:10,628 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:11,211 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:20,630 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:21,213 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #633: No module named 'seo_engine.seo_models'
+2026-09-25 14:27:30,635 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:36,215 [INFO] [worker_3] [Idea #634: 'Planetary Gearquake Dampener'] Generating real SEO via http://localhost:8003...
+2026-09-25 14:27:39,634 [WARNING] [worker_3] [worker_3] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:40,638 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #577: No module named 'seo_engine.seo_models'
+2026-09-25 14:27:49,637 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:51,043 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #642: No module named 'seo_engine.seo_models'
+2026-09-25 14:27:55,640 [INFO] [worker_2] [Idea #578: 'DNA Ocean Evolution Engine'] Generating real SEO via http://localhost:8002...
+2026-09-25 14:27:58,797 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:27:59,646 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:06,045 [INFO] [worker_1] [Idea #643: 'Thunderquake Sonic Aircraft'] Generating real SEO via http://localhost:8001...
+2026-09-25 14:28:08,799 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:09,646 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #634: No module named 'seo_engine.seo_models'
+2026-09-25 14:28:18,801 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:24,648 [INFO] [worker_3] [Idea #635: 'Temporal Gear Fabricator'] Generating real SEO via http://localhost:8003...
+2026-09-25 14:28:28,598 [WARNING] [worker_3] [worker_3] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:28,802 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #578: No module named 'seo_engine.seo_models'
+2026-09-25 14:28:38,600 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:43,804 [INFO] [worker_2] [Idea #579: 'DNA Solar Evolution Colossus'] Generating real SEO via http://localhost:8002...
+2026-09-25 14:28:46,946 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:48,603 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:56,948 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:28:58,603 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #635: No module named 'seo_engine.seo_models'
+2026-09-25 14:29:06,950 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:29:13,608 [INFO] [worker_3] [Idea #663: 'Glacier Gear Shaper'] Generating 10-Level Escalation via http://localhost:8003...
+2026-09-25 14:29:16,951 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #579: No module named 'seo_engine.seo_models'
+2026-09-25 14:29:31,953 [INFO] [worker_2] [Idea #580: 'DNA Memory Reconstruction Titan'] Generating real SEO via http://localhost:8002...
+2026-09-25 14:29:35,585 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:29:45,587 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:29:55,589 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:30:05,590 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #580: No module named 'seo_engine.seo_models'
+2026-09-25 14:30:20,591 [INFO] [worker_2] [Idea #581: 'DNA Storm Adaptation Machine'] Generating real SEO via http://localhost:8002...
+

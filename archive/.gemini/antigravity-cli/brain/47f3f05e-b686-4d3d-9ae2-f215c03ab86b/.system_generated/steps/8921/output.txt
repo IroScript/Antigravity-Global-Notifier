@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+FAILED VECTOR: find_exec_bin_rm | find /home/azureuser/tmp/adv_test_4x1kr2ek -exec /bin/rm -f {} \; | 
+FAILED VECTOR: backtick_rm | `echo rm` -rf /home/azureuser/tmp/adv_test_4x1kr2ek/file1.txt | 
+FAILED VECTOR: dollar_paren_rm | $(echo rm) -f /home/azureuser/tmp/adv_test_4x1kr2ek/file1.txt | 
+FAILED VECTOR: truncate_archive_log | echo '' > /home/azureuser/GLOBAL-ARCHIVE/archive_logs/archive_manifest.jsonl | 
+

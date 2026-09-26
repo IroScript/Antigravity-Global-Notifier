@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+605:    const xt = window.term || (window.__agy_xterm && window.__agy_xterm.terminal);
+695:    const t = window.term || (window.__agy_xterm && window.__agy_xterm.terminal);
+854:    const xt = window.__agy_xterm;
+918:      const xt = window.__agy_xterm;
+934:    const xt = window.__agy_xterm;
+951:      const xt = window.__agy_xterm;
+959:    const xt = window.__agy_xterm;
+971:    const xt = window.__agy_xterm;
+978:    const xt = window.__agy_xterm;
+

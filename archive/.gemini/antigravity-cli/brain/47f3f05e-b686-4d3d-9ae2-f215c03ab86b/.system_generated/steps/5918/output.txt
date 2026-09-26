@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace/.git exists: True
+/home/azureuser/telegram-bot contents: ['.env', 'test_fallback_matrix.py', 'storage_handler.py', 'raw_messages.json', 'test_buyer_scraper.py', 'test_raw_llm_pipeline.py', 'simulation_test_buyers.csv', 'tg_buyer_session.session', 'llm_analyzer.py', 'config.py', 'master_api_vault.json', 'user_groups.json', 'buyers.json', 'master_api_vault.env', 'buyer_detector.py', 'telegram_scraper.py', 'AGENTS.md', 'buyers.csv', '__pycache__', 'simulation_test_buyers.json', 'GEMINI.md', '.env.example', 'auth_telegram.py', '.gitignore']
+
+

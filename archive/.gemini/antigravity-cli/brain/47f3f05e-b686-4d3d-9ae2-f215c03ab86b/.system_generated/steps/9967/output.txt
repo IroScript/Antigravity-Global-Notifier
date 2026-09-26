@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+● gdrive-reporting-sentinel.service - Reporting Agent (agy:report) - Google Drive Live Sync Sentinel
+     Loaded: loaded (/home/azureuser/.config/systemd/user/gdrive-reporting-sentinel.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 09:46:40 UTC; 2s ago
+ Invocation: 747ad59362ea41bdb6c7faccfeec0015
+   Main PID: 1127728 (python3)
+      Tasks: 9 (limit: 19137)
+     Memory: 25M (peak: 25.8M)
+        CPU: 141ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gdrive-reporting-sentinel.service
+             ├─1127728 /usr/bin/python3 /home/azureuser/Reporting-Agent/sentine…
+             └─1127730 /usr/bin/rclone size personaldrive:Azure_VM_Live_Backup_…
+
+Sep 26 09:46:40 FatehAli systemd[1137]: Started gdrive-reporting-sentinel.s…nel.
+Hint: Some lines were ellipsized, use -l to show in full.
+

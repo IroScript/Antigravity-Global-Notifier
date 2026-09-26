@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Result len: 100
+Sample point: 07:48:21 PM 38.4
+

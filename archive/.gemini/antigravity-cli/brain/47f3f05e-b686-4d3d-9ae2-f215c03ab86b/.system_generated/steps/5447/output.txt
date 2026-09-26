@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+/usr/bin/extundelete
+/usr/bin/testdisk
+/usr/bin/extundelete
+/usr/bin/testdisk
+
+Terminal ID: bcf40c75-154c-4c59-a9ef-59b67f18930e

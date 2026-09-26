@@ -1,0 +1,31 @@
+The search for ""az restore-point create" site:learn.microsoft.com" returned the following summary:
+The `az restore-point create` command in the Azure CLI is used to create a restore point for a virtual machine within an existing restore point collection[1][2].
+
+### Basic Usage
+To create a restore point, you must specify the resource group, the name of the restore point collection, and the name for the new restore point[1]:
+
+```bash
+az restore-point create \
+    --resource-group "ExampleRg" \
+    --collection-name "ExampleRpc" \
+    --name "ExampleRp"
+```
+
+### Key Considerations
+*   **Restore Point Collections:** Before creating a restore point, you must first create a "restore point collection" using `az restore-point collection create`[1][2].
+*   **Consistency Modes:** You can optionally set the `--consistency-mode` parameter to `CrashConsistent` if you are creating a crash-consistent restore point (currently in preview)[1].
+*   **Instant Access:** If your restore point collection has "Instant Access" enabled (supported for specific disk types like Premium SSD v2 or Ultra disks), you can specify the `--instant-access-duration` parameter[1][3].
+*   **Immutability:** Once a restore point is created, its properties cannot be updated[4][5].
+*   **Monitoring Progress:** You can track the status of the creation process using the `az restore-point show` command[6].
+
+### Recent Updates
+Recent updates to the Azure CLI have added support for disk encryption during the restore point creation process, including parameters such as `--os-restore-point-encryption-set`, `--os-restore-point-encryption-type`, `--data-disk-restore-point-encryption-set`, and `--data-disk-restore-point-encryption-type`[7].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnPDn7c2UATcDv4YkcMPfFfCoYjTZ-7-1KfYPiNzUDlIrs8Pu7spb-w0QifZZK1P4wagWnx1F_BZq3xzlU3niT3izUxtqqpUQ1ZLlPvKQR_uIPf2G3PFn1Tqe5e0887P4u6FiZt1YrFJkxXyYXPa3kan5CA7kgoMxPYYCKm9heYLVXt2Z0eritINCqOA6Z22PSu2CopzUlE9Q=)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnPDn7c2UATcDv4YkcMPfFfCoYjTZ-7-1KfYPiNzUDlIrs8Pu7spb-w0QifZZK1P4wagWnx1F_BZq3xzlU3niT3izUxtqqpUQ1ZLlPvKQR_uIPf2G3PFn1Tqe5e0887P4u6FiZt1YrFJkxXyYXPa3kan5CA7kgoMxPYYCKm9heYLVXt2Z0eritINCqOA6Z22PSu2CopzUlE9Q=)
+[3] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnPDn7c2UATcDv4YkcMPfFfCoYjTZ-7-1KfYPiNzUDlIrs8Pu7spb-w0QifZZK1P4wagWnx1F_BZq3xzlU3niT3izUxtqqpUQ1ZLlPvKQR_uIPf2G3PFn1Tqe5e0887P4u6FiZt1YrFJkxXyYXPa3kan5CA7kgoMxPYYCKm9heYLVXt2Z0eritINCqOA6Z22PSu2CopzUlE9Q=)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfEfsnqf1dmoNgKzcjxYtT0-6ywxPmgWbDrte5smWzJpmKa0S7Hpv97VE9jYeNONQXiOK9hih2hDfsJFIrKm5xfMkAdACM4A_dd6tPMyYBCmmkJwS69C1Rpj9fL3MZtyltjGGymC8e7G97leMbtwNTw5CaNSL8qZNUAVDoS-RslNUTYwK2)
+[5] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfEfsnqf1dmoNgKzcjxYtT0-6ywxPmgWbDrte5smWzJpmKa0S7Hpv97VE9jYeNONQXiOK9hih2hDfsJFIrKm5xfMkAdACM4A_dd6tPMyYBCmmkJwS69C1Rpj9fL3MZtyltjGGymC8e7G97leMbtwNTw5CaNSL8qZNUAVDoS-RslNUTYwK2)
+[6] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnPDn7c2UATcDv4YkcMPfFfCoYjTZ-7-1KfYPiNzUDlIrs8Pu7spb-w0QifZZK1P4wagWnx1F_BZq3xzlU3niT3izUxtqqpUQ1ZLlPvKQR_uIPf2G3PFn1Tqe5e0887P4u6FiZt1YrFJkxXyYXPa3kan5CA7kgoMxPYYCKm9heYLVXt2Z0eritINCqOA6Z22PSu2CopzUlE9Q=)
+[7] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5HRmxczoNbCpyxaD4oFMRoJIDLHITamH8FEk05Zi1blV0xHKtuP82-drrWKEqYpWszV-tZZxSL2uw8UALsr5x58AXqf_9t67Cztl_pq-nCXPNVJ36EUAudUMq3ZbEUUhYoAcKncRyR6KgbiavDZ3xJ9a393FdyRGOtEXsY6_kGT3WQ5IxnMA9zOt743HD8A==)

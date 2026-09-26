@@ -1,0 +1,12 @@
+
+The command exited with code 1.
+Output:
+Inode 14027084: mode=0o100664, size=604
+Extent header: magic=0xf30a, entries=1, depth=0
+   Extent 0: logical 0, len 1, physical block 55617067
+Traceback (most recent call last):
+  File "<string>", line 22, in <module>
+    dev.seek(pblk * 4096)
+    ~~~~~~~~^^^^^^^^^^^^^
+ValueError: seek of closed file
+

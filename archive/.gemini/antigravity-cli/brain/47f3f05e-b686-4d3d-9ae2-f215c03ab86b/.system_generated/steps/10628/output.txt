@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+root        1037  0.0  0.1  39896 17124 ?        Ss   Sep22   0:20 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+azureus+    1190  0.0  0.1 121092 29104 ?        Ss   Sep22   0:20 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+    1197  0.0  0.6 237068 109768 ?       SNsl Sep22   0:14 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe schedule
+azureus+    1199  0.0  0.6 166504 111164 ?       Ss   Sep22   0:01 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+    1209  0.0  0.1 240684 29204 ?        Ss   Sep22   0:15 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+azureus+    1210  0.5  1.2 55494576 211980 ?     Ssl  Sep22  29:16 /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usage --user-data-dir=/home/azureuser/.config/google-chrome --profile-directory=Profile_Irak_Master --window-size=1280,800 --start-maximized https://accounts.google.com/ServiceLogin
+azureus+    1637  0.0  0.0  20776 10808 ?        S    Sep22   0:31 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1676  0.0  0.0 54551044 2780 ?       Sl   Sep22   0:00 /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/azureuser/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Debian GNU/Linux 13 (trixie) --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=153.0.8010.52 --initial-client-fd=5 --shared-client-connection
+azureus+    1678  0.0  0.0 54542832 2512 ?       Sl   Sep22   0:00 /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/azureuser/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Debian GNU/Linux 13 (trixie) --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=153.0.8010.52 --initial-client-fd=4 --shared-client-connection
+azureus+    1689  0.0  0.1 1295560 31168 ?       Ssl  Sep22   1:58 /usr/local/bin/cloudflared tunnel --url http://localhost:3100
+azureus+    1701  0.0  0.1 1361168 31188 ?       Sl   Sep22   1:59 cloudflared tunnel --url http://localhost:18789
+azureus+    1703  0.0  0.1 1295304 30092 ?       Sl   Sep22   1:59 cloudflared tunnel --url http://127.0.0.1:6080
+azureus+    1716  0.0  0.2 2100552 33164 ?       S    Sep22   0:30 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1717  0.0  0.1 1361808 29404 ?       Sl   Sep22   4:07 cloudflared tunnel --url http://127.0.0.1:8085
+root        1763  0.0  0.1  43740 30552 ?        Ss   Sep22   0:00 /usr/bin/python3 /usr/sbin/waagent -daemon
+root        1987  0.0  0.2 343044 37976 ?        Sl   Sep22   2:30 /usr/bin/python3 -u bin/WALinuxAgent-2.16.0.2-py3.12.egg -run-exthandlers
+azureus+    1989  0.0  0.1 1295560 30320 ?       Sl   Sep22   1:58 cloudflared tunnel --url http://localhost:7681
+azureus+    1997  0.0  0.0  21124 10256 ?        S    Sep22   0:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(6)
+azureus+   40846  0.0  0.1 1295304 29972 ?       Ssl  Sep23   1:44 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+azureus+   41342  0.0  0.1 1295564 30564 ?       Ssl  Sep23   1:44 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5173 --http-host-header localhost --logfile /home/azureuser/3D-Game-Design-Studio/cloud/cloudflared.log
+azureus+   42086  0.0  0.1 254056 18340 ?        Ss   Sep23   0:17 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+azureus+   42165  0.0  0.1 1295052 31184 ?       Ssl  Sep23   1:44 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5176 --logfile /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/logs/cloudflared.log
+azureus+  190240  0.0  0.0   7480  2280 ?        Ss   Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+azureus+  190241  0.0  0.2 1360912 33612 ?       Sl   Sep24   1:17 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+azureus+  190242  0.0  0.0   7612  2332 ?        S    Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+root      204399 11.7  0.4 428924 79140 ?        Ssl  Sep24 337:42 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  218241  0.0  0.1 1295304 31016 ?       Sl   Sep24   1:10 cloudflared tunnel --url http://localhost:8000
+azureus+  307848  4.6  0.9 629320 159364 ?       Sl   Sep24 122:47 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+  307856  0.0  0.0  21124 10268 ?        S    Sep24   0:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(7)
+azureus+  637238  0.0  0.0  21536 14892 ?        Ss   Sep25   0:16 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+

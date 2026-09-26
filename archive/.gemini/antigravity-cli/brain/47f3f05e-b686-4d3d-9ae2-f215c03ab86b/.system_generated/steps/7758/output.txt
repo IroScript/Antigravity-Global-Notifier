@@ -1,0 +1,19 @@
+You have 2 background task(s) currently running:
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7740",
+  "toolName":  "run_command",
+  "toolSummary":  "Upload Azure zip to Google Drive",
+  "description":  "rclone copy /home/azureuser/FULL_HOME_BACKUP/azure_home_FULL_filesystem_20260925.tar.gz personaldrive:All_VM_BackUps/Azure_VM_BackUP/ --progress --stats 10s",
+  "startTime":  "2026-09-25T18:08:08.951853627Z",
+  "stepIndex":  7740,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7740.log"
+}
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7746",
+  "toolName":  "run_command",
+  "toolSummary":  "Check GCP user directory sizes",
+  "description":  "ssh -o StrictHostKeyChecking=no azureuser-to-google-vm@35.253.244.80 \"sudo du -h --max-depth=1 /home/mdkamruzzamanirak_gmail_com 2>/dev/null\"",
+  "startTime":  "2026-09-25T18:08:25.065933840Z",
+  "stepIndex":  7746,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7746.log"
+}

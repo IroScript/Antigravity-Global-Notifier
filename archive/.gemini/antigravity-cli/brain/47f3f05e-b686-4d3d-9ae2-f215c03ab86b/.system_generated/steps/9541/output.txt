@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    PID     ELAPSED CMD
+1109781       01:30 /usr/bin/rclone copy /home/azureuser/AGY-MASTER personaldriv
+

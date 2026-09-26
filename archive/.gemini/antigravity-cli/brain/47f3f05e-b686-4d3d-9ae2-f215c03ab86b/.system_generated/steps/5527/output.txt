@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+       -M     Try to recover all files. This option should be used if  the  en‐
+              tire Filesystem was deleted.
+
+       -m     Try  to  recover  only  all deleted files. Use this option with a
+              partially deleted Filesystem.
+
+       Information Options: These options generate generic  status  information
+       from the filesystem and the Journal.
+
+       -S     Print the filesystem superblock, the option.  -x allows the addi‐
+              tional display of content of the group descriptor table.
+
+       -J     Print  the  content  of the Journal superblock.  This option also
+              can used to force loading the Journal. This has  a  flow  control
+              effect in ext4magic with some other options.
+
+       -H     Output a histogram of time stamps from all filesystem Inodes. Al‐
+              lows  you  to determine the exact time of changes in the filesys‐
+              tem. In connection with a directory name or  a  directory  Inode,
+              only  the  time  stamps of this directory tree will be displayed.
+              There are not evaluated any changes, only one per  Inode.  either
+              the  last  change  or the deletion time per Inode arrives to dis‐
+              play. If present (ext4), it also create  a  histogram  of  create
+              time stamps.
+

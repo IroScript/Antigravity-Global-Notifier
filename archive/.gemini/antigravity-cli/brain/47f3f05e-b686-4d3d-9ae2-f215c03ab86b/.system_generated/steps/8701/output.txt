@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    ELAPSED %CPU %MEM COMMAND
+      00:13  0.3  0.3 rclone copy /home/azureuser/.openclaw/workspace/IROSCRIPT-
+

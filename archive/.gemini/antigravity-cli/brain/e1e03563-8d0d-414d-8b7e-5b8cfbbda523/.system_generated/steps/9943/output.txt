@@ -1,0 +1,88 @@
+
+The command exited with code 0.
+Output:
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [10]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/h11_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 1281, in handle
+    await super().handle(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 158, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 144, in app
+    response = await f(request)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 706, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 352, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/app/worker_server.py", line 385, in debug_page
+    title = await active_page.title()
+  File "/usr/local/lib/python3.10/dist-packages/playwright/async_api/_generated.py", line 9742, in title
+    return mapping.from_maybe_impl(await self._impl_obj.title())
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_page.py", line 797, in title
+    return await self._main_frame.title()
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_frame.py", line 774, in title
+    return await self._channel.send("title")
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Target crashed 
+INFO:     Started server process [10]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-09-25 11:26:46,457 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #16): 12.48s [Range: 9.5s - 13.5s]...
+2026-09-25 11:28:49,047 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #17): 11.98s [Range: 10.0s - 14.0s]...
+2026-09-25 11:31:01,203 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #18): 11.35s [Range: 10.5s - 14.5s]...
+2026-09-25 11:33:21,622 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #19): 14.78s [Range: 11.0s - 15.0s]...
+2026-09-25 13:24:48,582 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #20): 15.20s [Range: 11.5s - 15.5s]...
+

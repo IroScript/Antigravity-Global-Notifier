@@ -1,0 +1,54 @@
+
+The command exited with code 1.
+Output:
+<truncated 92 lines>
+-rw------- 1 azureuser azureuser    8720 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/History-journal'
+-rw------- 1 root      root       375222 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/000007.log'
+-rw------- 1 root      root          298 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/LOG'
+-rw------- 1 root      root          298 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/LOG.old'
+-rw------- 1 root      root        44372 Sep 25 16:23 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Local Storage/leveldb/000134.log'
+-rw------- 1 root      root         1357 Sep 25 16:21 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/TransportSecurity'
+-rw------- 1 azureuser azureuser   40960 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/WebStorage/QuotaManager'
+-rw------- 1 azureuser azureuser       0 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/WebStorage/QuotaManager-journal'
+-rw------- 1 azureuser azureuser  139455 Sep 25 16:16 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/shared_proto_db/000003.log'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:21 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GrShaderCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:21 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GraphiteDawnCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:21 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/ShaderCache/data_1'
+-rw------- 1 azureuser azureuser   65536 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/segmentation_platform/ukm_db'
+-rw------- 1 azureuser azureuser       0 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/segmentation_platform/ukm_db-wal'
+-rw------- 1 azureuser azureuser   57344 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/Cookies'
+-rw------- 1 azureuser azureuser       0 Sep 25 16:20 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/Cookies-journal'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/DawnGraphiteCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/DawnWebGPUCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/GPUCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_1'
+-rw------- 1 azureuser azureuser  270336 Sep 25 16:19 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/ShaderCache/data_1'
+-rw-rw-r-- 1 azureuser azureuser    4530 Sep 25 16:23  /home/azureuser/.webterminal/incoming_cmd_agy_0.txt
+-rw-rw-r-- 1 azureuser azureuser   40824 Sep 25 16:23  /home/azureuser/.webterminal/vm_sizing.log
+-rw-rw-r-- 1 azureuser azureuser       9 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/device-list-82935919157317.json
+-rw-rw-r-- 1 azureuser azureuser      71 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/identity-key-189369486995549_1.0.json
+-rw-rw-r-- 1 azureuser azureuser      71 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/identity-key-35966542676030_1.0.json
+-rw-rw-r-- 1 azureuser azureuser      71 Sep 25 16:16  /home/azureuser/.webterminal/wa_auth/identity-key-38015309193359_1.0.json
+-rw-rw-r-- 1 azureuser azureuser      71 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/identity-key-50333275394146_1.0.json
+-rw-rw-r-- 1 azureuser azureuser      15 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/lid-mapping-35966542676030_reverse.json
+-rw-rw-r-- 1 azureuser azureuser      16 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/lid-mapping-8801319888164.json
+-rw-rw-r-- 1 azureuser azureuser     631 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/sender-key-120363374062400743@g.us--189369486995549_1--0.json
+-rw-rw-r-- 1 azureuser azureuser     611 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/sender-key-120363400568877928@g.us--50333275394146_1--0.json
+-rw-rw-r-- 1 azureuser azureuser     619 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/sender-key-120363403514936510@g.us--35966542676030_1--0.json
+-rw-rw-r-- 1 azureuser azureuser     619 Sep 25 16:16  /home/azureuser/.webterminal/wa_auth/sender-key-120363403514936510@g.us--38015309193359_1--0.json
+-rw-rw-r-- 1 azureuser azureuser     619 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/sender-key-120363403627926128@g.us--189369486995549_1--0.json
+-rw-rw-r-- 1 azureuser azureuser    1219 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/sender-key-120363425234182052@g.us--159374039371935_1--0.json
+-rw-rw-r-- 1 azureuser azureuser     998 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/session-159374039371935_1.0.json
+-rw-rw-r-- 1 azureuser azureuser     949 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/session-189369486995549_1.0.json
+-rw-rw-r-- 1 azureuser azureuser     948 Sep 25 16:21  /home/azureuser/.webterminal/wa_auth/session-35966542676030_1.0.json
+-rw-rw-r-- 1 azureuser azureuser     949 Sep 25 16:16  /home/azureuser/.webterminal/wa_auth/session-38015309193359_1.0.json
+-rw-rw-r-- 1 azureuser azureuser     948 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/session-50333275394146_1.0.json
+-rw-rw-r-- 1 azureuser azureuser   15074 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/session-82935919157317_1.0.json
+-rw-rw-r-- 1 azureuser azureuser      78 Sep 25 16:23  /home/azureuser/.webterminal/wa_auth/tctoken-82935919157317@lid.json
+-rw-rw-r-- 1 azureuser azureuser 1549676 Sep 25 16:23  /home/azureuser/.webterminal/whatsapp.log
+-rw-rw-r-- 1 azureuser azureuser     339 Sep 25 16:23  /home/azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md
+-rw-rw-r-- 1 azureuser azureuser    7792 Sep 25 16:19  /home/azureuser/full_forensic_reconciliation.py
+-rw-rw-r-- 1 azureuser azureuser  514383 Sep 25 16:23  /home/azureuser/mismatched_files_manifest.json
+-rw-rw-r-- 1 azureuser azureuser  561244 Sep 25 16:19  /home/azureuser/reconciliation_result.txt
+

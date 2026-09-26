@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+ 1128927 60.8  0.3 2908412 60512 pts/12  Ssl+ 09:51   0:31 /usr/bin/rclone copy personaldrive: /home/azureuser/IrakIroan --drive-root-folder-id 1nWBZrKuqHcK4awL6TG5orbiGpJg4AfS2 --transfers 4 --checkers 8 --stats 10s --log-file /home/azureuser/IrakIroan/gdrive_copy.log
+azureus+ 1129207  0.0  0.0   7484  3420 pts/14   Ss+  09:52   0:00 bash -c ps aux | grep 1nWBZrKuqHcK4awL6TG5orbiGpJg4AfS2
+azureus+ 1129209  0.0  0.0   7072  2308 pts/14   S+   09:52   0:00 grep 1nWBZrKuqHcK4awL6TG5orbiGpJg4AfS2
+

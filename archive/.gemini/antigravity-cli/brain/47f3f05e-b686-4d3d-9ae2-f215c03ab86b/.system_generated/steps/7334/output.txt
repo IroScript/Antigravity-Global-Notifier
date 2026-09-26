@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+gcp_cockroach_migrations_data.txt               0%    0     0.0KB/s   --:-- ETAgcp_cockroach_migrations_data.txt             100%  237     4.2KB/s   00:00    
+gcp_cockroach_schema.sql                        0%    0     0.0KB/s   --:-- ETAgcp_cockroach_schema.sql                      100%   12KB 215.8KB/s   00:00    
+gcp_frappe_mariadb.sql                          0%    0     0.0KB/s   --:-- ETAgcp_frappe_mariadb.sql                        100% 9010KB  25.5MB/s   00:00    
+gcp_postgres_all_databases.sql                  0%    0     0.0KB/s   --:-- ETAgcp_postgres_all_databases.sql                100%  268KB   3.2MB/s   00:00    
+gcp_redis_6379_dump.rdb                         0%    0     0.0KB/s   --:-- ETAgcp_redis_6379_dump.rdb                       100%   88     1.6KB/s   00:00    
+total 9.1M
+-rw-r--r-- 1 azureuser azureuser  237 Sep 25 15:52 gcp_cockroach_migrations_data.txt
+-rw-r--r-- 1 azureuser azureuser  12K Sep 25 15:52 gcp_cockroach_schema.sql
+-rw-r--r-- 1 azureuser azureuser 8.8M Sep 25 15:52 gcp_frappe_mariadb.sql
+-rw-rw-r-- 1 azureuser azureuser    0 Sep 25 15:52 gcp_mariadb_all_databases.sql
+-rw-r--r-- 1 azureuser azureuser 269K Sep 25 15:52 gcp_postgres_all_databases.sql
+-rw-r----- 1 azureuser azureuser   88 Sep 25 15:52 gcp_redis_6379_dump.rdb
+

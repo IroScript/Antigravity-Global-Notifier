@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Journal Superblock:
+   Magic: 0xc03b3998, blocktype: 4
+   Blocksize: 4096, maxlen: 262144, first: 1, start: 152620, sequence: 2149
+   compat: 0b10100111111001000110100101110101, incompat: 0b11111000000100110100010000111011 (hex: 0xf813443b), ro_compat: 0b10101100011101110100001111101101
+   64BIT flag: True
+   CSUM_V2 flag: True
+   CSUM_V3 flag: True
+

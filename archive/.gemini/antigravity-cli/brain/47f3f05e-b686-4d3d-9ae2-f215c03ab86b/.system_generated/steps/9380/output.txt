@@ -1,0 +1,7 @@
+
+The command exited with code 2.
+Output:
+----i---------e------- /home/azureuser/AGY-MASTER
+----i---------e------- /home/azureuser/AGY-MASTER/AGENTS.md
+ls: cannot open directory '/etc/sudoers.d/': Permission denied
+

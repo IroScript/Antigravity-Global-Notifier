@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 12824
+drwxr-xr-x   2 azureuser azureuser     4096 Sep 25 11:40 .
+drwxrwxr-x 220 azureuser azureuser    20480 Sep 25 11:38 ..
+-rw-r--r--   1 azureuser azureuser 13088453 Sep 25 11:28 1.101.Level_10_Planetary_Pruning_Spider.mp4
+-rw-rw-r--   1 azureuser azureuser     2159 Sep 25 11:40 1.101.Level_10_Prompt.json
+-rw-rw-r--   1 azureuser azureuser     1817 Sep 25 11:40 1.101.Level_10_YouTube_Metadata.json
+-rw-rw-r--   1 azureuser azureuser     2159 Sep 25 11:40 prompt_info.json
+-rw-rw-r--   1 azureuser azureuser     1817 Sep 25 11:40 youtube_metadata.json
+

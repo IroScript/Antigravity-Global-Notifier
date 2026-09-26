@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Elements: 100/100
+Ideas: 667/1000 (66.7%)
+Prompts: 7800/10000 (78.0%)
+Video Prompts: 6490
+Audio Rule Compliant: 1480 (22.8%)
+SEO Metadata: 555/1000 (55.5%)
+Packaged MP4 Files: 217
+Packaged Directories: 218
+

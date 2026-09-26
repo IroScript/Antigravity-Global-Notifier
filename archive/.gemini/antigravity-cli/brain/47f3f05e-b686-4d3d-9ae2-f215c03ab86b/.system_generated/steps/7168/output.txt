@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Service Account: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com
+

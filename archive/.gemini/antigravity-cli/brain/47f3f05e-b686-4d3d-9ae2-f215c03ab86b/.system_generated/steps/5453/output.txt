@@ -1,0 +1,46 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using  internal Journal at Inode 8
+Activ Time after  : Fri Sep 25 07:06:40 2026
+Activ Time before : Fri Sep 25 09:53:20 2026
+Inode 2 is allocated
+DIR	2	  
+DIR	11	 lost+found 
+DIR	11272193	 workspace 
+DIR	8650753	 downloads 
+DIR	13893633	 azureuser 
+DIR	1966081	 azureuser/.gradle 
+DIR	1966082	 azureuser/.gradle/daemon 
+DIR	1966083	 azureuser/.gradle/daemon/9.3.1 
+---	1966084	 azureuser/.gradle/daemon/9.3.1/registry.bin.lock 
+---	1966085	 azureuser/.gradle/daemon/9.3.1/registry.bin 
+DIR	1966086	 azureuser/.config 
+DIR	1966087	 azureuser/.config/google-chrome 
+DIR	1966088	 azureuser/.config/google-chrome/Profile_Irak_Master 
+DIR	1966089	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker 
+DIR	1966090	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache 
+DIR	1966091	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/index-dir 
+---	1966361	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/index-dir/the-real-index 
+---	1966298	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/70ee9bfc7669e569_0 
+---	1966350	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/7e736d47db778a70_0 
+---	1966351	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/3bff5eb4a62e6bf7_0 
+---	1966352	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/24c9909851fc5926_0 
+---	1966353	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/058316883d2f7b71_0 
+---	1966354	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/f6d3ed4a530e9494_0 
+---	1966355	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/385b1e42bf04aac1_0 
+---	1966356	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/31b5b1d21e24f104_0 
+---	1966357	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/b30f9f370e7094d0_0 
+---	1966358	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/dcfd308173202e57_0 
+---	1966359	 azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/c123adb7c05a8f5c_0 
+---	1966126	 azureuser/.config/google-chrome/Profile_Irak_Master/Network Persistent State 
+---	1966113	 azureuser/.config/google-chrome/Profile_Irak_Master/Extensions 
+---	1966123	 azureuser/.config/google-chrome/Profile_Irak_Master/TransportSecurity 
+---	1966120	 azureuser/.config/google-chrome/Profile_Irak_Master/AccountBookmarks 
+DIR	1966092	 azureuser/.config/google-chrome/Profile_Irak_Master/CRXTelemetry 
+---	1966133	 azureuser/.config/google-chrome/Profile_Irak_Master/Preferences 
+Warning: error-NR 2133571476 can not found file: azureuser/tmp/node-compile-cache/v26.10.0-x64-310b2ce3-1000
+
+Terminal ID: 5e0a6564-97ae-448f-bb3c-0ad05dd64dd5

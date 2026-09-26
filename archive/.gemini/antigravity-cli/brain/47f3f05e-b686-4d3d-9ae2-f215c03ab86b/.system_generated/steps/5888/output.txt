@@ -1,0 +1,20 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-5866
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5866.log
+Log output:
+<truncated 8842 lines>
+ext/plain/I_0014534867.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534870.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534878.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534879.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534892.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0014534893.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534894.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0014534895.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0014534902.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534903.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534905.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0014534911.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014534912.unknown
+
+Last progress: 0s ago

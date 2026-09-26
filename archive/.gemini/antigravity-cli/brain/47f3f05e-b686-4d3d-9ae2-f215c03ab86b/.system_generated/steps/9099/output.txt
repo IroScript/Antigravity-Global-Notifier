@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 25 08:02 /home/azureuser/.local/bin
+

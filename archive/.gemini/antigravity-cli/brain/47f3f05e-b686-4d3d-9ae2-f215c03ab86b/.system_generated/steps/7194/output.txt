@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+1NlhUyApeEJn4vvtF888spuSYNHQfJTXk;Azure_VM_BackUP/
+1nWBZrKuqHcK4awL6TG5orbiGpJg4AfS2;GCP_VM_BackUP/
+

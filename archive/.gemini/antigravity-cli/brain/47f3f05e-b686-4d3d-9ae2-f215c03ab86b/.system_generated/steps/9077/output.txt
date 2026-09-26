@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+All rclone backends:
+
+  alias        Alias for an existing remote
+  memory       In memory object storage system.
+  crypt        Encrypt/Decrypt a remote
+  hdfs         Hadoop distributed file system
+  local        Local Disk
+  azureblob    Microsoft Azure Blob Storage
+  b2           Backblaze B2
+  fichier      1Fichier
+  ftp          FTP
+  http         HTTP
+  internetarchive Internet Archive
+  koofr        Koofr, Digi Storage and other Koofr-compatible storage providers
+  netstorage   Akamai NetStorage
+  opendrive    OpenDrive
+  seafile      seafile
+  sftp         SSH/SFTP
+  sia          Sia Decentralized Cloud
+  smb          SMB / CIFS
+  sugarsync    Sugarsync
+  uptobox      Uptobox
+  webdav       WebDAV
+  filefabric   Enterprise File Fabric
+  cache        Cache a remote
+  chunker      Transparently chunk/split large files
+  combine      Combine several remotes into one
+  compress     Compress a remote
+  s3           Amazon S3 Compliant Storage Providers including AWS, Alibaba, Ceph, China Mobile, Cloudflare, ArvanCloud, Digital Ocean, Dreamhost, Huawei OBS, IBM COS, IDrive e2, IONOS Cloud, Lyve Cloud, Minio, Netease, RackCorp, Scaleway, SeaweedFS, StackPath, Storj, Tencent COS, Qiniu and Wasabi
+  swift        OpenStack Swift (Rackspace Cloud Files, Memset Memstore, OVH)
+  union        Union merges the contents of several upstream fs
+  hasher       Better checksums for other remotes
+  acd          Amazon Drive
+  drive        Google Drive
+  dropbox      Dropbox
+  gcs          Google Cloud Storage (this is not Google Drive)
+  gphotos      Google Photos
+  hidrive      HiDrive
+  jottacloud   Jottacloud
+  mailru       Mail.ru Cloud
+

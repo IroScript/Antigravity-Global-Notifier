@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+worker_1 last line: 2026-09-26 08:51:23,380 [INFO] [worker_1] [worker_1] 🛌 [MACRO LAYER SLEEP] Worker worker_1 entering 1.22h deep hibernation rest.
+worker_2 last line: 2026-09-26 08:11:49,847 [INFO] [worker_2] [worker_2] 🛌 [MACRO LAYER SLEEP] Worker worker_2 entering 1.31h deep hibernation rest.
+worker_3 last line: 2026-09-26 08:59:46,798 [INFO] [worker_3] [worker_3] ⏳ [Delay Ladder | #5/5: 'Idea #852 SEO'] Sleeping 60.58s (Base: 10.0s, +10.0s next)...
+worker_4 last line: 2026-09-26 09:00:22,901 [WARNING] [worker_4] [worker_4] ⚠️ Action 'Elem #85 Ideas' failed or rate-limited. Pausing 45s before retry...
+

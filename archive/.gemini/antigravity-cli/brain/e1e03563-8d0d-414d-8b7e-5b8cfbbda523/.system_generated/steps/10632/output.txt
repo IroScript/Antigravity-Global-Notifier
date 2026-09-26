@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Journal mode: wal
+Busy timeout: 5000
+Locking mode: normal
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+  669951  0.1  0.4 445596 71988 pts/11   Ssl+ 07:51   0:17 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+

@@ -1,0 +1,634 @@
+#!/usr/bin/env python3
+import os
+import sys
+import json
+import time
+import shutil
+import urllib.parse
+import urllib.request
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+import mimetypes
+import subprocess
+
+PORT = 8088
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+
+def format_size(size_bytes):
+    if size_bytes is None:
+        return ""
+    if size_bytes < 1024:
+        return f"{size_bytes} B"
+    elif size_bytes < 1024 * 1024:
+        return f"{size_bytes / 1024:.1f} KB"
+    elif size_bytes < 1024 * 1024 * 1024:
+        return f"{size_bytes / (1024 * 1024):.1f} MB"
+    else:
+        return f"{size_bytes / (1024 * 1024 * 1024):.2f} GB"
+
+def get_drive_info(mount_point, label, drive_letter):
+    try:
+        total, used, free = shutil.disk_usage(mount_point)
+        pct = (used / total) * 100 if total > 0 else 0
+        return {
+            "letter": drive_letter,
+            "label": label,
+            "path": mount_point,
+            "total": total,
+            "total_str": format_size(total),
+            "used": used,
+            "used_str": format_size(used),
+            "free": free,
+            "free_str": format_size(free),
+            "percent": round(pct, 1)
+        }
+    except Exception as e:
+        return {
+            "letter": drive_letter,
+            "label": label,
+            "path": mount_point,
+            "error": str(e)
+        }
+
+_stats_cache = {"time": 0, "data": None}
+def get_system_stats():
+    now = time.time()
+    if _stats_cache["data"] and (now - _stats_cache["time"] < 1.0):
+        return _stats_cache["data"]
+    try:
+        req = urllib.request.Request("http://127.0.0.1:8090/api/stats")
+        with urllib.request.urlopen(req, timeout=1.5) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            _stats_cache["time"] = now
+            _stats_cache["data"] = data
+            return data
+    except Exception:
+        pass
+    return get_fallback_stats()
+
+_history_cache = {}
+def get_system_history(query_string=""):
+    now = time.time()
+    cache_key = query_string or "default"
+    if cache_key in _history_cache and (now - _history_cache[cache_key]["time"] < 2.5):
+        return _history_cache[cache_key]["data"]
+
+    # Port 8090 backend supports: 1m, 5m, 15m, 30m. Any higher range (1h, 5h, etc.) causes remote disconnect.
+    target_range = "15m"
+    if "range=1m" in query_string:
+        target_range = "1m"
+    elif "range=5m" in query_string:
+        target_range = "5m"
+    elif "range=15m" in query_string:
+        target_range = "15m"
+    elif "range=30m" in query_string:
+        target_range = "30m"
+    else:
+        target_range = "30m"
+
+    data = []
+    for r in [target_range, "15m", "5m"]:
+        try:
+            url = f"http://127.0.0.1:8090/api/history?range={r}"
+            req = urllib.request.Request(url)
+            with urllib.request.urlopen(req, timeout=1.5) as resp:
+                res_json = json.loads(resp.read().decode("utf-8"))
+                if res_json and isinstance(res_json, list) and len(res_json) > 0:
+                    data = res_json
+                    break
+        except Exception:
+            continue
+
+    if not data:
+        try:
+            st = get_system_stats()
+            t_str = time.strftime("%I:%M:%S %p")
+            dt_str = time.strftime("%d %b, %I:%M %p")
+            data = [{
+                "epoch": int(now),
+                "t": t_str,
+                "dt": dt_str,
+                "cpu": st.get("cpu_overall", 0.0),
+                "ram_gb": st.get("ram", {}).get("used_gb", 0.0),
+                "ram_pct": st.get("ram", {}).get("percent", 0.0),
+                "app1": st.get("apps", [{}])[0] if st.get("apps") else {},
+                "app2": st.get("apps", [{}])[1] if len(st.get("apps", [])) > 1 else {},
+                "app3": st.get("apps", [{}])[2] if len(st.get("apps", [])) > 2 else {},
+            }]
+        except Exception:
+            data = []
+
+    _history_cache[cache_key] = {"time": now, "data": data}
+    return data
+
+def get_standalone_monitor_url():
+    url_file = "/home/azureuser/.webterminal/live_monitor_url.txt"
+    if os.path.exists(url_file):
+        try:
+            with open(url_file, "r") as f:
+                line = f.readline().strip()
+                if line.startswith("http"):
+                    return line
+        except Exception:
+            pass
+    return "https://memories-birth-outer-speeches.trycloudflare.com"
+
+def get_fallback_stats():
+    total_gb, used_gb, avail_gb, ram_pct = 15.62, 0.0, 0.0, 0.0
+    try:
+        with open("/proc/meminfo", "r") as f:
+            lines = f.readlines()
+        mem = {}
+        for line in lines:
+            p = line.split(":")
+            if len(p) == 2:
+                mem[p[0].strip()] = int(p[1].split()[0])
+        total_kb = mem.get("MemTotal", 1)
+        avail_kb = mem.get("MemAvailable", total_kb)
+        used_kb = total_kb - avail_kb
+        total_gb = round(total_kb / (1024 * 1024), 2)
+        used_gb = round(used_kb / (1024 * 1024), 2)
+        avail_gb = round(avail_kb / (1024 * 1024), 2)
+        ram_pct = round((used_kb / total_kb) * 100, 1)
+    except Exception:
+        pass
+
+    try:
+        load1, _, _ = os.getloadavg()
+        cpu_overall = round(min(load1 * 25.0, 100.0), 1)
+    except Exception:
+        cpu_overall = 0.0
+
+    return {
+        "cpu_overall": cpu_overall,
+        "cpu_cores": [cpu_overall, cpu_overall, cpu_overall, cpu_overall],
+        "ram": {
+            "used_gb": used_gb,
+            "total_gb": total_gb,
+            "percent": ram_pct,
+            "avail_gb": avail_gb
+        },
+        "swap": {"used_gb": 0.0, "total_gb": 0.0, "percent": 0.0},
+        "apps": [],
+        "top_procs": []
+    }
+
+_properties_cache = {}
+
+def get_item_properties(target_path, force_refresh=False):
+    target_path = os.path.abspath(target_path)
+    if not os.path.exists(target_path):
+        return {"error": "Path does not exist", "path": target_path}
+
+    now = time.time()
+    if not force_refresh and target_path in _properties_cache:
+        cached = _properties_cache[target_path]
+        if now - cached["time"] < 120.0:
+            res = dict(cached["data"])
+            res["is_cached"] = True
+            return res
+
+    is_dir = os.path.isdir(target_path)
+    try:
+        stat = os.stat(target_path)
+        mtime = stat.st_mtime
+        mtime_str = time.strftime("%Y-%m-%d %I:%M:%S %p", time.localtime(mtime))
+        ctime = stat.st_ctime
+        ctime_str = time.strftime("%Y-%m-%d %I:%M:%S %p", time.localtime(ctime))
+    except Exception as e:
+        return {"error": f"Cannot stat path: {e}", "path": target_path}
+
+    name = os.path.basename(target_path) or "/"
+    location = os.path.dirname(target_path) if target_path != "/" else "/"
+
+    if not is_dir:
+        ext = os.path.splitext(name)[1].lower().lstrip(".")
+        type_name = f"{ext.upper()} File (.{ext})" if ext else "File"
+        size = stat.st_size
+        data = {
+            "name": name,
+            "path": target_path,
+            "location": location,
+            "is_dir": False,
+            "type_name": type_name,
+            "size_bytes": size,
+            "size_str": format_size(size),
+            "size_bytes_formatted": f"{size:,} bytes",
+            "files_count": 1,
+            "folders_count": 0,
+            "contains_str": "1 File",
+            "modified_str": mtime_str,
+            "created_str": ctime_str,
+            "is_cached": False
+        }
+        _properties_cache[target_path] = {"time": now, "data": data}
+        return data
+
+    type_name = "File folder"
+    size_bytes = None
+    files_count = 0
+    folders_count = 0
+    size_str = "Calculating..."
+    size_bytes_formatted = ""
+    contains_str = "Calculating..."
+
+    # 1. Fast find for file and folder counts (12s timeout)
+    # Using printf %y doesn't stat individual files and is blazing fast (takes ~2s for 880k files)
+    try:
+        f_res = subprocess.run(
+            ["find", target_path, "-mindepth", "1", "-printf", "%y\n"],
+            capture_output=True, text=True, timeout=12.0
+        )
+        if f_res.stdout:
+            # Don't check returncode == 0, because permission warnings on docker/sockets return 1 while stdout has all files!
+            files_count = f_res.stdout.count('f') + f_res.stdout.count('l')
+            folders_count = f_res.stdout.count('d')
+            contains_str = f"{files_count:,} Files, {folders_count:,} Folders"
+        else:
+            contains_str = "0 Files, 0 Folders"
+    except subprocess.TimeoutExpired:
+        contains_str = "Over 1,000,000+ items (timeout)"
+    except Exception as e:
+        contains_str = str(e)
+
+    # 2. du -sb for accurate total byte size (15s timeout)
+    try:
+        du_res = subprocess.run(
+            ["du", "-sb", target_path],
+            capture_output=True, text=True, timeout=15.0
+        )
+        if du_res.stdout:
+            lines = du_res.stdout.strip().splitlines()
+            if lines:
+                parts = lines[-1].split()
+                if parts and parts[0].isdigit():
+                    size_bytes = int(parts[0])
+                    size_str = format_size(size_bytes)
+                    size_bytes_formatted = f"{size_bytes:,} bytes"
+    except subprocess.TimeoutExpired:
+        size_str = "Large directory (> 15s scan)"
+        size_bytes_formatted = "Scan timeout"
+    except Exception as e:
+        size_str = "Unknown"
+        size_bytes_formatted = str(e)
+
+    # Fallback if du failed but we have files
+    if size_bytes is None and files_count > 0:
+        size_str = "Size calculating..."
+
+    data = {
+        "name": name,
+        "path": target_path,
+        "location": location,
+        "is_dir": True,
+        "type_name": type_name,
+        "size_bytes": size_bytes,
+        "size_str": size_str,
+        "size_bytes_formatted": size_bytes_formatted,
+        "files_count": files_count,
+        "folders_count": folders_count,
+        "contains_str": contains_str,
+        "modified_str": mtime_str,
+        "created_str": ctime_str,
+        "is_cached": False
+    }
+
+    # ONLY cache if we actually computed the size successfully!
+    if size_bytes is not None:
+        _properties_cache[target_path] = {"time": now, "data": data}
+
+    return data
+
+class Windows11ExplorerHandler(BaseHTTPRequestHandler):
+    protocol_version = "HTTP/1.1"
+
+    def end_headers(self):
+        self.send_header("Access-Control-Allow-Origin", "*")
+        super().end_headers()
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
+
+    def do_HEAD(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.end_headers()
+
+
+    def do_GET(self):
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+        params = urllib.parse.parse_qs(parsed.query)
+
+        if path == "/" or path == "/index.html":
+            self.serve_file(os.path.join(STATIC_DIR, "index.html"), "text/html; charset=utf-8")
+        elif path.startswith("/static/"):
+            rel_path = path[len("/static/"):]
+            file_path = os.path.join(STATIC_DIR, rel_path)
+            mime, _ = mimetypes.guess_type(file_path)
+            self.serve_file(file_path, mime or "application/octet-stream")
+        elif path == "/api/drives":
+            self.handle_drives()
+        elif path == "/api/browse":
+            target_path = params.get("path", ["/home/azureuser"])[0]
+            self.handle_browse(target_path)
+        elif path == "/api/content":
+            target_path = params.get("path", [""])[0]
+            self.handle_content(target_path)
+        elif path == "/api/raw":
+            target_path = params.get("path", [""])[0]
+            download = params.get("download", ["0"])[0] == "1"
+            self.handle_raw(target_path, download)
+        elif path == "/api/search":
+            base = params.get("path", ["/home/azureuser"])[0]
+            q = params.get("q", [""])[0]
+            self.handle_search(base, q)
+        elif path == "/api/properties":
+            target_path = params.get("path", ["/home/azureuser"])[0]
+            force_refresh = params.get("refresh", ["0"])[0] == "1"
+            self.handle_properties(target_path, force_refresh=force_refresh)
+        elif path == "/chart.min.js":
+            self.serve_file(os.path.join(STATIC_DIR, "chart.min.js"), "application/javascript")
+        elif path == "/monitor":
+            self.handle_monitor_proxy()
+        elif path == "/api/stats":
+            self.send_json(get_system_stats())
+        elif path == "/api/history":
+            self.send_json(get_system_history(parsed.query))
+        elif path == "/api/monitor_url":
+            self.send_json({"url": get_standalone_monitor_url()})
+        else:
+            self.send_error(404, "Not Found")
+
+    def serve_file(self, file_path, content_type):
+        if not os.path.exists(file_path):
+            self.send_error(404, "File not found")
+            return
+        try:
+            with open(file_path, "rb") as f:
+                data = f.read()
+            self.send_response(200)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Content-Length", str(len(data)))
+            if file_path.endswith((".js", ".css", ".png", ".jpg", ".svg", ".ico", ".woff", ".woff2")):
+                self.send_header("Cache-Control", "public, max-age=86400")
+            else:
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.end_headers()
+            self.wfile.write(data)
+        except Exception as e:
+            self.send_error(500, str(e))
+
+    def handle_monitor_proxy(self):
+        monitor_path = os.path.join(STATIC_DIR, "monitor.html")
+        if os.path.exists(monitor_path):
+            self.serve_file(monitor_path, "text/html; charset=utf-8")
+            return
+        try:
+            req = urllib.request.Request("http://127.0.0.1:8090/")
+            with urllib.request.urlopen(req, timeout=2.0) as resp:
+                data = resp.read()
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+        except Exception as e:
+            self.send_error(500, f"Monitor proxy error: {e}")
+
+    def handle_properties(self, target_path, force_refresh=False):
+        data = get_item_properties(target_path, force_refresh=force_refresh)
+        status = 404 if "error" in data else 200
+        self.send_json(data, status=status)
+
+    def handle_drives(self):
+        drives = [
+            get_drive_info("/", "Local Disk (C: OS Root)", "C"),
+            get_drive_info("/home", "Data Disk (D: NVMe Home)", "D")
+        ]
+        self.send_json({"drives": drives})
+
+    def handle_browse(self, target_path):
+        target_path = os.path.abspath(target_path)
+        if not os.path.exists(target_path):
+            self.send_json({"error": "Path does not exist", "path": target_path}, status=404)
+            return
+
+        if not os.path.isdir(target_path):
+            self.send_json({"error": "Path is not a directory", "path": target_path}, status=400)
+            return
+
+        breadcrumbs = []
+        parts = target_path.strip("/").split("/")
+        accum = ""
+        breadcrumbs.append({"name": "Root (/)", "path": "/"})
+        if target_path != "/":
+            for p in parts:
+                accum += "/" + p
+                breadcrumbs.append({"name": p, "path": accum})
+
+        parent_path = os.path.dirname(target_path) if target_path != "/" else None
+
+        items = []
+        try:
+            with os.scandir(target_path) as it:
+                for entry in it:
+                    try:
+                        is_dir = entry.is_dir(follow_symlinks=False)
+                        is_link = entry.is_symlink()
+                        link_target = os.readlink(entry.path) if is_link else None
+                        
+                        try:
+                            stat = entry.stat(follow_symlinks=False)
+                            size = stat.st_size if not is_dir else None
+                            mtime = stat.st_mtime
+                            mtime_str = time.strftime("%Y-%m-%d %I:%M %p", time.localtime(mtime))
+                        except Exception:
+                            size = None
+                            mtime = 0
+                            mtime_str = "Unknown"
+
+                        ext = os.path.splitext(entry.name)[1].lower().lstrip(".")
+                        if is_dir:
+                            type_name = "File folder"
+                        elif ext:
+                            type_name = f"{ext.upper()} File"
+                        else:
+                            type_name = "File"
+
+                        items.append({
+                            "name": entry.name,
+                            "path": entry.path,
+                            "is_dir": is_dir,
+                            "is_link": is_link,
+                            "link_target": link_target,
+                            "size": size,
+                            "size_str": format_size(size) if size is not None else "",
+                            "mtime": mtime,
+                            "mtime_str": mtime_str,
+                            "ext": ext,
+                            "type_name": type_name
+                        })
+                    except Exception:
+                        continue
+        except PermissionError:
+            self.send_json({
+                "error": "Permission Denied",
+                "path": target_path,
+                "current_path": target_path,
+                "breadcrumbs": breadcrumbs,
+                "parent_path": parent_path,
+                "items": []
+            })
+            return
+        except Exception as e:
+            self.send_json({"error": str(e), "path": target_path}, status=500)
+            return
+
+        # Sort: directories first, then alphabetical
+        items.sort(key=lambda x: (not x["is_dir"], x["name"].lower()))
+
+        total_files = sum(1 for x in items if not x["is_dir"])
+        total_folders = sum(1 for x in items if x["is_dir"])
+        total_bytes = sum(x["size"] or 0 for x in items if not x["is_dir"])
+
+        self.send_json({
+            "current_path": target_path,
+            "parent_path": parent_path,
+            "breadcrumbs": breadcrumbs,
+            "items": items,
+            "total_items": len(items),
+            "total_files": total_files,
+            "total_folders": total_folders,
+            "total_size_str": format_size(total_bytes)
+        })
+
+    def handle_content(self, target_path):
+        target_path = os.path.abspath(target_path)
+        if not os.path.exists(target_path) or os.path.isdir(target_path):
+            self.send_json({"error": "File not found"}, status=404)
+            return
+
+        stat = os.stat(target_path)
+        if stat.st_size > 5 * 1024 * 1024:
+            self.send_json({
+                "name": os.path.basename(target_path),
+                "path": target_path,
+                "size_str": format_size(stat.st_size),
+                "is_too_large": True,
+                "content": f"[File is {format_size(stat.st_size)}, too large to display directly. Use download.]"
+            })
+            return
+
+        try:
+            with open(target_path, "r", encoding="utf-8", errors="replace") as f:
+                content = f.read()
+            self.send_json({
+                "name": os.path.basename(target_path),
+                "path": target_path,
+                "size_str": format_size(stat.st_size),
+                "ext": os.path.splitext(target_path)[1].lower().lstrip("."),
+                "content": content
+            })
+        except Exception as e:
+            self.send_json({"error": str(e)}, status=500)
+
+    def handle_raw(self, target_path, download):
+        target_path = os.path.abspath(target_path)
+        if not os.path.exists(target_path) or os.path.isdir(target_path):
+            self.send_error(404, "File not found")
+            return
+
+        mime, _ = mimetypes.guess_type(target_path)
+        mime = mime or "application/octet-stream"
+        filename = os.path.basename(target_path)
+        stat = os.stat(target_path)
+
+        self.send_response(200)
+        self.send_header("Content-Type", mime)
+        self.send_header("Content-Length", str(stat.st_size))
+        if download:
+            self.send_header("Content-Disposition", f'attachment; filename="{filename}"')
+        else:
+            self.send_header("Content-Disposition", f'inline; filename="{filename}"')
+        self.end_headers()
+
+        try:
+            with open(target_path, "rb") as f:
+                while chunk := f.read(65536):
+                    self.wfile.write(chunk)
+        except Exception:
+            pass
+
+    def handle_search(self, base_path, query):
+        base_path = os.path.abspath(base_path)
+        query = query.lower().strip()
+        if not query:
+            self.send_json({"results": []})
+            return
+
+        results = []
+        try:
+            for root, dirs, files in os.walk(base_path):
+                # Don't recurse into .git or node_modules
+                dirs[:] = [d for d in dirs if d not in (".git", "node_modules", ".cache")]
+                for d in dirs:
+                    if query in d.lower():
+                        p = os.path.join(root, d)
+                        results.append({
+                            "name": d,
+                            "path": p,
+                            "is_dir": True,
+                            "type_name": "File folder",
+                            "size_str": ""
+                        })
+                        if len(results) >= 100:
+                            break
+                for f in files:
+                    if query in f.lower():
+                        p = os.path.join(root, f)
+                        try:
+                            sz = os.path.getsize(p)
+                        except Exception:
+                            sz = 0
+                        results.append({
+                            "name": f,
+                            "path": p,
+                            "is_dir": False,
+                            "type_name": "File",
+                            "size_str": format_size(sz)
+                        })
+                        if len(results) >= 100:
+                            break
+                if len(results) >= 100:
+                    break
+        except Exception as e:
+            pass
+
+        self.send_json({"query": query, "results": results})
+
+    def send_json(self, data, status=200):
+        body = json.dumps(data).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+        self.end_headers()
+        self.wfile.write(body)
+
+def run():
+    server_address = ("0.0.0.0", PORT)
+    httpd = ThreadingHTTPServer(server_address, Windows11ExplorerHandler)
+    print(f"Windows 11 Azure File Explorer running on http://0.0.0.0:{PORT}")
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        httpd.server_close()
+
+if __name__ == "__main__":
+    run()

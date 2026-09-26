@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+du -sb took 7.57s, stdout=105759300632	/home/azureuser
+find -printf %y took 2.23s, files=776395, dirs=106327
+

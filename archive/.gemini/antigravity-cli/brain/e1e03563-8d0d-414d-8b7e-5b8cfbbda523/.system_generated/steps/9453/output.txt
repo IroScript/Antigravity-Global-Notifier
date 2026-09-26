@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+total 12
+drwxr-xr-x 3 azureuser azureuser 4096 Sep 25 07:59 .
+drwxr-xr-x 4 azureuser azureuser 4096 Sep 25 07:59 ..
+drwxr-xr-x 5 azureuser azureuser 4096 Sep 25 08:00 .system_generated
+

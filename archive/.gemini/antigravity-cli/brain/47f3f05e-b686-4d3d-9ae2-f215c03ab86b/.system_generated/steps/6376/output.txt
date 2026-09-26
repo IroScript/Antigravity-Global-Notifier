@@ -1,0 +1,216 @@
+
+The command exited with code 0.
+Output:
+<truncated 314 lines>
+                LOAD_ATTR               18 (utc)
+                CALL                     1
+                LOAD_ATTR               21 (isoformat + NULL|self)
+                CALL                     0
+
+ 222            LOAD_CONST              48 (('idea_id', 'tracking_token', 'title', 'seo_description', 'tags', 'hashtags', 'pinned_comment', 'category', 'default_language', 'source', 'exported_at'))
+                BUILD_CONST_KEY_MAP     11
+                STORE_FAST              16 (yt_meta_data)
+
+ 235            LOAD_FAST_LOAD_FAST     81 (package_folder, elem_id)
+                FORMAT_SIMPLE
+                LOAD_CONST              27 ('.')
+                LOAD_FAST                2 (idea_idx)
+                FORMAT_SIMPLE
+                LOAD_CONST              49 ('.Level_10_YouTube_Metadata.json')
+                BUILD_STRING             4
+                BINARY_OP               11 (/)
+                STORE_FAST              17 (metadata_path)
+
+ 236            LOAD_GLOBAL             23 (open + NULL)
+                LOAD_FAST               17 (metadata_path)
+                LOAD_CONST              29 ('w')
+                LOAD_CONST              30 ('utf-8')
+                LOAD_CONST              31 (('encoding',))
+                CALL_KW                  3
+                BEFORE_WITH
+       L22:     STORE_FAST              18 (mf)
+
+ 237            LOAD_GLOBAL             24 (json)
+                LOAD_ATTR               26 (dump)
+                PUSH_NULL
+                LOAD_FAST               16 (yt_meta_data)
+                LOAD_FAST               18 (mf)
+                LOAD_CONST              32 (2)
+                LOAD_CONST              33 (False)
+                LOAD_CONST              34 (('indent', 'ensure_ascii'))
+                CALL_KW                  4
+                POP_TOP
+
+ 236   L23:     LOAD_CONST              35 (None)
+                LOAD_CONST              35 (None)
+                LOAD_CONST              35 (None)
+                CALL                     2
+                POP_TOP
+
+ 239   L24:     LOAD_GLOBAL             23 (open + NULL)
+                LOAD_FAST                5 (package_folder)
+                LOAD_CONST              50 ('youtube_metadata.json')
+                BINARY_OP               11 (/)
+                LOAD_CONST              29 ('w')
+                LOAD_CONST              30 ('utf-8')
+                LOAD_CONST              31 (('encoding',))
+                CALL_KW                  3
+                BEFORE_WITH
+       L25:     STORE_FAST              18 (mf)
+
+ 240            LOAD_GLOBAL             24 (json)
+                LOAD_ATTR               26 (dump)
+                PUSH_NULL
+                LOAD_FAST               16 (yt_meta_data)
+                LOAD_FAST               18 (mf)
+                LOAD_CONST              32 (2)
+                LOAD_CONST              33 (False)
+                LOAD_CONST              34 (('indent', 'ensure_ascii'))
+                CALL_KW                  4
+                POP_TOP
+
+ 239   L26:     LOAD_CONST              35 (None)
+                LOAD_CONST              35 (None)
+                LOAD_CONST              35 (None)
+                CALL                     2
+                POP_TOP
+
+ 241   L27:     LOAD_GLOBAL             29 (print + NULL)
+                LOAD_CONST              37 ('[SQLite Export] Saved ')
+                LOAD_FAST               17 (metadata_path)
+                FORMAT_SIMPLE
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+                RETURN_CONST            35 (None)
+
+ 213   L28:     RETURN_CONST            35 (None)
+
+ 204   L29:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L30)
+                RERAISE                  2
+       L30:     POP_TOP
+       L31:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                EXTENDED_ARG             2
+                JUMP_BACKWARD_NO_INTERRUPT 550 (to L11)
+
+  --   L32:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+ 207   L33:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L34)
+                RERAISE                  2
+       L34:     POP_TOP
+       L35:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                EXTENDED_ARG             2
+                JUMP_BACKWARD_NO_INTERRUPT 523 (to L14)
+
+  --   L36:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+       L37:     PUSH_EXC_INFO
+
+ 216            LOAD_GLOBAL             46 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       89 (to L47)
+                POP_TOP
+
+ 217            LOAD_FAST               10 (yt_rec)
+                LOAD_ATTR               42 (tags)
+                LOAD_ATTR               49 (split + NULL|self)
+                LOAD_CONST              38 (',')
+                CALL                     1
+                GET_ITER
+                LOAD_FAST_AND_CLEAR     12 (t)
+                SWAP                     2
+       L38:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+       L39:     FOR_ITER                41 (to L42)
+                STORE_FAST_LOAD_FAST   204 (t, t)
+                LOAD_ATTR               51 (strip + NULL|self)
+                CALL                     0
+                TO_BOOL
+       L40:     POP_JUMP_IF_TRUE         2 (to L41)
+                JUMP_BACKWARD           25 (to L39)
+       L41:     LOAD_FAST               12 (t)
+                LOAD_ATTR               51 (strip + NULL|self)
+                CALL                     0
+                LIST_APPEND              2
+                JUMP_BACKWARD           43 (to L39)
+       L42:     END_FOR
+                POP_TOP
+       L43:     JUMP_FORWARD             5 (to L45)
+
+  --   L44:     SWAP                     2
+                POP_TOP
+
+ 217            SWAP                     2
+                STORE_FAST              12 (t)
+                RERAISE                  0
+       L45:     STORE_FAST              11 (tags_list)
+                STORE_FAST              12 (t)
+       L46:     POP_EXCEPT
+                EXTENDED_ARG             1
+                JUMP_BACKWARD_NO_INTERRUPT 464 (to L18)
+
+ 216   L47:     RERAISE                  0
+
+  --   L48:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+ 236   L49:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L50)
+                RERAISE                  2
+       L50:     POP_TOP
+       L51:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                JUMP_BACKWARD_NO_INTERRUPT 214 (to L24)
+
+  --   L52:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+ 239   L53:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L54)
+                RERAISE                  2
+       L54:     POP_TOP
+       L55:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                JUMP_BACKWARD_NO_INTERRUPT 185 (to L27)
+
+  --   L56:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L9 to L10 -> L29 [1] lasti
+  L12 to L13 -> L33 [1] lasti
+  L15 to L18 -> L37 [0]
+  L22 to L23 -> L49 [1] lasti
+  L25 to L26 -> L53 [1] lasti
+  L29 to L31 -> L32 [3] lasti
+  L33 to L35 -> L36 [3] lasti
+  L37 to L38 -> L48 [1] lasti
+  L38 to L40 -> L44 [3]
+  L41 to L43 -> L44 [3]
+  L43 to L46 -> L48 [1] lasti
+  L47 to L48 -> L48 [1] lasti
+  L49 to L51 -> L52 [3] lasti
+  L53 to L55 -> L56 [3] lasti
+

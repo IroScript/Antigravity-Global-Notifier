@@ -1,0 +1,85 @@
+
+The command exited with code 0.
+Output:
+NAME                                     | TYPE    | SIZE         | FILES   
+---------------------------------------------------------------------------
+Article-Publishing-Platform              | dir     | 6.28 GB      | 71989   
+.openclaw                                | dir     | 4.89 GB      | 25119   
+Rust_Task_With_Time_Keeping_And_Live_Note | dir     | 4.02 GB      | 12320   
+.gradle                                  | dir     | 3.05 GB      | 37989   
+android-sdk                              | dir     | 2.92 GB      | 45374   
+openrecall_vault                         | dir     | 2.72 GB      | 32184   
+flutter                                  | dir     | 2.20 GB      | 18596   
+frappe-bench                             | dir     | 1.42 GB      | 79162   
+.config                                  | dir     | 1.18 GB      | 7869    
+.gemini                                  | dir     | 1.14 GB      | 16851   
+.npm-global                              | dir     | 987.76 MB    | 43263   
+kids_tube_with_folder_seection           | dir     | 739.67 MB    | 1456    
+.cloakbrowser                            | dir     | 695.55 MB    | 674     
+.local                                   | dir     | 669.88 MB    | 13411   
+.rustup                                  | dir     | 594.05 MB    | 161     
+browser_env                              | dir     | 576.73 MB    | 9172    
+.pub-cache                               | dir     | 504.95 MB    | 22485   
+.cargo                                   | dir     | 445.84 MB    | 19583   
+.pyenv                                   | dir     | 348.79 MB    | 11102   
+Downloads                                | dir     | 242.88 MB    | 27      
+.m2                                      | dir     | 203.55 MB    | 4       
+.npm                                     | dir     | 135.31 MB    | 262     
+3D-Game-Design-Studio                    | dir     | 94.25 MB     | 2618    
+.dartServer                              | dir     | 52.89 MB     | 2712    
+.webterminal                             | dir     | 35.28 MB     | 102212  
+Frappe-erp-Alco                          | dir     | 16.99 MB     | 159     
+DATABASE_BACKUPS_VAULT                   | dir     | 9.07 MB      | 5       
+.android                                 | dir     | 5.85 MB      | 82      
+Antigravity-Global-Notifier              | dir     | 1.39 MB      | 70      
+bengali_terminal                         | dir     | 1.01 MB      | 13      
+cloud                                    | dir     | 0.48 MB      | 31      
+telegram-bot                             | dir     | 0.42 MB      | 27      
+.chrome_home                             | dir     | 0.06 MB      | 5       
+.dart-tool                               | dir     | 0.04 MB      | 5       
+practice                                 | dir     | 0.02 MB      | 1       
+.ssh                                     | dir     | 0.01 MB      | 6       
+IROSCRIPT-CEO                            | dir     | 0.00 MB      | 1       
+.agents                                  | dir     | 0.00 MB      | 3       
+var                                      | dir     | 0.00 MB      | 2       
+.claude                                  | dir     | 0.00 MB      | 2       
+.agy_evidence                            | dir     | 0.00 MB      | 1       
+frappe_db_backup.sql                     | file    | 8.80 MB      | 1
+payload_articles.sql                     | file    | 262.0 KB     | 1
+AGENTS.md                                | file    | 61.0 KB      | 1
+GEMINI.md                                | file    | 61.0 KB      | 1
+rust_apk_tunnel.log                      | file    | 35.8 KB      | 1
+AGY_500_AGENT_RELIABILITY_ENGINE_ARCHITECTURE.md | file    | 33.0 KB      | 1
+ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md | file    | 31.9 KB      | 1
+game.js                                  | file    | 20.6 KB      | 1
+AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md | file    | 13.8 KB      | 1
+PERSONAL_ACTIVITY_AND_TASK_MEMORY.md     | file    | 13.6 KB      | 1
+GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md | file    | 10.5 KB      | 1
+AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md | file    | 10.0 KB      | 1
+.bash_history                            | file    | 9.3 KB       | 1
+AGY_FINAL_RELIABILITY_GATE_REPORT.md     | file    | 8.5 KB       | 1
+USER_PERSONAL_AGENT_CONTEXT.md           | file    | 8.2 KB       | 1
+AGY_ISOLATED_IMPLEMENTATION_REPORT.md    | file    | 8.1 KB       | 1
+AGY_AUTONOMOUS_AUTHORITY_AND_RELIABILITY_SPEC.md | file    | 7.9 KB       | 1
+AGY_RELIABILITY_ENGINE_VALIDATION_REPORT.md | file    | 6.6 KB       | 1
+.bashrc                                  | file    | 4.7 KB       | 1
+AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md | file    | 3.0 KB       | 1
+paste_rs_explanation.txt                 | file    | 2.6 KB       | 1
+.profile                                 | file    | 1.1 KB       | 1
+.tmux.conf                               | file    | 0.9 KB       | 1
+random_bangla_text.txt                   | file    | 0.8 KB       | 1
+apk_download_link.txt                    | file    | 0.5 KB       | 1
+rust_frontend.log                        | file    | 0.4 KB       | 1
+.claude.json                             | file    | 0.2 KB       | 1
+.bash_logout                             | file    | 0.2 KB       | 1
+.yarnrc                                  | file    | 0.1 KB       | 1
+web_terminal_link.txt                    | file    | 0.1 KB       | 1
+chrome_remote_url.txt                    | file    | 0.1 KB       | 1
+csv_downloads_url.txt                    | file    | 0.1 KB       | 1
+.gitconfig                               | file    | 0.1 KB       | 1
+.npmrc                                   | file    | 0.1 KB       | 1
+apk_tunnel.log                           | file    | 0.0 KB       | 1
+.chrome_data                             | symlink | -> /home/mdkamruzzamanirak_gmail_com/.config/google-chrome
+personal_agent_data                      | symlink | -> /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/data
+start_apk_tunnel.sh                      | file    | 0.0 KB       | 1
+

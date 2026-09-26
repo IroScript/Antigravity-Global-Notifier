@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+
+  Running the free binary (v146). The latest binary (v151) is free too, with 1 concurrent session.
+  Get your key: run  cloakbrowser login  or visit https://cloakbrowser.dev/free
+  For more than one concurrent session -> https://cloakbrowser.dev
+  Star us if CloakBrowser helps your project!
+
+2026-09-26 15:00:13,966 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 15:00:13,982 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 15:00:15,388 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 15:00:15,394 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 15:00:15,486 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 15:00:24,057 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:45952 - "GET /health HTTP/1.1" 200 OK
+

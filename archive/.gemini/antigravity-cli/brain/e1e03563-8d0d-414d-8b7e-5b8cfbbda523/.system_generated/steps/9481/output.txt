@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    PID TTY          TIME CMD
+ 669951 pts/11   00:00:01 python3
+

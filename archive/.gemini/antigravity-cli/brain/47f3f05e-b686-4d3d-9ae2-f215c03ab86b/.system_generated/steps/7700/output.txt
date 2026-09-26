@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Starting rclone oauth...
+RCLONE: <5>NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=gOcxaOR1a31Oiy3q8_2rPw
+
+======================================================================
+GOOGLE AUTH URL READY:
+https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=202264815644.apps.googleusercontent.redacted&redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=gOcxaOR1a31Oiy3q8_2rPw
+======================================================================
+
+RCLONE: <5>NOTICE: Log in and authorize rclone for access
+RCLONE: <5>NOTICE: Waiting for code...
+RCLONE: <5>NOTICE: Got code
+Rclone finished with code: 0
+

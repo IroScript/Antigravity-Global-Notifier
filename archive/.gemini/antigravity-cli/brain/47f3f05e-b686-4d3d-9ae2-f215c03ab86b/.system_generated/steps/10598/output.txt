@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>This PC - Windows 11 File Explorer (Azure VM)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #202020;
+      --bg-mica: rgba(32, 32, 32, 0.85);
+      --bg-surface: #2b2b2b;
+      --bg-sidebar: #1f1f1f;
+

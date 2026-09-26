@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+ 1109781  0.1  0.3 1802300 56532 pts/12  Sl+  08:39   0:00 /usr/bin/rclone copy /home/azureuser/AGY-MASTER personaldrive:Azure_VM_Live_Backup_Fateh_Ali/AGY-MASTER --update --transfers 4 --checkers 8 --stats-one-line --log-level NOTICE --exclude node_modules/** --exclude .git/** --exclude **/target/debug/** --exclude **/target/release/incremental/** --exclude **/__pycache__/** --exclude *.pyc --exclude *.tmp --exclude .system_generated/**
+

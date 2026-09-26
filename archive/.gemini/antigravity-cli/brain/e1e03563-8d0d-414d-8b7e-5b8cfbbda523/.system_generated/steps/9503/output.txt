@@ -1,0 +1,22 @@
+
+The command exited with code 1.
+Output:
+============================================================================
+        📊 MASTER UNIFIED CSV EXPORT GENERATOR [25_sept_8.00_am]
+============================================================================
+>>> [1/4] Generating Raw Table CSVs...
+  ✅ Saved 52 raw tables into: exports/csv_tables/
+>>> [2/4] Generating Master Prompts Hierarchy CSV...
+  ✅ Saved: master_prompts_from_db_25_sept_8.00_am.csv (7020 rows)
+>>> [3/4] Generating Real SEO Master, Keywords & Competitors CSVs...
+Traceback (most recent call last):
+  File "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/generate_all_csvs.py", line 160, in <module>
+    main()
+    ~~~~^^
+  File "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/generate_all_csvs.py", line 96, in main
+    s_cnt = export_query_to_csv(cur, seo_query, s_path)
+  File "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/generate_all_csvs.py", line 18, in export_query_to_csv
+    cur.execute(query)
+    ~~~~~~~~~~~^^^^^^^
+sqlite3.OperationalError: no such column: ym.description
+

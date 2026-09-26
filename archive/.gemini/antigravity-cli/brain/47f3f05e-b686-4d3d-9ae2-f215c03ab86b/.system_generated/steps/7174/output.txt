@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+HTTP Error Code: 403
+Error Body: {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/test_probe.txt' (or it may not exist).",
+    "errors": [
+      {
+        "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/test_probe.txt' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+
+

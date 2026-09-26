@@ -1,0 +1,106 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1761,6 +1761,100 @@
+   </div>
+ </div>
+ 
++<!-- Windows 11 Fluent Properties Modal -->
++<div class="modal-overlay" id="propertiesModal" onclick="handlePropModalOverlayClick(event)">
++  <div class="win11-properties-window" onclick="event.stopPropagation()">
++    <!-- Window Header -->
++    <div class="prop-header">
++      <div class="prop-title" id="propHeaderTitle">
++        <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
++        <span>Properties</span>
++      </div>
++      <div class="win-btn close" onclick="closeProperties()">&times;</div>
++    </div>
++
++    <!-- Win11 Tab Bar (General Tab) -->
++    <div class="prop-tab-bar">
++      <div class="prop-tab active">General</div>
++    </div>
++
++    <!-- Properties Content -->
++    <div class="prop-content">
++      <!-- Top Row: Icon + Name -->
++      <div class="prop-hero">
++        <div class="prop-hero-icon" id="propHeroIcon">
++          <svg viewBox="0 0 24 24" width="44" height="44" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
++        </div>
++        <div class="prop-hero-name-box">
++          <input type="text" class="prop-name-input" id="propNameInput" readonly>
++        </div>
++      </div>
++
++      <div class="prop-divider"></div>
++
++      <!-- Properties Fields (Two-Column) -->
++      <div class="prop-grid">
++        <div class="prop-label">Type:</div>
++        <div class="prop-value" id="propType">File folder</div>
++
++        <div class="prop-label">Location:</div>
++        <div class="prop-value prop-location-val" id="propLocation" title="Location path">/home/azureuser</div>
++
++        <div class="prop-label">Size:</div>
++        <div class="prop-value highlight-size" id="propSize">
++          <span id="propSizeStr">Loading...</span>
++          <span class="prop-bytes-sub" id="propSizeBytes"></span>
++        </div>
++
++        <div class="prop-label" id="propContainsLabel">Contains:</div>
++        <div class="prop-value highlight-contains" id="propContains">Calculating files & folders...</div>
++      </div>
++
++      <div class="prop-divider"></div>
++
++      <!-- Timestamps -->
++      <div class="prop-grid">
++        <div class="prop-label">Created:</div>
++        <div class="prop-value" id="propCreated">-</div>
++
++        <div class="prop-label">Modified:</div>
++        <div class="prop-value" id="propModified">-</div>
++      </div>
++
++      <div class="prop-divider"></div>
++
++      <!-- Path Quick Copy Bar -->
++      <div class="prop-path-row">
++        <span class="prop-path-text" id="propFullPath" title="Full Path">/path/to/item</span>
++        <button class="btn-copy-path" onclick="copyPropFullPath()" id="btnCopyPropPath">কপি পাথ</button>
++      </div>
++    </div>
++
++    <!-- Dialog Actions Footer -->
++    <div class="prop-footer">
++      <button class="prop-footer-btn primary" onclick="closeProperties()">OK</button>
++      <button class="prop-footer-btn secondary" onclick="closeProperties()">Cancel</button>
++    </div>
++  </div>
++</div>
++
++<!-- Windows 11 Custom Context Menu -->
++<div class="custom-context-menu" id="customContextMenu">
++  <div class="ctx-item" id="ctxOpen" onclick="handleCtxOpen()">
++    <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
++    <span>Open (খুলুন)</span>
++  </div>
++  <div class="ctx-item" id="ctxProperties" onclick="handleCtxProperties()">
++    <svg viewBox="0 0 24 24" width="16" height="16" fill="#f0883e"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
++    <span>Properties (প্রোপার্টিজ)</span>
++  </div>
++  <div class="ctx-divider" id="ctxDownloadDivider"></div>
++  <div class="ctx-item" id="ctxDownload" onclick="handleCtxDownload()">
++    <svg viewBox="0 0 24 24" width="16" height="16" fill="#a6e3a1"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
++    <span>Download (ডাউনলোড)</span>
++  </div>
++</div>
++
+ <script>
+   let currentPath = "THIS_PC";
+   let historyStack = [];
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

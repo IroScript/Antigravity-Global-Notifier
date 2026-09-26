@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Total time: 4.81s
+size_str: 98.50 GB (105,759,371,494 bytes)
+contains_str: 776,396 Files, 106,328 Folders
+

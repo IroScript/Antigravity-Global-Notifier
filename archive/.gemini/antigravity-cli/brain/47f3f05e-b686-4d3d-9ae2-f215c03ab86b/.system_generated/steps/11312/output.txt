@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+101M	/home/azureuser/.gemini/
+total 16
+drwxr-xr-x  4 azureuser azureuser 4096 Sep 25 07:55 .
+drwxr-xr-x 32 azureuser azureuser 4096 Sep 26 15:02 ..
+drwxr-xr-x 10 azureuser azureuser 4096 Sep 26 15:16 antigravity-cli
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 08:02 config
+

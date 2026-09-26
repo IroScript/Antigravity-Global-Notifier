@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+12K	/home/azureuser/Ask-And-Research
+12K	/home/azureuser/kids_tube_with_folder_seection
+20K	/home/azureuser/.gradle
+24K	/home/azureuser/.ssh
+28K	/home/azureuser/3D-Game-Design-Studio
+40K	/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+84K	/home/azureuser/.cache
+416K	/home/azureuser/telegram-bot
+988K	/home/azureuser/Frappe-erp-Alco
+3.0M	/home/azureuser/tmp
+8.5M	/home/azureuser/.config
+43M	/home/azureuser/.gemini
+72M	/home/azureuser/AGY-MASTER
+111M	/home/azureuser/.webterminal
+301M	/home/azureuser/.npm
+417M	/home/azureuser/.local
+708M	/home/azureuser/.npm-global
+819M	/home/azureuser/RESTORED_PROJECTS
+1.4G	/home/azureuser/RESTORED_VIDEOS
+1.6G	/home/azureuser/.openclaw
+5.3G	/home/azureuser
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+err: [Errno 13] Permission denied: '/proc/204399/cwd'
+

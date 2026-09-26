@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+total 12K
+-rw------- 1 root root 4.5K Sep 25 07:46 CdmStorage.db-journal
+drwxr-xr-x 2 root root 4.0K Sep 25 11:04 Preferences
+

@@ -1,0 +1,3 @@
+rm: cannot remove '/recovered/WINDOW_0753/MAGIC-2/application/json\012-': Directory not empty
+rm: cannot remove '/recovered/WINDOW_0753/MAGIC-2/text/plain': Directory not empty
+rm: cannot remove '/recovered/WINDOW_0753/MAGIC-2/image/png\012-': Directory not empty

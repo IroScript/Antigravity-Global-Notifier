@@ -1,0 +1,21 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-5652
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5652.log
+Log output:
+<truncated 15247 lines>
+xt/x-script.python\012-/I_0014552147.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/text/x-script.python\012-/I_0014552161.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/application/octet-stream/I_0014552162.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/octet-stream/I_0014552163.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014552190.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/\012-/I_0014552193.pyc
+--------	/recovered/ALL_DELETED/MAGIC-2/text/x-script.python\012-/I_0014552215.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/\012-/I_0014552218.pyc
+--------	/recovered/ALL_DELETED/MAGIC-2/\012-/I_0014552219.pyc
+--------	/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014552221.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/text/x-script.python\012-/I_0014552223.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014552224.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/\012-/I_0014552232.pyc
+--------	/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014552233.txt
+
+Last progress: 0s ago

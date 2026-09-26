@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+      390 PARTS_MD5_CHECKSUM.txt
+      868 RESTORE_INSTRUCTIONS.txt
+3221225472 gcp_home_backup_part_04.tar.gz
+3221225472 gcp_home_backup_part_03.tar.gz
+3221225472 gcp_home_backup_part_02.tar.gz
+3221225472 gcp_home_backup_part_01.tar.gz
+3221225472 gcp_home_backup_part_00.tar.gz
+

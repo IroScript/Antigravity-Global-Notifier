@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+azureus+ 1113819  5.9  0.7 2434780 128416 ?      Sl   08:54   2:57 /usr/bin/rclone copy /home/azureuser personaldrive:Azure_VM_Live_Backup_Fateh_Ali --update --transfers 4 --checkers 8 --stats-one-line --log-level NOTICE --exclude *.sock --exclude **/.cache/** --exclude **/node_modules/** --exclude **/target/debug/** --exclude **/target/release/incremental/** --exclude **/__pycache__/** --exclude *.pyc --exclude *.tmp
+azureus+ 1126684  0.1  0.3 1802300 57036 pts/14  Ssl+ 09:42   0:00 /usr/bin/rclone copy personaldrive:Azure_VM_Live_Backup_Fateh_Ali/LIVE_SYNC_READY.txt /home/azureuser/RESTORE_VERIFY_TEMP/ -v
+azureus+ 1126747  0.0  0.0   7484  3376 pts/15   Ss+  09:43   0:00 bash -c /usr/bin/rclone copy personaldrive:Azure_VM_Live_Backup_Fateh_Ali/LIVE_SYNC_READY.txt /home/azureuser/GDRIVE_RESTORE_TEST/ && /usr/bin/rclone copy personaldrive:Azure_VM_Live_Backup_Fateh_Ali/AGY-MASTER/AGENTS.md /home/azureuser/GDRIVE_RESTORE_TEST/
+azureus+ 1126748  0.2  0.3 1802044 54784 pts/15  Sl+  09:43   0:00 /usr/bin/rclone copy personaldrive:Azure_VM_Live_Backup_Fateh_Ali/LIVE_SYNC_READY.txt /home/azureuser/GDRIVE_RESTORE_TEST/
+azureus+ 1126906  0.0  0.0   7484  3408 pts/16   Ss+  09:43   0:00 bash -c ps aux | grep rclone
+azureus+ 1126908  0.0  0.0   7060  2084 pts/16   S+   09:43   0:00 grep rclone
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+HTML length: 29558
+Found scripts count: 2
+Script snippet: <script src="/chart.min.js"></script>
+Script snippet: <script> let currentStats = null; let currentSort = 'cpu'; let currentRange = '1
+

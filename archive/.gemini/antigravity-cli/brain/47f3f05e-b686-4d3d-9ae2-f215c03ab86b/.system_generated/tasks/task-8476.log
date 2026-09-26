@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T19:50:42Z
+Prompt: Check listing and commit result
+Early Termination: any
+
+[2026-09-25T19:50:37Z] Timer cancelled: early-termination condition (any) met by a message from 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8474.

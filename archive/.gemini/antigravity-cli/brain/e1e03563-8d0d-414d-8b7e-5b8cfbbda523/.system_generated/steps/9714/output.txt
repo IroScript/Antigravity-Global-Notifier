@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 11:39:28,341 [WARNING] [worker_4] Retry 5/5 for Escalation for Idea #415 (Planetary Forge Tower) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 11:39:43,341 [ERROR] [worker_4] Worker worker_4 failed generating escalation for Idea #415: Timeout
+2026-09-25 11:39:43,350 [INFO] [worker_4] [Elem #85: Fortress] Generating 10 ideas via http://localhost:8004...
+2026-09-25 11:47:00,443 [WARNING] [worker_4] Retry 1/5 for Ideas for Element #85 (Fortress) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 11:51:18,971 [INFO] [30MinMonitor] 
+============================================================
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-25 11:51:18 UTC
+============================================================
+Total Ideas Generated       : 667 / 1000 (66.7%)
+Total Prompts Generated     : 7630 / 10000 (76.3%)
+Total Real SEO Completed    : 555 / 1000 (55.5%)
+Worker Status:
+  - Worker 1: macro_resting (Completed: 36)
+  - Worker 2: macro_resting (Completed: 21)
+  - Worker 3: macro_resting (Completed: 232)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-25 11:51:18,971 [INFO] [30MinMonitor] 📊 30-Minute progress snapshot saved to: cluster_30min_report.log
+2026-09-25 11:54:34,122 [WARNING] [worker_4] Retry 2/5 for Ideas for Element #85 (Fortress) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+

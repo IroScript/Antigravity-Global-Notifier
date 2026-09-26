@@ -1,0 +1,15 @@
+2026-09-26 05:02:15,038 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+INFO:     Application startup complete.
+2026-09-26 05:02:23,337 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.19.0.1:58398 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47086 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 05:03:12,704 [INFO] [Worker-worker_4] Applying escalating jitter delay (+0.5s/process, action #1): 5.16s [Range: 2.0s - 6.0s]...
+INFO:     127.0.0.1:45608 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 05:03:20,392 [INFO] [Worker-worker_4] Clicked dialog element: text=Got it
+2026-09-26 05:03:24,772 [INFO] [Worker-worker_4] Inserting 722 chars into ChatGPT editor...
+2026-09-26 05:03:28,301 [INFO] [Worker-worker_4] Clicked Send button.
+2026-09-26 05:03:28,301 [INFO] [Worker-worker_4] Waiting for streaming response (max 90s)...
+INFO:     127.0.0.1:51434 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59626 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60918 - "GET /health HTTP/1.1" 200 OK

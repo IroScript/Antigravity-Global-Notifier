@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+16K	/home/azureuser/AGY-MASTER/ACTIONS
+20K	/home/azureuser/AGY-MASTER/AGENTS.md
+60K	/home/azureuser/AGY-MASTER/DRAFTS
+80M	/home/azureuser/AGY-MASTER/INCIDENTS
+16K	/home/azureuser/AGY-MASTER/PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+128K	/home/azureuser/AGY-MASTER/POLICIES
+4.0K	/home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md
+68M	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES
+3.7M	/home/azureuser/AGY-MASTER/RECOVERED_LOGS
+156K	/home/azureuser/AGY-MASTER/REPORTS
+16K	/home/azureuser/AGY-MASTER/TASKS
+12K	/home/azureuser/AGY-MASTER/USER_PERSONAL_AGENT_CONTEXT.md
+

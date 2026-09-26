@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+<truncated 143 lines>
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4777:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4799:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4817:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4836:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4858:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4880:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4916:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4936:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4956:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4975:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:4997:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5021:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5055:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5075:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5095:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5116:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5151:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5169:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5187:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5203:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5222:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5240:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5273:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5283:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5305:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5330:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5349:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5372:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5408:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5429:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5452:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5475:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5494:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5528:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5547:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5570:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5666:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5686:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log:5704:[metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+

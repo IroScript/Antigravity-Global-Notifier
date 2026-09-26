@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+azureus+  896336 11.2  0.9 2015112 161352 pts/14 Ssl+ 19:38   0:47 rclone copy /home/azureuser/GCP_FULL_BACKUP/parts/ personaldrive:All_VM_BackUps/GCP_VM_BackUP/full_filesystem/ --transfers 2 --stats 10s -v
+azureus+  898222  0.5  0.3 1802300 54944 pts/12  Ssl+ 19:44   0:00 rclone ls personaldrive:All_VM_BackUps/GCP_VM_BackUP/full_filesystem/
+

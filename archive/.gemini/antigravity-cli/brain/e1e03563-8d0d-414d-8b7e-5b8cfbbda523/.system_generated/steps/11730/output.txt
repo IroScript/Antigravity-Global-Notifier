@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 12:31:29,285 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 12:31:37,808 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-09-26 12:31:40,135 [INFO] [Worker-worker_4] Applying escalating jitter delay (+0.5s/process, action #1): 3.53s [Range: 2.0s - 6.0s]...
+INFO:     127.0.0.1:44296 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 12:31:46,432 [INFO] [Worker-worker_4] Clicked dialog element: text=Got it
+2026-09-26 12:31:49,543 [INFO] [Worker-worker_4] Inserting 722 chars into ChatGPT editor...
+2026-09-26 12:31:53,150 [INFO] [Worker-worker_4] Clicked Send button.
+2026-09-26 12:31:53,150 [INFO] [Worker-worker_4] Waiting for streaming response (max 90s)...
+

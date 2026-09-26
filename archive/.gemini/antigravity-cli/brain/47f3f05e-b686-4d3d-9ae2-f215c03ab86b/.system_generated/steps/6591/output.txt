@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Columns: ['id', 'uuid', 'idea_id', 'generation_job_id', 'title', 'file_path', 'file_name', 'duration_seconds', 'width', 'height', 'fps', 'file_size_bytes', 'format', 'codec', 'resolution', 'thumbnail_path', 'subtitle_path', 'audio_path', 'quality_score', 'status', 'created_at']
+(3, 'e54ff68f-75d8-41c4-987d-e0cd802003d5', 2, None, 'The Paddy Ocean Vacuum', 'C:\\Users\\Irak\\Desktop\\Youtube Pipeline\\video\\1Video10Sec\\Generated_The_Paddy_Ocean_Vacuum_10Sec.mp4', 'Generated_The_Paddy_Ocean_Vacuum_10Sec.mp4', 8.0, None, None, None, 10689011, None, None, '1080x1920', None, None, None, None, 'completed', '2026-08-18 09:00:57.354079')
+(4, '9cfe613a-f446-4ab9-8155-9c7cc5da603d', 1, None, 'Rice Titan Harvester', 'C:\\\\Users\\\\Irak\\\\Desktop\\\\Youtube Pipeline\\\\PromptDatabase\\\\output_packaged\\\\1.1.Level_10_Rice_Titan_Harvester\\\\1.1.Level_10_Rice_Titan_Harvester.mp4', '1.1.Level_10_Rice_Titan_Harvester.mp4', 8.0, None, None, None, 10485760, None, None, '1080x1920', None, None, None, None, 'completed', '2026-09-13T10:10:28.430682+00:00')
+(5, 'ce300cf4-f31e-43c1-93e8-62b2e0b0d1a8', 3, None, 'Rice-Field Spider Colossus', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/video/1Video10Sec/Generated_Rice_Field_Spider_Colossus_10Sec.mp4', 'Generated_Rice_Field_Spider_Colossus_10Sec.mp4', 8.0, None, None, None, 7300738, None, None, '1080x1920', None, None, None, None, 'completed', '2026-09-14 08:48:28.959275')
+(6, '2b0ace4e-c048-4653-9c79-9dfc3a8419c4', 4, None, 'The Monsoon Harvesting Ark', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.4.Level_10_The_Monsoon_Harvesting_Ark/1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4', '1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4', 8.0, None, None, None, 12232984, None, None, '720x1280', None, None, None, None, 'completed', '2026-09-17 08:12:32.831560')
+(7, '435b3836-69eb-4c5d-a153-43e39ea68ccb', 5, None, 'Paddy Ring Megaharvester', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.5.Level_10_Paddy_Ring_Megaharvester/1.5.Level_10_Paddy_Ring_Megaharvester.mp4', '1.5.Level_10_Paddy_Ring_Megaharvester.mp4', 8.0, None, None, None, 6485905, None, None, '720x1280', None, None, None, None, 'completed', '2026-09-18T10:31:07.816190+00:00')
+--- Status counts ---
+[('completed', 325)]
+

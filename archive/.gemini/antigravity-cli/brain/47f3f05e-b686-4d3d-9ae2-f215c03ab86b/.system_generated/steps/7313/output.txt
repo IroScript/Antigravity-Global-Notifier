@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+Background saving started
+Error: Protocol error, got "H" as reply type byte
+

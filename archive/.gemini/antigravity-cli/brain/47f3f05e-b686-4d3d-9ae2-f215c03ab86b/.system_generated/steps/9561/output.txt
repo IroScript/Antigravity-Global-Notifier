@@ -1,0 +1,83 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+<5>NOTICE: systemd/user/sockets.target.wants/dirmngr.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: xdg/systemd/user: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/4b718d9b.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/chronyd.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sshd.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/redis.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/dbus-org.freedesktop.resolve1.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/06dc52d5.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/d6325660.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/48bec511.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/90c5a3c8.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/a94d09e5.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/f5164a9c.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/Baltimore_CyberTrust_Root.pem: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/406c9bb1.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/TeliaSonera_Root_CA_v1.pem: Can't follow symlink without -L/--copy-links
+<5>NOTICE: ssl/certs/dc4d6a89.0: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/network-online.target.wants/systemd-networkd-wait-online.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-init-main.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-init.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-init-local.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-final.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-config.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-init-hotplugd.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/cloud-init.target.wants/cloud-init-network.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/exim4.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/chrony.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/ssh.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/redis-server.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/postgresql.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/walinuxagent.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/mariadb.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/live-monitor-tunnel.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/docker.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/cron.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/grub-common.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/systemd-networkd.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/e2scrub_reap.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/containerd.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/unattended-upgrades.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/live-resource-monitor.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/multi-user.target.wants/remote-fs.target: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/ssh.service.wants/sshd-keygen.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sockets.target.wants/systemd-networkd.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sockets.target.wants/docker.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/gpg-agent-extra.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/hibernate.target.wants/grub-common.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/hybrid-sleep.target.wants/grub-common.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/gpg-agent-ssh.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/ssh-agent.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/keyboxd.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/gpg-agent-browser.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sockets.target.wants/uuidd.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/getty.target.wants/getty@tty1.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/user/sockets.target.wants/gpg-agent.socket: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sshd.service.wants/sshd-keygen.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/ssh.socket.wants/sshd-keygen.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sshd@.service.wants/sshd-keygen.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/suspend-then-hibernate.target.wants/grub-common.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/suspend.target.wants/grub-common.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sysinit.target.wants/apparmor.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sysinit.target.wants/systemd-resolved.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sysinit.target.wants/systemd-network-generator.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sysinit.target.wants/systemd-pstore.service: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/sysstat.service.wants/sysstat-rotate.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/logrotate.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/e2scrub_all.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/apt-daily.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/man-db.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/exim4-base.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/fstrim.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/dpkg-db-backup.timer: Can't follow symlink without -L/--copy-links
+<5>NOTICE: systemd/system/timers.target.wants/apt-daily-upgrade.timer: Can't follow symlink without -L/--copy-links
+Total objects: 857 (857)
+Total size: 2.756 MiB (2890114 Byte)
+Failed to size with 7 errors: last error was: failed to open directory "ssl/private": open /etc/ssl/private: permission denied
+Total objects: 634 (634)
+Total size: 78.765 MiB (82591153 Byte)
+

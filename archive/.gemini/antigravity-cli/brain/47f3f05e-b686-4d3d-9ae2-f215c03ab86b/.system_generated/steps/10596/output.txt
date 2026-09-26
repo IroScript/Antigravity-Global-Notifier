@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 501 
+date: Sat, 26 Sep 2026 13:38:28 GMT
+content-type: text/html;charset=utf-8
+cf-ray: a412ab4e3e91492d-IAD
+cf-cache-status: DYNAMIC
+access-control-allow-origin: *
+cache-control: no-cache, no-store, must-revalidate
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+

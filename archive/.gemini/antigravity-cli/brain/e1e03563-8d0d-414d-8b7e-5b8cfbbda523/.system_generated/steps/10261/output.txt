@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Idx: 3696 type: CHECKPOINT
+Idx: 3727 type: GENERIC
+

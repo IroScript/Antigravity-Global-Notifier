@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0003040284.txt
+/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0003040278.txt
+

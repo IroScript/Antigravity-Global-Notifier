@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+286-```
+287-/home/azureuser/AGY-MASTER/
+288-├── AGENTS.md                  (This canonical global specification)
+289-├── PROJECT_REGISTRY.md        (Central catalog of all agents and boundaries)
+290-├── POLICIES/
+291:│   └── safety_levels.json     (Machine-enforced action safety policies)
+292-├── TASKS/
+293-│   ├── queue/                 (Pending task JSONs)
+294-│   ├── active/                (Currently running tasks)
+295-│   └── completed/             (Completed tasks with evidence)
+296-├── INCIDENTS/
+
+Terminal ID: 36f1cda0-9f03-4a43-8a9b-415d15df1feb

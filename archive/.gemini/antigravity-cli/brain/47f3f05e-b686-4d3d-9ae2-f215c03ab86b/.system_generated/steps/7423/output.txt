@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+total 232
+drwxr-xr-x 24 azureuser azureuser  4096 Sep 25 15:58 .
+drwxr-xr-x  6 root      root       4096 Sep 25 12:40 ..
+drwx------  3 azureuser azureuser  4096 Sep 25 07:58 .cache
+drwx------  5 azureuser azureuser  4096 Sep 25 13:42 .config
+drwxr-xr-x  4 azureuser azureuser  4096 Sep 25 07:55 .gemini
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 .gradle
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 08:34 .local
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:05 .npm
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:06 .npm-global
+drwx------  5 azureuser azureuser  4096 Sep 25 07:56 .openclaw
+drwx------  2 azureuser azureuser  4096 Sep 25 13:33 .ssh
+-rw-r--r--  1 azureuser azureuser     0 Sep 25 08:00 .sudo_as_admin_successful
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 25 14:06 .webterminal
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 11:23 3D-Game-Design-Studio
+drwxrwxr-x  8 azureuser azureuser  4096 Sep 25 12:17 AGY-MASTER
+-rw-r--r--  1 azureuser azureuser 32690 Sep 25 12:17 ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 Ask-And-Research
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 15:52 DATABASE_BACKUPS_VAULT
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 11:23 Frappe-erp-Alco
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 12:24 GEMINI.md
+-rw-rw-r--  1 azureuser azureuser 18284 Sep 25 07:57 MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+-rw-rw-r--  1 azureuser azureuser 13953 Sep 25 12:17 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+drwxr-xr-x 31 azureuser azureuser 12288 Sep 25 12:13 RESTORED_PROJECTS
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 25 11:09 RESTORED_VIDEOS
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 11:23 Rust_Task_With_Time_Keeping_And_Live_Note
+-rw-rw-r--  1 azureuser azureuser  8350 Sep 25 12:17 USER_PERSONAL_AGENT_CONTEXT.md
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 15:53 __pycache__
+-rw-rw-r--  1 azureuser azureuser    54 Sep 25 12:30 csv_downloads_url.txt
+-rw-r--r--  1 azureuser azureuser  1979 Sep 25 15:53 gcs_vault_uploader.py
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 11:23 kids_tube_with_folder_seection
+-rw-rw-r--  1 azureuser azureuser 11726 Sep 25 15:58 last_user_prompt.txt
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 11:23 telegram-bot
+-rw-r--r--  1 azureuser azureuser  4910 Sep 25 15:30 test_gcs_iam_boundary.py
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 15:52 tmp
+

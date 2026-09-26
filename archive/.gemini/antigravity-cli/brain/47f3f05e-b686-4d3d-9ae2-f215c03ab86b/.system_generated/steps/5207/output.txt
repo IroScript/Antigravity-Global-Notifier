@@ -1,0 +1,70 @@
+
+The command exited with code 0.
+Output:
+==> /tmp/step_87.txt <==
+╭──────────────────────────────────────╮
+│ 📜 *DIGITAL HISTORY & OPENRECALL অডিট* │
+│ [ ✦ ACTIVE ] [ 🛡️ VERIFIED ] [ 💾 SYNC ] │
+╰──────────────────────────────────────╯
+
+ইরাক ভাইয়া, আপনার নির্দেশ অনুযায়ী আমি OpenRecall-এর স্ক্রিনশট ডিরেক্টরি এবং ডাটাবেস ফাইলটি গভীরভাবে পরীক্ষা ও যাচাই করেছি। নিচে প্রতিটি প্রশ্নের সম্পূর্ণ সত্য, নিখুঁত ও বাস্তব ডাটা উপস্থাপন করছি:
+
+«━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━»
+
+### ◈ ১. OpenRecall-এর স্ক্রিনশটগুলো কি পাওয়া গেছে?
+
+*হ্যাঁ, OpenRecall-এর স্ক্রিনশটগুলো সফলভাবে পাওয়া গেছে।*
+
+• *স্ক্রিনশট ফোল্ডার পাথ:*  
+[`/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/data/openrecall/screenshots/`](file:///home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL%20AI%20AGENT/data/openrecall/screenshots/)
+• *মোট স্ক্রিনশট সংখ্যা:* *৬,১৮৯টি* (`.webp` ফরম্যাট)।  
+• *অতিরিক্ত ব্যাকআপ আর্কাইভ:*  
+[`/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/data/openrecall/recent_screenshots.tar.gz`](file:///home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL%20AI%20AGENT/data/openrecall/recent_screenshots.tar.gz) (৭৮ মেগাবাইট)।
+
+«━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━»
+
+==> /tmp/step_99.txt <==
+╭──────────────────────────────────────╮
+│ 🧠 *HUMAN-LIKE VISION & TIMELINE অডিট* │
+│ [ ⚡ REWIND / FORWARD ] [ 👁️ HUMAN VISION ] │
+╰──────────────────────────────────────╯
+
+ইরাক ভাইয়া, আপনার নির্দেশ অনুযায়ী আমি OpenRecall-এর টাইমলাইনে ১৫ সেপ্টেম্বর ২০২৬-এর ঠিক সেই মুহূর্তটির চারপাশে **রিওয়াইন্ড (Rewind ~২৬ সেকেন্ড)** এবং **ফরোয়ার্ড (Forward ~২৭ ও ৫৩ সেকেন্ড)** করে প্রতিটি ফ্রেম একজন মানুষের মতো নিখুঁত দৃষ্টি দিয়ে বিশ্লেষণ (Human-like Vision Analysis) করেছি।
+
+নিচে ক্রমানুসারে দৃশ্যপট ও চ্যাটের সম্পূর্ণ বিবরণ তুলে ধরছি:
+
+«━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━»
+
+### ◈ ১. রিওয়াইন্ড ফ্রেম (Rewind ~২৬ সেকেন্ড পূর্বে)
+• *টাইমস্ট্যাম্প:* ১৫ সেপ্টেম্বর, ২০২৬ — *বিকাল ৩:০৫:১৩ (15:05:13)*  
+• *ফাইল পাথ:*  
+[`/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/data/openrecall/screenshots/1789463113.webp`](file:///home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL%20AI%20AGENT/data/openrecall/screenshots/1789463113.webp)
+
+┌────────────────────────────────────────────────────────┐
+│ 👁️ *ভিশন পর্যবেক্ষণ (Rewind State)*                    │
+└────────────────────────────────────────────────────────┘
+• *আপনি তখন কোথায় ছিলেন:* আপনি ক্রোম ব্রাউজারের `Irak, Projects - Youtube` শীর্ষক ChatGPT ট্যাবে ছিলেন।  
+
+==> /tmp/ref_paste.txt <==
+ইরাক ভাইয়া, দুঃখিত! গত উত্তরে শুধু সামারি দেওয়া হয়েছিল। ডাটাবেজ থেকে তৈরি
+সম্পূর্ণ ইমোজি ফরম্যাটের পূর্ণাঙ্গ লাইভ রিসোর্স অডিট নিচে সরাসরি উপস্থাপন করা
+হলো:
+
+⏱️ *25-HOUR AUDIT & EFFICIENCY (4:44 PM UPDATE)*
+*(অপচয় বনাম লাভ বিশ্লেষণ)*
+«────────────────────────────»
+• *আপটাইম:* 40.1 ঘণ্টা | *সার্বিক গড় CPU:* 6.7%
+• *CPU লোড বিভাজন (25 ঘণ্টার মোট):*
+  - লো (<20%):   *68.5% সময়* (অলস/অপচয়)
+  - মিড (20-39%): *24.9% সময়*
+  - পিক (40%+):   *6.7% সময়* (পিক আওয়ার)
+• *RAM বিভাজন:*
+  - গড় RAM: 6.2 GB (40%)
+  - পিক RAM: 8.04 GB (51%)
+  - অব্যবহৃত RAM: *7.6 GB+* (স্থায়ী অপচয়)
+
+💡 *ডাউনসাইজিং চূড়ান্ত সিদ্ধান্ত:*
+• বর্তমান 4 vCPU / 16 GB-তে প্রায়
+  *60% রিসোর্স স্থায়ী অপচয়* হচ্ছে।
+
+Terminal ID: 68130e89-b3b9-4633-9d44-585a6738c6f0

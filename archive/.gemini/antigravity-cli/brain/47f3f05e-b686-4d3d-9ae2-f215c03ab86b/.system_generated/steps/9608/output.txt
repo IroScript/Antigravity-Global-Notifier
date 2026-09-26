@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Sep 26 08:41:01 FatehAli systemd[1137]: Started gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli).
+Sep 26 08:41:01 FatehAli python3[1110365]: [2026-09-26 08:41:01 UTC] Google Drive Live Sync Engine started.
+Sep 26 08:41:01 FatehAli python3[1110365]: [2026-09-26 08:41:01 UTC] Entering continuous live sync loop (Interval: 60 seconds).
+Sep 26 08:41:01 FatehAli python3[1110365]: [2026-09-26 08:41:01 UTC] --- Starting Sync Cycle: 8 targets enabled ---
+Sep 26 08:46:01 FatehAli python3[1110365]: [2026-09-26 08:46:01 UTC] [!] Target 'AGY-MASTER' sync timed out after 300s
+Sep 26 08:46:54 FatehAli python3[1110365]: [2026-09-26 08:46:54 UTC] [+] Target 'Frappe-erp-Alco' synced successfully to personaldrive:Azure_VM_Live_Backup_Fateh_Ali/Frappe-erp-Alco in 52.61s
+Sep 26 08:47:29 FatehAli python3[1110365]: [2026-09-26 08:47:29 UTC] [+] Target 'Rust-Tasks' synced successfully to personaldrive:Azure_VM_Live_Backup_Fateh_Ali/Rust_Task_With_Time_Keeping_And_Live_Note in 35.16s
+Sep 26 08:49:44 FatehAli python3[1110365]: [2026-09-26 08:49:44 UTC] Termination signal received. Shutting down gracefully...
+Sep 26 08:49:44 FatehAli systemd[1137]: Stopping gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli)...
+Sep 26 08:49:44 FatehAli python3[1110365]: [2026-09-26 08:49:44 UTC] [!] Target 'Youtube-Exports' sync returned error (code -15): <5>NOTICE: output_packaged: Can't follow symlink without -L/--copy-links
+Sep 26 08:49:44 FatehAli python3[1110365]: NOTICE: azureuser_root: Can't follow symlink without -L/--copy-links
+Sep 26 08:49:44 FatehAli python3[1110365]: [2026-09-26 08:49:44 UTC] --- Sync Cycle Completed ---
+Sep 26 08:49:44 FatehAli python3[1110365]: [2026-09-26 08:49:44 UTC] Live Sync Engine stopped cleanly.
+Sep 26 08:49:44 FatehAli systemd[1137]: Stopped gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli).
+Sep 26 08:49:44 FatehAli systemd[1137]: gdrive-live-sync.service: Consumed 3.029s CPU time, 198.8M memory peak.
+Sep 26 08:49:44 FatehAli systemd[1137]: Started gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli).
+Sep 26 08:49:44 FatehAli python3[1112597]: [2026-09-26 08:49:44 UTC] Google Drive Live Sync Engine started.
+Sep 26 08:49:44 FatehAli python3[1112597]: [2026-09-26 08:49:44 UTC] Entering continuous live sync loop (Interval: 60 seconds).
+Sep 26 08:49:44 FatehAli python3[1112597]: [2026-09-26 08:49:44 UTC] --- Starting Sync Cycle: 7 targets enabled ---
+

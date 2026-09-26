@@ -1,0 +1,35 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -87,8 +87,8 @@
+     return False
+ 
+ def inspect_command(command_str):
+-    # Rule 5: find ... -delete or find ... -exec rm (including /bin/rm)
+-    if re.search(r'find\b.*(?:\s+-(?:delete|exec\s+(?:/[a-zA-Z0-9_\-\.]+/)?rm\b))', command_str):
++    # Rule 5: find ... -delete or find ... -exec/execdir/ok rm (including /bin/rm)
++    if re.search(r'find\b.*(?:\s+-(?:delete|(?:exec|execdir|ok|okdir)\s+(?:/[a-zA-Z0-9_\-\.]+/)?rm\b))', command_str):
+         return True, "Indirect deletion via 'find -delete / -exec rm' is prohibited (Rule 4, 5)", "RULE_4_5_FIND_DELETE"
+ 
+     # Command substitution attempts: `...rm...` or $(...rm...)
+@@ -95,5 +95,9 @@
+         return True, "Command substitution containing deletion command is prohibited (Rule 1, 2)", "RULE_1_2_COMMAND_SUBST"
+ 
++    # Wrapper execution attempts: eval 'rm...', sh -c 'rm...', bash -c 'rm...'
++    if re.search(r'(?:eval|sh\s+-c|bash\s+-c)\s+.*?\b(?:rm|unlink|rmdir)\b', command_str):
++        return True, "Indirect command wrapper invocation of deletion command is prohibited (Rule 1, 2)", "RULE_1_2_WRAPPER_DELETE"
++
+     # Rule 10: git clean
+     if re.search(r'git\s+clean\b', command_str):
+         return True, "Destructive 'git clean' operation is prohibited (Rule 10)", "RULE_10_GIT_CLEAN"
+@@ -119,7 +119,7 @@
+                 return True, f"Shell redirection truncation into protected path '{clean_t}' is prohibited (Rule 8, 35, 38)", "RULE_8_38_TRUNCATION"
+ 
+     # Rule 16: chattr -i
+-    if re.search(r'chattr\s+-[a-zA-Z]*i', command_str):
++    if re.search(r'chattr\b.*(?:\s+-[a-zA-Z]*i\b)', command_str):
+         return True, "Stripping Linux immutable attribute (+i -> -i) is strictly prohibited (Rule 16, 38)", "RULE_16_CHATTR_STRIP"
+ 
+     # Rule 3: Python destructive operations in one-liners or invoked scripts
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

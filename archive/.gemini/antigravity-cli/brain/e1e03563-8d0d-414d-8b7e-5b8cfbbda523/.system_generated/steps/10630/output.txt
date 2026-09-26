@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+  920647  0.0  0.2 405404 45160 pts/12   Ssl+ 21:00   0:00 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+azureus+  928981  0.0  0.0   7484  3324 pts/14   Ss+  21:30   0:00 bash -c ps aux | grep 920647
+azureus+  928983  0.0  0.0   7060  2188 pts/14   S+   21:30   0:00 grep 920647
+

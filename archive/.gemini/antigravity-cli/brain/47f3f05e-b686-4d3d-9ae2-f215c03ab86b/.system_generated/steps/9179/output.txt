@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+Port 41851:
+# HELP cloudflared_tunnel_user_hostnames_counts Which user hostnames cloudflared is serving
+# TYPE cloudflared_tunnel_user_hostnames_counts counter
+cloudflared_tunnel_user_hostnames_counts{userHostname="https://locator-newcastle-reflections-washington.trycloudflare.com"} 1
+Port 33545:
+# HELP cloudflared_tunnel_user_hostnames_counts Which user hostnames cloudflared is serving
+# TYPE cloudflared_tunnel_user_hostnames_counts counter
+cloudflared_tunnel_user_hostnames_counts{userHostname="https://rendering-precious-layer-deborah.trycloudflare.com"} 1
+Port 38573:
+# HELP cloudflared_tunnel_user_hostnames_counts Which user hostnames cloudflared is serving
+# TYPE cloudflared_tunnel_user_hostnames_counts counter
+cloudflared_tunnel_user_hostnames_counts{userHostname="https://mountains-prix-departmental-heavy.trycloudflare.com"} 1
+Port 37249:
+# HELP cloudflared_tunnel_user_hostnames_counts Which user hostnames cloudflared is serving
+# TYPE cloudflared_tunnel_user_hostnames_counts counter
+cloudflared_tunnel_user_hostnames_counts{userHostname="https://memories-birth-outer-speeches.trycloudflare.com"} 1
+

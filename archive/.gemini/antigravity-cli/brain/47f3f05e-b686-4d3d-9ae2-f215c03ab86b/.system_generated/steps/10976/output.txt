@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+192:        elif path == "/chart.min.js":
+193:            self.serve_file(os.path.join(STATIC_DIR, "chart.min.js"), "application/javascript")
+

@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+43 ইরাক ভাইয়া, আপনার জন্য একটি নিরাপদ Ed25519
+32 SSH Public Key তৈরি করা হয়েছে! 🎯
+32 «──────────────────────────────»
+28 ★ *১. আপনার SSH Public Key:*
+105 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC9Uat/QtctW5cQ0kicWTT5MCfuCR32accMeR7JA0082 azureuser-to-google-vm`
+32 * 📋 এক ক্লিকে দেখতে বা কপি করতে:
+42   [paste.rs/NtxhG](https://paste.rs/NtxhG)
+32 «──────────────────────────────»
+45 ★ *২. যেখানে পেস্ট করবেন (সবচেয়ে সহজ উপায়):*
+46 * Google VM ব্রাউজার টার্মিনালে কোনো কপি-পেস্ট
+35   ছাড়াই শুধু এই এক লাইন চালিয়ে দিন:
+60   `curl -s https://paste.rs/NtxhG >> ~/.ssh/authorized_keys`
+47 * এন্টার চাপলেই কী স্বয়ংক্রিয়ভাবে সেভ হয়ে যাবে!
+32 «──────────────────────────────»
+41 ★ *৩. বিকল্প উপায় (Google Console থেকে):*
+39 * Compute Engine -> VM Instances-এ যান।
+38 * VM নামের ওপর ক্লিক করে Edit-এ চাপুন।
+37 * নিচে SSH Keys সেকশনে "Add Item" করে
+34   এই কোডটি পেস্ট করে Save করে দিন।
+

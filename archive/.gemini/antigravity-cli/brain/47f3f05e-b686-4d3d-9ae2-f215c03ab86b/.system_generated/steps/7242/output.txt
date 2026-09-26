@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+CREATE ROLE payload_user;
+CREATE ROLE postgres;
+CREATE DATABASE template1 WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';
+CREATE DATABASE payload_articles WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';
+CREATE TABLE public._articles_v (
+CREATE TABLE public._articles_v_rels (
+CREATE TABLE public.articles (
+CREATE TABLE public.articles_rels (
+CREATE TABLE public.categories (
+CREATE TABLE public.media (
+CREATE TABLE public.payload_jobs (
+CREATE TABLE public.payload_jobs_log (
+CREATE TABLE public.payload_kv (
+CREATE TABLE public.payload_locked_documents (
+CREATE TABLE public.payload_locked_documents_rels (
+CREATE TABLE public.payload_migrations (
+CREATE TABLE public.payload_preferences (
+CREATE TABLE public.payload_preferences_rels (
+CREATE TABLE public.tags (
+CREATE TABLE public.users (
+CREATE TABLE public.users_sessions (
+CREATE DATABASE postgres WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';
+

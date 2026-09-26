@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+dumpe2fs 1.47.2 (1-Jan-2025)
+From live disk inode tables: 111
+TOTAL UNIQUE RECOVERABLE VIDEOS COMBINED: 217 out of 325!
+

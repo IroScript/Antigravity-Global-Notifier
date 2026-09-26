@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:39888 - "POST /generate HTTP/1.1" 429 Too Many Requests
+

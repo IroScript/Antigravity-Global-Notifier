@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+e070574f7e5dd565d383dfc398b9db5ebdd56552d77c140cecee0c7f464c0899  /home/azureuser/FULL_HOME_BACKUP/azure_home_FULL_filesystem_20260925.tar.gz
+09d7e040d52401b41d9e2701497c369f26a43727eda8f22a32c7e67591c0408e  /home/azureuser/FULL_HOME_BACKUP/archive_file_list.txt
+

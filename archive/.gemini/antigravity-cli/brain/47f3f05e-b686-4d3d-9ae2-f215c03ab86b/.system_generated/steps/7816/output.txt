@@ -1,0 +1,10 @@
+You have 1 background task(s) currently running:
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7804",
+  "toolName":  "run_command",
+  "toolSummary":  "Check GCP folder in Google Drive",
+  "description":  "rclone ls personaldrive:All_VM_BackUps/GCP_VM_BackUP/",
+  "startTime":  "2026-09-25T18:12:05.788487651Z",
+  "stepIndex":  7804,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7804.log"
+}

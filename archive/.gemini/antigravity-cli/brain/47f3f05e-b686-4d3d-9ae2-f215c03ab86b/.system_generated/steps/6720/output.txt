@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.cache/google-chrome
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/google-turn-ordering-CAKKJfPd.mjs
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/google-api-base-url-UBNiBOzj.mjs
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/config-doctor/googlechat.js
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/control-ui/cloud-provider-icons/gcp.svg
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/extensions/google
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/extensions/google/google-genai-runtime.js
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/extensions/google/google-api-client-header.js
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/google-genai-runtime-I16xkIJE.mjs
+/home/azureuser/.npm-global/lib/node_modules/openclaw/dist/google-api-client-header-BGxuny7v.mjs
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/providers/google.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/plugins/reference/google.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/plugins/reference/google-meet.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/plugins/reference/googlechat.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/plugins/google-meet.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/plugins/google-meet
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/install/gcp.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/docs/channels/googlechat.md
+/home/azureuser/.npm-global/lib/node_modules/openclaw/node_modules/protobufjs/google
+/home/azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@google
+

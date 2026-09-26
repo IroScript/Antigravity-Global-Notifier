@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 20
+drwx------  5 azureuser azureuser 4096 Sep 25 07:56 .
+drwxr-xr-x 12 azureuser azureuser 4096 Sep 25 07:59 ..
+drwx------  3 azureuser azureuser 4096 Sep 25 07:56 agents
+drwx------  2 azureuser azureuser 4096 Sep 25 07:53 state
+drwx------  3 azureuser azureuser 4096 Sep 25 07:53 workspace
+

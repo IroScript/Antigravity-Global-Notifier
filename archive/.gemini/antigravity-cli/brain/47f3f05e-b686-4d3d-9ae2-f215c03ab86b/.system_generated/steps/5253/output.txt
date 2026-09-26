@@ -1,0 +1,6 @@
+
+The command exited with code 2.
+Output:
+python3: can't open file '/home/azureuser/.webterminal/boundary_guard.py': [Errno 2] No such file or directory
+
+Terminal ID: 65f1ad20-3d71-4143-8117-350c40df37be

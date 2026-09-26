@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+/usr/sbin/ext4magic : Error: Missing device name and options.
+
+ext4magic -M [-j <journal_file>] [-d <target_dir>] <filesystem> 
+ext4magic -m [-j <journal_file>] [-d <target_dir>] <filesystem> 
+ext4magic [-S|-J|-H|-V|-T] [-x] [-j <journal_file>] [-B n|-I n|-f <file_name>|-i <input_list>] [-t n|[[-a n][-b n]]] [-d <target_dir>] [-R|-r|-L|-l] [-Q] <filesystem> 
+

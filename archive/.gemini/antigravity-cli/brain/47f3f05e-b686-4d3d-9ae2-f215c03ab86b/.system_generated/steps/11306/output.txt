@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+/var/log/cloud-init.log:160:2026-09-22 09:07:37,076 - DataSourceAzure.py[DEBUG]: Username retrieved from IMDS: azureuser
+/var/log/cloud-init.log:714:2026-09-22 09:07:39,723 - __init__.py[DEBUG]: Adding user azureuser
+/var/log/cloud-init.log:715:2026-09-22 09:07:39,723 - subp.py[DEBUG]: Running hidden command to protect sensitive input/output logstring: ['useradd', 'azureuser', '--comment', 'Debian', '--groups', 'adm,audio,cdrom,dialout,dip,floppy,plugdev,sudo,video', '--shell', '/bin/bash', '-m']
+/var/log/cloud-init.log:716:2026-09-22 09:07:39,892 - subp.py[DEBUG]: Running command ['passwd', '-l', 'azureuser'] with allowed return codes [0] (shell=False, capture=True)
+/var/log/cloud-init.log:744:2026-09-22 09:07:40,139 - util.py[DEBUG]: Changing the ownership of /home/azureuser/.ssh to 1000:1000
+/var/log/cloud-init.log:745:2026-09-22 09:07:40,139 - util.py[DEBUG]: Writing to /home/azureuser/.ssh/authorized_keys - wb: [600] 0 bytes
+/var/log/cloud-init.log:746:2026-09-22 09:07:40,139 - util.py[DEBUG]: Changing the ownership of /home/azureuser/.ssh/authorized_keys to 1000:1000
+/var/log/cloud-init.log:747:2026-09-22 09:07:40,139 - util.py[DEBUG]: Reading from /home/azureuser/.ssh/authorized_keys (quiet=False)
+/var/log/cloud-init.log:748:2026-09-22 09:07:40,139 - util.py[DEBUG]: Read 0 bytes from /home/azureuser/.ssh/authorized_keys
+/var/log/cloud-init.log:749:2026-09-22 09:07:40,139 - util.py[DEBUG]: Writing to /home/azureuser/.ssh/authorized_keys - wb: [600] 572 bytes
+

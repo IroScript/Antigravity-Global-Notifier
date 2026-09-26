@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+CPU overall: 48.0
+Cores: [52.4, 46.8, 45.5, 47.4]
+RAM: {'used_gb': 9.51, 'total_gb': 15.62, 'percent': 71.3, 'avail_gb': 4.48}
+

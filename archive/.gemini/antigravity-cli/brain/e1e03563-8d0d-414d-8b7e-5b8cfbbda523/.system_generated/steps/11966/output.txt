@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 15:30:24,385 [INFO] [Worker-worker_4] Launching persistent context via official CloakBrowser engine...
+2026-09-26 15:30:24,492 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 15:30:24,498 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 15:30:24,503 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-26 15:30:28,448 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 15:30:28,474 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 15:30:28,617 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 15:30:38,399 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-09-26 15:30:42,817 [INFO] [Worker-worker_4] Applying escalating jitter delay (+0.5s/process, action #1): 5.29s [Range: 2.0s - 6.0s]...
+INFO:     127.0.0.1:35658 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 15:30:53,685 [INFO] [Worker-worker_4] Inserting 2852 chars into ChatGPT editor...
+2026-09-26 15:30:56,895 [INFO] [Worker-worker_4] Clicked Send button.
+2026-09-26 15:30:56,895 [INFO] [Worker-worker_4] Waiting for streaming response (max 90s)...
+

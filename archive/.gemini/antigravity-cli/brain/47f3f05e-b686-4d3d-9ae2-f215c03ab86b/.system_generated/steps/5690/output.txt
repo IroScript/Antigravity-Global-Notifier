@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+/recovered/ALL_DELETED/azureuser
+/recovered/ALL_DELETED/azureuser/.sudo_as_admin_successful
+/recovered/ALL_DELETED/azureuser/.gemini
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/updater
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/updater/update.lock
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/cli.log
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/bin
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/bin/agentapi
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/last_check.timestamp
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/builtin
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/builtin/keep.txt
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/crashes
+/recovered/ALL_DELETED/azureuser/.gemini/antigravity-cli/crashes/crash_673909_6d4876c0-ebc0-4376-a21e-8ff6d0c2e369.log
+/recovered/ALL_DELETED/azureuser/.gemini/config
+/recovered/ALL_DELETED/azureuser/.gemini/config/mcp_config.json
+/recovered/ALL_DELETED/azureuser/.gemini/config/.migrated
+/recovered/ALL_DELETED/azureuser/.config
+/recovered/ALL_DELETED/azureuser/.config/systemd
+/recovered/ALL_DELETED/azureuser/.config/systemd/user
+/recovered/ALL_DELETED/azureuser/.config/systemd/user/default.target.wants
+/recovered/ALL_DELETED/azureuser/.config/systemd/user/default.target.wants/agy-whatsapp.service
+/recovered/ALL_DELETED/azureuser/.local
+/recovered/ALL_DELETED/azureuser/.local/share
+/recovered/ALL_DELETED/azureuser/.local/share/applications
+/recovered/ALL_DELETED/azureuser/.local/share/applications/mimeapps.list
+/recovered/ALL_DELETED/azureuser/.npm
+/recovered/ALL_DELETED/azureuser/.npm/_update-notifier-last-checked
+/recovered/ALL_DELETED/azureuser/.openclaw
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache/GPUCache
+/recovered/ALL_DELETED/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H
+

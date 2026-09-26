@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Uploading: azure_home_backup/azure_home_projects_source_backup.tar.gz (144,043,545 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/azure_home_backup/azure_home_projects_source_backup.tar.gz/1790352233230438)
+

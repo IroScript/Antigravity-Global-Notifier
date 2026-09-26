@@ -1,0 +1,20 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-6861
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6861.log
+Log output:
+<truncated 9 lines>
+  3 md_kamruzzamanirak          md_kamruzzamanirak          4096 Aug 17 09:41 md_kamruzzamanirak
+drwx------  3 mdkamruzzamanirak           mdkamruzzamanirak           4096 Aug 17 09:41 mdkamruzzamanirak
+drwx------ 43 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 4096 Sep 25 13:33 mdkamruzzamanirak_gmail_com
+drwx------  3 termuxuser                  termuxuser                  4096 Sep 20 04:37 termuxuser
+=== CURRENT USER HOME ===
+total 24
+drwx------  3 azureuser-to-google-vm azureuser-to-google-vm 4096 Sep 25 13:33 .
+drwxr-xr-x 10 root                   root                   4096 Sep 25 13:33 ..
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm  220 May  9 11:07 .bash_logout
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm 3526 May  9 11:07 .bashrc
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm  807 May  9 11:07 .profile
+drwx------  2 azureuser-to-google-vm azureuser-to-google-vm 4096 Sep 25 13:35 .ssh
+=== DISK USAGE TOP 10 ===
+
+Last progress: 3s ago

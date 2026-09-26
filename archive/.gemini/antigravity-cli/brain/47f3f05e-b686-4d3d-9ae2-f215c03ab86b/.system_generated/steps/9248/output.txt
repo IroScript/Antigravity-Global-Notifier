@@ -1,0 +1,2 @@
+Created file file:///home/azureuser/AGY-MASTER/DRAFTS/01-sudoers-restricted.draft with requested content.
+If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.

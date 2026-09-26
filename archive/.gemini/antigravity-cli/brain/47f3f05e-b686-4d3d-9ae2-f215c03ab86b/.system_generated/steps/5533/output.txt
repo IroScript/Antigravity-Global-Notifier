@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 152927
+Inode: 13893633   Type: bad type    Mode:  0000   Flags: 0x0 
+Generation: 0    Version: 0x00000000
+User:     0   Group:     0   Size: 0
+File ACL: 0    Directory ACL: 0
+Links: 0   Blockcount: 0
+Fragment:  Address: 0    Number: 0    Size: 0
+ctime:          0 -- Thu Jan  1 00:00:00 1970
+atime:          0 -- Thu Jan  1 00:00:00 1970
+mtime:          0 -- Thu Jan  1 00:00:00 1970
+Size of extra inode fields: 0
+ext4magic : EXIT_SUCCESS
+

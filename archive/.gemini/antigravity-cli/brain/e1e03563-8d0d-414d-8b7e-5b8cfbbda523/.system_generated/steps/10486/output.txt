@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Viral YouTube Growth & SEO Strategist
+Generate viral, curiosity-driven YouTube Title (<80 chars + 1 emoji), 3-paragraph SEO description with timestamps and 5 hashtags, and 10-15 search tags in JSON.
+1. High-CTR title with emoji. 2. 3-paragraph description with timestamps. 3. 5 viral hashtags. 4. Strict JSON format.
+
+=== REAL DATA (already collected — do NOT invent numbers, use these) ===
+VIDEO SUBJECT : Rice Titan Harvester
+TOPIC/ELEMENT : Paddy Harvesting
+FORMAT        : 8-second vertical (9:16
+

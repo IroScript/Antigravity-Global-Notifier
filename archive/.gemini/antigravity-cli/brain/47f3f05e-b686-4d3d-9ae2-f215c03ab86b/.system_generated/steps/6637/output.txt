@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+48 ইরাক ভাইয়া, হ্যাঁ! `output_packaged`-এর প্রতিটি
+43 ভিডিওর সাথেই Prompt এবং SEO JSON ফাইল শতভাগ
+26 নিখুঁতভাবে বিদ্যমান আছে! 🎯
+32 «──────────────────────────────»
+42 ★ *১. অডিট ফলাফল (২১৭টি প্যাকেজ ফোল্ডার):*
+30 * মোট প্যাকেজ ফোল্ডার: *২১৭টি*
+36 * MP4 ভিডিও ফাইল: *২১৭ / ২১৭ (১০০%)*
+38 * Prompt JSON ফাইল: *২১৭ / ২১৭ (১০০%)*
+39 * SEO/Metadata JSON: *২১৭ / ২১৭ (১০০%)*
+45 * ভ্যালিডেশন চেক: *৮৬৮টি JSON ফাইলে ০ ত্রুটি*
+32 «──────────────────────────────»
+37 ★ *২. প্রতিটি ফোল্ডারের ফাইল তালিকা:*
+37 ১. `[নাম].mp4` — ফুল HD/8s ভিডিও ফাইল
+45 ২. `prompt_info.json` — ১০-লেভেল প্রম্পট ডাটা
+42 ৩. `youtube_metadata.json` — সম্পূর্ণ এসইও
+48    (Title, Description, Tags, Hashtags, Comment)
+44 ৪. অতিরিক্ত সুবিধার জন্য একই ডাটার নেমড কপিও
+43    রয়েছে (`*.Level_10_Prompt.json` ইত্যাদি)
+32 «──────────────────────────────»
+29 ★ *৩. প্যাকেজ ডিরেক্টরি পাথ:*
+264 [`file:///home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/`](file:///home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube%20Automation/PromptDatabase/output_packaged/)
+

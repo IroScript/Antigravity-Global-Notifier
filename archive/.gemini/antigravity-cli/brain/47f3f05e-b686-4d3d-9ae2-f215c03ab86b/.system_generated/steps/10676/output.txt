@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+● azure-file-explorer-tunnel.service - Cloudflare Tunnel for Windows 11 Azure File Explorer
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer-tunnel.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 13:38:14 UTC; 9min ago
+ Invocation: 2c9269a2c3714c649a92567b4cd1f999
+   Main PID: 1187034 (bash)
+      Tasks: 11 (limit: 19137)
+     Memory: 20.2M (peak: 23.2M)
+        CPU: 426ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer-tunnel.service
+             ├─1187034 /bin/bash /home/azureuser/IrakIroan/azure_file_explorer/…
+             ├─1187035 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+             └─1187036 /bin/bash /home/azureuser/IrakIroan/azure_file_explorer/…
+
+Sep 26 13:38:14 FatehAli systemd[1137]: Started azure-file-explorer-tunnel.…rer.
+Sep 26 13:38:17 FatehAli bash[1187036]: LIVE_WINDOWS_11_EXPLORER_URL: https….com
+Hint: Some lines were ellipsized, use -l to show in full.
+

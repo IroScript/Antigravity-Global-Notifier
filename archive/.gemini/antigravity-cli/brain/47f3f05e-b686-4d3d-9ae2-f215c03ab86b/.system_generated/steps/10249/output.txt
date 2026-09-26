@@ -1,0 +1,35 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 14, in <module>
+    asyncio.run(test())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "<string>", line 8, in test
+    async with websockets.connect(uri, subprotocols=['tty']) as ws:
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/azureuser/.local/lib/python3.13/site-packages/websockets/asyncio/client.py", line 576, in __aenter__
+    self.connection = await self
+                      ^^^^^^^^^^
+  File "/home/azureuser/.local/lib/python3.13/site-packages/websockets/asyncio/client.py", line 526, in connect
+    await connection.handshake(
+    ...<2 lines>...
+    )
+  File "/home/azureuser/.local/lib/python3.13/site-packages/websockets/asyncio/client.py", line 113, in handshake
+    raise self.protocol.handshake_exc
+  File "/home/azureuser/.local/lib/python3.13/site-packages/websockets/client.py", line 334, in parse
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/azureuser/.local/lib/python3.13/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 502
+

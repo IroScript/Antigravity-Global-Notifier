@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+ERROR: unknown command "dump" for "cockroach"
+
+Did you mean this?
+	demo
+Failed running "cockroach"
+

@@ -1,0 +1,53 @@
+
+The command exited with code 0.
+Output:
+total 156740
+drwxrwxrwt 16 root      root           960 Sep 25 08:01 .
+drwxr-xr-x 18 root      root          4096 Sep 22 18:34 ..
+drwxrwxrwt  2 root      root            40 Sep 22 18:34 .ICE-unix
+drwxrwxrwt  2 root      root            60 Sep 22 18:34 .X11-unix
+-r--r--r--  1 azureuser azureuser       11 Sep 22 18:34 .X99-lock
+drwxrwxrwt  2 root      root            40 Sep 22 18:34 .XIM-unix
+drwxrwxrwt  2 root      root            40 Sep 22 18:34 .font-unix
+-rw-r--r--  1 azureuser azureuser       18 Sep 24 17:55 agy_beautiful_notify_debounce.txt
+-rw-rw-r--  1 azureuser azureuser     4121 Sep 25 07:32 canonical_44.txt
+-rw-rw-r--  1 azureuser azureuser    18685 Sep 25 07:32 canonical_44_full.txt
+-rw-------  1 azureuser azureuser        0 Sep 24 18:10 check_recovered.db
+drwx------  2 azureuser azureuser       80 Sep 22 18:34 com.google.Chrome.6Pvgxy
+-rw-r--r--  1 azureuser azureuser      747 Sep 24 17:56 csv_tunnel.log
+-rw-rw-r--  1 azureuser azureuser        0 Sep 24 18:10 dump_err.log
+-rw-rw-r--  1 azureuser azureuser        0 Sep 24 18:16 dump_err_latest.log
+-rw-rw-r--  1 azureuser azureuser      416 Sep 22 18:37 fc
+-rw-------  1 azureuser azureuser 24686592 Sep 24 18:31 final_staged_clean.sqlite
+-rw-------  1 azureuser azureuser    32768 Sep 24 18:31 final_staged_clean.sqlite-shm
+-rw-------  1 azureuser azureuser        0 Sep 24 18:31 final_staged_clean.sqlite-wal
+-rw-rw-r--  1 azureuser azureuser 20288670 Sep 24 18:11 fixed_dump.sql
+-rw-rw-r--  1 azureuser azureuser     1331 Sep 23 12:44 handover_msg.txt
+drwxr-xr-x  2 azureuser azureuser       40 Sep 25 07:54 hsperfdata_azureuser
+-rw-r--r--  1 azureuser azureuser    51040 Sep 24 17:37 kotlin-daemon.2026-09-24.17-37-06-005.00.log
+-rw-r--r--  1 azureuser azureuser    68568 Sep 24 17:54 kotlin-daemon.2026-09-24.17-37-54-317.00.log
+-rw-rw-r--  1 azureuser azureuser    70627 Sep 24 21:40 kotlin-daemon.2026-09-24.18-36-37-728.00.log
+-rw-rw-r--  1 azureuser azureuser    15443 Sep 25 07:28 kotlin-daemon.2026-09-25.05-28-31-098.00.log
+-rw-rw-r--  1 azureuser azureuser    72091 Sep 25 07:53 kotlin-daemon.2026-09-25.07-36-54-751.00.log
+drwxrwxr-x  3 azureuser azureuser       60 Sep 22 18:34 node-compile-cache
+drwx------  2 azureuser azureuser       80 Sep 25 00:16 openclaw
+drwx------  2 azureuser azureuser      100 Sep 25 07:46 openclaw-state-locks-1000
+-rw-rw-r--  1 azureuser azureuser      679 Sep 24 18:02 output_tunnel.log
+-rw-rw-r--  1 azureuser azureuser     8307 Sep 24 18:34 payload-article-tunnel.log
+-rw-rw-r--  1 azureuser azureuser    10018 Sep 24 10:49 ref_paste.txt
+-rw-------  1 azureuser azureuser 24670208 Sep 24 18:11 restored_clean.sqlite
+-rw-------  1 azureuser azureuser        0 Sep 24 18:10 restored_db_1.db
+-rw-rw-r--  1 azureuser azureuser    13314 Sep 24 15:02 step_87.txt
+-rw-rw-r--  1 azureuser azureuser    12190 Sep 24 15:02 step_99.txt
+drwx------  3 root      root            60 Sep 22 18:34 systemd-private-d5d2458a1db741c98fb0b05d70a459b9-chrony.service-dQPIU5
+drwx------  3 root      root            60 Sep 22 18:34 systemd-private-d5d2458a1db741c98fb0b05d70a459b9-exim4.service-swl0it
+drwx------  3 root      root            60 Sep 22 18:34 systemd-private-d5d2458a1db741c98fb0b05d70a459b9-redis-server.service-9GlI1s
+drwx------  3 root      root            60 Sep 22 18:34 systemd-private-d5d2458a1db741c98fb0b05d70a459b9-systemd-logind.service-zWhTRS
+-rw-rw-r--  1 azureuser azureuser 24686592 Sep 24 18:22 test_copy.db
+-rw-rw-r--  1 azureuser azureuser 20288689 Sep 24 18:10 test_dump.sql
+-rw-rw-r--  1 azureuser azureuser 20288689 Sep 24 18:16 test_dump_latest.sql
+-rw-rw-r--  1 azureuser azureuser 24686592 Sep 24 18:15 test_reindex.db
+-rw-------  1 azureuser azureuser        0 Sep 24 18:11 test_small.sqlite
+drwx------  2 azureuser azureuser       60 Sep 22 18:34 tmux-1000
+-rw-r--r--  1 azureuser azureuser   463641 Sep 24 17:47 unleash-repo-schema-v1-codeium-language-server.json
+

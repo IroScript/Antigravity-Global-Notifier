@@ -1,0 +1,69 @@
+
+The command exited with code 0.
+Output:
+Step 7164 [MODEL]: Created At: 2026-09-25T15:28:01Z
+Completed At: 2026-09-25T15:28:01Z
+
+The command exited with code 0.
+Output:
+<3>ERROR : test_adversarial.txt: Failed to copy: failed to get bucket: googleapi: Error 403: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.list acce...
+
+Step 7165 [MODEL]: ইরাক ভাইয়া, আপনার ১২-দফা নির্দেশনা সম্পূর্ণ
+অনুমোদিত এবং আমরা কঠোরভাবে এই সিকোয়েন্স
+অনুসরণ করে কাজ শুরু করেছি।
+
+কোনো VM ফরম্যাট বা পরিবর্তন হবে না যতক্ষণ না
+উভয় ক্লাউডে ভেরিফাইড ও আনডিলিটেবল ব্যাকআপ
+প্রমাণিত হচ্ছে।
+
+«──────────────────────────────»
+*পদক্ষেপ ১: ডেডিকেটেড বাকেট তৈরি (সম্পন্ন)*
+«───...
+
+Step 7166 [USER_EXPLICIT]: <USER_REQUEST>
+হ্যাঁ—এখন এই ধাপটি চালানো যায়। আমি Google-এর বর্তমান IAM documentation দিয়ে যাচাই করেছি: roles/storage.objectCreator শুধু storage.objects.create দেয়; এতে read, delete বা overwrite করার permission নেই। এমনকি existing object overwrite করতে storage.objects.delete-ও প্রয়োজন। 
+
+তবে Gemini-...
+
+Step 7174 [MODEL]: Created At: 2026-09-25T15:29:55Z
+Completed At: 2026-09-25T15:29:56Z
+
+The command exited with code 0.
+Output:
+HTTP Error Code: 403
+Error Body: {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.create access to ...
+
+Step 7178 [MODEL]: Created At: 2026-09-25T15:30:11Z
+Completed At: 2026-09-25T15:30:12Z
+
+The command exited with code 0.
+Output:
+============================================================
+GCS IAM BOUNDARY VERIFICATION TEST SUITE
+Credential Identity: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com
+Target...
+
+Step 7179 [MODEL]: ইরাক ভাইয়া, আপনার নির্দেশ শতভাগ গৃহীত হয়েছে!
+আমরা কোনো রিকভার্ড ফাইল আপলোড করিনি এবং VM-এর
+কোনো পরিবর্তন বা ফরম্যাট স্পর্শ করিনি।
+
+আমরা সম্পূর্ণ অটোমেটেড টেস্ট ফ্রেমওয়ার্ক প্রস্তুত
+করেছি:
+[`test_gcs_iam_boundary.py`](file:///home/azureuser/test_gcs_iam_boundary.py)
+
+«─────────────────────────────...
+
+Step 7184 [MODEL]: Created At: 2026-09-25T15:33:01Z
+Completed At: 2026-09-25T15:33:02Z
+
+The command exited with code 0.
+Output:
+============================================================
+GCS IAM BOUNDARY VERIFICATION TEST SUITE
+Credential Identity: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com
+Target...
+
+

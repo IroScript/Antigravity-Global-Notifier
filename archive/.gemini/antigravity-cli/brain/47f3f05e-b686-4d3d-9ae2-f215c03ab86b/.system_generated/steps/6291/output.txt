@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1   30G   12G   17G  43% /
+/dev/nvme1n1    216G   46G  159G  23% /home
+

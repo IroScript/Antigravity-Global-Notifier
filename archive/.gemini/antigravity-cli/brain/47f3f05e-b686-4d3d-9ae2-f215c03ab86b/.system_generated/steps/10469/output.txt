@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+total 44
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 25 08:02 .
+drwxr-xr-x 3 azureuser azureuser  4096 Sep 25 08:02 ..
+-rw-r--r-- 1 azureuser azureuser 10667 Sep 25 08:02 hooks.md
+-rw-r--r-- 1 azureuser azureuser  4512 Sep 25 08:02 json_configs.md
+-rw-r--r-- 1 azureuser azureuser  2966 Sep 25 08:02 mcp_servers.md
+-rw-r--r-- 1 azureuser azureuser  3692 Sep 25 08:02 plugins.md
+-rw-r--r-- 1 azureuser azureuser  1656 Sep 25 08:02 rules.md
+-rw-r--r-- 1 azureuser azureuser  2650 Sep 25 08:02 skills.md
+

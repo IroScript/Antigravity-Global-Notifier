@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+total 88
+drwx------  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Sep 25 13:20 .
+drwx------ 24 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Sep  3 04:07 ..
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 12214 Sep 15 10:17 AGENTS.md
+-rw-------  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  5167 Sep 25 13:20 DREAMS.md
+drwxrwxr-x  7 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Sep 22 15:34 .git
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   140 Aug 17 14:58 IDENTITY.md
+drwxrwxr-x  4 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Aug 17 18:25 IROSCRIPT-CEO
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Sep  2 18:30 media
+drwxrwxr-x  4 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  4096 Sep  2 03:00 memory
+-rw-------  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  2417 Sep  3 03:00 MEMORY.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 13953 Sep  1 16:53 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   705 Aug 17 14:58 SOUL.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   299 Aug 17 14:58 USER.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  8350 Sep  1 16:53 USER_PERSONAL_AGENT_CONTEXT.md
+

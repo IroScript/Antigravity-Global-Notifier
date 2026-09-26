@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+total 72
+drwxr-xr-x 8 azureuser azureuser  4096 Sep 26 02:48 .
+drwxr-xr-x 4 azureuser azureuser  4096 Sep 25 07:59 ..
+drwxr-xr-x 7 azureuser azureuser  4096 Sep 25 07:58 .system_generated
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:52 .tempmediaStorage
+-rw-r--r-- 1 azureuser azureuser 15699 Sep 26 02:48 delete_proof_40_points_test_report.md
+-rw-r--r-- 1 azureuser azureuser   386 Sep 26 02:48 delete_proof_40_points_test_report.md.metadata.json
+-rw-r--r-- 1 azureuser azureuser 13839 Sep 26 02:26 delete_proof_architecture_implementation.md
+-rw-r--r-- 1 azureuser azureuser   534 Sep 25 20:26 delete_proof_architecture_implementation.md.metadata.json
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 25 10:37 scratch
+drwxr-xr-x 3 azureuser azureuser  4096 Sep 25 10:49 task-5517
+drwxr-xr-x 3 azureuser azureuser  4096 Sep 25 10:51 task-5569
+drwxr-xr-x 3 azureuser azureuser  4096 Sep 25 13:02 task-6698
+

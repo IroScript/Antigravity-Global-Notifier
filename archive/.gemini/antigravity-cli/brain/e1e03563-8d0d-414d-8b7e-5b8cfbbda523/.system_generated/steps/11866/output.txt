@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 13:30:44,392 [INFO] [Worker-worker_4] Removed stale lock: SingletonLock
+2026-09-26 13:30:44,393 [INFO] [Worker-worker_4] Removed stale lock: SingletonCookie
+2026-09-26 13:30:44,393 [INFO] [Worker-worker_4] Removed stale lock: SingletonSocket
+2026-09-26 13:30:44,468 [INFO] [Worker-worker_4] Launching persistent context via official CloakBrowser engine...
+2026-09-26 13:30:44,545 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 13:30:44,548 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 13:30:47,530 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 13:30:47,533 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 13:30:47,622 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 13:30:59,506 [INFO] [Worker-worker_4] Clicked dialog element: button:has-text('Got it')
+2026-09-26 13:31:36,516 [INFO] [Worker-worker_4] Clicked dialog element: text=Got it
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-09-26 13:31:37,556 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     127.0.0.1:40772 - "GET /health HTTP/1.1" 200 OK
+

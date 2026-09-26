@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+<6>INFO  : LIVE_SYNC_READY.txt: Copied (new)
+<6>INFO  : 
+Transferred:   	         88 B / 88 B, 100%, 88 B/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:         1.4s
+
+       88 LIVE_SYNC_READY.txt
+

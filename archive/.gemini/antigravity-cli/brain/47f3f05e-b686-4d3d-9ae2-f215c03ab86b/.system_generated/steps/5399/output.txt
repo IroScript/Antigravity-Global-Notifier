@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation
+
+Terminal ID: 4ced8c12-af0b-4019-a827-fc784037b640

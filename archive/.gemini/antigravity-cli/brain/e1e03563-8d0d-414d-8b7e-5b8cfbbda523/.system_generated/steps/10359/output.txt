@@ -1,0 +1,98 @@
+
+The command exited with code 1.
+Output:
+find: ‘./Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/6671b42b-01e0-4d92-b9bf-3c22c6f86a8e’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_1/Default/blob_storage/6bba4029-f121-428d-87d7-e6c06d171214’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/blob_storage/133f2f99-28e6-4ee6-b934-bd6d6ff716a7’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/06’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/07’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_2/Default/blob_storage/0af3bb5b-19a5-4959-b05f-c71aaf69e2e2’: Permission denied
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_11.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_04.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_06.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_02.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_9.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_07.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_08.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_07.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_05.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_04.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_11.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_01.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_10.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_07.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_12.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_12.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_02.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_04.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_10.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_04.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_9.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_8.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_02.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_05.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_10.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_04.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_03.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_8.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_02.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/csv_tables/seo_competitors.csv
+./Youtube Automation/PromptDatabase/exports/csv_tables/seo_runs.csv
+./Youtube Automation/PromptDatabase/exports/csv_tables/seo_keyword_metrics.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_01.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_12.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_10.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_02.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_06.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_04.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_8.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_05.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_05.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_08.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_10.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_06.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_8.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_12.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_11.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_8.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_03.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_12.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_03.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_12.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_08.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_05.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_11.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_02.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_06.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_9.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_05.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_9.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_01.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_03.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_07.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_01.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_11.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_01.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_10.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_03.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_9.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_11.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_8.30_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_01.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_master_25_sept_03.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_06.30_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_07.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_07.00_pm.csv
+./Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_9.00_am.csv
+./Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_06.30_pm.csv
+./Youtube Automation/PromptDatabase/output_packaged/_backup_seo
+./Youtube Automation/PromptDatabase/recovered_exports/532250_seo_keywords_backup_before_reset.csv
+./Youtube Automation/PromptDatabase/recovered_exports/533231_seo_master_25_sept_6.44_am.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532246_seo_keywords.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532255_seo_master_backup_before_reset.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532241_seo_competitors.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532256_seo_master_updated.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532251_seo_master.csv
+./Youtube Automation/PromptDatabase/recovered_exports/532245_seo_competitors_backup_before_reset.csv
+

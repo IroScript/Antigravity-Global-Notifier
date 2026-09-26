@@ -1,0 +1,21 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -520,7 +520,14 @@
+ }
+ 
+ function renderChart() {
+-  const ctx = document.getElementById('resourceChart').getContext('2d');
++  if (typeof Chart === 'undefined') {
++    setTimeout(renderChart, 300);
++    return;
++  }
++  const chartEl = document.getElementById('resourceChart');
++  if (!chartEl) return;
++  const ctx = chartEl.getContext('2d');
++  if (!historyData || historyData.length === 0) return;
+   const labels = historyData.map(p => p.t);
+   const datasets = getDatasetsForCurrentMode();
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

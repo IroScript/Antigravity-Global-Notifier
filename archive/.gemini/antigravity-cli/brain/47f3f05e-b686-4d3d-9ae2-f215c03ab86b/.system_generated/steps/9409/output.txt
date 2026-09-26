@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 26 07:54 /home/azureuser/gdrive_sync
+

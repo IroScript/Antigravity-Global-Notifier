@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total tables: 53
+Tables: ['ideas', 'tags', 'content_history', 'collections', 'models', 'settings', 'idea_versions', 'idea_features', 'idea_embeddings', 'duplicate_checks', 'prompts', 'idea_tags', 'collection_ideas', 'prompt_versions', 'generation_jobs', 'generated_videos', 'schedules', 'idea_assets', 'publishing', 'categories', 'elements', 'idea_elements', 'channels', 'channel_prompts', 'pipeline_runs', 'pipeline_stage_audits', 'channel2_shot_audits', 'tasks', 'task_attempts', 'prompting_style_master', 'youtube_metadata', 'seo_runs', 'seo_competitors', 'seo_keyword_metrics', 'workflows', 'workflow_versions', 'workflow_steps', 'workflow_executions', 'step_runs', 'execution_events', 'workflow_migrations', 'step_attempts', 'jobs', 'audit_logs', 'external_operations', 'test_req_003_with_uuid', 'test_req_003_no_uuid', 'req_009_tx_test', 'test_jsonb_payloads', 'pipeline_row_state', 'pipeline_checkpoints', 'pipeline_failure_logs', 'sqlite_sequence']
+

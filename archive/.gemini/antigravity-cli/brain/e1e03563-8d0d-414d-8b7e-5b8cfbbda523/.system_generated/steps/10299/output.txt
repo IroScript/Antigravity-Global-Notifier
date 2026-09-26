@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 8
+    print(f"Port {port}: URL={data.get(\"url\")} Title={data.get(\"title\")} SessionCookie={data.get(\"has_session_cookie\")}")
+                                        ^
+SyntaxError: unexpected character after line continuation character
+

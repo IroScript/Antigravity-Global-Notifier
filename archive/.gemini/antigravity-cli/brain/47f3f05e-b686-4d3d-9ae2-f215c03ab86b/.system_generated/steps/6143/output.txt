@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+--- Max video ID in generated_videos ---
+(327, 325)
+--- Check if there are gaps in ID ---
+Min ID: 3, Max ID: 327, Count: 325
+Missing IDs count: 0
+--- youtube_metadata IDs ---
+(2, 557, 555)
+

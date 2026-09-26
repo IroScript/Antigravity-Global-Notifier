@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05’: Permission denied
+

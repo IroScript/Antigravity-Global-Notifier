@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+481 9854 PLANNER_RESPONSE
+Tool: run_command
+  CommandLine: head -n 50 "Youtube Automation/PromptDatabase/logs/cluster_orchestrator.log"
+  Cwd: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+  WaitMsBeforeAsync: 5000
+  toolAction: Reading orchestrator startup logs
+  toolSummary: Read first 50 lines of orchestrator log
+482 9855 GENERIC
+

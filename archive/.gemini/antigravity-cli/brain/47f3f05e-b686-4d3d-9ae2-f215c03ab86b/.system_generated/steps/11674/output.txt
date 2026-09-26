@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+LISTEN 0      5            0.0.0.0:8090       0.0.0.0:*                                                                                          
+LISTEN 0      5            0.0.0.0:8088       0.0.0.0:*    users:(("python3",pid=1218818,fd=3))                                                  
+

@@ -1,0 +1,65 @@
+
+The command exited with code 0.
+Output:
+[frappe] Dumped DB 0: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_0_12p.sqlite
+[frappe] Dumped DB 1: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_1_12p.sqlite
+[frappe] Dumped DB 2: 249856 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_2_61p.sqlite
+[frappe] Dumped DB 3: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_3_11p.sqlite
+[frappe] Dumped DB 4: 53248 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_4_13p.sqlite
+[frappe] Dumped DB 5: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_5_12p.sqlite
+[frappe] Dumped DB 6: 12288 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_6_3p.sqlite
+[tg] Dumped DB 0: 18862080 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_0_4605p.sqlite
+[tg] Dumped DB 1: 86016 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_1_21p.sqlite
+[tg] Dumped DB 2: 2236416 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_2_546p.sqlite
+[tg] Dumped DB 3: 86016 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_3_21p.sqlite
+[tg] Dumped DB 4: 14053376 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_4_3431p.sqlite
+[tg] Dumped DB 5: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_5_11p.sqlite
+[history] Dumped DB 0: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_0_11p.sqlite
+[history] Dumped DB 1: 1736704 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_1_424p.sqlite
+[history] Dumped DB 2: 65536 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_2_16p.sqlite
+[history] Dumped DB 3: 2371584 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_3_579p.sqlite
+[history] Dumped DB 4: 65536 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_4_16p.sqlite
+[history] Dumped DB 5: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_5_12p.sqlite
+[history] Dumped DB 6: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_6_12p.sqlite
+[history] Dumped DB 7: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_7_12p.sqlite
+[history] Dumped DB 8: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_8_12p.sqlite
+[kids] Dumped DB 0: 81920 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_0_20p.sqlite
+[kids] Dumped DB 1: 6868992 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_1_1677p.sqlite
+[kids] Dumped DB 2: 81920 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_2_20p.sqlite
+[kids] Dumped DB 3: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_3_12p.sqlite
+[kids] Dumped DB 4: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_4_12p.sqlite
+[kids] Dumped DB 5: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_5_11p.sqlite
+[kids] Dumped DB 6: 253952 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_6_62p.sqlite
+[rust] Dumped DB 0: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_0_12p.sqlite
+[rust] Dumped DB 1: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_1_12p.sqlite
+[rust] Dumped DB 2: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_2_12p.sqlite
+[rust] Dumped DB 3: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_3_12p.sqlite
+[rust] Dumped DB 4: 249856 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_4_61p.sqlite
+[rust] Dumped DB 5: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_5_11p.sqlite
+[rust] Dumped DB 6: 57344 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_6_14p.sqlite
+[article] Dumped DB 0: 57344 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_0_14p.sqlite
+[article] Dumped DB 1: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_1_11p.sqlite
+[article] Dumped DB 2: 266240 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_2_65p.sqlite
+[article] Dumped DB 3: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_3_12p.sqlite
+[article] Dumped DB 4: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_4_12p.sqlite
+[article] Dumped DB 5: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_5_12p.sqlite
+[article] Dumped DB 6: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_6_12p.sqlite
+[game] Dumped DB 0: 65536 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_0_16p.sqlite
+[game] Dumped DB 1: 7557120 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_1_1845p.sqlite
+[game] Dumped DB 2: 57344 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_2_14p.sqlite
+[game] Dumped DB 3: 45056 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_3_11p.sqlite
+[game] Dumped DB 4: 86016 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_4_21p.sqlite
+[game] Dumped DB 5: 7098368 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_5_1733p.sqlite
+[game] Dumped DB 6: 86016 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_6_21p.sqlite
+[game] Dumped DB 7: 7184384 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_7_1754p.sqlite
+[game] Dumped DB 8: 86016 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_8_21p.sqlite
+[game] Dumped DB 9: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_9_12p.sqlite
+[game] Dumped DB 10: 49152 bytes to /home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_10_12p.sqlite
+556K	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article
+500K	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe
+22M	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game
+4.3M	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history
+7.1M	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids
+540K	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust
+34M	/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg
+

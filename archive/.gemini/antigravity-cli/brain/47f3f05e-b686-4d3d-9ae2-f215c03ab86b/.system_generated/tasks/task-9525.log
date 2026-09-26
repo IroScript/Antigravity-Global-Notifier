@@ -1,0 +1,15 @@
+     8350 USER_PERSONAL_AGENT_CONTEXT.md
+    13953 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+     2690 PROJECT_REGISTRY.md
+    17890 AGENTS.md
+   161246 RECOVERED_LOGS/cli-20260924_163443.log
+  3689332 RECOVERED_LOGS/cli-20260922_183427.log
+     8771 DRAFTS/00-HARDENING-RUNBOOK.md
+     9439 DRAFTS/05-verification-tests.sh
+     6734 DRAFTS/04-external-backup-setup.md
+     4744 DRAFTS/03-immutable-files.sh
+     7558 DRAFTS/02-parent-directory-lock.md
+     5901 DRAFTS/01-sudoers-restricted.draft
+        0 TASKS/queue/.verify-test-1097587
+        0 TASKS/queue/.write-test-1097282
+   266240 RECOVERED_DATABASES/article/db_2_65p.sqlite

@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+# 🦞 OPENCLAW PERSONAL AI AGENT - MASTER ACTIVITY & TASK MEMORY
+> **User / Owner:** ইরাক ভাইয়া (Md. Kamruzzaman Irak)  
+> **Source Engine:** Antigravity Triangulated Cross-Validation System  
+> **Data Sources:** Google My Activity + OpenRecall Database + OpenRecall Visual Screenshots  
+> **Verification Level:** 100% Evidence-Backed (No Guesswork / No False Positives)  
+> **Last Synchronized:** 2026-09-01 (BD Time)  
+
+---
+
+## 📌 ১. ওপেনক্ল-এর জন্য নির্দেশিকা (Directives for OpenClaw)
+
+OpenClaw, তুমি ইরাক ভাইয়ার ব্যক্তিগত এআই এজেন্ট। নিচে ইরাক ভাইয়ার বাস্তব কম্পিউটার ও মোবাইল কার্যকলাপের **১০০% যাচাইকৃত (Triangulated Cross-Validated) টাস্ক মেমরি** দেওয়া হলো। 
+
+তুমি এই তথ্যগুলো ব্যবহার করবে:
+1. ইরাক ভাইয়া সারাদিন বাস্তবে কী কাজ করেছেন, কত সময় ব্যয় করেছেন এবং কী আউটপুট পেয়েছেন তা নির্ভুলভাবে মনে রাখতে।
+2. কোনো কাজ অসম্পূর্ণ থাকলে তা ফলো-আপ করতে এবং প্রোডাক্টিভিটি অপ্টিমাইজ করতে।
+3. পরবর্তী সেশনে ইরাক ভাইয়া কোনো রেফারেন্স বা আগের কাজের কনটেক্সট জানতে চাইলে সরাসরি এই ডেটা থেকে উত্তর দিতে।
+
+---
+
+## 📅 ২. রিকনস্ট্রাক্ট করা টাস্ক ও অ্যাক্টিভিটি টাইমলাইন (Verified Task Timeline)
+
+| সময় (Time) | টাস্ক ও কাজের বিবরণ (Final Task) | ব্যাপ্তি (Duration) | ক্যাটাগরি (Category) | আউটপুট ও ফলাফল (Output / Value) |
+| :--- | :--- | :---: | :---: | :--- |
+| **০৩:৪৭–০৩:৫৬ AM** | **মার্কেটপ্লেস ল্যাপটপ বিজ্ঞাপন ও ফেক স্পেক্স স্ক্যাম ভেরিফিকেশন (Google Lens + AI)** | ৯ মিনিট | `Scam Prevention / Decision` | অবাস্তব ৪০-কোর/২৫৬জিবি র‍্যাম শনাক্ত করে বড় আর্থিক ক্ষতি থেকে সুরক্ষা। |
+

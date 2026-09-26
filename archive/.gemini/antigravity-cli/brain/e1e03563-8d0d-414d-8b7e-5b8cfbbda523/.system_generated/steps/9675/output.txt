@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Audio match line: Exactly 8 seconds, 9:16 vertical aspect ratio, photorealistic cinematic render, smooth continuous motion, no cuts, maximum cinematic realism. Audio: no human voice, only cinematic BGM.
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+  <title>Windows 11 Home · This PC & CPU Live Monitor (Azure VM)</title>
+    /* THE 2 PRIMARY BUTTONS IN WINDOWS 11 HOME */
+

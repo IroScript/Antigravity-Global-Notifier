@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+lrwxrwxrwx 1 azureuser azureuser 0 Sep 22 18:34 /proc/1444/exe -> '/home/azureuser/.local/bin/agy.1790259882643246969.old (deleted)'
+
+Terminal ID: ce014695-3772-4b26-bc41-2dbe588f7d9a

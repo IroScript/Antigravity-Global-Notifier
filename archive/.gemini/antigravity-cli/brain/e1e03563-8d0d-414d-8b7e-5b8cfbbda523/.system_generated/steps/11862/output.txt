@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+INFO:     127.0.0.1:42018 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:42222 - "GET /debug HTTP/1.1" 200 OK
+2026-09-26 13:30:44,073 [INFO] [Worker-worker_4] Starting up worker_4...
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+2026-09-26 13:30:44,392 [INFO] [Worker-worker_4] Removed stale lock: SingletonLock
+2026-09-26 13:30:44,393 [INFO] [Worker-worker_4] Removed stale lock: SingletonCookie
+2026-09-26 13:30:44,393 [INFO] [Worker-worker_4] Removed stale lock: SingletonSocket
+2026-09-26 13:30:44,468 [INFO] [Worker-worker_4] Launching persistent context via official CloakBrowser engine...
+2026-09-26 13:30:44,545 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 13:30:44,548 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 13:30:47,530 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 13:30:47,533 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 13:30:47,622 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 13:30:59,506 [INFO] [Worker-worker_4] Clicked dialog element: button:has-text('Got it')
+

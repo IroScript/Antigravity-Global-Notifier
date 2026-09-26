@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+NAME     SIZE TYPE FSTYPE MOUNTPOINTS MODEL
+sda       70G disk                    PersistentDisk
+├─sda1  69.9G part ext4   /           
+├─sda14    3M part                    
+└─sda15  124M part vfat   /boot/efi   
+Filesystem     Type      Size  Used Avail Use% Mounted on
+udev           devtmpfs  1.9G     0  1.9G   0% /dev
+tmpfs          tmpfs     392M  612K  392M   1% /run
+/dev/sda1      ext4       69G   55G   11G  84% /
+tmpfs          tmpfs     2.0G  1.1M  2.0G   1% /dev/shm
+efivarfs       efivarfs  256K   26K  226K  11% /sys/firmware/efi/efivars
+tmpfs          tmpfs     5.0M     0  5.0M   0% /run/lock
+tmpfs          tmpfs     2.0G  496K  2.0G   1% /tmp
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+/dev/sda15     vfat      124M  8.9M  115M   8% /boot/efi
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs          tmpfs     392M   56K  392M   1% /run/user/1541092253
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs          tmpfs     392M   12K  392M   1% /run/user/1006
+

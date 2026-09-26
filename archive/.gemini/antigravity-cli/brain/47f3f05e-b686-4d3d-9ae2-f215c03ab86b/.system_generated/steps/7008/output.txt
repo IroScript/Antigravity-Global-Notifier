@@ -1,0 +1,67 @@
+
+The command exited with code 0.
+Output:
+                        "Value": "drive.file",
+                        "Help": "Access to files created by rclone only.\nThese are visible in the drive website.\nFile authorization is revoked when the user deauthorizes the app.",
+                        "Provider": ""
+                    },
+                    {
+                        "Value": "drive.appfolder",
+                        "Help": "Allows read and write access to the Application Data folder.\nThis is not visible in the drive website.",
+                        "Provider": ""
+                    },
+                    {
+                        "Value": "drive.metadata.readonly",
+                        "Help": "Allows read-only access to file metadata but\ndoes not allow any access to read or download file content.",
+                        "Provider": ""
+                    }
+                ],
+                "ShortOpt": "",
+                "Hide": 0,
+                "Required": false,
+                "IsPassword": false,
+                "NoPrefix": false,
+                "Advanced": false,
+                "Exclusive": false,
+                "DefaultStr": "",
+                "ValueStr": "",
+                "Type": "string"
+            },
+            {
+                "Name": "root_folder_id",
+                "Help": "ID of the root folder.\nLeave blank normally.\n\nFill in to access \"Computers\" folders (see docs), or for rclone to use\na non root folder as its starting point.\n",
+                "Provider": "",
+                "Default": "",
+--
+                "Long": "This command copies files by ID\n\nUsage:\n\n    rclone backend copyid drive: ID path\n    rclone backend copyid drive: ID1 path1 ID2 path2\n\nIt copies the drive file with ID given to the path (an rclone path which\nwill be passed internally to rclone copyto). The ID and path pairs can be\nrepeated.\n\nThe path should end with a / to indicate copy the file as named to\nthis directory. If it doesn't end with a / then the last path\ncomponent will be used as the file name.\n\nIf the destination is a drive backend then server-side copying will be\nattempted if possible.\n\nUse the -i flag to see what would be copied before copying.\n",
+                "Opts": null
+            },
+            {
+                "Name": "exportformats",
+                "Short": "Dump the export formats for debug purposes",
+                "Long": "",
+                "Opts": null
+            },
+            {
+                "Name": "importformats",
+                "Short": "Dump the import formats for debug purposes",
+                "Long": "",
+                "Opts": null
+            }
+        ],
+        "Aliases": null,
+        "Hide": false,
+        "MetadataInfo": null
+    },
+    {
+        "Name": "dropbox",
+        "Description": "Dropbox",
+        "Prefix": "dropbox",
+        "Options": [
+            {
+                "Name": "client_id",
+                "Help": "OAuth Client Id.\n\nLeave blank normally.",
+                "Provider": "",
+                "Default": "",
+                "Value": null,
+

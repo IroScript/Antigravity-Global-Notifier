@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Speed: 144494120 bytes/sec, Time: 1.077524s
+

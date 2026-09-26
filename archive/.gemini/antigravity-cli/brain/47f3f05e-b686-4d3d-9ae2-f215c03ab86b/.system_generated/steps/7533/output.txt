@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+OTHER File: azureuser/.cache/google-chrome/Profile_Irak_Master/Cache/Cache_Data/index-dir/the-real-index
+OTHER File: azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md
+OTHER File: azureuser/.config/google-chrome/Profile_Irak_Master/Network Persistent State
+

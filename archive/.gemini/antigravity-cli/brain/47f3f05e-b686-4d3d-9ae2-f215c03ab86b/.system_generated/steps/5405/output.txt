@@ -1,0 +1,18 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_azure_location.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -9,9 +9,9 @@
+ 🛑 *Azure VM-এর ডিস্কে বর্তমান প্রকৃত সত্য*
+ «──────────────────────────────»
+ বাইরের লিংকের কথা বাদ দিলে, এই মুহূর্তে
+-*Azure VM-এর লোকাল ডিস্কে* প্রজেক্টগুলোর মূল
+-কোড ফোল্ডারগুলো (`Frappe-erp-Alco`, `telegram-bot`,
+-`kids_tube`, `Rust_Task`, `3D-Game`, `Article`)
++*Azure VM-এর লোকাল ডিস্কে* প্রজেক্টগুলোর
++কোড ফোল্ডারগুলো (Frappe, Telegram, Kids,
++Rust, 3D Game, Article Publishing)
+ *লোকাল ড্রাইভ থেকে সত্যি মুছে গেছে।*
+ 
+ Azure VM-এর লোকাল পাথে সেগুলো আর বিদ্যমান নেই।
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Total Ideas Generated       : 847 / 1000 (84.7%)
+Total Prompts Generated     : 8951 / 10000 (89.5%)
+Total Real SEO Completed    : 581 / 1000 (58.1%)
+Worker Status:
+  - Worker 1: macro_resting (Completed: 30)
+  - Worker 2: macro_resting (Completed: 23)
+  - Worker 3: generating_seo (Completed: 53)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-26 04:30:55,350 [INFO] [worker_3] [worker_3] ✅ [worker_3] Idea #656 SEO complete! (Title: 'The Crane That Launches Bridges Across Impossible ...')
+2026-09-26 04:30:55,350 [INFO] [worker_3] [worker_3] ⏳ [Delay Ladder | #2/7: 'Idea #656 SEO'] Sleeping 31.90s (Base: 10.0s, +10.0s next)...
+

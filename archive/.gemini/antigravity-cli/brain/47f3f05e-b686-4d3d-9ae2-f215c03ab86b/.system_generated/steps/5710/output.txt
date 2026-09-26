@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Desc block at journal 201 (seq 152613): 254 tags
+   Target FS block: 55576611, flags: 0
+   Target FS block: 0, flags: 0
+   Target FS block: 56017878, flags: 2
+   Target FS block: 56017879, flags: 2
+   Target FS block: 56017880, flags: 2
+Desc block at journal 455 (seq 152613): 254 tags
+   Target FS block: 56393938, flags: 0
+   Target FS block: 0, flags: 0
+   Target FS block: 56098875, flags: 2
+   Target FS block: 56393939, flags: 2
+   Target FS block: 55576734, flags: 2
+Desc block at journal 709 (seq 152613): 254 tags
+   Target FS block: 56098940, flags: 0
+   Target FS block: 0, flags: 0
+   Target FS block: 55576830, flags: 2
+   Target FS block: 56098941, flags: 2
+   Target FS block: 55576831, flags: 2
+Total descriptor blocks: 11475
+

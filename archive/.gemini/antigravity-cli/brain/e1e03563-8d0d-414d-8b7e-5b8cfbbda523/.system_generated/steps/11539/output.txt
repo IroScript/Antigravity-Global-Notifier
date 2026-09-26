@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+Total Real SEO Completed    : 629 / 1000 (62.9%)
+Worker Status:
+  - Worker 1: generating_prompts (Completed: 66)
+  - Worker 2: generating_prompts (Completed: 66)
+  - Worker 3: generating_seo (Completed: 101)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-26 08:00:57,001 [WARNING] [worker_1] [worker_1] Retry 3/5 for Escalation for Idea #744 (Lunar Dawn Transformer) via port 8001: [Errno 104] Connection reset by peer. Waiting 15s...
+2026-09-26 08:00:57,798 [ERROR] [worker_4] [worker_4] Worker worker_4 failed generating ideas for Fortress
+2026-09-26 08:00:57,799 [WARNING] [worker_4] [worker_4] ⚠️ Action 'Elem #85 Ideas' failed or rate-limited. Pausing 45s before retry...
+2026-09-26 08:01:02,044 [INFO] [worker_2] [worker_2] ✅ Successfully inserted 10-Level Escalation (9 prompts) for Idea #655
+2026-09-26 08:01:02,045 [INFO] [worker_2] [worker_2] ⏳ [Delay Ladder | #5/5: 'Idea #655 Escalation'] Sleeping 61.33s (Base: 10.0s, +10.0s next)...
+2026-09-26 08:01:07,279 [INFO] [worker_3] [worker_3] ✅ [worker_3] Idea #794 SEO complete! (Title: 'This Mega Tractor Builds an Endless Flood Wall 🌊...')
+2026-09-26 08:01:07,280 [INFO] [worker_3] [worker_3] ⏳ [Delay Ladder | #3/7: 'Idea #794 SEO'] Sleeping 41.17s (Base: 10.0s, +10.0s next)...
+

@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+    prompts = c.execute('SELECT COUNT(*) FROM video_prompts').fetchone()[0]
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: video_prompts
+

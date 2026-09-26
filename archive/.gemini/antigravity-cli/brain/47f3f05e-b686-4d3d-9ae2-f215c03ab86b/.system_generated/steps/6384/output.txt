@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total folders in output_packaged: 217
+Matched to idea_id: 217, Unmatched: 0
+

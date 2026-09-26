@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Cargo.toml: found 6 occurrences in journal
+requirements.txt: found 21 occurrences in journal
+package.json: found 558 occurrences in journal
+alco_ecommerce: found 3 occurrences in journal
+hooks.py: found 0 occurrences in journal
+

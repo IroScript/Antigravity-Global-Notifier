@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+[DENIED] rm -rf /tmp/foo -> Direct rm command detected
+[DENIED] rm file.txt -> Direct rm command detected
+[DENIED] unlink file.txt -> Direct unlink command detected
+[DENIED] rmdir somedir -> Direct rmdir command detected
+[DENIED] find . -name "*.tmp" -delete -> Destructive find command detected
+[DENIED] find . -exec rm -f {} + -> Direct rm command detected
+[DENIED] xargs rm -f -> Direct rm command detected
+[DENIED] git clean -fd -> git clean destructive operation detected
+[DENIED] git clean -fdx -> git clean destructive operation detected
+[DENIED] git reset --hard HEAD~1 -> git reset --hard destructive operation detected
+[ALLOWED] git checkout -- .
+[DENIED] git restore . -> git restore destructive operation detected
+[DENIED] rsync -av --delete /src/ /dst/ -> rsync --delete destructive operation detected
+[DENIED] echo "" > /etc/passwd -> Redirection file truncation detected
+[DENIED] truncate -s 0 file.txt -> truncate command detected
+[DENIED] chattr -i /home/azureuser/POLICIES/safety_levels.json -> chattr -i immutable flag stripping detected
+[DENIED] sudo rm /etc/hosts -> Direct rm command detected
+[DENIED] python3 -c "import os; os.remove("foo")" -> Python os deletion call detected
+[DENIED] python3 -c "import shutil; shutil.rmtree("foo")" -> Python shutil.rmtree call detected
+[DENIED] ls -la; rm -rf / -> Direct rm command detected
+[DENIED] echo hello && find . -delete -> Destructive find command detected
+[ALLOWED] git status
+[ALLOWED] cargo test
+[DENIED] echo "this mentions rm in text" -> Direct rm command detected
+

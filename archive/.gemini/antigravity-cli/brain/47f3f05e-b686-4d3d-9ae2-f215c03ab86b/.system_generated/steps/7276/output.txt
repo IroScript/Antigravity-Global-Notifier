@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+1) "dir"
+2) "/var/lib/redis"
+1) "dbfilename"
+2) "dump.rdb"
+sha256sum: /home/azureuser/DATABASE_BACKUPS_VAULT/azure_redis_6379_dump.rdb: Permission denied
+

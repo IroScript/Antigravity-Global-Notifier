@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+total 4
+drwxr-xr-x 6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 4096 Sep 14 15:42 3.14.7
+

@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+/usr/share/X11/xkb/symbols/az
+

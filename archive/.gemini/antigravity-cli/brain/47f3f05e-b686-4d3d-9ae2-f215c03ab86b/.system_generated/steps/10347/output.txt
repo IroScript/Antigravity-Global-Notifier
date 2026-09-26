@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+4.0K	/home/azureuser/IrakIroan/AGENTS.md
+36K	/home/azureuser/IrakIroan/GCP_VS_AZURE_RECONCILIATION_REPORT.md
+54G	/home/azureuser/IrakIroan/Google_Drive_Backup
+4.0K	/home/azureuser/IrakIroan/README.md
+4.0K	/home/azureuser/IrakIroan/config
+4.0K	/home/azureuser/IrakIroan/docs
+8.0K	/home/azureuser/IrakIroan/reconcile_gcp_vs_azure.py
+4.0K	/home/azureuser/IrakIroan/src
+4.0K	/home/azureuser/IrakIroan/tests
+

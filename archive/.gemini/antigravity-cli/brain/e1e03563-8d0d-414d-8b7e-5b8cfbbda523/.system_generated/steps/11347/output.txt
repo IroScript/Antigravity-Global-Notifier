@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Total Real SEO Completed    : 587 / 1000 (58.7%)
+Worker Status:
+  - Worker 1: macro_resting (Completed: 30)
+  - Worker 2: macro_resting (Completed: 23)
+  - Worker 3: macro_resting (Completed: 59)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-26 05:02:12,696 [WARNING] [worker_4] [worker_4] Retry 5/5 for Ideas for Element #85 (Fortress) via port 8004: Remote end closed connection without response. Waiting 15s...
+2026-09-26 05:02:27,697 [ERROR] [worker_4] [worker_4] Worker worker_4 failed generating ideas for Fortress
+2026-09-26 05:02:27,697 [WARNING] [worker_4] [worker_4] ⚠️ Action 'Elem #85 Ideas' failed or rate-limited. Pausing 45s before retry...
+2026-09-26 05:03:12,700 [INFO] [worker_4] [worker_4] [Elem #85: Fortress] Generating 10 ideas via http://localhost:8004...
+

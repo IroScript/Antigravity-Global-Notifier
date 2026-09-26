@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py -> /app/worker_server.py
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/cookies/worker_4 -> /app/cookies
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4 -> /app/profile
+
+

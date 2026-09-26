@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+du -sb took 0.1596s: 76226563	/home/azureuser/IrakIroan/.gemini
+
+

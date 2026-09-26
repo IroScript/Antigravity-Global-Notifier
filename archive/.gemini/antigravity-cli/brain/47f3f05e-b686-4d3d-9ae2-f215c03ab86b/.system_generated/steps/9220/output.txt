@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 13K Sep 26 04:09 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/FORENSIC_AUDIT_REPORT_DELETE_PROOF.txt'
+

@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+# /etc/systemd/system/live-resource-monitor.service
+[Unit]
+Description=Live Resource Monitor Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/azureuser
+ExecStart=/usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+total 426388
+drwxrwxr-x 2 azureuser azureuser      4096 Sep 26 14:36 .
+drwxrwxr-x 5 azureuser azureuser      4096 Sep 26 10:23 ..
+-rwxr-xr-x 1 azureuser azureuser 219545808 Sep 25 08:02 agy
+-rwxr-xr-x 1 azureuser azureuser 216797392 Sep 25 08:00 agy.1790323328348797097.old
+-rw-rw-r-- 1 azureuser azureuser    205399 Sep 26 14:05 chart.min.js
+-rw-rw-r-- 1 azureuser azureuser     35205 Sep 26 14:36 monitor.html
+-r-xr-xr-x 1 azureuser azureuser      3616 Sep 26 02:37 rclone
+-rwxrwxr-x 1 azureuser azureuser       213 Sep 26 10:23 websockets
+

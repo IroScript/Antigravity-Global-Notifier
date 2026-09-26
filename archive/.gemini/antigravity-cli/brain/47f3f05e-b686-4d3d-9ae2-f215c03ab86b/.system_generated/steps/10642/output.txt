@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/RESTORED_PROJECTS/.webterminal/resource_monitor.log
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/.webterminal/resource_monitor.log
+/home/azureuser/RESTORED_PROJECTS/.webterminal/resource_monitor.log
+/home/azureuser/.webterminal/resource_monitor.log
+

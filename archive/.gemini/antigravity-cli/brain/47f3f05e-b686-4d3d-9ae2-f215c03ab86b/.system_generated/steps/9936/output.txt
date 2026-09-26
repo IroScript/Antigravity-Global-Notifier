@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+total 44
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 26 09:44 .
+drwxr-xr-x 31 azureuser azureuser  4096 Sep 26 09:43 ..
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 07:57 AGENTS.md
+-rw-rw-r--  1 azureuser azureuser    88 Sep 26 08:38 LIVE_SYNC_READY.txt
+-rw-rw-r--  1 azureuser azureuser  8177 Jul 24  2006 lib.rs
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 26 09:44 restored_etc
+

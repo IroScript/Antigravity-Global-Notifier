@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Local file system at /home/azureuser/IrakIroan: 0 differences found
+<5>NOTICE: Local file system at /home/azureuser/IrakIroan: 15 matching files
+

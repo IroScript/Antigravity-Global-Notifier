@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+● gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli)
+     Loaded: loaded (/home/azureuser/.config/systemd/user/gdrive-live-sync.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 08:49:44 UTC; 15ms ago
+ Invocation: a264ff9cc52544279048c1b7252c7c22
+   Main PID: 1112597 ((python3))
+      Tasks: 1 (limit: 19137)
+     Memory: 1.5M (peak: 1.7M)
+        CPU: 5ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gdrive-live-sync.service
+             └─1112597 "(python3)"
+
+Sep 26 08:49:44 FatehAli systemd[1137]: Started gdrive-live-sync.service - …li).
+Hint: Some lines were ellipsized, use -l to show in full.
+

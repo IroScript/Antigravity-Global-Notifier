@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_response.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -57,7 +57,7 @@
+ ৪. *অপারেশন-অ্যাওয়ার ডকার ও গিট পলিসি*
+ «──────────────────────────────»
+ ডকার বা গিটকে এক ঢিলে L3 বলা ভুল ছিল।
+-আমরা নিখুঁত আরগুমেন্টভিত্তিক গ্র্যানুলারিটি নিচ্ছি:
++আমরা নিখুঁত গ্র্যানুলারিটি নিচ্ছি:
+ 
+ 🐳 *Docker গ্র্যানুলারিটি:*
+ • `docker ps` / `inspect` / `logs` → L0 (ALLOW)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

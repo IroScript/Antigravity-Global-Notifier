@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Successfully backed up 433 open deleted file descriptors!
+

@@ -1,0 +1,2 @@
+worker_3 (8003): {'status': 'ok', 'worker_id': 'worker_3', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+worker_4 (8004): {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': True, 'user': 'Unknown', 'action_counter': 1, 'last_session_refresh': 0.0}

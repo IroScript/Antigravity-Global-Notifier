@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=wXRhL_PhbTzLzSox1Dsxhw
+

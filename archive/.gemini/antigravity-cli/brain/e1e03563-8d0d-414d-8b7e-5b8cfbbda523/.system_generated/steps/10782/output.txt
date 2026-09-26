@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Idea inserted successfully, id: 676
+idea_elements inserted successfully
+prompts inserted successfully
+youtube_metadata inserted successfully, id: 558
+seo_runs inserted successfully, id: 593
+seo_keyword_metrics inserted successfully
+ALL 6 INSERTS VERIFIED PERFECTLY! Rollback complete.
+

@@ -1,0 +1,2 @@
+worker_2 (8002): waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+worker_4 (8004): {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC9Uat/QtctW5cQ0kicWTT5MCfuCR32accMeR7JA0082 azureuser-to-google-vm
+

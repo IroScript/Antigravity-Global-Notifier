@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+total 2052
+drwxr-xr-x 2 azureuser azureuser   4096 Sep 25 13:20 .
+drwxr-xr-x 4 azureuser azureuser   4096 Sep 25 07:53 ..
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 07:56 00000000.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 08:00 00000001.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 08:03 00000002.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:32 00000003.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:47 00000004.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:50 00000005.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:54 00000006.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:58 00000007.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:02 00000008.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:08 00000009.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:16 00000010.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:19 00000011.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:26 00000012.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:37 00000013.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 12:04 00000014.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 12:24 00000015.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 12:39 00000016.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 12:51 00000017.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 13:20 00000018.jsonl
+-rw-r--r-- 1 azureuser azureuser  62284 Sep 25 13:28 00000019.jsonl
+

@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+        "location": "eastus",
+        "name": "FatehAli",
+            "adminUsername": "azureuser",
+            "name": "",
+        "resourceGroupName": "FATEHALI_GROUP",
+                "name": "FatehAli_OsDisk_1_4a0fe832fe7b45c485920e2a3aaf805a",
+        "subscriptionId": "506deb9a-42fa-468d-b78f-0f25a9e485e1",
+        "vmSize": "Standard_D4ads_v7",
+
+Terminal ID: 6e314212-1818-4feb-933e-364441d48375

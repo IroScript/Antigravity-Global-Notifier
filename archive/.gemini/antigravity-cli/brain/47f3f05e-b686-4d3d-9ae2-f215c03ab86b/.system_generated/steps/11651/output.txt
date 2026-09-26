@@ -1,0 +1,81 @@
+
+The command exited with code 0.
+Output:
+70:    const groups = getProjectGroupMap();
+71-    for (const [k, g] of Object.entries(groups)) {
+72-      if (g && g.id === sender) {
+73-        if (k === 'yt') return 'agy:yt';
+74-        if (k === 'frappe') return 'agy:frappe';
+75-        if (k === 'tg') return 'agy:tg';
+76-        if (k === 'history') return 'agy:history';
+77-        if (k === 'kids') return 'agy:kids';
+78-        if (k === 'rust') return 'agy:rust';
+79-        if (k === 'article') return 'agy:article';
+80-        if (k === 'game') return 'agy:game';
+81-      }
+82-    }
+83-  }
+84-  return 'agy:0';
+85-
+86-}
+87-
+88-function dispatchToTmux(promptText, targetWindow = 'agy:0') {
+89-  const cleanPrompt = (promptText || '').trim();
+90-  if (!cleanPrompt) return;
+--
+772:function getProjectGroupMap() {
+773-  if (fs.existsSync(PROJECT_GROUPS_FILE)) {
+774-    try {
+775-      return JSON.parse(fs.readFileSync(PROJECT_GROUPS_FILE, 'utf8'));
+776-    } catch (e) {}
+777-  }
+778-  return {};
+779-}
+780-
+781-function isAllowedSender(sender, participant = '') {
+782-  if (!sender) return false;
+783-  if (sender.endsWith('@g.us')) {
+784:    const groups = getProjectGroupMap();
+785-    const isOurGroup = Object.values(groups).some(g => g && g.id === sender);
+786-    if (!isOurGroup) return false;
+787-    const p = participant || '';
+788-    if (ALLOWED_NUMBERS.some(num => p.includes(num))) return true;
+789-    if (p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406')) return true;
+790-    const meLid = sock?.authState?.creds?.me?.lid || '';
+791-    if (meLid) {
+792-      const cleanLid = meLid.split(':')[0].split('@')[0];
+793-      if (cleanLid && p.includes(cleanLid)) return true;
+794-    }
+795-    return false;
+796-  }
+797-  if (ALLOWED_NUMBERS.some(num => sender.includes(num))) return true;
+798-  const meLid = sock?.authState?.creds?.me?.lid || '';
+799-  if (meLid) {
+800-    const cleanLid = meLid.split(':')[0].split('@')[0];
+801-    if (cleanLid && sender.includes(cleanLid)) return true;
+802-  }
+803-  if (sender.includes('82935919157317') || sender.includes('8801955333555')) return true;
+804-  return false;
+--
+1170:      const groups = getProjectGroupMap();
+1171-      let activeGroup = null;
+1172-      for (const [k, g] of Object.entries(groups)) {
+1173-        if (g && g.id === sender) {
+1174-          activeGroup = g;
+1175-          break;
+1176-        }
+1177-      }
+1178-
+1179-      const targetWindow = getWindowForSender(sender);
+1180-      lastUserMsgByWindow[targetWindow] = msg;
+1181-      lastUserMsgKeyByWindow[targetWindow] = msg.key;
+1182-
+1183-      let contextPrompt = text;
+1184-      if (activeGroup) {
+1185-        contextPrompt = `[প্রজেক্ট গ্রুপ: ${activeGroup.name} (${activeGroup.key})]: ${text}`;
+1186-      }
+1187-
+1188-      // 1. Instant dispatch to tmux (zero delay, immediate millisecond execution)
+1189-      dispatchToTmux(contextPrompt, targetWindow);
+1190-
+

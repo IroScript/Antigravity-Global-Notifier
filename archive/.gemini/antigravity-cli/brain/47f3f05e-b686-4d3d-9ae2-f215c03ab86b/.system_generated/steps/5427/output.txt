@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Line 14 too long (54 chars): • Subscription: `506deb9a-42fa-468d-b78f-0f25a9e485e1`
+Line 19 too long (56 chars):    `Azure Portal → Virtual machines → FatehAli → Backup`
+Max non-URL line length: 56
+
+Terminal ID: 468dae02-c713-418e-bcdf-38289d8d5851

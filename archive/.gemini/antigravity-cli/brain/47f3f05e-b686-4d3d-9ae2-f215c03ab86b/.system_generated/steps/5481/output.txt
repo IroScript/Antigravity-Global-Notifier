@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase
+

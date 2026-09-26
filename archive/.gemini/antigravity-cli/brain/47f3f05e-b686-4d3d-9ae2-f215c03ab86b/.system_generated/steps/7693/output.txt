@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+HTTP/1.1 307 Temporary Redirect
+
+Content-Type: text/html; charset=utf-8
+
+Location: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=202264815644.apps.googleusercontent.redacted&redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=56b40wLvTu5iL4bGV0RICw
+
+Date: Fri, 25 Sep 2026 18:02:58 GMT
+
+Connection: close
+
+
+
+

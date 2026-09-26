@@ -1,0 +1,17 @@
+The search for ""Antigravity CLI" "plugins" "skills" "rules" "hooks" "sidecars"" returned the following summary:
+Antigravity CLI is a terminal-based interface for Google’s **Antigravity** agentic development platform. It provides a lightweight, keyboard-centric way to interact with AI agents for coding, refactoring, and project automation.
+
+The platform uses a modular architecture where customizations can be bundled into **Plugins**. Key components of the Antigravity ecosystem include:
+
+### Core Customization Components
+*   **Plugins:** Namespaced bundles that act as a single deployable unit. They contain a required `plugin.json` manifest and can house skills, agents, rules, MCP (Model Context Protocol) servers, and hooks. When installed, the CLI stages these files (typically under `~/.gemini/antigravity-cli/plugins/`) for the agent to discover and load.
+*   **Skills:** Reusable agent capabilities defined in `SKILL.md` files. They allow agents to perform specific tasks or workflows (e.g., specific git management or testing patterns) and can be distributed within plugins.
+*   **Rules:** Markdown files that provide persistent, manually defined constraints to guide agent behavior, code style, and architectural patterns. Rules can be scoped to a directory or applied globally, with various activation modes such as "always on" or "model decision."
+*   **Hooks:** Custom scripts or shell commands triggered at specific points during the agent's execution loop. They are used to enforce rules, execute linters, or capture diagnostics.
+*   **Sidecars:** Specialized, often automated, background processes or commands. Examples include scheduled tasks (Cron sidecars) that help orchestrate long-running or auxiliary workflows outside the main agent conversation.
+
+### Usage in the CLI
+These components are managed and interacted with through the CLI, often using slash commands (e.g., `/agents` to monitor subagents). The CLI is designed for high-speed interaction, supporting:
+*   **Subagents:** Independent, concurrent agent sessions that allow the main agent to delegate tasks (like documentation lookup or build validation) in the background.
+*   **Terminal Sandbox:** A security mechanism that leverages native OS features (such as `nsjail`, `sandbox-exec`, or `AppContainer`) to isolate the agent's local shell commands and protect the host system.
+*   **Shared Harness:** The CLI shares the same core agent engine as Antigravity 2.0 and Antigravity IDE, ensuring that agent capabilities, settings, and customizations are consistent across all surfaces.

@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+total 0
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 0 -> /dev/pts/11
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 1 -> /dev/pts/11
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 10 -> 'socket:[5944772]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 2 -> /dev/pts/11
+lr-x------ 1 azureuser azureuser 64 Sep 25 12:00 3 -> /proc/1445
+l-wx------ 1 azureuser azureuser 64 Sep 25 11:00 4 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/logs/cluster_orchestrator.log (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 25 11:00 5 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-wal (deleted)'
+lr-x------ 1 azureuser azureuser 64 Sep 25 12:00 6 -> /proc/1445/smaps
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 62 -> 'socket:[4548790]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 65 -> 'socket:[4548791]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 11:00 7 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 25 12:00 8 -> 'anon_inode:[eventpoll]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 11:00 9 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm (deleted)'
+

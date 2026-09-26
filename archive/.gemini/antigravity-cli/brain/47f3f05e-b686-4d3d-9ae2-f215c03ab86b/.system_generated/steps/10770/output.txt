@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+7:<script src="/chart.min.js"></script>
+

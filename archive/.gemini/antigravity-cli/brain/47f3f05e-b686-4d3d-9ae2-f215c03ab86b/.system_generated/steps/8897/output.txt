@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Exit: 1
+Stderr: /usr/local/bin/rm:17: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+
+🛑 [DELETE-PROOF HARD BLOCK]
+Operation: rm -rf /tmp/dummy_file
+Status: PERMANENTLY DENIED (Rule 1, 2)
+Incident: INC-DEL-20260925202151-a08f92
+Reason: AGY has no deletion capability. Deletions are forbidden.
+Safe Alternative: Run `/home/azureuser/AGY-MASTER/POLICIES/safe_archive.py <path>` to preserve to /home/azureuser/GLOBAL-ARCHIVE/.
+

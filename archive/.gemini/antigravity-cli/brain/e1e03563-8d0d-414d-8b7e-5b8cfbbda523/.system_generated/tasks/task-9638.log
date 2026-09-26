@@ -1,0 +1,8 @@
+=== PORT 8001 ===
+{"status":"ok","worker_id":"worker_1","is_authenticated":true,"is_busy":true,"user":"Unknown","action_counter":1,"last_session_refresh":0.0}
+=== PORT 8002 ===
+{"status":"ok","worker_id":"worker_2","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":0,"last_session_refresh":0.0}
+=== PORT 8003 ===
+
+=== PORT 8004 ===
+{"status":"ok","worker_id":"worker_4","is_authenticated":true,"is_busy":true,"user":"Unknown","action_counter":1,"last_session_refresh":0.0}

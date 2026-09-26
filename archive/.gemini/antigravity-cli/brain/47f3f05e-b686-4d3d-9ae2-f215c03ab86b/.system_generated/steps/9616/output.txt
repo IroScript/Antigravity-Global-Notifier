@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+ 1112684  0.1  0.3 1802044 57556 pts/14  Ssl+ 08:50   0:00 /usr/bin/rclone size personaldrive:Azure_VM_Live_Backup_Fateh_Ali
+azureus+ 1113012  0.0  0.0   7484  3284 pts/12   Ss+  08:51   0:00 bash -c ps aux | grep 1112684
+azureus+ 1113014  0.0  0.0   7060  2188 pts/12   S+   08:51   0:00 grep 1112684
+

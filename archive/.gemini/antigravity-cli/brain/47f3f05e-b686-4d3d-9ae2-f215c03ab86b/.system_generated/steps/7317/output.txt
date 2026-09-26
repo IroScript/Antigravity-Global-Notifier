@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/etc/mysql/my.cnf.fallback:16:# It has been reported that passwords should be enclosed with ticks/quotes
+/etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf:23:# It has been reported that passwords should be enclosed with ticks/quotes
+

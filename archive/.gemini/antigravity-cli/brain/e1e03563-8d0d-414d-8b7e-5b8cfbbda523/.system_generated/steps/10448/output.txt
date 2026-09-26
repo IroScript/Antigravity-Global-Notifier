@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 14:35:16,321 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:35:26,323 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:35:36,325 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:35:46,326 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #607: No module named 'seo_engine.seo_models'
+2026-09-25 14:35:50,959 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #645: No module named 'seo_engine.seo_models'
+2026-09-25 14:36:01,327 [INFO] [worker_2] [Idea #608: 'Microbe Ocean Storm Engine'] Generating real SEO via http://localhost:8002...
+2026-09-25 14:36:04,452 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:36:05,963 [INFO] [worker_1] [Idea #671: 'Volcano Cooling Rocket Engine'] Generating 10-Level Escalation via http://localhost:8001...
+2026-09-25 14:36:14,463 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:36:24,465 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 14:36:34,466 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #608: No module named 'seo_engine.seo_models'
+

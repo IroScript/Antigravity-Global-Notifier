@@ -1,0 +1,81 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -689,6 +689,60 @@
+     `).join('');
+     
+     renderProcs();
++
++    // Real-time incremental graph advance (Latest second moves, past seconds remain static)
++    if (historyData && historyData.length > 0 && chartInstance && !isScrubbing) {
++      const lastIdx = historyData.length - 1;
++      const lastPoint = historyData[lastIdx];
++      const nowSec = Math.floor(Date.now() / 1000);
++
++      if (nowSec - (lastPoint.epoch || 0) >= 2) {
++        const newPt = {
++          epoch: nowSec,
++          t: new Date().toLocaleTimeString('en-US'),
++          dt: new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short' }) + ', ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
++          cpu: data.cpu_overall,
++          ram_gb: data.ram ? data.ram.used_gb : lastPoint.ram_gb,
++          ram_pct: data.ram ? data.ram.percent : lastPoint.ram_pct,
++          app1: data.apps && data.apps[0] ? { name: data.apps[0].app, cpu: data.apps[0].cpu, ram_gb: data.apps[0].ram_gb } : lastPoint.app1,
++          app2: data.apps && data.apps[1] ? { name: data.apps[1].app, cpu: data.apps[1].cpu, ram_gb: data.apps[1].ram_gb } : lastPoint.app2
++        };
++        historyData.push(newPt);
++
++        const maxMap = { '1m': 30, '5m': 60, '15m': 100, '30m': 120 };
++        const maxPts = maxMap[currentRange] || 100;
++        if (historyData.length > maxPts) {
++          historyData.shift();
++        }
++
++        chartInstance.data.labels = historyData.map(p => p.t);
++        if (currentMode === 'cpu') {
++          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
++          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.app1 ? p.app1.cpu : 0);
++          if (chartInstance.data.datasets[2]) chartInstance.data.datasets[2].data = historyData.map(p => p.app2 ? p.app2.cpu : 0);
++        } else if (currentMode === 'ram') {
++          chartInstance.data.datasets[0].data = historyData.map(p => p.ram_gb);
++        } else {
++          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
++          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.ram_pct);
++        }
++      } else {
++        lastPoint.cpu = data.cpu_overall;
++        if (data.ram) {
++          lastPoint.ram_gb = data.ram.used_gb;
++          lastPoint.ram_pct = data.ram.percent;
++        }
++        if (chartInstance.data.datasets.length > 0) {
++          const ds0 = chartInstance.data.datasets[0].data;
++          if (ds0.length > 0) {
++            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : lastPoint.cpu;
++          }
++        }
++      }
++
++      chartInstance.update('none');
++      updateGraphReport(historyData[historyData.length - 1], false);
++    }
+   } catch (e) {
+     console.error(e);
+   }
+@@ -733,7 +733,7 @@
+ fetchStats();
+ fetchHistory();
+ setInterval(fetchStats, 1500);
+-// Refresh history graph every 5 seconds for live animation
++// Background history sync every 30 seconds (no jitter or bouncing)
+ setInterval(() => {
+   if (!isScrubbing && (currentRange === '1m' || currentRange === '5m' || currentRange === '15m' || currentRange === '30m')) {
+     fetchHistory();
+@@ -740,4 +740,4 @@
+-}, 3000);
++}, 30000);
+ </script>
+ 
+ </body>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

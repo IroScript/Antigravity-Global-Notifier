@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+ok
+-rw-r--r-- 1 azureuser azureuser 39M Sep 25 15:48 /home/azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db
+c811e30cc1a33b2922d56c8e8bb83d9dbe8e1d9364d0cef6b4513f614244e041  /home/azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db
+

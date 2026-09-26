@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+65IN
+NnaQ0
+R9-j
+rw}Yw.
+i7bm
+AZid
+Atid
+RTRIM
+Anld
+!Yid
+!lld
+BXid
+D5TZ
+D5ps` (`idx`,`step_type`,`status`,`has_subtrajectory`,`metadata`,`error_details`,`permissions`,`task_details`,`render_info`,`step_payload`,`step_format`) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (`idx`) DO UPDATE SET `step_type`=`excluded`.`step_type`,`status`=`excluded`.`status`,`has_subtrajectory`=`excluded`.`has_subtrajectory`,`metadata`=`excluded`.`metadata`,`error_details`=`excluded`.`error_details`,`permissions`=`excluded`.`permissions`,`task_details`=`excluded`.`task_details`,`render_info`=`excluded`.`render_info`,`step_payload`=`excluded`.`step_payload`,`step_format`=`excluded`.`step_format`
+/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db
+/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db-journal
+/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db-wal
+':id
+fts3_tokenizer
+fts3_tokenizer
+snippet
+offsets
+matchinfo
+excluded
+'_ld
+excluded
+H>id
+step_format
+D5hT
+fts5_locale
+step_payload
+rtreenode
+rtreecheck
+x?id
+rtree
+excluded
+step_index
+ Terminal For WhatsApp@2026-09-12 1
+DE_RUN_S
+LEdefault-cli-project2026-09-12 15:41:37
+

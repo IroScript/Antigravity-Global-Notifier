@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+3653 PLANNER_RESPONSE 8691
+3686 PLANNER_RESPONSE 8724
+

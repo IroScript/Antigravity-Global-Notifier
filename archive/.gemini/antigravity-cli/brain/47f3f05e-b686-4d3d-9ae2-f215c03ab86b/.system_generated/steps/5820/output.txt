@@ -1,0 +1,45 @@
+
+The command exited with code 0.
+Output:
+Regions dumped!
+mpb,
+9FWsC
+n`m	
+pro1
+D5ps` (`idx`,`step_type`,`status`,`has_subtrajectory`,`metadata`,`error_details`,`permissions`,`task_details`,`render_info`,`step_payload`,`step_format`) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (`idx`) DO UPDATE SET `step_type`=`excluded`.`step_type`,`status`=`excluded`.`status`,`has_subtrajectory`=`excluded`.`has_subtrajectory`,`metadata`=`excluded`.`metadata`,`error_details`=`excluded`.`error_details`,`permissions`=`excluded`.`permissions`,`task_details`=`excluded`.`task_details`,`render_info`=`excluded`.`render_info`,`step_payload`=`excluded`.`step_payload`,`step_format`=`excluded`.`step_format`
+D5_metadata` (`idx`,`data`,`size`) VALUES (?,?,?) ON CONFLICT (`idx`) DO UPDATE SET `data`=`excluded`.`data`,`size`=`excluded`.`size`
+    - **DESKTOP COMPATIBILITY:** 
+    - **PRODUCT CARD SINGLE COLUMN ON MOBILE:** 
+ **Single Column (
+)** 
+14. **
+ (STRICT TELEGRAM SEARCH MANDATE 
+ LIVE TELEGRAM ONLY):**
+    - **LIVE TELEGRAM ONLY:** 
+ (Live Telegram via MTProto/Telethon API) 
+    - **STRICT PROHIBITION ON LOCAL FILE SEARCH:** 
+ (`buyers.json`, `raw_messages.json`, `buyers.csv` 
+    - **FAIL HONESTLY ("
+" / "FAILED"):** 
+" / "FAILED"
+    - **MANDATORY GROUP NAME & USER ID SPECIF
+{"CommandLine":"pwd","Cwd":"/home/azureuser/kids_tube_wi
+on","WaitMsBeforeAsync":0
+olAction@"
+ICATION (
+):** 
+ (Asking info) 
+ (Reporting info) 
+ **Group Name (
+)** 
+ **User ID (
+)** 
+15. **
+ (MOBILE READABILITY & TEXT WRAPPING MANDATE):**
+    - **TEXT WRAPPING (MAX 48-50 CHARACTERS):** 
+ `paste.rs` 
+ (wrap) 
+ (microscopic zoom-out) 
+    - **DIVIDER & BORDER CLAMPING (MAX 30-32 CHARACTERS):** 
+`, `
+

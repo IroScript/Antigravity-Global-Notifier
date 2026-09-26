@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw
+/home/azureuser/.openclaw/state
+/home/azureuser/.openclaw/workspace
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media
+
+Terminal ID: 7f4a9948-2ccb-4c74-b64b-2183fcc7f6ce

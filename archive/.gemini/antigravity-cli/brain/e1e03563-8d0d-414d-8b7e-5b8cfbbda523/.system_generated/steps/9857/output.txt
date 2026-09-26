@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+  - Worker 1: macro_resting (Completed: 36)
+  - Worker 2: generating_seo (Completed: 21)
+  - Worker 3: macro_resting (Completed: 232)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-25 12:51:18,981 [INFO] [30MinMonitor] 📊 30-Minute progress snapshot saved to: cluster_30min_report.log
+2026-09-25 12:51:31,885 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #577: No module named 'seo_engine.seo_models'
+2026-09-25 12:51:46,887 [INFO] [worker_2] [Idea #578: 'DNA Ocean Evolution Engine'] Generating real SEO via http://localhost:8002...
+2026-09-25 12:53:16,102 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #578: No module named 'seo_engine.seo_models'
+2026-09-25 12:53:31,104 [INFO] [worker_2] [Idea #579: 'DNA Solar Evolution Colossus'] Generating real SEO via http://localhost:8002...
+2026-09-25 12:55:37,124 [WARNING] [worker_4] Retry 5/5 for Ideas for Element #86 (Stadium) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 12:55:51,112 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #579: No module named 'seo_engine.seo_models'
+2026-09-25 12:55:52,125 [ERROR] [worker_4] Worker worker_4 failed generating ideas for Stadium: Timeout
+2026-09-25 12:56:02,126 [INFO] [worker_4] [Elem #87: Giant Wheel] Generating 10 ideas via http://localhost:8004...
+2026-09-25 12:56:06,114 [INFO] [worker_2] [Idea #580: 'DNA Memory Reconstruction Titan'] Generating real SEO via http://localhost:8002...
+2026-09-25 12:58:07,140 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #580: No module named 'seo_engine.seo_models'
+2026-09-25 12:58:22,142 [INFO] [worker_2] [Idea #581: 'DNA Storm Adaptation Machine'] Generating real SEO via http://localhost:8002...
+2026-09-25 13:00:24,645 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #581: No module named 'seo_engine.seo_models'
+2026-09-25 13:00:39,647 [INFO] [worker_2] [Idea #582: 'DNA Planetary Root Weaver'] Generating real SEO via http://localhost:8002...
+

@@ -1,0 +1,2 @@
+Created file file:///home/azureuser/AGY-MASTER/REPORTS/HARDENED_FOUR_LAYER_ARCHITECTURE_AND_PRE_IMPLEMENTATION_GATES.md with requested content.
+If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.

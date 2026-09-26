@@ -1,0 +1,5 @@
+
+The command exited with code 2.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 1179 Sep 25 10:55  /tmp/test_reconstruct.py
+

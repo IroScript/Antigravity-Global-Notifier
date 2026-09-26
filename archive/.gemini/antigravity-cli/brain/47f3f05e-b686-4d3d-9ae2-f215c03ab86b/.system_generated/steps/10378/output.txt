@@ -1,0 +1,12 @@
+
+The command exited with code 255.
+Output:
+Testing user: azureuser
+azureuser@35.253.244.80: Permission denied (publickey).
+Testing user: irak
+irak@35.253.244.80: Permission denied (publickey).
+Testing user: mdkamruzzamanirak
+mdkamruzzamanirak@35.253.244.80: Permission denied (publickey).
+Testing user: root
+root@35.253.244.80: Permission denied (publickey).
+

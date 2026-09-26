@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+● webterminal.service
+     Loaded: not-found (Reason: Unit webterminal.service not found.)
+     Active: active (running) since Tue 2026-09-22 18:34:27 UTC; 3 days ago
+ Invocation: 408c3b66d5824a599f341de03f1174a5
+   Main PID: 1558 (ttyd)
+      Tasks: 2 (limit: 19137)
+     Memory: 6.6M (peak: 31.7M, swap: 0B, swap peak: 2.7M)
+        CPU: 2min 1.760s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/webterminal.service
+             ├─1558 /usr/local/bin/ttyd -W -p 7681 -P 5 -I /home/azureuser/.web…
+             └─1637 python3 /home/azureuser/.webterminal/watch_reply.py
+
+Sep 26 11:00:36 FatehAli bash[1558]: [2026/09/26 11:00:36:5990] N: rops_han…ADDR
+Sep 26 12:31:11 FatehAli bash[1558]: [2026/09/26 12:31:11:4332] N: rops_han…ADDR
+Sep 26 13:00:12 FatehAli bash[1558]: [2026/09/26 13:00:12:6557] N: rops_han…ADDR
+Sep 26 13:02:05 FatehAli bash[1558]: [2026/09/26 13:02:05:1850] N: rops_han…ADDR
+Sep 26 13:30:35 FatehAli bash[1558]: [2026/09/26 13:30:35:6831] N: rops_han…ADDR
+Sep 26 14:00:19 FatehAli bash[1558]: [2026/09/26 14:00:19:2199] N: rops_han…ADDR
+Sep 26 14:30:23 FatehAli bash[1558]: [2026/09/26 14:30:23:3730] N: rops_han…ADDR
+Sep 26 14:30:26 FatehAli bash[1558]: [2026/09/26 14:30:26:9528] N: rops_han…ADDR
+Sep 26 15:00:12 FatehAli bash[1558]: [2026/09/26 15:00:12:1060] N: rops_han…ADDR
+Sep 26 15:30:16 FatehAli bash[1558]: [2026/09/26 15:30:16:6339] N: rops_han…ADDR
+Hint: Some lines were ellipsized, use -l to show in full.
+

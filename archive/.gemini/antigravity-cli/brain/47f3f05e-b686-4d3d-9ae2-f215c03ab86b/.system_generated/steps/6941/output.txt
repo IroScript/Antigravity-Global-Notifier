@@ -1,0 +1,28 @@
+The search for ""google drive" allow upload without delete permission OR "shared drive" roles" returned the following summary:
+Google Drive does not natively provide a way to grant "upload-only" access to a folder that prevents the uploader from also deleting files[1][2][3]. In both standard folders and Shared Drives, the permission levels required to add files (Editor or Contributor) inherently include the ability to delete or modify content[1][4][5].
+
+### Why this is restricted
+*   **Inherited Permissions:** In Google Drive, permissions are inherited[6][7]. If you give someone "Editor" access to a folder so they can add files, that same access level applies to the files within it, allowing them to delete or move them[4][3].
+*   **Shared Drive Roles:** While Shared Drives offer more granular roles than standard folders (Manager, Content Manager, Contributor, Commenter, Viewer)[8], none of these roles permit adding files without also granting the ability to edit or delete[5]. 
+    *   **Contributors** can add and edit files[5].
+    *   **Content Managers** (the default for many) can add, edit, move, and delete files[8].
+
+### Recommended Workarounds
+Because Google Drive does not support a native "drop-box" style permission, you can use these alternatives to achieve the same result:
+
+1.  **Google Forms (Best for file collection):** Create a Google Form and add a "File Upload" question type[9]. This allows users to submit files to a folder you own without them needing access to the folder itself[9][3]. They will not be able to see, edit, or delete other people's submissions[6][9].
+2.  **Third-Party Tools:** Services like *File Request Pro* or *PigeonFiles* are specifically designed to create "upload-only" portals for Google Drive[9][3]. These tools provide a link for users to upload files directly into your Drive without giving them any other access to your folders[10][3].
+3.  **Individual Folder Sharing (If collaboration is required):** If you are working with a small, trusted team, have them create their own folders and share them with you[6][11]. You can then move these into your master folder[11]. This keeps the files under their ownership while still centralizing them for your view[6][11].
+
+Sources:
+[1] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7-qtaR5GwBIwG4nMYmZJ_4c8jx6_mLcR1HNAAp3usaI0z7OzekV9ytRZpXGeJD8BT-zDM9h75Ukwpmp0s4h5JQvxXsP1AUkd0DxcRnEuC1-hpIkAYuUfHeIJnhAxe6vBoeKmMLIQUOK-WXzQBgzLunw1X2ILrIne3wcVC-CREFv-Bg1kwV5w2DGMyDdnprlagmBHIqfeK6CH1ej4c1Q==)
+[2] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7-qtaR5GwBIwG4nMYmZJ_4c8jx6_mLcR1HNAAp3usaI0z7OzekV9ytRZpXGeJD8BT-zDM9h75Ukwpmp0s4h5JQvxXsP1AUkd0DxcRnEuC1-hpIkAYuUfHeIJnhAxe6vBoeKmMLIQUOK-WXzQBgzLunw1X2ILrIne3wcVC-CREFv-Bg1kwV5w2DGMyDdnprlagmBHIqfeK6CH1ej4c1Q==)
+[3] [filerequestpro.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJkEzIe3dB6mYk55Rz9vv5N50FJsrk9n9TgYBBO4ceWzOonV8rFsLqmChQ-Rfh6bZRjDb1g2Qk5cvrcMie9TXRZ89u8INfA7QAjSlTBiktdlmcdqdrqq8Lb-tLNA9jNbxDUJTRHOyOKgMYFqTNPVcmRkxqCfLLFPaoCecYCVgoJGq93QAJ4BM-nm48441O7RpZYz8=)
+[4] [nightfall.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9nt7fEeeKXExevcc3txv6es5p5jxN96FD5dbcrPXlGpdABmc2tYdioIgy-rwT0Ib0kxdNkGkDExm66zGW2iTci-JIEq1KGsPsTFduYwX3c7YshrTPU1jSqCtigdG209Je56uW2H0Nag4-niOu)
+[5] [pipelinedigital.co.uk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2uLLBRjG6nZbrfdC4Ex9hHIvuBFswaVASnrKzJH85TC5uh-kxsyB79gNtIyGCtBGpv3gEJk3xJtvjmD5weFYzgcxGbPQo-ii8RoRvEfkQHFV8qQXY54yshejDst8pRyB37trWYXCflOPalh28bDMcuALVaapDkGfbkq0WEnTK1rNo9uAZlJtdF4OizK7qJN9tITrtfN0pGoJNR70=)
+[6] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7vhSQhi4yJZKNPKu2yHBibQZz2oMoLQkWHLlsJuy4wIzHR_3YIZQ2W0J8CaqKq_74mloigYybvwK8nidcyQZDiXLOGlu4j_LyTVIshDKQoP6Y-2EJQeo_Gw5myFKy-kUwUh-1uW7BFmcY_ENW5uKpsKVpdkQuuuOhb2sulDw35Gq9yFTK2-CY4jR6XA==)
+[7] [overdrive.tools](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcfeYYq0doD7TvF8nlEcfAVDNwd1koOOux_Bmvf4wre3eKA95cufgjfqPezvfnhau7GM30jfrCsMsshE0DV_wqi0RQcWQjPoZ9HjZGozr-pHgo88UT4k0kupeDV9MEc2k7mg5R3l5zvi7sTrliWdmBGXC_w8Ec_p4=)
+[8] [suitebriar.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVyj0TWKTsj0Elbql4ceVcm3BI4MhEFz1CWGtlxefN9P5jzr5yNcj7-lLz4zFTk9q663XeScw5P1R-5Y-hcKtbuUg4tyDqwQ5PzKp5AAjys0KxiSMwt8AgaR3A5gkzU3jZSR9QLt3-osNO9OIYJmRhXMRxrJmdvZNVCgXgQoK4snFbsG35TlcJiwzf)
+[9] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrqcTZePqHdCSm1HyZDTgqlXobFVqbPIT7CJbjc0w__v6nw-9eKPe324nOpveshQq5-G0CeqflwTH12yXeKppvDVj33B3VcakjX-wlPZ2AR1n3glAnpZbe8uTwLYrDXanJwT32tmDxR3QycxPDPA9VmOeHgRBweu7UPoUsw2cAuovp_uFYkFSRi1sjnc4tuGahKdfBgQZu)
+[10] [sendtodrive.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjaZ7KQEve6bigy9shWP4u1UOYmmIeeoF1aCasDe5fydJW_3pMH4sKelU3xpeNWeVNJAylRPF09KP2VRiLC0fRIUnOZc9v60eWlUXzPvWcx0ubcd-FdgVkMULM8vF4dxESy30LdzA9qR4CdqgOQTDJ2InBuYgUEqEd4gXJ9Q==)
+[11] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7vhSQhi4yJZKNPKu2yHBibQZz2oMoLQkWHLlsJuy4wIzHR_3YIZQ2W0J8CaqKq_74mloigYybvwK8nidcyQZDiXLOGlu4j_LyTVIshDKQoP6Y-2EJQeo_Gw5myFKy-kUwUh-1uW7BFmcY_ENW5uKpsKVpdkQuuuOhb2sulDw35Gq9yFTK2-CY4jR6XA==)

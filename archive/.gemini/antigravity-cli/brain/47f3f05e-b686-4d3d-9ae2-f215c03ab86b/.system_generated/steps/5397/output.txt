@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.local:
+total 16
+drwxrwxr-x  4 azureuser azureuser 4096 Sep 25 08:34 .
+drwxr-xr-x 15 azureuser azureuser 4096 Sep 25 10:06 ..
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 08:02 bin
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 08:34 share
+
+/home/azureuser/.npm-global:
+total 16
+drwxrwxr-x  4 azureuser azureuser 4096 Sep 25 10:06 .
+drwxr-xr-x 15 azureuser azureuser 4096 Sep 25 10:06 ..
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 10:06 bin
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 10:06 lib
+
+/home/azureuser/.openclaw:
+total 20
+drwx------  5 azureuser azureuser 4096 Sep 25 07:56 .
+drwxr-xr-x 15 azureuser azureuser 4096 Sep 25 10:06 ..
+drwx------  3 azureuser azureuser 4096 Sep 25 07:56 agents
+drwx------  2 azureuser azureuser 4096 Sep 25 07:53 state
+drwx------  3 azureuser azureuser 4096 Sep 25 07:53 workspace
+
+/home/azureuser/.webterminal:
+total 2944
+drwxrwxr-x  9 azureuser azureuser    4096 Sep 25 10:25 .
+drwxr-xr-x 15 azureuser azureuser    4096 Sep 25 10:06 ..
+-rw-r--r--  1 azureuser azureuser     191 Sep 25 08:03 boundary_guard.py
+-rw-rw-r--  1 azureuser azureuser      34 Sep 25 10:35 incoming_cmd_agy_0.txt
+-rwxrwxr-x  1 azureuser azureuser     352 Sep 25 10:07 init_agy_sessions.sh
+-rw-rw-r--  1 azureuser azureuser     817 Sep 25 10:34 outgoing_wa_message.json
+-rw-rw-r--  1 azureuser azureuser     231 Sep 25 10:00 resource_monitor.log
+-rw-rw-r--  1 azureuser azureuser      14 Sep 25 10:07 target_phone.txt
+-rw-rw-r--  1 azureuser azureuser     450 Sep 25 10:30 vm_30m_report.log
+-rw-rw-r--  1 azureuser azureuser   12636 Sep 25 10:35 vm_sizing.log
+-rw-r--r--  1 root      root            0 Sep 25 07:59 vm_sizing_24h.db
+drwxrwxr-x  2 azureuser azureuser 1728512 Sep 25 10:34 wa_auth
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:06 wa_auth_backup_1790330903504
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:08 wa_auth_backup_1790331071783
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:11 wa_auth_backup_1790331241199
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:14 wa_auth_backup_1790331409140
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:16 wa_auth_backup_1790331425527
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:08 wa_auth_senderkeys_backup
+-rw-rw-r--  1 azureuser azureuser 1133516 Sep 25 10:35 whatsapp.log
+-rw-r--r--  1 azureuser azureuser   64365 Sep 25 10:05 whatsapp_bridge.js
+
+Terminal ID: d43ced09-2f45-44d2-a8a9-7cc0a6a0380b

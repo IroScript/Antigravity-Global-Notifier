@@ -1,0 +1,16 @@
+
+The command exited with code 52.
+Output:
+*   Trying 127.0.0.1:8090...
+* Connected to 127.0.0.1 (127.0.0.1) port 8090
+* using HTTP/1.x
+> GET /api/history?range=1h HTTP/1.1
+> Host: 127.0.0.1:8090
+> User-Agent: curl/8.14.1
+> Accept: */*
+> 
+* Request completely sent off
+* Empty reply from server
+* shutting down connection #0
+curl: (52) Empty reply from server
+

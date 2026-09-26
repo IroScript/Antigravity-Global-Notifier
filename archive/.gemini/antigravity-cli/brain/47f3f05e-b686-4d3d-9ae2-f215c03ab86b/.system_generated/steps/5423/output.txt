@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+az cli not installed
+
+Terminal ID: 4f183ebe-22a0-476b-a4b0-e0092962841b

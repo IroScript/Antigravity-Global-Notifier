@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+I09I0923 07:21:50.274391   49557 input_loop.go:107] HandleUserInput called with texI0923 07:22:07.561761   49574 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্I0923 07:23:15.873091   49519 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Kids Tube (kids)]: Hi, Can you mention your current path of project location"
+I0924 18:36:09.639018  223944 command_hook_executor.go:75] JSON hook command stderr: 
+I0924 18:38:05.113777  234267 command_hook_executor.go:75] JSON hook command stderr: 
+I0924 21:47:06.117498  269024 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 05:22:29.158873  300058 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Rust Task & Note (rust)]: Dekho rust e jevabe chhilo oivabei thakbe, check kore dekho small window case e ki ki feature chhilo.....egulo ami onek kosto kore toiri koresi....aar tumi obohela korso"
+I0925 05:27:35.727858  312093 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe0c7520f5dbbbf42 ResponseID: RAa2atqnGame1MkP9tbngAo
+I0925 05:28:11.827856  300061 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 05:30:31.104032  314163 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 05:50:13.173665  317957 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Rust Task & Note (rust)]: Link gulo clickable nsa"
+I0925 05:51:28.658545  317960 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 06:28:55.717440  323237 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Rust Task & Note (rust)]: হ্যাঁ—এটা খুব শক্তভাবে করা সম্ভব, এবং আমি AGY-এর জন্য এমন একটি “Feature Parity Enforcement System” রাখব যাতে Rust GUI-তে কোনো নতুন/পুরোনো feature থাকলে Flutter APK-তে সেটি বাদ পড়ে যাওয়ার সম্ভাবনা ধরতে পারে।"
+I0925 06:28:56.191591  323252 input_loop.go:107] HandleUserInput called with text: "Rust = source-of-truth functionality/core"
+I0925 06:28:56.807044  323229 input_loop.go:107] HandleUserInput called with text: "Flutter = Android UI + Rust-এর সম্পূর্ণ capability surface"
+I0925 06:28:58.430765  323277 input_loop.go:107] HandleUserInput called with text: "Flutter dart:ffi দিয়ে native Rust library-এর সঙ্গে কথা বলতে পারে; Flutter-এর official documentation-ও Rust-এর মতো native language-এর ক্ষেত্রে FFI ব্যবহারের কথা বলে।"
+I0925 06:28:59.474178  323335 input_loop.go:107] HandleUserInput called with text: "1. Rust Feature RegistryRust-এর প্রতিটি feature-এর unique ID"
+I0925 06:29:00.913058  323400 input_loop.go:107] HandleUserInput called with text: "2. Flutter Capability Registryপ্রতিটি Rust feature-এর Flutter implementation আছে কি না"
+I0925 06:29:01.877487  322862 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 06:29:02.175600  323431 input_loop.go:107] HandleUserInput called with text: "3. API/FFI Manifest CheckRust export বনাম Flutter binding mismatch"
+I0925 06:29:02.956408  323491 input_loop.go:107] HandleUserInput called with text: "4. Method/Command ParityRust-এর command আছে কিন্তু Flutter-তে নেই—ধরবে"
+I0925 06:29:04.932075  323793 input_loop.go:107] HandleUserInput called with text: "6. Enum/State ParityRust-এর নতুন enum/state Flutter-তে missing—ধরবে"
+I0925 06:29:07.877726  323839 input_loop.go:107] HandleUserInput called with text: "9. Build/ABI MatrixARM64 APK-তে native Rust library ঠিকমতো bundled হয়েছে কি না"
+I0925 06:29:10.530845  323885 input_loop.go:107] HandleUserInput called with text: "11. Negative Testinvalid input/error/timeout/cancel behaviour Rust ও Flutter-তে consistent কি না"
+I0925 06:29:13.075106  324073 input_loop.go:107] HandleUserInput called with text: "Rust Feature"
+I0925 06:29:22.316739  324426 input_loop.go:107] HandleUserInput called with text: "> Rust → Flutter"
+I0925 06:29:23.316182  324497 input_loop.go:107] HandleUserInput called with text: "Rust → Flutter"
+I0925 06:29:24.307893  324507 input_loop.go:107] HandleUserInput called with text: "\"Rust-এর কোন feature Flutter-তে নেই?\""
+I0925 06:29:24.682539  324523 input_loop.go:107] HandleUserInput called with text: "Flutter → Rust"
+I0925 06:29:26.339411  324647 input_loop.go:107] HandleUserInput called with text: "যার Rust implementation নেই?\""
+I0925 06:29:30.630362  324963 input_loop.go:107] HandleUserInput called with text: "এছাড়া Rust-এর নতুন feature যোগ হলেই CI/AGY checker automatically বলবে:"
+I0925 06:29:30.979776  323496 command_hook_executor.go:75] JSON hook command stderr: 
+

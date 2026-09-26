@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+total 36
+drwx------ 9 root      root      4096 Sep 25 10:54 .
+drwxr-xr-x 4 root      root      4096 Sep 25 10:54 ..
+drwx------ 3 root      root      4096 Sep 25 10:54 .config
+drwx------ 4 root      root      4096 Sep 25 10:54 .gemini
+drwx------ 3 root      root      4096 Sep 25 10:54 .local
+drwx------ 2 root      root      4096 Sep 25 10:54 .npm
+drwx------ 4 root      root      4096 Sep 25 10:54 .npm-global
+drwx------ 3 root      root      4096 Sep 25 10:54 .openclaw
+-rw-r--r-- 1 azureuser azureuser    0 Sep 25 08:00 .sudo_as_admin_successful
+drwx------ 2 root      root      4096 Sep 25 10:54 .webterminal
+

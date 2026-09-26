@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+139
+total 1.4G
+-rw-rw-r-- 1 azureuser azureuser 6.8M Sep 24 19:27 I_0003036631.mp4
+-rw-rw-r-- 1 azureuser azureuser 9.4M Sep 24 19:28 I_0003036638.mp4
+-rw-rw-r-- 1 azureuser azureuser 7.3M Sep 24 22:05 I_0003037794.mp4
+-rw-rw-r-- 1 azureuser azureuser 7.7M Sep 24 22:05 I_0003037800.mp4
+-rw-rw-r-- 1 azureuser azureuser 9.7M Sep 24 22:05 I_0003037806.mp4
+-rw-rw-r-- 1 azureuser azureuser  11M Sep 17 09:06 I_0013994838.mp4
+-rw-rw-r-- 1 azureuser azureuser 9.5M Sep 17 12:41 I_0013994839.mp4
+-rw-rw-r-- 1 azureuser azureuser 6.2M Sep 17 08:54 I_0013994840.mp4
+-rw-rw-r-- 1 azureuser azureuser 8.6M Sep 17 09:11 I_0013994841.mp4
+-rw-rw-r-- 1 azureuser azureuser 9.5M Sep 17 09:15 I_0013994842.mp4
+-rw-rw-r-- 1 azureuser azureuser  11M Sep 17 09:19 I_0013994843.mp4
+-rw-rw-r-- 1 azureuser azureuser  11M Sep 17 09:23 I_0013994844.mp4
+-rw-rw-r-- 1 azureuser azureuser 9.0M Sep 17 09:33 I_0013994845.mp4
+-rw-rw-r-- 1 azureuser azureuser  13M Sep 17 09:45 I_0013994846.mp4
+

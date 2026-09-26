@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Checking extents of 136 files...
+Filesystem type is: ef53
+File size of /home/azureuser/RESTORED_VIDEOS/I_0014580479.mp4 is 7995395 (1953 blocks of 4096 bytes)
+ ext:     logical_offset:        physical_offset: length:   expected: flags:
+   0:        0..    1952:   22369792..  22371744:   1953:             last,eof
+/home/azureuser/RESTORED_VIDEOS/I_0014580479.mp4: 1 extent found
+
+

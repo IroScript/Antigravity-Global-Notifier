@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"error":"invalid_request","error_description":"Identity not found"}

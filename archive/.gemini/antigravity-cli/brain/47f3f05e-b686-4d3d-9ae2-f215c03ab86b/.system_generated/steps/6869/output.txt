@@ -1,0 +1,78 @@
+
+The command exited with code 0.
+Output:
+<truncated 9 lines>
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   10290 Sep 18 09:37 AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep  6 18:15 .agy_evidence
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    8672 Sep 18 08:30 AGY_FINAL_RELIABILITY_GATE_REPORT.md
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    8306 Sep 18 08:45 AGY_ISOLATED_IMPLEMENTATION_REPORT.md
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    6724 Sep 18 08:03 AGY_RELIABILITY_ENGINE_VALIDATION_REPORT.md
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 17 08:27 .android
+drwxrwxr-x 10 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 12:34 android-sdk
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   32690 Sep 18 06:59 ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+drwxrwxr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 11 19:13 Antigravity-Global-Notifier
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     549 Sep 17 08:31 apk_download_link.txt
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com       2 Sep 17 08:30 apk_tunnel.log
+drwxrwxr-x 11 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 20 16:46 Article-Publishing-Platform
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    3048 Sep 22 12:51 AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md
+-rw-------  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    9532 Sep 25 13:24 .bash_history
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     220 Aug 17 09:43 .bash_logout
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4803 Sep 16 04:25 .bashrc
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep  6 18:41 bengali_terminal
+drwxrwxr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 13 01:15 browser_env
+drwxrwxr-x 11 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 03:55 .cache
+drwxrwxr-x  4 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 20 17:09 .cargo
+lrwxrwxrwx  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      55 Sep 14 08:30 .chrome_data -> /home/mdkamruzzamanirak_gmail_com/.config/google-chrome
+drwxrwxr-x  5 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 14 08:30 .chrome_home
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      98 Sep 25 13:33 chrome_remote_url.txt
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Aug 17 10:19 .claude
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     242 Aug 17 10:19 .claude.json
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 13 01:18 .cloakbrowser
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 08:34 cloud
+drwxrwxr-x 18 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 16 18:06 .config
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      59 Sep 25 13:33 csv_downloads_url.txt
+drwxrwxr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 12:26 .dartServer
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 12:36 .dart-tool
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 20 18:48 Downloads
+drwxr-xr-x 19 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 16 14:51 flutter
+drwxrwxr-x  7 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 14 15:54 frappe-bench
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 9226115 Sep 22 17:55 frappe_db_backup.sql
+drwxrwxr-x  8 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 20 18:38 Frappe-erp-Alco
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   21092 Sep 13 18:21 game.js
+drwxr-xr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 04:30 .gemini
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   62445 Sep 18 06:59 GEMINI.md
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      56 Sep 14 15:47 .gitconfig
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   10728 Sep 22 10:54 GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md
+drwxrwxr-x 11 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 20 17:30 .gradle
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Aug 18 07:16 IROSCRIPT-CEO
+drwxrwxr-x  9 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 15 17:49 kids_tube_with_folder_seection
+drwxrwxr-x  7 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 14 15:17 .local
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 15 17:47 .m2
+drwxrwxr-x  5 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 12:10 .npm
+drwxrwxr-x  4 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Aug 17 10:02 .npm-global
+-rw-------  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      53 Aug 17 10:00 .npmrc
+drwx------ 24 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep  3 04:07 .openclaw
+drwxrwxr-x  5 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 22 16:21 openrecall_vault
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    2686 Sep  6 18:56 paste_rs_explanation.txt
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com  268261 Sep 22 11:11 payload_articles.sql
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   13953 Sep  1 15:47 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+lrwxrwxrwx  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com      90 Sep  2 08:45 personal_agent_data -> /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/data
+drwxrwxr-x  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 13 18:21 practice
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    1105 Sep 16 04:25 .profile
+drwxrwxr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 16 14:54 .pub-cache
+drwxrwxr-x 14 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 14 15:42 .pyenv
+-rw-r--r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     803 Sep  6 18:47 random_bangla_text.txt
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com   36692 Sep 25 13:33 rust_apk_tunnel.log
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     382 Sep 16 14:40 rust_frontend.log
+drwxrwxr-x 18 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 21 13:41 Rust_Task_With_Time_Keeping_And_Live_Note
+drwxrwxr-x  6 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 16 04:25 .rustup
+drwx------  2 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 22 10:05 .ssh
+-rwxr-xr-x  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com       0 Sep 17 08:30 start_apk_tunnel.sh
+drwxrwxr-x  3 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 18 06:40 telegram-bot
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     970 Sep 11 04:24 .tmux.conf
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    8350 Sep  1 15:47 USER_PERSONAL_AGENT_CONTEXT.md
+drwxrwxr-x  5 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 17 11:16 var
+drwxrwxr-x 55 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com    4096 Sep 25 13:33 .webterminal
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     112 Sep 25 13:33 web_terminal_link.txt
+-rw-rw-r--  1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com     116 Sep 14 15:56 .yarnrc
+

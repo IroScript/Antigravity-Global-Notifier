@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+PERSONAL AI AGENT: found 0 valid dir entries
+Ask-And-Research: found 23 valid dir entries
+   offset: 217836064, inode: 1572923, rec_len: 24
+   offset: 360487456, inode: 1572923, rec_len: 24
+   offset: 405461536, inode: 1572923, rec_len: 24
+   offset: 428513824, inode: 1572923, rec_len: 24
+   offset: 560835104, inode: 1572923, rec_len: 24
+alco_ecommerce: found 0 valid dir entries
+

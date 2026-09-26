@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+=== OS & KERNEL ===
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+=== CPU & RAM ===
+2
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       3.8Gi       114Mi        21Mi       183Mi        78Mi
+Swap:             0B          0B          0B
+=== DISK ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        69G   46G   20G  70% /
+=== GPU ===
+No GPU
+

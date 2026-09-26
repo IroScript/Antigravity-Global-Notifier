@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+858:      if (xt.socket.readyState === WebSocket.OPEN) {
+862:      if (xt.socket.readyState === WebSocket.CONNECTING) {
+880:        if (xt.socket && xt.socket.readyState === WebSocket.OPEN) {
+887:          if (!xt.socket || xt.socket.readyState !== WebSocket.OPEN) {
+919:      if (xt && xt.socket && xt.socket.readyState === WebSocket.OPEN) {
+936:    if (!xt.socket || xt.socket.readyState === WebSocket.CLOSED) {
+941:    } else if (xt.socket.readyState === WebSocket.OPEN) {
+952:      if (!xt || !xt.socket || (xt.socket.readyState !== WebSocket.OPEN && xt.socket.readyState !== WebSocket.CONNECTING)) {
+960:    if (!xt || !xt.socket || (xt.socket.readyState !== WebSocket.OPEN && xt.socket.readyState !== WebSocket.CONNECTING)) {
+972:    if (xt && xt.socket && xt.socket.readyState !== WebSocket.OPEN && xt.socket.readyState !== WebSocket.CONNECTING) {
+979:    if (xt && xt.socket && xt.socket.readyState !== WebSocket.OPEN && xt.socket.readyState !== WebSocket.CONNECTING) {
+

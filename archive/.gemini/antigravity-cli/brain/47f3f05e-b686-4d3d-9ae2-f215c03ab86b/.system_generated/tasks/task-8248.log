@@ -1,0 +1,8 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T19:34:33Z
+Prompt: Check 128M chunk upload progress
+Early Termination: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8224
+
+[2026-09-25T19:33:33Z] Still waiting. Remaining time: 1m0s
+[2026-09-25T19:34:03Z] Still waiting. Remaining time: 30s
+[2026-09-25T19:34:33Z] Timer fired.

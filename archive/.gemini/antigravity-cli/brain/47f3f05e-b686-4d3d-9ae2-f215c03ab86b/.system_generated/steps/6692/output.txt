@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+35 * ব্রাউজার বা মোবাইলে এই লিংকে যান:
+35   `https://github.com/login/device`
+39 * কোডটি বসালেই স্বয়ংক্রিয়ভাবে লগইন হবে!
+

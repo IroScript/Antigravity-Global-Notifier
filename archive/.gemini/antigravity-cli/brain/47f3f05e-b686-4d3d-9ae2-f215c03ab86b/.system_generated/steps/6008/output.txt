@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+audit_logs              idea_tags               seo_runs              
+categories              idea_versions           settings              
+channel2_shot_audits    ideas                   step_attempts         
+channel_prompts         jobs                    step_runs             
+channels                models                  tags                  
+collection_ideas        pipeline_checkpoints    task_attempts         
+collections             pipeline_failure_logs   tasks                 
+content_history         pipeline_row_state      test_jsonb_payloads   
+duplicate_checks        pipeline_runs           test_req_003_no_uuid  
+elements                pipeline_stage_audits   test_req_003_with_uuid
+execution_events        prompt_versions         workflow_executions   
+external_operations     prompting_style_master  workflow_migrations   
+generated_videos        prompts                 workflow_steps        
+generation_jobs         publishing              workflow_versions     
+idea_assets             req_009_tx_test         workflows             
+idea_elements           schedules               youtube_metadata      
+idea_embeddings         seo_competitors       
+idea_features           seo_keyword_metrics   
+

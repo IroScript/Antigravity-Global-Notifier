@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+head: cannot open '/recovered/WINDOW_0753/MAGIC-2/text/x-shellscript*/I_0013999241.sh' for reading: No such file or directory
+

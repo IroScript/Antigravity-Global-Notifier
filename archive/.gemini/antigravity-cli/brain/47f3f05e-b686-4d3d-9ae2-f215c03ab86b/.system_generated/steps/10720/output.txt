@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 201K Sep 26 13:53 /home/azureuser/IrakIroan/azure_file_explorer/static/chart.min.js
+

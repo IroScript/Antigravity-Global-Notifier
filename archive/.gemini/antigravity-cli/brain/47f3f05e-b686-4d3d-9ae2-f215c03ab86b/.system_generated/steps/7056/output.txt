@@ -1,0 +1,26 @@
+The search for ""gcloud org-policies reset" OR "gcloud resource-manager org-policies disable-enforce" "iam.managed.disableServiceAccountKeyCreation"" returned the following summary:
+To manage the `iam.managed.disableServiceAccountKeyCreation` organization policy, it is important to understand that Google Cloud uses both a legacy constraint (`iam.disableServiceAccountKeyCreation`) and a modern, managed constraint (`iam.managed.disableServiceAccountKeyCreation`). If you are blocked from creating service account keys, you may need to address both.
+
+### Commands for Managing the Policy
+*   **To check the effective policy:**
+    ```bash
+    gcloud org-policies describe iam.managed.disableServiceAccountKeyCreation --project=PROJECT_ID --effective
+    ```
+*   **To disable enforcement for a project:**
+    You can use the `disable-enforce` command to stop the policy from being enforced on a specific project:
+    ```bash
+    gcloud resource-manager org-policies disable-enforce iam.managed.disableServiceAccountKeyCreation --project=PROJECT_ID
+    ```
+    *Note: If you are also blocked by the legacy constraint, run the same command for `iam.disableServiceAccountKeyCreation`.*
+
+*   **To reset the policy to its default:**
+    The `reset` command reverts the policy to the constraint's default (which usually means "not enforced," ignoring any parent-level inheritance):
+    ```bash
+    gcloud org-policies reset iam.managed.disableServiceAccountKeyCreation --project=PROJECT_ID
+    ```
+
+### Key Considerations
+*   **Constraint Hierarchy:** Organization policies are inherited from the organization or folder level. Even if you are an owner of a project, you may be unable to change an inherited policy if you do not have the **Organization Policy Administrator** role (`roles/orgpolicy.policyAdmin`) at the appropriate level (organization or folder).
+*   **Legacy vs. Managed:** Google recommends using the managed constraint (`iam.managed.disableServiceAccountKeyCreation`). If your environment still has the legacy constraint enabled, it may continue to block key creation even if the managed constraint is disabled. Ensure both are set to a permissive state if necessary.
+*   **Propagation Delay:** After modifying an organization policy, there is often a short synchronization period (typically 5–15 minutes) before the change takes effect globally across the IAM system.
+*   **Security Best Practice:** Disabling this policy creates a security risk by allowing long-lived service account keys. It is recommended to re-enable the policy once you have completed your task or to use more secure alternatives like Workload Identity Federation or attached service accounts whenever possible.

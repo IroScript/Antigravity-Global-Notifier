@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 2690 Sep 25 07:58 /home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md
+

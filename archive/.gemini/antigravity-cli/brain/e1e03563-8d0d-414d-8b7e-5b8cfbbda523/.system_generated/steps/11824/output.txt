@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 13:00:27,432 [WARNING] [Worker-worker_2] No cookie file found at /app/cookies/cookie.json
+2026-09-26 13:00:27,533 [INFO] [Worker-worker_2] Navigating to https://chatgpt.com for session verification...
+2026-09-26 13:00:36,240 [INFO] [Worker-worker_2] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51960 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46340 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 13:01:20,819 [INFO] [Worker-worker_2] Applying escalating jitter delay (+0.5s/process, action #1): 3.66s [Range: 2.0s - 6.0s]...
+2026-09-26 13:01:33,724 [INFO] [Worker-worker_2] Inserting 1729 chars into ChatGPT editor...
+2026-09-26 13:01:38,531 [INFO] [Worker-worker_2] Clicked Send button.
+2026-09-26 13:01:38,531 [INFO] [Worker-worker_2] Waiting for streaming response (max 90s)...
+2026-09-26 13:01:41,626 [INFO] [Worker-worker_2] Stream started! (chars=149, isStop=True)
+INFO:     127.0.0.1:50222 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50636 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38976 - "GET /health HTTP/1.1" 200 OK
+

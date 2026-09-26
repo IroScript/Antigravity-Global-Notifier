@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/ACTIONS/approved
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/ACTIONS/history
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/ACTIONS/pending
+-rw-rw-r-- 1 azureuser azureuser 13944 Sep 25 07:57 /home/azureuser/AGY-MASTER/REPORTS/AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md
+-rw-rw-r-- 1 azureuser azureuser  7044 Sep 26 07:04 /home/azureuser/AGY-MASTER/REPORTS/BENCHMARK_50_DELETION_COMMANDS.md
+-rw-r--r-- 1 azureuser azureuser 14498 Sep 26 04:10 /home/azureuser/AGY-MASTER/REPORTS/FORENSIC_AUDIT_REPORT_DELETE_PROOF.txt
+-rw-r--r-- 1 azureuser azureuser 13028 Sep 25 08:03 /home/azureuser/AGY-MASTER/REPORTS/HARDENED_FOUR_LAYER_ARCHITECTURE_AND_PRE_IMPLEMENTATION_GATES.md
+-rw-rw-r-- 1 azureuser azureuser 46902 Sep 26 02:24 /home/azureuser/AGY-MASTER/REPORTS/adversarial_6h_report.json
+-rw-rw-r-- 1 azureuser azureuser 41026 Sep 26 02:24 /home/azureuser/AGY-MASTER/REPORTS/adversarial_test_latest.json
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/REPORTS/daily
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/TASKS/active
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/TASKS/completed
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 26 07:52 /home/azureuser/AGY-MASTER/TASKS/queue
+

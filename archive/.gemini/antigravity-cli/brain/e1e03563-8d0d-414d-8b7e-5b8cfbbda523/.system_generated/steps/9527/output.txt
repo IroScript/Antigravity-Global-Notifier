@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+ID=7220, Lvl=10
+  Audio match: taneously, unbroken motion, zero cuts, exactly 8 seconds. Audio: no human voice, only cinematic BGM.
+ID=7219, Lvl=9
+  Audio match: e machine, unbroken motion, zero cuts, exactly 8 seconds. Audio: no human voice, only cinematic BGM.
+ID=7218, Lvl=8
+  Audio match: ulent sky, unbroken motion, zero cuts, exactly 8 seconds. Audio: no human voice, only cinematic BGM.
+ID=7217, Lvl=7
+  Audio match: e machine, unbroken motion, zero cuts, exactly 8 seconds. Audio: no human voice, only cinematic BGM.
+ID=7216, Lvl=6
+  Audio match: landscape, unbroken motion, zero cuts, exactly 8 seconds. Audio: no human voice, only cinematic BGM.
+

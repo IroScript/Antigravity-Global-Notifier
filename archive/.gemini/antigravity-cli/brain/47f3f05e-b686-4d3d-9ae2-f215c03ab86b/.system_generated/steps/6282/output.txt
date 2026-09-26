@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Total videos: 217
+Valid playable videos: 188
+Needs repair/incomplete: 29
+

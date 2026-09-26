@@ -1,0 +1,17 @@
+The search for ""gcloud org-policies" disable "iam.managed.disableServiceAccountKeyCreation"" returned the following summary:
+To disable the organization policy constraint that prevents the creation of service account keys, you must have the **Organization Policy Administrator** role (`roles/orgpolicy.policyAdmin`) assigned at the organization or project level.
+
+### Using the gcloud CLI
+If you have the necessary permissions, you can disable the enforcement of this constraint for a specific project using the following command:
+
+```bash
+gcloud resource-manager org-policies disable-enforce \
+    iam.disableServiceAccountKeyCreation \
+    --project=YOUR_PROJECT_ID
+```
+*(Replace `YOUR_PROJECT_ID` with your actual project ID.)*
+
+### Important Considerations
+*   **Permissions:** If you do not have the Organization Policy Administrator role, you will be unable to modify this policy. You may need to contact your organization's administrator to request this role or have them perform the change for you.
+*   **Security Best Practice:** This constraint is enforced by default in newer Google Cloud organizations to improve security by preventing the use of long-term, unmanaged credentials. It is highly recommended to re-enable the policy after you have completed the necessary tasks (e.g., downloading a required JSON key).
+*   **Alternative Constraints:** Note that there are different constraints related to service accounts. While `iam.disableServiceAccountKeyCreation` is the most common, ensure you are targeting the correct one if you are facing issues with API keys or other credentials.

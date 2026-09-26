@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+1135-      <div id="drivesView" style="display:none;">
+1136-        <div class="section-header">
+1137-          <span>Devices and Drives</span>
+1138-          <span style="font-size:11px; color:var(--text-muted);">Azure Virtual Machine FatehAli</span>
+1139-        </div>
+1140:        <div class="drives-grid" id="drivesList">
+1141-          <!-- Drive cards rendered here -->
+1142-        </div>
+1143-
+1144-        <div class="section-header" style="margin-top:14px;">
+1145-          <span>Quick Workspace Shortcuts</span>
+--
+1484-  /* ========================================================= */
+1485-  async function loadDrives() {
+1486-    try {
+1487-      const res = await fetch('/api/drives');
+1488-      const data = await res.json();
+1489:      const container = document.getElementById('drivesList');
+1490-      container.innerHTML = '';
+1491-      data.drives.forEach(d => {
+1492-        const card = document.createElement('div');
+1493-        card.className = 'drive-card';
+1494-        card.onclick = () => navigateTo(d.path);
+

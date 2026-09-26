@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+total 96
+drwxr-xr-x 17 azureuser azureuser  4096 Sep 25 11:08 .
+drwxr-xr-x  6 root      root       4096 Sep 24 12:55 ..
+drwx------  3 azureuser azureuser  4096 Sep 25 07:58 .cache
+drwx------  4 azureuser azureuser  4096 Sep 25 10:06 .config
+drwxr-xr-x  4 azureuser azureuser  4096 Sep 25 07:55 .gemini
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 .gradle
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 08:34 .local
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:05 .npm
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:06 .npm-global
+drwx------  5 azureuser azureuser  4096 Sep 25 07:56 .openclaw
+drwx------  2 azureuser azureuser  4096 Sep 25 09:44 .ssh
+-rw-r--r--  1 azureuser azureuser     0 Sep 25 08:00 .sudo_as_admin_successful
+drwxrwxr-x  9 azureuser azureuser  4096 Sep 25 10:48 .webterminal
+drwxrwxr-x  8 azureuser azureuser  4096 Sep 25 11:00 AGY-MASTER
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 Ask-And-Research
+-rw-rw-r--  1 azureuser azureuser 18284 Sep 25 07:57 MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+drwxr-xr-x 30 azureuser azureuser 12288 Sep 25 11:05 RESTORED_PROJECTS
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 25 11:09 RESTORED_VIDEOS
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 08:02 tmp
+

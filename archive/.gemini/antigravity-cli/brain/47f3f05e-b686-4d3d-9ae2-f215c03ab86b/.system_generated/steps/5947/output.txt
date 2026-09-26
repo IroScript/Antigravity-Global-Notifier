@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser  11K Sep 23 09:23 1052952_e81867fe-738f-483c-8a86-1f4ded66020f.json
+-rw-r--r-- 1 azureuser azureuser  13K Sep 25 06:20 1052954_read.json
+-rw-r--r-- 1 azureuser azureuser  11K Sep 23 22:52 1059361_d936ca51-db41-491b-9dcf-c6edb59abe3a.json
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:30 1059364_00000057.jsonl
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 02:39 1059366_c6212b59-7abd-42ca-a2ae-b2b16542f3b1.json
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:40 1059370_00000060.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:50 1059371_00000063.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:44 1059373_00000061.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:46 1059374_00000062.jsonl
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 02:44 1059375_26313fb5-60ba-45f2-839c-ca4fadf101c2.json
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 02:54 1059377_a1884e9f-48bc-4616-80ca-d7cd56fc7be4.json
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 02:49 1059378_e61a7318-8366-49d1-a193-e22c6ce7d66b.json
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:51 1059380_00000064.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:57 1059381_00000066.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:56 1059382_00000065.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 03:12 1059384_00000074.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 03:06 1059385_00000070.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:58 1059386_00000067.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 02:59 1059387_00000068.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 03:01 1059388_00000069.jsonl
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 02:59 1059389_c2f17671-77a1-4aa7-9eaf-7b9615bfc19b.json
+-rw-r--r-- 1 azureuser azureuser  624 Sep 24 03:04 1059390_d0a069e9-3178-416a-9ef2-b671abed9ac0.json
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 04:06 1059391_00000092.jsonl
+-rw-r--r-- 1 azureuser azureuser 100K Sep 24 03:16 1059392_00000075.jsonl
+-rw-rw-r-- 1 azureuser azureuser  164 Sep 23 13:19 1059645_00000123.jsonl
+-rw-r--r-- 1 azureuser azureuser   59 Sep 23 04:59 1060207_00000175.jsonl
+-rw-r--r-- 1 azureuser azureuser  419 Sep 25 03:33 1060389_5b029456-2351-44ca-a25f-2c3cd21da9f2.json
+-rw-r--r-- 1 azureuser azureuser  419 Sep 25 02:03 1060391_d4197c51-14db-4074-9030-3868c1c1f3c3.json
+-rw-r--r-- 1 azureuser azureuser  419 Sep 25 02:33 1060394_c69fd068-646f-42dd-968f-7f5d121b0902.json
+-rw-r--r-- 1 azureuser azureuser  22K Sep 24 14:18 1060431_813f6ca1-660d-455c-968e-2d8a805a46bc.json
+-rw-r--r-- 1 azureuser azureuser 2.5K Sep 25 06:15 1060440_a5627779-14e4-4b01-974a-bd515b61ddaf.json
+-rw-r--r-- 1 azureuser azureuser 2.1K Sep 25 06:18 1060444_8872c824-6288-487d-aad6-6acacd7ed20b.json
+-rw-r--r-- 1 azureuser azureuser 2.0K Sep 25 06:20 1060448_d1307be7-22ec-43df-93b9-1f07594946be.json
+-rw-r--r-- 1 azureuser azureuser 7.2K Sep 25 06:20 1060450_00000197.jsonl
+-rw-r--r-- 1 azureuser azureuser  23K Sep 25 06:21 13994310_pre-key-2253.json
+

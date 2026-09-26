@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:56208 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45340 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38854 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48564 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42780 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37288 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46782 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45258 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46630 - "GET /health HTTP/1.1" 200 OK
+2026-09-25 20:41:22,603 [INFO] [Worker-worker_4] Applying escalating jitter delay (+0.5s/process, action #1): 4.86s [Range: 2.0s - 6.0s]...
+

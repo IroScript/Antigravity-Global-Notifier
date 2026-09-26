@@ -1,0 +1,34 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/generate_all_csvs.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -75,15 +75,14 @@
+         ym.id AS seo_id,
+         ym.idea_id,
+         i.title AS idea_title,
+-        e.id AS element_id,
+-        e.name AS element_name,
+-        ym.title AS seo_title,
+-        ym.description AS seo_description,
++        ym.element_id,
++        e.name AS element_name,
++        ym.title AS seo_title,
++        ym.seo_description,
+         ym.tags AS seo_tags,
+         ym.category AS seo_category,
+-        ym.is_optimized,
+-        ym.primary_keyword,
+-        ym.secondary_keywords,
++        ym.status AS seo_status,
++        ym.upload_status,
+         ym.created_at,
+         ym.updated_at
+     FROM youtube_metadata ym
+@@ -90,5 +90,4 @@
+-    LEFT JOIN idea_elements ie ON ie.idea_id = ym.idea_id
+-    LEFT JOIN elements e ON e.id = ie.element_id
++    LEFT JOIN elements e ON e.id = ym.element_id
+     ORDER BY ym.id ASC
+     """
+     s_path = EXPORTS_DIR / f"seo_master_{TS}.csv"
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

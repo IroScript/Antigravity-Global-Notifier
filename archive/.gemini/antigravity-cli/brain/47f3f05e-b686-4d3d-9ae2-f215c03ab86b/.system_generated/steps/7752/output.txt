@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+  870570  0.2  0.3 1802044 51816 pts/14  Ssl+ 18:08   0:00 rclone copy /home/azureuser/FULL_HOME_BACKUP/azure_home_FULL_filesystem_20260925.tar.gz personaldrive:All_VM_BackUps/Azure_VM_BackUP/ --progress --stats 10s
+

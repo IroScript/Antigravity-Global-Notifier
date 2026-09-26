@@ -1,0 +1,6 @@
+
+The command exited with code 2.
+Output:
+bash: -c: line 24: syntax error near unexpected token `('
+bash: -c: line 24: `        pat = r"[\"']?" + str(lvl) + r"[\"']?\s*:\s*[\"']?(.*?)(?=[\"']?" + str(next_lvl) + r"[\"']?\s*:)"'
+

@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+    <button class="nav-btn" id="btnProperties" onclick="openCurrentOrSelectedProperties()" title="প্রোপার্টিজ (Properties) - ফোল্ডার সাইজ ও ফাইল সংখ্যা" style="display:flex; align-items:center; gap:6px; padding:0 12px; width:auto; font-size:12px; font-weight:500; flex-shrink:0;">
+<div class="modal-overlay" id="propertiesModal" onclick="handlePropModalOverlayClick(event)">
+    const modal = document.getElementById('propertiesModal');
+    const modal = document.getElementById('propertiesModal');
+    if (e.target.id === 'propertiesModal') {
+

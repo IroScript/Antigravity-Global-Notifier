@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+total 69M
+-rw-r--r-- 1 root root 100K Sep 24 03:01 1059388_00000069.jsonl
+-rw------- 1 root root 2.1K Sep 25 07:59 13997803_pre-key-3936.json
+-rw-rw-r-- 1 root root  163 Sep 25 07:01 1588027_yt_1790322687.json
+-rw------- 1 root root  16K Sep 25 05:53 3026903_d14040c7e4c91d00_0
+-rw------- 1 root root 4.4K Sep 25 06:47 3027096_3ed91ad246e1d7a8_0
+-rw------- 1 root root 9.1K Sep 25 06:42 3027230_94221f76a7a0bd50_0
+-rw------- 1 root root 4.4K Sep 25 05:53 3027272_3b9aec6328f5c010_0
+-rw------- 1 root root 5.7K Sep 25 06:27 3027275_5db19cd1ff984647_0
+-rw------- 1 root root 319K Sep 25 06:41 3027325_30a30a5009f1ecc2_0
+-rw------- 1 root root  223 Sep 24 22:32 3028344_6a47cfef2f173296_0
+-rw------- 1 root root 3.3K Sep 24 22:28 3028346_999da19edeb07895_0
+-rw------- 1 root root  223 Sep 25 05:53 3028352_5f8a69285a0e16a6_0
+-rw------- 1 root root 5.1K Sep 25 07:50 3028424_49047533b13746ba_0
+-rw------- 1 root root 8.4K Sep 25 05:53 3028535_5fbc0df2b0897527_0
+-rw------- 1 root root 4.7K Sep 25 08:21 3028588_f7a8f9e8d3260de1_0
+-rw------- 1 root root 4.7K Sep 25 09:17 3028589_bb57e50988a7d69f_0
+-rw------- 1 root root  25K Sep 25 05:53 3028640_aa6cf9a945c4b383_0
+-rw------- 1 root root 5.2K Sep 25 07:17 3028856_e453e02533c76648_0
+-rw------- 1 root root 5.1K Sep 25 07:17 3028858_6a47cfef2f173296_0
+-rw------- 1 root root  15K Sep 25 05:53 3029410_92a5c2dc8098ca93_0
+-rw------- 1 root root  15K Sep 25 05:53 3029414_ee8101c2003ecc91_0
+-rw------- 1 root root 6.7K Sep 24 14:02 3029542_c20752824b177aed_0
+-rw------- 1 root root 4.8K Sep 25 07:23 3029549_e34bdb99a69f0a6f_0
+-rw------- 1 root root  264 Sep 25 05:52 3031393_796ffaa52ef67ef9_0
+-rw------- 1 root root 7.3K Sep 25 05:53 3038549_cc570d17085de739_0
+-rw------- 1 root root  31K Sep 25 05:53 3038552_8c27ceb9f31c9810_0
+-rw------- 1 root root  225 Sep 24 22:28 3040536_output.txt
+-rw------- 1 root root  225 Sep 25 05:53 3040541_output.txt
+-rw-r--r-- 1 root root  194 Sep 25 07:31 3040776_output.txt
+-rw------- 1 root root 5.9K Sep 25 07:31 3040777_be40a1410f8d2498_0
+-rw------- 1 root root 4.6K Sep 25 07:31 3040778_e453e02533c76648_0
+-rw------- 1 root root 4.4K Sep 25 07:47 3040868_5d651e391570e466_0
+-rw------- 1 root root 5.9K Sep 25 07:47 3040873_fa95efe926fd8fd0_0
+-rw------- 1 root root 4.6K Sep 25 07:47 3040874_59b69d87b3795a6a_0
+

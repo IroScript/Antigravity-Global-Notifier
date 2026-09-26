@@ -1,0 +1,127 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -394,64 +394,63 @@
+         ]
+ 
+     try:
+-        conn = get_db_connection()
+-        cur = conn.cursor()
+-        now_iso = datetime.now(timezone.utc).isoformat()
+-
+-        cur.execute(
+-            """INSERT INTO youtube_metadata (
+-                uuid, idea_id, element_id, title, seo_description, tags, category, language, upload_status, created_at, updated_at
+-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+-            (
+-                str(uuid.uuid4()),
+-                idea_id,
+-                elem_id,
+-                title_res,
+-                desc_res,
+-                json.dumps(tags_res),
+-                "Science & Technology",
+-                "en",
+-                "ready",
+-                now_iso,
+-                now_iso
+-            )
+-        )
+-        seo_meta_id = cur.lastrowid
+-
+-        cur.execute(
+-            """INSERT INTO seo_runs (
+-                uuid, idea_id, provider, mode, demand_score, novelty_score, saturation_score,
+-                opportunity_score, verdict, keyword_count, competitor_count, upload_ready, created_at, prompt_sent
+-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+-            (
+-                str(uuid.uuid4()),
+-                idea_id,
+-                "local_cluster_orchestrator",
+-                "autonomous",
+-                85.0,
+-                90.0,
+-                20.0,
+-                88.0,
+-                "HIGH_POTENTIAL",
+-                len(tags_res),
+-                0,
+-                1,
+-                now_iso,
+-                prompt[:500]
+-            )
+-        )
+-        seo_run_id = cur.lastrowid
+-
+-        for t in tags_res:
+-            cur.execute(
+-                """INSERT INTO seo_keyword_metrics (
+-                    seo_run_id, idea_id, keyword, search_volume, competition, cpc, opportunity_score, created_at
+-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+-                (seo_run_id, idea_id, t, random.randint(1000, 50000), 0.15, 0.50, 85.0, now_iso)
+-            )
+-
+-        conn.commit()
+-        conn.close()
++        def do_insert_seo(conn):
++            cur = conn.cursor()
++            now_iso = datetime.now(timezone.utc).isoformat()
++
++            cur.execute(
++                """INSERT INTO youtube_metadata (
++                    uuid, idea_id, element_id, title, seo_description, tags, category, language, upload_status, created_at, updated_at
++                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                (
++                    str(uuid.uuid4()),
++                    idea_id,
++                    elem_id,
++                    title_res,
++                    desc_res,
++                    json.dumps(tags_res),
++                    "Science & Technology",
++                    "en",
++                    "ready",
++                    now_iso,
++                    now_iso
++                )
++            )
++            seo_meta_id = cur.lastrowid
++
++            cur.execute(
++                """INSERT INTO seo_runs (
++                    uuid, idea_id, provider, mode, demand_score, novelty_score, saturation_score,
++                    opportunity_score, verdict, keyword_count, competitor_count, upload_ready, created_at, prompt_sent
++                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                (
++                    str(uuid.uuid4()),
++                    idea_id,
++                    "local_cluster_orchestrator",
++                    "autonomous",
++                    85.0,
++                    90.0,
++                    20.0,
++                    88.0,
++                    "HIGH_POTENTIAL",
++                    len(tags_res),
++                    0,
++                    1,
++                    now_iso,
++                    prompt[:500]
++                )
++            )
++            seo_run_id = cur.lastrowid
++
++            for t in tags_res:
++                cur.execute(
++                    """INSERT INTO seo_keyword_metrics (
++                        seo_run_id, idea_id, keyword, search_volume, competition, cpc, opportunity_score, created_at
++                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
++                    (seo_run_id, idea_id, t, random.randint(1000, 50000), 0.15, 0.50, 85.0, now_iso)
++                )
++
++        execute_db_write(do_insert_seo)
+         logger.info(f"[{worker_id}] ✅ [{worker_id}] Idea #{idea_id} SEO complete! (Title: '{title_res[:50]}...')")
+         return True
+     except Exception as e:
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

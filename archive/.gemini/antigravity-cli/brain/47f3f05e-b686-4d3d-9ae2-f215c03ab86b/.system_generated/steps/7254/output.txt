@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+7800
+Error: in prepare, no such table: video_metadata
+

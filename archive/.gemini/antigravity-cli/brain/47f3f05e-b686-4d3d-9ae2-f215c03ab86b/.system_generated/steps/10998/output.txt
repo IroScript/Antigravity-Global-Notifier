@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+range=1m: OK, len=8368
+range=5m: OK, len=31119
+range=15m: OK, len=31150
+range=30m: OK, len=31112
+range=1h: FAILED -> Remote end closed connection without response
+range=5h: FAILED -> Remote end closed connection without response
+range=10h: FAILED -> Remote end closed connection without response
+range=24h: FAILED -> Remote end closed connection without response
+range=all: FAILED -> Remote end closed connection without response
+

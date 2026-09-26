@@ -1,0 +1,54 @@
+
+The command exited with code 0.
+Output:
+Sep 25 08:02:15 FatehAli redis-server[1195]: 1195:M 25 Sep 2026 08:02:15.100 * Background saving started by pid 674002
+Sep 25 08:02:15 FatehAli redis-server[674002]: 674002:C 25 Sep 2026 08:02:15.100 # Failed opening the temp RDB file temp-674002.rdb (in server root dir unknown) for saving: No such file or directory
+Sep 25 08:02:15 FatehAli redis-server[1195]: 1195:M 25 Sep 2026 08:02:15.200 # Background saving error
+Sep 25 08:02:15 FatehAli systemd[1137]: cockroachdb.service: Scheduled restart job, restart counter is at 111.
+Sep 25 08:02:15 FatehAli systemd[1137]: Started cockroachdb.service - CockroachDB Local Single-Node.
+Sep 25 08:02:15 FatehAli (ockroach)[674003]: cockroachdb.service: Unable to locate executable '/home/azureuser/Article-Publishing-Platform/tools/cockroach': No such file or directory
+Sep 25 08:02:15 FatehAli (ockroach)[674003]: cockroachdb.service: Failed at step EXEC spawning /home/azureuser/Article-Publishing-Platform/tools/cockroach: No such file or directory
+Sep 25 08:02:15 FatehAli systemd[1137]: cockroachdb.service: Main process exited, code=exited, status=203/EXEC
+Sep 25 08:02:15 FatehAli systemd[1137]: cockroachdb.service: Failed with result 'exit-code'.
+Sep 25 08:02:15 FatehAli systemd[1137]: agy-whatsapp.service: Scheduled restart job, restart counter is at 50.
+Sep 25 08:02:15 FatehAli systemd[1137]: Started agy-whatsapp.service - Antigravity WhatsApp Bridge Service.
+Sep 25 08:02:15 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=1/FAILURE
+Sep 25 08:02:15 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+Sep 25 08:02:17 FatehAli systemd[1137]: frappe-worker.service: Scheduled restart job, restart counter is at 40.
+Sep 25 08:02:17 FatehAli systemd[1137]: Started frappe-worker.service - Frappe Background Worker.
+Sep 25 08:02:17 FatehAli (bench)[674021]: frappe-worker.service: Unable to locate executable '/home/azureuser/.local/bin/bench': No such file or directory
+Sep 25 08:02:17 FatehAli (bench)[674021]: frappe-worker.service: Failed at step EXEC spawning /home/azureuser/.local/bin/bench: No such file or directory
+Sep 25 08:02:17 FatehAli systemd[1137]: frappe-worker.service: Main process exited, code=exited, status=203/EXEC
+Sep 25 08:02:17 FatehAli systemd[1137]: frappe-worker.service: Failed with result 'exit-code'.
+Sep 25 08:02:18 FatehAli systemd[1137]: cockroachdb.service: Scheduled restart job, restart counter is at 112.
+Sep 25 08:02:18 FatehAli systemd[1137]: Started cockroachdb.service - CockroachDB Local Single-Node.
+Sep 25 08:02:18 FatehAli (ockroach)[674023]: cockroachdb.service: Unable to locate executable '/home/azureuser/Article-Publishing-Platform/tools/cockroach': No such file or directory
+Sep 25 08:02:18 FatehAli (ockroach)[674023]: cockroachdb.service: Failed at step EXEC spawning /home/azureuser/Article-Publishing-Platform/tools/cockroach: No such file or directory
+Sep 25 08:02:18 FatehAli systemd[1137]: cockroachdb.service: Main process exited, code=exited, status=203/EXEC
+Sep 25 08:02:18 FatehAli systemd[1137]: cockroachdb.service: Failed with result 'exit-code'.
+Sep 25 08:02:19 FatehAli sudo[674044]: azureuser : TTY=pts/14 ; PWD=/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube ; USER=root ; COMMAND=/usr/bin/find /home -name .git
+Sep 25 08:02:19 FatehAli sudo[674044]: pam_unix(sudo:session): session opened for user root(uid=0) by azureuser(uid=1000)
+Sep 25 08:02:19 FatehAli sudo[674044]: pam_unix(sudo:session): session closed for user root
+Sep 25 08:02:20 FatehAli systemd[1137]: agy-whatsapp.service: Scheduled restart job, restart counter is at 51.
+Sep 25 08:02:20 FatehAli systemd[1137]: Started agy-whatsapp.service - Antigravity WhatsApp Bridge Service.
+Sep 25 08:02:20 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=1/FAILURE
+Sep 25 08:02:20 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+Sep 25 08:02:21 FatehAli redis-server[1195]: 1195:M 25 Sep 2026 08:02:21.031 * 100 changes in 300 seconds. Saving...
+Sep 25 08:02:21 FatehAli redis-server[1195]: 1195:M 25 Sep 2026 08:02:21.031 * Background saving started by pid 674076
+Sep 25 08:02:21 FatehAli redis-server[674076]: 674076:C 25 Sep 2026 08:02:21.031 # Failed opening the temp RDB file temp-674076.rdb (in server root dir unknown) for saving: No such file or directory
+Sep 25 08:02:21 FatehAli redis-server[1195]: 1195:M 25 Sep 2026 08:02:21.132 # Background saving error
+Sep 25 08:02:21 FatehAli systemd[1137]: cockroachdb.service: Scheduled restart job, restart counter is at 113.
+Sep 25 08:02:21 FatehAli systemd[1137]: Started cockroachdb.service - CockroachDB Local Single-Node.
+Sep 25 08:02:21 FatehAli (ockroach)[674077]: cockroachdb.service: Unable to locate executable '/home/azureuser/Article-Publishing-Platform/tools/cockroach': No such file or directory
+Sep 25 08:02:21 FatehAli (ockroach)[674077]: cockroachdb.service: Failed at step EXEC spawning /home/azureuser/Article-Publishing-Platform/tools/cockroach: No such file or directory
+Sep 25 08:02:21 FatehAli systemd[1137]: cockroachdb.service: Main process exited, code=exited, status=203/EXEC
+Sep 25 08:02:21 FatehAli systemd[1137]: cockroachdb.service: Failed with result 'exit-code'.
+Sep 25 08:02:23 FatehAli systemd[1137]: frappe-worker.service: Scheduled restart job, restart counter is at 41.
+Sep 25 08:02:23 FatehAli systemd[1137]: Started frappe-worker.service - Frappe Background Worker.
+Sep 25 08:02:23 FatehAli (bench)[674079]: frappe-worker.service: Unable to locate executable '/home/azureuser/.local/bin/bench': No such file or directory
+Sep 25 08:02:23 FatehAli (bench)[674079]: frappe-worker.service: Failed at step EXEC spawning /home/azureuser/.local/bin/bench: No such file or directory
+Sep 25 08:02:23 FatehAli systemd[1137]: frappe-worker.service: Main process exited, code=exited, status=203/EXEC
+Sep 25 08:02:23 FatehAli systemd[1137]: frappe-worker.service: Failed with result 'exit-code'.
+Sep 25 08:02:24 FatehAli sudo[674083]: azureuser : TTY=pts/14 ; PWD=/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube ; USER=root ; COMMAND=/usr/bin/journalctl --since '2026-09-25 07:50:00'
+Sep 25 08:02:24 FatehAli sudo[674083]: pam_unix(sudo:session): session opened for user root(uid=0) by azureuser(uid=1000)
+

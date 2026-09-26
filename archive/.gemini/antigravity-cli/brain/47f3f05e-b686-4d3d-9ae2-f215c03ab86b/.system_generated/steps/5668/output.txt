@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+du: cannot access '/recovered/ALL_DELETED/#14555073#': No such file or directory
+1.7G	/recovered/ALL_DELETED/MAGIC-2
+1.2M	/recovered/ALL_DELETED/azureuser
+0	/recovered/ALL_DELETED/mdkamruzzamanirak_gmail_com
+

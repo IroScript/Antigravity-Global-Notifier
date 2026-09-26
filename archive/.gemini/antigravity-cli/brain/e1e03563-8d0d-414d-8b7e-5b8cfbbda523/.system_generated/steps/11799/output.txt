@@ -1,0 +1,52 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -545,7 +545,19 @@
+         # Insert prompt text via direct keyboard text insertion
+         logger.info(f"Inserting {len(req.prompt)} chars into ChatGPT editor...")
+         await active_page.keyboard.insert_text(req.prompt)
+-        await asyncio.sleep(0.8)
++        await asyncio.sleep(0.5)
++
++        # Trigger React synthetic input events
++        try:
++            await active_page.evaluate("""() => {
++                const el = document.querySelector('#prompt-textarea') || document.querySelector('.ProseMirror') || document.querySelector('div[contenteditable="true"]');
++                if (el) {
++                    el.dispatchEvent(new Event('input', { bubbles: true }));
++                    el.dispatchEvent(new Event('change', { bubbles: true }));
++                }
++            }""")
++        except Exception:
++            pass
+ 
+         # Send prompt
+         send_btn = None
+@@ -590,7 +590,11 @@
+                 }
+                 const newTurn = turns.length > initTurns || (turns.length > 0 && isStop);
+                 const lastTurn = turns.length > 0 ? turns[turns.length - 1] : null;
+-                const text = lastTurn ? (lastTurn.innerText || '') : '';
++                let text = '';
++                if (lastTurn) {
++                    const md = lastTurn.querySelector('.markdown') || lastTurn.querySelector('[class*="markdown"]');
++                    text = md ? (md.innerText || '') : (lastTurn.innerText || '');
++                }
+                 return { length: text.length, isStop: isStop, turnsCount: turns.length, newTurn: newTurn };
+             }""", initial_turns)
+ 
+@@ -626,7 +626,11 @@
+                     return { text: '', length: 0, isStop: isStop };
+                 }
+                 const lastTurn = turns.length > 0 ? turns[turns.length - 1] : null;
+-                const text = lastTurn ? (lastTurn.innerText || '') : '';
++                let text = '';
++                if (lastTurn) {
++                    const md = lastTurn.querySelector('.markdown') || lastTurn.querySelector('[class*="markdown"]');
++                    text = md ? (md.innerText || '') : (lastTurn.innerText || '');
++                }
+                 return { text: text, length: text.length, isStop: isStop };
+             }""", initial_turns)
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,27 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8697
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8697.log
+Log output:
+<truncated 469 lines>
+01.633 MiB / 2.199 GiB, 9%, 345.117 KiB/s, ETA 1h41m24s
+Transferred:           77 / 1086, 7%
+Elapsed time:      7m30.6s
+Transferring:
+ * 1.106.Level_10_Titanic…itanic_Sun_Tracker.mp4:100% /8.275Mi, 145.662Ki/s, 0s
+ * 1.106.Level_10_Titanic…_YouTube_Metadata.json:  0% /1.758Ki, 0/s, -
+ * 1.106.Level_10_Titanic…acker/prompt_info.json:  0% /2.022Ki, 0/s, -
+ * 1.106.Level_10_Titanic…/youtube_metadata.json:  0% /1.758Ki, 0/s, -
+
+<6>INFO  : 
+Transferred:   	  201.633 MiB / 2.199 GiB, 9%, 181 KiB/s, ETA 3h13m20s
+Transferred:           77 / 1086, 7%
+Elapsed time:      7m40.6s
+Transferring:
+ * 1.106.Level_10_Titanic…itanic_Sun_Tracker.mp4:100% /8.275Mi, 76.394Ki/s, 0s
+ * 1.106.Level_10_Titanic…_YouTube_Metadata.json:  0% /1.758Ki, 0/s, -
+ * 1.106.Level_10_Titanic…acker/prompt_info.json:  0% /2.022Ki, 0/s, -
+ * 1.106.Level_10_Titanic…/youtube_metadata.json:  0% /1.758Ki, 0/s, -
+
+<6>INFO  : 1.106.Level_10_Titanic_Sun_Tracker/youtube_metadata.json: Copied (new)
+
+Last progress: 0s ago

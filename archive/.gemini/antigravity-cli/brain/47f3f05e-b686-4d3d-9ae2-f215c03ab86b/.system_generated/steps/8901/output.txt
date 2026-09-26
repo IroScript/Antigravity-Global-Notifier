@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+----i---------e------- /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py
+----i---------e------- /home/azureuser/.gemini/config/hooks.json
+

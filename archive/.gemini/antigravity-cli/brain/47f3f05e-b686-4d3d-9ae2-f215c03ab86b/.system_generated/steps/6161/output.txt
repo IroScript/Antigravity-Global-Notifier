@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+total 464
+drwxrwxr-x 114 azureuser azureuser 12288 Sep 25 11:19 .
+drwxrwxr-x   7 azureuser azureuser  4096 Sep 25 08:04 ..
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.105.Level_10_Helios_Field_Cathedral
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.109.Level_10_Petal_Storm_Generator
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.110.Level_10_The_Million-Arm_Pollinator
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.111.Level_10_Colossus_Seed_Forge
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.112.Level_10_Solar_Bloom_Clock
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.113.Level_10_The_Grassland_Tide_Engine
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.114.Level_10_Skyroot_Rain_Harvester
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.115.Level_10_Prairie_Wind_Shepherd
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.120.Level_10_Cloudshadow_Irrigator
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.121.Level_10_The_Seed_Moon
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.122.Level_10_Prairie_Planet_Engine
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.134.Level_10_The_Corn_Maze_Planetary_Combine
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.135.Level_10_Sun-Ripened_Kernel_Reactor
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.155.Level_10_The_Glacial_Moraine_Maglev_Smelter
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.165.Level_10_The_Polar_Whiteout_Laser_Beacon_Spire
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.166.Level_10_Cryogenic_Snowfield_Seed_Vault_Citadel
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.167.Level_10_The_Arctic_Snow-Sifting_Bio-Dome_Crawler
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.168.Level_10_Atmospheric_Blizzard_Re-Directing_Turbines
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.169.Level_10_Superconducting_Snowfield_Monorail_Fortress
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.170.Level_10_The_Permafrost_Thermal_Well_Siphon
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.171.Level_10_The_Caldera_Magma_Siphon_Titan
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:19 1.173.Level_10_The_Pyroclastic_Ash-Sequestration_Vacuum_Spire
+

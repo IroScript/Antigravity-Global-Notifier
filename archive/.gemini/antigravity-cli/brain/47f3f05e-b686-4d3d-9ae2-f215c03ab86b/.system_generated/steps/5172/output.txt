@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+● agy-reporting-watchdog.service - Antigravity Reporting Agent Watchdog Daemon
+     Loaded: loaded (/home/azureuser/.config/systemd/user/agy-reporting-watchdog.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2026-09-25 06:33:07 UTC; 1h 25min ago
+ Invocation: 23f9a0a455ae466a9a99aaa5a947e1ca
+   Main PID: 637238 (python3)
+      Tasks: 1 (limit: 19137)
+     Memory: 12.2M (peak: 19.4M, swap: 1.6M, swap peak: 1.6M)
+        CPU: 23.703s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/agy-reporting-watchdog.service
+             └─637238 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog…
+
+Sep 25 06:33:07 FatehAli systemd[1137]: Started agy-reporting-watchdog.serv…mon.
+Warning: The unit file, source configuration file or drop-ins of agy-reporting-watchdog.service changed on disk. Run 'systemctl --user daemon-reload' to reload units.
+Hint: Some lines were ellipsized, use -l to show in full.
+
+Terminal ID: 8526a837-fbd6-455e-9294-bae00849cc25

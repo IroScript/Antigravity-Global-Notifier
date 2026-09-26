@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 138M Sep 25 16:03 /home/azureuser/tmp/azure_home_projects_source_backup.tar.gz
+44661822c8d2f0b2e349ec5ac687a5c3996263862161460d2ea7d0c15fc31585  /home/azureuser/tmp/azure_home_projects_source_backup.tar.gz
+

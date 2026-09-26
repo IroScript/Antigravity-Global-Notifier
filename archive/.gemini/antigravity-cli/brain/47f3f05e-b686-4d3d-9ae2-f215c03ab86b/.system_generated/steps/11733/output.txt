@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+105M	/home/azureuser/.gemini
+

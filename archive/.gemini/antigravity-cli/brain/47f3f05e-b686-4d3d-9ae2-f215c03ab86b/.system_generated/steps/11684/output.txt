@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+# /etc/systemd/system/live-resource-monitor.service
+[Unit]
+Description=Live Resource Monitor Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/azureuser
+ExecStart=/usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+

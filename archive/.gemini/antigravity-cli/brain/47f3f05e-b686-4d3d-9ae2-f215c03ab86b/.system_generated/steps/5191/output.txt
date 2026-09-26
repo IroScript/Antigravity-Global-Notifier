@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+Sep 25 07:58:56 FatehAli (node)[672430]: agy-whatsapp.service: Failed to set up standard output: No such file or directory
+Sep 25 07:58:56 FatehAli (node)[672430]: agy-whatsapp.service: Failed at step STDOUT spawning /usr/bin/node: No such file or directory
+Sep 25 07:58:56 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=209/STDOUT
+Sep 25 07:58:56 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+Sep 25 07:59:01 FatehAli systemd[1137]: agy-whatsapp.service: Scheduled restart job, restart counter is at 13.
+Sep 25 07:59:01 FatehAli systemd[1137]: Started agy-whatsapp.service - Antigravity WhatsApp Bridge Service.
+Sep 25 07:59:01 FatehAli (node)[672454]: agy-whatsapp.service: Failed to set up standard output: No such file or directory
+Sep 25 07:59:01 FatehAli (node)[672454]: agy-whatsapp.service: Failed at step STDOUT spawning /usr/bin/node: No such file or directory
+Sep 25 07:59:01 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=209/STDOUT
+Sep 25 07:59:01 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+Sep 25 07:59:06 FatehAli systemd[1137]: agy-whatsapp.service: Scheduled restart job, restart counter is at 14.
+Sep 25 07:59:06 FatehAli systemd[1137]: Started agy-whatsapp.service - Antigravity WhatsApp Bridge Service.
+Sep 25 07:59:06 FatehAli (node)[672482]: agy-whatsapp.service: Failed to set up standard output: No such file or directory
+Sep 25 07:59:06 FatehAli (node)[672482]: agy-whatsapp.service: Failed at step STDOUT spawning /usr/bin/node: No such file or directory
+Sep 25 07:59:06 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=209/STDOUT
+Sep 25 07:59:06 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+Sep 25 07:59:12 FatehAli systemd[1137]: agy-whatsapp.service: Scheduled restart job, restart counter is at 15.
+Sep 25 07:59:12 FatehAli systemd[1137]: Started agy-whatsapp.service - Antigravity WhatsApp Bridge Service.
+Sep 25 07:59:12 FatehAli systemd[1137]: agy-whatsapp.service: Main process exited, code=exited, status=1/FAILURE
+Sep 25 07:59:12 FatehAli systemd[1137]: agy-whatsapp.service: Failed with result 'exit-code'.
+
+Terminal ID: b0dc9b5c-e20b-4d6b-89a1-1a593a93092c

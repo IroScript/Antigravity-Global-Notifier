@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+9378 2026-09-25T08:00:09Z "find . -name \"*.db\""
+9394 2026-09-25T08:00:40Z "sudo find /home -name \"youtube_pipeline.db\" 2>/dev/null"
+9396 2026-09-25T08:00:43Z "sudo find / -name \"*youtube_pipeline*\" 2>/dev/null"
+9408 2026-09-25T08:01:09Z "sudo find / -name \"run_cluster_pipeline.py\" 2>/dev/null"
+9434 2026-09-25T08:02:08Z "sudo find /home -name \".git\" 2>/dev/null"
+9444 2026-09-25T08:02:37Z "sudo lsof -p 669951 2>/dev/null | grep \"(deleted)\""
+9470 2026-09-25T08:03:20Z "ls -la /home/azureuser/.webterminal/media/*.json"
+9472 2026-09-25T08:03:25Z "ls -la /home/azureuser/.webterminal"
+9474 2026-09-25T08:03:28Z "tail -n 40 /home/azureuser/.webterminal/whatsapp.log"
+9490 2026-09-25T08:04:06Z "find \"Youtube Automation\" -name \"*export_utils*\""
+9629 2026-09-25T11:01:07Z "sudo rm -rf \"Youtube Automation/docker_workers/worker_server.py\"\nsudo docker exec chatgpt_worker_5 cat /app/worker_server.py | sudo tee \"Youtube Automation/docker_workers/worker_server.py\" > /dev/null\nsudo chown -R azureuser:azureuser \"Youtube Automation/docker_workers\"\nls -la \"Youtube Automation/docker_workers/worker_server.py\""
+9743 2026-09-25T12:02:53Z "find /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube -name \"*run_cluster_pipeline*\" 2>/dev/null"
+9745 2026-09-25T12:02:56Z "find /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523 -name \"*cluster*\" -o -name \"*pipeline*\""
+9816 2026-09-25T12:30:33Z "find \"/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube\" -name \"*.mp4\" | wc -l"
+9818 2026-09-25T12:30:35Z "sudo find \"/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube\" -name \"*.mp4\" | wc -l"
+9840 2026-09-25T13:00:16Z "find /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube -name \"*seo_models*\" -o -name \"*seo_engine*\""
+9842 2026-09-25T13:00:27Z "sudo find /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube -name \"*seo_models*\" -o -name \"*seo_engine*\""
+9846 2026-09-25T13:00:36Z "sudo find /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube -name \"*seo*\""
+9870 2026-09-25T13:01:57Z "sudo find \"/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube\" -name \"*.pyc\""
+

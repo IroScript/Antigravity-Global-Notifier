@@ -1,0 +1,7 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-6410
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6410.log
+Log output:
+<truncated 20 lines>
+czovL2dvb2dsZS5jb20AAA==",false,0],"server":"https://play.google.com","supports_spdy":true},{"anonymization":["NAAAAC0AAABodHRwczovL2FjY291bnRjYXBhYmlsaXRpZXMtcGEuZ29vZ2xlYXBpcy5jb20AAAA=",false,0],"server":"https://accountcapabilities-pa.googleapis.com","supports_spdy":true},{"anonymization":["IAAAABoAAABodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbQAA",false,0],"server":"https://www.googleapis.com","supports_spdy":true},{"anonymization":["LAAAACUAAABodHRwczovL2Nocm9tZXdlYnN0b3JlLmdvb2dsZWFwaXMuY29tAAAA",false,0],"server":"https://chromewebstore.googleapis.com","supports_spdy":true},{"anonymization":["GAAAABIAAABodHRwczovL2dvb2dsZS5jb20AAA==",false,0],"server":"https://myaccount.google.com","supports_spdy":true},{"anonymization":["GAAAABIAAABodHRwczovL2dvb2dsZS5jb20AAA==",false,0],"server":"https://accounts.google.com","supports_spdy":true},{"anonymization":["LAAAACgAAABodHRwczovL2tpZHNtYW5hZ2VtZW50LXBhLmdvb2dsZWFwaXMuY29t",false,0],"server":"https://kidsmanagement-pa.googleapis.com","supports_s
+Last progress: 0s ago

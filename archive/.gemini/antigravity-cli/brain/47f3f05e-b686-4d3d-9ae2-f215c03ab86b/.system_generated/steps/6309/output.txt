@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Found inode: magic=0xf30a, entries=2, max_ent=4, depth=0
+   entry 0: logical 0, len 2048, pblk 54597632
+   entry 1: logical 2048, len 65, pblk 55743293
+

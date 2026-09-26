@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+azureus+  906508  0.0  0.0   7484  3380 pts/12   Ss+  20:22   0:00 bash -c sudo apt-get update -qq && sudo apt-get install -y -qq azure-cli 2>&1 | tail -n 10
+root      906539  0.0  0.0  20284  7476 pts/12   S+   20:22   0:00 sudo apt-get install -y -qq azure-cli
+root      906542  0.0  0.0  20284  2624 pts/14   Ss+  20:22   0:00 sudo apt-get install -y -qq azure-cli
+root      906543  0.2  0.4  93160 76844 pts/14   S    20:22   0:00 apt-get install -y -qq azure-cli
+root      906599  3.4  0.2  39812 35396 pts/15   Ds+  20:22   0:07 /usr/bin/dpkg --status-fd 23 --no-triggers --unpack --auto-deconfigure --recursive /tmp/apt-dpkg-install-8sxY8k
+root      908810  0.0  0.0   7936  2452 pts/15   S+   20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/119-llvm-19-dev_1%3a19.1.7-3+b1_amd64.deb
+root      908811  0.1  0.0   7936   732 pts/15   S+   20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/119-llvm-19-dev_1%3a19.1.7-3+b1_amd64.deb
+root      908812 18.6  1.4 456980 229636 pts/15  Sl+  20:25   0:01 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/119-llvm-19-dev_1%3a19.1.7-3+b1_amd64.deb
+azureus+  908821  0.0  0.0   7484  3320 pts/17   Ss+  20:26   0:00 bash -c ps aux | grep -i apt
+azureus+  908823  0.0  0.0   6928  2292 pts/17   S+   20:26   0:00 grep -i apt
+

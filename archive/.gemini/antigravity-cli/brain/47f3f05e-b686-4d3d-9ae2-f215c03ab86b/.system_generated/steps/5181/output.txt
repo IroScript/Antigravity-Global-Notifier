@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.config/google-chrome/Profile_Irak_Master/Service Worker/ScriptCache/index-dir/the-real-index
+/home/azureuser/.config/google-chrome/Profile_Irak_Master/TransportSecurity
+
+Terminal ID: 5c2c1df0-b1f4-4888-9929-857dc557013a

@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+Failed to enable UBLA HTTP: 403 {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.buckets.update access to the Google Cloud Storage bucket. Permission 'storage.buckets.update' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026' (or it may not exist).",
+    "errors": [
+      {
+        "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.buckets.update access to the Google Cloud Storage bucket. Permission 'storage.buckets.update' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+
+

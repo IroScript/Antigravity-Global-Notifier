@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Last Version
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Variations
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Shared Dictionary/db-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Favicons-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillStrikeDatabase/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillStrikeDatabase/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillStrikeDatabase/LOG.old
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Session Storage/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Session Storage/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/optimization_guide_hint_cache_store/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/optimization_guide_hint_cache_store/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/optimization_guide_hint_cache_store/LOG.old
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/commerce_subscription_db/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/commerce_subscription_db/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/commerce_subscription_db/LOG.old
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillAiModelCache/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillAiModelCache/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/AutofillAiModelCache/LOG.old
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Cookies-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Extension State/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Extension State/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/PersistentOriginTrials/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/PersistentOriginTrials/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/PersistentOriginTrials/LOG.old
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Extension Scripts/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Local Storage/leveldb/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Local Storage/leveldb/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/heavy_ad_intervention_opt_out.db-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/shared_proto_db/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/shared_proto_db/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/shared_proto_db/metadata/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/shared_proto_db/metadata/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Affiliation Database-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Reporting and NEL-journal
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Site Characteristics Database/LOG
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Site Characteristics Database/LOCK
+/recovered/WINDOW_0753/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Trust Tokens-journal
+

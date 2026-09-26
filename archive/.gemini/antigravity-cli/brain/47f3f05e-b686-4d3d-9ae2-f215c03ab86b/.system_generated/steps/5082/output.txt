@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+0: AI-Agent -> /home/azureuser
+1: Bash-Terminal -> /home/azureuser
+2: Linux-Shell -> /home/azureuser
+3: yt -> /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+4: frappe -> /home/azureuser/Frappe-erp-Alco (deleted)
+5: tg -> /home/azureuser/telegram-bot (deleted)
+6: history -> /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted)
+7: kids -> /home/azureuser/kids_tube_with_folder_seection (deleted)
+8: rust -> /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted)
+9: article -> /home/azureuser/Article-Publishing-Platform (deleted)
+10: game -> /home/azureuser/3D-Game-Design-Studio (deleted)
+11: research -> /home/azureuser/Ask-And-Research (deleted)
+
+Terminal ID: 9000d75b-bea3-4ec9-81fa-754721b7e3c0

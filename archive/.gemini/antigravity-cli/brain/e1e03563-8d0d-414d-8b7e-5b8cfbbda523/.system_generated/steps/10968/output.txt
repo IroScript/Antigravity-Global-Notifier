@@ -1,0 +1,44 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -154,7 +154,7 @@
+         last_bracket = text.rfind("]")
+         if last_bracket != -1:
+             try:
+-                return json.loads(text[first_bracket:last_bracket + 1])
++                return json.loads(text[first_bracket:last_bracket + 1], strict=False)
+             except Exception:
+                 pass
+     elif first_brace != -1:
+@@ -161,8 +161,26 @@
+         if last_brace != -1:
+             try:
+-                return json.loads(text[first_brace:last_brace + 1])
+-            except Exception:
+-                pass
++                return json.loads(text[first_brace:last_brace + 1], strict=False)
++            except Exception:
++                pass
++
++    try:
++        return json.loads(text, strict=False)
++    except Exception:
++        pass
++
++    # Regex extraction fallback for escalation dictionary {"1": ..., "2": ...}
++    extracted = {}
++    import re
++    pattern = re.compile(r'["\']?(\d{1,2})["\']?\s*:\s*["\']?(.*?)["\']?(?=\s*,\s*["\']?\d{1,2}["\']?\s*:|\s*\}$)', re.DOTALL)
++    matches = pattern.findall(text)
++    if matches:
++        for k, v in matches:
++            cleaned_v = v.strip().strip('"').strip("'")
++            if len(cleaned_v) > 20:
++                extracted[k] = cleaned_v
++        if len(extracted) >= 5:
++            return extracted
+ 
+     return json.loads(text)
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+"/recovered"  accept for recoverdir
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Error: Inode not found for "azureuser/Rust_Task_With_Time_Keeping_And_Live_Note"
+Check the valid PATHNAME "azureuser/Rust_Task_With_Time_Keeping_And_Live_Note" and the BEFORE option "Fri Sep 25 10:51:18 2026
+"
+ext4magic : EXIT_SUCCESS
+

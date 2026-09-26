@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Source count: 8097
+Dest count: 8097
+100M	/home/azureuser/IrakIroan/.gemini
+

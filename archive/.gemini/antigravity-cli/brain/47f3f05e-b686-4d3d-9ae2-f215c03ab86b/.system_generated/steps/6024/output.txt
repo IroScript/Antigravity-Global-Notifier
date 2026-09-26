@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+C:\Users\Irak\Desktop\Youtube Pipeline\video\1Video10Sec\Generated_The_Paddy_Ocean_Vacuum_10Sec.mp4
+C:\\Users\\Irak\\Desktop\\Youtube Pipeline\\PromptDatabase\\output_packaged\\1.1.Level_10_Rice_Titan_Harvester\\1.1.Level_10_Rice_Titan_Harvester.mp4
+/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/video/1Video10Sec/Generated_Rice_Field_Spider_Colossus_10Sec.mp4
+/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.4.Level_10_The_Monsoon_Harvesting_Ark/1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4
+/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.5.Level_10_Paddy_Ring_Megaharvester/1.5.Level_10_Paddy_Ring_Megaharvester.mp4
+/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.6.Level_10_Sky_Reaper_Rice_Fortress/1.6.Level_10_Sky_Reaper_Rice_Fortress.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.38.Level_10_Ironwood_Deep-Root_Excavator/1.38.Level_10_Ironwood_Deep-Root_Excavator.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.39.Level_10_Planetary_Mycelial_Loom/1.39.Level_10_Planetary_Mycelial_Loom.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.40.Level_10_The_Evergreen_Core_Furnace/1.40.Level_10_The_Evergreen_Core_Furnace.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.41.Level_10_Chrono-Bark_Synthesizer/1.41.Level_10_Chrono-Bark_Synthesizer.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.42.Level_10_The_World-Forest_Atmospheric_Crown/1.42.Level_10_The_World-Forest_Atmospheric_Crown.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.43.Level_10_Canopy_Orbit_Engine/1.43.Level_10_Canopy_Orbit_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.44.Level_10_Rootway_Titan/1.44.Level_10_Rootway_Titan.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.45.Level_10_Sun_Harvester_Colossus/1.45.Level_10_Sun_Harvester_Colossus.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.46.Level_10_Cloud_Rooter/1.46.Level_10_Cloud_Rooter.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.47.Level_10_Bark_Foundry/1.47.Level_10_Bark_Foundry.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.48.Level_10_Season_Engine/1.48.Level_10_Season_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.49.Level_10_Branch_Bridge_Machine/1.49.Level_10_Branch_Bridge_Machine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.50.Level_10_Pollinator_Cathedral/1.50.Level_10_Pollinator_Cathedral.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.51.Level_10_Root_Memory_Engine/1.51.Level_10_Root_Memory_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.52.Level_10_Worldtree_Stabilizer/1.52.Level_10_Worldtree_Stabilizer.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.53.Level_10_Palm_Titan_Water_Crown/1.53.Level_10_Palm_Titan_Water_Crown.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.54.Level_10_Sun_Harvesting_Palm_Engine/1.54.Level_10_Sun_Harvesting_Palm_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.55.Level_10_Palm_Root_Earth_Mover/1.55.Level_10_Palm_Root_Earth_Mover.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.56.Level_10_Chrono-Palm_Growth_Engine/1.56.Level_10_Chrono-Palm_Growth_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.57.Level_10_Palm_Wind_Orchestra/1.57.Level_10_Palm_Wind_Orchestra.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.58.Level_10_Celestial_Coconut_Launcher/1.58.Level_10_Celestial_Coconut_Launcher.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.59.Level_10_Palm_Cloud_Factory/1.59.Level_10_Palm_Cloud_Factory.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.60.Level_10_Frond_Solar_Sail_Array/1.60.Level_10_Frond_Solar_Sail_Array.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.61.Level_10_Palm_Tree_Climate_Reactor/1.61.Level_10_Palm_Tree_Climate_Reactor.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.62.Level_10_Infinite_Palm_Forest_Seeder/1.62.Level_10_Infinite_Palm_Forest_Seeder.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.63.Level_10_The_Verdant_Bamboo_Sky-Loom/1.63.Level_10_The_Verdant_Bamboo_Sky-Loom.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.64.Level_10_Jade_Spire_Harvesting_Spider/1.64.Level_10_Jade_Spire_Harvesting_Spider.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.65.Level_10_The_Bamboo_Ocean_Comb/1.65.Level_10_The_Bamboo_Ocean_Comb.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.66.Level_10_Hollow-Stem_Resonance_Engine/1.66.Level_10_Hollow-Stem_Resonance_Engine.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.67.Level_10_The_Emerald_Stalk_Harvester/1.67.Level_10_The_Emerald_Stalk_Harvester.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.68.Level_10_Bamboo_Canopy_Cloud-Drill/1.68.Level_10_Bamboo_Canopy_Cloud-Drill.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.69.Level_10_The_Titan_Bamboo_Splitter/1.69.Level_10_The_Titan_Bamboo_Splitter.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.70.Level_10_Celestial_Shoot_Accelerator/1.70.Level_10_Celestial_Shoot_Accelerator.mp4
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.71.Level_10_The_Bamboo_Ring_Leviathan/1.71.Level_10_The_Bamboo_Ring_Leviathan.mp4
+

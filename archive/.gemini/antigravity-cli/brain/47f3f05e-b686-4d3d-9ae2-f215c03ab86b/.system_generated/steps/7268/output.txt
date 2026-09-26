@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+(error) ERR CONFIG SET failed (possibly related to argument 'dir') - can't set protected config
+Background saving started
+rdb_last_bgsave_status:err
+

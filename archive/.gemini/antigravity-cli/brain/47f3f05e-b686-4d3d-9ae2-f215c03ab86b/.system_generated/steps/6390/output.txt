@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+{
+  "idea_id": 105,
+  "tracking_token": "[Ref: AGY-IDEA-105 | UUID: 13ddf69e-db58-4ef5-b4b8-d959606b4245]",
+  "title": "Sunflower Field Megastructure: The Helios Field Cathedral",
+  "seo_description": "Explore the Helios Field Cathedral, a futuristic sunflower field megastructure that transforms agriculture into a massive cinematic machine. This AI-generated sci-fi vision combines a sunflower field aesthetic with colossal engineering, solar technology, autonomous farming drones, and a city-sized agricultural cathedral.\n\nStanding above the sunflower plain on enormous mechanical legs, the Helios Field Cathedral scans crops, manages precision farming, and processes harvests inside its transparent solar-powered structure. Imagine a world where agriculture, architecture, and advanced robotics merge into one impossible machine.\n\nA cinematic AI concept exploring futuristic agriculture, colossal machines, and next-generation technology.",
+  "tags": [
+    "sunflower field video",
+    "sunflower field cinematic video",
+    "sunflower field background video",
+    "sunflower field animation",
+    "sunflower field aesthetic",
+    "futuristic agriculture",
+    "futuristic farming",
+    "giant machine",
+    "colossal machine",
+    "AI generated cinematic",
+    "sci fi megastructure",
+    "future technology",
+    "agricultural technology",
+    "sunflower field AI",
+    "impossible machines"
+  ],
+  "hashtags": [
+    "#sunflowerfieldvideo",
+    "#sunflowerfieldcinematicvideo",
+

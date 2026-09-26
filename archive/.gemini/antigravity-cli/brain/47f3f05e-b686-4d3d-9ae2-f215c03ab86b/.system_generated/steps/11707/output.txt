@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+● live-resource-monitor.service - Live Resource Monitor Server
+     Loaded: loaded (/etc/systemd/system/live-resource-monitor.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-09-24 13:55:02 UTC; 2 days ago
+ Invocation: 4a5a4a3887724673aa97c15946fc97c9
+   Main PID: 204399 (python3)
+      Tasks: 2 (limit: 19137)
+     Memory: 68.9M (peak: 71.8M, swap: 0B, swap peak: 12.2M)
+        CPU: 5h 56min 25.753s
+     CGroup: /system.slice/live-resource-monitor.service
+             └─204399 /usr/bin/python3 /home/azureuser/.local/bin/live_resource…
+
+Sep 26 15:06:58 FatehAli python3[204399]:   File "/usr/lib/python3.13/http/…ndle
+Sep 26 15:06:58 FatehAli python3[204399]:     self.handle_one_request()
+Sep 26 15:06:58 FatehAli python3[204399]:     ~~~~~~~~~~~~~~~~~~~~~~~^^
+Sep 26 15:06:58 FatehAli python3[204399]:   File "/usr/lib/python3.13/http/…uest
+Sep 26 15:06:58 FatehAli python3[204399]:     method()
+Sep 26 15:06:58 FatehAli python3[204399]:     ~~~~~~^^
+Sep 26 15:06:58 FatehAli python3[204399]:   File "/home/azureuser/.local/bi…_GET
+Sep 26 15:06:58 FatehAli python3[204399]:   File "/home/azureuser/.local/bi…tory
+Sep 26 15:06:58 FatehAli python3[204399]: sqlite3.OperationalError: no such…ries
+Sep 26 15:06:58 FatehAli python3[204399]: ---------------------------------…----
+Hint: Some lines were ellipsized, use -l to show in full.
+

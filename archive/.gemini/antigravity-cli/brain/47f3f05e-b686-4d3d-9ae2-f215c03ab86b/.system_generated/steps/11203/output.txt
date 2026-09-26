@@ -1,0 +1,218 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -422,10 +422,51 @@
+   const datasets = getDatasetsForCurrentMode();
+   chartInstance.data.labels = historyData.map(p => p.t);
+   chartInstance.data.datasets = datasets;
+-  chartInstance.update();
++  applyMonitorYAxisScale();
++  chartInstance.update('none');
++}
++
++function getMonitorYAxisConfig() {
++  if (currentMode === 'ram') {
++    return {
++      min: 0,
++      max: 16,
++      grid: { color: 'rgba(48, 54, 61, 0.4)' },
++      ticks: {
++        color: '#8b949e',
++        font: { size: 9 },
++        callback: function(v) { return v + ' GB'; }
++      }
++    };
++  }
++  return {
++    min: 0,
++    max: 100,
++    grid: { color: 'rgba(48, 54, 61, 0.4)' },
++    ticks: {
++      color: '#8b949e',
++      font: { size: 9 },
++      callback: function(v) { return v + '%'; }
++    }
++  };
++}
++
++function applyMonitorYAxisScale() {
++  if (!chartInstance) return;
++  const cfg = getMonitorYAxisConfig();
++  chartInstance.options.scales.y.min = cfg.min;
++  chartInstance.options.scales.y.max = cfg.max;
++  if (chartInstance.options.scales.y.ticks) {
++    chartInstance.options.scales.y.ticks.callback = cfg.ticks.callback;
++  }
+ }
+ 
+ function getDatasetsForCurrentMode() {
++  const pointRadiusFn = function(context) {
++    const len = context.dataset.data.length;
++    return context.dataIndex === len - 1 ? 4.5 : 0;
++  };
++
+   if (currentMode === 'cpu') {
+     return [
+       {
+@@ -433,9 +433,12 @@
+         borderColor: '#f0883e',
+         backgroundColor: 'rgba(240, 136, 62, 0.1)',
+         borderWidth: 2.2,
+-        tension: 0.3,
+-        fill: true,
+-        pointRadius: 0,
++        tension: 0.25,
++        fill: true,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: '#f0883e',
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
+         pointHoverRadius: 5
+       },
+       {
+@@ -443,18 +443,11 @@
+         borderColor: '#58a6ff',
+         borderWidth: 1.6,
+         borderDash: [4, 4],
+-        tension: 0.3,
+-        pointRadius: 0,
+-        pointHoverRadius: 4
+-      },
+-      {
+-        label: 'শীর্ষ ২ অ্যাপ CPU %',
+-        data: historyData.map(p => p.app2 ? p.app2.cpu : 0),
+-        borderColor: '#bc8cff',
+-        borderWidth: 1.4,
+-        borderDash: [2, 2],
+-        tension: 0.3,
+-        pointRadius: 0,
++        tension: 0.25,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: '#58a6ff',
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
+         pointHoverRadius: 4
+       }
+     ];
+@@ -465,42 +465,27 @@
+         borderColor: '#58a6ff',
+         backgroundColor: 'rgba(88, 166, 255, 0.12)',
+         borderWidth: 2.2,
+-        tension: 0.3,
+-        fill: true,
+-        pointRadius: 0,
+-        pointHoverRadius: 5
+-      },
+-      {
+-        label: 'শীর্ষ ১ অ্যাপ RAM (GB)',
+-        data: historyData.map(p => p.app1 ? p.app1.ram_gb : 0),
+-        borderColor: '#f0883e',
+-        borderWidth: 1.6,
+-        borderDash: [4, 4],
+-        tension: 0.3,
+-        pointRadius: 0,
+-        pointHoverRadius: 4
+-      },
+-      {
+-        label: 'শীর্ষ ২ অ্যাপ RAM (GB)',
+-        data: historyData.map(p => p.app2 ? p.app2.ram_gb : 0),
+-        borderColor: '#2ea043',
+-        borderWidth: 1.4,
+-        borderDash: [2, 2],
+-        tension: 0.3,
+-        pointRadius: 0,
+-        pointHoverRadius: 4
+-      }
+-    ];
+-  } else {
+-    // Both CPU and RAM
+-    return [
+-      {
+-        label: 'সার্বিক CPU %',
+-        data: historyData.map(p => p.cpu),
+-        borderColor: '#f0883e',
+-        borderWidth: 2,
+-        tension: 0.3,
+-        pointRadius: 0,
++        tension: 0.25,
++        fill: true,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: '#58a6ff',
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 5
++      }
++    ];
++  } else {
++    return [
++      {
++        label: 'সার্বিক CPU %',
++        data: historyData.map(p => p.cpu),
++        borderColor: '#f0883e',
++        borderWidth: 2,
++        tension: 0.25,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: '#f0883e',
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
+         pointHoverRadius: 5
+       },
+       {
+@@ -507,8 +507,11 @@
+         data: historyData.map(p => p.ram_pct),
+         borderColor: '#58a6ff',
+         borderWidth: 2,
+-        tension: 0.3,
+-        pointRadius: 0,
++        tension: 0.25,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: '#58a6ff',
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
+         pointHoverRadius: 5
+       }
+     ];
+@@ -529,7 +529,8 @@
+   if (chartInstance) {
+     chartInstance.data.labels = labels;
+     chartInstance.data.datasets = datasets;
+-    chartInstance.update();
++    applyMonitorYAxisScale();
++    chartInstance.update('none');
+     return;
+   }
+ 
+@@ -541,6 +541,15 @@
+     options: {
+       responsive: true,
+       maintainAspectRatio: false,
++      animation: false,
++      animations: {
++        colors: false,
++        x: false
++      },
++      transitions: {
++        active: { animation: { duration: 0 } },
++        resize: { animation: { duration: 0 } }
++      },
+       interaction: {
+         mode: 'index',
+         intersect: false
+@@ -578,14 +578,7 @@
+             font: { size: 9 }
+           }
+         },
+-        y: {
+-          grid: { color: 'rgba(48, 54, 61, 0.4)' },
+-          ticks: {
+-            color: '#8b949e',
+-            font: { size: 9 }
+-          },
+-          beginAtZero: true
+-        }
++        y: getMonitorYAxisConfig()
+       },
+       events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove', 'touchend']
+     }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

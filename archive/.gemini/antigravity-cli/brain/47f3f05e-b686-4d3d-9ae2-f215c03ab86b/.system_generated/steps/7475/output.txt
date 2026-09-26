@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+/usr/bin/zstd
+/usr/bin/gzip
+

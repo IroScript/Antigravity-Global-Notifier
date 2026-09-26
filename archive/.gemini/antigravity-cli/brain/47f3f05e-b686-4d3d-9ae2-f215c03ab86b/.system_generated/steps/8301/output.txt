@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 12G
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_01.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_02.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 2.3G Sep 25 19:37 gcp_home_backup_part_03.tar.gz
+

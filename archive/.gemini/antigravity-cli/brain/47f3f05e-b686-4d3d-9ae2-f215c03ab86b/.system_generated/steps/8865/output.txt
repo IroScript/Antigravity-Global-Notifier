@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 20:19:59.477234314 +0000
+HOOK RUNNING with mode: allow
+HOOK RUNNING with mode: allow
+HOOK RUNNING with mode: allow
+HOOK RUNNING with mode: allow
+HOOK RUNNING with mode: allow
+

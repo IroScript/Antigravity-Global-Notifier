@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/migrate-workflows/SKILL.md
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/generative_ui/SKILL.md
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/antigravity_guide/SKILL.md
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/permissioned-github/SKILL.md
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/SKILL.md
+

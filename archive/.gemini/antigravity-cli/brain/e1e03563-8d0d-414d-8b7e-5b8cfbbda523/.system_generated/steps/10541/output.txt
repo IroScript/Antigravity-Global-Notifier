@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 20:36:48,171 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 20:37:00,099 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 20:37:00,112 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-25 20:37:00,274 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-25 20:37:04,569 [INFO] [Worker-worker_4] Cloudflare Turnstile challenge detected! Attempting solve...
+2026-09-25 20:37:16,974 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.19.0.1:56208 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45340 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38854 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48564 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42780 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37288 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46782 - "GET /health HTTP/1.1" 200 OK
+

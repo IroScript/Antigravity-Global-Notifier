@@ -1,0 +1,29 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8697
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8697.log
+Log output:
+<truncated 995 lines>
+0_The_Tit…edder/prompt_info.json:  0% /2.262Ki, 0/s, -
+
+<6>INFO  : 
+Transferred:   	  464.805 MiB / 2.226 GiB, 20%, 585.296 KiB/s, ETA 52m54s
+Transferred:          196 / 1086, 18%
+Elapsed time:     14m20.6s
+Transferring:
+ * 1.136.Level_10_The_Tit…6.Level_10_Prompt.json:  0% /2.262Ki, 0/s, -
+ * 1.136.Level_10_The_Tit…tan_Stalk_Shredder.mp4:  0% /13.943Mi, 0/s, -
+ * 1.136.Level_10_The_Tit…_YouTube_Metadata.json:  0% /1.526Ki, 0/s, -
+ * 1.136.Level_10_The_Tit…edder/prompt_info.json:  0% /2.262Ki, 0/s, -
+
+<6>INFO  : 
+Transferred:   	  464.805 MiB / 2.226 GiB, 20%, 306.965 KiB/s, ETA 1h40m53s
+Transferred:          196 / 1086, 18%
+Elapsed time:     14m30.6s
+Transferring:
+ * 1.136.Level_10_The_Tit…6.Level_10_Prompt.json:  0% /2.262Ki, 0/s, -
+ * 1.136.Level_10_The_Tit…tan_Stalk_Shredder.mp4:  0% /13.943Mi, 0/s, -
+ * 1.136.Level_10_The_Tit…_YouTube_Metadata.json:  0% /1.526Ki, 0/s, -
+ * 1.136.Level_10_The_Tit…edder/prompt_info.json:  0% /2.262Ki, 0/s, -
+
+
+Last progress: 4s ago

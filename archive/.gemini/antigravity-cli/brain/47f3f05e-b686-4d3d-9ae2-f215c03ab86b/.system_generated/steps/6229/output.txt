@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+Distinct new valid URNs: 28
+URN: urn:c2pa:0128a4fc-726f-517d-efb9-485ac4900523 -> offsets: [223631900672, 223640289280]
+URN: urn:c2pa:834bbb5d-f5ac-7aac-a4f6-40a467cb196e -> offsets: [223661260800, 223665455104]
+URN: urn:c2pa:cb998cdf-d77c-06a3-b77a-423e12b01ed5 -> offsets: [223673843712, 223682232320]
+URN: urn:c2pa:195a88ed-3c40-eb88-f52b-49786bdacee1 -> offsets: [223724175360, 223732563968]
+URN: urn:c2pa:75969529-6602-bfdc-8c76-4028434c840e -> offsets: [223745146880]
+URN: urn:c2pa:eca7b94c-8b91-637e-156a-4fafeb956008 -> offsets: [223753535488]
+URN: urn:c2pa:d734ad27-9fc0-b707-ab05-455a8e6258d8 -> offsets: [228547624960]
+URN: urn:c2pa:304897a5-a07b-bd44-9ae0-4114818749ee -> offsets: [228556013568]
+URN: urn:c2pa:07fc824e-acce-4648-7adb-4de0d37f9e88 -> offsets: [228564402176]
+URN: urn:c2pa:b114a810-c282-a915-4812-42a815b706cd -> offsets: [228799283200]
+URN: urn:c2pa:0a1d8d02-b4df-3163-da99-4f3cccaf2184 -> offsets: [229084495872]
+URN: urn:c2pa:bebf86d3-d78d-eb2d-caad-4cd01a610dc0 -> offsets: [229092884480]
+URN: urn:c2pa:b9fcb394-dee3-e60a-124d-4fcaaec25639 -> offsets: [229109661696]
+URN: urn:c2pa:c7d1a310-0c97-47c0-5940-429bf89c254f -> offsets: [229134827520]
+URN: urn:c2pa:2da6a5c4-97e4-f554-513b-4c346567b7ac -> offsets: [229218713600]
+URN: urn:c2pa:1ef8a0ec-53b1-41b2-44ae-44a6f312048a -> offsets: [229227102208]
+URN: urn:c2pa:a3e8acab-f51b-2782-ad0e-44b5efbb2c68 -> offsets: [229281628160]
+URN: urn:c2pa:0e5e8935-86f4-29b4-5926-43b631aa0450 -> offsets: [229319376896]
+URN: urn:c2pa:1cf38f61-ccde-756e-2d9a-47e451759eb1 -> offsets: [229327765504]
+URN: urn:c2pa:ffe6839b-9f03-cc18-cf72-40e2b191723c -> offsets: [229336154112]
+URN: urn:c2pa:')\n        print(f'Offset {off}: {h -> offsets: [230396848960, 236098812736]
+URN: urn:c2pa:7e83af00-971b-1760-cac2-4a43e289f2d4 -> offsets: [234830692352]
+URN: urn:c2pa:836a92cb-b899-f963-c078-49d71e5f8ec7 -> offsets: [234901995520]
+URN: urn:c2pa:0ee0b05a-5000-6432-8ffd-46219ed746ce -> offsets: [234931355648]
+URN: urn:c2pa:1dcfa71d-1edd-f07f-3153-46a350e84a75 -> offsets: [235224956928]
+URN: urn:c2pa:3e079d35-64e6-0685-631a-442e7f8289f8 -> offsets: [235392729088]
+URN: urn:c2pa:2e2098ac-e36b-9a51-9c13-4cd38d9c18dd -> offsets: [235409506304]
+URN: urn:c2pa:')\\n        print(f'Offset {off}: { -> offsets: [236093244187]
+

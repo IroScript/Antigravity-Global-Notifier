@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+3979 /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript_full.jsonl
+

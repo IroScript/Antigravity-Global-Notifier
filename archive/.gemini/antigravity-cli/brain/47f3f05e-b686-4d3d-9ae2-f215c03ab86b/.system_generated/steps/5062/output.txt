@@ -1,0 +1,6 @@
+
+The command exited with code 2.
+Output:
+ls: cannot access '/home/azureuser/AGY-MASTER/REPORTS/': No such file or directory
+
+Terminal ID: da2346bf-659b-4f17-85e5-c58f723c4f19

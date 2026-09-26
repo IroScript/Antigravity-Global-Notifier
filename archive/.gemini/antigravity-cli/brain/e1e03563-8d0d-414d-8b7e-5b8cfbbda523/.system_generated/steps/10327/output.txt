@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+3604 Type: GENERIC
+3605 Type: PLANNER_RESPONSE
+Tool: run_command
+  CommandLine: sudo docker ps
+  Cwd: /home/azureuser
+  WaitMsBeforeAsync: 5000
+  toolAction: Checking docker containers with sudo
+  toolSummary: Check running docker containers
+

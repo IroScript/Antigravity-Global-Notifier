@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Total numbered folders in output_packaged: 217
+Min: 1.5, Max: 1.399
+Missing in between range 5..399: 178 folders
+

@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+● gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli)
+     Loaded: loaded (/home/azureuser/.config/systemd/user/gdrive-live-sync.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 08:54:13 UTC; 41min ago
+ Invocation: 9413a293e3c14a4482f20f9ada01bcbc
+   Main PID: 1113817 (python3)
+      Tasks: 14 (limit: 19137)
+     Memory: 272.1M (peak: 405M)
+        CPU: 2min 56.812s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gdrive-live-sync.service
+             ├─1113817 /usr/bin/python3 /home/azureuser/gdrive_sync/gdrive_live…
+             └─1113819 /usr/bin/rclone copy /home/azureuser personaldrive:Azure…
+
+Sep 26 08:54:13 FatehAli python3[1112597]: ERROR : gshadow-: Failed to copy…nied
+Sep 26 08:54:13 FatehAli python3[1112597]: ERROR : shadow: Failed to copy: …nied
+Sep 26 08:54:13 FatehAli python3[1112597]: ERROR : shadow-: Failed to copy:…nied
+Sep 26 08:54:13 FatehAli python3[1112597]: ERROR : sudoers: Failed to copy:…nied
+Sep 26 08:54:13 FatehAli python3[1112597]: ERROR : chrony/chrony.keys: Fail…nied
+Sep 26 08:54:13 FatehAli python3[1112597]: [2026-09-26 08:54:13 UTC] --- Sy… ---
+Sep 26 08:54:13 FatehAli python3[1112597]: [2026-09-26 08:54:13 UTC] Live S…nly.
+Sep 26 08:54:13 FatehAli python3[1113817]: [2026-09-26 08:54:13 UTC] Google…ted.
+Sep 26 08:54:13 FatehAli python3[1113817]: [2026-09-26 08:54:13 UTC] Enteri…ds).
+Sep 26 08:54:13 FatehAli python3[1113817]: [2026-09-26 08:54:13 UTC] --- St… ---
+Hint: Some lines were ellipsized, use -l to show in full.
+

@@ -1,0 +1,10 @@
+
+The command exited with code 1.
+Output:
+Loaded 325 video sizes from DB
+dumpe2fs 1.47.2 (1-Jan-2025)
+Traceback (most recent call last):
+  File "<string>", line 27, in <module>
+    curr_bg = int(parts[0].replace('Group ', ''))
+ValueError: invalid literal for int() with base 10: 'descriptor size'
+

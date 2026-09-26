@@ -1,0 +1,54 @@
+
+The command exited with code 1.
+Output:
+<truncated 1 lines>
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/chosen_header.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/pkcs8.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/pkcs1_with_preceeding_junk.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/pkcs1.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/pkcs8-enc.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/ed25519_id.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pem-rfc7468-0.7.0/tests/examples/ssh_rsa_pem_password.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pkcs1-0.7.5/tests/examples/rsa4096-pub.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pkcs1-0.7.5/tests/examples/rsa2048-priv.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pkcs1-0.7.5/tests/examples/rsa4096-priv.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pkcs1-0.7.5/tests/examples/rsa2048-priv-3prime.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pkcs1-0.7.5/tests/examples/rsa2048-pub.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/env/lib/python3.14/site-packages/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/env/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/talos-2019-0758.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/nokia.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/ssl_key.passwd.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/pycacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/selfsigned_pythontestdotnet.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/leaf-missing-aki.keycert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/nullbytecert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/ffdh3072.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/cert3.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/nullcert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/ssl_cert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/ssl_key.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/secp384r1.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycert.passwd.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycert2.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/leaf-missing-aki.ca.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/idnsans.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycert3.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/nosan.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/allsans.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycertecc.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycert4.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/keycert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/badcert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/badkey.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.pyenv/versions/3.14.7/lib/python3.14/test/certdata/pycakey.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/browser_env/lib/python3.13/site-packages/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/browser_env/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.local/share/pipx/venvs/frappe-bench/lib/python3.13/site-packages/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.local/share/pipx/shared/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/flutter/packages/flutter_tools/test/data/asset_test/tls_cert/dummy-cert.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/flutter/packages/flutter_tools/test/data/asset_test/tls_cert/dummy-key.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/media/media_1790071495661_FatehAli_key.pem
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.ssh/FatehAli_key.pem
+

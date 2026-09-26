@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+.gradle
+.config
+Ask-And-Research
+AGY-MASTER
+MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+.cache
+.webterminal
+.gemini
+.npm
+.local
+.sudo_as_admin_successful
+.ssh
+.npm-global
+.openclaw
+

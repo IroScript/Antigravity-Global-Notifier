@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+total 376
+drwxrwxr-x  4 azureuser azureuser   4096 Sep 26 16:28 .
+drwxr-xr-x 33 azureuser azureuser   4096 Sep 26 16:28 ..
+drwxrwxr-x  8 azureuser azureuser   4096 Sep 26 16:28 .git
+-rw-rw-r--  1 azureuser azureuser     75 Sep 26 16:28 .gitignore
+-rw-rw-r--  1 azureuser azureuser     95 Sep 26 16:28 .terminal_theme.json
+-rw-rw-r--  1 azureuser azureuser  10242 Sep 26 16:28 AGENTS.md
+-rw-rw-r--  1 azureuser azureuser  96779 Sep 26 16:28 Antigravity-Global-Notifier.txt
+-rw-rw-r--  1 azureuser azureuser  10246 Sep 26 16:28 GEMINI.md
+-rw-rw-r--  1 azureuser azureuser  11921 Sep 26 16:28 HOOKS_GUIDE.md
+drwxrwxr-x  2 azureuser azureuser   4096 Sep 26 16:28 Project_Launcher
+-rw-rw-r--  1 azureuser azureuser   6039 Sep 26 16:28 README.md
+-rw-rw-r--  1 azureuser azureuser 152414 Sep 26 16:28 antigravity-logo.ico
+-rw-rw-r--  1 azureuser azureuser  16849 Sep 26 16:28 antigravity-logo.png
+-rw-rw-r--  1 azureuser azureuser   8881 Sep 26 16:28 force_verify.py
+-rw-rw-r--  1 azureuser azureuser    685 Sep 26 16:28 hooks.json
+-rw-rw-r--  1 azureuser azureuser   1683 Sep 26 16:28 install.bat
+-rw-rw-r--  1 azureuser azureuser   6408 Sep 26 16:28 notify_reply.py
+-rw-rw-r--  1 azureuser azureuser   1308 Sep 26 16:28 record_tool_edit.py
+-rw-rw-r--  1 azureuser azureuser   7103 Sep 26 16:28 terminal_customizer.ps1
+

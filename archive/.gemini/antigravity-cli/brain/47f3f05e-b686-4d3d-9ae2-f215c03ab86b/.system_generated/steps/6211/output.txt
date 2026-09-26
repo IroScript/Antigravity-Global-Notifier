@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/RESTORED_PROJECTS/telegram_scraper.py
+/home/azureuser/RESTORED_PROJECTS/20260925_113002-alco_local-site_config_backup.json
+/home/azureuser/RESTORED_PROJECTS/20260925_113002-alco_local-database.sql.gz
+

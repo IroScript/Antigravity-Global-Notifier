@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+(3, 'Generated_The_Paddy_Ocean_Vacuum_10Sec.mp4', 10689011, 8.0, 'completed', '2026-08-18 09:00:57.354079', 'C:\\Users\\Irak\\Desktop\\Youtube Pipeline\\video\\1Video10Sec\\Generated_The_Paddy_Ocean_Vacuum_10Sec.mp4')
+(4, '1.1.Level_10_Rice_Titan_Harvester.mp4', 10485760, 8.0, 'completed', '2026-09-13T10:10:28.430682+00:00', 'C:\\\\Users\\\\Irak\\\\Desktop\\\\Youtube Pipeline\\\\PromptDatabase\\\\output_packaged\\\\1.1.Level_10_Rice_Titan_Harvester\\\\1.1.Level_10_Rice_Titan_Harvester.mp4')
+(5, 'Generated_Rice_Field_Spider_Colossus_10Sec.mp4', 7300738, 8.0, 'completed', '2026-09-14 08:48:28.959275', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/video/1Video10Sec/Generated_Rice_Field_Spider_Colossus_10Sec.mp4')
+(6, '1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4', 12232984, 8.0, 'completed', '2026-09-17 08:12:32.831560', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.4.Level_10_The_Monsoon_Harvesting_Ark/1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4')
+(7, '1.5.Level_10_Paddy_Ring_Megaharvester.mp4', 6485905, 8.0, 'completed', '2026-09-18T10:31:07.816190+00:00', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.5.Level_10_Paddy_Ring_Megaharvester/1.5.Level_10_Paddy_Ring_Megaharvester.mp4')
+(8, '1.6.Level_10_Sky_Reaper_Rice_Fortress.mp4', 10964006, 8.0, 'completed', '2026-09-20T17:42:56.316127+00:00', '/home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.6.Level_10_Sky_Reaper_Rice_Fortress/1.6.Level_10_Sky_Reaper_Rice_Fortress.mp4')
+(9, '1.38.Level_10_Ironwood_Deep-Root_Excavator.mp4', 12256548, 8.0, 'completed', '2026-09-23T18:42:20.818269+00:00', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.38.Level_10_Ironwood_Deep-Root_Excavator/1.38.Level_10_Ironwood_Deep-Root_Excavator.mp4')
+(10, '1.39.Level_10_Planetary_Mycelial_Loom.mp4', 11263005, 8.0, 'completed', '2026-09-23T18:57:04.252660+00:00', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.39.Level_10_Planetary_Mycelial_Loom/1.39.Level_10_Planetary_Mycelial_Loom.mp4')
+(11, '1.40.Level_10_The_Evergreen_Core_Furnace.mp4', 12264214, 8.0, 'completed', '2026-09-23T18:58:27.844393+00:00', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.40.Level_10_The_Evergreen_Core_Furnace/1.40.Level_10_The_Evergreen_Core_Furnace.mp4')
+(12, '1.41.Level_10_Chrono-Bark_Synthesizer.mp4', 13625911, 8.0, 'completed', '2026-09-23T18:59:51.113372+00:00', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.41.Level_10_Chrono-Bark_Synthesizer/1.41.Level_10_Chrono-Bark_Synthesizer.mp4')
+--- Status breakdown ---
+('completed', 325)
+--- Total file_size_bytes sum ---
+(3401171431, 10465142.864615384, 108000, 18163350)
+

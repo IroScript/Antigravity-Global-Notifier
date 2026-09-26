@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+Check 1: Status = UPLOADING
+Check 2: Status = UPLOADING
+Check 3: Status = UPLOADING
+Check 4: Status = UPLOADING
+Check 5: Status = UPLOADING
+Check 6: Status = UPLOADING
+Check 7: Status = UPLOADING
+Check 8: Status = READY
+=== GCP MACHINE IMAGE READY! ===
+Image Name:          gcp-vm-full-backup-20260925
+Status:              READY
+Source Instance:     https://www.googleapis.com/compute/v1/projects/irak-mahmud-project/zones/us-central1-a/instances/instance-20260925-131309
+Total Storage Bytes: 22749151680
+Creation Timestamp:  2026-09-25T08:59:48.222-07:00
+Disks Captured (1):
+  - Device Name:  instance-20260925-131309
+    Size GB:      70
+    Boot:         True
+    Type:         PERSISTENT
+    Mode:         READ_WRITE
+    Source:       https://www.googleapis.com/compute/v1/projects/irak-mahmud-project/zones/us-central1-a/disks/instance-20260925-131309
+

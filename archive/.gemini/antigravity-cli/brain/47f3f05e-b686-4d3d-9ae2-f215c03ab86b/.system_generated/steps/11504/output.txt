@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Concurrent run took 6.84s
+Size: 105735373926, files: 776362, folders: 106318
+

@@ -1,0 +1,29 @@
+The search for "gcloud command override iam.disableServiceAccountKeyCreation project level" returned the following summary:
+To override the `iam.disableServiceAccountKeyCreation` organization policy at the project level, you can use the following `gcloud` command:
+
+```bash
+gcloud resource-manager org-policies disable-enforce iam.disableServiceAccountKeyCreation --project=YOUR_PROJECT_ID
+```
+
+### Important Requirements
+*   **Permissions:** You must have the **Organization Policy Administrator** role (`roles/orgpolicy.policyAdmin`) at the organization or project level to modify this policy.
+*   **Scope:** If the policy is inherited from the organization level, you may need to ensure you have the appropriate permissions at the organization level to perform an override if the project-level settings are locked.
+*   **Propagation:** It may take a few minutes for the policy change to propagate across Google Cloud.
+
+### Alternative Method (Using a YAML File)
+If you prefer to set the policy via a configuration file, you can use the following steps:
+
+1. Create a file named `key-creation.yaml`:
+   ```yaml
+   name: projects/YOUR_PROJECT_ID/policies/iam.disableServiceAccountKeyCreation
+   spec:
+     rules:
+     - enforce: false
+   ```
+2. Apply the policy:
+   ```bash
+   gcloud org-policies set-policy key-creation.yaml
+   ```
+
+### Best Practice
+Because this policy is a security control designed to prevent the use of long-lived credentials, it is highly recommended to **re-enable the policy** after you have successfully created the necessary service account keys.

@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 17052
+drwxrwxr-x   2 azureuser azureuser     4096 Sep 25 11:40 .
+drwxrwxr-x 220 azureuser azureuser    20480 Sep 25 11:38 ..
+-rw-rw-r--   2 azureuser azureuser 17414215 Sep 23 21:24 1.105.Level_10_Helios_Field_Cathedral.mp4
+-rw-rw-r--   1 azureuser azureuser     2332 Sep 25 11:40 1.105.Level_10_Prompt.json
+-rw-rw-r--   1 azureuser azureuser     1859 Sep 25 11:40 1.105.Level_10_YouTube_Metadata.json
+-rw-rw-r--   1 azureuser azureuser     2332 Sep 25 11:40 prompt_info.json
+-rw-rw-r--   1 azureuser azureuser     1859 Sep 25 11:40 youtube_metadata.json
+

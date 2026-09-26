@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+124-    url_file = "/home/azureuser/.webterminal/live_monitor_url.txt"
+125-    if os.path.exists(url_file):
+126-        try:
+127-            with open(url_file, "r") as f:
+128-                line = f.readline().strip()
+129:                if line.startswith("http"):
+130-                    return line
+131-        except Exception:
+132-            pass
+133-    return "https://memories-birth-outer-speeches.trycloudflare.com"
+134-
+--
+196-        path = parsed.path
+197-        params = urllib.parse.parse_qs(parsed.query)
+198-
+199-        if path == "/" or path == "/index.html":
+200-            self.serve_file(os.path.join(STATIC_DIR, "index.html"), "text/html; charset=utf-8")
+201:        elif path.startswith("/static/"):
+202-            rel_path = path[len("/static/"):]
+203-            file_path = os.path.join(STATIC_DIR, rel_path)
+204-            mime, _ = mimetypes.guess_type(file_path)
+205-            self.serve_file(file_path, mime or "application/octet-stream")
+206-        elif path == "/api/drives":
+

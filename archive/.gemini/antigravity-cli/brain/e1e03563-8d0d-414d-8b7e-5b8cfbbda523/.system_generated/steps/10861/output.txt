@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+cat: 'Youtube Automation/PromptDatabase/logs/cluster_pipeline_progress.json': No such file or directory
+

@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+agy: 12 windows (created Tue Sep 22 18:34:16 2026)
+agy:0: AI-Agent (1 panes) [80x24] 
+agy:1: Bash-Terminal (1 panes) [80x24] 
+agy:2: Linux-Shell (1 panes) [80x24] 
+agy:3: yt (1 panes) [80x24] 
+agy:4: frappe (1 panes) [80x24] 
+agy:5: tg (1 panes) [80x24] 
+agy:6: history (1 panes) [80x24] 
+agy:7: kids (1 panes) [80x24] 
+agy:8: rust (1 panes) [80x24] 
+agy:9: article (1 panes) [80x24] 
+agy:10: game- (1 panes) [80x24] 
+agy:11: research* (1 panes) [80x24] 
+agy:0.0: [80x24] [history 28200/100000, 15289901 bytes] %0 (active)
+agy:1.0: [80x24] [history 0/100000, 8953 bytes] %1 (active)
+agy:2.0: [80x24] [history 0/100000, 1160 bytes] %2 (active)
+agy:3.0: [80x24] [history 41220/100000, 23794748 bytes] %3 (active)
+agy:4.0: [80x24] [history 1625/100000, 799580 bytes] %4 (active)
+agy:5.0: [80x24] [history 10/100000, 18842 bytes] %5 (active)
+agy:6.0: [80x24] [history 1298/100000, 629718 bytes] %6 (active)
+agy:7.0: [80x24] [history 14/100000, 19894 bytes] %7 (active)
+agy:8.0: [80x24] [history 5373/100000, 2887884 bytes] %8 (active)
+agy:9.0: [80x24] [history 12/100000, 22266 bytes] %9 (active)
+agy:10.0: [80x24] [history 1308/100000, 670626 bytes] %10 (active)
+agy:11.0: [80x24] [history 19175/100000, 9399776 bytes] %11 (active)
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Write check: SUCCESS (allowed)
+Kernel Landlock blocked delete: [Errno 13] Permission denied: '/tmp/landlock_test_dir/test.txt'
+

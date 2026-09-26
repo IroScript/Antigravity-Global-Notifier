@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+PID 1444: found 0 SQLite databases in memory!
+PID 1446: found 0 SQLite databases in memory!
+PID 1449: found 0 SQLite databases in memory!
+PID 1450: found 0 SQLite databases in memory!
+PID 1451: found 0 SQLite databases in memory!
+PID 1454: found 0 SQLite databases in memory!
+PID 1556: found 0 SQLite databases in memory!
+

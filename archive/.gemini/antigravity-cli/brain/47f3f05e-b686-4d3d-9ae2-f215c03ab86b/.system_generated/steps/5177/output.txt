@@ -1,0 +1,14 @@
+
+The command exited with code 3.
+Output:
+● agy-whatsapp.service - Antigravity WhatsApp Bridge Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/agy-whatsapp.service; enabled; preset: enabled)
+     Active: activating (auto-restart) (Result: exit-code) since Fri 2026-09-25 07:58:51 UTC; 3s ago
+ Invocation: cfa565fbd0cf4a66b1c2d6952b379ab6
+    Process: 672399 ExecStart=/usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js (code=exited, status=209/STDOUT)
+   Main PID: 672399 (code=exited, status=209/STDOUT)
+   Mem peak: 1.7M
+        CPU: 7ms
+Warning: The unit file, source configuration file or drop-ins of agy-whatsapp.service changed on disk. Run 'systemctl --user daemon-reload' to reload units.
+
+Terminal ID: c906d5a2-e22d-4163-a390-e272c5c21fe3

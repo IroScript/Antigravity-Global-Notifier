@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+8bec4b48b00e098f485543c085d04c94  /home/azureuser/GCP_FULL_BACKUP/gcp_home_FULL_filesystem_20260925.tar.gz
+

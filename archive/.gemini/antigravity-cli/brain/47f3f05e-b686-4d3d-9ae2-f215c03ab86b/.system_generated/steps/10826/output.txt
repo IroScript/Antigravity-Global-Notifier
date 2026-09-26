@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -471,7 +471,7 @@
+ 
+ def run():
+     server_address = ("0.0.0.0", PORT)
+-    httpd = HTTPServer(server_address, Windows11ExplorerHandler)
++    httpd = ThreadingHTTPServer(server_address, Windows11ExplorerHandler)
+     print(f"Windows 11 Azure File Explorer running on http://0.0.0.0:{PORT}")
+     try:
+         httpd.serve_forever()
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

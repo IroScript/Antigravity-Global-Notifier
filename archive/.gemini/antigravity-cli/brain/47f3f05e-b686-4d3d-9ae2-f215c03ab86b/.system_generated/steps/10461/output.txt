@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini
+/home/azureuser/.gemini/antigravity-cli
+/home/azureuser/.gemini/antigravity-cli/builtin
+/home/azureuser/.gemini/antigravity-cli/builtin/skills
+/home/azureuser/.gemini/antigravity-cli/updater
+/home/azureuser/.gemini/antigravity-cli/cache
+/home/azureuser/.gemini/antigravity-cli/crashes
+/home/azureuser/.gemini/antigravity-cli/brain
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b
+/home/azureuser/.gemini/antigravity-cli/conversations
+/home/azureuser/.gemini/antigravity-cli/bin
+/home/azureuser/.gemini/antigravity-cli/log
+/home/azureuser/.gemini/config
+/home/azureuser/.gemini/config/projects
+

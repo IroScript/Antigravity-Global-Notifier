@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+find: ‘Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/fd0fb5b6-28b4-4656-ab45-0e36555e68ed’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_1/Default/blob_storage/7696932a-44de-4839-bb8e-709e9a47850a’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_4/Default/blob_storage/599e8240-184f-4cc9-90d7-c16beae1f0b8’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/06’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/07’: Permission denied
+find: ‘Youtube Automation/docker_workers/profiles/worker_2/Default/blob_storage/231f2ac4-39f6-4939-926d-6d494cc4fdb7’: Permission denied
+

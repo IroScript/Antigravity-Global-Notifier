@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+total 1381944
+-rw-rw-r-- 1 azureuser azureuser 10145939 Sep 24 22:05 I_0003037806.mp4
+-rw-rw-r-- 1 azureuser azureuser 10145939 Sep 24 22:05 I_0014587127.mp4
+-rw-rw-r-- 1 azureuser azureuser 11836382 Sep 24 22:05 I_0014587212.mp4
+-rw-rw-r-- 1 azureuser azureuser  6994476 Sep 24 22:05 I_0014587211.mp4
+-rw-rw-r-- 1 azureuser azureuser  7994871 Sep 24 22:05 I_0003037800.mp4
+-rw-rw-r-- 1 azureuser azureuser  7994871 Sep 24 22:05 I_0014587126.mp4
+-rw-rw-r-- 1 azureuser azureuser  7563149 Sep 24 22:05 I_0003037794.mp4
+-rw-rw-r-- 1 azureuser azureuser  8856518 Sep 24 22:05 I_0014587204.mp4
+-rw-rw-r-- 1 azureuser azureuser  8455140 Sep 24 22:04 I_0014587208.mp4
+-rw-rw-r-- 1 azureuser azureuser  8797615 Sep 24 22:04 I_0014587124.mp4
+-rw-rw-r-- 1 azureuser azureuser  8532697 Sep 24 22:04 I_0014587123.mp4
+-rw-rw-r-- 1 azureuser azureuser  9784508 Sep 24 22:04 I_0014587122.mp4
+-rw-rw-r-- 1 azureuser azureuser  9760533 Sep 24 22:04 I_0014587121.mp4
+-rw-rw-r-- 1 azureuser azureuser  9136707 Sep 24 22:04 I_0014587216.mp4
+-rw-rw-r-- 1 azureuser azureuser  9965489 Sep 24 22:04 I_0014587202.mp4
+-rw-rw-r-- 1 azureuser azureuser  8857729 Sep 24 22:04 I_0014587215.mp4
+-rw-rw-r-- 1 azureuser azureuser  8706706 Sep 24 22:04 I_0014587214.mp4
+-rw-rw-r-- 1 azureuser azureuser  7072794 Sep 24 22:04 I_0014585684.mp4
+-rw-rw-r-- 1 azureuser azureuser 11244173 Sep 24 22:04 I_0014587203.mp4
+-rw-rw-r-- 1 azureuser azureuser 10263630 Sep 24 22:04 I_0014587201.mp4
+-rw-rw-r-- 1 azureuser azureuser 10579617 Sep 24 22:03 I_0014585600.mp4
+-rw-rw-r-- 1 azureuser azureuser  7635931 Sep 24 22:03 I_0014587210.mp4
+-rw-rw-r-- 1 azureuser azureuser 10592930 Sep 24 22:03 I_0014587206.mp4
+-rw-rw-r-- 1 azureuser azureuser  9406259 Sep 24 22:03 I_0014585595.mp4
+-rw-rw-r-- 1 azureuser azureuser 10732205 Sep 24 22:03 I_0014585588.mp4
+-rw-rw-r-- 1 azureuser azureuser  7645188 Sep 24 22:03 I_0014585587.mp4
+-rw-rw-r-- 1 azureuser azureuser  9927085 Sep 24 22:03 I_0014585598.mp4
+-rw-rw-r-- 1 azureuser azureuser 14428157 Sep 24 22:03 I_0014585586.mp4
+-rw-rw-r-- 1 azureuser azureuser 11302066 Sep 24 22:03 I_0014585597.mp4
+-rw-rw-r-- 1 azureuser azureuser  9395439 Sep 24 22:02 I_0014585585.mp4
+-rw-rw-r-- 1 azureuser azureuser 11254711 Sep 24 22:02 I_0014585593.mp4
+-rw-rw-r-- 1 azureuser azureuser  9986880 Sep 24 22:02 I_0014585592.mp4
+-rw-rw-r-- 1 azureuser azureuser 11721474 Sep 24 22:02 I_0014585591.mp4
+-rw-rw-r-- 1 azureuser azureuser 11132468 Sep 24 22:02 I_0014585590.mp4
+

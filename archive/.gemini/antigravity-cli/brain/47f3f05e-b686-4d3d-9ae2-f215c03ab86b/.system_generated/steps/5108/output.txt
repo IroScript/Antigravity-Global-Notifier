@@ -1,0 +1,60 @@
+
+The command exited with code 0.
+Output:
+UNIT FILE                                             STATE     PRESET
+app-com.google.Chrome-1210.scope                      transient -
+tmux-spawn-0cc70218-1ff5-42e3-a707-6e788fff0e09.scope transient -
+tmux-spawn-36e04d5d-d58c-4639-9eac-f2a23b1e852f.scope transient -
+tmux-spawn-36e31ccf-c796-4dde-9314-3cb5bbbb2196.scope transient -
+tmux-spawn-4992b3b8-b04d-4bc6-b832-8d67e517f92c.scope transient -
+tmux-spawn-718402d4-847e-4757-865e-866af13db41b.scope transient -
+tmux-spawn-734da896-0ec1-4b90-9ae1-61712604b2af.scope transient -
+tmux-spawn-7bd3bd3c-7693-4c18-b8d9-ae323b12adf6.scope transient -
+tmux-spawn-7c1175c2-13c3-44d1-a543-8898307ecb00.scope transient -
+tmux-spawn-b3a0dc2a-71ca-4fb2-bbe3-c233a9630599.scope transient -
+tmux-spawn-cc1542b9-eaf8-4621-9fcc-49cd2dbb96d0.scope transient -
+tmux-spawn-dec1109e-a79b-4c38-80f3-2172dd594741.scope transient -
+tmux-spawn-e5263ae7-f41d-466c-b368-daa9c0a15842.scope transient -
+app-at\x2dspi\x2ddbus\x2dbus@autostart.service        generated -
+app-xdg\x2duser\x2ddirs@autostart.service             generated -
+at-spi-dbus-bus.service                               static    -
+dbus.service                                          static    -
+dconf.service                                         static    -
+dirmngr.service                                       static    -
+gpg-agent.service                                     static    -
+keyboxd.service                                       static    -
+ssh-agent.service                                     static    -
+systemd-exit.service                                  static    -
+systemd-tmpfiles-clean.service                        static    -
+systemd-tmpfiles-setup.service                        disabled  enabled
+app.slice                                             static    -
+background.slice                                      static    -
+session.slice                                         static    -
+dbus.socket                                           static    -
+dirmngr.socket                                        enabled   enabled
+gpg-agent-browser.socket                              enabled   enabled
+gpg-agent-extra.socket                                enabled   enabled
+gpg-agent-ssh.socket                                  enabled   enabled
+gpg-agent.socket                                      enabled   enabled
+keyboxd.socket                                        enabled   enabled
+ssh-agent.socket                                      enabled   enabled
+basic.target                                          static    -
+bluetooth.target                                      static    -
+capsule@.target                                       static    -
+default.target                                        static    -
+exit.target                                           static    -
+graphical-session-pre.target                          static    -
+graphical-session.target                              static    -
+paths.target                                          static    -
+printer.target                                        static    -
+shutdown.target                                       static    -
+smartcard.target                                      static    -
+sockets.target                                        static    -
+sound.target                                          static    -
+timers.target                                         static    -
+xdg-desktop-autostart.target                          static    -
+systemd-tmpfiles-clean.timer                          disabled  enabled
+
+52 unit files listed.
+
+Terminal ID: 958bc5b9-7756-46bb-8cfa-38283a42fa5d

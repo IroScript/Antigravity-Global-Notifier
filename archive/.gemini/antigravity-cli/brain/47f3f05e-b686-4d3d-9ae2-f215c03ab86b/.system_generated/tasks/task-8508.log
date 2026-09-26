@@ -1,0 +1,10 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T19:52:57Z
+Prompt: Check task-8506 completion
+Early Termination: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8506
+
+[2026-09-25T19:52:22Z] Still waiting. Remaining time: 35s
+[2026-09-25T19:52:32Z] Still waiting. Remaining time: 25s
+[2026-09-25T19:52:42Z] Still waiting. Remaining time: 15s
+[2026-09-25T19:52:52Z] Still waiting. Remaining time: 5s
+[2026-09-25T19:52:57Z] Timer fired.

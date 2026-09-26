@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 5762 Sep 26 12:00 'Youtube Automation/PromptDatabase/generate_all_csvs.py'
+15:TS = "26_sept_12.30_pm"
+

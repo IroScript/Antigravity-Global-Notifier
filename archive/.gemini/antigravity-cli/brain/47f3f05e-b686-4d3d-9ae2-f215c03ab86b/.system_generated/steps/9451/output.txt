@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+1knh-c-zvI4vy01SjsEz50u9kMWTG_BW1;All_VM_BackUps/
+1zvFBze278SzxA6Rdpu0-W2IDo7a70Ewq;Azure_VM_Live_Backup_Fateh_Ali/
+

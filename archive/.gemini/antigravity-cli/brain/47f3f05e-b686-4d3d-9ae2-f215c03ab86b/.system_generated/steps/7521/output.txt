@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+======================================================================
+PHASE 1: SCANNING SOURCE FILESYSTEM
+======================================================================
+Source Directories:     7,154
+Source Symlinks:        36
+Source Regular Files:   84,524
+Source Logical Bytes:   6,716,239,872 bytes
+
+======================================================================
+PHASE 2: SCANNING EXTRACTED DIRECTORY
+======================================================================
+Extracted Directories:  7,139
+Extracted Symlinks:     36
+Extracted Regular Files:84,484
+Extracted Logical Bytes:6,715,624,242 bytes
+
+======================================================================
+PHASE 3: DETAILED SET RECONCILIATION
+======================================================================
+Common Regular Files:               84,481
+Source Files Missing from Extracted:43
+Extracted Files Extra (not in src): 3
+
+--- DETAILED BREAKDOWN OF MISSING SOURCE FILES ---
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000029.jsonl | Size: 66,489 bytes | Mtime: 2026-09-25 16:19:20 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000036.jsonl | Size: 52,473 bytes | Mtime: 2026-09-25 16:19:20 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/1219becc-1e86-41b7-970d-081fa1f22b90.json | Size: 1,997 bytes | Mtime: 2026-09-25 16:12:09 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/39e29dee-a4b7-4283-a044-5c0907562678.json | Size: 16,869 bytes | Mtime: 2026-09-25 16:16:37 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/42a34e0a-6afe-47ad-b407-2c0cd1846586.json | Size: 7,710 bytes | Mtime: 2026-09-25 16:17:21 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/eecb6ac6-7f0d-4d01-a5c7-8db88fbd31ca.json | Size: 4,686 bytes | Mtime: 2026-09-25 16:09:44 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/f6fb0c37-eff7-4f48-9b22-313b7b92f800.json | Size: 4,856 bytes | Mtime: 2026-09-25 16:10:02 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7477/output.txt | Size: 313 bytes | Mtime: 2026-09-25 16:09:44 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7481/output.txt | Size: 531 bytes | Mtime: 2026-09-25 16:10:02 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7485/output.txt | Size: 307 bytes | Mtime: 2026-09-25 16:10:11 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7487/output.txt | Size: 252 bytes | Mtime: 2026-09-25 16:10:15 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7489/output.txt | Size: 51 bytes | Mtime: 2026-09-25 16:10:25 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7491/output.txt | Size: 225 bytes | Mtime: 2026-09-25 16:10:29 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7493/output.txt | Size: 209 bytes | Mtime: 2026-09-25 16:12:09 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7497/output.txt | Size: 319 bytes | Mtime: 2026-09-25 16:12:14 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7499/output.txt | Size: 452 bytes | Mtime: 2026-09-25 16:12:22 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7501/output.txt | Size: 2,578 bytes | Mtime: 2026-09-25 16:12:25 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7505/output.txt | Size: 5,256 bytes | Mtime: 2026-09-25 16:16:37 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7509/output.txt | Size: 176 bytes | Mtime: 2026-09-25 16:17:21 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7513/output.txt | Size: 1,356 bytes | Mtime: 2026-09-25 16:17:30 UTC
+  azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7515/output.txt | Size: 1,406 bytes | Mtime: 2026-09-25 16:17:40 UTC
+

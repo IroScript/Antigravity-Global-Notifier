@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/RESTORED_PROJECTS/GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md:3:**Source VM (Google Cloud):** openclaw-server (136.116.25.41), Debian 13 (trixie), User: mdkamruzzamanirak_gmail_com
+/home/azureuser/RESTORED_PROJECTS/GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md:135:   Using direct SSH between `openclaw-server` and `FatehAli` (transfer speed ~40-60 MB/s, total 16 GB takes ~5-7 minutes):
+/home/azureuser/RESTORED_PROJECTS/AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md:3:**Source VM:** Google Cloud (`openclaw-server` - 136.116.25.41)
+

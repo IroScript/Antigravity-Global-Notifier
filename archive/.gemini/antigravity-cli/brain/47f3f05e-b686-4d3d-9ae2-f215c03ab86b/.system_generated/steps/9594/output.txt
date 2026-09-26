@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+total 92
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 26 07:51 .
+drwxr-xr-x 29 azureuser azureuser  4096 Sep 26 07:54 ..
+drwxr-xr-x  5 root      root       4096 Sep 26 07:51 ACTIONS
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 07:57 AGENTS.md
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 26 06:52 DRAFTS
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 20:19 INCIDENTS
+-rw-rw-r--  1 azureuser azureuser 13953 Sep 25 12:17 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+drwxrwxr-x  6 azureuser azureuser  4096 Sep 26 07:04 POLICIES
+-rw-r--r--  1 azureuser azureuser  2690 Sep 25 07:58 PROJECT_REGISTRY.md
+drwxr-xr-x  9 azureuser azureuser  4096 Sep 25 11:00 RECOVERED_DATABASES
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 10:51 RECOVERED_LOGS
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 26 07:51 REPORTS
+drwxrwxr-x  5 azureuser azureuser  4096 Sep 26 07:51 TASKS
+-rw-rw-r--  1 azureuser azureuser  8350 Sep 25 12:17 USER_PERSONAL_AGENT_CONTEXT.md
+

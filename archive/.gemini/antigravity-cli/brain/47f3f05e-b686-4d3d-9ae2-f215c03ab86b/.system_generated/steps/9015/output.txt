@@ -1,0 +1,24 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8697
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8697.log
+Log output:
+<truncated 1450 lines>
+o.json:  0% /2.847Ki, 0/s, -
+
+<6>INFO  : 1.160.Level_10_Atmospheric_Cryo-Condenser_Spire/1.160.Level_10_Prompt.json: Copied (new)
+<6>INFO  : 1.160.Level_10_Atmospheric_Cryo-Condenser_Spire/prompt_info.json: Copied (new)
+<6>INFO  : 1.160.Level_10_Atmospheric_Cryo-Condenser_Spire/1.160.Level_10_YouTube_Metadata.json: Copied (new)
+<6>INFO  : 
+Transferred:   	  625.909 MiB / 2.234 GiB, 27%, 105.336 KiB/s, ETA 4h29m16s
+Transferred:          264 / 1086, 24%
+Elapsed time:     20m50.6s
+Transferring:
+ * 1.160.Level_10_Atmosph…yo-Condenser_Spire.mp4:100% /9.901Mi, 44.942Ki/s, 0s
+ * 1.160.Level_10_Atmosph…/youtube_metadata.json:  0% /926, 0/s, -
+ * 1.161.Level_10_Sub-Zer…1.Level_10_Prompt.json:  0% /2.751Ki, 0/s, -
+ * 1.161.Level_10_Sub-Zer…_Snowplow_Colossus.mp4:  0% /9.757Mi, 0/s, -
+
+<6>INFO  : 1.160.Level_10_Atmospheric_Cryo-Condenser_Spire/youtube_metadata.json: Copied (new)
+<6>INFO  : 1.161.Level_10_Sub-Zero_Snowplow_Colossus/1.161.Level_10_Prompt.json: Copied (new)
+
+Last progress: 0s ago

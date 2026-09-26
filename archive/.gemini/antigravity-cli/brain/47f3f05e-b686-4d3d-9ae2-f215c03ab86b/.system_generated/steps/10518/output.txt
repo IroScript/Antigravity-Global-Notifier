@@ -1,0 +1,27 @@
+The search for "site:antigravity.google "reset" OR "uninstall" OR "clean" OR "default" "agy"" returned the following summary:
+For tasks related to resetting, uninstalling, or cleaning configurations in the Antigravity (AGY) CLI, refer to the following documented commands and procedures:
+
+### **Resetting and Cleaning**
+*   **Reset Keybindings:** To reset your keybindings to their default state, delete the `keybindings.json` file located at `~/.gemini/antigravity-cli/keybindings.json`[1].
+*   **Clear Conversation History:** Use the slash command `/clear` to clear the current prompt and start a new conversation session[1].
+*   **Delete Conversations:** To remove obsolete threads, highlight the conversation in the picker and press `Ctrl + Delete`[2].
+*   **Clear Screen:** Press `Ctrl + L` to clear the terminal output[1].
+
+### **Uninstalling**
+*   **Uninstall Plugins:** To remove a plugin and clean up its associated configuration registries, use the command[3]:
+    ```bash
+    agy plugin uninstall <plugin_name>
+    ```
+
+### **Execution Modes & Defaults**
+*   **Default Mode:** The CLI operates in `default` mode by default, which pauses for interactive diff reviews before applying changes[4]. You can cycle between `default`, `accept-edits`, and `plan` modes using `Shift + Tab` within the prompt box[4].
+*   **Settings:** Configurations are categorized into four scopes to keep settings "clean and isolated"[5]. By default, clicking **Settings** opens the configuration for the active project, or the global settings if no project is open[5].
+
+For more advanced troubleshooting or configuration management, consult the [Antigravity CLI Documentation](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQzjLmYqiVCjt6C4gTdScfqv9MfGfAvJdLW7CK7A-QS-FLNTxRxStobbikMnWF2jYL7gCxIfv-MVx7LBg_A1IxOsHl8x4s47wboalqE6vvZerg7uEncsfS1ZvbbZiC3lzNcstFtA==).
+
+Sources:
+[1] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSn4S2b5FLMugMAQCTWjwHmsL8jlY8MdfT26MECjXN-_jNWBDdEywCFt_15ZuRP656jz-7gE4XJMxMJ_vkkZn-DpS5fCVhXC40mJV5kMU43_NYECA6_T57qXbJFhHEg==)
+[2] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkzJ66-BOakioviPZwhGhH649KUXUtW-LSA0wPaqE21WL_bT29c33wkIMSRSsyoWUH2DuLpY-Mlc0ulLHitN-SUyF3K8SZfOcpc70VcpwJehzln5tHGM0RwvLc5VNVjP378URuQUC7PYw=)
+[3] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgJO9AImSQWBMtqJPttI2KadZps_R0gvvmffps3yQq1U6pTA1UxZPGXOJRJkDOKCWQzsonpIN8INXYCdp8cTKo2sifYIJWgKR-78CObdZeb22ANqDrHLpFtDXaH_g=)
+[4] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHck9xSd6KyryG7z33AZS4KmsrJx0G1tGMpuaTebYbMqhROBlsZ5tu_dnPyeGOMruVDWPBkIi34f7kGs5xfedqi_CAmK99F4MNgArHPuO9QcHGHaIYVr1oZKKwr4vuhXw==)
+[5] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVdYC4G8PjTo9UL3ItmaapXdTHqoXI3C1-6QF4-86ub28Ug18sVgWe8ct-QBsZDWr0JwcdzmSMRR_i4oIehqtKLCi4143_raTTI0_63H_JNfoj47oWa8d84prRa0Cg)

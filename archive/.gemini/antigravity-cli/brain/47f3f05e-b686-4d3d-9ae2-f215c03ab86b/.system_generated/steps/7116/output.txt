@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw------- 1 azureuser azureuser 2379 Sep 25 14:48 /home/azureuser/.config/rclone/service_account.json
+

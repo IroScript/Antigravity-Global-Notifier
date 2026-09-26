@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+5696918816	/home
+5696918801	/home/azureuser
+0	/home/workspace
+0	/home/lost+found
+0	/home/downloads
+--- /home/azureuser breakdown ---
+5696918801	/home/azureuser
+1746727514	/home/azureuser/.openclaw
+1414706761	/home/azureuser/RESTORED_VIDEOS
+855340279	/home/azureuser/RESTORED_PROJECTS
+613959300	/home/azureuser/.npm-global
+436343200	/home/azureuser/.local
+303401548	/home/azureuser/.npm
+145879754	/home/azureuser/tmp
+75194894	/home/azureuser/AGY-MASTER
+50585203	/home/azureuser/DATABASE_BACKUPS_VAULT
+41419314	/home/azureuser/.gemini
+8100289	/home/azureuser/.config
+3653175	/home/azureuser/.webterminal
+996827	/home/azureuser/Frappe-erp-Alco
+404462	/home/azureuser/telegram-bot
+35263	/home/azureuser/.cache
+29699	/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+21092	/home/azureuser/3D-Game-Design-Studio
+3817	/home/azureuser/kids_tube_with_folder_seection
+3665	/home/azureuser/__pycache__
+2480	/home/azureuser/.ssh
+339	/home/azureuser/Ask-And-Research
+90	/home/azureuser/.gradle
+

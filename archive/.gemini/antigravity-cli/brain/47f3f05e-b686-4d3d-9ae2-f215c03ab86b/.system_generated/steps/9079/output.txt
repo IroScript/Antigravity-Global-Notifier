@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+#### --drive-scope
+
+Scope that rclone should use when requesting access from drive.
+
+Properties:
+
+- Config:      scope
+- Env Var:     RCLONE_DRIVE_SCOPE
+- Type:        string
+- Required:    false
+- Examples:
+    - "drive"
+        - Full access all files, excluding Application Data Folder.
+    - "drive.readonly"
+        - Read-only access to file metadata and file contents.
+    - "drive.file"
+        - Access to files created by rclone only.
+

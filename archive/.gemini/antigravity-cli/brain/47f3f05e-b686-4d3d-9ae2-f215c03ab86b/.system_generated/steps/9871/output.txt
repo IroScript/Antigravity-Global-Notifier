@@ -1,0 +1,7 @@
+
+The command exited with code 1.
+Output:
+7.0G	/usr
+1.3G	/var
+4.0K	/srv
+

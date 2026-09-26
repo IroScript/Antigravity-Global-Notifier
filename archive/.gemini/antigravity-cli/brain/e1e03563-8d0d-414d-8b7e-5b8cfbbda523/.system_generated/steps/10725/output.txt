@@ -1,0 +1,20 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -49,10 +49,10 @@
+ 
+ # Worker configuration partitions
+ WORKER_CONFIGS = {
+-    "worker_1": {"port": 8001, "start_elem": 22, "end_elem": 41, "initial_stagger": 180.0},
+-    "worker_2": {"port": 8002, "start_elem": 42, "end_elem": 61, "initial_stagger": 240.0},
+-    "worker_3": {"port": 8003, "start_elem": 62, "end_elem": 81, "initial_stagger": 300.0},
+-    "worker_4": {"port": 8004, "start_elem": 82, "end_elem": 100, "initial_stagger": 0.0},
++    "worker_1": {"port": 8001, "start_elem": 22, "end_elem": 41, "initial_stagger": 0.0},
++    "worker_2": {"port": 8002, "start_elem": 42, "end_elem": 61, "initial_stagger": 30.0},
++    "worker_3": {"port": 8003, "start_elem": 62, "end_elem": 81, "initial_stagger": 60.0},
++    "worker_4": {"port": 8004, "start_elem": 82, "end_elem": 100, "initial_stagger": 90.0},
+ }
+ 
+ LOCKED_AUDIO_RULE = "Audio: no human voice, only cinematic BGM."
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

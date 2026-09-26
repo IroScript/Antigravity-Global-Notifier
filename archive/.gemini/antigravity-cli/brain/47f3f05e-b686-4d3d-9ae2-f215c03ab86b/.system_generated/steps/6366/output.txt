@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+{
+  "id": 2,
+  "uuid": "dd0e6617-d241-4728-a009-d111de158578",
+  "idea_id": 1,
+  "element_id": 1,
+  "title": "Rice Titan Harvester \u2014 The Paddy Harvesting Machine You've Never Seen",
+  "seo_description": "Rice Titan Harvester: an impossible Paddy Harvesting machine rendered as an 8-second cinematic concept. No comparable video currently exists for this exact concept.\n\nThis concept explores rice paddy machine. rice paddy machine, giant harvester, colossal harvester, agriculture tech, mega farming.\n\nTIMESTAMPS\n0:00 - Core startup\n0:02 - Mechanical deployment\n0:04 - Full-scale operation\n0:06 - Final stabilization\n\n#Shorts #AI #ImpossibleEngineering #Megastructure #SciFi",
+  "tags": "[\"Rice Titan Harvester\", \"rice paddy machine\", \"giant harvester\", \"colossal harvester\", \"agriculture tech\", \"mega farming\", \"Paddy Harvesting machine\", \"impossible engineering\", \"AI generated video\", \"megastructure\"]",
+  "category": "Science & Technology",
+  "default_language": "en",
+  "video_prompt_used": "Use IMAGE 10 as the first frame and reference image. Exactly 8 seconds, photorealistic cinematic render, smooth continuous motion, no cuts, maximum cinematic realism.\n\nSecond 1 [0:00-0:01] \u2014 HUD Popup Text: \"STEP 1: AWAKEN THE TITAN\" \u2014 The alien agricultural intelligence activates, illuminating countless sensor halos and planetary-scale harvesting systems.\n\nSecond 2 [0:01-0:02] \u2014 HUD Popup Text: \"STEP 2: HARVEST REALITY\" \u2014 Innumerable colossal arms reach through folded space and gather rice from multiple worlds simultaneously.\n\nSecond 3 [0:02-0:03] \u2014 HUD Popup Text: \"STEP 3: TRANSDIMENSIONAL THRESH\" \u2014 Entire crop streams enter wormholes and emerge inside the titan's impossible belly factory.\n\nSecond 4 [0:03-0:04] \u2014 HUD Popup Text: \"STEP 4: QUANTUM PURIFICATION\" \u2014 Individual grains float through miniature artificial suns, gravitational separators, magnetic fields, and alien drying reactors.\n\nSecond 5 [0:04-0:05] \u2014 HUD Popup Text: \"STEP 5: STORE THE HARVEST UNIVERSE\" \u2014 Finished grains cascade into an infinite-dimensional storage chamber containing vast glowing reserves of rice.\n\nSeconds 6-8 [0:05-0:08]: HUD text completely fades; the camera performs a continuous impossible-scale descent from the cosmic titan into its belly, through alien processing architecture, and finally reaches a maximum close-up of a single rice grain suspended beside a colossal quantum mechanism, with the surrounding machinery stabilizing into a mesmerizing continuous harvesting rhythm, no cuts, no scene transition, exactly 8 seconds.",
+  "image_prompt_used": "5-Layer Open Montage Structure\n\nLayer 1 \u2014 Subject: An utterly alien Rice Titan Harvester of impossible scale, larger than a planet, constructed as a living-mechanical agricultural intelligence with innumerable articulated harvesting limbs, continent-sized crop claws, biomechanical machine surfaces, floating auxiliary harvesters, colossal sensor halos, and a central consciousness core glowing inside its torso.\n\nLayer 2 \u2014 Environment: Multiple planetary rice worlds arranged around the titan, enormous agricultural continents, artificial irrigation oceans, orbital farms, rings of harvested grain, moons, stars, nebulae, gravitationally distorted landscapes, entire civilizations appearing microscopic against the machine.\n\nLayer 3 \u2014 Architecture: Impossible alien megastructure architecture containing nested planetary threshers, rotating dimensional processing spheres, gravitational grain elevators, living-machine conveyor networks, self-repairing biomechanical armor, infinite storage dimensions, orbital drying reactors, autonomous micro-machine ecosystems, and a colossal central belly factory resembling a miniature artificial universe.\n\nLayer 4 \u2014 Energy/Physics: Extreme quantum and gravitational phenomena, miniature artificial suns powering the machine, wormholes connecting agricultural worlds, magnetic rivers carrying rice through space, localized time distortion, spatial folding, plasma oceans, luminous quantum foam, gravitational lensing bending stars around the titan, impossible energy fields surrounding every mechanical movement.\n\nLayer 5 \u2014 Cinematic Presentation: Maximum-scale cinematic masterpiece, impossible low-angle cosmic perspective with the planet-sized titan dominating the frame, photorealistic alien-mechanical textures, realistic planetary atmospheres, stars distorted by gravity, volumetric plasma clouds, extreme HDR lighting, cinematic depth, microscopic grain detail simultaneously visible against cosmic scale, hyperreal 16K render.",
+  "video_file_path": "C:\\\\Users\\\\Irak\\\\Desktop\\\\Youtube Pipeline\\\\PromptDatabase\\\\output_packaged\\\\1.1.Level_10_Rice_Titan_Harvester\\\\1.1.Level_10_Rice_Titan_Harvester.mp4",
+  "package_folder_path": "C:\\\\Users\\\\Irak\\\\Desktop\\\\Youtube Pipeline\\\\PromptDatabase\\\\output_packaged\\\\1.1.Level_10_Rice_Titan_Harvester",
+  "status": "uploaded",
+  "created_at": "2026-08-18 07:55:04.020215",
+  "updated_at": "2026-09-13T10:10:28.430682+00:00",
+  "pinned_comment": "Would this Rice Titan Harvester actually work in real life? Tell us in the comments! \ud83d\udc47",
+  "youtube_video_id": "rX_prwTwpV4",
+  "youtube_url": "https://youtube.com/shorts/rX_prwTwpV4",
+  "tracking_token": "[Ref: AGY-IDEA-001 | UUID: 3f1f4169-6d85-44d0-8ba2-ee7f22f2b814]",
+  "live_title": "Rice Titan Harvester \u2014 The Paddy Harvesting Machine You Have Never Seen",
+  "live_description": null,
+  "upload_status": "uploaded",
+  "published_at": "2026-09-13T10:10:28.430682+00:00"
+}
+

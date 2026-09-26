@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Total keys extracted from Redis 13000: 1
+-rw-rw-r-- 1 azureuser azureuser 43 Sep 25 15:49 /home/azureuser/DATABASE_BACKUPS_VAULT/azure_redis_13000_keys.txt
+b354a31da40f31a30af94f6597cec0339927a5fb095bc262e11bd01ed8756dbe  /home/azureuser/DATABASE_BACKUPS_VAULT/azure_redis_13000_keys.txt
+

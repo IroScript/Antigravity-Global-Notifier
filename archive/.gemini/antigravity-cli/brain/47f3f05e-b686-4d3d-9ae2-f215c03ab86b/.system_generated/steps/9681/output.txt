@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total objects: 429 (429)
+Total size: 760.290 MiB (797222098 Byte)
+

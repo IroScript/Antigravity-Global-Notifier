@@ -1,0 +1,58 @@
+
+The command exited with code 0.
+Output:
+Line True: RESUME 0
+Line True: LOAD_FAST package_folder
+   LOAD_CONST True
+   LOAD_CONST True
+   LOAD_CONST ('parents', 'exist_ok')
+Line True: BUILD_MAP 0
+Line True: LOAD_CONST idea_id
+Line True: MAP_ADD 1
+Line True: LOAD_CONST idea_title
+Line True: MAP_ADD 1
+Line True: LOAD_CONST idea_topic
+Line True: MAP_ADD 1
+Line True: LOAD_CONST element_id
+Line True: MAP_ADD 1
+Line True: LOAD_CONST idea_index_in_element
+Line True: MAP_ADD 1
+Line True: LOAD_CONST target_generation
+   LOAD_CONST 10-Second Veo Video
+Line True: MAP_ADD 1
+Line True: LOAD_CONST escalation_level
+   LOAD_CONST 10
+Line True: MAP_ADD 1
+Line True: LOAD_CONST level_name
+   LOAD_CONST ALIEN LEVEL / MAXIMUM
+Line True: MAP_ADD 1
+Line True: LOAD_CONST primary_video_prompt_used
+   LOAD_CONST 
+Line True: MAP_ADD 1
+Line True: LOAD_CONST video_prompt_title
+   LOAD_CONST 
+Line True: MAP_ADD 1
+Line True: LOAD_CONST model
+   LOAD_CONST Veo 3.1 Lower Priority / 1Video10Sec
+Line True: MAP_ADD 1
+Line True: LOAD_CONST duration
+   LOAD_CONST 8s
+Line True: MAP_ADD 1
+Line True: LOAD_CONST aspect_ratio
+   LOAD_CONST 9:16
+Line True: MAP_ADD 1
+Line True: LOAD_CONST reference_image_prompt
+   LOAD_CONST 
+Line True: MAP_ADD 1
+Line True: LOAD_CONST source_pipeline
+   LOAD_CONST PromptDatabase Hierarchical Chain (SQLite Verified)
+Line True: MAP_ADD 1
+Line True: LOAD_CONST exported_from_sqlite_at
+   CALL 1
+   CALL 0
+Line True: MAP_ADD 1
+   STORE_FAST prompt_info_data
+Line True: LOAD_FAST_LOAD_FAST ('package_folder', 'elem_id')
+   LOAD_CONST .
+   LOAD_CONST .Level_10_Prompt.json
+

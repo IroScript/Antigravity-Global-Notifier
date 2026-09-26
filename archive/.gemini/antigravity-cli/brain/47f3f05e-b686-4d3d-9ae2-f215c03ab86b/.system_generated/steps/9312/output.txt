@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 50 Sep 26 07:01 /home/azureuser/test_delete_probe.txt
+

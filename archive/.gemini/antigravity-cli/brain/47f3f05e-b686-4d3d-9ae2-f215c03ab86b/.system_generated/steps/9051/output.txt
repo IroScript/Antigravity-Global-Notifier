@@ -1,0 +1,45 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Dangling shortcut "Task List" detected
+129 No. Birshreshtha Mostofa Kamal Primary School Chhitmohol/
+ANGIOGRAM REPORT/
+APPLICATION LIST (PDF)/
+Accessories/
+AllRustRough/
+All_Credentials_API_Keys/
+All_VM_BackUps/
+Attendance/
+Attendance Copy Sync or Pasted/
+Attendance_App_Updated/
+BIM.PGD.MM/
+Banijjo mela/
+Boro Mosjid/
+Chandpur/
+Classroom/
+Colab Notebooks/
+Daffodil/
+Detailing/
+Eid Mubarak Alco Pharma/
+First/
+Google AI Studio/
+Govt Jobs/
+Khulna/
+MEMORANDUM/
+Mayajal/
+MernPracticing/
+Monthly Expense/
+Nayon 12 Jul 2018/
+Personal/
+Reminder_App_JavaScript/
+Rust/
+RustProject/
+Rx App by Irak/
+SEAGATE CRYSTAL REPORT 8.0 (.RPT) VIEWER/
+Untitled folder/
+Videos/
+Youtube_Automation/
+crazytime project/
+psycopg2_just_files/
+rustV10/
+

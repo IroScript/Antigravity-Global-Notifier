@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+302-    .sidebar-item:hover { background: var(--bg-hover); }
+303-    .sidebar-item.active { background: var(--bg-selected); font-weight: 600; color: var(--accent-blue); }
+304-    .sidebar-item svg { width: 16px; height: 16px; flex-shrink: 0; }
+305-
+306-    /* Explorer Content Area */
+307:    .explorer-content-area {
+308-      flex: 1;
+309-      background: var(--bg-base);
+310-      display: flex;
+311-      flex-direction: column;
+312-      overflow-y: auto;
+--
+1128-        </div>
+1129-      </div>
+1130-    </div>
+1131-
+1132-    <!-- VIEW 1: FILE EXPLORER CONTENT AREA -->
+1133:    <div class="explorer-content-area" id="viewExplorer">
+1134-      <!-- Drives & Shortcuts (Visible on "This PC") -->
+1135-      <div id="drivesView" style="display:none;">
+1136-        <div class="section-header">
+1137-          <span>Devices and Drives</span>
+1138-          <span style="font-size:11px; color:var(--text-muted);">Azure Virtual Machine FatehAli</span>
+

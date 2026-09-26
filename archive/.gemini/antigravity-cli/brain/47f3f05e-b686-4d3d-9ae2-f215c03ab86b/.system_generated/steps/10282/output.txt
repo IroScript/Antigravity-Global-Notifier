@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+<script id="agy-reply-data" type="application/json">
+{"type": "agent_reply", "title": "🔔 ইরাক ভাইয়া, এজেন্টের বাংলা উত্তর প্রস্তুত!", "project": "mdkamruzzamanirak_gmail_com", "path": "/home/mdkamruzzamanirak_gmail_com", "timestamp": 1790103992, "reply": "ইরাক ভাইয়া,\n\n*GATE 1–2 COMPLETE*\n\n«━━━━━━━━━━━━━━━━━━━━━━━━━━━━»\n*EVIDENCE SUMMARY*\n«━━━━━━━━━━━━━━━━━━━━━━━━━━━━»\n\n*১. GATE 1 — GCP PRE-STOP AUDIT:*\n- *সার্ভিস:*\n  `/home/mdkamruzzamanirak_gmail_com/.config/systemd/user/agy-whatsapp.service`\n- *Pre-stop Status:*\n  `active (running)`\n- *PID:*\n  `12762` (Uptime: ৩ দিন ২ ঘণ্টা)\n- *Pre-stop Manifest:*\n  `/home/mdkamruzzamanirak_gmail_com/.gemini/antigravity-cli/brain/c5fb98e0-bbd3-4a81-8f0b-ae8a849347c6/scratch/gate1_manifest.txt`\n- *Pre-stop File Count:*\n  ৩১,৭৬০ টি ফাইল\n- *Pre-stop Manifest SHA-256:*\n  `9d288963593b8e71c7599f906540d799b6da7791cdd848b33dd0d4064707c44b`\n\n«━━━━━━━━━━━━━━━━━━━━━━━━━━━━»\n\n*২. GATE 2 — GCP SAFE STOP:*\n- *Stop Command Exit:* `0`\n- *is-active:* `inactive`\n- *Status:*\n  `inactive (dead)` (Process `12762` cleanly killed with TERM)\n- *Active Processes:*\n  `NO WHATSAPP PROCESS FOUND (CLEAN)`\n- *Post-stop Manifest:*\n  `/home/mdkamruzzamanirak_gmail_com/.gemini/antigravity-cli/brain/c5fb98e0-bbd3-4a81-8f0b-ae8a849347c6/scratch/gate2_manifest.txt`\n- *Post-stop File Count:*\n  ৩১,৭৬২ টি ফাইল\n- *Post-stop Total Size:*\n  ৩,৮০৮,১৪৯ বাইটস (৩.৬৩ MB)\n- *Post-stop Manifest SHA-256:*\n  `faed50dc82e6a589089c20b514c22e6a764d870b81457d9b00b1a9094e324266`\n\n«━━━━━━━━━━━━━━━━━━━━━━━━━━━━»\n\n*৩. KEY FILES FINGERPRINT & COMPARE:*\n- *`creds.json` SHA-256:*\n  `495703bdd5d22cd80ee6ec23abf09096c9259aad6fb0545e4e8c13ffb6df99c4`\n  (Size: ৬,৪৯০ বাইটস — Gate 1 ও Gate 2-তে\n  হুবহু একই ও অপরিবর্তিত)\n- *Shutdown Write Delta:*\n  স্টপ সিগন্যালের শেষ মুহূর্তে ৪টি সেশন\n  ফাইল আপডেট এবং ২টি নতুন ফাইল যুক্ত হয়েছিল।\n- *Static State Verification:*\n  সার্ভিস বন্ধ হওয়ার পর পুনরায় যাচাইকৃত:\n  *ZERO WRITES IN PROGRESS (FROZEN)*।\n\n«━━━━━━━━━━━━━━━━━━━━━━━━━━━━»\n\n*MANDATORY STOP CHECKLIST:*\n[✓] GCP service was active before stop\n[✓] Pre-stop logs captured\n[✓] Full auth-state manifest captured\n[✓] GCP service stopped successfully\n[✓] is-active = inactive\n[✓] No WhatsApp process remains\n[✓] Final auth-state manifest captured\n[✓] Final fingerprint is available\n[✓] No unexpected destructive change occurred\n[✓] GCP session/data remains intact\n\nনির্দেশনা অনুযায়ী Azure sync বা start\nএখনই করা হয়নি। আমি পরবর্তী নির্দেশনার\nজন্য অপেক্ষা করছি।", "paste_url": "https://paste.rs/XrUI7"}
+</script>
+
+<script>
+(function() {
+  console.log("[AGY] Initializing Expanding Connected Widget with Bangla Reply & paste.rs...");
+  let currentReplyData = {};
+  try {
+    const rawTag = document.getElementById('agy-reply-data');
+    if (rawTag && rawTag.textContent) {
+--
+        const startTag = '<script id="agy-reply-data" type="application/json">';
+        const endTag = '</script>';
+        const sIdx = html.indexOf(startTag);
+        if (sIdx !== -1) {
+          const eIdx = html.indexOf(endTag, sIdx);
+          if (eIdx !== -1) {
+            const jsonStr = html.substring(sIdx + startTag.length, eIdx).trim();
+            const data = JSON.parse(jsonStr);
+            if (data && data.timestamp && data.timestamp > lastSyncedTime) {
+              console.log('[AGY Live Sync] New reply detected! Timestamp:', data.timestamp);
+              lastSyncedTime = data.timestamp;
+

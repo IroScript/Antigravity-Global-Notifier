@@ -1,0 +1,28 @@
+
+The command exited with code 1.
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           392M  616K  392M   1% /run
+/dev/sda1        69G   66G  533M 100% /
+tmpfs           2.0G  1.1M  2.0G   1% /dev/shm
+efivarfs        256K   26K  226K  11% /sys/firmware/efi/efivars
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G  500K  2.0G   1% /tmp
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+/dev/sda15      124M  8.9M  115M   8% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           392M   56K  392M   1% /run/user/1541092253
+tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs           392M   12K  392M   1% /run/user/1006
+9.4M	/home/azureuser-to-google-vm
+4.0K	/home/irak
+4.0K	/home/Irak
+4.0K	/home/md.kamruzzamanirak
+4.0K	/home/md_kamruzzamanirak
+4.0K	/home/mdkamruzzamanirak
+4.0K	/home/mdkamruzzamanirak_gmail_com
+4.0K	/home/termuxuser
+

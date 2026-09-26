@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+lrwxrwxrwx 1 azureuser azureuser 0 Sep 25 15:47 /proc/1194/cwd -> '/home/azureuser/frappe-bench/config/pids (deleted)'
+/home/azureuser/frappe-bench/config/pids (deleted)
+

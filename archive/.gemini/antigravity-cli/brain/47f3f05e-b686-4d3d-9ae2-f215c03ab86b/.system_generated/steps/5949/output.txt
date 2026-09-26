@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+64410.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/text/x-Algol68\012-/I_0014564411.txt
+

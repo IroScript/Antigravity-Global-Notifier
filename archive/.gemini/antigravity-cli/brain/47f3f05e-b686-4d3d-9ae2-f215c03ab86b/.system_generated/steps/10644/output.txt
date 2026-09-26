@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+total 426148
+drwxrwxr-x 2 azureuser azureuser      4096 Sep 26 10:23 .
+drwxrwxr-x 5 azureuser azureuser      4096 Sep 26 10:23 ..
+-rwxr-xr-x 1 azureuser azureuser 219545808 Sep 25 08:02 agy
+-rwxr-xr-x 1 azureuser azureuser 216797392 Sep 25 08:00 agy.1790323328348797097.old
+-r-xr-xr-x 1 azureuser azureuser      3616 Sep 26 02:37 rclone
+-rwxrwxr-x 1 azureuser azureuser       213 Sep 26 10:23 websockets
+

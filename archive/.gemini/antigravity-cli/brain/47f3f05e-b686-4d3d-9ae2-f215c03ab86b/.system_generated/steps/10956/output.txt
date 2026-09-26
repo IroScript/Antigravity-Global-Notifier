@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+1025:        <button class="home-nav-btn active" id="btnTabExplorer" onclick="switchHomeTab('explorer')" title="Windows 11 File Explorer">
+1031:        <button class="home-nav-btn" id="btnTabMonitor" onclick="switchHomeTab('monitor')" title="Live Resource & CPU Activity Monitor">
+1431:    const btnExp = document.getElementById('btnTabExplorer');
+1432:    const btnMon = document.getElementById('btnTabMonitor');
+

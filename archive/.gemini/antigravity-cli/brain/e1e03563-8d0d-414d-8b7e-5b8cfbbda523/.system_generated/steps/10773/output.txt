@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'uuid', 'VARCHAR', 1, None, 0)
+(2, 'idea_id', 'INTEGER', 1, None, 0)
+(3, 'element_id', 'INTEGER', 0, None, 0)
+(4, 'title', 'VARCHAR', 1, None, 0)
+(5, 'seo_description', 'VARCHAR', 1, None, 0)
+(6, 'tags', 'VARCHAR', 1, None, 0)
+(7, 'category', 'VARCHAR', 1, None, 0)
+(8, 'default_language', 'VARCHAR', 1, None, 0)
+(9, 'video_prompt_used', 'VARCHAR', 0, None, 0)
+(10, 'image_prompt_used', 'VARCHAR', 0, None, 0)
+(11, 'video_file_path', 'VARCHAR', 0, None, 0)
+(12, 'package_folder_path', 'VARCHAR', 0, None, 0)
+(13, 'status', 'VARCHAR', 1, None, 0)
+(14, 'created_at', 'DATETIME', 1, None, 0)
+(15, 'updated_at', 'DATETIME', 1, None, 0)
+(16, 'pinned_comment', 'TEXT', 0, None, 0)
+(17, 'youtube_video_id', 'VARCHAR', 0, None, 0)
+(18, 'youtube_url', 'VARCHAR', 0, None, 0)
+(19, 'tracking_token', 'VARCHAR', 0, None, 0)
+(20, 'live_title', 'VARCHAR', 0, None, 0)
+(21, 'live_description', 'VARCHAR', 0, None, 0)
+(22, 'upload_status', 'VARCHAR', 0, None, 0)
+(23, 'published_at', 'DATETIME', 0, None, 0)
+

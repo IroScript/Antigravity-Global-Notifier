@@ -1,0 +1,21 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-11692
+Status: DONE
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-11692.log
+Log output:
+<truncated 57 lines>
+             
+                                                                                  
+  --------                                                                        
+                                                                                  
+  ## 🛠️ নতুন পিসিতে ইনস্টল করার নিয়ম                                              
+                                                                                  
+  1. রিপোজিটরিটি ক্লোন করুন:                                                      
+    git clone https://github.com/IroScript/Antigravity-Global-Notifier.git        
+                                                                                  
+  2. ফোল্ডারে ঢুকে  install.bat  রান করুন।                                        
+
+
+
+View this repository on GitHub: https://github.com/IroScript/Antigravity-Global-Notifier
+
+Last progress: 0s ago

@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+22G	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome
+203M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome-headless
+11M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome-for-testing-headless
+6.5M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome-flow
+4.2M	/home/mdkamruzzamanirak_gmail_com/.config/gcloud
+2.4M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome-veo
+148K	/home/mdkamruzzamanirak_gmail_com/.config/systemd
+28K	/home/mdkamruzzamanirak_gmail_com/.config/openbox
+28K	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome-for-testing
+28K	/home/mdkamruzzamanirak_gmail_com/.config/chromium
+

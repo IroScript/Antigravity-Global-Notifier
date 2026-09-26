@@ -1,0 +1,92 @@
+
+The command exited with code 0.
+Output:
+{
+  "started_at": "2026-09-25T07:51:18.952470+00:00",
+  "last_updated": "2026-09-26T00:29:44.860862+00:00",
+  "total_elements_target": 100,
+  "total_ideas_target": 1000,
+  "total_prompts_target": 10000,
+  "total_seo_target": 1000,
+  "workers": {
+    "worker_1": {
+      "status": "generating_prompts",
+      "current_element_id": 35,
+      "current_element_name": "Rocket",
+      "completed_processes": 6,
+      "completed_elements": [
+        22,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "stagger_seconds": 180.0,
+      "current_cycle": 1,
+      "cycle_processes": 6,
+      "cooldown_seconds": 70.4,
+      "rest_seconds": 679.6,
+      "macro_rest_hours": 1.81
+    },
+    "worker_2": {
+      "status": "generating_prompts",
+      "current_element_id": 55,
+      "current_element_name": "Ant Colony",
+      "completed_processes": 6,
+      "completed_elements": [
+        42,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "stagger_seconds": 240.0,
+      "current_cycle": 1,
+      "cycle_processes": 6,
+      "cooldown_seconds": 71.7,
+      "rest_seconds": 6069.4,
+      "macro_rest_hours": 1.69
+    },
+    "worker_3": {
+      "status": "generating_prompts",
+      "current_element_id": 78,
+      "current_element_name": "Conveyor Belt",
+      "completed_processes": 16,
+      "completed_elements": [
+        62,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "stagger_seconds": 300.0,
+      "current_cycle": 3,
+      "cycle_processes": 0,
+      "cooldown_seconds": 61.8,
+      "rest_seconds": 462.6,
+      "macro_rest_hours": 1.52
+    },
+    "worker_4": {
+      "status": "generating_ideas",
+      "current_element_id": 85,
+      "current_element_name": "Fortress",
+      "completed_processes": 41,
+      "completed_elements": [
+        82,
+        83,
+        84
+      ],
+      "current_cycle": 1,
+      "cycle_processes": 4,
+      "cooldown_seconds": 292.7,
+      "rest_seconds": 598.7
+    }
+  }
+}

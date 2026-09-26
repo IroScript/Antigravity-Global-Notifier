@@ -1,0 +1,74 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -290,38 +290,36 @@
+             if len(prompts_to_insert) < 5:
+                 raise ValueError("Parsed output contained fewer than 5 valid prompts")
+ 
+-            conn = get_db_connection()
+-            cur = conn.cursor()
+-            now_iso = datetime.now(timezone.utc).isoformat()
+-            inserted = 0
+-
+-            for lvl, ptext in prompts_to_insert:
+-                if LOCKED_AUDIO_RULE not in ptext:
+-                    ptext = f"{ptext}\n{LOCKED_AUDIO_RULE}"
+-
+-                cur.execute(
+-                    """INSERT INTO prompts (
+-                        uuid, idea_id, prompt_type, title, prompt_text, level, level_name,
+-                        status, version, created_at, updated_at
+-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+-                    (
+-                        str(uuid.uuid4()),
+-                        idea_id,
+-                        "video_prompt",
+-                        f"Level {lvl} Escalation - {idea_title[:40]}",
+-                        ptext.strip(),
+-                        lvl,
+-                        f"Level {lvl}",
+-                        "active",
+-                        1,
+-                        now_iso,
+-                        now_iso
+-                    )
+-                )
+-                inserted += 1
+-
+-            conn.commit()
+-            conn.close()
++            def do_insert_prompts(conn):
++                cur = conn.cursor()
++                now_iso = datetime.now(timezone.utc).isoformat()
++                cnt = 0
++                for lvl, ptext in prompts_to_insert:
++                    if LOCKED_AUDIO_RULE not in ptext:
++                        ptext = f"{ptext}\n{LOCKED_AUDIO_RULE}"
++                    cur.execute(
++                        """INSERT INTO prompts (
++                            uuid, idea_id, prompt_type, title, prompt_text, level, level_name,
++                            status, version, created_at, updated_at
++                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                        (
++                            str(uuid.uuid4()),
++                            idea_id,
++                            "video_prompt",
++                            f"Level {lvl} Escalation - {idea_title[:40]}",
++                            ptext.strip(),
++                            lvl,
++                            f"Level {lvl}",
++                            "active",
++                            1,
++                            now_iso,
++                            now_iso
++                        )
++                    )
++                    cnt += 1
++                return cnt
++
++            inserted = execute_db_write(do_insert_prompts)
+             logger.info(f"[{worker_id}] ✅ Successfully inserted 10-Level Escalation ({inserted} prompts) for Idea #{idea_id}")
+             return True
+         except Exception as e:
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

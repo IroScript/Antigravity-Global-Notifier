@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Successfully exported SEO metadata to 217 package folders!
+Successfully exported prompt info to 217 package folders!
+

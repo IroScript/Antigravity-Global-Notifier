@@ -1,0 +1,28 @@
+
+The command exited with code 1.
+Output:
+lsof: WARNING: can't stat() overlay file system /var/lib/docker/overlay2/4c23e82deeab2368f5bc781be0f835e62204dd0acf11eacfe528a9dcfb89651f/merged
+      Output information may be incomplete.
+lsof: WARNING: can't stat() nsfs file system /run/docker/netns/5f912482db7d
+      Output information may be incomplete.
+lsof: WARNING: can't stat() tracefs file system /sys/kernel/debug/tracing
+      Output information may be incomplete.
+lsof: WARNING: can't stat() overlay file system /var/lib/docker/overlay2/a9cbe27d1fd101e65b348876fa0397cd56e5fc792439b92003217a097314a2cb/merged
+      Output information may be incomplete.
+lsof: WARNING: can't stat() overlay file system /var/lib/docker/overlay2/80015f8c598c4e3579cec1b4711a9070d48b1ee9f9c89e1b03639618a599e8d6/merged
+      Output information may be incomplete.
+lsof: WARNING: can't stat() overlay file system /var/lib/docker/overlay2/5792775e31a46d39f83ba9f9ca18ef3511716d876e41ec016fae2c8aff249f27/merged
+      Output information may be incomplete.
+lsof: WARNING: can't stat() overlay file system /var/lib/docker/overlay2/b2ad8db5b04e3a5386993f684198b75daf3127d6f82c7df5ea7f99e084ec75c5/merged
+      Output information may be incomplete.
+lsof: WARNING: can't stat() nsfs file system /run/docker/netns/222d8761da5e
+      Output information may be incomplete.
+lsof: WARNING: can't stat() nsfs file system /run/docker/netns/25c988f5a2a7
+      Output information may be incomplete.
+lsof: WARNING: can't stat() nsfs file system /run/docker/netns/5dfedbd66ebe
+      Output information may be incomplete.
+lsof: WARNING: can't stat() nsfs file system /run/docker/netns/6756ef1ec7ac
+      Output information may be incomplete.
+lsof: status error on 896816: No such file or directory
+lsof: status error on 896817: No such file or directory
+

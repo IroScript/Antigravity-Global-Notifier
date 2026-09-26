@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+166:async def dismiss_dialogs_and_pick_account(page: Page):
+167-    """Dismisses welcome modals, stay logged out prompts, and clicks saved account if shown on login page."""
+168-    # 1. Check for account cards under 'Welcome back' / 'Choose an account' ONLY during login / auth
+169-    try:
+170-        if "login" in page.url or "auth" in page.url:
+171-            for selector in [
+172-                "text=Md Shapon",
+173-                "text=Drive Alco",
+174-                "text=Gaming Dot Bangla",
+175-                "text=Irak",
+176-                "button:has-text('@')",
+177-                "div[role='button']:has-text('@')"
+178-            ]:
+179-                elems = page.locator(selector)
+180-                cnt = await elems.count()
+181-                for i in range(cnt):
+182-                    el = elems.nth(i)
+183-                    if await el.is_visible():
+184-                        txt = await el.text_content() or ""
+185-                        if "Log in to another" not in txt and "Create account" not in txt:
+186-                            logger.info(f"Clicking account selection element: {txt.strip()[:40]}")
+187-                            await safe_click(el, page)
+188-                            await asyncio.sleep(2)
+189-                            break
+190-    except Exception as e:
+191-        logger.warning(f"Account picker error: {e}")
+

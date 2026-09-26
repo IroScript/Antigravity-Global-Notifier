@@ -1,0 +1,27 @@
+The search for ""Restore Point creation failed because crash-consistent restore point for this storage interface is not supported" OR ("restore point" "storage interface is not supported" azure)" returned the following summary:
+This error generally occurs in Azure when you attempt to create a restore point (or snapshot) using a consistency mode that is not supported by the specific storage type or configuration attached to your Virtual Machine (VM)[1][2].
+
+### Understanding the Error
+*   **Crash-Consistent Mode:** This mode captures data as if the power were suddenly cut to the machine[2][3]. While it is a standard fallback, certain advanced or specialized storage interfaces in Azure have limitations regarding how these snapshots are taken[2][4].
+*   **Storage Interface Limitations:** Some disk types (such as specific configurations of Premium SSD v2 or Ultra disks) or features (like Azure Boost) may have specific requirements or restrictions on how restore points are created[2][4]. If your configuration requires **Application-Consistent** restore points, attempting to force a **Crash-Consistent** restore point may fail because the underlying storage interface does not support that specific method[2].
+
+### Troubleshooting Steps
+
+1.  **Check Consistency Mode:**
+    *   Verify the `consistencyMode` parameter in your creation request[2].
+    *   If you are explicitly setting it to `crashConsistent`, try omitting this parameter to allow Azure to default to **Application-Consistent** (or the platform-recommended) mode, which is often required for modern storage types[2].
+
+2.  **Verify Disk Compatibility:**
+    *   Review your VM disk configuration. If you are using **Premium SSD v2** or **Ultra Disks**, note that there have been specific limitations regarding crash-consistent restore points for these disks[4]. Ensure you are using the most recent API versions (e.g., `2025-04-01` or later) if your environment supports them[4].
+
+3.  **Azure Boost / Accelerated Networking:**
+    *   If your VM uses **Azure Boost**, crash-consistent restore points are generally not supported[2]. You must use **Application-Consistent** restore points[2]. Ensure that your backup policy or script is configured to use the application-consistent method[2].
+
+4.  **Review Documentation:**
+    *   Consult the [Azure Virtual Machine Restore Points support matrix](https://learn.microsoft.com/en-us/azure/virtual-machines/restore-points-overview) to confirm if the specific combination of VM size, disk type, and region supports the consistency mode you are attempting to use[1][2].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2srncQG5FNbLMeo2-tNk5mLKMI6DT8xySF0ONab5DPxxELo3lU3zRKeuqSIYBSmMfhY00H_jVhXeVv5Ib0L30msA5t2x9e5ZAyLgPe_vX8kkVo6rhSZ2mmJfFp1qQukcGyhWD-2UkmkNhl-chRMtakL2l1yq1kwFAUOVO71nB9mFpEcH6)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0I2vaFpxJpCdBiVfhc0HkPkPKSAWofT7H_49ao1t_Mqs5x0-B5orVwD4UNI-aJ5SM8cPTx7pHbUGxvAdyEFPYE6jiR67z-aIOju_8psbXzDOKeruItEfTI6x_FoWXgXCmKygAaxDFUdSPvV9moLn1I86pZCkUwihWNyz_uG6H22AloQ0u0hPjmko8ZFAEDfVAKG9y)
+[3] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHW2Wd04XOQg0LGiq9O6gU7C1J25UOl0S7NjbykffQDNoTqgp3mdbUW5LOaRInVhUDTLDjF_BNfwl3JeOTNBQc9gFy7Z67Mb4Dq_nKG3gGNBJ-tcPiHA2blY0P2yLLtJ81XOlo8MYDZ9AEvoB7BPxoVpI1JbM-G6Ts6oB99)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6y11Y3VJn6wgaXypqHou8uPXU1_lKvbj0hRQ4jQUI0ivPxoK-fRTl_QZuCwSUY9lPbaV864M8OG2Qf_JBf3QTTQry_YCcxKqGGjaSHEXNRu706M38VaAEnrchHH7clH5nJW1d)

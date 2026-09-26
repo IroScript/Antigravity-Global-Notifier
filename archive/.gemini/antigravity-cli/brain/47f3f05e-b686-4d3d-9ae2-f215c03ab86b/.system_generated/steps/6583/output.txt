@@ -1,0 +1,54 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.43.Level_10_Canopy_Orbit_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.48.Level_10_Season_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.49.Level_10_Branch_Bridge_Machine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.5.Level_10_Paddy_Ring_Megaharvester
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.50.Level_10_Pollinator_Cathedral
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.51.Level_10_Root_Memory_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.57.Level_10_Palm_Wind_Orchestra
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.58.Level_10_Celestial_Coconut_Launcher
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.59.Level_10_Palm_Cloud_Factory
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.6.Level_10_Sky_Reaper_Rice_Fortress
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.60.Level_10_Frond_Solar_Sail_Array
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.63.Level_10_The_Verdant_Bamboo_Sky-Loom
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.64.Level_10_Jade_Spire_Harvesting_Spider
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.65.Level_10_The_Bamboo_Ocean_Comb
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.66.Level_10_Hollow-Stem_Resonance_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.67.Level_10_The_Emerald_Stalk_Harvester
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.68.Level_10_Bamboo_Canopy_Cloud-Drill
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.69.Level_10_The_Titan_Bamboo_Splitter
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.70.Level_10_Celestial_Shoot_Accelerator
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.71.Level_10_The_Bamboo_Ring_Leviathan
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.72.Level_10_The_Infinite_Bamboo_Grove_City
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.73.Level_10_Titanic_Tea_Plucking_Colossus
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.74.Level_10_Skyloom_Tea_Pruning_Ring
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.75.Level_10_Monsoon_Shield_Megadome
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.76.Level_10_Rootwater_Planetary_Drill
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.77.Level_10_Tea_Garden_Climate_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.78.Level_10_Colossus_Leaf_Sorting_Wheel
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.79.Level_10_Mountain_Compost_Walker
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.80.Level_10_Terrace-Shaping_Earth_Titan
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.81.Level_10_Solar_Tea_Harvesting_Cathedral
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.82.Level_10_Orbital_Tea_Garden_Caretaker
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.83.Level_10_The_Golden_Bunch_Orbital_Harvester
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.84.Level_10_Tropical_Frond_Solar_Siphon
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.85.Level_10_The_Banana_Canopy_Leviathan
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.86.Level_10_Plantation_Monorail_Harvester
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.87.Level_10_The_Titan_Fruit_Loom
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.88.Level_10_Monsoon_Banana_Ripening_Dome
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.89.Level_10_The_Planetary_Peel_Excavator
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.90.Level_10_Tropical_Stem_Pressure_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.91.Level_10_The_Solar_Banana_Conveyor
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.92.Level_10_The_Infinite_Plantation_Caretaker
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.93.Level_10_Orchard_Moon_Harvester
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.94.Level_10_Titan_Root_Sculptor
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.95.Level_10_Sky_Orchard_Shepherd
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.96.Level_10_Apple_Gravity_Elevator
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.97.Level_10_Colossus_Pollination_Wheel
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.98.Level_10_Orchard_Time_Engine
+      1  home azureuser .openclaw workspace IROSCRIPT-CEO social-media youtube Youtube Automation PromptDatabase output_packaged 1.99.Level_10_Titanic_Apple_Sorter
+    136  home azureuser RESTORED_VIDEOS
+

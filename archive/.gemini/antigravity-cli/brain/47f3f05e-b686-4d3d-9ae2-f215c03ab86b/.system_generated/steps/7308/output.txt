@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+b5cacf161f4b4bf5e4cebabcf66f13117b06cecf81cae36295a5348670a623c5  /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_cockroach_schema.sql
+c36b47f298fcee4f3f36ba85990835f925c1ebeb5da9b13577909ac13ad34828  /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_cockroach_migrations_data.txt
+

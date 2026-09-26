@@ -1,0 +1,28 @@
+The search for ""Service Accounts do not have storage quota" rclone site:forum.rclone.org" returned the following summary:
+The error **"Service Accounts do not have storage quota"** is a known limitation when using Google Drive API service accounts with `rclone`[1][2][3].
+
+### Why this happens
+*   **Zero Quota:** By design, Google Cloud service accounts have 0 GB of personal storage quota[1][2][3]. They are intended for API access, not as user identities with independent storage[1].
+*   **Policy Changes:** Google has increasingly restricted the capabilities of service accounts. Notably, as of April 15, 2025, new service accounts are restricted from owning Drive items, making it even more difficult to use them for storage as previously practiced[4][5][6].
+
+### How to resolve it
+If you are encountering this error, you generally have two options:
+
+1.  **Use OAuth2 (Recommended for most users):**
+    *   Instead of using a service account (JSON file), configure your `rclone` remote using **OAuth2 authentication** (the "auto config" method)[2].
+    *   This authenticates as a real Google user account, which has its own storage quota (e.g., 15GB free or your Google Workspace allotment), avoiding the service account limitation entirely[2][3].
+
+2.  **Use Shared Drives:**
+    *   If you must use a service account (e.g., for automated enterprise workflows), you typically need to point the service account to a **Shared Drive**[4][5][1].
+    *   Because Shared Drives count against the organization's quota rather than a specific user/service account's quota, this can sometimes bypass the limitation, provided your Google Workspace permissions allow the service account to access/upload to the Shared Drive[4][7].
+
+For detailed discussions and community-tested solutions regarding this specific error in `rclone`, you can refer to the [rclone forum topic on Google Drive service account changes](https://forum.rclone.org/t/google-drive-service-account-changes-and-rclone/50136)[4][5].
+
+Sources:
+[1] [note.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-3vvHNqBx_SdRdAPhOaKHURDYBu4DbdFqy1EqXZQKTYRCJ82NK0ZVP3VONFcyZ5abEV_z0VQ-mIuZW9CXt-z4I6p4qL9t44IXntq1qtOf_Clivc0U6UqAo9fMwwMAZBpafNnwSbs=)
+[2] [yz0228.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErbXqqrMXYLu0III6O2yWRwjP2zZKG5YV1IvS-wNBsOPdwxHeaMivC8yKRGGJ9KyjCm95oMASbUeqKDxSSB_12QM5f_mdn-p8i5-mMQnA9U-iPBvOjw5Kw-rxCJ2F2FSFm_ON-l89kMBBNlrs-oOECZOzWioUWvVdIlMNY57ibEb4zAg==)
+[3] [yz0228.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErbXqqrMXYLu0III6O2yWRwjP2zZKG5YV1IvS-wNBsOPdwxHeaMivC8yKRGGJ9KyjCm95oMASbUeqKDxSSB_12QM5f_mdn-p8i5-mMQnA9U-iPBvOjw5Kw-rxCJ2F2FSFm_ON-l89kMBBNlrs-oOECZOzWioUWvVdIlMNY57ibEb4zAg==)
+[4] [stackoverflow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjcEFEoEuDJo_nmJFe3nSv-dhFyiHHQ75uiAFgbPIHgevtU6n7BWHOGtEcfzXO3eW3ZrhUBxm_Lfnn3mJs8qwBN0FbLLqNzGHghQSZ2v-DeBhHzO_nkarYQb5eEZo3cda_ePuC4S0NhdDjqgwqImdS_k5g6Lovy85869Ogz8V4vOzVROgxrtL2eOGBUInsgWLvaONlW6KhXMQk-GHAvG4earrHkQYBxxwXqvtp4upeciGG)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFr1MTMGzE0OiR-Yh7Jrjzot1DH25Mtk_TCoM0ej30GD_1Zp9V0LtFAetmJH1OWjVevZ0m8_wtfmkWc9000Wc927pWNQwZrAY48pFj0zoN8uW9pPmqClnQJGFkJOE6ZSDztogG43L42RD414ZggHi5p_V6GK4G0hEwMsC4eGWZiQkiNGdllZqvONrFT0nBlAzYLh1m3rTtq)
+[6] [stackoverflow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjcEFEoEuDJo_nmJFe3nSv-dhFyiHHQ75uiAFgbPIHgevtU6n7BWHOGtEcfzXO3eW3ZrhUBxm_Lfnn3mJs8qwBN0FbLLqNzGHghQSZ2v-DeBhHzO_nkarYQb5eEZo3cda_ePuC4S0NhdDjqgwqImdS_k5g6Lovy85869Ogz8V4vOzVROgxrtL2eOGBUInsgWLvaONlW6KhXMQk-GHAvG4earrHkQYBxxwXqvtp4upeciGG)
+[7] [facebook.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9zulbLWEp1vKAfJWX7ZkzMVDjVGeP7qNWv4041hhnDjfVMVxMNJoDmBbPVp8St9hixPg64ejASi9VyYDLox6pAq7vktrXiF8Lk-ryXZ4_ukGzoISY-E9sDMha83qYBLqjUf5AfozkCabMjG3Gp2G2TN4Zg2yVWhUFEaxhglc=)

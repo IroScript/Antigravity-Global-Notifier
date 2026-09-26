@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Connection to 35.253.244.80 22 port [tcp/ssh] succeeded!
+nc: connect to 35.253.244.80 port 80 (tcp) timed out: Operation now in progress
+nc: connect to 35.253.244.80 port 443 (tcp) timed out: Operation now in progress
+nc: connect to 35.253.244.80 port 7681 (tcp) timed out: Operation now in progress
+nc: connect to 35.253.244.80 port 18789 (tcp) timed out: Operation now in progress
+

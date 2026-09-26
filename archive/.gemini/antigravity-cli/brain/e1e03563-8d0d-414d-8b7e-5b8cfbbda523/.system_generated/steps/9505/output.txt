@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+['id', 'uuid', 'idea_id', 'element_id', 'title', 'seo_description', 'tags', 'category', 'default_language', 'video_prompt_used', 'image_prompt_used', 'video_file_path', 'package_folder_path', 'status', 'created_at', 'updated_at', 'pinned_comment', 'youtube_video_id', 'youtube_url', 'tracking_token', 'live_title', 'live_description', 'upload_status', 'published_at']
+

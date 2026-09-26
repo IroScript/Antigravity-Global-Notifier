@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Code Cache/js/268c94b69d641716_0 | Size: 217 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Code Cache/js/index-dir/the-real-index | Size: 15,792 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js/ece26050f7e75333_0 | Size: 225 B
+  azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746949_chrome_.org.chromium.Chromium.04iWrp | Size: 131,000 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js/53af416ff65e8c63_0 | Size: 214 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js/c0247a1c06eeb009_0 | Size: 225 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Cache/Cache_Data/584fbec04b4695ca_0 | Size: 70,120 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Code Cache/js/4c3cae350494cfa7_0 | Size: 225 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Code Cache/js/ee011885793319ba_0 | Size: 217 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Code Cache/js/9a71514639b888ca_0 | Size: 225 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Cache/Cache_Data/0344a95ee63cf99a_0 | Size: 4,223 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Code Cache/js/bb236bd90bea1a18_0 | Size: 225 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/Cache/Cache_Data/8c9615f75ff91c11_0 | Size: 5,150 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/Cache/Cache_Data/215c76ab06b68ec1_0 | Size: 11,754 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Cache/Cache_Data/d0b594029869dbe7_0 | Size: 27,005 B
+  azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_.org.chromium.Chromium.uijZ0V | Size: 524,288 B
+  azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/Cache/Cache_Data/2c445db7e8ccd863_0 | Size: 4,281 B
+
+======================================================================
+PHASE 5: MATHEMATICAL BYTE EQUATION ACCOUNTING
+======================================================================
+1. Source Logical Total:           6,716,239,872 bytes
+2. Extracted Logical Total:        6,715,624,242 bytes
+3. Excluded/Missing Files Bytes:   269,869 bytes
+4. Extra in Extracted Bytes:       492 bytes
+5. Common Files Delta (live logs): 346,253 bytes
+
+Reconciliation Equation:
+  Extracted (6,715,624,242)
++ Missing   (269,869)
+- Extra     (492)
++ Delta     (346,253)
+= 6,716,239,872 bytes
+Source Total: 6,716,239,872 bytes
+UNEXPLAINED REMAINDER: 0 bytes
+

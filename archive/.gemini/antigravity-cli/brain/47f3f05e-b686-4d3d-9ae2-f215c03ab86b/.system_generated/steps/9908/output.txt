@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+f84e874ac4bf83b14ed65af4c4cc081e3c2725c179300949a0d6e1679e54d7e6  /home/azureuser/AGY-MASTER/AGENTS.md
+f84e874ac4bf83b14ed65af4c4cc081e3c2725c179300949a0d6e1679e54d7e6  /home/azureuser/GDRIVE_RESTORE_TEST/AGENTS.md
+Files /home/azureuser/AGY-MASTER/AGENTS.md and /home/azureuser/GDRIVE_RESTORE_TEST/AGENTS.md are identical
+

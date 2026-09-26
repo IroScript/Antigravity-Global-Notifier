@@ -1,0 +1,53 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -191,16 +191,40 @@
+         logger.warning(f"Account picker error: {e}")
+ 
+     # 2. General dialogs / overlays
++    try:
++        await page.keyboard.press("Escape")
++        await asyncio.sleep(0.3)
++    except Exception:
++        pass
++
++    try:
++        await page.evaluate("""() => {
++            const btns = Array.from(document.querySelectorAll('button'));
++            for (const b of btns) {
++                const txt = (b.innerText || b.textContent || '').trim().toLowerCase();
++                if (txt === 'got it' || txt === 'stay logged out' || txt === 'dismiss' || txt === 'ok' || txt === 'continue') {
++                    b.click();
++                }
++            }
++            const closeBtns = document.querySelectorAll('button[aria-label="Close"], button[aria-label*="dismiss" i]');
++            for (const b of closeBtns) {
++                b.click();
++            }
++        }""")
++        await asyncio.sleep(0.5)
++    except Exception:
++        pass
++
+     for sel in [
+-        "text=Continue",
+-        "text=Stay logged out",
+-        "text=Dismiss",
++        "button:has-text('Got it')",
++        "button:has-text('Stay logged out')",
++        "button:has-text('Dismiss')",
++        "button:has-text('OK')",
++        "button:has-text('Continue')",
+         "button[aria-label='Close']",
+-        "text=OK",
+         "text=Got it",
+-        "button:has-text('Continue')",
+-        "button:has-text('Stay logged out')",
+-        "button:has-text('Dismiss')"
++        "text=Stay logged out",
++        "text=Dismiss"
+     ]:
+         try:
+             btn = page.locator(sel).first
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

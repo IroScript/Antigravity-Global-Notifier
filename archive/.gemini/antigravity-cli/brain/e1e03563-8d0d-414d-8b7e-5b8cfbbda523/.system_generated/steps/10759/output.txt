@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+CREATE TABLE prompts (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	idea_id INTEGER NOT NULL, 
+	prompt_type VARCHAR, 
+	title VARCHAR, 
+	prompt_text VARCHAR NOT NULL, 
+	negative_prompt VARCHAR, 
+	system_instruction VARCHAR, 
+	model_target VARCHAR, 
+	generation_type VARCHAR, 
+	aspect_ratio VARCHAR, 
+	duration_seconds FLOAT, 
+	language VARCHAR, 
+	status VARCHAR NOT NULL, 
+	version INTEGER NOT NULL, 
+	prompt_hash VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, level INTEGER, level_name TEXT, structure_type TEXT, reference_image_prompt_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(idea_id) REFERENCES ideas (id)
+)
+

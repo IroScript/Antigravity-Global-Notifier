@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+drwxr-xr-x 5 root root 4096 Sep 26 07:51 /home/azureuser/AGY-MASTER/ACTIONS
+--------------e------- /home/azureuser/AGY-MASTER/ACTIONS
+

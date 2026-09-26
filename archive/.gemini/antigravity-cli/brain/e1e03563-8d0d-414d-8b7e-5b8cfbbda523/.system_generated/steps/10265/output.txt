@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 875 name: run_command TF:  len(cc): 0 len(cl): 384
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 879 name: run_command TF:  len(cc): 0 len(cl): 586
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 883 name: run_command TF:  len(cc): 0 len(cl): 351
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 885 name: run_command TF:  len(cc): 0 len(cl): 943
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 889 name: run_command TF:  len(cc): 0 len(cl): 999
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl line 891 name: run_command TF:  len(cc): 0 len(cl): 1009
+

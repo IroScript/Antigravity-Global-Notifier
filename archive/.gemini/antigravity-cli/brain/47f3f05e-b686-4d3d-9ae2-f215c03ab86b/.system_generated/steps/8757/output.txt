@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Matching Defaults entries for azureuser on FatehAli:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin,
+    use_pty
+
+User azureuser may run the following commands on FatehAli:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+

@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+total 60
+drwxrwxr-x   8 azureuser azureuser  4096 Sep 25 11:23 .
+drwxrwxr-x   4 azureuser azureuser  4096 Sep 25 07:55 ..
+-rw-rw-r--   1 azureuser azureuser  2032 Sep 25 11:39 cluster_progress.json
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 12:01 database
+drwxrwxr-x   3 azureuser azureuser  4096 Sep 25 12:01 exports
+-rw-r--r--   1 azureuser azureuser  5762 Sep 25 12:00 generate_all_csvs.py
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 08:21 logs
+drwxrwxr-x 220 azureuser azureuser 20480 Sep 25 11:38 output_packaged
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:23 recovered_exports
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 07:55 scratch
+

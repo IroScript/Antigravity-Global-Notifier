@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'uuid', 'VARCHAR', 1, None, 0)
+(2, 'idea_id', 'INTEGER', 1, None, 0)
+(3, 'provider', 'VARCHAR', 0, None, 0)
+(4, 'mode', 'VARCHAR', 1, None, 0)
+(5, 'demand_score', 'FLOAT', 0, None, 0)
+(6, 'novelty_score', 'FLOAT', 0, None, 0)
+(7, 'saturation_score', 'FLOAT', 0, None, 0)
+(8, 'opportunity_score', 'FLOAT', 0, None, 0)
+(9, 'verdict', 'VARCHAR', 0, None, 0)
+(10, 'keyword_count', 'INTEGER', 1, None, 0)
+(11, 'competitor_count', 'INTEGER', 1, None, 0)
+(12, 'exact_competitors', 'INTEGER', 1, None, 0)
+(13, 'close_competitors', 'INTEGER', 1, None, 0)
+(14, 'llm_used', 'INTEGER', 1, None, 0)
+(15, 'upload_ready', 'INTEGER', 1, None, 0)
+(16, 'warnings', 'VARCHAR', 0, None, 0)
+(17, 'notes', 'VARCHAR', 0, None, 0)
+(18, 'created_at', 'DATETIME', 1, None, 0)
+(19, 'prompt_sent', 'TEXT', 0, None, 0)
+

@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+DRAFTS/
+DRAFTS/03-immutable-files.sh
+DRAFTS/04-external-backup-setup.md
+DRAFTS/01-sudoers-restricted.draft
+DRAFTS/02-parent-directory-lock.md
+DRAFTS/05-verification-tests.sh
+-rw-rw-r-- 1 azureuser azureuser 6.9K Sep 26 04:43 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DELETE_PROOF_HARDENING_DRAFTS.tar.gz'
+-rw-rw-r-- 1 azureuser azureuser 8.4K Sep 26 04:43 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DELETE_PROOF_HARDENING_DRAFTS.zip'
+

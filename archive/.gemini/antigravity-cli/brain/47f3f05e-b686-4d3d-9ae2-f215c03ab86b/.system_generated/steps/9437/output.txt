@@ -1,0 +1,7 @@
+
+The command exited with code 3.
+Output:
+○ gdrive-live-sync.service - Google Drive 24/7 Live Sync Daemon (Azure VM FatehAli)
+     Loaded: loaded (/home/azureuser/.config/systemd/user/gdrive-live-sync.service; disabled; preset: enabled)
+     Active: inactive (dead)
+

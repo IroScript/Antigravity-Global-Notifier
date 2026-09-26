@@ -1,0 +1,59 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -408,8 +408,8 @@
+ 
+             cur.execute(
+                 """INSERT INTO youtube_metadata (
+-                    uuid, idea_id, element_id, title, seo_description, tags, category, language, upload_status, created_at, updated_at
+-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                    uuid, idea_id, element_id, title, seo_description, tags, category, default_language, status, upload_status, created_at, updated_at
++                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                 (
+                     str(uuid.uuid4()),
+                     idea_id,
+@@ -419,6 +419,7 @@
+                     "Science & Technology",
+                     "en",
+                     "ready",
++                    "ready",
+                     now_iso,
+                     now_iso
+                 )
+@@ -427,8 +427,9 @@
+             cur.execute(
+                 """INSERT INTO seo_runs (
+                     uuid, idea_id, provider, mode, demand_score, novelty_score, saturation_score,
+-                    opportunity_score, verdict, keyword_count, competitor_count, upload_ready, created_at, prompt_sent
+-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                    opportunity_score, verdict, keyword_count, competitor_count, exact_competitors,
++                    close_competitors, llm_used, upload_ready, created_at, prompt_sent
++                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                 (
+                     str(uuid.uuid4()),
+                     idea_id,
+@@ -440,6 +440,9 @@
+                     "HIGH_POTENTIAL",
+                     len(tags_res),
+                     0,
++                    0,
++                    0,
++                    1,
+                     1,
+                     now_iso,
+                     prompt[:500]
+@@ -449,9 +449,9 @@
+             for t in tags_res:
+                 cur.execute(
+                     """INSERT INTO seo_keyword_metrics (
+-                        seo_run_id, idea_id, keyword, search_volume, competition, cpc, opportunity_score, created_at
+-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+-                    (seo_run_id, idea_id, t, random.randint(1000, 50000), 0.15, 0.50, 85.0, now_iso)
++                        idea_id, seo_run_id, keyword, relevance, word_count, long_tail, score, source, created_at
++                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                    (idea_id, seo_run_id, t, 0.95, len(t.split()), 1 if len(t.split()) > 2 else 0, 85.0, "youtube_suggest", now_iso)
+                 )
+ 
+         execute_db_write(do_insert_seo)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

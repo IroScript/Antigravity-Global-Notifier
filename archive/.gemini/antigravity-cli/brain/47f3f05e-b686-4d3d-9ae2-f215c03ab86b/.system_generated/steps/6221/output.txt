@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Telegram Bot deployed to: /home/azureuser/telegram-bot
+Rust project deployed to: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/src
+3D Game Design Studio deployed to: /home/azureuser/3D-Game-Design-Studio
+Kids Tube deployed to: /home/azureuser/kids_tube_with_folder_seection/lib
+Frappe ERP Alco backup deployed to: /home/azureuser/Frappe-erp-Alco/backups
+YouTube Pipeline recovered exports deployed to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/recovered_exports
+

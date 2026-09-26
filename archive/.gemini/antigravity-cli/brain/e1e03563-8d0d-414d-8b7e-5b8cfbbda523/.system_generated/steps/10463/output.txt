@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Port 8001 Health: {'status': 'ok', 'worker_id': 'worker_1', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+Port 8002 Health: {'status': 'ok', 'worker_id': 'worker_2', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+Port 8003 Health: {'status': 'ok', 'worker_id': 'worker_3', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+Port 8004 Health: {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+

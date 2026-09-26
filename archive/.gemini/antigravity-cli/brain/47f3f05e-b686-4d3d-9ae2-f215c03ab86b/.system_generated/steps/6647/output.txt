@@ -1,0 +1,8 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-6645
+Status: DONE
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6645.log
+Log output:
+Unique files in RESTORED_VIDEOS: 23
+Matched by exact file size in database: 0 / 23
+
+Last progress: 3s ago

@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Match in tmux window 0:
+   > Well video number asolei koto 346? Check
+   ● Bash(grep -i "346\|mp4\|video"
+   ● Bash(grep -rn "346" /home/azureuser/.openclaw/workspace/IROSCRIPT-
+Match in tmux window 3:
+     • 📦 প্যাকেজড MP4 ফাইল: ৩৪৬টি (৩৪৭টি ফোল্ডার)
+     • 📦 প্যাকেজড MP4 ফাইল: ৩৪৬টি (৩৪৭টি ফোল্ডার)
+     • 📦 প্যাকেজড MP4 ফাইল: ৩৪৬টি (৩৪৭টি ফোল্ডার)
+     • প্যাকেজড MP4 ফাইল: ৩৪৬টি ভিডিও ফাইল (৩৪৭টি প্যাকেজ ফোল্ডার)
+     • প্যাকেজড MP4 ফাইল: ২১৭টি ভিডিও ফাইল (২১৮টি প্যাকেজ ফোল্ডার)
+Match in tmux window 8:
+     main.rs:3465
+

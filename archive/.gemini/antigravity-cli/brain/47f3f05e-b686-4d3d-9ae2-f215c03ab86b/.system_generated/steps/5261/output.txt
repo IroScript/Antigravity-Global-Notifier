@@ -1,0 +1,143 @@
+
+The command exited with code 0.
+Output:
+### Common Input Fields
+
+Every hook payload sent to `stdin` includes these common system metadata fields:
+
+```json
+{
+  "conversationId": "ec33ebf9-0cba-4100-8142-c61503f6c587",
+  "workspacePaths": ["/path/to/workspace"],
+  "transcriptPath": "/path/to/workspace/.gemini/antigravity/transcript.jsonl",
+  "artifactDirectoryPath": "/path/to/workspace/.gemini/antigravity/artifacts",
+  "modelName": "auto"
+}
+
+> [!NOTE]
+> The `transcriptPath` and `artifactDirectoryPath` are product-specific. The example above uses `antigravity` (for Antigravity 2.0). Depending on the interface you are using, the directory name will differ:
+*   **CLI**: `antigravity-cli/`
+*   **Antigravity 2.0**: `antigravity/`
+*   **IDE**: `antigravity-ide/`
+```
+
+--------------------------------------------------------------------------------
+
+### 1. `PreToolUse` Contract
+
+Use to gate, block, or audit tool executions.
+
+*   **Input (stdin)**:
+
+    ```json
+    {
+      "toolCall": {
+        "name": "run_command",
+        "args": {
+          "CommandLine": "npm test"
+        }
+      },
+      "stepIdx": 19,
+      ... (common fields)
+    }
+    ```
+
+*   **Output (stdout)**:
+
+    ```json
+    {
+      "decision": "ask",
+      "reason": "Requires confirmation for test execution.",
+      "permissionOverrides": ["command(npm test)"]
+    }
+    ```
+
+    *   **`decision`** (string, required):
+        *   `"allow"`: Automatically allow the tool execution.
+        *   `"deny"`: Hard block the execution immediately.
+        *   `"ask"`: Prompt the user for permission (respects "Always Allow"
+            cache).
+        *   `"force_ask"`: Always prompt the user, ignoring cached permissions.
+    *   **`reason`** (string, optional): Explanation shown to the user/agent.
+    *   **`permissionOverrides`** (array of strings, optional): Temporary
+        permission grants.
+    *   **`overwrite`** (object, optional): Key-value pairs merged into the tool
+        call's arguments before it runs. This is a **shallow, top-level** merge:
+        each key replaces the value at that key in the tool call's arguments
+        (nested objects are replaced wholesale, not deep-merged). The modified
+        tool call is what actually executes and is recorded. Example:
+
+        ```json
+        {
+          "overwrite": {
+            "CommandLine": "ls -la"
+          }
+        }
+        ```
+
+        The agent replays the tool call it originally emitted, so when
+        `overwrite` changes the arguments the tool result is prefixed with a
+        notice telling the agent that a hook rewrote them, naming the keys that
+        changed.
+
+--------------------------------------------------------------------------------
+
+### 2. `PostToolUse` Contract
+
+Use for post-execution cleanup, auto-fixes, or analysis.
+
+*   **Input (stdin)**:
+
+    ```json
+    {
+      "stepIdx": 5,
+      "error": "exit status 1", // Present if the tool failed
+      ... (common fields)
+    }
+    ```
+
+*   **Output (stdout)**: Expects an empty JSON object `{}`.
+
+--------------------------------------------------------------------------------
+
+### 3. `PreInvocation` Contract
+
+Use to inject context or instructions before the model runs.
+
+*   **Input (stdin)**:
+
+    ```json
+    {
+      "invocationNum": 3,
+      "initialNumSteps": 10,
+      ... (common fields)
+    }
+    ```
+
+*   **Output (stdout)**:
+
+    ```json
+    {
+      "injectSteps": [
+        {
+          "ephemeralMessage": "Remember to check for lint errors before proposing changes."
+        }
+      ]
+    }
+    ```
+
+    *   **`injectSteps`** (array of objects, optional): Steps to inject.
+        Supported step types:
+        *   `{"toolCall": {"name": "...", "args": {...}}}`
+        *   `{"userMessage": "..."}`
+        *   `{"ephemeralMessage": "..."}` (transient system message)
+
+--------------------------------------------------------------------------------
+
+### 4. `PostInvocation` Contract
+
+Use to inspect model outputs and potentially force continuation.
+
+*   **Input (stdin)**: Same as `PreInvocati
+
+Terminal ID: 56ac3427-5cc0-4c8f-a8fe-6bc49ff41e72

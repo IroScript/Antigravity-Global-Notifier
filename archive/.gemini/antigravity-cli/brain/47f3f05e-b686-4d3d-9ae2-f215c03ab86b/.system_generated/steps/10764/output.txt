@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+205-    </div>
+206-  </div>
+207-
+208-  <!-- Chart Canvas -->
+209-  <div class="chart-wrapper">
+210:    <canvas id="resourceChart"></canvas>
+211-  </div>
+212-
+213-  <!-- 👇 GRAPH ER NICHE DEDICATED REPORT CARD 👇 -->
+214-  <div class="graph-report-card" id="graph-report-card">
+215-    <div class="graph-report-top">
+--
+513-    ];
+514-  }
+515-}
+516-
+517-function renderChart() {
+518:  const ctx = document.getElementById('resourceChart').getContext('2d');
+519-  const labels = historyData.map(p => p.t);
+520-  const datasets = getDatasetsForCurrentMode();
+521-
+522-  if (chartInstance) {
+523-    chartInstance.data.labels = labels;
+

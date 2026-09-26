@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+               total        used        free      shared  buff/cache   available
+Mem:           15995       10043         247        1336        7377        5951
+Swap:              0           0           0
+

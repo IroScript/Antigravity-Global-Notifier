@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+azureus+  906508  0.0  0.0   7484  3380 pts/12   Ss+  20:22   0:00 bash -c sudo apt-get update -qq && sudo apt-get install -y -qq azure-cli 2>&1 | tail -n 10
+root      906539  0.0  0.0  20284  7476 pts/12   S+   20:22   0:00 sudo apt-get install -y -qq azure-cli
+root      906542  0.0  0.0  20284  2624 pts/14   Ss+  20:22   0:00 sudo apt-get install -y -qq azure-cli
+root      906543  0.2  0.4  93160 76844 pts/14   S    20:22   0:00 apt-get install -y -qq azure-cli
+root      906599  3.3  0.2  38988 34508 pts/15   Ss+  20:22   0:06 /usr/bin/dpkg --status-fd 23 --no-triggers --unpack --auto-deconfigure --recursive /tmp/apt-dpkg-install-8sxY8k
+root      908300  0.0  0.0   7936  2560 pts/15   S+   20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/091-python3-sympy_1.13.3-5_all.deb
+root      908301  0.0  0.0   7936   676 pts/15   S+   20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/091-python3-sympy_1.13.3-5_all.deb
+root      908302 66.6  0.2  71644 35992 pts/15   Rl+  20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/091-python3-sympy_1.13.3-5_all.deb
+azureus+  908304  0.0  0.0   7484  3376 pts/16   Ss+  20:25   0:00 bash -c ps aux | grep -i apt
+azureus+  908306  0.0  0.0   6928  2340 pts/16   S+   20:25   0:00 grep -i apt
+

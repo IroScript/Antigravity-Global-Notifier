@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+/recovered/ALL_DELETED/MAGIC-2/application/vnd.sqlite3\012-
+

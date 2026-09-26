@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+1824:  function updateNavButtons() {
+1825-    document.getElementById('btnBack').disabled = (historyIndex <= 0);
+1826-    document.getElementById('btnForward').disabled = (historyIndex >= historyStack.length - 1);
+1827-    document.getElementById('btnUp').disabled = (currentPath === '/' || currentPath === 'THIS_PC');
+1828-  }
+1829-
+1830-  function toggleSidebar() {
+1831-    document.getElementById('sidebar').classList.toggle('open');
+1832-  }
+1833-
+1834-  function handleSearch(e) {
+1835-    const query = e.target.value.toLowerCase().trim();
+1836-    if (!query) {
+1837-      renderFiles(currentItems);
+1838-      return;
+1839-    }
+

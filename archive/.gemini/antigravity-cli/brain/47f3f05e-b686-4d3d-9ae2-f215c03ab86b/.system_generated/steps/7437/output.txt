@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Operation Status: RUNNING Progress: 0 StartTime: 2026-09-25T08:59:48.223-07:00
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+ac7a8fe0eab4f6f61d59394272589fdbfa3309e6a93599c5d01c63ab00b29e78  /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_frappe_mariadb.sql
+

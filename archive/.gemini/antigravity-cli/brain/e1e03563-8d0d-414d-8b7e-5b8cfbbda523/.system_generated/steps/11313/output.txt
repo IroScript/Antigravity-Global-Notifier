@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+            "Cmd": [
+                "sh",
+                "-c",
+                "rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000"
+            ],
+            "Healthcheck": {
+

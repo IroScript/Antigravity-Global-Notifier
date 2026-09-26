@@ -1,0 +1,17 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -5,6 +5,11 @@
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <title>রিসোর্স লাইভ মনিটর · Azure VM</title>
+ <script src="/chart.min.js"></script>
++<script>
++  if (typeof Chart === 'undefined') {
++    document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>');
++  }
++</script>
+ <style>
+   :root {
+     --bg: #0d1117;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

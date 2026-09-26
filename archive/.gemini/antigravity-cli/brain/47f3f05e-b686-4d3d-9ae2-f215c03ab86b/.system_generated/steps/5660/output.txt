@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxr-xr-x 4 root      root      4096 Sep 25 10:54 .
+drwxr-xr-x 3 azureuser azureuser 4096 Sep 25 10:54 ..
+drwx------ 6 root      root      4096 Sep 25 10:54 MAGIC-2
+drwx------ 9 root      root      4096 Sep 25 10:54 azureuser
+lrwxrwxrwx 1 root      root        15 Sep 25 10:54 mdkamruzzamanirak_gmail_com -> /home/azureuser
+

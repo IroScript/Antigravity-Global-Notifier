@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+10:  <script src="/chart.min.js"></script>
+13:      document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>');
+564:    .chart-section-card {
+572:    .chart-card-header { margin-bottom: 8px; }
+573:    .chart-title-row {
+579:    .chart-title {
+587:    .chart-sub-tag {
+647:    .chart-wrapper {
+1242:      <div class="chart-section-card">
+1243:        <div class="chart-card-header">
+1244:          <div class="chart-title-row">
+1245:            <span class="chart-title">📈 রিসোর্স ব্যবহারের টাইমলাইন গ্রাফ (Live Activity)</span>
+1246:            <span class="chart-sub-tag" id="chart-range-label">গত ১ ঘণ্টা</span>
+1274:        <div class="chart-wrapper">
+1396:  let chartInstance = null;
+1453:        if (chartInstance) chartInstance.resize();
+1764:    document.getElementById('chart-range-label').innerText = labelMap[range] || range;
+1783:    if (!chartInstance) {
+1788:    chartInstance.data.labels = historyData.map(p => p.t);
+1789:    chartInstance.data.datasets = datasets;
+1790:    chartInstance.update();
+1861:    const chartEl = document.getElementById('resourceChart');
+1862:    if (!chartEl) return;
+1863:    const ctx = chartEl.getContext('2d');
+1869:    if (chartInstance) {
+1870:      chartInstance.data.labels = labels;
+1871:      chartInstance.data.datasets = datasets;
+1872:      chartInstance.update();
+1876:    chartInstance = new Chart(ctx, {
+

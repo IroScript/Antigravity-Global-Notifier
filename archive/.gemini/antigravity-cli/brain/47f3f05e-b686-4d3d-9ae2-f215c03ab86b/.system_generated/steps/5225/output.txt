@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+bash: line 1: type: agy: not found
+
+Terminal ID: 8bcdc88a-0130-48da-8638-612140c5ae0a

@@ -1,0 +1,5 @@
+
+Encountered error in step execution: context canceled
+Output:
+Initial prompt: ? Authenticate Git with your GitHub credentials? (Y/n) 
+

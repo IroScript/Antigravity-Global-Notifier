@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+  - Worker 1: macro_resting (Completed: 30)
+  - Worker 2: macro_resting (Completed: 23)
+  - Worker 3: cycle_resting (Completed: 46)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-26 04:00:52,506 [WARNING] [worker_4] [worker_4] Retry 5/5 for Ideas for Element #85 (Fortress) via port 8004: [Errno 104] Connection reset by peer. Waiting 15s...
+2026-09-26 04:01:07,506 [ERROR] [worker_4] [worker_4] Worker worker_4 failed generating ideas for Fortress
+2026-09-26 04:01:07,507 [WARNING] [worker_4] [worker_4] ⚠️ Action 'Elem #85 Ideas' failed or rate-limited. Pausing 45s before retry...
+2026-09-26 04:01:52,510 [INFO] [worker_4] [worker_4] [Elem #85: Fortress] Generating 10 ideas via http://localhost:8004...
+

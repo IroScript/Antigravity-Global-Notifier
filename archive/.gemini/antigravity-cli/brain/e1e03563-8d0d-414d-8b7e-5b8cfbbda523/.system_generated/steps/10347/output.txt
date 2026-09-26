@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+total 1144
+drwxr-xr-x 2 azureuser azureuser   4096 Sep 25 20:31 .
+drwxr-xr-x 4 azureuser azureuser   4096 Sep 25 08:00 ..
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 08:04 00000000.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 10:00 00000001.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 11:31 00000002.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 12:03 00000003.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 13:00 00000004.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 14:00 00000005.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 15:00 00000006.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 17:00 00000007.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 19:30 00000008.jsonl
+-rw-r--r-- 1 azureuser azureuser 102400 Sep 25 20:31 00000009.jsonl
+-rw-r--r-- 1 azureuser azureuser  92182 Sep 25 20:33 00000010.jsonl
+

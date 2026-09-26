@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+142:async def safe_click(locator, page: Page):
+143-    """Safely clicks an element using humanized action, falling back to direct mouse coordinates if selector resolver errors."""
+144-    try:
+145-        await locator.click(timeout=3000)
+146-        return
+147-    except Exception as e:
+148-        logger.debug(f"Locator click fallback triggered ({e})")
+149-    try:
+150-        box = await locator.bounding_box()
+151-        if box:
+152-            cx = box["x"] + box["width"] / 2
+153-            cy = box["y"] + box["height"] / 2
+154-            if hasattr(page, "_original") and hasattr(page._original, "mouse_click"):
+155-                await page._original.mouse_click(cx, cy)
+156-            else:
+157-                await page.mouse.click(cx, cy)
+158-            return
+159-    except Exception:
+160-        pass
+161-    try:
+162-        await locator.click(force=True, timeout=2000)
+

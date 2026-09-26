@@ -1,0 +1,10 @@
+
+The command exited with code 1.
+Output:
+Prompts columns: ['id', 'uuid', 'idea_id', 'prompt_type', 'title', 'prompt_text', 'negative_prompt', 'system_instruction', 'model_target', 'generation_type', 'aspect_ratio', 'duration_seconds', 'language', 'status', 'version', 'prompt_hash', 'created_at', 'updated_at', 'level', 'level_name', 'structure_type', 'reference_image_prompt_id']
+Traceback (most recent call last):
+  File "<string>", line 11, in <module>
+    p_levels = cur.execute("SELECT prompt_level, count(*) FROM prompts GROUP BY prompt_level ORDER BY prompt_level").fetchall()
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: prompt_level
+

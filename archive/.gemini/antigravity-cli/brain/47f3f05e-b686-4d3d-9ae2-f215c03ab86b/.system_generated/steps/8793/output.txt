@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+rm: cannot remove '/tmp/landlock_test_dir/test.txt': Permission denied
+File exists after rm command?: True
+

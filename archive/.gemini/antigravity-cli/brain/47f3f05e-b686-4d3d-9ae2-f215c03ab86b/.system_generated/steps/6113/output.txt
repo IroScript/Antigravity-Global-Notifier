@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+--- Ideas sample ---
+Ideas count: 637
+Ideas cols: ['id', 'uuid', 'title', 'short_title', 'raw_idea', 'refined_idea', 'description', 'category', 'subcategory', 'topic', 'niche', 'content_type', 'format', 'target_audience', 'language', 'status', 'priority', 'source', 'source_reference', 'parent_idea_id', 'root_idea_id', 'version', 'idea_hash', 'created_at', 'updated_at', 'scheduled_for', 'generated_at', 'published_at', 'archived_at', 'is_deleted', 'category_id', 'impossible_capability', 'impossible_in_size', 'impossible_physics_or_motion']
+--- youtube_metadata count & cols ---
+youtube_metadata count: 555
+youtube_metadata cols: ['id', 'uuid', 'idea_id', 'element_id', 'title', 'seo_description', 'tags', 'category', 'default_language', 'video_prompt_used', 'image_prompt_used', 'video_file_path', 'package_folder_path', 'status', 'created_at', 'updated_at', 'pinned_comment', 'youtube_video_id', 'youtube_url', 'tracking_token', 'live_title', 'live_description', 'upload_status', 'published_at']
+--- other tables with video or asset info ---
+idea_assets cols: ['id', 'uuid', 'idea_id', 'video_id', 'asset_type', 'file_path', 'file_name', 'mime_type', 'file_size_bytes', 'duration_seconds', 'checksum', 'source', 'model', 'version', 'created_at']
+idea_assets data: [(1, '6f5b3f1d-cb70-4086-b6fd-a1724d4a80e9', 1, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\assets\\idea_1_lvl10.png', None, None, None, None, None, None, None, None, '2026-08-11 17:40:44.548423'), (2, '3422d6b5-fd66-4e9a-b4f1-5b4224a87b4b', 2, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\assets\\idea_2_lvl10.png', None, None, None, None, None, None, None, None, '2026-08-11 17:40:58.434612'), (3, '97b5060b-74a1-44ff-a992-aee8056b6656', 1, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\rendered_images\\idea_1_lvl10_concept.png', None, None, None, None, None, None, None, None, '2026-08-11 17:48:18.444270'), (4, 'b29a2ee9-089e-4745-87f8-0ec7cf1e8d6a', 1, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\rendered_images\\idea_1_lvl10_concept.png', None, None, None, None, None, None, None, None, '2026-08-11 17:48:57.999630'), (5, 'd5b81280-9785-4a21-9370-73bb9a4bbaf7', 1, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\assets\\idea_1_lvl10.png', None, None, None, None, None, 'google_flow', 'gem_pix_2', None, '2026-08-11 17:58:28.512261'), (6, '39cb4360-5dfe-4437-9dac-f67c1b2815f0', 4, None, 'image', 'C:\\Users\\Irak\\Desktop\\AntiBotBrowser\\flowboard\\storage\\assets\\idea_4_lvl10.png', None, None, None, None, None, None, None, None, '2026-08-14 18:44:34.726163')]
+

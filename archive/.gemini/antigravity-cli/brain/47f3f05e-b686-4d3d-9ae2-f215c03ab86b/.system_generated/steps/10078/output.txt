@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+1.4G	/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files
+

@@ -1,0 +1,15 @@
+
+The command exited with code 1.
+Output:
+Usage:
+  rclone lsd remote:path [flags]
+
+Flags:
+  -h, --help        help for lsd
+  -R, --recursive   Recurse into the listing
+
+Use "rclone [command] --help" for more information about a command.
+Use "rclone help flags" for to see the global flags.
+Use "rclone help backends" for a list of supported services.
+Command lsd needs 1 arguments maximum: you provided 3 non flag arguments: [":google" "cloud" "storage,service_account_file=/home/azureuser/.config/rclone/service_account.json,project_number=irak-mahmud-project:"]
+

@@ -1,0 +1,25 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8403
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8403.log
+Log output:
+<truncated 87 lines>
+m39.3s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 230.958Ki/s, 0sTransferred:   	    1.071 GiB / 2.141 GiB, 50%, 167.259 KiB/s, ETA 1h51m52s
+Transferred:            0 / 1, 0%
+Elapsed time:      2m44.3s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:  0% /1.071Gi, 0/s, -Transferred:   	    1.071 GiB / 2.141 GiB, 50%, 121.128 KiB/s, ETA 2h34m28s
+Transferred:            0 / 1, 0%
+Elapsed time:      2m49.3s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:  0% /1.071Gi, 0/s, -Transferred:   	    1.071 GiB / 2.141 GiB, 50%, 87.721 KiB/s, ETA 3h33m18s
+Transferred:            0 / 1, 0%
+Elapsed time:      2m54.3s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:  0% /1.071Gi, 0/s, -Transferred:   	    1.071 GiB / 2.141 GiB, 50%, 63.526 KiB/s, ETA 4h54m32s
+Transferred:            0 / 1, 0%
+Elapsed time:      2m59.3s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:  0% /1.071Gi, 0/s, -
+Last progress: 5s ago

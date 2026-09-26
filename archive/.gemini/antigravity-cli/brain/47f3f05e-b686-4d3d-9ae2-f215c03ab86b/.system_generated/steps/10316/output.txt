@@ -1,0 +1,9 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-10310
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-10310.log
+Log output:
+5921523488b5a82d7b12db50d029f1c2  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_00.tar.gz
+f9ef7b5b5746926882ee05d333d95261  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_01.tar.gz
+b1a38d1a4149d33f617ed8a6a39203bf  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_02.tar.gz
+
+Last progress: 2s ago

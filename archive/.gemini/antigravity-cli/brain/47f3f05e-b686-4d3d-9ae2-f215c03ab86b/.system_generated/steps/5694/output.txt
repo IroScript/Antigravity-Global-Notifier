@@ -1,0 +1,20 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-5652
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5652.log
+Log output:
+<truncated 22227 lines>
+rchive\012-/I_0014573153.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/octet-stream/I_0014573163.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/octet-stream/I_0014573166.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/x-archive\012-/I_0014573167.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573169
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573171
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573172
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573173
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573176
+--------	/recovered/ALL_DELETED/MAGIC-2/application/json\012-/I_0014573178
+--------	/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014573182.txt
+--------	/recovered/ALL_DELETED/MAGIC-2/application/x-archive\012-/I_0014573185.unknown
+--------	/recovered/ALL_DELETED/MAGIC-2/application/x-archive\012-/I_0014573186.unknown
+
+Last progress: 1s ago

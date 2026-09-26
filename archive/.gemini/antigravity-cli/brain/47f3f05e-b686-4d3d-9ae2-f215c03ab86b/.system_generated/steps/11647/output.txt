@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/Antigravity-Global-Notifier/cloud/webterminal/watch_reply.py
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/watch_reply.py
+

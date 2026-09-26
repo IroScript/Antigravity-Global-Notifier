@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser   283440 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/master_dashboard_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser   300720 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/master_dashboard_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser   341063 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/master_dashboard_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser 12790607 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/master_prompts_from_db_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser 13392032 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/master_prompts_from_db_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser 19354031 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/master_prompts_from_db_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser     2314 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/pipeline_hierarchy_progress_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser     2341 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/pipeline_hierarchy_progress_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser     2380 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/pipeline_hierarchy_progress_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/prompting_style_master_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/prompting_style_master_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/prompting_style_master_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/seo_competitors_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/seo_competitors_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/seo_competitors_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/seo_keywords_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/seo_keywords_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser  3294204 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/seo_keywords_26_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 12:30 'Youtube Automation/PromptDatabase/exports/seo_master_25_sept_12.30_pm.csv'
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 26 00:30 'Youtube Automation/PromptDatabase/exports/seo_master_26_sept_12.30_am.csv'
+-rw-rw-r-- 1 azureuser azureuser   760050 Sep 26 12:30 'Youtube Automation/PromptDatabase/exports/seo_master_26_sept_12.30_pm.csv'
+

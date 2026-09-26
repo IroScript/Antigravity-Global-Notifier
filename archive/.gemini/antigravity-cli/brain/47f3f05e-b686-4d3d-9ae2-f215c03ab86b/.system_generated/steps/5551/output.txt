@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 0 azureuser azureuser 3.6M Sep 25 10:51 /proc/1444/fd/1
+-rw-r--r-- 0 azureuser azureuser 158K Sep 25 10:47 /proc/266192/fd/1
+

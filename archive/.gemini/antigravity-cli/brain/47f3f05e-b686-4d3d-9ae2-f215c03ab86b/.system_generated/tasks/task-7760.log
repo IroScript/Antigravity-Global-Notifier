@@ -1,0 +1,10 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T18:09:48Z
+Prompt: Check backup progress
+Early Termination: any
+
+[2026-09-25T18:08:58Z] Still waiting. Remaining time: 50s
+[2026-09-25T18:09:08Z] Still waiting. Remaining time: 40s
+[2026-09-25T18:09:18Z] Still waiting. Remaining time: 30s
+[2026-09-25T18:09:28Z] Still waiting. Remaining time: 20s
+[2026-09-25T18:09:33Z] Timer cancelled: early-termination condition (any) met by a message from 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7746.

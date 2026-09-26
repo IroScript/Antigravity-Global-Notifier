@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+=== WORKER 1 ===
+2026-09-25 20:36:43,608 [INFO] [Worker-worker_1] Launching persistent context via official CloakBrowser engine...
+2026-09-25 20:36:43,814 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 20:36:43,830 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 20:36:44,091 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-25 20:37:00,222 [INFO] [Worker-worker_1] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 20:37:00,239 [WARNING] [Worker-worker_1] No cookie file found at /app/cookies/cookie.json
+2026-09-25 20:37:00,320 [INFO] [Worker-worker_1] Navigating to https://chatgpt.com for session verification...
+2026-09-25 20:37:04,578 [INFO] [Worker-worker_1] Cloudflare Turnstile challenge detected! Attempting solve...
+=== WORKER 2 ===
+2026-09-25 20:36:43,612 [INFO] [Worker-worker_2] Launching persistent context via official CloakBrowser engine...
+2026-09-25 20:36:43,714 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 20:36:43,785 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 20:36:43,941 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-25 20:37:00,022 [INFO] [Worker-worker_2] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 20:37:00,071 [WARNING] [Worker-worker_2] No cookie file found at /app/cookies/cookie.json
+2026-09-25 20:37:00,237 [INFO] [Worker-worker_2] Navigating to https://chatgpt.com for session verification...
+2026-09-25 20:37:04,606 [INFO] [Worker-worker_2] Cloudflare Turnstile challenge detected! Attempting solve...
+=== WORKER 3 ===
+2026-09-25 20:36:43,609 [INFO] [Worker-worker_3] Launching persistent context via official CloakBrowser engine...
+2026-09-25 20:36:43,826 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 20:36:43,842 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 20:36:44,092 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-25 20:36:59,939 [INFO] [Worker-worker_3] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 20:36:59,949 [WARNING] [Worker-worker_3] No cookie file found at /app/cookies/cookie.json
+2026-09-25 20:37:00,139 [INFO] [Worker-worker_3] Navigating to https://chatgpt.com for session verification...
+2026-09-25 20:37:04,549 [INFO] [Worker-worker_3] Cloudflare Turnstile challenge detected! Attempting solve...
+=== WORKER 4 ===
+2026-09-25 20:36:44,455 [INFO] [Worker-worker_4] Launching persistent context via official CloakBrowser engine...
+2026-09-25 20:36:48,162 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-25 20:36:48,167 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 20:36:48,171 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 20:37:00,099 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 20:37:00,112 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-25 20:37:00,274 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-25 20:37:04,569 [INFO] [Worker-worker_4] Cloudflare Turnstile challenge detected! Attempting solve...
+

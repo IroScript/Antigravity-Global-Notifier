@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Syscall ret: 0 errno: 0
+

@@ -1,0 +1,51 @@
+
+The command exited with code 0.
+Output:
+<truncated 2 lines>
+
+The final Solar Gear Furnace Array is an impossible 25-square-kilometer solar megastructure, with thousands of skyscraper-scale towers, millions of synchronized gears, vast mirror rings, underground drive systems, and a central thermal receiver hundreds of meters across. The entire valley has become a mechanically controlled furnace landscape of molten channels, glassy ridges, fractured mountains, towering steam vortices, and moving incandescent focal paths under a blazing sun.
+
+Second 1 [0:00-0:01] — HUD Popup Text: "STEP 1: ACTIVATE MASTER GEAR" — A colossal central gear begins rotating, mechanically propagating synchronized motion through every visible tower and mirror ring across the valley.
+Second 2 [0:01-0:02] — HUD Popup Text: "STEP 2: RELEASE MEGASCALE TORQUE" — Nested gear reductions transfer impossible rotational force outward, causing the entire reflective field to accelerate while remaining perfectly coordinated.
+Second 3 [0:02-0:03] — HUD Popup Text: "STEP 3: FOCUS THE ARTIFICIAL SUN" — Millions of reflections collapse into an intensely luminous moving point, creating a blinding thermal core that visibly bends the atmosphere.
+Second 4 [0:03-0:04] — HUD Popup Text: "STEP 4: COMMAND THE THERMAL LANDSCAPE" — The focal point sweeps across the valley, simultaneously melting ridges, splitting rock shelves, boiling moisture, and generating enormous rising vapor columns.
+Second 5 [0:04-0:05] — HUD Popup Text: "STEP 5: FORGE THE ENTIRE VALLEY" — The complete landscape erupts into a controlled field of incandescent deformation as molten rock streams through trenches and cools into vast glassy structures behind the thermal front.
+Seconds 6-8 [0:05-0:08]: HUD text completely fades; the camera executes a majestic uninterrupted vertical ascent from the incandescent thermal front, passing above the rotating vapor vortex and mirror towers before revealing the entire impossible solar gear furnace spanning the valley beneath the sun, every gear and mirror still moving in perfect synchronization, unbroken motion, zero cuts, exactly 8 seconds.
+========================================
+(7839, 633, 'video_prompt', 9, 'Level 9')
+TEXT: Exactly 8 seconds, 9:16 vertical aspect ratio, photorealistic cinematic render, smooth continuous motion, no cuts, maximum cinematic realism. Audio: no human voice, only cinematic BGM.
+
+At near-maximum operation, the Solar Gear Furnace Array fills the entire horizon with interlocking mechanical architecture, its mirror field behaving like a colossal artificial sun-tracking organism. Multiple thermal fronts sweep simultaneously across the landscape while gear towers flex under impossible loads and compensation mechanisms maintain perfect alignment through violent atmospheric turbulence.
+
+Second 1 [0:00-0:01] — HUD Popup Text: "STEP 1: ENGAGE TOTAL GEAR NETWORK" — Primary, secondary, and tertiary gear systems lock into a single synchronized mechanical cycle spanning the entire array.
+Second 2 [0:01-0:02] — HUD Popup Text: "STEP 2: MAXIMIZE TORQUE TRANSFER" — Immense rotational forces propagate through nested gear reductions, causing colossal mirror assemblies to accelerate with impossible precision.
+Second 3 [0:02-0:03] — HUD Popup Text: "STEP 3: FRACTURE SOLAR GEOMETRY" — The optical system continuously redirects its concentrated focal point across multiple simultaneous trajectories while preserving one coherent mechanical rhythm.
+Second 4 [0:03-0:04] — HUD Popup Text: "STEP 4: DISPLACE THE LANDSCAPE" — Thermal shock causes broad rock shelves to split and slide, molten channels to expand, and vapor columns to surge across the basin.
+Second 5 [0:04-0:05] — HUD Popup Text: "STEP 5: ACHIEVE VALLEY-SCALE FORGE" — The entire landscape glows with interconnected thermal deformation as the machine reshapes kilometers of terrain in one continuous operation.
+Seconds 6-8 [0:05-0:08]: HUD text completely fades; the camera begins extremely close to a rotating gear tooth and smoothly pulls backward through layers of mechanical structure until the full furnace array and its glowing landscape-scale thermal patterns dominate the frame, unbroken motion, zero cuts, exactly 8 seconds.
+========================================
+(7838, 633, 'video_prompt', 8, 'Level 8')
+TEXT: Exactly 8 seconds, 9:16 vertical aspect ratio, photorealistic cinematic render, smooth continuous motion, no cuts, maximum cinematic realism. Audio: no human voice, only cinematic BGM.
+
+The Solar Gear Furnace Array has reached an impossible megastructure state, covering the valley with concentric mirror systems, underground gear chambers, elevated drive bridges, and towers taller than skyscrapers. The thermal focus now sweeps across an enormous mountain basin in a continuous mathematical pattern, reshaping geology at a scale resembling industrial planetary engineering.
+
+Second 1 [0:00-0:01] — HUD Popup Text: "STEP 1: SEQUENCE PLANETARY GEAR RINGS" — Vast concentric gear systems begin rotating in nested timing patterns, moving thousands of mirror banks as a single mechanism.
+Second 2 [0:01-0:02] — HUD Popup Text: "STEP 2: TRANSFER CONTINENTAL TORQUE" — Mechanical force propagates through gigantic underground assemblies, causing surface structures to rotate with impossible smoothness.
+Second 3 [0:02-0:03] — HUD Popup Text: "STEP 3: PROGRAM MOVING SUNPOINT" — The concentrated solar focus traces a precise three-dimensional path across hills, ridges, and basin floors.
+Second 4 [0:03-0:04] — HUD Popup Text: "STEP 4: REFORM GEOLOGICAL SURFACE" — Entire sections of exposed rock crack, slump, melt, and reform as the thermal pattern passes over them.
+Second 5 [0:04-0:05] — HUD Popup Text: "STEP 5: CREATE ARTIFICIAL VALLEY" — The machine completes a massive glowing contour across the basin, leaving molten channels that cool behind the advancing focus.
+Seconds 6-8 [0:05-0:08]: HUD text completely fades; the camera performs a continuous high-altitude orbital pull-back, revealing the entire engineered valley as a gigantic thermal sculpture surrounded by the rotating mirror megastructure, unbroken motion, zero cuts, exactly 8 seconds.
+========================================
+(7837, 633, 'video_prompt', 7, 'Level 7')
+TEXT: Exactly 8 seconds, 9:16 vertical aspect ratio, photorealistic cinematic render, smooth continuous motion, no cuts, maximum cinematic realism. Audio: no human voice, only cinematic BGM.
+
+The machine has become a landscape-sized solar engine, its mirror towers arranged in enormous rings that continuously reposition themselves while the receiver radiates overwhelming heat. Entire cliff faces now deform beneath the moving focus, and the air column above the active zone twists into a gigantic rotating vortex of dust, vapor, and glowing particles.
+
+Second 1 [0:00-0:01] — HUD Popup Text: "STEP 1: SYNCHRONIZE MEGAGEARS" — Gigantic gear wheels engage across the valley, their teeth meshing with thunderous mechanical precision as entire mirror rings rotate.
+Second 2 [0:01-0:02] — HUD Popup Text: "STEP 2: AMPLIFY ROTATIONAL FORCE" — Nested reduction stages multiply torque through immense shafts, driving mirror structures that appear far too massive to move.
+Second 3 [0:02-0:03] — HUD Popup Text: "STEP 3: COLLAPSE SOLAR FOCUS" — Millions of reflected rays converge into a tiny incandescent region whose brightness overwhelms the surrounding terrain.
+Second 4 [0:03-0:04] — HUD Popup Text: "STEP 4: DRIVE ATMOSPHERIC VORTEX" — Extreme thermal uplift pulls dust, steam, and vapor upward into a rotating column directly above the moving focus.
+Second 5 [0:04-0:05] — HUD Popup Text: "STEP 5: MELT CLIFF WALL" — The focus climbs a massive cliff, liquefying its surface and sending incandescent fragments cascading into a glowing trench below.
+Seconds 6-8 [0:05-0:08]: HUD text completely fades; the camera spirals upward around the immense thermal vortex before revealing the mirror rings rotating around it like mechanical planetary orbits, unbroken motion, zero cuts, exactly 8 seconds.
+========================================
+

@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+Total distinct TargetFiles found across all in-memory databases: 22
+   /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/reports/OPENRECALL_SCREENSHOT_ANALYSIS_1789463139.md
+   /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/reports/OPENRECALL_UNIVERSAL_EVIDENCE_FIRST_ARCHITECTURE.md
+   /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/reports/OPENRECALL_UNIVERSAL_EVIDENCE_FIRST_ARCHITECTURE_V2.md
+   /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT/reports/OPENRECALL_UNIVERSAL_EVIDENCE_FIRST_ARCHITECTURE_V2_1.md
+   /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/3d_article_reading/app.js
+   /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/3d_article_reading/index.html
+   /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/3d_article_reading/style.css
+   /home/azureuser/Frappe-erp-Alco/alco_ecommerce/alco_ecommerce/www/alco-admin.html
+   /home/azureuser/Frappe-erp-Alco/alco_ecommerce/alco_ecommerce/www/alco-admin.py
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/AUTONOMOUS_WORKER_ENGINE.md
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/agy-task-worker.service
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/backend/src/routes/broadcast_mod.rs
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/backend/src/routes/websocket.rs
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/backend/src/task_worker/mod.rs
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/android/app/src/main/kotlin/com/tasknote/task_note_mobile/FloatingWindowService.kt
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/screens/home_screen.dart
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/widgets/control_panel_widget.dart
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/widgets/quantum_background_painter.dart
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/widgets/task_card_widget.dart
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/parity_verification_test.dart
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/task_worker.py
+   /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/task_worker.sh
+

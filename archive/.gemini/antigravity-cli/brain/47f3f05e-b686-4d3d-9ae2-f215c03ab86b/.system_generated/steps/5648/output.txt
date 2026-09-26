@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Block size:               4096
+Blocks per group:         32768
+Inodes per group:         8192
+Inode size:               256
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+azureus+    1716  0.0  0.2 2100552 33164 ?       S    Sep22   0:30 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1717  0.0  0.1 1361808 29404 ?       Sl   Sep22   4:07 cloudflared tunnel --url http://127.0.0.1:8085
+azureus+ 1186287  0.0  0.0   7484  3428 pts/12   Ss+  13:35   0:00 bash -c ps aux | grep 8085
+azureus+ 1186289  0.0  0.0   7060  2312 pts/12   S+   13:35   0:00 grep 8085
+

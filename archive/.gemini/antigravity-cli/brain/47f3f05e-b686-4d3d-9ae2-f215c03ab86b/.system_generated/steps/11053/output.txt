@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+http://127.0.0.1:8088/api/stats -> HTTP 200, bytes=7259
+   Dict keys: ['cpu_overall', 'cpu_cores', 'ram', 'swap', 'apps']
+http://127.0.0.1:8088/api/history?range=15m -> HTTP 200, bytes=31189
+   List items: 100
+http://127.0.0.1:8088/api/history?range=1h -> HTTP 200, bytes=31079
+   List items: 100
+http://127.0.0.1:8088/chart.min.js -> HTTP 200, bytes=205399
+http://127.0.0.1:8088/api/drives -> HTTP 200, bytes=1098
+   Dict keys: ['drives']
+

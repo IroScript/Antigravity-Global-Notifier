@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+youtube_metadata with video_file_path: 260
+   C:\\Users\\Irak\\Desktop\\Youtube Pipeline\\PromptDatabase\\output_packaged\\1.1.Level_10_Rice_Titan_Harvester\\1.1.Level_10_Rice_Titan_Harvester.mp4
+   C:\Users\Irak\Desktop\Youtube Pipeline\PromptDatabase\output_packaged\1.2.Level_10_The_Paddy_Ocean_Vacuum\1.2.Level_10_The_Paddy_Ocean_Vacuum.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.3.Level_10_Rice-Field_Spider_Colossus/1.3.Level_10_Rice-Field_Spider_Colossus.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.4.Level_10_The_Monsoon_Harvesting_Ark/1.4.Level_10_The_Monsoon_Harvesting_Ark.mp4
+   /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.60.Level_10_Frond_Solar_Sail_Array/1.60.Level_10_Frond_Solar_Sail_Array.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.5.Level_10_Paddy_Ring_Megaharvester/1.5.Level_10_Paddy_Ring_Megaharvester.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.6.Level_10_Sky_Reaper_Rice_Fortress/1.6.Level_10_Sky_Reaper_Rice_Fortress.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.7.Level_10_The_Rice_Comb_Superstructure/1.7.Level_10_The_Rice_Comb_Superstructure.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.8.Level_10_Paddy-Gulping_Harvest_Worm/1.8.Level_10_Paddy-Gulping_Harvest_Worm.mp4
+   /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.9.Level_10_Rice_Moon_Harvester/1.9.Level_10_Rice_Moon_Harvester.mp4
+youtube_metadata statuses: [('uploaded',), ('ready_for_upload',), ('ready',)]
+

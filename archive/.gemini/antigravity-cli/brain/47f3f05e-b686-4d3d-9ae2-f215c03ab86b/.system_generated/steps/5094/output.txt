@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+cd /home/azureuser && /home/azureuser/.local/bin/agy --dangerously-skip-permissi
+ons
+azureuser@FatehAli:~$ cd /home/azureuser && /home/azureuser/.local/bin/agy --dan
+gerously-skip-permissions
+
+      ▄▀▀▄        Antigravity CLI 1.2.8
+     ▀▀▀▀▀▀       mainuddinh297@gmail.com (Google AI Ultra)
+    ▀▀▀▀▀▀▀▀      Gemini 3.8 Flash (High)
+   ▄▀▀    ▀▀▄     ~
+  ▄▀▀      ▀▀▄
+
+────────────────────────────────────────────────────────────────────────────────
+>
+────────────────────────────────────────────────────────────────────────────────
+? for shortcuts                                          Gemini 3.8 Flash · high
+
+
+
+
+
+
+
+
+
+
+Terminal ID: dcf9582c-dbe9-42e9-9864-06aaf383dfb7

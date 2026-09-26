@@ -1,0 +1,22 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_azure_options.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -13,7 +13,8 @@
+ আমাদের VM তথ্য:
+ • VM নাম: `FatehAli`
+ • Resource Group: `FATEHALI_GROUP`
+-• Subscription: `506deb9a-42fa-468d-b78f-0f25a9e485e1`
++• সাবস্ক্রিপশন আইডি:
++  `506deb9a-42fa-468d-b78f-0f25a9e485e1`
+ 
+ পোর্টাল থেকে করণীয়:
+ ১. *Azure Backup / File Recovery:*
+@@ -20,4 +20,5 @@
+-   `Azure Portal → Virtual machines → FatehAli → Backup`
++   Azure Portal → Virtual machines →
++   FatehAli → Backup
+    এখান থেকে আজকের সকালের রিস্টোর পয়েন্ট দিয়ে
+    'File Recovery' স্ক্রিপ্ট ডাউনলোড করে
+    সব ফাইল তাৎক্ষণিক ফিরিয়ে আনা সম্ভব।
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

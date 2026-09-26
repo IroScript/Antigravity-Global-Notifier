@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+https://paste.rs/o0S3s
+Terminal ID: 7bb8705a-ddf7-4b0c-bf84-e9d058857d38

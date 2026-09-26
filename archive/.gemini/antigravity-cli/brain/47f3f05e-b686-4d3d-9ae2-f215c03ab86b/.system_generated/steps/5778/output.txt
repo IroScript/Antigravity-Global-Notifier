@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+find: ‘/recovered/ALL_DELETED/MAGIC-2/application/vnd.sqlite3*’: No such file or directory
+

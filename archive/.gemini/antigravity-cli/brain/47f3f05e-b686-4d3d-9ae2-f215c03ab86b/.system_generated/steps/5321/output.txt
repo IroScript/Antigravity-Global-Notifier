@@ -1,0 +1,64 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_response.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -15,9 +15,9 @@
+ সরাসরি শেল এস্কেপ বা ডেমন হুককে পাশ কাটাতে পারে।
+ তাই আমাদের চূড়ান্ত নিরাপত্তা হবে ৪টি স্তরে:
+ ১. *Antigravity Policy:* টুল প্রি-ভ্যালিডেশন।
+-২. *OS Identity:* ৩-স্তরীয় লিনাক্স ইউজার পৃথকীকরণ।
+-৩. *Filesystem:* ডিরেক্টরি পারমিশন ও এক্সেস কন্ট্রোল।
+-৪. *Process/Container:* সিস্টেমড ও ডকার কনটেইনমেন্ট।
++২. *OS Identity:* ৩-স্তরীয় ইউজার পৃথকীকরণ।
++৩. *Filesystem:* ডিরেক্টরি পারমিশন গার্ড।
++৪. *Process/Container:* সার্ভিস কনটেইনমেন্ট।
+ 
+ «──────────────────────────────»
+ ২. *লিনাক্স আইডেন্টিটি পৃথকীকরণ*
+@@ -28,7 +28,7 @@
+ 
+ তাই লক্ষ্যমাত্রা হবে ৩টি পৃথক আইডেন্টিটি:
+ • `azureuser`: হিউম্যান/অ্যাডমিন (সুডোসহ)।
+-• `agy-master`: মাস্টার অর্কেস্ট্রেটর (নো সুডো/ডকার)।
++• `agy-master`: মাস্টার অর্কেস্ট্রেটর (নো সুডো)।
+ • `agy-worker`: প্রজেক্ট ওয়ার্কার এজেন্ট।
+   - নো সুডো, নো ডকার, নো রুট
+   - নো এসএসএইচ প্রাইভেট কী, নো ক্লাউড টোকেন
+@@ -40,8 +40,9 @@
+ «──────────────────────────────»
+ আপনার সতর্কতা অক্ষরে অক্ষরে সত্য:
+ *ডকুমেন্টেশনে টাইমআউট কনফিগারেশন থাকলেও,*
+-*টাইমআউটে CLI ডিফল্ট DENY করবে এমন কোনো গ্যারান্টি*
+-*অফিসিয়ালি নেই; এটি Fail-Open হওয়ার বাস্তব ঝুঁকি থাকে।*
++*টাইমআউটে CLI ডিফল্ট DENY করবে এমন কোনো*
++*অফিসিয়াল নিশ্চয়তা নেই; এটি Fail-Open হওয়ার*
++*বাস্তব ঝুঁকি বহন করে।*
+ 
+ তাই আমরা প্রোডাকশনে কখনোই দাবি করব না যে
+ "Timeout is automatically fail-closed"।
+@@ -53,11 +53,11 @@
+ ৪. *অপারেশন-অ্যাওয়ার ডকার ও গিট পলিসি*
+ «──────────────────────────────»
+ ডকার বা গিটকে এক ঢিলে L3 বলা ভুল ছিল।
+-আমরা নিখুঁত আরগুমেন্ট ভিত্তিক গ্র্যানুলারিটি নিচ্ছি:
++আমরা নিখুঁত আরগুমেন্টভিত্তিক গ্র্যানুলারিটি নিচ্ছি:
+ 
+ 🐳 *Docker গ্র্যানুলারিটি:*
+ • `docker ps` / `inspect` / `logs` → L0 (ALLOW)
+-• `docker build .` (লোকাল ডিরেক্টরি) → L1/L2A (ALLOW)
++• `docker build .` (লোকাল কোড) → L1/L2A (ALLOW)
+ • `docker run -v /:/host ...` → L3 (HARD DENY)
+ • `docker run --privileged ...` → L3 (HARD DENY)
+ • `docker exec -u 0 ...` → L3 (HARD DENY)
+@@ -64,8 +64,8 @@
+ 🐙 *Git গ্র্যানুলারিটি:*
+ • `git status` / `diff` / `log` → L0 (ALLOW)
+-• `git add` / `git commit` (লোকাল) → L1/L2A (ALLOW)
++• `git add` / `commit` (লোকাল) → L1/L2A (ALLOW)
+ • `git push` / `push -f` → L3 (HARD DENY)
+-• `git reset --hard` / `clean -fd` → L3 (HARD DENY)
++• `git reset --hard` / `clean` → L3 (HARD DENY)
+ 
+ «──────────────────────────────»
+ ৫. *লেভেল 2A-এর ১২টি কঠোর শর্ত*
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

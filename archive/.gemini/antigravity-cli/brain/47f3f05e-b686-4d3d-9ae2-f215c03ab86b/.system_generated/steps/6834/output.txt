@@ -1,0 +1,6 @@
+
+The command exited with code 2.
+Output:
+bash: -c: line 8: syntax error near unexpected token `('
+bash: -c: line 8: `    "  `python3 -c \"text = \'\'\'... (`find -delete`) ...\'\'\'\"`",'
+

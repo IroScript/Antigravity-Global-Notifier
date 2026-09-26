@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+ls: cannot access '/home/azureuser/GDRIVE_RESTORE_TEST/restored_etc/': No such file or directory
+

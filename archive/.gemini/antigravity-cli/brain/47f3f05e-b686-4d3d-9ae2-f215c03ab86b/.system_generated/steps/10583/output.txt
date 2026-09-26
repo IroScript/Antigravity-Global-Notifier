@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"drives": [{"letter": "C", "label": "Local Disk (C: OS Root)", "path": "/", "total": 31393230848, "

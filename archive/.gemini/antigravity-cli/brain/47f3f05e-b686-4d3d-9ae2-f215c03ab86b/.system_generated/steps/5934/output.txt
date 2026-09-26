@@ -1,0 +1,59 @@
+
+The command exited with code 0.
+Output:
+total 269016
+drwxr-xr-x 15 root      root          4096 Sep 25 11:04 .
+drwxr-xr-x 16 azureuser azureuser     4096 Sep 25 11:04 ..
+-rw-------  1 root      root          1340 Sep 25 07:59 .com.google.Chrome.rules.fbs.2O5p3Q
+drwxr-xr-x  4 root      root          4096 Sep 25 11:04 .config
+drwxr-xr-x  4 root      root          4096 Sep 25 11:04 .gemini
+drwxr-xr-x  3 root      root          4096 Sep 25 11:04 .local
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 .npm
+drwxr-xr-x  4 root      root          4096 Sep 25 11:04 .npm-global
+drwxr-xr-x  3 root      root          4096 Sep 25 11:04 .openclaw
+-rw-r--r--  1 root      root             0 Sep 25 08:00 .sudo_as_admin_successful
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 .webterminal
+-rw-------  1 root      root          1212 Sep 25 07:59 000011.log
+-rw-------  1 root      root         13942 Sep 25 06:05 000328.ldb
+-rw-------  1 root      root         13439 Sep 25 06:22 000339.ldb
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 000390.log
+-rw-------  1 root      root         21739 Sep 25 07:45 000391.ldb
+-rw-------  1 root      root         26055 Sep 25 07:47 000393.ldb
+-rw-------  1 root      root         19374 Sep 25 06:41 000533.ldb
+-rw-------  1 root      root          4600 Sep 25 06:24 000554.log
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 000556.log
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 000566.ldb
+-rw-------  1 root      root         26500 Sep 25 06:16 000577.ldb
+-rw-------  1 root      root         23684 Sep 25 07:01 000589.ldb
+-rw-------  1 root      root         28553 Sep 25 07:10 000595.ldb
+-rw-------  1 root      root         64166 Sep 25 07:45 000625.ldb
+-rw-------  1 root      root         28412 Sep 25 07:50 000628.log
+-rw-r--r--  1 root      root            75 Sep 25 07:49 000656.ldb
+-rw-rw----  1 root      root      60631943 Sep 25 07:36 010661.sst
+-rw-rw----  1 root      root       8343546 Sep 24 10:57 011714.sst
+-rw-rw----  1 root      root       8312427 Sep 25 04:11 013835.sst
+-rw-rw----  1 root      root       3994028 Sep 25 04:11 013836.sst
+-rw-rw----  1 root      root       1159611 Sep 25 04:14 013839.sst
+-rw-rw----  1 root      root       8443520 Sep 25 05:27 013974.sst
+-rw-rw----  1 root      root       2220318 Sep 25 05:27 013975.sst
+-rw-rw----  1 root      root      60646712 Sep 25 07:35 014010.log
+-rw-rw----  1 root      root      60631943 Sep 25 07:45 014027.log
+-rw-rw----  1 root      root       8308023 Sep 25 07:35 014033.sst
+-rw-r--r--  1 root      root       1769472 Sep 25 11:04 014200.sst
+-rw-rw----  1 root      root       2657035 Sep 25 07:35 014202.sst
+drwxr-xr-x  3 root      root          4096 Sep 25 11:04 Default
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 RECOVERED_BY_NAME
+-rw-r--r--  1 root      root             1 Sep 25 07:30 engine.realm
+-rw-rw-r--  1 root      root         13495 Sep 23 17:31 enrich_ideas_with_350_words.cpython-311.pyc
+-rw-r--r--  1 root      root      47675168 Sep 11 20:36 flutter_tools.snapshot
+-rw-rw-r--  1 root      root         19839 Sep 25 06:25 investigate_isolation.env
+-rw-rw-r--  1 root      root         11901 Sep 25 07:38 latest_wa_dispatch.json
+-rw-------  1 root      root          4700 Sep 25 07:34 output.txt
+-rw-rw-r--  1 root      root         29514 Sep 23 18:54 pipeline_packager.cpython-313.pyc
+-rw-rw-r--  1 root      root         89814 Sep 25 05:53 prompt_chain_engine.cpython-313.pyc
+-rw-r--r--  1 root      root          3817 Sep 25 07:37 quantum_background_painter.dart
+-rw-rw-r--  1 root      root          1836 Sep 23 17:31 run_video_pipeline.cpython-311.pyc
+-rw-r--r--  1 root      root         41190 Sep 25 07:51 session.session-journal
+-rw-------  1 root      root         15622 Sep 25 07:36 the-real-index
+drwxr-xr-x  2 root      root          4096 Sep 25 11:04 undelivered
+

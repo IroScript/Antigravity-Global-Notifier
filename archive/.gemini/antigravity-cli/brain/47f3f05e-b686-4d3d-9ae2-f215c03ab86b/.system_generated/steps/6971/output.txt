@@ -1,0 +1,11 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-6965
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6965.log
+Log output:
+<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+<5>NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+<5>NOTICE: Please go to the following link: http://127.0.0.1:53682/auth?state=yQcNL1ePxog8NaQCRWGyjA
+<5>NOTICE: Log in and authorize rclone for access
+<5>NOTICE: Waiting for code...
+
+Last progress: 20s ago

@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/AGY-MASTER/REPORTS/AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md:91:- **Limitation:** `azureuser` has passwordless root privileges. `sudo` is currently NOT checked in `boundary_guard.py`. Any unrestricted bash tool call can execute `sudo rm -rf /`.
+/home/azureuser/AGY-MASTER/REPORTS/AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md:118:   - Hard-blocks `sudo`, `docker`, `rm -rf`, `DROP TABLE`, `git push`, `git reset --hard`.
+/home/azureuser/AGY-MASTER/REPORTS/AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md:180:| **Level 3** | `DESTRUCTIVE_IRREVERSIBLE` | **ALWAYS HARD DENY** | `rm -rf`, `DROP TABLE`, `git push`, `git reset --hard`, `sudo`, `docker`, service termination. Permanently prohibited in autonomous execution. |
+/home/azureuser/AGY-MASTER/REPORTS/AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md:205:  - Hard-blocks `sudo`, `docker`, `rm -rf`, `DROP TABLE`, `git push`, `git reset --hard`.
+/home/azureuser/AGY-MASTER/RECOVERED_LOGS/cli-20260922_183427.log:13371:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1448_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1446_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1444_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1445_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1449_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1451_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1447_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1450_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1556_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1454_agy_cli-20260922_183427.log:13369:I0925 07:54:34.825301  848212 input_loop.go:107] HandleUserInput called with text: "- rm -rf"
+

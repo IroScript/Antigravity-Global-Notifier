@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+Filesystem      Type      Size  Used Avail Use% Mounted on
+udev            devtmpfs  7.8G     0  7.8G   0% /dev
+tmpfs           tmpfs     1.6G  1.1M  1.6G   1% /run
+/dev/nvme0n1p1  ext4       30G   15G   14G  52% /
+tmpfs           tmpfs     7.9G  1.1M  7.9G   1% /dev/shm
+tmpfs           tmpfs     5.0M     0  5.0M   0% /run/lock
+tmpfs           tmpfs     7.9G  1.3G  6.6G  16% /tmp
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme1n1    ext4      216G   48G  157G  24% /home
+/dev/nvme0n1p15 vfat      124M  9.1M  115M   8% /boot/efi
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs           tmpfs     1.6G   68K  1.6G   1% /run/user/1000
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+

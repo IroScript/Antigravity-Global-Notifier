@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+USER: azureuser
+HOME: /home/azureuser
+azureuser:x:1000:1000:Debian:/home/azureuser:/bin/bash
+/home/azureuser
+

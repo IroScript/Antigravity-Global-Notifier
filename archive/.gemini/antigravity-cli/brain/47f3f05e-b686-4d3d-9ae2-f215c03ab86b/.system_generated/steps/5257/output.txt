@@ -1,0 +1,88 @@
+
+The command exited with code 0.
+Output:
+keep-alivesocks bindProcessingNo Content%s|%s%s|%s
+mergetag parent %s
+RecordChatguidelinesgoogle.comrules.jsonskills.txtagents.txtagent.json${1}"${2}"reading %swriting %scollision:.%s.%x.tmpzip_unpack.%s.%s.tmpattributesscrollableretryDelaycci is nilServer: %sPrompt: %sText BlockMCP Promptcorpagent-Importance*Goal: %s*Root Agentmodel_enumexecerrdotNEGLIGIBLEBLOCK_NONEOUTCOME_OK%s:L%d-L%ddockerfilejavascripttypescriptRewriteUrimedia_%s%senable-arkenable-ptystep_indexsecpluginsvisibilityfetch-packmergetool.but not inmerge-base:(literal)--worktreeGIT_PAGER=<|cursor|>
+```pythonupdate-refNo remotesuserTierIdsidecar_idnode_basicpreload.jsproposalId/etc/hosts  netGo = .localhostgetsockoptnetlinkribIP addresssetsockoptunixpackettext/plainDockerfileEmacs LispHandlebarsJavaScriptPowerShellTypeScriptVim ScripthandlebarsIdentifier$/progressDeprecatedEnumMember$/setTrace$/logTraceinitializeAfterDelayDevServicecodesearchjournalctlrun-scriptmembershipcaffeinateimage/apngimage/avifaudio/flacimage/jpegaudio/mpegimage/tiffaudio/webmvideo/webmimage/webpiso-8859-1X-Go-PprofError: %+vcommand(*)bug_reportflamegraphhistoryLenx-latency-stat_entryflushBatchcodeActionenvs_count 	,;:.-
+poc-clientlocalhost:chat_20706chat_23310image/heicimage/heifaudio/waveaudio/opussum_microsmax_microsdb_corruptjson_countstep_countagent_nameaskpass.shSaveRemoteauthStatuspublic_keyextensionsres binderres masterresumptionexp mastercomplex128t.Kind == 12207031256103515625UnassignedBeria_ErfeChorasmianDevanagariGlagoliticKharoshthiManichaeanOld_ItalicOld_PermicOld_TurkicOld_UyghurPhoenicianSaurashtraOther_Mathstatusline-selectiontool_groupcli_configSend inputvcsRefresh</thought>targetTurnLoaded %s.cliSettinghyperlinksCodeSearchMomaSearchToolSearch (server: OnboardingPanelHooksPanelTasksPanelUsageBattleIdleSearchModeoutput: %q1790037101evergreen:2006.01.02model_name
+[38;5;%dmPreToolUseKeyApproveKeyGoToTopKeyCommentKeyZoomOutKeyOutlineKeyChoice1KeyChoice2KeyChoice3KeyChoice4KeyChoice5KeyChoice6KeyChoice7KeyChoice8KeyChoice9image modeASCII modehide linesshow linesKeyPreviewSubmit All/changelogComment.../GEMINI.md/workflowsTool calls  Search: [CURRENT] loading
+Loading...cycle file--templateSet EffortFeedback: SelfAssignVersion %s  (global)  Matcher:Configured, +%d more (current)  Effort  Cycle Tabs[enabled] [disabled](built-in)args_countKeySuspendcharacters          No, cancelNo, rejectAgent Mode(<target>)permission
+      
+      
+  Sources:generatingsend_inputManageTaskServerNameError ID: 
+issue: %sSENTRY_DSNattachmentkeys: [%s]token_typeexpires_instrict_oneAGENT_CHATAGENT_LOOP!PANIC: %v(no stack)pick_firstChannel %sNoSecurity:authoritygrpc.Recv.grpc.Sent.jsontext:  in indentAppendText
+--
+      }
+    ]
+  },
+  "safety-gate": {
+    "enabled": false,
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "command": "./scripts/safety-check.sh"
+--
+--------------------------------------------------------------------------------
+## Hook Spec Fields
+Each named hook supports:
+*   **`enabled`** (bool, optional): Defaults to `true`. Set to `false` to
+    disable.
+*   **`PreToolUse`** (array, optional): Handlers running before a tool executes.
+*   **`PostToolUse`** (array, optional): Handlers running after a tool
+    completes.
+*   **`PreInvocation`** (array, optional): Handlers running before the model is
+    called.
+*   **`PostInvocation`** (array, optional): Handlers running after tool calls
+--
+    terminates.
+--------------------------------------------------------------------------------
+## Supported Event Types
+| Event            | When it fires     | Matcher target   | Structure         |
+| :--------------- | :---------------- | :--------------- | :---------------- |
+| `PreToolUse`     | Before a tool     | Tool name (e.g., | Grouped (uses     |
+:                  : step executes.    : `run_command`).  : `matcher` &       :
+:                  :                   :                  : `hooks` wrapper). :
+| `PostToolUse`    | After a tool step | Tool name (e.g., | Grouped (uses     |
+:                  : completes.        : `run_command`).  : `matcher` &       :
+:                  :                   :                  : `hooks` wrapper). :
+--
+:                  :                   :                  : directly).        :
+| `Stop`           | When the          | N/A (ignored).   | Flat (list of     |
+:                  : execution loop    :                  : handler objects   :
+:                  : terminates.       :                  : directly).        :
+### The Matcher
+For tool-specific events (`PreToolUse`, `PostToolUse`), you must wrap the
+handlers in a group with a `matcher` regex:
+*   `"matcher": "*"` or `""`: Matches all tools.
+*   `"matcher": "run_command"`: Matches exactly `run_command`.
+*   `"matcher": "run_command\|view_file"`: Matches either tool.
+*   `"matcher": "browser_.*"`: Matches any tool starting with `browser_`.
+--
+> The `transcriptPath` and `artifactDirectoryPath` are product-specific. The example above uses `antigravity` (for Antigravity 2.0). Depending on the interface you are using, the directory name will differ:
+*   **CLI**: `antigravity-cli/`
+*   **Antigravity 2.0**: `antigravity/`
+*   **IDE**: `antigravity-ide/`
+--------------------------------------------------------------------------------
+### 1. `PreToolUse` Contract
+Use to gate, block, or audit tool executions.
+*   **Input (stdin)**:
+    ```json
+    {
+      "toolCall": {
+--
+aliasCount
+aliasDepth
+emitScalar
+marshalDoc
+PromptText
+PreToolUse
+GetUpdated
+*code.Code
+translator
+OnComplete
+currentIdx
+
+Terminal ID: 99b605fd-ef91-404b-a756-3f519bbaba45

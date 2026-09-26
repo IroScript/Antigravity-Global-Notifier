@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+drwxrwxr-x 4 azureuser azureuser 32768 Sep 26 09:00 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports'
+

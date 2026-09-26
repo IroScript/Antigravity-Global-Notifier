@@ -1,0 +1,18 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_response.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -118,9 +118,9 @@
+ «──────────────────────────────»
+ 🎯 *আপনার পরবর্তী অনুমতি*
+ «──────────────────────────────»
+-আমরা কি এখন *Phase A*-এর অধীন অফলাইন গেটওয়ে স্ক্রিপ্ট
+-ও এর ইউনিট টেস্টগুলো সম্পূর্ণ অফলাইনে তৈরি
+-করব ইরাক ভাইয়া?"""
++আমরা কি এখন *Phase A*-এর অধীন অফলাইন
++গেটওয়ে স্ক্রিপ্ট ও এর ইউনিট টেস্টগুলো
++সম্পূর্ণ অফলাইনে তৈরি করব ইরাক ভাইয়া?"""
+ 
+ lines = text.splitlines()
+ max_len = 0
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

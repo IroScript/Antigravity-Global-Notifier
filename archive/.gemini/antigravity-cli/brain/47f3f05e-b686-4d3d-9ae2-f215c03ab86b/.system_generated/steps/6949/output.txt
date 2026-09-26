@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+37   API Key নয়, সার্ভিস একাউন্টের ভেতরে
+41   "Keys" ট্যাব থেকে সরাসরি *JSON Key* নিন
+38   (Add Key -> Create new key -> JSON)।
+

@@ -1,0 +1,66 @@
+The search for "how to upload to google one drive from linux server headless" returned the following summary:
+To upload files to Google Drive from a headless Linux server, the most reliable and widely recommended tool is **rclone**[1][2]. Because rclone requires an OAuth authorization flow (which involves a web browser), you typically perform the initial setup on your local computer and then transfer the configuration to your server[3][4].
+
+### Recommended Approach: Using Rclone
+
+#### 1. Install Rclone
+On your Linux server, install rclone using your package manager or the official script[1][3]:
+```bash
+sudo apt update
+sudo apt install rclone
+```
+
+#### 2. Perform Authorization (The "Headless" Trick)
+Since your server has no browser, the easiest way to authorize rclone is to do it on your local machine (where you have a browser) and move the configuration file[3][4].
+
+1.  **On your local machine:** Install rclone and run `rclone authorize "drive"`.
+2.  This will open a browser window. Log in to your Google account and grant the necessary permissions[2][5].
+3.  Once authorized, rclone will output a JSON configuration string (your "token"). Copy this string[2].
+4.  **On your server:** Run `rclone config` to create a new remote[1][6].
+5.  When prompted for "Use web browser to automatically authenticate," select **No**[7][8].
+6.  Paste the token you copied from your local machine when asked[2].
+
+*Alternatively, you can use an **SSH Tunnel** to perform the browser-based authorization directly through your server[9][8]:*
+*   SSH into your server with port forwarding: `ssh -L 53682:127.0.0.1:53682 user@your-server-ip`[8].
+*   Run `rclone config` on the server and follow the prompts. When it gives you a URL, open it on your local browser; the tunnel will redirect the authentication back to your server[8].
+
+#### 3. Uploading Files
+Once configured (e.g., your remote is named `gdrive`), you can upload files easily[6]:
+
+*   **Copy a file:**
+    ```bash
+    rclone copy /path/to/local/file gdrive:destination/folder
+    ```
+*   **Sync a directory (one-way backup):**
+    *   *Note: Use `copy` instead of `sync` if you want to avoid deleting files on Google Drive that are no longer on your server[6].*
+    ```bash
+    rclone copy /local/source/folder gdrive:backup/folder --progress
+    ```
+
+### Automating with Systemd (Optional)
+To make your uploads automatic, you can create a systemd timer or a cron job[1][6].
+
+1.  Create a simple shell script containing your `rclone copy` command[10].
+2.  Add it to your crontab (`crontab -e`) to run at your preferred interval:
+    ```bash
+    # Example: Run every day at 3 AM
+    0 3 * * * /usr/bin/rclone copy /home/user/data gdrive:backup
+    ```
+
+### Summary of Tools
+*   **[Rclone](https://rclone.org/):** The gold standard for headless cloud storage management[1][2]. It is robust, supports many providers, and handles large file uploads well[11][1].
+*   **[Insync Headless](https://www.insynchq.com/):** A commercial alternative that offers a more "sync-like" experience if you prefer a service that runs in the background continuously[12].
+
+Sources:
+[1] [hyperstream.co.uk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe5pPOc9rs6Nz1KPcmRKU6CcQkP0ASBFocytbj1nMOxf2JwnDoqOjr3slGOZqNoKyCHSktUlXW7ivswEXpqmarTA66AAbjhy4-20LXSpAEwmZAZ0CTbEEyhVy9To9lwRCg9JYjjIRI1ZwN-oxRdjZ7briMai_tVVoMDgrfKB426Ccoe9h32Yn2qoXwji8GqaMuv2Jr4ttTMMqmHtBeuDDeYg==)
+[2] [ivanmorgillo.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5BaZtLuKkVjh56Yaabk69yODHseNzlsSNaRmBEE5GafZCfEFsTJbtqnMmq3yFeU7G3KLh7AcrH87hkZcHntOl-QCdeE7SXCKYllwWPJHxRoYjRM3hE5EvJ1NO9SzeqZbyigIwDER8h6miLrODRR7jrLz-bGRY5RTA0jXFMkuZkmUIx_51lhjabyxIFjM_vHg=)
+[3] [diyenjoying.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ0CxZRsFt1AWRtF4-lZWieex9stnb-n0EZ0nh4P9FWl7EDRnNc46VMEDinrlZ_wzYgDZ-D8jVqwyrfecY65lg5nzNJ6LLqnjXXtKVjF528nLFgIvUmCP2XwrVOiZ3W_XfI9KDgTbbMdDB_WHo_FzPgmEEP84Dc6qlESMBlGjApYhwiKnucd_r)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvDP05KtUji2CHSd6c0OdFbaVvqU8H_1JeeepypJ6MKRIEn6aK-H-LfSEsjEjfOzBKbDkXxmwKmRd5kCnFgD0__WawSAcDOeizMbsE2RF-lGCSrFoVG-Ss)
+[5] [baeldung.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuXW-u78gL-8qf5CGoLGY8QewFHOr31uvyjYsurFaNrBPCg3nxMJEqgt3J3Qzhlke2jsgMoynclusKmSecbz25KrM3fxWo2mqnFgVtqi6PoiXyV29_KKgWKhQ46yg2ieGzjUjhqKuh)
+[6] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfZLEEBWUmgTsdxlNQWnRrNYCNjEutUMW5FtgAWFx_gbppMeO5Z7nBYUVmsOpd1m5aZRB2MCaRaxuhKwS-znpZ0rqM5ey0rPGd86r7BF2vkBVaZ7LNjP9OgnDIvZf0Q-FVGEPy0_4Ju9OKwueLauKeSzkHpXOEsvyHwsYKu74nxsoBjujIcCkqM315Exi46A==)
+[7] [rclone.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH87IyJufFw6ue6eyGp7i3QWdPT-SOEkq9GsazqY117K9KrCGMrRwS2JGDC1KHohlvY0npqQjS_lB42bHIBoN0mg028AnpSPL3nz11kEnH06dGLEP7T1A==)
+[8] [surajmishra.co.in](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAt_Wflid1ccKllH2jInZ8_9ATQZ2RVCBipPa_tMoXEf81Lze1BFokFXaBnXhoMulFNe3pxbpg8-B0kYUB_ZP46rmgEhOycy-HHuC_zGWdDt6EUmgeeOlGqQwJwoxmvmCmTOOl5wISW6MpSkxho9p3HRRZKp3p2LHb1zfGWY9yBtjtq0wZvqQDxjo7uFo=)
+[9] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJNPz9ONtB6AqKTaAVgJU5W1iGwq_IwwMDU-f_LQz3j5TbTxwdu-znspZAYgR7lezbBmcVe_IU2_pCkX_agmwP2aAsqxcZWBe4n0uGZhKsJCMyAyjb8oTORyKd9_ctBC4mBYyrGNnu77CQsWrdmd4TRiuGN9xjJvFy1vH0Isi4dUJcoshB1QnOeT-pfz4-sf0gwPzok1THvwPCUv-YX8KQOLUuTAJw0n-P5U89vN7G5CZqjf25Dzf7uK6HWQ91)
+[10] [askubuntu.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLBGBmtWp4xcwXy5OmcNL0SXtNO_Uuza__4wNuJCUMiC985_LAt7yxabBP-HIvxeZbzvyMcmd3AyiVm5JSEX__9sHHM_fYU2W8muNhWJ7ZOyM_0a0eUParF96ChI82vwm41x1PRrEyY9OL2qzCCLJPIm6uSS81XtmG_CxjRidLQ_4=)
+[11] [stackoverflow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsxkQXQQm0xS-AzwtWcqJZMwHBdbxoibb6f9XJszPJay7afNuCD2bwC-1_wpN60P0ASeS7vuvDf4jA56Re3HjJmYk8xi5JPwlyB7FQ782JiJGtC045VyxCdQMwg-PN7NdoyruloZEya_y-6AwHIZJmiO6kB42D0Dqi0CWUrpvBPWhI1K_V8HuO)
+[12] [insynchq.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE00CTyc6HvF42CWr_MXMS3iMiZvCfmA83_I29xzniGHSCXbTIIBSx6zRuQvbkHP6bjuW4F9SGBR4mEpLGsVoPg-4RE4RnqUTXJHGldDJ_WX_bENPeHKpDY48hWYlzTh-_c)

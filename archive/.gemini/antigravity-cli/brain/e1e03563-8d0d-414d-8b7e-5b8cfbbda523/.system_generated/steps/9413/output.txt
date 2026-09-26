@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/AGY-MASTER/REPORTS:
+total 24
+drwxrwxr-x 2 azureuser azureuser  4096 Sep 25 07:57 .
+drwxrwxr-x 6 azureuser azureuser  4096 Sep 25 07:58 ..
+-rw-rw-r-- 1 azureuser azureuser 13944 Sep 25 07:57 AUTONOMOUS_POLICY_CONTROLLED_AUDIT_AND_DESIGN.md
+
+/home/azureuser/AGY-MASTER/TASKS:
+total 8
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 25 07:57 .
+drwxrwxr-x 6 azureuser azureuser 4096 Sep 25 07:58 ..
+

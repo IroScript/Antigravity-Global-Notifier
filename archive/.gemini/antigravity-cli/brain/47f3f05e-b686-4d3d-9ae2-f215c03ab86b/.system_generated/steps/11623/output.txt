@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+bash: command substitution: line 1: syntax error near unexpected token `/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\./]+'
+bash: command substitution: line 1: `](/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\./]+)[\'"'
+"
+'
+

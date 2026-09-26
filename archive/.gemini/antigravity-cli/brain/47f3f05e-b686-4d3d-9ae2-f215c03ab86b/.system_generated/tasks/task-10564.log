@@ -1,0 +1,4 @@
+Windows 11 Azure File Explorer running on http://0.0.0.0:8088
+127.0.0.1 - - [26/Sep/2026 13:37:24] "GET /api/drives HTTP/1.1" 200 -
+127.0.0.1 - - [26/Sep/2026 13:37:27] "GET /api/browse?path=/home/azureuser HTTP/1.1" 200 -
+127.0.0.1 - - [26/Sep/2026 13:37:33] "GET /api/content?path=/home/azureuser/GEMINI.md HTTP/1.1" 200 -

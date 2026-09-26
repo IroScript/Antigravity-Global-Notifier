@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1444/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1446/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1449/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1450/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1451/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1454/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 /proc/1556/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 /proc/266192/fd/1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260924_163443.log (deleted)'
+

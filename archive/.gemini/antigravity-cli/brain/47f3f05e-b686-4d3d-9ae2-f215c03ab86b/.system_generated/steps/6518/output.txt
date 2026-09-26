@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+| Rule Area | Exact Directive | Source File & Lines | Global AGENTS.md | Master AGENTS.md | Project AGENTS.md | Duplication Status | Action Required |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **System Universal** | Rules 1-11, 13-17 (Bengali, Iraq Bhai, paths, no push, tests first) | `/home/azureuser/AGENTS.md` (Lines 1-185) | Authoritative Root | Reference Only | Reference Only | None | Preserve at root |
+| **Tri-Agent Model** | Rule 12 Evolution (Ask, Report, Action) | `/home/azureuser/AGY-MASTER/AGENTS.md` (Lines 70-130) | Superseded | Authoritative Specification | Boundary Only | None | Kept in AGY-MASTER |
+| **Frappe Domain** | v16+, Python 3.12+, PyPika/frappe.qb, modern form controller, mobile-first | `/home/azureuser/AGENTS.md` (Lines 186-245) | Legacy Bloat | Cataloged | `Frappe-erp-Alco/AGENTS.md` | Duplicate in root | Extract ~60 lines to project file |
+| **YouTube Domain** | Veo 3.1 Chrome Extension only, SQLite truth, No FFmpeg/OpenCV | `/home/azureuser/AGENTS.md` (Lines 747-820) | Legacy Bloat | Cataloged | `youtube/AGENTS.md` | Duplicate in root | Extract ~80 lines to project file |
+| **Telegram Domain** | Live MTProto / Telethon search only, no local JSON/CSV search fallback | `/home/azureuser/AGENTS.md` (Lines 57-64) | Legacy Bloat | Cataloged | `telegram-bot/AGENTS.md` | Duplicate in root | Extract ~25 lines to project file |
+| **Digital History** | OpenRecall daemon protection, run_openrecall.py lifecycle lock | `/home/azureuser/AGENTS.md` (Lines 29-32) | Legacy Bloat | Cataloged | `PERSONAL AI AGENT/AGENTS.md` | Duplicate in root | Extract ~15 lines to project file |
+
+---
+
+## 8. STRICT SEVEN-PHASE IMPLEMENTATION SEQUENCE
+
+```
+PHASE A: Gateway Engine & Test Suite Development (Offline, NO hook activation)
+    ↓
+PHASE B: Adversarial Offline Unit Testing (100% pass on 20+ attack scenarios)
+    ↓
+PHASE C: PreToolUse Hook Registration in hooks.json (With fail-closed shell trap)
+    ↓
+PHASE D: Live Non-Destructive Verification (Direct CLI tool calls tested)
+    ↓
+PHASE E: OS-Level Containment Hardening (Identity separation, sudoers lockdown)
+    ↓
+PHASE F: Localized Project Rule Injection (Zero-bloat domain sections)
+    ↓
+

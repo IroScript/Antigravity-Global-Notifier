@@ -1,0 +1,55 @@
+
+The command exited with code 0.
+Output:
+<truncated 68 lines>
+tcp    LISTEN  0        4096             127.0.0.1:34111          0.0.0.0:*      users:(("agy",pid=1449,fd=13))                                                 
+tcp    LISTEN  0        4096             127.0.0.1:41851          0.0.0.0:*      users:(("cloudflared",pid=42165,fd=10))                                        
+tcp    LISTEN  0        4096             127.0.0.1:33545          0.0.0.0:*      users:(("cloudflared",pid=1989,fd=10))                                         
+tcp    LISTEN  0        128                0.0.0.0:22             0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096             127.0.0.1:32977          0.0.0.0:*      users:(("agy",pid=1451,fd=11))                                                 
+tcp    LISTEN  0        20               127.0.0.1:25             0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096             127.0.0.1:40941          0.0.0.0:*      users:(("agy",pid=1556,fd=11))                                                 
+tcp    LISTEN  0        4096             127.0.0.1:40613          0.0.0.0:*      users:(("agy",pid=1447,fd=11))                                                 
+tcp    LISTEN  0        4096             127.0.0.1:40557          0.0.0.0:*      users:(("agy",pid=1445,fd=13))                                                 
+tcp    LISTEN  0        4096             127.0.0.1:40475          0.0.0.0:*      users:(("agy",pid=1556,fd=13))                                                 
+tcp    LISTEN  0        4096             127.0.0.1:40361          0.0.0.0:*      users:(("agy",pid=1454,fd=11))                                                 
+tcp    LISTEN  0        4096               0.0.0.0:8003           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096               0.0.0.0:8002           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096               0.0.0.0:8001           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        128                0.0.0.0:8000           0.0.0.0:*      users:(("python",pid=307848,fd=7),("python",pid=307848,fd=6),("python",pid=1199,fd=6))
+tcp    LISTEN  0        4096               0.0.0.0:8005           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096               0.0.0.0:8004           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        5                  0.0.0.0:8080           0.0.0.0:*      users:(("python3",pid=1190,fd=3))                                              
+tcp    LISTEN  0        5                  0.0.0.0:8085           0.0.0.0:*      users:(("python3",pid=1716,fd=3))                                              
+tcp    LISTEN  0        5                  0.0.0.0:8090           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        128                0.0.0.0:7681           0.0.0.0:*      users:(("ttyd",pid=1558,fd=12))                                                
+tcp    LISTEN  0        511              127.0.0.1:6379           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096            127.0.0.54:53             0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096             127.0.0.1:38823          0.0.0.0:*      users:(("agy",pid=1450,fd=13))                                                 
+tcp    LISTEN  0        32               127.0.0.1:5900           0.0.0.0:*      users:(("x11vnc",pid=1781,fd=8))                                               
+tcp    LISTEN  0        511                0.0.0.0:5173           0.0.0.0:*      users:(("node-MainThread",pid=41328,fd=21))                                    
+tcp    LISTEN  0        5                  0.0.0.0:5176           0.0.0.0:*      users:(("python3",pid=42086,fd=4))                                             
+tcp    LISTEN  0        4096             127.0.0.1:38573          0.0.0.0:*      users:(("cloudflared",pid=41342,fd=10))                                        
+tcp    LISTEN  0        4096               0.0.0.0:5355           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        4096         127.0.0.53%lo:53             0.0.0.0:*                                                                                     
+tcp    LISTEN  0        200              127.0.0.1:5432           0.0.0.0:*                                                                                     
+tcp    LISTEN  0        100                0.0.0.0:6080           0.0.0.0:*      users:(("websockify",pid=1209,fd=3))                                           
+tcp    LISTEN  0        4096             127.0.0.1:46189          0.0.0.0:*      users:(("agy",pid=1448,fd=11))                                                 
+tcp    LISTEN  0        511              127.0.0.1:13000          0.0.0.0:*      users:(("redis-server",pid=1194,fd=8))                                         
+tcp    LISTEN  0        4096             127.0.0.1:37249          0.0.0.0:*      users:(("cloudflared",pid=190241,fd=11))                                       
+tcp    LISTEN  0        4096             127.0.0.1:37227          0.0.0.0:*      users:(("agy",pid=266192,fd=11))                                               
+tcp    LISTEN  0        4096             127.0.0.1:36931          0.0.0.0:*      users:(("agy",pid=1454,fd=13))                                                 
+tcp    LISTEN  0        511                      *:3100                 *:*      users:(("next-server (v1",pid=1829,fd=21))                                     
+tcp    LISTEN  0        511                  [::1]:6379              [::]:*                                                                                     
+tcp    LISTEN  0        128                   [::]:22                [::]:*                                                                                     
+tcp    LISTEN  0        511                      *:9000                 *:*      users:(("node-MainThread",pid=1198,fd=21))                                     
+tcp    LISTEN  0        200                  [::1]:5432              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:8003              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:8002              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:8001              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:8005              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:8004              [::]:*                                                                                     
+tcp    LISTEN  0        4096                  [::]:5355              [::]:*                                                                                     
+tcp    LISTEN  0        32                    [::]:5900              [::]:*      users:(("x11vnc",pid=1781,fd=9))                                               
+tcp    LISTEN  0        20                   [::1]:25                [::]:*                                                                                     
+

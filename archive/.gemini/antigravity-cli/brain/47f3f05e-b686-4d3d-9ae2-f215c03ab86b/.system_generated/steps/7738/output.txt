@@ -1,0 +1,12 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7732
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7732.log
+Log output:
+9.4M	/home/azureuser-to-google-vm
+20K	/home/irak
+24K	/home/Irak
+20K	/home/md.kamruzzamanirak
+20K	/home/md_kamruzzamanirak
+20K	/home/mdkamruzzamanirak
+
+Last progress: 56s ago

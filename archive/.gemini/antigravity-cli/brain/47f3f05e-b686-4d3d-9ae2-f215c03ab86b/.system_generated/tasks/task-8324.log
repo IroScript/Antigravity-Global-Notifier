@@ -1,0 +1,276 @@
+<6>INFO  : PARTS_MD5_CHECKSUM.txt: Copied (new)
+<6>INFO  : RESTORE_INSTRUCTIONS.txt: Copied (new)
+<6>INFO  : 
+Transferred:   	  544.001 MiB / 16.071 GiB, 3%, 52.354 MiB/s, ETA 5m3s
+Transferred:            2 / 8, 25%
+Elapsed time:      1m51.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz:  9% /3Gi, 35.428Mi/s, 1m18s
+ *                gcp_home_backup_part_01.tar.gz:  8% /3Gi, 34.286Mi/s, 1m22s
+
+<6>INFO  : 
+Transferred:   	    1.289 GiB / 16.071 GiB, 8%, 66.919 MiB/s, ETA 3m46s
+Transferred:            2 / 8, 25%
+Elapsed time:       2m1.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 22% /3Gi, 39.094Mi/s, 1m0s
+ *                gcp_home_backup_part_01.tar.gz: 20% /3Gi, 36.719Mi/s, 1m6s
+
+<6>INFO  : 
+Transferred:   	    2.148 GiB / 16.071 GiB, 13%, 76.814 MiB/s, ETA 3m5s
+Transferred:            2 / 8, 25%
+Elapsed time:      2m11.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 36% /3Gi, 41.413Mi/s, 46s
+ *                gcp_home_backup_part_01.tar.gz: 34% /3Gi, 40.923Mi/s, 48s
+
+<6>INFO  : 
+Transferred:   	    3.070 GiB / 16.071 GiB, 19%, 85.435 MiB/s, ETA 2m35s
+Transferred:            2 / 8, 25%
+Elapsed time:      2m21.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 52% /3Gi, 44.509Mi/s, 32s
+ *                gcp_home_backup_part_01.tar.gz: 49% /3Gi, 43.089Mi/s, 35s
+
+<6>INFO  : 
+Transferred:   	    3.992 GiB / 16.071 GiB, 25%, 89.654 MiB/s, ETA 2m17s
+Transferred:            2 / 8, 25%
+Elapsed time:      2m31.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 67% /3Gi, 46.195Mi/s, 21s
+ *                gcp_home_backup_part_01.tar.gz: 65% /3Gi, 44.832Mi/s, 23s
+
+<6>INFO  : 
+Transferred:   	    4.848 GiB / 16.071 GiB, 30%, 89.992 MiB/s, ETA 2m7s
+Transferred:            2 / 8, 25%
+Elapsed time:      2m41.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 83% /3Gi, 46.692Mi/s, 10s
+ *                gcp_home_backup_part_01.tar.gz: 78% /3Gi, 41.588Mi/s, 16s
+
+<6>INFO  : 
+Transferred:   	    5.750 GiB / 16.071 GiB, 36%, 89.138 MiB/s, ETA 1m58s
+Transferred:            2 / 8, 25%
+Elapsed time:      2m51.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 98% /3Gi, 46.357Mi/s, 0s
+ *                gcp_home_backup_part_01.tar.gz: 92% /3Gi, 43.369Mi/s, 4s
+
+<6>INFO  : 
+Transferred:   	    5.906 GiB / 19.071 GiB, 31%, 56.188 MiB/s, ETA 3m59s
+Transferred:            2 / 8, 25%
+Elapsed time:       3m1.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz:  0% /3Gi, 0/s, -
+ *                gcp_home_backup_part_01.tar.gz: 96% /3Gi, 28.133Mi/s, 3s
+
+<6>INFO  : 
+Transferred:   	    5.953 GiB / 19.071 GiB, 31%, 31.700 MiB/s, ETA 7m3s
+Transferred:            2 / 8, 25%
+Elapsed time:      3m11.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz:  0% /3Gi, 0/s, -
+ *                gcp_home_backup_part_01.tar.gz: 98% /3Gi, 17.114Mi/s, 2s
+
+<6>INFO  : gcp_home_backup_part_01.tar.gz: Copied (new)
+<6>INFO  : 
+Transferred:   	    6.197 GiB / 19.071 GiB, 32%, 27.054 MiB/s, ETA 8m7s
+Transferred:            3 / 8, 38%
+Elapsed time:      3m21.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz:  4% /3Gi, 11.200Mi/s, 4m22s
+ *                gcp_home_backup_part_02.tar.gz:  2% /3Gi, 37.740Mi/s, 1m19s
+
+<6>INFO  : 
+Transferred:   	    7.124 GiB / 19.071 GiB, 37%, 58.985 MiB/s, ETA 3m27s
+Transferred:            3 / 8, 38%
+Elapsed time:      3m31.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 20% /3Gi, 30.704Mi/s, 1m19s
+ *                gcp_home_backup_part_02.tar.gz: 17% /3Gi, 44.363Mi/s, 57s
+
+<6>INFO  : 
+Transferred:   	    8.031 GiB / 19.071 GiB, 42%, 75.271 MiB/s, ETA 2m30s
+Transferred:            3 / 8, 38%
+Elapsed time:      3m41.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 34% /3Gi, 37.916Mi/s, 52s
+ *                gcp_home_backup_part_02.tar.gz: 32% /3Gi, 45.772Mi/s, 45s
+
+<6>INFO  : 
+Transferred:   	    8.961 GiB / 19.071 GiB, 47%, 85.228 MiB/s, ETA 2m1s
+Transferred:            3 / 8, 38%
+Elapsed time:      3m51.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 51% /3Gi, 43.042Mi/s, 34s
+ *                gcp_home_backup_part_02.tar.gz: 47% /3Gi, 46.346Mi/s, 34s
+
+<6>INFO  : 
+Transferred:   	    9.875 GiB / 19.071 GiB, 52%, 88.758 MiB/s, ETA 1m46s
+Transferred:            3 / 8, 38%
+Elapsed time:       4m1.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 66% /3Gi, 45.106Mi/s, 22s
+ *                gcp_home_backup_part_02.tar.gz: 62% /3Gi, 46.142Mi/s, 24s
+
+<6>INFO  : 
+Transferred:   	   10.820 GiB / 19.071 GiB, 57%, 92.706 MiB/s, ETA 1m31s
+Transferred:            3 / 8, 38%
+Elapsed time:      4m11.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 82% /3Gi, 46.513Mi/s, 11s
+ *                gcp_home_backup_part_02.tar.gz: 78% /3Gi, 46.564Mi/s, 14s
+
+<6>INFO  : 
+Transferred:   	   11.641 GiB / 19.071 GiB, 61%, 87.934 MiB/s, ETA 1m26s
+Transferred:            3 / 8, 38%
+Elapsed time:      4m21.1s
+Transferring:
+ *                gcp_home_backup_part_00.tar.gz: 96% /3Gi, 44.593Mi/s, 2s
+ *                gcp_home_backup_part_02.tar.gz: 91% /3Gi, 44.657Mi/s, 5s
+
+<6>INFO  : gcp_home_backup_part_00.tar.gz: Copied (new)
+<6>INFO  : gcp_home_backup_part_02.tar.gz: Copied (new)
+<6>INFO  : 
+Transferred:   	   12.367 GiB / 19.071 GiB, 65%, 82.296 MiB/s, ETA 1m23s
+Transferred:            5 / 8, 63%
+Elapsed time:      4m31.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz:  8% /3Gi, 43.199Mi/s, 1m5s
+ *                gcp_home_backup_part_04.tar.gz:  3% /3Gi, 37.333Mi/s, 1m19s
+
+<6>INFO  : 
+Transferred:   	   13.164 GiB / 19.071 GiB, 69%, 81.149 MiB/s, ETA 1m14s
+Transferred:            5 / 8, 63%
+Elapsed time:      4m41.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 21% /3Gi, 41.600Mi/s, 57s
+ *                gcp_home_backup_part_04.tar.gz: 17% /3Gi, 40.497Mi/s, 1m2s
+
+<6>INFO  : 
+Transferred:   	   13.953 GiB / 19.071 GiB, 73%, 81.303 MiB/s, ETA 1m4s
+Transferred:            5 / 8, 63%
+Elapsed time:      4m51.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 34% /3Gi, 41.782Mi/s, 47s
+ *                gcp_home_backup_part_04.tar.gz: 30% /3Gi, 40.141Mi/s, 53s
+
+<6>INFO  : 
+Transferred:   	   14.734 GiB / 19.071 GiB, 77%, 80.520 MiB/s, ETA 55s
+Transferred:            5 / 8, 63%
+Elapsed time:       5m1.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 47% /3Gi, 39.960Mi/s, 40s
+ *                gcp_home_backup_part_04.tar.gz: 43% /3Gi, 40.566Mi/s, 42s
+
+<6>INFO  : 
+Transferred:   	   15.517 GiB / 19.071 GiB, 81%, 80.602 MiB/s, ETA 45s
+Transferred:            5 / 8, 63%
+Elapsed time:      5m11.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 59% /3Gi, 39.559Mi/s, 31s
+ *                gcp_home_backup_part_04.tar.gz: 57% /3Gi, 41.114Mi/s, 31s
+
+<6>INFO  : 
+Transferred:   	   16.297 GiB / 19.071 GiB, 85%, 79.863 MiB/s, ETA 35s
+Transferred:            5 / 8, 63%
+Elapsed time:      5m21.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 73% /3Gi, 39.772Mi/s, 20s
+ *                gcp_home_backup_part_04.tar.gz: 70% /3Gi, 40.291Mi/s, 22s
+
+<6>INFO  : 
+Transferred:   	   17.078 GiB / 19.071 GiB, 90%, 80.590 MiB/s, ETA 25s
+Transferred:            5 / 8, 63%
+Elapsed time:      5m31.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 85% /3Gi, 39.442Mi/s, 11s
+ *                gcp_home_backup_part_04.tar.gz: 83% /3Gi, 41.171Mi/s, 12s
+
+<6>INFO  : 
+Transferred:   	   17.857 GiB / 19.071 GiB, 94%, 79.905 MiB/s, ETA 15s
+Transferred:            5 / 8, 63%
+Elapsed time:      5m41.1s
+Transferring:
+ *                gcp_home_backup_part_03.tar.gz: 98% /3Gi, 39.282Mi/s, 1s
+ *                gcp_home_backup_part_04.tar.gz: 96% /3Gi, 41.096Mi/s, 2s
+
+<6>INFO  : gcp_home_backup_part_03.tar.gz: Copied (new)
+<6>INFO  : gcp_home_backup_part_04.tar.gz: Copied (new)
+<6>INFO  : 
+Transferred:   	   18.313 GiB / 19.071 GiB, 96%, 64.837 MiB/s, ETA 11s
+Transferred:            7 / 8, 88%
+Elapsed time:      5m51.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz: 29% /1.071Gi, 43.428Mi/s, 17s
+
+<6>INFO  : 
+Transferred:   	   18.766 GiB / 19.071 GiB, 98%, 55.922 MiB/s, ETA 5s
+Transferred:            7 / 8, 88%
+Elapsed time:       6m1.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz: 71% /1.071Gi, 45.187Mi/s, 6s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 44.650 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      6m11.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 37.708Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 23.417 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      6m21.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 19.777Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 12.281 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      6m31.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 10.372Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 6.441 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      6m41.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 5.440Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 3.378 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      6m51.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 2.853Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 1.772 MiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:       7m1.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 1.496Mi/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 951.469 KiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      7m11.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 803.554Ki/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 19.071 GiB, 100%, 499.008 KiB/s, ETA 0s
+Transferred:            7 / 8, 88%
+Elapsed time:      7m21.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:100% /1.071Gi, 421.432Ki/s, 0s
+
+<6>INFO  : 
+Transferred:   	   19.071 GiB / 20.141 GiB, 95%, 261.710 KiB/s, ETA 1h11m29s
+Transferred:            7 / 8, 88%
+Elapsed time:      7m31.1s
+Transferring:
+ *                gcp_home_backup_part_05.tar.gz:  0% /1.071Gi, 0/s, -
+

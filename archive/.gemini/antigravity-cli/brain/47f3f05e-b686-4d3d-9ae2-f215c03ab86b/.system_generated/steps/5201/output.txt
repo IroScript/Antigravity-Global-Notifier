@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 12
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 07:59 .
+drwxr-xr-x 12 azureuser azureuser 4096 Sep 25 07:59 ..
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 07:59 _logs
+-rw-rw-r--  1 azureuser azureuser    0 Sep 25 07:59 _update-notifier-last-checked
+
+Terminal ID: 5cf95c9a-74ad-435a-94ec-395a517d1d48

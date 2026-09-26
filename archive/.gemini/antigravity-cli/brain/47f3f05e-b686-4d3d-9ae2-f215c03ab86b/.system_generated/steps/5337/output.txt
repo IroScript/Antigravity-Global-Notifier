@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 42M
+-rw-r--r-- 1 azureuser azureuser  38M Sep 25 10:26  youtube_pipeline.db
+-rw-r--r-- 1 azureuser azureuser    0 Sep 25 08:30 'youtube_pipeline.db (deleted)'
+-rw-rw-r-- 1 azureuser azureuser  32K Sep 25 10:26  youtube_pipeline.db-shm
+-rw-rw-r-- 1 azureuser azureuser 4.1M Sep 25 10:26  youtube_pipeline.db-wal
+
+Terminal ID: 34f48e26-3e81-4ccf-ac7b-08d01e930011

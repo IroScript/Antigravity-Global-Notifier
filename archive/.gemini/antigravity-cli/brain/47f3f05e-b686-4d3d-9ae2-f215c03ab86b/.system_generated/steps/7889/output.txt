@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    ELAPSED %CPU %MEM
+      06:30  6.4  0.3
+

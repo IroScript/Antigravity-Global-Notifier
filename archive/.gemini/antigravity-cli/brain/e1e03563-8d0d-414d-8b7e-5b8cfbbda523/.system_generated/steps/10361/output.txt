@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+MATCH: /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript.jsonl
+MATCH: /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl
+MATCH: /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/chunks/transcript/00000011.jsonl
+MATCH: /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/chunks/transcript_full/00000012.jsonl
+

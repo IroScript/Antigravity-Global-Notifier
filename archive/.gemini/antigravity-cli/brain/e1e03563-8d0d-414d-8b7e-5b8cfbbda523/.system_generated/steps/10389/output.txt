@@ -1,0 +1,285 @@
+
+The command exited with code 0.
+Output:
+<truncated 632 lines>
+TABLE: workflows
+CREATE TABLE workflows (
+	id VARCHAR NOT NULL, 
+	name VARCHAR NOT NULL, 
+	description VARCHAR, 
+	channel_id VARCHAR, 
+	content_type VARCHAR NOT NULL, 
+	active_version_id VARCHAR, 
+	is_active BOOLEAN NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: workflow_versions
+CREATE TABLE workflow_versions (
+	id VARCHAR NOT NULL, 
+	workflow_id VARCHAR NOT NULL, 
+	version_number INTEGER NOT NULL, 
+	status VARCHAR NOT NULL, 
+	definition JSON NOT NULL, 
+	definition_hash VARCHAR, 
+	changelog VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	published_at DATETIME, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(workflow_id) REFERENCES workflows (id)
+)
+----------------------------------------
+TABLE: workflow_steps
+CREATE TABLE workflow_steps (
+	id VARCHAR NOT NULL, 
+	workflow_version_id VARCHAR NOT NULL, 
+	step_key VARCHAR NOT NULL, 
+	step_type VARCHAR NOT NULL, 
+	display_name VARCHAR NOT NULL, 
+	position INTEGER NOT NULL, 
+	enabled BOOLEAN NOT NULL, 
+	depends_on JSON NOT NULL, 
+	condition JSON, 
+	config JSON NOT NULL, 
+	retry_policy JSON NOT NULL, 
+	timeout_seconds INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(workflow_version_id) REFERENCES workflow_versions (id)
+)
+----------------------------------------
+TABLE: workflow_executions
+CREATE TABLE workflow_executions (
+	id VARCHAR NOT NULL, 
+	workflow_version_id VARCHAR NOT NULL, 
+	idea_id INTEGER, 
+	video_id INTEGER, 
+	channel_id VARCHAR, 
+	status VARCHAR NOT NULL, 
+	definition_snapshot JSON NOT NULL, 
+	context_data JSON NOT NULL, 
+	idempotency_key VARCHAR, 
+	started_at DATETIME, 
+	completed_at DATETIME, 
+	error_summary VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, attempt_count INTEGER DEFAULT 0, max_attempts INTEGER DEFAULT 3, error_message TEXT, last_failure_time TIMESTAMP, next_retry_time TIMESTAMP, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(workflow_version_id) REFERENCES workflow_versions (id)
+)
+----------------------------------------
+TABLE: step_runs
+CREATE TABLE step_runs (
+	id VARCHAR NOT NULL, 
+	execution_id VARCHAR NOT NULL, 
+	step_key VARCHAR NOT NULL, 
+	step_type VARCHAR NOT NULL, 
+	status VARCHAR NOT NULL, 
+	input_data JSON NOT NULL, 
+	output_data JSON NOT NULL, 
+	input_hash VARCHAR, 
+	config_hash VARCHAR, 
+	output_hash VARCHAR, 
+	attempt_count INTEGER NOT NULL, 
+	max_attempts INTEGER NOT NULL, 
+	started_at DATETIME, 
+	completed_at DATETIME, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(execution_id) REFERENCES workflow_executions (id)
+)
+----------------------------------------
+TABLE: execution_events
+CREATE TABLE execution_events (
+	id VARCHAR NOT NULL, 
+	execution_id VARCHAR NOT NULL, 
+	step_run_id VARCHAR, 
+	event_type VARCHAR NOT NULL, 
+	payload JSON NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(execution_id) REFERENCES workflow_executions (id)
+)
+----------------------------------------
+TABLE: workflow_migrations
+CREATE TABLE workflow_migrations (
+	id VARCHAR NOT NULL, 
+	execution_id VARCHAR NOT NULL, 
+	from_version_id VARCHAR NOT NULL, 
+	to_version_id VARCHAR NOT NULL, 
+	reused_step_keys JSON NOT NULL, 
+	rerun_step_keys JSON NOT NULL, 
+	skipped_step_keys JSON NOT NULL, 
+	status VARCHAR NOT NULL, 
+	migration_notes VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	completed_at DATETIME, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(execution_id) REFERENCES workflow_executions (id)
+)
+----------------------------------------
+TABLE: step_attempts
+CREATE TABLE step_attempts (
+	id VARCHAR NOT NULL, 
+	step_run_id VARCHAR NOT NULL, 
+	attempt_number INTEGER NOT NULL, 
+	worker_id VARCHAR, 
+	status VARCHAR NOT NULL, 
+	error_class VARCHAR, 
+	error_message VARCHAR, 
+	stack_trace VARCHAR, 
+	execution_metadata JSON NOT NULL, 
+	started_at DATETIME NOT NULL, 
+	completed_at DATETIME, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(step_run_id) REFERENCES step_runs (id)
+)
+----------------------------------------
+TABLE: jobs
+CREATE TABLE jobs (
+	id VARCHAR NOT NULL, 
+	step_run_id VARCHAR NOT NULL, 
+	queue_name VARCHAR NOT NULL, 
+	priority INTEGER NOT NULL, 
+	status VARCHAR NOT NULL, 
+	worker_id VARCHAR, 
+	lease_until DATETIME, 
+	heartbeat_at DATETIME, 
+	payload JSON NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(step_run_id) REFERENCES step_runs (id)
+)
+----------------------------------------
+TABLE: audit_logs
+CREATE TABLE audit_logs (
+	id VARCHAR NOT NULL, 
+	actor VARCHAR NOT NULL, 
+	action VARCHAR NOT NULL, 
+	entity_type VARCHAR NOT NULL, 
+	entity_id VARCHAR NOT NULL, 
+	before_state JSON NOT NULL, 
+	after_state JSON NOT NULL, 
+	reason VARCHAR, 
+	record_hash VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: external_operations
+CREATE TABLE external_operations (
+	id VARCHAR NOT NULL, 
+	execution_id VARCHAR NOT NULL, 
+	step_run_id VARCHAR NOT NULL, 
+	operation_key VARCHAR NOT NULL, 
+	provider VARCHAR NOT NULL, 
+	operation_type VARCHAR NOT NULL, 
+	request_hash VARCHAR NOT NULL, 
+	status VARCHAR NOT NULL, 
+	external_id VARCHAR, 
+	external_url VARCHAR, 
+	provider_state JSON NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: test_req_003_with_uuid
+CREATE TABLE test_req_003_with_uuid (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	title VARCHAR NOT NULL, 
+	description VARCHAR, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: test_req_003_no_uuid
+CREATE TABLE test_req_003_no_uuid (
+	id INTEGER NOT NULL, 
+	name VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: req_009_tx_test
+CREATE TABLE req_009_tx_test (
+	id INTEGER NOT NULL, 
+	val VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: test_jsonb_payloads
+CREATE TABLE test_jsonb_payloads (
+	id INTEGER NOT NULL, 
+	entity_key VARCHAR NOT NULL, 
+	metadata_payload JSON, 
+	tags_list JSON, 
+	PRIMARY KEY (id)
+)
+----------------------------------------
+TABLE: pipeline_row_state
+CREATE TABLE pipeline_row_state (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	idea_id INTEGER NOT NULL, 
+	current_state VARCHAR NOT NULL, 
+	previous_state VARCHAR, 
+	prompt_verified BOOLEAN NOT NULL, 
+	seo_verified BOOLEAN NOT NULL, 
+	video_verified BOOLEAN NOT NULL, 
+	upload_verified BOOLEAN NOT NULL, 
+	package_verified BOOLEAN NOT NULL, 
+	all_fields_validated BOOLEAN NOT NULL, 
+	missing_fields VARCHAR, 
+	active_job_id VARCHAR, 
+	active_job_type VARCHAR, 
+	failure_reason VARCHAR, 
+	retry_count INTEGER NOT NULL, 
+	is_paused BOOLEAN NOT NULL, 
+	last_verified_at DATETIME, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(idea_id) REFERENCES ideas (id)
+)
+----------------------------------------
+TABLE: pipeline_checkpoints
+CREATE TABLE pipeline_checkpoints (
+    job_id TEXT PRIMARY KEY,
+    idea_id INTEGER,
+    prompt TEXT,
+    prompt_hash TEXT,
+    state TEXT,
+    retry_count INTEGER DEFAULT 0,
+    attempt INTEGER DEFAULT 1,
+    tile_id TEXT,
+    video_url TEXT,
+    filename TEXT,
+    download_status TEXT,
+    last_verified_action TEXT,
+    error_json TEXT,
+    is_active INTEGER DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+----------------------------------------
+TABLE: pipeline_failure_logs
+CREATE TABLE pipeline_failure_logs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    job_id TEXT,
+    category TEXT,
+    reason TEXT,
+    attempt INTEGER,
+    policy TEXT,
+    url TEXT,
+    timestamp INTEGER,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+----------------------------------------
+TABLE: sqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+----------------------------------------
+

@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+      130 full_filesystem/PARTS_MD5_CHECKSUM.txt
+520455964 full_filesystem/gcp_home_backup_part_05_01.tar.gz
+629145600 full_filesystem/gcp_home_backup_part_05_00.tar.gz
+      868 full_filesystem/RESTORE_INSTRUCTIONS.txt
+3221225472 full_filesystem/gcp_home_backup_part_04.tar.gz
+3221225472 full_filesystem/gcp_home_backup_part_03.tar.gz
+3221225472 full_filesystem/gcp_home_backup_part_02.tar.gz
+3221225472 full_filesystem/gcp_home_backup_part_01.tar.gz
+3221225472 full_filesystem/gcp_home_backup_part_00.tar.gz
+       88 database_backups/gcp_redis_6379_dump.rdb
+   274467 database_backups/gcp_postgres_all_databases.sql
+        0 database_backups/gcp_mariadb_all_databases.sql
+  9226115 database_backups/gcp_frappe_mariadb.sql
+    11984 database_backups/gcp_cockroach_schema.sql
+      237 database_backups/gcp_cockroach_migrations_data.txt
+

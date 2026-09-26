@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: ext4magic: command not found
+
+Terminal ID: ca3001dd-e396-4472-a69c-e92f81fe1dd3

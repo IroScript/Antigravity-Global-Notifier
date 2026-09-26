@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Header: ['idea_id', 'idea_title', 'element_id', 'element_name', 'element_group', 'idea_status', 'prompt_count', 'has_level_10_video', 'has_seo', 'seo_title', 'seo_tags', 'idea_created_at']
+Row 1: ['1', 'Rice Titan Harvester', '1', 'Paddy / Rice Field', 'Agriculture', 'completed', '20', '1', '1', "Rice Titan Harvester — The Paddy Harvesting Machine You've Never Seen", '["Rice Titan Harvester", "rice paddy machine", "giant harvester", "colossal harvester", "agriculture tech", "mega farming", "Paddy Harvesting machine", "impossible engineering", "AI generated video", "megastructure"]', '2026-08-11 15:45:12.760052']
+

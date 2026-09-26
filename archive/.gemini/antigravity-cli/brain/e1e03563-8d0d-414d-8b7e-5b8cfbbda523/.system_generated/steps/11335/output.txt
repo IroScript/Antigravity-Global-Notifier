@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+'Youtube Automation/docker_workers/cookies/worker_1':
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 11:00 .
+drwxr-xr-x 7 azureuser azureuser 4096 Sep 25 11:00 ..
+
+'Youtube Automation/docker_workers/cookies/worker_2':
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 11:00 .
+drwxr-xr-x 7 azureuser azureuser 4096 Sep 25 11:00 ..
+
+'Youtube Automation/docker_workers/cookies/worker_3':
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 11:00 .
+drwxr-xr-x 7 azureuser azureuser 4096 Sep 25 11:00 ..
+
+'Youtube Automation/docker_workers/cookies/worker_4':
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 11:00 .
+drwxr-xr-x 7 azureuser azureuser 4096 Sep 25 11:00 ..
+
+'Youtube Automation/docker_workers/cookies/worker_5':
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 11:00 .
+drwxr-xr-x 7 azureuser azureuser 4096 Sep 25 11:00 ..
+

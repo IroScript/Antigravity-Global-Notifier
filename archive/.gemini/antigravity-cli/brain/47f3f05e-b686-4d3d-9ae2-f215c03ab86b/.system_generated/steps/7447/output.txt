@@ -1,0 +1,21 @@
+
+The command exited with code 1.
+Output:
+72M	/home/azureuser/AGY-MASTER
+12K	/home/azureuser/Ask-And-Research
+988K	/home/azureuser/Frappe-erp-Alco
+12K	/home/azureuser/kids_tube_with_folder_seection
+40K	/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+28K	/home/azureuser/3D-Game-Design-Studio
+416K	/home/azureuser/telegram-bot
+819M	/home/azureuser/RESTORED_PROJECTS
+2.8G	/home/azureuser/.openclaw
+32K	/home/azureuser/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+20K	/home/azureuser/GEMINI.md
+16K	/home/azureuser/PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+12K	/home/azureuser/USER_PERSONAL_AGENT_CONTEXT.md
+20K	/home/azureuser/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+4.0K	/home/azureuser/csv_downloads_url.txt
+12K	/home/azureuser/last_user_prompt.txt
+3.7G	total
+

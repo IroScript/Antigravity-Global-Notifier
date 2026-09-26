@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+bash: line 1: /home/azureuser/AGY-MASTER/ACTIONS/test_write.tmp: Permission denied
+

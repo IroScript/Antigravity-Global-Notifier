@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+dumpe2fs 1.47.2 (1-Jan-2025)
+Group 1666: (Blocks 54591488-54624255) csum 0x3b37 [INODE_UNINIT, ITABLE_ZEROED]
+  Block bitmap at 54525954 (bg #1664 + 2), csum 0xf2980e80
+  Inode bitmap at 54525970 (bg #1664 + 18), csum 0x00000000
+  Inode table at 54527008-54527519 (bg #1664 + 1056)
+  32749 free blocks, 8192 free inodes, 0 directories, 8192 unused inodes
+  Free blocks: 54591488-54619784, 54619804-54624255
+  Free inodes: 13647873-13656064
+Group 1667: (Blocks 54624256-54657023) csum 0x227c [INODE_UNINIT, ITABLE_ZEROED]
+  Block bitmap at 54525955 (bg #1664 + 3), csum 0x640a6879
+  Inode bitmap at 54525971 (bg #1664 + 19), csum 0x00000000
+  Inode table at 54527520-54528031 (bg #1664 + 1568)
+

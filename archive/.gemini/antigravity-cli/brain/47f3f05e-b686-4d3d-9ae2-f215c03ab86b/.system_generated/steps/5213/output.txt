@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+/opt:
+total 12
+drwxr-xr-x  3 root root 4096 Sep 22 11:21 .
+drwxr-xr-x 18 root root 4096 Sep 22 18:34 ..
+drwxr-xr-x  3 root root 4096 Sep 22 11:21 google
+
+/srv:
+total 8
+drwxr-xr-x  2 root root 4096 Sep  9 04:23 .
+drwxr-xr-x 18 root root 4096 Sep 22 18:34 ..
+
+Terminal ID: 1fb3a4df-e804-4641-b7cc-29ec227ff77a

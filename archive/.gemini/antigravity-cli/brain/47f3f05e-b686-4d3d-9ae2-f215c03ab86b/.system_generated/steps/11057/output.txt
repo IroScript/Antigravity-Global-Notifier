@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Standalone monitor /chart.min.js status: 200 len: 205399
+

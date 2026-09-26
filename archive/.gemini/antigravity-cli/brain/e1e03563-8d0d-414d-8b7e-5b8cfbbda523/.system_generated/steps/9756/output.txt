@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+root           1  0.0  0.0   1040   704 ?        Ss   11:01   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root           7  0.0  0.0   2892  1868 ?        S    11:01   0:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root           8  0.0  0.2 224732 36456 ?        S    11:01   0:01 Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset
+

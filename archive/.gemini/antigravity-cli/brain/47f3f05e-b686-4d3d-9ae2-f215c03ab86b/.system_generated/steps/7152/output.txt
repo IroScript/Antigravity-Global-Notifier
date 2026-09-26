@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+           0 2026-09-25 15:26:11        -1 test_sample
+           0 2026-09-25 15:26:11        -1 veo_outputs
+

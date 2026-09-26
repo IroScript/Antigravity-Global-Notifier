@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+azureus+    1689  0.0  0.1 1295560 28736 ?       Ssl  Sep22   1:20 /usr/local/bin/cloudflared tunnel --url http://localhost:3100
+azureus+    1701  0.0  0.1 1361168 28584 ?       Sl   Sep22   1:21 cloudflared tunnel --url http://localhost:18789
+azureus+    1703  0.0  0.1 1295304 27492 ?       Sl   Sep22   1:21 cloudflared tunnel --url http://127.0.0.1:6080
+azureus+    1716  0.0  0.1 2099528 31264 ?       S    Sep22   0:20 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1717  0.0  0.2 1361808 41280 ?       Sl   Sep22   2:52 cloudflared tunnel --url http://127.0.0.1:8085
+azureus+    1989  0.0  0.1 1295560 30632 ?       Sl   Sep22   1:20 cloudflared tunnel --url http://localhost:7681
+azureus+   40846  0.0  0.2 1295304 32812 ?       Ssl  Sep23   1:05 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+azureus+   41342  0.0  0.2 1295564 32800 ?       Ssl  Sep23   1:05 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5173 --http-host-header localhost --logfile /home/azureuser/3D-Game-Design-Studio/cloud/cloudflared.log
+azureus+   42086  0.0  0.0 254056 13396 ?        Ss   Sep23   0:11 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+azureus+   42165  0.0  0.2 1295052 34412 ?       Ssl  Sep23   1:06 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5176 --logfile /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/logs/cloudflared.log
+azureus+  190241  0.0  0.1 1360912 27644 ?       Sl   Sep24   0:38 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+azureus+  218241  0.0  0.1 1295304 24180 ?       Sl   Sep24   0:32 cloudflared tunnel --url http://localhost:8000
+azureus+  776153  0.0  0.0   7484  3256 pts/12   Ss+  12:36   0:00 bash -c ps aux | grep -i "8085\|http.server\|cloudflared"
+azureus+  776155  0.0  0.0   7076  2268 pts/12   S+   12:36   0:00 grep -i 8085\|http.server\|cloudflared
+

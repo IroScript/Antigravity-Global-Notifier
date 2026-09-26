@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+total 3.7M
+-rw-r--r-- 1 azureuser azureuser 3.6M Sep 25 10:51 cli-20260922_183427.log
+-rw-r--r-- 1 azureuser azureuser 158K Sep 25 10:51 cli-20260924_163443.log
+

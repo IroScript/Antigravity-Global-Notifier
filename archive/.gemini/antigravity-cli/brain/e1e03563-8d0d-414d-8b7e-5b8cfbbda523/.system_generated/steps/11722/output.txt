@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+INFO:     127.0.0.1:49118 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58828 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:55842 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:54050 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55096 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:43462 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:38986 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56276 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:36908 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     Started server process [10]
+INFO:     Waiting for application startup.
+2026-09-26 12:31:20,290 [INFO] [Worker-worker_4] Starting up worker_4...
+2026-09-26 12:31:20,636 [INFO] [Worker-worker_4] Removed stale lock: SingletonLock
+2026-09-26 12:31:20,636 [INFO] [Worker-worker_4] Removed stale lock: SingletonCookie
+2026-09-26 12:31:20,636 [INFO] [Worker-worker_4] Removed stale lock: SingletonSocket
+2026-09-26 12:31:20,711 [INFO] [Worker-worker_4] Launching persistent context via official CloakBrowser engine...
+2026-09-26 12:31:20,871 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 12:31:20,872 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-26 12:31:20,876 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 12:31:29,200 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 12:31:29,216 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 12:31:29,285 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 12:31:37,808 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+

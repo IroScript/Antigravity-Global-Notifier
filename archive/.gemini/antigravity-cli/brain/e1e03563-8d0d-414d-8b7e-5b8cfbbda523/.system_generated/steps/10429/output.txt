@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+'Youtube Automation/PromptDatabase/recovered_exports':
+total 9508
+drwxrwxr-x 2 azureuser azureuser    4096 Sep 25 11:23 .
+drwxrwxr-x 8 azureuser azureuser    4096 Sep 25 12:43 ..
+-rw-rw-r-- 1 azureuser azureuser   61655 Sep 23 09:24 525531_all_prompt_templates_export.txt
+-rw-rw-r-- 1 azureuser azureuser    6343 Sep 12 15:26 532241_seo_competitors.csv
+-rw-rw-r-- 1 azureuser azureuser  206771 Sep 12 15:26 532245_seo_competitors_backup_before_reset.csv
+-rw-rw-r-- 1 azureuser azureuser    7216 Sep 12 15:26 532246_seo_keywords.csv
+-rw-rw-r-- 1 azureuser azureuser  219141 Sep 12 15:26 532250_seo_keywords_backup_before_reset.csv
+-rw-rw-r-- 1 azureuser azureuser   20682 Sep 12 15:26 532251_seo_master.csv
+-rw-rw-r-- 1 azureuser azureuser  141420 Sep 12 15:26 532255_seo_master_backup_before_reset.csv
+-rw-rw-r-- 1 azureuser azureuser   17259 Sep 12 15:26 532256_seo_master_updated.csv
+-rw-rw-r-- 1 azureuser azureuser 4154489 Sep 12 15:26 532261_unified_master_pipeline.csv
+-rw-rw-r-- 1 azureuser azureuser 3016320 Sep 12 15:26 532262_unified_master_pipeline.csv.bak_20260827
+-rw-rw-r-- 1 azureuser azureuser 1425537 Sep 12 15:26 532266_unified_master_pipeline_updated.csv
+-rw-rw-r-- 1 azureuser azureuser  132772 Sep 25 07:15 533124_pipeline_hierarchy_progress_25_sept_7.15_am.csv
+-rw-rw-r-- 1 azureuser azureuser   30264 Sep 23 16:57 533132_element28_village_10_ideas.txt
+-rw-rw-r-- 1 azureuser azureuser  126605 Sep 25 06:13 533135_pipeline_hierarchy_progress_25_sept_6.13_am.csv
+-rw-rw-r-- 1 azureuser azureuser   70757 Sep 25 06:13 533136_prompting_style_master_25_sept_6.13_am.csv
+-rw-rw-r-- 1 azureuser azureuser   22704 Sep 23 17:04 533222_idea_273_skyline_relocation_span_10_levels.txt
+-rw-rw-r-- 1 azureuser azureuser       0 Sep 25 06:44 533223_master_prompts_from_db_25_sept_6.44_am.csv
+-rw-rw-r-- 1 azureuser azureuser   24651 Sep 23 17:36 533227_idea_273_skyline_relocation_span_chatgpt_live_10_levels.txt
+-rw-rw-r-- 1 azureuser azureuser       0 Sep 25 06:44 533231_seo_master_25_sept_6.44_am.csv
+
+'Youtube Automation/PromptDatabase/scratch':
+total 28
+drwxrwxr-x 2 azureuser azureuser  4096 Sep 25 07:55 .
+drwxrwxr-x 8 azureuser azureuser  4096 Sep 25 12:43 ..
+-rw-rw-r-- 1 azureuser azureuser 19209 Sep 25 14:13 last_chatgpt_response.txt
+

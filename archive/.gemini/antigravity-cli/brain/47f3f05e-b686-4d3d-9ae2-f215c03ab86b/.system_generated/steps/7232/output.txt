@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+

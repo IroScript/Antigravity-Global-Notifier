@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Worker 2 Ready: {'status': 'ok', 'worker_id': 'worker_2', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+

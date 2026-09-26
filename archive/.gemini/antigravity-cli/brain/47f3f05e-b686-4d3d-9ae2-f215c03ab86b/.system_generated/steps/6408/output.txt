@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.webterminal/wa_auth/lid-mapping-8801309680114.json:1:"185178051878989"
+/home/azureuser/.webterminal/wa_auth/lid-mapping-209844132966556_reverse.json:1:"8801878927769"
+/home/azureuser/AGY-MASTER/RECOVERED_LOGS/cli-20260922_183427.log:3899:I0925 07:22:58.187896     166 input_loop.go:422] Auto-flush: sending 12 queued input(s) (combinedLength=956, media=0, oneShotModel="")
+

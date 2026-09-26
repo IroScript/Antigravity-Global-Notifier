@@ -1,0 +1,25 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+    matches = re.findall(rb'/[^\s"\'\]+\.mp4', data)
+  File "/usr/lib/python3.13/re/__init__.py", line 278, in findall
+    return _compile(pattern, flags).findall(string)
+           ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/__init__.py", line 350, in _compile
+    p = _compiler.compile(pattern, flags)
+  File "/usr/lib/python3.13/re/_compiler.py", line 748, in compile
+    p = _parser.parse(p, flags)
+  File "/usr/lib/python3.13/re/_parser.py", line 980, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.13/re/_parser.py", line 459, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+                ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       not nested and not items))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/_parser.py", line 567, in _parse
+    raise source.error("unterminated character set",
+                       source.tell() - here)
+re.PatternError: unterminated character set at position 1
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 2002816 Sep 25 13:27 /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript.jsonl
+-rw-r--r-- 1 azureuser azureuser 2511992 Sep 25 13:27 /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript_full.jsonl
+

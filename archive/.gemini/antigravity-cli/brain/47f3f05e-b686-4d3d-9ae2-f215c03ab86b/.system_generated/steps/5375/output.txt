@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_reason_report.py:38: SyntaxWarning: invalid escape sequence '\`'
+  যেকোনো ব্যাকটিক (\`...\`) থাকলে ব্যাশ পাইথনের
+Max non-URL line length: 50
+
+Terminal ID: c7193279-550b-4003-8afe-dc1be03b7cd0

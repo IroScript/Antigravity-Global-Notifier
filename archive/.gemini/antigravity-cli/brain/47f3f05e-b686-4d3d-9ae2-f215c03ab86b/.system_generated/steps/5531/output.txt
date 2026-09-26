@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Inode 13893633 is at group 1696, block 55574560, offset 0
+
+Transactions of Filesystemblock 55574560 in Journal
+FS-Block	 Journal	Transact	Time in sec	Time of Transaction
+    55574560	   19175	  152927 	1790072652	Tue Sep 22 10:24:12 2026
+    55574560	   20613	  153013 	1790332209	Fri Sep 25 10:30:09 2026
+    55574560	  135866	  148033 	536903680	Tue Jan  6 03:54:40 1987
+    55574560	  163984	  148117 	1790322827	Fri Sep 25 07:53:47 2026
+    55574560	  195298	  148128 	1790322850	Fri Sep 25 07:54:10 2026
+    55574560	  195326	  148132 	1790322851	Fri Sep 25 07:54:11 2026
+    55574560	  195930	  148182 	1790322890	Fri Sep 25 07:54:50 2026
+    55574560	  243357	  151648 	4294967295	Sun Feb  7 06:28:15 2106
+
+Dump Inode 13893633 from journal transaction 148117
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000121
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 18   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790322827:0158914240 -- Fri Sep 25 07:53:47 2026
+ atime: 1790322806:3069005576 -- Fri Sep 25 07:53:26 2026
+ mtime: 1790322827:0158914240 -- Fri Sep 25 07:53:47 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+Level Entries                   Logical                  Physical Length Flags
+ 0/ 0   1/  1           0 -           0    55582752 -    55582752      1 
+ 13893633  d  755 (2)   1000   1000           4096 25-Sep-2026 07:53 .
+        2  d  755 (2)      0      0           4096 24-Sep-2026 12:55 ..
+  1966081  d  775 (2)   1000   1000           4096 25-Sep-2026 07:54 .gradle
+  1966086  d  700 (2)   1000   1000           4096 25-Sep-2026 07:54 .config
+  1966093  d  775 (2)   1000   1000           4096 25-Sep-2026 07:54 Ask-And-Research
+  1966096  d  775 (2)   1000   1000           4096 25-Sep-2026 07:58 AGY-MASTER
+ 13893636  _  644 (1)   1000   1000           1301 22-Sep-2026 12:04 MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+ 13893644  _  644 (2)   1000   1000              0 25-Sep-2026 07:53 .cache
+ 13893653  _  644 (2)   1000   1000              0 25-Sep-2026 07:53 .webterminal
+ 13893638  _  600 (2)   1000   1000           2959 22-Sep-2026 12:42 tmp
+

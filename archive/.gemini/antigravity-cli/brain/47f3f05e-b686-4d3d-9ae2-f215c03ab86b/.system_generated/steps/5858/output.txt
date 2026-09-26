@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+Block 113049: 16 entries:
+   [14027110] (2) .
+   [14027106] (2) ..
+   [14027124] (2) branches
+   [14027125] (2) hooks
+   [14027126] (2) info
+   [14027127] (2) logs
+   [14027128] (2) objects
+   [14027129] (2) refs
+   [14027471] (1) ORIG_HEAD
+   [14027470] (1) HEAD
+   [14027468] (1) COMMIT_EDITMSG
+   [14027469] (1) FETCH_HEAD
+   [14027473] (1) description
+   [14027472] (1) config
+   [14027475] (1) packed-refs
+   [14032719] (1) index
+

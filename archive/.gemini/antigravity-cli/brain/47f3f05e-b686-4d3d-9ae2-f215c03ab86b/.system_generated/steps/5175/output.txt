@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+PID 634537 doesn't exist or is already gone.
+
+Terminal ID: 10c95666-58d9-4524-b0a7-88881b744c44

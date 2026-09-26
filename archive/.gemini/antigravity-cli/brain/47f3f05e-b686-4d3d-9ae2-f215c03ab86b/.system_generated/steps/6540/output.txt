@@ -1,0 +1,87 @@
+
+The command exited with code 0.
+Output:
+total 185688
+drwxrwxr-x 3 azureuser azureuser     4096 Sep 25 12:30 .
+drwxrwxr-x 8 azureuser azureuser     4096 Sep 25 11:23 ..
+-rw-rw-r-- 1 azureuser azureuser    21839 Sep 25 12:19 AGENTS.html
+-rw-rw-r-- 1 azureuser azureuser    58351 Sep 25 12:19 ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.html
+-rw-rw-r-- 1 azureuser azureuser    21839 Sep 25 12:24 GEMINI.html
+-rw-rw-r-- 1 azureuser azureuser    26578 Sep 25 12:19 PERSONAL_ACTIVITY_AND_TASK_MEMORY.html
+-rw-rw-r-- 1 azureuser azureuser    15358 Sep 25 12:19 USER_PERSONAL_AGENT_CONTEXT.html
+lrwxrwxrwx 1 azureuser azureuser       15 Sep 25 12:04 azureuser_root -> /home/azureuser
+drwxrwxr-x 2 azureuser azureuser     4096 Sep 25 08:04 csv_tables
+-rw-rw-r-- 1 azureuser azureuser    12700 Sep 25 12:19 index.html
+-rw-rw-r-- 1 azureuser azureuser   280616 Sep 25 10:00 master_dashboard_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   280616 Sep 25 10:30 master_dashboard_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   280616 Sep 25 11:02 master_dashboard_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   283437 Sep 25 11:30 master_dashboard_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   283440 Sep 25 12:01 master_dashboard_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser   283440 Sep 25 12:30 master_dashboard_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser   275935 Sep 25 08:05 master_dashboard_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   276869 Sep 25 08:30 master_dashboard_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   278713 Sep 25 09:00 master_dashboard_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   279669 Sep 25 09:30 master_dashboard_25_sept_9.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12444720 Sep 25 10:00 master_prompts_from_db_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12444720 Sep 25 10:30 master_prompts_from_db_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12444720 Sep 25 11:02 master_prompts_from_db_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12735975 Sep 25 11:30 master_prompts_from_db_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12790607 Sep 25 12:01 master_prompts_from_db_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser 12790607 Sep 25 12:30 master_prompts_from_db_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser 11649912 Sep 25 08:05 master_prompts_from_db_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser 11935870 Sep 25 08:30 master_prompts_from_db_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12196733 Sep 25 09:00 master_prompts_from_db_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser 12380702 Sep 25 09:30 master_prompts_from_db_25_sept_9.30_am.csv
+lrwxrwxrwx 1 azureuser azureuser      120 Sep 25 11:37 output_packaged -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged'
+-rw-rw-r-- 1 azureuser azureuser     2309 Sep 25 10:00 pipeline_hierarchy_progress_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2309 Sep 25 10:30 pipeline_hierarchy_progress_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2309 Sep 25 11:02 pipeline_hierarchy_progress_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2314 Sep 25 11:30 pipeline_hierarchy_progress_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2314 Sep 25 12:01 pipeline_hierarchy_progress_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser     2314 Sep 25 12:30 pipeline_hierarchy_progress_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser     2294 Sep 25 08:05 pipeline_hierarchy_progress_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2298 Sep 25 08:30 pipeline_hierarchy_progress_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2303 Sep 25 09:00 pipeline_hierarchy_progress_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser     2307 Sep 25 09:30 pipeline_hierarchy_progress_25_sept_9.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 10:00 prompting_style_master_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 10:30 prompting_style_master_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 11:02 prompting_style_master_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 11:30 prompting_style_master_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 12:01 prompting_style_master_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 12:30 prompting_style_master_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 08:05 prompting_style_master_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 08:30 prompting_style_master_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 09:00 prompting_style_master_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser    70754 Sep 25 09:30 prompting_style_master_25_sept_9.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser     3443 Sep 25 12:19 reader.html
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 10:00 seo_competitors_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 10:30 seo_competitors_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 11:02 seo_competitors_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 11:30 seo_competitors_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 12:01 seo_competitors_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 12:30 seo_competitors_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 08:05 seo_competitors_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 08:30 seo_competitors_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 09:00 seo_competitors_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  2458571 Sep 25 09:30 seo_competitors_25_sept_9.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 10:00 seo_keywords_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 10:30 seo_keywords_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 11:02 seo_keywords_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 11:30 seo_keywords_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 12:01 seo_keywords_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 12:30 seo_keywords_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 08:05 seo_keywords_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 08:30 seo_keywords_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 09:00 seo_keywords_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser  3162577 Sep 25 09:30 seo_keywords_25_sept_9.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 10:00 seo_master_25_sept_10.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 10:30 seo_master_25_sept_10.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 11:02 seo_master_25_sept_11.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 11:30 seo_master_25_sept_11.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 12:01 seo_master_25_sept_12.00_pm.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 12:30 seo_master_25_sept_12.30_pm.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 08:05 seo_master_25_sept_8.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 08:30 seo_master_25_sept_8.30_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 09:00 seo_master_25_sept_9.00_am.csv
+-rw-rw-r-- 1 azureuser azureuser   620909 Sep 25 09:30 seo_master_25_sept_9.30_am.csv
+

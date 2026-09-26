@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+Ideas: 847
+Prompts: 10391
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+    cur.execute('SELECT COUNT(*) FROM prompts WHERE prompt_text LIKE "%Audio: no human voice, only cinematic BGM.%"]')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: unrecognized token: "]"
+

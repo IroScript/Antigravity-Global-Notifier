@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+.h)(r.Terminal,{id:"terminal-container",wsUrl:a,tokenUrl:h,clientOptions:l,termOptions:c,flowCo
+}this.socket=new WebSocket(this.options.wsUrl,["tty"]);const{socket:e,register:t}=this;e.binary
+

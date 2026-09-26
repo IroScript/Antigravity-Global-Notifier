@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+total 0
+dr-x------ 2 azureuser azureuser  9 Sep 25 20:40 .
+dr-xr-xr-x 9 azureuser azureuser  0 Sep 25 20:39 ..
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 0 -> /dev/pts/12
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 1 -> /dev/pts/12
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 18 -> 'socket:[7065689]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 19 -> 'socket:[7065690]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 2 -> /dev/pts/12
+lr-x------ 1 azureuser azureuser 64 Sep 25 20:40 3 -> /proc/1445
+l-wx------ 1 azureuser azureuser 64 Sep 25 20:40 4 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/logs/cluster_orchestrator.log'
+lr-x------ 1 azureuser azureuser 64 Sep 25 20:40 6 -> /proc/1445/smaps
+lrwx------ 1 azureuser azureuser 64 Sep 25 20:40 8 -> 'anon_inode:[eventpoll]'
+

@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+=== 10. AZURE CREDENTIAL & ARM LOCK AUDIT ===
+Azure Environment Variables: NONE (Clean)
+~/.azure directory exists?: False
+IMDS Managed Identity Status: BLOCKED / NOT ASSIGNED (HTTP 400 {"error":"invalid_request","error_description":"Identity not found"} )
+/var/lib/waagent exists?: True
+

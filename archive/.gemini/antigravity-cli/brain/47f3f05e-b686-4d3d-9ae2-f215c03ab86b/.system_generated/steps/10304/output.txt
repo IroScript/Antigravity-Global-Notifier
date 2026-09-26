@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+total 16851344
+drwxrwxr-x 2 azureuser azureuser       4096 Sep 25 19:59 .
+drwxrwxr-x 3 azureuser azureuser       4096 Sep 25 19:36 ..
+-rw-rw-r-- 1 azureuser azureuser        461 Sep 25 19:59 PARTS_MD5_CHECKSUM.txt
+-rw-rw-r-- 1 azureuser azureuser        868 Sep 25 19:37 RESTORE_INSTRUCTIONS.txt
+-rw-rw-r-- 1 azureuser azureuser 3221225472 Sep 25 19:36 gcp_home_backup_part_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3221225472 Sep 25 19:36 gcp_home_backup_part_01.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3221225472 Sep 25 19:36 gcp_home_backup_part_02.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3221225472 Sep 25 19:37 gcp_home_backup_part_03.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3221225472 Sep 25 19:37 gcp_home_backup_part_04.tar.gz
+-rw-rw-r-- 1 azureuser azureuser  629145600 Sep 25 19:58 gcp_home_backup_part_05_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser  520455964 Sep 25 19:58 gcp_home_backup_part_05_01.tar.gz
+

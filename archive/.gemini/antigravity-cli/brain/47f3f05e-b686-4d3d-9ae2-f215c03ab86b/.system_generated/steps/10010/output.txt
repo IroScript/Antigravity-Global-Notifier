@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+5921523488b5a82d7b12db50d029f1c2  /home/azureuser/IrakIroan/full_filesystem/gcp_home_backup_part_00.tar.gz
+

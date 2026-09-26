@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 44
+drwxr-xr-x 4 azureuser azureuser  4096 Sep 25 11:01 .
+drwxrwxr-x 4 azureuser azureuser  4096 Sep 25 07:55 ..
+drwxr-xr-x 7 azureuser azureuser  4096 Sep 25 11:00 cookies
+drwxrwxr-x 7 azureuser azureuser  4096 Sep 24 11:30 profiles
+-rw-r--r-- 1 azureuser azureuser 24799 Sep 25 11:01 worker_server.py
+

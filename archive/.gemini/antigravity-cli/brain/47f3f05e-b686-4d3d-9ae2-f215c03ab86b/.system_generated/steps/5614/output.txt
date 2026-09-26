@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+=== Cargo.toml match 0 at offset 202420256 ===
+            iR (                     5     ^P5 Nx+P   @ ;c j                                                                                                            b       .           ..  c       Cargo.toml  d       .agy_evidence   e       .cargo  f       .gitg       .github h       ChatHistory i       Suggestions j       archive k       assets  l       backend m       background  n       cli 
+=== Cargo.toml match 1 at offset 218648608 ===
+            iR (                     5     ^P5 Nx+P   @ ;c j                                                                                                            b       .           ..  c       Cargo.toml  d       .agy_evidence   e       .cargo  f       .gitg       .github h       ChatHistory i       Suggestions j       archive k       assets  l       backend m       background  n       cli 
+=== Cargo.toml match 2 at offset 240361504 ===
+            iR (                     5     ^P5 Nx+P   @ ;c j                                                                                                            b       .           ..  c       Cargo.toml  d       .agy_evidence   e       .cargo  f       .gitg       .github h       ChatHistory i       Suggestions j       archive k       assets  l       backend m       background  n       cli 
+=== Cargo.toml match 3 at offset 614781128 ===
+)+      .           ..                  ,+  D   .cargo_vcs_info.json                                        3+  (   .gitignore                      5+      CONTRIBUTING.md 6+      Cargo.lock  7+  @   Cargo.toml                                              :+      HALL_OF_CHAMPIONS.md;+  4   LICENSE                                     >+      clippy.toml ?+      deny.toml   @+  0   docs            
+=== Cargo.toml match 4 at offset 620404768 ===
+                                                                                                                                                                        b       .           ..  c       Cargo.toml  d   (   .agy_evidence                   f       .git                h       ChatHistory i       Suggestions j       archive k       assets  l       backend m       background              
+=== Cargo.toml match 5 at offset 624476192 ===
+            1 o                      \     < *$ L-L |   Pc j *$                                                                                                         b       .           ..  c       Cargo.toml  d   (   .agy_evidence                   f       .git                h       ChatHistory i   $   Suggestions                 k       assets  l       backend m       background              
+

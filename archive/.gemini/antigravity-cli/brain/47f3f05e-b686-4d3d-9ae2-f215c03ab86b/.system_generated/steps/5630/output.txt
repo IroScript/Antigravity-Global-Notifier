@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+=== EXTENTS for 795463 ===
+EXTENTS:
+(0):4819789
+=== EXTENTS for 14286849 ===
+EXTENTS:
+(0):57155616
+=== EXTENTS for 14024706 ===
+EXTENTS:
+(0):56107041
+=== EXTENTS for 14024707 ===
+EXTENTS:
+(0):56107042
+

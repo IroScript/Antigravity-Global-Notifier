@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser  3048 Sep 22 12:51 '/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md'
+-rw-rw-r-- 1 azureuser azureuser 10728 Sep 22 10:54 '/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md'
+

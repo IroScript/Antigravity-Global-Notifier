@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: gh: command not found
+fatal: unable to read config file '/home/azureuser/.gitconfig': No such file or directory
+total 12
+drwx------  2 azureuser azureuser 4096 Sep 25 09:44 .
+drwxr-xr-x 22 azureuser azureuser 4096 Sep 25 12:24 ..
+-rw-------  1 azureuser azureuser  553 Sep 25 09:44 authorized_keys
+

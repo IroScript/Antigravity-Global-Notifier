@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Inspecting 58 regions...
+Match for Rust_Task_With_Time_Keeping_And_Live_Note in region 0xe9271400000-0xe927d000000!
+Match for Rust_Task_With_Time_Keeping_And_Live_Note in region 0x7f0688000000-0x7f0688030000!
+Match for Rust_Task_With_Time_Keeping_And_Live_Note in region 0x7f0694000000-0x7f0694054000!
+

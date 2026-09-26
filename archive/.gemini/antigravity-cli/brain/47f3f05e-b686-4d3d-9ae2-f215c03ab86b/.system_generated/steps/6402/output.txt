@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+tcp   LISTEN 0      5              0.0.0.0:8080       0.0.0.0:*    users:(("python3",pid=1190,fd=3))                                                     
+tcp   LISTEN 0      5              0.0.0.0:8085       0.0.0.0:*    users:(("python3",pid=1716,fd=3))                                                     
+tcp   LISTEN 0      128            0.0.0.0:7681       0.0.0.0:*    users:(("ttyd",pid=1558,fd=12))                                                       
+tcp   LISTEN 0      100            0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=1209,fd=3))                                                  
+tcp   LISTEN 0      511                  *:3100             *:*    users:(("next-server (v1",pid=1829,fd=21))                                            
+

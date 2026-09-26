@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+HTTP status: 200
+Response: {"drives": [{"letter": "C", "label": "Local Disk (C: OS Root
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Health: {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': True, 'user': 'Unknown', 'action_counter': 1, 'last_session_refresh': 0.0}
+

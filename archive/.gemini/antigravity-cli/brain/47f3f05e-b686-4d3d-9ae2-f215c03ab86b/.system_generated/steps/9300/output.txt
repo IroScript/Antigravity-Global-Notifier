@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+'/home/azureuser/AGY-MASTER/DRAFTS/01-sudoers-restricted.draft' -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/01-sudoers-restricted.draft'
+'/home/azureuser/AGY-MASTER/DRAFTS/02-parent-directory-lock.md' -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/02-parent-directory-lock.md'
+'/home/azureuser/AGY-MASTER/DRAFTS/03-immutable-files.sh' -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/03-immutable-files.sh'
+'/home/azureuser/AGY-MASTER/DRAFTS/04-external-backup-setup.md' -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/04-external-backup-setup.md'
+'/home/azureuser/AGY-MASTER/DRAFTS/05-verification-tests.sh' -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/05-verification-tests.sh'
+DRAFTS/
+DRAFTS/03-immutable-files.sh
+DRAFTS/04-external-backup-setup.md
+DRAFTS/01-sudoers-restricted.draft
+DRAFTS/02-parent-directory-lock.md
+DRAFTS/05-verification-tests.sh
+-rw-rw-r-- 1 azureuser azureuser 12K Sep 26 06:33 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DELETE_PROOF_HARDENING_DRAFTS.tar.gz'
+-rw-rw-r-- 1 azureuser azureuser 15K Sep 26 06:33 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DELETE_PROOF_HARDENING_DRAFTS.zip'
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+lrwxrwxrwx 1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 0 Sep 25 15:30 /proc/1204/exe -> /home/mdkamruzzamanirak_gmail_com/Article-Publishing-Platform/tools/cockroach
+/home/mdkamruzzamanirak_gmail_com/Article-Publishing-Platform/tools/cockroach
+

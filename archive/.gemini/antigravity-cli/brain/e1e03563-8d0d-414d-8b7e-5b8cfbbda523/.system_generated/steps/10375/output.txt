@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+Line: 3602
+GENERIC 8640
+Line: 3608
+GENERIC 8646
+Line: 3611
+PLANNER_RESPONSE 8649
+  Tool: run_command
+    CommandLine: ps aux | grep run_cluster_pipeline | grep -v grep
+    Cwd: /home/azureuser
+    WaitMsBeforeAsync: 5000
+    toolAction: Verifying cluster pipeline stopped
+    toolSummary: Verify cluster pipeline stopped
+Line: 3653
+PLANNER_RESPONSE 8691
+Line: 3686
+PLANNER_RESPONSE 8724
+Line: 3696
+CHECKPOINT 8734
+Line: 3727
+GENERIC 8765
+

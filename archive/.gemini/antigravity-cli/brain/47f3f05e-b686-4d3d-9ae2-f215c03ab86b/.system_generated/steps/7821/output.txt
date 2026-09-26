@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+22G	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome
+21G	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/DeferredBrowserMetrics
+477M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/Profile 5
+313M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/Profile_Irak_Master
+196M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/Profile 5/Cache
+194M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/SODALanguagePacks/en-US
+194M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/SODALanguagePacks
+181M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/Profile_Irak_Master/Extensions
+116M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/SODA/1.2.5
+116M	/home/mdkamruzzamanirak_gmail_com/.config/google-chrome/SODA
+

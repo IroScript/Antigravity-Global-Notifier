@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+       88 database_backups/gcp_redis_6379_dump.rdb
+   274467 database_backups/gcp_postgres_all_databases.sql
+        0 database_backups/gcp_mariadb_all_databases.sql
+  9226115 database_backups/gcp_frappe_mariadb.sql
+    11984 database_backups/gcp_cockroach_schema.sql
+      237 database_backups/gcp_cockroach_migrations_data.txt
+

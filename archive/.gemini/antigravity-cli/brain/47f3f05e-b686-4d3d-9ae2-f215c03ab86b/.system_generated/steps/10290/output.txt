@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+585870:return(0,s.h)(r.Terminal,{id:"terminal-container",wsUrl:a,tokenUrl:h,clientOptions:l,termOptions:c,flowCon
+

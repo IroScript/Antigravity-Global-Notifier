@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Prompts by level: [(1, 766), (2, 766), (3, 766), (4, 766), (5, 766), (6, 766), (7, 766), (8, 766), (9, 766), (10, 766)]
+Latest prompt: ('2026-09-25 11:34:12.760544', 7700)
+
+SEO columns: ['id', 'uuid', 'idea_id', 'element_id', 'title', 'seo_description', 'tags', 'category', 'default_language', 'video_prompt_used', 'image_prompt_used', 'video_file_path', 'package_folder_path', 'status', 'created_at', 'updated_at', 'pinned_comment', 'youtube_video_id', 'youtube_url', 'tracking_token', 'live_title', 'live_description', 'upload_status', 'published_at']
+Latest SEO: ('2026-09-25 07:51:03.497211', 557)
+SEO status: [('ready', 295), ('ready_for_upload', 254), ('uploaded', 6)]
+

@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+user.name=IroScript
+

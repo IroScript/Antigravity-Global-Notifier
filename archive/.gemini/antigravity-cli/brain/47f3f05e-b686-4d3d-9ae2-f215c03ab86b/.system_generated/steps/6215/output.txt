@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+drwxr-xr-x 30 azureuser azureuser    12288 Sep 25 11:05 .
+drwxr-xr-x 17 azureuser azureuser     4096 Sep 25 11:08 ..
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:05 .cargo
+drwxr-xr-x  4 azureuser azureuser     4096 Sep 25 11:04 .config
+drwxr-xr-x  4 azureuser azureuser     4096 Sep 25 11:04 .gemini
+drwxr-xr-x  3 azureuser azureuser     4096 Sep 25 11:04 .local
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 .npm
+drwxr-xr-x  4 azureuser azureuser     4096 Sep 25 11:04 .npm-global
+drwxr-xr-x  3 azureuser azureuser     4096 Sep 25 11:04 .openclaw
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 .webterminal
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000338.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000359.ldb
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000390.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000556.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000563.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000566.ldb
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:05 000582.ldb
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000585.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000586.ldb
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 000606.log
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:05 000607.ldb
+drwxr-xr-x  7 azureuser azureuser     4096 Sep 25 11:05 02
+drwxr-xr-x  3 azureuser azureuser     4096 Sep 25 11:04 944
+drwxr-xr-x  7 azureuser azureuser     4096 Sep 25 11:05 Default
+drwxr-xr-x  2 azureuser azureuser    20480 Sep 25 11:05 RECOVERED_BY_NAME
+drwxr-xr-x  3 azureuser azureuser     4096 Sep 25 11:04 flutter_test_listener.DTIDZR
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 flutter_test_listener.OKPZTB
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:05 index-dir
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 src
+drwxr-xr-x  2 azureuser azureuser     4096 Sep 25 11:04 undelivered
+

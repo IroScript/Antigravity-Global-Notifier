@@ -1,0 +1,297 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1051,6 +1051,291 @@
+       padding: 4px;
+     }
+ 
++    /* Windows 11 Fluent Properties Modal */
++    .win11-properties-window {
++      width: 430px;
++      max-width: 95vw;
++      background: #202020;
++      border: 1px solid rgba(255, 255, 255, 0.16);
++      border-radius: 12px;
++      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
++      display: flex;
++      flex-direction: column;
++      overflow: hidden;
++      font-family: var(--font-family);
++      animation: win11-modal-appear 0.18s cubic-bezier(0.16, 1, 0.3, 1);
++    }
++    @keyframes win11-modal-appear {
++      from { transform: scale(0.94); opacity: 0; }
++      to { transform: scale(1); opacity: 1; }
++    }
++    .prop-header {
++      height: 40px;
++      background: #1c1c1e;
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      padding: 0 12px;
++      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
++    }
++    .prop-title {
++      display: flex;
++      align-items: center;
++      gap: 8px;
++      font-size: 12px;
++      font-weight: 500;
++      color: #fff;
++      white-space: nowrap;
++      overflow: hidden;
++      text-overflow: ellipsis;
++    }
++    .prop-tab-bar {
++      display: flex;
++      padding: 6px 14px 0 14px;
++      background: #252528;
++      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
++    }
++    .prop-tab {
++      padding: 6px 14px;
++      font-size: 12px;
++      font-weight: 600;
++      color: #fff;
++      border-bottom: 2.5px solid var(--accent-blue);
++      cursor: default;
++    }
++    .prop-content {
++      padding: 16px;
++      display: flex;
++      flex-direction: column;
++      gap: 12px;
++      background: #18181b;
++      overflow-y: auto;
++      max-height: calc(85vh - 110px);
++    }
++    .prop-hero {
++      display: flex;
++      align-items: center;
++      gap: 14px;
++    }
++    .prop-hero-icon {
++      width: 48px;
++      height: 48px;
++      display: flex;
++      align-items: center;
++      justify-content: center;
++      flex-shrink: 0;
++      background: rgba(255, 255, 255, 0.04);
++      border-radius: 8px;
++      border: 1px solid rgba(255, 255, 255, 0.08);
++    }
++    .prop-hero-name-box {
++      flex: 1;
++      overflow: hidden;
++    }
++    .prop-name-input {
++      width: 100%;
++      background: #27272a;
++      border: 1px solid rgba(255, 255, 255, 0.16);
++      border-radius: 4px;
++      padding: 6px 10px;
++      color: #fff;
++      font-size: 13px;
++      font-weight: 600;
++      outline: none;
++      box-sizing: border-box;
++    }
++    .prop-divider {
++      height: 1px;
++      background: rgba(255, 255, 255, 0.08);
++      margin: 2px 0;
++    }
++    .prop-grid {
++      display: grid;
++      grid-template-columns: 85px 1fr;
++      row-gap: 9px;
++      column-gap: 12px;
++      font-size: 12px;
++    }
++    .prop-label {
++      color: #a1a1aa;
++      text-align: right;
++      user-select: none;
++      line-height: 1.4;
++      font-weight: 500;
++    }
++    .prop-value {
++      color: #f4f4f5;
++      word-break: break-all;
++      line-height: 1.4;
++    }
++    .highlight-size {
++      color: #60cdff;
++      font-weight: 600;
++    }
++    .prop-bytes-sub {
++      font-size: 11px;
++      color: #a1a1aa;
++      font-weight: normal;
++      display: block;
++      margin-top: 1px;
++    }
++    .highlight-contains {
++      color: #a6e3a1;
++      font-weight: 600;
++    }
++    .prop-location-val {
++      color: #d4d4d8;
++      font-family: monospace;
++      font-size: 11px;
++    }
++    .prop-path-row {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      background: #202024;
++      border: 1px solid rgba(255, 255, 255, 0.08);
++      border-radius: 6px;
++      padding: 6px 10px;
++      gap: 8px;
++    }
++    .prop-path-text {
++      font-size: 11px;
++      font-family: monospace;
++      color: #a1a1aa;
++      overflow: hidden;
++      text-overflow: ellipsis;
++      white-space: nowrap;
++      flex: 1;
++    }
++    .btn-copy-path {
++      background: #2e2e34;
++      border: 1px solid rgba(255, 255, 255, 0.15);
++      border-radius: 4px;
++      color: #fff;
++      font-size: 11px;
++      padding: 4px 9px;
++      cursor: pointer;
++      flex-shrink: 0;
++      transition: background 0.15s ease;
++    }
++    .btn-copy-path:hover {
++      background: var(--accent-fill);
++    }
++    .prop-footer {
++      display: flex;
++      justify-content: flex-end;
++      gap: 10px;
++      padding: 10px 16px;
++      background: #202024;
++      border-top: 1px solid rgba(255, 255, 255, 0.08);
++    }
++    .prop-footer-btn {
++      padding: 6px 20px;
++      font-size: 12px;
++      border-radius: 4px;
++      cursor: pointer;
++      border: 1px solid rgba(255, 255, 255, 0.15);
++      font-weight: 500;
++      transition: all 0.15s ease;
++    }
++    .prop-footer-btn.primary {
++      background: var(--accent-fill);
++      color: #fff;
++      border-color: var(--accent-blue);
++    }
++    .prop-footer-btn.primary:hover {
++      background: #0060aa;
++    }
++    .prop-footer-btn.secondary {
++      background: #2a2a2e;
++      color: #ddd;
++    }
++    .prop-footer-btn.secondary:hover {
++      background: #36363c;
++    }
++
++    /* Info Buttons on Table Row and Grid Item */
++    .row-info-btn {
++      background: rgba(255, 255, 255, 0.06);
++      border: 1px solid rgba(255, 255, 255, 0.14);
++      border-radius: 4px;
++      color: var(--accent-blue);
++      width: 26px;
++      height: 26px;
++      display: inline-flex;
++      align-items: center;
++      justify-content: center;
++      cursor: pointer;
++      transition: all 0.15s ease;
++    }
++    .row-info-btn:hover {
++      background: var(--accent-fill);
++      color: #fff;
++      border-color: var(--accent-blue);
++    }
++    .grid-info-btn {
++      position: absolute;
++      top: 6px;
++      right: 6px;
++      background: rgba(24, 24, 27, 0.85);
++      border: 1px solid rgba(255, 255, 255, 0.2);
++      border-radius: 4px;
++      color: var(--accent-blue);
++      width: 24px;
++      height: 24px;
++      display: inline-flex;
++      align-items: center;
++      justify-content: center;
++      cursor: pointer;
++      opacity: 0.7;
++      z-index: 5;
++      transition: all 0.15s ease;
++    }
++    .grid-item:hover .grid-info-btn {
++      opacity: 1;
++    }
++    .grid-info-btn:hover {
++      background: var(--accent-fill);
++      color: #fff;
++    }
++
++    /* Windows 11 Context Menu */
++    .custom-context-menu {
++      position: fixed;
++      background: #26262a;
++      border: 1px solid rgba(255, 255, 255, 0.18);
++      border-radius: 8px;
++      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85);
++      padding: 6px 0;
++      min-width: 185px;
++      z-index: 2500;
++      display: none;
++      font-size: 12px;
++      backdrop-filter: blur(14px);
++      user-select: none;
++    }
++    .custom-context-menu.active {
++      display: block;
++    }
++    .ctx-item {
++      display: flex;
++      align-items: center;
++      gap: 10px;
++      padding: 8px 14px;
++      color: #eee;
++      cursor: pointer;
++      transition: background 0.12s ease;
++    }
++    .ctx-item:hover {
++      background: var(--accent-fill);
++      color: #fff;
++    }
++    .ctx-divider {
++      height: 1px;
++      background: rgba(255, 255, 255, 0.1);
++      margin: 4px 0;
++    }
++
+     @media (max-width: 768px) {
+       .sidebar {
+         position: absolute;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

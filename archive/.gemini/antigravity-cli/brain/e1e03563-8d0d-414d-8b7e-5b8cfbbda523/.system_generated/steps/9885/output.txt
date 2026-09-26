@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxr-xr-x 4 azureuser azureuser 4096 Sep 25 08:00 .
+drwxr-xr-x 3 azureuser azureuser 4096 Sep 25 08:00 ..
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 13:00 transcript
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 12:30 transcript_full
+

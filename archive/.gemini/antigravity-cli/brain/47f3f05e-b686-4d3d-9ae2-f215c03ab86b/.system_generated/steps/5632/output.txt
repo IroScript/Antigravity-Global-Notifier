@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+Total journal blocks: 262144
+Target filesystem blocks: {57155616, 56107041, 56107042, 56107040, 55582752, 4819789}
+Traceback (most recent call last):
+  File "<string>", line 20, in <module>
+    magic, blocktype, seq = struct.unpack('>IIX', block[:12]) if len(block) >= 12 else (0,0,0)
+                            ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+struct.error: bad char in struct format
+

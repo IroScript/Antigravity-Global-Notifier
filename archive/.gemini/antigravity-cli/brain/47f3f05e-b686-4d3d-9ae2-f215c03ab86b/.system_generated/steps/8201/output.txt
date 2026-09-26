@@ -1,0 +1,24 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8139
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8139.log
+Log output:
+<truncated 168 lines>
+ring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 97% /16.071Gi, 39.033Mi/s, 9sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 38.907 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       8m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 38.907Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 20.417 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 20.417Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 10.708 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 10.708Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 5.616 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 5.616Mi/s, 0s
+Last progress: 2s ago

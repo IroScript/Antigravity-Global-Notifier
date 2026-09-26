@@ -1,0 +1,53 @@
+
+The command exited with code 0.
+Output:
+54G	/home/azureuser/IrakIroan
+33G	/home/azureuser/GCP_FULL_BACKUP
+5.5G	/home/azureuser/RESTORE_VERIFY_TEMP
+3.2G	/home/azureuser/FULL_HOME_BACKUP
+2.5G	/home/azureuser/.openclaw
+1.4G	/home/azureuser/RESTORED_VIDEOS
+819M	/home/azureuser/RESTORED_PROJECTS
+708M	/home/azureuser/.npm-global
+419M	/home/azureuser/.local
+301M	/home/azureuser/.npm
+152M	/home/azureuser/AGY-MASTER
+142M	/home/azureuser/tmp
+116M	/home/azureuser/.webterminal
+89M	/home/azureuser/.gemini
+49M	/home/azureuser/DATABASE_BACKUPS_VAULT
+8.5M	/home/azureuser/.config
+988K	/home/azureuser/Frappe-erp-Alco
+636K	/home/azureuser/.cache
+552K	/home/azureuser/reconciliation_result.txt
+504K	/home/azureuser/mismatched_files_manifest.json
+480K	/home/azureuser/gdrive_sync
+416K	/home/azureuser/telegram-bot
+56K	/home/azureuser/GDRIVE_RESTORE_TEST
+40K	/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+32K	/home/azureuser/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+28K	/home/azureuser/Reporting-Agent
+28K	/home/azureuser/3D-Game-Design-Studio
+24K	/home/azureuser/.ssh
+20K	/home/azureuser/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+20K	/home/azureuser/GEMINI.md
+20K	/home/azureuser/.gradle
+16K	/home/azureuser/PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+12K	/home/azureuser/last_user_prompt.txt
+12K	/home/azureuser/kids_tube_with_folder_seection
+12K	/home/azureuser/benchmark_50_delete_tests.py
+12K	/home/azureuser/USER_PERSONAL_AGENT_CONTEXT.md
+12K	/home/azureuser/GLOBAL-ARCHIVE
+12K	/home/azureuser/Ask-And-Research
+8.0K	/home/azureuser/test_gcs_iam_boundary.py
+8.0K	/home/azureuser/gcs_resumable_uploader.py
+8.0K	/home/azureuser/full_forensic_reconciliation.py
+8.0K	/home/azureuser/__pycache__
+4.0K	/home/azureuser/start_oauth_listener.py
+4.0K	/home/azureuser/google_auth_url.txt
+4.0K	/home/azureuser/gcs_vault_uploader.py
+4.0K	/home/azureuser/csv_downloads_url.txt
+4.0K	/home/azureuser/azure_restore_point_commands.txt
+0	/home/azureuser/irakiroan
+0	/home/azureuser/.sudo_as_admin_successful
+

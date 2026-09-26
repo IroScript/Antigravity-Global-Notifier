@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+<truncated 41 lines>
+Scanning candidates... [                                                       ]Scanning candidates... [==                                                     ]Scanning candidates... [=====                                                  ]Scanning candidates... [========                                               ]Scanning candidates... [===========                                            ]Scanning candidates... [==============                                         ]Scanning candidates... [=================                                      ]Scanning candidates... [====================                                   ]Scanning candidates... [=======================                                ]Scanning candidates... [==========================                             ]Scanning candidates... [============================                           ]Scanning candidates... [===============================                        ]Scanning candidates... [==================================                     ]Scanning candidates... [=====================================                  ]Scanning candidates... [========================================               ]Scanning candidates... [===========================================            ]Scanning candidates... [==============================================         ]Scanning candidates... [=================================================      ]Scanning candidates... [====================================================   ]Scanning candidates... [=======================================================]Scanning candidates...                                                          
+Scanning linux images... [                                                     ]Scanning linux images... [==========================                           ]Scanning linux images... [=====================================================]Scanning linux images...                                                        
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ azureuser @ user manager: agy[1445],
+  bash[1263,1310,1323,1351,1359,1368,1376,1384,1393,1499,215828], sh[41327]
+ azureuser @ user service: chrome-novnc.service[1209],
+  frappe-scheduler.service[1197], frappe-socketio.service[1198],
+  frappe-web.service[1199,307848], payload-article-publishing.service[1822]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+

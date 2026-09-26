@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+/dev/nvme0n1p1: UUID="c23076bf-6267-4ca9-92a0-ee9cde74e06e" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="2515f4aa-093a-4cef-b35c-fb44dfffe557"
+/dev/nvme0n1p15: SEC_TYPE="msdos" UUID="F12B-E449" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="fc1c26c2-ad6e-4c2b-956d-e2f00ccc676f"
+/dev/nvme1n1: UUID="a7e46975-f813-443b-ac77-43ed858d9eec" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/nvme0n1p14: PARTUUID="c1c93bcf-a9ff-45c0-9241-1ec61086f0d4"
+NAME          SIZE TYPE FSTYPE UUID                                 MOUNTPOINTS
+sr0          1024M rom                                              
+nvme0n1        30G disk                                             
+├─nvme0n1p1  29.9G part ext4   c23076bf-6267-4ca9-92a0-ee9cde74e06e /
+├─nvme0n1p14    3M part                                             
+└─nvme0n1p15  124M part vfat   F12B-E449                            /boot/efi
+nvme1n1       220G disk ext4   a7e46975-f813-443b-ac77-43ed858d9eec /home
+

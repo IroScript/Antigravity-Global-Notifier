@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+46 ইরাক ভাইয়া, Google VM-এর হোম ডিরেক্টরিতে থাকা
+41 আপনার মূল ও অক্ষত প্রজেক্ট ফাইল তালিকা: 🎯
+32 «──────────────────────────────»
+30 ★ *১. মূল প্রজেক্ট ডিরেক্টরি:*
+41 * `Frappe-erp-Alco/` (ফ্র্যাপে ও ERPNext)
+46 * `Rust_Task_With_Time_Keeping_And_Live_Note/`
+32 * `Article-Publishing-Platform/`
+32 * `telegram-bot/` (টেলিগ্রাম বট)
+35 * `kids_tube_with_folder_seection/`
+40 * `openrecall_vault/` (ডিজিটাল হিস্ট্রি)
+32 «──────────────────────────────»
+31 ★ *২. মূল ডাটাবেজ ব্যাকআপসমূহ:*
+45 * `frappe_db_backup.sql` (৯.২ MB SQL ডাম্প) ★
+43 * `payload_articles.sql` (২৬৮ KB SQL ডাম্প)
+32 «──────────────────────────────»
+37 ★ *৩. এআই এজেন্ট মেমরি ও নির্দেশিকা:*
+47 * `ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md`
+37 * `GEMINI.md` (৬২ KB মূল রুলস ফাইল) ★
+34 * `USER_PERSONAL_AGENT_CONTEXT.md`
+40 * `PERSONAL_ACTIVITY_AND_TASK_MEMORY.md`
+39 * `.openclaw/workspace/` (SOUL, DREAMS)
+32 «──────────────────────────────»
+32 ★ *৪. মাইগ্রেশন রিপোর্ট ও টুলস:*
+46 * `AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md`
+44 * `GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md`
+51 * `flutter/`, `android-sdk/`, `.cargo/`, `.rustup/`
+

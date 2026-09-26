@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+=== STRUCTURAL RESTORABILITY AUDIT ===
+
+1. SQLite Database: /home/azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db
+   Integrity Check: ok
+   Tables (53): ['ideas', 'tags', 'content_history', 'collections', 'models', 'settings', 'idea_versions', 'idea_features', 'idea_embeddings', 'duplicate_checks', 'prompts', 'idea_tags', 'collection_ideas', 'prompt_versions', 'generation_jobs', 'generated_videos', 'schedules', 'idea_assets', 'publishing', 'categories', 'elements', 'idea_elements', 'channels', 'channel_prompts', 'pipeline_runs', 'pipeline_stage_audits', 'channel2_shot_audits', 'tasks', 'task_attempts', 'prompting_style_master', 'youtube_metadata', 'seo_runs', 'seo_competitors', 'seo_keyword_metrics', 'workflows', 'workflow_versions', 'workflow_steps', 'workflow_executions', 'step_runs', 'execution_events', 'workflow_migrations', 'step_attempts', 'jobs', 'audit_logs', 'external_operations', 'test_req_003_with_uuid', 'test_req_003_no_uuid', 'req_009_tx_test', 'test_jsonb_payloads', 'pipeline_row_state', 'pipeline_checkpoints', 'pipeline_failure_logs', 'sqlite_sequence']
+   Row Counts: {'ideas': 667, 'tags': 0, 'content_history': 69, 'collections': 0, 'models': 0, 'settings': 0, 'idea_versions': 0, 'idea_features': 0, 'idea_embeddings': 0, 'duplicate_checks': 0, 'prompts': 7800, 'idea_tags': 0, 'collection_ideas': 0, 'prompt_versions': 0, 'generation_jobs': 2, 'generated_videos': 325, 'schedules': 0, 'idea_assets': 6, 'publishing': 6, 'categories': 1, 'elements': 100, 'idea_elements': 667, 'channels': 2, 'channel_prompts': 38, 'pipeline_runs': 8, 'pipeline_stage_audits': 160, 'channel2_shot_audits': 38, 'tasks': 13, 'task_attempts': 34, 'prompting_style_master': 13, 'youtube_metadata': 555, 'seo_runs': 562, 'seo_competitors': 12235, 'seo_keyword_metrics': 32284, 'workflows': 0, 'workflow_versions': 0, 'workflow_steps': 0, 'workflow_executions': 48, 'step_runs': 0, 'execution_events': 0, 'workflow_migrations': 0, 'step_attempts': 0, 'jobs': 0, 'audit_logs': 2, 'external_operations': 0, 'test_req_003_with_uuid': 0, 'test_req_003_no_uuid': 0, 'req_009_tx_test': 0, 'test_jsonb_payloads': 0, 'pipeline_row_state': 17, 'pipeline_checkpoints': 0, 'pipeline_failure_logs': 0, 'sqlite_sequence': 1}
+
+2. Azure PostgreSQL Dump: /home/azureuser/DATABASE_BACKUPS_VAULT/azure_postgres_all_databases.sql
+   Total Lines: 2,868
+   CREATE DATABASE statements: ["CREATE DATABASE template1 WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';", "CREATE DATABASE payload_articles WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';", "CREATE DATABASE postgres WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'C.UTF-8';"]
+   CREATE TABLE count: 17
+
+3. GCP MariaDB Dump: /home/azureuser/DATABASE_BACKUPS_VAULT/gcp_dumps/gcp_frappe_mariadb.sql
+   Total Lines: 59,218
+   CREATE TABLE count: 739
+
+4. GCP CockroachDB Schema: /home/azureuser/DATABASE_BACKUPS_VAULT/gcp_dumps/gcp_cockroach_schema.sql
+   Total Lines: 231
+   CREATE TABLE count: 13
+

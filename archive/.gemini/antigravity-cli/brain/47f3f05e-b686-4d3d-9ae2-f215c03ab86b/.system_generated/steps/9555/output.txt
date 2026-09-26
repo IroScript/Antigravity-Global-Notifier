@@ -1,0 +1,1 @@
+Cron schedule cancelled after 12 iterations.

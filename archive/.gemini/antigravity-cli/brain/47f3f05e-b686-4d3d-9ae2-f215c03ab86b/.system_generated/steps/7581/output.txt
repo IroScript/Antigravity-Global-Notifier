@@ -1,0 +1,51 @@
+The search for ""az snapshot create" --source --resource-group site:learn.microsoft.com" returned the following summary:
+To create a snapshot using the Azure CLI, you use the `az snapshot create` command. The `--source` parameter is required to specify the source of the snapshot, which can be a Managed Disk ID, a snapshot ID, or a blob URI[1][2][3].
+
+### Basic Command Syntax
+```bash
+az snapshot create \
+    --resource-group <resource-group-name> \
+    --name <snapshot-name> \
+    --source <source-id-or-uri>
+```
+
+### Key Parameters
+*   **`--resource-group` (`-g`)**: The name of the resource group where the snapshot will be created[1].
+*   **`--name` (`-n`)**: The name of the snapshot[1].
+*   **`--source`**: The identifier of the source. This can be:
+    *   **Managed Disk ID**: Typically retrieved using `az vm show`[2][3].
+    *   **Snapshot ID**: Used when creating an incremental snapshot or copying a snapshot[4][5].
+    *   **Blob URI**: Used when importing from a VHD stored in a storage account[1].
+
+### Common Examples
+
+**1. Create a snapshot from a VM's OS Disk**
+First, get the disk ID, then create the snapshot[3]:
+```bash
+# Get the OS disk ID
+osdiskid=$(az vm show -g MyResourceGroup -n MyVM --query "storageProfile.osDisk.managedDisk.id" -o tsv)
+
+# Create the snapshot
+az snapshot create -g MyResourceGroup -n MySnapshot --source "$osdiskid"
+```
+
+**2. Create an incremental snapshot**
+Incremental snapshots are efficient for backups of managed disks[6].
+```bash
+az snapshot create -g MyResourceGroup -n MySnapshot --source <disk-id> --incremental true
+```
+
+**3. Create a snapshot from a blob URI**
+```bash
+az snapshot create -g MyResourceGroup -n MySnapshot --source https://vhd1234.blob.core.windows.net/vhds/osdisk1234.vhd
+```
+
+For more details and optional flags (such as `--sku`, `--location`, or `--incremental`), you can refer to the official [az snapshot documentation](https://learn.microsoft.com/en-us/cli/azure/snapshot?view=azure-cli-latest) on Microsoft Learn[1].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnrhVFw3L6RjpteETNJ2skhQgR13hz4eHlXmb6jIgepi1P7OWGkc6MznFlaSd3Hd9Mu5UC788NRg7jzeWcDI89aXSMvu4MKS5eg1Ai8-NkBstD88fJk0z5ZtsAXtNqPKkO5KfZSRTUBqnePrI3uD0xhkjE-_MytDmyC0fNpUW5iw==)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8pF6VDZlfSzOkZSP2AvVPwGvaHEUsrJg_slo8jDtnCU8OnPZeLeFzGiFD_SSOHGXtpcnTxlsdCsQi4Xjt-58O09clnSfB1Ed9fLc66mncOyUd1bhcc3t_qYcEYi-i381A6GtGZwMtP14P5XRl-vYwP393qM_gw8Qch3Pou-VMJUxRB169UBAbbw==)
+[3] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6bUXltgB84z8_j7UARrScjrIefOrHKIsJeQo0zLUjdkmYSY7rENHU2D0hsjUuTgtBYmalx5QhTp0bJ0fOLGjgqoFg9ldQRKn8M_X6llyuMitrFQbTiFsFYyWZCsmLZq39C3NcQ5qljhSnDNT35qTmX19NSqoEb1zPa5VNo0NEPG__FZRiCzmWpd8=)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGi1YDyFwNPdSRQF_pS0PLnw6DwLm7V1pon5gpPEyGal4j9JQXttqcmKr0lDLFR5Y9AbroRLS0xCzDMa7mGpfGfWl_kyNP9LWydQr8fIEYP6fWUhrMGToqtTgd22lfsrpHp5aV3T5tM_OC9eONIk8-YKUxZ92AXWhTYR0u_kfPzBWnF6dk6YjTHjIylIqDoauxejaCDzLoRMKCURkDO)
+[5] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1uWCQOJ1ywKLQ8Umc-cbPb3wmVRuS2kv76acFxrh-3qH7JxgNDuZzXgm7EEW2dCvzL2K42ump55y2QVcfPYQi4Hkk4i6Gk0WWrUMa5RZQVts7L9mYoNlezSKGCGUWBov4H4QcsPHxMo0rQmdS2eQ15DzDyJeuilpbG3T780Kg9I4-eN_HUPzSTzesqfYBMi6S9CT3-7gfNv8j4fFDZuRpOJs36mXT)
+[6] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUp1ObxE-aigORXFSA73I3ht3lHlTr0fNLrFWNi0VbwrATu6NJAojjWQOnlHhhMYSDRfIjW_LfRfMcht8QAq4b7iK0A5XSAaFADwMAqTPdhizwT7tlOJG1mt8IEu2AwTdLuvbUVuHvnRdyt9djg9urfen_4Lzlems-_CORwKn2pcPBYOAGWa8hAcQ=)

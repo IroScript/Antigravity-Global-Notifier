@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+# HELP cloudflared_tunnel_user_hostnames_counts Which user hostnames cloudflared is serving
+# TYPE cloudflared_tunnel_user_hostnames_counts counter
+cloudflared_tunnel_user_hostnames_counts{userHostname="https://wallpaper-movements-lee-rep.trycloudflare.com"} 1
+

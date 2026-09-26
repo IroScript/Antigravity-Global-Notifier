@@ -1,0 +1,5 @@
+
+The command exited with code 2.
+Output:
+lrwxrwxrwx 1 root root 0 Sep 25 20:40 /proc/204399/cwd
+

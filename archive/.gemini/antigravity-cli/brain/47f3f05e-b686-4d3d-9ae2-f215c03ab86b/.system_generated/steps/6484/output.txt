@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Searching journal for Inode 13893721 (0xd40059)...
+Target: bg 1696, slot 88
+Total candidate inodes in journal: 855799
+

@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+Found 12 valid extent headers for 14027084:
+   Block 254247: size=270336, extents=[(0, 3, 57613952)]
+   Block 254248: size=8192, extents=[(0, 2, 56020375)]
+   Block 254249: size=223, extents=[(0, 1, 57336494)]
+   Block 254250: size=8687, extents=[(0, 3, 21020516)]
+   Block 254253: size=7113, extents=[(0, 1, 33448017), (1, 1, 54814719)]
+   Block 254260: size=7113, extents=[(0, 1, 33448017), (1, 1, 54814719)]
+   Block 254261: size=986320, extents=[(0, 241, 34031115)]
+   Block 254276: size=223, extents=[(0, 1, 57336494)]
+   Block 254277: size=225, extents=[(0, 1, 21020328)]
+   Block 254281: size=225, extents=[(0, 1, 21020328)]
+   Block 254283: size=223, extents=[(0, 1, 57336494)]
+   Block 254284: size=8687, extents=[(0, 3, 21020516)]
+

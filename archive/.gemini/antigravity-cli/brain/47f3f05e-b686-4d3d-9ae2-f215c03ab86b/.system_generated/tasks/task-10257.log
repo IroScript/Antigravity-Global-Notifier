@@ -1,0 +1,3 @@
+ s.Component{render(){return(0,s.h)(r.Terminal,{id:"terminal-container",wsUrl:a,tokenUrl:h,clientOptions:l,termOptions:c,flowControl:d})}}t.App=_},12:(e,t,i)=>{"use str
+ 0===t||t.sendFile(e)}async refreshToken(){try{const e=await fetch(this.options.tokenUrl);if(e.ok){const t=await e.json();this.token=t.token}}catch(e){console.error(`[t
+tyd] fetch ${this.options.tokenUrl}: `,e)}}onWindowUnload(e){var t;if(e.preventDefault(),(null===(t=this.socket)||

@@ -1,0 +1,61 @@
+
+The command exited with code 0.
+Output:
+============================================================
+GCS IAM BOUNDARY VERIFICATION TEST SUITE
+Credential Identity: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com
+Target Bucket:      gs://all-vm-backups-vault-irak-2026
+Test Object:        probe_adversarial_1790352028.txt
+============================================================
+
+[TEST 1: CREATE CAPABILITY]
+Status: SUCCESS (HTTP 200)
+Created Object ID: all-vm-backups-vault-irak-2026/probe_adversarial_1790352028.txt/1790352029322183
+Verdict: CREATE = PASS
+
+[TEST 2: READ CAPABILITY (Expect 403 Forbidden)]
+Status: UNEXPECTED SUCCESS (HTTP 200)
+Verdict: READ = FAILED (Object should NOT be readable!)
+
+[TEST 3: DELETE CAPABILITY (Expect 403 Forbidden)]
+Status: DENIED AS EXPECTED (HTTP 403)
+Error Message: {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.delete access to the Google Cloud Storage object. Permission 'storage.objects.delete' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/probe_adversarial_1790352028.txt' (or it may not exist).",
+    "errors": [
+      {
+        "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.delete access to the Google Cloud Storage object. Permission 'storage.objects.delete' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/probe_adversarial_1790352028.txt' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+Verdict: DELETE = DENIED (PASSED BOUNDARY)
+
+[TEST 4: OVERWRITE CAPABILITY (Expect 403 Forbidden)]
+Status: DENIED AS EXPECTED (HTTP 403)
+Error Message: {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.delete access to the Google Cloud Storage object.",
+    "errors": [
+      {
+        "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.delete access to the Google Cloud Storage object.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+Verdict: OVERWRITE = DENIED (PASSED BOUNDARY)
+
+============================================================
+SUMMARY:
+CREATE    = PASS
+READ      = DENIED
+DELETE    = DENIED
+OVERWRITE = DENIED
+============================================================
+

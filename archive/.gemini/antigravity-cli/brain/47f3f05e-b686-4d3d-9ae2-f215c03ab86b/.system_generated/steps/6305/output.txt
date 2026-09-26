@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.300.Level_10_Lightning_River_Splitter
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.300.Level_10_Lightning_River_Splitter/1.300.Level_10_Lightning_River_Splitter.mp4
+

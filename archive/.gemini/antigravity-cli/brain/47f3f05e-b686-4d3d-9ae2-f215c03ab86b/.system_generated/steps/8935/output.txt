@@ -1,0 +1,7 @@
+
+The command exited with code 1.
+Output:
+  File "/home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py", line 149
+    ("SHELL_EVASION", "eval_rm", "eval 'rm -rf /tmp/foo'", "hook_command"),
+IndentationError: unexpected indent
+

@@ -1,0 +1,5 @@
+
+The command exited with code 11.
+Output:
+Error: stepping, database disk image is malformed (11)
+

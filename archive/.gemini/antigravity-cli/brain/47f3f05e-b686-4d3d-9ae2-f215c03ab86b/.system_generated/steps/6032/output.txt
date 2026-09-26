@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigr|1
+/home/azureuser/.openclaw/work|282
+/home/mdkamruzzamanirak_gmail_|4
+C:\Users\Irak\Desktop\Youtube |1
+C:\\Users\\Irak\\Desktop\\Yout|1
+Youtube Automation/PromptDatab|36
+

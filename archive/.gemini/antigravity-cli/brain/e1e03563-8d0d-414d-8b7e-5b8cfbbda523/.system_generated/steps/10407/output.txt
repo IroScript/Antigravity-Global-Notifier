@@ -1,0 +1,41 @@
+
+The command exited with code 0.
+Output:
+============================================================
+🎬 YOUTUBE PIPELINE - 2:00 AM AUDIT REPORT (20:00 UTC)
+============================================================
+• Ideas Generated        : 667 / 1,000 (66.7%)
+• Prompts Generated      : 7,800 / 10,000 (78.0%) [★ 78% Milestone Held Firm]
+• Real SEO Completed     : 555 / 1,000 (55.5%)
+• Packaged MP4 Folders   : 217 video files (218 package directories)
+• SQLite DB Integrity    : OK (WAL mode, verified & healthy)
+
+👥 WORKER SHIFTS & CLUSTER STATUS:
+------------------------------------------------------------
+• Worker 1 (Md Shapon):
+  - Status: Active in shift (Generating Escalations for Rocket Idea #674)
+  - Health: Authenticated & Active
+
+• Worker 2 (Gaming Dot Bangla):
+  - Status: 🛌 MACRO RESTING (Scheduled 1.69h deep rest)
+  - Target Resume Time: ~2:51 AM BST (20:51 UTC) [~51 minutes remaining]
+
+• Worker 3 (Irak Iroan AI):
+  - Status: 🛌 MACRO RESTING (Scheduled 1.52h deep rest)
+  - Target Resume Time: ~2:21 AM BST (20:21 UTC) [~21 minutes remaining - First to resume!]
+
+• Worker 4 (Alco Store):
+  - Status: Active in shift (Generating Ideas for Element #98 Artificial Intelligence)
+  - Health: Authenticated & Active
+
+⏱ TIMING & SAFETY LAYERS:
+------------------------------------------------------------
+• Macro-Layer: Staggered deep hibernation layer operational. Worker 3 is scheduled to resume in ~21 minutes (2:21 AM BST), followed by Worker 2 at 2:51 AM BST. Workers 1 and 4 maintain continuous coverage.
+• Micro-Layer: 5-10 batch cycles, 2-20 min rest, +10s ladder delay active.
+• Audio Rule: 100% compliant ("Audio: no human voice, only cinematic BGM." in all video prompts - 1,480 total compliant prompts).
+
+📦 DATA EXPORTS & ARTIFACTS:
+------------------------------------------------------------
+• Master Dashboard CSV (08:00 PM): https://tmpfiles.org/dl/wJwgE0hOYxQJ/master_dashboard_25_sept_08.00_pm.csv
+============================================================
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+{
+    "error": "Not found"
+}
+
+Terminal ID: 644602e0-f255-4c84-9cdd-bd0c9c4c2d2e

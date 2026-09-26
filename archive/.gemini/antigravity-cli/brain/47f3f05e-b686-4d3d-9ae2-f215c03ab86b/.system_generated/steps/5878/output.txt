@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+
+The command exited with code 0.
+Output:
+00:00 +0: loading /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart
+00:00 +0: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Card Flow: Create, Move Up/Down, Set Position, Hide, Unhide, Delete
+00:00 +1: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/responsive_layout_test.dart: Responsive Mobile Screen Dimension Tests Small screen (320x568) renders without overflow
+00:00 +2: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Scheduling: ScheduleDialog validates and saves date/time
+00:00 +3: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/responsive_layout_test.dart: Responsive Mobile Screen Dimension Tests Standard phone (390x844) renders without overflow
+00:00 +4: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Position: PositionDialog relocates card to 1-based index
+00:00 +5: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Position: PositionDialog relocates card to 1-based index
+00:01 +6: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Interval: IntervalDialog updates rotation interval
+00:01 +7: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Card Size Popup renders scale options from 0% to 300%
+00:01 +8: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Backend Offline: ApiService handles network errors gracefully without crashing
+00:01 +9: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/real_user_flows_test.dart: Comprehensive Real User Flows & Edge Case Tests Data Persistence: All user state survives force-stop and reopen
+00:01 +10: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/widget_test.dart: TaskNoteApp smoke test
+00:02 +11: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/widget_test.dart: TaskNoteApp smoke test
+00:02 +12: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/widget_test.dart: TaskNoteApp smoke test
+00:02 +12: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/floating_overlay_test.dart: Floating Overlay Architecture Tests OverlayService syncCardData formats payload cleanly
+[OverlayService] Error updating floating window data: MissingPluginException(No implementation found for method updateFloatingWindowData on channel com.tasknote.task_note_mobile/overlay_permission)
+00:02 +13: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/floating_overlay_test.dart: Floating Overlay Architecture Tests FloatingOverlayWidget renders in compact bubble mode initially
+00:02 +14: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/floating_overlay_test.dart: Floating Overlay Architecture Tests FloatingOverlayWidget expands to full card mode on tap
+[FloatingOverlayWidget] Failed to listen to overlayListener: Bad state: Stream has already been listened to.
+00:02 +15: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/floating_overlay_test.dart: Floating Overlay Architecture Tests HomeScreen top bar contains floating overlay button
+00:02 +16: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/floating_overlay_test.dart: Floating Overlay Architecture Tests HomeScreen top bar contains floating overlay button
+00:03 +17: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/test/parity_verification_test.dart: Rust GUI -> Flutter Mobile 1:1 Deep Verification Test Suite TopActionButtonsBar has EXACTLY 7 buttons matching Rust src/main.rs:3692-3835
+

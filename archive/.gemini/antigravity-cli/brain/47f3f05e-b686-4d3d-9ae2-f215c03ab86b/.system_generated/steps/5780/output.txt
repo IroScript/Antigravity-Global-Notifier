@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+/recovered/ALL_DELETED/azureuser/.webterminal/vm_sizing_24h.db
+

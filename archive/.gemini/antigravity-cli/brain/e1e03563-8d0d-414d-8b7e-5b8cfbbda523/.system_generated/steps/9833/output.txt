@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+INFO:     127.0.0.1:51070 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37700 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40404 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41156 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52122 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49916 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48436 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:40016 - "GET /debug HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39768 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52082 - "GET /health HTTP/1.1" 200 OK
+

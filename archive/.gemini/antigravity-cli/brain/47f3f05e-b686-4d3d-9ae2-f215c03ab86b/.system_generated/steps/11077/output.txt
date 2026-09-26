@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+C: {'letter': 'C', 'label': 'Local Disk (C: OS Root)', 'path': '/', 'total': 31393230848, 'total_str': '29.24 GB', 'used': 15469027328, 'used_str': '14.41 GB', 'free': 14303580160, 'free_str': '13.32 GB', 'percent': 49.3}
+D: {'letter': 'D', 'label': 'Data Disk (D: NVMe Home)', 'path': '/home', 'total': 231379357696, 'total_str': '215.49 GB', 'used': 109120851968, 'used_str': '101.63 GB', 'free': 110430568448, 'free_str': '102.85 GB', 'percent': 47.2}
+

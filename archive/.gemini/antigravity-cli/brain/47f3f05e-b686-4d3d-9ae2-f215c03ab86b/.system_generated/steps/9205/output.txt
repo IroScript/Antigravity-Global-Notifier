@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+--------------e------- /home/azureuser/AGY-MASTER
+--------------e------- /home/azureuser/Frappe-erp-Alco
+--------------e------- /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+

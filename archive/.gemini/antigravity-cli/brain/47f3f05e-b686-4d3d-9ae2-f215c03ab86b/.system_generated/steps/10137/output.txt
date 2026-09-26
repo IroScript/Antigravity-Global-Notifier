@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/FULL_HOME_BACKUP:
+total 3341012
+drwxr-xr-x  2 azureuser azureuser       4096 Sep 25 16:09 .
+drwxr-xr-x 32 azureuser azureuser       4096 Sep 26 09:57 ..
+-rw-rw-r--  1 azureuser azureuser   11940623 Sep 25 16:10 archive_file_list.txt
+-rw-r--r--  1 azureuser azureuser 3409236303 Sep 25 16:09 azure_home_FULL_filesystem_20260925.tar.gz
+
+/home/azureuser/GCP_FULL_BACKUP:
+total 16851320
+drwxrwxr-x  3 azureuser azureuser        4096 Sep 25 19:36 .
+drwxr-xr-x 32 azureuser azureuser        4096 Sep 26 09:57 ..
+-rw-rw-r--  1 azureuser azureuser 17255728924 Sep 25 19:19 gcp_home_FULL_filesystem_20260925.tar.gz
+-rw-rw-r--  1 azureuser azureuser         107 Sep 25 19:20 gcp_home_checksum.md5
+drwxrwxr-x  2 azureuser azureuser        4096 Sep 25 19:59 parts
+

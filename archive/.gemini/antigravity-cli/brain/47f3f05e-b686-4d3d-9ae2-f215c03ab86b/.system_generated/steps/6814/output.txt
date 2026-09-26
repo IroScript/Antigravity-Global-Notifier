@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+2026-09-25T07:53:27Z manage_task 
+2026-09-25T07:53:33Z run_command "ls -ld /home/azureuser/.gemini/config"
+

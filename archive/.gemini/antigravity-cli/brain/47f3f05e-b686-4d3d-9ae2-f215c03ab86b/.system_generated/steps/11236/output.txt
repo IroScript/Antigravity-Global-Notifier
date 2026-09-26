@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+azureus+    1689  0.0  0.1 1295560 31168 ?       Ssl  Sep22   2:00 /usr/local/bin/cloudflared tunnel --url http://localhost:3100
+azureus+    1701  0.0  0.1 1361168 31188 ?       Sl   Sep22   2:01 cloudflared tunnel --url http://localhost:18789
+azureus+    1703  0.0  0.1 1295304 30092 ?       Sl   Sep22   2:01 cloudflared tunnel --url http://127.0.0.1:6080
+azureus+    1717  0.0  0.3 1361808 50764 ?       Sl   Sep22   4:09 cloudflared tunnel --url http://127.0.0.1:8085
+azureus+    1989  0.0  0.1 1295560 30368 ?       Sl   Sep22   2:00 cloudflared tunnel --url http://localhost:7681
+azureus+   40846  0.0  0.1 1295304 29972 ?       Ssl  Sep23   1:46 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+azureus+   41342  0.0  0.1 1295564 30564 ?       Ssl  Sep23   1:46 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5173 --http-host-header localhost --logfile /home/azureuser/3D-Game-Design-Studio/cloud/cloudflared.log
+azureus+   42165  0.0  0.1 1295052 31228 ?       Ssl  Sep23   1:46 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5176 --logfile /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/logs/cloudflared.log
+azureus+  190241  0.0  0.1 1360912 31936 ?       Sl   Sep24   1:19 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+azureus+  218241  0.0  0.2 1295304 34024 ?       Sl   Sep24   1:12 cloudflared tunnel --url http://localhost:8000
+azureus+ 1187035  0.0  0.2 1295304 41532 ?       Sl   13:38   0:03 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+azureus+ 1209962  0.0  0.0   7484  3448 pts/12   Ss+  15:01   0:00 bash -c ps aux | grep cloudflared
+azureus+ 1209964  0.0  0.0   7060  2352 pts/12   S+   15:01   0:00 grep cloudflared
+

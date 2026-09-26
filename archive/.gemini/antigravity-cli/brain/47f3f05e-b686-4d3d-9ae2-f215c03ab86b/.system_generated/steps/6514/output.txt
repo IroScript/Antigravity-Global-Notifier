@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/AGY-MASTER/AGENTS.md:121:- **Frappe & ERPNext:** `/home/azureuser/Frappe-erp-Alco` (ERPNext v16, mobile-first frontend).
+/home/azureuser/AGY-MASTER/AGENTS.md:313:3. **Project Policy Distribution:** Project-specific directives (Frappe v16, YouTube Veo 3.1, Telegram live MTProto, etc.) are cataloged in [`file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md`](file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md) and maintained in localized project files ([`file:///home/azureuser/Frappe-erp-Alco/AGENTS.md`](file:///home/azureuser/Frappe-erp-Alco/AGENTS.md), etc.). This keeps token budgets balanced and eliminates contradictory instructions.
+/home/azureuser/GEMINI.md:121:- **Frappe & ERPNext:** `/home/azureuser/Frappe-erp-Alco` (ERPNext v16, mobile-first frontend).
+/home/azureuser/GEMINI.md:313:3. **Project Policy Distribution:** Project-specific directives (Frappe v16, YouTube Veo 3.1, Telegram live MTProto, etc.) are cataloged in [`file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md`](file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md) and maintained in localized project files ([`file:///home/azureuser/Frappe-erp-Alco/AGENTS.md`](file:///home/azureuser/Frappe-erp-Alco/AGENTS.md), etc.). This keeps token budgets balanced and eliminates contradictory instructions.
+/home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md:25:| **Frappe ERPNext** | `agy:project:frappe` | `/home/azureuser/Frappe-erp-Alco` | ERPNext v16+; Python 3.12+; PyPika / `frappe.qb`; Modern JS form controller; Mobile-first |
+/home/azureuser/RESTORED_PROJECTS/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md:92:| **4** | `frappe` | `/home/mdkamruzzamanirak_gmail_com/Frappe-erp-Alco` | `AGY · Frappe & ERPNext` (`120363430126311832@g.us`) | ফ্র্যাপে ফ্রেমওয়ার্ক ও ইআরপিনেক্সট (v16+) এজেন্ট |
+

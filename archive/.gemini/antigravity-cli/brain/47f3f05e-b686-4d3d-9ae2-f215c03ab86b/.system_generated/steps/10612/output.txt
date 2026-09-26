@@ -1,0 +1,85 @@
+
+The command exited with code 0.
+Output:
+<truncated 66 lines>
+agy          1448 azureuser   17u     IPv4 8637522      0t0  TCP FatehAli:57440->172.217.116.4:https (ESTABLISHED)
+agy          1448 azureuser   18u     IPv4 8628259      0t0  TCP FatehAli:44794->172.217.119.4:https (ESTABLISHED)
+agy          1448 azureuser   19u     IPv4 8605532      0t0  TCP FatehAli:50922->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+agy          1449 azureuser   11u     IPv4   10310      0t0  TCP localhost:42937 (LISTEN)
+agy          1449 azureuser   13u     IPv4   10315      0t0  TCP localhost:34111 (LISTEN)
+agy          1449 azureuser   14u     IPv4 8624736      0t0  TCP FatehAli:43178->172.217.112.4:https (ESTABLISHED)
+agy          1449 azureuser   15u     IPv4 8610352      0t0  TCP FatehAli:49786->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+agy          1450 azureuser   11u     IPv4    8601      0t0  TCP localhost:43565 (LISTEN)
+agy          1450 azureuser   13u     IPv4    8606      0t0  TCP localhost:38823 (LISTEN)
+agy          1450 azureuser   15u     IPv4 8635139      0t0  TCP FatehAli:58816->172.217.113.4:https (ESTABLISHED)
+agy          1450 azureuser   21u     IPv4 8612046      0t0  TCP FatehAli:49794->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+agy          1451 azureuser    8u     IPv4 8629417      0t0  TCP FatehAli:56008->172.217.113.4:https (ESTABLISHED)
+agy          1451 azureuser   11u     IPv4    8633      0t0  TCP localhost:32977 (LISTEN)
+agy          1451 azureuser   13u     IPv4    8638      0t0  TCP localhost:36587 (LISTEN)
+agy          1451 azureuser   14u     IPv4 8637863      0t0  TCP FatehAli:53866->172.217.115.4:https (ESTABLISHED)
+agy          1451 azureuser   15u     IPv4 8609929      0t0  TCP FatehAli:57304->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+agy          1454 azureuser    8u     IPv4 8612047      0t0  TCP FatehAli:49804->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+agy          1454 azureuser   11u     IPv4   10374      0t0  TCP localhost:40361 (LISTEN)
+agy          1454 azureuser   13u     IPv4   10379      0t0  TCP localhost:36931 (LISTEN)
+agy          1454 azureuser   18u     IPv4 8639958      0t0  TCP FatehAli:56782->172.217.117.4:https (ESTABLISHED)
+agy          1454 azureuser   20u     IPv4 8632704      0t0  TCP FatehAli:46234->172.217.119.4:https (ESTABLISHED)
+agy          1556 azureuser   11u     IPv4    8708      0t0  TCP localhost:40941 (LISTEN)
+agy          1556 azureuser   13u     IPv4    8713      0t0  TCP localhost:40475 (LISTEN)
+agy          1556 azureuser   17u     IPv4 8637846      0t0  TCP FatehAli:53856->172.217.115.4:https (ESTABLISHED)
+agy          1556 azureuser   18u     IPv4 8629400      0t0  TCP FatehAli:47454->172.217.112.4:https (ESTABLISHED)
+agy          1556 azureuser   43u     IPv4 8611126      0t0  TCP FatehAli:49812->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+ttyd         1558 azureuser   12u     IPv4   11442      0t0  TCP *:7681 (LISTEN)
+cloudflar    1689 azureuser    3u     IPv6  580654      0t0  UDP *:55955 
+cloudflar    1689 azureuser   10u     IPv4   15294      0t0  TCP localhost:20245 (LISTEN)
+cloudflar    1701 azureuser    3u     IPv6  584532      0t0  UDP *:41019 
+cloudflar    1701 azureuser   10u     IPv4   13261      0t0  TCP localhost:20243 (LISTEN)
+cloudflar    1703 azureuser    6u     IPv6   14888      0t0  UDP *:35998 
+cloudflar    1703 azureuser   10u     IPv4   15362      0t0  TCP localhost:20244 (LISTEN)
+python3      1716 azureuser    3u     IPv4   10049      0t0  TCP *:8085 (LISTEN)
+cloudflar    1717 azureuser    3u     IPv6 4410305      0t0  UDP *:39212 
+cloudflar    1717 azureuser   10u     IPv4   13723      0t0  TCP localhost:20241 (LISTEN)
+x11vnc       1781 azureuser    8u     IPv4   12802      0t0  TCP localhost:5900 (LISTEN)
+x11vnc       1781 azureuser    9u     IPv6   12803      0t0  TCP *:5900 (LISTEN)
+chrome       1947 azureuser   21u     IPv4 8617335      0t0  TCP FatehAli:46792->yuiadum-in-f188.1e100.net:5228 (ESTABLISHED)
+cloudflar    1989 azureuser    3u     IPv6 4412049      0t0  UDP *:49139 
+cloudflar    1989 azureuser   10u     IPv4   15647      0t0  TCP localhost:33545 (LISTEN)
+cloudflar   40846 azureuser    6u     IPv6  595760      0t0  UDP *:52696 
+cloudflar   40846 azureuser   10u     IPv4  596247      0t0  TCP localhost:44019 (LISTEN)
+node-Main   41328 azureuser   21u     IPv4  598365      0t0  TCP *:5173 (LISTEN)
+cloudflar   41342 azureuser   10u     IPv4  598463      0t0  TCP localhost:38573 (LISTEN)
+cloudflar   41342 azureuser   12u     IPv6  596916      0t0  UDP *:34464 
+python3     42086 azureuser    4u     IPv4  602539      0t0  TCP *:5176 (LISTEN)
+cloudflar   42165 azureuser   10u     IPv4  602708      0t0  TCP localhost:41851 (LISTEN)
+cloudflar   42165 azureuser   12u     IPv6  602750      0t0  UDP *:60767 
+cloudflar  190241 azureuser    4u     IPv6 4412561      0t0  UDP *:52367 
+cloudflar  190241 azureuser   11u     IPv4 1620676      0t0  TCP localhost:37249 (LISTEN)
+python3    204399      root  cwd   unknown                       /proc/204399/cwd (readlink: Permission denied)
+python3    204399      root  rtd   unknown                       /proc/204399/root (readlink: Permission denied)
+python3    204399      root  txt   unknown                       /proc/204399/exe (readlink: Permission denied)
+python3    204399      root NOFD      0000                       /proc/204399/fd (opendir: Permission denied)
+cloudflar  218241 azureuser    8u     IPv6 1782436      0t0  UDP *:45543 
+cloudflar  218241 azureuser   10u     IPv4 1782397      0t0  TCP localhost:20242 (LISTEN)
+agy        266192 azureuser   11u     IPv4 2051889      0t0  TCP localhost:37227 (LISTEN)
+agy        266192 azureuser   13u     IPv4 2051894      0t0  TCP localhost:35941 (LISTEN)
+agy        266192 azureuser   16u     IPv4 8637156      0t0  TCP FatehAli:54370->172.217.118.4:https (ESTABLISHED)
+agy        266192 azureuser   24u     IPv4 8628718      0t0  TCP FatehAli:47440->172.217.112.4:https (ESTABLISHED)
+agy        266192 azureuser   25u     IPv4 8612156      0t0  TCP FatehAli:34052->110.84.54.34.bc.googleusercontent.com:https (ESTABLISHED)
+python     307848 azureuser    6u     IPv4   11965      0t0  TCP *:8000 (LISTEN)
+python     307848 azureuser    7u     IPv4   11965      0t0  TCP *:8000 (LISTEN)
+python     307848 azureuser   10u     IPv4 2452396      0t0  TCP localhost:35206->localhost:13000 (ESTABLISHED)
+python     307848 azureuser   11u     IPv4 2452397      0t0  TCP localhost:35210->localhost:13000 (ESTABLISHED)
+python     307848 azureuser   14u     IPv4 2452398      0t0  TCP localhost:35212->localhost:13000 (ESTABLISHED)
+python     307848 azureuser   20u     IPv4 2613620      0t0  TCP localhost:50532->localhost:13000 (ESTABLISHED)
+python     307848 azureuser   21u     IPv4 2616497      0t0  TCP localhost:53626->localhost:11000 (ESTABLISHED)
+python     307848 azureuser   22u     IPv4 3542098      0t0  TCP localhost:40974->localhost:13000 (ESTABLISHED)
+node-Main  729489 azureuser   21u     IPv4 7649582      0t0  TCP FatehAli:48776->whatsapp-cdn-shv-01-iad3.fbcdn.net:https (ESTABLISHED)
+python3   1000406 azureuser    5u     IPv6 8641646      0t0  TCP localhost:33410->localhost:8002 (ESTABLISHED)
+python3   1000406 azureuser    7u     IPv6 8640954      0t0  TCP localhost:52718->localhost:8004 (ESTABLISHED)
+rclone    1175418 azureuser    6u     IPv4 8636915      0t0  TCP FatehAli:38790->172.217.119.4:https (ESTABLISHED)
+rclone    1175418 azureuser    7u     IPv4 8636916      0t0  TCP FatehAli:38792->172.217.119.4:https (ESTABLISHED)
+rclone    1175418 azureuser    8u     IPv4 8594848      0t0  TCP FatehAli:40910->172.217.114.4:https (ESTABLISHED)
+rclone    1175418 azureuser   13u     IPv4 8636917      0t0  TCP FatehAli:38796->172.217.119.4:https (ESTABLISHED)
+cloudflar 1187035 azureuser    7u     IPv4 8630097      0t0  TCP localhost:37905 (LISTEN)
+cloudflar 1187035 azureuser    8u     IPv6 8632536      0t0  UDP *:52247 
+python3   1187176 azureuser    3u     IPv4 8631728      0t0  TCP *:omniorb (LISTEN)
+

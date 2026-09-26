@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Filename				Type		Size		Used		Priority
+/home/swapfile                          file		41943036	2512556		-2
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       8.9Gi       699Mi       1.2Gi       7.8Gi       6.7Gi
+Swap:           39Gi       2.4Gi        37Gi
+PARTUUID=2515f4aa-093a-4cef-b35c-fb44dfffe557 / ext4 rw,discard,errors=remount-ro,x-systemd.growfs 0 1
+PARTUUID=fc1c26c2-ad6e-4c2b-956d-e2f00ccc676f /boot/efi vfat defaults 0 0
+UUID=a7e46975-f813-443b-ac77-43ed858d9eec /home ext4 defaults,nofail 0 2
+/home/swapfile none swap sw,nofail 0 0
+

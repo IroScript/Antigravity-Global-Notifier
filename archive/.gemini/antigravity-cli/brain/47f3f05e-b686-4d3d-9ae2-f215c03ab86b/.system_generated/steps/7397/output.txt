@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+Check Machine Image HTTP: 404
+Machine image does not exist yet. Attempting creation...
+Creation triggered successfully: {
+  "kind": "compute#operation",
+  "id": "4457898704461571227",
+  "name": "operation-1790351987159-65c50ce37b170-e34b0997-b4428560",
+  "operationType": "insert",
+  "targetLink": "https://www.googleapis.com/compute/v1/projects/irak-mahmud-project/global/machineImages/gcp-vm-full-backup-20260925",
+  "targetId": "7768029879229686940",
+  "status": "RUNNING",
+  "user": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com",
+  "progress": 0,
+  "insertTime": "2026-09-25T08:59:48.220-07:00",
+  "startTime": "2026-09-25T08:59:48.223-07:00",
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/irak-mahmud-project/global/operations/operation-1790351987159-65c50ce37b170-e34b0997-b4428560"
+}
+
+

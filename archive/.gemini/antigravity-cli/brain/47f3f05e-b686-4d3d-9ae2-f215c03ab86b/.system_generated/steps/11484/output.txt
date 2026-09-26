@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+● azure-file-explorer.service - Windows 11 Azure File Explorer Web Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 15:27:06 UTC; 3s ago
+ Invocation: 5b363c42b80c49eba14b1de077e8b3a3
+   Main PID: 1216723 (python3)
+      Tasks: 1 (limit: 19137)
+     Memory: 11.5M (peak: 11.7M)
+        CPU: 61ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer.service
+             └─1216723 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_ex…
+
+Sep 26 15:27:06 FatehAli systemd[1137]: Started azure-file-explorer.service…ice.
+Hint: Some lines were ellipsized, use -l to show in full.
+

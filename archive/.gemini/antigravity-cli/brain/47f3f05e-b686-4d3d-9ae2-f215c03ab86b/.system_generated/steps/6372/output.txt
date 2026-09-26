@@ -1,0 +1,207 @@
+
+The command exited with code 0.
+Output:
+<truncated 2313 lines>
+                BUILD_STRING             5
+                CALL                     1
+                POP_TOP
+
+ 468            LOAD_CONST              33 ('success')
+
+ 469            LOAD_FAST                0 (idea_id)
+
+ 470            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST                7 (package_folder)
+                CALL                     1
+
+ 471            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST                9 (video_filepath)
+                CALL                     1
+
+ 472            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST               10 (metadata_filepath)
+                CALL                     1
+
+ 473            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST               11 (prompt_info_filepath)
+                CALL                     1
+
+ 467            LOAD_CONST              35 (('status', 'idea_id', 'folder', 'video', 'metadata', 'prompt_info'))
+                BUILD_CONST_KEY_MAP      6
+
+ 247   L35:     SWAP                     2
+                LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                CALL                     2
+                POP_TOP
+                RETURN_VALUE
+
+  --   L36:     PUSH_EXC_INFO
+
+ 476            LOAD_GLOBAL            134 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE      226 (to L41)
+                STORE_FAST              30 (e)
+
+ 477   L37:     LOAD_FAST               19 (task)
+                LOAD_ATTR               84 (attempt_count)
+                LOAD_FAST               19 (task)
+                LOAD_ATTR              136 (max_attempts)
+                COMPARE_OP              18 (bool(<))
+                POP_JUMP_IF_FALSE        2 (to L38)
+                LOAD_CONST              68 ('failed')
+                JUMP_FORWARD             1 (to L39)
+       L38:     LOAD_CONST              69 ('permanent_failure')
+       L39:     LOAD_FAST               19 (task)
+                STORE_ATTR              36 (status)
+
+ 478            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST               30 (e)
+                CALL                     1
+                LOAD_FAST               19 (task)
+                STORE_ATTR              55 (last_error)
+
+ 479            LOAD_GLOBAL             74 (datetime)
+                LOAD_ATTR               76 (now)
+                PUSH_NULL
+                LOAD_GLOBAL             78 (timezone)
+                LOAD_ATTR               80 (utc)
+                CALL                     1
+                LOAD_FAST               19 (task)
+                STORE_ATTR              41 (updated_at)
+
+ 481            LOAD_CONST              68 ('failed')
+                LOAD_FAST               23 (attempt)
+                STORE_ATTR              36 (status)
+
+ 482            LOAD_GLOBAL             49 (str + NULL)
+                LOAD_FAST               30 (e)
+                CALL                     1
+                LOAD_FAST               23 (attempt)
+                STORE_ATTR              56 (error_message)
+
+ 483            LOAD_GLOBAL             74 (datetime)
+                LOAD_ATTR               76 (now)
+                PUSH_NULL
+                LOAD_GLOBAL             78 (timezone)
+                LOAD_ATTR               80 (utc)
+                CALL                     1
+                LOAD_FAST               23 (attempt)
+                STORE_ATTR              57 (finished_at)
+
+ 485            LOAD_FAST                2 (session)
+                LOAD_ATTR               57 (add + NULL|self)
+                LOAD_FAST               19 (task)
+                CALL                     1
+                POP_TOP
+
+ 486            LOAD_FAST                2 (session)
+                LOAD_ATTR               57 (add + NULL|self)
+                LOAD_FAST               23 (attempt)
+                CALL                     1
+                POP_TOP
+
+ 487            LOAD_FAST                2 (session)
+                LOAD_ATTR               59 (commit + NULL|self)
+                CALL                     0
+                POP_TOP
+
+ 488            LOAD_GLOBAL             69 (print + NULL)
+                LOAD_CONST              70 ('[Packaging Error]: ')
+                LOAD_FAST               30 (e)
+                FORMAT_SIMPLE
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+
+ 489            RAISE_VARARGS            0
+
+  --   L40:     LOAD_CONST               0 (None)
+                STORE_FAST              30 (e)
+                DELETE_FAST             30 (e)
+                RERAISE                  1
+
+ 476   L41:     RERAISE                  0
+
+  --   L42:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+ 247   L43:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L44)
+                RERAISE                  2
+       L44:     POP_TOP
+       L45:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                RETURN_CONST             0 (None)
+
+  --   L46:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L1 to L6 -> L43 [1] lasti
+  L7 to L20 -> L43 [1] lasti
+  L21 to L26 -> L43 [1] lasti
+  L27 to L30 -> L36 [1]
+  L31 to L35 -> L36 [1]
+  L36 to L37 -> L42 [2] lasti
+  L37 to L40 -> L40 [2] lasti
+  L40 to L42 -> L42 [2] lasti
+  L42 to L43 -> L43 [1] lasti
+  L43 to L45 -> L46 [3] lasti
+Function: run_next_level10_package
+492           RESUME                   0
+
+493           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               1 ('======================================================================')
+              CALL                     1
+              POP_TOP
+
+494           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               2 ('AUTONOMOUS VEO PACKAGING: FETCHING NEXT PRODUCTION READY ITEM')
+              CALL                     1
+              POP_TOP
+
+495           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               1 ('======================================================================')
+              CALL                     1
+              POP_TOP
+
+496           LOAD_GLOBAL              3 (get_or_create_next_production_ready_prompt + NULL)
+              LOAD_FAST                0 (skip_browser)
+              LOAD_CONST               3 (('skip_browser',))
+              CALL_KW                  1
+              STORE_FAST               1 (ready_item)
+
+497           LOAD_FAST                1 (ready_item)
+              LOAD_CONST               4 ('idea_id')
+              BINARY_SUBSCR
+              STORE_FAST               2 (idea_id)
+
+498           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               5 ('\n[Packaging Engine] Packaging Idea #')
+              LOAD_FAST                2 (idea_id)
+              FORMAT_SIMPLE
+              LOAD_CONST               6 (": '")
+              LOAD_FAST                1 (ready_item)
+              LOAD_CONST               7 ('idea_title')
+              BINARY_SUBSCR
+              FORMAT_SIMPLE
+              LOAD_CONST               8 ("'...")
+              BUILD_STRING             5
+              CALL                     1
+              POP_TOP
+
+499           LOAD_GLOBAL              5 (process_idea_level10_package + NULL)
+              LOAD_FAST_LOAD_FAST     32 (idea_id, skip_browser)
+              LOAD_CONST               3 (('skip_browser',))
+              CALL_KW                  2
+              STORE_FAST               3 (res)
+
+500           LOAD_FAST                3 (res)
+              RETURN_VALUE
+

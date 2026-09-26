@@ -1,0 +1,121 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1528,13 +1528,13 @@
+     const addrBar = document.getElementById('explorerAddressBar');
+ 
+     if (tab === 'monitor') {
+-      btnExp.classList.remove('active');
+-      btnMon.classList.add('active');
+-      sideExp.classList.remove('active');
+-      sideMon.classList.add('active');
+-      viewExp.style.display = 'none';
+-      addrBar.style.display = 'none';
+-      viewMon.style.display = 'flex';
++      btnExp?.classList.remove('active');
++      btnMon?.classList.add('active');
++      sideExp?.classList.remove('active');
++      sideMon?.classList.add('active');
++      if (viewExp) viewExp.style.display = 'none';
++      if (addrBar) addrBar.style.display = 'none';
++      if (viewMon) viewMon.style.display = 'flex';
+       document.getElementById('statusLeft').textContent = 'লাইভ রিসোর্স ও CPU মনিটর সক্রিয় · রিয়েল-টাইম সিস্টেম টেলিমেট্রি';
+ 
+       // Fetch and draw graph
+@@ -1544,18 +1544,65 @@
+         else renderChart();
+       }, 50);
+     } else {
+-      btnMon.classList.remove('active');
+-      btnExp.classList.add('active');
+-      sideMon.classList.remove('active');
+-      sideExp.classList.add('active');
+-      viewMon.style.display = 'none';
+-      viewExp.style.display = 'flex';
+-      addrBar.style.display = 'flex';
++      btnMon?.classList.remove('active');
++      btnExp?.classList.add('active');
++      sideMon?.classList.remove('active');
++      sideExp?.classList.add('active');
++      if (viewMon) viewMon.style.display = 'none';
++      if (viewExp) viewExp.style.display = 'flex';
++      if (addrBar) addrBar.style.display = 'flex';
+       refreshCurrent();
+     }
+-  }
+-
+-  /* Header CPU Badge Live Updater */
++    updateBottomNav();
++  }
++
++  /* Bottom Navigation Handlers requested by Iraq Bhai */
++  function handleBottomBack() {
++    if (activeTab === 'monitor') {
++      switchHomeTab('explorer');
++    } else {
++      if (historyIndex > 0) {
++        goBack();
++      } else if (currentPath !== 'THIS_PC') {
++        openThisPC();
++      }
++    }
++    updateBottomNav();
++  }
++
++  function handleBottomHome() {
++    switchHomeTab('explorer');
++    openThisPC();
++    updateBottomNav();
++  }
++
++  function handleBottomMonitor() {
++    switchHomeTab('monitor');
++    updateBottomNav();
++  }
++
++  function updateBottomNav() {
++    const btnHome = document.getElementById('btnBottomHome');
++    const btnMon = document.getElementById('btnBottomMonitor');
++    const btnBack = document.getElementById('btnBottomBack');
++
++    if (activeTab === 'monitor') {
++      btnMon?.classList.add('active');
++      btnHome?.classList.remove('active');
++      if (btnBack) btnBack.style.opacity = '1.0';
++    } else {
++      btnMon?.classList.remove('active');
++      if (currentPath === 'THIS_PC') {
++        btnHome?.classList.add('active');
++        if (btnBack) btnBack.style.opacity = '0.5';
++      } else {
++        btnHome?.classList.remove('active');
++        if (btnBack) btnBack.style.opacity = '1.0';
++      }
++    }
++  }
++
++  /* Header & Bottom CPU Badge Live Updater */
+   async function updateCpuBadge() {
+     try {
+       const res = await fetch('/api/stats');
+@@ -1562,8 +1562,16 @@
+       const data = await res.json();
+       if (data && typeof data.cpu_overall !== 'undefined') {
+         const badge = document.getElementById('headerCpuBadge');
+-        badge.textContent = data.cpu_overall.toFixed(1) + '%';
+-        badge.style.color = getBarColor(data.cpu_overall);
++        if (badge) {
++          badge.textContent = data.cpu_overall.toFixed(1) + '%';
++          badge.style.color = getBarColor(data.cpu_overall);
++        }
++        const bBadge = document.getElementById('bottomCpuBadge');
++        if (bBadge) {
++          bBadge.textContent = data.cpu_overall.toFixed(1) + '%';
++          bBadge.style.color = getBarColor(data.cpu_overall);
++          bBadge.style.borderColor = getBarColor(data.cpu_overall);
++        }
+       }
+     } catch (e) {}
+   }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

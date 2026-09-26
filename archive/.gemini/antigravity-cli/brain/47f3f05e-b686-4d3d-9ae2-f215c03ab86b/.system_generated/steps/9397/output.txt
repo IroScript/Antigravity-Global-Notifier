@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+● FatehAli
+    State: degraded
+    Units: 181 loaded (incl. loaded aliases)
+     Jobs: 0 queued
+   Failed: 3 units
+

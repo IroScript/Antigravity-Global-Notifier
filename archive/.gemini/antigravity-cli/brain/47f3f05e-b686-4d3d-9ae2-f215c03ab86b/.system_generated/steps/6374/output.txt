@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+   False: LOAD_CONST youtube_metadata.json
+   False: STORE_FAST metadata_filepath
+   False: LOAD_CONST prompt_info.json
+   False: STORE_FAST prompt_info_filepath
+   False: STORE_FAST yt_meta_rec
+   True: LOAD_CONST ('uuid', 'idea_id', 'prompt_id', 'video_title', 'task_type', 'status', 'attempt_count', 'max_attempts', 'output_folder_path', 'video_path', 'metadata_json_path')
+   False: STORE_FAST metadata_exists
+   False: STORE_FAST prompt_info_exists
+   False: LOAD_CONST [Auto-Rebuild] Rebuilding missing package JSONs from SQLite for Idea #
+   False: STORE_FAST metadata_exists
+   False: STORE_FAST prompt_info_exists
+   False: LOAD_CONST   Metadata:    
+   True: LOAD_CONST ('status', 'idea_id', 'folder', 'video', 'metadata', 'prompt_info')
+   True: LOAD_CONST ('folder', 'video', 'metadata', 'prompt_info')
+   True: LOAD_CONST ('status', 'idea_id', 'folder', 'video', 'metadata', 'prompt_info')
+

@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+324:I0923 07:52:47.793799   51379 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x431940536382035e
+325:I0923 07:52:47.899281   51376 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xcbb31d851b43db26
+856:I0924 07:51:47.770132  143228 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe2e6b5b2e8d85519
+857:I0924 07:52:47.681426  143305 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x36a9b07eb8b1bd97
+1403:I0925 07:52:47.664136  235244 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb53db69e7a0c22dc
+1404:I0925 07:53:25.194723      32 server.go:3024] [RemoteControl] Subscription callback triggered.
+1405:I0925 07:53:25.197649      32 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+1406:I0925 07:53:25.198673      32 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+1407:I0925 07:53:25.198683      32 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+1408:I0925 07:53:30.058627      32 server.go:3024] [RemoteControl] Subscription callback triggered.
+1409:I0925 07:53:30.058687      32 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+1410:I0925 07:53:30.058691      32 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+1411:I0925 07:53:30.058696      32 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+1821:I0925 07:51:47.802765  250715 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x86fabce33ee1031
+1822:I0925 07:51:47.829915  250668 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc9b3deb7c6ee36a5
+1823:I0925 07:53:25.194979     146 server.go:3024] [RemoteControl] Subscription callback triggered.
+1824:I0925 07:53:25.196138     146 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+1825:I0925 07:53:25.196154     146 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+1826:I0925 07:53:25.196165     146 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+1827:I0925 07:53:30.060560     146 server.go:3024] [RemoteControl] Subscription callback triggered.
+1828:I0925 07:53:30.060627     146 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+1829:I0925 07:53:30.060633     146 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+1830:I0925 07:53:30.060637     146 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+2403:I0925 07:52:47.754548  281288 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x34937c1341a14869
+2404:I0925 07:53:25.194565     118 server.go:3024] [RemoteControl] Subscription callback triggered.
+2405:I0925 07:53:25.198341     118 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+2406:I0925 07:53:25.198357     118 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+2407:I0925 07:53:25.198367     118 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+2408:I0925 07:53:30.059492     118 server.go:3024] [RemoteControl] Subscription callback triggered.
+2409:I0925 07:53:30.059557     118 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+2410:I0925 07:53:30.059562     118 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+2411:I0925 07:53:30.059566     118 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+4640:I0925 07:51:47.624231  390559 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf5f6e0d4b824c345
+4641:I0925 07:53:25.196079      64 server.go:3024] [RemoteControl] Subscription callback triggered.
+4642:I0925 07:53:25.196407      64 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+4643:I0925 07:53:25.196433      64 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+4644:I0925 07:53:25.196447      64 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+4645:I0925 07:53:30.057751      64 server.go:3024] [RemoteControl] Subscription callback triggered.
+4646:I0925 07:53:30.057814      64 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+4647:I0925 07:53:30.057819      64 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+

@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+=== 1. UID / GID & CURRENT PROCESS ===
+UID: 1000 EUID: 1000 GID: 1000 EGID: 1000
+PID: 1023150 PPID: 1447
+Current Process: Uid:	1000	1000	1000	1000
+Current Process: Gid:	1000	1000	1000	1000
+Current Process: Groups:	4 20 24 25 27 29 30 44 46 1000
+Current Process: CapInh:	0000000800000000
+Current Process: CapPrm:	0000000000000000
+Current Process: CapEff:	0000000000000000
+Current Process: CapBnd:	000001ffffffffff
+Current Process: CapAmb:	0000000000000000
+Current Process: NoNewPrivs:	0
+--- Parent AGY (PID 1445) ---
+AGY Process: Name:	agy
+AGY Process: Uid:	1000	1000	1000	1000
+AGY Process: Gid:	1000	1000	1000	1000
+AGY Process: CapInh:	0000000800000000
+AGY Process: CapPrm:	0000000000000000
+AGY Process: CapEff:	0000000000000000
+AGY Process: CapBnd:	000001ffffffffff
+AGY Process: CapAmb:	0000000000000000
+AGY Process: NoNewPrivs:	0
+

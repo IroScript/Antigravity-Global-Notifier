@@ -1,0 +1,23 @@
+The search for ""az compute restore-point" OR "az restore-point" site:learn.microsoft.com" returned the following summary:
+The `az restore-point` command group in the Azure CLI is used to manage VM restore points, which allow you to protect data and guard against downtime by creating snapshots of virtual machines at regular intervals[1][2].
+
+### Key Capabilities
+*   **Management:** The `az restore-point` module enables you to create and manage restore points directly from the command line or via scripts[1][2].
+*   **Restore Point Collections:** You can manage "restore point collections," which serve as containers for individual restore points[1][3]. 
+*   **Flexibility:** Recent updates to the Azure CLI have added support for parameters such as encryption settings for both OS and data disks during the restore point creation process[4].
+*   **Troubleshooting:** In scenarios where resource groups cannot be deleted due to "stuck" or corrupted restore point collections (often found in service-managed resource groups like `AzureBackupRG_<region>`), the `az restore-point collection` commands can be used to identify and manage these resources[5][3].
+
+### Common Commands
+*   `az restore-point create`: Used to create a new restore point for a virtual machine[6][4].
+*   `az restore-point collection list`: Used to list restore point collections within a specific resource group, which is helpful for cleaning up orphaned resources[3].
+*   `az restore-point collection delete`: Used to remove a restore point collection[5].
+
+For detailed usage, tutorials, and parameter references, you can search for "az restore-point" directly on [Microsoft Learn](https://learn.microsoft.com)[1].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFajVkxeXozYXS8mk9zZs_av6X45yWUl-kvY3pA7zsCRa-ziYz14V28llc8Dr3A6ujsgKwujaFxo_GmssZXGpMIlCL7Qgn4a5Ub7XrFln1yimicaF0QG14VeTCojzjyTZzTlEG9zGCFpuNKBbKk8vV8yVEEH6wltlCqD8kz5P-hS2B4J3YR3zBdcJVan78Y4MhMmEPJeLcKj3E=)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFajVkxeXozYXS8mk9zZs_av6X45yWUl-kvY3pA7zsCRa-ziYz14V28llc8Dr3A6ujsgKwujaFxo_GmssZXGpMIlCL7Qgn4a5Ub7XrFln1yimicaF0QG14VeTCojzjyTZzTlEG9zGCFpuNKBbKk8vV8yVEEH6wltlCqD8kz5P-hS2B4J3YR3zBdcJVan78Y4MhMmEPJeLcKj3E=)
+[3] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMYGHhGNh1JU1iXYYdM8skSqRv58R-XamFOmpp-25iSOh9STjXXlyYzf2lnBNjc7bT_iHrT9Q89Ix1s7m8uQXfYcvRM1oWqu8hx2baSpNtoDxTRjtPXf-vdbWuifIIm0M_PSpd4b91GtxaiIGtudsYC6c__SDdC1rEV_2S2qMLdF0b4VRPeXsS7g5-a2Htigb6LUWti5wKva812vwaWWBFsaKH-w==)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsDb2mbevXLE1brpavXHX7mha-9HfnEsEDhkPhRdFYUj0l4o4emg3wm_8kDz3BZ1OCQ7sptpgt4TD1Q9Hv7jczkId41VfQY3XHPAPLPpVTk4XPm8LGUNGj42l6z6wx0m7Jw_84p1YNgj_LTmJKi1I9SUIehpSSCIxwTmmHSgx64LOnqkJbAFQXaaqgOyvK1Q==)
+[5] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbNRpTOlK1j7781HuOFQDOEXno2ju_epRav067T4-Tsu9mAkPiJbTal1SZlH-1cooahRpIB4wN6mE3u1mazcmDgM52SnZ72XCqBrFK_ifK6CgCRKGIy_ZciCgULLSOb8cEZdP1BPdZrtmdawLTsjDGidcvc8YbQvEKI7uvg5wZCkIy-prckv0FJHPT5KNRkkYp6L1mMnw=)
+[6] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6VXj1tBQmkZNO1sbiMhziu5QD5yykT00_J2afWSP_7h1KiFAND-oHwAdU9pklIlmkt2EYjDP6L3uBRO22NRM9rU-6gO_w-QTK-TfKme95aMJda5tPchW24oSrp4excF2hoJsGBO1gwuQaTndLnYzmgzJQ3WtTzCu0PhPOCi-7pvjjuEzH)

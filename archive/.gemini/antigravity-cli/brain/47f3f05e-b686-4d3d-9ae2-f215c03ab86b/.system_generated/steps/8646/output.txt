@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+azureus+    1716    1687  0 Sep22 ?        00:00:23 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+  669951    1445  0 07:51 pts/11   00:00:40 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+

@@ -1,0 +1,6 @@
+
+Encountered error in step execution: context canceled
+Output:
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 /proc/1717/fd/1 -> 'pipe:[11492]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 /proc/1717/fd/2 -> 'pipe:[11492]'
+

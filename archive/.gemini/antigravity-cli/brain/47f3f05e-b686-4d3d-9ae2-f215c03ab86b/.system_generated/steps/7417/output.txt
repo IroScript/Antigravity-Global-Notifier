@@ -1,0 +1,96 @@
+
+The command exited with code 0.
+Output:
+=== DATABASE BACKUP AUDIT & VERIFICATION ===
+
+[Azure PostgreSQL]
+  Local File:   azure_postgres_all_databases.sql
+  Local Size:   279,107 bytes
+  Local SHA256: e61b22f3056f430465c95aabb9a35727b7598e47ec742e86af0bdd89262d01fb
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/azure_postgres_all_databases.sql
+  GCS Status:   EXISTS
+  GCS Size:     279,107 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[Azure SQLite (YouTube)]
+  Local File:   azure_youtube_pipeline_consistent.db
+  Local Size:   40,792,064 bytes
+  Local SHA256: c811e30cc1a33b2922d56c8e8bb83d9dbe8e1d9364d0cef6b4513f614244e041
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/azure_youtube_pipeline_consistent.db
+  GCS Status:   EXISTS
+  GCS Size:     40,792,064 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[Azure Redis 6379]
+  Local File:   azure_redis_6379_dump.rdb
+  Local Size:   88 bytes
+  Local SHA256: ba84184d40d7b0b881b3d6aa7793e1f6ec5914ef5e542f488c3c369bc153fbe9
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/azure_redis_6379_dump.rdb
+  GCS Status:   EXISTS
+  GCS Size:     88 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[Azure Redis 13000]
+  Local File:   azure_redis_13000_keys.txt
+  Local Size:   43 bytes
+  Local SHA256: b354a31da40f31a30af94f6597cec0339927a5fb095bc262e11bd01ed8756dbe
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/azure_redis_13000_keys.txt
+  GCS Status:   EXISTS
+  GCS Size:     43 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[GCP MariaDB (ERPNext)]
+  Local File:   gcp_dumps/gcp_frappe_mariadb.sql
+  Local Size:   9,226,115 bytes
+  Local SHA256: ac7a8fe0eab4f6f61d59394272589fdbfa3309e6a93599c5d01c63ab00b29e78
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_frappe_mariadb.sql
+  GCS Status:   EXISTS
+  GCS Size:     9,226,115 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[GCP PostgreSQL]
+  Local File:   gcp_dumps/gcp_postgres_all_databases.sql
+  Local Size:   274,467 bytes
+  Local SHA256: a7f677575a5e632fde8fd74d43c6e7c4437003c3e8eaafb18c13a656fb7e1441
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_postgres_all_databases.sql
+  GCS Status:   EXISTS
+  GCS Size:     274,467 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[GCP CockroachDB Schema]
+  Local File:   gcp_dumps/gcp_cockroach_schema.sql
+  Local Size:   11,984 bytes
+  Local SHA256: b5cacf161f4b4bf5e4cebabcf66f13117b06cecf81cae36295a5348670a623c5
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_cockroach_schema.sql
+  GCS Status:   EXISTS
+  GCS Size:     11,984 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[GCP CockroachDB Data]
+  Local File:   gcp_dumps/gcp_cockroach_migrations_data.txt
+  Local Size:   237 bytes
+  Local SHA256: c36b47f298fcee4f3f36ba85990835f925c1ebeb5da9b13577909ac13ad34828
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_cockroach_migrations_data.txt
+  GCS Status:   EXISTS
+  GCS Size:     237 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[GCP Redis 6379]
+  Local File:   gcp_dumps/gcp_redis_6379_dump.rdb
+  Local Size:   88 bytes
+  Local SHA256: 6418152c69882652b4dd556598b3139cc82ce61a16dc97eaac2cdb4955083a3c
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_redis_6379_dump.rdb
+  GCS Status:   EXISTS
+  GCS Size:     88 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+[Manifest SHA256]
+  Local File:   DATABASE_MANIFEST_SHA256.txt
+  Local Size:   1,010 bytes
+  Local SHA256: 1773a84c083c96fc34a5df6d9ec0d88e7e5293b09f22b9595d6a31f188cbb832
+  GCS Path:     gs://all-vm-backups-vault-irak-2026/database_backups/DATABASE_MANIFEST_SHA256.txt
+  GCS Status:   EXISTS
+  GCS Size:     1,010 bytes (Size Match: PASS)
+  Verification: VERIFIED
+
+

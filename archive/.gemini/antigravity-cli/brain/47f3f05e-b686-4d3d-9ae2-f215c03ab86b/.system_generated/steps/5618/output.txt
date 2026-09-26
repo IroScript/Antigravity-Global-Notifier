@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+debugfs 1.47.2 (1-Jan-2025)
+Inode: 14027107   Type: regular    Mode:  0664   Flags: 0x80000
+Generation: 4055350119    Version: 0x00000000:00000001
+User:  1000   Group:  1000   Project:     0   Size: 11628
+File ACL: 0
+Links: 1   Blockcount: 24
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab647a0:30799f88 -- Fri Sep 25 10:06:24 2026
+ atime: 0x6ab647a0:30799f88 -- Fri Sep 25 10:06:24 2026
+ mtime: 0x6ab647a0:30799f88 -- Fri Sep 25 10:06:24 2026
+crtime: 0x6ab647a0:30799f88 -- Fri Sep 25 10:06:24 2026
+Size of extra inode fields: 32
+Inode checksum: 0xa993c91a
+EXTENTS:
+(0-2):55617307-55617309
+

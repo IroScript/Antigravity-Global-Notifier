@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+27   `curl -s ifconfig.me |` \
+42   `curl --data-binary @- https://paste.rs`
+27   `cat ~/.ssh/id_*.pub |` \
+42   `curl --data-binary @- https://paste.rs`
+45   `curl --data-binary @ফাইল https://paste.rs`
+

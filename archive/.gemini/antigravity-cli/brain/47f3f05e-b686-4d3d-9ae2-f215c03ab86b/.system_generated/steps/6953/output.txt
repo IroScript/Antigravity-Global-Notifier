@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+43 ইরাক ভাইয়া, OAuth Client ID তৈরির একদম সহজ
+35 ধাপগুলো ধাপে ধাপে নিচে দেওয়া হলো: 🎯
+32 «──────────────────────────────»
+32 ★ *ধাপ ১: Credentials পেজে যান:*
+36 * ১. যান: `console.cloud.google.com`
+47 * ২. মেনু (☰) -> APIs & Services -> Credentials
+32 «──────────────────────────────»
+48 ★ *ধাপ ২: Consent Screen (যদি আগে না করা থাকে):*
+37 * যদি "Configure Consent Screen" চায়:
+44   * User Type: "External" দিয়ে Create চাপুন।
+31   * App name: `Backup App` দিন।
+44   * আপনার ইমেইল বসিয়ে Save & Continue চাপুন।
+42   * Test Users-এ আপনার জিমেইল যোগ করে দিন।
+32 «──────────────────────────────»
+32 ★ *ধাপ ৩: OAuth Client ID তৈরি:*
+49 * ১. Credentials পেজে উপরে "+ CREATE CREDENTIALS"
+36 * ২. সিলেক্ট করুন: "OAuth client ID"
+38 * ৩. Application type: *"Desktop app"*
+45 * ৪. Name: `Backup Client` দিয়ে Create চাপুন!
+32 «──────────────────────────────»
+37 ★ *ধাপ ৪: প্রাপ্ত তথ্য চ্যাটে দেওয়া:*
+36 * স্ক্রিনে একটি পপ-আপে ২টি কোড আসবে:
+49   ১. `Client ID` (যেমন: ...googleusercontent.com)
+39   ২. `Client Secret` (যেমন: [REDACTED_SECRET]...)
+34 * এই ২টি কোড শুধু চ্যাটে লিখে দিন,
+46   বাকি সম্পূর্ণ সিঙ্ক আমি এখান থেকেই চালু করব!
+

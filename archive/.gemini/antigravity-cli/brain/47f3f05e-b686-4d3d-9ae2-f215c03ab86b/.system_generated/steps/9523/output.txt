@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+          -1 2026-09-26 08:39:45        -1 AGY-MASTER
+          -1 2026-09-26 08:32:42        -1 connectivity_test
+

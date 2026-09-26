@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+/usr/bin/gcloud
+                  Credentialed Accounts
+ACTIVE  ACCOUNT
+*       [REDACTED_ID]@developer.gserviceaccount.com
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+irak-mahmud-project
+

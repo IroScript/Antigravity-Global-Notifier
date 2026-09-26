@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 302 
+date: Fri, 25 Sep 2026 15:00:45 GMT
+content-type: text/html; charset=utf-8
+location: https://tmpfiles.org/wowNEaDqsgx8/master_dashboard_25_sept_03.00_pm.csv
+server: cloudflare
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-powered-by: PHP/8.4.25
+cache-control: no-cache, private
+set-cookie: XSRF-TOKEN=eyJpdiI6Ii9hRDYzMEtmSTVZSUhyTFdzOWtoMXc9PSIsInZhbHVlIjoicW1SN2xPN0ppeHdEaHQ3eitsVktIZ3h4dVpZYzhsQjBsdnR5OHBLUlBOWHVzU3JVdGd3NjZ2d1c4VENSbWdBaXZ0T1E5aE5yTE01Smgxcm84YlhCVG5OajFudDlWTnc3dUhWNHBKT0IvVEI2VmJmdWRMbHFaY2U5MW90Y0FndWMiLCJtYWMiOiJkYjQyNGI5NTIxZjFiODk4N2M5YjVhMGMwYWQzYTYyZjJkOGY2NGE1MWMzYTdhNWJlYjRhZGNlZDkyMzQ4MzhkIiwidGFnIjoiIn0%3D; expires=Fri, 25 Sep 2026 17:00:45 GMT; Max-Age=7200; path=/; secure; samesite=lax
+set-cookie: tmpfiles_session=eyJpdiI6InJKSGJkalA0em5wMk1JdVlCbXJHdGc9PSIsInZhbHVlIjoicEo2YURFTGpDMDlWQmZWQXJNSmtHNW5tcXh2MGdKb2R3MXJnZXF0emVSVVRrbHE2YVRmMUdiRlVNUGRQQ0sySU9Kc2lxNGUvZDE3S1BhQy8zeG1nTDlhZGZsaWl1a252UUptU3g1cGV0WHZ3bEk0Zkh6bkhobWl1TnQ2Qlk3SnAiLCJtYWMiOiI4ZjU2MTk1N2Q4N2QxMzVjZWQyMWE5ZjRmNjg3YWUwYzA0NGE1OTIyNmFjZGFhYjVmMjY0NWRiNTdlMzY3OGVmIiwidGFnIjoiIn0%3D; expires=Fri, 25 Sep 2026 17:00:45 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+cf-cache-status: BYPASS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ATS5SpKq%2F45%2BIT9ke4BqMmDf0zJtnTPnhAmJuXWWC562Y2%2F6yX50bWmh1cVlpqTHFToiiD%2FJSwrbSPInTBxyrJ1mO3TqI40gNSORCscFDiQLbXksx4UuDCRPtguZn4w%3D"}]}
+cf-ray: a40ae6789db138e8-IAD
+alt-svc: h3=":443"; ma=86400
+
+

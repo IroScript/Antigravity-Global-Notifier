@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+udp   UNCONN 0      0                    *:39212            *:*    users:(("cloudflared",pid=1717,fd=3))                                                 
+tcp   LISTEN 0      4096         127.0.0.1:20241      0.0.0.0:*    users:(("cloudflared",pid=1717,fd=10))                                                
+

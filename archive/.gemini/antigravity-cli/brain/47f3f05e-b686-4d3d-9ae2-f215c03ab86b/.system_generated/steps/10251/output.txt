@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 404 
+date: Sat, 26 Sep 2026 10:24:38 GMT
+content-type: text/html
+cf-ray: a4118f5f5e68e621-IAD
+cf-cache-status: DYNAMIC
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+<html><head><meta charset=utf-8 http-equiv="Content-Language" content="en"/><link rel="stylesheet" type="text/css" href="/error.css"/></head><body><h1>404</h1></body></html>

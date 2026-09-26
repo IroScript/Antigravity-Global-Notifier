@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+tcp   LISTEN 0      4096         127.0.0.1:26257      0.0.0.0:*    users:(("cockroach",pid=1204,fd=99))      
+

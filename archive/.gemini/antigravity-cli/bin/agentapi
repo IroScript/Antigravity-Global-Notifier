@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/azureuser/.local/bin/agy.1790259882643246969.old" agentapi "$@"

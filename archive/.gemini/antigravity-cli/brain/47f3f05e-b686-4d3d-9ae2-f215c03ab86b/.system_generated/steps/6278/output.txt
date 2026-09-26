@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Total DB videos: 325
+Parsing journal copy...
+Found 217 inodes from journal
+Extracted (1): 1.350.Level_10_Snake_Hydrodynamic_Ram.mp4 (1.22 MB)
+Extracted (2): 1.156.Level_10_Sub-Zero_Plasma_Ice-Cutter.mp4 (13.19 MB)
+Extracted (3): 1.157.Level_10_The_Permafrost_Thermal_Shield_Citadel.mp4 (9.61 MB)
+Extracted (4): 1.163.Level_10_The_Tundra_Snow-Compacting_Leviathan.mp4 (13.79 MB)
+Extracted (5): 1.164.Level_10_Geothermal_Snowfield_Melt-Canal_Dredger.mp4 (12.29 MB)
+Extracted (6): 1.158.Level_10_Glacial_Melt_Sub-Hydro_Dynamo.mp4 (8.70 MB)
+Extracted (7): 1.159.Level_10_The_Polar_Bedrock_Tectonic_Pincer.mp4 (11.67 MB)
+Extracted (8): 1.160.Level_10_Atmospheric_Cryo-Condenser_Spire.mp4 (9.90 MB)
+Extracted (9): 1.161.Level_10_Sub-Zero_Snowplow_Colossus.mp4 (9.76 MB)
+Extracted (10): 1.162.Level_10_Aurora_Borealis_Polar_Resonator.mp4 (8.74 MB)
+Extracted (20): 1.91.Level_10_The_Solar_Banana_Conveyor.mp4 (10.65 MB)
+Extracted (40): 1.104.Level_10_Sunflower_Skywheel.mp4 (12.01 MB)
+Extracted (60): 1.140.Level_10_The_Infinite_Cornfield_Colossus.mp4 (11.27 MB)
+Extracted (80): 1.70.Level_10_Celestial_Shoot_Accelerator.mp4 (13.97 MB)
+Extracted (100): 1.41.Level_10_Chrono-Bark_Synthesizer.mp4 (12.99 MB)
+Done! Newly extracted: 106, Already present: 111, Total active: 217
+

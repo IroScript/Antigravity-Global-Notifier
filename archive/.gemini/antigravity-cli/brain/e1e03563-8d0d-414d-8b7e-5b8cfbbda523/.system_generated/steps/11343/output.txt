@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Attempt 1: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 2: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 3: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 4: Worker 4 healthy & authenticated: {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+

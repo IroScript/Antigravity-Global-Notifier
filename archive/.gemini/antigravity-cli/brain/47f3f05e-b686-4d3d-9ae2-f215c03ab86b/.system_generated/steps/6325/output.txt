@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+cloudflar   1717                        azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717                        azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1719 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1719 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1720 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1720 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1721 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1721 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1722 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1722 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1723 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1723 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1746 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   1746 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   2010 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   2010 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   2011 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717   2011 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717 112439 cloudflar       azureuser   1w     FIFO               0,15       0t0      11492 pipe
+cloudflar   1717 112439 cloudflar       azureuser   2w     FIFO               0,15       0t0      11492 pipe
+bash        1718                        azureuser   0r     FIFO               0,15       0t0      11492 pipe
+

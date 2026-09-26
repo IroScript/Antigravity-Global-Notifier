@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+total 12
+drwxr-xr-x  3 root      root      4096 Sep 25 16:16 .
+drwxr-xr-x 30 azureuser azureuser 4096 Sep 26 09:40 ..
+drwxr-xr-x  6 root      root      4096 Sep 25 12:40 home
+

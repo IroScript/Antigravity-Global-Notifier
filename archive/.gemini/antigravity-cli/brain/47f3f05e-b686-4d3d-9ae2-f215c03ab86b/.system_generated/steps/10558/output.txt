@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+azureus+    1190  0.0  0.1 121092 29104 ?        Ss   Sep22   0:20 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+root      204399 11.7  0.4 428924 79140 ?        Ssl  Sep24 336:40 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+ 1186689  0.0  0.0   7484  3292 pts/12   Ss+  13:37   0:00 bash -c nohup python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py > /home/azureuser/IrakIroan/azure_file_explorer/server.log 2>&1 & sleep 1 && ps aux | grep "server.py"
+azureus+ 1186690  3.9  0.1  32976 19368 pts/12   S+   13:37   0:00 python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+azureus+ 1186694  0.0  0.0   7064  2312 pts/12   S+   13:37   0:00 grep server.py
+

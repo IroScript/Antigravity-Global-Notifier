@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Integrity: ok
+Ideas: 597
+Prompts: 7180
+SEO: 555
+

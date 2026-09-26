@@ -1,0 +1,40 @@
+The search for ""iam.disableServiceAccountKeyCreation" override organization policy google cloud console steps" returned the following summary:
+To override the `iam.disableServiceAccountKeyCreation` organization policy, you must have the **Organization Policy Administrator** role (`roles/orgpolicy.policyAdmin`) assigned at the **organization level**[1][2][3].
+
+### Important Prerequisites
+*   **Permissions:** You must have the `roles/orgpolicy.policyAdmin` role[1][4]. If you do not see this option, ensure you are selecting your **Organization** in the Google Cloud Console project picker, not a specific project[5][3].
+*   **Hierarchy:** If the policy is enforced at the organization level, you can typically override it for a specific project by creating an exception[1][6]. However, if the policy is configured to prevent overrides or is enforced strictly, you may need to consult your organization's administrator[7][8].
+
+### Steps to Override the Policy
+1.  **Navigate to Organization Policies:**
+    *   Go to the [Organization Policies](https://console.cloud.google.com/iam-admin/orgpolicies) page in the Google Cloud Console[1][9].
+    *   In the resource selector at the top-left, **select your Organization** (the top-most node in your hierarchy)[1][3].
+2.  **Find the Constraint:**
+    *   In the filter bar, search for `iam.disableServiceAccountKeyCreation`[10][1].
+    *   Click on the policy name to open its details page[1].
+3.  **Override the Policy for a Project:**
+    *   Click **Edit**[1][2].
+    *   Under **Policy source**, select **Override parent's policy**[11][1].
+    *   Change the enforcement setting from **Enforced** to **Not enforced** (or customize it to exclude specific projects if supported)[1][6].
+    *   Click **Save**[1][12].
+
+### If the Override Option is Grayed Out
+If you have the correct roles but still cannot override the policy, it is likely because:
+*   **Strict Enforcement:** The organization policy may have been set at a level that explicitly forbids further overrides[7][8].
+*   **Missing Org-Level Permissions:** You might be trying to manage the policy at the project level instead of the organization level[5][3]. Ensure you have navigated to the organization's policy settings[1][3].
+
+If you are still unable to make changes, you must contact your organization's Google Cloud Administrator to request a temporary exception or a change to the policy[8].
+
+Sources:
+[1] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSQ-Pfeeag_CrAv75hwnho2TjHqzhjv3dVIOiViesBWhd_4Fo5UxqOYltofSjSQ-IqrigyPUut5ONi9-kmA_QTbmL35n2tL1FELuuCkQbKOJyXdEsZfPJjjA4ruq5LL5CRsUkhtyb0mhWcyQktJIwbfWpZ5WQ0mS9jrMvuT7MtaKLrI53WXTlQr3THid4k-bYnxto=)
+[2] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSQ-Pfeeag_CrAv75hwnho2TjHqzhjv3dVIOiViesBWhd_4Fo5UxqOYltofSjSQ-IqrigyPUut5ONi9-kmA_QTbmL35n2tL1FELuuCkQbKOJyXdEsZfPJjjA4ruq5LL5CRsUkhtyb0mhWcyQktJIwbfWpZ5WQ0mS9jrMvuT7MtaKLrI53WXTlQr3THid4k-bYnxto=)
+[3] [stackoverflow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELnQT97wk8V01qSEIkh4EajqL7C7dD_2cFLcgyPyY21qAKvtFrfpRPyopkTP47gMFShplbA6jjb7S2gonGyrSfdA3nM9sETgOk3p82iovdCnaNgJpgKKcwRr_HjEIUF9OoKSWyQCDhKDw3STxmRgojmXC1u2JyMWCcDADRx8yabou0MDH3yjVbusltdTolEoamYtEQLtUB0FmNi9FlktyJnQzB9ZX8)
+[4] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbfOOvdkstn8U329EiCfVaHD0wrh320mAg-b9SUrbog36a3KsLwN49xncxT0HY64qxlcBQyzCWW07DombfN6GTXjHXx9WbdDTwQ9QgL_MPnPvJvrDM_LTpJOCln7clgThgCWmbDgbAq3IUOCUf0MuDHsWOAMyV_7T7n4UFgXkkRJQ=)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpy-9xx62n35pnOUt01oQwX8EqOE2_Xz3XGxdzKvshkNzSoNTOGDy-eV7oDJRtCPi14obAST0318WExZNsGdglU06JxxRPzODQTGVHAIAJm3lO-FlUswjgfrRImflBtqTzRjaBFdhYuQ8xOAJN4en7JThv2t2h7ovzzbxwoa8hBInWf26tM-d-_xbfDV_FwieMSJBSNF_pAX4=)
+[6] [oneuptime.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw9shQG0RfoNTAxfC1YVNdbelc4Z66uMsJREvP78AH0ETvCqA5B9bLQ66xNC14y_Lb8tm5cJzhvL_IAAT9evm0Jk_ankmWBDvoDwNPrAEW3BZqDCSjIhVDQzgex_lr3IzHrSXTEFIeqa3Meq6XKnTSTTooDxZlA8YFc_PWYXi3NEvivL7SudBbL7XWOPLYZylfE37NmDpR7Ic8ekYeMHKm9dst3Hz-rTH1fFIFGLOOInj31QNqgzUPpBI=)
+[7] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_QPfKZ8CRRTV9urYmsnZ6aOVne8QVIH72LMhwn7pzhomT1QhaMVAWdVn1YmyhPhfrw_Z-dpqClljPlEbUmbz9atqrNa6ysxUeeMQuWHlyK_-kfXswX1NN7iaPJVltd-ktNv3OY06o2pzfOEDV1tuiRLrZB3qF7eAQrEhnj8Q5CC315ybWE-0-dYaDyLgoq4yMoYe6jFuZ2Cp41YWZv0jFgjAQoFr-w0pIUOGyJJ4kc7uMELaGRH1qq7h2Rs=)
+[8] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzc6iXFMZaXGumitDBky868V7NbWGRDzjq8BFxUvtAeiba0Yu1M7Z600UUiDdcZ0dtc0ipde4R3AxWOn6HxTgVPLAVXnP5avtyo_8Ui2AvaRRRvuaQGH1RaFYhjDNbEs0JexanfGulz_XChpwFtc1cWiNZFv89q9rnWXl5Fx99UhtuZWaNYcM7QJW5Oq0fyaBftzM821cv79LWJoFu9DMM8OhRXtxojikdMSQEXFQej9YOUe6JV68kQ3lPK2o=)
+[9] [sophos.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFA7_VPnEEqgEnikrZJYnVedPYhlnLxL97aUWBzlwpDhnjjGqUviYacAFsTKazDD-52KQZLolJ54n17bEAyM5LkCsn2EMAZKLbblEORVkCxTWcLgAtiefBcUWfkhnubtPqWdAnnslnWw2sQM6NIWKAMbHUyU5kjcfyK64JNrX52iPiNc-HWPv6bck9eSlG_4W-fmOYdlybXflgk6GMaPV_b5UigqVuoYBZAMrSwy3KpCQfH9GX9Roh1Hsnu6UhgD1qToH0GQoBjcxP3gouOJrgM6uC2uPE3SbsdVwvF96y4)
+[10] [subsplash.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-YxX7xm-1dYWJJz6WPvI5MNdXduJw-YmeiFm-mGC0LfL1jJxTHh5mkeIxKbj3EfndpelEkWvKIbDqVei63u5BT2pGOEadYZrz6sLDuLEV_7j9MfNxGqSqHK5Nkc8OWgCmJj2dFIMP7KDLMCJrzYOhKKKbs1w2U06YikkM1jWv5BDAHXGVFIwJ6gbJqZmYQQXe_b2o3KS3CXJZc7_wEfHs3bHGFYbUPJvzvJXGFJvv)
+[11] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbfOOvdkstn8U329EiCfVaHD0wrh320mAg-b9SUrbog36a3KsLwN49xncxT0HY64qxlcBQyzCWW07DombfN6GTXjHXx9WbdDTwQ9QgL_MPnPvJvrDM_LTpJOCln7clgThgCWmbDgbAq3IUOCUf0MuDHsWOAMyV_7T7n4UFgXkkRJQ=)
+[12] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHytNQeer-GWs6HHNMFoD4tch612uwWNLo4Ic_BJVEtqrqM7dfry-XGlNegUjL5OL4l5o8u4rCfT-K-xvJGhUQrjuUySSzpgGB4aku2wLXTLjYd40ye2S7byjWR-Kne3roJF9cN0yrgNc_Hh4ChPbO3OeRhOq5g)

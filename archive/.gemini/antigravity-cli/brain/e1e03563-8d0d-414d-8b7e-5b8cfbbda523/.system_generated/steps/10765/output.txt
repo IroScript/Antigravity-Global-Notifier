@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+(557, '003133ab-9230-4246-841d-1addf1f10577', 569, 72, 'Underwater City Rail Hammer Drives Mega-Rails Into the Seafloor', 'Science & Technology', 'en', 'ready', None)
+

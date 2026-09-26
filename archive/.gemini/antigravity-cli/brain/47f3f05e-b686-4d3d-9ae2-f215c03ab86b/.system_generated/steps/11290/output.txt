@@ -1,0 +1,20 @@
+The search for "azure linux vm default username home directory azureuser site:learn.microsoft.com" returned the following summary:
+For Azure Linux virtual machines, `azureuser` is a common default username often suggested during the creation process, though you can specify a different username if you choose[1][2][3].
+
+The home directory for this user (or any user created during the VM provisioning process) is located at:
+
+**/home/azureuser**[4][5]
+
+### Key Details:
+*   **Customization:** While `azureuser` is the default recommendation in the Azure portal and CLI documentation, it is not a hard requirement; you can define a different administrative username during VM deployment[1][2].
+*   **Home Directory Path:** Consistent with standard Linux conventions, the home directory for a user named `username` will be `/home/username`[6][4].
+*   **Deletion:** If you use the Azure CLI command `az vm user delete` to remove a user account, the associated home directory on the Linux VM is also deleted[7].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKvhkqqeVnoBZJxW99q_RY5ER2aw7WyuhS8KYP7yWF7s--I9PvOAWhHWa4GuDeayfKZ9CGMILpQnB0YzoH7MNyht0xGz3G0C6PyHvbEqAxJelAJLbNTDa2tDK7w2zSse31Wnm7HqI4sdAHRJWg4r-7liLbBqbyArFN9wS7nGxHC8B0eORvGcQ=)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBE95SYsUgD1ZMi7nIZUMSDoa_rE0XJgwOY6jsJfp7DUWv2Er6rb-68_y_ThEQ1Rqr-ipZ9xwUUpsxWtybmvegeC_Ca7xxUQGQnq5hte3ua4hB2VeqqEfQ-WHGNwjzl6ff05jM_dxcMOyNcJT7U4F6QKvz6ItUh5PcQU_gx1IJuamV6bWdIXcSa0K9fCPYiMynr0-UbX_olKIJgA==)
+[3] [matrixpost.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7l6SnQsVlHzzTPUbThS9ipeS9jThTLsYHCnT6OQ1Kn0lWISD6ZNnScAZF-TnvWneDjhSyv7tc86xZzz7cuCHWUirEluH8-Lj5O1151ggie6YM0SQhSO1EyaneP1oB9TY=)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF90oC3a-aryADmYxpVtp3cSq2v3JK5zUEsD7twlSHzOQ6P4tesJnu7Zx_UfA1Mqdu82TFIC4XZ9Cf9PVAUKunDAAaKLX4LXoPp8MzDWdvLTggne1A4l1_9EOrIy1Vprh93ApmNKFCW7asUQ1tvNdEBaABe9LHfc0XRti4=)
+[5] [azure-noob.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0L16XS9uogisUmRqogtLBG7dZhHhQKVDeeonTnl12bsipKmBeh_EC58bCer_q_kfbQjWixuZg9Aai7j9fKuhetTMXUYfpCS_ksf_EprO8ZtnaGLUcq04UXINrdyxd8r6q7a4T3M3rsJlmXukD_JWpa3y_)
+[6] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1k0tskV6X-7MzAVtQZeQ9lKXFYTCXZpbl68VhCdT037Rtz1l6ZeDAcip_8vHXhAMudvRUEmqnrx8BILo36P-SHU_W05RDitv_QhJDYYWwQ7JBEKOaN1O0GXYVH2vvGZfmKAqRQZerqpD8N4w1WoLqCAf00uaniwaNI08Qng8sX0p3bkvCKjxsZlWQroEguBSl8Q==)
+[7] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvbN8KkBqVJF5_-JWS2fenNnuSzc7-rvTF-F-PpBRvueCEz6TOs3R9j_NWb-W-p_-02VQCw3odO8TiU-vCCsKKZ0Ey5qej8kvms_yCpE0SzS0UMYedOVQFjfbLPXpJcSVTn7rKrDt88a3pYb81vyez4WYpPBYmbb3_fhhzARE=)

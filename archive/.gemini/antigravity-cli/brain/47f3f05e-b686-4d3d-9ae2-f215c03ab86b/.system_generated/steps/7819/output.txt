@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+  871764  0.1  0.3 1801792 51704 pts/12  Ssl+ 18:12   0:00 rclone ls personaldrive:All_VM_BackUps/GCP_VM_BackUP/
+

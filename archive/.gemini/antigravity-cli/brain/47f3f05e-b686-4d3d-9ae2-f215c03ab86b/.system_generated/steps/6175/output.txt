@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Offset 223606734848: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223610929152: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223615123456: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223619317760: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223623512064: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223627706368: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223631900672: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223640289280: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223661260800: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+Offset 223665455104: box=ftyp sz=32, next_box=b'uuid' next_sz=7729
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Testing get_db_connection...
+Elem need ideas: (85, 'Fortress', 'Infrastructure', 0)
+

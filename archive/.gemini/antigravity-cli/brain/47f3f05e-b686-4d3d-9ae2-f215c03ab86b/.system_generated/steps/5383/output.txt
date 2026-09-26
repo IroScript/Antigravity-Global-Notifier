@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+3d-web-templates -> https://github.com/IroScript/3d-web-templates.git
+activity_log_digital_history_from_devices -> https://github.com/IroScript/activity_log_digital_history_from_devices.git
+AI-Coding-Tool-Conversation-Extractor-In-Readable-Format -> https://github.com/IroScript/AI-Coding-Tool-Conversation-Extractor-In-Readable-Format.git
+Alco-Depot-Data-Extractor -> https://github.com/IroScript/Alco-Depot-Data-Extractor.git
+Alco-Head-Office-Field-Data-Formating -> https://github.com/IroScript/Alco-Head-Office-Field-Data-Formating.git
+alco_fm_wise_cash_in_hand_and-_dic_adjustment -> https://github.com/IroScript/alco_fm_wise_cash_in_hand_and-_dic_adjustment.git
+Alco_Google_Drive_Report_Generation -> https://github.com/IroScript/Alco_Google_Drive_Report_Generation.git
+alco_web -> https://github.com/IroScript/alco_web.git
+alert-for-wifi-and-charger-disconnection-for-windows-10 -> https://github.com/IroScript/alert-for-wifi-and-charger-disconnection-for-windows-10.git
+Antigravity-Global-Notifier -> https://github.com/IroScript/Antigravity-Global-Notifier.git
+Assignment_3 -> https://github.com/IroScript/Assignment_3.git
+audio-transcription-editor -> https://github.com/IroScript/audio-transcription-editor.git
+blog_site -> https://github.com/IroScript/blog_site.git
+chrome_automation_drafts_not_working -> https://github.com/IroScript/chrome_automation_drafts_not_working.git
+desktop-camera-app-small-popup-camera -> https://github.com/IroScript/desktop-camera-app-small-popup-camera.git
+desktop_magnifier -> https://github.com/IroScript/desktop_magnifier.git
+equalizer-doug-sheffer-mv3 -> https://github.com/IroScript/equalizer-doug-sheffer-mv3.git
+Face_Attendance_Django_V1 -> https://github.com/IroScript/Face_Attendance_Django_V1.git
+frappe-erp-alco-project -> https://github.com/IroScript/frappe-erp-alco-project.git
+google-ai-studio-checker2 -> https://github.com/IroScript/google-ai-studio-checker2.git
+google_anthropic_computer_use -> https://github.com/IroScript/google_anthropic_computer_use.git
+JS_Task_With_Time_Keeping_And_Live_Note -> https://github.com/IroScript/JS_Task_With_Time_Keeping_And_Live_Note.git
+kids_app_android -> https://github.com/IroScript/kids_app_android.git
+kids_tube_with_folder_seection -> https://github.com/IroScript/kids_tube_with_folder_seection.git
+mern_practicing -> https://github.com/IroScript/mern_practicing.git
+mirrorr_screen -> https://github.com/IroScript/mirrorr_screen.git
+mobile_qr_scanner_for_android_id_for_attendance_purpose -> https://github.com/IroScript/mobile_qr_scanner_for_android_id_for_attendance_purpose.git
+Note_in_Python_AutoSave_Old_Version -> https://github.com/IroScript/Note_in_Python_AutoSave_Old_Version.git
+Note_in_Rust_AutoSave -> https://github.com/IroScript/Note_in_Rust_AutoSave.git
+OpenClaw-Cloud-Setup-and-Control-from-Local-CLI -> https://github.com/IroScript/OpenClaw-Cloud-Setup-and-Control-from-Local-CLI.git
+
+Terminal ID: 3adfbfe0-9c07-49dd-b3b9-c374e7114a29

@@ -1,0 +1,68 @@
+
+The command exited with code 0.
+Output:
+CREATE TABLE youtube_metadata (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	idea_id INTEGER NOT NULL, 
+	element_id INTEGER, 
+	title VARCHAR NOT NULL, 
+	seo_description VARCHAR NOT NULL, 
+	tags VARCHAR NOT NULL, 
+	category VARCHAR NOT NULL, 
+	default_language VARCHAR NOT NULL, 
+	video_prompt_used VARCHAR, 
+	image_prompt_used VARCHAR, 
+	video_file_path VARCHAR, 
+	package_folder_path VARCHAR, 
+	status VARCHAR NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, pinned_comment TEXT, youtube_video_id VARCHAR, youtube_url VARCHAR, tracking_token VARCHAR, live_title VARCHAR, live_description VARCHAR, upload_status VARCHAR, published_at DATETIME, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(idea_id) REFERENCES ideas (id), 
+	FOREIGN KEY(element_id) REFERENCES elements (id)
+)
+CREATE TABLE seo_runs (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	idea_id INTEGER NOT NULL, 
+	provider VARCHAR, 
+	mode VARCHAR NOT NULL, 
+	demand_score FLOAT, 
+	novelty_score FLOAT, 
+	saturation_score FLOAT, 
+	opportunity_score FLOAT, 
+	verdict VARCHAR, 
+	keyword_count INTEGER NOT NULL, 
+	competitor_count INTEGER NOT NULL, 
+	exact_competitors INTEGER NOT NULL, 
+	close_competitors INTEGER NOT NULL, 
+	llm_used INTEGER NOT NULL, 
+	upload_ready INTEGER NOT NULL, 
+	warnings VARCHAR, 
+	notes VARCHAR, 
+	created_at DATETIME NOT NULL, prompt_sent TEXT, 
+	PRIMARY KEY (id)
+)
+CREATE TABLE seo_keyword_metrics (
+	id INTEGER NOT NULL, 
+	idea_id INTEGER NOT NULL, 
+	seo_run_id INTEGER, 
+	keyword VARCHAR NOT NULL, 
+	relevance FLOAT, 
+	word_count INTEGER, 
+	long_tail INTEGER NOT NULL, 
+	score FLOAT, 
+	source VARCHAR NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+CREATE TABLE idea_elements (
+	idea_id INTEGER NOT NULL, 
+	element_id INTEGER NOT NULL, 
+	is_primary BOOLEAN NOT NULL, 
+	PRIMARY KEY (idea_id, element_id), 
+	FOREIGN KEY(idea_id) REFERENCES ideas (id), 
+	FOREIGN KEY(element_id) REFERENCES elements (id)
+)
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Restart=always
+ExecStart={ path=/usr/bin/node ; argv[]=/usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js ; ignore_errors=no ; start_time=[Fri 2026-09-25 07:59:01 UTC] ; stop_time=[Fri 2026-09-25 07:59:01 UTC] ; pid=672454 ; code=exited ; status=209 }
+WorkingDirectory=/home/azureuser
+StandardOutput=append
+StandardError=append
+
+Terminal ID: 6d3b1d2a-aad3-44f9-9d23-e9fe7c3989ed

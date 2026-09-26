@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+6.12.107+deb13-cloud-amd64
+Kernel: 6.12.107+deb13-cloud-amd64
+

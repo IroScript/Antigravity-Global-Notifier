@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  28508 10656 ?        Ss   Sep22   0:17 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Sep22   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Sep22   0:00 [pool_workqueue_release]
+root          14  0.0  0.0      0     0 ?        I    Sep22   0:00 [rcu_tasks_kthread]
+root          15  0.0  0.0      0     0 ?        I    Sep22   0:00 [rcu_tasks_rude_kthread]
+root          16  0.0  0.0      0     0 ?        I    Sep22   0:00 [rcu_tasks_trace_kthread]
+root          17  0.0  0.0      0     0 ?        S    Sep22   0:11 [ksoftirqd/0]
+root          18  0.0  0.0      0     0 ?        I    Sep22   0:35 [rcu_preempt]
+root          19  0.0  0.0      0     0 ?        S    Sep22   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          20  0.0  0.0      0     0 ?        S    Sep22   0:00 [rcu_exp_gp_kthread_worker]
+root          21  0.0  0.0      0     0 ?        S    Sep22   0:00 [migration/0]
+root          22  0.0  0.0      0     0 ?        S    Sep22   0:00 [idle_inject/0]
+root          23  0.0  0.0      0     0 ?        S    Sep22   0:00 [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S    Sep22   0:00 [cpuhp/2]
+root          25  0.0  0.0      0     0 ?        S    Sep22   0:00 [idle_inject/2]
+root          26  0.0  0.0      0     0 ?        S    Sep22   0:00 [migration/2]
+root          27  0.0  0.0      0     0 ?        S    Sep22   0:09 [ksoftirqd/2]
+root          30  0.0  0.0      0     0 ?        S    Sep22   0:00 [cpuhp/1]
+root          31  0.0  0.0      0     0 ?        S    Sep22   0:00 [idle_inject/1]
+root          32  0.0  0.0      0     0 ?        S    Sep22   0:00 [migration/1]
+root          33  0.0  0.0      0     0 ?        S    Sep22   0:10 [ksoftirqd/1]
+root          36  0.0  0.0      0     0 ?        S    Sep22   0:00 [cpuhp/3]
+root          37  0.0  0.0      0     0 ?        S    Sep22   0:00 [idle_inject/3]
+root          38  0.0  0.0      0     0 ?        S    Sep22   0:01 [migration/3]
+root          39  0.0  0.0      0     0 ?        S    Sep22   0:09 [ksoftirqd/3]
+root          46  0.0  0.0      0     0 ?        S    Sep22   0:00 [kdevtmpfs]
+root          48  0.0  0.0      0     0 ?        S    Sep22   0:00 [kauditd]
+root          49  0.0  0.0      0     0 ?        S    Sep22   0:00 [khungtaskd]
+root          50  0.0  0.0      0     0 ?        S    Sep22   0:00 [oom_reaper]
+root          52  0.0  0.0      0     0 ?        S    Sep22   1:13 [kcompactd0]
+root          53  0.0  0.0      0     0 ?        SN   Sep22   0:00 [ksmd]
+root          54  0.0  0.0      0     0 ?        SN   Sep22   0:05 [khugepaged]
+root          58  0.0  0.0      0     0 ?        S    Sep22   0:00 [irq/9-acpi]
+root          65  0.0  0.0      0     0 ?        S    Sep22   1:50 [kswapd0]
+root         219  0.0  0.0      0     0 ?        S    Sep22   0:00 [scsi_eh_0]
+root         241  0.0  0.0      0     0 ?        S    Sep22   0:05 [jbd2/nvme0n1p1-8]
+root         325  0.0  0.2 107692 35948 ?        Ss   Sep22   0:24 /usr/lib/systemd/systemd-journald
+systemd+     366  0.0  0.0  23464  8520 ?        Ss   Sep22   0:00 /usr/lib/systemd/systemd-resolved
+root         373  0.0  0.0  32920  5324 ?        Ss   Sep22   0:00 /usr/lib/systemd/systemd-udevd
+

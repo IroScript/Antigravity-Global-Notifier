@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/AGY-MASTER/DRAFTS/01-sudoers-restricted.draft: parsed OK
+

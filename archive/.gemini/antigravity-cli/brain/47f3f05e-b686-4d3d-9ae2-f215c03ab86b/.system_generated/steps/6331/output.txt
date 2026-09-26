@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+total 0
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 0 -> 'pipe:[11492]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 1 -> 'socket:[11475]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 2 -> 'socket:[11475]'
+

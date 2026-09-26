@@ -1,0 +1,10 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 89, in <module>
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 228, in makedirs
+FileExistsError: [Errno 17] File exists: '/home/azureuser/RESTORED_PROJECTS/the-real-index'
+

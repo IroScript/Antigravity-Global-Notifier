@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+5921523488b5a82d7b12db50d029f1c2  gcp_home_backup_part_00.tar.gz
+f9ef7b5b5746926882ee05d333d95261  gcp_home_backup_part_01.tar.gz
+

@@ -1,0 +1,115 @@
+
+The command exited with code 0.
+Output:
+Total entries in Block 104617: 110
+  1. [13893633  ] (type 2) .
+  2. [2         ] (type 2) ..
+  3. [13893634  ] (type 1) .bash_logout
+  4. [13893636  ] (type 1) .profile
+  5. [13994106  ] (type 1) .bashrc
+  6. [13893637  ] (type 2) .ssh
+  7. [13893639  ] (type 1) .sudo_as_admin_successful
+  8. [13893640  ] (type 2) workspace
+  9. [13893641  ] (type 2) Downloads
+ 10. [13893642  ] (type 2) .local
+ 11. [13893635  ] (type 1) .cloud-locale-test.skip
+ 12. [13893646  ] (type 2) .gemini
+ 13. [13893661  ] (type 2) .cache
+ 14. [13893702  ] (type 2) tmp
+ 15. [13893656  ] (type 1) agy_runtime_storage_audit.txt
+ 16. [13893706  ] (type 2) .npm-global
+ 17. [13893713  ] (type 2) .npm
+ 18. [13893717  ] (type 1) .npmrc
+ 19. [13893719  ] (type 1) payload_articles.sql
+ 20. [13893722  ] (type 2) .webterminal
+ 21. [13893720  ] (type 1) AGENTS.md
+ 22. [13893721  ] (type 1) GEMINI.md
+ 23. [14024705  ] (type 2) Frappe-erp-Alco
+ 24. [14024706  ] (type 2) kids_tube_with_folder_seection
+ 25. [14024707  ] (type 2) telegram-bot
+ 26. [14027106  ] (type 2) Rust_Task_With_Time_Keeping_And_Live_Note
+ 27. [14162415  ] (type 2) .cargo
+ 28. [14162416  ] (type 2) .rustup
+ 29. [14286849  ] (type 2) Article-Publishing-Platform
+ 30. [393217    ] (type 2) .openclaw
+ 31. [786433    ] (type 2) browser_env
+ 32. [822978    ] (type 2) var
+ 33. [796565    ] (type 2) .config
+ 34. [13893807  ] (type 1) rust_apk_tunnel.log
+ 35. [13893716  ] (type 1) chrome_remote_url.txt
+ 36. [13994122  ] (type 1) web_terminal_link.txt
+ 37. [13994123  ] (type 1) csv_downloads_url.txt
+ 38. [796574    ] (type 2) frappe-bench
+ 39. [13893711  ] (type 1) .bash_history
+ 40. [795463    ] (type 2) 3D-Game-Design-Studio
+ 41. [796575    ] (type 2) Antigravity-Global-Notifier
+ 42. [822832    ] (type 2) IROSCRIPT-CEO
+ 43. [13994818  ] (type 1) AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md
+ 44. [13994815  ] (type 1) AGY_500_AGENT_RELIABILITY_ENGINE_ARCHITECTURE.md
+ 45. [13994816  ] (type 1) AGY_AUTONOMOUS_AUTHORITY_AND_RELIABILITY_SPEC.md
+ 46. [13994817  ] (type 1) AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md
+ 47. [13994820  ] (type 1) AGY_ISOLATED_IMPLEMENTATION_REPORT.md
+ 48. [13994819  ] (type 1) AGY_FINAL_RELIABILITY_GATE_REPORT.md
+ 49. [1457733   ] (type 2) openrecall_vault
+ 50. [13994837  ] (type 7) personal_agent_data
+ 51. [13994821  ] (type 1) AGY_RELIABILITY_ENGINE_VALIDATION_REPORT.md
+ 52. [13994822  ] (type 1) ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+ 53. [13994823  ] (type 1) AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md
+ 54. [13994824  ] (type 1) GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md
+ 55. [13994825  ] (type 1) PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+ 56. [13994826  ] (type 1) USER_PERSONAL_AGENT_CONTEXT.md
+ 57. [822972    ] (type 2) .agents
+ 58. [822973    ] (type 2) .android
+ 59. [822974    ] (type 2) .claude
+ 60. [822975    ] (type 2) bengali_terminal
+ 61. [822976    ] (type 2) cloud
+ 62. [822977    ] (type 2) practice
+ 63. [13994834  ] (type 1) start_apk_tunnel.sh
+ 64. [13994828  ] (type 1) .claude.json
+ 65. [13999245  ] (type 1) .gitconfig
+ 66. [13994830  ] (type 1) .tmux.conf
+ 67. [13994832  ] (type 1) game.js
+ 68. [823130    ] (type 2) android-sdk
+ 69. [13994831  ] (type 1) apk_download_link.txt
+ 70. [823131    ] (type 2) flutter
+ 71. [2117737   ] (type 2) .agy_evidence
+ 72. [13994833  ] (type 1) paste_rs_explanation.txt
+ 73. [2117738   ] (type 2) .chrome_home
+ 74. [2117739   ] (type 2) .cloakbrowser
+ 75. [2117740   ] (type 2) .dart-tool
+ 76. [2117741   ] (type 2) .dartServer
+ 77. [2117742   ] (type 2) .gradle
+ 78. [2117743   ] (type 2) .m2
+ 79. [2117744   ] (type 2) .pub-cache
+ 80. [2117745   ] (type 2) .pyenv
+ 81. [1051250   ] (type 2) logs
+ 82. [13994835  ] (type 1) .yarnrc
+ 83. [13995056  ] (type 1) pg15_full_backup.sql
+ 84. [13994836  ] (type 1) random_bangla_text.txt
+ 85. [13995057  ] (type 1) payload_articles_backup.sql
+ 86. [13995058  ] (type 1) etc_backup_pre_upgrade.tar.gz
+ 87. [13995059  ] (type 1) dpkg_selections_pre_upgrade.txt
+ 88. [13995060  ] (type 1) pipx_list_pre_upgrade.txt
+ 89. [13995202  ] (type 1) pip3_freeze_pre_upgrade.txt
+ 90. [13995203  ] (type 1) systemd_user_running_pre_upgrade.txt
+ 91. [13995204  ] (type 1) systemd_system_running_pre_upgrade.txt
+ 92. [13995205  ] (type 1) crontab_pre_upgrade.txt
+ 93. [13994870  ] (type 1) frappe_db_backup.sql
+ 94. [1572923   ] (type 2) Ask-And-Research
+ 95. [13994871  ] (type 1) dump.rdb
+ 96. [13998516  ] (type 1) 20h_resource_efficiency_audit.txt
+ 97. [13998534  ] (type 1) verified_20h_hardware_resource_report.txt
+ 98. [13998553  ] (type 1) reverified_20h_resource_report.txt
+ 99. [13998827  ] (type 1) final_truth_verified_report.txt
+100. [13998606  ] (type 1) 30m_periodic_report.txt
+101. [13998763  ] (type 1) hourly_30m_periodic_report.txt
+102. [13998689  ] (type 1) 930pm_update_report.txt
+103. [13998708  ] (type 1) 930pm_hardware_at_bottom.txt
+104. [13999089  ] (type 7) Reporting-Agent
+105. [1573890   ] (type 2) agent-queue
+106. [13999143  ] (type 1) .google_token
+107. [1970797   ] (type 2) .githooks
+108. [13999231  ] (type 1) WHATSAPP_AGENTS_COMMUNICATION_BRIDGE_AND_PERMISSION_MATRIX.txt
+109. [13997689  ] (type 1) MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+110. [1970960   ] (type 2) AGY-MASTER
+

@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+    cur.execute('SELECT COUNT(*) FROM ideas')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: ideas
+

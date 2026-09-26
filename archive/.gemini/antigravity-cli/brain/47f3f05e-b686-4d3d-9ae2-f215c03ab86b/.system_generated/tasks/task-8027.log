@@ -1,0 +1,550 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 911, in Execute
+    args = self.__parser.parse_args(_ApplyFlagsFile(argv))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 772, in parse_args
+    namespace, unknown_args, _ = self._ParseKnownArgs(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1793, in take_action
+    argument_values = self._get_values(action, argument_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1271, in _get_values
+    return super(ArgumentParser, self)._get_values(action, arg_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 2229, in _get_values
+    self._check_value(action, value[0])
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 850, in _check_value
+    if is_subparser and action.IsValidChoice(arg):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1343, in IsValidChoice
+    return self._calliope_command.IsValidSubElement(choice)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 713, in IsValidSubElement
+    return bool(self.LoadSubElement(name))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 776, in LoadSubElement
+    element = CommandGroup(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 606, in __init__
+    super(CommandGroup, self).__init__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 114, in __init__
+    log.debug('Loaded Command Group: %s', path)
+Message: 'Loaded Command Group: %s'
+Arguments: (['gcloud', 'compute'],)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 911, in Execute
+    args = self.__parser.parse_args(_ApplyFlagsFile(argv))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 772, in parse_args
+    namespace, unknown_args, _ = self._ParseKnownArgs(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1369, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1793, in take_action
+    argument_values = self._get_values(action, argument_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1271, in _get_values
+    return super(ArgumentParser, self)._get_values(action, arg_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 2229, in _get_values
+    self._check_value(action, value[0])
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 850, in _check_value
+    if is_subparser and action.IsValidChoice(arg):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1343, in IsValidChoice
+    return self._calliope_command.IsValidSubElement(choice)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 713, in IsValidSubElement
+    return bool(self.LoadSubElement(name))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 776, in LoadSubElement
+    element = CommandGroup(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 606, in __init__
+    super(CommandGroup, self).__init__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 114, in __init__
+    log.debug('Loaded Command Group: %s', path)
+Message: 'Loaded Command Group: %s'
+Arguments: (['gcloud', 'compute', 'images'],)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 911, in Execute
+    args = self.__parser.parse_args(_ApplyFlagsFile(argv))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 772, in parse_args
+    namespace, unknown_args, _ = self._ParseKnownArgs(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1369, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1369, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 735, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 563, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1944, in _parse_known_args
+    stop_index = consume_positionals(start_index)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 1793, in take_action
+    argument_values = self._get_values(action, argument_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1271, in _get_values
+    return super(ArgumentParser, self)._get_values(action, arg_strings)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/argparse/__init__.py", line 2229, in _get_values
+    self._check_value(action, value[0])
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 850, in _check_value
+    if is_subparser and action.IsValidChoice(arg):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/parser_extensions.py", line 1343, in IsValidChoice
+    return self._calliope_command.IsValidSubElement(choice)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 713, in IsValidSubElement
+    return bool(self.LoadSubElement(name))
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 788, in LoadSubElement
+    element = Command(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 932, in __init__
+    super(Command, self).__init__(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 114, in __init__
+    log.debug('Loaded Command Group: %s', path)
+Message: 'Loaded Command Group: %s'
+Arguments: (['gcloud', 'compute', 'images', 'list'],)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 963, in Run
+    self._parent_group.RunGroupFilter(tool_context, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 840, in RunGroupFilter
+    self._parent_group.RunGroupFilter(context, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 841, in RunGroupFilter
+    self._common_type().Filter(context, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/__init__.py", line 60, in Filter
+    base.RequireProjectID(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/base.py", line 1580, in RequireProjectID
+    proj = properties.VALUES.core.project.Get()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4024, in Get
+    property_value = self.GetPropertyValue(required, validate)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4043, in GetPropertyValue
+    property_value = _GetProperty(self,
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4616, in _GetProperty
+    property_value = _GetPropertyWithoutDefault(prop, properties_file)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4655, in _GetPropertyWithoutDefault
+    value = callback()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 241, in GetProject
+    return c_gce.Metadata().Project()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce.py", line 360, in Metadata
+    _metadata = _GCEMetadata()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce.py", line 117, in __init__
+    self.connected = gce_cache.GetOnGCE(gce_cache_instance=self._gce_cache)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce_cache.py", line 304, in GetOnGCE
+    return gce_cache_instance.GetOnGCE(check_age)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce_cache.py", line 164, in GetOnGCE
+    log.debug('On GCE from disk cache: %s', on_gce)
+Message: 'On GCE from disk cache: %s'
+Arguments: (False,)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 967, in Run
+    base.LogCommand(self.dotted_name, args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/base.py", line 1559, in LogCommand
+    log.debug('Running [{}] with arguments: [{}]'.format(prog, arg_string))
+Message: 'Running [gcloud.compute.images.list] with arguments: [--filter: "name ~ gcp-vm-full-backup-20260925"]'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 121, in Run
+    return self._Run(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 126, in _Run
+    client = holder.client
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 66, in client
+    self._client = client_adapter.ClientAdapter(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 73, in __init__
+    self._client = client or core_apis.GetClientInstance(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 279, in GetClientInstance
+    return apis_internal._GetClientInstance(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 175, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 69, in GetApitoolsTransport
+    session = requests.GetSession(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 73, in GetSession
+    session = requests.GetSession(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 98, in GetSession
+    http_client = RequestWrapper().WrapWithDefaults(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 174, in WrapWithDefaults
+    gcloud_ua = MakeUserAgentString(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 665, in MakeUserAgentString
+    environment=properties.GetMetricsEnvironment(),
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4785, in GetMetricsEnvironment
+    if gce_cache.GetOnGCE(check_age=False):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce_cache.py", line 304, in GetOnGCE
+    return gce_cache_instance.GetOnGCE(check_age)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce_cache.py", line 158, in GetOnGCE
+    log.debug('On GCE from memory cache: %s', on_gce)
+Message: 'On GCE from memory cache: %s'
+Arguments: (False,)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 121, in Run
+    return self._Run(args)
+           ~~~~~~~~~^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 126, in _Run
+    client = holder.client
+             ^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 66, in client
+    self._client = client_adapter.ClientAdapter(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._api_version, self._no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 73, in __init__
+    self._client = client or core_apis.GetClientInstance(
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._API_NAME, self._api_version, no_http=no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 279, in GetClientInstance
+    return apis_internal._GetClientInstance(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_name,
+        ^^^^^^^^^
+    ...<5 lines>...
+        region=regional.LocationToRegion(location) if location else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 175, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+        response_encoding=transport.ENCODING,
+        timeout=http_timeout_sec if http_timeout_sec else 'unset')
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 69, in GetApitoolsTransport
+    session = requests.GetSession(
+        timeout=timeout,
+    ...<4 lines>...
+        redact_request_body_reason=redact_request_body_reason,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 81, in GetSession
+    credentials = store.LoadIfEnabled(
+        allow_account_impersonation
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 601, in LoadIfEnabled
+    return Load(
+        allow_account_impersonation=allow_account_impersonation)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 825, in Load
+    cred = _Load(
+        account,
+    ...<2 lines>...
+        cache_only_rapt=cache_only_rapt,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 961, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+        named_configs.ActiveConfig(False).file_path)
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 980, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1024, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 578, in HandleError
+    _LogKnownError(known_exc, command_path, print_error)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 684, in _LogKnownError
+    log.debug(msg, exc_info=sys.exc_info())
+Message: '(gcloud.compute.images.list) You do not currently have an active account selected.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.'
+Arguments: ()
+ERROR: (gcloud.compute.images.list) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 121, in Run
+    return self._Run(args)
+           ~~~~~~~~~^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 126, in _Run
+    client = holder.client
+             ^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 66, in client
+    self._client = client_adapter.ClientAdapter(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._api_version, self._no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 73, in __init__
+    self._client = client or core_apis.GetClientInstance(
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._API_NAME, self._api_version, no_http=no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 279, in GetClientInstance
+    return apis_internal._GetClientInstance(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_name,
+        ^^^^^^^^^
+    ...<5 lines>...
+        region=regional.LocationToRegion(location) if location else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 175, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+        response_encoding=transport.ENCODING,
+        timeout=http_timeout_sec if http_timeout_sec else 'unset')
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 69, in GetApitoolsTransport
+    session = requests.GetSession(
+        timeout=timeout,
+    ...<4 lines>...
+        redact_request_body_reason=redact_request_body_reason,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 81, in GetSession
+    credentials = store.LoadIfEnabled(
+        allow_account_impersonation
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 601, in LoadIfEnabled
+    return Load(
+        allow_account_impersonation=allow_account_impersonation)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 825, in Load
+    cred = _Load(
+        account,
+    ...<2 lines>...
+        cache_only_rapt=cache_only_rapt,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 961, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+        named_configs.ActiveConfig(False).file_path)
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 980, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1024, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 578, in HandleError
+    _LogKnownError(known_exc, command_path, print_error)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 686, in _LogKnownError
+    log.error(msg)
+Message: '(gcloud.compute.images.list) You do not currently have an active account selected.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.'
+Arguments: ()

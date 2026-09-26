@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+total 580
+drwx------ 22 root root   4096 Sep 25 10:55  .
+drwx------  9 root root   4096 Sep 25 10:55  ..
+drwx------  2 root root   4096 Sep 25 10:57 'csv\012-'
+drwx------  2 root root   4096 Sep 25 10:58 'html\012-'
+drwx------  2 root root 397312 Sep 25 10:58  plain
+drwx------  2 root root   4096 Sep 25 10:54 'troff\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-Algol68\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-asm\012-'
+drwx------  2 root root   4096 Sep 25 10:58 'x-c++\012-'
+drwx------  2 root root  20480 Sep 25 10:58 'x-c\012-'
+drwx------  2 root root   4096 Sep 25 10:57 'x-diff\012-'
+drwx------  2 root root   4096 Sep 25 10:58 'x-java\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-makefile\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-msdos-batch\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-perl\012-'
+drwx------  2 root root  20480 Sep 25 10:58 'x-script.python\012-'
+drwx------  2 root root   4096 Sep 25 10:58 'x-shellscript\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-ssh-private-key\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-ssh-public-key\012-'
+drwx------  2 root root   4096 Sep 25 10:57 'x-ssl-private-key\012-'
+drwx------  2 root root   4096 Sep 25 10:55 'x-ssl-public-key\012-'
+drwx------  2 root root  73728 Sep 25 10:58 'xml\012-'
+

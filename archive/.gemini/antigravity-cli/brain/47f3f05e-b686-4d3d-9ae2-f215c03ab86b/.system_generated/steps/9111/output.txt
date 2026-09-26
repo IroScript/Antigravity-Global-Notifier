@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+
+🛑 [RCLONE READ-ONLY HARD BLOCK]
+Command: rclone sync /tmp personaldrive:Youtube_Automation
+Status: PERMANENTLY DENIED
+Incident ID: INC-RO-20260926023723-ed529a
+Reason: rclone 'sync' is prohibited: remote storage is locked in READ-ONLY mode.
+Security: Remote storage is strictly locked in READ-ONLY mode by Iraq Bhai.
+
+

@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+total 0
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 0 -> /dev/null
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 1 -> 'socket:[8658]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 10 -> 'anon_inode:[eventfd]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 11 -> 'socket:[11441]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 12 -> 'socket:[11442]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 2 -> 'socket:[8658]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 3 -> 'anon_inode:[eventpoll]'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:34 4 -> 'pipe:[11439]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 5 -> 'pipe:[11439]'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 6 -> 'pipe:[11440]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 7 -> 'pipe:[11440]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 8 -> 'anon_inode:[eventfd]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 9 -> /dev/urandom
+
+Terminal ID: 565f3ae8-777b-4095-859b-4017ebab70de

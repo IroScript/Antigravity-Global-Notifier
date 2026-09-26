@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+{'title': 'ChatGPT', 'url': 'https://chatgpt.com/', 'body_snippet': 'ChatGPT\nNew chat\nScheduled\nLibrary\nPlugins\nExplore\nProjects\nNo projects\nRecents\nUnread\nGenerate machine ideas\nUnread\nGenerate JSON Array\nUnread\nGenerate machine ideas\nUnread\nGenerate machine ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate machine ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate JSON Ideas\nGenerate Fortress Machines\nImpossible Machine Ideas\nGenerate machine ideas\nGenerate Machine Ideas\nImpossible Fortress Machines\nGenerate machine ideas\nGenerate Machine Ideas\nGenerate machine ideas\nGenerate Machine Ideas\nGenerate Machine Ideas\nLoading chats\nAS\nAlco Store\nFree\nUpgrade\nChat\nWork\nRequires upgrade\nReady when you are.\n\n\n\n\nThink', 'cookies_count': 39, 'has_session_cookie': True}
+

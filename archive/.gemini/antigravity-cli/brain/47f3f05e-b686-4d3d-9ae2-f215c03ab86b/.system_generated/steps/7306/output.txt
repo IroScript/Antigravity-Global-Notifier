@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+pg_dump: error: query failed: ERROR:  column "x.tableoid" does not exist
+pg_dump: detail: Query was: SELECT x.tableoid, x.oid, x.extname, n.nspname, x.extrelocatable, x.extversion, x.extconfig, x.extcondition FROM pg_extension x JOIN pg_namespace n ON n.oid = x.extnamespace
+

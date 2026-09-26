@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+total 28
+drwx------  2 azureuser azureuser 4096 Sep 25 13:33 .
+drwxr-xr-x 32 azureuser azureuser 4096 Sep 26 09:57 ..
+-rw-------  1 azureuser azureuser  553 Sep 25 09:44 authorized_keys
+-rw-------  1 azureuser azureuser  419 Sep 25 13:22 id_ed25519
+-rw-r--r--  1 azureuser azureuser  104 Sep 25 13:22 id_ed25519.pub
+-rw-------  1 azureuser azureuser 1120 Sep 25 13:33 known_hosts
+-rw-r--r--  1 azureuser azureuser  284 Sep 25 13:33 known_hosts.old
+PING 136.116.25.41 (136.116.25.41) 56(84) bytes of data.
+
+--- 136.116.25.41 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1017ms
+
+Ping failed
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 52K Sep 25 11:00 /tmp/tg_recovered.sqlite
+

@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 36
+drwxr-xr-x  6 root      root       4096 Sep 25 12:40 .
+drwxr-xr-x 18 root      root       4096 Sep 25 11:10 ..
+drwxr-xr-x 24 azureuser azureuser  4096 Sep 25 15:58 azureuser
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 22 10:24 downloads
+drwx------  2 azureuser azureuser 16384 Sep 22 10:24 lost+found
+lrwxrwxrwx  1 root      root         15 Sep 22 15:50 mdkamruzzamanirak_gmail_com -> /home/azureuser
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 22 10:24 workspace
+

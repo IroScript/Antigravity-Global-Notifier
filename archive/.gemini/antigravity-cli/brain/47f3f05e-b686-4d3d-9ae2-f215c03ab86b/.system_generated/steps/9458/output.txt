@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+
+This reconnects remote: passed in to the cloud storage system.
+
+To disconnect the remote use "rclone config disconnect".
+
+This normally means going through the interactive oauth flow again.
+
+Usage:
+  rclone config reconnect remote: [flags]
+
+Flags:
+  -h, --help   help for reconnect
+
+Use "rclone [command] --help" for more information about a command.
+Use "rclone help flags" for to see the global flags.
+

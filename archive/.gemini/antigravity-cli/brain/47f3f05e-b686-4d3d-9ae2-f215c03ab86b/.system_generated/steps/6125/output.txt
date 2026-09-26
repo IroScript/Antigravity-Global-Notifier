@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Total distinct sizes in DB: 325
+Total restored files: 136
+  MATCH! Size 7995395: 1.115.Level_10_Prairie_Wind_Shepherd.mp4 -> I_0014580479.mp4
+  MATCH! Size 9986880: 1.314.Level_10_Feather_Gravity_Loom.mp4 -> I_0014585592.mp4
+  MATCH! Size 10299926: 1.122.Level_10_Prairie_Planet_Engine.mp4 -> I_0014577150.mp4
+  MATCH! Size 11254711: 1.315.Level_10_Feather_Planetary_Pulse.mp4 -> I_0014585593.mp4
+  MATCH! Size 10662991: 1.109.Level_10_Petal_Storm_Generator.mp4 -> I_0014581907.mp4
+Results: 113 matched exact file_size_bytes in DB, 23 unmatched
+

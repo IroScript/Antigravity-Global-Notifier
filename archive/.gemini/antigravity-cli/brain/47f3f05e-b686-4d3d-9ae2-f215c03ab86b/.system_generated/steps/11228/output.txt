@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Tunnel HTML len: 80871
+Has bottomNavBar: True
+Has Windows 11 Home button: True
+

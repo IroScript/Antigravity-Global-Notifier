@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+{'success': True, 'time': 6.265, 'size_bytes': 108730443322, 'size_str': '101.26 GB', 'size_bytes_formatted': '108,730,443,322 bytes', 'files_count': 776376, 'folders_count': 106323, 'contains_str': '776,376 Files, 106,323 Folders'}
+

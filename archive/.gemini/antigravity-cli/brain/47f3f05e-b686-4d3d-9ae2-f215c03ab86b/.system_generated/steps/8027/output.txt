@@ -1,0 +1,159 @@
+
+The command exited with code 1.
+Output:
+<truncated 396 lines>
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 980, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1024, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 578, in HandleError
+    _LogKnownError(known_exc, command_path, print_error)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 684, in _LogKnownError
+    log.debug(msg, exc_info=sys.exc_info())
+Message: '(gcloud.compute.images.list) You do not currently have an active account selected.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.'
+Arguments: ()
+ERROR: (gcloud.compute.images.list) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 121, in Run
+    return self._Run(args)
+           ~~~~~~~~~^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/images/list.py", line 126, in _Run
+    client = holder.client
+             ^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 66, in client
+    self._client = client_adapter.ClientAdapter(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._api_version, self._no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 73, in __init__
+    self._client = client or core_apis.GetClientInstance(
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._API_NAME, self._api_version, no_http=no_http)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 279, in GetClientInstance
+    return apis_internal._GetClientInstance(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_name,
+        ^^^^^^^^^
+    ...<5 lines>...
+        region=regional.LocationToRegion(location) if location else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 175, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+        response_encoding=transport.ENCODING,
+        timeout=http_timeout_sec if http_timeout_sec else 'unset')
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 69, in GetApitoolsTransport
+    session = requests.GetSession(
+        timeout=timeout,
+    ...<4 lines>...
+        redact_request_body_reason=redact_request_body_reason,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 81, in GetSession
+    credentials = store.LoadIfEnabled(
+        allow_account_impersonation
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 601, in LoadIfEnabled
+    return Load(
+        allow_account_impersonation=allow_account_impersonation)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 825, in Load
+    cred = _Load(
+        account,
+    ...<2 lines>...
+        cache_only_rapt=cache_only_rapt,
+    )
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 961, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+        named_configs.ActiveConfig(False).file_path)
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.14/logging/__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 186, in <module>
+    main()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/gcloud.py", line 182, in main
+    sys.exit(gcloud_main.main())
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 216, in Wrapper
+    target_function(*args, **kwargs)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 225, in main
+    gcloud_cli.Execute()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 980, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1024, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 578, in HandleError
+    _LogKnownError(known_exc, command_path, print_error)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 686, in _LogKnownError
+    log.error(msg)
+Message: '(gcloud.compute.images.list) You do not currently have an active account selected.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.'
+Arguments: ()
+

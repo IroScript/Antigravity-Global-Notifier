@@ -1,0 +1,118 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -175,7 +175,7 @@
+ 
+ _properties_cache = {}
+ 
+-def get_item_properties(target_path):
++def get_item_properties(target_path, force_refresh=False):
+     target_path = os.path.abspath(target_path)
+     if not os.path.exists(target_path):
+         return {"error": "Path does not exist", "path": target_path}
+@@ -182,7 +182,7 @@
+     now = time.time()
+-    if target_path in _properties_cache:
++    if not force_refresh and target_path in _properties_cache:
+         cached = _properties_cache[target_path]
+-        if now - cached["time"] < 60.0:
++        if now - cached["time"] < 120.0:
+             res = dict(cached["data"])
+             res["is_cached"] = True
+             return res
+@@ -228,16 +228,43 @@
+     folders_count = 0
+     size_str = "Calculating..."
+     size_bytes_formatted = ""
+-
+-    # du -sb for fast directory size
+-    try:
+-        du_res = subprocess.run(["du", "-sb", target_path], capture_output=True, text=True, timeout=3.5)
+-        if du_res.returncode == 0 and du_res.stdout:
+-            size_bytes = int(du_res.stdout.split()[0])
+-            size_str = format_size(size_bytes)
+-            size_bytes_formatted = f"{size_bytes:,} bytes"
+-    except subprocess.TimeoutExpired:
+-        size_str = "Large directory (> 3.5s scan)"
++    contains_str = "Calculating..."
++
++    # 1. Fast find for file and folder counts (12s timeout)
++    # Using printf %y doesn't stat individual files and is blazing fast (takes ~2s for 880k files)
++    try:
++        f_res = subprocess.run(
++            ["find", target_path, "-mindepth", "1", "-printf", "%y\n"],
++            capture_output=True, text=True, timeout=12.0
++        )
++        if f_res.stdout:
++            # Don't check returncode == 0, because permission warnings on docker/sockets return 1 while stdout has all files!
++            files_count = f_res.stdout.count('f') + f_res.stdout.count('l')
++            folders_count = f_res.stdout.count('d')
++            contains_str = f"{files_count:,} Files, {folders_count:,} Folders"
++        else:
++            contains_str = "0 Files, 0 Folders"
++    except subprocess.TimeoutExpired:
++        contains_str = "Over 1,000,000+ items (timeout)"
++    except Exception as e:
++        contains_str = str(e)
++
++    # 2. du -sb for accurate total byte size (15s timeout)
++    try:
++        du_res = subprocess.run(
++            ["du", "-sb", target_path],
++            capture_output=True, text=True, timeout=15.0
++        )
++        if du_res.stdout:
++            lines = du_res.stdout.strip().splitlines()
++            if lines:
++                parts = lines[-1].split()
++                if parts and parts[0].isdigit():
++                    size_bytes = int(parts[0])
++                    size_str = format_size(size_bytes)
++                    size_bytes_formatted = f"{size_bytes:,} bytes"
++    except subprocess.TimeoutExpired:
++        size_str = "Large directory (> 15s scan)"
+         size_bytes_formatted = "Scan timeout"
+     except Exception as e:
+         size_str = "Unknown"
+@@ -244,23 +244,7 @@
+ 
+-    # find file and folder counts
+-    try:
+-        f_res = subprocess.run(["find", target_path, "-mindepth", "1", "-printf", "%y\\n"], capture_output=True, text=True, timeout=3.5)
+-        if f_res.returncode == 0:
+-            lines = f_res.stdout.splitlines()
+-            for line in lines:
+-                if line == 'f':
+-                    files_count += 1
+-                elif line == 'd':
+-                    folders_count += 1
+-                elif line == 'l':
+-                    files_count += 1
+-            contains_str = f"{files_count:,} Files, {folders_count:,} Folders"
+-        else:
+-            contains_str = "Unable to read counts"
+-    except subprocess.TimeoutExpired:
+-        contains_str = "Over 100,000+ items (scan timeout)"
+-    except Exception as e:
+-        contains_str = str(e)
++    # Fallback if du failed but we have files
++    if size_bytes is None and files_count > 0:
++        size_str = "Size calculating..."
+ 
+     data = {
+         "name": name,
+@@ -277,7 +277,11 @@
+         "created_str": ctime_str,
+         "is_cached": False
+     }
+-    _properties_cache[target_path] = {"time": now, "data": data}
++
++    # ONLY cache if we actually computed the size successfully!
++    if size_bytes is not None:
++        _properties_cache[target_path] = {"time": now, "data": data}
++
+     return data
+ 
+ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

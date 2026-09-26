@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+total 1148
+drwxrwxr-x 220 azureuser azureuser  20480 Sep 25 11:38 .
+drwxrwxr-x   8 azureuser azureuser   4096 Sep 25 12:43 ..
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.101.Level_10_Planetary_Pruning_Spider
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.102.Level_10_Infinite_Orchard_Conveyor
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.103.Level_10_Solar_Titan_Harvester
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.104.Level_10_Sunflower_Skywheel
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.105.Level_10_Helios_Field_Cathedral
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.106.Level_10_Titanic_Sun_Tracker
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.107.Level_10_The_Golden_Root_Engine
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.108.Level_10_Sunflower_Leviathan
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.109.Level_10_Petal_Storm_Generator
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.110.Level_10_The_Million-Arm_Pollinator
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.111.Level_10_Colossus_Seed_Forge
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.112.Level_10_Solar_Bloom_Clock
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.113.Level_10_The_Grassland_Tide_Engine
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.114.Level_10_Skyroot_Rain_Harvester
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.115.Level_10_Prairie_Wind_Shepherd
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.116.Level_10_The_Buried_Sunwheel
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.117.Level_10_Thunderhoof_Generator
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.118.Level_10_Prairie_Memory_Engine
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.119.Level_10_Horizon_Grass_Loom
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.120.Level_10_Cloudshadow_Irrigator
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.121.Level_10_The_Seed_Moon
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.122.Level_10_Prairie_Planet_Engine
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.123.Level_10_The_Dune-Swallowing_Sand_Leviathan
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.124.Level_10_Solar_Mirage_Energy_Tower
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.125.Level_10_The_Deep-Basin_Moisture_Siphon
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.126.Level_10_Sandstorm_Kinetic_Foundry
+drwxr-xr-x   2 azureuser azureuser   4096 Sep 25 11:40 1.127.Level_10_The_Obsidian_Dune_Walker
+

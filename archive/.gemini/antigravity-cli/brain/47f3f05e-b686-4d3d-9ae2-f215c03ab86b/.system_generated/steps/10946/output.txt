@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+1251:            <button class="pill" onclick="changeRange('1m', this)">1মি</button>
+1252:            <button class="pill" onclick="changeRange('5m', this)">5মি</button>
+1253:            <button class="pill" onclick="changeRange('15m', this)">15মি</button>
+1254:            <button class="pill" onclick="changeRange('30m', this)">30মি</button>
+1255:            <button class="pill active" onclick="changeRange('1h', this)">1ঘণ্টা</button>
+1256:            <button class="pill" onclick="changeRange('5h', this)">5ঘণ্টা</button>
+1257:            <button class="pill" onclick="changeRange('10h', this)">10ঘণ্টা</button>
+1258:            <button class="pill" onclick="changeRange('24h', this)">24ঘণ্টা</button>
+1259:            <button class="pill" onclick="changeRange('all', this)">সব (All)</button>
+1756:  function changeRange(range, el) {
+

@@ -1,0 +1,91 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -512,7 +512,11 @@
+ 
+         # Send prompt
+         send_btn = None
+-        for s_sel in ["button[data-testid='send-button']", "button[aria-label='Send prompt']"]:
++        for s_sel in [
++            "button[data-testid='send-button']",
++            "button[aria-label*='Send' i]",
++            "button[data-testid*='send' i]"
++        ]:
+             cand = active_page.locator(s_sel).first
+             if await cand.count() > 0 and await cand.is_visible():
+                 send_btn = cand
+@@ -519,4 +519,15 @@
+ 
++        if not send_btn or not await send_btn.is_enabled():
++            await active_page.keyboard.press("Space")
++            await asyncio.sleep(0.1)
++            await active_page.keyboard.press("Backspace")
++            await asyncio.sleep(0.4)
++            for s_sel in ["button[data-testid='send-button']", "button[aria-label*='Send' i]", "button[data-testid*='send' i]"]:
++                cand = active_page.locator(s_sel).first
++                if await cand.count() > 0 and await cand.is_visible():
++                    send_btn = cand
++                    break
++
+         if send_btn and await send_btn.is_enabled():
+             await safe_click(send_btn, active_page)
+             logger.info("Clicked Send button.")
+@@ -523,5 +523,5 @@
+-            await active_page.keyboard.press("Control+Enter")
+-            logger.info("Sent prompt via Control+Enter.")
++            await active_page.keyboard.press("Enter")
++            logger.info("Sent prompt via Enter.")
+ 
+         # Wait for streaming to start (max 60s)
+         logger.info(f"Waiting for streaming response (max {req.wait_seconds}s)...")
+@@ -530,13 +530,14 @@
+             res = await active_page.evaluate("""(initTurns) => {
+                 const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i], button.wm-composer-stopButton, button[aria-label*="stop generation" i]');
+                 const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+-                const turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+-                if (turns.length <= initTurns) {
+-                    return { length: 0, isStop: isStop, turnsCount: turns.length, newTurn: false };
+-                }
+-                const lastTurn = turns[turns.length - 1];
+-                const text = lastTurn ? (lastTurn.innerText || '') : '';
+-                return { length: text.length, isStop: isStop, turnsCount: turns.length, newTurn: true };
++                let turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
++                if (turns.length === 0) {
++                    turns = document.querySelectorAll('article[data-testid*="conversation-turn-"]');
++                }
++                const newTurn = turns.length > initTurns || (turns.length > 0 && isStop);
++                const lastTurn = turns.length > 0 ? turns[turns.length - 1] : null;
++                const text = lastTurn ? (lastTurn.innerText || '') : '';
++                return { length: text.length, isStop: isStop, turnsCount: turns.length, newTurn: newTurn };
+             }""", initial_turns)
+ 
+             if res['newTurn'] and (res['length'] > 0 or res['isStop']):
+@@ -548,7 +548,7 @@
+                     if send_btn and await send_btn.count() > 0 and not await send_btn.is_disabled():
+                         await safe_click(send_btn, active_page)
+                     else:
+-                        await active_page.keyboard.press("Control+Enter")
++                        await active_page.keyboard.press("Enter")
+                 except Exception:
+                     pass
+ 
+@@ -562,11 +562,14 @@
+             res = await active_page.evaluate("""(initTurns) => {
+                 const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i]');
+                 const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+-                const turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+-                if (turns.length <= initTurns) {
++                let turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
++                if (turns.length === 0) {
++                    turns = document.querySelectorAll('article[data-testid*="conversation-turn-"]');
++                }
++                if (turns.length <= initTurns && !isStop && turns.length === 0) {
+                     return { text: '', length: 0, isStop: isStop };
+                 }
+-                const lastTurn = turns[turns.length - 1];
++                const lastTurn = turns.length > 0 ? turns[turns.length - 1] : null;
+                 const text = lastTurn ? (lastTurn.innerText || '') : '';
+                 return { text: text, length: text.length, isStop: isStop };
+             }""", initial_turns)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

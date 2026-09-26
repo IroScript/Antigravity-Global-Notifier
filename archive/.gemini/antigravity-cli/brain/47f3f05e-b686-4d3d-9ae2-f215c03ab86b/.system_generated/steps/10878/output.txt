@@ -1,0 +1,17 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -136,9 +136,10 @@
+     }
+ 
+ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
++    protocol_version = "HTTP/1.1"
++
+     def end_headers(self):
+         self.send_header("Access-Control-Allow-Origin", "*")
+-        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+         super().end_headers()
+ 
+     def do_OPTIONS(self):
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

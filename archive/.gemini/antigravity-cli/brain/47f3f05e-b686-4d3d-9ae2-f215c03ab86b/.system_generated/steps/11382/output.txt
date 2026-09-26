@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Time: 0.256s, size: 76226563, files: 4551, folders: 3544
+

@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+database_name	owner	primary_region	secondary_region	regions	survival_goal
+defaultdb	root	NULL	NULL	{}	NULL
+payload_cockroach	payload_user	NULL	NULL	{}	NULL
+postgres	root	NULL	NULL	{}	NULL
+system	node	NULL	NULL	{}	NULL
+

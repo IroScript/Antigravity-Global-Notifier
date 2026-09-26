@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+● alco-tunnel.service                                                                                                                                                       not-found active running   alco-tunnel.service
+  azure-file-explorer-tunnel.service                                                                                                                                        loaded    active running   Cloudflare Tunnel for Windows 11 Azure File Explorer
+  azure-file-explorer.service                                                                                                                                               loaded    active running   Windows 11 Azure File Explorer Web Service
+● chrome-tunnel.service                                                                                                                                                     not-found active running   chrome-tunnel.service
+● csv-tunnel.service                                                                                                                                                        not-found active running   csv-tunnel.service
+● openclaw-tunnel.service                                                                                                                                                   not-found active running   openclaw-tunnel.service
+● payload-article-tunnel.service                                                                                                                                            not-found active running   payload-article-tunnel.service
+● rust-apk-tunnel.service                                                                                                                                                   not-found active running   rust-apk-tunnel.service
+● webterminal-tunnel.service                                                                                                                                                not-found active running   webterminal-tunnel.service
+

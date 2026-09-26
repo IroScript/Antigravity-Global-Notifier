@@ -1,0 +1,15 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-5457
+Status: DONE
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5457.log
+Log output:
+<truncated 34332 lines>
+s/worker_5/GrShaderCache/data_3 
+DIR	3031501	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache 
+---	3031502	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/index 
+---	3031503	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_0 
+---	3031504	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_1 
+---	3031505	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_2 
+---	3031506	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_3 
+ext4magic : EXIT_SUCCESS
+
+Last progress: 0s ago

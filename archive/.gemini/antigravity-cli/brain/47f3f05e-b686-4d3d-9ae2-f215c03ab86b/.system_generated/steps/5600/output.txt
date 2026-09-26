@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+Frappe-erp-Alco: found 8 valid dir entries
+   offset: 217833920, inode: 14024705, rec_len: 24
+   offset: 360485312, inode: 14024705, rec_len: 24
+   offset: 405459392, inode: 14024705, rec_len: 24
+   offset: 428511680, inode: 14024705, rec_len: 24
+   offset: 560832960, inode: 14024705, rec_len: 24
+telegram-bot: found 8 valid dir entries
+   offset: 217833984, inode: 14024707, rec_len: 20
+   offset: 360485376, inode: 14024707, rec_len: 20
+   offset: 405459456, inode: 14024707, rec_len: 20
+   offset: 428511744, inode: 14024707, rec_len: 20
+   offset: 560833024, inode: 14024707, rec_len: 20
+kids_tube_with_folder_seection: found 8 valid dir entries
+   offset: 217833944, inode: 14024706, rec_len: 40
+   offset: 360485336, inode: 14024706, rec_len: 40
+   offset: 405459416, inode: 14024706, rec_len: 40
+   offset: 428511704, inode: 14024706, rec_len: 40
+   offset: 560832984, inode: 14024706, rec_len: 40
+Rust_Task_With_Time_Keeping_And_Live_Note: found 8 valid dir entries
+   offset: 217834004, inode: 14027106, rec_len: 52
+   offset: 360485396, inode: 14027106, rec_len: 52
+   offset: 405459476, inode: 14027106, rec_len: 52
+   offset: 428511764, inode: 14027106, rec_len: 52
+   offset: 560833044, inode: 14027106, rec_len: 52
+Article-Publishing-Platform: found 11 valid dir entries
+   offset: 217834088, inode: 14286849, rec_len: 36
+   offset: 360485480, inode: 14286849, rec_len: 36
+   offset: 405459560, inode: 14286849, rec_len: 36
+   offset: 428511848, inode: 14286849, rec_len: 36
+   offset: 560833128, inode: 14286849, rec_len: 36
+3D-Game-Design-Studio: found 10 valid dir entries
+   offset: 217834360, inode: 795463, rec_len: 32
+   offset: 360485752, inode: 795463, rec_len: 32
+   offset: 405459832, inode: 795463, rec_len: 32
+   offset: 428512120, inode: 795463, rec_len: 32
+   offset: 560833400, inode: 795463, rec_len: 32
+

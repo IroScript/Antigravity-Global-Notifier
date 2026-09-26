@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Worker 4 Debug URL: https://chatgpt.com/c/6ab7521c-b628-83e9-a176-e86f8374b9b5
+Snippet: ach machine must be enormous — colossal, landscape-scale engineering.
+
+DIVERSITY REQUIREMENTS:
+1. Vary the FUNCTION: build, move, protect, transform, harvest, transport, terraform.
+2. Vary the FORM: bridge/span, tower, ring, buried burrower, walking chassis, overhead canopy, segmented spine.
+3. No m
+

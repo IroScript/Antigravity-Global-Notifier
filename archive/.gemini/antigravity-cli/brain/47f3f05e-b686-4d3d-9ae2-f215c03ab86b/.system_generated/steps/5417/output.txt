@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+PARTUUID=2515f4aa-093a-4cef-b35c-fb44dfffe557 / ext4 rw,discard,errors=remount-ro,x-systemd.growfs 0 1
+PARTUUID=fc1c26c2-ad6e-4c2b-956d-e2f00ccc676f /boot/efi vfat defaults 0 0
+UUID=a7e46975-f813-443b-ac77-43ed858d9eec /home ext4 defaults,nofail 0 2
+/home/swapfile none swap sw,nofail 0 0
+
+Terminal ID: e79a8cd0-bcfa-4494-b164-c21edc24de02

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: unzip: command not found
+
+Terminal ID: 43965fe5-bc10-4750-9cb8-a68861d12ecb

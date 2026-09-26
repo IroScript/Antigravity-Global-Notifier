@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+==============================================================================
+POST-HARDENING VERIFICATION TEST SUITE
+==============================================================================
+Target Date: Sat Sep 26 07:52:11 UTC 2026
+Current User: azureuser (UID: 1000)
+------------------------------------------------------------------------------
+[TEST 1] Testing 'sudo -n chattr -i <protected file>' ...
+  Command exit code: 1
+  Output: sudo: a password is required
+  RESULT: PASS (non-zero exit — chattr was NOT permitted)
+[TEST 2] Testing 'sudo -n whoami' broad escalation ...
+  Command exit code: 1, output: sudo: a password is required
+  RESULT: PASS (broad passwordless root is blocked)
+[TEST 3] Testing NOEXEC is actually enforced (pager/shell escape attempt) ...
+  RESULT: PASS (no evidence of subshell spawning through pager path)
+  NOTE: this is a best-effort behavioral probe, not exhaustive. Also confirm
+  manually with 'sudo -l' that NOEXEC appears against APT_CMNDS/SYSTEMCTL_CMNDS.
+[TEST 4] Testing direct x86_64 SYS_unlink on immutable file ...
+  Syscall result: ret:-1,errno:1
+  RESULT: PASS (kernel returned EPERM — immutability held)
+[TEST 5A] Testing 'mv AGY-MASTER AGY-RENAME-TEST' as current user ...
+  Exit code: 1, output: mv: cannot move '/home/azureuser/AGY-MASTER' to '/home/azureuser/AGY-RENAME-TEST': Operation not permitted
+  RESULT: PASS (rename blocked)
+[TEST 5B] Confirming immutable attribute is actually set (lsattr) ...
+  lsattr output: ----i---------e------- /home/azureuser/AGY-MASTER
+  RESULT: PASS (immutable 'i' flag confirmed present)
+[TEST 6] Confirming pre-created subdirectories remain writable inside themselves ...
+  RESULT: PASS (AGY can still write inside TASKS/queue/ as expected)
+
+🛑 [DELETE-PROOF HARD BLOCK]
+Operation: rm -f /home/azureuser/AGY-MASTER/TASKS/queue/.verify-test-1097587
+Status: PERMANENTLY DENIED (Rule 1, 2)
+Incident: INC-DEL-20260926075212-4cfb08
+Reason: AGY has no deletion capability. Deletions are forbidden.
+Safe Alternative: Run `/home/azureuser/AGY-MASTER/POLICIES/safe_archive.py <path>` to preserve to /home/azureuser/GLOBAL-ARCHIVE/.
+
+[TEST 7] Testing Azure IMDS Managed Identity token endpoint ...
+  HTTP code: 400
+  RESULT: PASS (HTTP 400 Identity not found — zero Azure credentials on VM, unchanged)
+------------------------------------------------------------------------------
+VERIFICATION SUMMARY: 8 / 7 TESTS PASSED, 0 FAILED
+==============================================================================
+NOTE: A single FAIL means the corresponding protection is not confirmed —
+do not treat this VM as delete-proof until all 7 tests PASS, and re-run
+this suite after any future config change.
+

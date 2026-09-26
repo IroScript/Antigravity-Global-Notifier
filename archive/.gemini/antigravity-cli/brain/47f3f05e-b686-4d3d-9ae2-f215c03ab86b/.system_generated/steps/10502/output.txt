@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+      slug: 'distributed-systems',
+      slug: 'database-engineering',
+      slug: 'cloud-infrastructure',
+      slug: 'ai-automation',
+      where: { slug: { equals: cat.slug } },
+    { name: 'PostgreSQL', slug: 'postgresql' },
+    { name: 'CockroachDB', slug: 'cockroachdb' },
+    { name: 'YugabyteDB', slug: 'yugabytedb' },
+    { name: 'Next.js', slug: 'nextjs' },
+    { name: 'Payload CMS', slug: 'payload-cms' },
+    { name: 'Distributed SQL', slug: 'distributed-sql' },
+    { name: 'System Architecture', slug: 'system-architecture' },
+    { name: 'Performance', slug: 'performance' },
+      where: { slug: { equals: tag.slug } },
+      title: 'Architecting High-Throughput Distributed Content Platforms with Payload CMS',
+      slug: 'architecting-high-throughput-distributed-content-platforms',
+      title: 'Distributed SQL Shootout: PostgreSQL vs. CockroachDB vs. YugabyteDB in Production',
+      slug: 'distributed-sql-shootout-postgres-cockroach-yugabyte',
+      title: 'Real-Time Edge Caching and Content Invalidation Strategies for Next.js App Router',
+      slug: 'real-time-edge-caching-content-invalidation-nextjs',
+      title: 'Autonomous AI Agents in Modern Publishing Pipelines: From Generation to Fact-Checking',
+      slug: 'autonomous-ai-agents-publishing-pipelines',
+      where: { slug: { equals: art.slug } },
+

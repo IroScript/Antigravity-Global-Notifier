@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=utf-8
+Server: IMDS/150.870.65.2153
+x-ms-request-id: 1bbc6042-1d27-4b0b-a7f9-2e5b5b79bbb4
+Date: Fri, 25 Sep 2026 20:17:02 GMT
+Content-Length: 68
+
+{"error":"invalid_request","error_description":"Identity not found"}

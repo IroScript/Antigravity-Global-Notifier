@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Unique files in RESTORED_VIDEOS: 23
+Matched by exact file size in database: 0 / 23
+

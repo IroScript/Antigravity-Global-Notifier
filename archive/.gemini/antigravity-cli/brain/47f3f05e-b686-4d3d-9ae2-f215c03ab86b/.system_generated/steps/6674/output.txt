@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Git config exists: False
+Git credentials exists: False
+Netrc exists: False
+GH config exists: False
+SSH files: ['/home/azureuser/.ssh/known_hosts', '/home/azureuser/.ssh/authorized_keys']
+

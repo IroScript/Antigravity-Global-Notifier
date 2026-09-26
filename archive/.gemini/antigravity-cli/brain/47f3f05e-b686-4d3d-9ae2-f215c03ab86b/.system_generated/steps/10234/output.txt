@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Defaulting to user installation because normal site-packages is not writeable
+Collecting websockets
+  Downloading websockets-17.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Downloading websockets-17.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (224 kB)
+Installing collected packages: websockets
+Successfully installed websockets-17.1
+

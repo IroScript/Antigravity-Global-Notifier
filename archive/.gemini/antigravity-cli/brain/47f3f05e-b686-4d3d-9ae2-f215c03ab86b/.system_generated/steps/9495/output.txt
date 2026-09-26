@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Dangling shortcut "Task List" detected
+          -1 2026-05-07 11:28:21        -1 129 No. Birshreshtha Mostofa Kamal Primary School Chhitmohol
+          -1 2022-05-21 15:26:36        -1 ANGIOGRAM REPORT
+          -1 2018-10-26 09:30:16        -1 APPLICATION LIST (PDF)
+          -1 2018-07-13 16:52:51        -1 Accessories
+          -1 2026-02-22 07:21:48        -1 AllRustRough
+          -1 2026-07-18 09:08:16        -1 All_Credentials_API_Keys
+          -1 2026-09-25 14:54:39        -1 All_VM_BackUps
+          -1 2025-05-07 05:24:00        -1 Attendance
+          -1 2025-07-19 08:11:47        -1 Attendance Copy Sync or Pasted
+

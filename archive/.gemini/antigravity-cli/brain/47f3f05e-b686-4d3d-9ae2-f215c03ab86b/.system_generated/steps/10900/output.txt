@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+200
+
+real	0m0.389s
+user	0m0.020s
+sys	0m0.004s
+Chart.js: 200
+

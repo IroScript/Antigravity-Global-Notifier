@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -142,7 +142,7 @@
+         # GROUP 12: KERNEL LANDLOCK LSM RESTRICTION CHECKS (Executed inside Landlock Sandbox)
+         ("LANDLOCK_KERNEL", "landlock_unlink", "unlink", "landlock_python"),
+         ("LANDLOCK_KERNEL", "landlock_rmdir", "rmdir", "landlock_python"),
+-        ("LANDLOCK_KERNEL", "landlock_truncate", "truncate", "landlock_python")
++        ("LANDLOCK_KERNEL", "landlock_truncate", "truncate", "landlock_python"),
+         # GROUP 13: ADVANCED SHELL EVASION & WRAPPERS
+         ("SHELL_EVASION", "eval_rm", "eval 'rm -rf /tmp/foo'", "hook_command"),
+         ("SHELL_EVASION", "sh_c_rm", "sh -c 'rm -f /tmp/foo'", "hook_command"),
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

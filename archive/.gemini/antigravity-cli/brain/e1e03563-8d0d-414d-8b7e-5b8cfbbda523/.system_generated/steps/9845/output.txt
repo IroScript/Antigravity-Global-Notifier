@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py 

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+    1194  0.1  0.1  81468 20584 ?        Ssl  Sep22   5:46 /usr/bin/redis-server 127.0.0.1:13000
+

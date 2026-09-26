@@ -1,0 +1,36 @@
+The search for ""iam.managed.disableServiceAccountKeyCreation" "DENY" override edit" returned the following summary:
+To manage the **`iam.managed.disableServiceAccountKeyCreation`** organization policy constraint, you must have the **Organization Policy Administrator** role (`roles/orgpolicy.policyAdmin`) at the organization level[1][2][3].
+
+If you are blocked by this policy, here is the standard process to override it for a specific project or the entire organization[1][3]:
+
+### 1. Verify Your Permissions
+*   You must be assigned the **Organization Policy Administrator** role at the **organization level**[2][3]. 
+*   This role often does not appear in the role list for individual projects; you must select your organization in the resource picker (top-left of the Google Cloud Console) to grant or verify this role[4][2][3].
+
+### 2. Override the Policy
+Once you have the required permissions, you can modify the policy at the project or organization level[3]:
+1.  Go to the **[Organization Policies](https://console.cloud.google.com/iam-admin/orgpolicies)** page in the Google Cloud Console[5][3].
+2.  Use the filter to search for **`iam.managed.disableServiceAccountKeyCreation`**[1][3].
+3.  Click on the policy name to open its details[1][3].
+4.  Click **Manage policy**[1][3].
+5.  Select **Override parent's policy** (this is critical if the policy is being inherited from the organization)[6][7][3].
+6.  Under **Enforcement**, select **Off** (or "Not enforced")[8][5][3].
+7.  Click **Set policy**[8][3].
+
+### Important Troubleshooting Notes
+*   **Dual Constraints:** Google Cloud often utilizes both a legacy constraint (`iam.disableServiceAccountKeyCreation`) and a managed constraint (`iam.managed.disableServiceAccountKeyCreation`)[1][9]. If you disable one but the block persists, ensure you have checked and overridden **both**[1][9].
+*   **Propagation Time:** Changes to organization policies are not always instantaneous and may take a few minutes to propagate across your projects[10].
+*   **Security Recommendation:** Service account keys are long-lived, portable credentials that pose significant security risks[5][11]. Where possible, consider alternatives like **Workload Identity Federation** or service account impersonation to avoid using static keys entirely[5][11].
+
+Sources:
+[1] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCi-QZhmzCGe5zvtBQBMjQdUAldP59xuS9R3AmX7ytTbWEgKUX_CZgxnQw6H9MdhTJaOYg0aLSdZkmtgDFN04ggeGOWJiM6XbO11sIFR3gK6efrjSHZ2yV2oG6uAGD0NoRNgUefSsjF0_vsobEg2iF_rOqBt1vd0GnXzTXO0IlXTM-tH69-lkcxoElkl_idw7oWM7j2AZiBB40Df57)
+[2] [subsplash.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQ3IcgOv4a0pA-dUW7vSO_MvLEnHHOHPsm7oIaOQ_KzamJXewEDe41ovjOHacmE5ko5Y8gqos-2Idj6qMoLafTjqsWJJ3V6G1psFETqBkNCdhTpzS_bSr7gOeRpAfkYbAX7-DtT-YAjxWjNaDWWBqr34Bs3ANQjBmZb3OHlCT8TXXuY4T-qGlUsR7GEZabCEeKm1yhRg2aqR2kR5HAcsfqdbT-yC50G4odg43p78Lx)
+[3] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFekq6rC8VBDZ8iyng8DzK1rrEaqKUvWcEWaZ6hQjgG5hkw6extWE1gSEklr1VCyEhjzoj4fefq6GTISTYNnBTGEHbyyOz6bJX2lU9AoYH65QGsIKuQYheNZ99ixvqrcfnLcKBvY1KyGDv5ezJIH-7mSWC7-w5d)
+[4] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZY21Oj2DYH6AwXDJu2LT-XWdHORdro5HBWvQtrB8OywRTmgLNHmsZNRZCqfKnu9RXYAosezo77HREJprkQbdySNtO4r05E8PiqQO8VagziWWDc8vPUCf_JeqBUwyiR4O9GWtr60UUx9D_jWaIj9sfZMzJpJun7ypUks3spqy9bZ81aI4YZxLilaNRzpQYkuqdUs7VSmbrWe8=)
+[5] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrZawelSUvc5L0peJLl4U72miZfffj5rJ-lBUCktXyvtwLVRgKmtctyq_cBOoBH0LgpF6vonGYdbh68qng7kN6VFGfsQZYzE4qQNCQbOdHKNd9OhnZGBYyCXN-3GGmDTc4NQwpr-mMsNG79z6yEFK__Byyl14MdV5JErNQLiVj0pEYLNKcPSn3ZVlD5B-obVLdWqA=)
+[6] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtPTKdiU9QN_81tFQmk9NoXW7BIQ4wJydhnqUZqn1KzjCUloDdmcxjTqDB5Br8A_1dGw8H9_Ifx8YBlPMdEwul3SAuXsdT8Zl2F5HWBtkrRn-ZFfIjAQWYvB9jlRD8mQAu8D_bmQQaUhurmY9T9b6DLEXcKU-aSTE7dT42WAm_bg-2nCGhKb8NKE2CAfY4NYkyeElZ5u9T17emhazm)
+[7] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtPTKdiU9QN_81tFQmk9NoXW7BIQ4wJydhnqUZqn1KzjCUloDdmcxjTqDB5Br8A_1dGw8H9_Ifx8YBlPMdEwul3SAuXsdT8Zl2F5HWBtkrRn-ZFfIjAQWYvB9jlRD8mQAu8D_bmQQaUhurmY9T9b6DLEXcKU-aSTE7dT42WAm_bg-2nCGhKb8NKE2CAfY4NYkyeElZ5u9T17emhazm)
+[8] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL_vGKJyQv_nZaP1L_TO_Gf4oKx0taM9-thxWJlQueeJsjTHv24q7NPQJat49u-9ZD4eNbDMaVpmUWiJemGOiZ4KeKyKFaUl7xIbBwr9xMZKu1udynDk19mXyJ7ZZQ8AbRBBUldkdGpYo0cUmq8QyONorFH8i3_tyOZbpNYBdqc4o=)
+[9] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCi-QZhmzCGe5zvtBQBMjQdUAldP59xuS9R3AmX7ytTbWEgKUX_CZgxnQw6H9MdhTJaOYg0aLSdZkmtgDFN04ggeGOWJiM6XbO11sIFR3gK6efrjSHZ2yV2oG6uAGD0NoRNgUefSsjF0_vsobEg2iF_rOqBt1vd0GnXzTXO0IlXTM-tH69-lkcxoElkl_idw7oWM7j2AZiBB40Df57)
+[10] [techwithtyler.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_KyDw8REI0Kbb4HhNESDrWvWgdec5NTHb_8kLwoI-U-htHHQbJZqtvipMiQD0Y_7EbMaSxF-SRVMT-CCU6teA3XpRQ1nguJW2UcRpr5hb5-SelzLqZVRvWF6Eyh_roYZWBfejjAloyIYhqFVzkTvZbrpcDH_lpWE7yPGXFMdtdeBplgKKWV09kWx5hvGRg77K7CXnl71F78BlVB2OhF55V-ENP-ULsMEXjDMDkQWJpZbN)
+[11] [oneuptime.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmxbZnx609pMrK_MVY-R9Y9NVNC1gZ8tSwk52x2GvACl1KC4f1GIzam1rvAdHzBLdl-FUQMAaEYC_MZODrXugMWVg2qjvujjPqGvWJczxZaVk2aG-zKGkIEumg1-Vuq38m5OLQZBko_ZKztXO1V-py2JQdwMSQrgFSxQW_oxiZoPE1M0VBuJvRwYt-_r_s_2G0y_POUhhGVEDlWV2otFJCUBIy2jY35MUKRm74X6qf8JsfrJwm7IVCvdg=)

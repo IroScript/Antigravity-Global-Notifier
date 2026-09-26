@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+SSH_AUTH_SOCK=/run/user/1000/openssh_agent
+
+Terminal ID: 56fedf9b-f92f-4dc1-b9f1-d3647f9afd44

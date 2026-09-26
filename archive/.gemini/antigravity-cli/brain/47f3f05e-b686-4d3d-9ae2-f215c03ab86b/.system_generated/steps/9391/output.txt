@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+          -1 2026-09-25 15:35:27        -1 Azure_VM_BackUP
+          -1 2026-09-25 15:35:28        -1 GCP_VM_BackUP
+Failed to create file system for "testdrive:": drive: failed when making oauth client: failed to create oauth client: empty token found - please run "rclone config reconnect testdrive:"
+

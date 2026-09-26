@@ -1,0 +1,168 @@
+
+The command exited with code 0.
+Output:
+<truncated 141 lines>
+413-    global is_busy, action_counter
+414-    if is_busy:
+415-        raise HTTPException(status_code=429, detail="Worker is currently busy processing another request")
+416-
+--
+420-
+421-    # Escalating delay ladder: +0.5s after each process finishes
+422-    escalation_offset = (action_counter - 1) * 0.5
+423-    cur_min = req.min_jitter_sec + escalation_offset
+424-    cur_max = req.max_jitter_sec + escalation_offset
+425-    jitter = random.uniform(cur_min, cur_max)
+426-    logger.info(f"Applying escalating jitter delay (+0.5s/process, action #{action_counter}): {jitter:.2f}s [Range: {cur_min:.1f}s - {cur_max:.1f}s]...")
+427-    await asyncio.sleep(jitter)
+428-
+429-    try:
+430:        if not active_page:
+431-            raise HTTPException(status_code=500, detail="Active browser page unavailable")
+432-
+433-        # Ensure clean New Chat before submitting prompt
+434-        try:
+435:            new_btn = active_page.locator("a[href='/'], button[aria-label='New chat'], button:has-text('New chat')").first
+436-            if await new_btn.count() > 0 and await new_btn.is_visible():
+437:                await safe_click(new_btn, active_page)
+438-                await asyncio.sleep(1.5)
+439:            elif active_page.url != CHATGPT_URL and active_page.url != f"{CHATGPT_URL}/":
+440:                await active_page.goto(CHATGPT_URL, wait_until="domcontentloaded", timeout=45000)
+441-                await asyncio.sleep(2)
+442-        except Exception:
+443-            pass
+444-
+445:        await handle_turnstile_if_present(active_page)
+446-
+447-        # Dismiss any overlays or account pickers
+448:        await dismiss_dialogs_and_pick_account(active_page)
+449-
+450-        # Locate the VISIBLE input element
+451-        input_box = None
+452-        for attempt in range(30):
+453-            if attempt % 5 == 0:
+454:                await dismiss_dialogs_and_pick_account(active_page)
+455-
+456-            # Check primary #prompt-textarea
+457-            try:
+458:                cand = active_page.locator("#prompt-textarea").first
+459-                if await cand.count() > 0 and await cand.is_visible():
+460-                    input_box = cand
+461-                    break
+462-            except Exception:
+463-                pass
+464-
+465-            # Fallback 1: contenteditable
+466-            try:
+467:                cand = active_page.locator("div[contenteditable='true']").first
+468-                if await cand.count() > 0 and await cand.is_visible():
+469-                    input_box = cand
+470-                    break
+471-            except Exception:
+472-                pass
+473-
+474-            # Fallback 2: fallback textarea
+475-            try:
+476:                cand = active_page.locator("textarea.wcDTda_fallbackTextarea").first
+477-                if await cand.count() > 0 and await cand.is_visible():
+478:                    await safe_click(cand, active_page)
+479-                    await asyncio.sleep(0.5)
+480-                    continue
+481-            except Exception:
+482-                pass
+483-
+484-            if attempt == 15:
+485-                try:
+486-                    logger.info("Attempt 15: Navigating to base CHATGPT_URL to recover clean state...")
+487:                    await active_page.goto(CHATGPT_URL, wait_until="domcontentloaded", timeout=30000)
+488-                    await asyncio.sleep(2)
+489-                except Exception:
+490-                    pass
+491-
+492-            await asyncio.sleep(1)
+493-
+494-        if not input_box:
+495-            raise RuntimeError("No visible input element found on ChatGPT page.")
+496-
+497-        # Record initial assistant turns count before sending prompt
+498:        initial_turns = await active_page.evaluate("() => document.querySelectorAll('div[data-message-author-role=\"assistant\"]').length")
+499-
+500-        # Focus editor and clear
+501:        await safe_click(input_box, active_page)
+502-        await asyncio.sleep(0.3)
+503:        await active_page.keyboard.press("Control+a")
+504-        await asyncio.sleep(0.1)
+505:        await active_page.keyboard.press("Backspace")
+506-        await asyncio.sleep(0.2)
+507-
+508-        # Insert prompt text via direct keyboard text insertion
+509-        logger.info(f"Inserting {len(req.prompt)} chars into ChatGPT editor...")
+510:        await active_page.keyboard.insert_text(req.prompt)
+511-        await asyncio.sleep(0.8)
+512-
+513-        # Send prompt
+514-        send_btn = None
+515-        for s_sel in ["button[data-testid='send-button']", "button[aria-label='Send prompt']"]:
+516:            cand = active_page.locator(s_sel).first
+517-            if await cand.count() > 0 and await cand.is_visible():
+518-                send_btn = cand
+519-                break
+520-
+521-        if send_btn and await send_btn.is_enabled():
+522:            await safe_click(send_btn, active_page)
+523-            logger.info("Clicked Send button.")
+524-        else:
+525:            await active_page.keyboard.press("Control+Enter")
+526-            logger.info("Sent prompt via Control+Enter.")
+527-
+528-        # Wait for streaming to start (max 60s)
+529-        logger.info(f"Waiting for streaming response (max {req.wait_seconds}s)...")
+530-        started = False
+531-        for sec in range(40):
+532-            await asyncio.sleep(1.5)
+533:            res = await active_page.evaluate("""(initTurns) => {
+534-                const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i], button.wm-composer-stopButton, button[aria-label*="stop generation" i]');
+535-                const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+536-                const turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+537-                if (turns.length <= initTurns) {
+538-                    return { length: 0, isStop: isStop, turnsCount: turns.length, newTurn: false };
+539-                }
+540-                const lastTurn = turns[turns.length - 1];
+541-                const text = lastTurn ? (lastTurn.innerText || '') : '';
+542-                return { length: text.length, isStop: isStop, turnsCount: turns.length, newTurn: true };
+543-            }""", initial_turns)
+544-
+545-            if res['newTurn'] and (res['length'] > 0 or res['isStop']):
+546-                logger.info(f"Stream started! (chars={res['length']}, isStop={res['isStop']})")
+547-                started = True
+548-                break
+549-
+550-            if sec == 12:
+551-                try:
+552-                    if send_btn and await send_btn.count() > 0 and not await send_btn.is_disabled():
+553:                        await safe_click(send_btn, active_page)
+554-                    else:
+555:                        await active_page.keyboard.press("Control+Enter")
+556-                except Exception:
+557-                    pass
+558-
+559-        # Poll until stream ends and text stabilizes
+560-        output_text = ""
+561-        prev_len = 0
+562-        stable_count = 0
+563-        max_poll_iterations = int(req.wait_seconds / 1.5)
+564-
+565-        for sec in range(max_poll_iterations):
+566-            await asyncio.sleep(1.5)
+567:            res = await active_page.evaluate("""(initTurns) => {
+568-                const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i]');
+569-                const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+570-                const turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+571-                if (turns.length <= initTurns) {
+572-                    return { text: '', length: 0, isStop: isStop };
+573-                }
+574-                const lastTurn = turns[turns.length - 1];
+575-                const text = lastTurn ? (lastTurn.innerText || '') : '';
+576-                return { text: text, length: text.length, isStop: isStop };
+577-            }""", initial_turns)
+

@@ -1,0 +1,21 @@
+=== USERS IN /home ===
+total 40
+drwxr-xr-x 10 root                        root                        4096 Sep 25 13:33 .
+drwxr-xr-x 18 root                        root                        4096 Sep 25 13:32 ..
+drwx------  3 azureuser-to-google-vm      azureuser-to-google-vm      4096 Sep 25 13:33 azureuser-to-google-vm
+drwx------  3 irak                        irak                        4096 Aug 17 09:41 irak
+drwx------  3 Irak                        Irak                        4096 Sep 20 08:17 Irak
+drwx------  3 md.kamruzzamanirak          md.kamruzzamanirak          4096 Aug 16 19:21 md.kamruzzamanirak
+drwx------  3 md_kamruzzamanirak          md_kamruzzamanirak          4096 Aug 17 09:41 md_kamruzzamanirak
+drwx------  3 mdkamruzzamanirak           mdkamruzzamanirak           4096 Aug 17 09:41 mdkamruzzamanirak
+drwx------ 43 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 4096 Sep 25 13:33 mdkamruzzamanirak_gmail_com
+drwx------  3 termuxuser                  termuxuser                  4096 Sep 20 04:37 termuxuser
+=== CURRENT USER HOME ===
+total 24
+drwx------  3 azureuser-to-google-vm azureuser-to-google-vm 4096 Sep 25 13:33 .
+drwxr-xr-x 10 root                   root                   4096 Sep 25 13:33 ..
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm  220 May  9 11:07 .bash_logout
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm 3526 May  9 11:07 .bashrc
+-rw-r--r--  1 azureuser-to-google-vm azureuser-to-google-vm  807 May  9 11:07 .profile
+drwx------  2 azureuser-to-google-vm azureuser-to-google-vm 4096 Sep 25 13:35 .ssh
+=== DISK USAGE TOP 10 ===

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser-to-google-vm azureuser-to-google-vm 269K Sep 25 15:50 /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_postgres_all_databases.sql
+a7f677575a5e632fde8fd74d43c6e7c4437003c3e8eaafb18c13a656fb7e1441  /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_postgres_all_databases.sql
+

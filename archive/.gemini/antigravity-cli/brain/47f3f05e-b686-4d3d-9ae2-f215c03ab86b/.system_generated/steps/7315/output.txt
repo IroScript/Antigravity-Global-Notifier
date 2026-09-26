@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+rdb_last_bgsave_status:ok
+6418152c69882652b4dd556598b3139cc82ce61a16dc97eaac2cdb4955083a3c  /home/mdkamruzzamanirak_gmail_com/DATABASE_BACKUPS_VAULT/gcp_redis_6379_dump.rdb
+

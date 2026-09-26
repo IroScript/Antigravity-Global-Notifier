@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sr0           11:0    1 1024M  1 rom  
+nvme0n1      259:0    0   30G  0 disk 
+├─nvme0n1p1  259:1    0 29.9G  0 part /
+├─nvme0n1p14 259:2    0    3M  0 part 
+└─nvme0n1p15 259:3    0  124M  0 part /boot/efi
+nvme1n1      259:4    0  220G  0 disk /home
+Filesystem       Size  Used Avail Use% Mounted on
+udev             7.8G     0  7.8G   0% /dev
+tmpfs            1.6G  1.2M  1.6G   1% /run
+/dev/nvme0n1p1    30G   12G   17G  42% /
+tmpfs            7.9G  1.1M  7.9G   1% /dev/shm
+tmpfs            5.0M     0  5.0M   0% /run/lock
+tmpfs            7.9G  1.3G  6.6G  16% /tmp
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme1n1     216G   47G  159G  23% /home
+/dev/nvme0n1p15  124M  9.1M  115M   8% /boot/efi
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs            1.6G   68K  1.6G   1% /run/user/1000
+tmpfs            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs            1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+

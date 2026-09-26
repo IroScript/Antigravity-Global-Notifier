@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/3D-Game-Design-Studio/
+/home/azureuser/AGY-MASTER/
+/home/azureuser/Ask-And-Research/
+/home/azureuser/DATABASE_BACKUPS_VAULT/
+/home/azureuser/FULL_HOME_BACKUP/
+/home/azureuser/Frappe-erp-Alco/
+/home/azureuser/GCP_FULL_BACKUP/
+/home/azureuser/GDRIVE_RESTORE_TEST/
+/home/azureuser/GLOBAL-ARCHIVE/
+/home/azureuser/IrakIroan/
+/home/azureuser/RESTORED_PROJECTS/
+/home/azureuser/RESTORED_VIDEOS/
+/home/azureuser/RESTORE_VERIFY_TEMP/
+/home/azureuser/Reporting-Agent/
+/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/
+/home/azureuser/__pycache__/
+/home/azureuser/gdrive_sync/
+/home/azureuser/irakiroan/
+/home/azureuser/kids_tube_with_folder_seection/
+/home/azureuser/telegram-bot/
+/home/azureuser/tmp/
+

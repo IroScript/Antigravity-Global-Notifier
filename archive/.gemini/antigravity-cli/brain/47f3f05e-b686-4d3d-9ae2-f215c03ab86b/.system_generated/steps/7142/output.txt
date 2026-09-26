@@ -1,0 +1,35 @@
+The search for ""Google Drive" "Contributor" delete files "Shared Drive"" returned the following summary:
+In Google Shared Drives, a user with the **Contributor** role **cannot delete files or move them to the trash**[1][2][3].
+
+### Summary of Contributor Permissions
+*   **What they can do:** Contributors are intended to be content creators; they can add, edit, and update files within the Shared Drive[1][4].
+*   **What they cannot do:** They do not have permission to delete files, move files to the trash, or move files/folders within the Shared Drive[1][5][3].
+*   **Important Limitation:** While Contributors cannot delete files, they **can** often upload a new file with the exact same name as an existing one, which may effectively overwrite or replace the original content without a notification being sent to the owner or admin[6][7][8].
+
+### Deletion Permissions by Role
+If you need to manage who can delete content, it is helpful to understand the hierarchy of roles in a Shared Drive:
+
+| Role | Can Delete/Trash Files? |
+| :--- | :--- |
+| **Manager** | Yes[1][9] |
+| **Content Manager** | Yes[1][10][11] |
+| **Contributor** | **No**[1][2] |
+| **Commenter** | No[1][3] |
+| **Viewer** | No[1][3] |
+
+If you are concerned about accidental deletions, assigning the **Contributor** role (or lower) is the recommended way to restrict those specific privileges[12][10][13].
+
+Sources:
+[1] [hiviewsolutions.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc331M46cWnaX3FqAePCzrrGRR0feKDptAoICNNHtnnkAiUhsPsQ9pqzJMu46bs8BRxbJwkCxVeCiBRyruGx6ub6t25MOmgjg2Gsf0SNi2oxtkkqmZUoU_14blG5pzPaJxKwp2eouCDBMlZBNu4BqIf1OuLkZcblmZQDpQPoFQGjuzsMeZKNP32a4Yj-0wvoFewLXzGKSLI2GSiRxIUlLkRN4=)
+[2] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyieVR35XlLSGrrfsMUpsnrGDaK0HZRyG33u3sW2AKb0qmBuGM4YyNE_VjUQabwKI_5j3URYeIXsM7CzIpvf7IhOH_yVHHEhrdgJmLa_TK3z0J1VcT4E1eGjuPJwtoz5XCkbcYdDbGwZL-Kg4DsYvSC68ckWyjtzqEM2ZMnvfdP3tw9kK2fNcKYoiVfz39RnhXQt_hIeJLd05hmCfBjhQvAdBi)
+[3] [hiviewsolutions.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc331M46cWnaX3FqAePCzrrGRR0feKDptAoICNNHtnnkAiUhsPsQ9pqzJMu46bs8BRxbJwkCxVeCiBRyruGx6ub6t25MOmgjg2Gsf0SNi2oxtkkqmZUoU_14blG5pzPaJxKwp2eouCDBMlZBNu4BqIf1OuLkZcblmZQDpQPoFQGjuzsMeZKNP32a4Yj-0wvoFewLXzGKSLI2GSiRxIUlLkRN4=)
+[4] [hiviewsolutions.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc331M46cWnaX3FqAePCzrrGRR0feKDptAoICNNHtnnkAiUhsPsQ9pqzJMu46bs8BRxbJwkCxVeCiBRyruGx6ub6t25MOmgjg2Gsf0SNi2oxtkkqmZUoU_14blG5pzPaJxKwp2eouCDBMlZBNu4BqIf1OuLkZcblmZQDpQPoFQGjuzsMeZKNP32a4Yj-0wvoFewLXzGKSLI2GSiRxIUlLkRN4=)
+[5] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS4utq2huoM01Djo6scf1IgliVeLkpmRCQtcs9JZmvN5BFp-tLve8y2m58B-CKT6VwZP68WsH3phkj92n8PuT-A6eMUc-UVlJOtBYYRsTMeRT8xVK969UM3wb_CXrhJ9p7dxBdlALBKOGonU5N)
+[6] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOdJomfqmguWKZaZdAPhDWk31cpcSP_tdfHWxp8WYJNCOZ_JUB_E-bbiDLzk0RR2LoH8BEkg7nRkCrBTH-jCbKW01JREp3hk2N7XmVQlKzxT_zFnhvuglTzTc0y1VcMRvyRpZsyaN47kgcdJJehcT_UeTFwIHFFm440LTDYzVxaiRSop63dfm8BAPgd8h8lQq-TtIit9fgbwc=)
+[7] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOdJomfqmguWKZaZdAPhDWk31cpcSP_tdfHWxp8WYJNCOZ_JUB_E-bbiDLzk0RR2LoH8BEkg7nRkCrBTH-jCbKW01JREp3hk2N7XmVQlKzxT_zFnhvuglTzTc0y1VcMRvyRpZsyaN47kgcdJJehcT_UeTFwIHFFm440LTDYzVxaiRSop63dfm8BAPgd8h8lQq-TtIit9fgbwc=)
+[8] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe2TQkTelltSoM_6x3PrQ0C5N7nes5lrxLhYhN6Dxu3BHp6btJr559L4MRy0l7C_A4l0AhsXnSTU4VB3wv9XL0BfCNMwoLeE-QiphU0ujeSYYXQRv5cZDOBpJRNr2lF7lKS1q1rLjuaazQ0AT3G-yV4ryzWtmm8j43X5j_AeO1p3lSRvvIULb9wCOkQhRLxOc=)
+[9] [suitebriar.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9RjsFthjUjVG9q5Lc8ki0S6qgon8EjKccAPnjWBNqSNp8Wy4v-zZsuaMmY0xKZK-STIG9wosZhY0Kk-l351yIljocP-7y7Tkau9QYX3ctdRRwx_womSBpDMKpUEvi3qYJnGH5Bsgkww3a9MV2iALoSNefFp0T8sHmek7kJzFvgBtNaD19iIZushl6)
+[10] [service-now.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_sfNpfYxjwO2Vm9i-FF9O8NUtCxJONBOI7-WCueFpQfC_FrI1YwAHrx8EH6CwrsOjT0_s5hpvPocCh_BA5k-EjiFsxMt96XW3oVmc7pdF3xHb9-2nHLiH3O2cPMLYc4GJgr1NwK6QrTuvDWD7fZm8si_i1a1BcUhsAp5aZocBLzZ5bzk-oA7UnHifJhMy25biXL0A)
+[11] [lafayette.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUkgcaksMKqEhT6XBJP0NxhY2Cc1-JbUI7UnfO9ay-Cx1dUzjU3hIHCxyPBUXWihcdSIGi1xvGlDYotJt0_eRXPzsohdeE8GufvViNvlbGtyIfhFAEQCEbnnNy_DcpX5FhJUwfciomAagTJWvR1mPojeJwlc5cz5pR1Q==)
+[12] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJYkgURV8QuAAn-brg0-x8mHBQiqBvTPwN5LDt2yyD0-LvMwdUr65Sr_0lsqk9rKzvnYu0Dl9eMH9IZ0Nd2_0H4Tnlkli-vNjeN4VSbuxBHgH1zr6DjNksmiAEfLvJ2HsfuPyoas9Z06XT3AxftgxKg87mAnT8o62c2nsIY2dTeAxRimzjUue4qj0XhcDdg0hHGkL0N3DTx7nglUKTOzJ09bhhiyfHgcpz3JIq-HDU0v_W8H5hIhc6srQXH3Tt-mYEdZN8Qk-9lpBgovoOFGEttQ==)
+[13] [service-now.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-LUl1cYChJbFVWbk5TmBmwlQJXbjBAqD7-r0xWFAEV-aGCRGBsF5BxQ0qcuBftCjewHX0rXM3aqGcD-k5znJkaWOU5G9RuojWoF-Ca-MYMwNsUE5ZBa7Y1mYrtB3vIF16SKe6qxsizdTipR4QQC2JtmozNJkHvm2gm7_rse-OxqwnOlkUexIz3amK22mNMkPk-8cJ)

@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-28-- **Persistence?:** Overwrites a single static file per window. If the window is busy, prompts are pushed to an ephemeral in-memory array `promptQueue = []`. If Node restarts, all queued prompts vanish!
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-29-- **Failure Mode:** Characters dropped during paste; Enter sent before paste completes; prompt stuck in modal/pager; prompt queue lost on crash.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-30-
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-31-### Path 3: AGY Input Acceptance
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-32-- **Source:** Terminal stdin.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:33:- **Component:** AGY CLI interactive line reader.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-34-- **Transport:** Linux PTY.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-35-- **Destination:** AGY reasoning engine.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:36:- **ACK?:** Native AGY CLI does NOT emit an IPC or socket ACK. The *only* proof of acceptance is a new `USER_INPUT` line written to `transcript.jsonl`.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-37-- **Persistence?:** Durable once committed to `transcript.jsonl`.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-38-- **Failure Mode:** AGY stuck in a prompt fillup or unhandled tool error; terminal cursor not at prompt.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-39-
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-40-### Path 4: AGY Output Generation
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-41-- **Source:** AGY LLM loop.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:42:- **Component:** AGY CLI file writer.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-43-- **Transport:** Disk I/O.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-44-- **Destination:** `<appDataDir>/brain/<conv_id>/.system_generated/logs/transcript.jsonl` and `transcript_full.jsonl`.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-45-- **ACK?:** None.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-46-- **Persistence?:** Durable JSONL on disk.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-47-- **Failure Mode:** Output truncated in `transcript.jsonl` (requiring fallback to `transcript_full.jsonl`); crash before turn completion.
+--
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-76----
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-77-
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-78-## 2. CRITICAL ACK RULE: AUTHENTIC AGENT ACK IDENTIFICATION
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-79-
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-80-### The Ugly Truth:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:81:Native AGY CLI has **no native webhook, callback, or IPC port** to announce "I have received this command." Any claim of a native AGY API ACK would be an invention.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-82-
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-83-### The Real, Verifiable Evidence:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:84:When AGY CLI accepts a command from terminal stdin, it performs an immutable action:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-85-It appends an entry to `.system_generated/logs/transcript.jsonl`:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-86-```json
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-87-{"step_index": N, "source": "USER_INPUT", "type": "USER_INPUT", "content": "<USER_REQUEST>...[matched text]...</USER_REQUEST>"}
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-88-```
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md-89-Followed immediately by:
+

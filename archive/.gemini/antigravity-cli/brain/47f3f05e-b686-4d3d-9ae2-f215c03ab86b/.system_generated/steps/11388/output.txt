@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+Folder Properties: {
+  "name": ".gemini",
+  "path": "/home/azureuser/IrakIroan/.gemini",
+  "location": "/home/azureuser/IrakIroan",
+  "is_dir": true,
+  "type_name": "File folder",
+  "size_bytes": 76226563,
+  "size_str": "72.70 MB",
+  "size_bytes_formatted": "76,226,563 bytes",
+  "files_count": 4552,
+  "folders_count": 3544,
+  "contains_str": "4,552 Files, 3,544 Folders",
+  "modified_str": "2026-09-25 07:55:18 AM",
+  "created_str": "2026-09-26 03:16:28 PM"
+}
+File Properties: {
+  "name": "server.py",
+  "path": "/home/azureuser/IrakIroan/azure_file_explorer/server.py",
+  "location": "/home/azureuser/IrakIroan/azure_file_explorer",
+  "is_dir": false,
+  "type_name": "PY File (.py)",
+  "size_bytes": 18694,
+  "size_str": "18.3 KB",
+  "size_bytes_formatted": "18,694 bytes",
+  "files_count": 1,
+  "folders_count": 0,
+  "contains_str": "1 File",
+  "modified_str": "2026-09-26 02:30:41 PM",
+  "created_str": "2026-09-26 02:30:41 PM"
+}
+

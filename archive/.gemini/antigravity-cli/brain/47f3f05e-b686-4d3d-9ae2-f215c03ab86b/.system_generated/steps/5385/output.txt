@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+personal_ai_agent -> https://github.com/IroScript/personal_ai_agent.git
+python_video_face_recognition_local_and_aws_sync_with_s3_postgresql -> https://github.com/IroScript/python_video_face_recognition_local_and_aws_sync_with_s3_postgresql.git
+Remotely_Use_CPU__Of_PC_And_Mobile -> https://github.com/IroScript/Remotely_Use_CPU__Of_PC_And_Mobile.git
+rust_deepFace -> https://github.com/IroScript/rust_deepFace.git
+Rust_Task_With_Time_Keeping_And_Live_Note -> https://github.com/IroScript/Rust_Task_With_Time_Keeping_And_Live_Note.git
+telegram-scraper-and-automation -> https://github.com/IroScript/telegram-scraper-and-automation.git
+Video_Facial_Attendance_Python -> https://github.com/IroScript/Video_Facial_Attendance_Python.git
+whatsapp_automation -> https://github.com/IroScript/whatsapp_automation.git
+windows-blocked-barrot-bluetooth-driver-solved -> https://github.com/IroScript/windows-blocked-barrot-bluetooth-driver-solved.git
+Windows_Title_In_Rust -> https://github.com/IroScript/Windows_Title_In_Rust.git
+YouTube-AutoMation-No_API-Key -> https://github.com/IroScript/YouTube-AutoMation-No_API-Key.git
+Youtube-Pipeline -> https://github.com/IroScript/Youtube-Pipeline.git
+youTube_Automation_with_Rust -> https://github.com/IroScript/youTube_Automation_with_Rust.git
+
+Terminal ID: a85c9e91-ab6c-4077-bf8a-6f7cb2dec2ef

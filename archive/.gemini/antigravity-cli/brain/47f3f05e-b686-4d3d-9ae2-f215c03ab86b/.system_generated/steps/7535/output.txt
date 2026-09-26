@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+--- /home/azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md	2026-09-25 16:23:22.841215147 +0000
++++ /home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md	2026-09-25 16:09:19.305355183 +0000
+@@ -1,5 +1,5 @@
+ # AGY · সিস্টেম অডিট রিপোর্ট
+-সময়: 2026-09-25 16:23:22
++সময়: 2026-09-25 16:09:19
+ 
+ ## সমস্যাসমূহ
+ - 🔴 সার্ভিস ফেইলড: cockroachdb.service
+

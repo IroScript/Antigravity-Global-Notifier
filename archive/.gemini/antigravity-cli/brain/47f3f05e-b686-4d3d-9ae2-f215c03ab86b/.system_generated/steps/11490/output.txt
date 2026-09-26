@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"name": "IrakIroan", "path": "/home/azureuser/IrakIroan", "location": "/home/azureuser", "is_dir": true, "type_name": "File folder", "size_bytes": 55405910230, "size_str": "51.60 GB", "size_bytes_formatted": "55,405,910,230 bytes", "files_count": 581687, "folders_count": 89804, "contains_str": "581,687 Files, 89,804 Folders", "modified_str": "2026-09-26 03:16:48 PM", "created_str": "2026-09-26 03:16:48 PM", "is_cached": false}

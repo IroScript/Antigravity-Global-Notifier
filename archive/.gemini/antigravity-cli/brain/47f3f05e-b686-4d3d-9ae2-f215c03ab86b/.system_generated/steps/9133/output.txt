@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: gsutil: command not found
+bash: line 1: gcloud: command not found
+Checking GCS
+

@@ -1,0 +1,28 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -385,11 +385,18 @@
+     title = await active_page.title()
+     url = active_page.url
+     dom_info = await active_page.evaluate("""() => {
+-        const assistantTurns = Array.from(document.querySelectorAll('div[data-message-author-role="assistant"]')).map(d => (d.innerText || '').substring(0, 300));
+-        const articles = Array.from(document.querySelectorAll('article')).map(a => (a.innerText || '').substring(0, 300));
+-        const errorBanners = Array.from(document.querySelectorAll('[class*="error" i], [class*="warning" i], [class*="alert" i]')).map(e => (e.innerText || '').substring(0, 100));
++        const markdowns = Array.from(document.querySelectorAll('.markdown, [class*="markdown" i], [class*="prose" i]')).map(m => ({ tag: m.tagName, class: m.className, text: (m.innerText || '').substring(0, 150) }));
++        const leafElements = Array.from(document.querySelectorAll('*')).filter(el => el.innerText && el.innerText.includes('fortress') && el.children.length === 0);
++        let chain = [];
++        if (leafElements.length > 0) {
++            let p = leafElements[0];
++            while (p && chain.length < 8) {
++                chain.push({ tag: p.tagName, class: p.className, testId: p.getAttribute('data-testid'), role: p.getAttribute('role'), author: p.getAttribute('data-message-author-role') });
++                p = p.parentElement;
++            }
++        }
+         const last1500Chars = (document.body.innerText || '').slice(-1500);
+-        return { assistantTurns, articles, errorBanners, last1500Chars };
++        return { markdowns, chain, last1500Chars };
+     }""")
+     cookies = await context.cookies() if context else []
+     return {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

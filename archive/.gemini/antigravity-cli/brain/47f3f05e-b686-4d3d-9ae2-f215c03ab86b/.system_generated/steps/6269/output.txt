@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Loaded 325 video sizes from DB
+Journal size: 1024.0 MB, 262144 blocks
+Found 217 video inodes in journal copy!
+

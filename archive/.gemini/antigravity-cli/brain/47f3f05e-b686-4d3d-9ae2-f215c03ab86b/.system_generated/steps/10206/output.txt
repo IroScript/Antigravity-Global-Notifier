@@ -1,0 +1,46 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Dangling shortcut "Task List" detected
+          -1 2026-05-07 11:28:21        -1 129 No. Birshreshtha Mostofa Kamal Primary School Chhitmohol
+          -1 2022-05-21 15:26:36        -1 ANGIOGRAM REPORT
+          -1 2018-10-26 09:30:16        -1 APPLICATION LIST (PDF)
+          -1 2018-07-13 16:52:51        -1 Accessories
+          -1 2026-02-22 07:21:48        -1 AllRustRough
+          -1 2026-07-18 09:08:16        -1 All_Credentials_API_Keys
+          -1 2026-09-25 14:54:39        -1 All_VM_BackUps
+          -1 2025-05-07 05:24:00        -1 Attendance
+          -1 2025-07-19 08:11:47        -1 Attendance Copy Sync or Pasted
+          -1 2025-03-11 12:55:30        -1 Attendance_App_Updated
+          -1 2026-09-26 08:31:46        -1 Azure_VM_Live_Backup_Fateh_Ali
+          -1 2022-08-01 15:57:35        -1 BIM.PGD.MM
+          -1 2018-01-04 19:10:24        -1 Banijjo mela
+          -1 2018-07-13 16:59:53        -1 Boro Mosjid
+          -1 2017-11-23 06:39:09        -1 Chandpur
+          -1 2021-01-25 15:24:15        -1 Classroom
+          -1 2025-03-10 05:40:45        -1 Colab Notebooks
+          -1 2018-07-13 17:02:12        -1 Daffodil
+          -1 2017-11-28 04:35:09        -1 Detailing
+          -1 2018-06-12 06:11:26        -1 Eid Mubarak Alco Pharma
+          -1 2024-07-18 10:24:20        -1 First
+          -1 2026-05-27 09:29:58        -1 Google AI Studio
+          -1 2018-02-23 10:18:23        -1 Govt Jobs
+          -1 2018-10-03 18:04:13        -1 Khulna
+          -1 2021-03-10 14:05:29        -1 MEMORANDUM
+          -1 2021-06-22 16:42:56        -1 Mayajal
+          -1 2026-02-22 06:51:58        -1 MernPracticing
+          -1 2026-03-08 05:30:02        -1 Monthly Expense
+          -1 2018-07-13 16:50:26        -1 Nayon 12 Jul 2018
+          -1 2017-11-23 07:11:13        -1 Personal
+          -1 2026-02-07 10:07:58        -1 Reminder_App_JavaScript
+          -1 2026-02-13 20:02:56        -1 Rust
+          -1 2026-02-10 09:02:25        -1 RustProject
+          -1 2021-08-31 14:20:54        -1 Rx App by Irak
+          -1 2024-10-03 05:24:57        -1 SEAGATE CRYSTAL REPORT 8.0 (.RPT) VIEWER
+          -1 2018-10-06 21:07:38        -1 Untitled folder
+          -1 2018-07-15 09:04:21        -1 Videos
+          -1 2026-01-14 04:42:42        -1 Youtube_Automation
+          -1 2025-08-10 15:54:51        -1 crazytime project
+          -1 2025-01-11 13:35:28        -1 psycopg2_just_files
+          -1 2026-02-19 09:18:23        -1 rustV10
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total files in RESTORED_VIDEOS: 136
+Total size: 1349.17 MB
+

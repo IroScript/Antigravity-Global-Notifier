@@ -1,0 +1,73 @@
+
+The command exited with code 2.
+Output:
+<truncated 347 lines>
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1947_chrome_.com.google.Chrome.K3f4aT: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.L4jb46: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746117_chrome_.org.chromium.Chromium.CpTza5: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746599_chrome_.org.chromium.Chromium.id06dF: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.V4sXwh: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.5tnWTC: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1945_chrome_.com.google.Chrome.Cw2aFD: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746798_chrome_.org.chromium.Chromium.NCbpcW: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.WTl1C9: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/747360_chrome_.org.chromium.Chromium.UnhgVF: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_Login Data For Account: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_heavy_ad_intervention_opt_out.db: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.AYowCc: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746147_chrome_.org.chromium.Chromium.5IK7IW: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_Affiliation Database-journal: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_first_party_sets.db: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/2164_chrome_model.tflite: Permission denied
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1454_agy_cli-20260922_183427.log:12314:I0925 07:34:10.148485  824106 input_loop.go:107] HandleUserInput called with text: "Agents e edit korso kintu amar frappe er jonno v16 or latest use kirte hobe eta kothay lekha ase? Plus other agents instructions?"
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1454_agy_cli-20260922_183427.log:12627:I0925 07:40:31.581629  831693 input_loop.go:107] HandleUserInput called with text: "- Frappe v16+"
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.iWvl0s: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_UrlCsdDownloadAllowlist.store.32_13433741494615987: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_.org.chromium.Chromium.faex8a: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746599_chrome_.org.chromium.Chromium.8BLHdY: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1947_chrome_.com.google.Chrome.iKI3iq: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.Y8TEpS: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746801_chrome_.org.chromium.Chromium.yZDgm6: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746860_chrome_.org.chromium.Chromium.YM25iO: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746798_chrome_.org.chromium.Chromium.KbEAAS: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746798_chrome_.org.chromium.Chromium.hu8GtP: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.kzAppM: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_.org.chromium.Chromium.7h54is: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746746_chrome_.org.chromium.Chromium.FV9FFl: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746746_chrome_.org.chromium.Chromium.PcWRyD: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_ukm_db-wal: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_.org.chromium.Chromium.cXm3AT: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/2037_chrome_visual_model_desktop.tflite: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/747289_chrome_.org.chromium.Chromium.GHGpH3: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746648_chrome_.org.chromium.Chromium.CBmUQm: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1945_chrome_.com.google.Chrome.i38lkY: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.D8YHXc: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746599_chrome_.org.chromium.Chromium.yEJXpE: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/631285_chrome_.org.chromium.Chromium.FTTYgp: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1449_agy_c98745a3-3338-4796-b300-d64177ec4299.lock: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_model.tflite: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_UrlSuspiciousSite.store.4_13434778106803040: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746117_chrome_.org.chromium.Chromium.j2vkWr: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_BrowserMetrics-6AB65495-23.pma: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/2274_chrome_.com.google.Chrome.8T2GVs: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.3XDi6i: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_ServerCertificate: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.Y5rztF: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746747_chrome_.org.chromium.Chromium.IEAUCT: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.FNTJ6n: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746599_chrome_.org.chromium.Chromium.phaRMz: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1960_chrome_LOG: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746117_chrome_.org.chromium.Chromium.ANFC9z: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746688_chrome_.org.chromium.Chromium.tY7uoc: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_.org.chromium.Chromium.tObQ3q: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1947_chrome_Safe Browsing Cookies: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746798_chrome_.org.chromium.Chromium.3ftIQ7: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746949_chrome_.org.chromium.Chromium.04iWrp: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/746858_chrome_.org.chromium.Chromium.22eZwZ: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/669951_python3_youtube_pipeline.db: binary file matches
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_Affiliation Database: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_.com.google.Chrome.LZnrTK: Permission denied
+grep: /home/azureuser/RESTORED_PROJECTS/d1307be7-22ec-43df-93b9-1f07594946be: binary file matches
+grep: /home/azureuser/RESTORED_PROJECTS/flutter_test_listener.DTIDZR/listener.dart.dill/flutter_test_compiler.PWFPLO/flutter_test_compiler.HQIEGT/output.dill: binary file matches
+grep: /home/azureuser/RESTORED_PROJECTS/014200.sst: binary file matches
+

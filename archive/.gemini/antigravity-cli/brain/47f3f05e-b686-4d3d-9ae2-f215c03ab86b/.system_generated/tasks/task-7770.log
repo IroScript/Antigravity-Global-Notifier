@@ -1,0 +1,9 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T18:10:50Z
+Prompt: Check if Azure zip upload completed
+Early Termination: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7740
+
+[2026-09-25T18:10:00Z] Still waiting. Remaining time: 50s
+[2026-09-25T18:10:10Z] Still waiting. Remaining time: 40s
+[2026-09-25T18:10:20Z] Still waiting. Remaining time: 30s
+[2026-09-25T18:10:28Z] Timer cancelled: early-termination condition (47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7740) met by a message from 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7740.

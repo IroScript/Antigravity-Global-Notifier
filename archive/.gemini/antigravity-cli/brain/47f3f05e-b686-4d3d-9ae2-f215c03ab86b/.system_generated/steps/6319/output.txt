@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+root      204399 13.0  0.4 428924 67736 ?        Ssl  Sep24 169:14 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  757585  0.0  0.0   7484  3356 pts/12   Ss+  11:36   0:00 bash -c ps aux | grep 204399
+azureus+  757587  0.0  0.0   7060  2192 pts/12   S+   11:36   0:00 grep 204399
+

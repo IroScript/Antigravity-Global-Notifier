@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 38036
+drwxrwxr-x 2 azureuser azureuser     4096 Sep 25 08:02 .
+drwxrwxr-x 6 azureuser azureuser     4096 Sep 25 08:02 ..
+-rw-r--r-- 1 azureuser azureuser 38187008 Sep 25 08:02 youtube_pipeline.db
+-rw-r--r-- 1 azureuser azureuser    32768 Sep 25 08:02 youtube_pipeline.db-shm
+-rw-r--r-- 1 azureuser azureuser   716912 Sep 25 08:02 youtube_pipeline.db-wal
+

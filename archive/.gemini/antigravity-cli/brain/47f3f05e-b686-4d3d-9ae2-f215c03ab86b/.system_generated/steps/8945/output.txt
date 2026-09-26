@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+{
+  "total_attack_vectors": 101,
+  "successfully_denied": 95,
+  "unauthorized_deletions": 6,
+  "pass_rate_percentage": 94.05940594059405,
+  "overall_evaluation": "DELETE-PROOF = FAIL"
+}
+

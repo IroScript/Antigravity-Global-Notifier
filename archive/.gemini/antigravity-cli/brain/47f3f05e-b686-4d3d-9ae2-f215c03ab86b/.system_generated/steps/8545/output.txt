@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+  901164  0.1  0.3 1875776 54848 pts/12  Ssl+ 19:54   0:00 rclone lsf personaldrive:All_VM_BackUps/GCP_VM_BackUP/full_filesystem/
+

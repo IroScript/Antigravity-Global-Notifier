@@ -1,0 +1,41 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -271,34 +271,7 @@
+     def handle_drives(self):
+         drives = [
+             get_drive_info("/", "Local Disk (C: OS Root)", "C"),
+-            get_drive_info("/home", "Data Disk (D: NVMe Home)", "D"),
+-            {
+-                "letter": "E",
+-                "label": "IrakIroan Vault (E: Workspace)",
+-                "path": "/home/azureuser/IrakIroan",
+-                "total_str": "54.0 GB",
+-                "used_str": "54.0 GB",
+-                "free_str": "104.0 GB Free",
+-                "percent": 50.0
+-            },
+-            {
+-                "letter": "F",
+-                "label": "Google Cloud Full Backup (F:)",
+-                "path": "/home/azureuser/GCP_FULL_BACKUP",
+-                "total_str": "33.0 GB",
+-                "used_str": "33.0 GB",
+-                "free_str": "Archived",
+-                "percent": 100.0
+-            },
+-            {
+-                "letter": "G",
+-                "label": "GCP Extracted Live Files (G:)",
+-                "path": "/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com",
+-                "total_str": "38.2 GB",
+-                "used_str": "38.2 GB",
+-                "free_str": "577,045 Files",
+-                "percent": 100.0
+-            }
++            get_drive_info("/home", "Data Disk (D: NVMe Home)", "D")
+         ]
+         self.send_json({"drives": drives})
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

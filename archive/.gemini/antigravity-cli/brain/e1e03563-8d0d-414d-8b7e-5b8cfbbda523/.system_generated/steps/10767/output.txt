@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+seo_keyword_metrics: (34084, 569, 592, 'underwater city blox fruits location', 0.25, 5, 1, 45.5, 'youtube_suggest', '2026-09-25 07:51:03.492798')
+

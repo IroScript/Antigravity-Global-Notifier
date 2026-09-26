@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+536-    chartInstance.data.datasets = datasets;
+537-    chartInstance.update();
+538-    return;
+539-  }
+540-
+541:  chartInstance = new Chart(ctx, {
+542-    type: 'line',
+543-    data: {
+544-      labels: labels,
+545-      datasets: datasets
+546-    },
+

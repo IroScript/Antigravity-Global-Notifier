@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+1.2.8
+
+Terminal ID: f001846c-0474-4220-88e1-ea396b4954ef

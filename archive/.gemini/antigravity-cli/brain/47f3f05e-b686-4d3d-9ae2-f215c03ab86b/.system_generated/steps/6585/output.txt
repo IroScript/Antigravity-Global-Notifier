@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Packaged MP4s: 217
+Restored folder MP4s: 134
+Common (duplicates between the two): 111
+Unique to Restored folder (NOT in output_packaged): 23
+TOTAL DISTINCT UNIQUE MP4s: 240
+

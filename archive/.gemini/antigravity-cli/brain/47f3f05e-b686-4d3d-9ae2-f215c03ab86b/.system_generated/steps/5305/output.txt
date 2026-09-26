@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+third_party/jetski/language_server/code_assist_client/browser.go
+third_party/jetski/language_server/code_assist_client/channel_model_response_stream.go
+third_party/jetski/go_utils/cache/cache.go
+third_party/jetski/language_server/code_assist_client/composite_token_storage.go
+third_party/jetski/language_server/code_assist_client/token_storage.go
+third_party/jetski/language_server/code_assist_client/converters.go
+third_party/jetski/language_server/code_assist_client/gemini_api_key_auth_provider.go
+
+Terminal ID: 669f4664-4760-466e-9f3d-c8be33c13aa4

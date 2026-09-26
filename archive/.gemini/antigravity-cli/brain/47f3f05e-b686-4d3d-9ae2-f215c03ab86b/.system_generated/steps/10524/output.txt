@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md:   - Supervisor collects diagnostic evidence (PID, pane capture, socket state) and reports: `⚠️ [CMD-XXXX] Delivered but AGY has not acknowledged. Diagnostic logged.`
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:│ • Delivery Adapter presents command to AGY              │
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:│ • Captures discrete AGY completion output               │
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:- **Trigger:** AGY Delivery Adapter feeds command to AGY and AGY parser confirms reception.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:  4. Delivery Adapter verifies AGY prompt readiness before passing payload.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:  Bridge -> Inbox DB -> Delivery Adapter -> AGY Parse -> Output Capture -> WhatsApp Delivery.
+/home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md:  - `BREAK AT: Delivery Adapter -> AGY ACK`
+

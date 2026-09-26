@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+43 * ১. এই ১টি লিংকে ক্লিক করে একাউন্টে ঢুকুন:
+98   [Google Drive Auth Link](https://wallpaper-movements-lee-rep.trycloudflare.com/gdrive_auth.html)
+50 * ২. গুগল একাউন্ট বেছে নিয়ে Allow / Continue চাপুন
+41   (Advanced -> Go to unsafe -> Continue)।
+40 * ৩. রিডাইরেক্ট হয়ে পেজটি যে লিংকে যাবে:
+46   `http://127.0.0.1:53682/?state=...&code=...`
+44 * ৪. ব্রাউজার অ্যাড্রেস বার থেকে সেই লিঙ্কটি
+47   (বা `code=` অংশটি) কপি করে চ্যাটে পাঠিয়ে দিন!
+

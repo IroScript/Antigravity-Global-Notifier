@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+At offset 2: b'\x00\x00\x00 ftypisom\x00\x00\x02\x00isomiso2avc1mp41'
+

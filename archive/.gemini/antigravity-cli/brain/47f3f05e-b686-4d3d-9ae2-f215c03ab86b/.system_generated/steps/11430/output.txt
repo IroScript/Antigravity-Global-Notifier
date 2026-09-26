@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"name": ".gemini", "path": "/home/azureuser/IrakIroan/.gemini", "location": "/home/azureuser/IrakIroan", "is_dir": true, "type_name": "File folder", "size_bytes": 76226563, "size_str": "72.7 MB", "size_bytes_formatted": "76,226,563 bytes", "files_count": 4552, "folders_count": 3544, "contains_str": "4,552 Files, 3,544 Folders", "modified_str": "2026-09-25 07:55:18 AM", "created_str": "2026-09-26 03:16:28 PM", "is_cached": true}

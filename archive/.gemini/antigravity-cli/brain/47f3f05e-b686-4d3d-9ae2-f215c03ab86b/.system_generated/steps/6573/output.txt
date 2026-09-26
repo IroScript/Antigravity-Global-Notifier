@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi        10Gi       250Mi       1.3Gi       6.2Gi       4.9Gi
+Swap:             0B          0B          0B
+Filesystem       Size  Used Avail Use% Mounted on
+udev             7.8G     0  7.8G   0% /dev
+tmpfs            1.6G  1.2M  1.6G   1% /run
+/dev/nvme0n1p1    30G   12G   17G  42% /
+tmpfs            7.9G  1.1M  7.9G   1% /dev/shm
+tmpfs            5.0M     0  5.0M   0% /run/lock
+tmpfs            7.9G  1.3G  6.6G  16% /tmp
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme1n1     216G  6.1G  199G   3% /home
+/dev/nvme0n1p15  124M  9.1M  115M   8% /boot/efi
+tmpfs            1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs            1.6G   68K  1.6G   1% /run/user/1000
+tmpfs            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs            1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+

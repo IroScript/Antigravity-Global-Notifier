@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+1076:        <div class="sidebar-item active" id="sideItemExplorer" onclick="switchHomeTab('explorer')">
+1085:        <div class="sidebar-item" id="sideItemMonitor" onclick="switchHomeTab('monitor')">
+1433:    const sideExp = document.getElementById('sideItemExplorer');
+1434:    const sideMon = document.getElementById('sideItemMonitor');
+

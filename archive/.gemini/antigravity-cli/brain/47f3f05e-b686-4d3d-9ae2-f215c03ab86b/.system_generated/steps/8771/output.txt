@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 25 08:01 .
+drwxrwxr-x 8 azureuser azureuser 4096 Sep 25 12:17 ..
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 25 10:46 hook_experiment
+-rw-r--r-- 1 azureuser azureuser 2842 Sep 25 07:58 safety_levels.json
+

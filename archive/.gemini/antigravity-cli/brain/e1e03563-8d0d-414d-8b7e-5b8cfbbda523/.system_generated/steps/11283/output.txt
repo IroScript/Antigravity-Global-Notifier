@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 04:29:53,703 [INFO] [worker_3] [worker_3] ⏳ [Delay Ladder | #1/7: 'Idea #635 SEO'] Sleeping 21.83s (Base: 10.0s, +10.0s next)...
+2026-09-26 04:30:15,540 [INFO] [worker_3] [worker_3] [Idea #656: 'Continental Span Driver'] Generating real SEO via http://localhost:8003...
+2026-09-26 04:30:52,148 [INFO] [30MinMonitor] 
+============================================================
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-26 04:30:52 UTC
+============================================================
+Total Ideas Generated       : 847 / 1000 (84.7%)
+Total Prompts Generated     : 8951 / 10000 (89.5%)
+Total Real SEO Completed    : 581 / 1000 (58.1%)
+Worker Status:
+  - Worker 1: macro_resting (Completed: 30)
+  - Worker 2: macro_resting (Completed: 23)
+  - Worker 3: generating_seo (Completed: 53)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-26 04:30:55,350 [INFO] [worker_3] [worker_3] ✅ [worker_3] Idea #656 SEO complete! (Title: 'The Crane That Launches Bridges Across Impossible ...')
+2026-09-26 04:30:55,350 [INFO] [worker_3] [worker_3] ⏳ [Delay Ladder | #2/7: 'Idea #656 SEO'] Sleeping 31.90s (Base: 10.0s, +10.0s next)...
+2026-09-26 04:31:27,251 [INFO] [worker_3] [worker_3] [Idea #657: 'Mountain Reversal Crane'] Generating real SEO via http://localhost:8003...
+2026-09-26 04:31:33,428 [WARNING] [worker_4] [worker_4] Retry 5/5 for Ideas for Element #85 (Fortress) via port 8004: ChatGPT stream completed but no output text could be captured.. Waiting 15s...
+

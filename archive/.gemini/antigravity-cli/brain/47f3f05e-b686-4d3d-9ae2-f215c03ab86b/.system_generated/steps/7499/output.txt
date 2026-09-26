@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  
+Updating gs://all-vm-backups-vault-irak-2026/...
+ERROR: [[REDACTED_ID]@developer.gserviceaccount.com] does not have permission to access b instance [all-vm-backups-vault-irak-2026] (or it may not exist): Provided scope(s) are not authorized. This command is authenticated as [REDACTED_ID]@developer.gserviceaccount.com which is the active account specified by the [core/account] property
+
+

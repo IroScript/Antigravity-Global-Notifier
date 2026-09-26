@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+235 Type: PLANNER_RESPONSE
+Tool: run_command
+  CommandLine: sudo tail -n 40 /proc/669951/fd/4
+  Cwd: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+  RequestedTerminalID: 
+  RunPersistent: False
+  WaitMsBeforeAsync: 5000
+  toolAction: Checking live pipeline logs from fd 4
+  toolSummary: Check pipeline orchestrator log
+236 Type: GENERIC
+237 Type: PLANNER_RESPONSE
+Tool: run_command
+  CommandLine: for p in 8001 8002 8003 8004; do
+  echo "=== PORT $p ==="
+  curl -s http://localhost:$p/health
+  echo ""
+  curl -s http://localhost:$p/debug
+  echo ""
+  Cwd: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+  RequestedTerminalID: 
+  RunPersistent: False
+  WaitMsBeforeAsync: 5000
+  toolAction: Checking health and debug on workers 1-4
+  toolSummary: Check worker container status
+238 Type: GENERIC
+

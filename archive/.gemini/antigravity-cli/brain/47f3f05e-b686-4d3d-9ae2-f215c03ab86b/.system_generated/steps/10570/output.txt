@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+49
+19
+30
+{
+  "name": ".cache",
+  "path": "/home/azureuser/.cache",
+  "is_dir": true,
+  "is_link": false,
+  "link_target": null,
+  "size": null,
+  "size_str": "",
+  "mtime": 1790418236.7449052,
+  "mtime_str": "2026-09-26 10:23 AM",
+  "ext": "",
+  "type_name": "File folder"
+}
+

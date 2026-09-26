@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+,overlayAddon:s}=this,r=JSON.stringify({AuthToken:this.token,columns:i.cols,rows:i.rows})
+

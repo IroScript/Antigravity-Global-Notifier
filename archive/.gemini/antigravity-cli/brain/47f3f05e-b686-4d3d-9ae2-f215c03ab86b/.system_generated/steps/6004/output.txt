@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+1.4G	/home/azureuser/RESTORED_VIDEOS
+557M	/home/azureuser/RESTORED_PROJECTS
+72M	/home/azureuser/AGY-MASTER
+3.0M	/home/azureuser/tmp
+20K	/home/azureuser/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+12K	/home/azureuser/Ask-And-Research
+

@@ -1,0 +1,34 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -31,6 +31,11 @@
+ if str(BASE_DIR) not in sys.path:
+     sys.path.insert(0, str(BASE_DIR))
+ 
++class FlushingFileHandler(logging.FileHandler):
++    def emit(self, record):
++        super().emit(record)
++        self.flush()
++
+ # Setup logging
+ logging.basicConfig(
+     level=logging.INFO,
+@@ -37,6 +37,6 @@
+     handlers=[
+         logging.StreamHandler(sys.stdout),
+-        logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8")
++        FlushingFileHandler(LOG_FILE, mode="a", encoding="utf-8")
+     ]
+ )
+ logger = logging.getLogger("ClusterOrchestrator")
+@@ -50,7 +50,7 @@
+ 
+ LOCKED_AUDIO_RULE = "Audio: no human voice, only cinematic BGM."
+ 
+-progress_lock = threading.Lock()
++progress_lock = threading.RLock()
+ 
+ def get_db_connection():
+     """Create a thread-safe connection to the SQLite database."""
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

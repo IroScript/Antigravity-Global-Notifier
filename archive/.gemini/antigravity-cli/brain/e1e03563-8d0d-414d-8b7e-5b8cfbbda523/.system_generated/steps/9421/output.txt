@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+total 72
+drwxr-xr-x 13 azureuser azureuser  4096 Sep 25 08:00 .
+drwxr-xr-x  6 root      root       4096 Sep 24 12:55 ..
+drwx------  3 azureuser azureuser  4096 Sep 25 07:58 .cache
+drwx------  3 azureuser azureuser  4096 Sep 25 07:54 .config
+drwxr-xr-x  4 azureuser azureuser  4096 Sep 25 07:55 .gemini
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 .gradle
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 08:00 .local
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:59 .npm
+drwx------  5 azureuser azureuser  4096 Sep 25 07:56 .openclaw
+-rw-r--r--  1 azureuser azureuser     0 Sep 25 08:00 .sudo_as_admin_successful
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 08:00 .webterminal
+drwxrwxr-x  6 azureuser azureuser  4096 Sep 25 07:58 AGY-MASTER
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 Ask-And-Research
+-rw-rw-r--  1 azureuser azureuser 18284 Sep 25 07:57 MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:59 tmp
+

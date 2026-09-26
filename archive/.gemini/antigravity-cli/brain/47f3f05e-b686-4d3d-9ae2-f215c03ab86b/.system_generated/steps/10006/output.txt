@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/IrakIroan/database_backups/:
+total 9.1M
+-rw-rw-r-- 1 azureuser azureuser  237 Sep 25 15:52 gcp_cockroach_migrations_data.txt
+-rw-rw-r-- 1 azureuser azureuser  12K Sep 25 15:52 gcp_cockroach_schema.sql
+-rw-rw-r-- 1 azureuser azureuser 8.8M Sep 25 15:52 gcp_frappe_mariadb.sql
+-rw-rw-r-- 1 azureuser azureuser    0 Sep 25 15:52 gcp_mariadb_all_databases.sql
+-rw-rw-r-- 1 azureuser azureuser 269K Sep 25 15:52 gcp_postgres_all_databases.sql
+-rw-rw-r-- 1 azureuser azureuser   88 Sep 25 15:52 gcp_redis_6379_dump.rdb
+
+/home/azureuser/IrakIroan/full_filesystem/:
+total 17G
+-rw-rw-r-- 1 azureuser azureuser  130 Sep 25 19:59 PARTS_MD5_CHECKSUM.txt
+-rw-rw-r-- 1 azureuser azureuser  868 Sep 25 19:37 RESTORE_INSTRUCTIONS.txt
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_01.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_02.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:37 gcp_home_backup_part_03.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:37 gcp_home_backup_part_04.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 600M Sep 25 19:58 gcp_home_backup_part_05_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 497M Sep 25 19:58 gcp_home_backup_part_05_01.tar.gz
+

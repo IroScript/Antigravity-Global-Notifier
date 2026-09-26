@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+● azure-file-explorer.service - Windows 11 Azure File Explorer Web Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 13:38:39 UTC; 9min ago
+ Invocation: 59616a14a0e64355a522ba81e3e9816a
+   Main PID: 1187176 (python3)
+      Tasks: 1 (limit: 19137)
+     Memory: 9.6M (peak: 10.1M)
+        CPU: 114ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer.service
+             └─1187176 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_ex…
+
+Sep 26 13:46:19 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:37 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:37 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:47 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:54 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:54 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:46:56 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:46…00 -
+Sep 26 13:47:13 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:47…00 -
+Sep 26 13:47:13 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:47…00 -
+Sep 26 13:47:20 FatehAli python3[1187176]: 127.0.0.1 - - [26/Sep/2026 13:47…00 -
+Hint: Some lines were ellipsized, use -l to show in full.
+

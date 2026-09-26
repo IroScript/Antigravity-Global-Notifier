@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+
+Showing 5 of 48 repositories in @IroScript
+
+NAME                                      DESCRIPTION  INFO    UPDATED          
+IroScript/Rust_Task_With_Time_Keeping...               public  about 1 day ago
+IroScript/3d-web-templates                             public  about 1 day ago
+IroScript/Youtube-Pipeline                             public  about 8 days ago
+IroScript/kids_tube_with_folder_seection               public  about 10 days ago
+IroScript/frappe-erp-alco-project                      public  about 13 days ago
+

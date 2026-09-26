@@ -1,0 +1,225 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -507,107 +507,118 @@
+         base_delay = 10.0
+         logger.info(f"[{worker_id}] ▶️ Worker {worker_id} starting Cycle #{cycle_num} (Random batch target: {batch_target} processes, Base delay: {base_delay}s)...")
+ 
+-        # Find incomplete work in this worker's partition
+-        conn = get_db_connection()
+-        cur = conn.cursor()
+-
+-        # Check elements that need ideas
+-        cur.execute(
+-            """SELECT e.id, e.name, e.group_type, COUNT(DISTINCT ie.idea_id) as idea_count
+-            FROM elements e
+-            LEFT JOIN idea_elements ie ON ie.element_id = e.id
+-            WHERE e.id >= ? AND e.id <= ?
+-            GROUP BY e.id
+-            HAVING idea_count < 10
+-            ORDER BY e.id ASC LIMIT 1""",
+-            (start_elem, end_elem)
+-        )
+-        elem_need_ideas = cur.fetchone()
+-
+-        # Check ideas that need escalation prompts
+-        cur.execute(
+-            """SELECT i.id, i.title, e.id, e.name, i.description, COUNT(p.id) as prompt_count
+-            FROM ideas i
+-            JOIN idea_elements ie ON ie.idea_id = i.id
+-            JOIN elements e ON e.id = ie.element_id
+-            LEFT JOIN prompts p ON p.idea_id = i.id
+-            WHERE e.id >= ? AND e.id <= ?
+-            GROUP BY i.id
+-            HAVING prompt_count < 10
+-            ORDER BY e.id ASC, i.id ASC LIMIT 1""",
+-            (start_elem, end_elem)
+-        )
+-        idea_need_prompts = cur.fetchone()
+-
+-        # Check ideas that need SEO metadata
+-        cur.execute(
+-            """SELECT i.id, i.title, e.id, e.name, i.description, ym.id
+-            FROM ideas i
+-            JOIN idea_elements ie ON ie.idea_id = i.id
+-            JOIN elements e ON e.id = ie.element_id
+-            LEFT JOIN youtube_metadata ym ON ym.idea_id = i.id
+-            WHERE e.id >= ? AND e.id <= ? AND ym.id IS NULL
+-            ORDER BY e.id ASC, i.id ASC LIMIT 1""",
+-            (start_elem, end_elem)
+-        )
+-        idea_need_seo = cur.fetchone()
+-        conn.close()
+-
+-        # Check if all work in partition is finished
+-        if not elem_need_ideas and not idea_need_prompts and not idea_need_seo:
+-            logger.info(f"[{worker_id}] 🎉 Worker {worker_id} partition (Elements {start_elem} to {end_elem}) FULLY COMPLETE!")
+-            save_worker_progress(worker_id, {"status": "partition_completed"})
+-            time.sleep(600)
+-            continue
+-
+-        # Execute single process in cycle
+-        action_name = ""
+-        success = False
+-
+-        if elem_need_ideas:
+-            eid, ename, egroup, _ = elem_need_ideas
+-            save_worker_progress(worker_id, {
+-                "status": "generating_ideas",
+-                "current_element_id": eid,
+-                "current_element_name": ename
+-            })
+-            action_name = f"Elem #{eid} Ideas"
+-            success = generate_ideas_for_element(worker_id, port, eid, ename, egroup)
+-
+-        elif idea_need_prompts:
+-            iid, ititle, eid, ename, idesc, _ = idea_need_prompts
+-            save_worker_progress(worker_id, {
+-                "status": "generating_prompts",
+-                "current_element_id": eid,
+-                "current_element_name": ename
+-            })
+-            action_name = f"Idea #{iid} Escalation"
+-            success = generate_escalation_for_idea(worker_id, port, iid, ititle, ename, idesc)
+-
+-        elif idea_need_seo:
+-            iid, ititle, eid, ename, idesc, _ = idea_need_seo
+-            save_worker_progress(worker_id, {
+-                "status": "generating_seo",
+-                "current_element_id": eid,
+-                "current_element_name": ename
+-            })
+-            action_name = f"Idea #{iid} SEO"
+-            success = generate_seo_for_idea(worker_id, port, iid, eid, ititle, ename, idesc)
+-
+-        if success:
+-            completed_processes += 1
+-            cycle_processes += 1
+-
+-            # Micro Layer Delay Ladder (+10s per process in cycle)
+-            ladder_delay = base_delay + (cycle_processes * 10.0) + random.uniform(0.0, 2.0)
+-            logger.info(f"[{worker_id}] ⏳ [Delay Ladder | #{cycle_processes}: '{action_name}'] Sleeping {ladder_delay:.2f}s (Base: {base_delay}s, +10.0s next)...")
+-            save_worker_progress(worker_id, {
+-                "completed_processes": completed_processes,
+-                "cycle_processes": cycle_processes,
+-                "current_cycle": cycle_num,
+-                "cooldown_seconds": round(ladder_delay, 1)
+-            })
+-            time.sleep(ladder_delay)
++        while cycle_processes < batch_target:
++            # Check Macro Layer Deep Hibernation during cycle
++            elapsed_shift = time.time() - shift_start_time
++            if elapsed_shift >= active_shift_duration:
++                break
++
++            # Find incomplete work in this worker's partition
++            conn = get_db_connection()
++            try:
++                cur = conn.cursor()
++
++                # Check elements that need ideas
++                cur.execute(
++                    """SELECT e.id, e.name, e.group_type, COUNT(DISTINCT ie.idea_id) as idea_count
++                    FROM elements e
++                    LEFT JOIN idea_elements ie ON ie.element_id = e.id
++                    WHERE e.id >= ? AND e.id <= ?
++                    GROUP BY e.id
++                    HAVING idea_count < 10
++                    ORDER BY e.id ASC LIMIT 1""",
++                    (start_elem, end_elem)
++                )
++                elem_need_ideas = cur.fetchone()
++
++                # Check ideas that need escalation prompts
++                cur.execute(
++                    """SELECT i.id, i.title, e.id, e.name, i.description, COUNT(p.id) as prompt_count
++                    FROM ideas i
++                    JOIN idea_elements ie ON ie.idea_id = i.id
++                    JOIN elements e ON e.id = ie.element_id
++                    LEFT JOIN prompts p ON p.idea_id = i.id
++                    WHERE e.id >= ? AND e.id <= ?
++                    GROUP BY i.id
++                    HAVING prompt_count < 10
++                    ORDER BY e.id ASC, i.id ASC LIMIT 1""",
++                    (start_elem, end_elem)
++                )
++                idea_need_prompts = cur.fetchone()
++
++                # Check ideas that need SEO metadata
++                cur.execute(
++                    """SELECT i.id, i.title, e.id, e.name, i.description, ym.id
++                    FROM ideas i
++                    JOIN idea_elements ie ON ie.idea_id = i.id
++                    JOIN elements e ON e.id = ie.element_id
++                    LEFT JOIN youtube_metadata ym ON ym.idea_id = i.id
++                    WHERE e.id >= ? AND e.id <= ? AND ym.id IS NULL
++                    ORDER BY e.id ASC, i.id ASC LIMIT 1""",
++                    (start_elem, end_elem)
++                )
++                idea_need_seo = cur.fetchone()
++            finally:
++                conn.close()
++
++            # Check if all work in partition is finished
++            if not elem_need_ideas and not idea_need_prompts and not idea_need_seo:
++                logger.info(f"[{worker_id}] 🎉 Worker {worker_id} partition (Elements {start_elem} to {end_elem}) FULLY COMPLETE!")
++                save_worker_progress(worker_id, {"status": "partition_completed"})
++                time.sleep(600)
++                break
++
++            # Execute single process in cycle
++            action_name = ""
++            success = False
++
++            if elem_need_ideas:
++                eid, ename, egroup, _ = elem_need_ideas
++                save_worker_progress(worker_id, {
++                    "status": "generating_ideas",
++                    "current_element_id": eid,
++                    "current_element_name": ename
++                })
++                action_name = f"Elem #{eid} Ideas"
++                success = generate_ideas_for_element(worker_id, port, eid, ename, egroup)
++
++            elif idea_need_prompts:
++                iid, ititle, eid, ename, idesc, _ = idea_need_prompts
++                save_worker_progress(worker_id, {
++                    "status": "generating_prompts",
++                    "current_element_id": eid,
++                    "current_element_name": ename
++                })
++                action_name = f"Idea #{iid} Escalation"
++                success = generate_escalation_for_idea(worker_id, port, iid, ititle, ename, idesc)
++
++            elif idea_need_seo:
++                iid, ititle, eid, ename, idesc, _ = idea_need_seo
++                save_worker_progress(worker_id, {
++                    "status": "generating_seo",
++                    "current_element_id": eid,
++                    "current_element_name": ename
++                })
++                action_name = f"Idea #{iid} SEO"
++                success = generate_seo_for_idea(worker_id, port, iid, eid, ititle, ename, idesc)
++
++            if success:
++                completed_processes += 1
++                cycle_processes += 1
++
++                # Micro Layer Delay Ladder (+10s per process in cycle)
++                ladder_delay = base_delay + (cycle_processes * 10.0) + random.uniform(0.0, 2.0)
++                logger.info(f"[{worker_id}] ⏳ [Delay Ladder | #{cycle_processes}/{batch_target}: '{action_name}'] Sleeping {ladder_delay:.2f}s (Base: {base_delay}s, +10.0s next)...")
++                save_worker_progress(worker_id, {
++                    "completed_processes": completed_processes,
++                    "cycle_processes": cycle_processes,
++                    "current_cycle": cycle_num,
++                    "cooldown_seconds": round(ladder_delay, 1)
++                })
++                time.sleep(ladder_delay)
++            else:
++                logger.warning(f"[{worker_id}] ⚠️ Action '{action_name}' failed or rate-limited. Pausing 45s before retry...")
++                time.sleep(45.0)
+ 
+         # Micro Layer Cycle Completion & Rest
+         if cycle_processes >= batch_target:
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

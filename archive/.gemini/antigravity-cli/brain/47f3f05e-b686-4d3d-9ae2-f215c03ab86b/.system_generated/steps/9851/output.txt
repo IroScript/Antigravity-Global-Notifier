@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+----i---------e------- /home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md
+

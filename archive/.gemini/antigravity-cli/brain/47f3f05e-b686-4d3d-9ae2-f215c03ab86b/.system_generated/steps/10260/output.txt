@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+       88 2026-09-25 15:52:28.149000000 database_backups/gcp_redis_6379_dump.rdb
+   274467 2026-09-25 15:52:28.013000000 database_backups/gcp_postgres_all_databases.sql
+        0 2026-09-25 15:52:27.853000000 database_backups/gcp_mariadb_all_databases.sql
+  9226115 2026-09-25 15:52:27.745000000 database_backups/gcp_frappe_mariadb.sql
+    11984 2026-09-25 15:52:27.317000000 database_backups/gcp_cockroach_schema.sql
+      237 2026-09-25 15:52:27.185000000 database_backups/gcp_cockroach_migrations_data.txt
+      130 2026-09-25 19:59:22.914000000 full_filesystem/PARTS_MD5_CHECKSUM.txt
+520455964 2026-09-25 19:58:56.010000000 full_filesystem/gcp_home_backup_part_05_01.tar.gz
+629145600 2026-09-25 19:58:53.262000000 full_filesystem/gcp_home_backup_part_05_00.tar.gz
+      868 2026-09-25 19:37:48.669000000 full_filesystem/RESTORE_INSTRUCTIONS.txt
+3221225472 2026-09-25 19:37:32.789000000 full_filesystem/gcp_home_backup_part_04.tar.gz
+3221225472 2026-09-25 19:37:15.096000000 full_filesystem/gcp_home_backup_part_03.tar.gz
+3221225472 2026-09-25 19:36:57.656000000 full_filesystem/gcp_home_backup_part_02.tar.gz
+3221225472 2026-09-25 19:36:40.547000000 full_filesystem/gcp_home_backup_part_01.tar.gz
+3221225472 2026-09-25 19:36:22.807000000 full_filesystem/gcp_home_backup_part_00.tar.gz
+

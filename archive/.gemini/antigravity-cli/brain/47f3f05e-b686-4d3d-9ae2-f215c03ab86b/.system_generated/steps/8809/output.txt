@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Filesystem     Type 1K-blocks     Used Available Use% Mounted on
+/dev/nvme1n1   ext4 225956404 49512752 164892932  24% /home
+

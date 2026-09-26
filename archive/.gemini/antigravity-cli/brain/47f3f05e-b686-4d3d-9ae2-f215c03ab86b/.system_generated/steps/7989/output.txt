@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+tar     95403 root cwd    DIR    8,1     4096  398609 /home/azureuser-to-google-vm
+tar     95403 root   3r   DIR    8,1     4096  393328 /home
+tar     95403 root   5r   DIR    8,1     4096  395764 /home/mdkamruzzamanirak_gmail_com
+tar     95403 root   6r   DIR    8,1     4096  558355 /home/mdkamruzzamanirak_gmail_com/flutter
+tar     95403 root   7r   DIR    8,1     4096  558692 /home/mdkamruzzamanirak_gmail_com/flutter/bin
+

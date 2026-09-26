@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+=== FULL ARCHIVE GCS OBJECT VERIFICATION ===
+Object Name:  azure_home_backup/azure_home_FULL_filesystem_20260925.tar.gz
+GCS Size:     3,409,236,303 bytes
+MD5 Hash:     uAPg7ZjocLnqpruWhOyynw==
+Time Created: 2026-09-25T16:12:09.540Z
+Updated:      2026-09-25T16:12:09.540Z
+

@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+total 68
+drwxr-xr-x 2 azureuser azureuser  4096 Sep 25 10:37 .
+drwxr-xr-x 6 azureuser azureuser  4096 Sep 25 10:51 ..
+-rw-r--r-- 1 azureuser azureuser  5886 Sep 25 10:35 verify_azure_location.py
+-rw-r--r-- 1 azureuser azureuser  6179 Sep 25 10:37 verify_azure_options.py
+-rw-r--r-- 1 azureuser azureuser  8071 Sep 25 10:26 verify_deleted_report.py
+-rw-r--r-- 1 azureuser azureuser  8060 Sep 25 08:01 verify_lines.py
+-rw-r--r-- 1 azureuser azureuser  5631 Sep 25 10:30 verify_reason_report.py
+-rw-r--r-- 1 azureuser azureuser 10073 Sep 25 08:04 verify_response.py
+-rw-r--r-- 1 azureuser azureuser  5592 Sep 25 10:33 verify_where_report.py
+

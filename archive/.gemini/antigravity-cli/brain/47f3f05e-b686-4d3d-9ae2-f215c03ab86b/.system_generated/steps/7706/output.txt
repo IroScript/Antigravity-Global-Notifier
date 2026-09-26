@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 200 
+date: Fri, 25 Sep 2026 18:03:31 GMT
+content-type: text/html
+cf-ray: a40bf2320c325938-IAD
+cf-cache-status: DYNAMIC
+

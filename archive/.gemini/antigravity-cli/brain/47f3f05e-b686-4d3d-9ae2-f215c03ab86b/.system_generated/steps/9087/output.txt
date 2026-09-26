@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+<6>INFO  : test_ro.txt: Copied (new)
+<6>INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Transferred:            1 / 1, 100%
+Elapsed time:         1.3s
+
+

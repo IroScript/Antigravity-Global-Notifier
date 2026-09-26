@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+48   `curl -s --data-binary @ফাইল https://paste.rs`
+

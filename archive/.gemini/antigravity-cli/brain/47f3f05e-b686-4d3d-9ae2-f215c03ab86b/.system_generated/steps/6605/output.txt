@@ -1,0 +1,100 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+  master_dashboard_25_sept_12.00_pm.csv সরাসরি ডাউনলোড করুন https://tmpfiles.
+  org/dl/wUwJEoRbrZSq/master_dashboard_25_sept_12.00_pm.csv
+  • 📋 ফুল টেক্সট অডিট লগ (Paste.rs):
+  সন্ধ্যা ৬:০০টার অডিট সামারি দেখুন https://paste.rs/YTR3G
+  পরবর্তী নির্ধারিত শিডিউল অনুযায়ী সন্ধ্যা ৬:৩০টায় (১২:৩০ ইউটিসি) আমি পরবর্তী অগ্রগতি র
+িপোর্ট পেশ করব। পাইপলাইন
+  সম্পূর্ণ স্বয়ংক্রিয়ভাবে লক্ষ্য অর্জনের পথে এগিয়ে চলছে।
+
+▸ Thought for 5s, 433 tokens
+  The scheduled task completed; it's time to execute the standard reporting...
+
+● Bash(ps aux | grep run_cluster_pipeline.py | grep -v grep && \)
+● Bash(sudo tail -n 40 /proc/669951/fd/4)
+● Bash(cat "Youtube Automation/PromptDatabase/cluster_progr...) (ctrl+o to
+expand)
+
+▸ Thought for 4s, 725 tokens
+  Calculating macro rest end times for each worker reveals they will conclud...
+
+● Bash(curl -s http://localhost:8004/debug) (ctrl+o to expand)
+▸ Thought for 9s, 1.1k tokens
+  If the location isn't updated, or a new tab is open, the generated content...
+
+● Bash(python3 -c ")
+● Bash(python3 -c ")
+● Bash(find "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-
+media/yo...)
+● Bash(sudo find "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-
+med...)
+● Edit(~/.openclaw/workspace/IROSCRIPT-CE...romptDatabase/generate_all_csvs.py)
+● Bash(python3 "Youtube Automation/PromptDatabase/generate_all_csvs.py")
+● Bash(curl -s -F "file=@Youtube
+Automation/PromptDatabase/exports/master_dash...)
+● Bash(curl -sI
+https://tmpfiles.org/dl/w9w1EWIHtC56/master_dashboard_25_sept_...)
+● Bash(cat << 'EOF' | curl -s --data-binary @- https://paste.rs)
+● Bash(sudo tail -n 15 /proc/669951/fd/4)
+● Bash(sudo docker logs --tail 10 chatgpt_worker_4) (ctrl+o to expand)
+
+▸ Thought for 3s
+  ইরাক ভাইয়াকে প্রতিবেদন প্রস্তুত করছি: সন্ধ্যা ৬:৩০টা (১২:৩০ ইউটিসি) সময়। আ...
+  ইরাক ভাইয়া,
+
+  সন্ধ্যা ৬:৩০টা (১২:৩০ ইউটিসি)-এর নির্ধারিত পাইপলাইন অডিট রিপোর্ট, মাস্টার ড্যাশবোর্ড
+সিএসভি ডাউনলোড লিংক এবং
+  ক্লাস্টারের সর্বশেষ অগ্রগতি নিচে বিস্তারিত তুলে ধরছি:
+  ──────
+  ### 📊 সার্বিক পাইপলাইন অগ্রগতি (সন্ধ্যা ৬:৩০টা):
+
+  • আইডিয়া জেনারেশন: ৬৬৭ / ১,০০০ (৬৬.৭%)
+  • প্রম্পট জেনারেশন: ৭,৬৬০ / ১০,০০০ (৭৬.৬%) — (৭৫%+ মাইলফলক মজবুতভাবে সংরক্ষিত)
+  • রিয়েল এসইও (SEO): ৫৫৫ / ১,০০০ (৫৫.৫%)
+  • প্যাকেজড MP4 ফাইল: ২১৭টি ভিডিও ফাইল (২১৮টি প্যাকেজ ফোল্ডার)
+  • ডেটাবেজ হেলথ: সুস্থ ও শতভাগ অক্ষত (OK) (WAL মোড সক্রিয় ও রিয়েল-টাইম সিঙ্কড)
+  • লকড অডিও ম্যান্ডেট: ১০০% কার্যকর (রুল চালুর পর থেকে তৈরি হওয়া প্রতিটি ভিডিও প্রম্পটে
+ "Audio: no human
+  voice, only cinematic BGM." যথাযথভাবে যুক্ত রয়েছে)
+  ──────
+  ### 👥 ওয়ার্কার ও টু-টিয়ার (ম্যাক্রো/মাইক্রো) আর্কিটেকচার আপডেট:
+
+  • ওয়ার্কার ২ (Gaming Dot Bangla): ৩টি সাইকেল (২১টি সফল টাস্ক) শেষে নির্ধারিত ১.৭২
+ ঘণ্টার ডিপ ম্যাক্রো-
+  রেস্টে রয়েছে। আর মাত্র ~৩৭ মিনিট পর (সন্ধ্যা ৭:০৭টায়) এটি ক্লাস্টারের প্রথম ওয়ার্কার হ
+িসেবে ঘুম থেকে জেগে নতুন শিফটে
+  কাজ শুরু করবে।
+  • ওয়ার্কার ১ (Md Shapon): ৪টি সাইকেল (৩৬টি সফল টাস্ক) শেষে নির্ধারিত ১.৮১ ঘণ্টার ড
+িপ ম্যাক্রো-রেস্টে রয়েছে।
+  আর ~৫৪ মিনিট পর (সন্ধ্যা ৭:২৪টায়) এটি শিফটে ফিরবে।
+  • ওয়ার্কার ৩ (Irak Iroan AI): ৩টি সাইকেল (২৩২টি সফল টাস্ক) শেষে নির্ধারিত ১.৮৫ ঘণ্
+টার ডিপ ম্যাক্রো-রেস্টে
+  রয়েছে। আর ~৫৫ মিনিট পর (সন্ধ্যা ৭:২৫টায়) এটি শিফটে ফিরবে।
+  • ওয়ার্কার ৪ (Alco Store): ৪১টি প্রসেস সফলভাবে সম্পন্ন করার পর বর্তমানে এলিমেন্ট #৮৬
+  আইডিয়া জেনারেশনে সক্রিয় রয়েছে।
+
+  │ পর্যবেক্ষণ: আপনার নির্দেশিত ম্যাক্রো ও মাইক্রো লেয়ার স্বাভাবিকভাবে পর্যায়ক্রমিক রেস্ট
+  │ শতভাগ নিরাপদ রাখছে। আর কিছুক্ষণের মধ্যেই ওয়ার্কার ২ জেগে ওঠার মাধ্যমে পাইপলাইনের
+  │ যাচ্ছে।
+  ──────
+  ### 📦 রিপোর্ট ও ডেটা ডাউনলোড লিংক:
+
+  • 📥 মাস্টার ড্যাশবোর্ড সিএসভি (সন্ধ্যা ৬:৩০টা এক্সপোর্ট):
+  master_dashboard_25_sept_12.30_pm.csv সরাসরি ডাউনলোড করুন https://tmpfiles.
+  org/dl/w9w1EWIHtC56/master_dashboard_25_sept_12.30_pm.csv
+  • 📋 ফুল টেক্সট অডিট লগ (Paste.rs):
+  সন্ধ্যা ৬:৩০টার অডিট সামারি দেখুন https://paste.rs/2GhUj
+
+  পরবর্তী নির্ধারিত শিডিউল অনুযায়ী সন্ধ্যা ৭:০০টায় (১৩:০০ ইউটিসি) আমি পরবর্তী অগ্রগতি
+
+────────────────────────────────────────────────────────────────────────────────
+>
+
+────────────────────────────────────────────────────────────────────────────────
+  ● [07:51:18] python3 "Youtube Automation/PromptDatabase/run_cluster... running
+────────────────────────────────────────────────────────────────────────────────
+                                    Gemini 3.8 Flash · high · 1 task(s) · /tasks
+

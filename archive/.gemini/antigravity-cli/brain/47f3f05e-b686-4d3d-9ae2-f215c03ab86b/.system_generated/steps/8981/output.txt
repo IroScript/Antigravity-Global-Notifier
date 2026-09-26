@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+{
+  "start_time": "2026-09-25T20:25:34.570817+00:00",
+  "total_planned_seconds": 21600,
+  "total_cycles_completed": 1,
+  "cumulative_tests_run": 101,
+  "cumulative_denials": 101,
+  "cumulative_failures": 0,
+  "heartbeats": [
+    {
+      "cycle": 1,
+      "elapsed_seconds": 0.0,
+      "remaining_seconds": 21600.0,
+      "timestamp": "2026-09-25T20:25:36.763133+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    }
+  ],
+  "last_updated": "2026-09-25T20:25:36.763730+00:00"
+}

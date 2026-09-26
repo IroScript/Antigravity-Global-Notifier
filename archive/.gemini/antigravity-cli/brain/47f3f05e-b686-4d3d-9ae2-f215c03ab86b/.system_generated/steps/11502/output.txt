@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Single find pass took 3.29s: 882672 items, total_bytes=109168873551 (101.67 GB), files=776358, folders=106314
+

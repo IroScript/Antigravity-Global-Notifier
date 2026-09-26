@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+ 920647 920647 920647

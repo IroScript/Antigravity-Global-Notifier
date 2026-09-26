@@ -1,0 +1,92 @@
+
+The command exited with code 0.
+Output:
+{
+  "started_at": "2026-09-25T07:51:18.952470+00:00",
+  "last_updated": "2026-09-25T15:53:50.374801+00:00",
+  "total_elements_target": 100,
+  "total_ideas_target": 1000,
+  "total_prompts_target": 10000,
+  "total_seo_target": 1000,
+  "workers": {
+    "worker_1": {
+      "status": "generating_ideas",
+      "current_element_id": 40,
+      "current_element_name": "Cloud",
+      "completed_processes": 38,
+      "completed_elements": [
+        22,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "stagger_seconds": 180.0,
+      "current_cycle": 5,
+      "cycle_processes": 2,
+      "cooldown_seconds": 283.7,
+      "rest_seconds": 6531.2,
+      "macro_rest_hours": 1.81
+    },
+    "worker_2": {
+      "status": "generating_ideas",
+      "current_element_id": 57,
+      "current_element_name": "Insect Swarm",
+      "completed_processes": 27,
+      "completed_elements": [
+        42,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "stagger_seconds": 240.0,
+      "current_cycle": 5,
+      "cycle_processes": 0,
+      "cooldown_seconds": 266.7,
+      "rest_seconds": 435.5,
+      "macro_rest_hours": 1.72
+    },
+    "worker_3": {
+      "status": "generating_ideas",
+      "current_element_id": 76,
+      "current_element_name": "Mining System",
+      "completed_processes": 238,
+      "completed_elements": [
+        62,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "stagger_seconds": 300.0,
+      "current_cycle": 4,
+      "cycle_processes": 6,
+      "cooldown_seconds": 227.6,
+      "rest_seconds": 6655.8,
+      "macro_rest_hours": 1.85
+    },
+    "worker_4": {
+      "status": "generating_ideas",
+      "current_element_id": 91,
+      "current_element_name": "Vault",
+      "completed_processes": 41,
+      "completed_elements": [
+        82,
+        83,
+        84
+      ],
+      "current_cycle": 1,
+      "cycle_processes": 4,
+      "cooldown_seconds": 292.7,
+      "rest_seconds": 598.7
+    }
+  }
+}

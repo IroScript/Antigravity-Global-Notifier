@@ -1,0 +1,151 @@
+
+The command exited with code 0.
+Output:
+
+ইরাক ভাইয়া, এররটির কারণ শতভাগ নির্ভুলভাবে
+ধরা পড়েছে:
+
+Azure স্পষ্টভাবে বলেছে:
+`Restore Point creation failed because crash-consistent restore point for this storage interface is not supported.`
+
+*এর মূল কারণ:*
+আমাদের `FatehAli` ভিএম-টি হলো সর্বাধুনিক
+`Standard_D4ads_v7` সাইজের, যার স্টোরেজ
+ইন্টারফে
+<USER_REQUEST>
+Manage files
+
+New session
+
+X
+
+Requesting a Cloud Shell.Succeeded. Connecting terminal...
+
+Your Cloud Shell session will be ephemeral so no files or system changes will persist beyond your current session.
+
+md [~ ]$ az snapshot show --resource-group FATEHALI_GROUP --name
+
+FatehAli_OSDi
+আলহামদুলিল্লাহ ইরাক ভাইয়া!
+অসাধারণ খবর—Azure OS Managed Disk-এর
+নেটিভ ক্লাউড স্ন্যাপশট **`Succeeded`** হয়েছে!
+
+«──────────────────────────────»
+*AZURE OS SNAPSHOT ভেরিফিকেশন প্রমাণ*
+«──────────────────────────────»
+- Snapshot Name:
+  `FatehAli_OSDisk_Snapshot_20260925`
+- Status: **`Succeeded`**
+- C
+ইরাক ভাইয়া, আজ এতক্ষণ ধরে আমরা যে কাজগুলো
+সম্পন্ন করেছি, তার সহজ ও পরিষ্কার বিবরণ নিচে
+তুলে ধরছি:
+
+«──────────────────────────────»
+*১. AZURE-এ এতক্ষণ কী কী করা হলো?*
+«──────────────────────────────»
+আমাদের Azure VM (`FatehAli`)-এর জন্য
+দুটি বড় কাজ করা হয়েছে:
+
+১. *OS ডিস্কের ক্লাউড স্ন্যাপশট:*
+   -
+# Resuming from a compaction
+
+You are continuing work on the task described above, but you have lost access to the full conversation history, and need to resume work efficiently using the progress summary below:
+
+# User Requests
+The following were user requests from the truncated conversation in chr
+ইরাক ভাইয়া,
+আলহামদুলিল্লাহ! আপনার নির্দেশিত সমস্ত ব্যাকআপ
+এবং পার্সোনাল Google Drive-এ সম্পূর্ণ আপলোড
+১০০% সফল ও ক্রিপ্টোগ্রাফিকভাবে ভেরিফাইড হয়েছে!
+
+«──────────────────────────────»
+*১. পার্সোনাল Google Drive ব্যাকআপ ইনভেন্টরি*
+(ড্রাইভ ফোল্ডার: `All_VM_BackUps`)
+«──────────────────────────────»
+
+
+
+
+
+ইরাক ভাইয়া, এররটির কারণ শতভাগ নির্ভুলভাবে
+ধরা পড়েছে:
+
+Azure স্পষ্টভাবে বলেছে:
+`Restore Point creation failed because crash-consistent restore point for this storage interface is not supported.`
+
+*এর মূল কারণ:*
+আমাদের `FatehAli` ভিএম-টি হলো সর্বাধুনিক
+`Standard_D4ads_v7` সাইজের, যার স্টোরেজ
+ইন্টারফে
+<USER_REQUEST>
+Manage files
+
+New session
+
+X
+
+Requesting a Cloud Shell.Succeeded. Connecting terminal...
+
+Your Cloud Shell session will be ephemeral so no files or system changes will persist beyond your current session.
+
+md [~ ]$ az snapshot show --resource-group FATEHALI_GROUP --name
+
+FatehAli_OSDi
+আলহামদুলিল্লাহ ইরাক ভাইয়া!
+অসাধারণ খবর—Azure OS Managed Disk-এর
+নেটিভ ক্লাউড স্ন্যাপশট **`Succeeded`** হয়েছে!
+
+«──────────────────────────────»
+*AZURE OS SNAPSHOT ভেরিফিকেশন প্রমাণ*
+«──────────────────────────────»
+- Snapshot Name:
+  `FatehAli_OSDisk_Snapshot_20260925`
+- Status: **`Succeeded`**
+- C
+ইরাক ভাইয়া, আজ এতক্ষণ ধরে আমরা যে কাজগুলো
+সম্পন্ন করেছি, তার সহজ ও পরিষ্কার বিবরণ নিচে
+তুলে ধরছি:
+
+«──────────────────────────────»
+*১. AZURE-এ এতক্ষণ কী কী করা হলো?*
+«──────────────────────────────»
+আমাদের Azure VM (`FatehAli`)-এর জন্য
+দুটি বড় কাজ করা হয়েছে:
+
+১. *OS ডিস্কের ক্লাউড স্ন্যাপশট:*
+   -
+# Resuming from a compaction
+
+You are continuing work on the task described above, but you have lost access to the full conversation history, and need to resume work efficiently using the progress summary below:
+
+# User Requests
+The following were user requests from the truncated conversation in chr
+ইরাক ভাইয়া,
+আলহামদুলিল্লাহ! আপনার নির্দেশিত সমস্ত ব্যাকআপ
+এবং পার্সোনাল Google Drive-এ সম্পূর্ণ আপলোড
+১০০% সফল ও ক্রিপ্টোগ্রাফিকভাবে ভেরিফাইড হয়েছে!
+
+«──────────────────────────────»
+*১. পার্সোনাল Google Drive ব্যাকআপ ইনভেন্টরি*
+(ড্রাইভ ফোল্ডার: `All_VM_BackUps`)
+«──────────────────────────────»
+
+
+# Resuming from a compaction
+
+You are continuing work on the task described above, but you have lost access to the full conversation history, and need to resume work efficiently using the progress summary below:
+
+# User Requests
+The following were user requests from the truncated conversation in chr
+
+Created At: 2026-09-25T20:17:11Z
+Completed At: 2026-09-25T20:17:12Z
+
+The command exited with code 0.
+Output:
+<truncated 24 bytes>
+onfigs and parent directory sticky bits.\n  4. *Layer 4 (Azure Control-Plane Protection):* `CanNotDelete` Azure Management Lock on `FatehAli` VM and `FATEHALI_GROUP` reso
+
+

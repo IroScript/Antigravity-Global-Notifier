@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Disk: /sys/block/nvme0n1
+  Model: MSFT NVMe Accelerator v1.0              
+  Serial: SN: 00000
+  Size (512-byte blocks): 62914560
+Disk: /sys/block/nvme1n1
+  Model: Microsoft NVMe Direct Disk v2           
+  Serial: a7567a57b2fce4f80001
+  Size (512-byte blocks): 461373440
+

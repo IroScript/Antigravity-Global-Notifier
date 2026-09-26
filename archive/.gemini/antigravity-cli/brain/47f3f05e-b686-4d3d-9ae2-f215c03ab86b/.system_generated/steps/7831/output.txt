@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/279116: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/127100: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/279645: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/270186: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/279765: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/126726: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/284472: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/127339: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/270338: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/284605: socket ignored
+tar: mdkamruzzamanirak_gmail_com/.local/state/Dart/perf/270408: socket ignored
+

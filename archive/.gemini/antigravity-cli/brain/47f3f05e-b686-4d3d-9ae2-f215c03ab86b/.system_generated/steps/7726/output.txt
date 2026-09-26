@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+total 3.2G
+-rw-rw-r-- 1 azureuser azureuser  12M Sep 25 16:10 archive_file_list.txt
+-rw-r--r-- 1 azureuser azureuser 3.2G Sep 25 16:09 azure_home_FULL_filesystem_20260925.tar.gz
+total 40M
+-rw-rw-r-- 1 azureuser azureuser 1010 Sep 25 15:52 DATABASE_MANIFEST_SHA256.txt
+-rw-rw-r-- 1 azureuser azureuser 273K Sep 25 15:47 azure_postgres_all_databases.sql
+-rw-rw-r-- 1 azureuser azureuser   43 Sep 25 15:49 azure_redis_13000_keys.txt
+-rw-r----- 1 azureuser azureuser   88 Sep 25 15:49 azure_redis_6379_dump.rdb
+-rw-r--r-- 1 azureuser azureuser  39M Sep 25 15:48 azure_youtube_pipeline_consistent.db
+drwxrwxr-x 2 azureuser azureuser 4.0K Sep 25 15:52 gcp_dumps
+

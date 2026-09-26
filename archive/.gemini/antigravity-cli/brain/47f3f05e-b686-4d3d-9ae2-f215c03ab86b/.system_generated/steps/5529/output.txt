@@ -1,0 +1,37 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Inode 2 is at group 0, block 1085, offset 256
+
+Transactions of Filesystemblock 1085 in Journal
+FS-Block	 Journal	Transact	Time in sec	Time of Transaction
+
+Dump Inode 2 from journal transaction 0
+Inode: 2   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 0    Version: 0x00000000:0000000b
+User:     0   Group:     0   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 6   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790254517:1185561044 -- Thu Sep 24 12:55:17 2026
+ atime: 1790261930:0421178704 -- Thu Sep 24 14:58:50 2026
+ mtime: 1790254517:1185561044 -- Thu Sep 24 12:55:17 2026
+crtime: 1790072653:0000000000 -- Tue Sep 22 10:24:13 2026
+Size of extra inode fields: 32
+Level Entries                   Logical                  Physical Length Flags
+ 0/ 0   1/  1           0 -           0        9277 -        9277      1 
+        2  d  755 (2)      0      0           4096 24-Sep-2026 12:55 .
+        2  d  755 (2)      0      0           4096 24-Sep-2026 12:55 ..
+       11  d  700 (2)   1000   1000          16384 22-Sep-2026 10:24 lost+found
+ 11272193  d  755 (2)   1000   1000           4096 22-Sep-2026 10:24 workspace
+  8650753  d  755 (2)   1000   1000           4096 22-Sep-2026 10:24 downloads
+ 13893633  d  755 (2)   1000   1000           4096 25-Sep-2026 07:53 azureuser
+    31636  l  777 (7)      0      0             15 22-Sep-2026 15:50 mdkamruzzamanirak_gmail_com
+    31630  _  600 (1)      0      0    42949672960 24-Sep-2026 12:55 swapfile
+        0       0 (222)      0      0              0                   
+
+ext4magic : EXIT_SUCCESS
+

@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+13165:E0925 07:53:30.071752  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13167:E0925 07:53:30.736653  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13168:E0925 07:53:30.740772  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13169:E0925 07:53:30.746662  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13170:E0925 07:53:30.747367  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13175:E0925 07:53:31.725602  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13176:E0925 07:53:31.737481  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13177:E0925 07:53:31.738295  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13265:E0925 07:54:02.836100  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13266:E0925 07:54:02.838658  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13267:E0925 07:54:02.849760  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+13268:E0925 07:54:02.897866  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+14967:E0924 17:56:59.864570 1503258 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+15522:E0924 18:54:41.326755 1558890 run_command_handler.go:696] error during input detection model call: request failed: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse": context canceled
+15711:E0924 19:08:33.592244 1578663 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+16138:E0924 19:53:11.498838 1630386 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+18955:E0925 01:13:24.153447 1959843 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+19413:E0925 03:26:27.309413 2086808 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+20060:E0925 05:52:05.109592 2201312 run_command_handler.go:696] error during input detection model call: stream reading error: context canceled
+20813:E0925 07:54:18.968430 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20814:E0925 07:54:18.986502 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20815:E0925 07:54:19.024359 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20816:E0925 07:54:19.042858 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20817:E0925 07:54:19.053710 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20818:E0925 07:54:19.066903 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20819:E0925 07:54:19.132776 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20820:E0925 07:54:19.170235 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20821:E0925 07:54:19.217452 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20822:E0925 07:54:19.254938 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+20823:E0925 07:54:19.271873 2329444 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-9369.log: no such file or directory
+

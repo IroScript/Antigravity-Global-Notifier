@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: ext4magic: command not found
+

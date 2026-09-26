@@ -1,0 +1,93 @@
+
+The command exited with code 1.
+Output:
+<truncated 5 lines>
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_6_14p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_1_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_0_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_4_61p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_3_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_2_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/rust/db_5_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_3_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_0_16p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_5_1733p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_10_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_1_1845p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_7_1754p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_8_21p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_4_21p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_9_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_2_14p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/game/db_6_21p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_2_20p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_1_1677p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_6_62p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_0_20p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_3_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_5_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/kids/db_4_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_5_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_1_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_0_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_3_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_2_61p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_4_13p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/frappe/db_6_3p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_5_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_1_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_6_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_2_65p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_3_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_0_14p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/article/db_4_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_2_546p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_3_21p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_1_21p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_4_3431p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_5_11p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/tg/db_0_4605p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_5_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_2_16p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_4_16p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_3_579p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_6_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_8_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_7_12p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_1_424p.sqlite
+/home/azureuser/AGY-MASTER/RECOVERED_DATABASES/history/db_0_11p.sqlite
+/home/azureuser/RESTORED_PROJECTS/.gemini/antigravity-cli/conversation_summaries.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13996263_57e29500-c7a5-48ce-946f-2b109cf89db9.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13994912_11a7fff9-a733-4b60-8dac-85108663142c.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13994910_02384713-cda5-4914-8c33-f9c5597f1a42.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13996338_161f509d-2fbb-4799-97e7-463b480cf3f7.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13994911_0f4959f8-b0de-416c-ad67-c2d2543657e5.db
+/home/azureuser/RESTORED_PROJECTS/RECOVERED_BY_NAME/13996351_dc0cfb20-85a6-46ec-a82d-536aa6ef3590.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_declarative_performance_observer.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1945_chrome_cache.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_first_party_sets.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_key4.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_cert9.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/1210_chrome_heavy_ad_intervention_opt_out.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/630411_chrome_first_party_sets.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/669951_python3_youtube_pipeline.db
+/home/azureuser/RESTORED_PROJECTS/.webterminal/vm_sizing_24h.db
+/home/azureuser/.webterminal/vm_sizing_24h.db
+

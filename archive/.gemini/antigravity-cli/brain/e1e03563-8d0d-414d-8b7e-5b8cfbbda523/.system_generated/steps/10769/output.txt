@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'idea_id', 'INTEGER', 1, None, 0)
+(2, 'seo_run_id', 'INTEGER', 0, None, 0)
+(3, 'keyword', 'VARCHAR', 1, None, 0)
+(4, 'relevance', 'FLOAT', 0, None, 0)
+(5, 'word_count', 'INTEGER', 0, None, 0)
+(6, 'long_tail', 'INTEGER', 1, None, 0)
+(7, 'score', 'FLOAT', 0, None, 0)
+(8, 'source', 'VARCHAR', 1, None, 0)
+(9, 'created_at', 'DATETIME', 1, None, 0)
+

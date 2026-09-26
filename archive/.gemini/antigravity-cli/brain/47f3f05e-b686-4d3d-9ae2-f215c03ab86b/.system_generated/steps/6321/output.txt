@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+=== PID 1689 ===
+l-wx------ 1 azureuser azureuser 64 Sep 25 11:36 1 -> /tmp/payload-article-tunnel.log
+l-wx------ 1 azureuser azureuser 64 Sep 25 11:36 2 -> /tmp/payload-article-tunnel.log
+=== PID 1701 ===
+=== PID 1703 ===
+=== PID 1717 ===
+=== PID 1989 ===
+=== PID 40846 ===
+l-wx------ 1 azureuser azureuser 64 Sep 23 09:12 1 -> /home/azureuser/rust_apk_tunnel.log (deleted)
+l-wx------ 1 azureuser azureuser 64 Sep 23 09:12 2 -> /home/azureuser/rust_apk_tunnel.log (deleted)
+=== PID 41342 ===
+l-wx------ 1 azureuser azureuser 64 Sep 25 11:36 4 -> /home/azureuser/3D-Game-Design-Studio/cloud/cloudflared.log (deleted)
+=== PID 42165 ===
+l-wx------ 1 azureuser azureuser 64 Sep 25 11:36 4 -> /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/logs/cloudflared.log (deleted)
+=== PID 190241 ===
+=== PID 218241 ===
+l-wx------ 1 azureuser azureuser 64 Sep 24 14:44 1 -> /home/azureuser/Frappe-erp-Alco/tunnel.log (deleted)
+l-wx------ 1 azureuser azureuser 64 Sep 24 14:44 2 -> /home/azureuser/Frappe-erp-Alco/tunnel.log (deleted)
+

@@ -1,0 +1,31 @@
+The search for ""Filesystem Hierarchy Standard" root directory "/" home directory "/home" linux" returned the following summary:
+The **Filesystem Hierarchy Standard (FHS)** defines the directory structure and directory contents in Unix-like operating systems, including Linux[1][2].
+
+### The Root Directory (`/`)
+*   **Definition:** Represented by a single forward slash (`/`), the root directory is the topmost level of the entire filesystem hierarchy[3][4].
+*   **Function:** All other files, directories, and storage devices are located within or attached to this hierarchy, regardless of the physical disk or partition they reside on[2][4].
+*   **Distinction:** It is often referred to as the "root directory" to distinguish it from the **root user's home directory** (`/root`), which is a separate subdirectory located within the root filesystem[3][5].
+
+### The Home Directory (`/home`)
+*   **Definition:** The `/home` directory is the standard location for user-specific data[3].
+*   **Function:** When a new user account is created, the system typically creates a corresponding subdirectory within `/home` (e.g., `/home/username`)[5][6].
+*   **Purpose:** This serves as the personal space for regular users to store their documents, downloads, personal configurations, and project files[5]. 
+*   **Isolation:** By separating `/home` from the rest of the system files, administrators can often mount it on a different physical partition or network drive, which simplifies backups and system maintenance[7].
+
+### Key FHS Directories
+In addition to `/` and `/home`, the FHS specifies several other essential directories[3][4]:
+*   **/bin & /sbin:** Essential command binaries for users and system administrators[3][4].
+*   **/boot:** Files required to boot the system (e.g., kernel, bootloader)[3][5].
+*   **/etc:** System-wide configuration files[5][4].
+*   **/root:** The home directory specifically for the root (administrator) user[3][5].
+*   **/usr:** Secondary hierarchy for user data, applications, and utilities[7][6].
+*   **/var:** Variable data files, such as logs and databases.
+
+Sources:
+[1] [linuxfoundation.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtmn-7_3bEFJyq9TyX8pjEAkIAgQ97JlARbNR-VBp9Robihb9WjIvJbA_bOPsqC-SzrDYzIp7ihT39pAShOjC4LeC41ONRFistFKxeQ12aCelh1UuZkAfe_gz63rUPZdvgA-XMv0TJpMMjdVjjRb1r)
+[2] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbM-FWNa0oOknfjwd1aBDFIjn5kgFdNN-NqzeBN21DJr_5vGxKfpFacy2lqMjLsMTwtpVfGzLcRdBfFs_5thjLsd2AjbZW1BWcf7dCla6vN17YUEp2w9ENqhCLyNAn7YfLF4lLuWba2VbIago6knzc)
+[3] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr7kWLvW4xcv9-HsgZR5VRwDTiz5alB5_8EclirROlcx-BlfK1MUZg62l3O4664pItv8cLUosMm5ZNmVozxg-YVEb4X-1l6iZQvJWusfJmWPrED6jlqrd3m3-cshAlgW0_Fl_afqL5B-4hSqBu60rAn5Udh7OpkREs3Y98aMvrI7ukb6sdbPyplNI6wIo=)
+[4] [cornell.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGFQ-lv5exQHnh1UrKRXIy6zOc8bXr5XNyeeSnD012JD3u_amvwT8qQeoAuNfoa-JEEFMOaRO0IR3DDtKwhgYVPrPBz3oC9QjzxJC8UZkGSthM7CVAVyq2fj67uIvD0bEhac75oiuFT4TndS3Rgsc=)
+[5] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF54qRnQiE3CK6drss9GWXwsbMtga2T7aBJYzUPP6xReTA5dQvfVRviAzH5oiI1ZQUMMNjKw_PDqb-AXrE_keH6pi9cyoKzs_VXPZWs5XQvipRylGcls7i4qJcfYNgyfOQ7A-rNz89gAXCFIrVHCig7fjydOhAvHtfYr784fXi4K8AQK3vaaso8jMHdO5Y7jOE=)
+[6] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjjrhYzTKRuQ4j9c8SuKB2IogtpUITXjWL5QY62Tfsr9oD0D96mCIDKZHKGCAdRrtEk3Jjk9n0XuuGxMs9zKcNQuYou5mQNY8BxVfC9QOpEal4_43isK_oHijZvfu51Eo=)
+[7] [sinclairtarget.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLn09t6A0FLaVuNcPMqy8btCyQtVoAyIp1ekuxUrgISqLG1ulgvcOOUU-IPCClfM3m8CObBz6xdu5q1-2QmLQ9AwVE9-H2D5wRcpTsmSMSZ67j_IpEpEoE0PPgcITbfNP9s8RPMIZanW1m82fn5acXVdWHpelYtgxcy1xbiDHOHlSMbv2l_jpx-9WfVg==)

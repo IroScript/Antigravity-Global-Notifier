@@ -1,0 +1,113 @@
+
+The command exited with code 0.
+Output:
+Total triggers: 12
+TRIGGER: trg_gate_guard_ideas_insert on ideas
+CREATE TRIGGER trg_gate_guard_ideas_insert
+        BEFORE INSERT ON ideas
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct INSERT to ideas prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_ideas_update on ideas
+CREATE TRIGGER trg_gate_guard_ideas_update
+        BEFORE UPDATE ON ideas
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct UPDATE to ideas prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_ideas_delete on ideas
+CREATE TRIGGER trg_gate_guard_ideas_delete
+        BEFORE DELETE ON ideas
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct DELETE to ideas prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_prompts_insert on prompts
+CREATE TRIGGER trg_gate_guard_prompts_insert
+        BEFORE INSERT ON prompts
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct INSERT to prompts prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_prompts_update on prompts
+CREATE TRIGGER trg_gate_guard_prompts_update
+        BEFORE UPDATE ON prompts
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct UPDATE to prompts prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_prompts_delete on prompts
+CREATE TRIGGER trg_gate_guard_prompts_delete
+        BEFORE DELETE ON prompts
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct DELETE to prompts prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_youtube_metadata_insert on youtube_metadata
+CREATE TRIGGER trg_gate_guard_youtube_metadata_insert
+        BEFORE INSERT ON youtube_metadata
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct INSERT to youtube_metadata prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_youtube_metadata_update on youtube_metadata
+CREATE TRIGGER trg_gate_guard_youtube_metadata_update
+        BEFORE UPDATE ON youtube_metadata
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct UPDATE to youtube_metadata prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_youtube_metadata_delete on youtube_metadata
+CREATE TRIGGER trg_gate_guard_youtube_metadata_delete
+        BEFORE DELETE ON youtube_metadata
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct DELETE to youtube_metadata prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_idea_elements_insert on idea_elements
+CREATE TRIGGER trg_gate_guard_idea_elements_insert
+        BEFORE INSERT ON idea_elements
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct INSERT to idea_elements prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_idea_elements_update on idea_elements
+CREATE TRIGGER trg_gate_guard_idea_elements_update
+        BEFORE UPDATE ON idea_elements
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct UPDATE to idea_elements prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+TRIGGER: trg_gate_guard_idea_elements_delete on idea_elements
+CREATE TRIGGER trg_gate_guard_idea_elements_delete
+        BEFORE DELETE ON idea_elements
+        FOR EACH ROW
+        WHEN gate_auth_verify() != 1
+        BEGIN
+            SELECT RAISE(ABORT, 'GATE_VIOLATION: Direct DELETE to idea_elements prohibited. Unauthorized connection.');
+        END
+--------------------------------------------------
+

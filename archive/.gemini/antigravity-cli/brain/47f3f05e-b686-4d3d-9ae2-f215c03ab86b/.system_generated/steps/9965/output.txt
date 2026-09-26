@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Created symlink '/home/azureuser/.config/systemd/user/default.target.wants/gdrive-reporting-sentinel.service' → '/home/azureuser/.config/systemd/user/gdrive-reporting-sentinel.service'.
+

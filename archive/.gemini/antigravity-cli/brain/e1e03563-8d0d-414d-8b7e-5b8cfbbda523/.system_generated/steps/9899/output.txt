@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 10:10:52,464 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:11:02,467 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:11:12,469 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:11:22,469 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #591: No module named 'seo_engine.seo_models'
+2026-09-25 10:11:37,471 [INFO] [worker_1] [Idea #592: 'Volcanic Core Mining Ship'] Generating real SEO via http://localhost:8001...
+2026-09-25 10:11:39,642 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:11:49,649 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:11:59,653 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:12:00,989 [WARNING] [worker_3] Retry 3/5 for Escalation for Idea #628 (Oceanic Gear Tide Ram) via http://localhost:8003 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 10:12:09,654 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #592: No module named 'seo_engine.seo_models'
+2026-09-25 10:12:24,656 [INFO] [worker_1] [Idea #593: 'Ocean Rift Bridge Ship'] Generating real SEO via http://localhost:8001...
+2026-09-25 10:12:27,137 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:12:27,152 [WARNING] [worker_4] Retry 3/5 for Escalation for Idea #413 (Seismic Resonance Tower) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 10:12:37,140 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:12:47,142 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:12:57,143 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #593: No module named 'seo_engine.seo_models'
+2026-09-25 10:13:12,144 [INFO] [worker_1] [Idea #594: 'Magnetic Storm Chaser Ship'] Generating real SEO via http://localhost:8001...
+2026-09-25 10:13:14,304 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:13:23,759 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 10:13:23,759 [WARNING] [worker_2] Retry 1/5 for Ideas for Element #56 (Bee Colony) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 10:13:24,306 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:13:34,309 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:13:42,933 [WARNING] [worker_3] Retry 4/5 for Escalation for Idea #628 (Oceanic Gear Tide Ram) via http://localhost:8003 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 10:13:44,309 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #594: No module named 'seo_engine.seo_models'
+2026-09-25 10:13:59,311 [INFO] [worker_1] [Idea #595: 'World Engine Transformation Ship'] Generating real SEO via http://localhost:8001...
+2026-09-25 10:14:01,533 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:14:11,536 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:14:21,538 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 10:14:31,539 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #595: No module named 'seo_engine.seo_models'
+2026-09-25 10:14:46,544 [INFO] [worker_1] [Idea #616: 'Tidal Rift Catapult Ferry'] Generating real SEO via http://localhost:8001...
+2026-09-25 10:14:49,528 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+

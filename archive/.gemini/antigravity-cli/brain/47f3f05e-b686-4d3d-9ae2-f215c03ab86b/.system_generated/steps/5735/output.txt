@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+3.2G	/recovered/ALL_DELETED/MAGIC-2/application
+1.3G	/recovered/ALL_DELETED/MAGIC-2/video
+412M	/recovered/ALL_DELETED/MAGIC-2/text
+135M	/recovered/ALL_DELETED/MAGIC-2/image
+4.7M	/recovered/ALL_DELETED/MAGIC-2/\012-
+464K	/recovered/ALL_DELETED/MAGIC-2/font
+56K	/recovered/ALL_DELETED/MAGIC-2/audio
+

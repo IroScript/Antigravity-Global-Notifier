@@ -1,0 +1,13 @@
+● azure-file-explorer.service - Windows 11 Azure File Explorer Web Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 14:36:23 UTC; 3s ago
+ Invocation: b6e124574db04985af41cc2d27f51a04
+   Main PID: 1203589 (python3)
+      Tasks: 1 (limit: 19137)
+     Memory: 10.7M (peak: 10.9M)
+        CPU: 55ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer.service
+             └─1203589 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_ex…
+
+Sep 26 14:36:23 FatehAli systemd[1137]: Started azure-file-explorer.service…ice.
+Hint: Some lines were ellipsized, use -l to show in full.

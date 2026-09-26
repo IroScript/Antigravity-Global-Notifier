@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+4:Runs 4 workers across Ports 8001-8004 covering Elements 22 to 100.
+52:    "worker_1": {"port": 8001, "start_elem": 22, "end_elem": 41, "initial_stagger": 0.0},
+53:    "worker_2": {"port": 8002, "start_elem": 42, "end_elem": 61, "initial_stagger": 30.0},
+54:    "worker_3": {"port": 8003, "start_elem": 62, "end_elem": 81, "initial_stagger": 60.0},
+55:    "worker_4": {"port": 8004, "start_elem": 82, "end_elem": 100, "initial_stagger": 90.0},
+671:        time.sleep(1800) # Every 30 minutes
+

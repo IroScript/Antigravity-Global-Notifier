@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: debugfs: command not found
+

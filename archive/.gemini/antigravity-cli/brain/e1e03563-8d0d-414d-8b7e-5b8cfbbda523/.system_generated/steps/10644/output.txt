@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+BEGIN IMMEDIATE SUCCESSFUL! Database is 100% unlocked!
+

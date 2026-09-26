@@ -1,0 +1,25 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7746
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7746.log
+Log output:
+4.8G	/home/mdkamruzzamanirak_gmail_com/.openclaw
+20K	/home/mdkamruzzamanirak_gmail_com/.agents
+2.9G	/home/mdkamruzzamanirak_gmail_com/openrecall_vault
+2.9M	/home/mdkamruzzamanirak_gmail_com/.chrome_home
+429M	/home/mdkamruzzamanirak_gmail_com/.webterminal
+705M	/home/mdkamruzzamanirak_gmail_com/.local
+1.1M	/home/mdkamruzzamanirak_gmail_com/bengali_terminal
+697M	/home/mdkamruzzamanirak_gmail_com/.cloakbrowser
+2.3G	/home/mdkamruzzamanirak_gmail_com/flutter
+204M	/home/mdkamruzzamanirak_gmail_com/.m2
+1.7M	/home/mdkamruzzamanirak_gmail_com/Antigravity-Global-Notifier
+12K	/home/mdkamruzzamanirak_gmail_com/.claude
+18M	/home/mdkamruzzamanirak_gmail_com/Frappe-erp-Alco
+61M	/home/mdkamruzzamanirak_gmail_com/.dartServer
+22G	/home/mdkamruzzamanirak_gmail_com/.config
+243M	/home/mdkamruzzamanirak_gmail_com/Downloads
+6.1M	/home/mdkamruzzamanirak_gmail_com/.android
+28K	/home/mdkamruzzamanirak_gmail_com/practice
+245M	/home/mdkamruzzamanirak_gmail_com/.cache
+
+Last progress: 0s ago

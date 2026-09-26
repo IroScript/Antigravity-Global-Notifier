@@ -1,0 +1,10 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T19:44:22Z
+Prompt: Wait for task-8324 final completion
+Early Termination: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8324
+
+[2026-09-25T19:43:47Z] Still waiting. Remaining time: 35s
+[2026-09-25T19:43:57Z] Still waiting. Remaining time: 25s
+[2026-09-25T19:44:07Z] Still waiting. Remaining time: 15s
+[2026-09-25T19:44:17Z] Still waiting. Remaining time: 5s
+[2026-09-25T19:44:22Z] Timer fired.

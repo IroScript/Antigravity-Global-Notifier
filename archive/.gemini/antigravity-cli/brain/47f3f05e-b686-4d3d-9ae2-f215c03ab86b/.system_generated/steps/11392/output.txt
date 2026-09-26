@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+1980:    const pointRadiusFn = function(context) {
+1981:      const len = context.dataset.data.length;
+1982:      return context.dataIndex === len - 1 ? 4.5 : 0;
+2069:    const ctx = chartEl.getContext('2d');
+2107:            external: function(context) {
+2108:              const tooltipModel = context.tooltip;
+

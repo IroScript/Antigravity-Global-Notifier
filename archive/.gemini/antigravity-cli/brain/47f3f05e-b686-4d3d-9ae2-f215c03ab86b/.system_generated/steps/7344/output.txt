@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Uploading: database_backups/azure_postgres_all_databases.sql (279,107 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/azure_postgres_all_databases.sql/1790351592429237)
+

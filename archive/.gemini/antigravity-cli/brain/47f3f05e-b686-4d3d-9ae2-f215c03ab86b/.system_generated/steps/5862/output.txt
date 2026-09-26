@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Project rust      : 7 DBs, total 0.52 MB
+Project tg        : 6 DBs, total 33.73 MB
+Project kids      : 7 DBs, total 7.09 MB
+Project frappe    : 7 DBs, total 0.48 MB
+Project game      : 11 DBs, total 21.33 MB
+Project article   : 7 DBs, total 0.54 MB
+Project history   : 9 DBs, total 4.27 MB
+

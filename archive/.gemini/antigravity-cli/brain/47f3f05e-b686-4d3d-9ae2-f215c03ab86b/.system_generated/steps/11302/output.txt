@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+=== TEST 1: POSIX System Database & User Environment ===
+Current User: azureuser
+Env $HOME: /home/azureuser
+Passwd Record: azureuser:x:1000:1000:Debian:/home/azureuser:/bin/bash
+Authoritative User Base Folder: /home/azureuser
+

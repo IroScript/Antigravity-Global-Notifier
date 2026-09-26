@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+{"status":"ok","worker_id":"worker_1","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":19,"last_session_refresh":1790337708.86729}
+{"status":"ok","worker_id":"worker_2","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":1,"last_session_refresh":1790337720.6114905}
+{"status":"ok","worker_id":"worker_3","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":14,"last_session_refresh":1790337720.4750218}

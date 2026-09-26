@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+tail: cannot open 'Youtube Automation/PromptDatabase/cluster_orchestrator.log' for reading: No such file or directory
+

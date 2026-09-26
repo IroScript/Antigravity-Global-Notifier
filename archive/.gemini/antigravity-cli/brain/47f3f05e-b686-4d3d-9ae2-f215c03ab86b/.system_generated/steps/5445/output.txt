@@ -1,0 +1,9 @@
+
+The command exited with code 2.
+Output:
+/sbin/ext4magic
+/usr/sbin/ext4magic
+ls: cannot access '/usr/sbin/testdisk': No such file or directory
+-rwxr-xr-x 1 root root 204272 May  4  2025 /usr/sbin/ext4magic
+
+Terminal ID: b331a552-ddc7-441a-86cf-8d646f9e3560

@@ -1,0 +1,38 @@
+
+The command exited with code 0.
+Output:
+- “successful” বলার আগে command output দিয়ে evidence দেখাবে।
+- অনুমান করে কোনো coverage claim করবে না।
+
+আমাদের লক্ষ্য:
+
+Azure FatehAli + GCP instance-20260925-131309 — persistent VM data-এর zero-unverified-loss backup।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 1 — GCP FULL MACHINE IMAGE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+প্রথমে GCP Machine Image তৈরি করো:
+
+gcloud compute machine-images create gcp-vm-full-backup-20260925 \
+  --source-instance=instance-20260925-131309 \
+  --source-instance-zone=us-central1-a \
+  --project=irak-mahmud-project
+
+Creation শেষ হওয়া পর্যন্ত অপেক্ষা করবে।
+
+--
+
+Output থেকে প্রমাণসহ verify করবে:
+
+1. Machine Image resource exists
+2. status/state = READY
+3. source instance = "instance-20260925-131309"
+4. source zone = "us-central1-a"
+5. boot disk included
+6. সব attached persistent disks included
+7. disk count source VM-এর সঙ্গে মিলে
+8. কোনো disk বাদ যায়নি
+

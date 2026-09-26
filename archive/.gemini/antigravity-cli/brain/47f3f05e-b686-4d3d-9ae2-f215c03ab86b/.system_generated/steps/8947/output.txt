@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+FAILED VECTOR: eval_rm | eval 'rm -rf /tmp/foo'
+FAILED VECTOR: sh_c_rm | sh -c 'rm -f /tmp/foo'
+FAILED VECTOR: bash_c_rm | bash -c 'rm -rf /tmp/foo'
+FAILED VECTOR: find_execdir_rm | find /home/azureuser/tmp/adv_test_23g5gc2n -execdir rm -f {} \;
+FAILED VECTOR: find_ok_rm | find /home/azureuser/tmp/adv_test_23g5gc2n -ok rm -f {} \;
+FAILED VECTOR: chattr_recursive_strip | chattr -R -i /home/azureuser/AGY-MASTER/POLICIES
+

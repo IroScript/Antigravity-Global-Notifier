@@ -1,0 +1,47 @@
+
+The command exited with code 0.
+Output:
+Warning: error-NR 2133571476 can not found file: azureuser/tmp/node-compile-cache/v26.10.0-x64-310b2ce3-1000
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Cache/Cache_Data
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Activ Time after  : Fri Sep 25 07:40:00 2026
+Activ Time before : Fri Sep 25 08:30:00 2026
+Inode 2 is allocated
+  100%	 azureuser/.config/google-chrome/Profile_Irak_Master/CRXTelemetry 
+  100%	 azureuser/.config/google-chrome/VariationsSafeSeedV2 
+  100%	 azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md 
+  100%	 azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/read.json 
+  100%	 azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps 
+  100%	 azureuser/.gemini/antigravity-cli/bin/agentapi 
+  100%	 azureuser/.gemini/antigravity-cli/history.jsonl 
+  100%	 azureuser/.gemini/config/mcp_config.json 
+  100%	 azureuser/.gemini/config/.migrated 
+  100%	 azureuser/.npm/_logs 
+  100%	 azureuser/.npm/_update-notifier-last-checked 
+  100%	 azureuser/.sudo_as_admin_successful 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/cluster_progress.json 
+   56%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_row_state.csv 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_checkpoints.csv 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_failure_logs.csv 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/generate_all_csvs.py 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Sync Data/LevelDB/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/History-journal 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Shared Dictionary/db-journal 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/ClientCertificates/LOG 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/ClientCertificates/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/ClientCertificates/LOG.old 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Site Characteristics Database/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Login Data For Account-journal 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Local Storage/leveldb/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/commerce_subscription_db/LOG 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/commerce_subscription_db/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/commerce_subscription_db/LOG.old 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/discounts_db/LOG 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/discounts_db/LOCK 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/discounts_db/LOG.old 
+  100%	 azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/parcel_tracking_db/LOG 
+

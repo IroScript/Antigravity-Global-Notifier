@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Total distinct inodes with valid names: 96708
+

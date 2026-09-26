@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+    .row-info-btn {
+    .row-info-btn:hover {
+    <button class="nav-btn" id="btnProperties" onclick="openCurrentOrSelectedProperties()" title="প্রোপার্টিজ (Properties) - ফোল্ডার সাইজ ও ফাইল সংখ্যা" style="display:flex; align-items:center; gap:6px; padding:0 12px; width:auto; font-size:12px; font-weight:500; flex-shrink:0;">
+<div class="modal-overlay" id="propertiesModal" onclick="handlePropModalOverlayClick(event)">
+<div class="custom-context-menu" id="customContextMenu">
+          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+    const modal = document.getElementById('propertiesModal');
+    const modal = document.getElementById('propertiesModal');
+    if (e.target.id === 'propertiesModal') {
+    const menu = document.getElementById('customContextMenu');
+

@@ -1,0 +1,10 @@
+🛑 [DELETE-PROOF HARD BLOCK]
+Operation: rm -f /run/needrestart/unpacked
+Status: PERMANENTLY DENIED (Rule 1, 2)
+Incident: INC-DEL-20260925202846-1fadd3
+Reason: AGY has no deletion capability. Deletions are forbidden.
+Safe Alternative: Run `/home/azureuser/AGY-MASTER/POLICIES/safe_archive.py <path>` to preserve to /home/azureuser/GLOBAL-ARCHIVE/.
+
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline

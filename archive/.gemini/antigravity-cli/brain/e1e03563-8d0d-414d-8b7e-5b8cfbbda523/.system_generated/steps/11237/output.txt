@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Status: 404
+Response: {'detail': 'Not Found'}
+

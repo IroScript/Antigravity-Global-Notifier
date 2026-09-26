@@ -1,0 +1,30 @@
+The search for ""az restore-point collection create" site:learn.microsoft.com" returned the following summary:
+The `az restore-point collection create` command is used in the Azure CLI to create or update a restore point collection for virtual machines[1][2].
+
+### Key Details
+*   **Purpose:** This command initializes a restore point collection, which is a required container for creating individual VM restore points[1][2].
+*   **Updating:** When using this command to update an existing collection, note that **only tags** may be modified[3][1].
+*   **Key Parameters:**
+    *   `--location`: The region where the restore point collection will be stored[2].
+    *   `--source-id`: The resource ID of the virtual machine you are protecting[2].
+    *   `--instant-access`: A parameter that enables instant access, allowing for faster disk restoration (applicable to specific disk types like Premium SSD v2 or Ultra disks)[4][5].
+
+### Example Usage
+To create a restore point collection, you typically run a command similar to the following:
+
+```bash
+az restore-point collection create \
+  --location "eastus" \
+  --resource-group "MyResourceGroup" \
+  --collection-name "MyRestorePointCollection" \
+  --source-id "/subscriptions/{sub-id}/resourceGroups/{rg}/providers/Microsoft.Compute/virtualMachines/{vm-name}"
+```
+
+For more detailed information and the full list of supported arguments, you can refer to the official [Microsoft Learn documentation for `az restore-point collection`](https://learn.microsoft.com).
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4w9G3i66qgyuzgH8etDd31HhjqEcoUriFNgJbm2HTz39cZ8adVaY03-a97701emj6CpvkZPeThnh0-1--5trNAgwTvwzFx4J6459p5acpfPtb_KOiyzmiXzkrWr6j7l4D-zkh9zT5FmcQoe6PThH5BnOQqsbRGVM4pcxGvZujiA5aROg=)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCtflz2BzpxD9MjaW-hKBOicPrgDdBtF7QSOzqy2TgC-Gi2q7b5E_Jw6vlQ435X8h8CIXp-Ix6uKe-qdO0JeMCLJchL19Svk66V6NOCpF4_SlQ0qIV9Nh0xvxLwdVkSLLtxcC7EI-dE--DDLbs8lUtrIee7TLTSTCQCbAX-OV4Abt-gi1SqQlaq00ZEGVBDVER0U_R7oj8Ig==)
+[3] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGON16oygkxYV5aN8Q3OHBN5v4X7ai-SaSo_XizDu0DJPk2AKrQh8wVwALKTR2tnPDFVcWyHEiVu-xRGvntZE0P0WEf5qs_ohLsMtq7kpGR0GEieaTkwNmQYAI0R_aZ4ukB9iRm1oveuQ38vdgT__fMPi_DcWw7mm59pmhIraZIs6W8YHebX9mGGYzSIjkt7Q==)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2op8EdMw0JgXWIlB5Wk_vrYlTJ_Q8lo5KjHskzX0QkAfWLEFY5seK1wUhDYdnwBwm5oBJxNNxwrYLskSvYscCAU0KiSkMza3QxeQv6pML_wzOz8TLhI8hsPZYsByJqw1V8pQ1QrB8anYnqM3sHOjN_7b-vI55aa97CZZpAPW2Xg9-YsOn6K4AdiHuYbM2)
+[5] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCtflz2BzpxD9MjaW-hKBOicPrgDdBtF7QSOzqy2TgC-Gi2q7b5E_Jw6vlQ435X8h8CIXp-Ix6uKe-qdO0JeMCLJchL19Svk66V6NOCpF4_SlQ0qIV9Nh0xvxLwdVkSLLtxcC7EI-dE--DDLbs8lUtrIee7TLTSTCQCbAX-OV4Abt-gi1SqQlaq00ZEGVBDVER0U_R7oj8Ig==)

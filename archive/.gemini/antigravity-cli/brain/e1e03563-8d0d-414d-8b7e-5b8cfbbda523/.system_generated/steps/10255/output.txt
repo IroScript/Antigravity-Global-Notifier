@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+python3 -c '
+import json
+
+with open("/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/logs/transcript_full.jsonl") as f:
+    for line_idx, line in enumerate(f):
+        if "run_cluster_pipeline.py" in line and ("write_to_file" in line or "CodeContent" in line or "def main" in line):
+            print(f"Match at line {line_idx}")
+'
+

@@ -1,0 +1,41 @@
+
+The command exited with code 0.
+Output:
+total 708
+drwxrwxr-x  11 azureuser azureuser   4096 Sep 20 16:46 .
+drwx------  43 azureuser azureuser   4096 Sep 25 15:50 ..
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 16 18:00 .agy_evidence
+-rw-r--r--   1 azureuser azureuser    283 Sep 16 18:05 .env
+-rw-rw-r--   1 azureuser azureuser     91 Sep 16 17:54 .env.example
+drwxrwxr-x   8 azureuser azureuser   4096 Sep 22 16:18 .git
+-rw-rw-r--   1 azureuser azureuser    545 Sep 17 03:35 .gitignore
+drwxrwxr-x   9 azureuser azureuser   4096 Sep 17 11:18 .next
+-rw-rw-r--   1 azureuser azureuser     90 Sep 16 17:54 .prettierrc.json
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 16 17:54 .vscode
+-rw-rw-r--   1 azureuser azureuser     30 Sep 16 17:54 .yarnrc
+-rw-r--r--   1 azureuser azureuser  14574 Sep 17 04:33 ARCHITECTURE.md
+-rw-rw-r--   1 azureuser azureuser   2444 Sep 16 17:54 Dockerfile
+-rw-r--r--   1 azureuser azureuser    459 Sep 16 16:21 README.md
+-rw-r--r--   1 azureuser azureuser   8752 Sep 17 03:40 benchmark_databases.mjs
+-rw-r--r--   1 azureuser azureuser   7778 Sep 17 11:14 create_blog_app_tables.sql
+-rw-r--r--   1 azureuser azureuser   2538 Sep 17 04:31 create_jobs_tables.sql
+-rw-r--r--   1 azureuser azureuser     92 Sep 16 18:10 declarations.d.ts
+-rw-rw-r--   1 azureuser azureuser   1102 Sep 16 17:54 docker-compose.yml
+-rw-rw-r--   1 azureuser azureuser    859 Sep 16 17:54 eslint.config.mjs
+-rw-rw-r--   1 azureuser azureuser    288 Sep 16 18:09 next-env.d.ts
+-rw-rw-r--   1 azureuser azureuser    740 Sep 16 17:54 next.config.ts
+drwxrwxr-x 563 azureuser azureuser  20480 Sep 16 17:58 node_modules
+-rw-rw-r--   1 azureuser azureuser 512600 Sep 16 17:58 package-lock.json
+-rw-rw-r--   1 azureuser azureuser   2100 Sep 16 18:06 package.json
+-rw-rw-r--   1 azureuser azureuser   1233 Sep 16 17:54 playwright.config.ts
+drwxrwxr-x   2 azureuser azureuser   4096 Sep 20 16:46 public
+-rw-r--r--   1 azureuser azureuser  17116 Sep 17 11:17 seed_blog_data.mjs
+drwxrwxr-x   5 azureuser azureuser   4096 Sep 16 18:10 src
+-rw-r--r--   1 azureuser azureuser   8142 Sep 16 18:15 test_lifecycle.mjs
+-rw-r--r--   1 azureuser azureuser   4636 Sep 17 04:33 test_payload_jobs.mjs
+drwxrwxr-x   5 azureuser azureuser   4096 Sep 16 17:54 tests
+drwxrwxr-x   6 azureuser azureuser   4096 Sep 17 03:38 tools
+-rw-rw-r--   1 azureuser azureuser    785 Sep 17 11:15 tsconfig.json
+-rw-rw-r--   1 azureuser azureuser    332 Sep 16 17:54 vitest.config.mts
+-rw-rw-r--   1 azureuser azureuser     87 Sep 16 17:54 vitest.setup.ts
+

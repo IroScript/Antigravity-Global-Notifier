@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+trg_gate_guard_ideas_insert on ideas
+trg_gate_guard_ideas_update on ideas
+trg_gate_guard_ideas_delete on ideas
+trg_gate_guard_prompts_insert on prompts
+trg_gate_guard_prompts_update on prompts
+trg_gate_guard_prompts_delete on prompts
+trg_gate_guard_youtube_metadata_insert on youtube_metadata
+trg_gate_guard_youtube_metadata_update on youtube_metadata
+trg_gate_guard_youtube_metadata_delete on youtube_metadata
+trg_gate_guard_idea_elements_insert on idea_elements
+trg_gate_guard_idea_elements_update on idea_elements
+trg_gate_guard_idea_elements_delete on idea_elements
+

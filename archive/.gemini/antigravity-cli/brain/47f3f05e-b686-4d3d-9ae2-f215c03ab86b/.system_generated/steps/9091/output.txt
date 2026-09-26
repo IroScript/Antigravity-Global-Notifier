@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/usr/bin/rclone
+-rwxr-xr-x 1 root root 56880208 Oct  4  2024 /usr/bin/rclone
+

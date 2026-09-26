@@ -1,0 +1,15 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -348,7 +348,8 @@
+             self.handle_search(base, q)
+         elif path == "/api/properties":
+             target_path = params.get("path", ["/home/azureuser"])[0]
+-            self.handle_properties(target_path)
++            force_refresh = params.get("refresh", ["0"])[0] == "1"
++            self.handle_properties(target_path, force_refresh=force_refresh)
+         elif path == "/chart.min.js":
+             self.serve_file(os.path.join(STATIC_DIR, "chart.min.js"), "application/javascript")
+         elif path == "/monitor":
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

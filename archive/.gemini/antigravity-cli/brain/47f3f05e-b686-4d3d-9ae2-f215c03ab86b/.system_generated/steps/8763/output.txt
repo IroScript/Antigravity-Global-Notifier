@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+PWD=/home/azureuser
+LOGNAME=azureuser
+HOME=/home/azureuser
+TMPDIR=/home/azureuser/tmp
+ANTIGRAVITY_AGENTAPI_EXE=/home/azureuser/.local/bin/agy.1790259882643246969.old
+ANDROID_HOME=/home/azureuser/android-sdk
+USER=azureuser
+ANTIGRAVITY_SOURCE_METADATA={"tool":{"conversationId":"47f3f05e-b686-4d3d-9ae2-f215c03ab86b", "stepIndex":8763, "toolCall":{"id":"call_294545", "name":"run_command", "argumentsJson":"{\"CommandLine\":\"ls -la /home/azureuser/.azure 2\\u003e/dev/null; env | grep -i azure\",\"Cwd\":\"/home/azureuser\",\"RunPersistent\":false,\"WaitMsBeforeAsync\":5000,\"toolAction\":\"Checking azure directory\",\"toolSummary\":\"Check azure config files\"}", "thinkingSignature":"EqkDCqYDAWkUfRPzmtovIjHyT7w+rW7Y1O3+BBtn/Fh6UKaC1mN9ACN8yFiy3o/rg/xPNFt5wUtCsEfCPWI9imoKuhG8KkINuruzJpKU+WPRAvmP1g5ZkA+KpMjp/MJ1NMCbGXXsxOhWgMw+mBWz4kBaytxU/Rt1K2rhdzY9NYbbSvB1RZrOXQpr/zctO/6oEZI5ApuAzWh37ASpDTWid4z3vl74aZbwazDL+e6kaixa1I+mGf/hCaFm0WoXvXK1+sRYXHzi/tp7gO+lSx8NCPbgsMldM0aJtqVb+Wj4QryiGsQwUhC7TtctreS2UHvJHQ/lF0WsXmCllfjo4/MX1WhSlmDqaKE5mPXX8NR3OHWYfA0Dydfm2qummft9zEpVzsDdg9G3vaJ8B1/AHjAVoOa/DbDyoHdCLo2Fmvd3S5Qgr5zJknDYD3zfJJrjW//lFvcXBzfZndGoDg3dLWKI/tuVsiml7UzkKtFxL2eQfgWIpoNXkOm+/Mi9y17kiJ8PlAlWBeOy3WDdp4sPmygXFkMARoirkqdt2VFrL2at3fmAei4YXDPb0f0RROI="}}}
+PATH=/home/azureuser/.gemini/antigravity-cli/bin:/home/azureuser/flutter/bin:/home/azureuser/android-sdk/cmdline-tools/latest/bin:/home/azureuser/android-sdk/platform-tools:/home/azureuser/.cargo/bin:/home/azureuser/.npm-global/bin:/home/azureuser/.local/bin:/home/azureuser/.local/bin:/home/azureuser/flutter/bin:/home/azureuser/android-sdk/cmdline-tools/latest/bin:/home/azureuser/android-sdk/platform-tools:/home/azureuser/.local/bin:/home/azureuser/.npm-global/bin:/home/azureuser/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+ANTIGRAVITY_APP_DATA_DIR=/home/azureuser/.gemini/antigravity-cli
+OLDPWD=/home/azureuser
+

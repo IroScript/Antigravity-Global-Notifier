@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 3408124 Sep 25 11:09 task-5866.log
+-rw-r--r-- 1 azureuser azureuser     267 Sep 25 11:09 task-5992.log
+-rw-r--r-- 1 azureuser azureuser    1778 Sep 25 11:09 task-5967.log
+-rw-r--r-- 1 azureuser azureuser    9087 Sep 25 11:05 task-5926.log
+-rw-r--r-- 1 azureuser azureuser     120 Sep 25 11:03 task-5910.log
+-rw-r--r-- 1 azureuser azureuser       0 Sep 25 11:03 task-5904.log
+-rw-r--r-- 1 azureuser azureuser      91 Sep 25 10:59 task-5796.log
+-rw-r--r-- 1 azureuser azureuser 3065770 Sep 25 10:59 task-5652.log
+-rw-r--r-- 1 azureuser azureuser       0 Sep 25 10:57 task-5737.log
+-rw-r--r-- 1 azureuser azureuser      97 Sep 25 10:57 task-5724.log
+-rw-r--r-- 1 azureuser azureuser     137 Sep 25 10:52 task-5586.log
+-rw-r--r-- 1 azureuser azureuser      97 Sep 25 10:52 task-5579.log
+-rw-r--r-- 1 azureuser azureuser     685 Sep 25 10:51 task-5569.log
+-rw-r--r-- 1 azureuser azureuser     706 Sep 25 10:49 task-5517.log
+-rw-r--r-- 1 azureuser azureuser 4144616 Sep 25 10:49 task-5508.log
+-rw-r--r-- 1 azureuser azureuser 4175474 Sep 25 10:48 task-5483.log
+-rw-r--r-- 1 azureuser azureuser 4171676 Sep 25 10:47 task-5457.log
+-rw-r--r-- 1 azureuser azureuser   39013 Sep 25 10:46 task-5435.log
+-rw-r--r-- 1 azureuser azureuser     869 Sep 25 08:02 task-5271.log
+-rw-r--r-- 1 azureuser azureuser     661 Sep 25 07:58 task-5168.log
+

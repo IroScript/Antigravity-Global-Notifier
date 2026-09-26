@@ -1,0 +1,20 @@
+The search for ""roles/storage.objectUser" permissions site:cloud.google.com" returned the following summary:
+The **Storage Object User** role (`roles/storage.objectUser`) in Google Cloud provides permissions to **create, read, update, and delete objects** and multipart uploads within Cloud Storage[1][2].
+
+### Key Details:
+*   **Purpose:** This role is typically used to grant principals the ability to manage objects (files) within a bucket or managed folder without granting them full control over the bucket itself (such as the ability to delete the bucket or change its configuration)[2][3].
+*   **Permissions:** It includes permissions to interact with objects and their metadata[2]. It does **not** include the `storage.buckets.list` permission, meaning users with only this role may not be able to list buckets in the Google Cloud console unless they are granted additional permissions or navigate directly to a known bucket path[4][5].
+*   **Common Use Cases:**
+    *   Allowing service accounts or users to upload/remove objects from a specific managed folder[3].
+    *   Granting read/write access to data for applications or pipelines[4][6].
+
+For a complete and current list of all individual permissions included in this role, you can consult the [official Google Cloud IAM roles documentation](https://cloud.google.com/iam/docs/understanding-roles) or the Google Cloud console's "Roles" page[2][7].
+
+Sources:
+[1] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2hTut4lC9_CvNqorwu7xgd0KpC3w4BVmL6onM6JgeOa_NJaHTM3NVyeCoiZvL3X7LvToGo9xYPewi1AntzGJAgAsLWWKAlpxV-Lj8ZmH6QuA5R2ozKNeeV8SDv2obQFCsBBMsExeh6ZhfkZK_DKzBKe7ffIg=)
+[2] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnXynuHh7dxAoHjha7shmGas8aP-pv9SJaP5oLmqxPLB7oX-92ZY-W2Xxw7nkmTuKTs5dhMy8RD1wkv_G-izt0hjuNWgxB8PPsKxpPnfoYwq4i2UGG05WITOERw_SoldsqDjgPEVVzz9y4fkCeNBiF6OVhqeeIPhA=)
+[3] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4Z_v3AE11cCPDX4-JVDRg4Dy3_yI6uoET7pc4WqLtrp7P3XiI7QubYb3UqCvj3SA_g7KwgT8BpwdDK-aiPuKp9WHXBuQ_ZR8u6QSIWQRoDBqNlhPImuKpqPNpX6oLPJWry8T5Wb3KPxMvh4bg)
+[4] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeVLclLyxmjZfZnYHNJ-_1boD2s8EVGM3d3b0O3pRxvwumZaPofpWITQhGdBYZcrWj-6a3qwISZ6JhOyHqgJaUI5-yDEE1a8gg78A7zzqC4ZMefzFSCNmh4PG3zfZsQSCATo_0ycGdmFcEtTJmcI4kUfDHn6erh3fCjX3VFemndWJ2Etg47XQqSomxpP2CGmMeAm4cygITA9-oSowlkT3LSA==)
+[5] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-DEnF0EtIXBP8T7JMZc2gdzkelsnX5SKuUIXi8z-Dn3fx90r1fH8qLlcv_n0qjyNY3MTpkdgBIuksuKc88wridfYEkXzVdh5fQ0Y8y3Dw7mPu8Np-_o-jlh09eruqx7bt0bHHqD13p30QKP3544RHGykRqO6JMg==)
+[6] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo4irUDV8V3Aq4cNFL2dTj3ObGoVTujPvj7RHqyjvU-O7c7kLTotC8kzHYF3VVQ-DCvNEJtZxcWUgv4UltZ7TdmesU5VXtjb6gNGRt5cY2eLyxzThLGgT-AwDHC3g8Y_cmBTRVmzEM7buE7UkfHOgSVFpgqbe_IsKhIkkqlKsaJvWeqQjFwb24Xf_PobA9iVJVBJu-AXC36GBk7LgvdPWUX7JJnqqgG_w=)
+[7] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBTU7bBSwKwQdoZH6Fi1Tmkpi0bBmiVIB7my6InSiJd1VzNvbMbbmAmX9MK3tlCOn1epKTOXDS-bz_VtXFLGbvVwTEJ_c5kJfeyc9V-kLAZ4Xt0j_05bl0B_Y2TsvArdW699MDo4ASjW3aNPfDrZhUgcCBefEUQg==)

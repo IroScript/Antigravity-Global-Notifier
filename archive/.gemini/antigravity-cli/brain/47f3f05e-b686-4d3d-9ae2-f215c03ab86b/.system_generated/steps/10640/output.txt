@@ -1,0 +1,257 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+        pointHoverRadius: 4
+      }
+    ];
+  } else if (currentMode === 'ram') {
+    return [
+      {
+        label: 'সার্বিক RAM (GB)',
+        data: historyData.map(p => p.ram_gb),
+        borderColor: '#58a6ff',
+        backgroundColor: 'rgba(88, 166, 255, 0.12)',
+        borderWidth: 2.2,
+        tension: 0.3,
+        fill: true,
+        pointRadius: 0,
+        pointHoverRadius: 5
+      },
+      {
+        label: 'শীর্ষ ১ অ্যাপ RAM (GB)',
+        data: historyData.map(p => p.app1 ? p.app1.ram_gb : 0),
+        borderColor: '#f0883e',
+        borderWidth: 1.6,
+        borderDash: [4, 4],
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 4
+      },
+      {
+        label: 'শীর্ষ ২ অ্যাপ RAM (GB)',
+        data: historyData.map(p => p.app2 ? p.app2.ram_gb : 0),
+        borderColor: '#2ea043',
+        borderWidth: 1.4,
+        borderDash: [2, 2],
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 4
+      }
+    ];
+  } else {
+    // Both CPU and RAM
+    return [
+      {
+        label: 'সার্বিক CPU %',
+        data: historyData.map(p => p.cpu),
+        borderColor: '#f0883e',
+        borderWidth: 2,
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 5
+      },
+      {
+        label: 'সার্বিক RAM %',
+        data: historyData.map(p => p.ram_pct),
+        borderColor: '#58a6ff',
+        borderWidth: 2,
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 5
+      }
+    ];
+  }
+}
+
+function renderChart() {
+  const ctx = document.getElementById('resourceChart').getContext('2d');
+  const labels = historyData.map(p => p.t);
+  const datasets = getDatasetsForCurrentMode();
+
+  if (chartInstance) {
+    chartInstance.data.labels = labels;
+    chartInstance.data.datasets = datasets;
+    chartInstance.update();
+    return;
+  }
+
+  chartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: datasets
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+          labels: {
+            color: '#8b949e',
+            boxWidth: 10,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          enabled: false,
+          external: function(context) {
+            const tooltipModel = context.tooltip;
+            if (!tooltipModel || tooltipModel.opacity === 0) {
+              return;
+            }
+            if (tooltipModel.dataPoints && tooltipModel.dataPoints.length > 0) {
+              const idx = tooltipModel.dataPoints[0].dataIndex;
+              const pt = historyData[idx];
+              if (pt) updateGraphReport(pt, true);
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(48, 54, 61, 0.4)' },
+          ticks: {
+            color: '#8b949e',
+            maxTicksLimit: 6,
+            font: { size: 9 }
+          }
+        },
+        y: {
+          grid: { color: 'rgba(48, 54, 61, 0.4)' },
+          ticks: {
+            color: '#8b949e',
+            font: { size: 9 }
+          },
+          beginAtZero: true
+        }
+      },
+      events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove', 'touchend']
+    }
+  });
+}
+
+async function fetchStats() {
+  try {
+    const res = await fetch('/api/stats');
+    if (!res.ok) return;
+    const data = await res.json();
+    currentStats = data;
+    
+    // Header time
+    document.getElementById('last-update').innerText = new Date().toLocaleTimeString('en-US');
+    
+    // CPU
+    document.getElementById('cpu-val').innerText = data.cpu_overall + '%';
+    const cpuBar = document.getElementById('cpu-bar');
+    cpuBar.style.width = Math.min(data.cpu_overall, 100) + '%';
+    cpuBar.style.background = getBarColor(data.cpu_overall);
+    
+    // Cores
+    const coreContainer = document.getElementById('core-bars');
+    coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
+      <div class="core-item">
+        <div class="core-lbl">C${i+1}</div>
+        <div class="core-val" style="color: ${getBarColor(c)}">${c}%</div>
+      </div>
+    `).join('');
+    
+    // RAM
+    document.getElementById('ram-val').innerHTML = `${data.ram.used_gb} GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ ${data.ram.total_gb} GB</span>`;
+    document.getElementById('ram-avail-text').innerText = `ফ্রি: ${data.ram.avail_gb} GB`;
+    const ramBar = document.getElementById('ram-bar');
+    ramBar.style.width = data.ram.percent + '%';
+    ramBar.style.background = getBarColor(data.ram.percent);
+    document.getElementById('ram-sub').innerText = `ব্যবহৃত: ${data.ram.percent}% · ফিজিক্যাল মেমোরি`;
+    
+    // Swap
+    document.getElementById('swap-val').innerHTML = `${data.swap.used_gb} GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ ${data.swap.total_gb} GB</span>`;
+    const swapBar = document.getElementById('swap-bar');
+    swapBar.style.width = data.swap.percent + '%';
+    
+    // App Rollup (CPU ১ম কলাম, RAM ২য় কলাম)
+    const appList = document.getElementById('app-list');
+    appList.innerHTML = data.apps.map(a => `
+      <div class="app-card">
+        <div class="app-info">
+          <div class="app-name">${a.app}</div>
+          <div class="app-count">${a.count} টি প্রসেস সক্রিয়</div>
+        </div>
+        <div class="app-cols">
+          <!-- ১ম কলাম: CPU -->
+          <div class="col-item">
+            <span class="col-hdr">১ম · CPU</span>
+            <span class="col-val-cpu">${a.cpu}%</span>
+          </div>
+          <!-- ২য় কলাম: RAM -->
+          <div class="col-item">
+            <span class="col-hdr">২য় · RAM</span>
+            <span class="col-val-ram">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+    
+    renderProcs();
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function renderProcs() {
+  if (!currentStats) return;
+  const q = document.getElementById('search-box').value.toLowerCase();
+  let list = [...currentStats.top_procs];
+  
+  if (q) {
+    list = list.filter(p => p.app.toLowerCase().includes(q) || p.name.toLowerCase().includes(q) || p.cmd.toLowerCase().includes(q));
+  }
+  
+  if (currentSort === 'cpu') {
+    list.sort((a, b) => b.cpu - a.cpu);
+  } else {
+    list.sort((a, b) => b.ram_mb - a.ram_mb);
+  }
+  
+  const container = document.getElementById('proc-list');
+  if (list.length === 0) {
+    container.innerHTML = '<div style="text-align: center; color: #8b949e; padding: 20px;">কোনো প্রসেস পাওয়া যায়নি</div>';
+    return;
+  }
+  
+  container.innerHTML = list.map(p => `
+    <div class="proc-card">
+      <div class="proc-top">
+        <span>${p.name} <span style="font-size: 0.7rem; color: #8b949e;">(PID: ${p.pid})</span></span>
+        <span class="proc-tag">${p.app}</span>
+      </div>
+      <div class="proc-cmd">${p.cmd}</div>
+      <div class="proc-metrics">
+        <span>১ম কলাম · CPU: <span class="val-badge val-cpu">${p.cpu}%</span></span>
+        <span>২য় কলাম · RAM: <span class="val-badge val-ram">${p.ram_mb >= 1024 ? (p.ram_mb/1024).toFixed(2) + ' GB' : p.ram_mb + ' MB'}</span></span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Initial calls
+fetchStats();
+fetchHistory();
+setInterval(fetchStats, 1500);
+// Refresh history graph every 5 seconds for live animation
+setInterval(() => {
+  if (!isScrubbing && (currentRange === '1m' || currentRange === '5m' || currentRange === '15m' || currentRange === '30m')) {
+    fetchHistory();
+  }
+}, 3000);
+</script>
+
+</body>
+</html>
+

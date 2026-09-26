@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+azureus+  904810  0.1  0.5 1802300 88792 pts/11  Ssl+ 20:08   0:00 rclone copy /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged personaldrive:Youtube_Automation/output_packaged/ --transfers 4 --checkers 8 --stats 10s -v
+

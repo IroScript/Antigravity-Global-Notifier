@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T19:48:33Z
+Prompt: Check listing result
+Early Termination: any
+
+[2026-09-25T19:48:28Z] Still waiting. Remaining time: 5s
+[2026-09-25T19:48:33Z] Timer fired.

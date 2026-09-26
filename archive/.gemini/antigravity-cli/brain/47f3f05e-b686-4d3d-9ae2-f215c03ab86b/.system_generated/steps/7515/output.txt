@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/3D-Game-Design-Studio/:
+total 32
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 11:23 .
+drwxr-xr-x 26 azureuser azureuser  4096 Sep 25 16:16 ..
+-rw-rw-r--  1 azureuser azureuser 21092 Sep 13 18:21 game.js
+
+/home/azureuser/Frappe-erp-Alco/:
+total 12
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 11:23 .
+drwxr-xr-x 26 azureuser azureuser 4096 Sep 25 16:16 ..
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 11:23 backups
+
+/home/azureuser/kids_tube_with_folder_seection/:
+total 12
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 11:23 .
+drwxr-xr-x 26 azureuser azureuser 4096 Sep 25 16:16 ..
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 11:23 lib
+
+/home/azureuser/telegram-bot/:
+total 420
+drwxrwxr-x  2 azureuser azureuser   4096 Sep 25 11:23 .
+drwxr-xr-x 26 azureuser azureuser   4096 Sep 25 16:16 ..
+-rw-rw-r--  1 azureuser azureuser   9040 Sep  2 15:50 semantic_engine.py
+-rw-rw-r--  1 azureuser azureuser   8377 Sep  2 15:50 send_buyer_messages.py
+-rw-rw-r--  1 azureuser azureuser 331776 Sep 25 07:30 session.session
+-rw-rw-r--  1 azureuser azureuser   9097 Sep 25 04:33 session.session-journal
+-rw-rw-r--  1 azureuser azureuser  26765 Sep  2 15:50 telegram_scraper.py
+-rw-rw-r--  1 azureuser azureuser   9548 Sep  2 15:51 translate_results.py
+-rw-rw-r--  1 azureuser azureuser   9859 Sep  2 15:50 universal_scraper.py
+

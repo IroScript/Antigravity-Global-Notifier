@@ -1,0 +1,14 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000000.jsonl -> 5035 2026-09-25T07:53:27Z to None None
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000001.jsonl -> None None to None None
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000002.jsonl -> None None to None None
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000003.jsonl -> None None to None None
+Traceback (most recent call last):
+  File "<string>", line 14, in <module>
+    for line in fp:
+                ^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 0-1: unexpected end of data
+

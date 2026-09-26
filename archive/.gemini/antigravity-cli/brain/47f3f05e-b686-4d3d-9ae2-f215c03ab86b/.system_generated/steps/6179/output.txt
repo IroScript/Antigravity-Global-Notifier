@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Total size: 968721773 bytes (923.85 MB), boxes: [(b'ftyp', 32), (b'uuid', 7729), (b'mdat', 5439622), (b'}x\xb7s', 963274390)]
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Uploading: azure_home_backup/archive_file_list.txt (11,940,623 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/azure_home_backup/archive_file_list.txt/1790352629022374)
+

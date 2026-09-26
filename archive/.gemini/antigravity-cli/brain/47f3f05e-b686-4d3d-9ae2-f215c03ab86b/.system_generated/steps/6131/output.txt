@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+/tmp/final_staged_clean.sqlite generated_videos: 191
+/tmp/final_staged_clean.sqlite ideas: 457
+/tmp/restored_clean.sqlite generated_videos: 189
+/tmp/restored_clean.sqlite ideas: 457
+

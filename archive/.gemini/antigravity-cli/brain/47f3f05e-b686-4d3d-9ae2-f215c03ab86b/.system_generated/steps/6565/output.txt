@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Filename				Type		Size		Used		Priority
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi        10Gi       199Mi       1.3Gi       6.3Gi       4.8Gi
+Swap:             0B          0B          0B
+

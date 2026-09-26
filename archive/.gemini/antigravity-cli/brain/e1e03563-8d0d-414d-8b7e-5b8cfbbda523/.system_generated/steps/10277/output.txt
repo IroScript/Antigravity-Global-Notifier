@@ -1,0 +1,10 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+    for idx, line in enumerate(f):
+                     ~~~~~~~~~^^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 0-1: unexpected end of data
+

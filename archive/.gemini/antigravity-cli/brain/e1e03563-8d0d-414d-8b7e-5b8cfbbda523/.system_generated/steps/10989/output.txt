@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Ideas: 847/1000 (84.7%)
+Prompts: 8000/10000 (80.0%)
+SEO: 555/1000 (55.5%)
+Audio Compliant Prompts: 1680
+

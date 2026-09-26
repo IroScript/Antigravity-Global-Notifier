@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"status":"success","data":{"url":"https://tmpfiles.org/w1w4EFGKV57M/master_dashboard_25_sept_05.30_pm.csv"}}

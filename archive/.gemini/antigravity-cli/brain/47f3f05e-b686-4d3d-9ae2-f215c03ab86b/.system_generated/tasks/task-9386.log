@@ -1,0 +1,4 @@
+gdrive:
+personaldrive:
+testdrive:
+Failed to create file system for "personaldrive:": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect personaldrive:": oauth2: "invalid_grant" "Token has been expired or revoked."

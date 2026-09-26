@@ -1,0 +1,23 @@
+
+The command exited with code 1.
+Output:
+301M	/home/azureuser/.npm
+7.1M	/home/azureuser/.gemini
+176M	/home/azureuser/.openclaw
+104K	/home/azureuser/AGY-MASTER
+84K	/home/azureuser/.cache
+708M	/home/azureuser/.npm-global
+417M	/home/azureuser/.local
+7.2M	/home/azureuser/.config
+20K	/home/azureuser/.gradle
+12K	/home/azureuser/Ask-And-Research
+110M	/home/azureuser/.webterminal
+8.0K	/home/azureuser/.ssh
+3.0M	/home/azureuser/tmp
+1.7G	/home/azureuser
+4.0K	/home/downloads
+16K	/home/lost+found
+4.0K	/home/workspace
+42G	/home
+
+Terminal ID: f1431853-e0a2-4fe2-9ce5-1389802374aa

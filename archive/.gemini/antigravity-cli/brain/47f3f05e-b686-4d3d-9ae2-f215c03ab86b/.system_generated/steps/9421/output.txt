@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+<3>ERROR : probe.txt: Failed to copy: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<3>ERROR : Attempt 1/3 failed with 1 errors and: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<3>ERROR : probe.txt: Failed to copy: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<3>ERROR : Attempt 2/3 failed with 1 errors and: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<3>ERROR : probe.txt: Failed to copy: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<3>ERROR : Attempt 3/3 failed with 1 errors and: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+<6>INFO  : 
+Transferred:   	        162 B / 162 B, 100%, 40 B/s, ETA 0s
+Errors:                 1 (retrying may help)
+Elapsed time:         5.9s
+
+Failed to copy: googleapi: Error 403: Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead., storageQuotaExceeded
+

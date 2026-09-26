@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 144, in app
+    response = await f(request)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 706, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 352, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/app/worker_server.py", line 385, in debug_page
+    title = await active_page.title()
+  File "/usr/local/lib/python3.10/dist-packages/playwright/async_api/_generated.py", line 9742, in title
+    return mapping.from_maybe_impl(await self._impl_obj.title())
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_page.py", line 797, in title
+    return await self._main_frame.title()
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_frame.py", line 774, in title
+    return await self._channel.send("title")
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Target crashed 
+INFO:     172.19.0.1:34390 - "GET /health HTTP/1.1" 200 OK
+

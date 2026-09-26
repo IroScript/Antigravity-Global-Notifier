@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -399,8 +399,8 @@
+         except Exception as e:
+             self.send_error(500, f"Monitor proxy error: {e}")
+ 
+-    def handle_properties(self, target_path):
+-        data = get_item_properties(target_path)
++    def handle_properties(self, target_path, force_refresh=False):
++        data = get_item_properties(target_path, force_refresh=force_refresh)
+         status = 404 if "error" in data else 200
+         self.send_json(data, status=status)
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

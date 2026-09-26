@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+debugfs 1.47.2 (1-Jan-2025)
+/sbin/debugfs: invalid option -- 'h'
+/sbin/debugfs: Usage: debugfs [-b blocksize] [-s superblock] [-f cmd_file] [-R request] [-d data_source_device] [-i] [-n] [-D] [-V] [[-w] [-z undo_file] [-c]] [device]
+

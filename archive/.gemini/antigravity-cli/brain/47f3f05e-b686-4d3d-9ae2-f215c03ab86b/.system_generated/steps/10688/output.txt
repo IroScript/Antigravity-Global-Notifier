@@ -1,0 +1,84 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -49,6 +49,78 @@
+             "error": str(e)
+         }
+ 
++def get_system_stats():
++    try:
++        req = urllib.request.Request("http://127.0.0.1:8090/api/stats")
++        with urllib.request.urlopen(req, timeout=1.5) as resp:
++            return json.loads(resp.read().decode("utf-8"))
++    except Exception:
++        pass
++    return get_fallback_stats()
++
++def get_system_history(query_string=""):
++    try:
++        url = "http://127.0.0.1:8090/api/history"
++        if query_string:
++            url += f"?{query_string}"
++        req = urllib.request.Request(url)
++        with urllib.request.urlopen(req, timeout=2.0) as resp:
++            return json.loads(resp.read().decode("utf-8"))
++    except Exception:
++        return []
++
++def get_standalone_monitor_url():
++    url_file = "/home/azureuser/.webterminal/live_monitor_url.txt"
++    if os.path.exists(url_file):
++        try:
++            with open(url_file, "r") as f:
++                line = f.readline().strip()
++                if line.startswith("http"):
++                    return line
++        except Exception:
++            pass
++    return "https://memories-birth-outer-speeches.trycloudflare.com"
++
++def get_fallback_stats():
++    total_gb, used_gb, avail_gb, ram_pct = 15.62, 0.0, 0.0, 0.0
++    try:
++        with open("/proc/meminfo", "r") as f:
++            lines = f.readlines()
++        mem = {}
++        for line in lines:
++            p = line.split(":")
++            if len(p) == 2:
++                mem[p[0].strip()] = int(p[1].split()[0])
++        total_kb = mem.get("MemTotal", 1)
++        avail_kb = mem.get("MemAvailable", total_kb)
++        used_kb = total_kb - avail_kb
++        total_gb = round(total_kb / (1024 * 1024), 2)
++        used_gb = round(used_kb / (1024 * 1024), 2)
++        avail_gb = round(avail_kb / (1024 * 1024), 2)
++        ram_pct = round((used_kb / total_kb) * 100, 1)
++    except Exception:
++        pass
++
++    try:
++        load1, _, _ = os.getloadavg()
++        cpu_overall = round(min(load1 * 25.0, 100.0), 1)
++    except Exception:
++        cpu_overall = 0.0
++
++    return {
++        "cpu_overall": cpu_overall,
++        "cpu_cores": [cpu_overall, cpu_overall, cpu_overall, cpu_overall],
++        "ram": {
++            "used_gb": used_gb,
++            "total_gb": total_gb,
++            "percent": ram_pct,
++            "avail_gb": avail_gb
++        },
++        "swap": {"used_gb": 0.0, "total_gb": 0.0, "percent": 0.0},
++        "apps": [],
++        "top_procs": []
++    }
++
+ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
+     def end_headers(self):
+         self.send_header("Access-Control-Allow-Origin", "*")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

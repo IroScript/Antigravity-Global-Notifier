@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 18K Sep 25 07:57 /home/azureuser/AGY-MASTER/AGENTS.md
+# CANONICAL MASTER MULTI-AGENT HIERARCHICAL ARCHITECTURE (`AGY-MASTER/AGENTS.md`)
+
+> 🛑 **AUTHORITATIVE GLOBAL AGENT ARCHITECTURE SPECIFICATION** 🛑
+>
+> This document is the canonical, authoritative architecture specification for all Google Antigravity (AGY) agents, services, and communication bridges on this system.
+> Location: `/home/azureuser/AGY-MASTER/AGENTS.md`
+> Runtime: Google Antigravity CLI (`agy`) — Native Linux VM Environment (Zero external paid API keys)
+> Standard Line: MCP 2026-07-28 Tool/Resource/Prompt Specification Alignment
+
+---
+
+## 1. HIERARCHICAL COMMAND CHAIN & GLOBAL TOPOLOGY
+
+The entire system is organized under a strict hierarchical supervisor topology:
+
+```
+                  YOU / IRAK BHAI (ইরাক ভাইয়া)
+                      (WhatsApp Mobile)
+                             │
+                             ▼
+                 AGY:0 — PRINCIPAL / MASTER
+                 (Global Mental Model & Gatekeeper)
+                             │
+     ┌───────────────────────┼───────────────────────┐
+     │                       │                       │
+

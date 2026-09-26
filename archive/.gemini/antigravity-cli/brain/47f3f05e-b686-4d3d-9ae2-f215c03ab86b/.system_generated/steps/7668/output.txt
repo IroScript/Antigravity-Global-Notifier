@@ -1,0 +1,10 @@
+You have 1 background task(s) currently running:
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7662",
+  "toolName":  "run_command",
+  "toolSummary":  "Check /home size on GCP VM via SSH",
+  "description":  "ssh azureuser-to-google-vm@35.253.244.80 \"sudo du -sh /home 2>/dev/null; sudo du -sh /home/* 2>/dev/null\"",
+  "startTime":  "2026-09-25T17:58:50.751047421Z",
+  "stepIndex":  7662,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7662.log"
+}

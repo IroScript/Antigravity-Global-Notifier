@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Port 8001: 200 - {"status":"ok","worker_id":"worker_1","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":17,"last_session_refresh":1790394355.7341213}
+Port 8002: 200 - {"status":"ok","worker_id":"worker_2","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":14,"last_session_refresh":1790394355.7245564}
+Port 8003: 200 - {"status":"ok","worker_id":"worker_3","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":24,"last_session_refresh":1790394355.7986019}
+Port 8004: 200 - {"status":"ok","worker_id":"worker_4","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":19,"last_session_refresh":0.0}
+

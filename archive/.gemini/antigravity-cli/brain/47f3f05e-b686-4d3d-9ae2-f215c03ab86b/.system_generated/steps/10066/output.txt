@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_00.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_01.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_02.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_03.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_04.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_05_00.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_05_01.tar.gz
+

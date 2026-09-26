@@ -1,0 +1,19 @@
+The search for ""az restore-point create" without consistency-mode site:learn.microsoft.com" returned the following summary:
+When using the `az restore-point create` command in the Azure CLI, the `--consistency-mode` parameter is **optional**[1][2].
+
+If you omit the `--consistency-mode` parameter, the operation will proceed using the default behavior[3]. Currently, **`CrashConsistent`** is the standard consistency mode used by default when no specific mode is provided[3][4].
+
+### Summary of Usage
+*   **Default Behavior:** If you run `az restore-point create --resource-group <rg> --collection-name <collection> --name <rp-name>`, it will default to `CrashConsistent`[1][2][3].
+*   **Explicit Usage:** You only need to include `--consistency-mode CrashConsistent` if you wish to explicitly define it in your script or command[1][5]. 
+
+For further details on restore points, you can refer to the official [Azure Restore Points documentation](https://aka.ms/RestorePoints)[6][7].
+
+Sources:
+[1] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVs0PA_c1HuLQV3jzixVkTNBxZC1sWYH_QWhYUaCRcC2jrQIW2_VSfD3N2qYBh7RE4sgajuHrfyXarauSCa57M1GCUHcTkDcoDZIfpuLnEd_ATgBuWCoeCz_TiJ5vAKabUFnFre_-viRFuuswqHBE2UOPzj3O0aD4AOw3LVeVdmNBPuQtkL6Dc4jP4JrckK9sHfM5KGrgfRHk=)
+[2] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVs0PA_c1HuLQV3jzixVkTNBxZC1sWYH_QWhYUaCRcC2jrQIW2_VSfD3N2qYBh7RE4sgajuHrfyXarauSCa57M1GCUHcTkDcoDZIfpuLnEd_ATgBuWCoeCz_TiJ5vAKabUFnFre_-viRFuuswqHBE2UOPzj3O0aD4AOw3LVeVdmNBPuQtkL6Dc4jP4JrckK9sHfM5KGrgfRHk=)
+[3] [jorgebernhardt.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG78UYUgo-3WildGiNs6JxpVMfAmvC1M77LI1XrDUqYB3WZsT5NOnJqJKTmm_7hVPaaXkXU_5gVOebY5p8QpMA4tNtaTC6no2jWJw_YfW0m6kEEpBr2vXG_itR08E1u4VPvt-Sk19y7MMq3og==)
+[4] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpk6gSDX5ZBtOrFSuXZfsdH2uqIM2IxqzSpexW3W6dJr2RtJYCgIFmDGleOlNSlhzXfZS7onaTnUL5kFvZPxYWel2U8FY2GMzT8L9tYPdbxBaHoryB3pTA8b9Cgar63URONEDPHHw3o0VoSRTuxkm8pR8CuEA6-YALlHGHYMoiwInOHk-I_jwIt_zktCCZiYNOz3IjHWLow7rDZw==)
+[5] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVs0PA_c1HuLQV3jzixVkTNBxZC1sWYH_QWhYUaCRcC2jrQIW2_VSfD3N2qYBh7RE4sgajuHrfyXarauSCa57M1GCUHcTkDcoDZIfpuLnEd_ATgBuWCoeCz_TiJ5vAKabUFnFre_-viRFuuswqHBE2UOPzj3O0aD4AOw3LVeVdmNBPuQtkL6Dc4jP4JrckK9sHfM5KGrgfRHk=)
+[6] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUeCNDGwyzTZESx4Fi-73AF0CY225epPB0nTr7Rzz6Jc_5zgTnaT9z0jLDkWAJIS7-Pj5b5HpDtT6TkkkWZ63lqoctGcn0RSbfleiteW-EBeXSD1oy5yrpy6QZrTXpDCwUmyow2uw-6-oaXGbV1gblX76AersAv722tXu0oSbknZuQ3fg6)
+[7] [microsoft.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUeCNDGwyzTZESx4Fi-73AF0CY225epPB0nTr7Rzz6Jc_5zgTnaT9z0jLDkWAJIS7-Pj5b5HpDtT6TkkkWZ63lqoctGcn0RSbfleiteW-EBeXSD1oy5yrpy6QZrTXpDCwUmyow2uw-6-oaXGbV1gblX76AersAv722tXu0oSbknZuQ3fg6)

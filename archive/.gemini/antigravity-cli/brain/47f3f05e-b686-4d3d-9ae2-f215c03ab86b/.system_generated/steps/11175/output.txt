@@ -1,0 +1,193 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1927,6 +1927,41 @@
+     renderProcs();
+   }
+ 
++  function getYAxisConfig() {
++    if (currentMode === 'ram') {
++      return {
++        min: 0,
++        max: 16,
++        grid: { color: 'rgba(48, 54, 61, 0.4)' },
++        ticks: {
++          color: '#8b949e',
++          font: { size: 9 },
++          callback: function(v) { return v + ' GB'; }
++        }
++      };
++    }
++    return {
++      min: 0,
++      max: 100,
++      grid: { color: 'rgba(48, 54, 61, 0.4)' },
++      ticks: {
++        color: '#8b949e',
++        font: { size: 9 },
++        callback: function(v) { return v + '%'; }
++      }
++    };
++  }
++
++  function applyYAxisScale() {
++    if (!chartInstance) return;
++    const cfg = getYAxisConfig();
++    chartInstance.options.scales.y.min = cfg.min;
++    chartInstance.options.scales.y.max = cfg.max;
++    if (chartInstance.options.scales.y.ticks) {
++      chartInstance.options.scales.y.ticks.callback = cfg.ticks.callback;
++    }
++  }
++
+   function updateChartDatasets() {
+     if (!chartInstance) {
+       renderChart();
+@@ -1934,10 +1934,18 @@
+     const datasets = getDatasetsForCurrentMode();
+     chartInstance.data.labels = historyData.map(p => p.t);
+     chartInstance.data.datasets = datasets;
+-    chartInstance.update();
++    applyYAxisScale();
++    chartInstance.update('none');
+   }
+ 
+   function getDatasetsForCurrentMode() {
++    // Only the very last point (current live second) gets a pulsing marker!
++    // All previous historical points (e.g. 0 to 58s) are clean, motionless lines.
++    const pointRadiusFn = function(context) {
++      const len = context.dataset.data.length;
++      return context.dataIndex === len - 1 ? 4.5 : 0;
++    };
++
+     if (currentMode === 'cpu') {
+       return [
+         {
+@@ -1945,9 +1945,12 @@
+           borderColor: '#f0883e',
+           backgroundColor: 'rgba(240, 136, 62, 0.12)',
+           borderWidth: 2.2,
+-          tension: 0.3,
+-          fill: true,
+-          pointRadius: 0,
++          tension: 0.25,
++          fill: true,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: '#f0883e',
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
+           pointHoverRadius: 5
+         },
+         {
+@@ -1955,8 +1955,11 @@
+           borderColor: '#58a6ff',
+           borderWidth: 1.6,
+           borderDash: [4, 4],
+-          tension: 0.3,
+-          pointRadius: 0,
++          tension: 0.25,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: '#58a6ff',
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
+           pointHoverRadius: 4
+         }
+       ];
+@@ -1967,21 +1967,27 @@
+           borderColor: '#58a6ff',
+           backgroundColor: 'rgba(88, 166, 255, 0.12)',
+           borderWidth: 2.2,
+-          tension: 0.3,
+-          fill: true,
+-          pointRadius: 0,
+-          pointHoverRadius: 5
+-        }
+-      ];
+-    } else {
+-      return [
+-        {
+-          label: 'সার্বিক CPU %',
+-          data: historyData.map(p => p.cpu),
+-          borderColor: '#f0883e',
+-          borderWidth: 2,
+-          tension: 0.3,
+-          pointRadius: 0,
++          tension: 0.25,
++          fill: true,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: '#58a6ff',
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 5
++        }
++      ];
++    } else {
++      return [
++        {
++          label: 'সার্বিক CPU %',
++          data: historyData.map(p => p.cpu),
++          borderColor: '#f0883e',
++          borderWidth: 2,
++          tension: 0.25,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: '#f0883e',
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
+           pointHoverRadius: 5
+         },
+         {
+@@ -1988,8 +1988,11 @@
+           data: historyData.map(p => p.ram_pct),
+           borderColor: '#58a6ff',
+           borderWidth: 2,
+-          tension: 0.3,
+-          pointRadius: 0,
++          tension: 0.25,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: '#58a6ff',
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
+           pointHoverRadius: 5
+         }
+       ];
+@@ -2011,7 +2011,8 @@
+     if (chartInstance) {
+       chartInstance.data.labels = labels;
+       chartInstance.data.datasets = datasets;
+-      chartInstance.update();
++      applyYAxisScale();
++      chartInstance.update('none'); // NO ANIMATION / ZERO JUMPING!
+       return;
+     }
+ 
+@@ -2020,6 +2020,15 @@
+       options: {
+         responsive: true,
+         maintainAspectRatio: false,
++        animation: false, // NO ANIMATION: Whole graph NEVER jumps or bounces!
++        animations: {
++          colors: false,
++          x: false
++        },
++        transitions: {
++          active: { animation: { duration: 0 } },
++          resize: { animation: { duration: 0 } }
++        },
+         interaction: { mode: 'index', intersect: false },
+         plugins: {
+           legend: {
+@@ -2044,11 +2044,7 @@
+             grid: { color: 'rgba(48, 54, 61, 0.4)' },
+             ticks: { color: '#8b949e', maxTicksLimit: 6, font: { size: 9 } }
+           },
+-          y: {
+-            grid: { color: 'rgba(48, 54, 61, 0.4)' },
+-            ticks: { color: '#8b949e', font: { size: 9 } },
+-            beginAtZero: true
+-          }
++          y: getYAxisConfig()
+         }
+       }
+     });
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

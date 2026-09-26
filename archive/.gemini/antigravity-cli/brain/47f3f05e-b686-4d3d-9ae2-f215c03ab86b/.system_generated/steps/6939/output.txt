@@ -1,0 +1,34 @@
+The search for "Google Drive permissions roles viewer editor upload official documentation" returned the following summary:
+When sharing files and folders in Google Drive, there are four primary permission roles that determine what a user can do with the content[1][2].
+
+### **Google Drive Permission Roles**
+
+| Role | Can View? | Can Comment? | Can Edit? | Can Share/Manage Permissions? |
+| :--- | :---: | :---: | :---: | :---: |
+| **Viewer** | Yes | No | No | No |
+| **Commenter** | Yes | Yes | No | No |
+| **Editor** | Yes | Yes | Yes | Yes (by default) |
+| **Owner** | Yes | Yes | Yes | Yes (Full Control) |
+
+---
+
+### **Detailed Role Breakdown**
+
+*   **Viewer:** The most restrictive role. Users can open and read files, download, print, or copy them (unless the owner has restricted these options)[1][2][3]. They cannot change content or share the file with others[1][2].
+*   **Commenter:** Includes all Viewer privileges plus the ability to add, reply to, and resolve comments and suggestions[1][2]. They cannot directly modify the file content[2][3].
+*   **Editor:** Allows users to change content, accept/reject suggestions, and add or remove other people (unless the owner restricts this capability)[1][2][4]. They have the most collaborative power but cannot change the file owner[1].
+*   **Owner:** The user who created the file or was transferred ownership. They have full control, including the ability to delete the file permanently, change sharing permissions, and transfer ownership to others[1][2][3].
+
+### **Important Concepts**
+*   **Inherited Permissions:** If you share a folder, all files and subfolders within that folder inherit the same permissions[1][5]. You cannot give someone "less" access to an individual file inside a folder if they already have "higher" access to the parent folder[1].
+*   **Restricting Access:** Owners can further limit permissions by disabling the ability for Viewers and Commenters to download, print, or copy files via the **Share > Settings** menu[1][3].
+*   **Shared Drives:** If you are working in a **Shared Drive** (rather than "My Drive"), roles work slightly differently and include levels such as *Content Manager* and *Manager*, which are designed for team-based file management[6][7].
+
+Sources:
+[1] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBls8u0vaX3e91LlEgzkKKI_r_QndblQYiJ1AdqsvH9tJc3t-XtJoe5B8mR9Fzox-axp0659Bc1kdmxtt7WlyvhIiURh7PDMrfnMoSqXxXd29oPYwIl09k6iWdH6drmAAycZYe66KMbKn7bzSa1ZjcESURU60Jz45Do8ARdh2D0v35zZEXrw==)
+[2] [overdrive.tools](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFPR3LPo5BDRm9WDltekaVWBoSPddpQ8T-govU-Zqg_rcjoWQM9f4iunULAGvHbp3PH_KqKwg6jEV7v1qA6cy6g0euslwsKf3SZ8bERHJyuU6ykzghfEHW0F36VvI6pFU4L6ZkIZBIp4YhvjPz1EMSRa10OTT1NBXl)
+[3] [facebook.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaINQ0dnFNkKRXQTJUG1nL8JrX03ViY3w8SOO77jxwZaVsEYs-R-DicFCwP4JwJ3ZJVegU8l03dI4ZLFGOZEs4NeWGXJrVQxJnyn5U_MC7vjZ_Y75wM6DFnhv68f2nUFt1FMe_Eb66ddiYzqx50WeV_2Y1sk_j1BAfBhMnKBzawe0jzgIs7HerHSdBaW1dhnyXoQs=)
+[4] [docontrol.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkIr0QVcquTKTOCrCr18tzMeQuKxouQRPDBM448DhYRtlrBHJsPdhm8ihXrkkr90jvV65RORUaLwOLupS0aR85Gp63f72H-92W6YZdFCkaptYbbV-2hOT9HH0GZCirpj_QThJSdhuhTVP7xempFgx6e7Qy)
+[5] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHd9_OkCDKPd4byntGgXmXXkz9l5v2I66B21xuCGvHlh5nZoHI8V22JPWAU0ensas1sycH1R6Xf26l1K243DccVL7mzgd0CjuokfXAt79wyXOqm2cYb0pTq_0_3bWSwshP48ouIc_YoKmw85ddXhTx1JIhxzdQv5uV_XaH6a9AjIqdTJ6v_XFo=)
+[6] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC5UnXljb3rSCIOuyh4xxHPkmqztetMWC8xrjed9-AUUl6FgZ5EYtS7qa8nfyxtfITcoq10bJK1SlSYtuQcdG75cDBr6-0XV3gs73g3Nhs-8yDixShjVvJIi2eOwYGyO_3AB1VmDqY3GkoFRgltw==)
+[7] [suitebriar.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2ghMC9UJmIXp_s-HYeLN-ZpP_YJ_uOuX7GQcllsgkuMtZ3BmrIE-3jjd_rIRKaDUdyj1nRNOL5BGDtshLfRlvnytgFrP4jB6eJaPJXa97xxbe_CCd-MA0SfLCXYRBqxdowNoJq7LncbCprJ6nkHXmwpcQ8vWmPj_jO4iq7YUNeVlICSnQiRs5Q-nnRg==)

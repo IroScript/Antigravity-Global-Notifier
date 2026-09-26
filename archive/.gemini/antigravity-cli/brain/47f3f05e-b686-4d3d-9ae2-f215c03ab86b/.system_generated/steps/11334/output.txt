@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"current_path": "/home/azureuser/IrakIroan/.gemini", "parent_path": "/home/azureuser/IrakIroan", "breadcrumbs": [{"name": "Root (/)", "path": "/"}, {"name": "home", "path": "/home"}, {"name": "azureuser", "path": "/home/azureuser"}, {"name": "IrakIr

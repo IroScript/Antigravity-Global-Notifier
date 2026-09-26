@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+total 56
+drwxr-xr-x  1 root   root    4096 Sep 24 12:57 .
+drwxr-xr-x  1 root   root    4096 Sep 24 12:57 ..
+drwxr-xr-x  2 root   root    4096 Sep 24 22:26 __pycache__
+drwxrwxr-x  0 pwuser pwuser     0 Sep 25 07:53 cookies
+drwxr-xr-x  2 root   root    4096 Sep 24 12:12 logs
+drwxrwxr-x 13 pwuser pwuser  4096 Sep 25 07:53 profile
+-rw-r--r--  1 root   root     122 Sep 24 12:07 requirements.txt
+-rw-r--r--  0 pwuser pwuser 24799 Sep 24 13:59 worker_server.py
+

@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+-rw------- 1 root root 40G Sep 24 12:55 /home/swapfile
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1    216G  6.1G  199G   3% /home
+

@@ -1,0 +1,1 @@
+Port 8004 Health: {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}

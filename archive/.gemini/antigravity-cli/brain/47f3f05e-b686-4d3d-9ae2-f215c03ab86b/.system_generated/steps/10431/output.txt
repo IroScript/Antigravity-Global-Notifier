@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 33
+    print(f"{\"NAME\":<40} | {\"TYPE\":<7} | {\"SIZE\":<12} | {\"FILES\":<8}")
+              ^
+SyntaxError: unexpected character after line continuation character
+

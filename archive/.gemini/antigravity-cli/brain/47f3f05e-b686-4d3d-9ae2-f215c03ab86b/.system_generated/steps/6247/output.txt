@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Box after mdat at offset 2: b'.\x9c\x13y' sz: 3341531738
+

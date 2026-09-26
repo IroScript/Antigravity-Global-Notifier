@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Total Hash Mismatch Files Captured: 3,270
+
+=== FORENSIC CLASSIFICATION OF 3,270 HASH MISMATCH FILES ===
+- Docker Worker Chrome Profiles (Browser Cache/IndexedDB/Code Cache): 2,894 files (88.50%)
+- Live Chrome Process FD Dumps (Volatile Memory Dumps): 371 files (11.35%)
+- OTHER: 3 files (0.09%)
+- Webterminal / WhatsApp Ephemeral Logs: 1 files (0.03%)
+- AGY CLI Session Live Transcripts/Logs: 1 files (0.03%)
+
+Detailed manifest saved to /home/azureuser/mismatched_files_manifest.json
+

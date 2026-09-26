@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 16
+    print(f"{path} line {idx}: name={tc.get(\"name\")}, TargetFile={tf}, len(cc)={len(cc)}, len(cl)={len(cl)}")
+                                             ^
+SyntaxError: unexpected character after line continuation character
+

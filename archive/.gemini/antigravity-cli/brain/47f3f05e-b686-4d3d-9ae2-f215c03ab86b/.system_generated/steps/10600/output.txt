@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -56,10 +56,16 @@
+ 
+     def do_OPTIONS(self):
+         self.send_response(200)
+-        self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
++        self.send_header("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS")
+         self.send_header("Access-Control-Allow-Headers", "Content-Type")
+         self.end_headers()
+ 
++    def do_HEAD(self):
++        self.send_response(200)
++        self.send_header("Content-Type", "text/html; charset=utf-8")
++        self.end_headers()
++
++
+     def do_GET(self):
+         parsed = urllib.parse.urlparse(self.path)
+         path = parsed.path
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+root      137976  0.1  0.4 3525096 71260 ?       Ssl  Sep24   2:48 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+azureus+  911340  0.0  0.0   7484  3356 pts/12   Ss+  20:32   0:00 bash -c ps aux | grep -i docker
+azureus+  911342  0.0  0.0   6928  2428 pts/12   S+   20:32   0:00 grep -i docker
+

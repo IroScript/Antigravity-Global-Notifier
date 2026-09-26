@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.webterminal/whatsapp.log
+
+Terminal ID: b68697db-bf1f-4430-a787-9c47f5dfd116

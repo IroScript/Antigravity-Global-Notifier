@@ -1,0 +1,96 @@
+
+The command exited with code 0.
+Output:
+Journal Block 53182 -> 107 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 88009 -> 108 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 98989 -> 109 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 104617 -> 110 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 136922 -> 109 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 141013 -> 98 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 146196 -> 89 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 151389 -> 75 entries:
+   [13893633] (2) .
+   [2] (2) ..
+   [13893634] (1) .bash_logout
+   [13893636] (1) .profile
+   [13994106] (1) .bashrc
+   [13893637] (2) .ssh
+   [13893639] (1) .sudo_as_admin_successful
+   [13893640] (2) workspace
+   [13893641] (2) Downloads
+   [13893642] (2) .local
+Journal Block 156388 -> 0 entries:
+Journal Block 156835 -> 2 entries:
+   [14024705] (2) .
+   [13893633] (2) ..
+

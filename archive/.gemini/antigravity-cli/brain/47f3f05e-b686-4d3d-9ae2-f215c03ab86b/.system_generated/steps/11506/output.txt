@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Time: 0.158s, size: 76226563, files: 4552, folders: 3544
+du -sb: 76226563	/home/azureuser/IrakIroan/.gemini
+

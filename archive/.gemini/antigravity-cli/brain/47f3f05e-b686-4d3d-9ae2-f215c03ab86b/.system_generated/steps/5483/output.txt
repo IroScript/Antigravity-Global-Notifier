@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+<truncated 34325 lines>
+---	3031065	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/20/E6DC4029A1E4B4C1/38125424A7F7523B/model-info.pb 
+---	3031063	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/20/E6DC4029A1E4B4C1/38125424A7F7523B/model.tflite 
+DIR	3031106	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24 
+DIR	3031107	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1 
+DIR	3031108	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6 
+---	3031109	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/model.tflite 
+---	3031116	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/vocab_en-us.txt 
+---	3031117	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/enus_denylist_encoded_241007.txt 
+---	3031118	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/model-info.pb 
+DIR	3031128	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25 
+DIR	3031129	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25/E6DC4029A1E4B4C1 
+DIR	3031130	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25/E6DC4029A1E4B4C1/98C8980316DE3A8C 
+---	3031143	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25/E6DC4029A1E4B4C1/98C8980316DE3A8C/model-info.pb 
+---	3031144	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25/E6DC4029A1E4B4C1/98C8980316DE3A8C/visual_model_desktop.tflite 
+---	3031149	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/25/E6DC4029A1E4B4C1/98C8980316DE3A8C/model.tflite 
+DIR	3031131	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/26 
+DIR	3031132	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/26/E6DC4029A1E4B4C1 
+DIR	3031133	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/26/E6DC4029A1E4B4C1/0ECCDCE1045C1F45 
+---	3031071	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/26/E6DC4029A1E4B4C1/0ECCDCE1045C1F45/model-info.pb 
+---	3031142	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/26/E6DC4029A1E4B4C1/0ECCDCE1045C1F45/model.tflite 
+DIR	3031164	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/45 
+DIR	3031165	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/45/E6DC4029A1E4B4C1 
+DIR	3031166	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/45/E6DC4029A1E4B4C1/E7FE901CDDFC370E 
+---	3031172	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/45/E6DC4029A1E4B4C1/E7FE901CDDFC370E/model.tflite 
+---	3031177	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/45/E6DC4029A1E4B4C1/E7FE901CDDFC370E/model-info.pb 
+DIR	3031194	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43 
+DIR	3031195	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43/E6DC4029A1E4B4C1 
+DIR	3031196	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43/E6DC4029A1E4B4C1/0EA6F924F7FF4FDB 
+---	3031197	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43/E6DC4029A1E4B4C1/0EA6F924F7FF4FDB/model-info.pb 
+---	3031198	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43/E6DC4029A1E4B4C1/0EA6F924F7FF4FDB/sentencepiece.model 
+---	3031199	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/43/E6DC4029A1E4B4C1/0EA6F924F7FF4FDB/model.tflite 
+DIR	3031489	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache 
+---	3031491	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/index 
+---	3031492	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/data_0 
+---	3031493	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/data_1 
+---	3031494	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/data_2 
+---	3031500	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GrShaderCache/data_3 
+DIR	3031501	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache 
+---	3031502	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/index 
+---	3031503	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_0 
+---	3031504	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_1 
+---	3031505	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_2 
+---	3031506	 <13893633>/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GraphiteDawnCache/data_3 
+ext4magic : EXIT_SUCCESS
+

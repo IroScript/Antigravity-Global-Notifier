@@ -1,0 +1,78 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -71,24 +71,54 @@
+     cache_key = query_string or "default"
+     if cache_key in _history_cache and (now - _history_cache[cache_key]["time"] < 2.5):
+         return _history_cache[cache_key]["data"]
+-    try:
+-        url = "http://127.0.0.1:8090/api/history"
+-        if query_string:
+-            url += f"?{query_string}"
+-        req = urllib.request.Request(url)
+-        with urllib.request.urlopen(req, timeout=2.0) as resp:
+-            data = json.loads(resp.read().decode("utf-8"))
+-        if not data:
+-            try:
+-                fallback_url = "http://127.0.0.1:8090/api/history?range=30m"
+-                with urllib.request.urlopen(fallback_url, timeout=1.5) as resp2:
+-                    data = json.loads(resp2.read().decode("utf-8"))
+-            except Exception:
+-                pass
+-        _history_cache[cache_key] = {"time": now, "data": data or []}
+-        return data or []
+-    except Exception:
+-        return []
++
++    # Port 8090 backend supports: 1m, 5m, 15m, 30m. Any higher range (1h, 5h, etc.) causes remote disconnect.
++    target_range = "15m"
++    if "range=1m" in query_string:
++        target_range = "1m"
++    elif "range=5m" in query_string:
++        target_range = "5m"
++    elif "range=15m" in query_string:
++        target_range = "15m"
++    elif "range=30m" in query_string:
++        target_range = "30m"
++    else:
++        target_range = "30m"
++
++    data = []
++    for r in [target_range, "15m", "5m"]:
++        try:
++            url = f"http://127.0.0.1:8090/api/history?range={r}"
++            req = urllib.request.Request(url)
++            with urllib.request.urlopen(req, timeout=1.5) as resp:
++                res_json = json.loads(resp.read().decode("utf-8"))
++                if res_json and isinstance(res_json, list) and len(res_json) > 0:
++                    data = res_json
++                    break
++        except Exception:
++            continue
++
++    if not data:
++        try:
++            st = get_system_stats()
++            t_str = time.strftime("%I:%M:%S %p")
++            dt_str = time.strftime("%d %b, %I:%M %p")
++            data = [{
++                "epoch": int(now),
++                "t": t_str,
++                "dt": dt_str,
++                "cpu": st.get("cpu_overall", 0.0),
++                "ram_gb": st.get("ram", {}).get("used_gb", 0.0),
++                "ram_pct": st.get("ram", {}).get("percent", 0.0),
++                "app1": st.get("apps", [{}])[0] if st.get("apps") else {},
++                "app2": st.get("apps", [{}])[1] if len(st.get("apps", [])) > 1 else {},
++                "app3": st.get("apps", [{}])[2] if len(st.get("apps", [])) > 2 else {},
++            }]
++        except Exception:
++            data = []
++
++    _history_cache[cache_key] = {"time": now, "data": data}
++    return data
+ 
+ def get_standalone_monitor_url():
+     url_file = "/home/azureuser/.webterminal/live_monitor_url.txt"
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+CREATE TABLE ideas (
+	id INTEGER NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	title VARCHAR NOT NULL, 
+	short_title VARCHAR, 
+	raw_idea VARCHAR NOT NULL, 
+	refined_idea VARCHAR, 
+	description VARCHAR, 
+	category VARCHAR, 
+	subcategory VARCHAR, 
+	topic VARCHAR, 
+	niche VARCHAR, 
+	content_type VARCHAR, 
+	format VARCHAR, 
+	target_audience VARCHAR, 
+	language VARCHAR NOT NULL, 
+	status VARCHAR NOT NULL, 
+	priority INTEGER NOT NULL, 
+	source VARCHAR, 
+	source_reference VARCHAR, 
+	parent_idea_id INTEGER, 
+	root_idea_id INTEGER, 
+	version INTEGER NOT NULL, 
+	idea_hash VARCHAR, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	scheduled_for DATETIME, 
+	generated_at DATETIME, 
+	published_at DATETIME, 
+	archived_at DATETIME, 
+	is_deleted INTEGER NOT NULL, category_id INTEGER, impossible_capability TEXT, impossible_in_size TEXT, impossible_physics_or_motion TEXT, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(parent_idea_id) REFERENCES ideas (id), 
+	FOREIGN KEY(root_idea_id) REFERENCES ideas (id)
+)
+

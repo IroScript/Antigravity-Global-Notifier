@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+=== WORKER 2 ===
+2026-09-25 20:37:04,606 [INFO] [Worker-worker_2] Cloudflare Turnstile challenge detected! Attempting solve...
+2026-09-25 20:37:17,315 [INFO] [Worker-worker_2] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+=== WORKER 3 ===
+2026-09-25 20:37:04,549 [INFO] [Worker-worker_3] Cloudflare Turnstile challenge detected! Attempting solve...
+2026-09-25 20:37:17,415 [INFO] [Worker-worker_3] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+=== WORKER 4 ===
+2026-09-25 20:37:04,569 [INFO] [Worker-worker_4] Cloudflare Turnstile challenge detected! Attempting solve...
+2026-09-25 20:37:16,974 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+

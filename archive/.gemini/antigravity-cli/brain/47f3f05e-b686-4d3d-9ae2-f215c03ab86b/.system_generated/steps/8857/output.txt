@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/.gemini/config/hooks.json
+/home/azureuser/AGY-MASTER/POLICIES/hook_experiment/.agents/hooks.json
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/.gemini/config/hooks.json
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/AGY-MASTER/POLICIES/hook_experiment/.agents/hooks.json
+

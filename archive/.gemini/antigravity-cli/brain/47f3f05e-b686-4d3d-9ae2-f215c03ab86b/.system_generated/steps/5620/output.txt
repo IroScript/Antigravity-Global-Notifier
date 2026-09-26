@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+debugfs 1.47.2 (1-Jan-2025)
+import { AnthropicError } from '../../core/error';
+import type { Anthropic } from '../../client';
+import type { BetaSelfHostedWork } from '../../resources/beta/environments/work';
+import { loggerFor, type Logger } from '../../internal/utils/log';
+import { sleep } from '../../internal/utils/sleep';
+import { uuid4 } from '../../internal/utils/uuid';
+import { linkAbort } from '../../internal/utils/abort';
+import { buildHeaders } from '../../internal/headers';
+import type { BetaToolRunnerRequestOptions } from '../tools/BetaToolRunner';
+import {
+  applyJitter,
+  backoff as expBackoff,
+  isFatal4xx,
+  isStatus,
+  jitter,
+} from '../../internal/utils/backoff';
+import { copyClientForHelper } from '../helper-client';
+
+export { is4xx, isFatal4xx, isStatus, jitter } from '../../internal/utils/backoff';
+
+// API caps block_ms at 999; rely on client-side jitter between empty polls.
+export const POLL_BLOCK_MS = 999;
+const POLL_BACKOFF_BASE_MS = 1000;
+const POLL_BACKOFF_CAP_MS = 60_000;
+const IDLE_REPORT_INTERVAL_MS = 300_000;
+
+export interface WorkPollerOptions {
+  client: Anthropic;
+  environmentId: string;
+  /**
+

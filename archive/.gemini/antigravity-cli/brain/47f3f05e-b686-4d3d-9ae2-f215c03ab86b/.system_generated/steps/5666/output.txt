@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1   30G   14G   15G  48% /
+du: cannot read directory '/recovered/ALL_DELETED/MAGIC-2': Permission denied
+4.0K	/recovered/ALL_DELETED/MAGIC-2
+du: cannot read directory '/recovered/ALL_DELETED/azureuser': Permission denied
+4.0K	/recovered/ALL_DELETED/azureuser
+0	/recovered/ALL_DELETED/mdkamruzzamanirak_gmail_com
+

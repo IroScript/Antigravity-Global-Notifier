@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+=== 3. SUDO / SU / PKEXEC AUDIT ===
+Direct subprocess sudo exit: 0
+Direct subprocess sudo stdout: root
+Direct subprocess sudo stderr: 
+

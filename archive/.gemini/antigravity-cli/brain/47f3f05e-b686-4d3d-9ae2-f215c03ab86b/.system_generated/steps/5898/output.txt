@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+Total files with 100% full path resolved: 314
+   [533225] -> run_video_pipeline.cpython-311.pyc
+   [532249] -> session.session-journal
+   [533226] -> enrich_ideas_with_350_words.cpython-311.pyc
+   [533127] -> prompt_chain_engine.cpython-313.pyc
+   [532242] -> pipeline_packager.cpython-313.pyc
+   [1060386] -> .config/google-chrome/component_crx_cache/6a62b5df4b6ea9245f75e6d14e5e580be98c3fc8d7f9c45db9a26a6043901804
+   [3039187] -> the-real-index
+   [3040698] -> output.txt
+   [1181657] -> .config/google-chrome/Profile_Irak_Master/EncryptedAccountBookmarks2
+   [33726] -> 014033.sst
+   [3029412] -> 000554.log
+   [3040541] -> the-real-index/output.txt
+   [3040868] -> the-real-index/342
+   [3036274] -> Default/Preferences/output.txt
+   [1573246] -> latest_wa_dispatch.json
+   [1060392] -> .config/google-chrome/component_crx_cache/metadata.json
+   [13999251] -> .gemini/antigravity-cli/jetbox_summaries_proto.pb
+   [33732] -> 013974.sst
+   [3040866] -> 000391.ldb
+   [14155796] -> quantum_background_painter.dart
+   [954929] -> engine.realm
+   [1182732] -> 000011.log
+   [3040863] -> the-real-index
+   [3027326] -> 000533.ldb
+   [3039290] -> 000577.ldb
+   [33718] -> 014202.sst
+   [3040481] -> 000589.ldb
+   [3040776] -> the-real-index/333
+   [3040568] -> 000595.ldb
+   [954935] -> flutter_tools.snapshot
+

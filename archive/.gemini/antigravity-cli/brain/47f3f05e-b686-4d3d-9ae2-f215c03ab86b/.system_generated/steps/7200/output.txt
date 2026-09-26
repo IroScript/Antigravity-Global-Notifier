@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+{
+    "compute": {
+        "azEnvironment": "AzurePublicCloud",
+        "customData": "",
+        "evictionPolicy": "",
+        "isHostCompatibilityLayerVm": "true",
+        "licenseType": "",
+        "location": "eastus",
+        "name": "FatehAli",
+        "offer": "debian-12",
+        "osProfile": {
+            "adminUsername": "azureuser",
+            "computerName": "FatehAli",
+            "disablePasswordAuthentication": "true"
+        },
+        "osType": "Linux",
+        "placementGroupId": "",
+        "plan": {
+            "name": "",
+            "product": "",
+            "publisher": ""
+        },
+        "platformFaultDomain": "0",
+        "platformUpdateDomain": "0",
+        "priority": "",
+        "provider": "Microsoft.Compute",
+        "publicKeys": [
+            {
+                "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8sDvZgUybTlkEJppIuqQiZUHI9xJdszS7k2Xqv2jgkbjyuqbKCOfcdBV6NpYZfyev1fP5SEF1iu2ZrHDJxTb5s6OBxNP7Tc6kMJ3CBLR6cnZ6bX3Tsd2GM0jsI4eigyu64hXmiluK2e40gRrabcpJCxPQCXfHWbirIoOatuyveRulRmfHo4+B/oSDtqT41bnctOpAyuE0YGTOabRzhSHjGsf/+cfUtdxutIJuxWHw/fIPQuiUG8nbfu3VNpAOMo6OW6MB8jMpTYIJSRJLlqtkhSO8BER86tjSJRBhdsFamRUA95Z3uCnjbKz6Yil9JHFMjib3kNl8r2Ri4h70A5QOylqVYj/8QA51ggXMJeCJTV74fDs6CxZpfJDRhJgnJxBt7brqR8DPR6XN2VDU9466N5u9EsW/XJALPX7pfp5oPDMxRL4JOA0qsopP5geklFhKTJeHp4s2L/FegyrBFq/OnWq8iyak0RpwTUjeFi5IjpPRSoehoFRT5zM/MyIhJ+k= generated-by-azure",
+                "path": "/home/azureuser/.ssh/authorized_keys"
+            }
+        ],
+        "publisher": "debian",
+        "resourceGroupName": "FATEHALI_GROUP",
+        "resourceId": "/subscriptions/506deb9a-42fa-468d-b78f-0f25a9e485e1/resourceGroups/FATEHALI_GROUP/providers/Microsoft.Compute/virtualMachines/FatehAli",
+        "securityProfile": {
+            "secureBootEnabled": "true",
+            "virtualTpmEnabled": "true"
+        },
+        "sku": "12-gen2",
+

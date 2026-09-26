@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+agy: 12 windows (created Tue Sep 22 18:34:16 2026)
+azureus+    1558  0.0  0.0   1572   344 ?        Ss   Sep22   0:00 /usr/local/bin/ttyd -W -p 7681 -P 5 -I /home/azureuser/.webterminal/index.html -c irak:agy2026 tmux new-session -A -s agy bash
+azureus+    1637  0.0  0.0  20776 10808 ?        S    Sep22   0:32 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1686  0.0  0.0   7480  2236 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_chrome_tunnel.sh
+azureus+    1687  0.0  0.0   7480  2304 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_csv_tunnel.sh
+azureus+    1704  0.0  0.0   7612  2436 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_chrome_tunnel.sh
+azureus+    1718  0.0  0.0   7612  2472 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_csv_tunnel.sh
+azureus+    1986  0.0  0.0   7480  2356 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_tunnel.sh
+azureus+    1990  0.0  0.0   7612  2448 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_tunnel.sh
+azureus+  190240  0.0  0.0   7480  2280 ?        Ss   Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+azureus+  190242  0.0  0.0   7612  2332 ?        S    Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+azureus+  729489 37.1  1.6 10292232 277864 ?     Rsl  Sep25 665:39 /usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js
+

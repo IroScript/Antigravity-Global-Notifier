@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+Read 4096 bytes from block 56098996
+   Slot  0 (Inode 14027073): mode=0o100664, size=19424, magic=0xf30a
+   Slot  1 (Inode 14027074): mode=0o100664, size=39100, magic=0xf30a
+   Slot  2 (Inode 14027075): mode=0o100664, size=39, magic=0xf30a
+   Slot  3 (Inode 14027076): mode=0o100664, size=841, magic=0xf30a
+   Slot  4 (Inode 14027077): mode=0o100664, size=16743, magic=0xf30a
+   Slot  5 (Inode 14027078): mode=0o100664, size=12658, magic=0xf30a
+   Slot  6 (Inode 14027079): mode=0o100664, size=904, magic=0xf30a
+   Slot  7 (Inode 14027080): mode=0o100664, size=933, magic=0xf30a
+   Slot  8 (Inode 14027081): mode=0o100664, size=34, magic=0xf30a
+   Slot  9 (Inode 14027082): mode=0o100664, size=760, magic=0xf30a
+   Slot 10 (Inode 14027083): mode=0o100664, size=218181, magic=0xf30a
+   Slot 11 (Inode 14027084): mode=0o100664, size=604, magic=0xf30a
+   Slot 12 (Inode 14027085): mode=0o100664, size=34, magic=0xf30a
+   Slot 13 (Inode 14027086): mode=0o100664, size=150513, magic=0xf30a
+   Slot 14 (Inode 14027087): mode=0o100664, size=3125, magic=0xf30a
+   Slot 15 (Inode 14027088): mode=0o100664, size=1775, magic=0xf30a
+

@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:36552 - "GET /health HTTP/1.1" 200 OK
+INFO:     Started server process [9]
+INFO:     Waiting for application startup.
+2026-09-25 23:01:08,876 [INFO] [Worker-worker_2] Starting up worker_2...
+2026-09-25 23:01:10,906 [INFO] [Worker-worker_2] Removed stale lock: SingletonLock
+2026-09-25 23:01:10,906 [INFO] [Worker-worker_2] Removed stale lock: SingletonCookie
+2026-09-25 23:01:10,906 [INFO] [Worker-worker_2] Removed stale lock: SingletonSocket
+2026-09-25 23:01:10,959 [INFO] [Worker-worker_2] Launching persistent context via official CloakBrowser engine...
+2026-09-25 23:01:11,119 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 23:01:11,122 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 23:01:11,216 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-25 23:01:15,023 [INFO] [Worker-worker_2] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-25 23:01:15,026 [WARNING] [Worker-worker_2] No cookie file found at /app/cookies/cookie.json
+2026-09-25 23:01:15,131 [INFO] [Worker-worker_2] Navigating to https://chatgpt.com for session verification...
+2026-09-25 23:01:19,335 [INFO] [Worker-worker_2] Cloudflare Turnstile challenge detected! Attempting solve...
+

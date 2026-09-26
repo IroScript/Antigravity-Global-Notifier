@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Exit Code: 1
+Stderr: 🛑 [RCLONE READ-ONLY HARD BLOCK]
+Command: rclone copy /tmp/test.txt personaldrive:dummy
+Status: PERMANENTLY DENIED
+Incident ID: INC-RO-20260926023746-0a6900
+Reason: Uploading/writing to remote 'personaldrive:dummy' is prohibited in READ-ONLY mode.
+Security: Remote storage is strictly locked in READ-ONLY mode by Iraq Bhai.
+

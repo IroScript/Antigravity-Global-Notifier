@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.webterminal/whatsapp.log:34836:[WA Bridge] ⚡ cmd 8090 (agy:0)
+

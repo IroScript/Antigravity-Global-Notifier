@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+36 * ১. যান: `console.cloud.google.com`
+43 * ২. সার্চবারে "Google Drive API" -> Enable
+42 * ৩. মেনু: IAM & Admin -> Service Accounts
+37 * ৪. উপরে "+ CREATE SERVICE ACCOUNT":
+40   * নাম: `azure-backup` দিয়ে Done চাপুন।
+37 * ৫. একাউন্টে ঢুকে "Keys" ট্যাবে যান:
+43   * Add Key -> Create key -> JSON -> Create
+34   * একটি `.json` ফাইল ডাউনলোড হবে!
+28 * ১. যান: `drive.google.com`
+39 * ২. নতুন ফোল্ডার বানান: `Azure_Backup`
+38 * ৩. ফোল্ডারের ওপর রাইট ক্লিক -> Share
+35 * ৪. সার্ভিস একাউন্টের ইমেইলটি বসান
+43   (যেমন: `...@...iam.gserviceaccount.com`)।
+35 * ৫. রোল "Editor" দিয়ে Share চাপুন!
+

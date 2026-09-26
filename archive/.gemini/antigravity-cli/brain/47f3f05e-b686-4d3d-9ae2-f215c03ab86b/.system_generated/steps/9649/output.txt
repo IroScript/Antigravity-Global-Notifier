@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+azureus+ 1112599  0.1  0.3 1802296 60072 ?       Sl   08:49   0:00 /usr/bin/rclone copy /etc personaldrive:Azure_VM_Live_Backup_Fateh_Ali/SYSTEM_ROOT/etc --update --transfers 4 --checkers 8 --stats-one-line --log-level NOTICE --exclude *.sock --exclude **/.cache/** --exclude **/node_modules/** --exclude **/target/debug/** --exclude **/target/release/incremental/** --exclude **/__pycache__/** --exclude *.pyc --exclude *.tmp --exclude .system_generated/**
+azureus+ 1113252  0.0  0.3 1876032 55208 pts/12  Ssl+ 08:51   0:00 /usr/bin/rclone lsf personaldrive:Azure_VM_Live_Backup_Fateh_Ali/SYSTEM_ROOT/
+azureus+ 1113558  0.0  0.0   7488  3352 pts/14   Ss+  08:53   0:00 bash -c ps aux | grep rclone
+azureus+ 1113560  0.0  0.0   7064  2196 pts/14   S+   08:53   0:00 grep rclone
+

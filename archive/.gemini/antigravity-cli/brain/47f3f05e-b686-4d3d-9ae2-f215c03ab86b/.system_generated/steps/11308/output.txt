@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+=== TEST 3: Filesystem Mount, Working Directory & Architecture Specs ===
+Filesystem Mount Point for /home/azureuser:
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme1n1   ext4  216G  102G  103G  50% /home
+
+Canonical Specification in GEMINI.md:
+### 2.1 AGY:0 — PRINCIPAL / MASTER AGENT
+- **Identifier:** `agy:0`
+- **Role:** Principal Supervisor & System Orchestrator
+- **Workspace:** `/home/azureuser`
+- **Communication:** Personal 1-to-1 WhatsApp (`8801955333555@s.whatsapp.net`) & Master Console.
+
+System Environment Workspace:
+/home/azureuser
+

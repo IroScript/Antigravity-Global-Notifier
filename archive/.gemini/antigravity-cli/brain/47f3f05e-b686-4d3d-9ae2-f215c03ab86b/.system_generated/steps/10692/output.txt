@@ -1,0 +1,18 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -167,6 +167,12 @@
+             base = params.get("path", ["/home/azureuser"])[0]
+             q = params.get("q", [""])[0]
+             self.handle_search(base, q)
++        elif path == "/api/stats":
++            self.send_json(get_system_stats())
++        elif path == "/api/history":
++            self.send_json(get_system_history(parsed.query))
++        elif path == "/api/monitor_url":
++            self.send_json({"url": get_standalone_monitor_url()})
+         else:
+             self.send_error(404, "Not Found")
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

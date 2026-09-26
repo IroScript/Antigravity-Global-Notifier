@@ -1,0 +1,33 @@
+The search for ""gcloud organizations add-iam-policy-binding" "roles/orgpolicy.policyAdmin"" returned the following summary:
+To grant the **Organization Policy Administrator** (`roles/orgpolicy.policyAdmin`) role at the organization level, you must use the `gcloud organizations add-iam-policy-binding` command[1][2].
+
+### Command Syntax
+Run the following command in your terminal, replacing the placeholders with your specific details:
+
+```bash
+gcloud organizations add-iam-policy-binding ORGANIZATION_ID \
+    --member="user:YOUR_EMAIL@example.com" \
+    --role="roles/orgpolicy.policyAdmin"
+```
+
+### Key Considerations
+*   **Organization ID:** You must provide your numeric Organization ID[1][2]. If you do not know it, you can find it in the Google Cloud Console by selecting your organization from the project/resource picker[1][3].
+*   **Required Permissions:** You must already have sufficient permissions (such as Organization Administrator) to grant IAM roles at the organization level[3][4].
+*   **Member Format:** Ensure the `--member` flag uses the correct prefix, such as `user:`, `group:`, or `serviceAccount:`[5][6].
+*   **Console Access:** If the role is not appearing in the Google Cloud Console's IAM role picker, it is often because you have not selected the **Organization** itself in the resource selector at the top of the page; ensure you are scoped to the organization level, not a specific project or folder[1][3][7].
+
+### Troubleshooting
+If you receive a "Permission Denied" error:
+*   Verify your identity has the `resourcemanager.organizations.setIamPolicy` permission[3].
+*   Confirm you are targeting the Organization ID and not a project ID[1][3].
+*   If you are a Google Workspace Super Admin and still cannot assign the role, ensure you have also been explicitly granted the necessary IAM roles within the Google Cloud organization, as Super Admin status does not automatically grant full GCP resource management permissions[3][8].
+
+Sources:
+[1] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-En3_EcVPM1B6yjzosIFqwKHc_3iZ15GwChGG_1LOYjCef-gMRY_zxokkOj3Xuus1wYWLLIl2WW1mBCLEK2xg4Rl83OWjARb7p2FzmEJ90b4lkxVwts_U_SvdzQGYcC-e3jJ82-Ql_nuIYQ8chjzI8zm4N2vUnUf_qcqg4kc6xtRfFIScHMf0cHckNLwnjpYiLhqT5f8=)
+[2] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-En3_EcVPM1B6yjzosIFqwKHc_3iZ15GwChGG_1LOYjCef-gMRY_zxokkOj3Xuus1wYWLLIl2WW1mBCLEK2xg4Rl83OWjARb7p2FzmEJ90b4lkxVwts_U_SvdzQGYcC-e3jJ82-Ql_nuIYQ8chjzI8zm4N2vUnUf_qcqg4kc6xtRfFIScHMf0cHckNLwnjpYiLhqT5f8=)
+[3] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYvtsVP6o52cVSg3e_-k8H9wkz18RwH5lTSu8XMt8Uw1T1X69sLV0lOy3keuODtY41OsJ_NMht9_zlPJ2WngKLQ9qsDGI79QznGY1uxG1sWiAZPbf0XhiC7NVpS-KapQrkAkecuUC5E7n8Mkq-l6rzG5srJY3k6ZhEWahiXStFu2RKBsFekrcO27DDrCMS-I-1CdZxxzWxVD-EpvYBFJEE5CEWG1cuTjT9Ld0oJ7NGjzbM2c3zrGeKEqyld3F5tdhj1b33mRD6Io8M8nLYoO9FdVub2TIsMg==)
+[4] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhQO7-vaGhmO062kyDqM_d8ShbHyEcOQ9EQUE8IxUEBypjxQnFrSBO4Zs4szZpAKFA2benMud1urA8D_KvaDScyEF_osoll73snnUDVLXYuXSVPPPNjxJ_2bu9cKBVVfM6yCrhg0-wgRxwL_GhQBLUqORh_U_uRlnbQj1c_f3HANE6XCE=)
+[5] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW22kI0MvShyWPsJxO3ecffxCBV1X0D9kn2sGT49TwbbzA_tVDOEO4XWYe5ppvezh-veAC9W0v37Ouk-Su34pG4o_3Y1O8YPftHY6N-o6540wMWpgmyRXFC_I2s0k1TFw3j2wF0KAlDxwZ97nHDjlZjUXH62UwgukQjesiKTYv8c0iJE2o72lq)
+[6] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFnLDU4BG1hhq20eIMUrtzPFXVtORulEV3d7SvL3L0FYxQKhtZXrLWRS1S8WR0SKBDraWUZ2mM3EjwAkCi1m3Wwgze_N1kCO1YWsdFLIJH3AT2dsKeueNvMPHiJxU2PrzTG8LRbgkfelq5Ties1iULM-8yPSWoYs8H43JM5BNhcmswuJOjnyLaKw==)
+[7] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGn7jobMa5hRV9r-E_N5bHTJIunkzwHIRWyZnufVIyYg8rjPhb78lZIL7A5mSh3Q3swtnMXh4H6PlNR2J2kQJVtMhP2r7wZFKfZ5I7J0bBoM9Mdql6kMqO4Ed8O5BYiEFE6hP0WDKy5XJjzFODsd-jnDQ_fqlddD1jPSpemMALYLFx9iGE0k9KYqQNdeKzi_8cfcs-DeA6y)
+[8] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGn7jobMa5hRV9r-E_N5bHTJIunkzwHIRWyZnufVIyYg8rjPhb78lZIL7A5mSh3Q3swtnMXh4H6PlNR2J2kQJVtMhP2r7wZFKfZ5I7J0bBoM9Mdql6kMqO4Ed8O5BYiEFE6hP0WDKy5XJjzFODsd-jnDQ_fqlddD1jPSpemMALYLFx9iGE0k9KYqQNdeKzi_8cfcs-DeA6y)

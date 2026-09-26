@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+total 596
+drwxr-xr-x 2 azureuser azureuser   4096 Sep 25 14:01 .
+drwxr-xr-x 6 azureuser azureuser   4096 Sep 25 11:00 ..
+-rw-r--r-- 1 azureuser azureuser 579025 Sep 25 20:05 task-9369.log
+-rw-r--r-- 1 azureuser azureuser   3096 Sep 25 11:00 task-9615.log
+-rw-r--r-- 1 azureuser azureuser    505 Sep 25 11:01 task-9638.log
+-rw-r--r-- 1 azureuser azureuser   2792 Sep 25 12:03 task-9760.log
+-rw-r--r-- 1 azureuser azureuser    101 Sep 25 14:01 task-9949.log
+-rw-r--r-- 1 azureuser azureuser     72 Sep 25 14:01 task-9956.log
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+python3 669951 azureuser DEL-r     REG              259,4           533122 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm
+python3 669951 azureuser   5u      REG              259,4  4214792  532254 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-wal (deleted)
+python3 669951 azureuser   7ur     REG              259,4 40091648  532244 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db (deleted)
+python3 669951 azureuser   9ur     REG              259,4    32768  533122 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm (deleted)
+

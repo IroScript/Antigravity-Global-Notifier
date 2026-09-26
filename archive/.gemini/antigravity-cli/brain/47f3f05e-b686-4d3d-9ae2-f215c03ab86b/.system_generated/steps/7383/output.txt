@@ -1,0 +1,61 @@
+
+The command exited with code 0.
+Output:
+NAME   FSTYPE  SIZE MOUNTPOINT MODEL SERIAL UUID
+sr0           1024M            Virtu 4d5346 
+nvme0n1
+│               30G            MSFT  SN: 00 
+├─nvme0n1p1
+│      ext4   29.9G /                       c23076bf-6267-4ca9-92a0-ee9cde74e06e
+├─nvme0n1p14
+│                3M                         
+└─nvme0n1p15
+       vfat    124M /boot/efi               F12B-E449
+nvme1n1
+       ext4    220G /home      Micro a7567a a7e46975-f813-443b-ac77-43ed858d9eec
+P: /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/2808f01b-65d7-4ee7-a647-04ed222f5f51/pci65d7:00/65d7:00:00.0/nvme/nvme1/nvme1n1
+M: nvme1n1
+R: 1
+J: b259:4
+U: block
+T: disk
+D: b 259:4
+N: nvme1n1
+L: 0
+S: disk/by-path/acpi-MSFT1000:00-pci-65d7:00:00.0-nvme-1
+S: disk/by-diskseq/4
+S: disk/by-id/nvme-Microsoft_NVMe_Direct_Disk_v2_a7567a57b2fce4f80001
+S: disk/by-uuid/a7e46975-f813-443b-ac77-43ed858d9eec
+S: disk/by-id/nvme-eui.8b56086329cd755abb098f143649780b
+S: disk/by-id/nvme-Microsoft_NVMe_Direct_Disk_v2_a7567a57b2fce4f80001_1
+Q: 4
+E: DEVPATH=/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/2808f01b-65d7-4ee7-a647-04ed222f5f51/pci65d7:00/65d7:00:00.0/nvme/nvme1/nvme1n1
+E: DEVNAME=/dev/nvme1n1
+E: DEVTYPE=disk
+E: DISKSEQ=4
+E: MAJOR=259
+E: MINOR=4
+E: SUBSYSTEM=block
+E: USEC_INITIALIZED=2069586
+E: ID_SERIAL_SHORT=a7567a57b2fce4f80001
+E: ID_WWN=eui.8b56086329cd755abb098f143649780b
+E: ID_MODEL=Microsoft NVMe Direct Disk v2
+E: ID_REVISION=NVMDV002
+E: ID_NSID=1
+E: ID_SERIAL=Microsoft_NVMe_Direct_Disk_v2_a7567a57b2fce4f80001_1
+E: ID_PATH=acpi-MSFT1000:00-pci-65d7:00:00.0-nvme-1
+E: ID_PATH_TAG=acpi-MSFT1000_00-pci-65d7_00_00_0-nvme-1
+E: ID_FS_UUID=a7e46975-f813-443b-ac77-43ed858d9eec
+E: ID_FS_UUID_ENC=a7e46975-f813-443b-ac77-43ed858d9eec
+E: ID_FS_VERSION=1.0
+E: ID_FS_BLOCKSIZE=4096
+E: ID_FS_LASTBLOCK=57671680
+E: ID_FS_SIZE=236223201280
+E: ID_FS_TYPE=ext4
+E: ID_FS_USAGE=filesystem
+E: UDISKS_AUTO=0
+E: DEVLINKS=/dev/disk/by-path/acpi-MSFT1000:00-pci-65d7:00:00.0-nvme-1 /dev/disk/by-diskseq/4 /dev/disk/by-id/nvme-Microsoft_NVMe_Direct_Disk_v2_a7567a57b2fce4f80001 /dev/disk/by-uuid/a7e46975-f813-443b-ac77-43ed858d9eec /dev/disk/by-id/nvme-eui.8b56086329cd755abb098f143649780b /dev/disk/by-id/nvme-Microsoft_NVMe_Direct_Disk_v2_a7567a57b2fce4f80001_1
+E: TAGS=:systemd:
+E: CURRENT_TAGS=:systemd:
+
+

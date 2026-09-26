@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Dangling shortcut "Task List" detected
+1knh-c-zvI4vy01SjsEz50u9kMWTG_BW1;All_VM_BackUps/
+1XPUpOG4CGxvDdKGkVnQD_2Fdn7wWwsid;Youtube_Automation/
+

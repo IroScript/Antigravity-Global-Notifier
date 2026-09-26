@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+5921523488b5a82d7b12db50d029f1c2  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_00.tar.gz
+f9ef7b5b5746926882ee05d333d95261  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_01.tar.gz
+b1a38d1a4149d33f617ed8a6a39203bf  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_02.tar.gz
+35d82a9a5783f259fcc9467e53cf9eb3  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_03.tar.gz
+20f09f0b07f43172158833243ba02fb4  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_04.tar.gz
+44f90f7e00329acea3178d2b7f3b58e4  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_05_00.tar.gz
+8de72973337a5bb782fdf93bea5ccf4c  /home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_05_01.tar.gz
+

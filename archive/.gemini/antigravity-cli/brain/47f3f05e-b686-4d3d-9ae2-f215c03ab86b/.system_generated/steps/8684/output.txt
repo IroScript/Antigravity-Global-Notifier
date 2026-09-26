@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+azureus+  904682  0.0  0.0   7484  3352 pts/11   Ss+  20:06   0:00 bash -c rclone copy "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db" personaldrive:Youtube_Automation/database/ -v && rclone copy "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db" personaldrive:All_VM_BackUps/Azure_VM_BackUP/database_backups/ -v
+azureus+  904683  0.1  0.3 1801788 54388 pts/11  Sl+  20:06   0:00 rclone copy /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db personaldrive:Youtube_Automation/database/ -v
+

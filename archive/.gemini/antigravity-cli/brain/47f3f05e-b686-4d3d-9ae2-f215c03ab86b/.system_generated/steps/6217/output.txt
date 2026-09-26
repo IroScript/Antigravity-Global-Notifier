@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 48
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 25 11:04 .
+drwxr-xr-x 30 azureuser azureuser 12288 Sep 25 11:05 ..
+-rw-r--r--  1 azureuser azureuser 17437 Jul 24  2006 event_loop.rs
+-rw-r--r--  1 azureuser azureuser  4085 Jul 24  2006 icon.rs
+-rw-r--r--  1 azureuser azureuser  8177 Jul 24  2006 lib.rs
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Created symlink '/home/azureuser/.config/systemd/user/default.target.wants/gdrive-live-sync.service' → '/home/azureuser/.config/systemd/user/gdrive-live-sync.service'.
+enabled
+

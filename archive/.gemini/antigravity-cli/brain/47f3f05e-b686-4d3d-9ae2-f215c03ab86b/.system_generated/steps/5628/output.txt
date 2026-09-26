@@ -1,0 +1,36 @@
+
+The command exited with code 0.
+Output:
+=== Inode 795463 ===
+Inode: 795463   Type: directory    Mode:  0775   Flags: 0x80000
+User:  1000   Group:  1000   Project:     0   Size: 4096
+Links: 0   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab62888:336aef6c -- Fri Sep 25 07:53:44 2026
+ dtime: 0x000c8e36:(336aef6c) -- Sat Jan 10 12:33:58 1970
+EXTENTS:
+=== Inode 14286849 ===
+Inode: 14286849   Type: directory    Mode:  0775   Flags: 0x80000
+User:  1000   Group:  1000   Project:     0   Size: 4096
+Links: 0   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab6288f:16d8aefc -- Fri Sep 25 07:53:51 2026
+ dtime: 0x00da0006:(16d8aefc) -- Mon Jun 15 08:34:14 1970
+EXTENTS:
+=== Inode 14024706 ===
+Inode: 14024706   Type: directory    Mode:  0775   Flags: 0x80000
+User:  1000   Group:  1000   Project:     0   Size: 4096
+Links: 0   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab62882:73482e5c -- Fri Sep 25 07:53:38 2026
+ dtime: 0x00d4001d:(73482e5c) -- Wed Jun 10 19:21:01 1970
+EXTENTS:
+=== Inode 14024707 ===
+Inode: 14024707   Type: directory    Mode:  0775   Flags: 0x80000
+User:  1000   Group:  1000   Project:     0   Size: 4096
+Links: 0   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 0x6ab62881:5d576428 -- Fri Sep 25 07:53:37 2026
+ dtime: 0x00d60962:(5d576428) -- Fri Jun 12 08:25:06 1970
+EXTENTS:
+

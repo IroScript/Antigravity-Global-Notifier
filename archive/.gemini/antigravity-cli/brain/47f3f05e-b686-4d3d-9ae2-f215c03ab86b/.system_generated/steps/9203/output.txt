@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+=== 7 & 8. DIRECT SYSCALL & DYNAMIC UNLINK AUDIT ===
+Direct syscall(87) return: 0 errno: 0
+Did file get deleted?: True
+

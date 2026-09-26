@@ -1,0 +1,54 @@
+
+The command exited with code 0.
+Output:
+Warning: error-NR 2133571476 can not found file: azureuser/.webterminal/wa_auth
+Warning: error-NR 2133571476 can not found file: azureuser/tmp/node-compile-cache/v26.10.0-x64-310b2ce3-1000
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@openclaw/fs-safe/dist
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@mistralai/mistralai/esm/models/components
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@mistralai/mistralai/esm/models/operations
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@mistralai/mistralai/esm/funcs
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/node_modules/@mistralai/mistralai/src/models/components
+Warning: error-NR 2133571476 can not found file: azureuser/.npm-global/lib/node_modules/openclaw/dist
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Cache/Cache_Data
+Warning: error-NR 2133571476 can not found file: azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/Code Cache/js
+  100%	 azureuser/.npm-global/lib/node_modules/@openclaw/whatsapp/node_modules/baileys/node_modules/pino/.nojekyll 
+  100%	 azureuser/.npm-global/lib/node_modules/@openclaw/whatsapp/node_modules/baileys/node_modules/.bin/pino 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/koffi/doc/unions.md 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/node-domexception/.history/index_20210527203842.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/node-domexception/.history/test_20210527205603.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/tr46/lib/.gitkeep 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/anthropic-ai-sdk 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/ciao-bcs 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/acorn 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/chrome-devtools-mcp 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/chrome-devtools 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/clawpdf 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/jiti 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/json5 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/marked 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/node-edge-tts 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/playwright-core 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/semver 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/qrcode 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/tslog 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/tsc 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/tsserver 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/web-push 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/node-which 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/which-command 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/.bin/yaml 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/cjs/adapter/deno/deno.d.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/utils/headers.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/utils/http-status.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/utils/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/helper/conninfo/index.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/helper/conninfo/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/jsx/intrinsic-elements.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/jsx/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/client/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/adapter/aws-lambda/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/adapter/deno/deno.d.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/adapter/service-worker/types.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/middleware/secure-headers/permissions-policy.js 
+  100%	 azureuser/.npm-global/lib/node_modules/openclaw/node_modules/hono/dist/validator/utils.js 
+

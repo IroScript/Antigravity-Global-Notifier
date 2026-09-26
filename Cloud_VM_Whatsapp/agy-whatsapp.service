@@ -1,0 +1,18 @@
+[Unit]
+Description=Antigravity WhatsApp Bridge Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/azureuser/.webterminal/whatsapp.log
+StandardError=append:/home/azureuser/.webterminal/whatsapp.log
+Environment=HOME=/home/azureuser
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:/home/azureuser/.local/bin:/home/azureuser/.npm-global/bin
+Environment=TMPDIR=/home/azureuser/tmp
+WorkingDirectory=/home/azureuser
+
+[Install]
+WantedBy=default.target

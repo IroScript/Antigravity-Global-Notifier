@@ -1,0 +1,84 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -884,6 +884,78 @@
+       font-size: 11px;
+       color: var(--text-muted);
+       flex-shrink: 0;
++      margin-bottom: 60px;
++    }
++
++    /* Fixed Bottom Navigation Bar (Back, Home, CPU) */
++    .bottom-nav-bar {
++      position: fixed;
++      bottom: 0;
++      left: 0;
++      right: 0;
++      height: 60px;
++      background: rgba(18, 18, 22, 0.96);
++      backdrop-filter: blur(20px);
++      -webkit-backdrop-filter: blur(20px);
++      border-top: 1px solid rgba(255, 255, 255, 0.12);
++      display: flex;
++      align-items: center;
++      justify-content: space-around;
++      z-index: 9999;
++      padding: 0 12px;
++      box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.65);
++    }
++
++    .bottom-nav-item {
++      flex: 1;
++      display: flex;
++      flex-direction: column;
++      align-items: center;
++      justify-content: center;
++      gap: 3px;
++      background: transparent;
++      border: none;
++      color: #8b949e;
++      cursor: pointer;
++      font-size: 11px;
++      font-family: inherit;
++      font-weight: 500;
++      padding: 6px 4px;
++      border-radius: 8px;
++      transition: all 0.2s ease;
++      touch-action: manipulation;
++      user-select: none;
++    }
++
++    .bottom-nav-item:hover, .bottom-nav-item:active {
++      color: #ffffff;
++      background: rgba(255, 255, 255, 0.08);
++    }
++
++    .bottom-nav-item.active {
++      color: #60cdff;
++      background: rgba(96, 205, 255, 0.12);
++    }
++
++    .bottom-cpu-icon-wrap {
++      position: relative;
++      display: inline-flex;
++      align-items: center;
++      justify-content: center;
++    }
++
++    .bottom-cpu-pill {
++      position: absolute;
++      top: -7px;
++      right: -20px;
++      background: rgba(240, 136, 62, 0.25);
++      border: 1px solid #f0883e;
++      color: #f0883e;
++      font-size: 9px;
++      font-weight: 700;
++      padding: 1px 4px;
++      border-radius: 8px;
++      line-height: 1;
+     }
+ 
+     /* Notepad / Code Preview Modal */
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

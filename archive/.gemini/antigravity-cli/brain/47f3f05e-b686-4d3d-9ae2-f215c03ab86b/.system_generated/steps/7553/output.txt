@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+https://wallpaper-movements-lee-rep.trycloudflare.com
+azureus+    1558  0.0  0.0   1572   764 ?        Ss   Sep22   0:00 /usr/local/bin/ttyd -W -p 7681 -P 5 -I /home/azureuser/.webterminal/index.html -c irak:agy2026 tmux new-session -A -s agy bash
+azureus+    1637  0.0  0.0  20776 10808 ?        S    Sep22   0:23 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1686  0.0  0.0   7480  2236 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_chrome_tunnel.sh
+azureus+    1687  0.0  0.0   7480  2304 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_csv_tunnel.sh
+azureus+    1704  0.0  0.0   7612  1840 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_chrome_tunnel.sh
+azureus+    1716  0.0  0.2 2099528 33796 ?       S    Sep22   0:22 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1718  0.0  0.0   7612  2500 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_csv_tunnel.sh
+azureus+    1986  0.0  0.0   7480  2356 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_tunnel.sh
+azureus+    1990  0.0  0.0   7612  2472 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.webterminal/start_tunnel.sh
+azureus+   42086  0.0  0.1 254056 18340 ?        Ss   Sep23   0:12 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+azureus+  190240  0.0  0.0   7480  2280 ?        Ss   Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+azureus+  190242  0.0  0.0   7612  2364 ?        S    Sep24   0:00 /bin/bash /home/azureuser/.webterminal/start_monitor_tunnel.sh
+azureus+  729489 18.4  1.5 10273020 246172 ?     Ssl  10:17  76:32 /usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js
+

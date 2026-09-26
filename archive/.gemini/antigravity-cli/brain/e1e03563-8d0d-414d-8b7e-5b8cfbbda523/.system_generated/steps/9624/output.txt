@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Error response from daemon: mkdir app/worker_server.py: not a directory
+total 8
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 .
+drwxr-xr-x 5 azureuser azureuser 4096 Sep 25 11:00 ..
+total 28
+drwxr-xr-x 7 root      root      4096 Sep 25 11:00 .
+drwxr-xr-x 5 azureuser azureuser 4096 Sep 25 11:00 ..
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 worker_1
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 worker_2
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 worker_3
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 worker_4
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 worker_5
+

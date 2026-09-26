@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+{"decision": "allow"}: proto: syntax error (line 2:1): unexpected token {
+I0925 07:32:40.927473     156 quota_manager.go:41] doRefreshQuota: skipped (throttled)
+I0925 07:33:47.652375  824078 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x83521726e40a6bc2
+I0925 07:33:47.817255  824083 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfabeb407a89ddba4
+I0925 07:34:10.148485  824106 input_loop.go:107] HandleUserInput called with text: "Agents e edit korso kintu amar frappe er jonno v16 or latest use kirte hobe eta kothay lekha ase? Plus other agents instructions?"
+I0925 07:34:10.149615  824108 conversation_manager.go:699] Forwarding user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0925 07:34:10.149634  824108 server.go:1831] Sending user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0925 07:34:10.292447  824108 latency_breakdown.go:142] SEND_USER_CASCADE_MESSAGE_LATENCY latency breakdown: map[active_user_state_latency_ms:0 blocking:false cascade_id:47f3f05e-b686-4d3d-9ae2-f215c03ab86b cascade_send_latency_ms:8 hydrate_slash_commands_latency_ms:0 load_trajectory_latency_ms:86 media_count:0 media_summaries_latency_ms:0 message_origin:AGENT_MESSAGE_ORIGIN_UNSPECIFIED resolve_agent_config_latency_ms:0 save_media_latency_ms:0 saved_media_count:0 status:OK total_latency_ms:95 trajectory_id:1792ef6c-8480-49ed-8a50-ab9e5f19ecf9]
+W0925 07:34:10.359458  824162 rules.go:493] Rule file /home/azureuser/GEMINI.md truncated by 53705 bytes (original 77611 bytes, limit 24000 bytes)
+W0925 07:34:10.359739  824162 rules.go:493] Rule file /home/azureuser/AGENTS.md truncated by 53746 bytes (original 77652 bytes, limit 24000 bytes)
+E0925 07:34:10.360295  824162 rules.go:370] Global rule truncated from 77611 characters to 23930 characters
+E0925 07:34:10.360506  824162 rules.go:370] Global rule truncated from 77611 characters to 23930 characters
+E0925 07:34:10.360682  824162 rules.go:370] Global rule truncated from 77652 characters to 23930 characters
+E0925 07:34:10.360848  824162 rules.go:370] Global rule truncated from 77652 characters to 23930 characters
+I0925 07:34:10.366652  824162 monitoring.go:311] [Sonar] Resolved active tags: [] (detected surface: "")
+I0925 07:34:10.366681  824162 monitoring.go:311] [Sonar] Resolved active tags: [] (detected surface: "")
+W0925 07:34:10.366695  824162 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0925 07:34:10.366703  824162 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+W0925 07:34:10.366708  824162 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "terminal_sandbox"
+W0925 07:34:10.366728  824162 declarative_config_loader.go:272] skipping component during resolution: empty component: pre-tool hook "command_assessor" is empty
+W0925 07:34:10.366737  824162 declarative_config_loader.go:272] skipping component during resolution: empty component: post-tool hook "command_assessor" is empty
+I0925 07:34:13.985220  824166 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdb5e7fff2b27e00b ResponseID: 8yO2avKAFaSf_uMP3riSgQs
+I0925 07:34:18.536703  824593 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7d98813d6a4f80e ResponseID: 9yO2avfoG8iN_PUPsb2VkQY
+I0925 07:34:24.288255  824759 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xcc8f12a88adaa56e ResponseID: -yO2auayOuia_uMPx7SWiQo
+I0925 07:34:30.666113  824940 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfd78e9cd5dbe37ae ResponseID: AyS2avS5IIuA_PUP2bewkQs
+I0925 07:34:36.021160  825087 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x3abf25b5a151d17c ResponseID: ByS2aoX4PIKe_uMPyrPH8Ao
+I0925 07:34:44.081630  825241 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2c073c2d7eae3474 ResponseID: ECS2avDIKIuR_uMPh_HHoAs
+I0925 07:34:48.537849  825406 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2bc86a4d438ee8cb ResponseID: FSS2aqyuGI6b_uMPqPa3mAc
+I0925 07:34:53.632107  825572 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x3d7ff0ea4c3a9610 ResponseID: GSS2aorkIsWk_PUPgfXliQc
+I0925 07:35:03.659587  825775 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x92ad16706ce36a29 ResponseID: JSS2aqC1DMiN_PUPzL6VkQY
+I0925 07:35:08.825539  825971 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1c87965ed5df0161 ResponseID: KSS2arE0gqb-4w-SxIyRBw
+I0925 07:35:12.874975  826101 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf6b3c9fd29224018 ResponseID: LiS2aoPOApSi_PUPwvKtwAc
+I0925 07:35:16.161892  824162 command_hook_executor.go:75] JSON hook command stderr: 
+E0925 07:35:16.162026  824162 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0925 07:35:16.639253  824162 command_hook_executor.go:75] JSON hook command stderr: 
+I0925 07:35:17.788039     156 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+I0925 07:38:49.865039  826691 input_loop.go:107] HandleUserInput called with text: "হ্যাঁ—এখানে Gemini-কে এখনই পুরো implementation করতে না দিয়ে আগে একটি গুরুত্বপূর্ণ correction সহ audit-first approach নেওয়াই ভালো।"
+I0925 07:38:49.865596  826687 conversation_manager.go:699] Forwarding user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0925 07:38:49.865621  826687 server.go:1831] Sending user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+

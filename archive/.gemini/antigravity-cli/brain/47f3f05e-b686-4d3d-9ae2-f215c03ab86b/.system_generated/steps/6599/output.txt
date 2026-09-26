@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+has_level_10_video == 1 count: 632
+idea_status counts: {'completed': 6, 'packaged': 23, 'new': 638}
+

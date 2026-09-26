@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+root      906599  3.4  0.2  39264 34796 pts/15   Ds+  20:22   0:07 /usr/bin/dpkg --status-fd 23 --no-triggers --unpack --auto-deconfigure --recursive /tmp/apt-dpkg-install-8sxY8k
+root      906600  0.0  0.0   2672  1840 pts/15   S+   20:22   0:00 sh -c -- (test -x /usr/lib/needrestart/dpkg-status && /usr/lib/needrestart/dpkg-status || cat > /dev/null)
+root      906601  0.0  0.0   2672   788 pts/15   S+   20:22   0:00 sh -c -- (test -x /usr/lib/needrestart/dpkg-status && /usr/lib/needrestart/dpkg-status || cat > /dev/null)
+root      906602  0.0  0.0   2672  1840 pts/15   S+   20:22   0:00 /bin/sh /usr/lib/needrestart/dpkg-status
+root      908779  0.0  0.0   7936  2576 pts/15   S+   20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/117-llvm-19_1%3a19.1.7-3+b1_amd64.deb
+root      908780  0.0  0.0      0     0 pts/15   Z+   20:25   0:00 [dpkg-deb] <defunct>
+root      908781 81.1  0.6 130632 99980 pts/15   Sl+  20:25   0:00 dpkg-deb --fsys-tarfile /tmp/apt-dpkg-install-8sxY8k/117-llvm-19_1%3a19.1.7-3+b1_amd64.deb
+azureus+  908785  0.0  0.0   7484  3312 pts/17   Ss+  20:25   0:00 bash -c ps aux | grep -i dpkg
+azureus+  908787  0.0  0.0   6928  2348 pts/17   S+   20:25   0:00 grep -i dpkg
+

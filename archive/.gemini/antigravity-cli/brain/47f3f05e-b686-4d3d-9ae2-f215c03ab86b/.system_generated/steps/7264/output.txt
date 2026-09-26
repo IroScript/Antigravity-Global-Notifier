@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+rdb_last_bgsave_status:err
+rdb_last_bgsave_time_sec:0
+1) "dir"
+2) ""
+

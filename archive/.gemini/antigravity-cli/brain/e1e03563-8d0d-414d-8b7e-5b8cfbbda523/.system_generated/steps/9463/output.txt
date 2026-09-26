@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/cookies/worker_1",
+                "Destination": "/app/cookies",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+

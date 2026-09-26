@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+GCS Object Verified:
+  Name:  azure_home_backup/azure_home_projects_source_backup.tar.gz
+  Size:  144043545 bytes
+  MD5:   nGrHoz0VvL1PobKFZjmWFA==
+  Time:  2026-09-25T16:03:53.247Z
+

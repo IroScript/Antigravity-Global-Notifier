@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+not installed
+
+Terminal ID: 0132d009-f55a-47c2-9450-356898e179e1

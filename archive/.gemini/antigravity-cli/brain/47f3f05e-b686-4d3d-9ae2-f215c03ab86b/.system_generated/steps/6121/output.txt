@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Paths distribution:
+  /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged: 282
+  Youtube Automation/PromptDatabase/output_packaged: 36
+  /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged: 3
+  C:/Users/Irak/Desktop/Youtube Pipeline/video/1Video10Sec: 1
+  C://Users//Irak//Desktop//Youtube Pipeline//PromptDatabase//output_packaged: 1
+  /home/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/video/1Video10Sec: 1
+  /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/scratch/test_packages/1.238.Level_10_Webquake_Drummer: 1
+

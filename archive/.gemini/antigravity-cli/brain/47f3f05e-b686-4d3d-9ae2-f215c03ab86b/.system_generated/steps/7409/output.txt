@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Operation Status: RUNNING Progress: 0
+Machine Image Resource Status: UPLOADING
+Machine Image JSON Summary:
+{
+  "name": "gcp-vm-full-backup-20260925",
+  "status": "UPLOADING",
+  "sourceInstance": "https://www.googleapis.com/compute/v1/projects/irak-mahmud-project/zones/us-central1-a/instances/instance-20260925-131309",
+  "totalStorageBytes": "0",
+  "disks": [
+    {
+      "deviceName": "instance-20260925-131309",
+      "diskSizeGb": "70",
+      "boot": true,
+      "type": "PERSISTENT",
+      "mode": "READ_WRITE"
+    }
+  ],
+  "machineType": "e2-medium"
+}
+

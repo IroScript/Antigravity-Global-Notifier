@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+azureus+    1689  0.0  0.1 1295560 28732 ?       Ssl  Sep22   1:18 /usr/local/bin/cloudflared tunnel --url http://localhost:3100
+azureus+    1701  0.0  0.1 1361168 28584 ?       Sl   Sep22   1:19 cloudflared tunnel --url http://localhost:18789
+azureus+    1703  0.0  0.1 1295304 27416 ?       Sl   Sep22   1:19 cloudflared tunnel --url http://127.0.0.1:6080
+azureus+    1716  0.0  0.0 181348  9800 ?        S    Sep22   0:14 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1717  0.0  0.2 1360656 32936 ?       Sl   Sep22   1:24 cloudflared tunnel --url http://127.0.0.1:8085
+azureus+    1989  0.0  0.1 1295560 30552 ?       Sl   Sep22   1:19 cloudflared tunnel --url http://localhost:7681
+azureus+   40846  0.0  0.2 1295304 33240 ?       Ssl  Sep23   1:04 /usr/bin/cloudflared tunnel --url http://127.0.0.1:8088
+azureus+   41342  0.0  0.2 1295564 33200 ?       Ssl  Sep23   1:04 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5173 --http-host-header localhost --logfile /home/azureuser/3D-Game-Design-Studio/cloud/cloudflared.log
+azureus+   42086  0.0  0.0 254056 11788 ?        Ss   Sep23   0:11 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+azureus+   42165  0.0  0.2 1295052 34360 ?       Ssl  Sep23   1:04 /usr/bin/cloudflared tunnel --url http://127.0.0.1:5176 --logfile /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating/logs/cloudflared.log
+azureus+  190241  0.0  0.1 1360912 28108 ?       Sl   Sep24   0:36 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+azureus+  218241  0.0  0.1 1295304 24064 ?       Sl   Sep24   0:31 cloudflared tunnel --url http://localhost:8000
+azureus+  757557  0.0  0.0   7484  3316 pts/12   Ss+  11:36   0:00 bash -c ps aux | grep -i "cloudflared\|python.*http\|caddy\|nginx"
+azureus+  757559  0.0  0.0   7084  2440 pts/12   S+   11:36   0:00 grep -i cloudflared\|python.*http\|caddy\|nginx
+

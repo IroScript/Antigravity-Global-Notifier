@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+1444 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1446 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1449 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1450 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1451 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1454 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+1556 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+266192 /home/azureuser/.local/bin/agy --dangerously-skip-permissions --model claude-opus-4-6-thinking --continue
+

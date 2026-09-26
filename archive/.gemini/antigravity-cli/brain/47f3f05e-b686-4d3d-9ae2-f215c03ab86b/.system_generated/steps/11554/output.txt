@@ -1,0 +1,30 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2270,7 +2270,13 @@
+     }
+   }
+ 
+-  async function showProperties(path) {
++  function refreshProperties() {
++    if (currentPropPath) {
++      showProperties(currentPropPath, true);
++    }
++  }
++
++  async function showProperties(path, forceRefresh = false) {
+     if (!path) {
+       if (currentPath && currentPath !== "THIS_PC") {
+         path = currentPath;
+@@ -2315,7 +2315,8 @@
+     modal.classList.add('active');
+ 
+     try {
+-      const res = await fetch(`/api/properties?path=${encodeURIComponent(path)}`);
++      const qUrl = `/api/properties?path=${encodeURIComponent(path)}${forceRefresh ? '&refresh=1' : ''}`;
++      const res = await fetch(qUrl);
+       if (!res.ok) {
+         throw new Error(`HTTP ${res.status}`);
+       }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

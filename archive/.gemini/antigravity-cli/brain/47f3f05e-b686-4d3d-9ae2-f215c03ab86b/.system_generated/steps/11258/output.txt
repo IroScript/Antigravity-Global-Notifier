@@ -1,0 +1,1 @@
+Encountered error in step execution: open /home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md: operation not permitted

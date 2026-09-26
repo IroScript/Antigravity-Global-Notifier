@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+root        1037  0.0  0.1  39896 17140 ?        Ss   Sep22   0:16 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+azureus+    1190  0.0  0.1 121092 28840 ?        Ss   Sep22   0:16 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+    1209  0.0  0.1 240684 29136 ?        Ss   Sep22   0:12 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+azureus+    1637  0.0  0.0  20776 10808 ?        S    Sep22   0:24 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1716  0.0  0.2 2099528 33772 ?       S    Sep22   0:24 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+root        1763  0.0  0.1  43740 30720 ?        Ss   Sep22   0:00 /usr/bin/python3 /usr/sbin/waagent -daemon
+root        1987  0.0  0.2 343044 37588 ?        Sl   Sep22   1:57 /usr/bin/python3 -u bin/WALinuxAgent-2.16.0.2-py3.12.egg -run-exthandlers
+azureus+   42086  0.0  0.1 254056 18340 ?        Ss   Sep23   0:13 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+root      204399 12.2  0.4 428924 79856 ?        Ssl  Sep24 231:29 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  637238  0.0  0.0  21536 14916 ?        Ss   06:33   0:07 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+azureus+  908417  0.0  0.0  22772 14936 pts/16   Ss+  20:25   0:01 python3 /home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py --daemon-6h
+root      912489  0.0  0.2 1015336 35612 ?       Sl   20:36   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912490  0.0  0.2 1015744 35400 ?       Sl   20:36   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912516  0.0  0.2 1015248 35600 ?       Sl   20:36   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912613  0.5  0.8 1331972 132752 ?      Sl   20:36   0:16 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912618  0.4  0.8 1265220 135060 ?      Sl   20:36   0:16 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912619  0.4  0.8 1265852 136360 ?      Sl   20:36   0:16 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912658  0.0  0.2 1015280 36052 ?       Sl   20:36   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root      912677  0.2  0.4 1272216 76600 ?       Sl   20:36   0:09 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+

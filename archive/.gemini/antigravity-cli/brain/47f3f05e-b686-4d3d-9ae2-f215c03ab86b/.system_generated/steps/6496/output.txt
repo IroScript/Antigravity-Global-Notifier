@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+On disk: Inode 14032319: mode=0o100664, size=14, magic=0xf30a
+   Extent: pblk 56217533, len 1
+=== CONTENT SAMPLE ===
+"923344657674"
+

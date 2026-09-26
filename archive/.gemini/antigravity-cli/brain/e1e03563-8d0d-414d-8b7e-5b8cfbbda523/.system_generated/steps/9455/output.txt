@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 172
+drwxr-xr-x 3 azureuser azureuser  4096 Sep 25 08:00 .
+drwxr-xr-x 5 azureuser azureuser  4096 Sep 25 08:00 ..
+drwxr-xr-x 4 azureuser azureuser  4096 Sep 25 08:00 chunks
+-rw-r--r-- 1 azureuser azureuser 71975 Sep 25 08:02 transcript.jsonl
+-rw-r--r-- 1 azureuser azureuser 78976 Sep 25 08:02 transcript_full.jsonl
+

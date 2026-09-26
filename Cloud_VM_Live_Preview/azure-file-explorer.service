@@ -1,0 +1,13 @@
+[Unit]
+Description=Windows 11 Azure File Explorer Web Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/azureuser/IrakIroan/azure_file_explorer
+ExecStart=/usr/bin/python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

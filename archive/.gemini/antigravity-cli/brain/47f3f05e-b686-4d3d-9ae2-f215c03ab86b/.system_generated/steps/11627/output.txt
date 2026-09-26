@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity
+/home/azureuser/.npm
+/home/azureuser/.openclaw/workspace/IROSCRIPT
+/home/azureuser/.webterminal/incoming_cmd_
+/home/azureuser/.webterminal/init_agy_sessions.sh
+/home/azureuser/.webterminal/latest_reply.json
+/home/azureuser/.webterminal/media
+/home/azureuser/.webterminal/pairing_code.txt
+/home/azureuser/.webterminal/project_groups.json
+/home/azureuser/.webterminal/target_phone.txt
+/home/azureuser/.webterminal/terminal_url.txt
+/home/azureuser/.webterminal/wa_auth
+/home/azureuser/.webterminal/wa_auth_backup_
+/home/azureuser/.webterminal/wa_auth_senderkeys_backup
+/home/azureuser/3D
+/home/azureuser/Article
+/home/azureuser/Frappe
+/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note
+/home/azureuser/kids_tube_with_folder_seection
+/home/azureuser/telegram
+

@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+DB 0 at 0x7f040003d468: page_size=4096, page_count=4605, db_size=18862080 bytes
+DB 1 at 0x7f040c04a498: page_size=4096, page_count=21, db_size=86016 bytes
+   Dumped to /tmp/dumped_tg_dbs/db_1_21p.sqlite
+DB 2 at 0x7f0410042058: page_size=4096, page_count=546, db_size=2236416 bytes
+DB 3 at 0x7f0414036f08: page_size=4096, page_count=21, db_size=86016 bytes
+   Dumped to /tmp/dumped_tg_dbs/db_3_21p.sqlite
+DB 4 at 0x7f04180b6048: page_size=4096, page_count=3431, db_size=14053376 bytes
+DB 5 at 0x7f0424001624: page_size=4096, page_count=11, db_size=45056 bytes
+   Dumped to /tmp/dumped_tg_dbs/db_5_11p.sqlite
+total 212K
+-rw-r--r-- 1 root root 84K Sep 25 11:00 db_1_21p.sqlite
+-rw-r--r-- 1 root root 84K Sep 25 11:00 db_3_21p.sqlite
+-rw-r--r-- 1 root root 44K Sep 25 11:00 db_5_11p.sqlite
+

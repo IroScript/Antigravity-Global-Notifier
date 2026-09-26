@@ -1,0 +1,6 @@
+
+The command exited with code 2.
+Output:
+ls: cannot access '/proc/634537/cwd': No such file or directory
+
+Terminal ID: bb3d07ef-d34a-4283-b0dc-dada7b072704

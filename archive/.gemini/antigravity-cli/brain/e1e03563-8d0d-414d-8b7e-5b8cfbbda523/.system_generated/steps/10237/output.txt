@@ -1,0 +1,81 @@
+
+The command exited with code 0.
+Output:
+root           4  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           5  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-rcu_gp]
+root           6  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-sync_wq]
+root           7  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-mm_percpu_wq]
+root          19  0.0  0.0      0     0 ?        S    Sep22   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          20  0.0  0.0      0     0 ?        S    Sep22   0:00 [rcu_exp_gp_kthread_worker]
+root          29  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/2:0H-events_highpri]
+root          35  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/1:0H-events_highpri]
+root          41  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/3:0H-events_highpri]
+root          47  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-inet_frag_wq]
+root          51  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-writeback]
+root          55  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-kintegrityd]
+root          56  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-kblockd]
+root          57  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-blkcg_punt_bio]
+root          62  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-tpm_dev_wq]
+root          63  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-quota_events_unbound]
+root          64  0.0  0.0      0     0 ?        I<   Sep22   0:01 [kworker/0:1H-kblockd]
+root          72  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-kthrotld]
+root          76  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-acpi_thermal_pm]
+root          77  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-nvme-wq]
+root          78  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-nvme-reset-wq]
+root          79  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-nvme-delete-wq]
+root          80  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-nvme-auth-wq]
+root          81  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-mld]
+root          82  0.0  0.0      0     0 ?        I<   Sep22   0:01 [kworker/1:1H-kblockd]
+root          83  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ipv6_addrconf]
+root          88  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-kstrp]
+root          90  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/u17:0]
+root         165  0.0  0.0      0     0 ?        I<   Sep22   0:01 [kworker/3:1H-kblockd]
+root         185  0.0  0.0      0     0 ?        I<   Sep22   0:01 [kworker/2:1H-kblockd]
+root         214  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-hv_vmbus_con]
+root         215  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-hv_vmbus_rescind]
+root         216  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-hv_pri_chan]
+root         217  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-hv_sub_chan]
+root         220  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-scsi_tmf_0]
+root         242  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ext4-rsv-conversion]
+root         407  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-cryptd]
+root         416  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ib-comp-wq]
+root         417  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ib-comp-unb-wq]
+root         418  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ib_mcast]
+root         419  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ib_nl_sa_wq]
+root         525  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-ext4-rsv-conversion]
+root        1037  0.0  0.1  39896 17140 ?        Ss   Sep22   0:16 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+azureus+    1190  0.0  0.1 121092 28840 ?        Ss   Sep22   0:16 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+    1197  0.0  0.6 237068 109880 ?       SNsl Sep22   0:14 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe schedule
+azureus+    1199  0.0  0.6 166504 111276 ?       Ss   Sep22   0:01 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+    1209  0.0  0.1 240684 29136 ?        Ss   Sep22   0:12 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+root        1519  0.0  0.0      0     0 ?        I<   Sep22   0:00 [kworker/R-dio/nvme0n1p1]
+azureus+    1637  0.0  0.0  20776 10808 ?        S    Sep22   0:24 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1716  0.0  0.2 2099528 33772 ?       S    Sep22   0:24 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+root        1763  0.0  0.1  43740 30720 ?        Ss   Sep22   0:00 /usr/bin/python3 /usr/sbin/waagent -daemon
+root        1987  0.0  0.2 343044 37588 ?        Sl   Sep22   1:55 /usr/bin/python3 -u bin/WALinuxAgent-2.16.0.2-py3.12.egg -run-exthandlers
+azureus+    1997  0.0  0.0  21124 10320 ?        S    Sep22   0:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(6)
+azureus+   42086  0.0  0.1 254056 18340 ?        Ss   Sep23   0:13 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+root      204399 12.2  0.4 428924 77204 ?        Ssl  Sep24 224:39 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  307848  5.1  0.9 629320 156968 ?       Rl   Sep24  83:24 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+  307856  0.0  0.0  21124 10332 ?        S    Sep24   0:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(7)
+azureus+  637238  0.0  0.0  21536 14912 ?        Ss   06:33   0:07 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+root      890527  0.0  0.0      0     0 ?        I    19:17   0:00 [kworker/1:2-events]
+root      892763  0.0  0.0      0     0 ?        I    19:25   0:00 [kworker/3:2-mm_percpu_wq]
+root      902422  0.0  0.0      0     0 ?        I    19:59   0:00 [kworker/u16:4-flush-259:4]
+root      902423  0.0  0.0      0     0 ?        I    19:59   0:00 [kworker/u16:6-flush-259:4]
+root      902427  0.0  0.0      0     0 ?        I    19:59   0:00 [kworker/u16:10-ext4-rsv-conversion]
+root      904049  0.0  0.0      0     0 ?        I    20:04   0:00 [kworker/0:2-events_power_efficient]
+root      904181  0.0  0.0      0     0 ?        I    20:05   0:00 [kworker/2:1-mm_percpu_wq]
+root      904411  0.0  0.0      0     0 ?        I    20:05   0:00 [kworker/3:0-events]
+root      904420  0.0  0.0      0     0 ?        I    20:05   0:00 [kworker/0:3-cgroup_free]
+root      904544  0.0  0.0      0     0 ?        I    20:05   0:00 [kworker/u16:1-flush-259:4]
+root      905126  0.0  0.0      0     0 ?        I    20:11   0:00 [kworker/1:1-mm_percpu_wq]
+root      905681  0.0  0.0      0     0 ?        I    20:16   0:00 [kworker/u16:0-flush-259:4]
+root      907241  0.0  0.0      0     0 ?        I    20:23   0:00 [kworker/2:0-events]
+azureus+  908417  0.0  0.0  21748 14784 pts/16   Ss+  20:25   0:00 python3 /home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py --daemon-6h
+root      910545  0.0  0.0      0     0 ?        I    20:28   0:00 [kworker/2:2-events]
+root      910634  0.0  0.0      0     0 ?        I    20:28   0:00 [kworker/0:0-events]
+

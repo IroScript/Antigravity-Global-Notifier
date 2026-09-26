@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+  File "/usr/local/lib/python3.10/dist-packages/playwright/async_api/_generated.py", line 9742, in title
+    return mapping.from_maybe_impl(await self._impl_obj.title())
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_page.py", line 797, in title
+    return await self._main_frame.title()
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_frame.py", line 774, in title
+    return await self._channel.send("title")
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/usr/local/lib/python3.10/dist-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Target crashed 
+INFO:     172.19.0.1:34390 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:34404 - "GET /health HTTP/1.1" 200 OK
+INFO:     Started server process [10]
+INFO:     Waiting for application startup.
+2026-09-25 11:01:27,633 [INFO] [Worker-worker_1] Starting up worker_1...
+2026-09-25 11:01:28,954 [INFO] [Worker-worker_1] Launching persistent context via official CloakBrowser engine...
+2026-09-25 11:01:29,105 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-25 11:01:29,109 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-25 11:01:29,111 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+

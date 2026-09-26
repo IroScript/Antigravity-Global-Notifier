@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/IrakIroan/full_filesystem/:
+total 13G
+-rw-rw-r-- 1 azureuser azureuser  130 Sep 25 19:59 PARTS_MD5_CHECKSUM.txt
+-rw-rw-r-- 1 azureuser azureuser  868 Sep 25 19:37 RESTORE_INSTRUCTIONS.txt
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_00.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_01.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:36 gcp_home_backup_part_02.tar.gz
+-rw-rw-r-- 1 azureuser azureuser 3.0G Sep 25 19:37 gcp_home_backup_part_03.tar.gz
+

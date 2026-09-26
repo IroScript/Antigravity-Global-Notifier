@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+[master (root-commit) 128f999] Initialize IrakIroan workspace
+ Committer: Debian <azureuser@FatehAli>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 37 insertions(+)
+ create mode 100644 AGENTS.md
+ create mode 100644 README.md
+

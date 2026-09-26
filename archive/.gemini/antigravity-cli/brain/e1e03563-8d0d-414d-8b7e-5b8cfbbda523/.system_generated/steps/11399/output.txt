@@ -1,0 +1,26 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -384,7 +384,13 @@
+         return {"error": "no active page"}
+     title = await active_page.title()
+     url = active_page.url
+-    body_text = await active_page.evaluate("() => (document.body.innerText || '').substring(0, 1000)")
++    dom_info = await active_page.evaluate("""() => {
++        const assistantTurns = Array.from(document.querySelectorAll('div[data-message-author-role="assistant"]')).map(d => (d.innerText || '').substring(0, 300));
++        const articles = Array.from(document.querySelectorAll('article')).map(a => (a.innerText || '').substring(0, 300));
++        const errorBanners = Array.from(document.querySelectorAll('[class*="error" i], [class*="warning" i], [class*="alert" i]')).map(e => (e.innerText || '').substring(0, 100));
++        const last1500Chars = (document.body.innerText || '').slice(-1500);
++        return { assistantTurns, articles, errorBanners, last1500Chars };
++    }""")
+     cookies = await context.cookies() if context else []
+     return {
+         "title": title,
+@@ -391,4 +391,4 @@
+-        "body_snippet": body_text,
++        "dom_info": dom_info,
+         "cookies_count": len(cookies),
+         "has_session_cookie": any("session-token" in c.get("name", "") for c in cookies)
+     }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

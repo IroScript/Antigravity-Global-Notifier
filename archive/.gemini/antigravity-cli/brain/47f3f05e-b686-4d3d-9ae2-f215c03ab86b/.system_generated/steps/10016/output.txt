@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+15
+9512891	/home/azureuser/IrakIroan/database_backups
+17255729922	/home/azureuser/IrakIroan/full_filesystem
+

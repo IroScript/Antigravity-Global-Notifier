@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+(1, 'Rice Titan Harvester')
+(2, 'The Paddy Ocean Vacuum')
+(3, 'Rice-Field Spider Colossus')
+(4, 'The Monsoon Harvesting Ark')
+(5, 'Paddy Ring Megaharvester')
+(6, 'Sky Reaper Rice Fortress')
+(7, 'The Rice Comb Superstructure')
+(8, 'Paddy-Gulping Harvest Worm')
+(9, 'Rice Moon Harvester')
+(10, 'The Infinite Rice Factory')
+Max idea ID: 645
+

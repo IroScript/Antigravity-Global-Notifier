@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Positions: Home=44955, Monitor=45285, Back=45809
+VERIFIED: Back button is at the MOST RIGHT SIDE!
+

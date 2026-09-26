@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Offset 223606734848: b'urn:c2pa:d111beca-3206-c138-d32a-4b81ed93f8d1\x00\x00\x00\x198'
+Offset 223610929152: b'urn:c2pa:d111beca-3206-c138-d32a-4b81ed93f8d1\x00\x00\x00\x198'
+Offset 223615123456: b'urn:c2pa:9ec98966-749a-90eb-55a6-42e812e4c538\x00\x00\x00\x198'
+Offset 223619317760: b'urn:c2pa:9ec98966-749a-90eb-55a6-42e812e4c538\x00\x00\x00\x198'
+Offset 223623512064: b'urn:c2pa:a3188fc7-24f7-75a2-536c-4c24fdedff86\x00\x00\x00\x198'
+

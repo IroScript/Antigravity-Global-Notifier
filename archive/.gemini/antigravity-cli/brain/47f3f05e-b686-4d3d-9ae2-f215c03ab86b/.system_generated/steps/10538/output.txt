@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+COMMAND  PID      USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+python3 1716 azureuser 3u  IPv4  10049      0t0  TCP *:8085 (LISTEN)
+

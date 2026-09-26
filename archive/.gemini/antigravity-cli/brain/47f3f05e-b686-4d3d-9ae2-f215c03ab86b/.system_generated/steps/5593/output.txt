@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+debugfs 1.47.2 (1-Jan-2025)
+debugfs: cd <13893633>
+debugfs: ls -d
+ 13893633  (12) .    2  (12) ..    1966081  (16) .gradle   
+ 1966086  (16) .config    1966093  (24) Ask-And-Research   
+ 1966096  (20) AGY-MASTER   
+ 13893636  (56) MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt   
+ 13893644  (16) .cache    13893653  (20) .webterminal    13893638  (20) tmp   
+ 13893646  (16) .gemini    13893660  (12) .npm    13893637  (16) .local   
+ 13894206  (36) .sudo_as_admin_successful    13894259  (12) .ssh   
+ 13894283  (340) .npm-global    393217  (3440) .openclaw   
+

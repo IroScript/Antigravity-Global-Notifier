@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'uuid', 'VARCHAR', 1, None, 0)
+(2, 'idea_id', 'INTEGER', 1, None, 0)
+(3, 'prompt_type', 'VARCHAR', 0, None, 0)
+(4, 'title', 'VARCHAR', 0, None, 0)
+(5, 'prompt_text', 'VARCHAR', 1, None, 0)
+(6, 'negative_prompt', 'VARCHAR', 0, None, 0)
+(7, 'system_instruction', 'VARCHAR', 0, None, 0)
+(8, 'model_target', 'VARCHAR', 0, None, 0)
+(9, 'generation_type', 'VARCHAR', 0, None, 0)
+(10, 'aspect_ratio', 'VARCHAR', 0, None, 0)
+(11, 'duration_seconds', 'FLOAT', 0, None, 0)
+(12, 'language', 'VARCHAR', 0, None, 0)
+(13, 'status', 'VARCHAR', 1, None, 0)
+(14, 'version', 'INTEGER', 1, None, 0)
+(15, 'prompt_hash', 'VARCHAR', 0, None, 0)
+(16, 'created_at', 'DATETIME', 1, None, 0)
+(17, 'updated_at', 'DATETIME', 1, None, 0)
+(18, 'level', 'INTEGER', 0, None, 0)
+(19, 'level_name', 'TEXT', 0, None, 0)
+(20, 'structure_type', 'TEXT', 0, None, 0)
+(21, 'reference_image_prompt_id', 'INTEGER', 0, None, 0)
+Audio compliant: 2568
+

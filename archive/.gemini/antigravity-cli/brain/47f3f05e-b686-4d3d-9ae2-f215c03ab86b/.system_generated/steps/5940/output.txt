@@ -1,0 +1,5 @@
+
+The command exited with code 2.
+Output:
+ls: cannot access '/recovered/WINDOW_0753/MAGIC-2/text/x-script.python'$'\n''-/': No such file or directory
+

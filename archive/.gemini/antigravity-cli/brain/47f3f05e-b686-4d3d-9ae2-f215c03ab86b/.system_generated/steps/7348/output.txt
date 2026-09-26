@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+Uploading: database_backups/DATABASE_MANIFEST_SHA256.txt (1,010 bytes)... ALREADY_EXISTS_AND_PROTECTED (HTTP 403 Overwrite Blocked)
+Uploading: database_backups/azure_postgres_all_databases.sql (279,107 bytes)... ALREADY_EXISTS_AND_PROTECTED (HTTP 403 Overwrite Blocked)
+Uploading: database_backups/azure_redis_13000_keys.txt (43 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/azure_redis_13000_keys.txt/1790351608326302)
+Uploading: database_backups/azure_redis_6379_dump.rdb (88 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/azure_redis_6379_dump.rdb/1790351608620617)
+Uploading: database_backups/azure_youtube_pipeline_consistent.db (40,792,064 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/azure_youtube_pipeline_consistent.db/1790351610020959)
+Uploading: database_backups/gcp_dumps/gcp_cockroach_migrations_data.txt (237 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_cockroach_migrations_data.txt/1790351610319832)
+Uploading: database_backups/gcp_dumps/gcp_cockroach_schema.sql (11,984 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_cockroach_schema.sql/1790351610618868)
+Uploading: database_backups/gcp_dumps/gcp_frappe_mariadb.sql (9,226,115 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_frappe_mariadb.sql/1790351611221037)
+Uploading: database_backups/gcp_dumps/gcp_mariadb_all_databases.sql (0 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_mariadb_all_databases.sql/1790351611522097)
+Uploading: database_backups/gcp_dumps/gcp_postgres_all_databases.sql (274,467 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_postgres_all_databases.sql/1790351611920722)
+Uploading: database_backups/gcp_dumps/gcp_redis_6379_dump.rdb (88 bytes)... DONE (HTTP 200, ID: all-vm-backups-vault-irak-2026/database_backups/gcp_dumps/gcp_redis_6379_dump.rdb/1790351612220506)
+

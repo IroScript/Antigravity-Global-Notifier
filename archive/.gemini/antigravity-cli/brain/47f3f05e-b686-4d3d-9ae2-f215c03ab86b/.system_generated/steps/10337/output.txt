@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/last_user_prompt.txt:Azure FatehAli + GCP instance-20260925-131309 — persistent VM data-এর zero-unverified-loss backup।
+/home/azureuser/last_user_prompt.txt:  --source-instance=instance-20260925-131309 \
+/home/azureuser/last_user_prompt.txt:  --source-instance-zone=us-central1-a \
+/home/azureuser/last_user_prompt.txt:3. source instance = "instance-20260925-131309"
+/home/azureuser/last_user_prompt.txt:- GCP Machine Image থেকে instance creation possible
+

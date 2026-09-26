@@ -1,0 +1,12 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-6050
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6050.log
+Log output:
+Starting scan at offset 180.0 GB...
+Scanned up to 183.1 GB... Found 0 MP4 headers
+Scanned up to 186.2 GB... Found 0 MP4 headers
+Scanned up to 189.4 GB... Found 0 MP4 headers
+Scanned up to 192.5 GB... Found 0 MP4 headers
+Scanned up to 195.6 GB... Found 0 MP4 headers
+
+Last progress: 6s ago

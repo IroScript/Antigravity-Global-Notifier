@@ -1,0 +1,34 @@
+The search for ""iam.managed.disableServiceAccountKeyCreation" "secure by default" opt out or disable" returned the following summary:
+The organization policy `iam.managed.disableServiceAccountKeyCreation` is part of Google Cloud's **"secure-by-default"** baseline, which is automatically enforced for all organizations created on or after May 3, 2024[1][2][3].
+
+This policy is designed to improve security by preventing the creation of long-lived, user-managed service account keys, which are a common vector for security compromises[4][5][6].
+
+### Can you opt out or disable it?
+Yes, you can disable or override this policy, but it requires specific administrative privileges[7][8]. Because it is an organization-level policy, you cannot override it if you only have project-level permissions[9][10].
+
+### How to Disable or Modify the Policy
+To modify this constraint, you must have the **Organization Policy Administrator** (`roles/orgpolicy.policyAdmin`) or **Organization Administrator** (`roles/resourcemanager.organizationAdmin`) role[7][10][8].
+
+1.  **Navigate to Organization Policies:** Go to the Google Cloud Console, select your organization, and navigate to **IAM & Admin > Organization policies**[10][8].
+2.  **Locate the Constraint:** Search for `iam.managed.disableServiceAccountKeyCreation`[10][8].
+3.  **Manage/Edit Policy:** Click on the policy name. If it is enforced at the organization level, you can choose to:
+    *   **Disable it:** Change the enforcement state to "Off" (or "Not enforced")[8].
+    *   **Create an Exception:** Depending on your needs, you may be able to set the policy to apply only to specific projects or folders rather than the entire organization[6][10].
+
+### Important Considerations
+*   **Legacy vs. Managed Constraints:** Google is transitioning from legacy policies (e.g., `iam.disableServiceAccountKeyCreation`) to managed versions (`iam.managed.disableServiceAccountKeyCreation`)[11][10]. If you are still blocked after modifying one, **check if both the legacy and managed versions are enforced**[10]. You may need to disable both to fully enable key creation[10].
+*   **Security Recommendation:** Google strongly recommends using more secure alternatives to long-lived keys, such as **Workload Identity Federation** or service account impersonation, rather than disabling this policy[7][5][12]. If you must use keys, ensure they are rotated frequently and managed according to security best practices[3][5].
+
+Sources:
+[1] [techcolumnist.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4_Z-zezSmmRQNgMc-M78WK3WN3rTE0ociA6_sKE0GnePb15QezQMO3MYr5vETqtslmWS1giFepUe4r577np4uiDBXS4ZydauAmTWVa8USvkgtWgveCbEZlXbITMlYST_-tMa-6UfKcWHPUCNvy5tSYS4c2wEymJuBhInBGhGnmuEoEBR3Sn72-d7C3hAt1G0WMHKQ_mW7H-8RWGxrIDbr)
+[2] [jayendrapatil.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUCdWDRzADGQpf7SLtnOtfuVrDNHCL_WRxLAyRp8nloET54YCvRX0Eai06dyzOtSiFqOpalMxWC8llK92WzmFL7q_CGvV859v1eY8FdODka6YDSQjlNkIHWmnvAUEnFuc5B3qO)
+[3] [techcolumnist.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESO4aFLMM8PGyNeFtuGRNkbA-2uQpCKo0TUumngYF2TguKDpncf5AQziy8iosmkVbZuKHs6bz0UGWGRHWkG5cPyX54gsC7ksRSkgx3c1yfAFULR9qL8puHGrnInJx74Bio6kfaWcOTYz3_OMKVCMPhlSRddOgrcnEL1ouZTciQdFSELR78HV_dpMBgBZzsD9zkmCeuB7yepLUgAze1GQ==)
+[4] [datadoghq.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlyeUTotr7E-QSYic5uPlZoFP7hq-vKo2-cqxjoiJKsT6p228zb-NfRMXAMHWLzkhgeZPMBYT2Hmv9Fxz9l5jobkegzb4mIB5RzO_En4V4xWlN8p6k0jubhG2tJU6PPU9SkK73rFgmX8DFGKgMnzX7VQTV60ZJi70=)
+[5] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFks8cduBqpo6Ze5fkO-H5xK3HBk_ZeOjdDbIbV_KROwMgRxEEO23UuYEcTGpjpKfz9tXDFK7f60olG-JNNfcPKBjJ4mugQLSEJ0VykKZpYst1GH2Wt1d37z2oDvWeyyPY5ZFNA9fms1HIguAvvNso=)
+[6] [trendmicro.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYcMXZHWPE6tfu2LQ8Kbtfex_eT3N00u7Nog6rWCJeBKQqt1oLgAFulzg75CCdGqYp6G3NJoBToMV0wHfc9nPjjUsUBs_3BwsEcxrcmXdRGWWaORlgvNeV3r4Snqa3OwN0SsAz0UTl-kM0pUCUggb--3QpBD1hy_z99nUj16G5d03PuHM_yCmlXIKlP7RsYRNh_KjqgRHbQLlFZHhZZDrqNDr4auLzMb5yA3_yAncW6GdyJcCx80SviFZ-boTqrSlx)
+[7] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Vme56nKnicRtVQeNtkKbOf9TZ-f4-2x0oX7_HaqD0QpJFkKZmrc0FCo9sj86avavpLOG9sB4bJSSWa4nxKTw5dr-nD62cNyd_-1DbkGXNV0XPEu5kYjPHIRUSpMJBWGFph_ObJB4xhbM1lo1teuNdWkPcCoEyzc9f9NkoAHWH5VPDZ0_5VJXzP7SY--mPieOhEtf0ODiMEd_nuWJGe_7piSUQzZzC0b-2FfYqnstY941Y0MNSiNAo9jTrw==)
+[8] [subsplash.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTjW1ue46U6yPYQp3ztVGVbVCkcDoKc_TZ0twLfIVKrLK_GSc3hccnPACGY8xKBEt6Od3EiYtVeD85BNdho3kittvx2MWDXOLMXsssNfbN5EWyMrNpBBgkNA8jNR2pMhifXALVpu-jGFTUb88z2eq-tMKr4_cvAk4iGI_LImDjerY9T-DuXtEMLqdjKbwSsK1-reUMxi4jpXXZefEeosF5D7n_fUxCaV2Lgc_WINk=)
+[9] [google.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Vme56nKnicRtVQeNtkKbOf9TZ-f4-2x0oX7_HaqD0QpJFkKZmrc0FCo9sj86avavpLOG9sB4bJSSWa4nxKTw5dr-nD62cNyd_-1DbkGXNV0XPEu5kYjPHIRUSpMJBWGFph_ObJB4xhbM1lo1teuNdWkPcCoEyzc9f9NkoAHWH5VPDZ0_5VJXzP7SY--mPieOhEtf0ODiMEd_nuWJGe_7piSUQzZzC0b-2FfYqnstY941Y0MNSiNAo9jTrw==)
+[10] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEblIqgDjFfhg3rrridfPlAg-lmEuO9sSkMxqqnnTTTB-xVh4ijvkOFDfadvtw8VLlbrQsaG5isqiGEZNLrDjLHznW1AS0il4biyYcN_s-jaoSivNAkkdpZ3FkhNdEfHola5faGzfS5bpzgXE6oJJ8gYQJ69bkU_Xi9B30FjMM5MdNfftl1XzyfKDaKAFk62n-YQFPLgvpx7wJ7dD8=)
+[11] [digitalden.cloud](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJd9EQJVS9LkERAK8x5KwjsMsERLiJpt5vjmer6-yy-t8Zw5DgwQhjBgoEJ7w9Yst_KSzJnhesuCFM_oEX8InYBVjCbtuI-d32J03mA-c7yIfgLV522Rgf4UitmVXclTRwy86gaOYlRiVjDjcsrtvu9K0m7nzW)
+[12] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERUhSNWEMEqJv5YsjPFstbV65qGxsAbaFPvrDBmCpjV6czUQzd-p1IsP1fWnxKLsRHluMBiXaFYsPPQxT9txrKW49rkVzmNsSgTLH9irdIhSEaXFPwZSTKE22D5T1ouio=)

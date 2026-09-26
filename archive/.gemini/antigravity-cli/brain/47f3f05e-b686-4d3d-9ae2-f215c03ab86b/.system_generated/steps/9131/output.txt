@@ -1,0 +1,7 @@
+
+The command exited with code 1.
+Output:
+Failed to create file system for "personaldrive:": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+

@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/SKILL.md:28:**Hooks**       | `hooks.json`                 | Lifecycle Event           | Running scripts/commands at specific agent lifecycle points (e.g., pre-tool execution). | [Hooks Guide](./docs/hooks.md)
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/plugins.md:19:├── hooks.json        # Optional: Lifecycle hooks run by the plugin
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/plugins.md:53:    *   **Hooks** defined in `plugins/<name>/hooks.json` are registered and run
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md:1:# Lifecycle Hooks (`hooks.json`)
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md:8:Hooks are configured in a single `hooks.json` file placed in your customization
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md:9:root directory (e.g., `.agents/hooks.json`).
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md:15:The `hooks.json` file is a JSON object where each top-level key is a **hook
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md:126:    The working directory is set to the directory containing `hooks.json`.
+

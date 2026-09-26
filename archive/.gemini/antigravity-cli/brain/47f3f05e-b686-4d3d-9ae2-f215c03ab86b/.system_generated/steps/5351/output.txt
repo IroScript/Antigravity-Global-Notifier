@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_deleted_report.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -34,7 +34,7 @@
+ 
+ ২. *আর্কিটেকচার ডিরেক্টরি:*
+    - `/home/azureuser/AGY-MASTER/`
+-   - `MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt`
++   - মূল আর্কিটেকচার টেক্সট ফাইল
+ 
+ ৩. *প্রজেক্ট ওয়ার্কস্পেসসমূহ:*
+    - `Frappe-erp-Alco`
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

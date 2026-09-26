@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+not invoked
+
+Terminal ID: d52abc6e-e1e7-4e50-930b-853d4fcf4548

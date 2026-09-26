@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+          -1 2026-09-25 15:35:27        -1 Azure_VM_BackUP
+          -1 2026-09-25 15:35:28        -1 GCP_VM_BackUP
+          -1 2026-09-25 14:54:39        -1 All_VM_BackUps
+          -1 2026-09-26 08:31:46        -1 Azure_VM_Live_Backup_Fateh_Ali
+

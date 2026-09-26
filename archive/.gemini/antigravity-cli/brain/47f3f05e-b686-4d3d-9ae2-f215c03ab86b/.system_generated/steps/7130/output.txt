@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+Failed to backend: command "list-ids" failed: command not found
+

@@ -1,0 +1,13 @@
+
+The command exited with code 3.
+Output:
+
+🛑 [RCLONE READ-ONLY HARD BLOCK]
+Command: rclone copy /tmp/live_sync_probe gdrive:Azure_VM_BackUP/live_sync_test -v
+Status: PERMANENTLY DENIED
+Incident ID: INC-RO-20260926075414-9efec1
+Reason: Uploading/writing to remote 'gdrive:Azure_VM_BackUP/live_sync_test' is prohibited in READ-ONLY mode.
+Security: Remote storage is strictly locked in READ-ONLY mode by Iraq Bhai.
+
+Failed to ls: directory not found
+

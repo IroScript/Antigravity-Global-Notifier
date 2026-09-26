@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 14:30:48,885 [INFO] [Worker-worker_1] Clicked dialog element: text=Got it
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-09-26 14:30:49,931 [INFO] [Worker-worker_1] ✅ Worker successfully authenticated to ChatGPT session!
+2026-09-26 14:30:53,154 [INFO] [Worker-worker_1] Applying escalating jitter delay (+0.5s/process, action #1): 5.32s [Range: 2.0s - 6.0s]...
+INFO:     127.0.0.1:60316 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 14:31:08,578 [INFO] [Worker-worker_1] Inserting 1758 chars into ChatGPT editor...
+2026-09-26 14:31:13,729 [INFO] [Worker-worker_1] Clicked Send button.
+2026-09-26 14:31:13,729 [INFO] [Worker-worker_1] Waiting for streaming response (max 90s)...
+2026-09-26 14:31:15,765 [INFO] [Worker-worker_1] Stream started! (chars=1, isStop=True)
+2026-09-26 14:30:34,675 [INFO] [Worker-worker_2] Navigating to https://chatgpt.com for session verification...
+2026-09-26 14:30:46,190 [INFO] [Worker-worker_2] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43736 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 14:31:00,883 [INFO] [Worker-worker_2] Applying escalating jitter delay (+0.5s/process, action #1): 2.77s [Range: 2.0s - 6.0s]...
+2026-09-26 14:31:13,661 [INFO] [Worker-worker_2] Inserting 1754 chars into ChatGPT editor...
+2026-09-26 14:31:17,560 [INFO] [Worker-worker_2] Clicked Send button.
+2026-09-26 14:31:17,560 [INFO] [Worker-worker_2] Waiting for streaming response (max 90s)...
+2026-09-26 14:31:19,073 [INFO] [Worker-worker_2] Stream started! (chars=0, isStop=True)
+

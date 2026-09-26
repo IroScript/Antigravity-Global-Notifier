@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"artifactDirectoryPath":"/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b","conversationId":"47f3f05e-b686-4d3d-9ae2-f215c03ab86b","modelName":"gemini-3.8-flash-high","stepIdx":8869,"toolCall":{"args":{"Action":"status","TaskId":"47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8697","toolAction":"Checking upload status","toolSummary":"Trigger hook and check upload"},"name":"manage_task"},"transcriptPath":"/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript_full.jsonl","workspacePaths":["/home/azureuser"]}

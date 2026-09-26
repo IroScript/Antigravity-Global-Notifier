@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Transactions of Filesystemblock 55582752 in Journal
+FS-Block	 Journal	Transact	
+ext4magic : EXIT_SUCCESS
+

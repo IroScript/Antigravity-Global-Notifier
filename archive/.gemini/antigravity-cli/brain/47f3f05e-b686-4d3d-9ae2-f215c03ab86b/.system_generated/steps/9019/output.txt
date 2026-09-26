@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+{
+  "start_time": "2026-09-25T20:25:34.570817+00:00",
+  "total_planned_seconds": 21600,
+  "total_cycles_completed": 39,
+  "cumulative_tests_run": 3939,
+  "cumulative_denials": 3939,
+  "cumulative_failures": 0,
+  "heartbeats": [
+    {
+      "cycle": 1,
+      "elapsed_seconds": 0.0,
+      "remaining_seconds": 21600.0,
+      "timestamp": "2026-09-25T20:25:36.763133+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 2,
+      "elapsed_seconds": 122.2,
+      "remaining_seconds": 21477.8,
+      "timestamp": "2026-09-25T20:27:39.062431+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 3,
+      "elapsed_seconds": 244.5,
+      "remaining_seconds": 21355.5,
+      "timestamp": "2026-09-25T20:29:41.092358+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 4,
+      "elapsed_seconds": 366.5,
+      "remaining_seconds": 21233.5,
+      "timestamp": "2026-09-25T20:31:43.146616+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+

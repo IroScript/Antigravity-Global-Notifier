@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 76
+drwx------ 3 azureuser azureuser  4096 Sep 26 10:00 .
+drwxrwxr-x 3 azureuser azureuser  4096 Sep 26 10:00 ..
+-rw-rw-r-- 1 azureuser azureuser    56 Sep 14 15:47 .gitconfig
+drwx------ 5 azureuser azureuser  4096 Sep 26 10:00 .openclaw
+-rw-r--r-- 1 azureuser azureuser 33755 Sep 18 07:32 AGY_500_AGENT_RELIABILITY_ENGINE_ARCHITECTURE.md
+-rw-r--r-- 1 azureuser azureuser  8306 Sep 18 08:45 AGY_ISOLATED_IMPLEMENTATION_REPORT.md
+-rw-rw-r-- 1 azureuser azureuser  8350 Sep  1 15:47 USER_PERSONAL_AGENT_CONTEXT.md
+

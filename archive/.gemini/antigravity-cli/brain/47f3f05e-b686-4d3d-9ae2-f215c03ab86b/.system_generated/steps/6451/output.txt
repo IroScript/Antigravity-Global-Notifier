@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+# 🌌 ANTIGRAVITY (AGY) COMPLETE SYSTEM ARCHITECTURE & WORKFLOW MANUAL
+> **Author:** Antigravity Intelligence System (`agy`)
+> **Created For:** ইরাক ভাইয়া (Iraq Bhai)
+> **Target Environment:** 24/7 Linux Cloud VM (`us-central1-a`)
+> **Document Status:** 100% Comprehensive · Zero Gap Specification
+
+---
+
+## 📑 সূচিপত্র (Table of Contents)
+1. [সিস্টেম ওভারভিউ ও হার্ডওয়্যার আর্কিটেকচার (Cloud Infrastructure)](#1-সিস্টেম-ওভারভিউ-ও-হার্ডওয়্যার-আর্কিটেকচার)
+2. [সিস্টেমড সার্ভিস ও পারসিস্টেন্স ডেমন্স (Systemd Services & Daemons)](#2-সিস্টেমড-সার্ভিস-ও-পারসিস্টেন্স-ডেমন্স)
+3. [টিমাক্স মাল্টি-এজেন্ট উইন্ডো ম্যাপিং (Tmux 11-Window Matrix)](#3-টিমাক্স-মাল্টি-এজেন্ট-উইন্ডো-ম্যাপিং)
+4. [হোয়াটসঅ্যাপ ব্রিজ ইঞ্জিন ও লাইভ স্ট্রিমিং (WhatsApp Baileys Bridge)](#4-হোয়াটসঅ্যাপ-ব্রিজ-ইঞ্জিন-ও-লাইভ-স্ট্রিমিং)
+5. [অ্যান্টিগ্র্যাভিটি সিএলআই কোর ইঞ্জিন (AGY CLI Core Engine)](#5-অ্যান্টিগ্র্যাভিটি-সিএলআই-কোর-ইঞ্জিন)
+6. [সাব-এজেন্ট রুলস, নির্দেশনা ও বাউন্ডারি গার্ড (Sub-Agent Rules & Boundary Guard)](#6-সাব-এজেন্ট-রুলস-নির্দেশনা-ও-বাউন্ডারি-গার্ড)
+7. [এন্ড-টু-এন্ড ডেটা ও মেসেজ ফ্লো (End-to-End Execution Lifecycle)](#7-এন্ড-টু-এন্ড-ডেটা-ও-মেসেজ-ফ্লো)
+
+---
+
+## 1. সিস্টেম ওভারভিউ ও হার্ডওয়্যার আর্কিটেকচার
+
+### ১.১ ক্লাউড ভিএম স্পেসিফিকেশন (GCP VM Specs)
+- **প্রোভাইডার:** Google Cloud Platform (GCP)
+- **মেশিন টাইপ:** `c3-standard-4` (Sapphire Rapids Architecture)
+- **প্রসেসর (vCPU):** ৪ কোর (Intel Xeon Platinum 8481C CPU @ 2.70GHz)
+

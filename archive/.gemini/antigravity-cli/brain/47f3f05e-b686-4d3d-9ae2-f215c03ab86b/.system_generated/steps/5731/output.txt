@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1   30G   17G   12G  59% /
+5.4M	/recovered/ALL_DELETED/#14596924#
+4.8G	/recovered/ALL_DELETED/MAGIC-2
+1.2M	/recovered/ALL_DELETED/azureuser
+0	/recovered/ALL_DELETED/mdkamruzzamanirak_gmail_com
+

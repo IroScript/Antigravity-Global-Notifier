@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/scratch/verify_lines.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -109,6 +109,6 @@
+     if len(line) > 50:
+         print(f"Line {idx+1} too long ({len(line)} chars): {line}")
+     if len(line) > max_len:
+-        max_len = line
+-print(f"Max non-URL line length: {len(max_len)}")
++        max_len = len(line)
++print(f"Max non-URL line length: {max_len}")
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

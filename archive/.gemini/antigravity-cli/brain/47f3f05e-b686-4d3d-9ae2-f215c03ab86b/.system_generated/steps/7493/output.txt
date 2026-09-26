@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+<truncated 4 lines>
+Upload Finished in 96.8s! Object ID: all-vm-backups-vault-irak-2026/azure_home_backup/azure_home_FULL_filesystem_20260925.tar.gz/1790352729529362
+

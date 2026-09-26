@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/gdrive_sync/gdrive_live_sync.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -88,7 +88,7 @@
+ 
+     start_t = time.time()
+     try:
+-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
++        res = subprocess.run(cmd, capture_output=True, text=True, timeout=3600)
+         dur = round(time.time() - start_t, 2)
+         if res.returncode == 0:
+             log(f"[+] Target '{name}' synced successfully to {remote_dest} in {dur}s")
+@@ -97,7 +97,7 @@
+             log(f"[!] Target '{name}' sync returned error (code {res.returncode}): {err}")
+             return False, err
+     except subprocess.TimeoutExpired:
+-        log(f"[!] Target '{name}' sync timed out after 300s")
++        log(f"[!] Target '{name}' sync timed out after 3600s")
+         return False, "Timeout"
+     except Exception as e:
+         log(f"[!] Target '{name}' sync execution error: {e}")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

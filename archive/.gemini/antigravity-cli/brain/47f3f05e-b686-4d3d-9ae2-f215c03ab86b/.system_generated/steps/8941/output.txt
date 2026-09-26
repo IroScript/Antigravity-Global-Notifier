@@ -1,0 +1,19 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py:145: SyntaxWarning: 'tuple' object is not callable; perhaps you missed a comma?
+  ("LANDLOCK_KERNEL", "landlock_truncate", "truncate", "landlock_python")
+Traceback (most recent call last):
+  File "/home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py", line 360, in <module>
+    summary = run_single_adversarial_pass()
+  File "/home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py", line 197, in run_single_adversarial_pass
+    vectors = build_attack_vectors(test_dir)
+  File "/home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py", line 145, in build_attack_vectors
+    ("LANDLOCK_KERNEL", "landlock_truncate", "truncate", "landlock_python")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # GROUP 13: ADVANCED SHELL EVASION & WRAPPERS
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ("SHELL_EVASION", "eval_rm", "eval 'rm -rf /tmp/foo'", "hook_command"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'tuple' object is not callable
+

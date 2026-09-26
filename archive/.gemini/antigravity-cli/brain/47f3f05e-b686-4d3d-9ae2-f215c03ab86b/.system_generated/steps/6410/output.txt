@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+<truncated 20 lines>
+/home/azureuser/.webterminal/live_monitor_url.txt:1:https://memories-birth-outer-speeches.trycloudflare.com
+/home/azureuser/.webterminal/whatsapp_bridge.js:918:        let activeConsoleUrl = 'https://textiles-absolute-destinations-omaha.trycloudflare.com';
+/tmp/output_tunnel.log:2:2026-09-24T18:02:12Z INF Requesting new quick Tunnel on trycloudflare.com...
+/tmp/csv_tunnel.log:2:{"level":"info","time":"2026-09-24T17:56:11Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
+/tmp/payload-article-tunnel.log:2:2026-09-22T18:34:19Z INF Requesting new quick Tunnel on trycloudflare.com...
+/tmp/payload-article-tunnel.log:3:failed to request quick Tunnel: Post "https://api.trycloudflare.com/tunnel": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+/tmp/payload-article-tunnel.log:5:2026-09-22T18:34:39Z INF Requesting new quick Tunnel on trycloudflare.com...
+/tmp/payload-article-tunnel.log:8:2026-09-22T18:34:51Z INF |  https://belt-install-utilization-roman.trycloudflare.com                                  |
+

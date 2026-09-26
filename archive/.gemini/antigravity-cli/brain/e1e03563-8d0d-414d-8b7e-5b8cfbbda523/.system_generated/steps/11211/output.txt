@@ -1,0 +1,11 @@
+Task: e1e03563-8d0d-414d-8b7e-5b8cfbbda523/task-11207
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/.system_generated/tasks/task-11207.log
+Log output:
+Attempt 1: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 2: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 3: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 4: waiting... (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+Attempt 5: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+
+Last progress: 2s ago

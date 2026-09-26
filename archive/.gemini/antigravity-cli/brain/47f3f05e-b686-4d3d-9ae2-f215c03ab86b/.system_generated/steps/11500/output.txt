@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+du returncode=1, took 2.83s, stdout=['105735245004', '/home/azureuser']
+find returncode=1, took 2.07s, len=882668, stderr sample=find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/3d12f826-8518-4db6-867e-df1577a21929’: Permission
+

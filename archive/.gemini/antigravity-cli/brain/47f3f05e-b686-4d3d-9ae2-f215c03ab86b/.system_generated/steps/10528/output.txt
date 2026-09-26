@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rwxr-xr-x 1 azureuser azureuser 219545808 Sep 25 08:02 /home/azureuser/.local/bin/agy
+-rwxr-xr-x 1 azureuser azureuser 216797392 Sep 25 08:00 /home/azureuser/.local/bin/agy.1790323328348797097.old
+

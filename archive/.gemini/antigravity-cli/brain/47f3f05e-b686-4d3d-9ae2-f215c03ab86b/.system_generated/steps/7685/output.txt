@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Response 1: Configure this as a Shared Drive (Team Drive)?
+
+y) Yes
+n) No (default)
+y/n> n
+
+
+Response 2: n
+
+

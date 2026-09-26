@@ -1,0 +1,66 @@
+
+Encountered error in step execution: context canceled
+Output:
+<truncated 91 lines>
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/extensions_crx_cache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/extensions_crx_cache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/segmentation_platform’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/segmentation_platform’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Safe Browsing’: Permission denied
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Dictionaries’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Dictionaries’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GraphiteDawnCache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GraphiteDawnCache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/OptimizationGuideModelsManifest’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/OptimizationGuideModelsManifest’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GrShaderCache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GrShaderCache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/optimization_guide_model_store’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/optimization_guide_model_store’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/component_crx_cache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/component_crx_cache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/ShaderCache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/ShaderCache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/NativeMessagingHosts’: Permission denied
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GPUPersistentCache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GPUPersistentCache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/extensions_crx_cache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/extensions_crx_cache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/segmentation_platform’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/segmentation_platform’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Safe Browsing’: Permission denied
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Dictionaries’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Dictionaries’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GraphiteDawnCache’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GraphiteDawnCache’: Directory not empty
+find: ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/OptimizationGuideModelsManifest’: Permission denied
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/OptimizationGuideModelsManifest’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO/social-media’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace/IROSCRIPT-CEO’: Directory not empty
+find: cannot delete ‘./.openclaw/workspace’: Directory not empty
+find: cannot delete ‘./.openclaw’: Directory not empty
+bash: line 1: cargo: command not found
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bash: line 1: azureuser: command not found
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+Password: 

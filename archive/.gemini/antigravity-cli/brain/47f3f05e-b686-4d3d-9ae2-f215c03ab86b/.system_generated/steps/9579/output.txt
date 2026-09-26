@@ -1,0 +1,28 @@
+You have 3 background task(s) currently running:
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-9511",
+  "toolName":  "run_command",
+  "toolSummary":  "Test live sync cycle",
+  "description":  "python3 /home/azureuser/gdrive_sync/gdrive_live_sync.py --once",
+  "startTime":  "2026-09-26T08:39:11.861296501Z",
+  "stepIndex":  9511,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-9511.log"
+}
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-9555",
+  "toolName":  "schedule",
+  "toolSummary":  "Schedule 5-minute updates",
+  "description":  "Cron: */5 * * * *, Prompt: Google Drive লাইভ সিঙ্কের প্রগ্রেস চেক করো (/usr/bin/rclone size personaldrive:Azure_VM_Live_Backup_Fateh_Ali) এবং সর্বমোট কতটি ফাইল আপলোড হয়েছে ও কত সাইজ ট্রান্সফার হয়েছে তা ইরাক ভাইয়াকে সুন্দর বাংলা ফরম্যাটে সংক্ষেপে রিপোর্ট করো।",
+  "startTime":  "2026-09-26T08:46:56.955316234Z",
+  "stepIndex":  9555,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-9555.log"
+}
+{
+  "taskId":  "47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-9574",
+  "toolName":  "run_command",
+  "toolSummary":  "Check sync size",
+  "description":  "/usr/bin/rclone size personaldrive:Azure_VM_Live_Backup_Fateh_Ali",
+  "startTime":  "2026-09-26T08:50:03.769092071Z",
+  "stepIndex":  9574,
+  "logUri":  "file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-9574.log"
+}

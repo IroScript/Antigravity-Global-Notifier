@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+ba84184d40d7b0b881b3d6aa7793e1f6ec5914ef5e542f488c3c369bc153fbe9  /home/azureuser/DATABASE_BACKUPS_VAULT/azure_redis_6379_dump.rdb
+

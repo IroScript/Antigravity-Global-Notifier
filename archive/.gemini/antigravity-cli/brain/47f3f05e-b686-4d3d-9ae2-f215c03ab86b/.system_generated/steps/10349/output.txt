@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+38G	/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files
+0	/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted_files
+17G	/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files
+0	/home/azureuser/IrakIroan/Google_Drive_Backup/Zip_Files
+9.1M	/home/azureuser/IrakIroan/Google_Drive_Backup/database_backups
+4.0K	/home/azureuser/IrakIroan/Google_Drive_Backup/full_filesystem
+0	/home/azureuser/IrakIroan/Google_Drive_Backup/gdrive_copy.log
+

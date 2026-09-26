@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    ELAPSED %CPU %MEM COMMAND
+      06:08  8.2  0.6 rclone copy /home/azureuser/GCP_FULL_BACKUP/gcp_home_FULL_
+

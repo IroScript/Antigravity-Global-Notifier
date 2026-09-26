@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+total 0
+dr-x------ 2 azureuser azureuser 16 Sep 25 07:55 .
+dr-xr-xr-x 9 azureuser azureuser  0 Sep 25 07:51 ..
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 0 -> /dev/pts/11
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 1 -> /dev/pts/11
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 10 -> 'socket:[4919904]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 11 -> 'socket:[4919956]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 12 -> 'socket:[4952115]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:57 13 -> 'socket:[4952156]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 2 -> /dev/pts/11
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 3 -> /proc/1445
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 4 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/logs/cluster_orchestrator.log (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 5 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-wal (deleted)'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 6 -> /proc/1445/smaps
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 62 -> 'socket:[4548790]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 65 -> 'socket:[4548791]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 7 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 8 -> 'anon_inode:[eventpoll]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 9 -> '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm (deleted)'
+

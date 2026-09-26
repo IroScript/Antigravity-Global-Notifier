@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+total 84
+drwxrwxr-x  8 azureuser azureuser  4096 Sep 25 12:17 .
+drwxr-xr-x 27 azureuser azureuser  4096 Sep 25 18:13 ..
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 07:57 AGENTS.md
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:57 INCIDENTS
+-rw-rw-r--  1 azureuser azureuser 13953 Sep 25 12:17 PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 08:01 POLICIES
+-rw-r--r--  1 azureuser azureuser  2690 Sep 25 07:58 PROJECT_REGISTRY.md
+drwxr-xr-x  9 azureuser azureuser  4096 Sep 25 11:00 RECOVERED_DATABASES
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 10:51 RECOVERED_LOGS
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 08:03 REPORTS
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:57 TASKS
+-rw-rw-r--  1 azureuser azureuser  8350 Sep 25 12:17 USER_PERSONAL_AGENT_CONTEXT.md
+/home/azureuser/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/hooks.md
+/home/azureuser/.gemini/config/hooks.json
+

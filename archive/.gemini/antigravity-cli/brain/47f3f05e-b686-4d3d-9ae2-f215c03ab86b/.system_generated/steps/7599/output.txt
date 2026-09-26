@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Permissions granted to Service Account on bucket:
+{
+  "kind": "storage#testIamPermissionsResponse",
+  "permissions": [
+    "storage.objects.create",
+    "storage.objects.get"
+  ]
+}
+
+

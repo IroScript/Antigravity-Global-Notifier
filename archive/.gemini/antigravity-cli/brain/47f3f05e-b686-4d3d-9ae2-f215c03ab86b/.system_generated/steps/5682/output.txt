@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total recovered files in MAGIC-2: 21171
+Total matched to original path: 1
+

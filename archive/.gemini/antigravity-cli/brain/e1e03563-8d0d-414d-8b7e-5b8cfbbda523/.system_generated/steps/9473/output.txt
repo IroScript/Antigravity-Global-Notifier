@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+total 68
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 08:03 .
+drwxr-xr-x 13 azureuser azureuser  4096 Sep 25 08:00 ..
+-rw-r--r--  1 azureuser azureuser   191 Sep 25 08:03 boundary_guard.py
+-rw-rw-r--  1 azureuser azureuser    77 Sep 25 08:00 resource_monitor.log
+-rw-rw-r--  1 azureuser azureuser    75 Sep 25 08:00 vm_30m_report.log
+-rw-rw-r--  1 azureuser azureuser   324 Sep 25 08:03 vm_sizing.log
+-rw-r--r--  1 root      root          0 Sep 25 07:59 vm_sizing_24h.db
+-rw-rw-r--  1 azureuser azureuser 37338 Sep 25 08:03 whatsapp.log
+

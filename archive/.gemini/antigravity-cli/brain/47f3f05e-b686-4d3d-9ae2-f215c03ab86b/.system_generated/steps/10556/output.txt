@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+cat: /home/azureuser/IrakIroan/azure_file_explorer/server.log: No such file or directory
+

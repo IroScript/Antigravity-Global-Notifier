@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: $](?[^: command not found
+<string>:5: SyntaxWarning: invalid escape sequence '\;'
+find /home -exec /bin/rm -f {} \; -> True True False
+rm -rf /tmp/foo -> False True False
+rm -f /tmp/foo -> False True False
+echo "" > /home/azureuser/GLOBAL-ARCHIVE/archive_logs/archive_manifest.jsonl -> False False True
+

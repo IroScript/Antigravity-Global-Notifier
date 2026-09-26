@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+Step 1: Auditing Extracted Tree...
+Extracted Regular Files: 84,484
+Extracted Directories:   7,139
+Extracted Symlinks:      36
+Extracted Hard Links:    222 (across 111 unique inodes)
+Extracted Total Bytes:   6,715,624,242 bytes (6.25 GiB)
+
+Step 2: Sample SHA-256 Hash Comparison on Core Projects...
+  [PASS] azureuser/AGY-MASTER/AGENTS.md -> Hash, Perm (0o100664), Owner MATCH
+  [PASS] azureuser/GEMINI.md -> Hash, Perm (0o100664), Owner MATCH
+  [PASS] azureuser/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md -> Hash, Perm (0o100644), Owner MATCH
+  [PASS] azureuser/DATABASE_BACKUPS_VAULT/azure_postgres_all_databases.sql -> Hash, Perm (0o100664), Owner MATCH
+  [PASS] azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db -> Hash, Perm (0o100644), Owner MATCH
+  [PASS] azureuser/DATABASE_BACKUPS_VAULT/gcp_dumps/gcp_frappe_mariadb.sql -> Hash, Perm (0o100644), Owner MATCH
+FAILED TO FIND EXTRACTED: azureuser/Frappe-erp-Alco/AGENTS.md
+FAILED TO FIND EXTRACTED: azureuser/kids_tube_with_folder_seection/AGENTS.md
+FAILED TO FIND EXTRACTED: azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/AGENTS.md
+FAILED TO FIND EXTRACTED: azureuser/3D-Game-Design-Studio/AGENTS.md
+FAILED TO FIND EXTRACTED: azureuser/telegram-bot/AGENTS.md
+
+Core Verification Results: Matches: 6, Failures: 5
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+battle_mode_infos         parent_references         trajectory_metadata_blob
+executor_metadata         steps                   
+gen_metadata              trajectory_meta         
+battle_mode_infos         parent_references         trajectory_metadata_blob
+executor_metadata         steps                   
+gen_metadata              trajectory_meta         
+

@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+/dev/sda15: SEC_TYPE="msdos" UUID="ACD2-7F21" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="0def0659-af1b-47a4-be70-0b1c21dfdf9e"
+/dev/sda1: UUID="431518a8-2ad5-483d-8070-7a39f8318fcd" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="528da9d6-945c-4504-94d8-f5aacda7c5a1"
+/dev/sda14: PARTUUID="c71f8075-022b-2941-8fc4-6453145411e1"
+NAME     SIZE TYPE FSTYPE UUID                                 MOUNTPOINTS
+sda       70G disk                                             
+├─sda1  69.9G part ext4   431518a8-2ad5-483d-8070-7a39f8318fcd /
+├─sda14    3M part                                             
+└─sda15  124M part vfat   ACD2-7F21                            /boot/efi
+PARTUUID=528da9d6-945c-4504-94d8-f5aacda7c5a1 / ext4 rw,discard,errors=remount-ro,x-systemd.growfs 0 1
+PARTUUID=0def0659-af1b-47a4-be70-0b1c21dfdf9e /boot/efi vfat defaults,umask=077 0 2
+

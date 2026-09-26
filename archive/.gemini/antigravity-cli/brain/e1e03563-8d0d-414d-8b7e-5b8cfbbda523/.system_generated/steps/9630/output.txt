@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 24799 Sep 25 11:01 'Youtube Automation/docker_workers/worker_server.py'
+

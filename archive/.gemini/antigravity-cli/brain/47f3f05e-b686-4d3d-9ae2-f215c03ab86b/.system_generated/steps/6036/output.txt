@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total .mp4 matches in journal: 0
+Total distinct .mp4 filenames in journal: 0
+

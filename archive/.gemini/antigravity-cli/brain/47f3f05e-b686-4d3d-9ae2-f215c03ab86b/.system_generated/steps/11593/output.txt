@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Found code: None
+Raw output:
+ ? Authenticate Git with your GitHub credentials? (Y/n) 
+

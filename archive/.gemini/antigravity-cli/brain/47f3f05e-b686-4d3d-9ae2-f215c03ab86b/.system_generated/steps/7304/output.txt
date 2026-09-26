@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+schema_name	table_name	type	owner	estimated_row_count	locality
+public	_articles_v	table	payload_user	0	NULL
+public	articles	table	payload_user	0	NULL
+public	media	table	payload_user	0	NULL
+public	payload_jobs	table	payload_user	0	NULL
+public	payload_jobs_log	table	payload_user	0	NULL
+public	payload_kv	table	payload_user	0	NULL
+public	payload_locked_documents	table	payload_user	0	NULL
+public	payload_locked_documents_rels	table	payload_user	0	NULL
+public	payload_migrations	table	payload_user	2	NULL
+public	payload_preferences	table	payload_user	0	NULL
+public	payload_preferences_rels	table	payload_user	0	NULL
+public	users	table	payload_user	0	NULL
+public	users_sessions	table	payload_user	0	NULL
+

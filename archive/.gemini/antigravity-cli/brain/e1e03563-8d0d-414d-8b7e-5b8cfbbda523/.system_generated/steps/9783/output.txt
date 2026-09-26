@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+INFO:     127.0.0.1:50238 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52166 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55710 - "GET /health HTTP/1.1" 200 OK
+2026-09-25 12:02:09,334 [ERROR] [Worker-worker_4] Error during prompt execution: ChatGPT stream completed but no output text could be captured.
+INFO:     172.19.0.1:42898 - "POST /generate HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59018 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51326 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:49866 - "GET /health HTTP/1.1" 200 OK
+2026-09-25 12:02:24,338 [INFO] [Worker-worker_4] Applying escalating jitter delay (+0.5s/process, action #9): 9.15s [Range: 6.0s - 10.0s]...
+2026-09-25 12:02:40,888 [INFO] [Worker-worker_4] Inserting 3280 chars into ChatGPT editor...
+2026-09-25 12:02:43,741 [INFO] [Worker-worker_4] Sent prompt via Control+Enter.
+2026-09-25 12:02:43,741 [INFO] [Worker-worker_4] Waiting for streaming response (max 360s)...
+INFO:     127.0.0.1:56510 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44878 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40626 - "GET /health HTTP/1.1" 200 OK
+

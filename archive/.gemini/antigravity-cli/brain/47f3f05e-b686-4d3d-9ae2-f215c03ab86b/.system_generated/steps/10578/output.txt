@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+Created symlink '/home/azureuser/.config/systemd/user/default.target.wants/azure-file-explorer.service' → '/home/azureuser/.config/systemd/user/azure-file-explorer.service'.
+● azure-file-explorer.service - Windows 11 Azure File Explorer Web Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 13:37:46 UTC; 31ms ago
+ Invocation: 46333f84ccf14fb0b2e48b9d0ad2bf57
+   Main PID: 1186845 ((python3))
+      Tasks: 1 (limit: 19137)
+     Memory: 1.6M (peak: 1.8M)
+        CPU: 5ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer.service
+             └─1186845 "(python3)"
+
+Sep 26 13:37:46 FatehAli systemd[1137]: Started azure-file-explorer.service…ice.
+Hint: Some lines were ellipsized, use -l to show in full.
+

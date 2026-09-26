@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>রিসোর্স লাইভ মনিটর · Azure VM</title>
+<script src="/chart.min.js"></script>
+<script>
+  if (typeof Chart === 'undefined') {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>');
+  }
+</script>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --text-bright: #f0f6fc;
+    --accent: #58a6ff;
+    --green: #2ea043;
+    --yellow: #f0883e;
+    --red: #f85149;
+    --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Bengali", sans-serif; }
+  body { background: var(--bg); color: var(--text); padding: 12px; padding-bottom: 50px; }
+  
+  .header { display: flex; justify-content: space-between; align-items: center; padding: 8px 4px; border-bottom: 1px solid var(--border); margin-bottom: 12px; }
+  .header h1 { font-size: 1.15rem; color: var(--text-bright); display: flex; align-items: center; gap: 8px; }
+  .pulse { width: 10px; height: 10px; background: var(--green); border-radius: 50%; box-shadow: 0 0 10px var(--green); animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.3); } 100% { opacity: 1; transform: scale(1); } }
+  .time-badge { font-size: 0.75rem; background: var(--border); padding: 4px 8px; border-radius: 12px; color: var(--text-bright); }
+
+  /* Chart Section Container */
+  .chart-section-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 20px; position: relative; }
+  .chart-card-header { margin-bottom: 8px; }
+  .chart-title-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .chart-title { font-size: 0.95rem; font-weight: 700; color: var(--text-bright); display: flex; align-items: center; gap: 6px; }
+  .chart-sub-tag { font-size: 0.72rem; background: #21262d; color: var(--accent); padding: 3px 8px; border-radius: 6px; font-weight: 600; }
+
+  /* Time Range Pills (Google Finance Style) */
+  .pills-scroll { display: flex; gap: 6px; overflow-x: auto; padding: 4px 2px 8px 2px; margin-bottom: 6px; scrollbar-width: none; }
+  .pills-scroll::-webkit-scrollbar { display: none; }
+  .pill { flex-shrink: 0; background: #21262d; border: 1px solid var(--border); color: #8b949e; padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+  .pill.active { background: var(--accent); color: #0d1117; border-color: var(--accent); }
+
+  /* Mode Toggle Pills (CPU / RAM / Both) */
+  .mode-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 6px; }
+  .mode-pills { display: flex; gap: 4px; }
+  .mode-pill { background: #161b22; border: 1px solid var(--border); color: var(--text); padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; cursor: pointer; }
+  .mode-pill.active { background: #30363d; color: var(--text-bright); font-weight: 600; border-color: #8b949e; }
+  .mode-hint { font-size: 0.7rem; color: #8b949e; }
+
+  /* Chart Canvas Wrapper */
+  .chart-wrapper { position: relative; height: 230px; width: 100%; margin-top: 4px; margin-bottom: 10px; }
+
+  /* Dedicated Graph Point Report Card (Right Below the Graph) */
+  .graph-report-card { background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 12px; margin-top: 6px; }
+  .graph-report-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #21262d; }
+  .graph-report-badge { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 600; color: var(--text-bright); }
+  .report-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); display: inline-block; }
+  .graph-report-time { font-size: 0.75rem; color: #8b949e; background: #161b22; padding: 2px 8px; border-radius: 4px; border: 1px solid #30363d; }
+
+  /* Metrics in Report */
+  .graph-report-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+  .graph-metric-col { background: #161b22; padding: 8px 10px; border-radius: 8px; border: 1px solid #21262d; display: flex; flex-direction: column; }
+  .g-metric-lbl { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.4px; color: #8b949e; margin-bottom: 2px; }
+  .g-metric-val { font-size: 1.25rem; font-weight: 800; }
+  .g-metric-sub { font-size: 0.75rem; font-weight: 400; color: #8b949e; }
+
+  /* Top 2 Apps Box */
+  .graph-top-apps-box { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .g-apps-header { font-size: 0.7rem; color: #8b949e; font-weight: 600; border-bottom: 1px solid #21262d; padding-bottom: 4px; margin-bottom: 2px; }
+  .g-app-row { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 0.8rem; flex-wrap: wrap; }
+  .g-app-tag { font-size: 0.62rem; padding: 2px 5px; border-radius: 4px; font-weight: 700; }
+  .rank-1 { background: #3d2c00; color: #f0883e; border: 1px solid #6e4e00; }
+  .rank-2 { background: #1c2d42; color: #58a6ff; border: 1px solid #264a73; }
+  .g-app-name { font-weight: 600; color: var(--text-bright); flex: 1; min-width: 110px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .g-app-vals { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 600; }
+  .g-sep { color: #484f58; }
+  .graph-report-footer { font-size: 0.68rem; color: #8b949e; text-align: center; margin-top: 8px; }
+
+  /* Metrics Grid (Live Cards) */
+  .grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 16px; margin-top: 10px; }
+  @media(min-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .card-title { font-size: 0.85rem; color: var(--text); display: flex; justify-content: space-between; margin-bottom: 8px; }
+  .card-val { font-size: 1.6rem; font-weight: 700; color: var(--text-bright); margin-bottom: 6px; }
+  .bar-bg { background: #21262d; border-radius: 6px; height: 8px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 6px; transition: width 0.4s ease; }
+  .sub-text { font-size: 0.75rem; color: #8b949e; margin-top: 6px; }
+  .core-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
+  .core-item { background: #21262d; padding: 4px; border-radius: 6px; text-align: center; }
+  .core-lbl { font-size: 0.65rem; color: #8b949e; }
+  .core-val { font-size: 0.75rem; font-weight: 600; color: var(--text-bright); }
+  
+  /* App Breakdown Cards */
+  .section-title { font-size: 0.95rem; font-weight: 600; color: var(--text-bright); margin: 20px 0 10px 4px; display: flex; align-items: center; justify-content: space-between; }
+  .app-list { display: flex; flex-direction: column; gap: 8px; }
+  .app-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .app-info { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; padding-right: 8px; }
+  .app-name { font-size: 0.88rem; font-weight: 600; color: var(--text-bright); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .app-count { font-size: 0.72rem; color: #8b949e; }
+  .app-cols { display: flex; gap: 14px; align-items: center; text-align: right; }
+  .col-item { display: flex; flex-direction: column; align-items: flex-end; min-width: 65px; }
+  .col-hdr { font-size: 0.65rem; text-transform: uppercase; color: #8b949e; letter-spacing: 0.3px; }
+  .col-val-cpu { font-size: 0.95rem; font-weight: 700; color: var(--yellow); }
+  .col-val-ram { font-size: 0.95rem; font-weight: 700; color: var(--accent); }
+  
+  /* Filter & Controls */
+  .controls { display: flex; gap: 8px; margin: 12px 0; }
+  .search-box { flex: 1; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; color: var(--text-bright); font-size: 0.85rem; outline: none; }
+  .btn-group { display: flex; gap: 4px; }
+  .btn { background: #21262d; border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 8px; font-size: 0.8rem; cursor: pointer; }
+  .btn.active { background: var(--accent); color: #0d1117; font-weight: 600; border-color: var(--accent); }
+
+  /* Process Table */
+  .proc-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-bottom: 6px; font-size: 0.8rem; }
+  .proc-top { display: flex; justify-content: space-between; font-weight: 600; color: var(--text-bright); margin-bottom: 4px; }
+  .proc-tag { font-size: 0.72rem; color: var(--purple); background: #2b1f3d; padding: 2px 6px; border-radius: 4px; }
+  .proc-cmd { font-size: 0.72rem; color: #8b949e; font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .proc-metrics { display: flex; gap: 12px; font-size: 0.78rem; margin-top: 4px; }
+  .val-badge { font-weight: 600; }
+  .val-ram { color: var(--accent); }
+  .val-cpu { color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span class="pulse"></span> লাইভ রিসোর্স মনিটর</h1>
+  <div class="time-badge" id="last-update">আপডেট হচ্ছে...</div>
+</div>
+
+<!-- Section 1: System Metrics Cards (Always Live) -->
+<div class="grid">
+  <!-- CPU Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>সার্বিক CPU লোড</span>
+      <span id="cpu-cores-text">4 vCPUs</span>
+    </div>
+    <div class="card-val" id="cpu-val">0.0%</div>
+    <div class="bar-bg">
+      <div class="bar-fill" id="cpu-bar" style="width: 0%; background: var(--green);"></div>
+    </div>
+    <div class="core-grid" id="core-bars"></div>
+  </div>
+
+  <!-- RAM Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>RAM মেমোরি (ফিজিক্যাল)</span>
+      <span id="ram-avail-text">ফ্রি: 0.0 GB</span>
+    </div>
+    <div class="card-val" id="ram-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 16.0 GB</span></div>
+    <div class="bar-bg">
+      <div class="bar-fill" id="ram-bar" style="width: 0%; background: var(--accent);"></div>
+    </div>
+    <div class="sub-text" id="ram-sub">ব্যবহৃত: 0% · ফিজিক্যাল মেমোরি</div>
+  </div>
+
+  <!-- Swap Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>NVMe সোয়াপ (Swap)</span>
+      <span style="color: var(--green);">সক্রিয়</span>
+    </div>
+    <div class="card-val" id="swap-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 40.0 GB</span></div>
+    <div class="bar-bg">
+      <div class="bar-fill" id="swap-bar" style="width: 0%; background: var(--purple);"></div>
+    </div>
+    <div class="sub-text" id="swap-sub">মোট মেমোরি: 56.0 GB (16G + 40G)</div>
+  </div>
+</div>
+
+<!-- Section 2: Interactive Timeline Graph -->
+<div class="chart-section-card">
+  <div class="chart-card-header">
+    <div class="chart-title-row">
+      <span class="chart-title">📈 রিসোর্স ব্যবহারের টাইমলাইন গ্রাফ</span>
+      <span class="chart-sub-tag" id="chart-range-label">গত ১ ঘণ্টা</span>
+    </div>
+
+    <!-- Time Range Pills (Google Finance Style) -->
+    <div class="pills-scroll">
+      <button class="pill" onclick="changeRange('1m', this)">1মি</button>
+      <button class="pill" onclick="changeRange('5m', this)">5মি</button>
+      <button class="pill" onclick="changeRange('15m', this)">15মি</button>
+      <button class="pill" onclick="changeRange('30m', this)">30মি</button>
+      <button class="pill active" onclick="changeRange('1h', this)">1ঘণ্টা</button>
+      <button class="pill" onclick="changeRange('5h', this)">5ঘণ্টা</button>
+      <button class="pill" onclick="changeRange('10h', this)">10ঘণ্টা</button>
+      <button class="pill" onclick="changeRange('24h', this)">24ঘণ্টা</button>
+      <button class="pill" onclick="changeRange('2d', this)">2দিন</button>
+      <button class="pill" onclick="changeRange('5d', this)">5দিন</button>
+      <button class="pill" onclick="changeRange('10d', this)">10দিন</button>
+      <button class="pill" onclick="changeRange('all', this)">সব (All)</button>
+    </div>
+
+    <!-- Metric View Toggles -->
+    <div class="mode-row">
+      <div class="mode-pills">
+        <button class="mode-pill active" id="mode-cpu" onclick="setChartMode('cpu')">🔥 CPU ভিউ</button>
+        <button class="mode-pill" id="mode-ram" onclick="setChartMode('ram')">💾 RAM ভিউ</button>
+        <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই (CPU+RAM)</button>
+      </div>
+      <span class="mode-hint">👆 গ্রাফে টাচ করে টানুন</span>
+    </div>
+  </div>
+
+  <!-- Chart Canvas -->
+  <div class="chart-wrapper">
+    <canvas id="resourceChart"></canvas>
+  </div>
+
+  <!-- 👇 GRAPH ER NICHE DEDICATED REPORT CARD 👇 -->
+  <div class="graph-report-card" id="graph-report-card">
+    <div class="graph-report-top">
+      <div class="graph-report-badge">
+        <span class="report-badge-dot" id="graph-report-dot"></span>
+        <span id="graph-report-status">সর্বশেষ ডাটা পয়েন্ট</span>
+      </div>
+      <div class="graph-report-time" id="graph-report-time">আপডেট হচ্ছে...</div>
+    </div>
+
+    <!-- Metrics Row (১ম কলাম: CPU, ২য় কলাম: RAM) -->
+    <div class="graph-report-metrics">
+      <div class="graph-metric-col">
+        <span class="g-metric-lbl">১ম কলাম · সার্বিক CPU</span>
+        <span class="g-metric-val val-cpu" id="graph-cpu-val">0.0%</span>
+      </div>
+      <div class="graph-metric-col">
+        <span class="g-metric-lbl">২য় কলাম · সার্বিক RAM</span>
+        <span class="g-metric-val val-ram" id="graph-ram-val">0.0 GB <span class="g-metric-sub" id="graph-ram-pct">(0%)</span></span>
+      </div>
+    </div>
+
+    <!-- Top 2 Apps Box -->
+    <div class="graph-top-apps-box">
+      <div class="g-apps-header">
+        <span>🎯 ওই মুহূর্তের শীর্ষ ২ অ্যাপ [১ম: CPU | ২য়: RAM]</span>
+      </div>
+      
+      <!-- Top 1 App -->
+      <div class="g-app-row">
+        <div class="g-app-tag rank-1">শীর্ষ ১</div>
+        <div class="g-app-name" id="graph-app1-name">—</div>
+        <div class="g-app-vals">
+          <span class="val-cpu" id="graph-app1-cpu">0.0% CPU</span>
+          <span class="g-sep">·</span>
+          <span class="val-ram" id="graph-app1-ram">0.0 GB RAM</span>
+        </div>
+      </div>
+
+      <!-- Top 2 App -->
+      <div class="g-app-row">
+        <div class="g-app-tag rank-2">শীর্ষ ২</div>
+        <div class="g-app-name" id="graph-app2-name">—</div>
+        <div class="g-app-vals">
+          <span class="val-cpu" id="graph-app2-cpu">0.0% CPU</span>
+          <span class="g-sep">·</span>
+          <span class="val-ram" id="graph-app2-ram">0.0 GB RAM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-report-footer" id="graph-report-footer">
+      💡 গ্রাফে টাচ করে আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট এখানে দেখা যাবে
+    </div>
+  </div>
+</div>
+
+<!-- Section 3: Live App Breakdown -->
+<div class="section-title">
+  <span>📱 লাইভ অ্যাপভিত্তিক রিসোর্স রোলআপ</span>
+  <span style="font-size: 0.72rem; color: #8b949e; background: #21262d; padding: 3px 8px; border-radius: 6px;">[১ম কলাম: CPU] ❖ [২য় কলাম: RAM]</span>
+</div>
+<div class="app-list" id="app-list"></div>
+
+<!-- Section 4: Live Process List -->
+<div class="section-title" style="margin-top: 24px;">
+  <span>⚙️ লাইভ প্রসেস অনুযায়ী বিস্তারিত তালিকা</span>
+  <span style="font-size: 0.72rem; color: #8b949e; background: #21262d; padding: 3px 8px; border-radius: 6px;">[১ম: CPU] · [২য়: RAM]</span>
+</div>
+
+<div class="controls">
+  <input type="text" class="search-box" id="search-box" placeholder="প্রসেস বা অ্যাপ খুঁজুন (যেমন: chrome, agy)..." oninput="renderProcs()">
+  <div class="btn-group">
+    <button class="btn active" id="btn-sort-cpu" onclick="setSort('cpu')">১ম: CPU ↓</button>
+    <button class="btn" id="btn-sort-ram" onclick="setSort('ram')">২য়: RAM ↓</button>
+  </div>
+</div>
+
+<div id="proc-list"></div>
+
+<script>
+let currentStats = null;
+let currentSort = 'cpu';
+let currentRange = '1h';
+let currentMode = 'cpu'; // 'cpu', 'ram', 'both'
+let chartInstance = null;
+let historyData = [];
+let isScrubbing = false;
+
+function setSort(s) {
+  currentSort = s;
+  document.getElementById('btn-sort-cpu').classList.toggle('active', s === 'cpu');
+  document.getElementById('btn-sort-ram').classList.toggle('active', s === 'ram');
+  renderProcs();
+}
+
+function setChartMode(mode) {
+  currentMode = mode;
+  document.getElementById('mode-cpu').classList.toggle('active', mode === 'cpu');
+  document.getElementById('mode-ram').classList.toggle('active', mode === 'ram');
+  document.getElementById('mode-both').classList.toggle('active', mode === 'both');
+  updateChartDatasets();
+}
+
+const RANGE_NAMES = {
+  '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
+  '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা', '24h': 'গত ২৪ ঘণ্টা',
+  '2d': 'গত ২ দিন', '5d': 'গত ৫ দিন', '10d': 'গত ১০ দিন', 'all': 'সর্বমোট সময়'
+};
+
+function changeRange(range, btn) {
+  currentRange = range;
+  document.querySelectorAll('.pills-scroll .pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const lbl = document.getElementById('chart-range-label');
+  if (lbl) lbl.innerText = RANGE_NAMES[range] || range;
+  fetchHistory();
+}
+
+function getBarColor(pct) {
+  if (pct >= 70) return 'var(--red)';
+  if (pct >= 40) return 'var(--yellow)';
+  return 'var(--green)';
+}
+
+let scrubTimeout = null;
+
+// Update the Dedicated Graph Point Report Card (Right Below the Graph)
+function updateGraphReport(pt, isTouching) {
+  if (!pt) return;
+  if (isTouching) {
+    isScrubbing = true;
+    clearTimeout(scrubTimeout);
+    scrubTimeout = setTimeout(() => { isScrubbing = false; }, 5000);
+  }
+  const statusEl = document.getElementById('graph-report-status');
+  const dotEl = document.getElementById('graph-report-dot');
+  const timeEl = document.getElementById('graph-report-time');
+  const cpuEl = document.getElementById('graph-cpu-val');
+  const ramEl = document.getElementById('graph-ram-val');
+  const app1Name = document.getElementById('graph-app1-name');
+  const app1Cpu = document.getElementById('graph-app1-cpu');
+  const app1Ram = document.getElementById('graph-app1-ram');
+  const app2Name = document.getElementById('graph-app2-name');
+  const app2Cpu = document.getElementById('graph-app2-cpu');
+  const app2Ram = document.getElementById('graph-app2-ram');
+  const footerEl = document.getElementById('graph-report-footer');
+
+  if (isTouching) {
+    if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট';
+    if (dotEl) dotEl.style.background = 'var(--yellow)';
+    if (footerEl) footerEl.innerText = '👆 স্ক্রাবার সক্রিয় — অন্য পয়েন্টে টানুন বা স্পর্শ করুন';
+  } else {
+    if (statusEl) statusEl.innerText = 'সর্বশেষ ডাটা পয়েন্ট';
+    if (dotEl) dotEl.style.background = 'var(--green)';
+    if (footerEl) footerEl.innerText = '💡 গ্রাফে টাচ করে আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট এখানে দেখা যাবে';
+  }
+
+  if (timeEl) timeEl.innerText = pt.dt || pt.t;
+  if (cpuEl) cpuEl.innerText = pt.cpu + '%';
+  if (ramEl) ramEl.innerHTML = `${pt.ram_gb} GB <span class="g-metric-sub">(${pt.ram_pct}%)</span>`;
+
+  if (pt.app1) {
+    if (app1Name) app1Name.innerText = pt.app1.name || 'N/A';
+    if (app1Cpu) app1Cpu.innerText = `${pt.app1.cpu}% CPU`;
+    const r1 = (pt.app1.ram_gb !== undefined && pt.app1.ram_gb >= 1.0) ? (pt.app1.ram_gb + ' GB') : ((pt.app1.ram_mb || 0) + ' MB');
+    if (app1Ram) app1Ram.innerText = `${r1} RAM`;
+  } else {
+    if (app1Name) app1Name.innerText = '—';
+    if (app1Cpu) app1Cpu.innerText = '0% CPU';
+    if (app1Ram) app1Ram.innerText = '0 MB RAM';
+  }
+
+  if (pt.app2) {
+    if (app2Name) app2Name.innerText = pt.app2.name || 'N/A';
+    if (app2Cpu) app2Cpu.innerText = `${pt.app2.cpu}% CPU`;
+    const r2 = (pt.app2.ram_gb !== undefined && pt.app2.ram_gb >= 1.0) ? (pt.app2.ram_gb + ' GB') : ((pt.app2.ram_mb || 0) + ' MB');
+    if (app2Ram) app2Ram.innerText = `${r2} RAM`;
+  } else {
+    if (app2Name) app2Name.innerText = '—';
+    if (app2Cpu) app2Cpu.innerText = '0% CPU';
+    if (app2Ram) app2Ram.innerText = '0 MB RAM';
+  }
+}
+
+async function fetchHistory() {
+  try {
+    const res = await fetch(`/api/history?range=${currentRange}`);
+    if (!res.ok) return;
+    historyData = await res.json();
+    renderChart();
+    if (!isScrubbing && historyData && historyData.length > 0) {
+      updateGraphReport(historyData[historyData.length - 1], false);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function updateChartDatasets() {
+  if (!chartInstance) {
+    renderChart();
+    return;
+  }
+  const datasets = getDatasetsForCurrentMode();
+  chartInstance.data.labels = historyData.map(p => p.t);
+  chartInstance.data.datasets = datasets;
+  applyMonitorYAxisScale();
+  chartInstance.update('none');
+}
+
+function getMonitorYAxisConfig() {
+  if (currentMode === 'ram') {
+    return {
+      min: 0,
+      max: 16,
+      grid: { color: 'rgba(48, 54, 61, 0.4)' },
+      ticks: {
+        color: '#8b949e',
+        font: { size: 9 },
+        callback: function(v) { return v + ' GB'; }
+      }
+    };
+  }
+  return {
+    min: 0,
+    max: 100,
+    grid: { color: 'rgba(48, 54, 61, 0.4)' },
+    ticks: {
+      color: '#8b949e',
+      font: { size: 9 },
+      callback: function(v) { return v + '%'; }
+    }
+  };
+}
+
+function applyMonitorYAxisScale() {
+  if (!chartInstance) return;
+  const cfg = getMonitorYAxisConfig();
+  chartInstance.options.scales.y.min = cfg.min;
+  chartInstance.options.scales.y.max = cfg.max;
+  if (chartInstance.options.scales.y.ticks) {
+    chartInstance.options.scales.y.ticks.callback = cfg.ticks.callback;
+  }
+}
+
+function getDatasetsForCurrentMode() {
+  const pointRadiusFn = function(context) {
+    const len = context.dataset.data.length;
+    return context.dataIndex === len - 1 ? 4.5 : 0;
+  };
+
+  if (currentMode === 'cpu') {
+    return [
+      {
+        label: 'সার্বিক CPU %',
+        data: historyData.map(p => p.cpu),
+        borderColor: '#f0883e',
+        backgroundColor: 'rgba(240, 136, 62, 0.1)',
+        borderWidth: 2.2,
+        tension: 0.25,
+        fill: true,
+        pointRadius: pointRadiusFn,
+        pointBackgroundColor: '#f0883e',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
+        pointHoverRadius: 5
+      },
+      {
+        label: 'শীর্ষ ১ অ্যাপ CPU %',
+        data: historyData.map(p => p.app1 ? p.app1.cpu : 0),
+        borderColor: '#58a6ff',
+        borderWidth: 1.6,
+        borderDash: [4, 4],
+        tension: 0.25,
+        pointRadius: pointRadiusFn,
+        pointBackgroundColor: '#58a6ff',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
+        pointHoverRadius: 4
+      }
+    ];
+  } else if (currentMode === 'ram') {
+    return [
+      {
+        label: 'সার্বিক RAM (GB)',
+        data: historyData.map(p => p.ram_gb),
+        borderColor: '#58a6ff',
+        backgroundColor: 'rgba(88, 166, 255, 0.12)',
+        borderWidth: 2.2,
+        tension: 0.25,
+        fill: true,
+        pointRadius: pointRadiusFn,
+        pointBackgroundColor: '#58a6ff',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
+        pointHoverRadius: 5
+      }
+    ];
+  } else {
+    return [
+      {
+        label: 'সার্বিক CPU %',
+        data: historyData.map(p => p.cpu),
+        borderColor: '#f0883e',
+        borderWidth: 2,
+        tension: 0.25,
+        pointRadius: pointRadiusFn,
+        pointBackgroundColor: '#f0883e',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
+        pointHoverRadius: 5
+      },
+      {
+        label: 'সার্বিক RAM %',
+        data: historyData.map(p => p.ram_pct),
+        borderColor: '#58a6ff',
+        borderWidth: 2,
+        tension: 0.25,
+        pointRadius: pointRadiusFn,
+        pointBackgroundColor: '#58a6ff',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
+        pointHoverRadius: 5
+      }
+    ];
+  }
+}
+
+function renderChart() {
+  if (typeof Chart === 'undefined') {
+    setTimeout(renderChart, 300);
+    return;
+  }
+  const chartEl = document.getElementById('resourceChart');
+  if (!chartEl) return;
+  const ctx = chartEl.getContext('2d');
+  if (!historyData || historyData.length === 0) return;
+  const labels = historyData.map(p => p.t);
+  const datasets = getDatasetsForCurrentMode();
+
+  if (chartInstance) {
+    chartInstance.data.labels = labels;
+    chartInstance.data.datasets = datasets;
+    applyMonitorYAxisScale();
+    chartInstance.update('none');
+    return;
+  }
+
+  chartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: datasets
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      animations: {
+        colors: false,
+        x: false
+      },
+      transitions: {
+        active: { animation: { duration: 0 } },
+        resize: { animation: { duration: 0 } }
+      },
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+          labels: {
+            color: '#8b949e',
+            boxWidth: 10,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          enabled: false,
+          external: function(context) {
+            const tooltipModel = context.tooltip;
+            if (!tooltipModel || tooltipModel.opacity === 0) {
+              return;
+            }
+            if (tooltipModel.dataPoints && tooltipModel.dataPoints.length > 0) {
+              const idx = tooltipModel.dataPoints[0].dataIndex;
+              const pt = historyData[idx];
+              if (pt) updateGraphReport(pt, true);
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(48, 54, 61, 0.4)' },
+          ticks: {
+            color: '#8b949e',
+            maxTicksLimit: 6,
+            font: { size: 9 }
+          }
+        },
+        y: getMonitorYAxisConfig()
+      },
+      events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove', 'touchend']
+    }
+  });
+}
+
+async function fetchStats() {
+  try {
+    const res = await fetch('/api/stats');
+    if (!res.ok) return;
+    const data = await res.json();
+    currentStats = data;
+    
+    // Header time
+    document.getElementById('last-update').innerText = new Date().toLocaleTimeString('en-US');
+    
+    // CPU
+    document.getElementById('cpu-val').innerText = data.cpu_overall + '%';
+    const cpuBar = document.getElementById('cpu-bar');
+    cpuBar.style.width = Math.min(data.cpu_overall, 100) + '%';
+    cpuBar.style.background = getBarColor(data.cpu_overall);
+    
+    // Cores
+    const coreContainer = document.getElementById('core-bars');
+    coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
+      <div class="core-item">
+        <div class="core-lbl">C${i+1}</div>
+        <div class="core-val" style="color: ${getBarColor(c)}">${c}%</div>
+      </div>
+    `).join('');
+    
+    // RAM
+    document.getElementById('ram-val').innerHTML = `${data.ram.used_gb} GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ ${data.ram.total_gb} GB</span>`;
+    document.getElementById('ram-avail-text').innerText = `ফ্রি: ${data.ram.avail_gb} GB`;
+    const ramBar = document.getElementById('ram-bar');
+    ramBar.style.width = data.ram.percent + '%';
+    ramBar.style.background = getBarColor(data.ram.percent);
+    document.getElementById('ram-sub').innerText = `ব্যবহৃত: ${data.ram.percent}% · ফিজিক্যাল মেমোরি`;
+    
+    // Swap
+    document.getElementById('swap-val').innerHTML = `${data.swap.used_gb} GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ ${data.swap.total_gb} GB</span>`;
+    const swapBar = document.getElementById('swap-bar');
+    swapBar.style.width = data.swap.percent + '%';
+    
+    // App Rollup (CPU ১ম কলাম, RAM ২য় কলাম)
+    const appList = document.getElementById('app-list');
+    appList.innerHTML = data.apps.map(a => `
+      <div class="app-card">
+        <div class="app-info">
+          <div class="app-name">${a.app}</div>
+          <div class="app-count">${a.count} টি প্রসেস সক্রিয়</div>
+        </div>
+        <div class="app-cols">
+          <!-- ১ম কলাম: CPU -->
+          <div class="col-item">
+            <span class="col-hdr">১ম · CPU</span>
+            <span class="col-val-cpu">${a.cpu}%</span>
+          </div>
+          <!-- ২য় কলাম: RAM -->
+          <div class="col-item">
+            <span class="col-hdr">২য় · RAM</span>
+            <span class="col-val-ram">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+    
+    renderProcs();
+
+    // Real-time incremental graph advance (Latest second moves, past seconds remain static)
+    if (historyData && historyData.length > 0 && chartInstance && !isScrubbing) {
+      const lastIdx = historyData.length - 1;
+      const lastPoint = historyData[lastIdx];
+      const nowSec = Math.floor(Date.now() / 1000);
+
+      if (nowSec - (lastPoint.epoch || 0) >= 2) {
+        const newPt = {
+          epoch: nowSec,
+          t: new Date().toLocaleTimeString('en-US'),
+          dt: new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short' }) + ', ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+          cpu: data.cpu_overall,
+          ram_gb: data.ram ? data.ram.used_gb : lastPoint.ram_gb,
+          ram_pct: data.ram ? data.ram.percent : lastPoint.ram_pct,
+          app1: data.apps && data.apps[0] ? { name: data.apps[0].app, cpu: data.apps[0].cpu, ram_gb: data.apps[0].ram_gb } : lastPoint.app1,
+          app2: data.apps && data.apps[1] ? { name: data.apps[1].app, cpu: data.apps[1].cpu, ram_gb: data.apps[1].ram_gb } : lastPoint.app2
+        };
+        historyData.push(newPt);
+
+        const maxMap = { '1m': 30, '5m': 60, '15m': 100, '30m': 120 };
+        const maxPts = maxMap[currentRange] || 100;
+        if (historyData.length > maxPts) {
+          historyData.shift();
+        }
+
+        chartInstance.data.labels = historyData.map(p => p.t);
+        if (currentMode === 'cpu') {
+          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
+          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.app1 ? p.app1.cpu : 0);
+          if (chartInstance.data.datasets[2]) chartInstance.data.datasets[2].data = historyData.map(p => p.app2 ? p.app2.cpu : 0);
+        } else if (currentMode === 'ram') {
+          chartInstance.data.datasets[0].data = historyData.map(p => p.ram_gb);
+        } else {
+          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
+          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.ram_pct);
+        }
+      } else {
+        lastPoint.cpu = data.cpu_overall;
+        if (data.ram) {
+          lastPoint.ram_gb = data.ram.used_gb;
+          lastPoint.ram_pct = data.ram.percent;
+        }
+        if (chartInstance.data.datasets.length > 0) {
+          const ds0 = chartInstance.data.datasets[0].data;
+          if (ds0.length > 0) {
+            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : lastPoint.cpu;
+          }
+        }
+      }
+
+      chartInstance.update('none');
+      updateGraphReport(historyData[historyData.length - 1], false);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function renderProcs() {
+  if (!currentStats) return;
+  const q = document.getElementById('search-box').value.toLowerCase();
+  let list = [...currentStats.top_procs];
+  
+  if (q) {
+    list = list.filter(p => p.app.toLowerCase().includes(q) || p.name.toLowerCase().includes(q) || p.cmd.toLowerCase().includes(q));
+  }
+  
+  if (currentSort === 'cpu') {
+    list.sort((a, b) => b.cpu - a.cpu);
+  } else {
+    list.sort((a, b) => b.ram_mb - a.ram_mb);
+  }
+  
+  const container = document.getElementById('proc-list');
+  if (list.length === 0) {
+    container.innerHTML = '<div style="text-align: center; color: #8b949e; padding: 20px;">কোনো প্রসেস পাওয়া যায়নি</div>';
+    return;
+  }
+  
+  container.innerHTML = list.map(p => `
+    <div class="proc-card">
+      <div class="proc-top">
+        <span>${p.name} <span style="font-size: 0.7rem; color: #8b949e;">(PID: ${p.pid})</span></span>
+        <span class="proc-tag">${p.app}</span>
+      </div>
+      <div class="proc-cmd">${p.cmd}</div>
+      <div class="proc-metrics">
+        <span>১ম কলাম · CPU: <span class="val-badge val-cpu">${p.cpu}%</span></span>
+        <span>২য় কলাম · RAM: <span class="val-badge val-ram">${p.ram_mb >= 1024 ? (p.ram_mb/1024).toFixed(2) + ' GB' : p.ram_mb + ' MB'}</span></span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Initial calls
+fetchStats();
+fetchHistory();
+setInterval(fetchStats, 1500);
+// Background history sync every 30 seconds (no jitter or bouncing)
+setInterval(() => {
+  if (!isScrubbing && (currentRange === '1m' || currentRange === '5m' || currentRange === '15m' || currentRange === '30m')) {
+    fetchHistory();
+  }
+}, 30000);
+</script>
+
+</body>
+</html>

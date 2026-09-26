@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+92 Type: PLANNER_RESPONSE
+Tool: run_command
+  CommandLine: ps aux | grep -v "\[" | grep -v "ps aux"
+  Cwd: /home/azureuser
+  RunPersistent: True
+  WaitMsBeforeAsync: 5000
+  toolAction: Listing running processes
+  toolSummary: Check running processes
+93 Type: GENERIC
+

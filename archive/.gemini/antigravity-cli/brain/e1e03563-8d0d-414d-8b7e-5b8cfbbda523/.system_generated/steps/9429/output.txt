@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+python3   1637 azureuser   1u     unix 0x000000003db37f55      0t0     8658 type=STREAM (CONNECTED)
+python3   1637 azureuser   2u     unix 0x000000003db37f55      0t0     8658 type=STREAM (CONNECTED)
+python3 204399      root mem       REG              259,1  1571096  1059069 /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+python3 204399      root mem       REG              259,1   140712  1214798 /usr/lib/python3.13/lib-dynload/_sqlite3.cpython-313-x86_64-linux-gnu.so
+python3 204399      root   4u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root   5u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root   6u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root   7u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root   8u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root   9u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root  10u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 204399      root  11u      REG              259,4        0 13893658 /home/azureuser/.webterminal/vm_sizing_24h.db
+python3 669951 azureuser cwd       DIR              259,4     4096   524305 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+python3 669951 azureuser mem       REG              259,1  1571096  1059069 /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+python3 669951 azureuser DEL-r     REG              259,4            533122 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm
+python3 669951 azureuser mem       REG              259,1   140712  1214798 /usr/lib/python3.13/lib-dynload/_sqlite3.cpython-313-x86_64-linux-gnu.so
+python3 669951 azureuser   4w      REG              259,4   424272  1572867 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/logs/cluster_orchestrator.log (deleted)
+python3 669951 azureuser   5u      REG              259,4   716912   532254 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-wal (deleted)
+python3 669951 azureuser   7ur     REG              259,4 38187008   532244 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db (deleted)
+python3 669951 azureuser   9ur     REG              259,4    32768   533122 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db-shm (deleted)
+

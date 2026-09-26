@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Used:    0 B
+Trashed: 0 B
+Other:   0 B
+

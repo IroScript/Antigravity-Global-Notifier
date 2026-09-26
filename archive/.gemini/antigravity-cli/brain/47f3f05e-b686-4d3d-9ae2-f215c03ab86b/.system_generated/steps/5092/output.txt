@@ -1,0 +1,128 @@
+
+The command exited with code 0.
+Output:
+<truncated 202 lines>
+>
+────────────────────────────────────────────────────────────────────────────────
+? for shortcuts                                          Gemini 3.8 Flash · high
+=== PANE 6 ===
+  ◈ লোকাল ফাইল পাথ:
+  /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI
+  AGENT/reports/OPENRECALL_UNIVERSAL_EVIDENCE_FIRST_ARCHITECTURE_V2_1.md
+
+  📥 ডাইরেক্ট ডাউনলোড লিংক (.md):
+  https://litter.catbox.moe/o2m0d7.md
+
+  🌐 ব্রাউজার ওয়েব ভিউ:
+  https://paste.rs/WBsKM
+
+  «━━━━━━━━━━━━━━━━━━━━━━━━━━━━»
+
+  ### ⚖️ চূড়ান্ত তিনটি রায় (Three Final Verdicts)
+
+  ┌────────────────────────────┐
+  │ 🟢 PROVEN NOW            │
+  └────────────────────────────┘
+  ১. বিদ্যমান Axum এজ বাফার ও ডাটা অপরিবর্তিত।
+  ২. রিড-অনলি অডিট ও স্কিমা ফ্রিজ মডেলিং।
+
+  ┌────────────────────────────┐
+  │ 🟡 ARCHITECTURALLY DESIGNED│
+  └────────────────────────────┘
+  ১. ৩-ডাইমেনশনাল এপিস্টেমিক স্কিমা DDL।
+  ২. O(1) টাইমলাইন সিকোয়েন্সিং ও ডিরাইভড ভার্সনিং।
+  ৩. টাইপড কলাম ও ত্রি-মুখী কনট্রাডিকশন মডেল।
+
+  ┌────────────────────────────┐
+  │ 🔴 REQUIRES BENCHMARK / PROOF │
+  └────────────────────────────┘
+  ১. ১ বিলিয়ন থেকে ১ ট্রিলিয়ন রো লোড হ্যান্ডলিং।
+  বাস্তব সিন্থেটিক লোড টেস্ট ছাড়া কোনো
+  স্কেলিং দাবি করা নিষিদ্ধ।
+
+────────────────────────────────────────────────────────────────────────────────
+>
+────────────────────────────────────────────────────────────────────────────────
+? for shortcuts                                          Gemini 3.8 Flash · high
+
+=== PANE 7 ===
+cd "/home/azureuser/kids_tube_with_folder_seection" && /home/azureuser/.local/bi
+n/agy --dangerously-skip-permissions
+azureuser@FatehAli:~/kids_tube_with_folder_seection$ cd "/home/azureuser/kids_tu
+be_with_folder_seection" && /home/azureuser/.local/bin/agy --dangerously-skip-pe
+rmissions
+
+      ▄▀▀▄        Antigravity CLI 1.2.8
+     ▀▀▀▀▀▀       mainuddinh297@gmail.com (Google AI Ultra)
+    ▀▀▀▀▀▀▀▀      Gemini 3.8 Flash (High)
+   ▄▀▀    ▀▀▄     ~/kids_tube_with_folder_seection
+  ▄▀▀      ▀▀▄
+
+────────────────────────────────────────────────────────────
+> [প্রজেক্ট গ্রুপ: AGY · Kids Tube (kids)]: Hi, Can you mention your current
+  path of project location
+
+▸ Thought for 3s, 532 tokens
+  ইরাক ভাইয়া, প্রকল্প স্থানের বর্তমান পথ উল্লেখ করতে হবে।
+
+● Bash(pwd) (ctrl+o to expand)
+
+▸ Thought for 3s, 595 tokens
+  ইরাক ভাইয়া, পথটি `/home/azureuser/kids_tube_with_folder_seection`। ব্যবহা...
+  ইরাক ভাইয়া,
+
+  আমার বর্তমান প্রজেক্ট ডিরেক্টরি লোকেশন হলো:
+  kids_tube_with_folder_seection
+
+  যাচাইকরণ প্রমাণ:
+
+  • কমান্ড: pwd
+  • ফলাফল: /home/azureuser/kids_tube_with_folder_seection
+  • স্ট্যাটাস: সফল (Exit Code 0)
+
+────────────────────────────────────────────────────────────────────────────────
+>
+────────────────────────────────────────────────────────────────────────────────
+? for shortcuts                                          Gemini 3.8 Flash · high
+=== PANE 8 ===
+  📥 সরাসরি ডাউনলোড লিংক (Direct Link)
+  «──────────────────────────────»
+  📥 ডাইরেক্ট ডাউনলোড লিংক:
+  https://litter.catbox.moe/4mw2qz.apk
+
+  «──────────────────────────────»
+  🛑 গিট পুশ স্ট্যাটাস
+  «──────────────────────────────»
+
+  আপনার কঠোর নির্দেশ মেনে আমি কোনো git push করিনি।
+  আপনি বললে তৎক্ষণাৎ পুশ সম্পন্ন করব ভাইয়া।*
+
+  ইরাক ভাইয়া,
+
+  সিস্টেমের ব্যাকগ্রাউন্ড টাস্কটি নিশ্চিত করেছে
+  যে Flutter রিলিজ APK বিল্ড সম্পূর্ণ ত্রুটিহীনভাবে
+  সম্পন্ন হয়েছে (assembleRelease সফল, আকার: 53.3 MB)।
+
+  «──────────────────────────────»
+  📊 বর্তমান কাজের অবস্থা
+  «──────────────────────────────»
+
+  • Canonical Feature Set: ৪৪/৪৪ (১০০% মিল)
+  • Parity Gate: ৪৪টি কন্টাক্ট পাস (০ ব্যর্থ)
+  • Automated Tests: ৩৬/৩৬টি টেস্ট পাস
+  • Extra Features: ০ (AXUM সেকশন মুক্ত)
+  • রিলিজ APK: প্রস্তুত ও ক্লাউডে আপলোডকৃত
+
+  📥 ডাইরেক্ট ডাউনলোড লিংক:
+  https://litter.catbox.moe/4mw2qz.apk
+
+  আপনার অনুমতি ছাড়া কোনো git push করা হয়নি।
+  এখন আপনার পরবর্তী নির্দেশনা কী ভাইয়া?
+
+────────────────────────────────────────────────────────────────────────────────
+>
+
+────────────────────────────────────────────────────────────────────────────────
+                                                         Gemini 3.8 Flash · high
+
+Terminal ID: fcde6635-ba46-4ce9-8963-4d183783bc4f

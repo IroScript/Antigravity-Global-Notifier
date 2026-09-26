@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory listing for /azureuser_root/</title>
+</head>
+<body>
+<h1>Directory listing for /azureuser_root/</h1>
+<hr>
+<ul>
+<li><a href=".cache/">.cache/</a></li>
+<li><a href=".config/">.config/</a></li>
+<li><a href=".gemini/">.gemini/</a></li>
+<li><a href=".gradle/">.gradle/</a></li>
+<li><a href=".local/">.local/</a></li>
+<li><a href=".npm/">.npm/</a></li>
+<li><a href=".npm-global/">.npm-global/</a></li>
+<li><a href=".openclaw/">.openclaw/</a></li>
+<li><a href=".ssh/">.ssh/</a></li>
+<li><a href=".sudo_as_admin_successful">.sudo_as_admin_successful</a></li>
+<li><a href=".webterminal/">.webterminal/</a></li>
+<li><a href="3D-Game-Design-Studio/">3D-Game-Design-Studio/</a></li>
+<li><a href="AGY-MASTER/">AGY-MASTER/</a></li>
+<li><a href="Ask-And-Research/">Ask-And-Research/</a></li>
+<li><a href="csv_downloads_url.txt">csv_downloads_url.txt</a></li>
+<li><a href="Frappe-erp-Alco/">Frappe-erp-Alco/</a></li>
+<li><a href="kids_tube_with_folder_seection/">kids_tube_with_folder_seection/</a></li>
+<li><a href="MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt">MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt</a></li>
+<li><a href="RESTORED_PROJECTS/">RESTORED_PROJECTS/</a></li>
+<li><a href="RESTORED_VIDEOS/">RESTORED_VIDEOS/</a></li>
+<li><a href="Rust_Task_With_Time_Keeping_And_Live_Note/">Rust_Task_With_Time_Keeping_And_Live_Note/</a></li>
+<li><a href="telegram-bot/">telegram-bot/</a></li>
+<li><a href="tmp/">tmp/</a></li>
+</ul>
+<hr>
+

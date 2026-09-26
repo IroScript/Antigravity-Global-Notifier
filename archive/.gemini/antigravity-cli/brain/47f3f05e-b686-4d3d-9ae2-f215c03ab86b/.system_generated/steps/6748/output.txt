@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwx------  2 azureuser azureuser 4096 Sep 25 12:56 .
+drwxr-xr-x 22 azureuser azureuser 4096 Sep 25 12:24 ..
+-rw-------  1 azureuser azureuser  553 Sep 25 09:44 authorized_keys
+-rw-r--r--  1 azureuser azureuser  142 Sep 25 12:56 known_hosts
+

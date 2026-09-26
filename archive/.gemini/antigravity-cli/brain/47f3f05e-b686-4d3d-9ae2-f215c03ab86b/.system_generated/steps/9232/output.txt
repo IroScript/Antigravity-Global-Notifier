@@ -1,0 +1,28 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/AGY-MASTER/REPORTS/FORENSIC_AUDIT_REPORT_DELETE_PROOF.txt. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -177,13 +177,18 @@
+ File exists after syscall?: False
+ 
+ [TECHNICAL FINDING]
+-CRITICAL VULNERABILITY PROVEN:
+-A direct x86_64 system call (SYS_unlink = 87) completely bypassed:
++APPLICATION INTERCEPTION BYPASS CONFIRMED:
++A direct x86_64 system call (SYS_unlink = 87) bypassed:
+ - hooks.json PreToolUse hook
+ - /usr/local/bin/rm interceptor
+ - protected_registry.json
+-The file was immediately and permanently deleted by the kernel.
+-This confirms Iraq Bhai's insight: userland wrappers do not prove delete-proof security.
++The file was deleted directly via the kernel's syscall interface without
++triggering our userland hooks or wrappers.
++IMPORTANT CORRECTION & CALIBRATION:
++Direct syscall is NOT a "kernel security bypass"; standard Linux kernel file
++permission checks still apply. Any file where the running process has adequate
++Linux permissions/access can be unlinked directly via syscall, demonstrating
++that userland wrappers/hooks provide zero defense against arbitrary execution.
+ 
+ --------------------------------------------------------------------------------
+ POINT 9: PARENT DIRECTORY RENAMING WITH IMMUTABLE CHILDREN
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+[DENIED ] rm -rf /tmp/foo -> Destructive file removal command (rm)
+[DENIED ] rm file.txt -> Destructive file removal command (rm)
+[DENIED ] unlink file.txt -> Destructive file removal command (unlink)
+[DENIED ] rmdir somedir -> Destructive file removal command (rmdir)
+[DENIED ] /bin/rm -f test -> Destructive file removal command (rm)
+[DENIED ] find . -name "*.tmp" -delete -> Destructive find command (-delete / -exec rm)
+[DENIED ] find . -exec rm -f {} + -> Destructive find command (-delete / -exec rm)
+[DENIED ] xargs rm -f -> Indirect deletion via xargs rm
+[DENIED ] git clean -fd -> Destructive git clean command
+[DENIED ] git clean -fdx -> Destructive git clean command
+[DENIED ] git reset --hard HEAD~1 -> Destructive git reset --hard command
+[DENIED ] git checkout -- . -> Destructive git checkout -- file revert
+[DENIED ] git restore . -> Destructive git restore command
+[DENIED ] rsync -av --delete /src/ /dst/ -> Destructive rsync --delete command
+[DENIED ] echo "" > /etc/passwd -> Destructive shell truncation into /etc/passwd
+[DENIED ] truncate -s 0 file.txt -> Destructive file truncation command (truncate)
+[DENIED ] chattr -i /home/azureuser/POLICIES/safety_levels.json -> Stripping immutable attribute (+i -> -i)
+[DENIED ] sudo whoami -> Privilege escalation command (sudo)
+[DENIED ] python3 -c "import os; os.remove(\"foo\")" -> Python os removal call
+[DENIED ] python3 -c "import shutil; shutil.rmtree(\"foo\")" -> Python shutil.rmtree call
+[DENIED ] ls -la; rm -rf / -> Destructive file removal command (rm)
+[DENIED ] echo hello && find . -delete -> Destructive find command (-delete / -exec rm)
+[ALLOWED] git status -> Safe
+[ALLOWED] cargo test -> Safe
+[ALLOWED] echo "this mentions rm in text" > /dev/null -> Safe
+[ALLOWED] grep -r "rm" /tmp/dir -> Safe
+

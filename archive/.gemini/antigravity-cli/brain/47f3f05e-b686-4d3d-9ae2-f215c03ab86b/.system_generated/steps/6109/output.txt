@@ -1,0 +1,65 @@
+
+The command exited with code 1.
+Output:
+Tables in pipeline db: ['ideas', 'tags', 'content_history', 'collections', 'models', 'settings', 'idea_versions', 'idea_features', 'idea_embeddings', 'duplicate_checks', 'prompts', 'idea_tags', 'collection_ideas', 'prompt_versions', 'generation_jobs', 'generated_videos', 'schedules', 'idea_assets', 'publishing', 'categories', 'elements', 'idea_elements', 'channels', 'channel_prompts', 'pipeline_runs', 'pipeline_stage_audits', 'channel2_shot_audits', 'tasks', 'task_attempts', 'prompting_style_master', 'youtube_metadata', 'seo_runs', 'seo_competitors', 'seo_keyword_metrics', 'workflows', 'workflow_versions', 'workflow_steps', 'workflow_executions', 'step_runs', 'execution_events', 'workflow_migrations', 'step_attempts', 'jobs', 'audit_logs', 'external_operations', 'test_req_003_with_uuid', 'test_req_003_no_uuid', 'req_009_tx_test', 'test_jsonb_payloads', 'pipeline_row_state', 'pipeline_checkpoints', 'pipeline_failure_logs', 'sqlite_sequence']
+  ideas: 637 rows
+  tags: 0 rows
+  content_history: 69 rows
+  collections: 0 rows
+  models: 0 rows
+  settings: 0 rows
+  idea_versions: 0 rows
+  idea_features: 0 rows
+  idea_embeddings: 0 rows
+  duplicate_checks: 0 rows
+  prompts: 7480 rows
+  idea_tags: 0 rows
+  collection_ideas: 0 rows
+  prompt_versions: 0 rows
+  generation_jobs: 2 rows
+  generated_videos: 325 rows
+  schedules: 0 rows
+  idea_assets: 6 rows
+  publishing: 6 rows
+  categories: 1 rows
+  elements: 100 rows
+  idea_elements: 637 rows
+  channels: 2 rows
+  channel_prompts: 38 rows
+  pipeline_runs: 8 rows
+  pipeline_stage_audits: 160 rows
+  channel2_shot_audits: 38 rows
+  tasks: 13 rows
+  task_attempts: 34 rows
+  prompting_style_master: 13 rows
+  youtube_metadata: 555 rows
+  seo_runs: 562 rows
+  seo_competitors: 12235 rows
+  seo_keyword_metrics: 32284 rows
+  workflows: 0 rows
+  workflow_versions: 0 rows
+  workflow_steps: 0 rows
+  workflow_executions: 48 rows
+  step_runs: 0 rows
+  execution_events: 0 rows
+  workflow_migrations: 0 rows
+  step_attempts: 0 rows
+  jobs: 0 rows
+  audit_logs: 2 rows
+  external_operations: 0 rows
+  test_req_003_with_uuid: 0 rows
+  test_req_003_no_uuid: 0 rows
+  req_009_tx_test: 0 rows
+  test_jsonb_payloads: 0 rows
+  pipeline_row_state: 17 rows
+  pipeline_checkpoints: 0 rows
+  pipeline_failure_logs: 0 rows
+  sqlite_sequence: 1 rows
+
+generated_videos columns: ['id', 'uuid', 'idea_id', 'generation_job_id', 'title', 'file_path', 'file_name', 'duration_seconds', 'width', 'height', 'fps', 'file_size_bytes', 'format', 'codec', 'resolution', 'thumbnail_path', 'subtitle_path', 'audio_path', 'quality_score', 'status', 'created_at']
+Traceback (most recent call last):
+  File "<string>", line 22, in <module>
+    cur.execute('SELECT video_id, file_path, file_size, duration, created_at FROM generated_videos LIMIT 5')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: video_id
+

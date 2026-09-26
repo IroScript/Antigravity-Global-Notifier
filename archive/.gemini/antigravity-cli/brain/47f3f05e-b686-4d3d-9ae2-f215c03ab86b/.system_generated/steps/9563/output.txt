@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: man: Can't follow symlink without -L/--copy-links
+<5>NOTICE: lib/android/sdk: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/unlink: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/agy-landlock-exec: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/agy: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/rm: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/uv: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/adb: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/bench: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/rmdir: Can't follow symlink without -L/--copy-links
+<5>NOTICE: bin/uvx: Can't follow symlink without -L/--copy-links
+Total objects: 13.640k (13640)
+Total size: 554.855 MiB (581807836 Byte)
+Total objects: 256 (256)
+Total size: 433.658 MiB (454723713 Byte)
+

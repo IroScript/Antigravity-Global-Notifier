@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+du: cannot access '/recovered/ALL_DELETED/MAGIC-2/*': No such file or directory
+

@@ -1,0 +1,7 @@
+
+The command exited with code 1.
+Output:
+ERROR: (gcloud.compute.instances.describe) Could not fetch resource:
+ - Request had insufficient authentication scopes.
+
+

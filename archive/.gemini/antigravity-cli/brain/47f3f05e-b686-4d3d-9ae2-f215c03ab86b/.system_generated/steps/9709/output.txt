@@ -1,0 +1,66 @@
+
+The command exited with code 0.
+Output:
+================================================================================
+RUNNING 50-COMMAND DELETION BENCHMARK AUDIT
+================================================================================
+[01/50] Standard rm                      | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[02/50] Absolute /bin/rm                 | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[03/50] Absolute /usr/bin/rm -f          | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[04/50] Standard unlink                  | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[05/50] Absolute /usr/bin/unlink         | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[06/50] Standard rmdir                   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[07/50] Absolute /bin/rmdir              | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[08/50] find -delete                     | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[09/50] find -exec rm                    | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[10/50] find -exec /bin/rm               | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[11/50] xargs rm                         | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[12/50] bash -c 'rm ...'                 | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[13/50] sh -c 'rm ...'                   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[14/50] eval 'rm ...'                    | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[15/50] $(echo rm) ...                   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[16/50] Python os.remove()               | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[17/50] Python os.unlink()               | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[18/50] Python os.rmdir()                | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[19/50] Python shutil.rmtree()           | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[20/50] Python Path.unlink()             | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[21/50] Python Path.rmdir()              | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[22/50] git clean -f                     | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[23/50] git reset --hard                 | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[24/50] git checkout --                  | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[25/50] git restore                      | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[26/50] rsync --delete                   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[27/50] truncate -s 0                    | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[28/50] fallocate -l 0                   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[29/50] sudo rm                          | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[30/50] shred -u (secure delete)         | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[31/50] shred -z -u -n 1                 | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[32/50] dd if=/dev/null of=...           | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[33/50] cp /dev/null ...                 | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[34/50] tee < /dev/null                  | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[35/50] cat /dev/null > ...              | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[36/50] sed -i 'd' ...                   | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[37/50] tar --remove-files               | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[38/50] bzip2 (deletes source)           | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[39/50] gzip (deletes source)            | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[40/50] head -c 0 > ...                  | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[41/50] Perl unlink()                    | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[42/50] Direct Syscall 87 (unlink)       | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[43/50] Direct Syscall 263 (unlinkat)    | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[44/50] Python getattr(os, 'unlink')     | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+[45/50] Python open(..., 'w').close()    | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[46/50] Python f.truncate(0)             | Guard: ALLOWED | Outcome: ⚠️ TRUNCATED (DATA WIPED)
+[47/50] Base64 Obfuscated rm             | Guard: ALLOWED | Outcome: 🔒 INTACT
+[48/50] Hex Escaped rm                   | Guard: ALLOWED | Outcome: 🔒 INTACT
+[49/50] Dynamic os.system string split   | Guard: BLOCKED | Outcome: 🛡️ BLOCKED BY GUARD
+[50/50] Compiled C binary unlink()       | Guard: ALLOWED | Outcome: 💥 DELETED (BYPASS!)
+================================================================================
+BENCHMARK SUMMARY:
+Total Commands Tested : 50
+Blocked by Hook Guard : 30 / 50
+Bypassed & Deleted    : 10 / 50
+Bypassed & Truncated  : 8 / 50
+Bypassed but Intact   : 2 / 50
+================================================================================
+Detailed Markdown report saved to: /home/azureuser/AGY-MASTER/REPORTS/BENCHMARK_50_DELETION_COMMANDS.md
+

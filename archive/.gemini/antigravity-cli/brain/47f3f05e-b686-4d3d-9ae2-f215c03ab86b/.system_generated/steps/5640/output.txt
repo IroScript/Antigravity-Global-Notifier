@@ -1,0 +1,87 @@
+
+The command exited with code 0.
+Output:
+=== Telegram ===
+   Journal Block 53189 -> 10 entries:
+      [1970800] (type 2) . (rlen 12)
+      [14024707] (type 2) .. (rlen 12)
+      [1970801] (type 1) description (rlen 20)
+      [1970802] (type 2) branches (rlen 16)
+      [1970803] (type 2) info (rlen 12)
+      [1970805] (type 2) hooks (rlen 16)
+      [1970820] (type 2) refs (rlen 20)
+      [1970821] (type 1) config (rlen 16)
+      [1970825] (type 2) objects (rlen 20)
+      [1970824] (type 1) HEAD (rlen 3940)
+   Journal Block 53191 -> 27 entries:
+      [14024707] (type 2) . (rlen 12)
+      [13893633] (type 2) .. (rlen 12)
+      [14026328] (type 2) __pycache__ (rlen 20)
+      [14027080] (type 1) .env.example (rlen 20)
+      [14027079] (type 1) .env (rlen 12)
+      [14027084] (type 1) auth_telegram.py (rlen 28)
+      [14027081] (type 1) .gitignore (rlen 20)
+      [14027082] (type 1) AGENTS.md (rlen 20)
+      [14027083] (type 1) GEMINI.md (rlen 20)
+      [14027091] (type 1) master_api_vault.json (rlen 36)
+      [14027085] (type 1) buyer_detector.py (rlen 28)
+      [14027086] (type 1) buyers.csv (rlen 20)
+      [14027087] (type 1) buyers.json (rlen 20)
+      [14027088] (type 1) config.py (rlen 20)
+      [14027089] (type 1) llm_analyzer.py (rlen 24)
+=== KidsTube ===
+   Journal Block 1476 -> 0 entries:
+   Journal Block 4602 -> 0 entries:
+   Journal Block 49416 -> 29 entries:
+      [14024706] (type 2) . (rlen 12)
+      [13893633] (type 2) .. (rlen 12)
+      [14024768] (type 2) .git (rlen 12)
+      [14024769] (type 2) .github (rlen 16)
+      [14024770] (type 2) .gradle (rlen 16)
+      [14024771] (type 2) .kotlin (rlen 16)
+      [14024772] (type 2) app (rlen 12)
+      [14024773] (type 2) assets (rlen 16)
+      [14024774] (type 2) gradle (rlen 16)
+      [14025304] (type 1) .env.example (rlen 20)
+      [14025303] (type 1) .env (rlen 12)
+      [14025307] (type 1) PROJECT_RULES.md (rlen 28)
+      [14025305] (type 1) .gitignore (rlen 20)
+      [14025306] (type 1) KidsTube.txt (rlen 20)
+      [14025310] (type 1) build.gradle.kts (rlen 28)
+=== Frappe ===
+   Journal Block 156388 -> 0 entries:
+=== 3DGame ===
+   Journal Block 49432 -> 23 entries:
+      [795463] (type 2) . (rlen 12)
+      [13893633] (type 2) .. (rlen 12)
+      [822833] (type 2) .agy_evidence (rlen 24)
+      [822834] (type 2) .git (rlen 12)
+      [822835] (type 2) assets (rlen 16)
+      [822836] (type 2) cloud (rlen 16)
+      [822837] (type 2) dist (rlen 12)
+      [822838] (type 2) node_modules (rlen 20)
+      [822839] (type 2) projects (rlen 16)
+      [822840] (type 2) public (rlen 16)
+      [822841] (type 2) src (rlen 12)
+      [822879] (type 1) ARCHITECTURE.md (rlen 28)
+      [822877] (type 1) .gitignore (rlen 20)
+      [822878] (type 1) 3D_bLOG.txt (rlen 20)
+      [822883] (type 1) input_design.jpeg (rlen 28)
+=== Article ===
+   Journal Block 49425 -> 38 entries:
+      [14286849] (type 2) . (rlen 12)
+      [13893633] (type 2) .. (rlen 12)
+      [14286850] (type 2) .agy_evidence (rlen 24)
+      [14286851] (type 2) .git (rlen 12)
+      [14286852] (type 2) .next (rlen 16)
+      [14286853] (type 2) .vscode (rlen 16)
+      [14286854] (type 2) node_modules (rlen 20)
+      [14286855] (type 2) public (rlen 16)
+      [14286856] (type 2) src (rlen 12)
+      [14286857] (type 2) tests (rlen 16)
+      [14286858] (type 2) tools (rlen 16)
+      [14286936] (type 1) .env.example (rlen 20)
+      [14286935] (type 1) .env (rlen 12)
+      [14286938] (type 1) .prettierrc.json (rlen 28)
+      [14286937] (type 1) .gitignore (rlen 20)
+

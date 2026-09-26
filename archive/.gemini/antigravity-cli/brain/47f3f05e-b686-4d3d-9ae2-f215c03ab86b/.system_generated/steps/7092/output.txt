@@ -1,0 +1,34 @@
+The search for ""gcloud org-policies" "iam.managed.disableServiceAccountKeyCreation"" returned the following summary:
+The `iam.managed.disableServiceAccountKeyCreation` constraint is a Google Cloud organization policy designed to prevent the creation of user-managed service account keys, which are long-lived credentials that pose a security risk if compromised.
+
+### Understanding the Constraint
+*   **Purpose:** To improve security by enforcing the use of more secure authentication methods (such as Workload Identity or short-lived tokens) instead of persistent service account keys.
+*   **Relationship with Legacy Policy:** Google Cloud has been transitioning from the legacy constraint (`iam.disableServiceAccountKeyCreation`) to the newer "managed" version (`iam.managed.disableServiceAccountKeyCreation`). In many environments, **both** may be present. If you are blocked from creating keys, you may need to check and potentially override both policies, as disabling only one may not be sufficient.
+
+### How to Manage the Policy
+To change this policy, you must have the **Organization Policy Administrator** (`roles/orgpolicy.policyAdmin`) or **Organization Administrator** (`roles/resourcemanager.organizationAdmin`) role at the organization level.
+
+#### Using the Google Cloud Console
+1.  Navigate to **IAM & Admin > Organization policies** in the Google Cloud Console.
+2.  Search for "Disable service account key creation" or the specific constraint IDs (`iam.disableServiceAccountKeyCreation` and `iam.managed.disableServiceAccountKeyCreation`).
+3.  Select the policy you wish to modify.
+4.  Click **Manage policy**.
+5.  Choose **Override parent's policy** and set the enforcement to **Off** (or "Not enforced") for your project or folder.
+
+#### Using `gcloud` CLI
+If you have the necessary permissions, you can manage these policies via the command line.
+
+**To check the current policy:**
+```bash
+gcloud resource-manager org-policies describe iam.managed.disableServiceAccountKeyCreation --project=[PROJECT_ID]
+```
+
+**To disable the enforcement of the policy for a project:**
+```bash
+gcloud resource-manager org-policies disable-enforce iam.managed.disableServiceAccountKeyCreation --project=[PROJECT_ID]
+```
+*(Note: If the legacy constraint is also enforced, you would run the same command substituting `iam.disableServiceAccountKeyCreation`.)*
+
+### Important Considerations
+*   **Inheritance:** These policies are often set at the organization level, which means they are inherited by all folders and projects below them. If you cannot edit the policy, you likely lack the necessary permissions at the **Organization** level (project-level ownership is often insufficient).
+*   **Best Practice:** It is highly recommended to keep these policies enforced whenever possible. If you must disable them for a specific task (like service account key creation), consider re-enabling them immediately afterward to maintain your security posture.

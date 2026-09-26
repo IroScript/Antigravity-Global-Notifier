@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+NAMES              STATUS                 PORTS
+chatgpt_worker_2   Up 3 hours (healthy)   0.0.0.0:8002->8000/tcp, :::8002->8000/tcp
+chatgpt_worker_3   Up 4 hours (healthy)   0.0.0.0:8003->8000/tcp, :::8003->8000/tcp
+chatgpt_worker_4   Up 3 hours (healthy)   0.0.0.0:8004->8000/tcp, :::8004->8000/tcp
+chatgpt_worker_1   Up 2 hours (healthy)   0.0.0.0:8001->8000/tcp, :::8001->8000/tcp
+

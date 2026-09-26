@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+UID          PID    PPID  C STIME TTY          TIME CMD
+root      204399       1 11 Sep24 ?        05:37:37 /usr/bin/python3 /home/azure
+

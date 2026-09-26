@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Group 1712: (Blocks 56098816-56131583) csum 0x475b [ITABLE_ZEROED]
+  Block bitmap at 56098816 (+0), csum 0xac8f54ea
+  Inode bitmap at 56098832 (+16), csum 0xa4afe052
+  Inode table at 56098848-56099359 (+32)
+  24540 free blocks, 0 free inodes, 340 directories
+  Free blocks: 56107043-56107802, 56107804-56131583
+

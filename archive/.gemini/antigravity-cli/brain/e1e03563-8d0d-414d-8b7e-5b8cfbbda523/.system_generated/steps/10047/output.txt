@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-25 15:51:18 UTC
+============================================================
+Total Ideas Generated       : 667 / 1000 (66.7%)
+Total Prompts Generated     : 7800 / 10000 (78.0%)
+Total Real SEO Completed    : 555 / 1000 (55.5%)
+Worker Status:
+  - Worker 1: generating_ideas (Completed: 38)
+  - Worker 2: generating_ideas (Completed: 27)
+  - Worker 3: generating_seo (Completed: 238)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-25 15:51:18,995 [INFO] [30MinMonitor] 📊 30-Minute progress snapshot saved to: cluster_30min_report.log
+2026-09-25 15:51:28,462 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:51:38,465 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:51:48,465 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #660: No module named 'seo_engine.seo_models'
+2026-09-25 15:51:50,136 [WARNING] [worker_1] Retry 4/5 for Ideas for Element #39 (Sun) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 15:52:03,467 [INFO] [worker_3] [Idea #661: 'River Time-Bender'] Generating real SEO via http://localhost:8003...
+2026-09-25 15:52:06,848 [WARNING] [worker_3] [worker_3] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:52:16,850 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:52:26,852 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:52:36,853 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #661: No module named 'seo_engine.seo_models'
+2026-09-25 15:52:51,855 [INFO] [worker_3] [Idea #662: 'Megacity Inverter'] Generating real SEO via http://localhost:8003...
+2026-09-25 15:52:56,420 [WARNING] [worker_3] [worker_3] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:53:06,422 [WARNING] [worker_3] [worker_3] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:53:16,424 [WARNING] [worker_3] [worker_3] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 15:53:25,372 [WARNING] [worker_1] Retry 5/5 for Ideas for Element #39 (Sun) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 15:53:26,425 [ERROR] [worker_3] ❌ [worker_3] Error generating SEO for Idea #662: No module named 'seo_engine.seo_models'
+2026-09-25 15:53:40,373 [ERROR] [worker_1] Worker worker_1 failed generating ideas for Sun: Timeout
+2026-09-25 15:53:41,427 [INFO] [worker_3] [Elem #76: Mining System] Generating 10 ideas via http://localhost:8003...
+2026-09-25 15:53:50,374 [INFO] [worker_1] [Elem #40: Cloud] Generating 10 ideas via http://localhost:8001...
+2026-09-25 15:55:08,202 [WARNING] [worker_1] Retry 1/5 for Ideas for Element #40 (Cloud) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 15:55:20,741 [WARNING] [worker_4] Retry 4/5 for Ideas for Element #91 (Vault) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 15:56:04,635 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 15:56:04,635 [WARNING] [worker_2] Retry 4/5 for Ideas for Element #57 (Insect Swarm) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 15:56:44,332 [WARNING] [worker_1] Retry 2/5 for Ideas for Element #40 (Cloud) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 15:58:21,823 [WARNING] [worker_1] Retry 3/5 for Ideas for Element #40 (Cloud) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+2026-09-25 15:58:41,568 [ERROR] [worker_3] HTTP POST to http://localhost:8003/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 15:58:41,568 [WARNING] [worker_3] Retry 1/5 for Ideas for Element #76 (Mining System) via http://localhost:8003 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 15:59:58,347 [WARNING] [worker_1] Retry 4/5 for Ideas for Element #40 (Cloud) via http://localhost:8001 (info: No visible input element found on ChatGPT page.). Waiting 15s...
+

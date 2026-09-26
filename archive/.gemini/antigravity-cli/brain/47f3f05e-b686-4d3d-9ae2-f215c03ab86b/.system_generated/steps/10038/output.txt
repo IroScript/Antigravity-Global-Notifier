@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+lrwxrwxrwx 1 azureuser azureuser 25 Sep 26 09:57 /home/azureuser/irakiroan -> /home/azureuser/IrakIroan
+

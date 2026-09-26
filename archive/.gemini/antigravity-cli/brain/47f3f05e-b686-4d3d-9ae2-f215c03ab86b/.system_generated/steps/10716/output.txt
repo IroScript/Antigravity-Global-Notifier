@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/frappe/frappe/public/js/frappe/ui/chart.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/frappe/frappe/public/js/frappe/views/workspace/blocks/chart.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/frappe/frappe/public/js/frappe/widgets/chart_widget.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/frappe/node_modules/frappe-charts/src/js/chart.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/frappe/node_modules/frappe-charts/src/css/chartsCss.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/frappe-bench/apps/erpnext/erpnext/accounts/doctype/chart_of_accounts_importer/chart_of_accounts_importer.js
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/Article-Publishing-Platform/node_modules/monaco-editor/esm/vs/platform/theme/common/colors/chartsColors.js
+

@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+/usr/bin/rclone copy /home/azureuser personaldrive:Azure_VM_Live_Backup_Fateh_Ali --update --transfers 4 --checkers 8 --stats-one-line --log-level NOTICE --exclude *.sock --exclude **/.cache/** --exclude **/node_modules/** --exclude **/target/debug/** --exclude **/target/release/incremental/** --exclude **/__pycache__/** --exclude *.pyc --exclude *.tmp 

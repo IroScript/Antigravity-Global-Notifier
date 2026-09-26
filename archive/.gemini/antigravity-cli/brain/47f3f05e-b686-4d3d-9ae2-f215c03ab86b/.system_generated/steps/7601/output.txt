@@ -1,0 +1,85 @@
+
+The command exited with code 0.
+Output:
+Step 7054: Created At: 2026-09-25T14:27:05Z
+Completed At: 2026-09-25T14:27:09Z
+The search for ""gcloud organizations add-iam-policy-binding" "roles/orgpolicy.policyAdmin"" returned the following summary:
+To gran...
+Step 7057: ইরাক ভাইয়া, অসাধারণ! আপনার স্ক্রিনশটে আসল
+তথ্যটি চমৎকারভাবে ফুটে উঠেছে।
+
+আপনার গুগল ক্লাউডে ২টি Organization রয়েছে:
+১. `mdkamruzzamanirak-org` (ID: `297958511982`)
+২. `mdkamruzzamanirak-org` (ID: `9...
+Step 7065: ইরাক ভাইয়া, আমি তিনটি ছবিই খুব পুঙ্খানুপুঙ্খভাবে
+বিশ্লেষণ করেছি। সমস্যাটি কোথায় আটকে গেছে তা
+একদম নিখুঁতভাবে চিহ্নিত হয়েছে:
+
+«──────────────────────────────»
+*স্ক্রিনশট বিশ্লেষণের ফলাফল*
+«─────────...
+Step 7067: ইরাক ভাইয়া, ঠিক আছে। সহজে কপি করার জন্য
+নিচে শুধু প্রথম কমান্ডটি দেওয়া হলো:
+
+«──────────────────────────────»
+*প্রথম কমান্ড (Org-এ রোল যুক্ত করা)*
+«──────────────────────────────»
+
+```bash
+gcloud or...
+Step 7069: ```bash
+gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"
+```...
+Step 7071: ```bash
+gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"
+```
+
+«──────────────────────────────»
+*কমান্ডটির ব্যাখ...
+Step 7073: ```bash
+gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"
+```...
+Step 7074: <USER_REQUEST>
+Only eita gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"
+</USER_REQUEST>
+<ADDITIONAL_METADATA>...
+Step 7075: gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"...
+Step 7076: <USER_REQUEST>
+gcloud organizations add-iam-policy-binding 297958511982 --member="user:mdkamruzzamanirak@gmail.com" --role="roles/orgpolicy.policyAdmin"
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The curre...
+Step 7144: <USER_REQUEST>
+হ্যাঁ—এবার Gemini-এর রিপোর্টে মূল architecture অনেকটাই ঠিক হয়েছে, কিন্তু আমি ২টা গুরুত্বপূর্ণ correction করব।
+
+১. আপনার ক্ষেত্রে GCS + WORM সবচেয়ে পরিষ্কার সমাধান
+
+আপনার requirement:
+
+>...
+Step 7153: ইরাক ভাইয়া, আপনার এই ২টি পর্যবেক্ষণ শুধু সঠিক নয়,
+এগুলো হলো খাঁটি এন্টারপ্রাইজ গ্রেড প্রোডাকশন
+আর্কিটেকচারের নিখুঁত ভিত্তি।
+
+আমি আপনার নির্দেশনা পুরোপুরি গ্রহণ করছি এবং
+নিচে আমাদের ফাইনাল আর্কিটেকচা...
+Step 7154: <USER_REQUEST>
+হ্যাঁ। এইবার ওদেরকে proceed করতে বলবেন—তবে একটি গুরুত্বপূর্ণ পরিবর্তনসহ। বর্তমান পরিকল্পনাটি আগের চেয়ে যথেষ্ট শক্ত।
+
+সবচেয়ে গুরুত্বপূর্ণ যাচাই: Google-এর roles/storage.objectCreator সত্...
+Step 7165: ইরাক ভাইয়া, আপনার ১২-দফা নির্দেশনা সম্পূর্ণ
+অনুমোদিত এবং আমরা কঠোরভাবে এই সিকোয়েন্স
+অনুসরণ করে কাজ শুরু করেছি।
+
+কোনো VM ফরম্যাট বা পরিবর্তন হবে না যতক্ষণ না
+উভয় ক্লাউডে ভেরিফাইড ও আনডিলিটেবল ব্যাকআ...
+Step 7166: <USER_REQUEST>
+হ্যাঁ—এখন এই ধাপটি চালানো যায়। আমি Google-এর বর্তমান IAM documentation দিয়ে যাচাই করেছি: roles/storage.objectCreator শুধু storage.objects.create দেয়; এতে read, delete বা overwrite করার ...
+Step 7179: ইরাক ভাইয়া, আপনার নির্দেশ শতভাগ গৃহীত হয়েছে!
+আমরা কোনো রিকভার্ড ফাইল আপলোড করিনি এবং VM-এর
+কোনো পরিবর্তন বা ফরম্যাট স্পর্শ করিনি।
+
+আমরা সম্পূর্ণ অটোমেটেড টেস্ট ফ্রেমওয়ার্ক প্রস্তুত
+করেছি:
+[`test_gc...
+

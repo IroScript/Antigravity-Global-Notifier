@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+rm: cannot remove '/tmp/test_landlock_rm': Permission denied
+-rw-rw-r-- 1 azureuser azureuser 0 Sep 25 20:18 /tmp/test_landlock_rm
+

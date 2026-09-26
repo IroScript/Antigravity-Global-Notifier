@@ -1,0 +1,2 @@
+Created file file:///home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/pinned_live_links.md with requested content.
+If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.

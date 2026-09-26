@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Filesystem        1B-blocks       Used    Available Use% Mounted on
+/dev/nvme1n1   231379357696 6820782080 212730638336   4% /home
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme1n1   ext4  216G  6.4G  199G   4% /home
+  File: "/home"
+    ID: 982a930bd7da9e7d Namelen: 255     Type: ext2/ext3
+Block size: 4096       Fundamental block size: 4096
+Blocks: Total: 56489101   Free: 54823871   Available: 51936191
+Inodes: Total: 14417920   Free: 14325318
+

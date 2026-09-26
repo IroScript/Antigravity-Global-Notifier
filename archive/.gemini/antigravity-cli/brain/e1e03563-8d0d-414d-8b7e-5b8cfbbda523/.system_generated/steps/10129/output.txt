@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 17:49:47,724 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #649: No module named 'seo_engine.seo_models'
+2026-09-25 17:50:02,726 [INFO] [worker_2] [Idea #650: 'Oceanic School Accelerator'] Generating real SEO via http://localhost:8002...
+2026-09-25 17:50:06,333 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:50:16,336 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:50:26,346 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:50:36,347 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #650: No module named 'seo_engine.seo_models'
+2026-09-25 17:50:51,348 [INFO] [worker_2] [Idea #651: 'Fish-Swarm Tectonic Hammer'] Generating real SEO via http://localhost:8002...
+2026-09-25 17:50:54,428 [WARNING] [worker_2] [worker_2] Attempt 1 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:51:04,430 [WARNING] [worker_2] [worker_2] Attempt 2 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:51:14,432 [WARNING] [worker_2] [worker_2] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-25 17:51:19,003 [INFO] [30MinMonitor] 
+============================================================
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-25 17:51:19 UTC
+============================================================
+Total Ideas Generated       : 667 / 1000 (66.7%)
+Total Prompts Generated     : 7800 / 10000 (78.0%)
+Total Real SEO Completed    : 555 / 1000 (55.5%)
+Worker Status:
+  - Worker 1: generating_seo (Completed: 38)
+  - Worker 2: generating_seo (Completed: 27)
+  - Worker 3: generating_ideas (Completed: 238)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-25 17:51:19,004 [INFO] [30MinMonitor] 📊 30-Minute progress snapshot saved to: cluster_30min_report.log
+2026-09-25 17:51:24,433 [ERROR] [worker_2] ❌ [worker_2] Error generating SEO for Idea #651: No module named 'seo_engine.seo_models'
+2026-09-25 17:51:25,359 [ERROR] [worker_4] HTTP POST to http://localhost:8004/generate failed: timed out
+2026-09-25 17:51:25,359 [WARNING] [worker_4] Retry 4/5 for Ideas for Element #94 (Solar Farm) via http://localhost:8004 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 17:51:39,445 [INFO] [worker_2] [Elem #59: Whale] Generating 10 ideas via http://localhost:8002...
+2026-09-25 17:54:54,917 [ERROR] [worker_3] HTTP POST to http://localhost:8003/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 17:54:54,917 [WARNING] [worker_3] Retry 3/5 for Ideas for Element #80 (Excavator) via http://localhost:8003 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 17:55:13,792 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #623: No module named 'seo_engine.seo_models'
+2026-09-25 17:55:28,794 [INFO] [worker_1] [Idea #624: 'Continental Bridge Builder Ferry'] Generating real SEO via http://localhost:8001...
+2026-09-25 17:56:39,598 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 17:56:39,598 [WARNING] [worker_2] Retry 1/5 for Ideas for Element #59 (Whale) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 17:59:09,327 [WARNING] [worker_4] Retry 5/5 for Ideas for Element #94 (Solar Farm) via http://localhost:8004 (info: ChatGPT stream completed but no output text could be captured.). Waiting 15s...
+2026-09-25 17:59:24,327 [ERROR] [worker_4] Worker worker_4 failed generating ideas for Solar Farm: Timeout
+2026-09-25 17:59:34,329 [INFO] [worker_4] [Elem #95: Wind Farm] Generating 10 ideas via http://localhost:8004...
+2026-09-25 18:00:10,064 [ERROR] [worker_3] HTTP POST to http://localhost:8003/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 18:00:10,064 [WARNING] [worker_3] Retry 4/5 for Ideas for Element #80 (Excavator) via http://localhost:8003 (info: Timeout/Network error). Waiting 15s...
+

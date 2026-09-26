@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total recovered files: 21571, Matched with real file names: 1 (0.0%)
+   Inode 3015089 -> Real name: todelete_fa95efe926fd8fd0_0_1 (carved as I_0003015089.unknown)
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.270.Level_10_Rainfall_Vortex_Forge
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.270.Level_10_Rainfall_Vortex_Forge/1.270.Level_10_Rainfall_Vortex_Forge.mp4
+

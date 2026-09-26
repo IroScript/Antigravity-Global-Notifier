@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+At offset 2, box: b'mdat' sz: 8638461
+

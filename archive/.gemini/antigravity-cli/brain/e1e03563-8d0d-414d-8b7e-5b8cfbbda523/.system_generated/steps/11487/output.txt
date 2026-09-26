@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Total Real SEO Completed    : 599 / 1000 (59.9%)
+Worker Status:
+  - Worker 1: generating_prompts (Completed: 39)
+  - Worker 2: generating_prompts (Completed: 40)
+  - Worker 3: cycle_resting (Completed: 71)
+  - Worker 4: macro_resting (Completed: 41)
+============================================================
+
+2026-09-26 06:30:54,466 [WARNING] [worker_1] [worker_1] Retry 4/5 for Escalation for Idea #710 (Walking Dock Colossus) via port 8001: <urlopen error [Errno 32] Broken pipe>. Waiting 15s...
+2026-09-26 06:31:04,561 [WARNING] [worker_2] [worker_2] Retry 5/5 for Escalation for Idea #746 (Swarmspan Megabridge) via port 8002: [Errno 104] Connection reset by peer. Waiting 15s...
+2026-09-26 06:31:19,561 [ERROR] [worker_2] [worker_2] Worker worker_2 failed generating escalation for Idea #746
+2026-09-26 06:31:19,561 [WARNING] [worker_2] [worker_2] ⚠️ Action 'Idea #746 Escalation' failed or rate-limited. Pausing 45s before retry...
+

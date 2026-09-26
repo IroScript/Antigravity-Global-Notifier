@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+drwx------  5 root root 4096 Sep 25 10:51 /root
+drwxr-xr-x  2 root root 4096 Sep  9 04:23 /srv
+drwxr-xr-x 11 root root 4096 Sep 22 17:45 /var
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+/usr/lib
+└── npm@11.19.1
+
+
+Terminal ID: 4096bb14-96e9-478b-a429-8f110bfd6166

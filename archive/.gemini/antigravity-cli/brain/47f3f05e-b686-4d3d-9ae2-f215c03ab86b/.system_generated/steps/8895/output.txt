@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/usr/local/bin/rm
+/usr/local/bin/rmdir
+/usr/local/bin/unlink
+

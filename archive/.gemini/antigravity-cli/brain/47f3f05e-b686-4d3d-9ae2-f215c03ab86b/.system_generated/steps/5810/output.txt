@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 32 -> /home/azureuser/.gemini/antigravity-cli/presence/161f509d-2fbb-4799-97e7-463b480cf3f7.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 24 -> /home/azureuser/.gemini/antigravity-cli/presence/57e29500-c7a5-48ce-946f-2b109cf89db9.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 61 -> /home/azureuser/.gemini/antigravity-cli/presence/c98745a3-3338-4796-b300-d64177ec4299.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 38 -> /home/azureuser/.gemini/antigravity-cli/presence/903ba240-12ba-40f0-9ef9-8e96bab7b34c.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 25 -> /home/azureuser/.gemini/antigravity-cli/presence/7c45b5d4-cdb7-4889-b5d9-c6d96989221a.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 25 -> /home/azureuser/.gemini/antigravity-cli/presence/dc0cfb20-85a6-46ec-a82d-536aa6ef3590.lock (deleted)
+lrwx------ 1 azureuser azureuser 64 Sep 25 10:59 65 -> /home/azureuser/.gemini/antigravity-cli/presence/9b67fbb1-da60-40e2-af35-2dc4e8e560b8.lock (deleted)
+

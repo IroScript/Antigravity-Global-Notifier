@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+not called
+
+Terminal ID: 39a15ccc-ee4c-491d-9351-68036b7e704c

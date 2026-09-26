@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+total 48
+drwxrwxr-x  6 azureuser azureuser  4096 Sep 25 07:58 .
+drwxr-xr-x 13 azureuser azureuser  4096 Sep 25 08:00 ..
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 07:57 AGENTS.md
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:57 INCIDENTS
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:58 POLICIES
+-rw-r--r--  1 azureuser azureuser  2690 Sep 25 07:58 PROJECT_REGISTRY.md
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:57 REPORTS
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 25 07:57 TASKS
+

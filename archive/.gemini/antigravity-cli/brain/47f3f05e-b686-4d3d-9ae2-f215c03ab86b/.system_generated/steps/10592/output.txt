@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Created symlink '/home/azureuser/.config/systemd/user/default.target.wants/azure-file-explorer-tunnel.service' → '/home/azureuser/.config/systemd/user/azure-file-explorer-tunnel.service'.
+

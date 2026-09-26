@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Line 58 too long (51 chars): আমরা নিখুঁত আরগুমেন্টভিত্তিক গ্র্যানুলারিটি নিচ্ছি:
+Max non-URL line length: 51
+
+Terminal ID: bc992c68-df35-4a06-92ef-4360bdffb950

@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+/tmp/restored_clean.sqlite
+/tmp/restored_db_1.db
+-rw------- 1 azureuser azureuser 24M Sep 24 18:31 /tmp/final_staged_clean.sqlite
+-rw------- 1 azureuser azureuser 24M Sep 24 18:11 /tmp/restored_clean.sqlite
+-rw------- 1 azureuser azureuser   0 Sep 24 18:11 /tmp/test_small.sqlite
+-rw-r--r-- 1 azureuser azureuser 52K Sep 25 11:00 /tmp/tg_recovered.sqlite
+-rw-r--r-- 1 azureuser azureuser 48K Sep 25 11:00 /tmp/tg_recovered_db4.sqlite
+

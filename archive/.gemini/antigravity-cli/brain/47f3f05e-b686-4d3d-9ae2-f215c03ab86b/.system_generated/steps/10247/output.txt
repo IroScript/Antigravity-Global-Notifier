@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+s.socket.close()}catch(e){}}this.socket=new WebSocket(this.options.wsUrl,["tty"]);const{socket:e,regist
+

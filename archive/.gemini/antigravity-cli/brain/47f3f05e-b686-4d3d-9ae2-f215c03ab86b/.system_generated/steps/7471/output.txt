@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+=== AUTHORITATIVE /home SOURCE INVENTORY ===
+Total Regular Files: 84,482
+Total Directories:   7,137
+Total Symlinks:      36
+Total File Bytes:    6,715,656,982 bytes (6.25 GiB)
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+1knh-c-zvI4vy01SjsEz50u9kMWTG_BW1;All_VM_BackUps/
+

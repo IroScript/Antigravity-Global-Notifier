@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+/usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py 
+Terminal ID: de568e81-abc2-42d6-9365-893c3aa038c4

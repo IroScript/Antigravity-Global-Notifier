@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+bash: line 1: Youtube Automation/docker_workers/worker_server.py: Is a directory
+total 8
+drwxr-xr-x 2 root      root      4096 Sep 25 11:00 .
+drwxr-xr-x 5 azureuser azureuser 4096 Sep 25 11:00 ..
+

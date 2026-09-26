@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+/usr/local/bin/agy
+
+Terminal ID: e4bad60a-5c61-47fc-9448-4dd5e62e1545

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+{"cpu_overall": 42.8, "cpu_cores": [38.9, 42.0, 43.0, 47.4], "ram": {"used_gb": 9.34, "total_gb": 15.62, "percent": 70.2, "avail_gb": 4.65}, "swap": {"used_gb": 0.0, "total_gb": 0.0, "percent": 0.0}, 
+

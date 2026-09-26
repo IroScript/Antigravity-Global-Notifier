@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+tail: cannot open '/home/azureuser/.bash_history' for reading: No such file or directory
+

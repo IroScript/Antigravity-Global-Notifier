@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+============================================================
+GCS IAM BOUNDARY VERIFICATION TEST SUITE
+Credential Identity: vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com
+Target Bucket:      gs://all-vm-backups-vault-irak-2026
+Test Object:        probe_adversarial_1790350212.txt
+============================================================
+
+[TEST 1: CREATE CAPABILITY]
+Status: FAILED (HTTP 403)
+Error Message: {
+  "error": {
+    "code": 403,
+    "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/probe_adversarial_1790350212.txt' (or it may not exist).",
+    "errors": [
+      {
+        "message": "vm-live-syncer@irak-mahmud-project.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/all-vm-backups-vault-irak-2026/objects/probe_adversarial_1790350212.txt' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+Verdict: CREATE = FAILED (IAM binding likely not yet applied)
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Total occurrences of .mp4 in journal: 0
+

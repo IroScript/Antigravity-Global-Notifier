@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+total 60
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 26 15:23 .
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 26 15:16 ..
+-rw-r--r--  1 azureuser azureuser   663 Sep 26 15:03 README.md
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 26 15:32 __pycache__
+-rw-rw-r--  1 azureuser azureuser     0 Sep 26 13:37 server.log
+-rw-r--r--  1 azureuser azureuser 23744 Sep 26 15:32 server.py
+-rwxr-xr-x  1 azureuser azureuser   533 Sep 26 13:38 start_tunnel.sh
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 26 14:05 static
+-rw-rw-r--  1 azureuser azureuser  5813 Sep 26 13:38 tunnel.log
+-rw-rw-r--  1 azureuser azureuser    59 Sep 26 13:38 tunnel_url.txt
+total 352
+drwxrwxr-x 2 azureuser azureuser   4096 Sep 26 14:05 .
+drwxrwxr-x 4 azureuser azureuser   4096 Sep 26 15:23 ..
+-rw-rw-r-- 1 azureuser azureuser 205399 Sep 26 13:53 chart.min.js
+-rw-r--r-- 1 azureuser azureuser 105478 Sep 26 15:33 index.html
+-rw-rw-r-- 1 azureuser azureuser  35205 Sep 26 14:36 monitor.html
+

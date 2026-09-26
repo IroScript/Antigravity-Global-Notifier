@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+Sample Folder: 1.101.Level_10_Planetary_Pruning_Spider
+Files: ['1.101.Level_10_Planetary_Pruning_Spider.mp4', '1.101.Level_10_Prompt.json', 'youtube_metadata.json', '1.101.Level_10_YouTube_Metadata.json', 'prompt_info.json']
+
+--- 1.101.Level_10_Prompt.json keys ---
+['idea_id', 'idea_title', 'idea_topic', 'element_id', 'idea_index_in_element', 'target_generation', 'escalation_level', 'level_name', 'primary_video_prompt_used', 'video_prompt_title', 'model', 'duration', 'aspect_ratio', 'reference_image_prompt', 'source_pipeline', 'exported_from_sqlite_at']
+
+--- youtube_metadata.json keys ---
+['idea_id', 'tracking_token', 'title', 'seo_description', 'tags', 'hashtags', 'pinned_comment', 'category', 'default_language', 'source', 'exported_at']
+Title: Planetary Pruning Spider: The Ultimate Apple Orchard Machine
+Tags count: 15
+
+--- 1.101.Level_10_YouTube_Metadata.json keys ---
+['idea_id', 'tracking_token', 'title', 'seo_description', 'tags', 'hashtags', 'pinned_comment', 'category', 'default_language', 'source', 'exported_at']
+Title: Planetary Pruning Spider: The Ultimate Apple Orchard Machine
+Tags count: 15
+
+--- prompt_info.json keys ---
+['idea_id', 'idea_title', 'idea_topic', 'element_id', 'idea_index_in_element', 'target_generation', 'escalation_level', 'level_name', 'primary_video_prompt_used', 'video_prompt_title', 'model', 'duration', 'aspect_ratio', 'reference_image_prompt', 'source_pipeline', 'exported_from_sqlite_at']
+

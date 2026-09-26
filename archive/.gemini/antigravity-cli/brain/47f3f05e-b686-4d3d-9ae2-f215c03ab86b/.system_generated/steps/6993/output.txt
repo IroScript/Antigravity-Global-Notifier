@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+44 * এটি আপনার প্রজেক্ট (`irak-mahmud-project`)
+46   -এর তৈরি নিজস্ব অ্যাপ, কোনো থার্ড-পার্টি নয়।
+

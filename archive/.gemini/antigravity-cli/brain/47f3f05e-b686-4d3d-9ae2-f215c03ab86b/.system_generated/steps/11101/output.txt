@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+871-      text-overflow: ellipsis;
+872-    }
+873-    .mon-proc-metrics { display: flex; gap: 12px; font-size: 0.78rem; margin-top: 4px; }
+874-
+875-    /* Status Bar */
+876:    .status-bar {
+877-      height: 26px;
+878-      background: var(--bg-header);
+879-      border-top: 1px solid var(--border-color);
+880-      display: flex;
+881-      align-items: center;
+--
+1350-      <div id="proc-list"></div>
+1351-    </div>
+1352-  </div>
+1353-
+1354-  <!-- Status Bar -->
+1355:  <div class="status-bar">
+1356-    <div id="statusLeft">Loading...</div>
+1357-    <div id="statusRight">Microsoft Windows 11 · Azure Cloud VM (FatehAli)</div>
+1358-  </div>
+1359-</div>
+1360-
+

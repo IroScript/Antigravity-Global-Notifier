@@ -1,0 +1,25 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1243,7 +1243,7 @@
+         <div class="chart-card-header">
+           <div class="chart-title-row">
+             <span class="chart-title">📈 রিসোর্স ব্যবহারের টাইমলাইন গ্রাফ (Live Activity)</span>
+-            <span class="chart-sub-tag" id="chart-range-label">গত ১ ঘণ্টা</span>
++            <span class="chart-sub-tag" id="chart-range-label">গত ১৫ মিনিট</span>
+           </div>
+ 
+           <!-- Time Range Pills -->
+@@ -1250,8 +1250,8 @@
+             <button class="pill" onclick="changeRange('1m', this)">1মি</button>
+             <button class="pill" onclick="changeRange('5m', this)">5মি</button>
+-            <button class="pill" onclick="changeRange('15m', this)">15মি</button>
++            <button class="pill active" onclick="changeRange('15m', this)">15মি</button>
+             <button class="pill" onclick="changeRange('30m', this)">30মি</button>
+-            <button class="pill active" onclick="changeRange('1h', this)">1ঘণ্টা</button>
++            <button class="pill" onclick="changeRange('1h', this)">1ঘণ্টা</button>
+             <button class="pill" onclick="changeRange('5h', this)">5ঘণ্টা</button>
+             <button class="pill" onclick="changeRange('10h', this)">10ঘণ্টা</button>
+             <button class="pill" onclick="changeRange('24h', this)">24ঘণ্টা</button>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

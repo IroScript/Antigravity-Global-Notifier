@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Line 17 too long (53 chars): ৩. *Filesystem:* ডিরেক্টরি পারমিশন ও এক্সেস কন্ট্রোল।
+Line 18 too long (52 chars): ৪. *Process/Container:* সিস্টেমড ও ডকার কনটেইনমেন্ট।
+Line 30 too long (53 chars): • `agy-master`: মাস্টার অর্কেস্ট্রেটর (নো সুডো/ডকার)।
+Line 43 too long (51 chars): *টাইমআউটে CLI ডিফল্ট DENY করবে এমন কোনো গ্যারান্টি*
+Line 44 too long (55 chars): *অফিসিয়ালি নেই; এটি Fail-Open হওয়ার বাস্তব ঝুঁকি থাকে।*
+Line 57 too long (52 chars): আমরা নিখুঁত আরগুমেন্ট ভিত্তিক গ্র্যানুলারিটি নিচ্ছি:
+Line 61 too long (53 chars): • `docker build .` (লোকাল ডিরেক্টরি) → L1/L2A (ALLOW)
+Line 68 too long (51 chars): • `git add` / `git commit` (লোকাল) → L1/L2A (ALLOW)
+Line 70 too long (51 chars): • `git reset --hard` / `clean -fd` → L3 (HARD DENY)
+Line 118 too long (53 chars): আমরা কি এখন *Phase A*-এর অধীন অফলাইন গেটওয়ে স্ক্রিপ্ট
+Max non-URL line length: 55
+
+Terminal ID: 6c5920ee-b427-47e8-b797-2c4a26f15354

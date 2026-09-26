@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+================================================================================
+GCP VM FULL FILESYSTEM BACKUP RESTORATION INSTRUCTIONS
+Created: 2026-09-25
+Source: GCP VM (/home/mdkamruzzamanirak_gmail_com)
+Total Size: ~17 GB compressed (56 GB uncompressed)
+================================================================================
+
+HOW TO REASSEMBLE INTO THE SINGLE FULL ARCHIVE:
+
+1. On Linux / Mac:
+   cat gcp_home_backup_part_*.tar.gz > gcp_home_FULL_filesystem_20260925.tar.gz
+
+2. On Windows (PowerShell):
+   Get-Content gcp_home_backup_part_*.tar.gz -ReadCount 0 | Set-Content gcp_home_FULL_filesystem_20260925.tar.gz -Encoding Byte
+   (Or simply open part_00 in 7-Zip, 7-Zip joins them automatically)
+
+3. How to extract:
+   tar -xzf gcp_home_FULL_filesystem_20260925.tar.gz
+================================================================================
+

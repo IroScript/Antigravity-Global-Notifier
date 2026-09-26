@@ -1,0 +1,48 @@
+The search for "site:antigravity.google "directory structure" OR "folder structure" OR "plugins"" returned the following summary:
+In Google Antigravity, plugins are structured as directories containing a required `plugin.json` manifest file and optional subdirectories for various components[1][2][3]. When installed, these are typically staged in your home directory under `~/.gemini/antigravity-cli/plugins/<plugin_name>/`[3].
+
+### Plugin Directory Structure
+A typical plugin directory is organized as follows[2][3]:
+
+*   `plugin.json`: **Required**. The manifest file identifying the directory as a plugin and defining its metadata[2][3].
+*   `mcp_config.json`: Optional. Definitions for Model Context Protocol (MCP) servers[2][3].
+*   `hooks.json`: Optional. Definitions for event hooks[2][3].
+*   `skills/`: Optional. Subdirectories containing `SKILL.md` files for agent instructions[2][3].
+*   `agents/`: Optional. Markdown files defining custom subagent templates[4][2][3].
+*   `rules/`: Optional. Markdown files defining behavioral constraints or style guidelines[4][2][3].
+
+### Related Configuration Structures
+
+#### Sidecars
+Sidecars are background processes managed by Antigravity[5]. They are discovered via `sidecar.json` files and can be located in[5]:
+*   **Global:** `~/.gemini/config/sidecars/`
+*   **Plugin-based:** `~/.gemini/config/plugins/<pluginName>/sidecars/`
+
+Example sidecar directory structure[5]:
+```text
+~/.gemini/config/sidecars/
+├── sidecar1/
+│   ├── sidecar.json
+│   └── script.py
+└── sidecar2/
+    └── sidecar.json
+```
+
+#### Skills
+While skills can be part of plugins, they can also be managed globally or per-workspace[6]. The standard directory is `.agents/skills/`[6]. Each skill is a folder containing a `SKILL.md` file[6][7]:
+```text
+.agents/skills/
+└── my-skill/
+    ├── SKILL.md      # Required instructions
+    ├── scripts/      # Optional helper scripts
+    └── examples/     # Optional reference implementations
+```
+
+Sources:
+[1] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_38uYx2BJdcCsRGv1Qge92G1cxriKGvz3w8bm4-Ud0CBDBetSk3X4AIxKTKNDHc7jJExkNspSdhMEmxfLUUFRBd5egsQ_GE7fS4hcyB52iOm4Ytv0_n4j1jn6FglI)
+[2] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_38uYx2BJdcCsRGv1Qge92G1cxriKGvz3w8bm4-Ud0CBDBetSk3X4AIxKTKNDHc7jJExkNspSdhMEmxfLUUFRBd5egsQ_GE7fS4hcyB52iOm4Ytv0_n4j1jn6FglI)
+[3] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxz1WJVyi8-B4jgrvf9EWSNUXCBW0YlJqKxRiUIzwhjoyA_uJhYXQRToDMxwZl6Sd6UV4ZTDmRhj50kE5vfLB8cfuoDVU1ulrhm003pj7p3E_EzmWXrclxWiVW1nFue13q-NQ=)
+[4] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_38uYx2BJdcCsRGv1Qge92G1cxriKGvz3w8bm4-Ud0CBDBetSk3X4AIxKTKNDHc7jJExkNspSdhMEmxfLUUFRBd5egsQ_GE7fS4hcyB52iOm4Ytv0_n4j1jn6FglI)
+[5] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJNi4_QmwfyT1lW6nD9_hE9Ayn0orA0SaPEnnbJt7JjIBLYWZcniNoXF26_0DUF-ctvg23OESXC4ZazEG6tZcrAJnW7XHovZXhAifpa-r9KgVOvgpPiSgXdrkKJSJrBg==)
+[6] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlox4G64zm77cB82Oz-_3Xi4EZQDCuuC8CDib1txYjE0Qjc8Is_6Oy1v528-Q5h_VdAb0RgSVXWG5TPAMS0nFT5xBLSverrmmlLN-dAYWU0q_LG5p6aumLWylDoihmRCpH)
+[7] [antigravity.google](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlox4G64zm77cB82Oz-_3Xi4EZQDCuuC8CDib1txYjE0Qjc8Is_6Oy1v528-Q5h_VdAb0RgSVXWG5TPAMS0nFT5xBLSverrmmlLN-dAYWU0q_LG5p6aumLWylDoihmRCpH)

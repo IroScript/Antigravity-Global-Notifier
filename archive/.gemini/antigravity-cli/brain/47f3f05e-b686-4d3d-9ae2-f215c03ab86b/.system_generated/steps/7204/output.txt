@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+instance-20260925-131309
+projects/[REDACTED_ID]/zones/us-central1-a

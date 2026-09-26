@@ -1,0 +1,41 @@
+
+The command exited with code 0.
+Output:
+{
+    "dataDisks": [],
+    "imageReference": {
+        "id": "",
+        "offer": "debian-12",
+        "publisher": "debian",
+        "sku": "12-gen2",
+        "version": "latest"
+    },
+    "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": {
+            "option": ""
+        },
+        "diskSizeGB": "30",
+        "encryptionSettings": {
+            "enabled": "false"
+        },
+        "image": {
+            "uri": ""
+        },
+        "managedDisk": {
+            "id": "/subscriptions/506deb9a-42fa-468d-b78f-0f25a9e485e1/resourceGroups/FatehAli_group/providers/Microsoft.Compute/disks/FatehAli_OsDisk_1_4a0fe832fe7b45c485920e2a3aaf805a",
+            "storageAccountType": "Premium_LRS"
+        },
+        "name": "FatehAli_OsDisk_1_4a0fe832fe7b45c485920e2a3aaf805a",
+        "osType": "Linux",
+        "vhd": {
+            "uri": ""
+        },
+        "writeAcceleratorEnabled": "false"
+    },
+    "resourceDisk": {
+        "size": "0"
+    }
+}
+

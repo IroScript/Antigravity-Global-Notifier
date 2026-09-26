@@ -1,0 +1,21 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-5866
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5866.log
+Log output:
+<truncated 43400 lines>
+6
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014892702
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014892705
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014892730
+--------	/recovered/WINDOW_0753/MAGIC-2/text/x-shellscript\012-/I_0014892812.sh
+--------	/recovered/WINDOW_0753/MAGIC-2/application/octet-stream/I_0014892940.unknown
+--------	/recovered/WINDOW_0753/MAGIC-2/text/plain/I_0014893200.txt
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893296
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893422
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893486
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893489
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893514
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893531
+--------	/recovered/WINDOW_0753/MAGIC-2/application/json\012-/I_0014893724
+
+Last progress: 0s ago

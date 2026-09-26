@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Integrity: ok
+DB Status -> Ideas: 587, Prompts: 7020, SEO: 555
+

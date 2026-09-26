@@ -1,0 +1,23 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-7740
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7740.log
+Log output:
+<truncated 5 lines>
+   azure_home_FULL_filesystem_20260925.tar.gz:  7% /3.175Gi, 24.889Mi/s, 2m0sTransferred:   	      416 MiB / 3.175 GiB, 13%, 21.768 MiB/s, ETA 2m10s
+Transferred:            0 / 1, 0%
+Elapsed time:        53.7s
+Transferring:
+ *    azure_home_FULL_filesystem_20260925.tar.gz: 12% /3.175Gi, 21.768Mi/s, 2m10Transferred:   	      680 MiB / 3.175 GiB, 21%, 23.807 MiB/s, ETA 1m48s
+Transferred:            0 / 1, 0%
+Elapsed time:       1m3.7s
+Transferring:
+ *    azure_home_FULL_filesystem_20260925.tar.gz: 20% /3.175Gi, 23.807Mi/s, 1m48Transferred:   	      960 MiB / 3.175 GiB, 30%, 25.708 MiB/s, ETA 1m29s
+Transferred:            0 / 1, 0%
+Elapsed time:      1m13.7s
+Transferring:
+ *    azure_home_FULL_filesystem_20260925.tar.gz: 29% /3.175Gi, 25.708Mi/s, 1m29Transferred:   	    1.297 GiB / 3.175 GiB, 41%, 30.659 MiB/s, ETA 1m2s
+Transferred:            0 / 1, 0%
+Elapsed time:      1m23.7s
+Transferring:
+ *    azure_home_FULL_filesystem_20260925.tar.gz: 40% /3.175Gi, 30.659Mi/s, 1m2s
+Last progress: 8s ago

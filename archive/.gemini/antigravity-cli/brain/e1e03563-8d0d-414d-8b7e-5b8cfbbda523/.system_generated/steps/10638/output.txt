@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+    PID    SPID TTY          TIME CMD
+ 920647  920647 pts/12   00:00:00 python3
+ 920647  920648 pts/12   00:00:00 python3
+ 920647  920649 pts/12   00:00:00 python3
+ 920647  920650 pts/12   00:00:00 python3
+ 920647  920651 pts/12   00:00:00 python3
+ 920647  920652 pts/12   00:00:00 python3
+

@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+"/recovered/RUST_TEST"  accept for recoverdir
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Inode 14027106 is allocated
+Inode 14027106 is a directory but not found after 1790247367 and before 1790333767
+ext4magic : EXIT_SUCCESS
+

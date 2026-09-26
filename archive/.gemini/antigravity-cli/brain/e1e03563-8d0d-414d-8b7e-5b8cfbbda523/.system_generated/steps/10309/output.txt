@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+srw-rw---- 1 root docker 0 Sep 24 11:27 /var/run/docker.sock
+

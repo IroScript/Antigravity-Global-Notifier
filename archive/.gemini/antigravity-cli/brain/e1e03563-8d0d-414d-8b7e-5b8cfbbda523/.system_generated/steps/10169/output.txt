@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+2026-09-25 18:38:19,848 [ERROR] [worker_4] Worker worker_4 failed generating ideas for Wind Farm: Timeout
+2026-09-25 18:38:28,293 [INFO] [worker_1] [Idea #641: 'Aurora Fusion Propulsion Aircraft'] Generating real SEO via http://localhost:8001...
+2026-09-25 18:38:29,853 [INFO] [worker_4] [Elem #96: Tidal Energy] Generating 10 ideas via http://localhost:8004...
+2026-09-25 18:38:50,827 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 18:38:50,827 [WARNING] [worker_2] Retry 4/5 for Ideas for Element #60 (Elephant) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:44:05,985 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 18:44:05,985 [WARNING] [worker_2] Retry 5/5 for Ideas for Element #60 (Elephant) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:44:20,985 [ERROR] [worker_2] Worker worker_2 failed generating ideas for Elephant: Timeout
+2026-09-25 18:44:30,987 [INFO] [worker_2] [Elem #61: Termite Colony] Generating 10 ideas via http://localhost:8002...
+2026-09-25 18:44:39,287 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #641: No module named 'seo_engine.seo_models'
+2026-09-25 18:44:54,289 [INFO] [worker_1] [Idea #642: 'Titan Wing Earth Shaper'] Generating real SEO via http://localhost:8001...
+2026-09-25 18:45:59,964 [ERROR] [worker_4] HTTP POST to http://localhost:8004/generate failed: timed out
+2026-09-25 18:45:59,964 [WARNING] [worker_4] Retry 1/5 for Ideas for Element #96 (Tidal Energy) via http://localhost:8004 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:49:31,170 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 18:49:31,170 [WARNING] [worker_2] Retry 1/5 for Ideas for Element #61 (Termite Colony) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:51:08,951 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #642: No module named 'seo_engine.seo_models'
+2026-09-25 18:51:19,017 [INFO] [30MinMonitor] 
+============================================================
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-25 18:51:19 UTC
+============================================================
+Total Ideas Generated       : 667 / 1000 (66.7%)
+Total Prompts Generated     : 7800 / 10000 (78.0%)
+Total Real SEO Completed    : 555 / 1000 (55.5%)
+Worker Status:
+  - Worker 1: generating_seo (Completed: 38)
+  - Worker 2: generating_ideas (Completed: 27)
+  - Worker 3: macro_resting (Completed: 238)
+  - Worker 4: generating_ideas (Completed: 41)
+============================================================
+
+2026-09-25 18:51:19,017 [INFO] [30MinMonitor] 📊 30-Minute progress snapshot saved to: cluster_30min_report.log
+2026-09-25 18:51:23,953 [INFO] [worker_1] [Idea #643: 'Thunderquake Sonic Aircraft'] Generating real SEO via http://localhost:8001...
+2026-09-25 18:53:45,065 [ERROR] [worker_4] HTTP POST to http://localhost:8004/generate failed: timed out
+2026-09-25 18:53:45,065 [WARNING] [worker_4] Retry 2/5 for Ideas for Element #96 (Tidal Energy) via http://localhost:8004 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:54:46,318 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 18:54:46,318 [WARNING] [worker_2] Retry 2/5 for Ideas for Element #61 (Termite Colony) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+2026-09-25 18:57:46,799 [ERROR] [worker_1] ❌ [worker_1] Error generating SEO for Idea #643: No module named 'seo_engine.seo_models'
+2026-09-25 18:58:01,803 [INFO] [worker_1] [Idea #644: 'Solar Forge Transformation Plane'] Generating real SEO via http://localhost:8001...
+2026-09-25 19:00:01,490 [ERROR] [worker_2] HTTP POST to http://localhost:8002/generate failed: HTTP Error 429: Too Many Requests
+2026-09-25 19:00:01,491 [WARNING] [worker_2] Retry 3/5 for Ideas for Element #61 (Termite Colony) via http://localhost:8002 (info: Timeout/Network error). Waiting 15s...
+

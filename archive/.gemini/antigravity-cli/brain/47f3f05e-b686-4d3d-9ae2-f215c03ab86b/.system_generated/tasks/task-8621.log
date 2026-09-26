@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-25T20:00:57Z
+Prompt: Wait for task-8617 exit
+Early Termination: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8617
+
+[2026-09-25T20:00:45Z] Timer cancelled: early-termination condition (47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8617) met by a message from 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8617.

@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+41 ইরাক ভাইয়া, Google Drive-এ ১টি নির্দিষ্ট
+38 ফোল্ডারে ব্যাকআপ লকের সম্পূর্ণ গাইড: 🎯
+32 «──────────────────────────────»
+47 ★ *ধাপ ১: Google Cloud-এ Service Account তৈরি:*
+70 * ১. যান: [console.cloud.google.com](https://console.cloud.google.com)
+49 * ২. সার্চবারে লিখুন "Google Drive API" -> Enable
+51 * ৩. মেনু থেকে যান: IAM & Admin -> Service Accounts
+45 * ৪. উপরে "+ CREATE SERVICE ACCOUNT"-এ চাপুন:
+42   * নাম দিন: `azure-backup` -> Done চাপুন।
+52 * ৫. তৈরি হওয়া একাউন্টে ক্লিক করে "Keys" ট্যাবে যান:
+47   * Add Key -> Create new key -> JSON -> Create
+44   * সাথে সাথে একটি `.json` ফাইল ডাউনলোড হবে!
+32 «──────────────────────────────»
+45 ★ *ধাপ ২: Google Drive ফোল্ডারে Share দেওয়া:*
+54 * ১. যান: [drive.google.com](https://drive.google.com)
+44 * ২. নতুন একটি ফোল্ডার বানান: `Azure_Backup`
+46 * ৩. ফোল্ডারের ওপর রাইট ক্লিক করে Share-এ যান।
+35 * ৪. সার্ভিস একাউন্টের ইমেইলটি বসান
+43   (যেমন: `...@...iam.gserviceaccount.com`)।
+38 * ৫. রোল "Editor" রেখে Share দিয়ে দিন!
+32 «──────────────────────────────»
+37 ★ *ধাপ ৩: সিঙ্ক চালু করা (একদম সহজ):*
+39 * ডাউনলোড করা `.json` ফাইলের লেখা কোডটি
+39   শুধু কপি করে চ্যাটে আমাকে পাঠিয়ে দিন।
+39 * বাকি সব সেটআপ ও রিয়েল-টাইম লাইভ সিঙ্ক
+39   আমি নিজে স্বয়ংক্রিয়ভাবে চালু করে দেব!
+

@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+=== TEST 2: Azure Cloud-Init & Fabric Provisioning Config ===
+# when a 'default' entry is found it will reference the 'default_user'
+preserve_hostname: false
+   default_user:
+     name: debian
+   ssh_svcname: ssh
+27:Provisioning.DecodeCustomData=n
+

@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+[*] Starting rclone authorize drive...
+[*] Local auth URL: http://127.0.0.1:53682/auth?state=TNPqotLoIV0ScUFaoNPEBQ
+[+] Direct Google OAuth URL obtained!
+[+] One-click login page written to /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/gdrive_login.html
+[*] Waiting for callback URL in callback_url.txt ...
+[*] rclone stdout: Paste the following into your remote machine --->
+{"access_token":"ya29.[REDACTED_OAUTH_TOKEN]
+[+] SUCCESS! New token extracted.
+[+] rclone.conf successfully updated with new token!
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+tcp   LISTEN 0      511                  *:9000             *:*    users:(("node-MainThread",pid=1198,fd=21))                                            
+

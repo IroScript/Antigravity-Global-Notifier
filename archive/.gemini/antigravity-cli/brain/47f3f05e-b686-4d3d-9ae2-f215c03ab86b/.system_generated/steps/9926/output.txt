@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+111ab045163b0d421582fbda70c01ebf737ae849286b1d0f82bdde2109673f2c  /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/src/lib.rs
+111ab045163b0d421582fbda70c01ebf737ae849286b1d0f82bdde2109673f2c  /home/azureuser/GDRIVE_RESTORE_TEST/lib.rs
+Files /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/src/lib.rs and /home/azureuser/GDRIVE_RESTORE_TEST/lib.rs are identical
+

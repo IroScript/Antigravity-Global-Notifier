@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+
+real	0m0.013s
+user	0m0.010s
+sys	0m0.000s
+

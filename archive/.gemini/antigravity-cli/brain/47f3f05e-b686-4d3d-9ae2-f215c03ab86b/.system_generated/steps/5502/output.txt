@@ -1,0 +1,167 @@
+
+The command exited with code 0.
+Output:
+<truncated 319 lines>
+              option  -l  and  be  100%  unallocated. This options only recover
+              deleted files and files without data blocks, in example: symbolic
+              links or empty files.
+
+              The recovered files written to the RECOVERDIR/ This can also  set
+              to an alternate <target_dir> with the option -d
+
+              All  files  become the old filename and if possible, also the old
+              file properties. A subdirectory tree can set  with  "-f  dirname"
+              oder  "-I  inodenumber" If use with a given Inode number, the di‐
+              rectory name is set to <inodenumber>
+
+              The Time options affect the search. If a file  name  already  ex‐
+              ists,  or  you  recover  again, it not overwrite files, and a new
+              filename by added a final "#" will created. The maximum  ist  the
+              extension " ##### " for a filename.
+
+              single files also can recovered, possible search with time-stamps
+              or transaction number.
+
+              (new  0.2.1):  Starts  this  function from the root directory the
+              first stage of the magic functions will follow.
+
+              This starts "lost directory search" and "lost  file  search"  and
+              recovers all the deleted inode that can not be assigned to a file
+              name.   These  files  you can find in the directories MAGIC-1 and
+              MAGIC-2
+
+       -R     recovers directory tree, is the same as -r
+
+              But two very important differences: Recover of  all  matched  In‐
+              odes,  even  if the blocks allocated, and recover if possible the
+              old directory properties. Also  empty  directories  will  be  re‐
+              stored.   This  recovers all deleted and all undeleted files, and
+              it's possible to recover older file versions  or  directory  ver‐
+              sions.
+
+              In  completely deleted directories the behavior " -R " and " -r "
+              is identical. The difference is there only the  complete  recover
+              of  all directories with option " -R ".  You can also restore in‐
+              dividual files with time options or a transaction number.
+
+       For all recover cases ACL, SEL and other extended attribute can not  re‐
+       covered in the current version.
+
+       The  output starts at line with a string "--------" before the recovered
+       file name. This is a sign of successful recover. Are not enough  permis‐
+       sions  to write the recovered files, then you will see there some "x" in
+       the string.
+
+       At the end of the process, possibly an issue  comes  from  the  hardlink
+       database.  A  positive  number  before a file name means : not found all
+       hardlinks to this file. A negative number means : it  created  too  many
+       hardlinks to this file (possible are, reused filenames or reused Inodes,
+       and so, too many or wrong old filenames for this hardlink. But also pos‐
+       sible, all files for this hardlink are correct, the time options was not
+       set  correct and because of that, the selected inode for the recover was
+       not up to date.  You should check such reports.)
+
+       Re-used data blocks can't realize and so it's possible, it ends in  some
+       corrupted  files.   Check in any case, all the recoverd files before you
+       use them.
+
+EXAMPLES
+       Print the content of a Inode, there are some possibilities.
+
+               # ext4magic /dev/sda3 -f /
+
+               # ext4magic /dev/sda3 -I 2
+
+              the output is the actual filesystem root Inode. In first  example
+              input  the  pathname, second example Inode 2 is also the root di‐
+              rectory
+
+               # ext4magic /tmp/filesystem.iso -f / -T -x
+
+              use filesystem image "/tmp/filesystem.iso", search and print  all
+              transactions  of  the  Block  which  included the root Inode, and
+              print all differend Inode. Inclusiv the blocklist  off  the  data
+              blocks.  If it's a directory, then print also for each individual
+              Inode the content of the directory.
+
+               # ext4magic /tmp/filesystem.iso -j /tmp/journal.backup  -I  8195
+              -t 182
+
+              Use filesystem image "/tmp/filesystem.iso" and read from external
+              Journal  in  file  "/tmp/journal.backup" and print the content of
+              the Inode number 8195 from the journal transaction number 182
+
+               # ext4magic /dev/sda3 -f user1/Documents -a $(date -d  "-3  day"
+              +%s) -b $(date -d "-2 day" +%s)
+
+              print  a  undeleded  Inode  for pathname "user1/Documents" two to
+              three days back. If it's a directory, then also  the  content  of
+              this  directory.   If  can  not found the old directory blocks in
+              Journal, the directory content would be the actual from  filesys‐
+              tem.
+
+       Examples of simple Recover
+
+               # ext4magic /dev/sda3 -r -f user1/picture/cim01234.jpg -d /tmp
+
+              Recover  the  file  "/home/user1/picture/cim01234.jpg"  which has
+              just been deleted. The file  system  is  mounted  normally  under
+              "/home".  Note the file path is specified from the root directory
+              of the file system and not from the root of the entire Linux sys‐
+              tem.  Whenever  possible, umount the file system for the recover.
+              The file will be written as  "/tmp/user1/picture/cim01234.jpg"
+
+               # ext4magic /dev/sda3 -r
+
+              try to restore all files deleted last 24 hours. Write  to  direc‐
+              tory "./RECOVERDIR/"
+
+               # ext4magic /dev/sda3 -R -a $(date -d "-5day" +%s)
+
+              Attempts to recover all files, even if they are already partially
+              overwritten,  recover also all not deleted files.  The erase time
+              is 4 days ago.
+
+               # ext4magic /dev/sda3 -M -d /home/recover
+
+              try multi-stage recover of all  files  after  the  filesystem  is
+              deleted  with  a "rm -rf *" . Write the files to "/home/recover".
+              (on ext4 : in this version skipped the last step.)
+
+               # ext4magic /dev/sda3 -RQ -f user1/Dokuments  -a  1274210280  -b
+              1274211280 -d /mnt/testrecover
+
+              try  to  restore  the directory tree "user1/Dokuments/". The "-b"
+              timestamp you must set just before deleting files, the "-a" time‐
+              stamp prevents found old file versions. This will only work well,
+              if you've there created or deleted files  bevor  the  "-b"  time‐
+              stamp.  Write to the directory "/mnt/testrecover/". If only a few
+              files recovers, attempts the same without the option -Q
+
+               # ext4magic /home/filesystem.iso -Lx  -f user1 |  grep  "jpg"  >
+              ./tmpfile
+
+               # ext4magic /home/filesystem.iso -i ./tmpfile -r -d /mnt/testre‐
+              cover
+
+              try  to  restore  only  all  deleted  files  from  directory tree
+              "user1/", and have "jpg" in filename. (last 24 hour) and write to
+              "/mnt/testrecover" - use a temporary file "./tmpfile" for a  list
+              of filenames.
+
+BUGS
+       Direct use of the Journal of a currently read-write open filesystem pro‐
+       duce  reading  of bad blocks. Such bad blocks provide program errors and
+       false results. You shall therefore never use the Journal of such a read-
+       write open file system directly.   Should  it  be  necessary  to  use  a
+       mounted  file  system, create a copy of the file system journal and used
+       the option -j
+
+AUTHOR
+       Roberto Maar
+
+SEE ALSO
+       debugfs (8) , e2fsck (8)
+
+version 0.3.2                       Oct 2014                       ext4magic(8)
+

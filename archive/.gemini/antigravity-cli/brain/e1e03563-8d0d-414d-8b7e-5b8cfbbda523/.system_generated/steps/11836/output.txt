@@ -1,0 +1,57 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/worker_server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -532,7 +532,10 @@
+             raise RuntimeError("No visible input element found on ChatGPT page.")
+ 
+         # Record initial assistant turns count before sending prompt
+-        initial_turns = await active_page.evaluate("() => document.querySelectorAll('div[data-message-author-role=\"assistant\"]').length")
++        initial_turns = await active_page.evaluate("""() => {
++            const turns = document.querySelectorAll('[class*="MarkdownRoot" i], [class*="markdown" i], [data-message-author-role="assistant"], article[data-testid*="conversation-turn-"]');
++            return turns.length;
++        }""")
+ 
+         # Focus editor and clear
+         await safe_click(input_box, active_page)
+@@ -596,10 +596,7 @@
+             res = await active_page.evaluate("""(initTurns) => {
+                 const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i], button.wm-composer-stopButton, button[aria-label*="stop generation" i]');
+                 const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+-                let turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+-                if (turns.length === 0) {
+-                    turns = document.querySelectorAll('article[data-testid*="conversation-turn-"]');
+-                }
++                const turns = document.querySelectorAll('[class*="MarkdownRoot" i], [class*="markdown" i], [data-message-author-role="assistant"], article[data-testid*="conversation-turn-"]');
+                 const newTurn = turns.length > initTurns || (turns.length > 0 && isStop);
+                 const lastTurn = turns.length > 0 ? turns[turns.length - 1] : null;
+                 let text = '';
+@@ -606,5 +606,4 @@
+-                    const md = lastTurn.querySelector('.markdown') || lastTurn.querySelector('[class*="markdown"]');
+-                    text = md ? (md.innerText || '') : (lastTurn.innerText || '');
++                    text = lastTurn.innerText || '';
+                 }
+                 return { length: text.length, isStop: isStop, turnsCount: turns.length, newTurn: newTurn };
+             }""", initial_turns)
+@@ -633,10 +633,7 @@
+             res = await active_page.evaluate("""(initTurns) => {
+                 const stopBtn = document.querySelector('button[aria-label*="Stop" i], button[data-testid*="stop" i]');
+                 const isStop = stopBtn !== null && stopBtn.offsetParent !== null;
+-                let turns = document.querySelectorAll('div[data-message-author-role="assistant"]');
+-                if (turns.length === 0) {
+-                    turns = document.querySelectorAll('article[data-testid*="conversation-turn-"]');
+-                }
++                const turns = document.querySelectorAll('[class*="MarkdownRoot" i], [class*="markdown" i], [data-message-author-role="assistant"], article[data-testid*="conversation-turn-"]');
+                 if (turns.length <= initTurns && !isStop && turns.length === 0) {
+                     return { text: '', length: 0, isStop: isStop };
+                 }
+@@ -643,7 +643,6 @@
+                 let text = '';
+                 if (lastTurn) {
+-                    const md = lastTurn.querySelector('.markdown') || lastTurn.querySelector('[class*="markdown"]');
+-                    text = md ? (md.innerText || '') : (lastTurn.innerText || '');
++                    text = lastTurn.innerText || '';
+                 }
+                 return { text: text, length: text.length, isStop: isStop };
+             }""", initial_turns)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

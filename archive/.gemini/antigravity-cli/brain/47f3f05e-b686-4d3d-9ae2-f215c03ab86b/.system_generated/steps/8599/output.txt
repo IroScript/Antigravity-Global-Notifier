@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+c4a51c6ea5b0e936f91512d5cb2fc68a  -
+c4a51c6ea5b0e936f91512d5cb2fc68a  /home/azureuser/GCP_FULL_BACKUP/parts/gcp_home_backup_part_05.tar.gz
+

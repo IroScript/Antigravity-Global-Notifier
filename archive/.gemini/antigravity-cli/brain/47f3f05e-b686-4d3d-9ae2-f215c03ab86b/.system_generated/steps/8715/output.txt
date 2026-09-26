@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+lsof: WARNING: can't stat() tracefs file system /sys/kernel/debug/tracing
+      Output information may be incomplete.
+rclone  904810 azureuser   9r      REG              259,4 10662991 14057925 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.109.Level_10_Petal_Storm_Generator/1.109.Level_10_Petal_Storm_Generator.mp4
+rclone  904810 azureuser  10r      REG              259,4     1670  2884092 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.108.Level_10_Sunflower_Leviathan/youtube_metadata.json
+rclone  904810 azureuser  11r      REG              259,4     1774  2884097 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.109.Level_10_Petal_Storm_Generator/1.109.Level_10_YouTube_Metadata.json
+rclone  904810 azureuser  12r      REG              259,4     2389  2884095 /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/output_packaged/1.109.Level_10_Petal_Storm_Generator/1.109.Level_10_Prompt.json
+

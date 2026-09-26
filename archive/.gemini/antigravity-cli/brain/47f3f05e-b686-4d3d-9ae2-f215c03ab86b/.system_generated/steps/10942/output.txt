@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+1393:  let currentRange = '1h';
+1757:    currentRange = range;
+2042:      const res = await fetch(`/api/history?range=${currentRange}`);
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+,black:"#000000",red:"#d81e00",green:"#5ea702",yellow:"#cfae00",blue:"#427ab3",magenta:"#89658e",cyan:"#00a7aa",white:"#dbded8",brightBlack:"#686a66",brightRed:"#f54235",brightGreen:"#99e343",brightYellow:"#fdeb61",brightBlue:"#84b0d8",brightMagenta:"#bc94b7",brightCyan:"#37e6e8",brightWhite:"#f1f1f0"},allowProposedApi:!0},d={limit:1e5,highWater:10,lowWater:4};class _ extends s.Component{render(){return(0,s.h)(r.Terminal,{id:"terminal-container",wsUrl:a,tokenUrl:h,clientOptions:l,termOptions:c,f
+

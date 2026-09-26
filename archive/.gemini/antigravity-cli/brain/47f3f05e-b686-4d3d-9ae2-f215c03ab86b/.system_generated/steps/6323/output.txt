@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 0
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 0 -> /dev/null
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 1 -> 'pipe:[11492]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 10 -> 'socket:[13723]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 2 -> 'pipe:[11492]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 3 -> 'socket:[4410305]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 4 -> 'anon_inode:[eventpoll]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 5 -> 'anon_inode:[eventfd]'
+

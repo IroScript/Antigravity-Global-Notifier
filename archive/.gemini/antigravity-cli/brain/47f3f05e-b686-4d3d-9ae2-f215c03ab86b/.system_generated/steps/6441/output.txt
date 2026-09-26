@@ -1,0 +1,16 @@
+
+The command exited with code 2.
+Output:
+-rw-rw-r-- 1 azureuser azureuser  18K Sep 25 07:57  /home/azureuser/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+-rw-r--r-- 1 azureuser azureuser  14K Sep 18 10:06  /home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_DISCOVERY_AND_PLAN.md
+-rw-r--r-- 1 azureuser azureuser  11K Sep 18 09:37  /home/azureuser/RESTORED_PROJECTS/AGY_COMMAND_TO_COMPLETION_RELIABILITY_ARCHITECTURE.md
+-rw-r--r-- 1 azureuser azureuser 8.5K Sep 18 08:30  /home/azureuser/RESTORED_PROJECTS/AGY_FINAL_RELIABILITY_GATE_REPORT.md
+-rw-r--r-- 1 azureuser azureuser 8.2K Sep 18 08:45  /home/azureuser/RESTORED_PROJECTS/AGY_ISOLATED_IMPLEMENTATION_REPORT.md
+-rw-r--r-- 1 azureuser azureuser 6.6K Sep 18 08:03  /home/azureuser/RESTORED_PROJECTS/AGY_RELIABILITY_ENGINE_VALIDATION_REPORT.md
+-rw-r--r-- 1 azureuser azureuser  32K Sep 18 06:59  /home/azureuser/RESTORED_PROJECTS/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+-rw-rw-r-- 1 azureuser azureuser 3.0K Sep 22 12:51  /home/azureuser/RESTORED_PROJECTS/AZURE_MIGRATION_FINAL_COMPLETION_REPORT.md
+-rw-rw-r-- 1 azureuser azureuser  11K Sep 22 10:54  /home/azureuser/RESTORED_PROJECTS/GOOGLE_CLOUD_TO_AZURE_MIGRATION_AUDIT.md
+-rw-rw-r-- 1 azureuser azureuser  14K Sep  1 15:47  /home/azureuser/RESTORED_PROJECTS/PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+-rw-rw-r-- 1 azureuser azureuser 8.2K Sep  1 15:47  /home/azureuser/RESTORED_PROJECTS/USER_PERSONAL_AGENT_CONTEXT.md
+-rw-rw-r-- 1 azureuser azureuser   54 Sep 25 11:43  /home/azureuser/csv_downloads_url.txt
+

@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+total 84
+drwxrwxr-x 2 azureuser azureuser  4096 Sep 26 16:29 .
+drwxrwxr-x 7 azureuser azureuser  4096 Sep 26 16:29 ..
+-rw-rw-r-- 1 azureuser azureuser   571 Sep 26 16:29 agy-whatsapp.service
+-rw-r--r-- 1 azureuser azureuser   191 Sep 26 16:29 boundary_guard.py
+-rwxrwxr-x 1 azureuser azureuser   352 Sep 26 16:29 init_agy_sessions.sh
+-rw-r--r-- 1 azureuser azureuser 64365 Sep 26 16:29 whatsapp_bridge.js
+

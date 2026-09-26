@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+run_command | rm -rf /tmp/foo => deny
+   Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_1_2_DIRECT_DELETE] Direct deletion command 'rm' is strictly prohibited. Use safe_archive instead (Rule 1, 2). Inc-ID: INC-DEL-20260925201953-a8f2e4.
+run_command | ls -la /home => allow
+run_command | find /home -delete => deny
+   Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_4_5_FIND_DELETE] Indirect deletion via 'find -delete / -exec rm' is prohibited (Rule 4, 5). Inc-ID: INC-DEL-20260925201953-5fa036.
+run_command | git clean -fdx => deny
+   Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_10_GIT_CLEAN] Destructive 'git clean' operation is prohibited (Rule 10). Inc-ID: INC-DEL-20260925201953-e29a23.
+write_to_file | /home/azureuser/.gemini/config/hooks.json => deny
+   Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_38] Overwriting protected system/policy configuration '/home/azureuser/.gemini/config/hooks.json' is strictly prohibited (Rule 38). Inc-ID: INC-DEL-20260925201953-478c3e.
+replace_file_content | /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py => deny
+   Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_38] Modifying protected system/policy configuration '/home/azureuser/AGY-MASTER/POLICIES/delete_guard.py' via replace_file_content is strictly prohibited (Rule 38). Inc-ID: INC-DEL-20260925201953-d3bf75.
+

@@ -1,0 +1,7 @@
+Attempt 1: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 2: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 3: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 4: waiting... (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+Attempt 5: waiting... (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+Attempt 6: {'status': 'ok', 'worker_id': 'worker_4', 'is_authenticated': True, 'is_busy': False, 'user': 'Unknown', 'action_counter': 0, 'last_session_refresh': 0.0}
+Worker 4 successfully authenticated!

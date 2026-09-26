@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+azureus+    1716  0.0  0.2 2099528 33772 ?       S    Sep22   0:26 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+azureus+    1717  0.0  0.3 1361808 50620 ?       Sl   Sep22   3:35 cloudflared tunnel --url http://127.0.0.1:8085
+azureus+ 1020756  0.0  0.0   7484  3364 pts/12   Ss+  02:43   0:00 bash -c ps aux | grep 8085; curl -s -I http://127.0.0.1:8085
+azureus+ 1020758  0.0  0.0   7060  2304 pts/12   S+   02:43   0:00 grep 8085
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.13.5
+Date: Sat, 26 Sep 2026 02:43:22 GMT
+Content-type: text/html
+Content-Length: 12700
+Last-Modified: Fri, 25 Sep 2026 12:19:53 GMT
+
+

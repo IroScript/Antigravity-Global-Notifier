@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import pexpect; print(pexpect.__file__)
+    ^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pexpect'
+

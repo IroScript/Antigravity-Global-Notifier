@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>রিসোর্স লাইভ মনিটর · Azure VM</title>
+<script src="/chart.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+azureus+  190241  190240  0 Sep24 ?        00:01:21 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+

@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+Loaded 325 video sizes from DB
+dumpe2fs 1.47.2 (1-Jan-2025)
+Found inode table locations for 1760 block groups
+Found 111 matching inodes across ALL block groups!
+  Size 8423078: Inode 14057841 (bg 1716) -> 1.294.Level_10_Peatstorm_Centrifuge.mp4, magic=0xf30a
+  Size 7635931: Inode 14057842 (bg 1716) -> 1.327.Level_10_Solar-Flare_Crucible.mp4, magic=0xf30a
+  Size 7994871: Inode 14057950 (bg 1716) -> 1.351.Level_10_Molten_Serpent_Forge.mp4, magic=0xf30a
+  Size 12149837: Inode 14057845 (bg 1716) -> 1.267.Level_10_Monsoon_Torque_Harvester.mp4, magic=0xf30a
+  Size 17414215: Inode 14057846 (bg 1716) -> 1.105.Level_10_Helios_Field_Cathedral.mp4, magic=0xf30a
+  Size 13918580: Inode 14057847 (bg 1716) -> 1.71.Level_10_The_Bamboo_Ring_Leviathan.mp4, magic=0xf30a
+  Size 5926593: Inode 14057848 (bg 1716) -> 1.242.Level_10_Atmospheric_Web_Rotor.mp4, magic=0xf30a
+  Size 9136707: Inode 14057849 (bg 1716) -> 1.331.Level_10_Magma_Reversal_Engine.mp4, magic=0xf30a
+  Size 9846166: Inode 14057850 (bg 1716) -> 1.236.Level_10_Tidal_Web_Loom.mp4, magic=0xf30a
+  Size 8017027: Inode 14057852 (bg 1716) -> 1.296.Level_10_Stormheart_Lightning_Crucible.mp4, magic=0xf30a
+

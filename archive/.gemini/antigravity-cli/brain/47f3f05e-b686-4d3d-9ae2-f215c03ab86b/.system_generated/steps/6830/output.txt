@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxr-xr-x 4 azureuser azureuser 4096 Sep 25 12:03 .
+drwxr-xr-x 4 azureuser azureuser 4096 Sep 25 07:59 ..
+drwxr-xr-x 6 azureuser azureuser 4096 Sep 25 11:00 .system_generated
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 25 12:03 .tempmediaStorage
+

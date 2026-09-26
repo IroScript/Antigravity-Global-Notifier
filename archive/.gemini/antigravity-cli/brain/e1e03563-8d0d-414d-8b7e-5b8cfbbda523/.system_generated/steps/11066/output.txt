@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 24
+    m = re.search(rf'["\\']?{lvl}["\\']?\s*:\s*["\\']?(.*?)(?=["\\']?{next_lvl}["\\']?\s*:)', sample, re.DOTALL)
+                          ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+

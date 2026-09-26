@@ -1,0 +1,9 @@
+Analyzing archive contents...
+=== ARCHIVE CONTENT RECONCILIATION ===
+Archive Path:             /home/azureuser/FULL_HOME_BACKUP/azure_home_FULL_filesystem_20260925.tar.gz
+Archive Compressed Size:  3,409,236,303 bytes (3.18 GiB)
+Content Regular Files:    84,374
+Content Directories:      7,137
+Content Symlinks/Links:   150
+Total Uncompressed Bytes: 5,551,019,685 bytes (5.17 GiB)
+File List Manifest Saved: /home/azureuser/FULL_HOME_BACKUP/archive_file_list.txt (11,940,623 bytes)

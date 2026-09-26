@@ -1,0 +1,6 @@
+
+The command exited with code 1.
+Output:
+strings: '/usr/local/bin/agy': No such file
+
+Terminal ID: 808ec151-b740-478d-8660-1fc832e854d8

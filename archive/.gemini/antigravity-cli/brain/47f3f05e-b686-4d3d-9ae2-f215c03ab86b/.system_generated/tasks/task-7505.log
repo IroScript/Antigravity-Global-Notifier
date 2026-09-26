@@ -1,0 +1,54 @@
+Step 1: Reading tar archive members...
+Archive Regular Files:    84,374
+Archive Hard Links:       111
+Archive Symlinks:         39
+Archive Directories:      7,137
+Archive Stored Reg Bytes: 5,551,019,685 bytes
+Archive Deduped HL Bytes: 1,166,180,012 bytes
+Archive Total Logical B:  6,717,199,697 bytes
+
+Step 2: Scanning filesystem source...
+Source Regular Files:     84,514
+Source Symlinks:          36
+Source Directories:       7,151
+Source Special (sockets): 0
+Source Files with nlink>1:222
+Unique Inodes with nlink>1:111
+Source Total File Bytes:  6,715,998,928 bytes
+
+Step 3: Comparing Source vs Archive...
+Files in Source missing from Archive: 33
+  MISSING: /home/azureuser/.webterminal/wa_auth/identity-key-38015309193359_1.0.json (71 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/sender-key-120363400568877928@g.us--236360757731373_1--0.json (619 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7493/output.txt (209 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/identity-key-21569996886155_1.0.json (71 bytes)
+  MISSING: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Cache/Cache_Data/5d651e391570e466_0 (4,481 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/1219becc-1e86-41b7-970d-081fa1f22b90.json (1,997 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7487/output.txt (252 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/sender-key-120363403514936510@g.us--38015309193359_1--0.json (619 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7477.log (271 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/conversation_summaries.db-shm (32,768 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7481/output.txt (531 bytes)
+  MISSING: /home/azureuser/gcs_resumable_uploader.py (4,394 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/identity-key-236360757731373_1.0.json (71 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7497/output.txt (319 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7499/output.txt (452 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/eecb6ac6-7f0d-4d01-a5c7-8db88fbd31ca.json (4,686 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/conversation_summaries.db-wal (24,752 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7481.log (489 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7501/output.txt (2,578 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/session-236360757731373_1.0.json (949 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/session-21569996886155_1.0.json (948 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/f6fb0c37-eff7-4f48-9b22-313b7b92f800.json (4,856 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7505.log (350 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/sender-key-120363425234182052@g.us--21569996886155_1--0.json (627 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000036.jsonl (73 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7489/output.txt (51 bytes)
+  MISSING: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/Cache/Cache_Data/e3f0ffc6071fcadb_0 (14,258 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7493.log (13,371 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7491/output.txt (225 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000029.jsonl (34,133 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7485/output.txt (307 bytes)
+  MISSING: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7477/output.txt (313 bytes)
+  MISSING: /home/azureuser/.webterminal/wa_auth/session-38015309193359_1.0.json (949 bytes)
+Files in Archive not in Source: 4

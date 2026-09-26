@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Box b'ftyp' at offset 0, size: 32
+Box b'uuid' at offset 32, size: 7729
+Box b'mdat' at offset 7761, size: 5439622
+Box b'moov' at offset 5447383, size: 6484
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Total recovered videos: 127
+Total video size: 1257.92 MB (1.23 GB)
+

@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 2.945Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 1.545 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 1.545Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 829.578 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       9m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 829.576Ki/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 435.081 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 435.080Ki/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 228.183 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 228.182Ki/s, 0sTransferred:   	   16.071 GiB / 32.141 GiB, 50%, 119.673 KiB/s, ETA 1d15h6m51s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:  0% /16.071Gi, 0/s, -Transferred:   	   16.071 GiB / 32.141 GiB, 50%, 62.764 KiB/s, ETA 3d2h34m47s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:  0% /16.071Gi, 0/s, -

@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+agy:0.0 (AI-Agent) -> pwd: /home/azureuser, cmd: agy
+agy:1.0 (Bash-Terminal) -> pwd: /home/azureuser, cmd: agy
+agy:2.0 (Linux-Shell) -> pwd: /home/azureuser, cmd: bash
+agy:3.0 (yt) -> pwd: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube, cmd: agy
+agy:4.0 (frappe) -> pwd: /home/azureuser/Frappe-erp-Alco (deleted), cmd: agy
+agy:5.0 (tg) -> pwd: /home/azureuser/telegram-bot (deleted), cmd: agy
+agy:6.0 (history) -> pwd: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted), cmd: agy
+agy:7.0 (kids) -> pwd: /home/azureuser/kids_tube_with_folder_seection (deleted), cmd: agy
+agy:8.0 (rust) -> pwd: /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted), cmd: agy
+agy:9.0 (article) -> pwd: /home/azureuser/Article-Publishing-Platform (deleted), cmd: agy
+agy:10.0 (game) -> pwd: /home/azureuser/3D-Game-Design-Studio (deleted), cmd: agy
+agy:11.0 (research) -> pwd: /home/azureuser/Ask-And-Research (deleted), cmd: agy
+

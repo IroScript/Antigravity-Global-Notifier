@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+[ALLOWED] rclone ls personaldrive:Youtube_Automation -> allow
+[ALLOWED] rclone lsd personaldrive: -> allow
+[ALLOWED] rclone lsf personaldrive:All_VM_BackUps -> allow
+[ALLOWED] rclone size personaldrive:Youtube_Automation -> allow
+[ALLOWED] rclone check /home/azureuser/test personaldrive:test -> allow
+[ALLOWED] rclone cat personaldrive:file.txt -> allow
+[ALLOWED] rclone link personaldrive:Youtube_Automation -> allow
+[ALLOWED] rclone copy personaldrive:Youtube_Automation/test.mp4 /tmp/local/ -> allow
+[DENIED ] rclone copy /tmp/local.txt personaldrive:Youtube_Automation/ -> Uploading/copying to remote (personaldrive:Youtube_Automation/) is prohibited in READ-ONLY mode
+[DENIED ] rclone sync /tmp/local personaldrive:Youtube_Automation -> Mutating command rclone sync is prohibited in READ-ONLY mode
+[DENIED ] rclone move /tmp/local personaldrive:Youtube_Automation -> Mutating command rclone move is prohibited in READ-ONLY mode
+[DENIED ] rclone delete personaldrive:Youtube_Automation/test.mp4 -> Mutating command rclone delete is prohibited in READ-ONLY mode
+[DENIED ] rclone purge personaldrive:Youtube_Automation -> Mutating command rclone purge is prohibited in READ-ONLY mode
+[DENIED ] rclone rmdir personaldrive:Youtube_Automation/sub -> Mutating command rclone rmdir is prohibited in READ-ONLY mode
+[DENIED ] rclone mkdir personaldrive:Youtube_Automation/newdir -> Creating directories on remote (personaldrive:Youtube_Automation/newdir) is prohibited in READ-ONLY mode
+[DENIED ] rclone touch personaldrive:Youtube_Automation/file.txt -> Mutating command rclone touch is prohibited in READ-ONLY mode
+

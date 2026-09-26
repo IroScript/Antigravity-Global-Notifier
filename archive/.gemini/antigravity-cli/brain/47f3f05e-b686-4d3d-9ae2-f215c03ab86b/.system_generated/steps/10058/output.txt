@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 20
+drwxrwxr-x 5 azureuser azureuser 4096 Sep 26 09:58  .
+drwxrwxr-x 8 azureuser azureuser 4096 Sep 26 09:57  ..
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 26 09:58 'Zip Files'
+lrwxrwxrwx 1 azureuser azureuser    9 Sep 26 09:58  Zip_Files -> 'Zip Files'
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 26 09:52  database_backups
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 26 09:58  full_filesystem
+-rw-r----- 1 azureuser azureuser    0 Sep 26 09:51  gdrive_copy.log
+

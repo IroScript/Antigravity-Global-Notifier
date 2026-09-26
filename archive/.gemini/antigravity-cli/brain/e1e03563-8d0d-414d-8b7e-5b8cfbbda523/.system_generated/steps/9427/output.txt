@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+8001/tcp:            619926 619933
+8002/tcp:            620079 620086
+8003/tcp:            620229 620236
+8004/tcp:            620483 620490
+

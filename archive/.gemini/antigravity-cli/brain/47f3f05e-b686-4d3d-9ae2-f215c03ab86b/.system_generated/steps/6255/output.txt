@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+/usr/sbin/ext4magic
+/usr/sbin/ext4magic
+/usr/share/doc/ext4magic
+/usr/share/man/man8/ext4magic.8.gz
+

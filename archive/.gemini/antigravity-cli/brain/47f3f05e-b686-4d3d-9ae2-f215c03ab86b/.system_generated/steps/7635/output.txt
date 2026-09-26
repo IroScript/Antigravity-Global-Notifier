@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+[gdrive]
+type = drive
+scope = drive
+service_account_file = /home/azureuser/.config/rclone/service_account.json
+root_folder_id = 1knh-c-zvI4vy01SjsEz50u9kMWTG_BW1
+

@@ -1,0 +1,41 @@
+
+The command exited with code 0.
+Output:
+I0925 07:53:22.135305  845242 input_loop.go:107] HandleUserInput called with text: "তখন PreToolUse bypass হলেও damage radius অনেক ছোট হয়।"
+I0925 07:53:22.314264  845163 input_loop.go:107] HandleUserInput called with text: "এটাই আসল containment।"
+I0925 07:53:22.373236  845168 input_loop.go:107] HandleUserInput called with text: "---"
+I0925 07:53:22.739999  845249 input_loop.go:107] HandleUserInput called with text: "আর Level 3 নিয়ে আমি Gemini-এর সিদ্ধান্তের সঙ্গে একমত"
+I0925 07:53:22.919312  845211 input_loop.go:107] HandleUserInput called with text: "তোমার autonomous model-এ:"
+I0925 07:53:23.028187  845255 input_loop.go:107] HandleUserInput called with text: "L0 → ALLOW"
+I0925 07:53:23.233010  845215 input_loop.go:107] HandleUserInput called with text: "L1 → ALLOW"
+I0925 07:53:23.597247  845262 input_loop.go:107] HandleUserInput called with text: "L2A → ALLOW under strict policy"
+I0925 07:53:23.797136  845302 input_loop.go:107] HandleUserInput called with text: "L2B → DENY by default"
+I0925 07:53:23.922856  845264 input_loop.go:107] HandleUserInput called with text: "L3 → HARD DENY"
+I0925 07:53:24.041080  845295 input_loop.go:107] HandleUserInput called with text: "এটা পরিষ্কার।"
+I0925 07:53:25.194212     130 server.go:3024] [RemoteControl] Subscription callback triggered.
+I0925 07:53:25.194598     130 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+I0925 07:53:25.194607     130 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+I0925 07:53:25.194863     130 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+I0925 07:53:25.365084  845364 input_loop.go:107] HandleUserInput called with text: "তবে docker-কে সরাসরি “Level 3” বলা একটু oversimplified। Docker নিজে operation নয়; privilege boundary। কোনো harmless docker ps আর docker run -v /:/host ... একই risk নয়।"
+I0925 07:53:25.679737  845367 input_loop.go:107] HandleUserInput called with text: "তাই gateway-এ ideally:"
+I0925 07:53:25.980792  845342 input_loop.go:107] HandleUserInput called with text: "docker ps              → L0"
+I0925 07:53:26.251670  845376 input_loop.go:107] HandleUserInput called with text: "docker inspect         → L0/L1"
+I0925 07:53:26.512289  845397 input_loop.go:107] HandleUserInput called with text: "docker build           → L1/L2A"
+I0925 07:53:27.003898  845433 input_loop.go:107] HandleUserInput called with text: "docker run              → policy-specific"
+I0925 07:53:27.440802  845390 input_loop.go:107] HandleUserInput called with text: "docker run -v /:/host  → L3 DENY"
+I0925 07:53:27.748690  845441 input_loop.go:107] HandleUserInput called with text: "docker exec privileged → DENY"
+I0925 07:53:27.837951  845424 input_loop.go:107] HandleUserInput called with text: "একইভাবে:"
+I0925 07:53:28.162349  845475 input_loop.go:107] HandleUserInput called with text: "git status              → L0"
+I0925 07:53:28.523951  845478 input_loop.go:107] HandleUserInput called with text: "git diff                → L0"
+I0925 07:53:28.930726  845468 input_loop.go:107] HandleUserInput called with text: "git checkout branch     → L1/L2A depending on scope"
+I0925 07:53:29.225908  845506 input_loop.go:107] HandleUserInput called with text: "git commit              → L2"
+I0925 07:53:29.597832  845473 input_loop.go:107] HandleUserInput called with text: "git push                → L3 / hard deny"
+I0925 07:53:29.859669  845511 input_loop.go:107] HandleUserInput called with text: "git reset --hard        → L3"
+I0925 07:53:29.935284  845543 input_loop.go:107] HandleUserInput called with text: "---"
+I0925 07:53:30.060051     130 server.go:3024] [RemoteControl] Subscription callback triggered.
+I0925 07:53:30.060102     130 server.go:3027] [RemoteControl] RemoteControlEnabled value: false
+I0925 07:53:30.060107     130 server.go:3704] [RemoteControl] Session toggle is off, staying disconnected
+I0925 07:53:30.060112     130 server.go:3415] [RemoteControl] Resolved proxyServerURL: ""
+E0925 07:53:30.071752  845201 run_command_handler.go:564] failed to log command output: open /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5034.log: no such file or directory
+I0925 07:53:30.445687  845556 input_loop.go:107] HandleUserInput called with text: "সবচেয়ে গুরুত্বপূর্ণ correction: “single-file = safe” নয়"
+

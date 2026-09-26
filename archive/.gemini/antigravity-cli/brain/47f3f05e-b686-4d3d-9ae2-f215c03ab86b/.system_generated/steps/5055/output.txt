@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 25 07:55 /home/azureuser/.gemini/config
+
+Terminal ID: dd86dd4b-64a1-4897-a93a-dd34f692e84b

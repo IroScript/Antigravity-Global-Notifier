@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser
+/home/azureuser/.gemini
+/home/azureuser/.gemini/antigravity-cli
+/home/azureuser/.gemini/config
+/home/azureuser/.openclaw
+/home/azureuser/.openclaw/state
+/home/azureuser/.openclaw/agents
+/home/azureuser/.openclaw/workspace
+/home/azureuser/.config
+/home/azureuser/.config/google-chrome
+/home/azureuser/.gradle
+/home/azureuser/.gradle/daemon
+/home/azureuser/Ask-And-Research
+/home/azureuser/Ask-And-Research/SYSTEM_AUDIT_REPORT.md
+/home/azureuser/Ask-And-Research/data
+
+Terminal ID: e2423c92-da83-4a0a-b336-2bfc4010aab9

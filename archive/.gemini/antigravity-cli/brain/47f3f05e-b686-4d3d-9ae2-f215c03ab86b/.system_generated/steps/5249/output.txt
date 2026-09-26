@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+hooks.json does not exist
+
+Terminal ID: 42fee860-ffe9-4e2d-811b-f1c58c2b22f3

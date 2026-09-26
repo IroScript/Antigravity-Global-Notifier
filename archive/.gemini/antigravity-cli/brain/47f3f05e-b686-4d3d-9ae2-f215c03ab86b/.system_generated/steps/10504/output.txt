@@ -1,0 +1,65 @@
+
+The command exited with code 0.
+Output:
+      publishedAt: new Date(Date.now() - 3600000 * 5).toISOString(),
+      metadata: {
+        metaTitle: 'Next.js App Router Edge Caching & Invalidation | AGY Engineering',
+        metaDescription:
+          'Master on-demand revalidation and stale-while-revalidate caching patterns for Payload CMS publishing pipelines.',
+        keywords: 'edge caching, nextjs, app router, revalidation, cdn',
+        canonicalUrl: 'https://article.platform.local/blog/real-time-edge-caching-content-invalidation-nextjs',
+      },
+      content: createLexicalContent([
+        {
+          type: 'heading',
+          tag: 'h2',
+          text: 'The Dual Imperative: Speed and Freshness',
+        },
+        'Modern readers expect instant page loads under 100ms globally, yet editorial staff demand instantaneous visibility the moment an article is published or revised.',
+        {
+          type: 'heading',
+          tag: 'h3',
+          text: 'Tag-Based Revalidation in Payload Hooks',
+        },
+        'By attaching Next.js revalidateTag() triggers inside Payload’s afterChange hooks, publishing an article immediately marks cached edge responses as stale, fetching updated Lexical trees and author bios without requiring full static site rebuilds.',
+        {
+          type: 'heading',
+          tag: 'h3',
+          text: 'Global CDN Purging',
+        },
+        'Combining local edge invalidation with Cloudflare edge worker headers guarantees that stale content is evicted across all global PoPs within milliseconds of editorial sign-off.',
+      ]),
+    },
+    {
+      title: 'Autonomous AI Agents in Modern Publishing Pipelines: From Generation to Fact-Checking',
+      slug: 'autonomous-ai-agents-publishing-pipelines',
+      excerpt:
+        'Integrating background jobs queues with agentic validation loops for automated metadata generation, SEO audits, and citation verification.',
+      readingTime: 7,
+      category: 'engineering',
+      categories: [categoryMap['ai-automation'], categoryMap['distributed-systems']],
+      tags: [tagMap['payload-cms'], tagMap['distributed-sql'], tagMap['performance']],
+      author: authorId,
+      _status: 'published',
+      publishedAt: new Date(Date.now() - 3600000 * 12).toISOString(),
+      metadata: {
+        metaTitle: 'Autonomous AI Agents in Publishing Pipelines | AGY Platform',
+        metaDescription:
+          'How background worker pools execute automated content enrichment without blocking editorial response latency.',
+        keywords: 'ai agents, background jobs, payload jobs, automation, publishing',
+        canonicalUrl: 'https://article.platform.local/blog/autonomous-ai-agents-publishing-pipelines',
+      },
+      content: createLexicalContent([
+        {
+          type: 'heading',
+          tag: 'h2',
+          text: 'Asynchronous Workflow Orchestration',
+        },
+        'Generating semantic summaries, reading time estimations, and automated keyword tags should never delay the HTTP response of an editor saving their draft.',
+        {
+          type: 'heading',
+          tag: 'h3',
+          text: 'Native Payload Jobs Queue to the Rescue',
+        },
+        'Payload 3 native jobs queue stores background tasks directly inside payload_jobs. Dedicated worker processes poll and execute task handlers, updating article relationships and metadata asynchronously.',
+

@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"name": "azureuser", "path": "/home/azureuser", "location": "/home", "is_dir": true, "type_name": "File folder", "size_bytes": 105764065325, "size_str": "98.50 GB", "size_bytes_formatted": "105,764,065,325 bytes", "files_count": 776420, "folders_count": 106338, "contains_str": "776,420 Files, 106,338 Folders", "modified_str": "2026-09-26 03:02:36 PM", "created_str": "2026-09-26 03:02:36 PM", "is_cached": false}

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+  eth0: 28633362324 19594973    0    0    0     0          0         0 103980293688 24393970    0    0    0     0       0          0
+

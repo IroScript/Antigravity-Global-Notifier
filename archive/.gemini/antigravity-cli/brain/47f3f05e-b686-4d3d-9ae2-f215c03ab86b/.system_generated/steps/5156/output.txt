@@ -1,0 +1,7 @@
+
+The command exited with code 2.
+Stdout:
+
+Stderr:
+
+Terminal ID: e1aad749-a0df-4e84-887a-ebf8a24e479f

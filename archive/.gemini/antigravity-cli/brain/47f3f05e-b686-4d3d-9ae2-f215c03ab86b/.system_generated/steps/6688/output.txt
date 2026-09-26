@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+gh version 2.46.0 (2025-01-13 Debian 2.46.0-3)
+https://github.com/cli/cli/releases/tag/v2.46.0
+

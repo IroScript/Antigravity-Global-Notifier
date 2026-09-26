@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+369:@app.get("/health")
+381:@app.get("/debug")
+397:@app.post("/reload-cookies")
+411:@app.post("/generate", response_model=PromptResponse)
+

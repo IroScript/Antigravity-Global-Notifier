@@ -1,0 +1,21 @@
+
+The command exited with code 1.
+Output:
+./Youtube Automation/docker_workers/worker_server.py
+find: ‘./Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/3d12f826-8518-4db6-867e-df1577a21929’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_1/Default/blob_storage/5499ee7b-7679-4fe9-ada4-dead534e065a’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/blob_storage/bb360a28-a9fb-450d-b5a8-eb2e32c1221b’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/10’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/06’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0c’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0d’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0a’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0f’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0b’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/08’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0e’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/07’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/09’: Permission denied
+find: ‘./Youtube Automation/docker_workers/profiles/worker_2/Default/blob_storage/ef20009f-4e78-4f31-b5eb-a6cb36236537’: Permission denied
+

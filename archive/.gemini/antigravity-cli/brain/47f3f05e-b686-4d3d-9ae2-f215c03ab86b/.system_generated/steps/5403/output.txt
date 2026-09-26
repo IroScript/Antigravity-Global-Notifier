@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Line 11 too long (51 chars): কোড ফোল্ডারগুলো (`Frappe-erp-Alco`, `telegram-bot`,
+Max non-URL line length: 51
+
+Terminal ID: c386f90e-79f0-4d79-8e27-ed656d439e14

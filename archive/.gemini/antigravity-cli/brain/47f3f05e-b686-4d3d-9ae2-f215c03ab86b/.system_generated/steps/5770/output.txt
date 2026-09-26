@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+head: cannot open '/recovered/ALL_DELETED/MAGIC-2/text/plain/I_0014419486.txt' for reading: Permission denied
+

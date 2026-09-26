@@ -1,0 +1,36 @@
+
+The command exited with code 1.
+Output:
+<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+Failed to create file system for ":drive:": couldn't find root directory ID: googleapi: Error 403: Google Drive API has not been used in project [REDACTED_ID] before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=[REDACTED_ID] then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "activationUrl": "https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=[REDACTED_ID]",
+      "consumer": "projects/[REDACTED_ID]",
+      "containerInfo": "[REDACTED_ID]",
+      "service": "drive.googleapis.com",
+      "serviceTitle": "Google Drive API"
+    },
+    "reason": "SERVICE_DISABLED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+    "locale": "en-US",
+    "message": "Google Drive API has not been used in project [REDACTED_ID] before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=[REDACTED_ID] then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Google developers console API activation",
+        "url": "https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=[REDACTED_ID]"
+      }
+    ]
+  }
+]
+, accessNotConfigured
+

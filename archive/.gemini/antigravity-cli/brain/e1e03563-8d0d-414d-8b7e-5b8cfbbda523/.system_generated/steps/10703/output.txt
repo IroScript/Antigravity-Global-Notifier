@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"status":"ok","worker_id":"worker_1","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":34,"last_session_refresh":1790370437.9310005}

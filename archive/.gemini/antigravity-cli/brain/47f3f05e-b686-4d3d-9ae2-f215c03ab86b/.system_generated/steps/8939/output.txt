@@ -1,0 +1,32 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/AGY-MASTER/POLICIES/tests/adversarial_delete_test.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -143,8 +143,6 @@
+         ("LANDLOCK_KERNEL", "landlock_unlink", "unlink", "landlock_python"),
+         ("LANDLOCK_KERNEL", "landlock_rmdir", "rmdir", "landlock_python"),
+         ("LANDLOCK_KERNEL", "landlock_truncate", "truncate", "landlock_python")
+-    ]
+-    
+         # GROUP 13: ADVANCED SHELL EVASION & WRAPPERS
+         ("SHELL_EVASION", "eval_rm", "eval 'rm -rf /tmp/foo'", "hook_command"),
+         ("SHELL_EVASION", "sh_c_rm", "sh -c 'rm -f /tmp/foo'", "hook_command"),
+@@ -151,5 +151,5 @@
+-        ("SHELL_EVASION", "find_execdir_rm", f"find {test_dir} -execdir rm -f {{}} \;", "hook_command"),
+-        ("SHELL_EVASION", "find_ok_rm", f"find {test_dir} -ok rm -f {{}} \;", "hook_command"),
++        ("SHELL_EVASION", "find_execdir_rm", f"find {test_dir} -execdir rm -f {{}} \\;", "hook_command"),
++        ("SHELL_EVASION", "find_ok_rm", f"find {test_dir} -ok rm -f {{}} \\;", "hook_command"),
+         ("SHELL_EVASION", "git_clean_dfX", "git clean -dfX", "hook_command"),
+         ("SHELL_EVASION", "git_reset_hard_origin", "git reset --hard origin/main", "hook_command"),
+         ("SHELL_EVASION", "git_restore_all_flags", "git restore --source=HEAD --staged --worktree .", "hook_command"),
+@@ -163,7 +163,8 @@
+         ("SHELL_EVASION", "py_shutil_ignore_errors", f"python3 -c \"import shutil; shutil.rmtree('{test_dir}/subdir', ignore_errors=True)\"", "hook_command"),
+         ("SHELL_EVASION", "archive_dir_rm_direct", "rm -rf /home/azureuser/GLOBAL-ARCHIVE/2026-09-25", "hook_command"),
+         ("SHELL_EVASION", "archive_unlink_manifest", "unlink /home/azureuser/GLOBAL-ARCHIVE/archive_logs/archive_manifest.jsonl", "hook_command"),
+-        ("SHELL_EVASION", "archive_xargs_rm", "find /home/azureuser/GLOBAL-ARCHIVE | xargs rm -f", "hook_command"),
++        ("SHELL_EVASION", "archive_xargs_rm", "find /home/azureuser/GLOBAL-ARCHIVE | xargs rm -f", "hook_command")
++    ]
+     return vectors
+ 
+ def evaluate_hook(tool_name, args):
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

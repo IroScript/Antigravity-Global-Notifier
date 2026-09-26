@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+<5>NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=g7RikFZRGncpx3HnGM78XA
+<5>NOTICE: Log in and authorize rclone for access
+<5>NOTICE: Waiting for code...
+

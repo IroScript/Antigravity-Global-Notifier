@@ -1,0 +1,114 @@
+
+The command exited with code 0.
+Output:
+<truncated 380 lines>
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:37 18 -> 'socket:[5430407]'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 19 -> anon_inode:inotify
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:34 2 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260922_183427.log (deleted)'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 20 -> 'pipe:[371981]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 21 -> 'pipe:[371981]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 22 -> 'pipe:[371982]'
+l-wx------ 1 azureuser azureuser 64 Sep 22 18:37 23 -> 'pipe:[371982]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 24 -> 'pipe:[371983]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 25 -> 'pipe:[371983]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 26 -> 'pipe:[371984]'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 27 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 28 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 29 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:34 3 -> /proc/1556
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 30 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:37 31 -> anon_inode:inotify
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 32 -> 'pipe:[371984]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 33 -> 'pipe:[371985]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 34 -> 'pipe:[371985]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 35 -> 'pipe:[371986]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 36 -> 'pipe:[371986]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 37 -> 'pipe:[371987]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 38 -> 'pipe:[371987]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 39 -> 'pipe:[371988]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 4 -> 'anon_inode:[eventpoll]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 40 -> 'pipe:[371988]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 41 -> 'pipe:[371989]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 42 -> 'pipe:[371989]'
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 43 -> 'socket:[5390310]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 44 -> 'pipe:[371990]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 45 -> 'pipe:[371990]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 46 -> 'pipe:[371991]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 47 -> 'pipe:[371991]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 48 -> 'pipe:[371992]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 49 -> 'pipe:[371992]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 5 -> 'anon_inode:[eventfd]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 50 -> 'pipe:[371993]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 51 -> 'pipe:[371993]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 53 -> 'pipe:[371994]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 54 -> 'pipe:[371994]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 55 -> 'pipe:[371995]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 56 -> 'pipe:[371995]'
+lr-x------ 1 azureuser azureuser 64 Sep 25 07:55 57 -> 'pipe:[371996]'
+l-wx------ 1 azureuser azureuser 64 Sep 25 07:55 58 -> 'pipe:[371996]'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:34 6 -> /proc/1556/smaps
+lrwx------ 1 azureuser azureuser 64 Sep 25 07:55 65 -> '/home/azureuser/.gemini/antigravity-cli/presence/9b67fbb1-da60-40e2-af35-2dc4e8e560b8.lock (deleted)'
+lr-x------ 1 azureuser azureuser 64 Sep 22 18:34 7 -> /proc/1556/maps
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 8 -> 'anon_inode:[eventpoll]'
+lrwx------ 1 azureuser azureuser 64 Sep 22 18:34 9 -> /dev/pts/10
+
+/proc/266192/fd:
+total 0
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 0 -> /dev/pts/13
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 1 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260924_163443.log (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 10 -> /dev/pts/13
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 11 -> 'socket:[2051889]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 12 -> '/home/azureuser/.gemini/antigravity-cli/crashes/crash_266192_effd0ddb-170e-417a-9a3c-73ab70dda3e3.log (deleted)'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 13 -> 'socket:[2051894]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 14 -> 'pipe:[2053232]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 15 -> 'pipe:[2053233]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 16 -> 'socket:[5439091]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 17 -> 'pipe:[2053233]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 18 -> 'pipe:[2053234]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 19 -> 'pipe:[2053234]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 2 -> '/home/azureuser/.gemini/antigravity-cli/log/cli-20260924_163443.log (deleted)'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 20 -> 'pipe:[2053235]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 21 -> 'pipe:[2053235]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 22 -> 'pipe:[2053236]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 23 -> 'pipe:[2053236]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 24 -> 'socket:[5353972]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 25 -> 'socket:[5427227]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 29 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 3 -> /proc/266192
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 30 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 31 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 32 -> anon_inode:inotify
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 33 -> anon_inode:inotify
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 38 -> 'anon_inode:[eventpoll]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 39 -> 'pipe:[2053237]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 4 -> 'anon_inode:[eventpoll]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 40 -> 'pipe:[2053237]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 41 -> 'pipe:[2050954]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 42 -> 'pipe:[2053238]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 43 -> 'pipe:[2053238]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 44 -> 'pipe:[2053239]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 45 -> 'pipe:[2053239]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 46 -> 'pipe:[2050954]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 47 -> 'pipe:[2053240]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 48 -> 'pipe:[2053240]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 49 -> 'pipe:[2053241]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 5 -> 'anon_inode:[eventfd]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 50 -> 'pipe:[2053241]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 51 -> 'pipe:[2053242]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 52 -> 'pipe:[2053242]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 53 -> 'pipe:[2053243]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 54 -> 'pipe:[2053243]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 55 -> 'pipe:[2053244]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 56 -> 'pipe:[2053244]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 57 -> 'pipe:[2053245]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 58 -> 'pipe:[2053245]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 59 -> 'pipe:[2053246]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 6 -> /proc/266192/smaps
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 60 -> 'pipe:[2053246]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 61 -> 'pipe:[2053247]'
+l-wx------ 1 azureuser azureuser 64 Sep 24 20:31 62 -> 'pipe:[2053247]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 63 -> 'socket:[2051931]'
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 7 -> /proc/266192/maps
+lr-x------ 1 azureuser azureuser 64 Sep 24 20:31 8 -> 'pipe:[2053232]'
+lrwx------ 1 azureuser azureuser 64 Sep 24 20:31 9 -> /dev/pts/13
+

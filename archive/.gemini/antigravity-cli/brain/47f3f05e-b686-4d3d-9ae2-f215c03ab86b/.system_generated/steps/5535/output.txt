@@ -1,0 +1,129 @@
+
+The command exited with code 0.
+Output:
+=== Transaction 148033 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 148033
+Inode: 13893633   Type: bad type    Mode:  0000   Flags: 0x0 
+Generation: 0    Version: 0x00000000
+User: 1537147712   Group: 59100   Size: 54525968
+File ACL: 0    Directory ACL: 0
+Links: 0   Blockcount: 1583423488
+Fragment:  Address: 0    Number: 0    Size: 0
+ctime:  536876610 -- Mon Jan  5 20:23:30 1987
+atime:   54525984 -- Fri Sep 24 02:06:24 1971
+mtime:     327680 -- Sun Jan  4 19:01:20 1970
+Size of extra inode fields: 2
+ext4magic : EXIT_SUCCESS
+=== Transaction 148117 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 148117
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000121
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 18   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790322827:0158914240 -- Fri Sep 25 07:53:47 2026
+ atime: 1790322806:3069005576 -- Fri Sep 25 07:53:26 2026
+ mtime: 1790322827:0158914240 -- Fri Sep 25 07:53:47 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+ext4magic : EXIT_SUCCESS
+=== Transaction 148128 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 148128
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000146
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 5   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790322844:0400529672 -- Fri Sep 25 07:54:04 2026
+ atime: 1790322806:3069005576 -- Fri Sep 25 07:53:26 2026
+ mtime: 1790322844:0400529672 -- Fri Sep 25 07:54:04 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+ext4magic : EXIT_SUCCESS
+=== Transaction 148132 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 148132
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000146
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 5   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790322844:0400529672 -- Fri Sep 25 07:54:04 2026
+ atime: 1790322806:3069005576 -- Fri Sep 25 07:53:26 2026
+ mtime: 1790322844:0400529672 -- Fri Sep 25 07:54:04 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+ext4magic : EXIT_SUCCESS
+=== Transaction 148182 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 148182
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000148
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 7   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790322888:2052711872 -- Fri Sep 25 07:54:48 2026
+ atime: 1790322806:3069005576 -- Fri Sep 25 07:53:26 2026
+ mtime: 1790322888:2052711872 -- Fri Sep 25 07:54:48 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+ext4magic : EXIT_SUCCESS
+=== Transaction 151648 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 151648
+Inode: 13893633   Type: bad type    Mode:  0777   Flags: 0xffffffff 
+Generation: 0    Version: 0xffffffff
+User: 65535   Group: 65535   Size: -1
+File ACL: 0    Directory ACL: 0
+Links: 65535   Blockcount: 4294967295
+Fragment:  Address: 0    Number: 0    Size: 0
+ctime: 4294967295 -- Sun Feb  7 06:28:15 2106
+atime: 4294967295 -- Sun Feb  7 06:28:15 2106
+mtime: 4294967295 -- Sun Feb  7 06:28:15 2106
+dtime: 4294967295 -- Sun Feb  7 06:28:15 2106
+Size of extra inode fields: 0
+ext4magic : EXIT_SUCCESS
+=== Transaction 153013 ===
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+
+Dump Inode 13893633 from journal transaction 153013
+Inode: 13893633   Type: directory    Mode:  0755   Flags: 0x80000 
+Generation: 2221566127    Version: 0x00000000:00000152
+User:  1000   Group:  1000   Size: 4096
+File ACL: 0    Directory ACL: 0
+Links: 15   Blockcount: 8
+Fragment:  Address: 0    Number: 0    Size: 0
+ ctime: 1790330773:3884306616 -- Fri Sep 25 10:06:13 2026
+ atime: 1790331401:1607742836 -- Fri Sep 25 10:16:41 2026
+ mtime: 1790330773:3884306616 -- Fri Sep 25 10:06:13 2026
+crtime: 1790072924:0376791304 -- Tue Sep 22 10:28:44 2026
+Size of extra inode fields: 32
+ext4magic : EXIT_SUCCESS
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+    - "drive.readonly"
+        - Read-only access to file metadata and file contents.
+        - Allows read and write access to the Application Data folder.
+    - "drive.metadata.readonly"
+        - Allows read-only access to file metadata but
+        - does not allow any access to read or download file content.
+

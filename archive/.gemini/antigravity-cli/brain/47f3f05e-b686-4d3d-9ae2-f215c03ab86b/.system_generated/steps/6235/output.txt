@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Box 1: b'ftyp' sz=32
+Box 2: b'uuid' sz=7729
+Box 3: b'mdat' sz=8638461
+Total size if Box 3 is mdat and moov follows: 8646222
+Box 4: b'^\xbaim' sz=305110719
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+DELETE GUARD HOOK TRIGGERED: ['/home/azureuser/AGY-MASTER/POLICIES/delete_guard.py']
+

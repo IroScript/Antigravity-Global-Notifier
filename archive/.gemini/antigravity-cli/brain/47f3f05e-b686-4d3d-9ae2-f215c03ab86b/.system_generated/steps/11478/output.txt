@@ -1,0 +1,315 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2130,7 +2130,22 @@
+     });
+   }
+ 
++  let selectedItem = null;
++  let currentPropPath = '';
++  let ctxTargetItem = null;
++
++  function escapeHtml(str) {
++    if (!str) return '';
++    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
++  }
++
++  function escapeAttr(str) {
++    if (!str) return '';
++    return String(str).replace(/"/g, '&quot;');
++  }
++
+   function renderFiles(items) {
++    selectedItem = null;
+     const tableBody = document.getElementById('filesTableBody');
+     const gridView = document.getElementById('gridViewContainer');
+     tableBody.innerHTML = '';
+@@ -2137,6 +2137,6 @@
+ 
+     if (!items || items.length === 0) {
+-      tableBody.innerHTML = `<tr><td colspan="4" style="text-align:center; padding:20px; color:#888;">This folder is empty.</td></tr>`;
++      tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:24px; color:#888;">This folder is empty.</td></tr>`;
+       gridView.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:#888;">This folder is empty.</div>`;
+       return;
+     }
+@@ -2144,6 +2144,23 @@
+       const tr = document.createElement('tr');
+       tr.onclick = (e) => handleItemClick(item, e);
+       tr.ondblclick = () => handleItemOpen(item);
++      tr.oncontextmenu = (e) => {
++        e.preventDefault();
++        showContextMenu(e.clientX, e.clientY, item);
++      };
++
++      // Mobile Touch Long-Press for Context Menu
++      let touchTimeout;
++      tr.ontouchstart = (e) => {
++        touchTimeout = setTimeout(() => {
++          if (e.touches && e.touches[0]) {
++            showContextMenu(e.touches[0].clientX, e.touches[0].clientY, item);
++          }
++        }, 550);
++      };
++      tr.ontouchend = () => clearTimeout(touchTimeout);
++      tr.ontouchmove = () => clearTimeout(touchTimeout);
++
+       tr.innerHTML = `
+         <td>
+           <div class="col-name">
+@@ -2150,4 +2150,4 @@
+-            <span>${item.name}</span>
++            <span>${escapeHtml(item.name)}</span>
+           </div>
+         </td>
+         <td>${item.mtime_str || '-'}</td>
+@@ -2154,4 +2154,9 @@
+         <td style="text-align:right;">${item.size_str || ''}</td>
++        <td style="text-align:center;">
++          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
++            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
++          </button>
++        </td>
+       `;
+       tableBody.appendChild(tr);
+ 
+@@ -2158,9 +2158,16 @@
+       card.className = 'grid-item';
+       card.onclick = (e) => handleItemClick(item, e);
+       card.ondblclick = () => handleItemOpen(item);
++      card.oncontextmenu = (e) => {
++        e.preventDefault();
++        showContextMenu(e.clientX, e.clientY, item);
++      };
+       card.innerHTML = `
++        <button class="grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
++          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
++        </button>
+         ${getIcon(item)}
+-        <div class="item-title" title="${item.name}">${item.name}</div>
++        <div class="item-title" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</div>
+       `;
+       gridView.appendChild(card);
+     });
+@@ -2167,8 +2167,10 @@
+ 
+   function handleItemClick(item, e) {
++    selectedItem = item;
+     document.querySelectorAll('.files-table tr, .grid-item').forEach(el => el.classList.remove('selected'));
+-    if (e.currentTarget) e.currentTarget.classList.add('selected');
+-    document.getElementById('statusLeft').textContent = `Selected: ${item.name} (${item.size_str || 'Folder'})`;
++    if (e && e.currentTarget) e.currentTarget.classList.add('selected');
++    const info = item.is_dir ? 'Folder' : (item.size_str || 'File');
++    document.getElementById('statusLeft').textContent = `Selected: ${item.name} (${info})`;
+   }
+ 
+   function handleItemOpen(item) {
+@@ -2178,6 +2178,207 @@
+     }
+   }
+ 
++  function handlePropBtnClick(btn, e) {
++    e.stopPropagation();
++    const p = btn.getAttribute('data-path');
++    if (p) showProperties(p);
++  }
++
++  function openCurrentOrSelectedProperties() {
++    if (selectedItem && selectedItem.path) {
++      showProperties(selectedItem.path);
++    } else if (currentPath && currentPath !== "THIS_PC") {
++      showProperties(currentPath);
++    }
++  }
++
++  async function showProperties(path) {
++    if (!path) {
++      if (currentPath && currentPath !== "THIS_PC") {
++        path = currentPath;
++      } else {
++        return;
++      }
++    }
++
++    currentPropPath = path;
++    const modal = document.getElementById('propertiesModal');
++    const title = document.getElementById('propHeaderTitle');
++    const nameInput = document.getElementById('propNameInput');
++    const typeEl = document.getElementById('propType');
++    const locEl = document.getElementById('propLocation');
++    const sizeStrEl = document.getElementById('propSizeStr');
++    const sizeBytesEl = document.getElementById('propSizeBytes');
++    const containsLabel = document.getElementById('propContainsLabel');
++    const containsEl = document.getElementById('propContains');
++    const createdEl = document.getElementById('propCreated');
++    const modifiedEl = document.getElementById('propModified');
++    const fullPathEl = document.getElementById('propFullPath');
++    const heroIcon = document.getElementById('propHeroIcon');
++
++    const baseName = path.split('/').filter(Boolean).pop() || '/';
++
++    // Initial loading state
++    title.innerHTML = `
++      <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
++      <span>${escapeHtml(baseName)} Properties</span>
++    `;
++    nameInput.value = baseName;
++    typeEl.textContent = 'Calculating...';
++    locEl.textContent = path.substring(0, path.lastIndexOf('/')) || '/';
++    fullPathEl.textContent = path;
++    sizeStrEl.textContent = 'হিসাব করা হচ্ছে (Calculating size)...';
++    sizeBytesEl.textContent = '';
++    containsLabel.style.display = 'block';
++    containsEl.style.display = 'block';
++    containsEl.textContent = 'ফাইল ও ফোল্ডার গণনা হচ্ছে...';
++    createdEl.textContent = '-';
++    modifiedEl.textContent = '-';
++
++    modal.classList.add('active');
++
++    try {
++      const res = await fetch(`/api/properties?path=${encodeURIComponent(path)}`);
++      if (!res.ok) {
++        throw new Error(`HTTP ${res.status}`);
++      }
++      const data = await res.json();
++      if (data.error) {
++        sizeStrEl.textContent = 'Error';
++        sizeBytesEl.textContent = data.error;
++        containsEl.textContent = '-';
++        return;
++      }
++
++      title.innerHTML = `
++        <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
++        <span>${escapeHtml(data.name)} Properties</span>
++      `;
++      nameInput.value = data.name;
++      typeEl.textContent = data.type_name || (data.is_dir ? 'File folder' : 'File');
++      locEl.textContent = data.location;
++      fullPathEl.textContent = data.path;
++
++      if (data.is_dir) {
++        heroIcon.innerHTML = `<svg viewBox="0 0 24 24" width="44" height="44" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>`;
++        containsLabel.style.display = 'block';
++        containsEl.style.display = 'block';
++        containsEl.textContent = data.contains_str || `${data.files_count} Files, ${data.folders_count} Folders`;
++      } else {
++        heroIcon.innerHTML = `<svg viewBox="0 0 24 24" width="44" height="44" fill="#60cdff"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>`;
++        containsLabel.style.display = 'none';
++        containsEl.style.display = 'none';
++      }
++
++      sizeStrEl.textContent = data.size_str || '0 B';
++      sizeBytesEl.textContent = data.size_bytes_formatted ? `(${data.size_bytes_formatted})` : '';
++      createdEl.textContent = data.created_str || '-';
++      modifiedEl.textContent = data.modified_str || '-';
++    } catch (err) {
++      sizeStrEl.textContent = 'প্রোপার্টি লোড করা যায়নি';
++      sizeBytesEl.textContent = err.message;
++      containsEl.textContent = '-';
++    }
++  }
++
++  function closeProperties() {
++    const modal = document.getElementById('propertiesModal');
++    if (modal) modal.classList.remove('active');
++  }
++
++  function handlePropModalOverlayClick(e) {
++    if (e.target.id === 'propertiesModal') {
++      closeProperties();
++    }
++  }
++
++  function copyPropFullPath() {
++    if (!currentPropPath) return;
++    navigator.clipboard.writeText(currentPropPath).then(() => {
++      const btn = document.getElementById('btnCopyPropPath');
++      if (btn) {
++        const orig = btn.textContent;
++        btn.textContent = 'কপি হয়েছে!';
++        setTimeout(() => { btn.textContent = orig; }, 1800);
++      }
++    }).catch(() => {
++      prompt('Copy path:', currentPropPath);
++    });
++  }
++
++  /* Context Menu Functions */
++  function showContextMenu(x, y, item) {
++    ctxTargetItem = item;
++    const menu = document.getElementById('customContextMenu');
++    if (!menu) return;
++
++    const downloadItem = document.getElementById('ctxDownload');
++    const downloadDiv = document.getElementById('ctxDownloadDivider');
++    if (item.is_dir) {
++      if (downloadItem) downloadItem.style.display = 'none';
++      if (downloadDiv) downloadDiv.style.display = 'none';
++    } else {
++      if (downloadItem) downloadItem.style.display = 'flex';
++      if (downloadDiv) downloadDiv.style.display = 'block';
++    }
++
++    const winW = window.innerWidth;
++    const winH = window.innerHeight;
++    const menuW = 195;
++    const menuH = 145;
++    let posX = x;
++    let posY = y;
++    if (posX + menuW > winW) posX = winW - menuW - 10;
++    if (posY + menuH > winH) posY = winH - menuH - 10;
++    if (posX < 10) posX = 10;
++    if (posY < 10) posY = 10;
++
++    menu.style.left = `${posX}px`;
++    menu.style.top = `${posY}px`;
++    menu.classList.add('active');
++  }
++
++  function hideContextMenu() {
++    const menu = document.getElementById('customContextMenu');
++    if (menu) menu.classList.remove('active');
++  }
++
++  document.addEventListener('click', (e) => {
++    if (!e.target.closest('#customContextMenu')) {
++      hideContextMenu();
++    }
++  });
++
++  function handleCtxOpen() {
++    hideContextMenu();
++    if (ctxTargetItem) handleItemOpen(ctxTargetItem);
++  }
++
++  function handleCtxProperties() {
++    hideContextMenu();
++    if (ctxTargetItem) showProperties(ctxTargetItem.path);
++  }
++
++  function handleCtxDownload() {
++    hideContextMenu();
++    if (ctxTargetItem && !ctxTargetItem.is_dir) {
++      window.open(`/api/raw?path=${encodeURIComponent(ctxTargetItem.path)}&download=1`, '_blank');
++    }
++  }
++
++  // Keyboard Shortcuts (Alt+Enter for properties, Esc to close modals)
++  window.addEventListener('keydown', (e) => {
++    if (e.altKey && e.key === 'Enter') {
++      e.preventDefault();
++      openCurrentOrSelectedProperties();
++    }
++    if (e.key === 'Escape') {
++      closeProperties();
++      closeNotepad();
++      hideContextMenu();
++    }
++  });
++
+   async function openFilePreview(filePath, fileName) {
+     const modal = document.getElementById('notepadModal');
+     const title = document.getElementById('notepadFileName');
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

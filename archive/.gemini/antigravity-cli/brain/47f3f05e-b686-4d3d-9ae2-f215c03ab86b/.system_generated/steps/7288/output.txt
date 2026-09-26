@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 mdkamruzzamanirak_gmail_com mdkamruzzamanirak_gmail_com 8.8M Sep 22 17:55 /home/mdkamruzzamanirak_gmail_com/frappe_db_backup.sql
+ac7a8fe0eab4f6f61d59394272589fdbfa3309e6a93599c5d01c63ab00b29e78  /home/mdkamruzzamanirak_gmail_com/frappe_db_backup.sql
+

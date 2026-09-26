@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Sample SEO row for idea 1:
+Title: Rice Titan Harvester — The Paddy Harvesting Machine You've Never Seen
+SEO Description: Rice Titan Harvester: an impossible Paddy Harvesting machine rendered as an 8-se
+Tags: ["Rice Titan Harvester", "rice paddy machine", "giant harvester", "colossal harvester", "agriculture tech", "mega farming", "Paddy Harvesting machine", "impossible engineering", "AI generated video", "megastructure"]
+

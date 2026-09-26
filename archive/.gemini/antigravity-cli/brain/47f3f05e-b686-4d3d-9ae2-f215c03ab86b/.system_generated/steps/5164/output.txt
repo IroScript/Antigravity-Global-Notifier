@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+UID          PID    PPID  C STIME TTY          TIME CMD
+azureus+  637238    1137  0 06:33 ?        00:00:01 /usr/bin/python3 /home/azure
+
+Terminal ID: c70ef1ee-067a-4c32-aecf-ba0e024fc6eb

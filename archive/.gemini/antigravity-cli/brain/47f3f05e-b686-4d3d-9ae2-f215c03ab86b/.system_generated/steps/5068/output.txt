@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 12
+drwxr-xr-x 3 azureuser azureuser 4096 Sep 25 07:53 .
+drwxr-xr-x 3 azureuser azureuser 4096 Sep 25 07:53 ..
+drwxr-xr-x 6 azureuser azureuser 4096 Sep 25 07:55 .system_generated
+
+Terminal ID: 2c60d865-017e-4016-a9b2-ab92578c00b7

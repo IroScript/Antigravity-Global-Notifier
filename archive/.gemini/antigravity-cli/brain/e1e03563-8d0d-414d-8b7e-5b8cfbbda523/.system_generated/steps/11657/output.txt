@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Total Ideas Generated       : 847 / 1000 (84.7%)
+Total Prompts Generated     : 10085 / 10000 (100.8%)
+Total Real SEO Completed    : 651 / 1000 (65.1%)
+Worker Status:
+  - Worker 1: generating_prompts (Completed: 90)
+  - Worker 2: generating_prompts (Completed: 89)
+  - Worker 3: macro_resting (Completed: 123)
+  - Worker 4: macro_resting (Completed: 41)
+============================================================
+
+2026-09-26 11:01:31,265 [INFO] [worker_2] [worker_2] ✅ Successfully inserted 10-Level Escalation (9 prompts) for Idea #806
+2026-09-26 11:01:31,265 [INFO] [worker_2] [worker_2] ⏳ [Delay Ladder | #6/9: 'Idea #806 Escalation'] Sleeping 70.83s (Base: 10.0s, +10.0s next)...
+

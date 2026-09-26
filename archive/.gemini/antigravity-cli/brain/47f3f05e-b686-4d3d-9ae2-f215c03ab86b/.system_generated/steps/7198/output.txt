@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+NAME          SIZE TYPE FSTYPE MOUNTPOINTS MODEL
+sr0          1024M rom                     Virtual DVD-ROM
+nvme0n1        30G disk                    MSFT NVMe Accelerator v1.0
+├─nvme0n1p1  29.9G part ext4   /           
+├─nvme0n1p14    3M part                    
+└─nvme0n1p15  124M part vfat   /boot/efi   
+nvme1n1       220G disk ext4   /home       Microsoft NVMe Direct Disk v2
+Filesystem      Type      Size  Used Avail Use% Mounted on
+udev            devtmpfs  7.8G     0  7.8G   0% /dev
+tmpfs           tmpfs     1.6G  1.2M  1.6G   1% /run
+/dev/nvme0n1p1  ext4       30G   12G   16G  43% /
+tmpfs           tmpfs     7.9G  1.1M  7.9G   1% /dev/shm
+tmpfs           tmpfs     5.0M     0  5.0M   0% /run/lock
+tmpfs           tmpfs     7.9G  1.3G  6.6G  16% /tmp
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme1n1    ext4      216G  6.2G  199G   4% /home
+/dev/nvme0n1p15 vfat      124M  9.1M  115M   8% /boot/efi
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs           tmpfs     1.6G   68K  1.6G   1% /run/user/1000
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           tmpfs     1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+

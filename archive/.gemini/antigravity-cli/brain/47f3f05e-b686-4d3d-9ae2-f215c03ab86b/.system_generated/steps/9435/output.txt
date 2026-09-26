@@ -1,0 +1,2 @@
+Created file file:///home/azureuser/.config/systemd/user/gdrive-live-sync.service with requested content.
+If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.

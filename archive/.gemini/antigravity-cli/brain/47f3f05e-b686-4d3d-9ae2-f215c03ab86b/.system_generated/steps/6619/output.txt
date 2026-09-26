@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+=== Auditing /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db ===
+Ideas: 667
+Prompts: 7660
+SEO (youtube_metadata): 555
+SEO Runs: 562
+Generated Videos: 325
+=== Auditing /home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/669951_python3_youtube_pipeline.db ===
+Ideas: 667
+Prompts: 7660
+SEO (youtube_metadata): 555
+SEO Runs: 562
+Generated Videos: 325
+

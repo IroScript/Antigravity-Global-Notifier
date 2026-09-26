@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+SSH_IS_WORKING
+mdkamruzzamanirak
+/home/mdkamruzzamanirak
+

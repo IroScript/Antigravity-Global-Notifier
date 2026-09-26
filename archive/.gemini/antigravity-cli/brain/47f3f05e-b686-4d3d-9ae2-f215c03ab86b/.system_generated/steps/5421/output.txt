@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+ext4magic - recover deleted files from ext3 or ext4 partitions
+extundelete - utility to recover deleted files from ext3/ext4 partition
+testdisk - Partition scanner and disk recovery tool, and PhotoRec file recovery tool
+
+Terminal ID: 98ea11c0-f79f-475a-af2d-7e88226f75eb

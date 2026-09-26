@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+Ideas: 667
+Prompts: 7660
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+    c.execute('SELECT COUNT(*) FROM seo_metadata')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: seo_metadata
+

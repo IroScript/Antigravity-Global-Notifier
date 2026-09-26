@@ -1,0 +1,147 @@
+
+Encountered error in step execution: context canceled
+Output:
+<truncated 1 lines>
+Elapsed time:      3m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 40% /16.071Gi, 39.177Mi/s, 4m8Transferred:   	    6.942 GiB / 16.071 GiB, 43%, 38.896 MiB/s, ETA 4m
+Transferred:            0 / 1, 0%
+Elapsed time:       4m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 43% /16.071Gi, 38.896Mi/s, 4m0Transferred:   	    7.312 GiB / 16.071 GiB, 46%, 38.652 MiB/s, ETA 3m52s
+Transferred:            0 / 1, 0%
+Elapsed time:      4m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 45% /16.071Gi, 38.652Mi/s, 3m5Transferred:   	    7.703 GiB / 16.071 GiB, 48%, 38.869 MiB/s, ETA 3m40s
+Transferred:            0 / 1, 0%
+Elapsed time:      4m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 47% /16.071Gi, 38.869Mi/s, 3m4Transferred:   	    8.109 GiB / 16.071 GiB, 50%, 40.079 MiB/s, ETA 3m23s
+Transferred:            0 / 1, 0%
+Elapsed time:      4m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 50% /16.071Gi, 40.079Mi/s, 3m2Transferred:   	    8.492 GiB / 16.071 GiB, 53%, 40.059 MiB/s, ETA 3m13s
+Transferred:            0 / 1, 0%
+Elapsed time:      4m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 52% /16.071Gi, 40.059Mi/s, 3m1Transferred:   	    8.859 GiB / 16.071 GiB, 55%, 38.833 MiB/s, ETA 3m10s
+Transferred:            0 / 1, 0%
+Elapsed time:      4m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 55% /16.071Gi, 38.833Mi/s, 3m1Transferred:   	    9.234 GiB / 16.071 GiB, 57%, 38.716 MiB/s, ETA 3m
+Transferred:            0 / 1, 0%
+Elapsed time:       5m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 57% /16.071Gi, 38.715Mi/s, 3m0Transferred:   	    9.625 GiB / 16.071 GiB, 60%, 39.424 MiB/s, ETA 2m47s
+Transferred:            0 / 1, 0%
+Elapsed time:      5m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 59% /16.071Gi, 39.424Mi/s, 2m4Transferred:   	   10.008 GiB / 16.071 GiB, 62%, 39.430 MiB/s, ETA 2m37s
+Transferred:            0 / 1, 0%
+Elapsed time:      5m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 62% /16.071Gi, 39.430Mi/s, 2m3Transferred:   	   10.404 GiB / 16.071 GiB, 65%, 39.767 MiB/s, ETA 2m25s
+Transferred:            0 / 1, 0%
+Elapsed time:      5m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 64% /16.071Gi, 39.767Mi/s, 2m2Transferred:   	   10.781 GiB / 16.071 GiB, 67%, 39.265 MiB/s, ETA 2m17s
+Transferred:            0 / 1, 0%
+Elapsed time:      5m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 67% /16.071Gi, 39.265Mi/s, 2m1Transferred:   	   11.162 GiB / 16.071 GiB, 69%, 39.290 MiB/s, ETA 2m7s
+Transferred:            0 / 1, 0%
+Elapsed time:      5m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 69% /16.071Gi, 39.290Mi/s, 2m7Transferred:   	   11.531 GiB / 16.071 GiB, 72%, 38.529 MiB/s, ETA 2m
+Transferred:            0 / 1, 0%
+Elapsed time:       6m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 71% /16.071Gi, 38.525Mi/s, 2m0Transferred:   	   11.906 GiB / 16.071 GiB, 74%, 38.120 MiB/s, ETA 1m51s
+Transferred:            0 / 1, 0%
+Elapsed time:      6m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 74% /16.071Gi, 38.118Mi/s, 1m5Transferred:   	   12.281 GiB / 16.071 GiB, 76%, 38.227 MiB/s, ETA 1m41s
+Transferred:            0 / 1, 0%
+Elapsed time:      6m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 76% /16.071Gi, 38.226Mi/s, 1m4Transferred:   	   12.664 GiB / 16.071 GiB, 79%, 39.027 MiB/s, ETA 1m29s
+Transferred:            0 / 1, 0%
+Elapsed time:      6m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 78% /16.071Gi, 39.027Mi/s, 1m2Transferred:   	   13.016 GiB / 16.071 GiB, 81%, 37.618 MiB/s, ETA 1m23s
+Transferred:            0 / 1, 0%
+Elapsed time:      6m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 80% /16.071Gi, 37.618Mi/s, 1m2Transferred:   	   13.391 GiB / 16.071 GiB, 83%, 37.727 MiB/s, ETA 1m12s
+Transferred:            0 / 1, 0%
+Elapsed time:      6m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 83% /16.071Gi, 37.727Mi/s, 1m1Transferred:   	   13.773 GiB / 16.071 GiB, 86%, 38.192 MiB/s, ETA 1m1s
+Transferred:            0 / 1, 0%
+Elapsed time:       7m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 85% /16.071Gi, 38.192Mi/s, 1m1Transferred:   	   14.164 GiB / 16.071 GiB, 88%, 39.402 MiB/s, ETA 49s
+Transferred:            0 / 1, 0%
+Elapsed time:      7m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 88% /16.071Gi, 39.402Mi/s, 49sTransferred:   	   14.577 GiB / 16.071 GiB, 91%, 40.431 MiB/s, ETA 37s
+Transferred:            0 / 1, 0%
+Elapsed time:      7m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 90% /16.071Gi, 40.431Mi/s, 37sTransferred:   	   14.961 GiB / 16.071 GiB, 93%, 40.283 MiB/s, ETA 28s
+Transferred:            0 / 1, 0%
+Elapsed time:      7m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 93% /16.071Gi, 40.283Mi/s, 28sTransferred:   	   15.344 GiB / 16.071 GiB, 95%, 39.709 MiB/s, ETA 18s
+Transferred:            0 / 1, 0%
+Elapsed time:      7m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 95% /16.071Gi, 39.709Mi/s, 18sTransferred:   	   15.727 GiB / 16.071 GiB, 98%, 39.033 MiB/s, ETA 9s
+Transferred:            0 / 1, 0%
+Elapsed time:      7m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz: 97% /16.071Gi, 39.033Mi/s, 9sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 38.907 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       8m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 38.907Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 20.417 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 20.417Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 10.708 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 10.708Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 5.616 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 5.616Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 2.945 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 2.945Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 1.545 MiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      8m50.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 1.545Mi/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 829.578 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:       9m0.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 829.576Ki/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 435.081 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m10.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 435.080Ki/s, 0sTransferred:   	   16.071 GiB / 16.071 GiB, 100%, 228.183 KiB/s, ETA 0s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m20.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:100% /16.071Gi, 228.182Ki/s, 0sTransferred:   	   16.071 GiB / 32.141 GiB, 50%, 119.673 KiB/s, ETA 1d15h6m51s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m30.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:  0% /16.071Gi, 0/s, -Transferred:   	   16.071 GiB / 32.141 GiB, 50%, 62.764 KiB/s, ETA 3d2h34m47s
+Transferred:            0 / 1, 0%
+Elapsed time:      9m40.5s
+Transferring:
+ *      gcp_home_FULL_filesystem_20260925.tar.gz:  0% /16.071Gi, 0/s, -

@@ -1,0 +1,29 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-8697
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-8697.log
+Log output:
+<truncated 783 lines>
+Leviathan.mp4:  0% /14.299Mi, 0/s, -
+
+<6>INFO  : 
+Transferred:   	  383.808 MiB / 2.215 GiB, 17%, 694.854 KiB/s, ETA 46m17s
+Transferred:          164 / 1086, 15%
+Elapsed time:     11m20.6s
+Transferring:
+ * 1.140.Level_10_The_Inf…Cornfield_Colossus.mp4:100% /11.272Mi, 354.691Ki/s, 0s
+ * 1.140.Level_10_The_Inf…/youtube_metadata.json:  0% /1.591Ki, 0/s, -
+ * 1.141.Level_10_The_Rid…1.Level_10_Prompt.json:  0% /3.182Ki, 0/s, -
+ * 1.141.Level_10_The_Rid…e-Carver_Leviathan.mp4:  0% /14.299Mi, 0/s, -
+
+<6>INFO  : 
+Transferred:   	  383.808 MiB / 2.215 GiB, 17%, 364.423 KiB/s, ETA 1h28m14s
+Transferred:          164 / 1086, 15%
+Elapsed time:     11m30.6s
+Transferring:
+ * 1.140.Level_10_The_Inf…Cornfield_Colossus.mp4:100% /11.272Mi, 186.021Ki/s, 0s
+ * 1.140.Level_10_The_Inf…/youtube_metadata.json:  0% /1.591Ki, 0/s, -
+ * 1.141.Level_10_The_Rid…1.Level_10_Prompt.json:  0% /3.182Ki, 0/s, -
+ * 1.141.Level_10_The_Rid…e-Carver_Leviathan.mp4:  0% /14.299Mi, 0/s, -
+
+
+Last progress: 2s ago

@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+Failed to backend: command "lsd" failed: command not found
+

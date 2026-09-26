@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Props .gemini: {'name': '.gemini', 'size': '72.70 MB', 'bytes': '76,226,563', 'files': 4551, 'folders': 3544, 'mtime': '2026-09-25 07:55 AM'}
+Props config: {'name': 'config', 'size': '0.00 B', 'bytes': '0', 'files': 0, 'folders': 0, 'mtime': '2026-09-26 09:40 AM'}
+Props README.md: {'name': 'README.md', 'size': '711.00 B', 'files': 1, 'folders': 0}
+

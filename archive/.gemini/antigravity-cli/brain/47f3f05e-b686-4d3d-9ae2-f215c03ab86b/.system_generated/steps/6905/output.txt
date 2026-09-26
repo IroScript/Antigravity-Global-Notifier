@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+rclone v1.60.1-DEV
+- os/version: debian 13.7 (64 bit)
+- os/kernel: 6.12.107+deb13-cloud-amd64 (x86_64)
+- os/type: linux
+- os/arch: amd64
+- go/version: go1.23.2
+- go/linking: dynamic
+- go/tags: none
+

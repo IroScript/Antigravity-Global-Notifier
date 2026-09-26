@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+HTTP/2 401 
+date: Sat, 26 Sep 2026 10:23:26 GMT
+content-length: 0
+cf-ray: a4118d9e7e4f4b00-IAD
+cf-cache-status: DYNAMIC
+server: cloudflare
+www-authenticate: Basic realm="ttyd"
+x-robots-tag: none
+x-robots-tag: none
+
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 28K
+-rw-r--r-- 1 azureuser azureuser 3.9K Sep 26 04:38 01-sudoers-restricted.draft
+-rw-r--r-- 1 azureuser azureuser 4.4K Sep 26 04:38 02-parent-directory-lock.md
+-rw-r--r-- 1 azureuser azureuser 2.6K Sep 26 04:38 03-immutable-files.sh
+-rw-r--r-- 1 azureuser azureuser 3.8K Sep 26 04:39 04-external-backup-setup.md
+-rw-r--r-- 1 azureuser azureuser 5.3K Sep 26 04:39 05-verification-tests.sh
+

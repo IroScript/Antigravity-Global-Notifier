@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6965.log:1:<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-6965.log:4:<5>NOTICE: Log in and authorize rclone for access
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7010.log:1:<5>NOTICE: Config file "/home/azureuser/.config/rclone/rclone.conf" not found - using defaults
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7010.log:4:<5>NOTICE: Log in and authorize rclone for access
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7651.log:2:<5>NOTICE: Log in and authorize rclone for access
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7689.log:2:<5>NOTICE: Log in and authorize rclone for access
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7700.log:1:Starting rclone oauth...
+/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7700.log:9:RCLONE: <5>NOTICE: Log in and authorize rclone for access
+

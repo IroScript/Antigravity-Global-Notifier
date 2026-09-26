@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+45 ইরাক ভাইয়া, সরাসরি SQLite ডাটাবেজ কুয়েরি করে
+44 প্রম্পট ও এসইও-এর নিখুঁত লাইভ তথ্য দিচ্ছি: 🎯
+32 «──────────────────────────────»
+37 ★ *১. মূল কুয়েরি ও ফলাফল (Live SQL):*
+29 * *প্রম্পট সংখ্যা (Prompts):*
+43   * কুয়েরি: `SELECT count(*) FROM prompts;`
+51   * মোট প্রম্পট: *৭,৬৬০টি* (লক্ষ্য: ১০,০০০ | ৭৬.৬%)
+36   * লেভেল ব্রেকডাউন: লেভেল ১ থেকে ১০
+43     প্রতিটি লেভেলে ঠিক *৭৬৬টি* করে প্রম্পট!
+33 * *এসইও মেটাডেটা (SEO Metadata):*
+52   * কুয়েরি: `SELECT count(*) FROM youtube_metadata;`
+45   * মোট এসইও: *৫৫৫টি* (লক্ষ্য: ১,০০০ | ৫৫.৫%)
+66   * স্ট্যাটাস: ready (২৯৫) + ready_for_upload (২৫৪) + uploaded (৬)
+32 «──────────────────────────────»
+41 ★ *২. সংশ্লিষ্ট অন্যান্য ডাটাবেজ রেকর্ড:*
+35 * আইডিয়া (`ideas`): *৬৬৭টি* (৬৬.৭%)
+47 * কমপ্লিটেড ভিডিও (`generated_videos`): *৩২৫টি*
+41 * এসইও রান হিস্ট্রি (`seo_runs`): *৫৬২টি*
+32 «──────────────────────────────»
+24 ★ *৩. ডাটাবেজ ফাইল পাথ:*
+288 [`file:///home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db`](file:///home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube%20Automation/PromptDatabase/database/youtube_pipeline.db)
+

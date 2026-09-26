@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1790351324
+rdb_last_bgsave_status:ok
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1790102054
+rdb_last_bgsave_status:err
+

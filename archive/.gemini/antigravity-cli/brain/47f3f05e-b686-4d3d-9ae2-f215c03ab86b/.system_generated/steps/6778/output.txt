@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+total 19100
+-rw-r--r-- 1 azureuser azureuser     193 Sep 25 13:17 task-6709.log
+-rw-r--r-- 1 azureuser azureuser      55 Sep 25 13:02 task-6698.log
+-rw-r--r-- 1 azureuser azureuser   32774 Sep 25 12:59 task-6683.log
+-rw-r--r-- 1 azureuser azureuser    1903 Sep 25 12:57 task-6667.log
+-rw-r--r-- 1 azureuser azureuser    1206 Sep 25 12:52 task-6650.log
+-rw-r--r-- 1 azureuser azureuser      85 Sep 25 12:52 task-6645.log
+-rw-r--r-- 1 azureuser azureuser      24 Sep 25 12:39 task-6560.log
+-rw-r--r-- 1 azureuser azureuser  298348 Sep 25 12:27 task-6500.log
+-rw-r--r-- 1 azureuser azureuser      50 Sep 25 12:24 task-6469.log
+-rw-r--r-- 1 azureuser azureuser   70394 Sep 25 12:04 task-6410.log
+-rw-r--r-- 1 azureuser azureuser    9553 Sep 25 11:37 task-6343.log
+-rw-r--r-- 1 azureuser azureuser      76 Sep 25 11:28 task-6282.log
+-rw-r--r-- 1 azureuser azureuser     124 Sep 25 11:27 task-6271.log
+-rw-r--r-- 1 azureuser azureuser    2311 Sep 25 11:25 task-6229.log
+-rw-r--r-- 1 azureuser azureuser     362 Sep 25 11:23 task-6209.log
+-rw-r--r-- 1 azureuser azureuser     490 Sep 25 11:20 task-6157.log
+-rw-r--r-- 1 azureuser azureuser       0 Sep 25 11:16 task-6089.log
+-rw-r--r-- 1 azureuser azureuser     650 Sep 25 11:16 task-6050.log
+-rw-r--r-- 1 azureuser azureuser      99 Sep 25 11:15 task-6043.log
+-rw-r--r-- 1 azureuser azureuser      79 Sep 25 11:14 task-6036.log
+-rw-r--r-- 1 azureuser azureuser 3408124 Sep 25 11:09 task-5866.log
+-rw-r--r-- 1 azureuser azureuser     267 Sep 25 11:09 task-5992.log
+-rw-r--r-- 1 azureuser azureuser    1778 Sep 25 11:09 task-5967.log
+-rw-r--r-- 1 azureuser azureuser    9087 Sep 25 11:05 task-5926.log
+-rw-r--r-- 1 azureuser azureuser     120 Sep 25 11:03 task-5910.log
+-rw-r--r-- 1 azureuser azureuser       0 Sep 25 11:03 task-5904.log
+-rw-r--r-- 1 azureuser azureuser      91 Sep 25 10:59 task-5796.log
+-rw-r--r-- 1 azureuser azureuser 3065770 Sep 25 10:59 task-5652.log
+-rw-r--r-- 1 azureuser azureuser       0 Sep 25 10:57 task-5737.log
+

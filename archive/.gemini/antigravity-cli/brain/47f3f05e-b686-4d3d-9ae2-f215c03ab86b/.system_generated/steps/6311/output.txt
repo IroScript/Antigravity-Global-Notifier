@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Chunk len: 266240
+First 32 bytes: b'\x8e\x12\xfd7\xcd\x94\xd5\xdbci\x1fw\xc7\xc8%y2Yi\x95\x94y\x8b\x99\xb0\x1d\xdf$2\xa4\xda\xd6'
+moov pos: -1
+

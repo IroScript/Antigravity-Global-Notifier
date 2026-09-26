@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Internal Server Error
+Internal Server Error
+Internal Server Error
+{"title":"ChatGPT","url":"https://chatgpt.com/","body_snippet":"ChatGPT\nNew chat\nScheduled\nLibrary\nPlugins\nExplore\nProjects\nNo projects\nRecents\nUnread\nGenerate JSON Machines\nUnread\nGenerate machine ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate machine ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate machine ideas\nUnread\nGenerate JSON Machines\nUnread\nGenerate Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate JSON Array\nUnread\nGenerate machine ideas\nUnread\nGenerate machine ideas\nUnread\nGenerate Fortress Machines\nUnread\nImpossible Machine Ideas\nUnread\nGenerate machine ideas\nUnread\nWrite Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate Machine Ideas\nUnread\nGenerate machine ideas\nLoading chats\nAS\nAlco Store\nFree\nUpgrade\nChat\nWork\nRequires upgrade\nReady when you are.\n\n\n\n\nThink","cookies_count":39,"has_session_cookie":true}

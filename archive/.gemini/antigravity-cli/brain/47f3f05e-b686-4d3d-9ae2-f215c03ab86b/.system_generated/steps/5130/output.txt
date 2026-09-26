@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+total 0
+dr-x------ 2 azureuser azureuser  3 Sep 25 06:33 .
+dr-xr-xr-x 9 azureuser azureuser  0 Sep 25 06:33 ..
+lr-x------ 1 azureuser azureuser 64 Sep 25 06:33 0 -> /dev/null
+l-wx------ 1 azureuser azureuser 64 Sep 25 06:33 1 -> '/home/azureuser/Ask-And-Research/data/watchdog.log (deleted)'
+l-wx------ 1 azureuser azureuser 64 Sep 25 06:33 2 -> '/home/azureuser/Ask-And-Research/data/watchdog.log (deleted)'
+
+Terminal ID: 23713dde-1203-49ea-a9f4-893608484d8e

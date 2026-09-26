@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+/home/downloads:
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 22 10:24 .
+drwxr-xr-x 6 root      root      4096 Sep 24 12:55 ..
+
+/home/workspace:
+total 8
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 22 10:24 .
+drwxr-xr-x 6 root      root      4096 Sep 24 12:55 ..
+

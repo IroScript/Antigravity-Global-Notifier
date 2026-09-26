@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+-rw-rw-r-- 1 azureuser azureuser 273K Sep 25 15:47 /home/azureuser/DATABASE_BACKUPS_VAULT/azure_postgres_all_databases.sql
+e61b22f3056f430465c95aabb9a35727b7598e47ec742e86af0bdd89262d01fb  /home/azureuser/DATABASE_BACKUPS_VAULT/azure_postgres_all_databases.sql
+

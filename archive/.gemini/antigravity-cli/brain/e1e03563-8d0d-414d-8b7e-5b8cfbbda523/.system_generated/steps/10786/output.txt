@@ -1,0 +1,40 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -209,8 +209,9 @@
+                         continue
+                     cur.execute(
+                         """INSERT INTO ideas (
+-                            uuid, title, short_title, description, category, topic, status, version, is_deleted, created_at, updated_at
+-                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
++                            uuid, title, short_title, raw_idea, description, category, topic,
++                            language, status, priority, version, is_deleted, created_at, updated_at
++                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                         (
+                             str(uuid.uuid4()),
+                             title,
+@@ -217,7 +217,10 @@
+                             desc,
++                            desc,
+                             elem_group or "Impossible Giant Machine",
+                             elem_name,
+-                            "active",
++                            "en",
++                            "active",
++                            10,
+                             1,
+                             0,
+                             now_iso,
+@@ -225,8 +225,8 @@
+                     )
+                     idea_id = cur.lastrowid
+                     cur.execute(
+-                        "INSERT INTO idea_elements (idea_id, element_id, role, created_at) VALUES (?, ?, ?, ?)",
+-                        (idea_id, elem_id, "primary", now_iso)
++                        "INSERT INTO idea_elements (idea_id, element_id, is_primary) VALUES (?, ?, ?)",
++                        (idea_id, elem_id, 1)
+                     )
+                     cnt += 1
+                 return cnt
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

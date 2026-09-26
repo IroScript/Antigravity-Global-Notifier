@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Filesystem in use: /dev/nvme1n1
+
+Using external Journal at File /tmp/journal.copy 
+Activ Time after  : Thu Sep 24 10:51:27 2026
+Activ Time before : Fri Sep 25 07:53:20 2026
+Inode found "azureuser"   13893633 
+Inode 13893633 is allocated
+No undeled inode 13893633 in journal found
+ext4magic : EXIT_SUCCESS
+
