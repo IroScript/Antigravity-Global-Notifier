@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925212855-bb918d",
+  "timestamp": "2026-09-25T21:28:55.682829+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "sudo -i"
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'sudo' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

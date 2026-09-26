@@ -1,0 +1,1781 @@
+{
+  "start_time": "2026-09-25T20:25:34.570817+00:00",
+  "total_planned_seconds": 21600,
+  "total_cycles_completed": 177,
+  "cumulative_tests_run": 17877,
+  "cumulative_denials": 17877,
+  "cumulative_failures": 0,
+  "heartbeats": [
+    {
+      "cycle": 1,
+      "elapsed_seconds": 0.0,
+      "remaining_seconds": 21600.0,
+      "timestamp": "2026-09-25T20:25:36.763133+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 2,
+      "elapsed_seconds": 122.2,
+      "remaining_seconds": 21477.8,
+      "timestamp": "2026-09-25T20:27:39.062431+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 3,
+      "elapsed_seconds": 244.5,
+      "remaining_seconds": 21355.5,
+      "timestamp": "2026-09-25T20:29:41.092358+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 4,
+      "elapsed_seconds": 366.5,
+      "remaining_seconds": 21233.5,
+      "timestamp": "2026-09-25T20:31:43.146616+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 5,
+      "elapsed_seconds": 488.6,
+      "remaining_seconds": 21111.4,
+      "timestamp": "2026-09-25T20:33:45.708040+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 6,
+      "elapsed_seconds": 611.1,
+      "remaining_seconds": 20988.9,
+      "timestamp": "2026-09-25T20:35:48.684790+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 7,
+      "elapsed_seconds": 734.1,
+      "remaining_seconds": 20865.9,
+      "timestamp": "2026-09-25T20:37:51.252135+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 8,
+      "elapsed_seconds": 856.7,
+      "remaining_seconds": 20743.3,
+      "timestamp": "2026-09-25T20:39:53.642847+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 9,
+      "elapsed_seconds": 979.1,
+      "remaining_seconds": 20620.9,
+      "timestamp": "2026-09-25T20:41:55.887166+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 10,
+      "elapsed_seconds": 1101.3,
+      "remaining_seconds": 20498.7,
+      "timestamp": "2026-09-25T20:43:58.069355+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 11,
+      "elapsed_seconds": 1223.5,
+      "remaining_seconds": 20376.5,
+      "timestamp": "2026-09-25T20:46:00.434613+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 12,
+      "elapsed_seconds": 1345.9,
+      "remaining_seconds": 20254.1,
+      "timestamp": "2026-09-25T20:48:03.086637+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 13,
+      "elapsed_seconds": 1468.5,
+      "remaining_seconds": 20131.5,
+      "timestamp": "2026-09-25T20:50:06.517907+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 14,
+      "elapsed_seconds": 1591.9,
+      "remaining_seconds": 20008.1,
+      "timestamp": "2026-09-25T20:52:09.009709+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 15,
+      "elapsed_seconds": 1714.4,
+      "remaining_seconds": 19885.6,
+      "timestamp": "2026-09-25T20:54:12.812581+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 16,
+      "elapsed_seconds": 1838.2,
+      "remaining_seconds": 19761.8,
+      "timestamp": "2026-09-25T20:56:15.405744+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 17,
+      "elapsed_seconds": 1960.8,
+      "remaining_seconds": 19639.2,
+      "timestamp": "2026-09-25T20:58:18.008858+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 18,
+      "elapsed_seconds": 2083.4,
+      "remaining_seconds": 19516.6,
+      "timestamp": "2026-09-25T21:00:20.855109+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 19,
+      "elapsed_seconds": 2206.3,
+      "remaining_seconds": 19393.7,
+      "timestamp": "2026-09-25T21:02:23.187227+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 20,
+      "elapsed_seconds": 2328.6,
+      "remaining_seconds": 19271.4,
+      "timestamp": "2026-09-25T21:04:25.583364+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 21,
+      "elapsed_seconds": 2451.0,
+      "remaining_seconds": 19149.0,
+      "timestamp": "2026-09-25T21:06:28.084898+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 22,
+      "elapsed_seconds": 2573.5,
+      "remaining_seconds": 19026.5,
+      "timestamp": "2026-09-25T21:08:30.467121+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 23,
+      "elapsed_seconds": 2695.9,
+      "remaining_seconds": 18904.1,
+      "timestamp": "2026-09-25T21:10:33.078763+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 24,
+      "elapsed_seconds": 2818.5,
+      "remaining_seconds": 18781.5,
+      "timestamp": "2026-09-25T21:12:35.632228+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 25,
+      "elapsed_seconds": 2941.1,
+      "remaining_seconds": 18658.9,
+      "timestamp": "2026-09-25T21:14:38.075291+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 26,
+      "elapsed_seconds": 3063.5,
+      "remaining_seconds": 18536.5,
+      "timestamp": "2026-09-25T21:16:40.576146+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 27,
+      "elapsed_seconds": 3186.0,
+      "remaining_seconds": 18414.0,
+      "timestamp": "2026-09-25T21:18:42.871832+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 28,
+      "elapsed_seconds": 3308.3,
+      "remaining_seconds": 18291.7,
+      "timestamp": "2026-09-25T21:20:45.596325+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 29,
+      "elapsed_seconds": 3431.0,
+      "remaining_seconds": 18169.0,
+      "timestamp": "2026-09-25T21:22:48.212700+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 30,
+      "elapsed_seconds": 3553.6,
+      "remaining_seconds": 18046.4,
+      "timestamp": "2026-09-25T21:24:50.573611+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 31,
+      "elapsed_seconds": 3676.0,
+      "remaining_seconds": 17924.0,
+      "timestamp": "2026-09-25T21:26:53.110475+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 32,
+      "elapsed_seconds": 3798.5,
+      "remaining_seconds": 17801.5,
+      "timestamp": "2026-09-25T21:28:55.819285+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 33,
+      "elapsed_seconds": 3921.2,
+      "remaining_seconds": 17678.8,
+      "timestamp": "2026-09-25T21:30:58.809161+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 34,
+      "elapsed_seconds": 4044.2,
+      "remaining_seconds": 17555.8,
+      "timestamp": "2026-09-25T21:33:01.296735+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 35,
+      "elapsed_seconds": 4166.7,
+      "remaining_seconds": 17433.3,
+      "timestamp": "2026-09-25T21:35:04.984692+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 36,
+      "elapsed_seconds": 4290.4,
+      "remaining_seconds": 17309.6,
+      "timestamp": "2026-09-25T21:37:07.584851+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 37,
+      "elapsed_seconds": 4413.0,
+      "remaining_seconds": 17187.0,
+      "timestamp": "2026-09-25T21:39:10.019089+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 38,
+      "elapsed_seconds": 4535.4,
+      "remaining_seconds": 17064.6,
+      "timestamp": "2026-09-25T21:41:12.431357+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 39,
+      "elapsed_seconds": 4657.9,
+      "remaining_seconds": 16942.1,
+      "timestamp": "2026-09-25T21:43:14.620240+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 40,
+      "elapsed_seconds": 4780.1,
+      "remaining_seconds": 16819.9,
+      "timestamp": "2026-09-25T21:45:17.031282+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 41,
+      "elapsed_seconds": 4902.5,
+      "remaining_seconds": 16697.5,
+      "timestamp": "2026-09-25T21:47:19.498893+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 42,
+      "elapsed_seconds": 5024.9,
+      "remaining_seconds": 16575.1,
+      "timestamp": "2026-09-25T21:49:21.778169+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 43,
+      "elapsed_seconds": 5147.2,
+      "remaining_seconds": 16452.8,
+      "timestamp": "2026-09-25T21:51:24.661997+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 44,
+      "elapsed_seconds": 5270.1,
+      "remaining_seconds": 16329.9,
+      "timestamp": "2026-09-25T21:53:26.910682+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 45,
+      "elapsed_seconds": 5392.3,
+      "remaining_seconds": 16207.7,
+      "timestamp": "2026-09-25T21:55:29.119183+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 46,
+      "elapsed_seconds": 5514.5,
+      "remaining_seconds": 16085.5,
+      "timestamp": "2026-09-25T21:57:31.346895+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 47,
+      "elapsed_seconds": 5636.8,
+      "remaining_seconds": 15963.2,
+      "timestamp": "2026-09-25T21:59:33.618866+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 48,
+      "elapsed_seconds": 5759.0,
+      "remaining_seconds": 15841.0,
+      "timestamp": "2026-09-25T22:01:35.938545+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 49,
+      "elapsed_seconds": 5881.4,
+      "remaining_seconds": 15718.6,
+      "timestamp": "2026-09-25T22:03:38.136455+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 50,
+      "elapsed_seconds": 6003.6,
+      "remaining_seconds": 15596.4,
+      "timestamp": "2026-09-25T22:05:40.542441+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 51,
+      "elapsed_seconds": 6126.0,
+      "remaining_seconds": 15474.0,
+      "timestamp": "2026-09-25T22:07:42.712984+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 52,
+      "elapsed_seconds": 6248.1,
+      "remaining_seconds": 15351.9,
+      "timestamp": "2026-09-25T22:09:44.828420+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 53,
+      "elapsed_seconds": 6370.3,
+      "remaining_seconds": 15229.7,
+      "timestamp": "2026-09-25T22:11:47.062615+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 54,
+      "elapsed_seconds": 6492.5,
+      "remaining_seconds": 15107.5,
+      "timestamp": "2026-09-25T22:13:49.286405+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 55,
+      "elapsed_seconds": 6614.7,
+      "remaining_seconds": 14985.3,
+      "timestamp": "2026-09-25T22:15:51.339501+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 56,
+      "elapsed_seconds": 6736.8,
+      "remaining_seconds": 14863.2,
+      "timestamp": "2026-09-25T22:17:53.662548+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 57,
+      "elapsed_seconds": 6859.1,
+      "remaining_seconds": 14740.9,
+      "timestamp": "2026-09-25T22:19:55.904307+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 58,
+      "elapsed_seconds": 6981.3,
+      "remaining_seconds": 14618.7,
+      "timestamp": "2026-09-25T22:21:58.036738+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 59,
+      "elapsed_seconds": 7103.5,
+      "remaining_seconds": 14496.5,
+      "timestamp": "2026-09-25T22:24:00.307178+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 60,
+      "elapsed_seconds": 7225.7,
+      "remaining_seconds": 14374.3,
+      "timestamp": "2026-09-25T22:26:02.547376+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 61,
+      "elapsed_seconds": 7348.0,
+      "remaining_seconds": 14252.0,
+      "timestamp": "2026-09-25T22:28:04.634366+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 62,
+      "elapsed_seconds": 7470.1,
+      "remaining_seconds": 14129.9,
+      "timestamp": "2026-09-25T22:30:07.194656+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 63,
+      "elapsed_seconds": 7592.6,
+      "remaining_seconds": 14007.4,
+      "timestamp": "2026-09-25T22:32:09.272491+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 64,
+      "elapsed_seconds": 7714.7,
+      "remaining_seconds": 13885.3,
+      "timestamp": "2026-09-25T22:34:11.336880+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 65,
+      "elapsed_seconds": 7836.8,
+      "remaining_seconds": 13763.2,
+      "timestamp": "2026-09-25T22:36:13.415617+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 66,
+      "elapsed_seconds": 7958.8,
+      "remaining_seconds": 13641.2,
+      "timestamp": "2026-09-25T22:38:15.958303+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 67,
+      "elapsed_seconds": 8081.4,
+      "remaining_seconds": 13518.6,
+      "timestamp": "2026-09-25T22:40:18.302397+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 68,
+      "elapsed_seconds": 8203.7,
+      "remaining_seconds": 13396.3,
+      "timestamp": "2026-09-25T22:42:20.687570+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 69,
+      "elapsed_seconds": 8326.1,
+      "remaining_seconds": 13273.9,
+      "timestamp": "2026-09-25T22:44:23.153873+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 70,
+      "elapsed_seconds": 8448.6,
+      "remaining_seconds": 13151.4,
+      "timestamp": "2026-09-25T22:46:25.536036+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 71,
+      "elapsed_seconds": 8571.0,
+      "remaining_seconds": 13029.0,
+      "timestamp": "2026-09-25T22:48:28.002920+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 72,
+      "elapsed_seconds": 8693.4,
+      "remaining_seconds": 12906.6,
+      "timestamp": "2026-09-25T22:50:30.535736+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 73,
+      "elapsed_seconds": 8816.0,
+      "remaining_seconds": 12784.0,
+      "timestamp": "2026-09-25T22:52:32.927409+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 74,
+      "elapsed_seconds": 8938.4,
+      "remaining_seconds": 12661.6,
+      "timestamp": "2026-09-25T22:54:35.013394+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 75,
+      "elapsed_seconds": 9060.4,
+      "remaining_seconds": 12539.6,
+      "timestamp": "2026-09-25T22:56:37.123177+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 76,
+      "elapsed_seconds": 9182.6,
+      "remaining_seconds": 12417.4,
+      "timestamp": "2026-09-25T22:58:39.184493+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 77,
+      "elapsed_seconds": 9304.6,
+      "remaining_seconds": 12295.4,
+      "timestamp": "2026-09-25T23:00:41.260262+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 78,
+      "elapsed_seconds": 9426.7,
+      "remaining_seconds": 12173.3,
+      "timestamp": "2026-09-25T23:02:43.636272+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 79,
+      "elapsed_seconds": 9549.1,
+      "remaining_seconds": 12050.9,
+      "timestamp": "2026-09-25T23:04:46.148609+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 80,
+      "elapsed_seconds": 9671.6,
+      "remaining_seconds": 11928.4,
+      "timestamp": "2026-09-25T23:06:48.322267+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 81,
+      "elapsed_seconds": 9793.8,
+      "remaining_seconds": 11806.2,
+      "timestamp": "2026-09-25T23:08:50.688791+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 82,
+      "elapsed_seconds": 9916.1,
+      "remaining_seconds": 11683.9,
+      "timestamp": "2026-09-25T23:10:53.381569+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 83,
+      "elapsed_seconds": 10038.8,
+      "remaining_seconds": 11561.2,
+      "timestamp": "2026-09-25T23:12:55.961619+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 84,
+      "elapsed_seconds": 10161.4,
+      "remaining_seconds": 11438.6,
+      "timestamp": "2026-09-25T23:14:58.338720+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 85,
+      "elapsed_seconds": 10283.8,
+      "remaining_seconds": 11316.2,
+      "timestamp": "2026-09-25T23:17:00.576039+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 86,
+      "elapsed_seconds": 10406.0,
+      "remaining_seconds": 11194.0,
+      "timestamp": "2026-09-25T23:19:02.828956+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 87,
+      "elapsed_seconds": 10528.3,
+      "remaining_seconds": 11071.7,
+      "timestamp": "2026-09-25T23:21:05.126585+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 88,
+      "elapsed_seconds": 10650.6,
+      "remaining_seconds": 10949.4,
+      "timestamp": "2026-09-25T23:23:07.584299+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 89,
+      "elapsed_seconds": 10773.0,
+      "remaining_seconds": 10827.0,
+      "timestamp": "2026-09-25T23:25:09.992563+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 90,
+      "elapsed_seconds": 10895.4,
+      "remaining_seconds": 10704.6,
+      "timestamp": "2026-09-25T23:27:12.582963+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 91,
+      "elapsed_seconds": 11018.0,
+      "remaining_seconds": 10582.0,
+      "timestamp": "2026-09-25T23:29:15.035688+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 92,
+      "elapsed_seconds": 11140.5,
+      "remaining_seconds": 10459.5,
+      "timestamp": "2026-09-25T23:31:18.465149+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 93,
+      "elapsed_seconds": 11263.9,
+      "remaining_seconds": 10336.1,
+      "timestamp": "2026-09-25T23:33:20.877554+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 94,
+      "elapsed_seconds": 11386.3,
+      "remaining_seconds": 10213.7,
+      "timestamp": "2026-09-25T23:35:23.629145+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 95,
+      "elapsed_seconds": 11509.1,
+      "remaining_seconds": 10090.9,
+      "timestamp": "2026-09-25T23:37:26.049223+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 96,
+      "elapsed_seconds": 11631.5,
+      "remaining_seconds": 9968.5,
+      "timestamp": "2026-09-25T23:39:28.253155+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 97,
+      "elapsed_seconds": 11753.7,
+      "remaining_seconds": 9846.3,
+      "timestamp": "2026-09-25T23:41:30.746083+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 98,
+      "elapsed_seconds": 11876.2,
+      "remaining_seconds": 9723.8,
+      "timestamp": "2026-09-25T23:43:33.158237+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 99,
+      "elapsed_seconds": 11998.6,
+      "remaining_seconds": 9601.4,
+      "timestamp": "2026-09-25T23:45:35.410858+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 100,
+      "elapsed_seconds": 12120.8,
+      "remaining_seconds": 9479.2,
+      "timestamp": "2026-09-25T23:47:37.733171+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 101,
+      "elapsed_seconds": 12243.2,
+      "remaining_seconds": 9356.8,
+      "timestamp": "2026-09-25T23:49:40.005776+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 102,
+      "elapsed_seconds": 12365.4,
+      "remaining_seconds": 9234.6,
+      "timestamp": "2026-09-25T23:51:42.573456+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 103,
+      "elapsed_seconds": 12488.0,
+      "remaining_seconds": 9112.0,
+      "timestamp": "2026-09-25T23:53:44.666481+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 104,
+      "elapsed_seconds": 12610.1,
+      "remaining_seconds": 8989.9,
+      "timestamp": "2026-09-25T23:55:46.833953+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 105,
+      "elapsed_seconds": 12732.3,
+      "remaining_seconds": 8867.7,
+      "timestamp": "2026-09-25T23:57:48.967261+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 106,
+      "elapsed_seconds": 12854.4,
+      "remaining_seconds": 8745.6,
+      "timestamp": "2026-09-25T23:59:51.147719+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 107,
+      "elapsed_seconds": 12976.6,
+      "remaining_seconds": 8623.4,
+      "timestamp": "2026-09-26T00:01:53.367419+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 108,
+      "elapsed_seconds": 13098.8,
+      "remaining_seconds": 8501.2,
+      "timestamp": "2026-09-26T00:03:55.457898+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 109,
+      "elapsed_seconds": 13220.9,
+      "remaining_seconds": 8379.1,
+      "timestamp": "2026-09-26T00:05:57.691101+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 110,
+      "elapsed_seconds": 13343.1,
+      "remaining_seconds": 8256.9,
+      "timestamp": "2026-09-26T00:07:59.832322+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 111,
+      "elapsed_seconds": 13465.3,
+      "remaining_seconds": 8134.7,
+      "timestamp": "2026-09-26T00:10:01.937047+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 112,
+      "elapsed_seconds": 13587.4,
+      "remaining_seconds": 8012.6,
+      "timestamp": "2026-09-26T00:12:04.131775+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 113,
+      "elapsed_seconds": 13709.6,
+      "remaining_seconds": 7890.4,
+      "timestamp": "2026-09-26T00:14:06.464956+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 114,
+      "elapsed_seconds": 13831.9,
+      "remaining_seconds": 7768.1,
+      "timestamp": "2026-09-26T00:16:08.628049+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 115,
+      "elapsed_seconds": 13954.1,
+      "remaining_seconds": 7645.9,
+      "timestamp": "2026-09-26T00:18:10.850012+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 116,
+      "elapsed_seconds": 14076.3,
+      "remaining_seconds": 7523.7,
+      "timestamp": "2026-09-26T00:20:12.972878+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 117,
+      "elapsed_seconds": 14198.4,
+      "remaining_seconds": 7401.6,
+      "timestamp": "2026-09-26T00:22:15.152502+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 118,
+      "elapsed_seconds": 14320.6,
+      "remaining_seconds": 7279.4,
+      "timestamp": "2026-09-26T00:24:17.252353+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 119,
+      "elapsed_seconds": 14442.7,
+      "remaining_seconds": 7157.3,
+      "timestamp": "2026-09-26T00:26:19.343649+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 120,
+      "elapsed_seconds": 14564.8,
+      "remaining_seconds": 7035.2,
+      "timestamp": "2026-09-26T00:28:21.422131+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 121,
+      "elapsed_seconds": 14686.9,
+      "remaining_seconds": 6913.1,
+      "timestamp": "2026-09-26T00:30:23.971709+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 122,
+      "elapsed_seconds": 14809.4,
+      "remaining_seconds": 6790.6,
+      "timestamp": "2026-09-26T00:32:26.061659+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 123,
+      "elapsed_seconds": 14931.5,
+      "remaining_seconds": 6668.5,
+      "timestamp": "2026-09-26T00:34:28.203984+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 124,
+      "elapsed_seconds": 15053.6,
+      "remaining_seconds": 6546.4,
+      "timestamp": "2026-09-26T00:36:30.338333+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 125,
+      "elapsed_seconds": 15175.8,
+      "remaining_seconds": 6424.2,
+      "timestamp": "2026-09-26T00:38:32.462976+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 126,
+      "elapsed_seconds": 15297.9,
+      "remaining_seconds": 6302.1,
+      "timestamp": "2026-09-26T00:40:34.692037+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 127,
+      "elapsed_seconds": 15420.1,
+      "remaining_seconds": 6179.9,
+      "timestamp": "2026-09-26T00:42:36.848699+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 128,
+      "elapsed_seconds": 15542.3,
+      "remaining_seconds": 6057.7,
+      "timestamp": "2026-09-26T00:44:39.046158+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 129,
+      "elapsed_seconds": 15664.5,
+      "remaining_seconds": 5935.5,
+      "timestamp": "2026-09-26T00:46:41.224051+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 130,
+      "elapsed_seconds": 15786.7,
+      "remaining_seconds": 5813.3,
+      "timestamp": "2026-09-26T00:48:43.534266+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 131,
+      "elapsed_seconds": 15909.0,
+      "remaining_seconds": 5691.0,
+      "timestamp": "2026-09-26T00:50:45.905103+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 132,
+      "elapsed_seconds": 16031.3,
+      "remaining_seconds": 5568.7,
+      "timestamp": "2026-09-26T00:52:48.008785+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 133,
+      "elapsed_seconds": 16153.4,
+      "remaining_seconds": 5446.6,
+      "timestamp": "2026-09-26T00:54:50.060291+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 134,
+      "elapsed_seconds": 16275.5,
+      "remaining_seconds": 5324.5,
+      "timestamp": "2026-09-26T00:56:52.136303+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 135,
+      "elapsed_seconds": 16397.6,
+      "remaining_seconds": 5202.4,
+      "timestamp": "2026-09-26T00:58:54.223888+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 136,
+      "elapsed_seconds": 16519.7,
+      "remaining_seconds": 5080.3,
+      "timestamp": "2026-09-26T01:00:56.308994+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 137,
+      "elapsed_seconds": 16641.7,
+      "remaining_seconds": 4958.3,
+      "timestamp": "2026-09-26T01:02:59.664097+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 138,
+      "elapsed_seconds": 16765.1,
+      "remaining_seconds": 4834.9,
+      "timestamp": "2026-09-26T01:05:01.827527+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 139,
+      "elapsed_seconds": 16887.3,
+      "remaining_seconds": 4712.7,
+      "timestamp": "2026-09-26T01:07:03.971694+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 140,
+      "elapsed_seconds": 17009.4,
+      "remaining_seconds": 4590.6,
+      "timestamp": "2026-09-26T01:09:06.509488+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 141,
+      "elapsed_seconds": 17131.9,
+      "remaining_seconds": 4468.1,
+      "timestamp": "2026-09-26T01:11:09.035672+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 142,
+      "elapsed_seconds": 17254.5,
+      "remaining_seconds": 4345.5,
+      "timestamp": "2026-09-26T01:13:11.427122+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 143,
+      "elapsed_seconds": 17376.9,
+      "remaining_seconds": 4223.1,
+      "timestamp": "2026-09-26T01:15:13.814297+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 144,
+      "elapsed_seconds": 17499.2,
+      "remaining_seconds": 4100.8,
+      "timestamp": "2026-09-26T01:17:16.277809+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 145,
+      "elapsed_seconds": 17621.7,
+      "remaining_seconds": 3978.3,
+      "timestamp": "2026-09-26T01:19:18.602755+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 146,
+      "elapsed_seconds": 17744.0,
+      "remaining_seconds": 3856.0,
+      "timestamp": "2026-09-26T01:21:21.159962+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 147,
+      "elapsed_seconds": 17866.6,
+      "remaining_seconds": 3733.4,
+      "timestamp": "2026-09-26T01:23:23.342877+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 148,
+      "elapsed_seconds": 17988.8,
+      "remaining_seconds": 3611.2,
+      "timestamp": "2026-09-26T01:25:25.664434+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 149,
+      "elapsed_seconds": 18111.1,
+      "remaining_seconds": 3488.9,
+      "timestamp": "2026-09-26T01:27:28.055635+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 150,
+      "elapsed_seconds": 18233.5,
+      "remaining_seconds": 3366.5,
+      "timestamp": "2026-09-26T01:29:30.591082+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 151,
+      "elapsed_seconds": 18356.0,
+      "remaining_seconds": 3244.0,
+      "timestamp": "2026-09-26T01:31:32.857810+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 152,
+      "elapsed_seconds": 18478.3,
+      "remaining_seconds": 3121.7,
+      "timestamp": "2026-09-26T01:33:35.345610+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 153,
+      "elapsed_seconds": 18600.8,
+      "remaining_seconds": 2999.2,
+      "timestamp": "2026-09-26T01:35:37.531467+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 154,
+      "elapsed_seconds": 18723.0,
+      "remaining_seconds": 2877.0,
+      "timestamp": "2026-09-26T01:37:39.903137+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 155,
+      "elapsed_seconds": 18845.3,
+      "remaining_seconds": 2754.7,
+      "timestamp": "2026-09-26T01:39:42.381930+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 156,
+      "elapsed_seconds": 18967.8,
+      "remaining_seconds": 2632.2,
+      "timestamp": "2026-09-26T01:41:44.590266+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 157,
+      "elapsed_seconds": 19090.0,
+      "remaining_seconds": 2510.0,
+      "timestamp": "2026-09-26T01:43:46.789521+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 158,
+      "elapsed_seconds": 19212.2,
+      "remaining_seconds": 2387.8,
+      "timestamp": "2026-09-26T01:45:49.378537+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 159,
+      "elapsed_seconds": 19334.8,
+      "remaining_seconds": 2265.2,
+      "timestamp": "2026-09-26T01:47:51.602521+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 160,
+      "elapsed_seconds": 19457.0,
+      "remaining_seconds": 2143.0,
+      "timestamp": "2026-09-26T01:49:53.808624+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 161,
+      "elapsed_seconds": 19579.2,
+      "remaining_seconds": 2020.8,
+      "timestamp": "2026-09-26T01:51:56.082405+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 162,
+      "elapsed_seconds": 19701.5,
+      "remaining_seconds": 1898.5,
+      "timestamp": "2026-09-26T01:53:58.245903+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 163,
+      "elapsed_seconds": 19823.7,
+      "remaining_seconds": 1776.3,
+      "timestamp": "2026-09-26T01:56:00.475896+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 164,
+      "elapsed_seconds": 19945.9,
+      "remaining_seconds": 1654.1,
+      "timestamp": "2026-09-26T01:58:02.715757+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 165,
+      "elapsed_seconds": 20068.1,
+      "remaining_seconds": 1531.9,
+      "timestamp": "2026-09-26T02:00:05.379479+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 166,
+      "elapsed_seconds": 20190.8,
+      "remaining_seconds": 1409.2,
+      "timestamp": "2026-09-26T02:02:07.861208+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 167,
+      "elapsed_seconds": 20313.3,
+      "remaining_seconds": 1286.7,
+      "timestamp": "2026-09-26T02:04:10.209496+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 168,
+      "elapsed_seconds": 20435.6,
+      "remaining_seconds": 1164.4,
+      "timestamp": "2026-09-26T02:06:12.605852+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 169,
+      "elapsed_seconds": 20558.0,
+      "remaining_seconds": 1042.0,
+      "timestamp": "2026-09-26T02:08:14.751005+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 170,
+      "elapsed_seconds": 20680.2,
+      "remaining_seconds": 919.8,
+      "timestamp": "2026-09-26T02:10:17.053037+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 171,
+      "elapsed_seconds": 20802.5,
+      "remaining_seconds": 797.5,
+      "timestamp": "2026-09-26T02:12:19.399733+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 172,
+      "elapsed_seconds": 20924.8,
+      "remaining_seconds": 675.2,
+      "timestamp": "2026-09-26T02:14:21.527104+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 173,
+      "elapsed_seconds": 21047.0,
+      "remaining_seconds": 553.0,
+      "timestamp": "2026-09-26T02:16:23.651027+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 174,
+      "elapsed_seconds": 21169.1,
+      "remaining_seconds": 430.9,
+      "timestamp": "2026-09-26T02:18:25.799769+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 175,
+      "elapsed_seconds": 21291.2,
+      "remaining_seconds": 308.8,
+      "timestamp": "2026-09-26T02:20:28.023529+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 176,
+      "elapsed_seconds": 21413.5,
+      "remaining_seconds": 186.5,
+      "timestamp": "2026-09-26T02:22:30.368799+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    },
+    {
+      "cycle": 177,
+      "elapsed_seconds": 21535.8,
+      "remaining_seconds": 64.2,
+      "timestamp": "2026-09-26T02:24:32.619675+00:00",
+      "tests_in_cycle": 101,
+      "denied": 101,
+      "failed": 0,
+      "status": "DELETE-PROOF = PASS"
+    }
+  ],
+  "last_updated": "2026-09-26T02:24:32.620327+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925234129-1c2682",
+  "timestamp": "2026-09-25T23:41:29.564612+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat /dev/null > /home/azureuser/.gemini/config/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Shell redirection truncation into protected path '/home/azureuser/.gemini/config/hooks.json' is prohibited (Rule 8, 35, 38)",
+  "rule_id": "RULE_8_38_TRUNCATION",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

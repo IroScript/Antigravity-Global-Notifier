@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925233725-299df7",
+  "timestamp": "2026-09-25T23:37:25.311136+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "replace_file_content",
+  "details": {
+    "TargetFile": "/home/azureuser/.gemini/config/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Modifying protected system/policy/archive target '/home/azureuser/.gemini/config/hooks.json' via replace_file_content is strictly prohibited (Rule 35, 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

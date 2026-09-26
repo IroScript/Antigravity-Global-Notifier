@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925202738-21dab1",
+  "timestamp": "2026-09-25T20:27:38.959053+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"import shutil; shutil.rmtree('/home/azureuser/tmp/adv_test_7df_538n/subdir', ignore_errors=True)\""
+  },
+  "decision": "DENIED",
+  "reason": "Python shutil.rmtree directory wipe is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_SHUTIL_RMTREE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

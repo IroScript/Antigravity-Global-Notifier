@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925203142-e6e4eb",
+  "timestamp": "2026-09-25T20:31:42.874762+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "git reset --hard origin/main"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive 'git reset --hard' is prohibited in protected workspaces (Rule 11)",
+  "rule_id": "RULE_11_GIT_RESET_HARD",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

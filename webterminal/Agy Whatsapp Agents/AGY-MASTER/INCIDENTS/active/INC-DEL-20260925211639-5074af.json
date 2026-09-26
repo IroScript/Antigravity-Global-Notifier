@@ -1,0 +1,15 @@
+{
+  "incident_id": "INC-DEL-20260925211639-5074af",
+  "timestamp": "2026-09-25T21:16:39.988479+00:00Z",
+  "severity": "CRITICAL",
+  "detector": "OS_BINARY_INTERCEPTOR",
+  "tool": "rm",
+  "arguments": [
+    "/home/azureuser/tmp/adv_test_kkw_4y1t/target_dir"
+  ],
+  "calling_pid": 925134,
+  "parent_pid": 925133,
+  "decision": "DENIED",
+  "reason": "Direct deletion via 'rm' binary is permanently disabled under Iraq Bhai 40-Point Delete-Proof Architecture Specification (Rule 1, 2).",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

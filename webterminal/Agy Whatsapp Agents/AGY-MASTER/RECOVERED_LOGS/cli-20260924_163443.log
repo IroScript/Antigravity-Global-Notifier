@@ -1,0 +1,1122 @@
+I0924 16:34:43.013264       1 resolver.go:85] Model ID claude-opus-4-6-thinking not in local config, defaulting to CCPA
+I0924 16:34:43.013307       1 resolver.go:111] Model resolved via default
+I0924 16:34:43.014454      50 server.go:1579] Starting language server process with pid 266192
+I0924 16:34:43.015870      50 server.go:1630] Language server version: 1.2.10
+I0924 16:34:43.015884      50 server.go:615] Language server will attempt to listen on host localhost
+I0924 16:34:43.016492      50 server.go:630] Language server listening on random port at 37227 for HTTPS (gRPC)
+I0924 16:34:43.016605      50 server.go:638] Language server listening on random port at 35941 for HTTP
+W0924 16:34:43.188972      31 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.189047      31 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.189429      31 errorreport.go:224] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I0924 16:34:43.189469      31 model_configs.go:226] Auth mode is unspecified, skipping fetchAvailableModels and returning empty response
+I0924 16:34:43.190230      69 store_client.go:697] summary store: starting background reconciliation (trigger=startup)
+I0924 16:34:43.191192      69 store_client.go:747] summary store: reconciliation complete, synced 11 records
+W0924 16:34:43.191227      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.191257      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.191380      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.191406      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.191776      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.191808      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.191893      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.191912      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.191990      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.192009      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.192058      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.192076      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.192791      50 defaults.go:704] failed to get cs path: cs path /usr/bin/cs invalid
+I0924 16:34:43.192815      50 manager.go:108] Creating trajectory store manager with proto store and SQLite store
+W0924 16:34:43.193450      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.193477      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.193536      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.193551      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:43.194184     113 manager.go:88] Migration [MIGRATION_ID_SIDECAR_USER_CONFIG_BYPASS] is disabled, skipping entirely
+I0924 16:34:43.194216     113 manager.go:91] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I0924 16:34:43.194517     113 manager.go:100] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.194529     113 manager.go:91] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I0924 16:34:43.194598     113 manager.go:100] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.194605     113 manager.go:91] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I0924 16:34:43.194656     113 manager.go:100] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.194662     113 manager.go:88] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I0924 16:34:43.194667     113 manager.go:88] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+I0924 16:34:43.210109      50 server.go:3072] Auth succeeded, refreshing features and managers
+W0924 16:34:43.210244      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.210294      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.210432      50 errorreport.go:224] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I0924 16:34:43.210484      50 server.go:3079] State refresh took 0ms
+I0924 16:34:43.210491      50 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0924 16:34:43.210663      50 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0924 16:34:43.210668      50 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0924 16:34:43.210674      50 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0924 16:34:43.210772      50 profiler.go:231] Continuous pprof profiling is disabled.
+I0924 16:34:43.211106      50 server.go:2531] initialized server successfully in 196.582182ms
+I0924 16:34:43.211357     120 manager.go:88] Migration [MIGRATION_ID_SIDECAR_USER_CONFIG_BYPASS] is disabled, skipping entirely
+I0924 16:34:43.211384     120 manager.go:91] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I0924 16:34:43.211509     120 manager.go:100] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.211516     120 manager.go:91] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I0924 16:34:43.211598     120 manager.go:100] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.211603     120 manager.go:91] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I0924 16:34:43.211649     120 manager.go:100] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0924 16:34:43.211653     120 manager.go:88] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I0924 16:34:43.211658     120 manager.go:88] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+W0924 16:34:43.211983     123 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.212017     123 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+I0924 16:34:43.212030       1 auto_updater.go:281] Last check was less than 15 minutes ago, skipping update (fast path)
+W0924 16:34:43.212159     123 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.212233     123 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:43.212482       1 common.go:152] Launching CLI mode
+E0924 16:34:43.212502       1 launchsteps.go:84] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0924 16:34:43.212517       1 common.go:174] CLI app data directory: /home/azureuser/.gemini/antigravity-cli
+I0924 16:34:43.212536       1 server.go:315] Creating CLI server backend: product=antigravity workspaceDirs=[/home/azureuser/Reporting-Agent] appDataDir=/home/azureuser/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0924 16:34:43.212683       1 auth_provider.go:952] [AuthProvider] SetEnableBusinessLogin called with enable: true
+E0924 16:34:43.218891       1 server.go:3075] Failed to read conversations directory /home/azureuser/.gemini/antigravity/conversations: open /home/azureuser/.gemini/antigravity/conversations: no such file or directory
+I0924 16:34:43.218998       1 server.go:2959] ListConversations: cache miss for 63 conversations, loading 63 in parallel, deferring 0
+W0924 16:34:43.219728     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.219924     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.221255     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.221285     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.264421     219 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.264486     219 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:43.264568     219 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:43.264588     219 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.374917       1 server.go:2980] ListConversations returning 62 summaries
+I0924 16:34:44.375079       1 conversation.go:71] Continuing newest workspace conversation (open elsewhere): 47f3f05e-b686-4d3d-9ae2-f215c03ab86b
+W0924 16:34:44.381040     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.381086     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.381170     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.381189     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.406249       1 server.go:3211] GetConversationDetail: found conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (active=false)
+I0924 16:34:44.407808       1 projectresolve.go:86] project: resuming conversation belonging to project ID: default-cli-project
+I0924 16:34:44.408014       1 projectresolve.go:100] project: synced active project to "CLI Project" (id=default-cli-project) from resumed conversation
+I0924 16:34:44.408023       1 server.go:2211] Backend project ID updated dynamically to: default-cli-project
+I0924 16:34:44.408042       1 manager.go:443] Initializing CLI store manager for workspace /home/azureuser/Reporting-Agent
+I0924 16:34:44.412187       1 cli_setting_manager.go:156] applyUserSettings: no shared config permissions from /home/azureuser/.gemini/config/config.json
+I0924 16:34:44.412232       1 cli_setting_manager.go:92] CLI settings initialized: permissions=&{Allow:[command(ps) command(locale) command(agy) command(strings $(which agy) | grep -i -E 'colorscheme|theme|light|dark' | head -n 30) command(strings $(which agy) | grep -i "ThemePreference_") command(strings $(which agy) | grep -C 5 "colorScheme") command(which) read_url(antigravity.google) command(strings) command(nm) command(grep) command(ls) command(w) command(git clone) command(find /tmp/antigravity_notifier_temp -maxdepth 3) command(find /home/azureuser/.gemini -maxdepth 3) command(uname -a; whoami; env | grep -iE 'wsl|user|os|desktop|session')] Deny:[] Ask:[]}, toolPermission=request-review
+W0924 16:34:44.412459     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.412500     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.412805       1 hooks_manager.go:53] loaded 6 named hooks from 3 hooks.json file(s)
+I0924 16:34:44.412826       1 manager.go:627] CLI store manager initialized successfully
+I0924 16:34:44.412835       1 common.go:299] CLI store manager created successfully
+I0924 16:34:44.412843       1 cli_setting_manager.go:218] ApplyProjectPermissionGrants: no grants for project "CLI Project", cleared project permissions
+I0924 16:34:44.412859       1 overrides.go:65] --dangerously-skip-permissions: auto-approving all tool permissions
+I0924 16:34:44.412868       1 model_resolver.go:93] Resolving model claude-opus-4-6-thinking
+E0924 16:34:44.413028       1 common.go:334] failed to apply model override: failed to resolve model: model claude-opus-4-6-thinking is not recognized as a known model or custom model in settings
+I0924 16:34:44.413488     438 quota_manager.go:36] doRefreshQuota: skipped (not logged in)
+W0924 16:34:44.413551     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.413596     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.415635       1 detect.go:253] kitty graphics probe result: false (DA1 sentinel, no Kitty support)
+I0924 16:34:44.416022       1 common.go:391] Resuming conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b
+I0924 16:34:44.416041     406 conversation_manager.go:887] Streaming conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b
+W0924 16:34:44.416302     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.416333     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.416403     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.416421     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.419880       1 terminal_info_manager.go:259] Terminal detection: TERM="xterm-256color" altScreen=true ssh=false osc8=false osc52=true appleTerminalSSH=false
+I0924 16:34:44.419912       1 common.go:438] Starting CLI program
+CLI ready for user input
+W0924 16:34:44.420036     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.420068     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.420135     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.420159     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.425850     473 gemini_extensions.go:28] Detecting Gemini extensions in /home/azureuser/.gemini/extensions
+I0924 16:34:44.425877     473 gemini_extensions.go:49] No extensions found
+I0924 16:34:44.426464     478 manager.go:1331] Reloading system slash commands and skills
+I0924 16:34:44.426661     478 manager.go:1308] Reloading system slash commands
+I0924 16:34:44.426672     478 manager.go:1312] Slash commands unchanged, skipping update
+I0924 16:34:44.434591       1 analytics.go:187] CLI startup completed (took 1.423735279s)
+W0924 16:34:44.436136     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.436193     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.436293     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.436316     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.439464     481 composite_token_storage.go:419] Failed to load stored token from keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 16:34:44.439733     481 keyring.go:64] keyringAuth: loaded token, expiry=2026-09-24 17:20:46.585681232 +0000 UTC expired=false
+W0924 16:34:44.439760     149 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.439833     149 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.440047     480 auth.go:157] ChainedAuth: authenticated via keyring (effective: keyring)
+I0924 16:34:44.440055     480 server_oauth.go:196] applyAuthResult: email=mainuddinh297@gmail.com, authMethod=consumer, quotaProject=
+I0924 16:34:44.440060     480 server_oauth.go:201] OAuth: authenticated successfully as mainuddinh297@gmail.com
+I0924 16:34:44.440065     480 server_oauth.go:207] b.codeAssistClient.AuthProvider (0x17f9f7f38ff0) is same as b.cliAuth (0x17f9f7f38ff0)
+W0924 16:34:44.440773     149 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.440805     149 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.440987     534 cache.go:163] Failed to refresh cache in background: admin controls not applicable
+W0924 16:34:44.441033     518 cache.go:163] Failed to refresh cache in background: admin controls not applicable
+W0924 16:34:44.441053     480 cache.go:135] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.441080     480 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0924 16:34:44.441125     480 server.go:734] failed to get model config: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.441135     480 model_resolver.go:93] Resolving model claude-opus-4-6-thinking
+W0924 16:34:44.441206     530 cache.go:163] Failed to refresh cache in background: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0924 16:34:44.441216     514 cache.go:163] Failed to refresh cache in background: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0924 16:34:44.451801     406 server.go:3211] GetConversationDetail: found conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (active=false)
+I0924 16:34:44.453217     406 server.go:1248] Starting conversation update stream for 47f3f05e-b686-4d3d-9ae2-f215c03ab86b
+I0924 16:34:44.798735     433 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x143be7444ae91e14
+I0924 16:34:44.885809     480 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7ace487c4b8673ed
+I0924 16:34:44.886487     438 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+W0924 16:34:44.894317     480 model_config_manager.go:79] Failed to resolve model flag claude-opus-4-6-thinking: model claude-opus-4-6-thinking is not recognized as a known model or custom model in settings
+I0924 16:34:44.934759     439 experiment_manager.go:66] Starting experiment refresh after login
+I0924 16:34:44.998387     439 remote_agent.go:156] Remote agent fastpush pin gate changed: false -> true
+I0924 16:34:44.998566     439 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0924 16:34:44.998575     439 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0924 16:34:44.998582     439 experiment_manager.go:70] Experiments refreshed after login
+I0924 16:34:44.998685     613 manager.go:1308] Reloading system slash commands
+I0924 16:34:45.093230     438 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I0924 16:34:45.158953     597 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x47346a886309ad3a
+I0924 16:34:45.410919     597 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x34816180daed200c
+I0924 16:34:45.513459     597 model_resolver.go:93] Resolving model claude-opus-4-6-thinking
+I0924 16:34:45.513503     597 model_config_manager.go:327] Propagating selected model override to backend: label="Claude Opus 4.6 (Thinking)"
+I0924 16:34:45.513774     634 model_resolver.go:93] Resolving model claude-opus-4-6-thinking
+I0924 16:34:45.513788     634 model_config_manager.go:327] Propagating selected model override to backend: label="Claude Opus 4.6 (Thinking)"
+I0924 16:34:45.513810     438 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I0924 16:34:45.514208     439 experiment_manager.go:66] Starting experiment refresh after login
+I0924 16:34:45.649951     439 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0924 16:34:45.649979     439 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0924 16:34:45.649985     439 experiment_manager.go:70] Experiments refreshed after login
+I0924 16:34:45.650093     638 manager.go:1308] Reloading system slash commands
+I0924 16:34:45.654037     638 manager.go:1312] Slash commands unchanged, skipping update
+I0924 16:34:45.734696     633 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa233e11b99b429bc
+I0924 16:35:10.102097     665 manager.go:1331] Reloading system slash commands and skills
+I0924 16:35:10.102117     665 manager.go:1308] Reloading system slash commands
+I0924 16:35:10.105577     661 hooks_manager.go:53] loaded 6 named hooks from 3 hooks.json file(s)
+I0924 16:35:10.109606     665 manager.go:1312] Slash commands unchanged, skipping update
+I0924 16:36:54.785590     737 input_loop.go:107] HandleUserInput called with text: "[স্বয়ংক্রিয় এআই তদারকি - Claude Opus 4.6 Thinking]:\nইরাক ভাইয়ার জন্য ৩ডি গেম ডিজাইন স্টুডিওর সাম্প্রতিক ত্রুটি (রিডিং পজিশন, মোবাইল রেসপন্সিভনেস ও স্লাইড সুইচিং ব্রেক) কোডবেজ পর্যবেক্ষণ করে সংক্ষেপে অডিট রিপোর্ট পেশ করুন।"
+I0924 16:36:54.786042     883 conversation_manager.go:699] Forwarding user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 16:36:54.786075     883 server.go:1846] Sending user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 16:36:54.998012     883 latency_breakdown.go:142] SEND_USER_CASCADE_MESSAGE_LATENCY latency breakdown: map[active_user_state_latency_ms:0 blocking:false cascade_id:47f3f05e-b686-4d3d-9ae2-f215c03ab86b cascade_send_latency_ms:9 hydrate_slash_commands_latency_ms:0 load_trajectory_latency_ms:161 media_count:0 media_summaries_latency_ms:0 message_origin:AGENT_MESSAGE_ORIGIN_UNSPECIFIED resolve_agent_config_latency_ms:0 save_media_latency_ms:0 saved_media_count:0 status:OK total_latency_ms:171 trajectory_id:1792ef6c-8480-49ed-8a50-ab9e5f19ecf9]
+W0924 16:36:55.095849     848 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:36:55.096147     848 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:36:55.111217     848 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:36:55.112005     848 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:36:55.113047     848 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:36:55.113536     848 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:36:55.124767     848 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:36:55.125103     848 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:36:55.174850     848 monitor_config_manager_external.go:53] externalMonitorConfigManager: initialized with embedded config (2 monitors)
+I0924 16:36:55.177593     848 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+I0924 16:36:55.177660     848 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+W0924 16:36:55.177671     848 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0924 16:36:55.177681     848 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+W0924 16:36:55.177690     848 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "terminal_sandbox"
+W0924 16:36:55.177716     848 declarative_config_loader.go:272] skipping component during resolution: empty component: pre-tool hook "command_assessor" is empty
+W0924 16:36:55.177722     848 declarative_config_loader.go:272] skipping component during resolution: empty component: post-tool hook "command_assessor" is empty
+I0924 16:36:59.546727    1320 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8ab174bd3361eb49 ResponseID: req_vrtx_011CfNbEzfD1cGQ2ek5wkr8G
+W0924 16:38:17.311248     848 context_summary.go:292] Context summary serialization truncated history: start step index moved from 3295 to 3314. This will break prompt cache reuse.
+I0924 16:38:19.599693    2569 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc33bb98ed0f335d9 ResponseID: req_vrtx_011CfNbM3mQe7efNp3WLi22Z
+W0924 16:38:45.486220    3324 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:38:45.486699    3324 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:38:45.487374    3324 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:38:45.487715    3324 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:38:45.488040    3324 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:38:45.488342    3324 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:38:45.498006    3324 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0924 16:38:45.498030    3324 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "skills"
+I0924 16:38:48.484170    3702 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x30f2ce6b868af545 ResponseID: req_vrtx_011CfNbP9w3GWUnMSzu1fmY8
+I0924 16:38:49.707953    3418 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7f9455433eaeb8ef ResponseID: FlK1atPPJcmz_PUPrdmTgQU
+E0924 16:38:50.901968     848 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: [2026-09-24T16:38:50.890963] Verification receipt dispatched to 120363430377910102@g.us
+{"decision": "allow"}: proto: syntax error (line 1:1): unexpected token [
+I0924 16:38:51.635120     848 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:38:51.635232     848 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 16:38:52.117780     848 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+I0924 16:38:52.261788     438 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+I0924 16:38:53.600096    3955 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfb85d0b0f2a9e8c0 ResponseID: G1K1aradKdCz_PUPj5OImAY
+I0924 16:38:59.121983    4145 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x41653f351d1deaa2 ResponseID: H1K1aszCG-nU_uMPr8-V6AE
+I0924 16:39:08.736604    4216 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x885432f971b40b12 ResponseID: JlK1atyMAcyx_PUPw8-94QU
+I0924 16:39:14.116116    4273 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc8261f24f2460fde ResponseID: L1K1aoLqIK2M_PUPxbvV8Ac
+I0924 16:39:19.289040    4406 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdea78ba6552acfd7 ResponseID: MlK1aveqJqu3_PUPk_iUgAY
+I0924 16:39:24.476290    4444 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xd7c2c885be0d8a8 ResponseID: OFK1apnqJ4yu_uMP6vua4QE
+I0924 16:39:30.814898    4563 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf9780e0772ae5d33 ResponseID: PVK1apOOAaTF_PUPwPXmyAE
+I0924 16:39:35.597828    4593 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x924d19bf54db6e90 ResponseID: RFK1apyuINyN_uMPkviToAU
+I0924 16:39:39.138194    4743 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8b6b3efa8aba2ed1 ResponseID: SFK1apb_BPC0_PUP_4qM6AQ
+I0924 16:39:45.379752    4777 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf9e4b7437ad09e1b ResponseID: TFK1asPoOdCN_PUPtJvVoAM
+I0924 16:39:57.789645    4861 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe84e19dcd15f6a58
+I0924 16:39:58.739685    4862 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x163d0276520df76e
+I0924 16:39:59.927849    5036 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2aa3ae5178e667ba ResponseID: XVK1aqSiKqzUjMcPzcPS4Ao
+I0924 16:40:03.615870    5117 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf1b325ab75205465 ResponseID: YFK1apK4G5yz_PUPutGu0AE
+I0924 16:40:10.535341    5135 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5400cb0cde21f2d7 ResponseID: ZVK1aqe6KpnF_PUPlMuvYQ
+I0924 16:40:19.873224    5303 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x226392a0f08e7185 ResponseID: blK1aqEdmMX89Q-j7_74BQ
+I0924 16:40:33.207577    5428 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xefab6696774e148e ResponseID: e1K1atXEPJ-x_PUP0fSkgQY
+W0924 16:41:10.893623    5546 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:41:10.893886    5546 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:41:10.894067    5546 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:41:10.894405    5546 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:41:10.895931    5546 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:41:10.896287    5546 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:41:10.896624    5546 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:41:10.898245    5546 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:41:10.902623    5546 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+I0924 16:41:10.902659    5546 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+W0924 16:41:10.902669    5546 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0924 16:41:10.902681    5546 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+W0924 16:41:10.902687    5546 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "terminal_sandbox"
+W0924 16:41:10.902702    5546 declarative_config_loader.go:272] skipping component during resolution: empty component: pre-tool hook "command_assessor" is empty
+W0924 16:41:10.902711    5546 declarative_config_loader.go:272] skipping component during resolution: empty component: post-tool hook "command_assessor" is empty
+I0924 16:41:13.729145    5620 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1edec4ba3c8fe481 ResponseID: p1K1aovtNduR_uMPit-6qAE
+I0924 16:41:14.075496    6025 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1d89bce3facbff60 ResponseID: req_vrtx_011CfNbZv4RAbW9RiUq2tSgh
+I0924 16:41:15.004649    3324 command_hook_executor.go:75] JSON hook command stderr: ]0;azureuser
+E0924 16:41:15.004781    3324 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 16:41:15.659357    3324 command_hook_executor.go:75] JSON hook command stderr: ]0;azureuser
+E0924 16:41:16.845609    3324 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: [2026-09-24T16:41:16.832880] Verification receipt dispatched to 120363430377910102@g.us
+{"decision": "allow"}: proto: syntax error (line 1:1): unexpected token [
+E0924 16:41:16.849013    3324 detach.go:98] detach: Value called for key ctxlog.customLoggerContext{} after callback passed to detach.Go has already returned
+Detached context created at third_party/gemini_coder/framework/core/run_tool.go:35. Stack trace of current goroutine:
+goroutine 3324 [running]:
+context.value({0x55e3ae6fee78?, 0x17f9fe3eef00?}, {0x55e3adf29668, 0x55e3b0fc0240})
+	third_party/go/gc/src/context/context.go:804 +0x212
+context.(*cancelCtx).Value(0x0?, {0x55e3adf29668?, 0x55e3b0fc0240?})
+	third_party/go/gc/src/context/context.go:446 +0x59
+google3/go/context/detach.fromContext({0x55e3ae6fe708, 0x17f9ff9af810})
+	go/context/detach.go:187 +0x14b
+google3/go/context/detach.Go({0x55e3ae6fe708?, 0x17f9ff9af810?}, 0x17f9fea98e10)
+	go/context/detach.go:236 +0x37
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func3(0x0?)
+	third_party/jetski/cortex/cascade_manager.go:1506 +0xda
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func4(0x1)
+	third_party/jetski/cortex/cascade_manager.go:1514 +0x36
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).updateFullyIdleLocked(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fca03560)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:1005 +0xa3
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).SetExecutorLoopStatusAndMetadata(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x17f9faca6380)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:495 +0xe5
+google3/third_party/jetski/cortex/cascade_run_state/cascade_run_state.(*CascadeRunState).SetExecutorLoopStatusAndMetadataLocked(...)
+	third_party/jetski/cortex/cascade_run_state/cascade_run_state.go:246
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).updateExecutorState(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x55e3ab63b3c0?)
+	third_party/gemini_coder/framework/executor/agentexecutor/convertinputs.go:562 +0x94
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).transitionFromRunningToIdleOrClosed(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fc29ac40, 0x17f9fb14c6e0, 0x17f9ff1aa9c0, 0x17f9fb436a10, 0x0, 0x0)
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:602 +0x196
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run.func1()
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:277 +0x92
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run(0x17f9faf91680, {0x55e3ae6fe708?, 0x17f9fcbd8e10?}, 0x17f9fb6501a0, {0x17f9fa457320, 0x24})
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:463 +0x13f2
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func1({0x55e3ae6fe708?, 0x17f9fcbd8e10?})
+	third_party/jetski/cortex/cascade_manager.go:2308 +0x251
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func2({0x55e3ae6fe708, 0x17f9fcbd8e10})
+	third_party/jetski/cortex/cascade_manager.go:2318 +0x2d
+google3/third_party/jetski/cortex/utils/background.(*Pool).Go.func2({0x55e3ae6fee78, 0x17fa0419a000})
+	third_party/jetski/cortex/utils/background.go:121 +0x105
+google3/go/context/detach.Go.func1()
+	go/context/detach.go:250 +0x8a
+created by google3/go/context/detach.Go in goroutine 3337
+	go/context/detach.go:242 +0x1ae
+E0924 16:41:16.849090    3324 detach.go:98] detach: Value called for key ctxlog.logTrackingContext{} after callback passed to detach.Go has already returned
+Detached context created at third_party/gemini_coder/framework/core/run_tool.go:35. Stack trace of current goroutine:
+goroutine 3324 [running]:
+context.value({0x55e3ae6fee78?, 0x17f9fe3eef00?}, {0x55e3adf29728, 0x55e3b0fc0240})
+	third_party/go/gc/src/context/context.go:804 +0x212
+context.(*cancelCtx).Value(0x0?, {0x55e3adf29728?, 0x55e3b0fc0240?})
+	third_party/go/gc/src/context/context.go:446 +0x59
+google3/go/context/detach.fromContext({0x55e3ae6fe708, 0x17f9ff9af810})
+	go/context/detach.go:187 +0x14b
+google3/go/context/detach.Go({0x55e3ae6fe708?, 0x17f9ff9af810?}, 0x17f9fea98e10)
+	go/context/detach.go:236 +0x37
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func3(0x0?)
+	third_party/jetski/cortex/cascade_manager.go:1506 +0xda
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func4(0x1)
+	third_party/jetski/cortex/cascade_manager.go:1514 +0x36
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).updateFullyIdleLocked(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fca03560)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:1005 +0xa3
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).SetExecutorLoopStatusAndMetadata(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x17f9faca6380)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:495 +0xe5
+google3/third_party/jetski/cortex/cascade_run_state/cascade_run_state.(*CascadeRunState).SetExecutorLoopStatusAndMetadataLocked(...)
+	third_party/jetski/cortex/cascade_run_state/cascade_run_state.go:246
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).updateExecutorState(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x55e3ab63b3c0?)
+	third_party/gemini_coder/framework/executor/agentexecutor/convertinputs.go:562 +0x94
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).transitionFromRunningToIdleOrClosed(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fc29ac40, 0x17f9fb14c6e0, 0x17f9ff1aa9c0, 0x17f9fb436a10, 0x0, 0x0)
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:602 +0x196
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run.func1()
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:277 +0x92
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run(0x17f9faf91680, {0x55e3ae6fe708?, 0x17f9fcbd8e10?}, 0x17f9fb6501a0, {0x17f9fa457320, 0x24})
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:463 +0x13f2
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func1({0x55e3ae6fe708?, 0x17f9fcbd8e10?})
+	third_party/jetski/cortex/cascade_manager.go:2308 +0x251
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func2({0x55e3ae6fe708, 0x17f9fcbd8e10})
+	third_party/jetski/cortex/cascade_manager.go:2318 +0x2d
+google3/third_party/jetski/cortex/utils/background.(*Pool).Go.func2({0x55e3ae6fee78, 0x17fa0419a000})
+	third_party/jetski/cortex/utils/background.go:121 +0x105
+google3/go/context/detach.Go.func1()
+	go/context/detach.go:250 +0x8a
+created by google3/go/context/detach.Go in goroutine 3337
+	go/context/detach.go:242 +0x1ae
+E0924 16:41:16.849169    3324 detach.go:98] detach: Value called for key ctxlog.logQuietingContext{} after callback passed to detach.Go has already returned
+Detached context created at third_party/gemini_coder/framework/core/run_tool.go:35. Stack trace of current goroutine:
+goroutine 3324 [running]:
+context.value({0x55e3ae6fee78?, 0x17f9fe3eef00?}, {0x55e3adf296c8, 0x55e3b0fc0240})
+	third_party/go/gc/src/context/context.go:804 +0x212
+context.(*cancelCtx).Value(0x0?, {0x55e3adf296c8?, 0x55e3b0fc0240?})
+	third_party/go/gc/src/context/context.go:446 +0x59
+google3/go/context/detach.fromContext({0x55e3ae6fe708, 0x17f9ff9af810})
+	go/context/detach.go:187 +0x14b
+google3/go/context/detach.Go({0x55e3ae6fe708?, 0x17f9ff9af810?}, 0x17f9fea98e10)
+	go/context/detach.go:236 +0x37
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func3(0x0?)
+	third_party/jetski/cortex/cascade_manager.go:1506 +0xda
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func4(0x1)
+	third_party/jetski/cortex/cascade_manager.go:1514 +0x36
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).updateFullyIdleLocked(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fca03560)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:1005 +0xa3
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).SetExecutorLoopStatusAndMetadata(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x17f9faca6380)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:495 +0xe5
+google3/third_party/jetski/cortex/cascade_run_state/cascade_run_state.(*CascadeRunState).SetExecutorLoopStatusAndMetadataLocked(...)
+	third_party/jetski/cortex/cascade_run_state/cascade_run_state.go:246
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).updateExecutorState(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x55e3ab63b3c0?)
+	third_party/gemini_coder/framework/executor/agentexecutor/convertinputs.go:562 +0x94
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).transitionFromRunningToIdleOrClosed(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fc29ac40, 0x17f9fb14c6e0, 0x17f9ff1aa9c0, 0x17f9fb436a10, 0x0, 0x0)
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:602 +0x196
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run.func1()
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:277 +0x92
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run(0x17f9faf91680, {0x55e3ae6fe708?, 0x17f9fcbd8e10?}, 0x17f9fb6501a0, {0x17f9fa457320, 0x24})
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:463 +0x13f2
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func1({0x55e3ae6fe708?, 0x17f9fcbd8e10?})
+	third_party/jetski/cortex/cascade_manager.go:2308 +0x251
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func2({0x55e3ae6fe708, 0x17f9fcbd8e10})
+	third_party/jetski/cortex/cascade_manager.go:2318 +0x2d
+google3/third_party/jetski/cortex/utils/background.(*Pool).Go.func2({0x55e3ae6fee78, 0x17fa0419a000})
+	third_party/jetski/cortex/utils/background.go:121 +0x105
+google3/go/context/detach.Go.func1()
+	go/context/detach.go:250 +0x8a
+created by google3/go/context/detach.Go in goroutine 3337
+	go/context/detach.go:242 +0x1ae
+E0924 16:41:16.849233    3324 detach.go:98] detach: Value called for key tracer.contextKey{} after callback passed to detach.Go has already returned
+Detached context created at third_party/gemini_coder/framework/core/run_tool.go:35. Stack trace of current goroutine:
+goroutine 3324 [running]:
+context.value({0x55e3ae6fee78?, 0x17f9fe3eef00?}, {0x55e3adf1c588, 0x55e3b0fc0240})
+	third_party/go/gc/src/context/context.go:804 +0x212
+context.(*cancelCtx).Value(0x0?, {0x55e3adf1c588?, 0x55e3b0fc0240?})
+	third_party/go/gc/src/context/context.go:446 +0x59
+google3/go/context/detach.fromContext({0x55e3ae6fe708, 0x17f9ff9af810})
+	go/context/detach.go:187 +0x14b
+google3/go/context/detach.Go({0x55e3ae6fe708?, 0x17f9ff9af810?}, 0x17f9fea98e10)
+	go/context/detach.go:236 +0x37
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func3(0x0?)
+	third_party/jetski/cortex/cascade_manager.go:1506 +0xda
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).updateStateForLoadedTrajectory.func4(0x1)
+	third_party/jetski/cortex/cascade_manager.go:1514 +0x36
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).updateFullyIdleLocked(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fca03560)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:1005 +0xa3
+google3/third_party/jetski/cortex/agent_state_component/agent_state_component.(*AgentState).SetExecutorLoopStatusAndMetadata(0x17f9fbd9d7c0, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x17f9faca6380)
+	third_party/jetski/cortex/agent_state_component/agent_state.go:495 +0xe5
+google3/third_party/jetski/cortex/cascade_run_state/cascade_run_state.(*CascadeRunState).SetExecutorLoopStatusAndMetadataLocked(...)
+	third_party/jetski/cortex/cascade_run_state/cascade_run_state.go:246
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).updateExecutorState(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x1, 0x55e3ab63b3c0?)
+	third_party/gemini_coder/framework/executor/agentexecutor/convertinputs.go:562 +0x94
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).transitionFromRunningToIdleOrClosed(0x17f9faf91680, {0x55e3ae6fe708, 0x17f9fcbd8fa0}, 0x17f9fc29ac40, 0x17f9fb14c6e0, 0x17f9ff1aa9c0, 0x17f9fb436a10, 0x0, 0x0)
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:602 +0x196
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run.func1()
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:277 +0x92
+google3/third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.(*AgentExecutor).Run(0x17f9faf91680, {0x55e3ae6fe708?, 0x17f9fcbd8e10?}, 0x17f9fb6501a0, {0x17f9fa457320, 0x24})
+	third_party/gemini_coder/framework/executor/agentexecutor/agentexecutor.go:463 +0x13f2
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func1({0x55e3ae6fe708?, 0x17f9fcbd8e10?})
+	third_party/jetski/cortex/cascade_manager.go:2308 +0x251
+google3/third_party/jetski/cortex/cortex.(*CascadeManager).executeOne.func2({0x55e3ae6fe708, 0x17f9fcbd8e10})
+	third_party/jetski/cortex/cascade_manager.go:2318 +0x2d
+google3/third_party/jetski/cortex/utils/background.(*Pool).Go.func2({0x55e3ae6fee78, 0x17fa0419a000})
+	third_party/jetski/cortex/utils/background.go:121 +0x105
+google3/go/context/detach.Go.func1()
+	go/context/detach.go:250 +0x8a
+created by google3/go/context/detach.Go in goroutine 3337
+	go/context/detach.go:242 +0x1ae
+W0924 16:42:00.989680    6985 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:00.989977    6985 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:00.990263    6985 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:00.990533    6985 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:00.991066    6985 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:00.991345    6985 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:00.991589    6985 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:00.991770    6985 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:42:07.114281    7113 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x213330ce3e755447 ResponseID: req_vrtx_011CfNbdYD8LdFSALQQB8Mzi
+I0924 16:42:21.594497    5546 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:42:21.594787    5546 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 16:42:22.050231    5546 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:42:22.107538    5546 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: [2026-09-24T16:42:22.100752] Verification receipt dispatched to 120363430377910102@g.us
+{"decision": "allow"}: proto: syntax error (line 1:1): unexpected token [
+I0924 16:42:24.373868    8382 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xaca5ef90bc435b83 ResponseID: req_vrtx_011CfNbf6Yqm4ydBtui7uE7J
+W0924 16:42:32.513103    8800 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:32.513400    8800 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:32.513721    8800 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:32.514565    8800 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:32.515264    8800 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:32.515706    8800 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:32.516049    8800 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:32.516409    8800 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:42:33.734315    8954 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:33.734730    8954 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:33.735098    8954 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:33.735464    8954 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:33.739781    8954 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:33.740154    8954 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:33.744474    8954 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:33.744904    8954 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:42:34.817001    9001 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:34.817253    9001 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:34.817560    9001 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:34.817779    9001 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:34.818501    9001 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:34.818786    9001 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:34.819102    9001 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:34.819463    9001 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:42:34.872056    9050 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:34.872297    9050 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:34.872452    9050 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:34.872603    9050 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:34.873181    9050 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:34.873521    9050 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:34.873771    9050 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:34.874129    9050 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:42:37.117556    9231 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6d63a77edaa5cddf ResponseID: req_vrtx_011CfNbg32HVmEMioGugxL9m
+W0924 16:42:47.519084    9587 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:47.519399    9587 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:47.519613    9587 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:47.519814    9587 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:47.520290    9587 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:47.520507    9587 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:47.520713    9587 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:47.520913    9587 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:42:50.126683    9714 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9f3ed3352c929966 ResponseID: req_vrtx_011CfNbgy4h9ds3NVt37UrxR
+W0924 16:42:57.547233    9922 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:57.547552    9922 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:42:57.547879    9922 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:42:57.549499    9922 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:42:57.550273    9922 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:57.550532    9922 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:42:57.550820    9922 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:42:57.551087    9922 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:43:00.247549   10054 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x85d3d9761b6b9076 ResponseID: req_vrtx_011CfNbhkWusZ9JTBmHH9Qx5
+W0924 16:43:06.882353   10235 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:06.882886   10235 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:43:06.883303   10235 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:06.883853   10235 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:43:06.884629   10235 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:06.884942   10235 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:06.885232   10235 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:43:06.885569   10235 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:43:08.897603   10373 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf881a82375144ba4 ResponseID: req_vrtx_011CfNbiPdaxqPsyJi3cT1TV
+W0924 16:43:23.032060   10683 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:23.032482   10683 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:43:23.032898   10683 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:23.033587   10683 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:43:23.034168   10683 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:23.034417   10683 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:23.034619   10683 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:43:23.034806   10683 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:43:26.962381   10717 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x94916f3b35d76609 ResponseID: req_vrtx_011CfNbjcDtt8xRamZqmkPq5
+W0924 16:43:30.122760   10976 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:30.123356   10976 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:43:30.123771   10976 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:43:30.124478   10976 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:43:30.127160   10976 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:30.127623   10976 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:43:30.127989   10976 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:43:30.128339   10976 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:43:32.616581   11129 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x493fb8d7e40e2fa7 ResponseID: req_vrtx_011CfNbk87VXmX9bu7b5LmEN
+I0924 16:43:40.661609   11562 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb718ced8190d82ea ResponseID: req_vrtx_011CfNbkjTVm64TM2hM1TCc1
+I0924 16:43:50.581463    5546 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:43:50.581618    5546 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 16:43:51.194016    5546 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:43:51.290354    5546 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: [2026-09-24T16:43:51.279795] Verification receipt dispatched to 120363430377910102@g.us
+{"decision": "allow"}: proto: syntax error (line 1:1): unexpected token [
+I0924 16:43:51.404979     438 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+I0924 16:44:47.889756   12445 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Reporting Agent (research)]: এখন পুরো প্যাটার্নটা স্পষ্ট বুঝেছি — এটা `আসল রিপোর্টিং` না, এটা শুধু **noise generator**। প্রতিটা টাস্ক শুরু হলে \"টাস্ক শুরু হয়েছে\" আর শেষ হলে \"VERIFIED & APPROVED\" — এই দুটো টেমপ্লেট মেসেজ কপি-পেস্ট হচ্ছে, actual content truncate হয়ে যাচ্ছে (৩ লাইনে কেটে যাচ্ছে), verification অংশটা হার্ডকোডেড বলে মনে হচ্ছে (সবসময় \"0 ত্রুটি, শতভাগ সঠিক\" — কোনো real code review হচ্ছে না)। এটা কাজের কোনো signal দিচ্ছে না, শুধু spam।\n\nআপনার alco-app, YouTube pipeline, Rust app, TTS, Veo — এই multi-project setup-এর জন্য একটা প্রপার architecture লাগবে। নিচে দিচ্ছি।\n\n---\n\n## সমস্যা নির্ণয় (Root Cause)\n\n১. **No real diff analysis** — এজেন্ট git diff/file change পড়ছে না, শুধু original user message-টা parrot করছে\n২. **No verification logic** — \"PASSED, 0 errors\" সবসময় same output, মানে কোনো actual test/lint run হচ্ছে না\n৩. **Truncation** — মেসেজ ৩ লাইনে কেটে যাচ্ছে, তাই context হারিয়ে যাচ্ছে\n৪. **No prioritization / dedup** — একই টাস্ক ৫-৬ বার রিপোর্ট হচ্ছে (৪:২৭:১৪, ১৮, ১৯, ২৩... সব একই \"Repirting agent delete hoye gelo naaki\")\n৫. **No actionable structure** — শুধু status broadcast, কোনো severity, owner, বা next-step নাই\n\n---\n\n## Architecture: Reporting Agent v2\n\n### Layer 1 — Data Collection (Watchdog)\n```\nTrigger source (keep) → git hooks + file watcher + agent exit code\n    ├─ pre-task snapshot: git diff --stat, file mtimes\n    ├─ post-task snapshot: same, diff the two\n    └─ actual test/lint runner output (not fake PASSED)\n```\nএই লেয়ারটা python script-ই থাকুক (আপনি যেটা \"জাগিয়ে রাখা\"র জন্য চালাচ্ছেন), কিন্তু এর কাজ হবে শুধু **raw event capture**, রিপোর্ট লেখা না।\n\n### Layer 2 — Aggregation & Dedup\n- একই টাস্কের multiple pings → **1 event**-এ merge (debounce ৩০-৬০ সেকেন্ড)\n- Full task instruction রাখতে হবে (truncate না করে), summary generate করবে agent নিজে\n\n### Layer 3 — Real Verification (এখানেই আসল কাজ)\nপ্রতিটা sub-agent (frappe, yt, rust, video) শেষ হওয়ার পর reporting agent কে সত্যিকারের চেক করতে হবে:\n\n- `git diff` পড়ে কী change হলো বলা\n- runnable হলে lint/test command actually চালানো (`python -m py_compile`, `cargo check`, etc.)\n- error থাকলে **সেটা highlight**, না থাকলে তখনই \"PASSED\" বলা — default approve না\n\n### Layer 4 — Structured Report Format\nপ্রতিটা রিপোর্টে থাকবে:\n| ফিল্ড | উদ্দেশ্য |\n|---|---|\n| Severity | 🔴 Blocker / 🟡 Warning / 🟢 Info |\n| What changed | actual file/diff summary |\n| Verified how | কোন command রান হলো |\n| Action needed | আপনাকে কিছু করতে হবে কিনা |\n\n### Layer 5 — Notification Policy\n- 🔴 Blocker → সাথে সাথে পাঠাও\n- 🟡/🟢 → **batch করে** প্রতি ঘণ্টায় বা task-complete-এ একবার পাঠাও, প্রতি sub-step এ না\n\n---\n\n## Practical প্রম্পট (AGY CLI-তে reporting agent-কে দিন)\n\n```\nতুমি এখন Reporting Agent। কাজ:\n1. প্রতিটা sub-agent (frappe, yt, rust, video, 0) এর টাস্ক শুরু/শেষে \n   ping পেলে সাথে সাথে রিপোর্ট বানাবে না — debounce করবে।\n2. verification section-এ \"PASSED/0 errors\" লেখার আগে actual command \n   রান করে output দেখাবে। কমান্ড রান করতে না পারলে \"UNVERIFIED\" লিখবে, \n   কখনো default approve দেবে না।\n3. একই instruction ৩ লাইনে truncate করবে না — full task summary নিজের \n   ভাষায় ১-২ বাক্যে লিখবে।\n4. প্রতি রিপোর্টে severity tag (Blocker/Warning/Info) বসাবে।\n5. Blocker ছাড়া সব রিপোর্ট batch করে ঘণ্টায় একবার পাঠাবে।\n```\n\n---\n\nএটা কি এখন সরাসরি `agy:research` window-এর reporting agent-কে instruction হিসেবে দিতে চান, নাকি এই architecture টা প্রথমে alco-app বা কোনো একটা প্রজেক্টে টেস্ট করে দেখতে চান?"
+I0924 16:44:47.890965   12447 conversation_manager.go:699] Forwarding user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 16:44:47.890976   12447 server.go:1846] Sending user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 16:44:47.950435   12447 latency_breakdown.go:142] SEND_USER_CASCADE_MESSAGE_LATENCY latency breakdown: map[active_user_state_latency_ms:0 blocking:false cascade_id:47f3f05e-b686-4d3d-9ae2-f215c03ab86b cascade_send_latency_ms:0 hydrate_slash_commands_latency_ms:0 load_trajectory_latency_ms:29 media_count:0 media_summaries_latency_ms:0 message_origin:AGENT_MESSAGE_ORIGIN_UNSPECIFIED resolve_agent_config_latency_ms:0 save_media_latency_ms:0 saved_media_count:0 status:OK total_latency_ms:30 trajectory_id:1792ef6c-8480-49ed-8a50-ab9e5f19ecf9]
+W0924 16:44:47.992095   12432 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:44:47.992255   12432 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:44:47.992363   12432 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:44:47.992471   12432 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:44:47.992839   12432 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:44:47.992955   12432 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:44:47.993053   12432 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:44:47.993147   12432 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:44:47.995055   12432 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+I0924 16:44:47.995075   12432 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+W0924 16:44:47.995082   12432 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0924 16:44:47.995095   12432 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+W0924 16:44:47.995100   12432 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "terminal_sandbox"
+W0924 16:44:47.995120   12432 declarative_config_loader.go:272] skipping component during resolution: empty component: pre-tool hook "command_assessor" is empty
+W0924 16:44:47.995125   12432 declarative_config_loader.go:272] skipping component during resolution: empty component: post-tool hook "command_assessor" is empty
+I0924 16:44:50.049397   12877 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x34a388b53e1fd1bb ResponseID: req_vrtx_011CfNbqrbzyJGxf3afTEW26
+W0924 16:45:12.727430   14243 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:12.727635   14243 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:45:12.727787   14243 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:12.727938   14243 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:45:12.728429   14243 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:12.729019   14243 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:12.729218   14243 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:45:12.729448   14243 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:45:13.010225   14247 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x26c87ef01659a0af
+I0924 16:45:13.038269   14214 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb019ec87d4b73a31
+W0924 16:45:13.385170   14404 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:13.385399   14404 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:45:13.385565   14404 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:13.385741   14404 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:45:13.386234   14404 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:13.386397   14404 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:13.386589   14404 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:45:13.386846   14404 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:45:14.057340   14480 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:14.057603   14480 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:45:14.057781   14480 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:14.057980   14480 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:45:14.058656   14480 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:14.058951   14480 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:14.059471   14480 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:45:14.059868   14480 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+W0924 16:45:14.118213   14518 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:14.118560   14518 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:45:14.118921   14518 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:45:14.119241   14518 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:45:14.119954   14518 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:14.120273   14518 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:45:14.120562   14518 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:45:14.122692   14518 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:45:16.116431   14702 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb573ee9104c9ad ResponseID: req_vrtx_011CfNbskDpwKYQ22rN2peSn
+I0924 16:47:06.217793   16255 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfc54d39acf95905b ResponseID: req_vrtx_011CfNc1bB5zjF4wcK53QnkZ
+W0924 16:47:07.448731   16452 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:47:07.449202   16452 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:47:07.449967   16452 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:47:07.450283   16452 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:47:07.451240   16452 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:47:07.451584   16452 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:47:07.451838   16452 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:47:07.453506   16452 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:47:12.625988   16544 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4c50359d80dc931b ResponseID: req_vrtx_011CfNc287gdQhFUn7NrSbQk
+I0924 16:47:33.375189     563 conversation_manager.go:1078] Surfacing ask_question at step 3738
+I0924 16:49:52.433740   17665 server.go:2595] AskQuestion response for conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b step 3738 (1 responses)
+I0924 16:49:54.570414   17832 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2bdb80ba5a5f02ed ResponseID: req_vrtx_011CfNcEHr9yeNbb59S7bLKR
+W0924 16:50:17.965344   18405 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:50:17.965664   18405 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:50:17.965933   18405 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:50:17.966173   18405 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:50:17.966662   18405 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:50:17.966873   18405 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:50:17.967114   18405 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:50:17.967677   18405 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:50:18.161818   18410 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x838a10c00d9255df
+I0924 16:50:18.360105   18409 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xbed8be9d564972f5
+I0924 16:50:21.025028   18643 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xef95aa21a5f5e871 ResponseID: req_vrtx_011CfNcGAwUzb2TFgToqcpQk
+W0924 16:50:57.036474   19347 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:50:57.036839   19347 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:50:57.037227   19347 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:50:57.037622   19347 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:50:57.038522   19347 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:50:57.038937   19347 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:50:57.039299   19347 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:50:57.039685   19347 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:50:57.132800   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:51:07.616712   19418 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x748468398fd43d77 ResponseID: req_vrtx_011CfNcK52Nh8qziTHcXEwdW
+W0924 16:53:03.424517   21441 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:53:03.424998   21441 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:53:03.425409   21441 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:53:03.425826   21441 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:53:03.426633   21441 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:53:03.427001   21441 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:53:03.427380   21441 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:53:03.427755   21441 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:53:03.533368   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:53:06.219973   21609 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x54c0c01a9f6991fb ResponseID: req_vrtx_011CfNcUR1QabqCM8o6ZmG7j
+W0924 16:54:09.548793   22683 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:54:09.550903   22683 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:54:09.553703   22683 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:54:09.554091   22683 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:54:09.554873   22683 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:54:09.555185   22683 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:54:09.556264   22683 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:54:09.556561   22683 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:54:09.715814   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:54:12.172950   22820 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9ebcb0a0e0aa9105 ResponseID: req_vrtx_011CfNcZHJhL8uWXjWq2DhAW
+W0924 16:54:48.684396   23509 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:54:48.684799   23509 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 16:54:48.685130   23509 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 16:54:48.685480   23509 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 16:54:48.686245   23509 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:54:48.686572   23509 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 16:54:48.686925   23509 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 16:54:48.687238   23509 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 16:54:53.465288   23641 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7db0ef4044a7265c ResponseID: req_vrtx_011CfNccBGe1MqNHYGbo4hNN
+E0924 16:54:59.002080   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:55:05.175982   23924 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf65ab7115499fc14 ResponseID: req_vrtx_011CfNccsy7Br7eLsuM1PT4p
+E0924 16:55:09.133242   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:55:11.118179   24157 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xcfc559b53fdb1393 ResponseID: req_vrtx_011CfNcdd3x8xettiAUCBbHJ
+E0924 16:55:15.655182   12432 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:55:19.973039   24444 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb5cbc30d50ab773d ResponseID: req_vrtx_011CfNce9fD4uCswxzm8Ts2S
+I0924 16:55:34.605500   25690 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfd1f83a56c9513b
+I0924 16:55:35.073150   25691 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x69a91e20f243eee2
+I0924 16:55:35.636233   12432 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:55:35.636361   12432 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 16:55:36.261514   12432 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 16:55:36.300889   12432 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: {"decision": "allow"}
+{"decision": "allow"}: proto: syntax error (line 2:1): unexpected token {
+I0924 16:55:36.521938     438 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+I0924 17:00:43.344504   25920 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6d792f19373ca365
+I0924 17:00:43.443356   26065 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9703872c3ce17633
+I0924 17:05:43.804198   26474 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x96774e5e2003ceda
+I0924 17:05:44.081362   26447 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5475eb827626b7ef
+I0924 17:11:43.455597   26832 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x43d9225fb001ba
+I0924 17:12:13.010328   26863 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1f499ec8815425fd
+I0924 17:17:43.408889   27264 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe4c87f60845a17ca
+I0924 17:17:43.697301   27267 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x29e5b30218abf78f
+I0924 17:20:43.240593      31 browser.go:265] token refreshed, new expiry=2026-09-24 18:20:42.240570462 +0000 UTC m=+6359.333169994
+W0924 17:20:43.241270      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 17:23:43.415256   27641 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1ef003ebc45c4fba
+I0924 17:23:43.499673   26603 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8646cbfba75d90bc
+I0924 17:29:43.424314   28031 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x195e00eeda159e05
+I0924 17:29:43.476035   28043 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc6a13b9e5cf18648
+I0924 17:35:44.331953   28452 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x17aa980aa7a59b9a
+I0924 17:35:45.822130   27869 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5ee26bfb79947c7a
+I0924 17:41:43.462014   28807 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8305938c32433fb3
+I0924 17:41:43.480753   28835 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x264b6b3337269ea5
+I0924 17:47:43.309900   29203 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4cad0819d641a00b
+I0924 17:47:43.472299   29102 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xff0f5eb43c8cd9c2
+I0924 17:52:43.970320   29540 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc6dec7740a605876
+I0924 17:52:44.019554   29512 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8ba308b302978442
+I0924 17:58:43.424951   29917 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x229d75422d52abbb
+I0924 17:58:43.450235   29829 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe7320ebcc5925a4c
+I0924 18:04:43.337684   30288 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7469038fabece2c1
+I0924 18:04:43.629487   30239 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xef0d4ee3051aef8c
+I0924 18:09:44.290460   30399 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7738ffb5beef239b
+I0924 18:10:43.480267   30623 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc3f0eee51717910c
+I0924 18:15:43.397538   30962 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb746c8b77e671863
+I0924 18:16:43.461539   31015 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5d47c5816088887c
+I0924 18:20:43.295413      31 browser.go:265] token refreshed, new expiry=2026-09-24 19:20:42.29519881 +0000 UTC m=+9959.387798331
+W0924 18:20:43.298510      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 18:20:43.522315   31320 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa0acce3d5d0fd1ac
+I0924 18:22:43.965542   31439 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x12da1f9a51b04737
+I0924 18:26:44.641695   31716 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb0f3a5eef6e5ede6
+I0924 18:28:43.570071   31788 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x85491313e7485c96
+I0924 18:32:43.557626   32048 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x50f1ee58383e8269
+I0924 18:34:43.543840   32155 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9e7970482477230f
+I0924 18:38:44.005393   32483 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1221e39d0e81a7fb
+I0924 18:40:43.494416   32560 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x55540aed33fdc7f0
+I0924 18:44:43.372773   32846 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xafc7f9d276d67f1b
+I0924 18:46:43.381051   32954 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x58548cdb86743b26
+I0924 18:50:44.559302   33182 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x438909c594c97356
+I0924 18:52:43.622621   33339 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd7a736fbf233a2f
+I0924 18:56:43.591261   33610 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa445f69de2d185a8
+I0924 18:58:43.443553   33481 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x513daef55bfa5ce1
+I0924 19:02:43.427209   33970 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd327647791e72b30
+I0924 19:04:43.453556   34102 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe7c65f924649cca5
+I0924 19:08:43.326708   34328 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x42676a24368ea15b
+I0924 19:10:45.016551   34470 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe064d4e399daaaa0
+I0924 19:14:43.556486   34716 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x175832e8113a5d93
+I0924 19:16:45.645757   34814 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5c3cff3e7da81f04
+I0924 19:20:43.259361      31 browser.go:265] token refreshed, new expiry=2026-09-24 20:20:42.259017215 +0000 UTC m=+13559.351616756
+W0924 19:20:43.263321      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 19:20:43.356158   35123 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdc36f582bd1f59d4
+I0924 19:22:43.552587   35275 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe8cdb65855da8d89
+I0924 19:26:43.472290   35500 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6ee80750d0bff6b4
+I0924 19:28:43.964617   35421 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc2f334e4aaa09995
+I0924 19:31:48.325681   35823 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3ffcdcffe86be00b
+I0924 19:34:43.539135   35985 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x162209259013087c
+I0924 19:37:43.280991   36238 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x67d6fb08b2dfafc8
+I0924 19:40:48.080176   36423 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x272e4b9695df55d2
+I0924 19:43:46.880660   36572 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdb9e1b1691b2af41
+I0924 19:46:43.727206   36789 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x47e9eac9ffd72d3e
+I0924 19:49:43.406823   36960 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1c25b63c1051e304
+I0924 19:52:44.203777   37164 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc3f8acfd421981c
+I0924 19:55:43.299365   37342 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xcb19d4137b6d21a8
+I0924 19:58:43.468013   37532 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x72397281088630b1
+I0924 20:00:47.140412   37681 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6336bc1472b25008
+I0924 20:04:43.621182   37926 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd3565282a4881ece
+I0924 20:06:44.518955   38043 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x16413a1f552490f5
+I0924 20:10:43.505482   38307 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x31cc757b79bdb4b6
+I0924 20:12:44.076592   38433 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb58b33e93fb8a969
+I0924 20:14:08.504904   38536 input_loop.go:107] HandleUserInput called with text: "[প্রজেক্ট গ্রুপ: AGY · Reporting Agent (research)]: Rust task note agent stopped working"
+I0924 20:14:08.509551   38503 conversation_manager.go:699] Forwarding user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 20:14:08.509659   38503 server.go:1846] Sending user message to conversation 47f3f05e-b686-4d3d-9ae2-f215c03ab86b (items=1, media=0)
+I0924 20:14:08.690867   38503 latency_breakdown.go:142] SEND_USER_CASCADE_MESSAGE_LATENCY latency breakdown: map[active_user_state_latency_ms:0 blocking:false cascade_id:47f3f05e-b686-4d3d-9ae2-f215c03ab86b cascade_send_latency_ms:7 hydrate_slash_commands_latency_ms:0 load_trajectory_latency_ms:57 media_count:0 media_summaries_latency_ms:0 message_origin:AGENT_MESSAGE_ORIGIN_UNSPECIFIED resolve_agent_config_latency_ms:4 save_media_latency_ms:0 saved_media_count:0 status:OK total_latency_ms:70 trajectory_id:1792ef6c-8480-49ed-8a50-ab9e5f19ecf9]
+W0924 20:14:08.839154   38548 rules.go:499] Rule file /home/azureuser/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 20:14:08.840377   38548 rules.go:499] Rule file /home/azureuser/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+W0924 20:14:08.841531   38548 rules.go:499] Rule file /home/azureuser/Reporting-Agent/GEMINI.md truncated by 52324 bytes (original 76296 bytes, limit 24000 bytes)
+W0924 20:14:08.842714   38548 rules.go:499] Rule file /home/azureuser/Reporting-Agent/AGENTS.md truncated by 52365 bytes (original 76337 bytes, limit 24000 bytes)
+E0924 20:14:08.846068   38548 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 20:14:08.846786   38548 rules.go:376] Global rule truncated from 76296 characters to 23996 characters
+E0924 20:14:08.847182   38548 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+E0924 20:14:08.847366   38548 rules.go:376] Global rule truncated from 76337 characters to 23996 characters
+I0924 20:14:08.864346   38548 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+I0924 20:14:08.864539   38548 monitoring.go:318] [Sonar] Resolved active tags: [policy_guardian] (detected surface: "")
+W0924 20:14:08.864547   38548 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "mcp_servers"
+W0924 20:14:08.864683   38548 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+W0924 20:14:08.864687   38548 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "terminal_sandbox"
+W0924 20:14:08.864756   38548 declarative_config_loader.go:272] skipping component during resolution: empty component: pre-tool hook "command_assessor" is empty
+W0924 20:14:08.864761   38548 declarative_config_loader.go:272] skipping component during resolution: empty component: post-tool hook "command_assessor" is empty
+E0924 20:14:08.955021   38548 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 20:14:13.561671   38968 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4acaae9117fcf6ae ResponseID: req_vrtx_011CfNsot8qT5qeSqLUA8Ui9
+E0924 20:14:25.141276   38548 prehooks.go:43] failed to call custom pre-invocation hook jsonhook__reporting-intake_PreInvocation_0_0: failed to unmarshal result from hook jsonhook__reporting-intake_PreInvocation_0_0 via protojson: {}
+{}: proto: syntax error (line 2:1): unexpected token {
+I0924 20:14:27.273111   39510 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6d511e0317e8a7ea ResponseID: req_vrtx_011CfNspy9z6uosa2emxea18
+I0924 20:14:40.622263   38548 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 20:14:40.622580   38548 stophooks.go:62] failed to call custom stop hook jsonhook__reply-notifier_Stop_0_0: failed to unmarshal result from hook jsonhook__reply-notifier_Stop_0_0 via protojson: {}
+: proto: syntax error (line 2:1): invalid value 
+I0924 20:14:41.196904   38548 command_hook_executor.go:75] JSON hook command stderr: ]0;Reporting-Agent
+E0924 20:14:41.226255   38548 stophooks.go:62] failed to call custom stop hook jsonhook__reporting-inspector_Stop_0_0: failed to unmarshal result from hook jsonhook__reporting-inspector_Stop_0_0 via protojson: {"decision": "allow"}
+{"decision": "allow"}: proto: syntax error (line 2:1): unexpected token {
+I0924 20:14:41.600753     438 quota_manager.go:45] doRefreshQuota: starting reload (force=false)
+I0924 20:16:43.458178   40749 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9e3db7d14564ce8f
+I0924 20:18:43.537490   40855 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2e2daf28f928e90
+I0924 20:20:43.256605      31 browser.go:265] token refreshed, new expiry=2026-09-24 21:20:42.256579409 +0000 UTC m=+17159.349178930
+W0924 20:20:43.257488      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 20:22:43.457991   40973 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa0347273a0358bc6
+I0924 20:24:43.453121   41109 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x80a885c326225895
+I0924 20:28:43.451705   41554 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x724ae9b88b32c7f3
+I0924 20:30:43.351106   41659 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe79dcb545ec297a7
+I0924 20:34:43.481404   41927 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x26d9264be1111dff
+I0924 20:36:43.321173   42067 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd8faeb88c04b2d24
+I0924 20:40:43.458315   42296 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x98a1f10d360ea642
+I0924 20:41:43.583340   42272 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x819a87ee106fbea
+I0924 20:46:43.418216   42677 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfa71e3aa74695c77
+I0924 20:47:43.314968   42740 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf57ac951703930ba
+I0924 20:52:43.534387   43051 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9b6bc3535daac2b
+I0924 20:53:43.671714   43132 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5f880f4cfaa0ab79
+I0924 20:58:43.704766   43434 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x516f03c2e29e6d22
+I0924 20:59:43.289547   43507 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xaaf74ee41936503c
+I0924 21:04:43.406229   43801 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfebc4a11a1591445
+I0924 21:04:45.522152   43745 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x29554249b82b0957
+I0924 21:09:43.994570   44122 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3d91342211f3c935
+I0924 21:10:43.453309   44182 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x34ff1495edab5cd8
+I0924 21:15:43.327249   44495 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8b76085edac4acde
+I0924 21:16:45.632356   44562 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x94cfee4df6649846
+I0924 21:20:43.246679      31 browser.go:265] token refreshed, new expiry=2026-09-24 22:20:42.246659001 +0000 UTC m=+20759.339258522
+W0924 21:20:43.247254      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 21:20:43.846963   44870 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x88c8dfbbbb936aaa
+I0924 21:22:43.451400   45000 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x818166f30ef5d39
+I0924 21:26:45.082111   45240 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x357105a61c3e3607
+I0924 21:28:43.442376   45357 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4c46413c24e0b62c
+I0924 21:32:55.278304   45456 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x45591a3c0e521648
+I0924 21:34:43.440574   45743 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3428da1a7d872438
+I0924 21:38:43.419240   46020 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa080b61d05c59b8c
+I0924 21:40:43.786541   46129 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x73808db63576a7e4
+I0924 21:44:44.622471   46388 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xedfda957cbf7222c
+I0924 21:46:43.504143   46515 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5201db08e92f8266
+I0924 21:49:44.727910   46683 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5ec3a0e11ac7c74d
+I0924 21:52:43.439863   46888 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xec192be8d10af36b
+I0924 21:55:44.178249   47068 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1d1c25a9c5bcbdcb
+I0924 21:58:43.458966   47247 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8cac3ad60a7dd694
+I0924 22:01:43.327588   47424 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xbf99f86757a761c6
+I0924 22:04:43.766657   47626 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7098a8f8a4f9efb4
+I0924 22:07:43.318241   47842 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7752debfc863ab4e
+I0924 22:10:43.474352   48021 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xdb1a53d19758acb2
+I0924 22:12:43.871592   48154 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6ac2370fa8eed81b
+I0924 22:16:43.467203   47795 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xab0138f565f952ac
+I0924 22:18:43.494366   48522 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5624d6c73c41e3f7
+I0924 22:20:43.240018      31 browser.go:265] token refreshed, new expiry=2026-09-24 23:20:42.239997827 +0000 UTC m=+24359.332597348
+W0924 22:20:43.240587      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 22:22:46.151586   48818 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf7252f9c82486d10
+I0924 22:24:43.376314   48897 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1e10299a7be1db26
+I0924 22:28:43.748393   49196 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x913f071f80436207
+I0924 22:30:43.301550   49295 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc59e19abab6e720e
+I0924 22:34:43.647620   49565 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8e80ecee1ec9d07c
+I0924 22:36:43.306527   49702 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f11212db7aa03dd
+I0924 22:40:43.458785   49954 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9ce99349bd9778b5
+I0924 22:42:44.469554   50065 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf31ddc31f17a329f
+I0924 22:46:43.480984   50343 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8ea8907d5c8e069d
+I0924 22:48:43.346298   50456 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd3f672041890709a
+I0924 22:52:43.701258   50706 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc609d276e1693e9e
+I0924 22:54:43.344288   50822 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf9382bba0b1e42fc
+I0924 22:58:43.471943   51077 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x703a8b3f79efcd6b
+I0924 23:00:43.379658   51210 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x21ded56ba0c1cfdd
+I0924 23:04:43.500345   51453 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x614714364a9e330b
+I0924 23:06:43.506173   51553 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdf0231d96f46f6f3
+I0924 23:10:44.306684   51831 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xda8083248b521f8a
+I0924 23:12:43.631413   51934 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa586418d8e193ad5
+I0924 23:16:43.502653   52201 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x24a2f6598c67d864
+I0924 23:18:43.293643   52355 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2802ea664ccb7a0b
+I0924 23:20:43.252603      31 browser.go:265] token refreshed, new expiry=2026-09-25 00:20:42.252583089 +0000 UTC m=+27959.345182610
+W0924 23:20:43.253202      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0924 23:22:43.474495   52605 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7b0485b272ce6fe8
+I0924 23:24:43.440826   52767 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x78decbe07d925922
+I0924 23:28:43.497404   52891 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6bbd42c28fe50212
+I0924 23:30:43.305515   53154 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x571a0d641df70257
+I0924 23:34:44.207042   53410 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1a99d82938f58fa2
+I0924 23:36:43.378735   53522 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x165783cd8cbc887b
+I0924 23:40:44.430415   53744 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8e395db60f7e129e
+I0924 23:42:43.378816   53886 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa625ab2d4e264875
+I0924 23:46:43.528613   54140 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4b1c5a735b23f23b
+I0924 23:48:43.810754   54290 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x746173a02781eb90
+I0924 23:52:44.049024   54494 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xcaf9e9558b4c78cf
+I0924 23:54:43.345775   54653 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x12f6d07c0bfcb95f
+I0924 23:58:43.455787   54877 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3cd6de34116b1956
+I0925 00:00:44.055793   55043 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x82871ad3d5ff2721
+I0925 00:04:43.603127   55286 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xacfe7f28e9f6d939
+I0925 00:06:44.829237   55377 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xce30c6d4908d107d
+I0925 00:10:43.519110   55669 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9608d7597bb39534
+I0925 00:12:43.461914   55777 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe3937f0140d30ca9
+I0925 00:16:49.606404   56016 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x309c43adbe85b4b4
+I0925 00:17:46.688625   56080 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa0274de5bdd74ffa
+I0925 00:20:43.239398      31 browser.go:265] token refreshed, new expiry=2026-09-25 01:20:42.239377181 +0000 UTC m=+31559.331976712
+W0925 00:20:43.240081      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 00:22:43.427882   56469 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2bde989532d0259
+I0925 00:23:43.363146   56503 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe73d1adc313f4fd7
+I0925 00:28:43.638628   56799 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x785be5aa8ddf426
+I0925 00:28:43.912105   56813 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfcc087ffb30dadc2
+I0925 00:34:43.463505   57185 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf1955e02ee4d2037
+I0925 00:34:44.762844   57210 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5993a76b188cf3fd
+I0925 00:40:43.578667   57607 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5be207f62c991c44
+I0925 00:40:43.585758   57609 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x57eee44c1330f800
+I0925 00:46:43.470138   57973 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfe3ba96d64e057b5
+I0925 00:46:43.499158   57976 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1d0692e7e08c4795
+I0925 00:52:43.334974   58350 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5598ea612fac61d
+I0925 00:52:43.449635   58342 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xee05fb98ebd34678
+I0925 00:58:44.344908   58622 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x98b2b47234684390
+I0925 00:58:47.182087   58724 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x680e7c06ee90bff6
+I0925 01:04:43.742409   59128 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfa9c42d1551cb7e3
+I0925 01:04:44.428502   59107 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc0ae4166057a92b2
+I0925 01:10:43.986285   59478 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe573b4cae53e740c
+I0925 01:10:45.238123   59497 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7fda24bdadc94563
+I0925 01:16:43.507180   59863 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x44d6ef8473ec1deb
+I0925 01:16:43.546736   59864 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x75b2695579070adc
+I0925 01:20:43.251930      31 browser.go:265] token refreshed, new expiry=2026-09-25 02:20:42.251907134 +0000 UTC m=+35159.344506655
+W0925 01:20:43.252603      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 01:22:43.393806   60284 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6b7893e814ce39b1
+I0925 01:22:43.686649   60295 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x103a5bfe63cbd5c
+I0925 01:28:43.344071   60663 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb7ee7ededd132b67
+I0925 01:28:43.450049   60659 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x988f966dbe3d1d8
+I0925 01:33:44.315106   60959 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3b3e29e019c66c34
+I0925 01:33:44.372302   60980 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4c92122be2080624
+I0925 01:39:43.708664   61340 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x44d4068ce62e7c4f
+I0925 01:39:43.795183   61349 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x18cf4810c9e60687
+I0925 01:45:43.545200   61749 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x346c2c25734322a2
+I0925 01:45:43.749281   61723 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x443c1cb46b9b905
+I0925 01:51:43.308598   62102 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6888eec0d5d14148
+I0925 01:51:43.526662   61813 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x360c15aaf4f47673
+I0925 01:57:43.403802   62495 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4365e6c9defcbfe4
+I0925 01:57:43.513970   62494 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa20f38803f355020
+I0925 02:02:44.260315   62821 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xab37fd47949d1d85
+I0925 02:03:43.424716   62872 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd6c7521c1e374d4c
+I0925 02:08:43.465039   63191 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5b986ce34e70db02
+I0925 02:09:43.505513   63260 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8d197b15f3cd5717
+I0925 02:14:46.096339   63571 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa90e535372f6fd81
+I0925 02:14:47.982295   63587 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xcd543ea7f6b9f0f5
+I0925 02:20:43.240663      31 browser.go:265] token refreshed, new expiry=2026-09-25 03:20:42.240632438 +0000 UTC m=+38759.333231959
+W0925 02:20:43.241809      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 02:20:43.395074   63959 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x86d5f0bf3163f4ac
+I0925 02:20:43.594835   63927 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6163e54dc5c6fee8
+I0925 02:25:43.621229   64301 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x356ffab3fe0494d
+I0925 02:26:45.820416   64364 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb783c6bfb6135425
+I0925 02:31:43.600911   64683 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x30a0b1a39de16938
+I0925 02:32:43.502875   64712 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x44aa55e964acad65
+I0925 02:36:44.261596   65028 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x79c481ff32a72fb4
+I0925 02:38:43.529553   65119 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa2ecf8de102f13fb
+I0925 02:42:43.624311   65418 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc5dc2c961aa82ceb
+I0925 02:44:43.723540   65516 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x90ebf735e7f14cbe
+I0925 02:48:44.031571   65771 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x62effce15fdbb055
+I0925 02:50:43.470856   65908 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf86ef05fc814e8ef
+I0925 02:54:43.779910   66167 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x16efcf59faa7ad07
+I0925 02:56:43.465249   66257 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9ec96bbfe4fb79b8
+I0925 03:00:44.996021   66528 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd2c879c7d1d6d6d1
+I0925 03:02:43.454075   66641 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1a05923330b5a009
+I0925 03:06:43.324039   66916 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xef163eea88e500e6
+I0925 03:08:43.658594   67025 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc5f98af12b92d28a
+I0925 03:12:43.831038   67298 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x20b25af4440216d8
+I0925 03:14:43.435320   67399 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x234a25c4e9a656b8
+I0925 03:18:43.366072   67682 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd321f947ca0ce29f
+I0925 03:20:43.233715      31 browser.go:265] token refreshed, new expiry=2026-09-25 04:20:42.233688214 +0000 UTC m=+42359.326287725
+W0925 03:20:43.234378      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 03:20:43.499661   67797 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc7abaf4dbd1fd1ff
+I0925 03:24:44.092706   68089 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe9f9612553c771dd
+I0925 03:26:43.466985   68208 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x240b881464499a6d
+I0925 03:30:44.019897   68468 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4fdeba365fcdf21a
+I0925 03:32:43.618311   68613 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xde35984f68e70fa1
+I0925 03:36:43.606947   68853 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8e23b5ee17f3f9a8
+I0925 03:38:43.481413   68965 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x316dcc3656801232
+I0925 03:42:43.354171   69238 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xed687d575012d03c
+I0925 03:44:47.037358   69357 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4a32eed87254921e
+I0925 03:48:43.334852   69634 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x39f56f50e1b7b953
+I0925 03:50:43.539854   69706 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd57ba41f7ef7f76e
+I0925 03:54:43.329566   69976 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x38d08668b76355d0
+I0925 03:56:43.458223   70108 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbe5bf2f2be93c164
+I0925 04:00:43.685368   70388 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x232ce5058eae9072
+I0925 04:02:43.452756   70479 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf54c2727284fbc1c
+I0925 04:06:43.421682   70735 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd4d23ea795ef1030
+I0925 04:08:44.461392   70845 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8254eebcd42798fd
+I0925 04:12:45.179858   71138 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd6c6e4c43c869486
+I0925 04:14:43.459074   71128 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x503ea520272c1d05
+I0925 04:18:43.355058   71486 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1a14cf224a166d5c
+I0925 04:20:43.257802      31 browser.go:265] token refreshed, new expiry=2026-09-25 05:20:42.257779194 +0000 UTC m=+45959.350378705
+W0925 04:20:43.258423      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 04:20:43.867145   71621 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xba68b5ba7d99501a
+I0925 04:24:43.306546   71924 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x73596a3e5a822861
+I0925 04:26:43.519602   72043 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe4e5872b9e34f7e6
+I0925 04:30:43.559932   72281 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xac4c6a6dddf93bfa
+I0925 04:32:43.507050   72401 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6ebe7bde7f53bded
+I0925 04:36:43.658645   72662 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7bc210f8e717afcb
+I0925 04:38:43.582197   72805 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4d9327dcfa360480
+I0925 04:42:43.402038   73060 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf27c6c1e285ecddb
+I0925 04:44:43.468695   73165 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa3d508bbc2af6549
+I0925 04:48:43.364611   73392 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6edfc2bcdf377855
+I0925 04:50:43.476764   73565 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8db38c9f94f4b247
+I0925 04:54:43.703702   73833 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9c4c1b03e9193e20
+I0925 04:56:43.504754   73926 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x38633de787d4711f
+I0925 05:00:43.313331   74196 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x88c0e596fc3006ad
+I0925 05:02:43.452697   74340 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1c2be3bb14634e65
+I0925 05:06:43.324874   74599 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xaa01368cefe97e83
+I0925 05:08:43.442839   74716 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3628d2f4fb18b939
+I0925 05:11:43.440077   74864 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x87e0fb064fd23644
+I0925 05:14:43.532531   75077 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa6635951ff2932af
+I0925 05:17:43.661531   75282 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa02cef4ee81415d7
+I0925 05:20:43.252691      31 browser.go:265] token refreshed, new expiry=2026-09-25 06:20:42.252668059 +0000 UTC m=+49559.345267580
+W0925 05:20:43.253232      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 05:20:43.539731   75436 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x64778f9fbfe6f961
+I0925 05:23:43.580927   75690 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf1869d7df9242249
+I0925 05:26:43.440319   75757 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x397833178d63f460
+I0925 05:29:43.300620   76099 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6bdef4b662275859
+I0925 05:32:44.825812   76246 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9fc8b0abaebf60b8
+I0925 05:34:43.826770   76368 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf3697815d36fdfa1
+I0925 05:38:43.457718   76603 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7ca1a456eafa7cf3
+I0925 05:40:43.339699   76774 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8df3088285282a85
+I0925 05:44:43.450844   77017 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8c02618ec7666b8c
+I0925 05:46:44.340081   77157 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2e27699762fdbe2a
+I0925 05:50:43.445370   77360 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd163b9a96ec988be
+I0925 05:52:43.373875   77513 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xcc82296492676e23
+I0925 05:56:43.449371   77764 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe08fe0cc5aac5f2
+I0925 05:58:43.411175   77885 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xca713cf02cadc7a3
+I0925 06:02:43.446859   78148 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4f66f97520dce74e
+I0925 06:04:43.540987   78260 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa17e32fd448f3963
+I0925 06:08:43.451836   78536 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xdfc3b3c454db7029
+I0925 06:10:43.320480   78641 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x854e955bb7cb5721
+I0925 06:14:43.566990   78931 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x92e2ce2f824673e8
+I0925 06:16:43.322621   79048 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f9fc4a51fc89195
+I0925 06:20:43.238000   79286 browser.go:265] token refreshed, new expiry=2026-09-25 07:20:42.23797312 +0000 UTC m=+53159.330572641
+W0925 06:20:43.241622   79286 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 06:20:43.529534   79286 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa9e4c25111dd19d6
+I0925 06:22:43.956193   79452 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc3aa73f52e7c9f8
+I0925 06:26:43.481911   79702 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6aab820ef10a43c7
+I0925 06:28:43.344923   79802 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfd21229a50c65908
+I0925 06:32:43.426684   80102 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2e99766ea3cdbacc
+I0925 06:34:43.309873   80243 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x810c11a4379d666a
+I0925 06:38:43.527946   80459 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1c7dfbf98c7dd503
+I0925 06:39:43.425690   80540 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5c4e8be626a1eb5c
+I0925 06:44:43.465687   80842 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2204a85ead13e08b
+I0925 06:45:43.279724   80906 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2850bc68398bd4e
+I0925 06:50:43.521900   81250 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xae9879ac69773aa0
+I0925 06:51:43.382101   81305 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf81ec390f509d75a
+I0925 06:56:43.435733   81607 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x974bc389dff3f497
+I0925 06:57:43.292130   81674 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8d4b3e7405c4aba1
+I0925 07:02:43.439546   81904 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x95aedb18aabf2af8
+I0925 07:03:43.308254   82069 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xffaa558ada597be4
+I0925 07:08:43.487213   82382 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4b66d7b2e56c6860
+I0925 07:09:43.441735   82446 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x83bee815f2413ba
+I0925 07:14:43.660012   82743 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x31e20562ec16fa1
+I0925 07:15:43.350305   82820 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2ce46f3498b112a5
+I0925 07:20:43.248667      31 browser.go:265] token refreshed, new expiry=2026-09-25 08:20:42.248637898 +0000 UTC m=+56759.341237429
+W0925 07:20:43.249603      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 07:20:43.541291   83114 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5c4397600fbc2e9b
+I0925 07:21:43.294753   83267 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7c715297f3e486d7
+I0925 07:26:43.418685   83486 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9101cc062b32c57
+I0925 07:27:43.312836   83639 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb09200bc147b8039
+I0925 07:32:43.414827   83938 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3da0df1f6712a564
+I0925 07:33:43.283329   83948 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1a4d90d7a788954f
+I0925 07:38:43.433948   84309 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x65e4a3e27ef02b64
+I0925 07:39:43.283612   84377 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5cf1afaec9501c43
+I0925 07:44:43.415082   84640 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb0c47512907949c6
+I0925 07:45:43.308276   84705 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xbf964a27915ec037
+I0925 07:50:43.456224   85033 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd4d5805192f25191
+I0925 07:51:43.290262   85114 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2ac4e9b80787abd1
+I0925 07:53:25.194457     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 07:53:25.197748     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 07:53:25.197773     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 07:53:25.197787     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 07:53:30.059790     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 07:53:30.059875     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 07:53:30.059882     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 07:53:30.059889     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 07:56:43.388135   85352 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc2819f22419a8ce2
+I0925 07:56:43.522188   85452 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x42fd52545ea305e0
+I0925 08:02:08.115640     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.117369     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.117411     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.117418     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.124925     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.125339     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.125351     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.125358     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.125955     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.126026     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.126033     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.126039     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.128177     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.128244     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.128250     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.128256     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.129607     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.129669     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.129674     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.129680     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.130632     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.130697     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.130704     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.130710     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:08.130993     119 server.go:3090] [RemoteControl] Subscription callback triggered.
+I0925 08:02:08.131046     119 server.go:3093] [RemoteControl] RemoteControlEnabled value: false
+I0925 08:02:08.131052     119 server.go:3769] [RemoteControl] Session toggle is off, staying disconnected
+I0925 08:02:08.131058     119 server.go:3480] [RemoteControl] Resolved proxyServerURL: ""
+I0925 08:02:43.420762   85877 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5150f77d4bd84f2b
+I0925 08:02:43.439458   85890 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x531c0dfaaf240134
+I0925 08:08:43.397841   86224 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f581a7e792020ef
+I0925 08:08:43.438866   86239 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xed6eb0305d6f001e
+I0925 08:13:43.625912   86598 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3234d25fa4abec5e
+I0925 08:13:43.865932   86571 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x95e516e4aff3f61c
+I0925 08:19:43.287585   86961 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7afd7554ebc4f7ab
+I0925 08:19:43.442103   86962 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xebcc085cb00601d0
+I0925 08:20:43.237542      31 browser.go:265] token refreshed, new expiry=2026-09-25 09:20:42.237438644 +0000 UTC m=+60359.330038165
+W0925 08:20:43.241131      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 08:24:43.934199   87309 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7414bb0b0654bf8a
+I0925 08:24:44.073215   87310 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x21de6be131e1cddc
+I0925 08:30:43.343737   87703 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xeb5c6c681b3d738f
+I0925 08:30:43.457222   87714 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8a25eadd1367dcbd
+I0925 08:36:43.354472   88095 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x660112610b4600a9
+I0925 08:36:43.505783   88087 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1cdadd6433c55d04
+I0925 08:42:43.294770   88404 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9555691097e476f6
+I0925 08:42:43.470217   88468 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xabde38c7ea523a17
+I0925 08:48:43.362790   88854 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa8767b4a9d07ef0e
+I0925 08:48:43.453001   88744 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x23fe1b50b40537f2
+I0925 08:54:43.449283   89225 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb212d158fef047b8
+I0925 08:54:45.892499   89110 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3a3c421d1665ed23
+I0925 09:00:43.485359   89591 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x64304ff4bfa9dbbe
+I0925 09:00:43.625445   89592 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe7a3c2075a7395fc
+I0925 09:06:43.385053   89989 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc2718d3bf6ce140f
+I0925 09:06:43.503526   89951 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x171b08bd19fe51ae
+I0925 09:11:43.761424   90295 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6c3e9667689b264
+I0925 09:11:43.950550   90308 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xaf27f2f4a7093c13
+I0925 09:17:43.407895   90685 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4762adc6474c68c8
+I0925 09:17:43.455322   90666 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x86284db0a55253d9
+I0925 09:20:43.231009      31 browser.go:265] token refreshed, new expiry=2026-09-25 10:20:42.230984999 +0000 UTC m=+63959.323584530
+W0925 09:20:43.232672      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 09:23:43.279743   91111 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x567db0bd684e8323
+I0925 09:23:43.434519   91078 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfede4b46e1f0e16a
+I0925 09:29:43.311795   91481 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd8398b339156d74f
+I0925 09:29:43.398081   91476 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6f3d6312e4852b93
+I0925 09:35:43.281557   91855 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x97424f10872132c0
+I0925 09:35:43.563356   91823 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x752a1fbd1fd819aa
+I0925 09:41:43.441618   92222 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb648e1d07379d871
+I0925 09:41:43.450914   92193 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x97c59bbfb2787f85
+I0925 09:47:43.570472   92611 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x808164863c22d5e3
+I0925 09:47:43.585716   92320 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb2465c9fcd924951
+I0925 09:53:43.295510   92781 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x215bad715c979068
+I0925 09:53:43.432982   92977 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x30acdb5fc724c8dd
+I0925 09:59:43.356167   93196 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8ded8ae7e8f7316a
+I0925 09:59:43.413176   93367 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4c9279599f08f8ce
+I0925 10:05:43.383414   93717 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xadc91905c81b5f55
+I0925 10:05:43.437895   93739 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe5552319dca9b5f2
+I0925 10:11:43.310191   94144 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5f0f68eb55bb67b8
+I0925 10:11:43.568457   94121 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd1b6125f2bc9beaa
+I0925 10:17:43.348184   94517 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd2032ba026f1a887
+I0925 10:17:43.473996   94491 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7667ca416defef16
+I0925 10:20:43.246858      31 browser.go:265] token refreshed, new expiry=2026-09-25 11:20:42.246837181 +0000 UTC m=+67559.339436712
+W0925 10:20:43.247456      31 composite_token_storage.go:237] Failed to save token to keyring, falling back to file: The name org.freedesktop.secrets was not provided by any .service files
+I0925 10:23:43.457245   94920 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x526d51ae84cb5a7c
+I0925 10:23:43.620362   94931 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf0d6594200be6d4b
+I0925 10:29:43.328832   95314 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd9a575cd6e49966c
+I0925 10:29:43.471535   95295 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8be97d315a5998d5
+I0925 10:35:43.451352   95649 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe761ccd39c86a373
+I0925 10:35:43.467785   95703 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x627d4675a429a0fa
+I0925 10:41:43.395591   96075 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xbc7eace64488328b
+I0925 10:41:43.473120   96070 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x44f883f73dc3e93c
+I0925 10:47:43.401316   96451 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb775be2590fe8cc6
+I0925 10:47:43.797648   96427 http_helpers.go:305] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xcd0d932e6f86de80

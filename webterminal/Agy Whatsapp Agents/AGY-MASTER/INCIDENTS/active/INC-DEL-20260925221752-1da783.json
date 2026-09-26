@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925221752-1da783",
+  "timestamp": "2026-09-25T22:17:52.261195+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "git restore --staged ."
+  },
+  "decision": "DENIED",
+  "reason": "Destructive 'git checkout --' / 'git restore' is prohibited (Rule 12)",
+  "rule_id": "RULE_12_GIT_CHECKOUT_REVERT",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

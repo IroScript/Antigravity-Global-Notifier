@@ -1,0 +1,18 @@
+{
+  "incident_id": "INC-RO-20260926075414-9efec1",
+  "timestamp": "2026-09-26T07:54:14.647325+00:00",
+  "severity": "CRITICAL",
+  "detector": "RCLONE_READONLY_INTERCEPTOR",
+  "tool": "rclone",
+  "arguments": [
+    "copy",
+    "/tmp/live_sync_probe",
+    "gdrive:Azure_VM_BackUP/live_sync_test",
+    "-v"
+  ],
+  "calling_pid": 1098222,
+  "parent_pid": 1098219,
+  "decision": "DENIED",
+  "reason": "Uploading/writing to remote 'gdrive:Azure_VM_BackUP/live_sync_test' is prohibited in READ-ONLY mode.",
+  "enforcement": "OPTION_1_SERVER_READONLY_LOCK"
+}

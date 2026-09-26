@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925202327-3f1eee",
+  "timestamp": "2026-09-25T20:23:27.869987+00:00Z",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "/bin/unlink /home/azureuser/tmp/adv_test_4x1kr2ek/file1.txt"
+  },
+  "decision": "DENIED",
+  "reason": "Direct deletion command 'unlink' is strictly prohibited. Use safe_archive instead (Rule 1, 2)",
+  "rule_id": "RULE_1_2_DIRECT_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

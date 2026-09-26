@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925204356-9aec7f",
+  "timestamp": "2026-09-25T20:43:56.393653+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "ls /home/azureuser/tmp/adv_test_dpze7b41 | xargs /bin/rm -rf"
+  },
+  "decision": "DENIED",
+  "reason": "Indirect deletion via 'xargs rm' is prohibited (Rule 4)",
+  "rule_id": "RULE_4_XARGS_RM",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

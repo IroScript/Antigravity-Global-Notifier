@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260926021218-e6e8ce",
+  "timestamp": "2026-09-26T02:12:18.502109+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "mv -f /home/azureuser/tmp/adv_test_vdawoatb/file1.txt /home/azureuser/.gemini/config/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive mv overwrite targeting protected path '/home/azureuser/.gemini/config/hooks.json' is prohibited (Rule 6, 7, 14)",
+  "rule_id": "RULE_6_7_14_MV_OVERWRITE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

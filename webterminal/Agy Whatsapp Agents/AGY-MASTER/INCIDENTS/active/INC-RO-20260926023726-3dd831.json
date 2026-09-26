@@ -1,0 +1,16 @@
+{
+  "incident_id": "INC-RO-20260926023726-3dd831",
+  "timestamp": "2026-09-26T02:37:26.903300+00:00",
+  "severity": "CRITICAL",
+  "detector": "RCLONE_READONLY_INTERCEPTOR",
+  "tool": "rclone",
+  "arguments": [
+    "rmdir",
+    "personaldrive:Youtube_Automation/dummy"
+  ],
+  "calling_pid": 1019314,
+  "parent_pid": 1019313,
+  "decision": "DENIED",
+  "reason": "rclone 'rmdir' is prohibited: remote storage is locked in READ-ONLY mode.",
+  "enforcement": "OPTION_1_SERVER_READONLY_LOCK"
+}

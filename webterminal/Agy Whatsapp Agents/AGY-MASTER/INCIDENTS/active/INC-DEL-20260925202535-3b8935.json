@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925202535-3b8935",
+  "timestamp": "2026-09-25T20:25:35.729791+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"import os; os.unlink('/home/azureuser/tmp/adv_test_9bk3w3lt/file1.txt')\""
+  },
+  "decision": "DENIED",
+  "reason": "Python os file/directory deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_OS_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260926020409-3a69d3",
+  "timestamp": "2026-09-26T02:04:09.070585+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "fallocate -l 0 /home/azureuser/tmp/adv_test_u2y4xv0f/file1.txt"
+  },
+  "decision": "DENIED",
+  "reason": "File truncation command 'fallocate' is prohibited (Rule 9, 23)",
+  "rule_id": "RULE_9_23_TRUNCATE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

@@ -1,0 +1,11 @@
+{
+ "db_name": "_36d5001717f66842",
+ "db_password": "gn7xvX7SUodrGWCZ",
+ "db_type": "mariadb",
+ "db_user": "_36d5001717f66842",
+ "installed_apps": [
+  "frappe",
+  "erpnext",
+  "alco_ecommerce"
+ ]
+}

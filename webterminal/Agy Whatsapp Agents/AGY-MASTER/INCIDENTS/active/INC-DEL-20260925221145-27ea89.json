@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925221145-27ea89",
+  "timestamp": "2026-09-25T22:11:45.755551+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rsync -av --delete /src/ /dst/"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive 'rsync --delete' is prohibited (Rule 13)",
+  "rule_id": "RULE_13_RSYNC_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

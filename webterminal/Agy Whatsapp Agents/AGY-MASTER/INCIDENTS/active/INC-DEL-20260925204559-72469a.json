@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925204559-72469a",
+  "timestamp": "2026-09-25T20:45:59.370457+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"from pathlib import Path; Path('/home/azureuser/tmp/adv_test_s7y9yr1s/subdir').rmdir()\""
+  },
+  "decision": "DENIED",
+  "reason": "Python Pathlib deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_PATHLIB_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

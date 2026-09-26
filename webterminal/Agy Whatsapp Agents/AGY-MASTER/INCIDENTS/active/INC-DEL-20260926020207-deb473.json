@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260926020207-deb473",
+  "timestamp": "2026-09-26T02:02:07.526440+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "truncate -r /home/azureuser/tmp/adv_test_d6amx980/file1.txt /home/azureuser/tmp/adv_test_d6amx980/target_file.txt"
+  },
+  "decision": "DENIED",
+  "reason": "File truncation command 'truncate' is prohibited (Rule 9, 23)",
+  "rule_id": "RULE_9_23_TRUNCATE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260926020408-d8602a",
+  "timestamp": "2026-09-26T02:04:08.691433+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "git clean -fdx"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive 'git clean' operation is prohibited (Rule 10)",
+  "rule_id": "RULE_10_GIT_CLEAN",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

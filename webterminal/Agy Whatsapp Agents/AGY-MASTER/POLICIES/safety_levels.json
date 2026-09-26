@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-09-25T07:58:00Z",
+  "policy_mode": "autonomous_approval_less",
+  "default_decision": "deny",
+  "fail_closed_rules": {
+    "unknown_agent": "deny",
+    "unknown_tool": "deny",
+    "unknown_project": "deny",
+    "invalid_path": "deny",
+    "path_traversal": "deny",
+    "missing_policy": "deny",
+    "timeout": "deny",
+    "gateway_exception": "deny"
+  },
+  "levels": {
+    "LEVEL_0": {
+      "name": "READ_ONLY",
+      "decision": "allow",
+      "description": "Information inspection and research across whitelisted read paths",
+      "allowed_tools": [
+        "view_file",
+        "search_web",
+        "read_url_content"
+      ],
+      "prohibited_tools": [
+        "write_to_file",
+        "replace_file_content"
+      ]
+    },
+    "LEVEL_1": {
+      "name": "LOW_IMPACT_REVERSIBLE",
+      "decision": "allow",
+      "description": "Safe diagnostics, cache clears, and project-local checks",
+      "allowed_tools": [
+        "run_command"
+      ],
+      "command_whitelist_patterns": [
+        "^cargo check",
+        "^cargo test",
+        "^git status",
+        "^git diff",
+        "^git log",
+        "^pwd",
+        "^ls",
+        "^pytest",
+        "^npm test"
+      ]
+    },
+    "LEVEL_2A": {
+      "name": "ISOLATED_LOW_RISK_CODE_FIX",
+      "decision": "allow",
+      "description": "Single-file non-config bug fix inside project boundary with passing tests",
+      "allowed_tools": [
+        "write_to_file",
+        "replace_file_content"
+      ],
+      "conditions": [
+        "single_file_only",
+        "inside_project_boundary",
+        "non_config_file",
+        "local_tests_pass"
+      ]
+    },
+    "LEVEL_2B": {
+      "name": "CONFIG_SCHEMA_DEPENDENCY_MULTI_FILE",
+      "decision": "deny",
+      "description": "Multi-file edits, package manifests, database migrations, environment variables",
+      "default": "deny",
+      "protected_patterns": [
+        ".*\\.env.*",
+        ".*Cargo\\.toml$",
+        ".*package\\.json$",
+        ".*requirements\\.txt$",
+        ".*migrations/.*"
+      ]
+    },
+    "LEVEL_3": {
+      "name": "DESTRUCTIVE_IRREVERSIBLE",
+      "decision": "deny",
+      "description": "Permanent hard deny for destructive operations in autonomous mode",
+      "prohibited_patterns": [
+        "rm\\s+-rf",
+        "DROP\\s+TABLE",
+        "DROP\\s+DATABASE",
+        "TRUNCATE",
+        "git\\s+push",
+        "git\\s+reset\\s+--hard",
+        "sudo",
+        "su\\s+",
+        "docker",
+        "podman",
+        "mkfs",
+        "dd\\s+if="
+      ]
+    }
+  },
+  "protected_system_paths": [
+    "/home/azureuser/.gemini/config/hooks.json",
+    "/home/azureuser/AGY-MASTER/POLICIES/policy_gateway.py",
+    "/home/azureuser/AGY-MASTER/POLICIES/safety_levels.json",
+    "/etc/sudoers",
+    "/etc/sudoers.d",
+    "/etc/passwd",
+    "/etc/shadow"
+  ]
+}

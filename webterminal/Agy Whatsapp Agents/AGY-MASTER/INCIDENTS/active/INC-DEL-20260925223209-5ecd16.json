@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925223209-5ecd16",
+  "timestamp": "2026-09-25T22:32:09.169979+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chattr -R -i /home/azureuser/AGY-MASTER/POLICIES"
+  },
+  "decision": "DENIED",
+  "reason": "Stripping Linux immutable attribute (+i -> -i) is strictly prohibited (Rule 16, 38)",
+  "rule_id": "RULE_16_CHATTR_STRIP",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

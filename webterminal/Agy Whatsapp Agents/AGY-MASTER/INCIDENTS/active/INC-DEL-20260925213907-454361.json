@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925213907-454361",
+  "timestamp": "2026-09-25T21:39:07.848024+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "/bin/rmdir /home/azureuser/tmp/adv_test_b03pl0zn/subdir"
+  },
+  "decision": "DENIED",
+  "reason": "Direct deletion command 'rmdir' is strictly prohibited. Use safe_archive instead (Rule 1, 2)",
+  "rule_id": "RULE_1_2_DIRECT_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

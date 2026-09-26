@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925222359-111545",
+  "timestamp": "2026-09-25T22:23:59.702829+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "find /home/azureuser/GLOBAL-ARCHIVE -delete"
+  },
+  "decision": "DENIED",
+  "reason": "Indirect deletion via 'find -delete / -exec rm' is prohibited (Rule 4, 5)",
+  "rule_id": "RULE_4_5_FIND_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

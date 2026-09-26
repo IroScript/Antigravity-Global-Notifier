@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925215325-3e5c35",
+  "timestamp": "2026-09-25T21:53:25.265853+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "`echo rm` -rf /home/azureuser/tmp/adv_test_2cr6ljyy/file1.txt"
+  },
+  "decision": "DENIED",
+  "reason": "Command substitution containing deletion command is prohibited (Rule 1, 2)",
+  "rule_id": "RULE_1_2_COMMAND_SUBST",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

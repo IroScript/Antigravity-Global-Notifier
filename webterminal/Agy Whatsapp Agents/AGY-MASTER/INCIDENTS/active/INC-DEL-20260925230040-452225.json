@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925230040-452225",
+  "timestamp": "2026-09-25T23:00:40.552191+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chmod 000 /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod permission removal is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

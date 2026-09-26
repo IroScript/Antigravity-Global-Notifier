@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925202518-cabaa2",
+  "timestamp": "2026-09-25T20:25:18.746511+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "echo '' > /home/azureuser/GLOBAL-ARCHIVE/archive_logs/archive_manifest.jsonl"
+  },
+  "decision": "DENIED",
+  "reason": "Shell redirection truncation into protected path '/home/azureuser/GLOBAL-ARCHIVE/archive_logs/archive_manifest.jsonl' is prohibited (Rule 8, 35, 38)",
+  "rule_id": "RULE_8_38_TRUNCATION",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

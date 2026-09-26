@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925224825-067802",
+  "timestamp": "2026-09-25T22:48:25.840676+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm --no-preserve-root -rf /home/azureuser/tmp/adv_test_i6ucd0sg"
+  },
+  "decision": "DENIED",
+  "reason": "Direct deletion command 'rm' is strictly prohibited. Use safe_archive instead (Rule 1, 2)",
+  "rule_id": "RULE_1_2_DIRECT_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

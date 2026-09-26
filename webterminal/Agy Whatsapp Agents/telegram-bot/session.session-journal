@@ -1,0 +1,53 @@
+﻿Table_Name,Row_Count,Column_Count,Status,CSV_Path
+audit_logs,2,10,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/audit_logs.csv
+categories,1,5,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/categories.csv
+channel2_shot_audits,38,23,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/channel2_shot_audits.csv
+channel_prompts,38,13,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/channel_prompts.csv
+channels,2,8,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/channels.csv
+collection_ideas,0,3,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/collection_ideas.csv
+collections,0,6,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/collections.csv
+content_history,69,11,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/content_history.csv
+duplicate_checks,0,18,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/duplicate_checks.csv
+elements,100,6,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/elements.csv
+execution_events,0,6,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/execution_events.csv
+external_operations,0,13,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/external_operations.csv
+generated_videos,325,21,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/generated_videos.csv
+generation_jobs,2,18,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/generation_jobs.csv
+idea_assets,6,15,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_assets.csv
+idea_elements,507,3,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_elements.csv
+idea_embeddings,0,8,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_embeddings.csv
+idea_features,0,26,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_features.csv
+idea_tags,0,2,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_tags.csv
+idea_versions,0,9,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/idea_versions.csv
+ideas,507,34,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/ideas.csv
+jobs,0,11,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/jobs.csv
+models,0,7,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/models.csv
+pipeline_checkpoints,0,16,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_checkpoints.csv
+pipeline_failure_logs,0,9,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_failure_logs.csv
+pipeline_row_state,17,20,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_row_state.csv
+pipeline_runs,8,8,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_runs.csv
+pipeline_stage_audits,160,13,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/pipeline_stage_audits.csv
+prompt_versions,0,8,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/prompt_versions.csv
+prompting_style_master,13,15,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/prompting_style_master.csv
+prompts,6320,22,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/prompts.csv
+publishing,6,22,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/publishing.csv
+req_009_tx_test,0,2,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/req_009_tx_test.csv
+schedules,0,13,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/schedules.csv
+seo_competitors,10587,14,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/seo_competitors.csv
+seo_keyword_metrics,29044,10,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/seo_keyword_metrics.csv
+seo_runs,508,20,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/seo_runs.csv
+settings,0,5,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/settings.csv
+step_attempts,0,11,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/step_attempts.csv
+step_runs,0,16,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/step_runs.csv
+tags,0,5,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/tags.csv
+task_attempts,34,9,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/task_attempts.csv
+tasks,13,16,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/tasks.csv
+test_jsonb_payloads,0,4,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/test_jsonb_payloads.csv
+test_req_003_no_uuid,0,2,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/test_req_003_no_uuid.csv
+test_req_003_with_uuid,0,4,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/test_req_003_with_uuid.csv
+workflow_executions,48,19,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/workflow_executions.csv
+workflow_migrations,0,11,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/workflow_migrations.csv
+workflow_steps,0,13,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/workflow_steps.csv
+workflow_versions,0,9,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/workflow_versions.csv
+workflows,0,9,BLANK / EMPTY,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/workflows.csv
+youtube_metadata,501,24,FILLED,/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/csv_tables/youtube_metadata.csv

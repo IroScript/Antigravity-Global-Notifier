@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925235546-e25126",
+  "timestamp": "2026-09-25T23:55:46.120233+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chattr -i /home/azureuser/.gemini/config/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Stripping Linux immutable attribute (+i -> -i) is strictly prohibited (Rule 16, 38)",
+  "rule_id": "RULE_16_CHATTR_STRIP",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

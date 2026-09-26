@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260926025329-35b5ab",
+  "timestamp": "2026-09-26T02:53:29.397428+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nimport ctypes, os\n\nSYS_landlock_create_ruleset = 444\nlibc = ctypes.CDLL(None, use_errno=True)\n\nprint('=== 4. LANDLOCK LSM GLOBAL AUDIT ===')\nabi = libc.syscall(SYS_landlock_create_ruleset, 0, 0, 1)\nprint('Kernel Landlock ABI version:', abi)\n\n# Check if Landlock is currently restricting THIS process\n# If Landlock was active, deleting a file without REMOVE_FILE would fail with EACCES\ntest_file = '/tmp/test_landlock_active_audit.txt'\nwith open(test_file, 'w') as f:\n    f.write('audit')\n\ntry:\n    os.unlink(test_file)\n    print('Current process os.unlink:', 'SUCCEEDED (Landlock is NOT active in this process!)')\nexcept PermissionError as e:\n    print('Current process os.unlink:', f'BLOCKED by Landlock: {e}')\nexcept Exception as e:\n    print('Current process os.unlink:', f'Exception: {e}')\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Python os file/directory deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_OS_DELETE",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

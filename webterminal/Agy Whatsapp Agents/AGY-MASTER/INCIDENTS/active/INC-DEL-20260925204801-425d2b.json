@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20260925204801-425d2b",
+  "timestamp": "2026-09-25T20:48:01.960432+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "pkexec rm file"
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'pkexec' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}

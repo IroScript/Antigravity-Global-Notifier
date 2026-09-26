@@ -1,0 +1,15 @@
+{
+  "incident_id": "INC-DEL-20260925232104-a1ba61",
+  "timestamp": "2026-09-25T23:21:04.419798+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/home/azureuser/AGY-MASTER/POLICIES/delete_guard.py",
+    "Overwrite": true
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting protected system/policy/archive target '/home/azureuser/AGY-MASTER/POLICIES/delete_guard.py' is strictly prohibited (Rule 35, 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING",
+  "safe_alternative": "Move target to /home/azureuser/GLOBAL-ARCHIVE using /home/azureuser/AGY-MASTER/POLICIES/safe_archive.py"
+}
