@@ -1271,12 +1271,17 @@
       background: #36363c;
     }
 
-    /* Info Buttons on Table Row and Grid Item */
-    .row-info-btn {
+    /* Action Buttons (Copy Path & Info) on Table Row and Grid Item */
+    .row-actions-group {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    .row-action-btn {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 4px;
-      color: var(--accent-blue);
       width: 26px;
       height: 26px;
       display: inline-flex;
@@ -1285,35 +1290,103 @@
       cursor: pointer;
       transition: all 0.15s ease;
     }
+    .row-copy-btn {
+      color: #7ee787;
+    }
+    .row-copy-btn:hover {
+      background: rgba(126, 231, 135, 0.18);
+      color: #fff;
+      border-color: #7ee787;
+    }
+    .row-copy-btn.copied {
+      background: #2ea043 !important;
+      color: #fff !important;
+      border-color: #2ea043 !important;
+      transform: scale(1.08);
+    }
+    .row-info-btn {
+      color: var(--accent-blue);
+    }
     .row-info-btn:hover {
       background: var(--accent-fill);
       color: #fff;
       border-color: var(--accent-blue);
     }
-    .grid-info-btn {
+
+    .grid-actions-group {
       position: absolute;
       top: 6px;
       right: 6px;
-      background: rgba(24, 24, 27, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      z-index: 5;
+      opacity: 0.65;
+      transition: opacity 0.15s ease;
+    }
+    .grid-item:hover .grid-actions-group {
+      opacity: 1;
+    }
+    .grid-action-btn {
+      background: rgba(24, 24, 27, 0.88);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 4px;
-      color: var(--accent-blue);
       width: 24px;
       height: 24px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      opacity: 0.7;
-      z-index: 5;
       transition: all 0.15s ease;
     }
-    .grid-item:hover .grid-info-btn {
-      opacity: 1;
+    .grid-copy-btn {
+      color: #7ee787;
+    }
+    .grid-copy-btn:hover {
+      background: rgba(126, 231, 135, 0.25);
+      color: #fff;
+      border-color: #7ee787;
+    }
+    .grid-copy-btn.copied {
+      background: #2ea043 !important;
+      color: #fff !important;
+      border-color: #2ea043 !important;
+      transform: scale(1.08);
+    }
+    .grid-info-btn {
+      color: var(--accent-blue);
     }
     .grid-info-btn:hover {
       background: var(--accent-fill);
       color: #fff;
+    }
+
+    /* Toast Notification */
+    .app-toast {
+      position: fixed;
+      bottom: 42px;
+      right: 24px;
+      background: #1f1f23;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-left: 4px solid #2ea043;
+      color: #f4f4f5;
+      padding: 10px 16px;
+      border-radius: 6px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 99999;
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    }
+    .app-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
     }
 
     /* Windows 11 Context Menu */
@@ -1537,11 +1610,11 @@
         <table class="files-table">
           <thead>
             <tr>
-              <th style="width:38%;">Name</th>
-              <th style="width:24%;">Date modified</th>
-              <th style="width:18%;">Type</th>
+              <th style="width:36%;">Name</th>
+              <th style="width:23%;">Date modified</th>
+              <th style="width:17%;">Type</th>
               <th style="width:12%; text-align:right;">Size</th>
-              <th style="width:8%; text-align:center;">প্রোপার্টি</th>
+              <th style="width:12%; text-align:center;">অ্যাকশন</th>
             </tr>
           </thead>
           <tbody id="filesTableBody">
@@ -1868,6 +1941,10 @@
   <div class="ctx-item" id="ctxOpen" onclick="handleCtxOpen()">
     <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
     <span>Open (খুলুন)</span>
+  </div>
+  <div class="ctx-item" id="ctxCopyPath" onclick="handleCtxCopyPath()">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="#7ee787"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <span>Copy Path (পাথ কপি করুন)</span>
   </div>
   <div class="ctx-item" id="ctxProperties" onclick="handleCtxProperties()">
     <svg viewBox="0 0 24 24" width="16" height="16" fill="#f0883e"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
@@ -2214,9 +2291,14 @@
         <td>${item.type_name || '-'}</td>
         <td style="text-align:right;">${item.size_str || ''}</td>
         <td style="text-align:center;">
-          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-          </button>
+          <div class="row-actions-group">
+            <button class="row-action-btn row-copy-btn" data-path="${escapeAttr(item.path)}" onclick="handleCopyPathBtnClick(this, event)" title="পাথ কপি করুন (Copy Full Path)">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            </button>
+            <button class="row-action-btn row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            </button>
+          </div>
         </td>
       `;
       tableBody.appendChild(tr);
@@ -2230,9 +2312,14 @@
         showContextMenu(e.clientX, e.clientY, item);
       };
       card.innerHTML = `
-        <button class="grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-        </button>
+        <div class="grid-actions-group">
+          <button class="grid-action-btn grid-copy-btn" data-path="${escapeAttr(item.path)}" onclick="handleCopyPathBtnClick(this, event)" title="পাথ কপি করুন (Copy Full Path)">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          </button>
+          <button class="grid-action-btn grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+          </button>
+        </div>
         ${getIcon(item)}
         <div class="item-title" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</div>
       `;
@@ -2260,6 +2347,86 @@
     e.stopPropagation();
     const p = btn.getAttribute('data-path');
     if (p) showProperties(p);
+  }
+
+  function handleCopyPathBtnClick(btn, e) {
+    e.stopPropagation();
+    const p = btn.getAttribute('data-path');
+    if (p) copyPathToClipboard(p, btn);
+  }
+
+  function copyPathToClipboard(path, triggerBtn) {
+    if (!path) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(path).then(() => {
+        onPathCopiedSuccess(path, triggerBtn);
+      }).catch(() => {
+        fallbackCopyPath(path, triggerBtn);
+      });
+    } else {
+      fallbackCopyPath(path, triggerBtn);
+    }
+  }
+
+  function fallbackCopyPath(path, triggerBtn) {
+    try {
+      const temp = document.createElement('textarea');
+      temp.value = path;
+      temp.style.position = 'fixed';
+      temp.style.opacity = '0';
+      document.body.appendChild(temp);
+      temp.focus();
+      temp.select();
+      const success = document.execCommand('copy');
+      document.body.removeChild(temp);
+      if (success) {
+        onPathCopiedSuccess(path, triggerBtn);
+      } else {
+        prompt('কপি করতে ব্যর্থ, ম্যানুয়ালি কপি করুন:', path);
+      }
+    } catch (err) {
+      prompt('কপি করতে ব্যর্থ, ম্যানুয়ালি কপি করুন:', path);
+    }
+  }
+
+  function onPathCopiedSuccess(path, btn) {
+    if (btn) {
+      btn.classList.add('copied');
+      const origHtml = btn.innerHTML;
+      btn.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = origHtml;
+      }, 1500);
+    }
+    showToast(`পাথ কপি হয়েছে: <span style="color:#7ee787; font-family:monospace; margin-left:4px;">${escapeHtml(path)}</span>`);
+  }
+
+  let toastTimer = null;
+  function showToast(htmlMsg) {
+    let toast = document.getElementById('appToast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'appToast';
+      toast.className = 'app-toast';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="#2ea043" style="flex-shrink:0;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      <span>${htmlMsg}</span>
+    `;
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2800);
+  }
+
+  function handleCtxCopyPath() {
+    hideContextMenu();
+    if (ctxTargetItem && ctxTargetItem.path) {
+      copyPathToClipboard(ctxTargetItem.path);
+    }
   }
 
   function openCurrentOrSelectedProperties() {
