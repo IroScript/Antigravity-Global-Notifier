@@ -199,14 +199,18 @@
       <button class="pill" onclick="changeRange('all', this)">সব (All)</button>
     </div>
 
-    <!-- Metric View Toggles -->
+    <!-- Metric View & Scale Toggles -->
     <div class="mode-row">
       <div class="mode-pills">
         <button class="mode-pill active" id="mode-cpu" onclick="setChartMode('cpu')">🔥 CPU ভিউ</button>
         <button class="mode-pill" id="mode-ram" onclick="setChartMode('ram')">💾 RAM ভিউ</button>
-        <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই (CPU+RAM)</button>
+        <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই</button>
       </div>
-      <span class="mode-hint">👆 গ্রাফে টাচ করে টানুন</span>
+      <div class="scale-pills" style="display: flex; gap: 4px; align-items: center;">
+        <span style="font-size: 0.7rem; color: #8b949e;">স্কেল:</span>
+        <button class="mode-pill active" id="scale-400" onclick="setCpuScale('400')">৪০০% (৪-vCPU)</button>
+        <button class="mode-pill" id="scale-100" onclick="setCpuScale('100')">১০০% (সার্বিক)</button>
+      </div>
     </div>
   </div>
 
@@ -221,6 +225,7 @@
       <div class="graph-report-badge">
         <span class="report-badge-dot" id="graph-report-dot"></span>
         <span id="graph-report-status">সর্বশেষ ডাটা পয়েন্ট</span>
+        <button id="btn-unlock-point" onclick="unlockGraphPoint()" style="display:none; margin-left: 8px; font-size: 0.68rem; background: #21262d; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; padding: 2px 7px; cursor: pointer;">✕ লাইভ ভিউতে ফিরুন</button>
       </div>
       <div class="graph-report-time" id="graph-report-time">আপডেট হচ্ছে...</div>
     </div>
@@ -300,6 +305,9 @@ let currentStats = null;
 let currentSort = 'cpu';
 let currentRange = '1h';
 let currentMode = 'cpu'; // 'cpu', 'ram', 'both'
+let currentCpuScale = '400'; // '400' (default for 4 vCPUs) or '100'
+let isPointLocked = false;
+let lockedPointIndex = -1;
 let chartInstance = null;
 let historyData = [];
 let isScrubbing = false;
@@ -319,6 +327,51 @@ function setChartMode(mode) {
   updateChartDatasets();
 }
 
+function setCpuScale(scale) {
+  currentCpuScale = scale;
+  const btn400 = document.getElementById('scale-400');
+  const btn100 = document.getElementById('scale-100');
+  if (btn400 && btn100) {
+    btn400.classList.toggle('active', scale === '400');
+    btn100.classList.toggle('active', scale === '100');
+  }
+  const tagEl = document.getElementById('chart-range-label');
+  if (tagEl && currentMode === 'cpu') {
+    tagEl.innerText = (RANGE_NAMES[currentRange] || currentRange) + (scale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল');
+  }
+  if (chartInstance && historyData && historyData.length > 0) {
+    chartInstance.data.datasets = getDatasetsForCurrentMode();
+    applyMonitorScales();
+    chartInstance.update('none');
+    const pt = (isPointLocked && lockedPointIndex >= 0) ? historyData[lockedPointIndex] : historyData[historyData.length - 1];
+    updateGraphReport(pt, false, isPointLocked);
+  }
+}
+
+function lockGraphPoint(idx) {
+  if (!historyData || idx < 0 || idx >= historyData.length) return;
+  isPointLocked = true;
+  lockedPointIndex = idx;
+  const pt = historyData[idx];
+  updateGraphReport(pt, false, true);
+  if (chartInstance) {
+    chartInstance.update('none');
+  }
+}
+
+function unlockGraphPoint() {
+  isPointLocked = false;
+  lockedPointIndex = -1;
+  const btnUnlock = document.getElementById('btn-unlock-point');
+  if (btnUnlock) btnUnlock.style.display = 'none';
+  if (historyData && historyData.length > 0) {
+    updateGraphReport(historyData[historyData.length - 1], false, false);
+  }
+  if (chartInstance) {
+    chartInstance.update('none');
+  }
+}
+
 const RANGE_NAMES = {
   '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
   '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা',
@@ -326,11 +379,15 @@ const RANGE_NAMES = {
 };
 
 function changeRange(range, btn) {
+  unlockGraphPoint();
   currentRange = range;
   document.querySelectorAll('.pills-scroll .pill').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const lbl = document.getElementById('chart-range-label');
-  if (lbl) lbl.innerText = RANGE_NAMES[range] || range;
+  if (lbl) {
+    const scaleNote = currentMode === 'cpu' ? (currentCpuScale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল') : '';
+    lbl.innerText = (RANGE_NAMES[range] || range) + scaleNote;
+  }
   fetchHistory();
 }
 
@@ -343,9 +400,12 @@ function getBarColor(pct) {
 let scrubTimeout = null;
 
 // Update the Dedicated Graph Point Report Card (Right Below the Graph)
-function updateGraphReport(pt, isTouching) {
+function updateGraphReport(pt, isTouching, isLocked) {
   if (!pt) return;
-  if (isTouching) {
+  if (!isLocked && isPointLocked) {
+    return; // Point is locked by click, don't overwrite with background updates!
+  }
+  if (isTouching && !isPointLocked) {
     isScrubbing = true;
     clearTimeout(scrubTimeout);
     scrubTimeout = setTimeout(() => { isScrubbing = false; }, 5000);
@@ -362,19 +422,39 @@ function updateGraphReport(pt, isTouching) {
   const app2Cpu = document.getElementById('graph-app2-cpu');
   const app2Ram = document.getElementById('graph-app2-ram');
   const footerEl = document.getElementById('graph-report-footer');
+  const btnUnlock = document.getElementById('btn-unlock-point');
 
-  if (isTouching) {
-    if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট';
+  if (isLocked) {
+    if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট (ক্লিক করে লক)';
     if (dotEl) dotEl.style.background = 'var(--yellow)';
+    if (btnUnlock) btnUnlock.style.display = 'inline-block';
+    if (footerEl) footerEl.innerHTML = '🔒 <b>পয়েন্ট লক করা আছে</b> — অন্য পয়েন্টে ক্লিক করুন অথবা লাইভ ভিউতে ফিরুন';
+  } else if (isTouching) {
+    if (statusEl) statusEl.innerText = 'টাচ করা পয়েন্ট';
+    if (dotEl) dotEl.style.background = 'var(--accent)';
+    if (btnUnlock) btnUnlock.style.display = 'none';
     if (footerEl) footerEl.innerText = '👆 স্ক্রাবার সক্রিয় — অন্য পয়েন্টে টানুন বা স্পর্শ করুন';
   } else {
     if (statusEl) statusEl.innerText = 'সর্বশেষ ডাটা পয়েন্ট';
     if (dotEl) dotEl.style.background = 'var(--green)';
-    if (footerEl) footerEl.innerText = '💡 গ্রাফে টাচ করে আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট এখানে দেখা যাবে';
+    if (btnUnlock) btnUnlock.style.display = 'none';
+    if (footerEl) footerEl.innerText = '💡 গ্রাফের যেকোনো পয়েন্টে ক্লিক বা স্পর্শ করলে তারিখ, সময় ও মেট্রিক্স লক হয়ে থাকবে';
   }
 
-  if (timeEl) timeEl.innerText = pt.dt || pt.t;
-  if (cpuEl) cpuEl.innerText = pt.cpu + '%';
+  // Exact Date and Time
+  const timeDisplay = pt.dt ? `📅 ${pt.dt}` : `🕒 ${pt.t}`;
+  if (timeEl) timeEl.innerText = timeDisplay;
+
+  // CPU Display with 400% scale awareness
+  const cpu400 = (pt.cpu_400 !== undefined ? pt.cpu_400 : (pt.cpu * 4.0)).toFixed(1);
+  if (cpuEl) {
+    if (currentCpuScale === '400') {
+      cpuEl.innerHTML = `${cpu400}% <span class="g-metric-sub">/ ৪০০% (${pt.cpu}% সার্বিক)</span>`;
+    } else {
+      cpuEl.innerHTML = `${pt.cpu}% <span class="g-metric-sub">(৪-vCPU মোট: ${cpu400}%)</span>`;
+    }
+  }
+
   if (ramEl) ramEl.innerHTML = `${pt.ram_gb} GB <span class="g-metric-sub">(${pt.ram_pct}%)</span>`;
 
   if (pt.app1) {
@@ -413,8 +493,8 @@ async function fetchHistory() {
     } else {
       renderChart();
     }
-    if (!isScrubbing && historyData && historyData.length > 0) {
-      updateGraphReport(historyData[historyData.length - 1], false);
+    if (!isScrubbing && !isPointLocked && historyData && historyData.length > 0) {
+      updateGraphReport(historyData[historyData.length - 1], false, false);
     }
   } catch (e) {
     console.error(e);
@@ -443,6 +523,26 @@ function getMonitorYAxisConfig() {
         color: '#8b949e',
         font: { size: 9 },
         callback: function(v) { return v + ' GB'; }
+      }
+    };
+  }
+  if (currentMode === 'cpu' && currentCpuScale === '400') {
+    return {
+      min: 0,
+      max: 400,
+      grid: { color: 'rgba(48, 54, 61, 0.4)' },
+      ticks: {
+        color: '#f0883e',
+        font: { size: 9 },
+        stepSize: 100,
+        callback: function(v) {
+          if (v === 400) return '400% (৪ vCPU)';
+          if (v === 300) return '300% (৩য়)';
+          if (v === 200) return '200% (২য়)';
+          if (v === 100) return '100% (১ম)';
+          if (v === 0) return '0%';
+          return v + '%';
+        }
       }
     };
   }
@@ -516,44 +616,59 @@ function applyMonitorScales() {
   chartInstance.options.scales.y.max = cfg.max;
   if (chartInstance.options.scales.y.ticks) {
     chartInstance.options.scales.y.ticks.callback = cfg.ticks.callback;
+    if (cfg.ticks.stepSize) chartInstance.options.scales.y.ticks.stepSize = cfg.ticks.stepSize;
   }
   chartInstance.options.scales.x = getMonitorXAxisConfig();
 }
 
 function getDatasetsForCurrentMode() {
   const pointRadiusFn = function(context) {
+    if (isPointLocked && context.dataIndex === lockedPointIndex) {
+      return 7.5; // High-visibility pulse radius for the clicked point!
+    }
     const len = context.dataset.data.length;
     return context.dataIndex === len - 1 ? 4.5 : 0;
   };
 
+  const pointBgFn = function(context) {
+    if (isPointLocked && context.dataIndex === lockedPointIndex) {
+      return '#f0883e';
+    }
+    return context.dataset.borderColor;
+  };
+
   if (currentMode === 'cpu') {
+    const is400 = (currentCpuScale === '400');
     return [
       {
-        label: 'সার্বিক CPU %',
-        data: historyData.map(p => p.cpu),
+        label: is400 ? 'মোট ৪-vCPU লোড % (সর্বোচ্চ ৪০০%)' : 'সার্বিক CPU % (১০০% স্কেল)',
+        data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
         borderColor: '#f0883e',
         backgroundColor: 'rgba(240, 136, 62, 0.1)',
         borderWidth: 2.2,
         tension: 0.25,
         fill: true,
         pointRadius: pointRadiusFn,
-        pointBackgroundColor: '#f0883e',
+        pointBackgroundColor: pointBgFn,
         pointBorderColor: '#ffffff',
         pointBorderWidth: 1.5,
-        pointHoverRadius: 5
+        pointHoverRadius: 6
       },
       {
-        label: 'শীর্ষ ১ অ্যাপ CPU %',
-        data: historyData.map(p => p.app1 ? p.app1.cpu : 0),
+        label: is400 ? 'শীর্ষ ১ অ্যাপ CPU %' : 'শীর্ষ ১ অ্যাপ CPU (১০০% স্কেলে)',
+        data: historyData.map(p => {
+          const appVal = p.app1 ? p.app1.cpu : 0;
+          return is400 ? appVal : Math.min(100, Math.round((appVal / 4.0) * 10) / 10);
+        }),
         borderColor: '#58a6ff',
         borderWidth: 1.6,
         borderDash: [4, 4],
         tension: 0.25,
         pointRadius: pointRadiusFn,
-        pointBackgroundColor: '#58a6ff',
+        pointBackgroundColor: pointBgFn,
         pointBorderColor: '#ffffff',
         pointBorderWidth: 1.5,
-        pointHoverRadius: 4
+        pointHoverRadius: 5
       }
     ];
   } else if (currentMode === 'ram') {
@@ -567,25 +682,26 @@ function getDatasetsForCurrentMode() {
         tension: 0.25,
         fill: true,
         pointRadius: pointRadiusFn,
-        pointBackgroundColor: '#58a6ff',
+        pointBackgroundColor: pointBgFn,
         pointBorderColor: '#ffffff',
         pointBorderWidth: 1.5,
-        pointHoverRadius: 5
+        pointHoverRadius: 6
       }
     ];
   } else {
+    const is400 = (currentCpuScale === '400');
     return [
       {
-        label: 'সার্বিক CPU %',
-        data: historyData.map(p => p.cpu),
+        label: is400 ? 'মোট ৪-vCPU লোড %' : 'সার্বিক CPU %',
+        data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
         borderColor: '#f0883e',
         borderWidth: 2,
         tension: 0.25,
         pointRadius: pointRadiusFn,
-        pointBackgroundColor: '#f0883e',
+        pointBackgroundColor: pointBgFn,
         pointBorderColor: '#ffffff',
         pointBorderWidth: 1.5,
-        pointHoverRadius: 5
+        pointHoverRadius: 6
       },
       {
         label: 'সার্বিক RAM %',
@@ -594,12 +710,31 @@ function getDatasetsForCurrentMode() {
         borderWidth: 2,
         tension: 0.25,
         pointRadius: pointRadiusFn,
-        pointBackgroundColor: '#58a6ff',
+        pointBackgroundColor: pointBgFn,
         pointBorderColor: '#ffffff',
         pointBorderWidth: 1.5,
-        pointHoverRadius: 5
+        pointHoverRadius: 6
       }
     ];
+  }
+}
+
+function handleChartElementClick(e) {
+  if (!chartInstance || !historyData || historyData.length === 0) return;
+  const elements = chartInstance.getElementsAtEventForMode(e, 'index', { intersect: false }, true);
+  if (elements && elements.length > 0) {
+    lockGraphPoint(elements[0].index);
+  } else {
+    const canvas = chartInstance.canvas;
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : null);
+    if (clientX !== null) {
+      const xPos = clientX - rect.left;
+      const dataX = chartInstance.scales.x.getValueForPixel(xPos);
+      if (dataX !== undefined && dataX >= 0 && dataX < historyData.length) {
+        lockGraphPoint(Math.round(dataX));
+      }
+    }
   }
 }
 
@@ -645,6 +780,13 @@ function renderChart() {
         mode: 'index',
         intersect: false
       },
+      onClick: function(event, elements) {
+        if (elements && elements.length > 0) {
+          lockGraphPoint(elements[0].index);
+        } else if (event.native) {
+          handleChartElementClick(event.native);
+        }
+      },
       plugins: {
         legend: {
           display: true,
@@ -665,7 +807,7 @@ function renderChart() {
             if (tooltipModel.dataPoints && tooltipModel.dataPoints.length > 0) {
               const idx = tooltipModel.dataPoints[0].dataIndex;
               const pt = historyData[idx];
-              if (pt) updateGraphReport(pt, true);
+              if (pt && !isPointLocked) updateGraphReport(pt, true, false);
             }
           }
         }
@@ -677,6 +819,16 @@ function renderChart() {
       events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove', 'touchend']
     }
   });
+
+  if (!chartEl.dataset.clickBound) {
+    chartEl.dataset.clickBound = "true";
+    chartEl.addEventListener('click', handleChartElementClick);
+    chartEl.addEventListener('touchend', function(e) {
+      if (e.changedTouches && e.changedTouches.length > 0) {
+        handleChartElementClick(e.changedTouches[0]);
+      }
+    });
+  }
 }
 
 async function fetchStats() {
@@ -754,6 +906,7 @@ async function fetchStats() {
           t: new Date().toLocaleTimeString('en-US'),
           dt: new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short' }) + ', ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
           cpu: data.cpu_overall,
+          cpu_400: data.cpu_sum !== undefined ? data.cpu_sum : Math.round(data.cpu_overall * 4.0 * 10) / 10,
           ram_gb: data.ram ? data.ram.used_gb : lastPoint.ram_gb,
           ram_pct: data.ram ? data.ram.percent : lastPoint.ram_pct,
           app1: data.apps && data.apps[0] ? { name: data.apps[0].app, cpu: data.apps[0].cpu, ram_gb: data.apps[0].ram_gb } : lastPoint.app1,
@@ -765,21 +918,26 @@ async function fetchStats() {
         const maxPts = maxMap[currentRange] || 100;
         if (historyData.length > maxPts) {
           historyData.shift();
+          if (lockedPointIndex > 0) lockedPointIndex--;
         }
 
         chartInstance.data.labels = historyData.map(p => p.t);
+        const is400 = (currentCpuScale === '400');
         if (currentMode === 'cpu') {
-          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
-          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.app1 ? p.app1.cpu : 0);
-          if (chartInstance.data.datasets[2]) chartInstance.data.datasets[2].data = historyData.map(p => p.app2 ? p.app2.cpu : 0);
+          chartInstance.data.datasets[0].data = historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu);
+          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => {
+            const appVal = p.app1 ? p.app1.cpu : 0;
+            return is400 ? appVal : Math.min(100, Math.round((appVal / 4.0) * 10) / 10);
+          });
         } else if (currentMode === 'ram') {
           chartInstance.data.datasets[0].data = historyData.map(p => p.ram_gb);
         } else {
-          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
+          chartInstance.data.datasets[0].data = historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu);
           if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.ram_pct);
         }
       } else {
         lastPoint.cpu = data.cpu_overall;
+        lastPoint.cpu_400 = data.cpu_sum !== undefined ? data.cpu_sum : Math.round(data.cpu_overall * 4.0 * 10) / 10;
         if (data.ram) {
           lastPoint.ram_gb = data.ram.used_gb;
           lastPoint.ram_pct = data.ram.percent;
@@ -787,13 +945,15 @@ async function fetchStats() {
         if (chartInstance.data.datasets.length > 0) {
           const ds0 = chartInstance.data.datasets[0].data;
           if (ds0.length > 0) {
-            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : lastPoint.cpu;
+            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : (currentCpuScale === '400' ? lastPoint.cpu_400 : lastPoint.cpu);
           }
         }
       }
 
       chartInstance.update('none');
-      updateGraphReport(historyData[historyData.length - 1], false);
+      if (!isPointLocked) {
+        updateGraphReport(historyData[historyData.length - 1], false, false);
+      }
     }
   } catch (e) {
     console.error(e);

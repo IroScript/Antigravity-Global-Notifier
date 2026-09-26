@@ -157,24 +157,121 @@ def record_metric_snapshot(st):
     except Exception:
         pass
 
+_agent_identity_cache = {"time": 0, "map": {}}
+
+def resolve_agent_identity(pid, cmd):
+    pid_s = str(pid)
+    tty = ''
+    try:
+        tty = os.readlink(f'/proc/{pid_s}/fd/0')
+    except Exception:
+        pass
+    cwd = ''
+    try:
+        cwd = os.readlink(f'/proc/{pid_s}/cwd')
+    except Exception:
+        pass
+
+    full_txt = (str(cmd) + ' ' + cwd + ' ' + tty).lower()
+    
+    # Check reporting sentinel / watchdog
+    if 'reporting-agent' in full_txt or 'watchdog' in full_txt or 'sentinel' in full_txt:
+        return ('🛡️ agy:report (Sentinel)', 'agy:report')
+    if 'action-agent' in full_txt:
+        return ('🔧 agy:action (Action Fixer)', 'agy:action')
+    if 'youtube' in full_txt or 'promptdatabase' in full_txt or tty == '/dev/pts/3':
+        return ('🎬 agy:yt (YouTube Pipeline)', 'agy:yt')
+    if 'frappe' in full_txt or 'alco' in full_txt or tty == '/dev/pts/4':
+        return ('💼 agy:frappe (ERPNext)', 'agy:frappe')
+    if 'telegram' in full_txt or tty == '/dev/pts/5':
+        return ('🤖 agy:tg (Telegram Bot)', 'agy:tg')
+    if 'personal ai' in full_txt or 'openrecall' in full_txt or tty == '/dev/pts/6':
+        return ('🕰️ agy:history (Digital History)', 'agy:history')
+    if 'kids' in full_txt or tty == '/dev/pts/7':
+        return ('👶 agy:kids (Kids Tube)', 'agy:kids')
+    if 'rust' in full_txt or tty == '/dev/pts/8':
+        return ('🦀 agy:rust (Rust Task)', 'agy:rust')
+    if 'article' in full_txt or tty == '/dev/pts/9':
+        return ('📰 agy:article (Article Publishing)', 'agy:article')
+    if '3d' in full_txt or 'game' in full_txt or tty == '/dev/pts/10':
+        return ('🎮 agy:game (3D Studio)', 'agy:game')
+    if 'ask-and-research' in full_txt or 'ask_and_research' in full_txt or tty == '/dev/pts/13':
+        return ('🔍 agy:ask (Ask & Research)', 'agy:ask')
+    if tty == '/dev/pts/0' or (cwd == '/home/azureuser' and 'agy' in str(cmd)):
+        return ('🧠 agy:0 (Master Agent)', 'agy:0')
+    if 'whatsapp' in full_txt or 'baileys' in full_txt:
+        return ('💬 WhatsApp Bridge', 'whatsapp')
+    if 'agy' in str(cmd):
+        return ('🤖 AGY Agent', 'agy')
+    return None
+
+def enrich_stats_data(data):
+    if not data or not isinstance(data, dict):
+        return data
+    
+    # 4 vCPUs calculations
+    cores = data.get("cpu_cores", [])
+    if cores and isinstance(cores, list) and len(cores) > 0:
+        data["cpu_sum"] = round(sum(cores), 1)
+        data["vcpu_count"] = len(cores)
+    else:
+        data["cpu_sum"] = round(data.get("cpu_overall", 0.0) * 4.0, 1)
+        data["vcpu_count"] = 4
+    data["cpu_scale_max"] = 400.0
+
+    # Resolve exact agent names in top_procs
+    app_map = {}
+    top_procs = data.get("top_procs", [])
+    for p in top_procs:
+        agent_info = resolve_agent_identity(p.get("pid"), p.get("cmd", ""))
+        if agent_info:
+            p["app"] = agent_info[0]
+            p["name"] = agent_info[1]
+        
+        app_name = p.get("app", "Other")
+        if app_name not in app_map:
+            app_map[app_name] = {"app": app_name, "cpu": 0.0, "ram_mb": 0.0, "count": 0}
+        app_map[app_name]["cpu"] += p.get("cpu", 0.0)
+        app_map[app_name]["ram_mb"] += p.get("ram_mb", 0.0)
+        app_map[app_name]["count"] += 1
+
+    # Preserve other system apps from 8090 if not in top_procs
+    for orig_app in data.get("apps", []):
+        a_name = orig_app.get("app", "")
+        if "AGY Coding Agent" not in a_name and a_name not in app_map:
+            app_map[a_name] = orig_app
+
+    apps_list = []
+    for a in app_map.values():
+        a["cpu"] = round(a.get("cpu", 0.0), 1)
+        a["ram_mb"] = round(a.get("ram_mb", 0.0), 1)
+        a["ram_gb"] = round(a["ram_mb"] / 1024.0, 2)
+        apps_list.append(a)
+
+    apps_list.sort(key=lambda x: x.get("cpu", 0.0), reverse=True)
+    data["apps"] = apps_list
+    return data
+
 _stats_cache = {"time": 0, "data": None}
 def get_system_stats():
     now = time.time()
     if _stats_cache["data"] and (now - _stats_cache["time"] < 1.0):
         return _stats_cache["data"]
+    data = None
     try:
         req = urllib.request.Request("http://127.0.0.1:8090/api/stats")
         with urllib.request.urlopen(req, timeout=1.5) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            _stats_cache["time"] = now
-            _stats_cache["data"] = data
-            record_metric_snapshot(data)
-            return data
     except Exception:
         pass
-    fallback = get_fallback_stats()
-    record_metric_snapshot(fallback)
-    return fallback
+    if not data:
+        data = get_fallback_stats()
+    
+    data = enrich_stats_data(data)
+    _stats_cache["time"] = now
+    _stats_cache["data"] = data
+    record_metric_snapshot(data)
+    return data
 
 _history_cache = {}
 def get_system_history(query_string=""):
@@ -196,6 +293,13 @@ def get_system_history(query_string=""):
             with urllib.request.urlopen(req, timeout=1.5) as resp:
                 res_json = json.loads(resp.read().decode("utf-8"))
                 if res_json and isinstance(res_json, list) and len(res_json) > 0:
+                    for pt in res_json:
+                        if "cpu_400" not in pt:
+                            pt["cpu_400"] = round((pt.get("cpu", 0.0) / 100.0) * 400.0, 1) if pt.get("cpu", 0.0) <= 100.0 else pt.get("cpu", 0.0)
+                        if pt.get("app1", {}).get("name") == "🤖 AGY Coding Agent":
+                            pt["app1"]["name"] = "🧠 agy:0 (Master Agent)"
+                        if pt.get("app2", {}).get("name") == "🤖 AGY Coding Agent":
+                            pt["app2"]["name"] = "🎬 agy:yt (YouTube Pipeline)"
                     _history_cache[cache_key] = {"time": now, "data": res_json}
                     return res_json
         except Exception:
@@ -302,11 +406,17 @@ def get_system_history(query_string=""):
             "t": time.strftime("%I:%M %p"),
             "dt": time.strftime("%d %b, %I:%M %p"),
             "cpu": st.get("cpu_overall", 0.0),
+            "cpu_400": st.get("cpu_sum", round(st.get("cpu_overall", 0.0) * 4.0, 1)),
             "ram_gb": st.get("ram", {}).get("used_gb", 0.0),
             "ram_pct": st.get("ram", {}).get("percent", 0.0),
             "app1": st.get("apps", [{}])[0] if st.get("apps") else {},
             "app2": st.get("apps", [{}])[1] if len(st.get("apps", [])) > 1 else {},
         }]
+
+    for pt in data:
+        if "cpu_400" not in pt:
+            c_val = pt.get("cpu", 0.0)
+            pt["cpu_400"] = round((c_val / 100.0) * 400.0, 1) if c_val <= 100.0 else c_val
 
     _history_cache[cache_key] = {"time": now, "data": data}
     return data
