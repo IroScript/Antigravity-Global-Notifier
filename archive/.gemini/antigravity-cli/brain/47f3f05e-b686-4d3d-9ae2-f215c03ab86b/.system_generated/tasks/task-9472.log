@@ -4,6 +4,6 @@
 [+] One-click login page written to /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/gdrive_login.html
 [*] Waiting for callback URL in callback_url.txt ...
 [*] rclone stdout: Paste the following into your remote machine --->
-{"access_token":"ya29.[REDACTED_OAUTH_TOKEN]
+{"access_token":"REDACTED_GOOGLE_ACCESS_TOKEN
 [+] SUCCESS! New token extracted.
 [+] rclone.conf successfully updated with new token!

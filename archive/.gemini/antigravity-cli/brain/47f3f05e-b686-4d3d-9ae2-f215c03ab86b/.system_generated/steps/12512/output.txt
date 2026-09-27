@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+1-#!/usr/bin/env python3
+2-"""
+3-Master Autonomous YouTube Pipeline Cluster Runner
+4:Runs 4 workers across Ports 8001-8004 covering Elements 22 to 100.
+5-Enforces Two-Tier Anti-Ban Timing Architecture (Micro + Macro Layers).
+6-Enforces Locked Audio Rule: "Audio: no human voice, only cinematic BGM."
+7-"""
+8-import os
+9-import sys
+10-import json
+11-import time
+12-import uuid
+13-import random
+14-import logging
+--
+42-    format="%(asctime)s [%(levelname)s] [%(threadName)s] %(message)s",
+43-    handlers=[
+44-        logging.StreamHandler(sys.stdout),
+45-        FlushingFileHandler(LOG_FILE, mode="a", encoding="utf-8")
+46-    ]
+47-)
+48-logger = logging.getLogger("ClusterOrchestrator")
+49-
+50-# Worker configuration partitions
+51-WORKER_CONFIGS = {
+52:    "worker_1": {"port": 8001, "start_elem": 22, "end_elem": 41, "initial_stagger": 0.0},
+53-    "worker_2": {"port": 8002, "start_elem": 42, "end_elem": 61, "initial_stagger": 30.0},
+54-    "worker_3": {"port": 8003, "start_elem": 62, "end_elem": 81, "initial_stagger": 60.0},
+55-    "worker_4": {"port": 8004, "start_elem": 82, "end_elem": 100, "initial_stagger": 90.0},
+56-}
+57-
+58-LOCKED_AUDIO_RULE = "Audio: no human voice, only cinematic BGM."
+59-
+60-progress_lock = threading.RLock()
+61-db_write_lock = threading.Lock()
+62-
+

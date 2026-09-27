@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+=== TOP 1-SEC INSTANTANEOUS SNAPSHOT ===
+18:07:22 up 3 days, 23:33,  0 users,  load average: 9.38, 9.66, 7.68
+Tasks: 316 total,   2 running, 314 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 67.0 us, 20.9 sy, 10.9 ni,  1.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :  15995.0 total,    422.7 free,  12669.9 used,   4572.1 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   3325.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1447 azureus+  20   0 5351988   2.0g  37404 S 168.9  13.0      7,07 agy
+ 729489 azureus+  20   0    9.9g 367864  26976 R  67.0   2.2     12,51 node-Ma+
+1268744 root      25   5 1392.2g 603448 147728 S  44.7   3.7   1:23.64 chrome
+ 204399 root      20   0  428924  79152   9644 S  36.9   0.5      6,07 python3
+   1445 azureus+  20   0 4160524 940072  31800 S  30.1   5.7     14,16 agy
+1268675 root      20   0   48.4g  79528  62416 S  16.5   0.5   0:12.45 chrome
+1116136 root      25   5 1392.1g 333408  56292 S   6.8   2.0  29:55.97 chrome
+1248452 root      25   5 1392.1g 375984 101696 S   5.8   2.3   3:43.82 chrome
+

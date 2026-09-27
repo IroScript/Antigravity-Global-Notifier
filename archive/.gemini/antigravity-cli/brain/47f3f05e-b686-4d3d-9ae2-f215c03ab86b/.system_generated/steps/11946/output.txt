@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+2264-      tr.onclick = (e) => {
+2265-        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
+2266-        handleItemClick(item, e);
+2267:        handleItemOpen(item);
+2268-      };
+2269-      tr.ondblclick = (e) => {
+2270-        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
+2271:        handleItemOpen(item);
+2272-      };
+2273-      tr.oncontextmenu = (e) => {
+

@@ -1,0 +1,24 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -406,6 +406,7 @@
+             "t": time.strftime("%I:%M %p"),
+             "dt": time.strftime("%d %b, %I:%M %p"),
+             "cpu": st.get("cpu_overall", 0.0),
++            "cpu_400": st.get("cpu_sum", round(st.get("cpu_overall", 0.0) * 4.0, 1)),
+             "ram_gb": st.get("ram", {}).get("used_gb", 0.0),
+             "ram_pct": st.get("ram", {}).get("percent", 0.0),
+             "app1": st.get("apps", [{}])[0] if st.get("apps") else {},
+@@ -412,5 +412,10 @@
+         }]
+ 
++    for pt in data:
++        if "cpu_400" not in pt:
++            c_val = pt.get("cpu", 0.0)
++            pt["cpu_400"] = round((c_val / 100.0) * 400.0, 1) if c_val <= 100.0 else c_val
++
+     _history_cache[cache_key] = {"time": now, "data": data}
+     return data
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

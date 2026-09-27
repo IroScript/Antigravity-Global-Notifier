@@ -1,0 +1,158 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -305,6 +305,9 @@
+ let currentSort = 'cpu';
+ let currentRange = '1h';
+ let currentMode = 'cpu'; // 'cpu', 'ram', 'both'
++let currentCpuScale = '400'; // '400' (default for 4 vCPUs) or '100'
++let isPointLocked = false;
++let lockedPointIndex = -1;
+ let chartInstance = null;
+ let historyData = [];
+ let isScrubbing = false;
+@@ -323,6 +323,51 @@
+   updateChartDatasets();
+ }
+ 
++function setCpuScale(scale) {
++  currentCpuScale = scale;
++  const btn400 = document.getElementById('scale-400');
++  const btn100 = document.getElementById('scale-100');
++  if (btn400 && btn100) {
++    btn400.classList.toggle('active', scale === '400');
++    btn100.classList.toggle('active', scale === '100');
++  }
++  const tagEl = document.getElementById('chart-range-label');
++  if (tagEl && currentMode === 'cpu') {
++    tagEl.innerText = (RANGE_NAMES[currentRange] || currentRange) + (scale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল');
++  }
++  if (chartInstance && historyData && historyData.length > 0) {
++    chartInstance.data.datasets = getDatasetsForCurrentMode();
++    applyMonitorScales();
++    chartInstance.update('none');
++    const pt = (isPointLocked && lockedPointIndex >= 0) ? historyData[lockedPointIndex] : historyData[historyData.length - 1];
++    updateGraphReport(pt, false, isPointLocked);
++  }
++}
++
++function lockGraphPoint(idx) {
++  if (!historyData || idx < 0 || idx >= historyData.length) return;
++  isPointLocked = true;
++  lockedPointIndex = idx;
++  const pt = historyData[idx];
++  updateGraphReport(pt, false, true);
++  if (chartInstance) {
++    chartInstance.update('none');
++  }
++}
++
++function unlockGraphPoint() {
++  isPointLocked = false;
++  lockedPointIndex = -1;
++  const btnUnlock = document.getElementById('btn-unlock-point');
++  if (btnUnlock) btnUnlock.style.display = 'none';
++  if (historyData && historyData.length > 0) {
++    updateGraphReport(historyData[historyData.length - 1], false, false);
++  }
++  if (chartInstance) {
++    chartInstance.update('none');
++  }
++}
++
+ const RANGE_NAMES = {
+   '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
+   '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা',
+@@ -329,6 +329,7 @@
+ };
+ 
+ function changeRange(range, btn) {
++  unlockGraphPoint();
+   currentRange = range;
+   document.querySelectorAll('.pills-scroll .pill').forEach(b => b.classList.remove('active'));
+   btn.classList.add('active');
+@@ -335,4 +335,7 @@
+-  if (lbl) lbl.innerText = RANGE_NAMES[range] || range;
++  if (lbl) {
++    const scaleNote = currentMode === 'cpu' ? (currentCpuScale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল') : '';
++    lbl.innerText = (RANGE_NAMES[range] || range) + scaleNote;
++  }
+   fetchHistory();
+ }
+ 
+@@ -344,9 +344,12 @@
+ let scrubTimeout = null;
+ 
+ // Update the Dedicated Graph Point Report Card (Right Below the Graph)
+-function updateGraphReport(pt, isTouching) {
++function updateGraphReport(pt, isTouching, isLocked) {
+   if (!pt) return;
+-  if (isTouching) {
++  if (!isLocked && isPointLocked) {
++    return; // Point is locked by click, don't overwrite with background updates!
++  }
++  if (isTouching && !isPointLocked) {
+     isScrubbing = true;
+     clearTimeout(scrubTimeout);
+     scrubTimeout = setTimeout(() => { isScrubbing = false; }, 5000);
+@@ -362,10 +362,17 @@
+   const app2Cpu = document.getElementById('graph-app2-cpu');
+   const app2Ram = document.getElementById('graph-app2-ram');
+   const footerEl = document.getElementById('graph-report-footer');
+-
+-  if (isTouching) {
+-    if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট';
++  const btnUnlock = document.getElementById('btn-unlock-point');
++
++  if (isLocked) {
++    if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট (ক্লিক করে লক)';
+     if (dotEl) dotEl.style.background = 'var(--yellow)';
++    if (btnUnlock) btnUnlock.style.display = 'inline-block';
++    if (footerEl) footerEl.innerHTML = '🔒 <b>পয়েন্ট লক করা আছে</b> — অন্য পয়েন্টে ক্লিক করুন অথবা লাইভ ভিউতে ফিরুন';
++  } else if (isTouching) {
++    if (statusEl) statusEl.innerText = 'টাচ করা পয়েন্ট';
++    if (dotEl) dotEl.style.background = 'var(--accent)';
++    if (btnUnlock) btnUnlock.style.display = 'none';
+     if (footerEl) footerEl.innerText = '👆 স্ক্রাবার সক্রিয় — অন্য পয়েন্টে টানুন বা স্পর্শ করুন';
+   } else {
+     if (statusEl) statusEl.innerText = 'সর্বশেষ ডাটা পয়েন্ট';
+@@ -372,8 +372,21 @@
+-    if (footerEl) footerEl.innerText = '💡 গ্রাফে টাচ করে আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট এখানে দেখা যাবে';
+-  }
+-
+-  if (timeEl) timeEl.innerText = pt.dt || pt.t;
+-  if (cpuEl) cpuEl.innerText = pt.cpu + '%';
++    if (btnUnlock) btnUnlock.style.display = 'none';
++    if (footerEl) footerEl.innerText = '💡 গ্রাফের যেকোনো পয়েন্টে ক্লিক বা স্পর্শ করলে তারিখ, সময় ও মেট্রিক্স লক হয়ে থাকবে';
++  }
++
++  // Exact Date and Time
++  const timeDisplay = pt.dt ? `📅 ${pt.dt}` : `🕒 ${pt.t}`;
++  if (timeEl) timeEl.innerText = timeDisplay;
++
++  // CPU Display with 400% scale awareness
++  const cpu400 = (pt.cpu_400 !== undefined ? pt.cpu_400 : (pt.cpu * 4.0)).toFixed(1);
++  if (cpuEl) {
++    if (currentCpuScale === '400') {
++      cpuEl.innerHTML = `${cpu400}% <span class="g-metric-sub">/ ৪০০% (${pt.cpu}% সার্বিক)</span>`;
++    } else {
++      cpuEl.innerHTML = `${pt.cpu}% <span class="g-metric-sub">(৪-vCPU মোট: ${cpu400}%)</span>`;
++    }
++  }
++
+   if (ramEl) ramEl.innerHTML = `${pt.ram_gb} GB <span class="g-metric-sub">(${pt.ram_pct}%)</span>`;
+ 
+   if (pt.app1) {
+@@ -411,8 +411,8 @@
+     } else {
+       renderChart();
+     }
+-    if (!isScrubbing && historyData && historyData.length > 0) {
+-      updateGraphReport(historyData[historyData.length - 1], false);
++    if (!isScrubbing && !isPointLocked && historyData && historyData.length > 0) {
++      updateGraphReport(historyData[historyData.length - 1], false, false);
+     }
+   } catch (e) {
+     console.error(e);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+[OK] Moved Frappe-erp-Alco to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved telegram-bot to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved Rust_Task_With_Time_Keeping_And_Live_Note to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved kids_tube_with_folder_seection to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved 3D-Game-Design-Studio to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved Antigravity-Global-Notifier to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved .openclaw to /home/azureuser/.webterminal/Agy Whatsapp Agents
+

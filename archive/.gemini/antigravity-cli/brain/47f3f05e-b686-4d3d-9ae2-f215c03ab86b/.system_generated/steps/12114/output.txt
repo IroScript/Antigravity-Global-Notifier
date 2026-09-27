@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+=== Range: 24h (Total: 34) ===
+First 3: [('5 PM', '25 Sep, 05:55 PM'), ('6 PM', '25 Sep, 06:40 PM'), ('7 PM', '25 Sep, 07:25 PM')]
+Middle 3: [('5 AM', '26 Sep, 05:55 AM'), ('6 AM', '26 Sep, 06:40 AM'), ('7 AM', '26 Sep, 07:25 AM')]
+Last 3: [('5 PM', '26 Sep, 05:10 PM'), ('5 PM', '26 Sep, 05:42 PM'), ('5 PM', '26 Sep, 05:44 PM')]
+=== Range: all (Total: 41) ===
+First 3: [('21 Sep', '21 Sep, 05:40 PM'), ('21 Sep', '21 Sep, 08:40 PM'), ('21 Sep', '21 Sep, 11:40 PM')]
+Middle 3: [('24 Sep', '24 Sep, 02:40 AM'), ('24 Sep', '24 Sep, 05:40 AM'), ('24 Sep', '24 Sep, 08:40 AM')]
+Last 3: [('26 Sep', '26 Sep, 11:40 AM'), ('26 Sep', '26 Sep, 02:40 PM'), ('26 Sep', '26 Sep, 05:42 PM')]
+

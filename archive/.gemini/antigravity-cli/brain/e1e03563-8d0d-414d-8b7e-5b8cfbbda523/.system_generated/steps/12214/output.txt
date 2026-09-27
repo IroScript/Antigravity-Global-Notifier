@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+CONTAINER ID   IMAGE                     COMMAND                  CREATED      STATUS                       PORTS                                       NAMES
+feef65674cd7   docker_workers-worker-2   "sh -c 'rm -f /tmp/.…"   2 days ago   Up 30 minutes (healthy)      0.0.0.0:8002->8000/tcp, :::8002->8000/tcp   chatgpt_worker_2
+27bafc372990   docker_workers-worker-3   "sh -c 'rm -f /tmp/.…"   2 days ago   Up 11 hours (healthy)        0.0.0.0:8003->8000/tcp, :::8003->8000/tcp   chatgpt_worker_3
+ae6151ff10e2   docker_workers-worker-4   "sh -c 'rm -f /tmp/.…"   2 days ago   Up About an hour (healthy)   0.0.0.0:8004->8000/tcp, :::8004->8000/tcp   chatgpt_worker_4
+13737584794d   docker_workers-worker-1   "sh -c 'rm -f /tmp/.…"   2 days ago   Up About an hour (healthy)   0.0.0.0:8001->8000/tcp, :::8001->8000/tcp   chatgpt_worker_1
+
+Terminal ID: terminal-status

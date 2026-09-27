@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+    if (!container) return;
+
+    if (list.length === 0) {
+      container.innerHTML = '<div style="text-align: center; color: #8b949e; padding: 20px;">কোনো প্রসেস পাওয়া যায়নি</div>';
+      return;
+    }
+
+    container.innerHTML = list.slice(0, 40).map(p => `
+      <div class="mon-proc-card">
+        <div class="mon-proc-top">
+          <span>${p.name} <span style="font-size: 0.7rem; color: #8b949e;">(PID: ${p.pid})</span></span>
+          <span class="mon-proc-tag">${p.app}</span>
+        </div>
+        <div class="mon-proc-cmd">${p.cmd}</div>
+        <div class="mon-proc-metrics">
+          <span>১ম · CPU: <span style="font-weight:600; color:var(--yellow);">${p.cpu}%</span></span>
+          <span>২য় · RAM: <span style="font-weight:600; color:var(--accent-blue);">${p.ram_mb >= 1024 ? (p.ram_mb/1024).toFixed(2) + ' GB' : p.ram_mb + ' MB'}</span></span>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Periodic Loops
+  setInterval(fetchStats, 1500);
+  setInterval(() => {
+    if (activeTab === 'monitor' && !isScrubbing) {
+      fetchHistory();
+    }
+  }, 30000);
+
+  // Initial Startup
+  window.addEventListener('DOMContentLoaded', () => {
+    openThisPC();
+    fetchStats();
+    fetchHistory();
+  });
+</script>
+
+</body>
+</html>
+

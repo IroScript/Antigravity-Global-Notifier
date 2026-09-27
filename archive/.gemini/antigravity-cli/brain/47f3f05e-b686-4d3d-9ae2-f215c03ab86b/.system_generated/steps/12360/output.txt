@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Cloud_VM_Live_Preview/monitor.html
+	modified:   Cloud_VM_Live_Preview/server.py
+	modified:   Cloud_VM_Live_Preview/static/index.html
+	modified:   Cloud_VM_Live_Preview/static/monitor.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+

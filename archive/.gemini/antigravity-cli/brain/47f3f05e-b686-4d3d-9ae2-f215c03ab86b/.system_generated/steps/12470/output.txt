@@ -1,0 +1,7 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/03-immutable-files.sh
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/05-verification-tests.sh
+

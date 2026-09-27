@@ -1,0 +1,30 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -405,7 +405,14 @@
+     const res = await fetch(`/api/history?range=${currentRange}`);
+     if (!res.ok) return;
+     historyData = await res.json();
+-    renderChart();
++    if (chartInstance) {
++      chartInstance.data.labels = historyData.map(p => p.t);
++      chartInstance.data.datasets = getDatasetsForCurrentMode();
++      applyMonitorScales();
++      chartInstance.update('none');
++    } else {
++      renderChart();
++    }
+     if (!isScrubbing && historyData && historyData.length > 0) {
+       updateGraphReport(historyData[historyData.length - 1], false);
+     }
+@@ -421,7 +421,7 @@
+   const datasets = getDatasetsForCurrentMode();
+   chartInstance.data.labels = historyData.map(p => p.t);
+   chartInstance.data.datasets = datasets;
+-  applyMonitorYAxisScale();
++  applyMonitorScales();
+   chartInstance.update('none');
+ }
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

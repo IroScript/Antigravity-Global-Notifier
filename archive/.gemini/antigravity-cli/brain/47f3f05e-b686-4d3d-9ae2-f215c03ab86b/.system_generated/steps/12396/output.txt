@@ -1,0 +1,39 @@
+
+Encountered error in step execution: context canceled
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/youtube_pipeline.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db
+/home/azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/DATABASE_BACKUPS_VAULT/azure_youtube_pipeline_consistent.db
+/home/azureuser/RESTORE_VERIFY_TEMP/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/669951_python3_youtube_pipeline.db
+/home/azureuser/RESTORED_PROJECTS/LIVE_FD_DUMPS/669951_python3_youtube_pipeline.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/youtube_pipeline.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/video/1Video10Sec/youtube_pipeline.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_150100_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260907_184139_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_145630_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260915_173927_pre_veo_task4.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260907_190809_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260911_040943_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260910_182132_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_094407_phase5_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260908_100802_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260911_042952_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260916_035614_post_all_seo143.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_145532_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_094610_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260911_052807_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260911_040850_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_152942_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260908_045114_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_094545_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260915_184837_post_idea151.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260908_061332_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260908_100437_pytest_test.db
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/backups/youtube_pipeline_20260906_103750_pytest_test.db
+

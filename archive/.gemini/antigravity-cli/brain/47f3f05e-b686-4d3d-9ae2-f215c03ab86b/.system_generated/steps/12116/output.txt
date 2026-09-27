@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+ M Cloud_VM_Live_Preview/monitor.html
+ M Cloud_VM_Live_Preview/server.py
+ M Cloud_VM_Live_Preview/static/index.html
+ M Cloud_VM_Live_Preview/static/monitor.html
+

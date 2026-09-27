@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+============================================================================
+        📊 MASTER UNIFIED CSV EXPORT GENERATOR [27_sept_05.00_am]
+============================================================================
+>>> [1/4] Generating Raw Table CSVs...
+  ✅ Saved 52 raw tables into: exports/csv_tables/
+>>> [2/4] Generating Master Prompts Hierarchy CSV...
+  ✅ Saved: master_prompts_from_db_27_sept_05.00_am.csv (12363 rows)
+>>> [3/4] Generating Real SEO Master, Keywords & Competitors CSVs...
+  ✅ Saved: seo_master_27_sept_05.00_am.csv (841 rows)
+  ✅ Saved: seo_keywords_27_sept_05.00_am.csv (36345 rows)
+  ✅ Saved: seo_competitors_27_sept_05.00_am.csv (12235 rows)
+>>> [4/4] Generating Master Dashboard CSV...
+  ✅ Saved: master_dashboard_27_sept_05.00_am.csv (1007 ideas)
+============================================================================
+🎉 ALL CSV FILES SUCCESSFULLY GENERATED FOR 27_sept_05.00_am!
+============================================================================
+
+Terminal ID: terminal-csv

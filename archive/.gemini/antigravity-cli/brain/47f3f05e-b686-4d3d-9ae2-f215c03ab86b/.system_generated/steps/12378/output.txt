@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+=== 1. KERNEL /proc/stat RAW CALCULATION ===
+  cpu0: 97.0% busy (idle: 3.0%)
+  cpu1: 96.1% busy (idle: 3.9%)
+  cpu2: 96.0% busy (idle: 4.0%)
+  cpu3: 97.0% busy (idle: 3.0%)
+  Overall System: 96.8% (Normalized 100% Scale)
+  Total 4-vCPU Sum: 386.1% / 400.0%
+

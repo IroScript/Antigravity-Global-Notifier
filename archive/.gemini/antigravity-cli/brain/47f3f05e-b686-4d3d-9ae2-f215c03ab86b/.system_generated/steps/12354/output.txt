@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+{
+    "cpu_overall": 98.1,
+    "cpu_cores": [
+        98.8,
+        98.8,
+        97.1,
+        97.6
+    ],
+    "ram": {
+        "used_gb": 10.32,
+        "total_gb": 15.62,
+        "percent": 76.5,
+        "avail_gb": 3.67
+    },
+    "swap": {
+        "used_gb": 0.0,
+        "total_gb": 0.0,
+        "percent": 0.0
+    },
+    "apps": [
+        {
+            "app": "\ud83e\udde0 agy:0 (Master Agent)",
+            "cpu": 160.3,
+            "ram_mb": 1988.1,
+            "count": 2,
+            "ram_gb": 1.94
+        },
+        {
+            "app": "\ud83c\udf10 CloakBrowser / Chrome",
+            "cpu": 73.9,
+            "ram_mb": 1550.8,
+            "count": 8,
+            "ram_gb": 1.51
+        },
+        {
+

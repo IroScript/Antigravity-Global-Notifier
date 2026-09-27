@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+diff --git a/Cloud_VM_Live_Preview/static/index.html b/Cloud_VM_Live_Preview/static/index.html
+index 3028741..a75467e 100644
+--- a/Cloud_VM_Live_Preview/static/index.html
++++ b/Cloud_VM_Live_Preview/static/index.html
+@@ -2261,8 +2261,15 @@
+ 
+     items.forEach(item => {
+       const tr = document.createElement('tr');
+-      tr.onclick = (e) => handleItemClick(item, e);
+-      tr.ondblclick = () => handleItemOpen(item);
++      tr.onclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
++        handleItemClick(item, e);
++        handleItemOpen(item);
++      };
++      tr.ondblclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
++        handleItemOpen(item);
++      };
+       tr.oncontextmenu = (e) => {
+         e.preventDefault();
+         showContextMenu(e.clientX, e.clientY, item);
+@@ -2305,8 +2312,15 @@
+ 
+       const card = document.createElement('div');
+       card.className = 'grid-item';
+-      card.onclick = (e) => handleItemClick(item, e);
+-      card.ondblclick = () => handleItemOpen(item);
++      card.onclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.grid-actions-group')) return;
++        handleItemClick(item, e);
++        handleItemOpen(item);
++      };
++      card.ondblclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.grid-actions-group')) return;
++        handleItemOpen(item);
++      };
+       card.oncontextmenu = (e) => {
+         e.preventDefault();
+         showContextMenu(e.clientX, e.clientY, item);
+

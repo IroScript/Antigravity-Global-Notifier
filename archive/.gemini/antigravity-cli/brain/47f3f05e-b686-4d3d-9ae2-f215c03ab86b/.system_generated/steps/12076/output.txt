@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+393-    if (app2Cpu) app2Cpu.innerText = `${pt.app2.cpu}% CPU`;
+394-    const r2 = (pt.app2.ram_gb !== undefined && pt.app2.ram_gb >= 1.0) ? (pt.app2.ram_gb + ' GB') : ((pt.app2.ram_mb || 0) + ' MB');
+395-    if (app2Ram) app2Ram.innerText = `${r2} RAM`;
+396-  } else {
+397-    if (app2Name) app2Name.innerText = '—';
+398-    if (app2Cpu) app2Cpu.innerText = '0% CPU';
+399-    if (app2Ram) app2Ram.innerText = '0 MB RAM';
+400-  }
+401-}
+402-
+403:async function fetchHistory() {
+404-  try {
+405-    const res = await fetch(`/api/history?range=${currentRange}`);
+406-    if (!res.ok) return;
+407-    historyData = await res.json();
+408-    renderChart();
+409-    if (!isScrubbing && historyData && historyData.length > 0) {
+410-      updateGraphReport(historyData[historyData.length - 1], false);
+411-    }
+412-  } catch (e) {
+413-    console.error(e);
+

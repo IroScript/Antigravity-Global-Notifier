@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+1-#!/usr/bin/env python3
+2-"""
+3-Master Autonomous YouTube Pipeline Cluster Runner
+4-Runs 4 workers across Ports 8001-8004 covering Elements 22 to 100.
+5-Enforces Two-Tier Anti-Ban Timing Architecture (Micro + Macro Layers).
+6-Enforces Locked Audio Rule: "Audio: no human voice, only cinematic BGM."
+7-"""
+8:import os
+9:import sys
+10:import json
+11:import time
+12:import uuid
+13:import random
+14:import logging
+15:import sqlite3
+16:import threading
+17:import urllib.request
+18:import urllib.error
+19:from pathlib import Path
+20:from datetime import datetime, timezone
+21-
+22-# Base directories
+23-BASE_DIR = Path(__file__).resolve().parent
+24-DB_PATH = BASE_DIR / "database" / "youtube_pipeline.db"
+25-PROGRESS_FILE = BASE_DIR / "cluster_progress.json"
+26-LOGS_DIR = BASE_DIR / "logs"
+27-LOGS_DIR.mkdir(parents=True, exist_ok=True)
+28-LOG_FILE = LOGS_DIR / "cluster_orchestrator.log"
+29-
+30-# Add PromptDatabase to sys.path for local module resolution
+

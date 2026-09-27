@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+=== 3. PROCESS-BY-PROCESS BOTTOM-UP AGGREGATION ===
+Total Sum of All Active Processes: 163.1%
+Top Active Process Contributors:
+  PID  729489:  40.3% CPU | node-MainThread | /usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.j
+  PID 1270624:  28.5% CPU | python3      | python3 -c  import subprocess  out = subprocess.check_output
+  PID 1268744:  19.8% CPU | chrome       | /root/.cloakbrowser/chromium-146.0.7680.177.5/chrome --type=
+  PID    1445:  14.9% CPU | agy          | /home/azureuser/.local/bin/agy --dangerously-skip-permission
+  PID  204399:  11.7% CPU | python3      | /usr/bin/python3 /home/azureuser/.local/bin/live_resource_mo
+  PID 1248452:  10.1% CPU | chrome       | /root/.cloakbrowser/chromium-146.0.7680.177.5/chrome --type=
+  PID    1447:   7.4% CPU | agy          | /home/azureuser/.local/bin/agy --dangerously-skip-permission
+  PID 1116136:   5.4% CPU | chrome       | /root/.cloakbrowser/chromium-146.0.7680.177.5/chrome --type=
+  PID  307848:   4.5% CPU | python       | /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.
+  PID 1268675:   2.6% CPU | chrome       | /root/.cloakbrowser/chromium-146.0.7680.177.5/chrome --type=
+

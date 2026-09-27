@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+1531-
+1532-      <div class="sidebar-section">
+1533-        <div class="sidebar-title">Quick Access</div>
+1534:        <div class="sidebar-item" onclick="navigateTo('/home/azureuser')">
+1535-          <svg viewBox="0 0 24 24" fill="#60cdff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+1536-          <span>Azure User Home</span>
+1537-        </div>
+1538:        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IrakIroan')">
+1539-          <svg viewBox="0 0 24 24" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+1540-          <span>IrakIroan Workspace</span>
+1541-        </div>
+1542:        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
+1543-          <svg viewBox="0 0 24 24" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+1544-          <span>GCP Backup Vault</span>
+1545-        </div>
+1546:        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/AGY-MASTER')">
+1547-          <svg viewBox="0 0 24 24" fill="#cba6f7"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19h-15L12 5.5z"/></svg>
+1548-          <span>AGY-MASTER Architecture</span>
+1549-        </div>
+--
+1551-
+1552-      <div class="sidebar-section">
+1553-        <div class="sidebar-title">Devices & Drives</div>
+1554:        <div class="sidebar-item" onclick="navigateTo('/')">
+1555-          <svg viewBox="0 0 24 24" fill="#89b4fa"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></svg>
+1556-          <span>Local Disk (C:)</span>
+1557-        </div>
+1558:        <div class="sidebar-item" onclick="navigateTo('/home')">
+1559-          <svg viewBox="0 0 24 24" fill="#a6e3a1"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></svg>
+1560-          <span>Data Disk (D:)</span>
+1561-        </div>
+--
+1586-          <span>Quick Workspace Shortcuts</span>
+1587-        </div>
+1588-        <div class="drives-grid">
+1589:          <div class="drive-card" onclick="navigateTo('/home/azureuser')">
+1590-            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#60cdff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+1591-            <div class="drive-details"><div class="drive-name">Azure User Home</div><div class="drive-meta">/home/azureuser</div></div>
+1592-          </div>
+1593:          <div class="drive-card" onclick="navigateTo('/home/azureuser/IrakIroan')">
+

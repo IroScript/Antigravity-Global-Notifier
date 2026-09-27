@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+040000 tree 3573b3a51bc0d81eabc7e5d9ee93415d5083468b	.gemini
+120000 blob e5eb11cddee643db5168daa160f8563e98db6ec1	webterminal
+

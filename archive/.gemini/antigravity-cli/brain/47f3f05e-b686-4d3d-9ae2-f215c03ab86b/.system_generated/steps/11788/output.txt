@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:491:      const chunks = breakLongToken(word, curLimit);
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:518:function breakLongToken(token, maxLen) {
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:520:  let remaining = token;
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:559:      const tokenChunks = breakLongToken(w, available);
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:560:      for (let i = 0; i < tokenChunks.length - 1; i++) {
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:561:        chunks.push(indent + '  ' + tokenChunks[i]);
+/home/azureuser/Antigravity-Global-Notifier/Cloud_VM_Whatsapp/whatsapp_bridge.js:563:      cur = '  ' + tokenChunks[tokenChunks.length - 1];
+

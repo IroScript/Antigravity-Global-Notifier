@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+#!/usr/bin/env python3
+"""
+Master Autonomous YouTube Pipeline Cluster Runner
+Runs 4 workers across Ports 8001-8004 covering Elements 22 to 100.
+Enforces Two-Tier Anti-Ban Timing Architecture (Micro + Macro Layers).
+Enforces Locked Audio Rule: "Audio: no human voice, only cinematic BGM."
+"""
+import os
+import sys
+import json
+import time
+import uuid
+import random
+import logging
+import sqlite3
+import threading
+import urllib.request
+import urllib.error
+from pathlib import Path
+from datetime import datetime, timezone
+
+# Base directories
+BASE_DIR = Path(__file__).resolve().parent
+DB_PATH = BASE_DIR / "database" / "youtube_pipeline.db"
+PROGRESS_FILE = BASE_DIR / "cluster_progress.json"
+LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
+LOG_FILE = LOGS_DIR / "cluster_orchestrator.log"
+
+# Add PromptDatabase to sys.path for local module resolution
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
+class FlushingFileHandler(logging.FileHandler):
+    def emit(self, record):
+        super().emit(record)
+        self.flush()
+
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [%(threadName)s] %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        FlushingFileHandler(LOG_FILE, mode="a", encoding="utf-8")
+

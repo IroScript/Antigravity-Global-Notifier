@@ -1,0 +1,25 @@
+
+The command exited with code 1.
+Output:
+28K	/home/azureuser/3D-Game-Design-Studio/
+152M	/home/azureuser/AGY-MASTER/
+162M	/home/azureuser/Antigravity-Global-Notifier/
+12K	/home/azureuser/Ask-And-Research/
+49M	/home/azureuser/DATABASE_BACKUPS_VAULT/
+3.2G	/home/azureuser/FULL_HOME_BACKUP/
+988K	/home/azureuser/Frappe-erp-Alco/
+33G	/home/azureuser/GCP_FULL_BACKUP/
+56K	/home/azureuser/GDRIVE_RESTORE_TEST/
+12K	/home/azureuser/GLOBAL-ARCHIVE/
+54G	/home/azureuser/IrakIroan/
+819M	/home/azureuser/RESTORED_PROJECTS/
+1.4G	/home/azureuser/RESTORED_VIDEOS/
+5.5G	/home/azureuser/RESTORE_VERIFY_TEMP/
+80K	/home/azureuser/Reporting-Agent/
+40K	/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note/
+8.0K	/home/azureuser/__pycache__/
+1.2M	/home/azureuser/gdrive_sync/
+12K	/home/azureuser/kids_tube_with_folder_seection/
+416K	/home/azureuser/telegram-bot/
+142M	/home/azureuser/tmp/
+

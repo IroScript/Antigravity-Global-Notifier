@@ -1,0 +1,15 @@
+
+Encountered error in step execution: context canceled
+Output:
+● gdrive-reporting-sentinel.service - Reporting Agent (agy:report) - Google Drive Live Sync Sentinel
+     Loaded: loaded (/home/azureuser/.config/systemd/user/gdrive-reporting-sentinel.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 19:02:00 UTC; 4s ago
+ Invocation: 3c26908e807246c38d74f05be25ffe11
+   Main PID: 1285119 (python3)
+      Tasks: 9 (limit: 19137)
+     Memory: 19.9M (peak: 20.3M)
+        CPU: 90ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gdrive-reporting-sentinel.service
+             ├─1285119 /usr/bin/python3 "/home/azureuser/.webterminal/Agy Whats…
+             └─1285121 /usr/bin/rclone size personaldrive:Azure_VM_Live_Backup_…
+

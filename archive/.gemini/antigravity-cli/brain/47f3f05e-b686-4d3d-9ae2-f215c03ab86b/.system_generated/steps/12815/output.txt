@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+total 111M
+-rw-rw-r-- 1 azureuser azureuser 157K Sep 26 12:48 app-state-sync-version-regular_low.json
+-rw-rw-r-- 1 azureuser azureuser 139K Sep 25 10:18 app-state-sync-version-critical_unblock_low.json
+-rw-rw-r-- 1 azureuser azureuser  61K Sep 26 19:49 session-82935919157317_1.0.json
+-rw-rw-r-- 1 azureuser azureuser  43K Sep 26 08:04 app-state-sync-version-regular.json
+-rw-rw-r-- 1 azureuser azureuser  35K Sep 26 17:00 session-206343935946909_1.0.json
+-rw-rw-r-- 1 azureuser azureuser  22K Sep 26 19:31 sender-key-120363430650656655@g.us--82935919157317_1--6.json
+-rw-rw-r-- 1 azureuser azureuser  11K Sep 26 07:22 session-142090453401701_1.0.json
+-rw-rw-r-- 1 azureuser azureuser 6.9K Sep 26 19:44 creds.json
+-rw-rw-r-- 1 azureuser azureuser 4.0K Sep 26 18:21 sender-key-120363420665285586@g.us--219469355991240_1--0.json
+

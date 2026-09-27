@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+[OK] Moved: .openclaw
+[FAILED] AGY-MASTER: [Errno 1] Operation not permitted: '/home/azureuser/AGY-MASTER' -> '/home/azureuser/GLOBAL-ARCHIVE/old_archive/AGY-MASTER'
+[OK] Moved: Reporting-Agent
+[OK] Moved: Ask-And-Research
+

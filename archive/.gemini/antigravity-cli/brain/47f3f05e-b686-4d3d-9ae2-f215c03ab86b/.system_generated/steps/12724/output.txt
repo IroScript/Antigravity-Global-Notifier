@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+313-    if (name === 'grep_search' || name === 'find_by_name') return 'SEARCH';
+314-    if (name === 'search_web') return 'RESEARCH';
+315-    if (name === 'read_url_content') return 'FETCH';
+316-    if (name === 'manage_task') return 'TASK';
+317-    if (name === 'ask_question') return 'CLARIFY';
+318:    if (name === 'invoke_subagent') return 'DELEGATE';
+319-    return 'PROCESS';
+320-  }
+321-
+322-  let searchInspectCount = 0;
+323-  for (const item of turnTools) {
+

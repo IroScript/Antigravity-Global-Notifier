@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 17:30:28,625 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 17:30:28,761 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-26 17:30:32,512 [INFO] [Worker-worker_2] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 17:30:32,516 [WARNING] [Worker-worker_2] No cookie file found at /app/cookies/cookie.json
+2026-09-26 17:30:32,608 [INFO] [Worker-worker_2] Navigating to https://chatgpt.com for session verification...
+2026-09-26 17:30:42,929 [INFO] [Worker-worker_2] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:48384 - "GET /health HTTP/1.1" 200 OK
+2026-09-26 17:30:48,990 [INFO] [Worker-worker_2] Applying escalating jitter delay (+0.5s/process, action #1): 5.64s [Range: 2.0s - 6.0s]...
+

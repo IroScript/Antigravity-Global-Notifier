@@ -1,0 +1,15 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1975,6 +1975,9 @@
+   let currentSort = 'cpu';
+   let currentRange = '15m';
+   let currentMode = 'cpu'; // 'cpu', 'ram', 'both'
++  let currentCpuScale = '400'; // '400' (default for 4 vCPUs) or '100'
++  let isPointLocked = false;
++  let lockedPointIndex = -1;
+   let historyData = [];
+   let chartInstance = null;
+   let isScrubbing = false;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

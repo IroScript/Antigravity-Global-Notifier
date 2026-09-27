@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.gemini/antigravity-cli/brain/e1e03563-8d0d-414d-8b7e-5b8cfbbda523/scratch
+total 84
+drwxr-xr-x 15 azureuser azureuser  4096 Sep 26 18:53 .
+drwxr-xr-x  6 root      root       4096 Sep 25 12:40 ..
+drwx------  4 azureuser azureuser  4096 Sep 26 10:23 .cache
+drwx------  7 azureuser azureuser  4096 Sep 26 18:05 .config
+drwxr-xr-x  4 azureuser azureuser  4096 Sep 25 07:55 .gemini
+-rw-rw-r--  1 azureuser azureuser   206 Sep 26 15:40 .gitconfig
+drwxrwxr-x  3 azureuser azureuser  4096 Sep 25 07:54 .gradle
+drwxrwxr-x  5 azureuser azureuser  4096 Sep 26 10:23 .local
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:05 .npm
+drwxrwxr-x  4 azureuser azureuser  4096 Sep 25 10:06 .npm-global
+drwx------  2 azureuser azureuser  4096 Sep 25 13:33 .ssh
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 26 15:03 .webterminal
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 26 07:51 AGY-MASTER
+-rw-rw-r--  1 azureuser azureuser 17890 Sep 25 12:24 GEMINI.md
+drwxrwxr-x  5 azureuser azureuser  4096 Sep 26 18:30 GLOBAL-ARCHIVE
+drwxrwxr-x 10 azureuser azureuser  4096 Sep 26 15:16 IrakIroan
+drwxr-xr-x  3 root      root       4096 Sep 25 16:16 RESTORE_VERIFY_TEMP
+

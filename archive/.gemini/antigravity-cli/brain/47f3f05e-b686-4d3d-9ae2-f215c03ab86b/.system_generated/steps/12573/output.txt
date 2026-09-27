@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+    1190    1137  0 Sep22 ?        00:00:21 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+ 1279130    1447  0 18:38 pts/12   00:00:00 bash -c ps -ef | grep 1190
+azureus+ 1279132 1279130  0 18:38 pts/12   00:00:00 grep 1190
+

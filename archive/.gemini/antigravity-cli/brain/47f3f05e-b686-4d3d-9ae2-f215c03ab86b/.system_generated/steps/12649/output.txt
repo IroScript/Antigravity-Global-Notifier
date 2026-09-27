@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Currently visible items in File Explorer for /home/azureuser:
+ - GLOBAL-ARCHIVE
+ - IrakIroan
+

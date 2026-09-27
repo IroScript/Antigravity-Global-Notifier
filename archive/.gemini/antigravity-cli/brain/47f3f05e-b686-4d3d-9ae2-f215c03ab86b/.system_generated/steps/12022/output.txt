@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Current metrics count: 0
+

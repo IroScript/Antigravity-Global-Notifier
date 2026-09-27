@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+ideas cols: ['id', 'uuid', 'title', 'short_title', 'raw_idea', 'refined_idea', 'description', 'category', 'subcategory', 'topic', 'niche', 'content_type', 'format', 'target_audience', 'language', 'status', 'priority', 'source', 'source_reference', 'parent_idea_id', 'root_idea_id', 'version', 'idea_hash', 'created_at', 'updated_at', 'scheduled_for', 'generated_at', 'published_at', 'archived_at', 'is_deleted', 'category_id', 'impossible_capability', 'impossible_in_size', 'impossible_physics_or_motion']
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+    prompts = c.execute('SELECT COUNT(*) FROM video_prompts').fetchone()[0]
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: video_prompts
+
+Terminal ID: terminal-status

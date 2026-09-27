@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+0	/home/azureuser/.gemini/antigravity-cli/cli.log
+0	/home/azureuser/.gemini/antigravity-cli/last_check.timestamp
+4.0K	/home/azureuser/.gemini/antigravity-cli/antigravity-oauth-token
+4.0K	/home/azureuser/.gemini/antigravity-cli/conversations
+4.0K	/home/azureuser/.gemini/antigravity-cli/crashes
+4.0K	/home/azureuser/.gemini/antigravity-cli/installation_id
+4.0K	/home/azureuser/.gemini/antigravity-cli/jetski_state.pbtxt
+8.0K	/home/azureuser/.gemini/antigravity-cli/bin
+8.0K	/home/azureuser/.gemini/antigravity-cli/cache
+8.0K	/home/azureuser/.gemini/antigravity-cli/jetbox_summaries_proto.pb
+8.0K	/home/azureuser/.gemini/antigravity-cli/updater
+20K	/home/azureuser/.gemini/antigravity-cli/log
+52K	/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db
+132K	/home/azureuser/.gemini/antigravity-cli/builtin
+244K	/home/azureuser/.gemini/antigravity-cli/history.jsonl
+220M	/home/azureuser/.gemini/antigravity-cli/brain
+

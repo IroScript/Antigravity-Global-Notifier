@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:35752 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:47488 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55362 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:48508 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:47756 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55192 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:58794 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42030 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:47510 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:41076 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:54684 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:43218 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:33824 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:55666 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:39638 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:48526 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47366 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:34394 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:34292 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:55658 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:39284 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:40942 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:43476 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:47024 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:42116 - "GET /health HTTP/1.1" 200 OK
+
+Terminal ID: terminal-status

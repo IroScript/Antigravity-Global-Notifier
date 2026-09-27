@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 20
+drwxrwxr-x  5 azureuser azureuser 4096 Sep 26 19:01 .
+drwxrwxr-x 11 azureuser azureuser 4096 Sep 26 19:01 ..
+drwxrwxr-x 10 azureuser azureuser 4096 Sep 26 07:51 AGY-MASTER
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 07:54 Ask-And-Research
+drwxrwxr-x  4 azureuser azureuser 4096 Sep 26 09:46 Reporting-Agent
+

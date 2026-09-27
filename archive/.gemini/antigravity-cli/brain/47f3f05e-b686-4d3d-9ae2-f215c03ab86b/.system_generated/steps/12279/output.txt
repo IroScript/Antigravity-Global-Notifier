@@ -1,0 +1,232 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -526,6 +526,26 @@
+       }
+     };
+   }
++  if (currentMode === 'cpu' && currentCpuScale === '400') {
++    return {
++      min: 0,
++      max: 400,
++      grid: { color: 'rgba(48, 54, 61, 0.4)' },
++      ticks: {
++        color: '#f0883e',
++        font: { size: 9 },
++        stepSize: 100,
++        callback: function(v) {
++          if (v === 400) return '400% (৪ vCPU)';
++          if (v === 300) return '300% (৩য়)';
++          if (v === 200) return '200% (২য়)';
++          if (v === 100) return '100% (১ম)';
++          if (v === 0) return '0%';
++          return v + '%';
++        }
++      }
++    };
++  }
+   return {
+     min: 0,
+     max: 100,
+@@ -595,6 +595,7 @@
+   chartInstance.options.scales.y.max = cfg.max;
+   if (chartInstance.options.scales.y.ticks) {
+     chartInstance.options.scales.y.ticks.callback = cfg.ticks.callback;
++    if (cfg.ticks.stepSize) chartInstance.options.scales.y.ticks.stepSize = cfg.ticks.stepSize;
+   }
+   chartInstance.options.scales.x = getMonitorXAxisConfig();
+ }
+@@ -601,5 +601,8 @@
+ function getDatasetsForCurrentMode() {
+   const pointRadiusFn = function(context) {
++    if (isPointLocked && context.dataIndex === lockedPointIndex) {
++      return 7.5; // High-visibility pulse radius for the clicked point!
++    }
+     const len = context.dataset.data.length;
+     return context.dataIndex === len - 1 ? 4.5 : 0;
+   };
+@@ -606,8 +606,16 @@
++  const pointBgFn = function(context) {
++    if (isPointLocked && context.dataIndex === lockedPointIndex) {
++      return '#f0883e';
++    }
++    return context.dataset.borderColor;
++  };
++
+   if (currentMode === 'cpu') {
+-    return [
+-      {
+-        label: 'সার্বিক CPU %',
+-        data: historyData.map(p => p.cpu),
++    const is400 = (currentCpuScale === '400');
++    return [
++      {
++        label: is400 ? 'মোট ৪-vCPU লোড % (সর্বোচ্চ ৪০০%)' : 'সার্বিক CPU % (১০০% স্কেল)',
++        data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
+         borderColor: '#f0883e',
+         backgroundColor: 'rgba(240, 136, 62, 0.1)',
+         borderWidth: 2.2,
+@@ -614,13 +614,16 @@
+         fill: true,
+         pointRadius: pointRadiusFn,
+-        pointBackgroundColor: '#f0883e',
+-        pointBorderColor: '#ffffff',
+-        pointBorderWidth: 1.5,
+-        pointHoverRadius: 5
+-      },
+-      {
+-        label: 'শীর্ষ ১ অ্যাপ CPU %',
+-        data: historyData.map(p => p.app1 ? p.app1.cpu : 0),
++        pointBackgroundColor: pointBgFn,
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 6
++      },
++      {
++        label: is400 ? 'শীর্ষ ১ অ্যাপ CPU %' : 'শীর্ষ ১ অ্যাপ CPU (১০০% স্কেলে)',
++        data: historyData.map(p => {
++          const appVal = p.app1 ? p.app1.cpu : 0;
++          return is400 ? appVal : Math.min(100, Math.round((appVal / 4.0) * 10) / 10);
++        }),
+         borderColor: '#58a6ff',
+         borderWidth: 1.6,
+         borderDash: [4, 4],
+@@ -627,8 +627,8 @@
+         pointRadius: pointRadiusFn,
+-        pointBackgroundColor: '#58a6ff',
+-        pointBorderColor: '#ffffff',
+-        pointBorderWidth: 1.5,
+-        pointHoverRadius: 4
++        pointBackgroundColor: pointBgFn,
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 5
+       }
+     ];
+   } else if (currentMode === 'ram') {
+@@ -641,25 +641,26 @@
+         tension: 0.25,
+         fill: true,
+         pointRadius: pointRadiusFn,
+-        pointBackgroundColor: '#58a6ff',
+-        pointBorderColor: '#ffffff',
+-        pointBorderWidth: 1.5,
+-        pointHoverRadius: 5
+-      }
+-    ];
+-  } else {
+-    return [
+-      {
+-        label: 'সার্বিক CPU %',
+-        data: historyData.map(p => p.cpu),
+-        borderColor: '#f0883e',
+-        borderWidth: 2,
+-        tension: 0.25,
+-        pointRadius: pointRadiusFn,
+-        pointBackgroundColor: '#f0883e',
+-        pointBorderColor: '#ffffff',
+-        pointBorderWidth: 1.5,
+-        pointHoverRadius: 5
++        pointBackgroundColor: pointBgFn,
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 6
++      }
++    ];
++  } else {
++    const is400 = (currentCpuScale === '400');
++    return [
++      {
++        label: is400 ? 'মোট ৪-vCPU লোড %' : 'সার্বিক CPU %',
++        data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
++        borderColor: '#f0883e',
++        borderWidth: 2,
++        tension: 0.25,
++        pointRadius: pointRadiusFn,
++        pointBackgroundColor: pointBgFn,
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 6
+       },
+       {
+         label: 'সার্বিক RAM %',
+@@ -667,12 +667,31 @@
+         borderWidth: 2,
+         tension: 0.25,
+         pointRadius: pointRadiusFn,
+-        pointBackgroundColor: '#58a6ff',
+-        pointBorderColor: '#ffffff',
+-        pointBorderWidth: 1.5,
+-        pointHoverRadius: 5
+-      }
+-    ];
++        pointBackgroundColor: pointBgFn,
++        pointBorderColor: '#ffffff',
++        pointBorderWidth: 1.5,
++        pointHoverRadius: 6
++      }
++    ];
++  }
++}
++
++function handleChartElementClick(e) {
++  if (!chartInstance || !historyData || historyData.length === 0) return;
++  const elements = chartInstance.getElementsAtEventForMode(e, 'index', { intersect: false }, true);
++  if (elements && elements.length > 0) {
++    lockGraphPoint(elements[0].index);
++  } else {
++    const canvas = chartInstance.canvas;
++    const rect = canvas.getBoundingClientRect();
++    const clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : null);
++    if (clientX !== null) {
++      const xPos = clientX - rect.left;
++      const dataX = chartInstance.scales.x.getValueForPixel(xPos);
++      if (dataX !== undefined && dataX >= 0 && dataX < historyData.length) {
++        lockGraphPoint(Math.round(dataX));
++      }
++    }
+   }
+ }
+ 
+@@ -717,6 +717,13 @@
+         mode: 'index',
+         intersect: false
+       },
++      onClick: function(event, elements) {
++        if (elements && elements.length > 0) {
++          lockGraphPoint(elements[0].index);
++        } else if (event.native) {
++          handleChartElementClick(event.native);
++        }
++      },
+       plugins: {
+         legend: {
+           display: true,
+@@ -736,7 +736,7 @@
+             if (tooltipModel.dataPoints && tooltipModel.dataPoints.length > 0) {
+               const idx = tooltipModel.dataPoints[0].dataIndex;
+               const pt = historyData[idx];
+-              if (pt) updateGraphReport(pt, true);
++              if (pt && !isPointLocked) updateGraphReport(pt, true, false);
+             }
+           }
+         }
+@@ -747,6 +747,16 @@
+       events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove', 'touchend']
+     }
+   });
++
++  if (!chartEl.dataset.clickBound) {
++    chartEl.dataset.clickBound = "true";
++    chartEl.addEventListener('click', handleChartElementClick);
++    chartEl.addEventListener('touchend', function(e) {
++      if (e.changedTouches && e.changedTouches.length > 0) {
++        handleChartElementClick(e.changedTouches[0]);
++      }
++    });
++  }
+ }
+ 
+ async function fetchStats() {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

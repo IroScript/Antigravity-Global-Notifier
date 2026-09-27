@@ -1,0 +1,36 @@
+
+The command exited with code 0.
+Output:
+    def handle_browse(self, target_path):
+        target_path = os.path.abspath(target_path)
+        if not os.path.exists(target_path):
+            self.send_json({"error": "Path does not exist", "path": target_path}, status=404)
+            return
+
+        if not os.path.isdir(target_path):
+            self.send_json({"error": "Path is not a directory", "path": target_path}, status=400)
+            return
+
+        breadcrumbs = []
+        parts = target_path.strip("/").split("/")
+        accum = ""
+        breadcrumbs.append({"name": "Root (/)", "path": "/"})
+        if target_path != "/":
+            for p in parts:
+                accum += "/" + p
+                breadcrumbs.append({"name": p, "path": accum})
+
+        parent_path = os.path.dirname(target_path) if target_path != "/" else None
+
+        items = []
+        try:
+            with os.scandir(target_path) as it:
+                for entry in it:
+                    try:
+                        is_dir = entry.is_dir(follow_symlinks=False)
+                        is_link = entry.is_symlink()
+                        link_target = os.readlink(entry.path) if is_link else None
+                        
+                        try:
+                            stat = entry.stat(follow_symlinks=False)
+

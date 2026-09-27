@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+# /home/azureuser/.config/systemd/user/gdrive-reporting-sentinel.service
+[Unit]
+Description=Reporting Agent (agy:report) - Google Drive Live Sync Sentinel
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/azureuser/Reporting-Agent/sentinel_reporter.py
+Restart=always
+RestartSec=30
+WorkingDirectory=/home/azureuser/Reporting-Agent
+StandardOutput=append:/home/azureuser/Reporting-Agent/logs/sentinel.log
+StandardError=append:/home/azureuser/Reporting-Agent/logs/sentinel.log
+
+[Install]
+WantedBy=default.target
+

@@ -5,7 +5,7 @@ HTTP/1.1 307 Temporary Redirect
 
 Content-Type: text/html; charset=utf-8
 
-Location: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=REDACTED_CLIENT_ID.apps.googleusercontent.redacted&redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=yQcNL1ePxog8NaQCRWGyjA
+Location: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=redacted-client.google.invalid&redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=yQcNL1ePxog8NaQCRWGyjA
 
 Date: Fri, 25 Sep 2026 14:07:17 GMT
 
@@ -15,6 +15,6 @@ Connection: close
 
 
 
-<a href="https://accounts.google.com/o/oauth2/auth?access_type=offline&amp;client_id=REDACTED_CLIENT_ID.apps.googleusercontent.redacted&amp;redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&amp;response_type=code&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&amp;state=yQcNL1ePxog8NaQCRWGyjA">Temporary Redirect</a>.
+<a href="https://accounts.google.com/o/oauth2/auth?access_type=offline&amp;client_id=redacted-client.google.invalid&amp;redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&amp;response_type=code&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&amp;state=yQcNL1ePxog8NaQCRWGyjA">Temporary Redirect</a>.
 
 

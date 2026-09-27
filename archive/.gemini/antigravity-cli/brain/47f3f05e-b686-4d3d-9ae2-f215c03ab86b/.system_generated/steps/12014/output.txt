@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+1709-              <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই (CPU+RAM)</button>
+1710-            </div>
+1711-            <span class="mode-hint">👆 গ্রাফে মাউস/আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট দেখা যাবে</span>
+1712-          </div>
+1713-        </div>
+1714-
+1715-        <!-- Chart Canvas -->
+1716-        <div class="chart-wrapper">
+1717:          <canvas id="resourceChart"></canvas>
+1718-        </div>
+1719-
+1720-        <!-- Graph Report Card -->
+1721-        <div class="graph-report-card" id="graph-report-card">
+1722-          <div class="graph-report-top">
+1723-            <div class="graph-report-badge">
+1724-              <span class="report-badge-dot" id="graph-report-dot"></span>
+1725-              <span id="graph-report-status">সর্বশেষ ডাটা পয়েন্ট</span>
+--
+2904-    }
+2905-  }
+2906-
+2907-  function renderChart() {
+2908-    if (typeof Chart === 'undefined') {
+2909-      setTimeout(renderChart, 300);
+2910-      return;
+2911-    }
+2912:    const chartEl = document.getElementById('resourceChart');
+2913-    if (!chartEl) return;
+2914-    const ctx = chartEl.getContext('2d');
+2915-    if (!historyData || historyData.length === 0) return;
+2916-
+2917-    const labels = historyData.map(p => p.t);
+2918-    const datasets = getDatasetsForCurrentMode();
+2919-
+2920-    if (chartInstance) {
+

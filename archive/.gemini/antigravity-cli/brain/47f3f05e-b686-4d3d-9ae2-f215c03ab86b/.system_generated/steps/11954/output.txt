@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+[{"epoch": 1790443324, "t": "11:22:04 PM", "dt": "26 Sep, 11:22 PM", "cpu": 41.2, "ram_gb": 9.49, "ram_pct": 71.5, "app1": {"name": "\ud83d\udcac WhatsApp Bridge", "cpu": 95.9, "ram_gb": 0.23, "ram_mb

@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+vcpu_count: 4
+cpu_sum: 390.6
+top 3 apps:
+  {'app': '🧠 agy:0 (Master Agent)', 'cpu': 199.5, 'ram_mb': 1795.6, 'count': 2, 'ram_gb': 1.75}
+  {'app': '💬 WhatsApp Bridge', 'cpu': 72.0, 'ram_mb': 345.1, 'count': 1, 'ram_gb': 0.34}
+  {'app': '🌐 CloakBrowser / Chrome', 'cpu': 47.5, 'ram_mb': 1224.1, 'count': 7, 'ram_gb': 1.2}
+top 3 procs:
+  1447 agy:0 🧠 agy:0 (Master Agent) 199.1
+  1445 agy:yt 🎬 agy:yt (YouTube Pipeline) 18.2
+  266192 agy:ask 🔍 agy:ask (Ask & Research) 1.2
+sample history item cpu_400: 230.4
+

@@ -1,0 +1,21 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1610,11 +1610,11 @@
+         <table class="files-table">
+           <thead>
+             <tr>
+-              <th style="width:38%;">Name</th>
+-              <th style="width:24%;">Date modified</th>
+-              <th style="width:18%;">Type</th>
++              <th style="width:36%;">Name</th>
++              <th style="width:23%;">Date modified</th>
++              <th style="width:17%;">Type</th>
+               <th style="width:12%; text-align:right;">Size</th>
+-              <th style="width:8%; text-align:center;">প্রোপার্টি</th>
++              <th style="width:12%; text-align:center;">অ্যাকশন</th>
+             </tr>
+           </thead>
+           <tbody id="filesTableBody">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

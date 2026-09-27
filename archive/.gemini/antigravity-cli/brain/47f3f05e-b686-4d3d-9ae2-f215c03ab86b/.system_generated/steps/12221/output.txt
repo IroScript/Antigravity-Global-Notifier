@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+History length: 100
+Sample item: {'epoch': 1790444411, 't': '11:40:11 PM', 'dt': '26 Sep, 11:40 PM', 'cpu': 52.1, 'ram_gb': 9.09, 'ram_pct': 68.6, 'app1': {'name': '💬 WhatsApp Bridge', 'cpu': 107.7, 'ram_gb': 0.24, 'ram_mb': 241.4}, 'app2': {'name': '🤖 AGY Coding Agent', 'cpu': 54.9, 'ram_gb': 3.52, 'ram_mb': 3604.6}}
+

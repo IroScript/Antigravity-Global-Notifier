@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Original apps count: 12
+Top 3 procs original:
+  {'pid': 1447, 'app': '🤖 AGY Coding Agent', 'name': 'agy', 'cmd': '/home/azureuser/.local/bin/agy --dangerously-skip-permiss...', 'ram_mb': 1580.5, 'cpu': 199.2}
+  {'pid': 1445, 'app': '🤖 AGY Coding Agent', 'name': 'agy', 'cmd': '/home/azureuser/.local/bin/agy --dangerously-skip-permiss...', 'ram_mb': 877.1, 'cpu': 27.7}
+  {'pid': 266192, 'app': '🤖 AGY Coding Agent', 'name': 'agy', 'cmd': '/home/azureuser/.local/bin/agy --dangerously-skip-permiss...', 'ram_mb': 381.9, 'cpu': 0.8}
+

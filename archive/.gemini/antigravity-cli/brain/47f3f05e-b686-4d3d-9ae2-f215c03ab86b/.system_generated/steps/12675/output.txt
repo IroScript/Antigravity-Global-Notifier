@@ -1,0 +1,31 @@
+
+The command exited with code 0.
+Output:
+total 5040
+drwxrwxr-x 10 azureuser azureuser    4096 Sep 26 15:03 .
+drwxr-xr-x 15 azureuser azureuser    4096 Sep 26 18:53 ..
+-rw-r--r--  1 azureuser azureuser     191 Sep 25 08:03 boundary_guard.py
+-rw-rw-r--  1 azureuser azureuser  205399 Sep 26 14:05 chart.min.js
+-rw-rw-r--  1 azureuser azureuser     160 Sep 26 19:01 incoming_cmd_agy_0.txt
+-rwxrwxr-x  1 azureuser azureuser     352 Sep 25 10:07 init_agy_sessions.sh
+-rw-r--r--  1 azureuser azureuser      56 Sep 26 15:06 live_monitor_url.txt
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 26 18:38 media
+-rw-rw-r--  1 azureuser azureuser   35205 Sep 26 14:36 monitor.html
+-rw-rw-r--  1 azureuser azureuser     817 Sep 26 18:44 outgoing_wa_message.json
+-rw-rw-r--  1 azureuser azureuser      59 Sep 26 15:03 pinned_links.md
+-rw-rw-r--  1 azureuser azureuser    2772 Sep 26 19:00 resource_monitor.log
+-rw-rw-r--  1 azureuser azureuser      14 Sep 25 10:07 target_phone.txt
+-rw-rw-r--  1 azureuser azureuser    5325 Sep 26 19:00 vm_30m_report.log
+-rw-rw-r--  1 azureuser azureuser  170262 Sep 26 19:01 vm_sizing.log
+-rw-r--r--  1 root      root            0 Sep 25 07:59 vm_sizing_24h.db
+drwxrwxr-x  2 azureuser azureuser 1855488 Sep 26 18:51 wa_auth
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:06 wa_auth_backup_1790330903504
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:08 wa_auth_backup_1790331071783
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:11 wa_auth_backup_1790331241199
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:14 wa_auth_backup_1790331409140
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 25 10:16 wa_auth_backup_1790331425527
+drwxrwxr-x  2 azureuser azureuser    4096 Sep 26 16:32 wa_auth_senderkeys_backup
+-rw-rw-r--  1 azureuser azureuser 2725112 Sep 26 19:01 whatsapp.log
+-rw-r--r--  1 azureuser azureuser   64365 Sep 25 10:05 whatsapp_bridge.js
+-rw-rw-r--  1 azureuser azureuser      59 Sep 26 15:03 windows_explorer_url.txt
+

@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+HTTP/1.0 200 OK
+Server: BaseHTTP/0.6 Python/3.13.5
+Date: Sat, 26 Sep 2026 17:53:04 GMT
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>রিসোর্স লাইভ মনিটর · Azure VM</title>
+<script src="/chart.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+

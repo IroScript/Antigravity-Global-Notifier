@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+[OK] Moved Reporting-Agent to /home/azureuser/.webterminal/Agy Whatsapp Agents
+[OK] Moved Ask-And-Research to /home/azureuser/.webterminal/Agy Whatsapp Agents
+

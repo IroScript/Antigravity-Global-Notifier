@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+[
+    {
+        "epoch": 1790444711,
+        "t": "11:45:11 PM",
+        "dt": "26 Sep, 11:45 PM",
+        "cpu": 42.4,
+        "ram_gb": 9.25,
+        "ram_pct": 69.7,
+        "app1": {
+            "name": "\ud83d\udcac WhatsApp Bridge",
+            "cpu": 81.2,
+            "ram_gb": 0.26,
+            "ram_mb": 269.6
+        },
+        "app2": {
+            "name": "\ud83c\udfac agy:yt (YouTube Pipeline)",
+            "cpu": 53.1,
+            "ram_gb": 3.61,
+            "ram_mb": 3698.2
+        },
+        "cpu_400": 169.6
+    },
+    {
+        "epoch": 1790444718,
+        "t": "11:45:18 PM",
+        "dt": "26 Sep, 11:45 PM",
+        "cpu": 59.7,
+        "ram_gb": 9.27,
+        "ram_pct": 69.8,
+        "app1": {
+

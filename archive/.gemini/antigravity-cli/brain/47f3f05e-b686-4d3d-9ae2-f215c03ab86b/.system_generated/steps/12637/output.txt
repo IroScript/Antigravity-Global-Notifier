@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+        elif path == "/api/drives":
+            self.handle_drives()
+        elif path == "/api/browse":
+            target_path = params.get("path", ["/home/azureuser"])[0]
+            self.handle_browse(target_path)
+        elif path == "/api/content":
+            target_path = params.get("path", [""])[0]
+            self.handle_content(target_path)
+        elif path == "/api/raw":
+            target_path = params.get("path", [""])[0]
+            download = params.get("download", ["0"])[0] == "1"
+

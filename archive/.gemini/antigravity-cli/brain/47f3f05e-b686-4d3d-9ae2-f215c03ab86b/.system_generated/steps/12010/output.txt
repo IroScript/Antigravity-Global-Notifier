@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+/bin/sh: 1: /home/azureuser/.local/bin/azure_vm_30m_reporter.py: not found
+

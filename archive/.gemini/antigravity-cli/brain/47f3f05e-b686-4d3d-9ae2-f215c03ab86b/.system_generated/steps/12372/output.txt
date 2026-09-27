@@ -1,0 +1,31 @@
+
+The command exited with code 0.
+Output:
+top - 18:05:38 up 3 days, 23:31,  0 users,  load average: 10.36, 9.89, 7.53
+Threads:  20 total,   3 running,  17 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 87.5 us,  5.0 sy,  7.5 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :  15995.0 total,    631.8 free,  12494.8 used,   4537.8 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   3500.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1849 azureus+  20   0 5220260   1.9g  36120 R  90.0  11.9  30:43.78 agy
+   1511 azureus+  20   0 5220260   1.9g  36120 S  80.0  11.9  41:31.98 agy
+ 444102 azureus+  20   0 5220260   1.9g  36120 S  50.0  11.9  28:39.90 agy
+   1847 azureus+  20   0 5220260   1.9g  36120 S  40.0  11.9  39:34.50 agy
+   1478 azureus+  20   0 5220260   1.9g  36120 R  20.0  11.9  37:47.11 agy
+ 907317 azureus+  20   0 5220260   1.9g  36120 R  10.0  11.9  14:35.26 agy
+   1447 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   0:00.11 agy
+   1469 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   5:26.87 agy
+   1470 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   0:00.02 agy
+   1484 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   0:00.00 agy
+   1518 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  31:36.97 agy
+   1525 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  27:48.64 agy
+   1840 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  28:51.33 agy
+   1848 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  37:38.12 agy
+   1898 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  22:17.86 agy
+  28827 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  42:38.38 agy
+ 443916 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  22:24.70 agy
+ 909301 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   0:02.39 agy
+ 909480 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9  12:34.14 agy
+ 909821 azureus+  20   0 5220260   1.9g  36120 S   0.0  11.9   0:00.35 agy
+

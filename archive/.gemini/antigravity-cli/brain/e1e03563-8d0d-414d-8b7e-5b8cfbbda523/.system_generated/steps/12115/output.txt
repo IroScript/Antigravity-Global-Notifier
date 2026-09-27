@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 28
+drwx------  5 azureuser azureuser 4096 Sep 25 22:29 .
+drwxrwxr-x 20 azureuser azureuser 4096 Sep 26 18:53 ..
+drwx------  3 azureuser azureuser 4096 Sep 25 07:56 agents
+-rw-rw-r--  1 azureuser azureuser  135 Sep 25 22:29 mobile_full_link.txt
+-rw-rw-r--  1 azureuser azureuser   60 Sep 25 22:29 mobile_url.txt
+drwx------  2 azureuser azureuser 4096 Sep 25 07:53 state
+drwx------  3 azureuser azureuser 4096 Sep 25 07:53 workspace
+

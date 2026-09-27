@@ -1,0 +1,128 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2291,9 +2291,14 @@
+         <td>${item.type_name || '-'}</td>
+         <td style="text-align:right;">${item.size_str || ''}</td>
+         <td style="text-align:center;">
+-          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+-          </button>
++          <div class="row-actions-group">
++            <button class="row-action-btn row-copy-btn" data-path="${escapeAttr(item.path)}" onclick="handleCopyPathBtnClick(this, event)" title="পাথ কপি করুন (Copy Full Path)">
++              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
++            </button>
++            <button class="row-action-btn row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
++              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
++            </button>
++          </div>
+         </td>
+       `;
+       tableBody.appendChild(tr);
+@@ -2306,9 +2306,14 @@
+         showContextMenu(e.clientX, e.clientY, item);
+       };
+       card.innerHTML = `
+-        <button class="grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
+-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+-        </button>
++        <div class="grid-actions-group">
++          <button class="grid-action-btn grid-copy-btn" data-path="${escapeAttr(item.path)}" onclick="handleCopyPathBtnClick(this, event)" title="পাথ কপি করুন (Copy Full Path)">
++            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
++          </button>
++          <button class="grid-action-btn grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
++            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
++          </button>
++        </div>
+         ${getIcon(item)}
+         <div class="item-title" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</div>
+       `;
+@@ -2337,6 +2337,86 @@
+     if (p) showProperties(p);
+   }
+ 
++  function handleCopyPathBtnClick(btn, e) {
++    e.stopPropagation();
++    const p = btn.getAttribute('data-path');
++    if (p) copyPathToClipboard(p, btn);
++  }
++
++  function copyPathToClipboard(path, triggerBtn) {
++    if (!path) return;
++    if (navigator.clipboard && navigator.clipboard.writeText) {
++      navigator.clipboard.writeText(path).then(() => {
++        onPathCopiedSuccess(path, triggerBtn);
++      }).catch(() => {
++        fallbackCopyPath(path, triggerBtn);
++      });
++    } else {
++      fallbackCopyPath(path, triggerBtn);
++    }
++  }
++
++  function fallbackCopyPath(path, triggerBtn) {
++    try {
++      const temp = document.createElement('textarea');
++      temp.value = path;
++      temp.style.position = 'fixed';
++      temp.style.opacity = '0';
++      document.body.appendChild(temp);
++      temp.focus();
++      temp.select();
++      const success = document.execCommand('copy');
++      document.body.removeChild(temp);
++      if (success) {
++        onPathCopiedSuccess(path, triggerBtn);
++      } else {
++        prompt('কপি করতে ব্যর্থ, ম্যানুয়ালি কপি করুন:', path);
++      }
++    } catch (err) {
++      prompt('কপি করতে ব্যর্থ, ম্যানুয়ালি কপি করুন:', path);
++    }
++  }
++
++  function onPathCopiedSuccess(path, btn) {
++    if (btn) {
++      btn.classList.add('copied');
++      const origHtml = btn.innerHTML;
++      btn.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
++      setTimeout(() => {
++        btn.classList.remove('copied');
++        btn.innerHTML = origHtml;
++      }, 1500);
++    }
++    showToast(`পাথ কপি হয়েছে: <span style="color:#7ee787; font-family:monospace; margin-left:4px;">${escapeHtml(path)}</span>`);
++  }
++
++  let toastTimer = null;
++  function showToast(htmlMsg) {
++    let toast = document.getElementById('appToast');
++    if (!toast) {
++      toast = document.createElement('div');
++      toast.id = 'appToast';
++      toast.className = 'app-toast';
++      document.body.appendChild(toast);
++    }
++    toast.innerHTML = `
++      <svg viewBox="0 0 24 24" width="16" height="16" fill="#2ea043" style="flex-shrink:0;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
++      <span>${htmlMsg}</span>
++    `;
++    toast.classList.add('show');
++    if (toastTimer) clearTimeout(toastTimer);
++    toastTimer = setTimeout(() => {
++      toast.classList.remove('show');
++    }, 2800);
++  }
++
++  function handleCtxCopyPath() {
++    hideContextMenu();
++    if (ctxTargetItem && ctxTargetItem.path) {
++      copyPathToClipboard(ctxTargetItem.path);
++    }
++  }
++
+   function openCurrentOrSelectedProperties() {
+     if (selectedItem && selectedItem.path) {
+       showProperties(selectedItem.path);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+642-      font-weight: 600;
+643-      border-color: #8b949e;
+644-    }
+645-    .mode-hint { font-size: 0.7rem; color: #8b949e; }
+646-
+647:    .chart-wrapper {
+648-      position: relative;
+649-      height: 240px;
+650-      width: 100%;
+651-      margin-top: 4px;
+652-      margin-bottom: 10px;
+--
+1711-            <span class="mode-hint">👆 গ্রাফে মাউস/আঙুল সরালে ঠিক ওই মুহূর্তের রিপোর্ট দেখা যাবে</span>
+1712-          </div>
+1713-        </div>
+1714-
+1715-        <!-- Chart Canvas -->
+1716:        <div class="chart-wrapper">
+1717-          <canvas id="resourceChart"></canvas>
+1718-        </div>
+1719-
+1720-        <!-- Graph Report Card -->
+1721-        <div class="graph-report-card" id="graph-report-card">
+

@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+1961-    <span>Download (ডাউনলোড)</span>
+1962-  </div>
+1963-</div>
+1964-
+1965-<script>
+1966:  let currentPath = "THIS_PC";
+1967-  let historyStack = [];
+1968-  let historyIndex = -1;
+1969-  let viewMode = "details";
+1970-  let currentItems = [];
+1971-  let activeTab = "explorer"; // "explorer" or "monitor"
+--
+2057-    if (activeTab === 'monitor') {
+2058-      switchHomeTab('explorer');
+2059-    } else {
+2060-      if (historyIndex > 0) {
+2061-        goBack();
+2062:      } else if (currentPath !== 'THIS_PC') {
+2063-        openThisPC();
+2064-      }
+2065-    }
+2066-    updateBottomNav();
+2067-  }
+--
+2086-      btnMon?.classList.add('active');
+2087-      btnHome?.classList.remove('active');
+2088-      if (btnBack) btnBack.style.opacity = '1.0';
+2089-    } else {
+2090-      btnMon?.classList.remove('active');
+2091:      if (currentPath === 'THIS_PC') {
+

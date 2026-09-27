@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -742,8 +742,8 @@
+     
+     renderProcs();
+ 
+-    // Real-time incremental graph advance (Latest second moves, past seconds remain static)
+-    if (historyData && historyData.length > 0 && chartInstance && !isScrubbing) {
++    // Real-time incremental graph advance (Only for live minute-level views 1m, 5m, 15m, 30m)
++    if (historyData && historyData.length > 0 && chartInstance && !isScrubbing && ['1m', '5m', '15m', '30m'].includes(currentRange)) {
+       const lastIdx = historyData.length - 1;
+       const lastPoint = historyData[lastIdx];
+       const nowSec = Math.floor(Date.now() / 1000);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

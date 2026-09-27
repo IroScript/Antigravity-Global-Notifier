@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+36-                   POLICY / TOOL GATEWAY
+37-            (PreToolUse Hard Runtime Gatekeeper)
+38-                             │
+39-                             ▼
+40-                      PROJECT AGENTS
+41:        ├── YouTube Pipeline (agy:yt)
+42-        ├── Frappe & ERPNext (agy:frappe)
+43-        ├── Telegram Bot (agy:tg)
+44-        ├── Digital History (agy:history)
+45-        ├── Kids Tube (agy:kids)
+46-        ├── Rust Task & Note (agy:rust)
+--
+115-  5. If Level 3, request Iraq Bhai WhatsApp confirmation.
+116-  6. Run automated tests / syntax checks before and after modification.
+117-  7. Record git diff and test output.
+118-
+119-### 2.5 DOMAIN-LOCKED PROJECT AGENTS (WORKERS)
+120:- **YouTube Pipeline:** `/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube` (Veo 3.1 Chrome Extension only, SQLite single source of truth).
+121-- **Frappe & ERPNext:** `/home/azureuser/Frappe-erp-Alco` (ERPNext v16, mobile-first frontend).
+122-- **Telegram Bot:** `/home/azureuser/telegram-bot` (Live MTProto/Telethon search only, no local JSON/CSV fallback).
+123-- **Digital History:** `/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT` (Protected OpenRecall daemon).
+124-- **Kids Tube:** `/home/azureuser/kids_tube_with_folder_seection`.
+125-- **Rust Task:** `/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note` (Cargo build verification).
+--
+308-
+309-## 9. RELATIONSHIP WITH EXISTING POLICIES (OPTION C + B INTEGRATION)
+310-
+311-1. **Foundational Directives Intact:** All universal system rules defined in [`file:///home/azureuser/AGENTS.md`](file:///home/azureuser/AGENTS.md) (Rules 1-11, 13-17: testing before applying, Bengali response language, addressing user as "ইরাক ভাইয়া", full file paths, no autonomous git push, mobile-first formatting, direct cloud download links) remain strictly in full force.
+312-2. **Rule 12 Evolution:** This document canonically supersedes and refines legacy Rule 12 by replacing the combined `agy:research` model with the separated `agy:ask` (read-only research), `agy:report` (read-only audit sentinel), and `agy:action` (controlled fixer) tri-agent architecture, gated by the Policy/Tool Gateway.
+313:3. **Project Policy Distribution:** Project-specific directives (Frappe v16, YouTube Veo 3.1, Telegram live MTProto, etc.) are cataloged in [`file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md`](file:///home/azureuser/AGY-MASTER/PROJECT_REGISTRY.md) and maintained in localized project files ([`file:///home/azureuser/Frappe-erp-Alco/AGENTS.md`](file:///home/azureuser/Frappe-erp-Alco/AGENTS.md), etc.). This keeps token budgets balanced and eliminates contradictory instructions.
+

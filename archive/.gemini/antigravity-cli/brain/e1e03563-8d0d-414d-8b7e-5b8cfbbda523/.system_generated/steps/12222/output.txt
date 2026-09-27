@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+447-
+448-@app.post("/generate", response_model=PromptResponse)
+449-async def generate_prompt(req: PromptRequest):
+450-    global is_busy, action_counter
+451-    if is_busy:
+452:        raise HTTPException(status_code=429, detail="Worker is currently busy processing another request")
+453-
+454-    start_time = time.time()
+455-    is_busy = True
+456-    action_counter += 1
+457-
+
+Terminal ID: terminal-status

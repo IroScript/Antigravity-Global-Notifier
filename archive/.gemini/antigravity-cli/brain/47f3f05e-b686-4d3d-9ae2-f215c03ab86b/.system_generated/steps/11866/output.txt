@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+1522-            <div class="drive-details"><div class="drive-name">IrakIroan Workspace</div><div class="drive-meta">/home/azureuser/IrakIroan</div></div>
+1523-          </div>
+1524-          <div class="drive-card" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
+1525-            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+1526-            <div class="drive-details"><div class="drive-name">GCP Backup Vault</div><div class="drive-meta">33 GB Archive</div></div>
+1527-          </div>
+1528-          <div class="drive-card" onclick="navigateTo('/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com')">
+1529-            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#a6e3a1"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg></div>
+1530-            <div class="drive-details"><div class="drive-name">GCP Extracted Live Files</div><div class="drive-meta">577,045 Files</div></div>
+1531-          </div>
+1532-        </div>
+1533-      </div>
+1534-
+1535-      <!-- File Details Table View -->
+1536-      <div class="files-container" id="detailsViewContainer" style="display:none;">
+1537:        <table class="files-table">
+1538-          <thead>
+1539-            <tr>
+1540-              <th style="width:38%;">Name</th>
+1541-              <th style="width:24%;">Date modified</th>
+1542-              <th style="width:18%;">Type</th>
+1543-              <th style="width:12%; text-align:right;">Size</th>
+1544-              <th style="width:8%; text-align:center;">প্রোপার্টি</th>
+1545-            </tr>
+1546-          </thead>
+1547-          <tbody id="filesTableBody">
+1548-            <!-- Files rendered here -->
+1549-          </tbody>
+1550-        </table>
+1551-      </div>
+1552-
+

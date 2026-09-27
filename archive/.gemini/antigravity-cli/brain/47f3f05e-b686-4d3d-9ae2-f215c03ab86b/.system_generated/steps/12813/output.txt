@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxr-xr-x  4 azureuser azureuser 4096 Sep 25 07:55 .
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 26 16:29 ..
+drwxr-xr-x 10 azureuser azureuser 4096 Sep 26 16:27 antigravity-cli
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 08:02 config
+

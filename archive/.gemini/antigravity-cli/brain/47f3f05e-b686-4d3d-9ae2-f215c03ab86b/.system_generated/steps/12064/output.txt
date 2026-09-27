@@ -1,0 +1,32 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -3149,8 +3149,8 @@
+         bBadge.style.borderColor = getBarColor(data.cpu_overall);
+       }
+ 
+-      // Real-time incremental graph advance (Latest second moves, past seconds remain static)
+-      if (historyData && historyData.length > 0 && chartInstance && !isScrubbing) {
++      // Real-time incremental graph advance (Only for live minute-level views 1m, 5m, 15m, 30m)
++      if (historyData && historyData.length > 0 && chartInstance && !isScrubbing && ['1m', '5m', '15m', '30m'].includes(currentRange)) {
+         const lastIdx = historyData.length - 1;
+         const lastPoint = historyData[lastIdx];
+         const nowSec = Math.floor(Date.now() / 1000);
+@@ -3217,7 +3217,14 @@
+       const res = await fetch(`/api/history?range=${currentRange}`);
+       if (!res.ok) return;
+       historyData = await res.json();
+-      renderChart();
++      if (chartInstance) {
++        chartInstance.data.labels = historyData.map(p => p.t);
++        chartInstance.data.datasets = getDatasetsForCurrentMode();
++        applyScales();
++        chartInstance.update('none');
++      } else {
++        renderChart();
++      }
+       if (!isScrubbing && historyData && historyData.length > 0) {
+         updateGraphReport(historyData[historyData.length - 1], false);
+       }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

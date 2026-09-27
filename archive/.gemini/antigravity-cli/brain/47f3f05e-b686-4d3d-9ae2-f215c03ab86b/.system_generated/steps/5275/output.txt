@@ -3,7 +3,7 @@ Status: RUNNING
 Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5271.log
 Log output:
 Authentication required. Please visit the URL to log in:
-  https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=REDACTED_CLIENT_ID.apps.googleusercontent.redacted&code_challenge=LJkAU-6TvM1rV5VP5lO55Df6MVB50XFUeqCNjNUs884&code_challenge_method=S256&prompt=consent&redirect_uri=https%3A%2F%2Fantigravity.google%2Foauth-callback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcclog+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fexperimentsandconfigs+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faicode+openid&state=2GsgIwDQHUHUvv4oUNtG2g
+  https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=redacted-client.google.invalid&code_challenge=LJkAU-6TvM1rV5VP5lO55Df6MVB50XFUeqCNjNUs884&code_challenge_method=S256&prompt=consent&redirect_uri=https%3A%2F%2Fantigravity.google%2Foauth-callback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcclog+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fexperimentsandconfigs+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faicode+openid&state=2GsgIwDQHUHUvv4oUNtG2g
 
 Waiting for authentication (timeout 60s)...
 Or, paste the authorization code here and press Enter:

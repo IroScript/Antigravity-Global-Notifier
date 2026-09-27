@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+PID 1246: tty=/dev/null, cwd=/home/azureuser, cmd=tmux new-session -d -s agy -n AI-Agent -c /home/azureuser 
+PID 1444: tty=/dev/pts/5, cwd=/home/azureuser/telegram-bot (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1445: tty=/dev/pts/3, cwd=/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube, cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1446: tty=/dev/pts/8, cwd=/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1447: tty=/dev/pts/0, cwd=/home/azureuser, cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1448: tty=/dev/pts/1, cwd=/home/azureuser, cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1449: tty=/dev/pts/6, cwd=/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1450: tty=/dev/pts/4, cwd=/home/azureuser/Frappe-erp-Alco (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1451: tty=/dev/pts/7, cwd=/home/azureuser/kids_tube_with_folder_seection (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1454: tty=/dev/pts/9, cwd=/home/azureuser/Article-Publishing-Platform (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1556: tty=/dev/pts/10, cwd=/home/azureuser/3D-Game-Design-Studio (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 1558: tty=/dev/null, cwd=/home/azureuser, cmd=/usr/local/bin/ttyd -W -p 7681 -P 5 -I /home/azureuser/.webt
+PID 266192: tty=/dev/pts/13, cwd=/home/azureuser/Ask-And-Research (deleted), cmd=/home/azureuser/.local/bin/agy --dangerously-skip-permission
+PID 637238: tty=/dev/null, cwd=/home/azureuser/Ask-And-Research (deleted), cmd=/usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+PID 1266649: tty=/dev/pts/15, cwd=/home/azureuser/IrakIroan/azure_file_explorer, cmd=python3 -c 
+import os, glob
+
+for pid_dir in glob.glob('/proc
+

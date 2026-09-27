@@ -1,0 +1,41 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2261,8 +2261,15 @@
+ 
+     items.forEach(item => {
+       const tr = document.createElement('tr');
+-      tr.onclick = (e) => handleItemClick(item, e);
+-      tr.ondblclick = () => handleItemOpen(item);
++      tr.onclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
++        handleItemClick(item, e);
++        handleItemOpen(item);
++      };
++      tr.ondblclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.row-actions-group')) return;
++        handleItemOpen(item);
++      };
+       tr.oncontextmenu = (e) => {
+         e.preventDefault();
+         showContextMenu(e.clientX, e.clientY, item);
+@@ -2304,8 +2304,15 @@
+ 
+       const card = document.createElement('div');
+       card.className = 'grid-item';
+-      card.onclick = (e) => handleItemClick(item, e);
+-      card.ondblclick = () => handleItemOpen(item);
++      card.onclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.grid-actions-group')) return;
++        handleItemClick(item, e);
++        handleItemOpen(item);
++      };
++      card.ondblclick = (e) => {
++        if (e.target.closest('button') || e.target.closest('.grid-actions-group')) return;
++        handleItemOpen(item);
++      };
+       card.oncontextmenu = (e) => {
+         e.preventDefault();
+         showContextMenu(e.clientX, e.clientY, item);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

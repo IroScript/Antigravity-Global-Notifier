@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+range=1m: 27 items
+range=5m: 100 items
+range=15m: 100 items
+range=30m: 100 items
+range=1h: ERROR Remote end closed connection without response
+range=6h: ERROR Remote end closed connection without response
+range=12h: ERROR Remote end closed connection without response
+range=24h: ERROR Remote end closed connection without response
+range=all: ERROR Remote end closed connection without response
+

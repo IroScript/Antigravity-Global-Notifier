@@ -1,0 +1,45 @@
+
+The command exited with code 0.
+Output:
+819-                "path": target_path,
+820-                "size_str": format_size(stat.st_size),
+821-                "is_too_large": True,
+822-                "content": f"[File is {format_size(stat.st_size)}, too large to display directly. Use download.]"
+823-            })
+824-            return
+825-
+826-        try:
+827-            with open(target_path, "r", encoding="utf-8", errors="replace") as f:
+828-                content = f.read()
+829-            self.send_json({
+830-                "name": os.path.basename(target_path),
+831-                "path": target_path,
+832-                "size_str": format_size(stat.st_size),
+833-                "ext": os.path.splitext(target_path)[1].lower().lstrip("."),
+834-                "content": content
+835-            })
+836-        except Exception as e:
+837-            self.send_json({"error": str(e)}, status=500)
+838-
+839:    def handle_raw(self, target_path, download):
+840-        target_path = os.path.abspath(target_path)
+841-        if not os.path.exists(target_path) or os.path.isdir(target_path):
+842-            self.send_error(404, "File not found")
+843-            return
+844-
+845-        mime, _ = mimetypes.guess_type(target_path)
+846-        mime = mime or "application/octet-stream"
+847-        filename = os.path.basename(target_path)
+848-        stat = os.stat(target_path)
+849-
+850-        self.send_response(200)
+851-        self.send_header("Content-Type", mime)
+852-        self.send_header("Content-Length", str(stat.st_size))
+853-        if download:
+854-            self.send_header("Content-Disposition", f'attachment; filename="{filename}"')
+855-        else:
+856-            self.send_header("Content-Disposition", f'inline; filename="{filename}"')
+857-        self.end_headers()
+858-
+859-        try:
+

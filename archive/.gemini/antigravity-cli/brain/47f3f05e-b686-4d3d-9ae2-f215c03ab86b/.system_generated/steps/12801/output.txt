@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+0	/home/azureuser/.webterminal/vm_sizing_24h.db
+4.0K	/home/azureuser/.webterminal/boundary_guard.py
+4.0K	/home/azureuser/.webterminal/incoming_cmd_agy_0.txt
+4.0K	/home/azureuser/.webterminal/init_agy_sessions.sh
+4.0K	/home/azureuser/.webterminal/live_monitor_url.txt
+4.0K	/home/azureuser/.webterminal/outgoing_wa_message.json
+4.0K	/home/azureuser/.webterminal/pinned_links.md
+4.0K	/home/azureuser/.webterminal/resource_monitor.log
+4.0K	/home/azureuser/.webterminal/target_phone.txt
+4.0K	/home/azureuser/.webterminal/windows_explorer_url.txt
+8.0K	/home/azureuser/.webterminal/vm_30m_report.log
+8.0K	/home/azureuser/.webterminal/wa_auth_backup_1790330903504
+8.0K	/home/azureuser/.webterminal/wa_auth_backup_1790331071783
+8.0K	/home/azureuser/.webterminal/wa_auth_backup_1790331241199
+8.0K	/home/azureuser/.webterminal/wa_auth_backup_1790331409140
+8.0K	/home/azureuser/.webterminal/wa_auth_backup_1790331425527
+36K	/home/azureuser/.webterminal/monitor.html
+64K	/home/azureuser/.webterminal/whatsapp_bridge.js
+176K	/home/azureuser/.webterminal/vm_sizing.log
+204K	/home/azureuser/.webterminal/chart.min.js
+348K	/home/azureuser/.webterminal/wa_auth_senderkeys_backup
+2.0M	/home/azureuser/.webterminal/media
+2.7M	/home/azureuser/.webterminal/whatsapp.log
+113M	/home/azureuser/.webterminal/wa_auth
+315M	/home/azureuser/.webterminal/Agy Whatsapp Agents
+

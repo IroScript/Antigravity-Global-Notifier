@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+1293:    .row-copy-btn {
+1296:    .row-copy-btn:hover {
+1301:    .row-copy-btn.copied {
+2295:            <button class="row-action-btn row-copy-btn" data-path="${escapeAttr(item.path)}" onclick="handleCopyPathBtnClick(this, event)" title="পাথ কপি করুন (Copy Full Path)">
+

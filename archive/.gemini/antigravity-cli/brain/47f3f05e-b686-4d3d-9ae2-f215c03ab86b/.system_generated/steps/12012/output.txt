@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+178-<!-- Section 2: Interactive Timeline Graph -->
+179-<div class="chart-section-card">
+180-  <div class="chart-card-header">
+181-    <div class="chart-title-row">
+182-      <span class="chart-title">📈 রিসোর্স ব্যবহারের টাইমলাইন গ্রাফ</span>
+183:      <span class="chart-sub-tag" id="chart-range-label">গত ১ ঘণ্টা</span>
+184-    </div>
+185-
+186-    <!-- Time Range Pills (Google Finance Style) -->
+187-    <div class="pills-scroll">
+188-      <button class="pill" onclick="changeRange('1m', this)">1মি</button>
+--
+327-
+328-function changeRange(range, btn) {
+329-  currentRange = range;
+330-  document.querySelectorAll('.pills-scroll .pill').forEach(b => b.classList.remove('active'));
+331-  btn.classList.add('active');
+332:  const lbl = document.getElementById('chart-range-label');
+333-  if (lbl) lbl.innerText = RANGE_NAMES[range] || range;
+334-  fetchHistory();
+335-}
+336-
+337-function getBarColor(pct) {
+

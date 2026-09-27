@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+040000 tree 73db7a9aff2a18fe1a93686b5a57d85a2075f298	archive
+

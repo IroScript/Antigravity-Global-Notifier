@@ -1,0 +1,26 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/GPUPersistentCache/GPUCache/FHX5PLM4BC2BWMAFYQOUNI6C2T4IZQ4H/cache.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/first_party_sets.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/declarative_performance_observer.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/heavy_ad_intervention_opt_out.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/youtube_pipeline.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db
+

@@ -1,0 +1,26 @@
+
+The command exited with code 0.
+Output:
+root     1115698  137976  0 09:00 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8003 -container-ip 172.19.0.4 -container-port 8000
+root     1115704  137976  0 09:00 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8003 -container-ip 172.19.0.4 -container-port 8000
+root     1115739 1115718  0 09:00 ?        00:00:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115772 1115739  0 09:00 ?        00:00:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115774 1115772  0 09:00 ?        00:00:53 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201458  137976  0 14:30 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8001 -container-ip 172.19.0.2 -container-port 8000
+root     1201465  137976  0 14:30 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8001 -container-ip 172.19.0.2 -container-port 8000
+root     1201502 1201480  0 14:30 ?        00:00:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201533 1201502  0 14:30 ?        00:00:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201535 1201533  0 14:30 ?        00:00:49 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248164  137976  0 17:30 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8002 -container-ip 172.19.0.3 -container-port 8000
+root     1248172  137976  0 17:30 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8002 -container-ip 172.19.0.3 -container-port 8000
+root     1248210 1248187  0 17:30 ?        00:00:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248307 1248210  0 17:30 ?        00:00:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248309 1248307  0 17:30 ?        00:00:18 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268488  137976  0 18:00 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8004 -container-ip 172.19.0.5 -container-port 8000
+root     1268496  137976  0 18:00 ?        00:00:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8004 -container-ip 172.19.0.5 -container-port 8000
+root     1268534 1268512  0 18:00 ?        00:00:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268566 1268534  0 18:00 ?        00:00:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268568 1268566  0 18:00 ?        00:00:10 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+azureus+ 1275691    1447  0 18:25 pts/12   00:00:00 bash -c ps -ef | grep -E "worker_server|docker-proxy"
+azureus+ 1275693 1275691  0 18:25 pts/12   00:00:00 grep -E worker_server|docker-proxy
+

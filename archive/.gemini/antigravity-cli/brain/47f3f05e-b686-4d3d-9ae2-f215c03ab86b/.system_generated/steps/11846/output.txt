@@ -1,0 +1,38 @@
+
+The command exited with code 0.
+Output:
+[
+  {
+    "name": "antigravity-cli",
+    "path": "archive/.gemini/antigravity-cli",
+    "sha": "e2cd4df0b26c1a5d67cf8befc5d257741e74059d",
+    "size": 0,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive/.gemini/antigravity-cli?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive/.gemini/antigravity-cli",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/e2cd4df0b26c1a5d67cf8befc5d257741e74059d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive/.gemini/antigravity-cli?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/e2cd4df0b26c1a5d67cf8befc5d257741e74059d",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive/.gemini/antigravity-cli"
+    }
+  },
+  {
+    "name": "config",
+    "path": "archive/.gemini/config",
+    "sha": "f2c98a208b44cf423f18e3cf465b3348c53ff39b",
+    "size": 0,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive/.gemini/config?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive/.gemini/config",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/f2c98a208b44cf423f18e3cf465b3348c53ff39b",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive/.gemini/config?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/f2c98a208b44cf423f18e3cf465b3348c53ff39b",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive/.gemini/config"
+    }
+  }
+]
+

@@ -1,0 +1,60 @@
+
+The command exited with code 0.
+Output:
+1265-    }
+1266-    .prop-footer-btn.secondary {
+1267-      background: #2a2a2e;
+1268-      color: #ddd;
+1269-    }
+1270-    .prop-footer-btn.secondary:hover {
+1271-      background: #36363c;
+1272-    }
+1273-
+1274-    /* Info Buttons on Table Row and Grid Item */
+1275:    .row-info-btn {
+1276-      background: rgba(255, 255, 255, 0.06);
+1277-      border: 1px solid rgba(255, 255, 255, 0.14);
+1278-      border-radius: 4px;
+1279-      color: var(--accent-blue);
+1280-      width: 26px;
+1281-      height: 26px;
+1282-      display: inline-flex;
+1283-      align-items: center;
+1284-      justify-content: center;
+1285-      cursor: pointer;
+1286-      transition: all 0.15s ease;
+1287-    }
+1288:    .row-info-btn:hover {
+1289-      background: var(--accent-fill);
+1290-      color: #fff;
+1291-      border-color: var(--accent-blue);
+1292-    }
+1293-    .grid-info-btn {
+1294-      position: absolute;
+1295-      top: 6px;
+1296-      right: 6px;
+1297-      background: rgba(24, 24, 27, 0.85);
+1298-      border: 1px solid rgba(255, 255, 255, 0.2);
+--
+2207-        <td>
+2208-          <div class="col-name">
+2209-            ${getIcon(item)}
+2210-            <span>${escapeHtml(item.name)}</span>
+2211-          </div>
+2212-        </td>
+2213-        <td>${item.mtime_str || '-'}</td>
+2214-        <td>${item.type_name || '-'}</td>
+2215-        <td style="text-align:right;">${item.size_str || ''}</td>
+2216-        <td style="text-align:center;">
+2217:          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+2218-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+2219-          </button>
+2220-        </td>
+2221-      `;
+2222-      tableBody.appendChild(tr);
+2223-
+2224-      const card = document.createElement('div');
+2225-      card.className = 'grid-item';
+2226-      card.onclick = (e) => handleItemClick(item, e);
+2227-      card.ondblclick = () => handleItemOpen(item);
+

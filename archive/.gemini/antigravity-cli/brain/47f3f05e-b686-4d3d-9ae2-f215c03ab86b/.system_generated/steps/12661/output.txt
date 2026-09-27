@@ -1,0 +1,159 @@
+
+The command exited with code 0.
+Output:
+53-      background: #09090b;
+54-      color: var(--text-main);
+55-      height: 100vh;
+56-      display: flex;
+57-      flex-direction: column;
+58:      overflow: hidden;
+59-    }
+60-
+61-    .win11-window {
+62-      display: flex;
+63-      flex-direction: column;
+--
+259-
+260-    /* Workspace Body */
+261-    .workspace-body {
+262-      flex: 1;
+263-      display: flex;
+264:      overflow: hidden;
+265-      position: relative;
+266-    }
+267-
+268-    /* Left Sidebar */
+269-    .sidebar {
+--
+344-    .progress-bar-container {
+345-      width: 100%;
+346-      height: 6px;
+347-      background: var(--progress-bg);
+348-      border-radius: 3px;
+349:      overflow: hidden;
+350-    }
+351-
+352-    .progress-fill {
+353-      height: 100%;
+354-      background: var(--accent-blue);
+--
+449-      color: var(--text-main);
+450-      word-break: break-all;
+451-      display: -webkit-box;
+452-      -webkit-line-clamp: 2;
+453-      -webkit-box-orient: vertical;
+454:      overflow: hidden;
+455-      line-height: 1.3;
+456-    }
+457-
+458-    /* ========================================================= */
+459-    /* VIEW 2: FULL EXACT LIVE RESOURCE & CPU MONITOR STYLES      */
+--
+530-    }
+531-    .mon-bar-bg {
+532-      background: #21262d;
+533-      border-radius: 6px;
+534-      height: 8px;
+535:      overflow: hidden;
+536-      position: relative;
+537-    }
+538-    .mon-bar-fill {
+539-      height: 100%;
+540-      border-radius: 6px;
+--
+752-      font-weight: 600;
+753-      color: var(--text-bright);
+754-      flex: 1;
+755-      min-width: 110px;
+756-      white-space: nowrap;
+757:      overflow: hidden;
+758-      text-overflow: ellipsis;
+759-    }
+760-    .g-app-vals {
+761-      display: flex;
+762-      align-items: center;
+--
+802-    .mon-app-name {
+803-      font-size: 0.88rem;
+804-      font-weight: 600;
+805-      color: var(--text-bright);
+806-      white-space: nowrap;
+807:      overflow: hidden;
+808-      text-overflow: ellipsis;
+809-    }
+810-    .mon-app-count { font-size: 0.72rem; color: #8b949e; }
+811-    .mon-app-cols { display: flex; gap: 14px; align-items: center; text-align: right; }
+812-    .mon-col-item { display: flex; flex-direction: column; align-items: flex-end; min-width: 65px; }
+--
+865-    .mon-proc-cmd {
+866-      font-size: 0.72rem;
+867-      color: #8b949e;
+868-      font-family: monospace;
+869-      white-space: nowrap;
+870:      overflow: hidden;
+871-      text-overflow: ellipsis;
+872-    }
+873-    .mon-proc-metrics { display: flex; gap: 12px; font-size: 0.78rem; margin-top: 4px; }
+874-
+875-    /* Status Bar */
+--
+984-      border: 1px solid rgba(255, 255, 255, 0.15);
+985-      border-radius: var(--radius-lg);
+986-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+987-      display: flex;
+988-      flex-direction: column;
+989:      overflow: hidden;
+990-    }
+991-
+992-    .notepad-header {
+993-      height: 38px;
+994-      background: #252526;
+--
+1059-      border: 1px solid rgba(255, 255, 255, 0.16);
+1060-      border-radius: 12px;
+1061-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+1062-      display: flex;
+1063-      flex-direction: column;
+1064:      overflow: hidden;
+1065-      font-family: var(--font-family);
+1066-      animation: win11-modal-appear 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+1067-    }
+1068-    @keyframes win11-modal-appear {
+1069-      from { transform: scale(0.94); opacity: 0; }
+--
+1101-      gap: 8px;
+1102-      font-size: 12px;
+1103-      font-weight: 500;
+1104-      color: #fff;
+1105-      white-space: nowrap;
+1106:      overflow: hidden;
+1107-      text-overflow: ellipsis;
+1108-    }
+1109-    .prop-tab-bar {
+1110-      display: flex;
+1111-      padding: 6px 14px 0 14px;
+--
+1145-      border-radius: 8px;
+1146-      border: 1px solid rgba(255, 255, 255, 0.08);
+1147-    }
+1148-    .prop-hero-name-box {
+1149-      flex: 1;
+1150:      overflow: hidden;
+1151-    }
+1152-    .prop-name-input {
+1153-      width: 100%;
+1154-      background: #27272a;
+1155-      border: 1px solid rgba(255, 255, 255, 0.16);
+--
+1217-    }
+1218-    .prop-path-text {
+1219-      font-size: 11px;
+1220-      font-family: monospace;
+1221-      color: #a1a1aa;
+1222:      overflow: hidden;
+1223-      text-overflow: ellipsis;
+1224-      white-space: nowrap;
+1225-      flex: 1;
+1226-    }
+1227-    .btn-copy-path {
+

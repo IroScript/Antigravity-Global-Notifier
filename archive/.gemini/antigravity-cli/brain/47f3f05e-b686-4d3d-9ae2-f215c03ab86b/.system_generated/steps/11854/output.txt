@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+● azure-file-explorer.service - Windows 11 Azure File Explorer Web Service
+     Loaded: loaded (/home/azureuser/.config/systemd/user/azure-file-explorer.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-26 15:33:27 UTC; 1h 32min ago
+ Invocation: 86dbaa49b22f4116b50c9c514deece97
+   Main PID: 1218818 (python3)
+      Tasks: 1 (limit: 19137)
+     Memory: 20M (peak: 51.6M)
+        CPU: 12.634s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/azure-file-explorer.service
+             └─1218818 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+
+Sep 26 17:02:12 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:12] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:12 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:12] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:13 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:13] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:14 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:14] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:15 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:15] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:17 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:17] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:19 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:19] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:21 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:21] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:22 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:22] "GET /api/stats HTTP/1.1" 200 -
+Sep 26 17:02:24 FatehAli python3[1218818]: 127.0.0.1 - - [26/Sep/2026 17:02:24] "GET /api/stats HTTP/1.1" 200 -
+

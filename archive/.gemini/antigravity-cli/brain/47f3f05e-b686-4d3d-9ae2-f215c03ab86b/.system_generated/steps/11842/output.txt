@@ -1,0 +1,136 @@
+
+The command exited with code 0.
+Output:
+<truncated 175 lines>
+    }
+  },
+  {
+    "name": "antigravity-logo.png",
+    "path": "antigravity-logo.png",
+    "sha": "c677e4f5f75ba256f0b1fc2e6e1f48d1ac23c0eb",
+    "size": 16849,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/antigravity-logo.png?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/antigravity-logo.png",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/c677e4f5f75ba256f0b1fc2e6e1f48d1ac23c0eb",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/antigravity-logo.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/antigravity-logo.png?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/c677e4f5f75ba256f0b1fc2e6e1f48d1ac23c0eb",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/antigravity-logo.png"
+    }
+  },
+  {
+    "name": "archive",
+    "path": "archive",
+    "sha": "a31b32926d8be99e38ede1f324909e70838a4fc2",
+    "size": 0,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/a31b32926d8be99e38ede1f324909e70838a4fc2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/archive?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/a31b32926d8be99e38ede1f324909e70838a4fc2",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/archive"
+    }
+  },
+  {
+    "name": "force_verify.py",
+    "path": "force_verify.py",
+    "sha": "49dfc5432e64b51c0fb28ac04e47628cd1a1cf7b",
+    "size": 8881,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/force_verify.py?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/force_verify.py",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/49dfc5432e64b51c0fb28ac04e47628cd1a1cf7b",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/force_verify.py",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/force_verify.py?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/49dfc5432e64b51c0fb28ac04e47628cd1a1cf7b",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/force_verify.py"
+    }
+  },
+  {
+    "name": "hooks.json",
+    "path": "hooks.json",
+    "sha": "907dc38caea308275494ef14ec9b0b5fe1fa9523",
+    "size": 685,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/hooks.json?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/hooks.json",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/907dc38caea308275494ef14ec9b0b5fe1fa9523",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/hooks.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/hooks.json?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/907dc38caea308275494ef14ec9b0b5fe1fa9523",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/hooks.json"
+    }
+  },
+  {
+    "name": "install.bat",
+    "path": "install.bat",
+    "sha": "2653f8cb08ab8cdd8e275d5b69f92ebedb2e93c6",
+    "size": 1683,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/install.bat?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/install.bat",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/2653f8cb08ab8cdd8e275d5b69f92ebedb2e93c6",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/install.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/install.bat?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/2653f8cb08ab8cdd8e275d5b69f92ebedb2e93c6",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/install.bat"
+    }
+  },
+  {
+    "name": "notify_reply.py",
+    "path": "notify_reply.py",
+    "sha": "eb3178d305ef19613a9dde3f0be1009e8f63873a",
+    "size": 6408,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/notify_reply.py?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/notify_reply.py",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/eb3178d305ef19613a9dde3f0be1009e8f63873a",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/notify_reply.py",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/notify_reply.py?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/eb3178d305ef19613a9dde3f0be1009e8f63873a",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/notify_reply.py"
+    }
+  },
+  {
+    "name": "record_tool_edit.py",
+    "path": "record_tool_edit.py",
+    "sha": "2c49fdcdf5b4c8d7fa6504288b0e09d84e460ade",
+    "size": 1308,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/record_tool_edit.py?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/record_tool_edit.py",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/2c49fdcdf5b4c8d7fa6504288b0e09d84e460ade",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/record_tool_edit.py",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/record_tool_edit.py?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/2c49fdcdf5b4c8d7fa6504288b0e09d84e460ade",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/record_tool_edit.py"
+    }
+  },
+  {
+    "name": "terminal_customizer.ps1",
+    "path": "terminal_customizer.ps1",
+    "sha": "6d339d4cb6630b9ab109c47d0fda88c99b5dd043",
+    "size": 7103,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/terminal_customizer.ps1?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/terminal_customizer.ps1",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/6d339d4cb6630b9ab109c47d0fda88c99b5dd043",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/terminal_customizer.ps1",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/terminal_customizer.ps1?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/6d339d4cb6630b9ab109c47d0fda88c99b5dd043",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/terminal_customizer.ps1"
+    }
+  }
+]
+

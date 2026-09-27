@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Sample enriched top procs:
+  1447: agy:0 -> 🧠 agy:0 (Master Agent) (CPU: 223.1%, RAM: 1586.1MB)
+  1445: agy:yt -> 🎬 agy:yt (YouTube Pipeline) (CPU: 17.0%, RAM: 861.6MB)
+  266192: agy:ask -> 🔍 agy:ask (Ask & Research) (CPU: 0.4%, RAM: 381.9MB)
+  1446: agy:rust -> 🦀 agy:rust (Rust Task) (CPU: 0.4%, RAM: 344.7MB)
+  729489: whatsapp -> 💬 WhatsApp Bridge (CPU: 72.0%, RAM: 322.7MB)
+

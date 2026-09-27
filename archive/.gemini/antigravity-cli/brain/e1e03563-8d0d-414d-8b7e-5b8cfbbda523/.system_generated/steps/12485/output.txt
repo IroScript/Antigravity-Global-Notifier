@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Stdout:
+
+Stderr:
+
+Terminal ID: terminal-status

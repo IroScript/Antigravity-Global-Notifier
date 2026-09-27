@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[{"epoch": 1790358957, "t": "5 PM", "dt": "25 Sep, 05:55 PM", "cpu": 48.8, "ram_gb": 9.3, "ram_pct": 70.1, "app1": {"name": "\ud83d\udcac WhatsApp Bridge", "cpu": 22.0, "ram_gb": 0.21}, "app2": {"name": "\ud83e\udde0 Antigravity CLI", "cpu": 12.2, "r
+[{"epoch": 1790012457, "t": "21 Sep", "dt": "21 Sep, 05:40 PM", "cpu": 32.9, "ram_gb": 9.26, "ram_pct": 69.8, "app1": {"name": "\ud83d\udcac WhatsApp Bridge", "cpu": 14.8, "ram_gb": 0.22}, "app2": {"name": "\ud83e\udde0 Antigravity CLI", "cpu": 8.2, 

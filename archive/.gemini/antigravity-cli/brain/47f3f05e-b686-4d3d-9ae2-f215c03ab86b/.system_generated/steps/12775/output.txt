@@ -1,0 +1,45 @@
+
+The command exited with code 0.
+Output:
+          <span>IrakIroan Workspace</span>
+        </div>
+        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
+          <svg viewBox="0 0 24 24" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          <span>GCP Backup Vault</span>
+        </div>
+        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/AGY-MASTER')">
+          <svg viewBox="0 0 24 24" fill="#cba6f7"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19h-15L12 5.5z"/></svg>
+          <span>AGY-MASTER Architecture</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Devices & Drives</div>
+        <div class="sidebar-item" onclick="navigateTo('/')">
+          <svg viewBox="0 0 24 24" fill="#89b4fa"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></svg>
+          <span>Local Disk (C:)</span>
+        </div>
+        <div class="sidebar-item" onclick="navigateTo('/home')">
+          <svg viewBox="0 0 24 24" fill="#a6e3a1"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></svg>
+          <span>Data Disk (D:)</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Server Host</div>
+        <div class="sidebar-item" style="cursor:default;">
+          <svg viewBox="0 0 24 24" fill="#f38ba8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          <span>Azure VM: FatehAli</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 1: FILE EXPLORER CONTENT AREA -->
+    <div class="explorer-content-area" id="viewExplorer">
+      <!-- Drives & Shortcuts (Visible on "This PC") -->
+      <div id="drivesView" style="display:none;">
+        <div class="section-header">
+          <span>Devices and Drives</span>
+          <span style="font-size:11px; color:var(--text-muted);">Azure Virtual Machine FatehAli</span>
+        </div>
+

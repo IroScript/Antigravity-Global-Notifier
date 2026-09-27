@@ -1,7 +1,7 @@
 
 The command exited with code 1.
 Output:
-ERROR: (gcloud.services.list) [[REDACTED_ID]@developer.gserviceaccount.com] does not have permission to access projects instance [irak-mahmud-project] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as [REDACTED_ID]@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+ERROR: (gcloud.services.list) [371325934382-compute@developer.gserviceaccount.com] does not have permission to access projects instance [irak-mahmud-project] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as 371325934382-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
 - '@type': type.googleapis.com/google.rpc.ErrorInfo
   domain: googleapis.com
   metadata:

@@ -1,0 +1,31 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -711,7 +711,7 @@
+         ]
+         self.send_json({"drives": drives})
+ 
+-    def handle_browse(self, target_path):
++    def handle_browse(self, target_path, params=None):
+         target_path = os.path.abspath(target_path)
+         if not os.path.exists(target_path):
+             self.send_json({"error": "Path does not exist", "path": target_path}, status=404)
+@@ -731,6 +731,7 @@
+ 
+         parent_path = os.path.dirname(target_path) if target_path != "/" else None
+ 
++        show_hidden = params.get("show_hidden", ["0"])[0] == "1" if params else False
+         items = []
+         try:
+             with os.scandir(target_path) as it:
+@@ -737,3 +737,8 @@
++                    if not show_hidden:
++                        if entry.name.startswith("."):
++                            continue
++                        if target_path == "/home/azureuser" and entry.name in ["AGY-MASTER", "RESTORE_VERIFY_TEMP", "GEMINI.md"]:
++                            continue
+                     try:
+                         is_dir = entry.is_dir(follow_symlinks=False)
+                         is_link = entry.is_symlink()
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

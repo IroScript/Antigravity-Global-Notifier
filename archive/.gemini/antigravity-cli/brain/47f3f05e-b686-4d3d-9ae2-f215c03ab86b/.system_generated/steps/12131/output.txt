@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+tcp   LISTEN 0      5              0.0.0.0:8090       0.0.0.0:*                                                                                          
+
+Terminal ID: term1

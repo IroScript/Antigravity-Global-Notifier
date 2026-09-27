@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+{"status":"ok","worker_id":"worker_1","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":63,"last_session_refresh":1790461076.9853723}
+{"status":"ok","worker_id":"worker_2","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":1,"last_session_refresh":1790460939.4815109}
+{"status":"ok","worker_id":"worker_3","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":3,"last_session_refresh":1790460972.0120924}
+{"status":"ok","worker_id":"worker_4","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":0,"last_session_refresh":1790460955.1439319}
+
+Terminal ID: terminal-status

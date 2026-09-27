@@ -4,7 +4,7 @@ Output:
 /usr/bin/gcloud
                   Credentialed Accounts
 ACTIVE  ACCOUNT
-*       [REDACTED_ID]@developer.gserviceaccount.com
+*       371325934382-compute@developer.gserviceaccount.com
 
 To set the active account, run:
     $ gcloud config set account `ACCOUNT`

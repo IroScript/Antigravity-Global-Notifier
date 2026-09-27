@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+UID          PID    PPID  C STIME TTY          TIME CMD
+azureus+    1688    1137  0 Sep22 ?        00:00:00 /bin/bash /home/azureuser/.o
+azureus+    1702    1688  0 Sep22 ?        00:00:00 /bin/bash /home/azureuser/.o
+azureus+    1716    1687  0 Sep22 ?        00:00:31 python3 -m http.server 8085 
+

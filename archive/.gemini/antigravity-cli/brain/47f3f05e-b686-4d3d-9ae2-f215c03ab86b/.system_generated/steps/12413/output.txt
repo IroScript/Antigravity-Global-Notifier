@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+626-        if path == "/" or path == "/index.html":
+627-            self.serve_file(os.path.join(STATIC_DIR, "index.html"), "text/html; charset=utf-8")
+628-        elif path.startswith("/static/"):
+629-            rel_path = path[len("/static/"):]
+630-            file_path = os.path.join(STATIC_DIR, rel_path)
+631-            mime, _ = mimetypes.guess_type(file_path)
+632-            self.serve_file(file_path, mime or "application/octet-stream")
+633-        elif path == "/api/drives":
+634-            self.handle_drives()
+635-        elif path == "/api/browse":
+636-            target_path = params.get("path", ["/home/azureuser"])[0]
+637-            self.handle_browse(target_path)
+638-        elif path == "/api/content":
+639-            target_path = params.get("path", [""])[0]
+640-            self.handle_content(target_path)
+641:        elif path == "/api/raw":
+642-            target_path = params.get("path", [""])[0]
+643-            download = params.get("download", ["0"])[0] == "1"
+644-            self.handle_raw(target_path, download)
+645-        elif path == "/api/search":
+646-            base = params.get("path", ["/home/azureuser"])[0]
+647-            q = params.get("q", [""])[0]
+648-            self.handle_search(base, q)
+649-        elif path == "/api/properties":
+650-            target_path = params.get("path", ["/home/azureuser"])[0]
+651-            force_refresh = params.get("refresh", ["0"])[0] == "1"
+652-            self.handle_properties(target_path, force_refresh=force_refresh)
+653-        elif path == "/chart.min.js":
+654-            self.serve_file(os.path.join(STATIC_DIR, "chart.min.js"), "application/javascript")
+655-        elif path == "/monitor":
+656-            self.handle_monitor_proxy()
+

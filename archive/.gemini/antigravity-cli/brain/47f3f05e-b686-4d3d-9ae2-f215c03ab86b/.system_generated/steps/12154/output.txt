@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+ 190241 /usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8090
+1266051 bash -c trap 'declare -p > "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env" 2>/dev/null' EXIT; { [ -f ~/.bashrc ] && . ~/.bashrc; } >/dev/null 2>&1; { [ -f "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env" ] && . "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env"; } 2>/dev/null; grep -rn "8090" /home/azureuser/IrakIroan/ /home/azureuser/.webterminal/ /home/azureuser/.config/systemd/user/ 2>/dev/null
+1266052 grep -rn 8090 /home/azureuser/IrakIroan/ /home/azureuser/.webterminal/ /home/azureuser/.config/systemd/user/
+1266218 bash -c ps -u azureuser -o pid,cmd | grep 8090
+1266220 grep 8090
+

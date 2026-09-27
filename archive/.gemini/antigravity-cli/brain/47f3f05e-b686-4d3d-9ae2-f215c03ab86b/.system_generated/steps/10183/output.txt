@@ -6,7 +6,7 @@ gemini
 agy
 gemini logout
 gcloud auth login
-https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.redacted&redirect_uri=https%3A%2F%2Fsdk.cloud.google.com%2Fauthcode.html&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=9FtSSHRXmWOY21rzSBzUy3ZL9fifeK&prompt=consent&token_usage=remote&access_type=offline&code_challenge=MiI_KMuN3OqGP37rEdWk4Xx6E-niUVK8gY6kxxEHq
+https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=redacted-client.google.invalid&redirect_uri=https%3A%2F%2Fsdk.cloud.google.com%2Fauthcode.html&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=9FtSSHRXmWOY21rzSBzUy3ZL9fifeK&prompt=consent&token_usage=remote&access_type=offline&code_challenge=MiI_KMuN3OqGP37rEdWk4Xx6E-niUVK8gY6kxxEHq
 gcloud auth login
 4/0ATsMZqDNrZXdIFrc_Yr5Pa-0H1dn-si5QT-2TzFo8-R-AYmiMG_K7_DY_kkzDAFR6d9OvQ
 cd /home/mdkamruzzamanirak_gmail_com && /home/mdkamruzzamanirak_gmail_com/.local/bin/agy --dangerously-skip-permissions

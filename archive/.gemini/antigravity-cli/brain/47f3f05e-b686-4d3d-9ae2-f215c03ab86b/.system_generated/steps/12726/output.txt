@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+40-const lastWaDispatchedPromptByWindow = {};
+41-let promptQueue = [];
+42-let mediaBatch = [];
+43-let mediaBatchTimer = null;
+44-
+45:function isAgyActuallyIdle(targetWindow = 'agy:0') {
+46-  try {
+47-    const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 2000 });
+48-    if (pane.includes('esc to cancel') || pane.includes('Working...') || pane.includes('Generating...') || pane.includes('Running command')) {
+49-      return false;
+50-    }
+--
+52-  } catch (e) {
+53-    return false;
+54-  }
+55-}
+56-
+57:function isWindowBusy(targetWindow = 'agy:0') {
+58-  if (!windowBusy[targetWindow]) return false;
+59-  if (isAgyActuallyIdle(targetWindow) || (windowBusySince[targetWindow] && Date.now() - windowBusySince[targetWindow] > 180000)) {
+60-    console.log(`[WA Bridge] ℹ️ Detected AGY idle prompt in ${targetWindow} or timeout; clearing stale busy state`);
+61-    windowBusy[targetWindow] = false;
+62-    return false;
+63-  }
+64-  return true;
+65-}
+66-
+67-function getWindowForSender(sender) {
+68:  if (!sender) return 'agy:0';
+69-  if (sender.endsWith('@g.us')) {
+

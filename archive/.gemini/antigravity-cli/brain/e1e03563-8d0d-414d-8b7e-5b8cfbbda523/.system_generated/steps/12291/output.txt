@@ -1,0 +1,48 @@
+
+The command exited with code 0.
+Output:
+256-                        "INSERT INTO idea_elements (idea_id, element_id, is_primary) VALUES (?, ?, ?)",
+257-                        (idea_id, elem_id, 1)
+258-                    )
+259-                    cnt += 1
+260-                return cnt
+261-
+262-            inserted = execute_db_write(do_insert_ideas)
+263-            logger.info(f"[{worker_id}] ✅ Successfully inserted {inserted} ideas for Element #{elem_id} ({elem_name})")
+264-            return True
+265-        except Exception as e:
+266:            logger.warning(f"[{worker_id}] Retry {attempt}/{retries} for Ideas for Element #{elem_id} ({elem_name}) via port {port}: {e}. Waiting 15s...")
+267-            time.sleep(15)
+268-
+269-    logger.error(f"[{worker_id}] Worker {worker_id} failed generating ideas for {elem_name}")
+270-    return False
+271-
+272-# =========================================================================
+273-# STAGE 2: 10-LEVEL ESCALATION PROMPTS GENERATION
+274-# =========================================================================
+275-def generate_escalation_for_idea(worker_id: str, port: int, idea_id: int, idea_title: str, elem_name: str, desc: str) -> bool:
+276-    logger.info(f"[{worker_id}] [Idea #{idea_id}: '{idea_title}'] Generating 10-Level Escalation via http://localhost:{port}...")
+--
+346-                            now_iso
+347-                        )
+348-                    )
+349-                    cnt += 1
+350-                return cnt
+351-
+352-            inserted = execute_db_write(do_insert_prompts)
+353-            logger.info(f"[{worker_id}] ✅ Successfully inserted 10-Level Escalation ({inserted} prompts) for Idea #{idea_id}")
+354-            return True
+355-        except Exception as e:
+356:            logger.warning(f"[{worker_id}] Retry {attempt}/{retries} for Escalation for Idea #{idea_id} ({idea_title}) via port {port}: {e}. Waiting 15s...")
+357-            time.sleep(15)
+358-
+359-    logger.error(f"[{worker_id}] Worker {worker_id} failed generating escalation for Idea #{idea_id}")
+360-    return False
+361-
+362-# =========================================================================
+363-# STAGE 3: REAL DATA-GROUNDED SEO GENERATION
+364-# =========================================================================
+365-def generate_seo_for_idea(worker_id: str, port: int, idea_id: int, elem_id: int, idea_title: str, elem_name: str, desc: str) -> bool:
+366-    logger.info(f"[{worker_id}] [Idea #{idea_id}: '{idea_title}'] Generating real SEO via http://localhost:{port}...")
+
+Terminal ID: terminal-status

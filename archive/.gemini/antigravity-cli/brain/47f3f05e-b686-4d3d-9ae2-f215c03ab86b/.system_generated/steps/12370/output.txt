@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Current PID: 1270163
+azureus+    1447    1263  7 Sep22 pts/0    07:04:02 /home/azureuser/.local/bin/agy --dangerously-skip-permissions
+azureus+ 1266051    1447  0 17:52 pts/12   00:00:00 bash -c trap 'declare -p > "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env" 2>/dev/null' EXIT; { [ -f ~/.bashrc ] && . ~/.bashrc; } >/dev/null 2>&1; { [ -f "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env" ] && . "/home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/terminals/term1.env"; } 2>/dev/null; grep -rn "8090" /home/azureuser/IrakIroan/ /home/azureuser/.webterminal/ /home/azureuser/.config/systemd/user/ 2>/dev/null
+azureus+ 1270163    1447  0 18:05 pts/14   00:00:00 bash -c echo "Current PID: $$"; ps -ef | grep 1447
+azureus+ 1270165 1270163  0 18:05 pts/14   00:00:00 grep 1447
+

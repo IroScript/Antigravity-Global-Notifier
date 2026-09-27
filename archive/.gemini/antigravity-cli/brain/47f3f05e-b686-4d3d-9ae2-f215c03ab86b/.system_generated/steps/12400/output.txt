@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+-rw-r--r-- 1 azureuser azureuser 49M Sep 26 18:12 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db'
+-rw-r--r-- 1 azureuser azureuser 41M Sep 26 02:44 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/youtube_pipeline.db'
+-rw-r--r-- 1 azureuser azureuser   0 Sep 25 12:43 '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/youtube_pipeline.db'
+

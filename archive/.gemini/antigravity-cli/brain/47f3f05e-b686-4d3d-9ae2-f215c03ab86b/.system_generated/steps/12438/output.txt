@@ -1,0 +1,82 @@
+
+The command exited with code 0.
+Output:
+<truncated 30 lines>
+  Columns: ['id', 'uuid', 'idea_id', 'prompt_id', 'job_type', 'provider', 'model', 'status', 'priority', 'attempt_count', 'max_attempts', 'started_at', 'completed_at', 'error_code', 'error_message', 'request_data', 'response_data', 'created_at']
+Table: generated_videos -> 325 rows
+  Columns: ['id', 'uuid', 'idea_id', 'generation_job_id', 'title', 'file_path', 'file_name', 'duration_seconds', 'width', 'height', 'fps', 'file_size_bytes', 'format', 'codec', 'resolution', 'thumbnail_path', 'subtitle_path', 'audio_path', 'quality_score', 'status', 'created_at']
+Table: schedules -> 0 rows
+  Columns: ['id', 'idea_id', 'prompt_id', 'job_id', 'scheduled_date', 'scheduled_time', 'timezone', 'action', 'status', 'priority', 'retry_count', 'executed_at', 'created_at']
+Table: idea_assets -> 6 rows
+  Columns: ['id', 'uuid', 'idea_id', 'video_id', 'asset_type', 'file_path', 'file_name', 'mime_type', 'file_size_bytes', 'duration_seconds', 'checksum', 'source', 'model', 'version', 'created_at']
+Table: publishing -> 6 rows
+  Columns: ['id', 'video_id', 'platform', 'channel_name', 'platform_video_id', 'title', 'description', 'tags', 'category', 'privacy_status', 'scheduled_at', 'published_at', 'url', 'status', 'views', 'likes', 'comments', 'watch_time', 'retention_pct', 'ctr_pct', 'subscribers_gained', 'created_at']
+Table: categories -> 1 rows
+  Columns: ['id', 'uuid', 'name', 'description', 'created_at']
+Table: elements -> 100 rows
+  Columns: ['id', 'uuid', 'name', 'symbol', 'group_type', 'created_at']
+Table: idea_elements -> 1,007 rows
+  Columns: ['idea_id', 'element_id', 'is_primary']
+Table: channels -> 2 rows
+  Columns: ['id', 'uuid', 'name', 'channel_type', 'target_duration_seconds', 'clip_duration_seconds', 'effective_clip_seconds', 'created_at']
+Table: channel_prompts -> 38 rows
+  Columns: ['id', 'uuid', 'channel_id', 'idea_id', 'shot_number', 'time_start_sec', 'time_end_sec', 'image_prompt', 'video_prompt', 'aspect_ratio', 'duration_seconds', 'status', 'created_at']
+Table: pipeline_runs -> 8 rows
+  Columns: ['id', 'uuid', 'channel_id', 'idea_id', 'current_stage_number', 'overall_status', 'created_at', 'updated_at']
+Table: pipeline_stage_audits -> 160 rows
+  Columns: ['id', 'uuid', 'pipeline_run_id', 'channel_id', 'idea_id', 'stage_number', 'stage_name', 'status', 'retry_count', 'max_retries', 'error_message', 'executed_at', 'completed_at']
+Table: channel2_shot_audits -> 38 rows
+  Columns: ['id', 'uuid', 'channel_id', 'idea_id', 'shot_number', 'shot_title', 'time_start_sec', 'time_end_sec', 'chk_01_element', 'chk_02_idea', 'chk_03_image_prompt', 'chk_04_image_gen', 'chk_05_video_prompt', 'chk_06_video_gen', 'chk_07_audio_gen', 'chk_08_hud_render', 'chk_09_stitch', 'chk_10_upload', 'failed_checkpoint', 'retry_count', 'max_retries', 'overall_status', 'updated_at']
+Table: tasks -> 13 rows
+  Columns: ['id', 'uuid', 'idea_id', 'prompt_id', 'video_title', 'task_type', 'status', 'attempt_count', 'max_attempts', 'output_folder_path', 'video_path', 'metadata_json_path', 'last_error', 'next_retry_at', 'created_at', 'updated_at']
+Table: task_attempts -> 34 rows
+  Columns: ['id', 'task_id', 'attempt_number', 'status', 'input_data', 'output_data', 'error_message', 'started_at', 'finished_at']
+Table: prompting_style_master -> 13 rows
+  Columns: ['id', 'uuid', 'stage_name', 'target_hierarchy_level', 'style_title', 'system_role', 'system_instruction', 'prompt_template', 'output_format', 'model_target', 'rules_and_constraints', 'is_active', 'version', 'created_at', 'updated_at']
+Table: youtube_metadata -> 734 rows
+  Columns: ['id', 'uuid', 'idea_id', 'element_id', 'title', 'seo_description', 'tags', 'category', 'default_language', 'video_prompt_used', 'image_prompt_used', 'video_file_path', 'package_folder_path', 'status', 'created_at', 'updated_at', 'pinned_comment', 'youtube_video_id', 'youtube_url', 'tracking_token', 'live_title', 'live_description', 'upload_status', 'published_at']
+Table: seo_runs -> 741 rows
+  Columns: ['id', 'uuid', 'idea_id', 'provider', 'mode', 'demand_score', 'novelty_score', 'saturation_score', 'opportunity_score', 'verdict', 'keyword_count', 'competitor_count', 'exact_competitors', 'close_competitors', 'llm_used', 'upload_ready', 'warnings', 'notes', 'created_at', 'prompt_sent']
+Table: seo_competitors -> 12,235 rows
+  Columns: ['id', 'idea_id', 'seo_run_id', 'query', 'video_id', 'title', 'channel', 'url', 'view_count', 'duration_seconds', 'similarity', 'level', 'is_strong', 'discovered_at']
+Table: seo_keyword_metrics -> 34,851 rows
+  Columns: ['id', 'idea_id', 'seo_run_id', 'keyword', 'relevance', 'word_count', 'long_tail', 'score', 'source', 'created_at']
+Table: workflows -> 0 rows
+  Columns: ['id', 'name', 'description', 'channel_id', 'content_type', 'active_version_id', 'is_active', 'created_at', 'updated_at']
+Table: workflow_versions -> 0 rows
+  Columns: ['id', 'workflow_id', 'version_number', 'status', 'definition', 'definition_hash', 'changelog', 'created_at', 'published_at']
+Table: workflow_steps -> 0 rows
+  Columns: ['id', 'workflow_version_id', 'step_key', 'step_type', 'display_name', 'position', 'enabled', 'depends_on', 'condition', 'config', 'retry_policy', 'timeout_seconds', 'created_at']
+Table: workflow_executions -> 48 rows
+  Columns: ['id', 'workflow_version_id', 'idea_id', 'video_id', 'channel_id', 'status', 'definition_snapshot', 'context_data', 'idempotency_key', 'started_at', 'completed_at', 'error_summary', 'created_at', 'updated_at', 'attempt_count', 'max_attempts', 'error_message', 'last_failure_time', 'next_retry_time']
+Table: step_runs -> 0 rows
+  Columns: ['id', 'execution_id', 'step_key', 'step_type', 'status', 'input_data', 'output_data', 'input_hash', 'config_hash', 'output_hash', 'attempt_count', 'max_attempts', 'started_at', 'completed_at', 'created_at', 'updated_at']
+Table: execution_events -> 0 rows
+  Columns: ['id', 'execution_id', 'step_run_id', 'event_type', 'payload', 'created_at']
+Table: workflow_migrations -> 0 rows
+  Columns: ['id', 'execution_id', 'from_version_id', 'to_version_id', 'reused_step_keys', 'rerun_step_keys', 'skipped_step_keys', 'status', 'migration_notes', 'created_at', 'completed_at']
+Table: step_attempts -> 0 rows
+  Columns: ['id', 'step_run_id', 'attempt_number', 'worker_id', 'status', 'error_class', 'error_message', 'stack_trace', 'execution_metadata', 'started_at', 'completed_at']
+Table: jobs -> 0 rows
+  Columns: ['id', 'step_run_id', 'queue_name', 'priority', 'status', 'worker_id', 'lease_until', 'heartbeat_at', 'payload', 'created_at', 'updated_at']
+Table: audit_logs -> 2 rows
+  Columns: ['id', 'actor', 'action', 'entity_type', 'entity_id', 'before_state', 'after_state', 'reason', 'record_hash', 'created_at']
+Table: external_operations -> 0 rows
+  Columns: ['id', 'execution_id', 'step_run_id', 'operation_key', 'provider', 'operation_type', 'request_hash', 'status', 'external_id', 'external_url', 'provider_state', 'created_at', 'updated_at']
+Table: test_req_003_with_uuid -> 0 rows
+  Columns: ['id', 'uuid', 'title', 'description']
+Table: test_req_003_no_uuid -> 0 rows
+  Columns: ['id', 'name']
+Table: req_009_tx_test -> 0 rows
+  Columns: ['id', 'val']
+Table: test_jsonb_payloads -> 0 rows
+  Columns: ['id', 'entity_key', 'metadata_payload', 'tags_list']
+Table: pipeline_row_state -> 17 rows
+  Columns: ['id', 'uuid', 'idea_id', 'current_state', 'previous_state', 'prompt_verified', 'seo_verified', 'video_verified', 'upload_verified', 'package_verified', 'all_fields_validated', 'missing_fields', 'active_job_id', 'active_job_type', 'failure_reason', 'retry_count', 'is_paused', 'last_verified_at', 'created_at', 'updated_at']
+Table: pipeline_checkpoints -> 0 rows
+  Columns: ['job_id', 'idea_id', 'prompt', 'prompt_hash', 'state', 'retry_count', 'attempt', 'tile_id', 'video_url', 'filename', 'download_status', 'last_verified_action', 'error_json', 'is_active', 'created_at', 'updated_at']
+Table: pipeline_failure_logs -> 0 rows
+  Columns: ['id', 'job_id', 'category', 'reason', 'attempt', 'policy', 'url', 'timestamp', 'created_at']
+Table: sqlite_sequence -> 1 rows
+  Columns: ['name', 'seq']
+

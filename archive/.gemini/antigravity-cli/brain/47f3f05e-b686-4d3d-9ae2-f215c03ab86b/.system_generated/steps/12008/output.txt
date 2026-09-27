@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Cannot open /var/log/sysstat/sa26: No such file or directory
+Please check if data collecting is enabled
+--- RAM ---
+Cannot open /var/log/sysstat/sa26: No such file or directory
+Please check if data collecting is enabled
+

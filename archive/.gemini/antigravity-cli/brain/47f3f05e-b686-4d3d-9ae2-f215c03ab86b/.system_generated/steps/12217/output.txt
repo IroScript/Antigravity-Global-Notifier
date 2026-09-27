@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+Enriched Apps List:
+  🧠 agy:0 (Master Agent): CPU=169.1%, RAM=1.64GB (1682.9MB), Procs=2
+  💬 WhatsApp Bridge: CPU=72.2%, RAM=0.31GB (316.8MB), Procs=1
+  🌐 CloakBrowser / Chrome: CPU=67.8%, RAM=1.2GB (1232.3MB), Procs=7
+  🎬 agy:yt (YouTube Pipeline): CPU=29.6%, RAM=0.89GB (915.2MB), Procs=1
+  🐍 Python Script: CPU=14.4%, RAM=0.07GB (68.5MB), Procs=1
+  ⚙️ grep: CPU=12.2%, RAM=0.08GB (84.1MB), Procs=2
+  💼 agy:frappe (ERPNext): CPU=5.0%, RAM=0.55GB (562.0MB), Procs=4
+  ⚙️ uvicorn: CPU=2.1%, RAM=0.62GB (633.9MB), Procs=4
+  📦 Node.js Service: CPU=2.1%, RAM=0.42GB (433.9MB), Procs=4
+  🔍 agy:ask (Ask & Research): CPU=0.8%, RAM=0.37GB (381.9MB), Procs=1
+  🎮 agy:game (3D Studio): CPU=0.8%, RAM=0.21GB (210.3MB), Procs=1
+  👶 agy:kids (Kids Tube): CPU=0.8%, RAM=0.14GB (141.5MB), Procs=1
+  ⚙️ rclone: CPU=0.8%, RAM=0.07GB (72.7MB), Procs=1
+  🦀 agy:rust (Rust Task): CPU=0.4%, RAM=0.34GB (344.7MB), Procs=1
+  🕰️ agy:history (Digital History): CPU=0.4%, RAM=0.16GB (168.3MB), Procs=1
+  🤖 agy:tg (Telegram Bot): CPU=0.4%, RAM=0.13GB (128.6MB), Procs=1
+  📰 agy:article (Article Publishing): CPU=0.4%, RAM=0.22GB (224.8MB), Procs=2
+  ⚙️ tmux: server: CPU=0.4%, RAM=0.08GB (80.6MB), Procs=1
+  ☁️ Cloudflare Tunnel: CPU=0.4%, RAM=0.27GB (280.8MB), Procs=11
+  ⚙️ Xvfb: CPU=0.4%, RAM=0.12GB (123.0MB), Procs=5
+  ⚙️ mariadbd: CPU=0.0%, RAM=0.16GB (161.8MB), Procs=1
+  🐳 Docker Engine: CPU=0.0%, RAM=0.15GB (157.4MB), Procs=18
+  ⚙️ next-server (v16.3.3): CPU=0.0%, RAM=0.1GB (98.3MB), Procs=1
+

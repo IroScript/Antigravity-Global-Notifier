@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+Ideas: 1007
+Elements with Ideas: 100
+Prompts: 10996
+Compliant Audio Prompts: 4676
+SEO Metadata: 805
+SEO Keywords: 35825
+SEO Competitors: 12235
+Integrity: ok
+

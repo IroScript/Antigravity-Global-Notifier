@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+total 352
+drwxrwxr-x 2 azureuser azureuser   4096 Sep 26 14:05 .
+drwxrwxr-x 4 azureuser azureuser   4096 Sep 26 16:28 ..
+-rw-rw-r-- 1 azureuser azureuser 205399 Sep 26 13:53 chart.min.js
+-rw-r--r-- 1 azureuser azureuser 105478 Sep 26 15:33 index.html
+-rw-rw-r-- 1 azureuser azureuser  35205 Sep 26 14:36 monitor.html
+

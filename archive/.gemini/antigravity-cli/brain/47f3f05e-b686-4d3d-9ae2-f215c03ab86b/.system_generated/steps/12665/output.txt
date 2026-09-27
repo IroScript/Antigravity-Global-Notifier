@@ -1,0 +1,24 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/server.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -733,6 +733,7 @@
+         parent_path = os.path.dirname(target_path) if target_path != "/" else None
+ 
+         show_hidden = params.get("show_hidden", ["0"])[0] == "1" if params else False
++        allowed_dotfiles = {".gemini", ".npm", ".npm-global", ".webterminal"}
+         items = []
+         try:
+             with os.scandir(target_path) as it:
+@@ -739,7 +739,7 @@
+                     if not show_hidden:
+-                        if entry.name.startswith("."):
+-                            continue
+-                        if target_path == "/home/azureuser" and entry.name in ["AGY-MASTER", "RESTORE_VERIFY_TEMP", "GEMINI.md"]:
++                        if entry.name.startswith(".") and entry.name not in allowed_dotfiles:
++                            continue
++                        if target_path == "/home/azureuser" and entry.name in ["AGY-MASTER", "RESTORE_VERIFY_TEMP"]:
+                             continue
+                     try:
+                         is_dir = entry.is_dir(follow_symlinks=False)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

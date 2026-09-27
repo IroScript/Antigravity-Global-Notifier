@@ -3,6 +3,6 @@ The command exited with code 0.
 Output:
 [personaldrive]
 type = drive
-token = {"access_token":"ya29.[REDACTED_OAUTH_TOKEN]","token_type":"Bearer","refresh_token":"1//0[REDACTED_REFRESH_TOKEN]","expiry":"2026-09-26T03:22:02.111128284Z"}
+token = {"access_token":"REDACTED_GOOGLE_ACCESS_TOKEN","token_type":"Bearer","refresh_token":"REDACTED_GOOGLE_REFRESH_TOKEN","expiry":"2026-09-26T03:22:02.111128284Z"}
 team_drive = 
 

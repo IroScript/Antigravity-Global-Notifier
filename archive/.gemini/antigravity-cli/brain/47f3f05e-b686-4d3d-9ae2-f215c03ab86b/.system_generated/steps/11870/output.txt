@@ -1,0 +1,104 @@
+
+The command exited with code 0.
+Output:
+422-    /* Grid View */
+423-    .files-grid-view {
+424-      display: grid;
+425-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+426-      gap: 12px;
+427-      padding: 14px;
+428-      overflow-y: auto;
+429-      flex: 1;
+430-    }
+431-
+432:    .grid-item {
+433-      display: flex;
+434-      flex-direction: column;
+435-      align-items: center;
+436-      padding: 10px 6px;
+437-      border-radius: var(--radius-md);
+438-      cursor: pointer;
+439-      text-align: center;
+440-      border: 1px solid transparent;
+441-      transition: all 0.12s;
+442-    }
+443:    .grid-item:hover { background: var(--bg-hover); border-color: var(--border-color); }
+444:    .grid-item.selected { background: var(--bg-selected); border-color: var(--accent-blue); }
+445-
+446:    .grid-item .file-icon { width: 44px; height: 44px; margin-bottom: 8px; }
+447:    .grid-item .item-title {
+448-      font-size: 11px;
+449-      color: var(--text-main);
+450-      word-break: break-all;
+451-      display: -webkit-box;
+452-      -webkit-line-clamp: 2;
+453-      -webkit-box-orient: vertical;
+454-      overflow: hidden;
+455-      line-height: 1.3;
+456-    }
+457-
+--
+1301-      width: 24px;
+1302-      height: 24px;
+1303-      display: inline-flex;
+1304-      align-items: center;
+1305-      justify-content: center;
+1306-      cursor: pointer;
+1307-      opacity: 0.7;
+1308-      z-index: 5;
+1309-      transition: all 0.15s ease;
+1310-    }
+1311:    .grid-item:hover .grid-info-btn {
+1312-      opacity: 1;
+1313-    }
+1314-    .grid-info-btn:hover {
+1315-      background: var(--accent-fill);
+1316-      color: #fff;
+1317-    }
+1318-
+1319-    /* Windows 11 Context Menu */
+1320-    .custom-context-menu {
+1321-      position: fixed;
+--
+2215-        <td style="text-align:right;">${item.size_str || ''}</td>
+2216-        <td style="text-align:center;">
+2217-          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+2218-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+2219-          </button>
+2220-        </td>
+2221-      `;
+2222-      tableBody.appendChild(tr);
+2223-
+2224-      const card = document.createElement('div');
+2225:      card.className = 'grid-item';
+2226-      card.onclick = (e) => handleItemClick(item, e);
+2227-      card.ondblclick = () => handleItemOpen(item);
+2228-      card.oncontextmenu = (e) => {
+2229-        e.preventDefault();
+2230-        showContextMenu(e.clientX, e.clientY, item);
+2231-      };
+2232-      card.innerHTML = `
+2233-        <button class="grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
+2234-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+2235-        </button>
+2236-        ${getIcon(item)}
+2237-        <div class="item-title" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</div>
+2238-      `;
+2239-      gridView.appendChild(card);
+2240-    });
+2241-  }
+2242-
+2243-  function handleItemClick(item, e) {
+2244-    selectedItem = item;
+2245:    document.querySelectorAll('.files-table tr, .grid-item').forEach(el => el.classList.remove('selected'));
+2246-    if (e && e.currentTarget) e.currentTarget.classList.add('selected');
+2247-    const info = item.is_dir ? 'Folder' : (item.size_str || 'File');
+2248-    document.getElementById('statusLeft').textContent = `Selected: ${item.name} (${info})`;
+2249-  }
+2250-
+2251-  function handleItemOpen(item) {
+2252-    if (item.is_dir) {
+2253-      navigateTo(item.path);
+2254-    } else {
+2255-      openFilePreview(item.path, item.name);
+

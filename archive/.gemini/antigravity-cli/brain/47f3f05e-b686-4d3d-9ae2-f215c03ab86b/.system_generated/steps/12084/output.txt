@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -321,8 +321,8 @@
+ 
+ const RANGE_NAMES = {
+   '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
+-  '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা', '24h': 'গত ২৪ ঘণ্টা',
+-  '2d': 'গত ২ দিন', '5d': 'গত ৫ দিন', '10d': 'গত ১০ দিন', 'all': 'সর্বমোট সময়'
++  '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা',
++  '24h': 'গত ২৪ ঘণ্টা (ঘণ্টা অনুযায়ী)', 'all': 'সমগ্র হিস্ট্রি (তারিখ অনুযায়ী)'
+ };
+ 
+ function changeRange(range, btn) {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

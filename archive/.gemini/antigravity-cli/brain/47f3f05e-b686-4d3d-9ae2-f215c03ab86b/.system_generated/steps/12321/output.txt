@@ -1,0 +1,379 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2754,7 +2754,58 @@
+   /* ========================================================= */
+   /* LIVE RESOURCE & CPU MONITOR ENGINE (100% NATIVE)          */
+   /* ========================================================= */
++  function setCpuScale(scale) {
++    currentCpuScale = scale;
++    const btn400 = document.getElementById('scale-400');
++    const btn100 = document.getElementById('scale-100');
++    if (btn400 && btn100) {
++      btn400.classList.toggle('active', scale === '400');
++      btn100.classList.toggle('active', scale === '100');
++    }
++    const tagEl = document.getElementById('chart-range-label');
++    if (tagEl && currentMode === 'cpu') {
++      const labelMap = {
++        '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
++        '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা',
++        '24h': 'গত ২৪ ঘণ্টা (ঘণ্টা অনুযায়ী)', 'all': 'সমগ্র হিস্ট্রি (তারিখ অনুযায়ী)'
++      };
++      tagEl.innerText = (labelMap[currentRange] || currentRange) + (scale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল');
++    }
++    if (chartInstance && historyData && historyData.length > 0) {
++      chartInstance.data.datasets = getDatasetsForCurrentMode();
++      applyScales();
++      chartInstance.update('none');
++      const pt = (isPointLocked && lockedPointIndex >= 0) ? historyData[lockedPointIndex] : historyData[historyData.length - 1];
++      updateGraphReport(pt, false, isPointLocked);
++    }
++  }
++
++  function lockGraphPoint(idx) {
++    if (!historyData || idx < 0 || idx >= historyData.length) return;
++    isPointLocked = true;
++    lockedPointIndex = idx;
++    const pt = historyData[idx];
++    updateGraphReport(pt, false, true);
++    if (chartInstance) {
++      chartInstance.update('none');
++    }
++  }
++
++  function unlockGraphPoint() {
++    isPointLocked = false;
++    lockedPointIndex = -1;
++    const btnUnlock = document.getElementById('btn-unlock-point');
++    if (btnUnlock) btnUnlock.style.display = 'none';
++    if (historyData && historyData.length > 0) {
++      updateGraphReport(historyData[historyData.length - 1], false, false);
++    }
++    if (chartInstance) {
++      chartInstance.update('none');
++    }
++  }
++
+   function changeRange(range, el) {
++    unlockGraphPoint();
+     currentRange = range;
+     document.querySelectorAll('.pills-scroll .pill').forEach(p => p.classList.remove('active'));
+     if (el) el.classList.add('active');
+@@ -2763,7 +2763,10 @@
+       '24h': 'গত ২৪ ঘণ্টা (ঘণ্টা অনুযায়ী)', 'all': 'সমগ্র হিস্ট্রি (তারিখ অনুযায়ী)'
+     };
+     const lbl = document.getElementById('chart-range-label');
+-    if (lbl) lbl.innerText = labelMap[range] || range;
++    if (lbl) {
++      const scaleNote = currentMode === 'cpu' ? (currentCpuScale === '400' ? ' · ৪০০% স্কেল' : ' · ১০০% স্কেল') : '';
++      lbl.innerText = (labelMap[range] || range) + scaleNote;
++    }
+     fetchHistory();
+   }
+ 
+@@ -2793,6 +2793,26 @@
+         }
+       };
+     }
++    if (currentMode === 'cpu' && currentCpuScale === '400') {
++      return {
++        min: 0,
++        max: 400,
++        grid: { color: 'rgba(48, 54, 61, 0.4)' },
++        ticks: {
++          color: '#f0883e',
++          font: { size: 9 },
++          stepSize: 100,
++          callback: function(v) {
++            if (v === 400) return '400% (৪ vCPU)';
++            if (v === 300) return '300% (৩য়)';
++            if (v === 200) return '200% (২য়)';
++            if (v === 100) return '100% (১ম)';
++            if (v === 0) return '0%';
++            return v + '%';
++          }
++        }
++      };
++    }
+     return {
+       min: 0,
+       max: 100,
+@@ -2862,6 +2862,7 @@
+     chartInstance.options.scales.y.max = yCfg.max;
+     if (chartInstance.options.scales.y.ticks) {
+       chartInstance.options.scales.y.ticks.callback = yCfg.ticks.callback;
++      if (yCfg.ticks.stepSize) chartInstance.options.scales.y.ticks.stepSize = yCfg.ticks.stepSize;
+     }
+     chartInstance.options.scales.x = getXAxisConfig();
+   }
+@@ -2878,9 +2878,10 @@
+   }
+ 
+   function getDatasetsForCurrentMode() {
+-    // Only the very last point (current live second) gets a pulsing marker!
+-    // All previous historical points (e.g. 0 to 58s) are clean, motionless lines.
+     const pointRadiusFn = function(context) {
++      if (isPointLocked && context.dataIndex === lockedPointIndex) {
++        return 7.5; // High-visibility pulse radius for clicked point!
++      }
+       const len = context.dataset.data.length;
+       return context.dataIndex === len - 1 ? 4.5 : 0;
+     };
+@@ -2887,8 +2887,16 @@
++    const pointBgFn = function(context) {
++      if (isPointLocked && context.dataIndex === lockedPointIndex) {
++        return '#f0883e';
++      }
++      return context.dataset.borderColor;
++    };
++
+     if (currentMode === 'cpu') {
+-      return [
+-        {
+-          label: 'সার্বিক CPU %',
+-          data: historyData.map(p => p.cpu),
++      const is400 = (currentCpuScale === '400');
++      return [
++        {
++          label: is400 ? 'মোট ৪-vCPU লোড % (সর্বোচ্চ ৪০০%)' : 'সার্বিক CPU % (১০০% স্কেল)',
++          data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
+           borderColor: '#f0883e',
+           backgroundColor: 'rgba(240, 136, 62, 0.12)',
+           borderWidth: 2.2,
+@@ -2895,13 +2895,16 @@
+           fill: true,
+           pointRadius: pointRadiusFn,
+-          pointBackgroundColor: '#f0883e',
+-          pointBorderColor: '#ffffff',
+-          pointBorderWidth: 1.5,
+-          pointHoverRadius: 5
+-        },
+-        {
+-          label: 'শীর্ষ ১ অ্যাপ CPU %',
+-          data: historyData.map(p => p.app1 ? p.app1.cpu : 0),
++          pointBackgroundColor: pointBgFn,
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 6
++        },
++        {
++          label: is400 ? 'শীর্ষ ১ অ্যাপ CPU %' : 'শীর্ষ ১ অ্যাপ CPU (১০০% স্কেলে)',
++          data: historyData.map(p => {
++            const appVal = p.app1 ? p.app1.cpu : 0;
++            return is400 ? appVal : Math.min(100, Math.round((appVal / 4.0) * 10) / 10);
++          }),
+           borderColor: '#58a6ff',
+           borderWidth: 1.6,
+           borderDash: [4, 4],
+@@ -2908,8 +2908,8 @@
+           pointRadius: pointRadiusFn,
+-          pointBackgroundColor: '#58a6ff',
+-          pointBorderColor: '#ffffff',
+-          pointBorderWidth: 1.5,
+-          pointHoverRadius: 4
++          pointBackgroundColor: pointBgFn,
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 5
+         }
+       ];
+     } else if (currentMode === 'ram') {
+@@ -2922,25 +2922,26 @@
+           tension: 0.25,
+           fill: true,
+           pointRadius: pointRadiusFn,
+-          pointBackgroundColor: '#58a6ff',
+-          pointBorderColor: '#ffffff',
+-          pointBorderWidth: 1.5,
+-          pointHoverRadius: 5
+-        }
+-      ];
+-    } else {
+-      return [
+-        {
+-          label: 'সার্বিক CPU %',
+-          data: historyData.map(p => p.cpu),
+-          borderColor: '#f0883e',
+-          borderWidth: 2,
+-          tension: 0.25,
+-          pointRadius: pointRadiusFn,
+-          pointBackgroundColor: '#f0883e',
+-          pointBorderColor: '#ffffff',
+-          pointBorderWidth: 1.5,
+-          pointHoverRadius: 5
++          pointBackgroundColor: pointBgFn,
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 6
++        }
++      ];
++    } else {
++      const is400 = (currentCpuScale === '400');
++      return [
++        {
++          label: is400 ? 'মোট ৪-vCPU লোড %' : 'সার্বিক CPU %',
++          data: historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu),
++          borderColor: '#f0883e',
++          borderWidth: 2,
++          tension: 0.25,
++          pointRadius: pointRadiusFn,
++          pointBackgroundColor: pointBgFn,
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 6
+         },
+         {
+           label: 'সার্বিক RAM %',
+@@ -2948,12 +2948,31 @@
+           borderWidth: 2,
+           tension: 0.25,
+           pointRadius: pointRadiusFn,
+-          pointBackgroundColor: '#58a6ff',
+-          pointBorderColor: '#ffffff',
+-          pointBorderWidth: 1.5,
+-          pointHoverRadius: 5
+-        }
+-      ];
++          pointBackgroundColor: pointBgFn,
++          pointBorderColor: '#ffffff',
++          pointBorderWidth: 1.5,
++          pointHoverRadius: 6
++        }
++      ];
++    }
++  }
++
++  function handleChartElementClick(e) {
++    if (!chartInstance || !historyData || historyData.length === 0) return;
++    const elements = chartInstance.getElementsAtEventForMode(e, 'index', { intersect: false }, true);
++    if (elements && elements.length > 0) {
++      lockGraphPoint(elements[0].index);
++    } else {
++      const canvas = chartInstance.canvas;
++      const rect = canvas.getBoundingClientRect();
++      const clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : null);
++      if (clientX !== null) {
++        const xPos = clientX - rect.left;
++        const dataX = chartInstance.scales.x.getValueForPixel(xPos);
++        if (dataX !== undefined && dataX >= 0 && dataX < historyData.length) {
++          lockGraphPoint(Math.round(dataX));
++        }
++      }
+     }
+   }
+ 
+@@ -2972,7 +2972,7 @@
+     if (chartInstance) {
+       chartInstance.data.labels = labels;
+       chartInstance.data.datasets = datasets;
+-      applyYAxisScale();
++      applyScales();
+       chartInstance.update('none'); // NO ANIMATION / ZERO JUMPING!
+       return;
+     }
+@@ -2982,7 +2982,7 @@
+       options: {
+         responsive: true,
+         maintainAspectRatio: false,
+-        animation: false, // NO ANIMATION: Whole graph NEVER jumps or bounces!
++        animation: false,
+         animations: {
+           colors: false,
+           x: false
+@@ -2991,6 +2991,13 @@
+           resize: { animation: { duration: 0 } }
+         },
+         interaction: { mode: 'index', intersect: false },
++        onClick: function(event, elements) {
++          if (elements && elements.length > 0) {
++            lockGraphPoint(elements[0].index);
++          } else if (event.native) {
++            handleChartElementClick(event.native);
++          }
++        },
+         plugins: {
+           legend: {
+             display: true,
+@@ -3004,7 +3004,7 @@
+               if (tooltipModel.dataPoints && tooltipModel.dataPoints.length > 0) {
+                 const idx = tooltipModel.dataPoints[0].dataIndex;
+                 const pt = historyData[idx];
+-                if (pt) updateGraphReport(pt, true);
++                if (pt && !isPointLocked) updateGraphReport(pt, true, false);
+               }
+             }
+           }
+@@ -3014,10 +3014,23 @@
+         }
+       }
+     });
+-  }
+-
+-  function updateGraphReport(pt, isTouching) {
++
++    if (!chartEl.dataset.clickBound) {
++      chartEl.dataset.clickBound = "true";
++      chartEl.addEventListener('click', handleChartElementClick);
++      chartEl.addEventListener('touchend', function(e) {
++        if (e.changedTouches && e.changedTouches.length > 0) {
++          handleChartElementClick(e.changedTouches[0]);
++        }
++      });
++    }
++  }
++
++  function updateGraphReport(pt, isTouching, isLocked) {
+     if (!pt) return;
++    if (!isLocked && isPointLocked) {
++      return; // Point is locked by click, don't overwrite with background updates!
++    }
+     const statusEl = document.getElementById('graph-report-status');
+     const dotEl = document.getElementById('graph-report-dot');
+     const timeEl = document.getElementById('graph-report-time');
+@@ -3028,17 +3028,36 @@
+     const app2Name = document.getElementById('graph-app2-name');
+     const app2Cpu = document.getElementById('graph-app2-cpu');
+     const app2Ram = document.getElementById('graph-app2-ram');
+-
+-    if (isTouching) {
+-      if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট';
++    const btnUnlock = document.getElementById('btn-unlock-point');
++
++    if (isLocked) {
++      if (statusEl) statusEl.innerText = 'সিলেক্টেড পয়েন্ট (ক্লিক করে লক)';
+       if (dotEl) dotEl.style.background = 'var(--yellow)';
++      if (btnUnlock) btnUnlock.style.display = 'inline-block';
++    } else if (isTouching) {
++      if (statusEl) statusEl.innerText = 'টাচ করা পয়েন্ট';
++      if (dotEl) dotEl.style.background = 'var(--accent-blue)';
++      if (btnUnlock) btnUnlock.style.display = 'none';
+     } else {
+       if (statusEl) statusEl.innerText = 'সর্বশেষ ডাটা পয়েন্ট';
+       if (dotEl) dotEl.style.background = 'var(--green)';
+-    }
+-
+-    if (timeEl) timeEl.innerText = pt.dt || pt.t;
+-    if (cpuEl) cpuEl.innerText = pt.cpu + '%';
++      if (btnUnlock) btnUnlock.style.display = 'none';
++    }
++
++    // Exact Date and Time
++    const timeDisplay = pt.dt ? `📅 ${pt.dt}` : `🕒 ${pt.t}`;
++    if (timeEl) timeEl.innerText = timeDisplay;
++
++    // CPU with 400% scale awareness
++    const cpu400 = (pt.cpu_400 !== undefined ? pt.cpu_400 : (pt.cpu * 4.0)).toFixed(1);
++    if (cpuEl) {
++      if (currentCpuScale === '400') {
++        cpuEl.innerHTML = `${cpu400}% <span class="g-metric-sub">/ ৪০০% (${pt.cpu}% সার্বিক)</span>`;
++      } else {
++        cpuEl.innerHTML = `${pt.cpu}% <span class="g-metric-sub">(৪-vCPU মোট: ${cpu400}%)</span>`;
++      }
++    }
++
+     if (ramEl) ramEl.innerHTML = `${pt.ram_gb} GB (${pt.ram_pct}%)`;
+ 
+     if (pt.app1) {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

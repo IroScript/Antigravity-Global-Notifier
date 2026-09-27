@@ -1,0 +1,36 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -199,7 +199,7 @@
+       <button class="pill" onclick="changeRange('all', this)">সব (All)</button>
+     </div>
+ 
+-    <!-- Metric View Toggles -->
++    <!-- Metric View & Scale Toggles -->
+     <div class="mode-row">
+       <div class="mode-pills">
+         <button class="mode-pill active" id="mode-cpu" onclick="setChartMode('cpu')">🔥 CPU ভিউ</button>
+@@ -206,6 +206,10 @@
+-        <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই (CPU+RAM)</button>
+-      </div>
+-      <span class="mode-hint">👆 গ্রাফে টাচ করে টানুন</span>
++        <button class="mode-pill" id="mode-both" onclick="setChartMode('both')">📊 উভয়ই</button>
++      </div>
++      <div class="scale-pills" style="display: flex; gap: 4px; align-items: center;">
++        <span style="font-size: 0.7rem; color: #8b949e;">স্কেল:</span>
++        <button class="mode-pill active" id="scale-400" onclick="setCpuScale('400')">৪০০% (৪-vCPU)</button>
++        <button class="mode-pill" id="scale-100" onclick="setCpuScale('100')">১০০% (সার্বিক)</button>
++      </div>
+     </div>
+   </div>
+ 
+@@ -219,6 +219,7 @@
+       <div class="graph-report-badge">
+         <span class="report-badge-dot" id="graph-report-dot"></span>
+         <span id="graph-report-status">সর্বশেষ ডাটা পয়েন্ট</span>
++        <button id="btn-unlock-point" onclick="unlockGraphPoint()" style="display:none; margin-left: 8px; font-size: 0.68rem; background: #21262d; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; padding: 2px 7px; cursor: pointer;">✕ লাইভ ভিউতে ফিরুন</button>
+       </div>
+       <div class="graph-report-time" id="graph-report-time">আপডেট হচ্ছে...</div>
+     </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

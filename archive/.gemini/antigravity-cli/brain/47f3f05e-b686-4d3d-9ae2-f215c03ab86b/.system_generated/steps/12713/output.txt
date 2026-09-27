@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+total 16
+drwxrwxr-x 2 azureuser azureuser 4096 Sep 26 19:03 .
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 26 19:02 ..
+-rw-rw-r-- 1 azureuser azureuser  550 Sep 26 19:03 LATEST_GDRIVE_SYNC_REPORT.md
+-rw-rw-r-- 1 azureuser azureuser  333 Sep 26 19:03 gdrive_sync_metrics.jsonl
+

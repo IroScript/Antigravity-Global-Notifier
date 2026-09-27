@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+INFO:     172.19.0.1:58900 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:53684 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46026 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56232 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:33736 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:44034 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:45656 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:37512 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:44260 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:53860 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:35126 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39256 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:35922 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:34634 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:53650 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:41042 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:37556 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:41932 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:45612 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:54318 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51596 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:36278 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:35232 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:35874 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:60680 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     172.19.0.1:46336 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:41968 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56688 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56448 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:37302 - "GET /health HTTP/1.1" 200 OK
+
+Terminal ID: terminal-status

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+16K	/home/azureuser/.gemini/config
+220M	/home/azureuser/.gemini/antigravity-cli
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+    PID    PPID TT           TIME CMD
+   1447    1263 pts/0    07:03:55 /home/azureuser/.local/bin/agy --dangerously-s
+

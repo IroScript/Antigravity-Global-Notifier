@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+A  Cloud_VM_Live_Preview/README.md
+A  Cloud_VM_Live_Preview/azure-file-explorer-tunnel.service
+A  Cloud_VM_Live_Preview/azure-file-explorer.service
+A  Cloud_VM_Live_Preview/chart.min.js
+A  Cloud_VM_Live_Preview/monitor.html
+A  Cloud_VM_Live_Preview/server.py
+A  Cloud_VM_Live_Preview/start_tunnel.sh
+A  Cloud_VM_Live_Preview/static/chart.min.js
+A  Cloud_VM_Live_Preview/static/index.html
+A  Cloud_VM_Live_Preview/static/monitor.html
+A  Cloud_VM_Live_Preview/tunnel_url.txt
+A  Cloud_VM_Whatsapp/README.md
+A  Cloud_VM_Whatsapp/agy-whatsapp.service
+A  Cloud_VM_Whatsapp/boundary_guard.py
+A  Cloud_VM_Whatsapp/init_agy_sessions.sh
+A  Cloud_VM_Whatsapp/whatsapp_bridge.js
+A  archive/.gemini/antigravity-cli/antigravity-oauth-token
+A  archive/.gemini/antigravity-cli/bin/agentapi
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000000.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000001.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000002.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000003.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000004.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000005.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000006.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000007.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000008.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000009.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000010.jsonl
+A  archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000011.jsonl
+

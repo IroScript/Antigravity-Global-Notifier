@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+root      137976  0.1  0.4 3525096 72492 ?       Ssl  Sep24   4:06 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root     1115698  0.0  0.0 1597684 4984 ?        Sl   09:00   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8003 -container-ip 172.19.0.4 -container-port 8000
+root     1115704  0.0  0.0 1671416 5028 ?        Sl   09:00   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8003 -container-ip 172.19.0.4 -container-port 8000
+root     1115739  0.0  0.0   1040    72 ?        Ss   09:00   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201458  0.0  0.0 1671416 4892 ?        Sl   14:30   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8001 -container-ip 172.19.0.2 -container-port 8000
+root     1201465  0.0  0.0 1745148 7080 ?        Sl   14:30   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8001 -container-ip 172.19.0.2 -container-port 8000
+root     1201502  0.0  0.0   1040    72 ?        Ss   14:30   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248164  0.0  0.0 1745148 7200 ?        Sl   17:30   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8002 -container-ip 172.19.0.3 -container-port 8000
+root     1248172  0.0  0.0 1745148 5204 ?        Sl   17:30   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8002 -container-ip 172.19.0.3 -container-port 8000
+root     1248210  0.0  0.0   1040    72 ?        Ss   17:30   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268488  0.0  0.0 1744892 6252 ?        Sl   18:00   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8004 -container-ip 172.19.0.5 -container-port 8000
+root     1268496  0.0  0.0 1745404 6256 ?        Sl   18:00   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip :: -host-port 8004 -container-ip 172.19.0.5 -container-port 8000
+root     1268534  0.0  0.0   1040    72 ?        Ss   18:00   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+azureus+ 1275377  0.0  0.0   7484  3212 pts/12   Ss+  18:25   0:00 bash -c ps aux | grep -i docker
+azureus+ 1275379  0.0  0.0   6928  2332 pts/12   S+   18:25   0:00 grep -i docker
+

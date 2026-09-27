@@ -1,0 +1,24 @@
+
+The command exited with code 0.
+Output:
+[OK] Moved: GCP_FULL_BACKUP
+[OK] Moved: FULL_HOME_BACKUP
+[OK] Moved: RESTORED_PROJECTS
+[OK] Moved: RESTORED_VIDEOS
+[OK] Moved: GDRIVE_RESTORE_TEST
+[OK] Moved: gdrive_sync
+[OK] Moved: tmp
+[OK] Moved: __pycache__
+[OK] Moved: benchmark_50_delete_tests.py
+[OK] Moved: full_forensic_reconciliation.py
+[OK] Moved: gcs_resumable_uploader.py
+[OK] Moved: gcs_vault_uploader.py
+[OK] Moved: start_oauth_listener.py
+[OK] Moved: test_gcs_iam_boundary.py
+[OK] Moved: azure_restore_point_commands.txt
+[OK] Moved: csv_downloads_url.txt
+[OK] Moved: google_auth_url.txt
+[OK] Moved: last_user_prompt.txt
+[OK] Moved: mismatched_files_manifest.json
+[OK] Moved: reconciliation_result.txt
+

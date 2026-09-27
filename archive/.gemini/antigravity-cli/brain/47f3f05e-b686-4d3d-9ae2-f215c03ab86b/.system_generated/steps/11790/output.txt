@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"token":{"access_token":"REDACTED_GOOGLE_ACCESS_TOKEN","token_type":"Bearer","refresh_token":"REDACTED_GOOGLE_REFRESH_TOKEN","expiry":"2026-09-26T17:20:46.578696327Z"},"auth_method":"consumer","id_token":"REDACTED_JWT_TOKEN"}

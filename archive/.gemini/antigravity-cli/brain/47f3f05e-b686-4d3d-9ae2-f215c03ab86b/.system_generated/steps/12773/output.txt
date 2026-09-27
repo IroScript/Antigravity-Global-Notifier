@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+1523-          </svg>
+1524-          <span>১. This PC (এক্সপ্লোরার)</span>
+1525-        </div>
+1526-        <div class="sidebar-item" id="sideItemMonitor" onclick="switchHomeTab('monitor')">
+1527-          <svg viewBox="0 0 24 24" fill="#f0883e"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+1528-          <span>২. রিসোর্স ও CPU মনিটর</span>
+1529-        </div>
+1530-      </div>
+1531-
+1532-      <div class="sidebar-section">
+1533:        <div class="sidebar-title">Quick Access</div>
+1534-        <div class="sidebar-item" onclick="navigateTo('/home/azureuser')">
+1535-          <svg viewBox="0 0 24 24" fill="#60cdff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+1536-          <span>Azure User Home</span>
+1537-        </div>
+1538-        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IrakIroan')">
+1539-          <svg viewBox="0 0 24 24" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+1540-          <span>IrakIroan Workspace</span>
+1541-        </div>
+1542-        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
+1543-          <svg viewBox="0 0 24 24" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+

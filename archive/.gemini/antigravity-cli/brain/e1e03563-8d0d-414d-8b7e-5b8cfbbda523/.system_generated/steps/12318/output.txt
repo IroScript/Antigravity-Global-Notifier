@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+  - Worker 3: partition_completed (Completed: 123)
+  - Worker 4: macro_resting (Completed: 16)
+============================================================
+
+2026-09-26 21:32:21,770 [INFO] [worker_1] [worker_1] 💤 [CYCLE COMPLETE] Worker worker_1 finished Cycle #7 (7 tasks). Resting 5.43 mins...
+2026-09-26 21:33:14,531 [INFO] [worker_3] [worker_3] ▶️ Worker worker_3 starting Cycle #1 (Random batch target: 10 processes, Base delay: 10.0s)...
+2026-09-26 21:33:14,535 [INFO] [worker_3] [worker_3] 🎉 Worker worker_3 partition (Elements 62 to 81) FULLY COMPLETE!
+2026-09-26 21:37:47,750 [INFO] [worker_1] [worker_1] ▶️ Worker worker_1 starting Cycle #8 (Random batch target: 7 processes, Base delay: 10.0s)...
+2026-09-26 21:37:47,754 [INFO] [worker_1] [worker_1] [Idea #833: 'Cyclone Water Loom'] Generating real SEO via http://localhost:8001...
+2026-09-26 21:38:40,489 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: Page.evaluate: Target crashed 
+2026-09-26 21:39:50,552 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: timed out
+2026-09-26 21:41:00,613 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: timed out
+2026-09-26 21:41:10,613 [INFO] [worker_1] [worker_1] [metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+2026-09-26 21:41:10,616 [INFO] [worker_1] [worker_1] ✅ [worker_1] Idea #833 SEO complete! (Title: 'Cyclone Water Loom — The Tornado Machine You've Ne...')
+2026-09-26 21:41:10,616 [INFO] [worker_1] [worker_1] ⏳ [Delay Ladder | #1/7: 'Idea #833 SEO'] Sleeping 20.19s (Base: 10.0s, +10.0s next)...
+2026-09-26 21:41:30,807 [INFO] [worker_1] [worker_1] [Idea #834: 'Tornado Railmaker'] Generating real SEO via http://localhost:8001...
+2026-09-26 21:42:30,865 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: timed out
+2026-09-26 21:43:14,536 [INFO] [worker_3] [worker_3] ▶️ Worker worker_3 starting Cycle #1 (Random batch target: 6 processes, Base delay: 10.0s)...
+2026-09-26 21:43:14,539 [INFO] [worker_3] [worker_3] 🎉 Worker worker_3 partition (Elements 62 to 81) FULLY COMPLETE!
+2026-09-26 21:43:40,925 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: timed out
+2026-09-26 21:44:50,987 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: timed out
+2026-09-26 21:45:00,987 [INFO] [worker_1] [worker_1] [metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+2026-09-26 21:45:00,991 [INFO] [worker_1] [worker_1] ✅ [worker_1] Idea #834 SEO complete! (Title: 'Tornado Railmaker — The Tornado Machine You've Nev...')
+2026-09-26 21:45:00,991 [INFO] [worker_1] [worker_1] ⏳ [Delay Ladder | #2/7: 'Idea #834 SEO'] Sleeping 31.07s (Base: 10.0s, +10.0s next)...
+2026-09-26 21:45:32,064 [INFO] [worker_1] [worker_1] [Idea #835: 'Storm Terrain Sculptor'] Generating real SEO via http://localhost:8001...
+2026-09-26 21:46:32,121 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: timed out
+2026-09-26 21:47:42,182 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: timed out
+2026-09-26 21:48:52,241 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: timed out
+2026-09-26 21:49:02,242 [INFO] [worker_1] [worker_1] [metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+2026-09-26 21:49:02,245 [INFO] [worker_1] [worker_1] ✅ [worker_1] Idea #835 SEO complete! (Title: 'Storm Terrain Sculptor — The Tornado Machine You'v...')
+2026-09-26 21:49:02,245 [INFO] [worker_1] [worker_1] ⏳ [Delay Ladder | #3/7: 'Idea #835 SEO'] Sleeping 40.25s (Base: 10.0s, +10.0s next)...
+2026-09-26 21:49:42,499 [INFO] [worker_1] [worker_1] 🎉 Worker worker_1 partition (Elements 22 to 41) FULLY COMPLETE!
+2026-09-26 21:53:14,540 [INFO] [worker_3] [worker_3] 🛌 [MACRO LAYER SLEEP] Worker worker_3 entering 1.94h deep hibernation rest.
+2026-09-26 21:59:42,500 [INFO] [worker_1] [worker_1] ▶️ Worker worker_1 starting Cycle #8 (Random batch target: 8 processes, Base delay: 10.0s)...
+2026-09-26 21:59:42,504 [INFO] [worker_1] [worker_1] 🎉 Worker worker_1 partition (Elements 22 to 41) FULLY COMPLETE!
+
+Terminal ID: terminal-status

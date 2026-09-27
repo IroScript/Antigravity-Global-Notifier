@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+total 136
+drwxrwxr-x  10 azureuser azureuser  4096 Sep 26 18:25 .
+drwxrwxr-x   4 azureuser azureuser  4096 Sep 25 07:55 ..
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 26 01:30 __pycache__
+-rw-rw-r--   1 azureuser azureuser  2070 Sep 26 18:25 cluster_progress.json
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 26 18:25 database
+drwxrwxr-x   5 azureuser azureuser 36864 Sep 26 18:00 exports
+-rw-r--r--   1 azureuser azureuser  5762 Sep 26 18:00 generate_all_csvs.py
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 08:21 logs
+drwxrwxr-x 220 azureuser azureuser 20480 Sep 25 11:38 output_packaged
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 11:23 recovered_exports
+-rw-r--r--   1 azureuser azureuser 31441 Sep 26 01:30 run_cluster_pipeline.py
+drwxrwxr-x   2 azureuser azureuser  4096 Sep 25 07:55 scratch
+drwxr-xr-x   2 azureuser azureuser  4096 Sep 25 20:39 seo_engine
+-rw-r--r--   1 azureuser azureuser     0 Sep 25 12:43 youtube_pipeline.db
+

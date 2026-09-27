@@ -14,7 +14,7 @@ team_drive =
 
 [personaldrive]
 type = drive
-token = {"access_token":"ya29.[REDACTED_OAUTH_TOKEN]","token_type":"Bearer","refresh_token":"1//0[REDACTED_REFRESH_TOKEN]","expiry":"2026-09-26T10:38:31.289519714Z"}
+token = {"access_token":"REDACTED_GOOGLE_ACCESS_TOKEN","token_type":"Bearer","refresh_token":"REDACTED_GOOGLE_REFRESH_TOKEN","expiry":"2026-09-26T10:38:31.289519714Z"}
 team_drive = 
 
 

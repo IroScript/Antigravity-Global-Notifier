@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+drwxr-xr-x 33 azureuser azureuser 4096 Sep 26 16:28 /home/azureuser
+drwxr-xr-x  3 root      root      4096 Sep 25 16:16 /home/azureuser/RESTORE_VERIFY_TEMP
+

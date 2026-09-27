@@ -1,0 +1,56 @@
+
+The command exited with code 2.
+Output:
+<truncated 1802 lines>
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789735848321/lid-mapping-8801977887935.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789735848321/lid-mapping-8801576448464.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789735848321/lid-mapping-8801304014584.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801710646019.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801799428676.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801705062664.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801954902299.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801944612756.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801537529134.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-13855766242.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801719247360.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-75205212946649_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801723581302.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-138753381253372_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801681563313.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801718316848.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-139122647818278_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-42219729907903_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801637909037.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-96044511694898_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/session-85444683382913_1.0.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801977887935.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801576448464.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1789325845395/lid-mapping-8801304014584.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/whatsapp.log
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801602476871.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801710646019.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801705062664.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801954902299.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801944612756.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801537529134.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801889147685.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-13855766242.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801719247360.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-75205212946649_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801723581302.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801687987701.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-138753381253372_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801681563313.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-139122647818278_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-42219729907903_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801637909037.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-96044511694898_reverse.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801977887935.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801576448464.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com/.webterminal/wa_auth_backup_1790342139703/lid-mapping-8801304014584.json
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_00.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_03.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_04.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/Zip Files/gcp_home_backup_part_01.tar.gz
+/home/azureuser/IrakIroan/Google_Drive_Backup/database_backups/gcp_frappe_mariadb.sql
+

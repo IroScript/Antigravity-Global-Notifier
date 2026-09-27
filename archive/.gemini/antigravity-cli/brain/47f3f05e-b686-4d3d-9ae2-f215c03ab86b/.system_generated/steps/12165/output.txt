@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+root        1037       1  0 Sep22 ?        00:00:21 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+azureus+    1190    1137  0 Sep22 ?        00:00:21 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+    1197    1137  0 Sep22 ?        00:00:14 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe schedule
+azureus+    1199    1137  0 Sep22 ?        00:00:01 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+    1209    1137  0 Sep22 ?        00:00:16 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+azureus+    1637    1558  0 Sep22 ?        00:00:33 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1716    1687  0 Sep22 ?        00:00:31 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+root        1763       1  0 Sep22 ?        00:00:00 /usr/bin/python3 /usr/sbin/waagent -daemon
+root        1987    1763  0 Sep22 ?        00:02:39 /usr/bin/python3 -u bin/WALinuxAgent-2.16.0.2-py3.12.egg -run-exthandlers
+azureus+    1997    1199  0 Sep22 ?        00:00:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(6)
+azureus+   42086    1137  0 Sep23 ?        00:00:18 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+root      204399       1 11 Sep24 ?        06:05:37 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  307848    1199  4 Sep24 ?        02:12:26 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+azureus+  307856  307848  0 Sep24 ?        00:00:00 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(7)
+azureus+  637238    1137  0 Sep25 ?        00:00:18 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+azureus+ 1000406    1445  0 01:30 pts/11   00:00:05 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+azureus+ 1113817    1137  0 08:54 ?        00:00:00 /usr/bin/python3 /home/azureuser/gdrive_sync/gdrive_live_sync.py
+root     1115774 1115772  0 09:00 ?        00:00:50 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115908 1115774  0 09:00 ?        00:00:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1115926 1115774  0 09:00 ?        00:00:53 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+azureus+ 1127728    1137  0 09:46 ?        00:00:00 /usr/bin/python3 /home/azureuser/Reporting-Agent/sentinel_reporter.py
+root     1201535 1201533  0 14:30 ?        00:00:46 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201699 1201535  0 14:30 ?        00:00:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1201717 1201535  0 14:30 ?        00:00:36 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1217745 1217743  0 15:30 ?        00:00:20 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1217783 1217745  0 15:30 ?        00:00:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1217793 1217745  0 15:30 ?        00:00:20 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1248309 1248307  0 17:30 ?        00:00:09 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248319 1248309  0 17:30 ?        00:00:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1248329 1248309  0 17:30 ?        00:00:06 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+azureus+ 1264150    1137  0 17:45 ?        00:00:00 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+

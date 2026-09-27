@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+total 1176
+drwxrwxr-x 11 azureuser azureuser   4096 Sep 26 18:35 .
+drwxrwxr-x  5 azureuser azureuser   4096 Sep 26 18:30 ..
+drwxrwxr-x  3 azureuser azureuser   4096 Sep 25 15:52 DATABASE_BACKUPS_VAULT
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 16:09 FULL_HOME_BACKUP
+drwxrwxr-x  3 azureuser azureuser   4096 Sep 25 19:36 GCP_FULL_BACKUP
+drwxrwxr-x  3 azureuser azureuser   4096 Sep 26 09:44 GDRIVE_RESTORE_TEST
+drwxr-xr-x 31 azureuser azureuser  12288 Sep 25 12:13 RESTORED_PROJECTS
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 11:09 RESTORED_VIDEOS
+drwxrwxr-x  2 azureuser azureuser   4096 Sep 25 15:53 __pycache__
+-rw-r--r--  1 azureuser azureuser   1331 Sep 25 17:28 azure_restore_point_commands.txt
+-rw-r--r--  1 azureuser azureuser  11370 Sep 26 07:04 benchmark_50_delete_tests.py
+-rw-rw-r--  1 azureuser azureuser     54 Sep 26 12:29 csv_downloads_url.txt
+-rw-rw-r--  1 azureuser azureuser   7792 Sep 25 16:19 full_forensic_reconciliation.py
+-rwxrwxr-x  1 azureuser azureuser   4394 Sep 25 16:10 gcs_resumable_uploader.py
+-rw-r--r--  1 azureuser azureuser   1979 Sep 25 15:53 gcs_vault_uploader.py
+drwxrwxr-x  2 azureuser azureuser   4096 Sep 26 08:38 gdrive_sync
+-rw-rw-r--  1 azureuser azureuser    260 Sep 25 18:03 google_auth_url.txt
+-rw-rw-r--  1 azureuser azureuser  11726 Sep 25 15:58 last_user_prompt.txt
+-rw-rw-r--  1 azureuser azureuser 514383 Sep 25 16:23 mismatched_files_manifest.json
+-rw-rw-r--  1 azureuser azureuser 561244 Sep 25 16:19 reconciliation_result.txt
+-rwxrwxr-x  1 azureuser azureuser   1440 Sep 25 18:03 start_oauth_listener.py
+-rw-r--r--  1 azureuser azureuser   4910 Sep 25 15:30 test_gcs_iam_boundary.py
+drwxrwxr-x  4 azureuser azureuser   4096 Sep 26 10:25 tmp
+

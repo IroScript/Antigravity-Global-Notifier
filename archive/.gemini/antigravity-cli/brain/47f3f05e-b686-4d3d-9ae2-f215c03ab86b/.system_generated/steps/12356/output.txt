@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+total 304
+drwxrwxr-x 3 azureuser azureuser   4096 Sep 26 16:29 .
+drwxrwxr-x 7 azureuser azureuser   4096 Sep 26 16:29 ..
+-rw-r--r-- 1 azureuser azureuser    663 Sep 26 15:03 README.md
+-rw-r--r-- 1 azureuser azureuser    352 Sep 26 16:29 azure-file-explorer-tunnel.service
+-rw-r--r-- 1 azureuser azureuser    315 Sep 26 16:29 azure-file-explorer.service
+-rw-rw-r-- 1 azureuser azureuser 205399 Sep 26 16:28 chart.min.js
+-rw-rw-r-- 1 azureuser azureuser  36666 Sep 26 17:44 monitor.html
+-rw-r--r-- 1 azureuser azureuser  32118 Sep 26 17:44 server.py
+-rwxr-xr-x 1 azureuser azureuser    533 Sep 26 13:38 start_tunnel.sh
+drwxrwxr-x 2 azureuser azureuser   4096 Sep 26 14:05 static
+-rw-rw-r-- 1 azureuser azureuser     59 Sep 26 13:38 tunnel_url.txt
+

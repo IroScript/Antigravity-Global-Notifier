@@ -1,0 +1,67 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/IrakIroan/azure_file_explorer/static/monitor.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -906,6 +906,7 @@
+           t: new Date().toLocaleTimeString('en-US'),
+           dt: new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short' }) + ', ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+           cpu: data.cpu_overall,
++          cpu_400: data.cpu_sum !== undefined ? data.cpu_sum : Math.round(data.cpu_overall * 4.0 * 10) / 10,
+           ram_gb: data.ram ? data.ram.used_gb : lastPoint.ram_gb,
+           ram_pct: data.ram ? data.ram.percent : lastPoint.ram_pct,
+           app1: data.apps && data.apps[0] ? { name: data.apps[0].app, cpu: data.apps[0].cpu, ram_gb: data.apps[0].ram_gb } : lastPoint.app1,
+@@ -916,17 +916,21 @@
+         const maxPts = maxMap[currentRange] || 100;
+         if (historyData.length > maxPts) {
+           historyData.shift();
++          if (lockedPointIndex > 0) lockedPointIndex--;
+         }
+ 
+         chartInstance.data.labels = historyData.map(p => p.t);
++        const is400 = (currentCpuScale === '400');
+         if (currentMode === 'cpu') {
+-          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
+-          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.app1 ? p.app1.cpu : 0);
+-          if (chartInstance.data.datasets[2]) chartInstance.data.datasets[2].data = historyData.map(p => p.app2 ? p.app2.cpu : 0);
++          chartInstance.data.datasets[0].data = historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu);
++          if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => {
++            const appVal = p.app1 ? p.app1.cpu : 0;
++            return is400 ? appVal : Math.min(100, Math.round((appVal / 4.0) * 10) / 10);
++          });
+         } else if (currentMode === 'ram') {
+           chartInstance.data.datasets[0].data = historyData.map(p => p.ram_gb);
+         } else {
+-          chartInstance.data.datasets[0].data = historyData.map(p => p.cpu);
++          chartInstance.data.datasets[0].data = historyData.map(p => is400 ? (p.cpu_400 !== undefined ? p.cpu_400 : Math.min(400, Math.round(p.cpu * 4.0 * 10) / 10)) : p.cpu);
+           if (chartInstance.data.datasets[1]) chartInstance.data.datasets[1].data = historyData.map(p => p.ram_pct);
+         }
+       } else {
+@@ -933,3 +933,4 @@
++        lastPoint.cpu_400 = data.cpu_sum !== undefined ? data.cpu_sum : Math.round(data.cpu_overall * 4.0 * 10) / 10;
+         if (data.ram) {
+           lastPoint.ram_gb = data.ram.used_gb;
+           lastPoint.ram_pct = data.ram.percent;
+@@ -936,13 +936,15 @@
+         if (chartInstance.data.datasets.length > 0) {
+           const ds0 = chartInstance.data.datasets[0].data;
+           if (ds0.length > 0) {
+-            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : lastPoint.cpu;
+-          }
+-        }
+-      }
+-
+-      chartInstance.update('none');
+-      updateGraphReport(historyData[historyData.length - 1], false);
++            ds0[ds0.length - 1] = currentMode === 'ram' ? lastPoint.ram_gb : (currentCpuScale === '400' ? lastPoint.cpu_400 : lastPoint.cpu);
++          }
++        }
++      }
++
++      chartInstance.update('none');
++      if (!isPointLocked) {
++        updateGraphReport(historyData[historyData.length - 1], false, false);
++      }
+     }
+   } catch (e) {
+     console.error(e);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,52 @@
+
+The command exited with code 0.
+Output:
+7-"""
+8-import os
+9-import sys
+10-import json
+11-import time
+12-import uuid
+13-import random
+14-import logging
+15-import sqlite3
+16-import threading
+17:import urllib.request
+18-import urllib.error
+19-from pathlib import Path
+20-from datetime import datetime, timezone
+21-
+22-# Base directories
+23-BASE_DIR = Path(__file__).resolve().parent
+24-DB_PATH = BASE_DIR / "database" / "youtube_pipeline.db"
+25-PROGRESS_FILE = BASE_DIR / "cluster_progress.json"
+26-LOGS_DIR = BASE_DIR / "logs"
+27-LOGS_DIR.mkdir(parents=True, exist_ok=True)
+--
+118-            with open(temp_file, "w", encoding="utf-8") as f:
+119-                json.dump(prog, f, indent=2)
+120-            temp_file.replace(PROGRESS_FILE)
+121-        except Exception as e:
+122-            logger.warning(f"Could not save progress file: {e}")
+123-
+124-def call_worker_api(port: int, prompt_text: str, timeout: int = 180) -> str:
+125-    """Send prompt to worker FastAPI server on localhost:{port}/generate."""
+126-    url = f"http://localhost:{port}/generate"
+127-    payload = json.dumps({"prompt": prompt_text, "wait_seconds": 90}).encode("utf-8")
+128:    req = urllib.request.Request(
+129-        url,
+130-        data=payload,
+131-        headers={"Content-Type": "application/json"}
+132-    )
+133:    with urllib.request.urlopen(req, timeout=timeout) as response:
+134-        res_data = json.loads(response.read().decode("utf-8"))
+135-        if res_data.get("success"):
+136-            return res_data.get("output_text", "")
+137-        else:
+138-            raise RuntimeError(res_data.get("error", "Unknown worker API error"))
+139-
+140-def parse_json_from_text(text: str):
+141-    """Safely extract and parse JSON object or array from markdown or raw text."""
+142-    text = text.strip()
+143-    if "```json" in text:
+

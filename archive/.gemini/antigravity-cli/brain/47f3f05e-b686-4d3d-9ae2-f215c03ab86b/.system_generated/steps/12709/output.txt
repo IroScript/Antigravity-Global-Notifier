@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/.openclaw/agents
+/home/azureuser/AGY-MASTER/AGENTS.md
+/home/azureuser/AGY-MASTER/USER_PERSONAL_AGENT_CONTEXT.md
+/home/azureuser/Reporting-Agent
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/USER_PERSONAL_AGENT_CONTEXT.md
+/home/azureuser/.webterminal/Agy Whatsapp Agents
+/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent
+/home/azureuser/IrakIroan/AGENTS.md
+

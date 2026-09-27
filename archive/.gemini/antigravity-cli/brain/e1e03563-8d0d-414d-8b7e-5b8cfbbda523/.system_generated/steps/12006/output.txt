@@ -1,0 +1,39 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 16:16:45,341 [INFO] [worker_2] [worker_2] [Idea #722: 'Honeyflow Transport Spine'] Generating real SEO via http://localhost:8002...
+2026-09-26 16:17:33,764 [INFO] [worker_2] [worker_2] ✅ [worker_2] Idea #722 SEO complete! (Title: 'The Giant Honeyflow Spine Moving Resources Across ...')
+2026-09-26 16:17:33,764 [INFO] [worker_2] [worker_2] ⏳ [Delay Ladder | #5/8: 'Idea #722 SEO'] Sleeping 61.50s (Base: 10.0s, +10.0s next)...
+2026-09-26 16:18:35,262 [INFO] [worker_2] [worker_2] 🛌 [MACRO LAYER SLEEP] Worker worker_2 entering 1.17h deep hibernation rest.
+2026-09-26 16:30:52,253 [INFO] [30MinMonitor] 
+============================================================
+🔔 [30-MINUTE PIPELINE REPORT] 2026-09-26 16:30:52 UTC
+============================================================
+Total Ideas Generated       : 1007 / 1000 (100.7%)
+Total Prompts Generated     : 10816 / 10000 (108.2%)
+Total Real SEO Completed    : 714 / 1000 (71.4%)
+Worker Status:
+  - Worker 1: cycle_resting (Completed: 156)
+  - Worker 2: macro_resting (Completed: 165)
+  - Worker 3: macro_resting (Completed: 123)
+  - Worker 4: macro_resting (Completed: 18)
+============================================================
+
+2026-09-26 16:33:41,034 [INFO] [worker_1] [worker_1] ▶️ Worker worker_1 starting Cycle #21 (Random batch target: 9 processes, Base delay: 10.0s)...
+2026-09-26 16:33:41,039 [INFO] [worker_1] [worker_1] [Idea #642: 'Titan Wing Earth Shaper'] Generating real SEO via http://localhost:8001...
+2026-09-26 16:34:35,262 [INFO] [worker_1] [worker_1] ✅ [worker_1] Idea #642 SEO complete! (Title: 'This Plane Can Reshape the Earth From the Sky! 🌍...')
+2026-09-26 16:34:35,262 [INFO] [worker_1] [worker_1] ⏳ [Delay Ladder | #1/9: 'Idea #642 SEO'] Sleeping 20.48s (Base: 10.0s, +10.0s next)...
+2026-09-26 16:34:55,743 [INFO] [worker_1] [worker_1] [Idea #643: 'Thunderquake Sonic Aircraft'] Generating real SEO via http://localhost:8001...
+2026-09-26 16:35:55,804 [WARNING] [worker_1] [worker_1] Attempt 1 failed calling worker SEO: timed out
+2026-09-26 16:37:05,864 [WARNING] [worker_1] [worker_1] Attempt 2 failed calling worker SEO: timed out
+2026-09-26 16:37:15,867 [WARNING] [worker_1] [worker_1] Attempt 3 failed calling worker SEO: HTTP Error 429: Too Many Requests
+2026-09-26 16:37:25,868 [INFO] [worker_1] [worker_1] [metadata] browser LLM returned no usable JSON; using data-grounded fallback.
+2026-09-26 16:37:25,871 [INFO] [worker_1] [worker_1] ✅ [worker_1] Idea #643 SEO complete! (Title: 'Thunderquake Sonic Aircraft — The Airplane Machine...')
+2026-09-26 16:37:25,873 [INFO] [worker_1] [worker_1] ⏳ [Delay Ladder | #2/9: 'Idea #643 SEO'] Sleeping 31.09s (Base: 10.0s, +10.0s next)...
+2026-09-26 16:37:56,969 [INFO] [worker_1] [worker_1] 🛌 [MACRO LAYER SLEEP] Worker worker_1 entering 1.91h deep hibernation rest.
+2026-09-26 16:45:15,089 [INFO] [worker_3] [worker_3] 🌅 [MACRO LAYER WAKEUP] Worker worker_3 woke up! New active shift: 2.74 hours.
+2026-09-26 16:45:15,089 [INFO] [worker_3] [worker_3] ▶️ Worker worker_3 starting Cycle #19 (Random batch target: 5 processes, Base delay: 10.0s)...
+2026-09-26 16:45:15,093 [INFO] [worker_3] [worker_3] 🎉 Worker worker_3 partition (Elements 62 to 81) FULLY COMPLETE!
+2026-09-26 16:55:15,094 [INFO] [worker_3] [worker_3] ▶️ Worker worker_3 starting Cycle #19 (Random batch target: 10 processes, Base delay: 10.0s)...
+2026-09-26 16:55:15,101 [INFO] [worker_3] [worker_3] 🎉 Worker worker_3 partition (Elements 62 to 81) FULLY COMPLETE!
+

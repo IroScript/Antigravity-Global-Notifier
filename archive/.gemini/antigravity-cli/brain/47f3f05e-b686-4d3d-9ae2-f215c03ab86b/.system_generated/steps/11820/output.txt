@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+github.com
+  ✓ Logged in to github.com account IroScript (/home/azureuser/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: gho_************************************
+  - Token scopes: 'gist', 'read:org', 'repo'
+

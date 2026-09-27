@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+origin	https://github.com/IroScript/Antigravity-Global-Notifier.git (fetch)
+origin	https://github.com/IroScript/Antigravity-Global-Notifier.git (push)
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+040000 tree e2cd4df0b26c1a5d67cf8befc5d257741e74059d	antigravity-cli
+040000 tree f2c98a208b44cf423f18e3cf465b3348c53ff39b	config
+

@@ -1,0 +1,22 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.config/systemd/user/gdrive-reporting-sentinel.service. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -4,12 +4,12 @@
+ 
+ [Service]
+ Type=simple
+-ExecStart=/usr/bin/python3 /home/azureuser/Reporting-Agent/sentinel_reporter.py
++ExecStart=/usr/bin/python3 "/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent/sentinel_reporter.py"
+ Restart=always
+ RestartSec=30
+-WorkingDirectory=/home/azureuser/Reporting-Agent
+-StandardOutput=append:/home/azureuser/Reporting-Agent/logs/sentinel.log
+-StandardError=append:/home/azureuser/Reporting-Agent/logs/sentinel.log
++WorkingDirectory=/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent
++StandardOutput=append:/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent/logs/sentinel.log
++StandardError=append:/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent/logs/sentinel.log
+ 
+ [Install]
+ WantedBy=default.target
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

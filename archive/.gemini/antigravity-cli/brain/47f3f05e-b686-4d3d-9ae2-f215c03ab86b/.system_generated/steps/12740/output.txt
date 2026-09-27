@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/bin/agentapi
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/Antigravity-Global-Notifier/AGENTS.md
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/GDRIVE_RESTORE_TEST/AGENTS.md
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/RESTORED_PROJECTS/.gemini/antigravity-cli/bin/agentapi
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/RESTORED_PROJECTS/USER_PERSONAL_AGENT_CONTEXT.md
+/home/azureuser/GLOBAL-ARCHIVE/old_archive/USER_PERSONAL_AGENT_CONTEXT.md
+

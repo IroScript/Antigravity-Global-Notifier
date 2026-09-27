@@ -1,0 +1,38 @@
+
+The command exited with code 0.
+Output:
+  UNIT                       LOAD      ACTIVE SUB     DESCRIPTION
+● agy-reporting-watchdog.se… not-found active running agy-reporting-watchdog.se…
+  agy-whatsapp.service       loaded    active running Antigravity WhatsApp Brid…
+● alco-ecommerce.service     not-found active running alco-ecommerce.service
+● alco-tunnel.service        not-found active running alco-tunnel.service
+  at-spi-dbus-bus.service    loaded    active running Accessibility services bus
+  azure-file-explorer-tunne… loaded    active running Cloudflare Tunnel for Win…
+  azure-file-explorer.servi… loaded    active running Windows 11 Azure File Exp…
+● chrome-browser.service     not-found active running chrome-browser.service
+● chrome-novnc.service       not-found active running chrome-novnc.service
+● chrome-tunnel.service      not-found active running chrome-tunnel.service
+● csv-tunnel.service         not-found active running csv-tunnel.service
+  dbus.service               loaded    active running D-Bus User Message Bus
+● frappe-redis-cache.service not-found active running frappe-redis-cache.service
+● frappe-redis-queue.service not-found active running frappe-redis-queue.service
+● frappe-scheduler.service   not-found active running frappe-scheduler.service
+● frappe-socketio.service    not-found active running frappe-socketio.service
+● frappe-web.service         not-found active running frappe-web.service
+  gdrive-live-sync.service   loaded    active running Google Drive 24/7 Live Sy…
+  gdrive-reporting-sentinel… loaded    active running Reporting Agent (agy:repo…
+● openclaw-tunnel.service    not-found active running openclaw-tunnel.service
+● payload-article-publishin… not-found active running payload-article-publishin…
+● payload-article-tunnel.se… not-found active running payload-article-tunnel.se…
+● rust-apk-tunnel.service    not-found active running rust-apk-tunnel.service
+  ssh-agent.service          loaded    active running OpenSSH Agent
+● webterminal-tunnel.service not-found active running webterminal-tunnel.service
+● webterminal.service        not-found active running webterminal.service
+● xvfb.service               not-found active running xvfb.service
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+27 loaded units listed.
+

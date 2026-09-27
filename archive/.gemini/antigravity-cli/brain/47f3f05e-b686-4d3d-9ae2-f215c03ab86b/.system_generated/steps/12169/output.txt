@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+-r--r--r-- 1 root root 0 Sep 24 13:55 /proc/204399/cmdline
+lrwxrwxrwx 1 root root 0 Sep 25 20:40 /proc/204399/cwd
+lrwxrwxrwx 1 root root 0 Sep 26 09:51 /proc/204399/exe
+/usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py 

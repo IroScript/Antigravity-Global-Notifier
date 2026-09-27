@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+Table: ideas -> 1,007 rows
+  Columns: ['id', 'uuid', 'title', 'short_title', 'raw_idea', 'refined_idea', 'description', 'category', 'subcategory', 'topic', 'niche', 'content_type', 'format', 'target_audience', 'language', 'status', 'priority', 'source', 'source_reference', 'parent_idea_id', 'root_idea_id', 'version', 'idea_hash', 'created_at', 'updated_at', 'scheduled_for', 'generated_at', 'published_at', 'archived_at', 'is_deleted', 'category_id', 'impossible_capability', 'impossible_in_size', 'impossible_physics_or_motion']
+Table: tags -> 0 rows
+  Columns: ['id', 'name', 'category', 'description', 'created_at']
+Table: content_history -> 69 rows
+  Columns: ['id', 'entity_type', 'entity_id', 'action', 'field_name', 'old_value', 'new_value', 'reason', 'actor', 'model', 'created_at']
+Table: collections -> 0 rows
+  Columns: ['id', 'name', 'description', 'category', 'status', 'created_at']
+Table: models -> 0 rows
+  Columns: ['id', 'provider', 'model_name', 'model_version', 'purpose', 'active', 'created_at']
+Table: settings -> 0 rows
+  Columns: ['key', 'value', 'value_type', 'description', 'updated_at']
+Table: idea_versions -> 0 rows
+  Columns: ['id', 'idea_id', 'version', 'title', 'raw_idea', 'refined_idea', 'change_reason', 'created_by', 'created_at']
+Table: idea_features -> 0 rows
+  Columns: ['id', 'idea_id', 'subject', 'main_topic', 'core_concept', 'core_mechanism', 'problem', 'conflict', 'solution', 'setting', 'environment', 'time_period', 'protagonist', 'antagonist', 'visual_hook', 'emotional_hook', 'curiosity_hook', 'opening_hook', 'climax', 'ending', 'transformation', 'novelty_score', 'creativity_score', 'originality_score', 'extracted_by', 'extracted_at']
+Table: idea_embeddings -> 0 rows
+  Columns: ['id', 'idea_id', 'embedding_model', 'embedding_version', 'vector_dimension', 'vector_data', 'content_hash', 'created_at']
+Table: duplicate_checks -> 0 rows
+  Columns: ['id', 'new_idea_id', 'compared_idea_id', 'exact_match', 'hash_match', 'semantic_score', 'topic_score', 'concept_score', 'mechanism_score', 'visual_score', 'story_score', 'final_score', 'decision', 'confidence', 'ai_judgement', 'checked_by', 'model_name', 'created_at']
+Table: prompts -> 10,886 rows
+  Columns: ['id', 'uuid', 'idea_id', 'prompt_type', 'title', 'prompt_text', 'negative_prompt', 'system_instruction', 'model_target', 'generation_type', 'aspect_ratio', 'duration_seconds', 'language', 'status', 'version', 'prompt_hash', 'created_at', 'updated_at', 'level', 'level_name', 'structure_type', 'reference_image_prompt_id']
+Table: idea_tags -> 0 rows
+  Columns: ['idea_id', 'tag_id']
+Table: collection_ideas -> 0 rows
+  Columns: ['collection_id', 'idea_id', 'position']
+Table: prompt_versions -> 0 rows
+  Columns: ['id', 'prompt_id', 'version', 'prompt_text', 'negative_prompt', 'change_reason', 'created_by', 'created_at']
+Table: generation_jobs -> 2 rows
+  Columns: ['id', 'uuid', 'idea_id', 'prompt_id', 'job_type', 'provider', 'model', 'status', 'priority', 'attempt_count', 'max_attempts', 'started_at', 'completed_at', 'error_code', 'error_message', 'request_data', 'response_data', 'created_at']
+

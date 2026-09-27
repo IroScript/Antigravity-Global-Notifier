@@ -1,0 +1,121 @@
+
+The command exited with code 0.
+Output:
+<truncated 112 lines>
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/azure-file-explorer-tunnel.service"
+    }
+  },
+  {
+    "name": "azure-file-explorer.service",
+    "path": "Cloud_VM_Live_Preview/azure-file-explorer.service",
+    "sha": "3e3c4e2c276fafbf473e12ac3ec4b2e053465cbc",
+    "size": 315,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/azure-file-explorer.service?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/azure-file-explorer.service",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/3e3c4e2c276fafbf473e12ac3ec4b2e053465cbc",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.service",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/azure-file-explorer.service?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/3e3c4e2c276fafbf473e12ac3ec4b2e053465cbc",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/azure-file-explorer.service"
+    }
+  },
+  {
+    "name": "chart.min.js",
+    "path": "Cloud_VM_Live_Preview/chart.min.js",
+    "sha": "78c4e5d02685ec7135d573e260be15e6fbbbe26e",
+    "size": 205399,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/chart.min.js?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/chart.min.js",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/78c4e5d02685ec7135d573e260be15e6fbbbe26e",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/chart.min.js",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/chart.min.js?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/78c4e5d02685ec7135d573e260be15e6fbbbe26e",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/chart.min.js"
+    }
+  },
+  {
+    "name": "monitor.html",
+    "path": "Cloud_VM_Live_Preview/monitor.html",
+    "sha": "b9f9807b9581081f13634eedb1e5f2cfb9ed0dad",
+    "size": 35205,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/monitor.html?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/monitor.html",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/b9f9807b9581081f13634eedb1e5f2cfb9ed0dad",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/monitor.html",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/monitor.html?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/b9f9807b9581081f13634eedb1e5f2cfb9ed0dad",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/monitor.html"
+    }
+  },
+  {
+    "name": "server.py",
+    "path": "Cloud_VM_Live_Preview/server.py",
+    "sha": "03bbc681bfd06bc2b5552c07e0c71423ec5508b5",
+    "size": 23744,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/server.py?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/server.py",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/03bbc681bfd06bc2b5552c07e0c71423ec5508b5",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/server.py?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/03bbc681bfd06bc2b5552c07e0c71423ec5508b5",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/server.py"
+    }
+  },
+  {
+    "name": "start_tunnel.sh",
+    "path": "Cloud_VM_Live_Preview/start_tunnel.sh",
+    "sha": "201576e69a9705c3702124749274e7b07e09c6f3",
+    "size": 533,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/start_tunnel.sh?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/start_tunnel.sh",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/201576e69a9705c3702124749274e7b07e09c6f3",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/start_tunnel.sh?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/201576e69a9705c3702124749274e7b07e09c6f3",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/start_tunnel.sh"
+    }
+  },
+  {
+    "name": "static",
+    "path": "Cloud_VM_Live_Preview/static",
+    "sha": "5ad0a508cbabe8493cbd39030516e8180feb9e9d",
+    "size": 0,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/static?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/Cloud_VM_Live_Preview/static",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/5ad0a508cbabe8493cbd39030516e8180feb9e9d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/static?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/trees/5ad0a508cbabe8493cbd39030516e8180feb9e9d",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/Cloud_VM_Live_Preview/static"
+    }
+  },
+  {
+    "name": "tunnel_url.txt",
+    "path": "Cloud_VM_Live_Preview/tunnel_url.txt",
+    "sha": "4d9211ad2df631930d1e283933f72da27a5c3a92",
+    "size": 59,
+    "url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/tunnel_url.txt?ref=main",
+    "html_url": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/tunnel_url.txt",
+    "git_url": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/4d9211ad2df631930d1e283933f72da27a5c3a92",
+    "download_url": "https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/Cloud_VM_Live_Preview/tunnel_url.txt?ref=main",
+      "git": "https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/git/blobs/4d9211ad2df631930d1e283933f72da27a5c3a92",
+      "html": "https://github.com/IroScript/Antigravity-Global-Notifier/blob/main/Cloud_VM_Live_Preview/tunnel_url.txt"
+    }
+  }
+]
+

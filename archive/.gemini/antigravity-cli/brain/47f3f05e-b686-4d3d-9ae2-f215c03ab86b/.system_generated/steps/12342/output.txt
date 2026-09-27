@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+{
+    "cpu_overall": 94.7,
+    "cpu_cores": [
+        97.5,
+        96.2,
+        92.7,
+        92.3
+    ],
+    "ram": {
+        "used_gb": 10.33,
+        "total_gb": 15.62,
+        "percent": 76.5,
+        "avail_gb": 3.66
+    },
+    "swap": {
+        "used_gb": 0.0,
+        "total_gb": 0.0,
+        "percent": 0.0
+    },
+    "apps": [
+        {
+            "app": "\ud83e\udde0 agy:0 (Master Agent)",
+            "cpu": 239.2,
+            "ram_mb": 2018.6,
+            "count": 2,
+            "ram_gb": 1.97
+        },
+        {
+            "app": "\ud83d\udcac WhatsApp Bridge",
+            "cpu": 54.2,
+            "ram_mb": 326.6,
+            "count": 1,
+            "ram_gb": 0.32
+        },
+        {
+            "app": "\ud83c\udf10 CloakBrowser / Chrome",
+            "cpu": 28.6,
+            "ram_mb": 1169.0,
+            "count": 7,
+            "ram_gb": 1.14
+

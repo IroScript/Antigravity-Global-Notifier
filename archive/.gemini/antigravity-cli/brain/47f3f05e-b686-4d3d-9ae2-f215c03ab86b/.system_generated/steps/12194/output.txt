@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+1717:          <canvas id="resourceChart"></canvas>
+2966:    const chartEl = document.getElementById('resourceChart');
+

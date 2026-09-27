@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+                accum += "/" + p
+                breadcrumbs.append({"name": p, "path": accum})
+
+        parent_path = os.path.dirname(target_path) if target_path != "/" else None
+
+        items = []
+        try:
+            with os.scandir(target_path) as it:
+                for entry in it:
+                    try:
+                        is_dir = entry.is_dir(follow_symlinks=False)
+                        is_link = entry.is_symlink()
+                        link_target = os.readlink(entry.path) if is_link else None
+                        
+                        try:
+                            stat = entry.stat(follow_symlinks=False)
+                            size = stat.st_size if not is_dir else None
+                            mtime = stat.st_mtime
+                            mtime_str = time.strftime("%Y-%m-%d %I:%M %p", time.localtime(mtime))
+                        except Exception:
+                            size = None
+                            mtime = 0
+                            mtime_str = "Unknown"
+
+                        ext = os.path.splitext(entry.name)[1].lower().lstrip(".")
+                        if is_dir:
+                            type_name = "File folder"
+                        elif ext:
+                            type_name = f"{ext.upper()} File"
+                        else:
+                            type_name = "File"
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+UID          PID    PPID  C STIME TTY          TIME CMD
+azureus+    1137       1  0 Sep22 ?        00:00:36 /usr/lib/systemd/systemd --u
+

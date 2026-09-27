@@ -1,0 +1,28 @@
+
+The command exited with code 0.
+Output:
+2377-    }
+2378-  }
+2379-
+2380-  function copyPropFullPath() {
+2381-    if (!currentPropPath) return;
+2382:    navigator.clipboard.writeText(currentPropPath).then(() => {
+2383-      const btn = document.getElementById('btnCopyPropPath');
+2384-      if (btn) {
+2385-        const orig = btn.textContent;
+2386-        btn.textContent = 'কপি হয়েছে!';
+2387-        setTimeout(() => { btn.textContent = orig; }, 1800);
+--
+2497-    document.getElementById('notepadModal').classList.remove('active');
+2498-  }
+2499-
+2500-  function copyNotepadContent() {
+2501-    const text = document.getElementById('notepadContent').textContent;
+2502:    navigator.clipboard.writeText(text).then(() => {
+2503:      alert("File content copied to clipboard!");
+2504-    });
+2505-  }
+2506-
+2507-  function openThisPC() {
+2508-    navigateTo('THIS_PC');
+

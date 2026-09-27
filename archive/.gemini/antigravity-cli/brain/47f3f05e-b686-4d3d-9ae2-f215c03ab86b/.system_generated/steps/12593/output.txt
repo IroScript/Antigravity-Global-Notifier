@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Currently visible items in File Explorer for /home/azureuser:
+ - .cache
+ - .config
+ - .gemini
+ - .gitconfig
+ - .gradle
+ - .local
+ - .npm
+ - .npm-global
+ - .openclaw
+ - .ssh
+ - .webterminal
+ - AGY-MASTER
+ - Ask-And-Research
+ - GEMINI.md
+ - GLOBAL-ARCHIVE
+ - IrakIroan
+ - RESTORE_VERIFY_TEMP
+ - Reporting-Agent
+

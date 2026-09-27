@@ -1,0 +1,54 @@
+The following changes were made by the replace_file_content tool to: /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/run_cluster_pipeline.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -594,10 +594,44 @@
+ 
+             # Check if all work in partition is finished
+             if not elem_need_ideas and not idea_need_prompts and not idea_need_seo:
+-                logger.info(f"[{worker_id}] 🎉 Worker {worker_id} partition (Elements {start_elem} to {end_elem}) FULLY COMPLETE!")
+-                save_worker_progress(worker_id, {"status": "partition_completed"})
+-                time.sleep(600)
+-                break
++                # Work-Stealing: Assist cluster with any remaining elements (1 to 100)
++                conn = get_db_connection()
++                try:
++                    cur = conn.cursor()
++                    cur.execute(
++                        """SELECT i.id, i.title, e.id, e.name, i.description, COUNT(p.id) as prompt_count
++                        FROM ideas i
++                        JOIN idea_elements ie ON ie.idea_id = i.id
++                        JOIN elements e ON e.id = ie.element_id
++                        LEFT JOIN prompts p ON p.idea_id = i.id
++                        GROUP BY i.id
++                        HAVING prompt_count < 10
++                        ORDER BY e.id ASC, i.id ASC LIMIT 1"""
++                    )
++                    idea_need_prompts = cur.fetchone()
++
++                    if not idea_need_prompts:
++                        cur.execute(
++                            """SELECT i.id, i.title, e.id, e.name, i.description, ym.id
++                            FROM ideas i
++                            JOIN idea_elements ie ON ie.idea_id = i.id
++                            JOIN elements e ON e.id = ie.element_id
++                            LEFT JOIN youtube_metadata ym ON ym.idea_id = i.id
++                            WHERE ym.id IS NULL
++                            ORDER BY e.id ASC, i.id ASC LIMIT 1"""
++                        )
++                        idea_need_seo = cur.fetchone()
++                finally:
++                    conn.close()
++
++                if not idea_need_prompts and not idea_need_seo:
++                    logger.info(f"[{worker_id}] 🏆 ALL 100 ELEMENTS FULLY COMPLETED ACROSS ALL STAGES!")
++                    save_worker_progress(worker_id, {"status": "all_partitions_completed"})
++                    time.sleep(600)
++                    break
++                else:
++                    target_eid = idea_need_prompts[2] if idea_need_prompts else idea_need_seo[2]
++                    logger.info(f"[{worker_id}] 🤝 Partition ({start_elem}-{end_elem}) complete! Assisting cluster on remaining Element #{target_eid}...")
+ 
+             # Execute single process in cycle
+             action_name = ""
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

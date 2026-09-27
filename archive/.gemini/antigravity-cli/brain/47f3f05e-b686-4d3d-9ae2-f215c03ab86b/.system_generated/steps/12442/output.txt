@@ -1,0 +1,172 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+  level_name: Level 6 - Gravity-Defying Paddy Colossus -> 2
+  level_name: Level 6 - Gravity Root Engine -> 2
+  level_name: Level 6 - EXTREME -> 2
+  level_name: Level 6 - Dyson-Class Rice Comb -> 2
+  level_name: Level 6 - Dyson Agricultural Engine -> 2
+  level_name: Level 6 - Dimensional Root Computer -> 2
+  level_name: Level 6 - CONTINENTAL MACHINE -> 2
+  level_name: Level 6 - Atmospheric Titan -> 2
+  level_name: Level 6 - Atmospheric Harvest Leviathan -> 2
+  level_name: Level 5 - REGIONAL SCALE -> 2
+  level_name: Level 5 - Quantum Season Engine -> 2
+  level_name: Level 5 - Quantum Rice Colossus -> 2
+  level_name: Level 5 - Quantum Orbit Engine -> 2
+  level_name: Level 5 - Quantum Monsoon Ark -> 2
+  level_name: Level 5 - Quantum Harvest Titan -> 2
+  level_name: Level 5 - Quantum Harvest Colossus -> 2
+  level_name: Level 5 - Quantum Forest Engine -> 2
+  level_name: Level 5 - Quantum Bark Engine -> 2
+  level_name: Level 5 - Quantum Agricultural Colossus -> 2
+  level_name: Level 5 - Planetary Root Engine -> 2
+  level_name: Level 5 - Planetary Rice Fortress -> 2
+  level_name: Level 5 - Planetary Photosynthesis Engine -> 2
+  level_name: Level 5 - Planetary Paddy Vacuum -> 2
+  level_name: Level 5 - Planetary Memory Organism -> 2
+  level_name: Level 5 - Planetary Harvest Titan -> 2
+  level_name: Level 5 - Planetary Harvest Engine -> 2
+  level_name: Level 5 - Planetary Branch Engine -> 2
+  level_name: Level 5 - Planetary Biosphere Engine -> 2
+  level_name: Level 5 - Planetary Agricultural Engine -> 2
+  level_name: Level 5 - PLANETARY -> 2
+  level_name: Level 5 - Orbital Stabilizer -> 2
+  level_name: Level 5 - Megastructure Water Crown -> 2
+  level_name: Level 5 - Megastructure Pollination Cathedral -> 2
+  level_name: Level 5 - Megastructure Harvest Colossus -> 2
+  level_name: Level 5 - MEGASTRUCTURE -> 2
+  level_name: Level 5 - MEGA STRUCTURE -> 2
+  level_name: Level 5 - CONTINENTAL SCALE -> 2
+  level_name: Level 5 - CITY SCALE -> 2
+  level_name: Level 5 - Atmospheric Colossus -> 2
+  level_name: Level 4 - Sky-Orbit Harvesting Titan -> 2
+  level_name: Level 4 - SUPERSTRUCTURE -> 2
+  level_name: Level 4 - Root Monsoon Array -> 2
+  level_name: Level 4 - Quantum Forest Engine -> 2
+  level_name: Level 4 - Planetary Root Network -> 2
+  level_name: Level 4 - Planetary Root Manipulator -> 2
+  level_name: Level 4 - Planetary Rain Harvester -> 2
+  level_name: Level 4 - Planetary Processing Engine -> 2
+  level_name: Level 4 - Planetary Harvest Worm -> 2
+  level_name: Level 4 - Planetary Harvest Colossus -> 2
+  level_name: Level 4 - Planetary Halo -> 2
+  level_name: Level 4 - Planetary Forest Engine -> 2
+  level_name: Level 4 - Planetary Flowering Synchronizer -> 2
+  level_name: Level 4 - Planetary Extraction Colossus -> 2
+  level_name: Level 4 - Planetary Engine -> 2
+  level_name: Level 4 - Planetary Canopy Regulator -> 2
+  level_name: Level 4 - Planetary Bark Refinery -> 2
+  level_name: Level 4 - Planetary Agriculture Engine -> 2
+  level_name: Level 4 - Orbital Mirror Colossus -> 2
+  level_name: Level 4 - Megastructure Transformation -> 2
+  level_name: Level 4 - Megastructure Harvesting Engine -> 2
+  level_name: Level 4 - Megastructure Harvester -> 2
+  level_name: Level 4 - Megastructure Harvest Organism -> 2
+  level_name: Level 4 - Mega-Industrial Rice Titan -> 2
+  level_name: Level 4 - Mega Ark Harvest Colossus -> 2
+  level_name: Level 4 - MOUNTAIN SCALE -> 2
+  level_name: Level 4 - MEGAFARM ENGINE -> 2
+  level_name: Level 4 - MEGA MACHINE -> 2
+  level_name: Level 4 - MEGA LAUNCHER -> 2
+  level_name: Level 4 - Living Computation Engine -> 2
+  level_name: Level 4 - Geothermal Titan -> 2
+  level_name: Level 4 - EPIC -> 2
+  level_name: Level 4 - Continental Harvester -> 2
+  level_name: Level 4 - Atmospheric Harvest Engine -> 2
+  level_name: Level 3 - Storm Engine -> 2
+  level_name: Level 3 - Storm Crown Prototype -> 2
+  level_name: Level 3 - Skyborne Paddy Titan -> 2
+  level_name: Level 3 - Root Network Colossus -> 2
+  level_name: Level 3 - Root Civilization Engine -> 2
+  level_name: Level 3 - Planetary Processing Colossus -> 2
+  level_name: Level 3 - Planetary Nervous System -> 2
+  level_name: Level 3 - Mountain-Scale Engine -> 2
+  level_name: Level 3 - Mountain Mirror Colossus -> 2
+  level_name: Level 3 - Megastructure Processor -> 2
+  level_name: Level 3 - Megafactory Walker -> 2
+  level_name: Level 3 - Mega-Scale Agricultural Engine -> 2
+  level_name: Level 3 - Mega-Industrial Forest Engine -> 2
+  level_name: Level 3 - Living Bark Forge -> 2
+  level_name: Level 3 - LARGE -> 2
+  level_name: Level 3 - HEAVY MECHANICAL -> 2
+  level_name: Level 3 - Gravitational Sculptor -> 2
+  level_name: Level 3 - GIANT -> 2
+  level_name: Level 3 - EXTREME -> 2
+  level_name: Level 3 - EXPANDED -> 2
+  level_name: Level 3 - ELITE -> 2
+  level_name: Level 3 - Continental Ring Engine -> 2
+  level_name: Level 3 - Continental Mill Walker -> 2
+  level_name: Level 3 - Continental Harvest Engine -> 2
+  level_name: Level 3 - Continental Engine -> 2
+  level_name: Level 3 - Continental Comb Engine -> 2
+  level_name: Level 3 - Continental Climate Processor -> 2
+  level_name: Level 3 - Continental Branch Network -> 2
+  level_name: Level 3 - Cathedral of Artificial Insects -> 2
+  level_name: Level 3 - Autonomous Forest Colossus -> 2
+  level_name: Level 3 - Atmospheric Titan -> 2
+  level_name: Level 3 - Atmospheric Processing Colossus -> 2
+  level_name: Level 3 - Atmospheric Moon Engine -> 2
+  level_name: Level 2 - Regional Megaharvester -> 2
+  level_name: Level 2 - Mega Harvest Platform -> 2
+  level_name: Level 2 - Industrial Season Engine -> 2
+  level_name: Level 2 - Industrial Pollination Engine -> 2
+  level_name: Level 2 - Industrial Giant -> 2
+  level_name: Level 2 - Industrial Expansion -> 2
+  level_name: Level 2 - Industrial Canopy Engine -> 2
+  level_name: Level 2 - INDUSTRIAL -> 2
+  level_name: Level 2 - EXPANDED -> 2
+  level_name: Level 2 - DEVELOPING -> 2
+  level_name: Level 2 - DEVELOPED -> 2
+  level_name: Level 2 - Continental Water Engine -> 2
+  level_name: Level 2 - Continental Stabilizer -> 2
+  level_name: Level 2 - Continental Solar Engine -> 2
+  level_name: Level 2 - Continental Root Network -> 2
+  level_name: Level 2 - Continental Excavator -> 2
+  level_name: Level 2 - Continental Collector -> 2
+  level_name: Level 2 - Advanced Harvest Titan -> 2
+  level_name: Level 2 - Advanced Harvest Engine -> 2
+  level_name: Level 2 - Advanced Agricultural Titan -> 2
+  level_name: Level 10 - MAXIMUM IMPOSSIBLE -> 2
+  level_name: Level 10 - MAXIMUM ALIEN -> 2
+  level_name: Level 10 - Alien Level / Maximum: Transdimensional Paddy Harvesting God -> 2
+  level_name: Level 10 - Alien Level / Maximum: Infinite Sun Harvester -> 2
+  level_name: Level 10 - Alien Level / Maximum Pollinator Cathedral -> 2
+  level_name: Level 10 - ALIEN LEVEL -> 2
+  level_name: Level 9 - NEAR-ABSOLUTE IMPOSSIBILITY -> 1
+  level_name: Level 8 - EXTREME SPECULATIVE ENGINEERING -> 1
+  level_name: Level 7 - SYSTEMIC DOMINANCE -> 1
+  level_name: Level 6 - TRANSCENDENT ENGINEERING -> 1
+  level_name: Level 5 - MULTI-DIMENSIONAL IMPOSSIBILITY -> 1
+  level_name: Level 4 - EXPANDED OPERATIONAL SCALE -> 1
+  level_name: Level 3 - DEEP ENGINEERING COMPLEXITY -> 1
+  level_name: Level 2 - EXTREME CAPABILITY -> 1
+  level_name: Level 10 - ULTIMATE CINEMATIC IMPOSSIBILITY -> 1
+  level_name: Level 1 - GIANT IMPOSSIBLE FOUNDATION -> 1
+Total in channel_prompts table: 38
+
+=== SEO BREAKDOWN ===
+Total SEO Runs: 741
+  verdict: publish -> 388
+  verdict: HIGH_POTENTIAL -> 179
+  verdict: insufficient_data -> 149
+  verdict: promising -> 25
+  upload_ready: 1 -> 741
+Total SEO Keyword Metrics: 34851
+Distinct SEO Keywords: 7496
+Total SEO Competitors Tracked: 12235
+Distinct Competitor Videos: 0
+
+=== YOUTUBE METADATA ===
+Total YouTube Metadata rows: 734
+YouTube Metadata with SEO Description: 734
+YouTube Metadata with Tags: 734
+
+=== IDEAS ===
+Total Ideas: 1007
+  idea status: new -> 638
+  idea status: active -> 340
+  idea status: packaged -> 23
+  idea status: completed -> 6
+

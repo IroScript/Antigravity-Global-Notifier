@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+394-      position: sticky;
+395-      top: 0;
+396-      z-index: 2;
+397-    }
+398-
+399:    .files-table tr {
+400-      cursor: pointer;
+401-      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+402-      transition: background 0.1s;
+403-    }
+404:    .files-table tr:hover { background: var(--bg-hover); }
+405:    .files-table tr.selected { background: var(--bg-selected); }
+406-
+407-    .files-table td {
+408-      padding: 7px 12px;
+409-      white-space: nowrap;
+410-      color: var(--text-main);
+--
+2327-    });
+2328-  }
+2329-
+2330-  function handleItemClick(item, e) {
+2331-    selectedItem = item;
+2332:    document.querySelectorAll('.files-table tr, .grid-item').forEach(el => el.classList.remove('selected'));
+2333-    if (e && e.currentTarget) e.currentTarget.classList.add('selected');
+2334-    const info = item.is_dir ? 'Folder' : (item.size_str || 'File');
+2335-    document.getElementById('statusLeft').textContent = `Selected: ${item.name} (${info})`;
+2336-  }
+2337-
+

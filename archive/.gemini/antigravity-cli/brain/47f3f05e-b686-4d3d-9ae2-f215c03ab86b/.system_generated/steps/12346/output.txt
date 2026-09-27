@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+[
+    {
+        "epoch": 1790359857,
+        "t": "6 PM",
+        "dt": "25 Sep, 06:10 PM",
+        "cpu": 38.9,
+        "ram_gb": 9.45,
+        "ram_pct": 71.2,
+        "app1": {
+            "name": "\ud83d\udcac WhatsApp Bridge",
+            "cpu": 17.5,
+            "ram_gb": 0.24
+        },
+        "app2": {
+            "name": "\ud83e\udde0 Antigravity CLI",
+            "cpu": 9.7,
+            "ram_gb": 0.37
+        },
+        "cpu_400": 155.6
+    },
+    {
+        "epoch": 1790363457,
+        "t": "7 PM",
+        "dt": "25 Sep, 07:10 PM",
+        "cpu": 31.9,
+        "ram_gb": 9.54,
+        "ram_pct": 71.9,
+        "app1": {
+            "name": "\ud83d\udcac WhatsApp Bridge",
+            "cpu": 14.4,
+

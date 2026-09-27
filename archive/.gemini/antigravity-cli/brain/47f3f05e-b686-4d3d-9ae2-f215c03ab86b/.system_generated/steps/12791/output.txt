@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+'/home/azureuser/.webterminal/Agy Whatsapp Agents/Antigravity-Global-Notifier/Cloud_VM_Live_Preview':
+total 316
+drwxrwxr-x 3 azureuser azureuser   4096 Sep 26 16:29 .
+drwxrwxr-x 7 azureuser azureuser   4096 Sep 26 16:29 ..
+-rw-r--r-- 1 azureuser azureuser    663 Sep 26 15:03 README.md
+-rw-r--r-- 1 azureuser azureuser    352 Sep 26 16:29 azure-file-explorer-tunnel.service
+-rw-r--r-- 1 azureuser azureuser    315 Sep 26 16:29 azure-file-explorer.service
+-rw-rw-r-- 1 azureuser azureuser 205399 Sep 26 16:28 chart.min.js
+-rw-rw-r-- 1 azureuser azureuser  44198 Sep 26 18:00 monitor.html
+-rw-r--r-- 1 azureuser azureuser  36801 Sep 26 18:00 server.py
+-rwxr-xr-x 1 azureuser azureuser    533 Sep 26 13:38 start_tunnel.sh
+drwxrwxr-x 2 azureuser azureuser   4096 Sep 26 14:05 static
+-rw-rw-r-- 1 azureuser azureuser     59 Sep 26 18:00 tunnel_url.txt
+
+'/home/azureuser/.webterminal/Agy Whatsapp Agents/Antigravity-Global-Notifier/Cloud_VM_Whatsapp':
+total 88
+drwxrwxr-x 2 azureuser azureuser  4096 Sep 26 16:30 .
+drwxrwxr-x 7 azureuser azureuser  4096 Sep 26 16:29 ..
+-rw-r--r-- 1 azureuser azureuser  1712 Sep 26 16:30 README.md
+-rw-rw-r-- 1 azureuser azureuser   571 Sep 26 16:29 agy-whatsapp.service
+-rw-r--r-- 1 azureuser azureuser   191 Sep 26 16:29 boundary_guard.py
+-rwxrwxr-x 1 azureuser azureuser   352 Sep 26 16:29 init_agy_sessions.sh
+-rw-r--r-- 1 azureuser azureuser 64365 Sep 26 16:29 whatsapp_bridge.js
+
+'/home/azureuser/.webterminal/Agy Whatsapp Agents/Antigravity-Global-Notifier/archive':
+total 12
+drwxrwxr-x 3 azureuser azureuser 4096 Sep 26 16:29 .
+drwxrwxr-x 7 azureuser azureuser 4096 Sep 26 16:29 ..
+drwxr-xr-x 4 azureuser azureuser 4096 Sep 25 07:55 .gemini
+

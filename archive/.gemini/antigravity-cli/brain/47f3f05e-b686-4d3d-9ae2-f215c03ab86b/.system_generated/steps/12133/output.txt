@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:8090            0.0.0.0:*               LISTEN      -                   
+
+Terminal ID: term1

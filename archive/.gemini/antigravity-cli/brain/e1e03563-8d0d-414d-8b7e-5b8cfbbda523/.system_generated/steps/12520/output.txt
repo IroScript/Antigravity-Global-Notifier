@@ -1,0 +1,2 @@
+
+Encountered error in step execution: failed to use persistent terminal: terminal "terminal-status" is already in use by another command

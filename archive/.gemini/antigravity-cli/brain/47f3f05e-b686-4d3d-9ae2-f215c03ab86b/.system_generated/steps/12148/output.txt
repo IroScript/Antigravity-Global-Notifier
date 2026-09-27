@@ -1,0 +1,4 @@
+
+The command exited with code 0.
+Output:
+{"cpu_overall": 97.7, "cpu_cores": [97.0, 97.0, 97.9, 98.7], "ram": {"used_gb": 9.7, "total_gb": 15.62, "percent": 72.5, "avail_gb": 4.29}, "swap": {"used_gb": 0.0, "total_gb": 0.0, "percent": 0.0}, "apps": [{"app": "\ud83e\udd16 AGY Coding Agent", "ram_mb": 4063.1, "ram_gb": 3.97, "cpu": 260.0, "count": 12}, {"app": "\ud83c\udf10 CloakBrowser / Chrome", "ram_mb": 1969.6, "ram_gb": 1.92, "cpu": 19.7, "count": 59}, {"app": "\u2699\ufe0f uvicorn", "ram_mb": 628.8, "ram_gb": 0.61, "cpu": 1.2, "coun

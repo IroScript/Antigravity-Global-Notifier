@@ -1,0 +1,27 @@
+
+The command exited with code 0.
+Output:
+1695-            <button class="pill active" onclick="changeRange('15m', this)">15মি</button>
+1696-            <button class="pill" onclick="changeRange('30m', this)">30মি</button>
+1697-            <button class="pill" onclick="changeRange('1h', this)">1ঘণ্টা</button>
+1698-            <button class="pill" onclick="changeRange('5h', this)">5ঘণ্টা</button>
+1699-            <button class="pill" onclick="changeRange('10h', this)">10ঘণ্টা</button>
+1700:            <button class="pill" onclick="changeRange('24h', this)">24ঘণ্টা</button>
+1701-            <button class="pill" onclick="changeRange('all', this)">সব (All)</button>
+1702-          </div>
+1703-
+1704-          <!-- Metric View Toggles -->
+1705-          <div class="mode-row">
+--
+2750-    currentRange = range;
+2751-    document.querySelectorAll('.pills-scroll .pill').forEach(p => p.classList.remove('active'));
+2752-    if (el) el.classList.add('active');
+2753-    const labelMap = {
+2754-      '1m': 'গত ১ মিনিট', '5m': 'গত ৫ মিনিট', '15m': 'গত ১৫ মিনিট', '30m': 'গত ৩০ মিনিট',
+2755:      '1h': 'গত ১ ঘণ্টা', '5h': 'গত ৫ ঘণ্টা', '10h': 'গত ১০ ঘণ্টা', '24h': 'গত ২৪ ঘণ্টা', 'all': 'সমগ্র হিস্ট্রি'
+2756-    };
+2757-    document.getElementById('chart-range-label').innerText = labelMap[range] || range;
+2758-    fetchHistory();
+2759-  }
+2760-
+

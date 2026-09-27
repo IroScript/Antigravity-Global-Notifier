@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+TMUX mapping: {'/dev/pts/0': ('AI-Agent', '/home/azureuser'), '/dev/pts/1': ('Bash-Terminal', '/home/azureuser'), '/dev/pts/2': ('Linux-Shell', '/home/azureuser'), '/dev/pts/3': ('yt', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube'), '/dev/pts/4': ('frappe', '/home/azureuser/Frappe-erp-Alco (deleted)'), '/dev/pts/5': ('tg', '/home/azureuser/telegram-bot (deleted)'), '/dev/pts/6': ('history', '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted)'), '/dev/pts/7': ('kids', '/home/azureuser/kids_tube_with_folder_seection (deleted)'), '/dev/pts/8': ('rust', '/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted)'), '/dev/pts/9': ('article', '/home/azureuser/Article-Publishing-Platform (deleted)'), '/dev/pts/10': ('game', '/home/azureuser/3D-Game-Design-Studio (deleted)'), '/dev/pts/13': ('research', '/home/azureuser/Ask-And-Research (deleted)')}
+

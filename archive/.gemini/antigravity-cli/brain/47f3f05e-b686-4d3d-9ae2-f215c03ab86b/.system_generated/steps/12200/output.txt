@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+0: AI-Agent (pid 1263, tty /dev/pts/0, cwd /home/azureuser)
+1: Bash-Terminal (pid 1310, tty /dev/pts/1, cwd /home/azureuser)
+2: Linux-Shell (pid 1318, tty /dev/pts/2, cwd /home/azureuser)
+3: yt (pid 1323, tty /dev/pts/3, cwd /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube)
+4: frappe (pid 1351, tty /dev/pts/4, cwd /home/azureuser/Frappe-erp-Alco (deleted))
+5: tg (pid 1359, tty /dev/pts/5, cwd /home/azureuser/telegram-bot (deleted))
+6: history (pid 1368, tty /dev/pts/6, cwd /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted))
+7: kids (pid 1376, tty /dev/pts/7, cwd /home/azureuser/kids_tube_with_folder_seection (deleted))
+8: rust (pid 1384, tty /dev/pts/8, cwd /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted))
+9: article (pid 1393, tty /dev/pts/9, cwd /home/azureuser/Article-Publishing-Platform (deleted))
+10: game (pid 1499, tty /dev/pts/10, cwd /home/azureuser/3D-Game-Design-Studio (deleted))
+11: research (pid 215828, tty /dev/pts/13, cwd /home/azureuser/Ask-And-Research (deleted))
+

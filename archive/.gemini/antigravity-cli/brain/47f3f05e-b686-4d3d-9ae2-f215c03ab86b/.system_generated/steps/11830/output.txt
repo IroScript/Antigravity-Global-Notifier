@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/history.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript_full.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000002.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000022.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000004.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000027.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000028.jsonl
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/2c8762ec-21c0-4b35-928f-a69972ed993c.json
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/9199ee76-f03c-4bc0-b150-54df8dba6a46.json
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/1a977b81-c20b-4381-8b31-db255c932a72.json
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/6969/output.txt
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/5275/output.txt
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/5271/output.txt
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7017/output.txt
+Sanitized: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5271.log
+Total files sanitized: 16
+

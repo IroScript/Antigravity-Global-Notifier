@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+● agy-reporting-watchdog.service                                                                                                                                            not-found active running   agy-reporting-watchdog.service
+● agy-session.service                                                                                                                                                       not-found active exited    agy-session.service
+  agy-whatsapp.service                                                                                                                                                      loaded    active running   Antigravity WhatsApp Bridge Service
+  gdrive-reporting-sentinel.service                                                                                                                                         loaded    active running   Reporting Agent (agy:report) - Google Drive Live Sync Sentinel
+

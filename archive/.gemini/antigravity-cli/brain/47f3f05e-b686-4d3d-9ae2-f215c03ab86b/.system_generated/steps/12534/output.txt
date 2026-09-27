@@ -1,0 +1,16 @@
+Task: 47f3f05e-b686-4d3d-9ae2-f215c03ab86b/task-12530
+Status: RUNNING
+Log: /home/azureuser/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-12530.log
+Log output:
+28K	/home/azureuser/3D-Game-Design-Studio/
+152M	/home/azureuser/AGY-MASTER/
+162M	/home/azureuser/Antigravity-Global-Notifier/
+12K	/home/azureuser/Ask-And-Research/
+49M	/home/azureuser/DATABASE_BACKUPS_VAULT/
+3.2G	/home/azureuser/FULL_HOME_BACKUP/
+988K	/home/azureuser/Frappe-erp-Alco/
+33G	/home/azureuser/GCP_FULL_BACKUP/
+56K	/home/azureuser/GDRIVE_RESTORE_TEST/
+12K	/home/azureuser/GLOBAL-ARCHIVE/
+
+Last progress: 3s ago

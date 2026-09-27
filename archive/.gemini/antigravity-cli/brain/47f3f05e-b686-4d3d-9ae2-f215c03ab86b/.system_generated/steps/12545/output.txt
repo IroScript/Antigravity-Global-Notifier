@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+ERROR: [Errno 13] Permission denied: '/home/azureuser/RESTORE_VERIFY_TEMP' -> '/home/azureuser/GLOBAL-ARCHIVE/old_archive/RESTORE_VERIFY_TEMP'
+

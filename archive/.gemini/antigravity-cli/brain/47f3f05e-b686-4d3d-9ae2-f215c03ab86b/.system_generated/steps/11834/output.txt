@@ -1,0 +1,49 @@
+
+The command exited with code 0.
+Output:
+<truncated 12 lines>
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000056.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000023.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000029.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000004.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000027.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000035.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000030.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000031.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000039.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000033.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000058.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000038.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000067.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000028.jsonl
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/2c8762ec-21c0-4b35-928f-a69972ed993c.json
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/9199ee76-f03c-4bc0-b150-54df8dba6a46.json
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/36251ee0-5455-4b5f-b5ca-24db80c00239.json
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/messages/1a977b81-c20b-4381-8b31-db255c932a72.json
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7118/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/6953/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/9482/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/6969/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7026/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/5275/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7702/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7693/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7156/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/5271/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7028/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7204/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7700/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7499/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7365/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/10183/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7017/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/9466/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7120/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7048/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/9486/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/6983/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/7712/output.txt
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-7700.log
+Sanitized extra: /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/tasks/task-5271.log
+Total extra files sanitized: 55
+

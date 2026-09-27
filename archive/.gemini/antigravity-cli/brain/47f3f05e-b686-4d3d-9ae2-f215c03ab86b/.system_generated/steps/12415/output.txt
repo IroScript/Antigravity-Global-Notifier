@@ -1,0 +1,55 @@
+
+The command exited with code 0.
+Output:
+    folders_count = 0
+    size_str = "Calculating..."
+    size_bytes_formatted = ""
+    contains_str = "Calculating..."
+
+    # 1. Fast find for file and folder counts (12s timeout)
+    # Using printf %y doesn't stat individual files and is blazing fast (takes ~2s for 880k files)
+    try:
+        f_res = subprocess.run(
+            ["find", target_path, "-mindepth", "1", "-printf", "%y\n"],
+            capture_output=True, text=True, timeout=12.0
+        )
+        if f_res.stdout:
+            # Don't check returncode == 0, because permission warnings on docker/sockets return 1 while stdout has all files!
+            files_count = f_res.stdout.count('f') + f_res.stdout.count('l')
+            folders_count = f_res.stdout.count('d')
+            contains_str = f"{files_count:,} Files, {folders_count:,} Folders"
+        else:
+            contains_str = "0 Files, 0 Folders"
+    except subprocess.TimeoutExpired:
+        contains_str = "Over 1,000,000+ items (timeout)"
+    except Exception as e:
+        contains_str = str(e)
+
+    # 2. du -sb for accurate total byte size (15s timeout)
+    try:
+        du_res = subprocess.run(
+            ["du", "-sb", target_path],
+            capture_output=True, text=True, timeout=15.0
+        )
+        if du_res.stdout:
+            lines = du_res.stdout.strip().splitlines()
+            if lines:
+                parts = lines[-1].split()
+                if parts and parts[0].isdigit():
+                    size_bytes = int(parts[0])
+                    size_str = format_size(size_bytes)
+                    size_bytes_formatted = f"{size_bytes:,} bytes"
+    except subprocess.TimeoutExpired:
+        size_str = "Large directory (> 15s scan)"
+        size_bytes_formatted = "Scan timeout"
+    except Exception as e:
+        size_str = "Unknown"
+        size_bytes_formatted = str(e)
+
+    # Fallback if du failed but we have files
+    if size_bytes is None and files_count > 0:
+        size_str = "Size calculating..."
+
+    data = {
+        "name": name,
+

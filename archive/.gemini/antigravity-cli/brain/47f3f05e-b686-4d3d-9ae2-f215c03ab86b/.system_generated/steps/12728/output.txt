@@ -1,0 +1,55 @@
+
+The command exited with code 0.
+Output:
+}
+
+function getWindowForSender(sender) {
+  if (!sender) return 'agy:0';
+  if (sender.endsWith('@g.us')) {
+    const groups = getProjectGroupMap();
+    for (const [k, g] of Object.entries(groups)) {
+      if (g && g.id === sender) {
+        if (k === 'yt') return 'agy:yt';
+        if (k === 'frappe') return 'agy:frappe';
+        if (k === 'tg') return 'agy:tg';
+        if (k === 'history') return 'agy:history';
+        if (k === 'kids') return 'agy:kids';
+        if (k === 'rust') return 'agy:rust';
+        if (k === 'article') return 'agy:article';
+        if (k === 'game') return 'agy:game';
+      }
+    }
+  }
+  return 'agy:0';
+
+}
+
+function dispatchToTmux(promptText, targetWindow = 'agy:0') {
+  const cleanPrompt = (promptText || '').trim();
+  if (!cleanPrompt) return;
+
+  if (isWindowBusy(targetWindow)) {
+    console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
+    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow });
+    return;
+  }
+  windowBusy[targetWindow] = true;
+  windowBusySince[targetWindow] = Date.now();
+  lastWaDispatchedPromptByWindow[targetWindow] = cleanPrompt.replace(/\s+/g, ' ').trim();
+  try {
+    // Ensure target session and window exist before dispatching
+    try {
+      execSync(`tmux list-panes -t ${targetWindow}`, { stdio: 'ignore' });
+    } catch (e) {
+      console.log(`[WA Bridge] 🔄 Target ${targetWindow} not ready! Running init_agy_sessions.sh...`);
+      try {
+        execSync(`/bin/bash /home/azureuser/.webterminal/init_agy_sessions.sh`, { stdio: 'ignore' });
+      } catch (err) {}
+    }
+
+    const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
+    const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
+    fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
+    const bufName = `wa_cmd_${safeTarget}`;
+    execSync(`tmux load-buffer -b ${bufName} "${cmdFile}" && tmux paste-buffer -p -r -b ${bufName} -t ${targetWindow}`);
+

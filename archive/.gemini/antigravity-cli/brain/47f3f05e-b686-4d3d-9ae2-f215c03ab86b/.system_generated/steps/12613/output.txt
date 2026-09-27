@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+azureus+    1688  0.0  0.0   7480  2224 ?        Ss   Sep22   0:00 /bin/bash /home/azureuser/.openclaw/start_tunnel.sh
+azureus+    1702  0.0  0.0   7612  2368 ?        S    Sep22   0:00 /bin/bash /home/azureuser/.openclaw/start_tunnel.sh
+azureus+    1716  0.0  0.2 2100552 33152 ?       S    Sep22   0:31 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+

@@ -1,0 +1,27 @@
+
+The command exited with code 1.
+Output:
+209M	/home/azureuser/.gemini
+301M	/home/azureuser/.npm
+708M	/home/azureuser/.npm-global
+118M	/home/azureuser/.webterminal
+54G	/home/azureuser/IrakIroan
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/3d12f826-8518-4db6-867e-df1577a21929': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/blob_storage/e0c05714-9346-4bed-aa60-994df4d9b34f': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/blob_storage/c7803241-0534-4f90-a6bf-d882a5489382': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/10': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/06': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0c': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0d': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0a': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/11': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0f': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0b': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/08': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0e': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/07': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/09': Permission denied
+du: cannot read directory '/home/azureuser/GLOBAL-ARCHIVE/old_archive/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/blob_storage/7bea3bef-c336-4a7c-8fa0-ad3ca3fb4c89': Permission denied
+41G	/home/azureuser/GLOBAL-ARCHIVE
+

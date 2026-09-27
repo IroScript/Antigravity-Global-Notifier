@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+[OK] Moved: 3D-Game-Design-Studio
+[OK] Moved: Antigravity-Global-Notifier
+[OK] Moved: kids_tube_with_folder_seection
+[OK] Moved: Rust_Task_With_Time_Keeping_And_Live_Note
+[OK] Moved: telegram-bot
+[OK] Moved: ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+[OK] Moved: MASTER_MULTI_AGENT_HIERARCHICAL_ARCHITECTURE.txt
+[OK] Moved: PERSONAL_ACTIVITY_AND_TASK_MEMORY.md
+[OK] Moved: PINNED_LINKS.md
+[OK] Moved: USER_PERSONAL_AGENT_CONTEXT.md
+[OK] Moved: chart.min.js
+[OK] Moved: .sudo_as_admin_successful
+[OK] Moved: irakiroan
+

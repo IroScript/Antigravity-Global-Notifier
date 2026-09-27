@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+   1190 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+   1197 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe schedule
+   1199 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+   1209 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+   1637 python3 /home/azureuser/.webterminal/watch_reply.py
+   1716 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+   1997 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(6)
+  42086 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+ 307848 /home/azureuser/frappe-bench/env/bin/python -m frappe.utils.bench_helper frappe serve --port 8000
+ 307856 /home/azureuser/frappe-bench/env/bin/python -c from multiprocessing.resource_tracker import main;main(7)
+ 637238 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+1000406 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+1113817 /usr/bin/python3 /home/azureuser/gdrive_sync/gdrive_live_sync.py
+1127728 /usr/bin/python3 /home/azureuser/Reporting-Agent/sentinel_reporter.py
+1264150 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+1266213 bash -c ps -u azureuser -o pid,cmd | grep python
+1266215 grep python
+

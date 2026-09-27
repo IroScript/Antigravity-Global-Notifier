@@ -1,0 +1,54 @@
+
+The command exited with code 0.
+Output:
+import os
+import sys
+import json
+import time
+import random
+import asyncio
+import logging
+from pathlib import Path
+from typing import Optional, List, Dict, Any
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from playwright.async_api import async_playwright, BrowserContext, Page
+from playwright_stealth.stealth import Stealth
+
+# Setup Logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [Worker-%(name)s] %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
+logger = logging.getLogger(os.getenv("WORKER_ID", "1"))
+
+# Constants & Paths
+WORKER_ID = os.getenv("WORKER_ID", "worker_1")
+BASE_PORT = int(os.getenv("PORT", "8000"))
+COOKIE_FILE = Path(os.getenv("COOKIE_FILE", "/app/cookies/cookie.json"))
+PROXY_FILE = Path(os.getenv("PROXY_FILE", "/app/cookies/proxy.txt"))
+PROFILE_DIR = Path(os.getenv("PROFILE_DIR", "/app/profile"))
+CHATGPT_URL = "https://chatgpt.com"
+
+# Global State
+context: Optional[BrowserContext] = None
+playwright_instance = None
+active_page: Optional[Page] = None
+is_authenticated = False
+user_display_name = "Unknown"
+is_busy = False
+action_counter = 0
+last_session_refresh = 0.0
+
+# Realistic modern desktop user agents
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+]
+
+

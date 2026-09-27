@@ -1,0 +1,41 @@
+
+The command exited with code 1.
+Output:
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/vocab_en-us.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_5/optimization_guide_model_store/24/E6DC4029A1E4B4C1/310F23988F6164C6/enus_denylist_encoded_241007.txt
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_3/Default/blob_storage/3d12f826-8518-4db6-867e-df1577a21929’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_1/Default/blob_storage/e0c05714-9346-4bed-aa60-994df4d9b34f’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/blob_storage/c7803241-0534-4f90-a6bf-d882a5489382’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/10’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/06’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/05’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0c’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0d’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0a’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/11’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0f’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0b’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/08’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/0e’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/07’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_4/Default/IndexedDB/https_chatgpt.com_0.indexeddb.blob/2/09’: Permission denied
+find: ‘/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/docker_workers/profiles/worker_2/Default/blob_storage/7bea3bef-c336-4a7c-8fa0-ad3ca3fb4c89’: Permission denied
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS/ANTIGRAVITY_COMPLETE_SYSTEM_ARCHITECTURE.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS/AGENTS.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS/PROJECT_REGISTRY.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS/GEMINI.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_RULES_AND_HOOKS/README_ENFORCEMENT_GUIDE.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/04-external-backup-setup.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/00-HARDENING-RUNBOOK.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/DRAFTS/02-parent-directory-lock.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/FORENSIC_AUDIT_REPORT_DELETE_PROOF.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/BENCHMARK_50_DELETION_COMMANDS.md
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/AGY_ENFORCEMENT_AND_RULES_PACKAGE.zip
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports/azure_restore_point_commands.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/scratch/last_chatgpt_response.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/recovered_exports/533227_idea_273_skyline_relocation_span_chatgpt_live_10_levels.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/recovered_exports/533132_element28_village_10_ideas.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/recovered_exports/525531_all_prompt_templates_export.txt
+/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/recovered_exports/533222_idea_273_skyline_relocation_span_10_levels.txt
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+Starting SQLite atomic backup from /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/database/youtube_pipeline.db...
+Backup DB created: /home/azureuser/IrakIroan/azure_file_explorer/backups/youtube_pipeline_backup_20260926_181742.db (48.48 MB)
+Verifying integrity...
+Integrity check result: [('ok',)]
+Compressing to zip...
+ZIP created: /home/azureuser/IrakIroan/azure_file_explorer/backups/youtube_pipeline_backup_20260926_181742.zip (8.84 MB)
+

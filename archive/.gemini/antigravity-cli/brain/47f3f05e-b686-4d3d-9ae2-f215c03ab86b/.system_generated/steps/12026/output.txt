@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+24h sampled points: 95
+24h first 5 t labels: ['5 PM', '6 PM', '6 PM', '6 PM', '6 PM']
+24h last 5 t labels: ['4 PM', '4 PM', '4 PM', '5 PM', '5 PM']
+All sampled points: 40
+All unique date labels: ['21 Sep', '22 Sep', '23 Sep', '24 Sep', '25 Sep', '26 Sep']
+All sample t labels: ['21 Sep', '22 Sep', '22 Sep', '23 Sep', '24 Sep', '24 Sep', '25 Sep', '26 Sep']
+

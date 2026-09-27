@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+total 44
+drwxrwxr-x 11 azureuser azureuser 4096 Sep 26 19:39 .
+drwxrwxr-x 11 azureuser azureuser 4096 Sep 26 19:01 ..
+lrwxrwxrwx  1 azureuser azureuser   25 Sep 26 19:01 .openclaw -> /home/azureuser/.openclaw
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 11:23 3D-Game-Design-Studio
+drwxrwxr-x 10 azureuser azureuser 4096 Sep 26 07:51 AGY-MASTER
+drwxrwxr-x  7 azureuser azureuser 4096 Sep 26 16:29 Antigravity-Global-Notifier
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 07:54 Ask-And-Research
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 11:23 Frappe-erp-Alco
+drwxrwxr-x  4 azureuser azureuser 4096 Sep 26 09:46 Reporting-Agent
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 11:23 Rust_Task_With_Time_Keeping_And_Live_Note
+drwxrwxr-x  3 azureuser azureuser 4096 Sep 25 11:23 kids_tube_with_folder_seection
+drwxrwxr-x  2 azureuser azureuser 4096 Sep 25 11:23 telegram-bot
+

@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 18:00:28,202 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 18:00:28,217 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 18:00:28,348 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-26 18:00:33,111 [INFO] [Worker-worker_4] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 18:00:33,119 [WARNING] [Worker-worker_4] No cookie file found at /app/cookies/cookie.json
+2026-09-26 18:00:33,239 [INFO] [Worker-worker_4] Navigating to https://chatgpt.com for session verification...
+2026-09-26 18:00:43,928 [INFO] [Worker-worker_4] ✅ Worker successfully authenticated to ChatGPT session!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50144 - "GET /health HTTP/1.1" 200 OK
+

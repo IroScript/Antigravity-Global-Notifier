@@ -1,0 +1,1 @@
+A1: (Recommended) শুধুমাত্র পুরাতন ব্যাকআপ, রিস্টোর ও টেম্পোরারি ডিরেক্টরিগুলো (GCP_FULL_BACKUP, FULL_HOME_BACKUP, RESTORED_PROJECTS, RESTORED_VIDEOS, DATABASE_BACKUPS_VAULT ইত্যাদি মোট ৪৪+ GB) old_archive-এ মুভ করা হোক — সক্রিয় প্রজেক্টসমূহ (Frappe-erp-Alco, telegram-bot, Rust_Task, AGY-MASTER, YouTube .openclaw) স্বস্থানে অক্ষত থাকুক।

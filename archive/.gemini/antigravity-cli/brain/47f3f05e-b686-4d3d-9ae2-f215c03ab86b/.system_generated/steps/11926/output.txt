@@ -1,0 +1,51 @@
+
+The command exited with code 0.
+Output:
+2260-    }
+2261-
+2262-    items.forEach(item => {
+2263-      const tr = document.createElement('tr');
+2264-      tr.onclick = (e) => handleItemClick(item, e);
+2265:      tr.ondblclick = () => handleItemOpen(item);
+2266-      tr.oncontextmenu = (e) => {
+2267-        e.preventDefault();
+2268-        showContextMenu(e.clientX, e.clientY, item);
+2269-      };
+2270-
+--
+2304-      tableBody.appendChild(tr);
+2305-
+2306-      const card = document.createElement('div');
+2307-      card.className = 'grid-item';
+2308-      card.onclick = (e) => handleItemClick(item, e);
+2309:      card.ondblclick = () => handleItemOpen(item);
+2310-      card.oncontextmenu = (e) => {
+2311-        e.preventDefault();
+2312-        showContextMenu(e.clientX, e.clientY, item);
+2313-      };
+2314-      card.innerHTML = `
+--
+2333-    if (e && e.currentTarget) e.currentTarget.classList.add('selected');
+2334-    const info = item.is_dir ? 'Folder' : (item.size_str || 'File');
+2335-    document.getElementById('statusLeft').textContent = `Selected: ${item.name} (${info})`;
+2336-  }
+2337-
+2338:  function handleItemOpen(item) {
+2339-    if (item.is_dir) {
+2340-      navigateTo(item.path);
+2341-    } else {
+2342-      openFilePreview(item.path, item.name);
+2343-    }
+--
+2601-    }
+2602-  });
+2603-
+2604-  function handleCtxOpen() {
+2605-    hideContextMenu();
+2606:    if (ctxTargetItem) handleItemOpen(ctxTargetItem);
+2607-  }
+2608-
+2609-  function handleCtxProperties() {
+2610-    hideContextMenu();
+2611-    if (ctxTargetItem) showProperties(ctxTargetItem.path);
+

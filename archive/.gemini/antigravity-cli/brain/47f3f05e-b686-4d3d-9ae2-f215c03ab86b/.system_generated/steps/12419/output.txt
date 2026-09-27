@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+    def do_HEAD(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.end_headers()
+
+
+    def do_GET(self):
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+        params = urllib.parse.parse_qs(parsed.query)
+
+        if path == "/" or path == "/index.html":
+            self.serve_file(os.path.join(STATIC_DIR, "index.html"), "text/html; charset=utf-8")
+        elif path.startswith("/static/"):
+            rel_path = path[len("/static/"):]
+            file_path = os.path.join(STATIC_DIR, rel_path)
+            mime, _ = mimetypes.guess_type(file_path)
+            self.serve_file(file_path, mime or "application/octet-stream")
+        elif path == "/api/drives":
+            self.handle_drives()
+        elif path == "/api/browse":
+            target_path = params.get("path", ["/home/azureuser"])[0]
+            self.handle_browse(target_path)
+        elif path == "/api/content":
+            target_path = params.get("path", [""])[0]
+            self.handle_content(target_path)
+        elif path == "/api/raw":
+            target_path = params.get("path", [""])[0]
+            download = params.get("download", ["0"])[0] == "1"
+            self.handle_raw(target_path, download)
+        elif path == "/api/search":
+

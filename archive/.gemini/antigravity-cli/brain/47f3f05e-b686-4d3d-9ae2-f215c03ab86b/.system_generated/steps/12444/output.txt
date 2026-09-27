@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+=== PROMPT TYPES ===
+  video_prompt: 9,576
+  image_prompt: 1,310
+
+=== MODEL TARGET ===
+  None: 10,336
+  veo-3.1-lite: 350
+  Google Veo 3.1: 200
+
+=== GENERATION TYPE ===
+  video: 6,490
+  None: 3,086
+  image: 1,310
+

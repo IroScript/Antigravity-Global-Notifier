@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-26T18:00:02Z
+Prompt: Wait for service restart
+Early Termination: task-12334
+
+[2026-09-26T18:00:02Z] Timer fired.

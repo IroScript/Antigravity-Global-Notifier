@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+total 412
+drwxr-xr-x 10 azureuser azureuser   4096 Sep 27 05:20 .
+drwxr-xr-x  4 azureuser azureuser   4096 Sep 25 07:55 ..
+-rw-------  1 azureuser azureuser   1435 Sep 27 05:19 antigravity-oauth-token
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 07:55 bin
+drwxr-xr-x  4 azureuser azureuser   4096 Sep 25 07:59 brain
+drwxr-xr-x  3 azureuser azureuser   4096 Sep 25 08:02 builtin
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 08:02 cache
+lrwxrwxrwx  1 azureuser azureuser     27 Sep 25 08:02 cli.log -> log/cli-20260925_080207.log
+-rw-r--r--  1 azureuser azureuser  53248 Sep 27 05:01 conversation_summaries.db
+-rw-r--r--  1 azureuser azureuser  32768 Sep 27 05:20 conversation_summaries.db-shm
+-rw-r--r--  1 azureuser azureuser  20632 Sep 27 05:20 conversation_summaries.db-wal
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 08:02 conversations
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 08:02 crashes
+-rw-------  1 azureuser azureuser 245566 Sep 27 05:20 history.jsonl
+-rw-r--r--  1 azureuser azureuser     36 Sep 25 08:02 installation_id
+-rw-------  1 azureuser azureuser   7341 Sep 27 05:20 jetbox_summaries_proto.pb
+-rw-------  1 azureuser azureuser    518 Sep 25 08:02 jetski_state.pbtxt
+-rw-rw-r--  1 azureuser azureuser      0 Sep 25 08:02 last_check.timestamp
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 08:02 log
+drwxr-xr-x  2 azureuser azureuser   4096 Sep 25 08:02 updater
+

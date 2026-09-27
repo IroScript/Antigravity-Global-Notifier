@@ -1,0 +1,187 @@
+
+The command exited with code 0.
+Output:
+<truncated 41 lines>
+1793-        </button>
+1794:        <div class="win-btn close" onclick="closeProperties()">&times;</div>
+1795-      </div>
+1796-    </div>
+1797-
+1798-    <!-- Win11 Tab Bar (General Tab) -->
+1799-    <div class="prop-tab-bar">
+1800-      <div class="prop-tab active">General</div>
+1801-    </div>
+1802-
+1803:    <!-- Properties Content -->
+1804-    <div class="prop-content">
+1805-      <!-- Top Row: Icon + Name -->
+1806-      <div class="prop-hero">
+1807-        <div class="prop-hero-icon" id="propHeroIcon">
+1808-          <svg viewBox="0 0 24 24" width="44" height="44" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+--
+1812-        </div>
+1813-      </div>
+1814-
+1815-      <div class="prop-divider"></div>
+1816-
+1817:      <!-- Properties Fields (Two-Column) -->
+1818-      <div class="prop-grid">
+1819-        <div class="prop-label">Type:</div>
+1820-        <div class="prop-value" id="propType">File folder</div>
+1821-
+1822-        <div class="prop-label">Location:</div>
+--
+1852-      </div>
+1853-    </div>
+1854-
+1855-    <!-- Dialog Actions Footer -->
+1856-    <div class="prop-footer">
+1857:      <button class="prop-footer-btn secondary" onclick="refreshProperties()" style="margin-right:auto; display:flex; align-items:center; gap:5px;" title="পুনরায় সাইজ ও ফাইল সংখ্যা হিসাব করুন">
+1858-        <span>🔄 রিফ্রেশ</span>
+1859-      </button>
+1860:      <button class="prop-footer-btn primary" onclick="closeProperties()">OK</button>
+1861:      <button class="prop-footer-btn secondary" onclick="closeProperties()">Cancel</button>
+1862-    </div>
+1863-  </div>
+1864-</div>
+1865-
+1866-<!-- Windows 11 Custom Context Menu -->
+1867-<div class="custom-context-menu" id="customContextMenu">
+1868-  <div class="ctx-item" id="ctxOpen" onclick="handleCtxOpen()">
+1869-    <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+1870-    <span>Open (খুলুন)</span>
+1871-  </div>
+1872:  <div class="ctx-item" id="ctxProperties" onclick="handleCtxProperties()">
+1873-    <svg viewBox="0 0 24 24" width="16" height="16" fill="#f0883e"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+1874:    <span>Properties (প্রোপার্টিজ)</span>
+1875-  </div>
+1876-  <div class="ctx-divider" id="ctxDownloadDivider"></div>
+1877-  <div class="ctx-item" id="ctxDownload" onclick="handleCtxDownload()">
+1878-    <svg viewBox="0 0 24 24" width="16" height="16" fill="#a6e3a1"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+1879-    <span>Download (ডাউনলোড)</span>
+--
+2212-        </td>
+2213-        <td>${item.mtime_str || '-'}</td>
+2214-        <td>${item.type_name || '-'}</td>
+2215-        <td style="text-align:right;">${item.size_str || ''}</td>
+2216-        <td style="text-align:center;">
+2217:          <button class="row-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties) - সাইজ ও ফাইল সংখ্যা">
+2218-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+2219-          </button>
+2220-        </td>
+2221-      `;
+2222-      tableBody.appendChild(tr);
+--
+2228-      card.oncontextmenu = (e) => {
+2229-        e.preventDefault();
+2230-        showContextMenu(e.clientX, e.clientY, item);
+2231-      };
+2232-      card.innerHTML = `
+2233:        <button class="grid-info-btn" data-path="${escapeAttr(item.path)}" onclick="handlePropBtnClick(this, event)" title="প্রোপার্টিজ (Properties)">
+2234-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+2235-        </button>
+2236-        ${getIcon(item)}
+2237-        <div class="item-title" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</div>
+2238-      `;
+--
+2257-  }
+2258-
+2259-  function handlePropBtnClick(btn, e) {
+2260-    e.stopPropagation();
+2261-    const p = btn.getAttribute('data-path');
+2262:    if (p) showProperties(p);
+2263-  }
+2264-
+2265:  function openCurrentOrSelectedProperties() {
+2266-    if (selectedItem && selectedItem.path) {
+2267:      showProperties(selectedItem.path);
+2268-    } else if (currentPath && currentPath !== "THIS_PC") {
+2269:      showProperties(currentPath);
+2270-    }
+2271-  }
+2272-
+2273:  function refreshProperties() {
+2274-    if (currentPropPath) {
+2275:      showProperties(currentPropPath, true);
+2276-    }
+2277-  }
+2278-
+2279:  async function showProperties(path, forceRefresh = false) {
+2280-    if (!path) {
+2281-      if (currentPath && currentPath !== "THIS_PC") {
+2282-        path = currentPath;
+2283-      } else {
+2284-        return;
+--
+2303-    const baseName = path.split('/').filter(Boolean).pop() || '/';
+2304-
+2305-    // Initial loading state
+2306-    title.innerHTML = `
+2307-      <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+2308:      <span>${escapeHtml(baseName)} Properties</span>
+2309-    `;
+2310-    nameInput.value = baseName;
+2311-    typeEl.textContent = 'Calculating...';
+2312-    locEl.textContent = path.substring(0, path.lastIndexOf('/')) || '/';
+2313-    fullPathEl.textContent = path;
+--
+2335-        return;
+2336-      }
+2337-
+2338-      title.innerHTML = `
+2339-        <svg viewBox="0 0 24 24" width="16" height="16" fill="#60cdff"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+2340:        <span>${escapeHtml(data.name)} Properties</span>
+2341-      `;
+2342-      nameInput.value = data.name;
+2343-      typeEl.textContent = data.type_name || (data.is_dir ? 'File folder' : 'File');
+2344-      locEl.textContent = data.location;
+2345-      fullPathEl.textContent = data.path;
+--
+2364-      sizeBytesEl.textContent = err.message;
+2365-      containsEl.textContent = '-';
+2366-    }
+2367-  }
+2368-
+2369:  function closeProperties() {
+2370-    const modal = document.getElementById('propertiesModal');
+2371-    if (modal) modal.classList.remove('active');
+2372-  }
+2373-
+2374-  function handlePropModalOverlayClick(e) {
+2375-    if (e.target.id === 'propertiesModal') {
+2376:      closeProperties();
+2377-    }
+2378-  }
+2379-
+2380-  function copyPropFullPath() {
+2381-    if (!currentPropPath) return;
+--
+2437-  function handleCtxOpen() {
+2438-    hideContextMenu();
+2439-    if (ctxTargetItem) handleItemOpen(ctxTargetItem);
+2440-  }
+2441-
+2442:  function handleCtxProperties() {
+2443-    hideContextMenu();
+2444:    if (ctxTargetItem) showProperties(ctxTargetItem.path);
+2445-  }
+2446-
+2447-  function handleCtxDownload() {
+2448-    hideContextMenu();
+2449-    if (ctxTargetItem && !ctxTargetItem.is_dir) {
+--
+2453-
+2454-  // Keyboard Shortcuts (Alt+Enter for properties, Esc to close modals)
+2455-  window.addEventListener('keydown', (e) => {
+2456-    if (e.altKey && e.key === 'Enter') {
+2457-      e.preventDefault();
+2458:      openCurrentOrSelectedProperties();
+2459-    }
+2460-    if (e.key === 'Escape') {
+2461:      closeProperties();
+2462-      closeNotepad();
+2463-      hideContextMenu();
+2464-    }
+2465-  });
+2466-
+

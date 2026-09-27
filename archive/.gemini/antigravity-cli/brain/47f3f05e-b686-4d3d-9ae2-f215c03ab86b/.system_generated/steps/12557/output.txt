@@ -1,0 +1,38 @@
+
+The command exited with code 0.
+Output:
+root        1037  0.0  0.1  39896 17068 ?        Ss   Sep22   0:21 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+azureus+    1190  0.0  0.1 121092 29088 ?        Ss   Sep22   0:21 /usr/bin/python3 /home/azureuser/Frappe-erp-Alco/run_alco_server.py
+azureus+    1209  0.0  0.1 240684 29192 ?        Ss   Sep22   0:16 /usr/bin/python3 /usr/local/bin/websockify --web /usr/share/novnc 6080 127.0.0.1:5900
+azureus+    1637  0.0  0.0  20776 10796 ?        S    Sep22   0:33 python3 /home/azureuser/.webterminal/watch_reply.py
+azureus+    1716  0.0  0.2 2100552 33152 ?       S    Sep22   0:31 python3 -m http.server 8085 --directory /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube/Youtube Automation/PromptDatabase/exports
+root        1763  0.0  0.1  43740 30380 ?        Ss   Sep22   0:00 /usr/bin/python3 /usr/sbin/waagent -daemon
+root        1987  0.0  0.2 343044 37800 ?        Sl   Sep22   2:41 /usr/bin/python3 -u bin/WALinuxAgent-2.16.0.2-py3.12.egg -run-exthandlers
+azureus+   42086  0.0  0.1 254056 18328 ?        Ss   Sep23   0:19 python3 -m http.server 5176 --directory /home/azureuser/3D-Game-Design-Studio/projects/card_design_floating
+root      204399 11.7  0.4 428924 78392 ?        Ssl  Sep24 371:19 /usr/bin/python3 /home/azureuser/.local/bin/live_resource_monitor_server.py
+azureus+  637238  0.0  0.0  21536 14884 ?        Ss   Sep25   0:18 /usr/bin/python3 /home/azureuser/Reporting-Agent/watchdog.py
+azureus+ 1000406  0.0  0.2 405520 38644 pts/11   Ssl+ 01:30   0:05 python3 Youtube Automation/PromptDatabase/run_cluster_pipeline.py
+azureus+ 1113817  0.0  0.0  23052 16172 ?        Ss   08:54   0:00 /usr/bin/python3 /home/azureuser/gdrive_sync/gdrive_live_sync.py
+root     1115739  0.0  0.0   1040    72 ?        Ss   09:00   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115772  0.0  0.0   2892  1712 ?        S    09:00   0:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115774  0.1  0.9 468172 158432 ?       Sl   09:00   0:54 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1115908  0.0  0.2 1015744 32876 ?       Sl   09:00   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1115926  0.1  0.6 1379124 113832 ?      Sl   09:00   0:58 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+azureus+ 1127728  0.0  0.0  20500 13132 ?        Ss   09:46   0:00 /usr/bin/python3 /home/azureuser/Reporting-Agent/sentinel_reporter.py
+root     1201502  0.0  0.0   1040    72 ?        Ss   14:30   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201533  0.0  0.0   2892  1828 ?        S    14:30   0:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201535  0.3  1.3 534416 225196 ?       Sl   14:30   0:50 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1201699  0.0  0.2 1015232 33340 ?       Sl   14:30   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1201717  0.2  0.9 1422352 159132 ?      Sl   14:30   0:40 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1248210  0.0  0.0   1040    72 ?        Ss   17:30   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248307  0.0  0.0   2892  1796 ?        S    17:30   0:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248309  0.5  0.9 471312 163380 ?       Sl   17:30   0:23 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1248319  0.0  0.2 1015272 34568 ?       Sl   17:30   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1248329  0.4  0.7 1384044 120888 ?      Sl   17:30   0:17 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+azureus+ 1268284  0.0  0.2 2111532 34864 ?       Ssl  17:59   0:01 /usr/bin/python3 /home/azureuser/IrakIroan/azure_file_explorer/server.py
+root     1268534  0.0  0.0   1040    72 ?        Ss   18:00   0:00 /sbin/docker-init -- sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268566  0.0  0.0   2892  1852 ?        S    18:00   0:00 sh -c rm -f /tmp/.X99-lock && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset & uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268568  0.6  1.0 481348 179012 ?       Sl   18:00   0:13 /usr/bin/python /usr/local/bin/uvicorn worker_server:app --host 0.0.0.0 --port 8000
+root     1268614  0.0  0.2 1015316 42340 ?       Sl   18:00   0:00 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+root     1268629  0.5  0.7 1122468 126008 ?      Sl   18:00   0:11 /usr/local/lib/python3.10/dist-packages/playwright/driver/node /usr/local/lib/python3.10/dist-packages/playwright/driver/package/cli.js run-driver
+

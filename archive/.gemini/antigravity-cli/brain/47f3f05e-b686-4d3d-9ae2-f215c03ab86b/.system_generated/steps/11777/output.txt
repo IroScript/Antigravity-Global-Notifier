@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+-rw------- 1 azureuser azureuser 1435 Sep 26 16:20 /home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/antigravity-oauth-token
+

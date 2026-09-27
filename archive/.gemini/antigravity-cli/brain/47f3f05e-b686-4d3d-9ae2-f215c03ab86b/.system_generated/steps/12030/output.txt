@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+532-        label: 'সার্বিক RAM %',
+533-        data: historyData.map(p => p.ram_pct),
+534-        borderColor: '#58a6ff',
+535-        borderWidth: 2,
+536-        tension: 0.25,
+537-        pointRadius: pointRadiusFn,
+538-        pointBackgroundColor: '#58a6ff',
+539-        pointBorderColor: '#ffffff',
+540-        pointBorderWidth: 1.5,
+541-        pointHoverRadius: 5
+542-      }
+543-    ];
+544-  }
+545-}
+546-
+547:function renderChart() {
+548-  if (typeof Chart === 'undefined') {
+549-    setTimeout(renderChart, 300);
+550-    return;
+551-  }
+552-  const chartEl = document.getElementById('resourceChart');
+553-  if (!chartEl) return;
+554-  const ctx = chartEl.getContext('2d');
+555-  if (!historyData || historyData.length === 0) return;
+556-  const labels = historyData.map(p => p.t);
+557-  const datasets = getDatasetsForCurrentMode();
+558-
+559-  if (chartInstance) {
+560-    chartInstance.data.labels = labels;
+561-    chartInstance.data.datasets = datasets;
+562-    applyMonitorYAxisScale();
+

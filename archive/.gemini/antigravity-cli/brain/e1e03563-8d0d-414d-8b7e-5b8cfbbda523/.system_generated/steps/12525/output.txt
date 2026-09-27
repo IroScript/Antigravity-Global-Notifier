@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+
+{"status":"ok","worker_id":"worker_2","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":19,"last_session_refresh":1790476241.1315634}
+{"status":"ok","worker_id":"worker_3","is_authenticated":true,"is_busy":false,"user":"Unknown","action_counter":0,"last_session_refresh":0.0}
+
+
+Terminal ID: terminal-status

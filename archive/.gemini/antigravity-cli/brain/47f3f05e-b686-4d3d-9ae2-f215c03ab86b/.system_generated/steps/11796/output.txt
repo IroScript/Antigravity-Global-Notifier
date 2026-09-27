@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript/00000073.jsonl
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000089.jsonl
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/chunks/transcript_full/00000090.jsonl
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript.jsonl
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/logs/transcript_full.jsonl
+/home/azureuser/Antigravity-Global-Notifier/archive/.gemini/antigravity-cli/brain/47f3f05e-b686-4d3d-9ae2-f215c03ab86b/.system_generated/steps/11609/output.txt
+

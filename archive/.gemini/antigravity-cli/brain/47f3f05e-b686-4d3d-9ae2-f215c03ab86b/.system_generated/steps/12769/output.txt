@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Currently visible items in Agy Whatsapp Agents:
+ - 3D-Game-Design-Studio
+ - AGY-MASTER
+ - Antigravity-Global-Notifier
+ - Ask-And-Research
+ - Frappe-erp-Alco
+ - Reporting-Agent
+ - Rust_Task_With_Time_Keeping_And_Live_Note
+ - kids_tube_with_folder_seection
+ - telegram-bot
+

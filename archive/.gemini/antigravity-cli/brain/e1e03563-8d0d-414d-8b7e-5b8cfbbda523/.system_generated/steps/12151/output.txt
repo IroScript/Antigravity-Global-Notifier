@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+2026-09-26 19:02:31,938 [INFO] [Worker-worker_1] Removed stale lock: SingletonCookie
+2026-09-26 19:02:31,938 [INFO] [Worker-worker_1] Removed stale lock: SingletonSocket
+2026-09-26 19:02:32,016 [INFO] [Worker-worker_1] Launching persistent context via official CloakBrowser engine...
+2026-09-26 19:02:32,217 [INFO] [Worker-httpx] HTTP Request: GET https://pypi.org/pypi/cloakbrowser/json "HTTP/1.1 200 OK"
+2026-09-26 19:02:32,224 [WARNING] [Worker-cloakbrowser] Update available: cloakbrowser 0.5.10 -> 0.5.11. Run: pip install --upgrade cloakbrowser
+2026-09-26 19:02:32,333 [INFO] [Worker-httpx] HTTP Request: GET https://api.github.com/repos/CloakHQ/cloakbrowser/releases?per_page=10 "HTTP/1.1 200 OK"
+2026-09-26 19:02:37,290 [INFO] [Worker-worker_1] ✅ CloakBrowser persistent context initialized successfully.
+2026-09-26 19:02:37,295 [WARNING] [Worker-worker_1] No cookie file found at /app/cookies/cookie.json
+2026-09-26 19:02:37,416 [INFO] [Worker-worker_1] Navigating to https://chatgpt.com for session verification...
+2026-09-26 19:02:41,700 [INFO] [Worker-worker_1] Cloudflare Turnstile challenge detected! Attempting solve...
+

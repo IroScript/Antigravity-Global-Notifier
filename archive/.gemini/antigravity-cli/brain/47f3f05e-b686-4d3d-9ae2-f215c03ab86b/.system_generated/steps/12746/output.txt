@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+Window 0 (AI-Agent): /home/azureuser
+Window 1 (Bash-Terminal): /home/azureuser
+Window 2 (Linux-Shell): /home/azureuser
+Window 3 (yt): /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube
+Window 4 (frappe): /home/azureuser/Frappe-erp-Alco (deleted)
+Window 5 (tg): /home/azureuser/telegram-bot (deleted)
+Window 6 (history): /home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT (deleted)
+Window 7 (kids): /home/azureuser/kids_tube_with_folder_seection (deleted)
+Window 8 (rust): /home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note (deleted)
+Window 9 (article): /home/azureuser/Article-Publishing-Platform (deleted)
+Window 10 (game): /home/azureuser/3D-Game-Design-Studio (deleted)
+Window 11 (research): /home/azureuser/Ask-And-Research (deleted)
+
