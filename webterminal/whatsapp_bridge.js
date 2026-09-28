@@ -25,7 +25,33 @@ const TARGET_PHONE = getTargetPhone();
 const ALLOWED_NUMBERS = ['8801955333555', TARGET_PHONE];
 let TARGET_JID = `${TARGET_PHONE}@s.whatsapp.net`;
 
+const BRIDGE_START_TIME = Math.floor(Date.now() / 1000);
 const sentMessageIds = new Set();
+const processedIncomingMessageIds = new Set();
+const PROCESSED_MSG_FILE = '/home/azureuser/.webterminal/processed_msg_ids.json';
+
+function loadProcessedMessageIds() {
+  try {
+    if (fs.existsSync(PROCESSED_MSG_FILE)) {
+      const data = JSON.parse(fs.readFileSync(PROCESSED_MSG_FILE, 'utf8'));
+      if (Array.isArray(data)) {
+        data.forEach(id => processedIncomingMessageIds.add(id));
+      }
+    }
+  } catch (e) {
+    console.warn('[WA Bridge] Could not load processed_msg_ids.json:', e.message);
+  }
+}
+
+function saveProcessedMessageIds() {
+  try {
+    const list = Array.from(processedIncomingMessageIds).slice(-3000);
+    fs.writeFileSync(PROCESSED_MSG_FILE, JSON.stringify(list), 'utf8');
+  } catch (e) {}
+}
+
+loadProcessedMessageIds();
+
 let sock = null;
 let lastActiveJid = '82935919157317@lid';
 let lastPersonalLid = '82935919157317@lid';
@@ -91,7 +117,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0') {
 
   if (isWindowBusy(targetWindow)) {
     console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
-    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow });
+    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now() });
     return;
   }
   windowBusy[targetWindow] = true;
@@ -1018,7 +1044,7 @@ async function startBridge() {
     for (const msg of messages) {
       if (!msg.message) continue;
       const msgId = msg.key.id;
-      if (sentMessageIds.has(msgId)) continue;
+      if (!msgId || sentMessageIds.has(msgId) || processedIncomingMessageIds.has(msgId)) continue;
 
       const sender = msg.key.remoteJid || '';
       const participant = msg.key.participant || msg.participant || '';
@@ -1027,8 +1053,63 @@ async function startBridge() {
         continue;
       }
 
+      // 1. Anti-Stale / Anti-Pending Message Gate:
+      // Prevent stale, replayed, or pending messages (e.g. 1 hour old offline sync) from executing
+      const rawTimestamp = msg.messageTimestamp;
+      let msgSec = 0;
+      if (typeof rawTimestamp === 'number') {
+        msgSec = rawTimestamp;
+      } else if (rawTimestamp && typeof rawTimestamp === 'object' && rawTimestamp.low !== undefined) {
+        msgSec = Number(rawTimestamp.low);
+      } else if (rawTimestamp) {
+        msgSec = Number(rawTimestamp);
+      }
+
+      const nowSec = Math.floor(Date.now() / 1000);
+      if (msgSec > 0) {
+        const ageSec = nowSec - msgSec;
+        // Maximum allowed age: 90 seconds (1.5 minutes). Messages older than 90s are dropped!
+        if (ageSec > 90) {
+          console.log(`[WA Bridge] ⏱️ [REJECTED STALE/PENDING]: Message '${msgId}' is ${ageSec}s old (> 90s limit). Dropped.`);
+          processedIncomingMessageIds.add(msgId);
+          continue;
+        }
+        if (ageSec < -60) {
+          console.log(`[WA Bridge] ⏱️ [REJECTED CLOCK SKEW]: Message '${msgId}' has future timestamp (${ageSec}s). Dropped.`);
+          processedIncomingMessageIds.add(msgId);
+          continue;
+        }
+        if (msgSec < (BRIDGE_START_TIME - 15)) {
+          console.log(`[WA Bridge] ⏱️ [REJECTED PRE-BOOT]: Message '${msgId}' was sent before bridge start. Dropped.`);
+          processedIncomingMessageIds.add(msgId);
+          continue;
+        }
+      }
+
+      // 2. Meta AI & Bot Interception Filter:
+      // Exclude messages targeting Meta AI or third-party bots
+      const isMetaAiJid = sender.includes('13135550002') || sender.toLowerCase().includes('meta') || sender.includes('@bot') || sender.startsWith('0@s.whatsapp.net');
+      if (isMetaAiJid) {
+        console.log(`[WA Bridge] 🤖 [REJECTED META AI JID]: Message target is Meta AI (${sender}). Dropped.`);
+        processedIncomingMessageIds.add(msgId);
+        continue;
+      }
+
       // Unwrap all message wrappers (documentWithCaptionMessage, ephemeralMessage, viewOnce)
       const unwrapped = unwrapMessage(msg.message);
+
+      // Check contextInfo mentions for Meta AI
+      const contextInfo = unwrapped.extendedTextMessage?.contextInfo ||
+                          unwrapped.imageMessage?.contextInfo ||
+                          unwrapped.documentMessage?.contextInfo ||
+                          msg.message?.extendedTextMessage?.contextInfo || {};
+      const mentionedJids = contextInfo.mentionedJid || [];
+      const hasMetaAiMention = mentionedJids.some(jid => jid.includes('13135550002') || jid.toLowerCase().includes('meta'));
+      if (hasMetaAiMention) {
+        console.log(`[WA Bridge] 🤖 [REJECTED META AI MENTION]: Message mentions Meta AI (${mentionedJids.join(', ')}). Dropped.`);
+        processedIncomingMessageIds.add(msgId);
+        continue;
+      }
 
       const isImage = !!(unwrapped.imageMessage);
       const isDocument = !!(unwrapped.documentMessage);
@@ -1043,6 +1124,19 @@ async function startBridge() {
                     unwrapped.documentMessage?.caption || '').trim();
 
       if (!text && !isMedia) continue;
+
+      if (text.toLowerCase().startsWith('@meta') || text.toLowerCase().startsWith('@meta ai')) {
+        console.log(`[WA Bridge] 🤖 [REJECTED META AI PROMPT]: Message addresses Meta AI explicitly. Dropped.`);
+        processedIncomingMessageIds.add(msgId);
+        continue;
+      }
+
+      // Mark message as processed to prevent any duplicate/re-synced execution
+      processedIncomingMessageIds.add(msgId);
+      if (processedIncomingMessageIds.size % 20 === 0) {
+        saveProcessedMessageIds();
+      }
+
       console.log(`[WA Bridge] 📩 Message from Iraq bhai (${sender}):`, text || `[Media: ${isImage ? 'Image' : 'File'}]`);
       lastUserMsgKey = msg.key;
       lastUserMsg = msg;
@@ -1443,11 +1537,19 @@ async function processSingleTranscript(transcriptPath) {
         tracker.isSendingReply = false;
         windowBusy[targetWindow] = false;
 
-        const qIdx = promptQueue.findIndex(item => item.targetWindow === targetWindow);
-        if (qIdx !== -1) {
+        while (promptQueue.length > 0) {
+          const qIdx = promptQueue.findIndex(item => item.targetWindow === targetWindow);
+          if (qIdx === -1) break;
           const nextItem = promptQueue.splice(qIdx, 1)[0];
-          console.log(`[WA Bridge] 🔄 Dequeuing next prompt for ${targetWindow}:`, nextItem.prompt.substring(0, 60));
+          const queueAgeMs = Date.now() - (nextItem.queuedAt || 0);
+          // Anti-Stale: Drop if queued more than 90 seconds ago (prevents 1-hour old prompt pasting)
+          if (nextItem.queuedAt && queueAgeMs > 90000) {
+            console.log(`[WA Bridge] ⏱️ [DROPPED EXPIRED QUEUED PROMPT] (${Math.round(queueAgeMs/1000)}s old > 90s limit):`, nextItem.prompt.substring(0, 50));
+            continue;
+          }
+          console.log(`[WA Bridge] 🔄 Dequeuing fresh prompt for ${targetWindow} (${Math.round(queueAgeMs/1000)}s old):`, nextItem.prompt.substring(0, 60));
           setTimeout(() => dispatchToTmux(nextItem.prompt, targetWindow), 100);
+          break;
         }
       }
     } catch (e) {
