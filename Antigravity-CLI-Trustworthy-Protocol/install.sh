@@ -28,6 +28,7 @@ mkdir -p "${TARGET_HOME}/AGY-MASTER/INCIDENTS/active"
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/.gemini/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/.gemini/config/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/.gemini/GEMINI.md"
+ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/.gemini/config/GEMINI.md"
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/GEMINI.md"
 
