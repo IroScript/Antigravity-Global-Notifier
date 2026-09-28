@@ -29,6 +29,7 @@ ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/.gemini/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/.gemini/config/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/.gemini/GEMINI.md"
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/AGENTS.md"
+ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/GEMINI.md"
 
 for rule_file in "${REPO_DIR}/rules/"*.md; do
     if [ -f "${rule_file}" ]; then
@@ -64,7 +65,18 @@ if [ ! -f "${SETTINGS_FILE}" ]; then
 {
   "trustedWorkspaces": [
     "${TARGET_HOME}"
-  ]
+  ],
+  "context": {
+    "fileName": "AGENTS.md"
+  },
+  "hooks": {
+    "BeforeTool": [
+      {
+        "matcher": ".*",
+        "command": "/usr/bin/python3 ${TARGET_HOME}/.agents/hooks/delete_guard.py"
+      }
+    ]
+  }
 }
 EOF
     chmod 600 "${SETTINGS_FILE}"
