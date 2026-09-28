@@ -24,3 +24,9 @@ This document establishes the mandatory architecture for maintaining all system 
    - The Stop Hook must reject agent termination (`decision: continue`).
    - AGY must commit changes with `unverified` and push to the `main` branch.
    - AGY must verify SHA alignment (`remote_SHA == local_SHA`) before completion is permitted.
+
+---
+
+### SECTION 3: RESPONSE ARCHITECTURE & DIRECT COMMUNICATION STANDARD
+7. **Problem Statement First Format (`SETTING_66`)**:
+   In every substantive reply, AGY must lead with the **Problem Statement / Core Finding / Direct Answer FIRST** at the very top of the response (first 1–3 sentences). Critical directory locations, blockers, anomalies, or answers must never be buried at the bottom of long logs, tables, or audit summaries. The detailed report and technical breakdown must always follow AFTER the upfront problem statement.

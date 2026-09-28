@@ -1,6 +1,6 @@
-# AGENTS.md - WORKSPACE CORE GOVERNANCE & 65 TRUTH SETTINGS
+# AGENTS.md - WORKSPACE CORE GOVERNANCE & 66 TRUTH SETTINGS
 
-All AGY agents operating within `/home/azureuser` must strictly adhere to the system rules and the 65 truth and veracity settings. This file is the single, authoritative master governance document for the workspace.
+All AGY agents operating within `/home/azureuser` must strictly adhere to the system rules and the 66 truth and veracity settings. This file is the single, authoritative master governance document for the workspace.
 
 ---
 
@@ -119,6 +119,9 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 63. `SETTING_63_ZERO_PROMPT_REDUNDANCY`: Symlink or alias all context files (`GEMINI.md` -> `AGENTS.md`) to the master file without duplicating redundant copies, ensuring prompt token efficiency and zero truncation.
 64. `SETTING_64_PROGRAMMATIC_HOOK_ENFORCEMENT`: Never rely solely on LLM text compliance for critical security and operational rules. All critical constraints (Delete Guard, Git Push verification, 10-Fold Verification Gate) must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
 65. `SETTING_65_MANDATORY_GIT_PUSH_ENFORCEMENT_HOOK`: The native Stop Hook (`completion_gate_stop_hook.py`) must programmatically verify git synchronization: if any tracked repository in the workspace has uncommitted changes or unpushed commits ahead of `origin/main`, the Stop Hook must reject agent termination (`decision: continue`) and mandate committing with `unverified` and pushing to `main` with SHA alignment.
+
+### Category X: Response Architecture & Communication Style (66)
+66. `SETTING_66_PROBLEM_STATEMENT_FIRST_RESPONSE_STANDARD`: Every substantive agent response MUST lead with the **Problem Statement / Core Finding / Direct Answer FIRST** at the very top of the reply. Never bury critical directory locations, blockers, anomalies, or answers at the bottom of long reports or logs. The detailed report and technical breakdown must always follow AFTER the upfront problem statement.
 
 ---
 
