@@ -1,0 +1,15 @@
+# Antigravity Dynamic Verification State & Secrets (DO NOT COMMIT)
+.verification_secret.key
+*.key
+verification_state.json
+completion_gate_attempts.jsonl
+consumed_nonces.jsonl
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs & runtime outputs
+*.log
+.system_generated/
