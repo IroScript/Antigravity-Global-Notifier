@@ -29,4 +29,4 @@ This document establishes the mandatory architecture for maintaining all system 
 
 ### SECTION 3: RESPONSE ARCHITECTURE & DIRECT COMMUNICATION STANDARD
 7. **Problem Statement First Format (`SETTING_66`)**:
-   In every substantive reply, AGY must lead with the **Problem Statement / Core Finding / Direct Answer FIRST** at the very top of the response (first 1–3 sentences). Critical directory locations, blockers, anomalies, or answers must never be buried at the bottom of long logs, tables, or audit summaries. The detailed report and technical breakdown must always follow AFTER the upfront problem statement.
+   In every substantive reply, AGY must lead with the **Problem Statement / Core Findings / Direct Answers FIRST** at the very top of the response. This upfront section is **NOT restricted to a 1-3 line summary**; **ALL problems, blockers, architectural discrepancies, directory locations, and anomalies that exist must be comprehensively and explicitly listed upfront** before presenting any detailed logs, tables, or audit summaries. The technical breakdown and report must always follow AFTER the upfront problem statement.
