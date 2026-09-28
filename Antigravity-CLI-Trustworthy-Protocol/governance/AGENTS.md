@@ -172,3 +172,36 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 ### 3. প্রজেক্ট ডোমেন ও বাউন্ডারি লক (Project Boundary Lock):
 10. **STRICT PROJECT BOUNDARY:** ফ্র্যাপে এজেন্টের দায়িত্ব ও কাজের পরিধি শুধুমাত্র ফ্র্যাপে প্রজেক্ট ডিরেক্টরি (`/home/azureuser/Frappe-erp-Alco`)-এর মধ্যেই ১০০% কঠোরভাবে সীমাবদ্ধ থাকবে। ফ্র্যাপে এজেন্ট কেবল ফ্র্যাপেতেই সীমাবদ্ধ থাকবে; অন্য কোনো প্রজেক্টে তার প্রবেশাধিকার নেই (Permission Denied / Zero Cross-Project Access)।
 11. **RUNTIME VERSIONS STANDARD (NODE 24 & MARIADB 11+):** Node.js runtime must be **Node.js 24** (installed via NVM: `nvm install 24`, with NPM and Yarn). MariaDB database server must be **MariaDB 11+** configured with `character-set-server = utf8mb4` and `collation-server = utf8mb4_unicode_ci`. Package and bench manager must use `uv` (`uv tool install frappe-bench`).
+
+### 4. ৩০টি বিকল্প হার্ড ব্লক ও লোকাল ডিরেক্টরি বাধ্যতামূলক নীতি (30 Alternative Hard Blocks for Local Dir & Version 16 Mandate):
+12. **`BLOCK_01_LOCAL_DIR_WRITE_LOCK`:** ফ্র্যাপে বা ইআরপিনেক্সট সম্পর্কিত সমস্ত নতুন ফাইল তৈরি, কোড মডিফিকেশন বা স্ক্রিপ্ট শুধুমাত্র লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর ভেতরেই সম্পাদিত হতে হবে। এই ডিরেক্টরির বাইরে কোনো ফ্র্যাপে কোড লেখা সম্পূর্ণ নিষিদ্ধ।
+13. **`BLOCK_02_LOCAL_DOC_INSPECTION_MANDATE`:** যেকোনো ফ্র্যাপে এপিআই বা কনফিগারেশন ব্যবহারের পূর্বে লোকাল ডকুমেন্টেশন ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/frappe-docs-v16/` পরিদর্শন করা বাধ্যতামূলক।
+14. **`BLOCK_03_LOCAL_V16_SOURCE_VERIFICATION`:** ডকটাইপ বা ক্লাস ইমপ্লিমেন্টেশনের ক্ষেত্রে লোকাল সোর্স কোড `/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` থেকে মেথড সিগনেচার যাচাই করা বাধ্যতামূলক।
+15. **`BLOCK_04_PROHIBITION_OF_V15_DOCSTATUS_INTEGER`:** ডকস্ট্যাটাস যাচাইয়ে v15-এর মতো ইন্টিজার (0, 1, 2) ব্যবহার সম্পূর্ণ নিষিদ্ধ; v16 `DocStatus` enum (`DocStatus.draft()`, `DocStatus.submitted()`, `DocStatus.cancelled()`) ব্যবহার করতে হবে।
+16. **`BLOCK_05_PROHIBITION_OF_CUR_FRM`:** জাভাস্ক্রিপ্ট কন্ট্রোলারে গ্লোবাল `cur_frm` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ফর্ম ইভেন্ট হ্যান্ডলারের স্ট্যান্ডার্ড `frm` আর্গুমেন্ট ব্যবহার বাধ্যতামূলক।
+17. **`BLOCK_06_PROHIBITION_OF_CUR_DIALOG`:** গ্লোবাল `cur_dialog` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ডায়ালগ প্রদর্শনে `frappe.ui.Dialog` ইনস্ট্যান্স ব্যবহার বাধ্যতামূলক।
+18. **`BLOCK_07_PROHIBITION_OF_RAW_SQL_STRING_CONCAT`:** স্ট্রিং কনক্যাটেনেশন বা আন-এস্কেপড র SQL কুয়েরি সম্পূর্ণ নিষিদ্ধ; `frappe.qb` (PyPika Query Builder) ব্যবহার বাধ্যতামূলক।
+19. **`BLOCK_08_MANDATORY_PYTHON_314_SYNTAX`:** পাইথন ৩.১৪+ স্ট্যান্ডার্ড সিনট্যাক্স ও স্ট্রিক্ট টাইপ অ্যানোটেশন বাধ্যতামূলক; ৩.১২ বা তার পুরনো সিনট্যাক্স নিষিদ্ধ।
+20. **`BLOCK_09_PROHIBITION_OF_DEPRECATED_GET_DOC`:** টাইপবিহীন লিগ্যাসি `get_doc` মেথডের অপব্যবহার নিষিদ্ধ; ভেরিফাইড `frappe.get_doc(doctype, name)` স্ট্যান্ডার্ড মানতে হবে।
+21. **`BLOCK_10_MANDATORY_V16_CLIENT_SCRIPT_NAMESPACES`:** ক্লায়েন্ট স্ক্রিপ্টে `frappe.ui.form.on` নেমস্পেস্ড ইভেন্ট বাইন্ডিং ব্যবহার বাধ্যতামূলক।
+22. **`BLOCK_11_MANDATORY_MOBILE_FIRST_GRID_LAYOUT`:** প্রোডাক্ট কার্ড ও ফ্রন্টএন্ড UI-তে মোবাইল ফার্স্ট সিঙ্গেল কলাম (`col-12` / single-column flex) লেআউট বাধ্যতামূলক।
+23. **`BLOCK_12_PROHIBITION_OF_DESKTOP_ONLY_STYLES`:** ফিক্সড-উইডথ ডেস্কটপ-অনলি সিএসএস বা মিডিয়া কুয়েরি ছাড়া স্টাইলিং নিষিদ্ধ; ফ্লুইড ও রেসপনসিভ গ্রিড বাধ্যতামূলক।
+24. **`BLOCK_13_MANDATORY_DOCFIELD_OPTIONS_SCHEMA_AUDIT`:** ডকফিল্ড ও স্কিমা রূপান্তরের ক্ষেত্রে লোকাল v16 DocType JSON স্কিমা নিশ্চিত করা বাধ্যতামূলক।
+25. **`BLOCK_14_MANDATORY_V16_HOOKS_DECLARATION`:** `hooks.py` ফাইলে v16 স্ট্যান্ডার্ড হুক ডেফিনিশন (`doctype_js`, `override_doctype_class`) অনুসরণ বাধ্যতামূলক।
+26. **`BLOCK_15_PROHIBITION_OF_V15_BENCH_COMMANDS`:** ফ্র্যাপে v15 বা তার পুরনো ডিপ্রিকেটেড বেঞ্চ কমান্ড সম্পূর্ণ নিষিদ্ধ; v16 বেঞ্চ কমান্ড ব্যবহার করতে হবে।
+27. **`BLOCK_16_MANDATORY_UV_PACKAGE_MANAGER`:** প্যাকেজ ম্যানেজমেন্টের জন্য `uv` (`uv tool install frappe-bench`) ব্যবহার বাধ্যতামূলক; পুরনো পিপ মিক্সিং নিষিদ্ধ।
+28. **`BLOCK_17_PROHIBITION_OF_ORPHAN_JSON_SCHEMA`:** কন্ট্রোলার `.py` বা `.js` বিহীন এতিম বা অসংলগ্ন ডকটাইপ JSON ফাইল প্রজেক্টে রাখা নিষিদ্ধ।
+29. **`BLOCK_18_MANDATORY_V16_WHITELIST_SECURITY`:** রিমোটলি কলযোগ্য এপিআই মেথডে `@frappe.whitelist(methods=['GET'])` বা `['POST']` নির্দিষ্ট করা বাধ্যতামূলক।
+30. **`BLOCK_19_MANDATORY_PERMISSION_CHECK_ON_DB_OPS`:** ডাটাবেজ অপারেশনের আগে ডকুমেন্ট লেভেল অনুমতি (`frappe.has_permission` বা `doc.check_permission`) যাচাই বাধ্যতামূলক।
+31. **`BLOCK_20_PROHIBITION_OF_GLOBAL_SCOPE_POLLUTION_JS`:** ব্রাউজার গ্লোবাল অবজেক্টে (`window` বা `frappe` রুটে) অননুমোদিত ভ্যারিয়েবল ডাম্পিং সম্পূর্ণ নিষিদ্ধ।
+32. **`BLOCK_21_MANDATORY_MARIADB_11_COMPATIBILITY`:** ডাটাবেজ কনফিগারেশনে MariaDB 11+ এবং `utf8mb4_unicode_ci` কোলাশন ব্যবহার বাধ্যতামূলক।
+33. **`BLOCK_22_MANDATORY_NODE24_ESM_SYNTAX`:** ফ্রন্টএন্ড বিল্ড এবং নোড স্ক্রিপ্টে Node.js 24 এবং আধুনিক ESM মডিউল স্ট্যান্ডার্ড মেনে চলা বাধ্যতামূলক।
+34. **`BLOCK_23_PROHIBITION_OF_DEPRECATED_UI_DIALOG_CALLBACKS`:** ডায়ালগ হ্যান্ডলিংয়ে আধুনিক Promise-ভিত্তিক কন্ট্রোলার ব্যবহার বাধ্যতামূলক; সিনক্রোনাস ব্লকিং কলব্যাক নিষিদ্ধ।
+35. **`BLOCK_24_MANDATORY_ERROR_HANDLING_WITH_THROWS`:** ব্যাকএন্ড এক্সেপশন ও ত্রুটি ব্যবস্থাপনায় নির্দিষ্ট এক্সেপশন ক্লাস সহ `frappe.throw()` ব্যবহার বাধ্যতামূলক।
+36. **`BLOCK_25_MANDATORY_APP_ISOLATION`:** কাস্টম অ্যাপ `alco_ecommerce` শুধুমাত্র তার নির্ধারিত ডিরেক্টরিতে আইসোলেটেড থাকবে; কোনো বহিরাগত অ্যাপে অনুপ্রবেশ নিষিদ্ধ।
+37. **`BLOCK_26_MANDATORY_BENCH_CONTEXT_VERIFICATION`:** বেঞ্চ কমান্ড এক্সিকিউশনের পূর্বে রুট বেঞ্চ কনটেক্সট এবং পাথ অস্তিত্ব যাচাই বাধ্যতামূলক।
+38. **`BLOCK_27_PROHIBITION_OF_OBSOLETE_EMAIL_ALERTS`:** পুরনো ইমেইল অ্যালার্টের পরিবর্তে v16 আধুনিক নোটিফিকেশন ডকটাইপ ফ্রেমওয়ার্ক ব্যবহার বাধ্যতামূলক।
+39. **`BLOCK_28_MANDATORY_V16_TRANSLATION_FORMAT`:** ফ্র্যাপে v16 ট্রান্সলেশন সিনট্যাক্স ও ফাইল ফরম্যাট অক্ষুণ্ণ রাখা বাধ্যতামূলক।
+40. **`BLOCK_29_PROGRAMMATIC_PRE_TOOL_WRITE_INTERCEPT`:** ফ্র্যাপে সংক্রান্ত কোড তৈরির ক্ষেত্রে লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর বাইরে ফাইল লেখার যেকোনো প্রচেষ্টা প্রি-টুল চেকে স্বয়ংক্রিয়ভাবে ব্লক করা হবে।
+41. **`BLOCK_30_HARDENED_AUTOMATED_COMPLIANCE_GATE`:** উপরের প্রতিটি ব্লক (১২ থেকে ৪০) যাচাইয়ের জন্য স্বয়ংক্রিয় টেস্ট রানার স্ক্রিপ্টের মাধ্যমে ৩০/৩০ টেস্ট পাস প্রাপ্তি বাধ্যতামূলক।
+
