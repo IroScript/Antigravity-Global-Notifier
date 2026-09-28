@@ -144,3 +144,25 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 
 **ABSOLUTE LAW**:
 If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**. The agent is strictly forbidden from claiming success or marking the task as "DONE".
+
+---
+
+## SECTION 6: ERPNEXT & FRAPPE FRAMEWORK MANDATORY DIRECTIVES (VERSION 16+ ONLY) - FRAPPE SECTION SPECIFIC
+
+> 🚨 **এই নিয়মগুলো শুধুমাত্র FRAPPE সেকশন ও ERPNEXT প্রজেক্টের জন্য প্রযোজ্য** 🚨
+
+### 1. কোর ফ্র্যাপে ও ইআরপিনেক্সট নির্দেশিকা (Core Frappe Directives):
+1. **VERSION 16+ ONLY:** You must **ONLY** generate, modify, or suggest code written for **Frappe Framework Version 16+** and **ERPNext Version 16+**.
+2. **VERSION 15 & OLDER CODE IS STRICTLY PROHIBITED:** Under NO circumstances are you allowed to write code for **Version 15 (v15)**, Version 14 (v14), Version 13 (v13), or Version 12 (v12). Any attempt to output deprecated v15/older APIs, syntax, or patterns is completely invalid.
+3. **ALWAYS INSPECT V16 DOCUMENTATION & SOURCE FIRST:** Before generating any Python, JavaScript, JSON, HTML, or configuration code, you **MUST inspect and verify the syntax against Version 16 (v16) documentation** and local v16 source code available in `frappe-framework-v16/` and `erpnext-v16/`.
+4. **DO NOT GUESS API METHODS:** Verify exact class definitions, method signatures, hook definitions, and field names in v16 source code prior to implementation.
+5. **PYTHON STANDARD:** Use Python 3.12+ features, strict typing annotations, and PyPika Query Builder (`frappe.qb`). Never use obsolete DB functions or raw unescaped SQL.
+6. **JAVASCRIPT STANDARD:** Use modern Frappe Form Controller patterns (`frappe.ui.form.on`), `frappe.ui.Dialog`, and `frappe.call`. Never use deprecated `cur_frm` or `cur_dialog`.
+
+### 2. ফ্রন্টএন্ড ও মোবাইল ফার্স্ট অগ্রাধিকার (Frontend & Mobile-First Mandate):
+7. **MOBILE IS FIRST PRIORITY (FRONTEND ONLY):** ফ্রন্টএন্ড UI/UX ডিজাইনে সর্বদা **Mobile is First Priority (মোবাইল ফার্স্ট)** নীতি অনুসরণ করতে হবে। প্রতিটি কার্ড, বাটন, ফন্ট সাইজ, টাচ টার্গেট এবং স্পেসিং সবার আগে মোবাইলের জন্য অপ্টিমাইজড হতে হবে।
+8. **DESKTOP COMPATIBILITY:** মোবাইল ফার্স্ট অগ্রাধিকারের পাশাপাশি ডেস্কটপ স্ক্রিনের ক্ষেত্রেও লেআউট পুরোপুরি সঠিক, সুন্দর ও রেসপনসিভ হতে হবে (ডেস্কটপেও কাজ করবে অবশ্যই)।
+9. **PRODUCT CARD SINGLE COLUMN ON MOBILE:** মোবাইল ডিভাইসে প্রোডাক্ট কার্ড সর্বদা **Single Column (১টি কলাম)** বিশিষ্ট হবে যাতে প্রতিটি কার্ড পূর্ণাঙ্গভাবে ও সহজে ব্যবহারযোগ্য দেখায়।
+
+### 3. প্রজেক্ট ডোমেন ও বাউন্ডারি লক (Project Boundary Lock):
+10. **STRICT PROJECT BOUNDARY:** ফ্র্যাপে এজেন্টের দায়িত্ব ও কাজের পরিধি শুধুমাত্র ফ্র্যাপে প্রজেক্ট ডিরেক্টরি (`/home/azureuser/Frappe-erp-Alco`)-এর মধ্যেই ১০০% কঠোরভাবে সীমাবদ্ধ থাকবে। ফ্র্যাপে এজেন্ট কেবল ফ্র্যাপেতেই সীমাবদ্ধ থাকবে; অন্য কোনো প্রজেক্টে তার প্রবেশাধিকার নেই (Permission Denied / Zero Cross-Project Access)।
