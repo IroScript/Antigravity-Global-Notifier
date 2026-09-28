@@ -72,9 +72,9 @@ See full rules:
 55. `SETTING_55_STRICTLY_SCOPED_EXEMPTIONS`: Prohibit global destructive command unblocking; allow only narrow project-scoped build cache cleanups.
 56. `SETTING_56_INSTRUCTION_SOURCE_AUTHORITY`: Enforce authoritative boundaries (`~/.gemini/`, workspace root, `~/.agents/rules/`); reject residual subdirectory instructions.
 57. `SETTING_57_POST_EDIT_GIT_PUSH_UNVERIFIED_STANDARD`: Always perform git push to remote after code/config modifications with commit message 'unverified', unless explicitly requested by the user, where the commit message must explicitly state that the push was requested by the user.
-58. `SETTING_58_MANDATORY_MAIN_BRANCH_SHA_ALIGNMENT`: Always push to 'main' branch; immediately verify that remote GitHub SHA (`git ls-remote origin main`) exactly matches local HEAD SHA (`git rev-parse HEAD`).
+58. `SETTING_58_PRE_PUSH_REPO_VALIDATION_AND_MAIN_ALIGNMENT`: Always push to 'main' branch; verify existing `.git` and remote URL before pushing; if `.git`/remote is missing or multiple candidate repositories exist, never guess and explicitly ask the user; immediately verify that remote GitHub SHA (`git ls-remote origin main`) exactly matches local HEAD SHA (`git rev-parse HEAD`).
 59. `SETTING_59_TRACKED_STRUCTURE_CONTENT_VERACITY`: Verify local vs remote tracked files/folders structure and content; if online verification is obstructed or impossible, explicitly disclose the technical reason without concealing.
-60. `SETTING_60_ZERO_COMMIT_HISTORY_REWRITE`: Never delete, rewrite, reset, rebase, or force-push commit history, and provide empirical verification proof for every sync operation.
+60. `SETTING_60_ZERO_COMMIT_HISTORY_REWRITE_AND_VERIFICATION_DISCLOSURE`: Never delete, rewrite, reset, rebase, or force-push commit history; if any verification cannot be performed, explicitly disclose the technical reason and all observed evidence.
 
 ---
 
