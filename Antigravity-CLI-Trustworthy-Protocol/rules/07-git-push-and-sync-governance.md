@@ -8,9 +8,9 @@ This document establishes the mandatory operational rules for remote Git synchro
 1. **Mandatory Post-Edit Remote Push**:
    Following any code creation, modification, or configuration edit in tracked repositories, AGY must immediately commit and push the changes to the remote Git repository.
 2. **Automatic Post-Edit Commit Message**:
-   For automated post-edit pushes performed without explicit user push requests, the commit message MUST be formatted as **`unverified`** (or prefixed with `unverified:`).
+   For automated post-edit pushes performed without explicit user push requests, the commit message MUST strictly be formatted as `unverified: <commit message>` (i.e. 'unverified' prefix followed by descriptive summary). Autonomous system implementations, rule additions, and Stop Hook triggers are not human-verified, so using 'User-requested' is strictly prohibited.
 3. **Explicit User-Requested Push Attribution**:
-   When the USER explicitly commands to push (e.g., *"Gitpush"*, *"Push koro"*, *"Git push"*), the commit message MUST explicitly disclose that the Gitpush request originated directly from the user (e.g., `feat: <description> (User-requested gitpush)` or `User-requested gitpush: <summary>`).
+   When the USER explicitly commands to push using trigger words like *"gitpush"*, *"push"*, or *"git"*, the commit message MUST strictly be formatted as `User-requested: <commit message>` (i.e. 'User-requested' prefix followed by descriptive summary). This prefix is strictly prohibited unless the user explicitly used push trigger words.
 
 ---
 
