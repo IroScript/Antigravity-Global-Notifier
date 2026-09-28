@@ -160,7 +160,7 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 2. **VERSION 15 & OLDER CODE IS STRICTLY PROHIBITED:** Under NO circumstances are you allowed to write code for **Version 15 (v15)**, Version 14 (v14), Version 13 (v13), or Version 12 (v12). Any attempt to output deprecated v15/older APIs, syntax, or patterns is completely invalid.
 3. **ALWAYS INSPECT V16 DOCUMENTATION & SOURCE FIRST:** Before generating any Python, JavaScript, JSON, HTML, or configuration code, you **MUST inspect and verify the syntax against Version 16 (v16) documentation** and local v16 source code available in `frappe-framework-v16/` and `erpnext-v16/`.
 4. **DO NOT GUESS API METHODS:** Verify exact class definitions, method signatures, hook definitions, and field names in v16 source code prior to implementation.
-5. **PYTHON STANDARD:** Use Python 3.12+ features, strict typing annotations, and PyPika Query Builder (`frappe.qb`). Never use obsolete DB functions or raw unescaped SQL.
+5. **PYTHON STANDARD (PYTHON 3.14+ MANDATE):** Frappe Framework v16 and ERPNext v16 strictly require **Python 3.14+** (e.g. `requires-python = ">=3.14"` installed via `uv python install 3.14 --default`). Python 3.12 and 3.13 are obsolete for v16. Use Python 3.14+ features, strict typing annotations, and PyPika Query Builder (`frappe.qb`). Never use obsolete DB functions or raw unescaped SQL.
 6. **JAVASCRIPT STANDARD:** Use modern Frappe Form Controller patterns (`frappe.ui.form.on`), `frappe.ui.Dialog`, and `frappe.call`. Never use deprecated `cur_frm` or `cur_dialog`.
 
 ### 2. ফ্রন্টএন্ড ও মোবাইল ফার্স্ট অগ্রাধিকার (Frontend & Mobile-First Mandate):
@@ -170,3 +170,4 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 ### 3. প্রজেক্ট ডোমেন ও বাউন্ডারি লক (Project Boundary Lock):
 10. **STRICT PROJECT BOUNDARY:** ফ্র্যাপে এজেন্টের দায়িত্ব ও কাজের পরিধি শুধুমাত্র ফ্র্যাপে প্রজেক্ট ডিরেক্টরি (`/home/azureuser/Frappe-erp-Alco`)-এর মধ্যেই ১০০% কঠোরভাবে সীমাবদ্ধ থাকবে। ফ্র্যাপে এজেন্ট কেবল ফ্র্যাপেতেই সীমাবদ্ধ থাকবে; অন্য কোনো প্রজেক্টে তার প্রবেশাধিকার নেই (Permission Denied / Zero Cross-Project Access)।
+11. **RUNTIME VERSIONS STANDARD (NODE 24 & MARIADB 11+):** Node.js runtime must be **Node.js 24** (installed via NVM: `nvm install 24`, with NPM and Yarn). MariaDB database server must be **MariaDB 11+** configured with `character-set-server = utf8mb4` and `collation-server = utf8mb4_unicode_ci`. Package and bench manager must use `uv` (`uv tool install frappe-bench`).
