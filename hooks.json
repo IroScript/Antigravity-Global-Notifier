@@ -1,31 +1,16 @@
 {
-  "reply-notifier": {
-    "Stop": [
+  "boundary-guard": {
+    "enabled": true,
+    "PreToolUse": [
       {
-        "type": "command",
-        "command": "python C:\\Users\\Irak\\.gemini\\config\\notify_reply.py",
-        "timeout": 15
-      }
-    ]
-  },
-  "verification-gate": {
-    "PostToolUse": [
-      {
-        "matcher": "write_to_file|replace_file_content",
+        "matcher": ".*",
         "hooks": [
           {
             "type": "command",
-            "command": "python C:\\Users\\Irak\\.gemini\\config\\record_tool_edit.py",
-            "timeout": 15
+            "command": "/usr/bin/python3 /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py",
+            "timeout": 5
           }
         ]
-      }
-    ],
-    "Stop": [
-      {
-        "type": "command",
-        "command": "python C:\\Users\\Irak\\.gemini\\config\\force_verify.py",
-        "timeout": 30
       }
     ]
   }
