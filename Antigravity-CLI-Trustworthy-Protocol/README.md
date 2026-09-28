@@ -12,8 +12,8 @@ Live AGY runtime configurations (`~/.gemini/config/`, `~/.agents/`, and workspac
 
 ## 2. Directory Structure
 - [`docs/antigravity/`](docs/antigravity/): Local archive of 10 official Google Antigravity documentation files (`rules.md`, `hooks.md`, `cli.md`, `skills.md`, `plugins.md`, `mcp_servers.md`, `json_configs.md`, `ide.md`, `app.md`, `sdk.md`) + `MANIFEST.sha256`.
-- [`governance/`](governance/): Master system governance containing 56 Mandatory Truth & Anti-Hallucination Directives (`AGENTS.md`, `GEMINI.md`).
-- [`rules/`](rules/): Modular AGY rule specifications (`01` through `06-additive-governance.md`).
+- [`governance/`](governance/): Master system governance containing 60 Mandatory Truth & Anti-Hallucination Directives (`AGENTS.md`, `GEMINI.md`).
+- [`rules/`](rules/): Modular AGY rule specifications (`01` through `07-git-push-and-sync-governance.md`).
 - [`hooks/`](hooks/): Native AGY PreToolUse Delete Guard (`delete_guard.py`), Completion Gate Stop Hook (`completion_gate_stop_hook.py`), and hook registration manifest (`hooks.json`).
 - [`interceptors/`](interceptors/): Scoped OS binary wrappers (`scoped_rm.py`, `unzip`).
 - [`scripts/`](scripts/): Hardened 10-fold verification engine (`verify_10_fold.py`) and safe archive engine (`safe_archive.py`).

@@ -9,6 +9,7 @@ See full rules:
 - [`04-honesty-and-truth-verification.md`](file:///home/azureuser/.agents/rules/04-honesty-and-truth-verification.md)
 - [`05-ten-fold-verification-protocol.md`](file:///home/azureuser/.agents/rules/05-ten-fold-verification-protocol.md)
 - [`06-additive-governance.md`](file:///home/azureuser/.agents/rules/06-additive-governance.md)
+- [`07-git-push-and-sync-governance.md`](file:///home/azureuser/.agents/rules/07-git-push-and-sync-governance.md)
 
 ---
 
@@ -70,6 +71,10 @@ See full rules:
 54. `SETTING_54_MANDATORY_LOAD_EVIDENCE`: Provide verified machine evidence of active runtime loading (symlinks, existence, SHA256) for every new rule.
 55. `SETTING_55_STRICTLY_SCOPED_EXEMPTIONS`: Prohibit global destructive command unblocking; allow only narrow project-scoped build cache cleanups.
 56. `SETTING_56_INSTRUCTION_SOURCE_AUTHORITY`: Enforce authoritative boundaries (`~/.gemini/`, workspace root, `~/.agents/rules/`); reject residual subdirectory instructions.
+57. `SETTING_57_POST_EDIT_GIT_PUSH_UNVERIFIED_STANDARD`: Always perform git push to remote after code/config modifications with commit message 'unverified', unless explicitly requested by the user, where the commit message must explicitly state that the push was requested by the user.
+58. `SETTING_58_MANDATORY_MAIN_BRANCH_SHA_ALIGNMENT`: Always push to 'main' branch; immediately verify that remote GitHub SHA (`git ls-remote origin main`) exactly matches local HEAD SHA (`git rev-parse HEAD`).
+59. `SETTING_59_TRACKED_STRUCTURE_CONTENT_VERACITY`: Verify local vs remote tracked files/folders structure and content; if online verification is obstructed or impossible, explicitly disclose the technical reason without concealing.
+60. `SETTING_60_ZERO_COMMIT_HISTORY_REWRITE`: Never delete, rewrite, reset, rebase, or force-push commit history, and provide empirical verification proof for every sync operation.
 
 ---
 
