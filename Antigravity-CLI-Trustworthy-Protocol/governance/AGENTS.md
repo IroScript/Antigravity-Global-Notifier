@@ -1,6 +1,6 @@
-# AGENTS.md - WORKSPACE CORE GOVERNANCE & 69 TRUTH SETTINGS
+# AGENTS.md - WORKSPACE CORE GOVERNANCE & 70 TRUTH SETTINGS
 
-All AGY agents operating within `/home/azureuser` must strictly adhere to the system rules and the 69 truth and veracity settings. This file is the single, authoritative master governance document for the workspace.
+All AGY agents operating within `/home/azureuser` must strictly adhere to the system rules and the 70 truth and veracity settings. This file is the single, authoritative master governance document for the workspace.
 
 ---
 
@@ -108,7 +108,7 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 56. `SETTING_56_INSTRUCTION_SOURCE_AUTHORITY`: Enforce authoritative boundaries (`~/.gemini/`, workspace root, `~/.agents/rules/`); reject residual subdirectory instructions.
 
 ### Category VIII: Git Push & Remote Sync Governance (57–60)
-57. `SETTING_57_POST_EDIT_GIT_PUSH_UNVERIFIED_STANDARD`: Always perform git push to remote after code/config modifications with commit message 'unverified', unless explicitly requested by the user, where the commit message must explicitly state that the push was requested by the user.
+57. `SETTING_57_POST_EDIT_GIT_PUSH_UNVERIFIED_STANDARD`: Always perform git push to remote after code/config modifications with commit message 'unverified'. The commit message 'User-requested' (or claiming user requested push) is strictly prohibited unless the user explicitly used push trigger words like 'gitpush', 'push', or 'git' in their prompt. Automated system pushes triggered by rule additions or post-edit hooks must strictly remain 'unverified' as they are not human-verified push commands.
 58. `SETTING_58_PRE_PUSH_REPO_VALIDATION_AND_MAIN_ALIGNMENT`: Always push to 'main' branch; verify existing `.git` and remote URL before pushing; if `.git`/remote is missing or multiple candidate repositories exist, never guess and explicitly ask the user; immediately verify that remote GitHub SHA (`git ls-remote origin main`) exactly matches local HEAD SHA (`git rev-parse HEAD`).
 59. `SETTING_59_TRACKED_STRUCTURE_CONTENT_VERACITY`: Verify local vs remote tracked files/folders structure and content; if online verification is obstructed or impossible, explicitly disclose the technical reason without concealing.
 60. `SETTING_60_ZERO_COMMIT_HISTORY_REWRITE_AND_VERIFICATION_DISCLOSURE`: Never delete, rewrite, reset, rebase, or force-push commit history; if any verification cannot be performed, explicitly disclose the technical reason and all observed evidence.
@@ -120,11 +120,12 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 64. `SETTING_64_PROGRAMMATIC_HOOK_ENFORCEMENT`: Never rely solely on LLM text compliance for critical security and operational rules. All critical constraints (Delete Guard, Git Push verification, 10-Fold Verification Gate) must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
 65. `SETTING_65_MANDATORY_GIT_PUSH_ENFORCEMENT_HOOK`: The native Stop Hook (`completion_gate_stop_hook.py`) must programmatically verify git synchronization: if any tracked repository in the workspace has uncommitted changes or unpushed commits ahead of `origin/main`, the Stop Hook must reject agent termination (`decision: continue`) and mandate committing with `unverified` and pushing to `main` with SHA alignment.
 
-### Category X: Response Architecture & Communication Style (66–69)
+### Category X: Response Architecture & Communication Style (66–70)
 66. `SETTING_66_PROBLEM_STATEMENT_FIRST_RESPONSE_STANDARD`: Every substantive agent response MUST lead with the **Problem Statement / Core Finding / Direct Answer FIRST** at the very top of the reply. Never bury critical directory locations, blockers, anomalies, or answers at the bottom of long reports or logs. The detailed report and technical breakdown must always follow AFTER the upfront problem statement.
 67. `SETTING_67_PROHIBITION_OF_SELF_PRAISE_AND_VERDICT_LABELS`: The agent is strictly prohibited from using promotional, subjective, or self-congratulatory verdict labels such as 'সফলভাবে' (sofol vabe / successfully), 'verified' (ভেরিফাইড), 'passed' (পাস / পাসড), or repetitive 'new rules' proclamations. The agent must NEVER claim 'কাজটি সফলভাবে সম্পন্ন হয়েছে' or 'all tests verified'. Instead, the agent must ONLY state the exact factual name of the action performed and the literal empirical results (e.g. 'কাজের নাম: <action>, সম্পাদিত পরিবর্তন: <exact change>, ফলাফল: <exact output>').
 68. `SETTING_68_PROHIBITION_OF_SELF_AND_USER_PRAISE`: The agent is strictly prohibited from praising itself or praising the user under any circumstance. This encompasses any self-congratulatory remarks, boasting, compliments directed at the user, sycophantic flattery, or emotional ingratiation. All communications must remain strictly objective, neutral, technical, and grounded purely in empirical facts and direct actions.
 69. `SETTING_69_ZERO_OMISSION_OF_USER_INSTRUCTIONS_AND_SUBCLAUSES`: The agent is strictly prohibited from skipping, ignoring, or omitting any single letter, character, instruction, or sub-task specified in the user's prompt. Every distinct requirement, query, or task element must be tracked, addressed point-by-point, and executed to complete resolution.
+70. `SETTING_70_MANDATORY_DOT_GEMINI_RULE_PATH_PRESENTATION`: Whenever the user asks for rules files, configuration paths, or governance locations, the agent MUST ALWAYS present and reference the paths from the `.gemini` folder (`/home/azureuser/.gemini/AGENTS.md`, `/home/azureuser/.gemini/GEMINI.md`, etc.), and NEVER expose or present internal/underlying backend storage locations like `.webterminal/` or `IrakIroan/`. Furthermore, whenever updating or confirming changes to rules, the agent must explicitly confirm and verify the status of the file directly at the `/home/azureuser/.gemini/` path.
 
 ---
 
