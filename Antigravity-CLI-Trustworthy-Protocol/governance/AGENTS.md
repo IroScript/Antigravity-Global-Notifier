@@ -211,4 +211,29 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 40. **`BLOCK_29_PROGRAMMATIC_PRE_TOOL_WRITE_INTERCEPT`:** ফ্র্যাপে সংক্রান্ত কোড তৈরির ক্ষেত্রে লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর বাইরে ফাইল লেখার যেকোনো প্রচেষ্টা প্রি-টুল চেকে স্বয়ংক্রিয়ভাবে ব্লক করা হবে।
 41. **`BLOCK_30_HARDENED_AUTOMATED_COMPLIANCE_GATE`:** উপরের প্রতিটি ব্লক (১২ থেকে ৪০) যাচাইয়ের জন্য স্বয়ংক্রিয় টেস্ট রানার স্ক্রিপ্টের মাধ্যমে ৩০/৩০ টেস্ট পাস প্রাপ্তি বাধ্যতামূলক। তবে ৩০/৩০ টেস্ট পাস দ্বারা এটি নিশ্চিত হয় যে সংজ্ঞায়িত ৩০টি টেস্ট শর্ত সফলভাবে সম্পন্ন হয়েছে; এটি টেস্ট সুইটের বাইরের কোনো সার্বজনীন বা অলৌকিক প্রুফ নির্দেশ করে না (Test suite assertion success != Universal proof)। একইভাবে HMAC-SHA256 সিগনেচার শুধুমাত্র লোকাল স্টেট ও ননস ট্যাম্পার-প্রুফিং নিশ্চিত করে; এটি ফ্র্যাপের বাহ্যিক কোনো সার্বজনীন সত্যতা বা সার্টিফিকেশন নির্দেশ করে না।
 
+---
+
+## SECTION 7: ALCO × FRAPPE V16 ARCHITECTURE COMPLIANCE GATE & 12-VECTOR MANDATE
+
+> 🚨 **এই সেকশনটি ALCO ECOMMERCE কাস্টম অ্যাপ এবং FRAPPE V16 কোর আর্কিটেকচার ইন্টিগ্রেশনের জন্য বাধ্যতামূলক ও অলঙ্ঘনীয়** 🚨
+
+### ১. আর্কিটেকচারাল শর্টকাট বনাম নেটিভ ফ্র্যাপে পাইপলাইন (Native Frappe Pipeline Mandate):
+ভবিষ্যতে AGY যখন Alco অ্যাপে নতুন কোনো ফিচার, ডকটাইপ, ডাটাবেজ ফিল্ড, এপিআই, রিপোর্ট বা ওয়ার্কফ্লো তৈরি বা পরিবর্তন করবে, তখন অবশ্যই ফ্র্যাপে v16-এর নেটিভ আর্কিটেকচারাল পাইপলাইন অনুসরণ করতে হবে:
+$$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrightarrow \text{DocType JSON} \longrightarrow \text{Controller / Hooks} \longrightarrow \text{Frappe Migration (bench migrate)} \longrightarrow \text{MariaDB Schema}$$
+
+### ২. ১২টি বাধ্যতামূলক আর্কিটেকচার কম্প্লায়েন্স ভেক্টর (12 Architecture Vectors):
+1. **`ARCH_01_MANDATORY_FRAPPE_NATIVE_EXTENSION_POINT`:** প্রতিটি নতুন বিজনেস এন্টিটি, ফিল্ড, ওয়ার্কফ্লো ও এপিআই ফ্র্যাপের নেটিভ এক্সটেনশন পয়েন্ট (DocType, Controller, Hooks, Server Scripts) দ্বারা বাস্তবায়িত হতে হবে। সমান্তরাল কোনো ডাটাবেজ (যেমন standalone SQLite) বা আন-ম্যানেজড স্টোরেজ ব্যবহার সম্পূর্ণ নিষিদ্ধ।
+2. **`ARCH_02_ZERO_STANDALONE_BYPASS`:** `run_alco_server.py`-এর মতো স্ক্রিপ্টগুলো কেবল ডায়াগনস্টিক ও সাময়িক টেস্টিং হারনেস হিসেবে সীমাবদ্ধ থাকবে; এগুলোকে কস্মিনকালেও প্রডাকশন আর্কিটেকচার হিসেবে দাবি করা যাবে না। মূল প্রডাকশন আর্কিটেকচার হবে Frappe Bench (`bench/apps/alco_ecommerce` -> `site` -> `MariaDB`)।
+3. **`ARCH_03_DOCTYPE_SCHEMA_AUTHORITY`:** ডাটাবেজ স্কিমার একক উৎস হবে `doctype/<name>/<name>.json` ফাইল। পাইথন কোডে বা স্ক্রিপ্টে সরাসরি DDL (`CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`) চালানো সম্পূর্ণ নিষিদ্ধ; স্কিমা সিনক্রোনাইজেশন ফ্র্যাপে বেঞ্চ মাইগ্রেশন বা `frappe.reload_doc()` দিয়ে সম্পন্ন করতে হবে।
+4. **`ARCH_04_CONTROLLER_CLASS_INHERITANCE`:** প্রতিটি ডকটাইপ কন্ট্রোলার অবশ্যই `frappe.model.document.Document` থেকে ইনহেরিট করবে এবং ফ্র্যাপে লাইফসাইকেল মেথড (`validate`, `before_save`, `on_submit`) মেনে চলবে।
+5. **`ARCH_05_CHILD_TABLE_INTEGRITY`:** চাইল্ড ডকটাইপে `"istable": 1` বিদ্যমান থাকতে হবে এবং প্যারেন্ট ডকটাইপের টেবিল ফিল্ডের `options` প্যারামিটার যথাযথ চাইল্ড ডকটাইপকে নির্দেশ করতে হবে।
+6. **`ARCH_06_HOOKS_DECLARATION_STANDARD`:** অ্যাপের কনফিগারেশন, মেটাডাটা ও ইভেন্ট হ্যান্ডলার স্ট্যান্ডার্ড `hooks.py`-এর মাধ্যমে ঘোষিত হতে হবে। অ্যাড-হক মাঙ্কি প্যাচিং সম্পূর্ণ নিষিদ্ধ।
+7. **`ARCH_07_FRAPPE_QUERY_BUILDER_STANDARD`:** কুয়েরি রচনার ক্ষেত্রে PyPika Query Builder (`frappe.qb`) অথবা ডকুমেন্ট ওআরএম মেথড (`frappe.get_doc`, `frappe.get_all`) ব্যবহার করতে হবে। র SQL স্ট্রিং কনক্যাটেনেশন সম্পূর্ণ নিষিদ্ধ।
+8. **`ARCH_08_MIGRATION_AND_PATCH_DISCIPLINE`:** স্কিমা ও ডাটা মাইগ্রেশন ইডেমপোটেন্ট হতে হবে এবং `patches.txt` অথবা ডকটাইপ রিলোডিং মেকানিজম মেনে চলতে হবে।
+9. **`ARCH_09_BENCH_SITE_REGISTRY_COMPLIANCE`:** বেঞ্চের সাইট রেজিস্ট্রি (`apps.txt` এবং `site_config.json`)-এ `frappe`, `erpnext`, এবং `alco_ecommerce`-এর সক্রিয় অন্তর্ভুক্তি নিশ্চিত থাকতে হবে।
+10. **`ARCH_10_PYTHON_314_AND_V16_STRICT_COMPLIANCE`:** কোডবেসের প্রতিটি অংশ পাইথন ৩.১৪+ (`requires-python = ">=3.14"`) এবং ফ্র্যাপে v16-এর সাথে সম্পূর্ণ সামঞ্জস্যপূর্ণ হতে হবে; পুরনো v15 ডিপ্রিকেটেড সিনট্যাক্স (`cur_frm`) নিষিদ্ধ।
+11. **`ARCH_11_AUTOMATED_12_VECTOR_ARCHITECTURE_GATE`:** প্রতিটি পরিবর্তনের পর `/home/azureuser/.agents/test_alco_frappe_architecture.py` স্ক্রিপ্টের মাধ্যমে ১২/১২ টেস্টের সফল বাস্তবায়ন ও এক্সিকিউশন এভিডেন্স সংগ্রহ বাধ্যতামূলক।
+12. **`ARCH_12_FAIL_CLOSED_ARCHITECTURE_ENFORCEMENT`:** ১২টি আর্কিটেকচার ভেক্টরের ১টিও যদি ফেইল করে (এমনকি ১১/১২ পাস হলেও), তবে পুরো পরিবর্তনটি তাৎক্ষণিকভাবে REJECTED / INVALID হিসেবে গণ্য হবে এবং স্টপ হুক কোনো অবস্থাতেই টাস্ক সমাপ্ত ঘোষণা করতে দেবে না।
+
+
 

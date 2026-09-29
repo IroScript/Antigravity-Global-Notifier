@@ -304,12 +304,12 @@ def main():
                 pass
             else:
                 reason = f"Modifying protected system/policy/archive target '{target_file}' via replace_file_content is strictly prohibited (Rule 35, 38)"
-            inc = log_incident(tool_name, {"TargetFile": target_file}, reason, "RULE_38_POLICY_TAMPERING")
-            print(json.dumps({
-                "decision": "deny",
-                "reason": f"🛑 [DELETE-PROOF HARD DENIAL: RULE_38] {reason}. Inc-ID: {inc['incident_id']}."
-            }))
-            return
+                inc = log_incident(tool_name, {"TargetFile": target_file}, reason, "RULE_38_POLICY_TAMPERING")
+                print(json.dumps({
+                    "decision": "deny",
+                    "reason": f"🛑 [DELETE-PROOF HARD DENIAL: RULE_38] {reason}. Inc-ID: {inc['incident_id']}."
+                }))
+                return
 
     print(json.dumps({"decision": "allow"}))
 
