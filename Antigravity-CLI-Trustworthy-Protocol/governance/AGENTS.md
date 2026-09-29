@@ -175,7 +175,7 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 ### 4. ৩০টি বিকল্প হার্ড ব্লক ও লোকাল ডিরেক্টরি বাধ্যতামূলক নীতি (30 Alternative Hard Blocks for Local Dir & Version 16 Mandate):
 12. **`BLOCK_01_LOCAL_DIR_WRITE_LOCK`:** ফ্র্যাপে বা ইআরপিনেক্সট সম্পর্কিত সমস্ত নতুন ফাইল তৈরি, কোড মডিফিকেশন বা স্ক্রিপ্ট শুধুমাত্র লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর ভেতরেই সম্পাদিত হতে হবে। এই ডিরেক্টরির বাইরে কোনো ফ্র্যাপে কোড লেখা সম্পূর্ণ নিষিদ্ধ।
-13. **`BLOCK_02_LOCAL_DOC_INSPECTION_MANDATE`:** যেকোনো ফ্র্যাপে এপিআই বা কনফিগারেশন ব্যবহারের পূর্বে লোকাল ডকুমেন্টেশন ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/frappe-docs-v16/` পরিদর্শন করা বাধ্যতামূলক।
+13. **`BLOCK_02_AUTHORITATIVE_DOC_INSPECTION_MANDATE`:** যেকোনো ফ্র্যাপে এপিআই বা কনফিগারেশন ব্যবহারের পূর্বে অফিসিয়াল Frappe Wiki ডকুমেন্টেশন ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/` (যা সরাসরি `docs.frappe.io/framework` থেকে ক্রিপ্টোগ্রাফিক চেকার সহ সিঙ্ক করা) পরিদর্শন করা বাধ্যতামূলক। ডিপ্রিকেটেড বা আর্কাইভড `frappe/frappe_docs` কোনোভাবেই চূড়ান্ত অথরিটি হিসেবে গণ্য হবে না।
 14. **`BLOCK_03_LOCAL_V16_SOURCE_VERIFICATION`:** ডকটাইপ বা ক্লাস ইমপ্লিমেন্টেশনের ক্ষেত্রে লোকাল সোর্স কোড `/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` থেকে মেথড সিগনেচার যাচাই করা বাধ্যতামূলক।
 15. **`BLOCK_04_PROHIBITION_OF_V15_DOCSTATUS_INTEGER`:** ডকস্ট্যাটাস যাচাইয়ে v15-এর মতো ইন্টিজার (0, 1, 2) ব্যবহার সম্পূর্ণ নিষিদ্ধ; v16 `DocStatus` enum (`DocStatus.draft()`, `DocStatus.submitted()`, `DocStatus.cancelled()`) ব্যবহার করতে হবে।
 16. **`BLOCK_05_PROHIBITION_OF_CUR_FRM`:** জাভাস্ক্রিপ্ট কন্ট্রোলারে গ্লোবাল `cur_frm` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ফর্ম ইভেন্ট হ্যান্ডলারের স্ট্যান্ডার্ড `frm` আর্গুমেন্ট ব্যবহার বাধ্যতামূলক।
