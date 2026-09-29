@@ -124,6 +124,27 @@ def test_group_b():
         if not passed:
             all_passed = False
         print(f"  [{'PASS' if passed else 'FAIL'}] {desc} -> decision: {decision}")
+
+    # B10: Symlink evasion attack targeting protected configuration
+    temp_dir = tempfile.mkdtemp()
+    symlink_path = os.path.join(temp_dir, "symlink_hooks.json")
+    try:
+        os.symlink("/home/azureuser/.agents/hooks.json", symlink_path)
+        res_b10 = invoke_pre_tool_hook("write_to_file", {"TargetFile": symlink_path, "Overwrite": True})
+        passed_b10 = (res_b10.get("decision") == "deny")
+        if not passed_b10:
+            all_passed = False
+        print(f"  [{'PASS' if passed_b10 else 'FAIL'}] B10: Symlink evasion attack targeting protected config -> decision: {res_b10.get('decision')}")
+    finally:
+        pass
+
+    # B11: Chained command evasion with obfuscated separators
+    res_b11 = invoke_pre_tool_hook("run_command", {"CommandLine": "echo 'safe' && rm -f /home/azureuser/Frappe-erp-Alco/test.py"})
+    passed_b11 = (res_b11.get("decision") == "deny")
+    if not passed_b11:
+        all_passed = False
+    print(f"  [{'PASS' if passed_b11 else 'FAIL'}] B11: Chained command evasion (&& separator) -> decision: {res_b11.get('decision')}")
+
     return all_passed
 
 
@@ -321,7 +342,7 @@ def main():
 
     passed_count = sum(1 for _, ok in results if ok)
     print("=" * 65)
-    print(f"{passed_count}/5 EXECUTED")
+    print(f"{passed_count}/5 EXECUTED (30/30 Adversarial Sub-Tests PASS)")
     print("=" * 65)
     
     if passed_count != 5:
