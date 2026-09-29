@@ -270,9 +270,17 @@ def main():
             fail_closed(f"Vector {vec_key} is not marked PASS (found: '{vectors.get(vec_key)}').", {"vector": vec_key})
             return
 
-    # 11. Mandatory Live Execution of Unified 72-Check Regression & Architecture Suite (Anti-Recursion Guarded)
+    # 11. Mandatory Live Execution of Unified 72-Check Regression & Architecture Suite (Fail-Closed on Missing Runner)
     reg_runner = "/home/azureuser/.agents/run_regression_suite.py"
-    if os.path.exists(reg_runner) and os.environ.get("AGY_IN_REGRESSION_RUN") != "1":
+    if not os.path.isfile(reg_runner):
+        fail_closed(
+            f"Mandatory unified regression runner is MISSING from disk: '{reg_runner}'. "
+            "Completion is strictly prohibited without the authoritative 72-check suite.",
+            {"reg_runner": reg_runner, "exists": False}
+        )
+        return
+
+    if os.environ.get("AGY_IN_REGRESSION_RUN") != "1":
         try:
             sub_env = dict(os.environ)
             sub_env["AGY_IN_REGRESSION_RUN"] = "1"
