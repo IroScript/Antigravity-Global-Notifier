@@ -156,11 +156,15 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 > 🚨 **এই নিয়মগুলো শুধুমাত্র FRAPPE সেকশন ও ERPNEXT প্রজেক্টের জন্য প্রযোজ্য** 🚨
 
-### 1. কোর ফ্র্যাপে ও ইআরপিনেক্সট নির্দেশিকা (Core Frappe Directives):
+#### 1. কোর ফ্র্যাপে ও ইআরপিনেক্সট নির্দেশিকা (Core Frappe Directives):
 1. **VERSION 16+ ONLY:** You must **ONLY** generate, modify, or suggest code written for **Frappe Framework Version 16+** and **ERPNext Version 16+**.
 2. **VERSION 15 & OLDER CODE IS STRICTLY PROHIBITED:** Under NO circumstances are you allowed to write code for **Version 15 (v15)**, Version 14 (v14), Version 13 (v13), or Version 12 (v12). Any attempt to output deprecated v15/older APIs, syntax, or patterns is completely invalid.
-3. **ALWAYS INSPECT V16 DOCUMENTATION & SOURCE FIRST:** Before generating any Python, JavaScript, JSON, HTML, or configuration code, you **MUST inspect and verify the syntax against Version 16 (v16) documentation** and local v16 source code available in `frappe-framework-v16/` and `erpnext-v16/`.
-4. **DO NOT GUESS API METHODS:** Verify exact class definitions, method signatures, hook definitions, and field names in v16 source code prior to implementation.
+3. **4-TIER AUTHORITY HIERARCHY (PUBLIC CONTRACT VS IMPLEMENTATION TRUTH):**
+   - **Tier 1 (Primary Public Usage Contract):** Current official `/user/en/` documentation (`/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/user/en/`, synced from `docs.frappe.io/framework`) is the current active Frappe Framework documentation tree and is the primary documentation authority for current/v16 work. AGY must adhere strictly to documented public APIs and must NEVER treat undocumented internal helper functions as public API.
+   - **Tier 2 (Implementation Ground Truth):** Frappe Framework v16 source code (`/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` at release `v16.35.0`, commit `012667b9c4`) is the ground truth for how the implementation works internally, class structures, DocType definitions, and hook mechanics.
+   - **Tier 3 (Historical Reference Only - Zero Authority):** Historical `/v13/`, `/v14/`, `/v15/` directories are strictly historical references and have ZERO authority for v16 syntax, APIs, or behaviors.
+   - **Tier 4 (App-Specific Domain Authority):** App-specific documentation (`docs.frappe.io/erpnext`, `docs.frappe.io/hr`) governs business logic outside core framework boundaries.
+4. **DO NOT GUESS API METHODS:** Verify exact class definitions, method signatures, hook definitions, and field names in Tier 1 public documentation and Tier 2 source code prior to implementation.
 5. **PYTHON STANDARD (PYTHON 3.14+ MANDATE):** Frappe Framework v16 and ERPNext v16 strictly require **Python 3.14+** (e.g. `requires-python = ">=3.14"` installed via `uv python install 3.14 --default`). Python 3.12 and 3.13 are obsolete for v16. Use Python 3.14+ features, strict typing annotations, and PyPika Query Builder (`frappe.qb`). Never use obsolete DB functions or raw unescaped SQL.
 6. **JAVASCRIPT STANDARD:** Use modern Frappe Form Controller patterns (`frappe.ui.form.on`), `frappe.ui.Dialog`, and `frappe.call`. Never use deprecated `cur_frm` or `cur_dialog`.
 
@@ -175,7 +179,7 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 ### 4. ৩০টি বিকল্প হার্ড ব্লক ও লোকাল ডিরেক্টরি বাধ্যতামূলক নীতি (30 Alternative Hard Blocks for Local Dir & Version 16 Mandate):
 12. **`BLOCK_01_LOCAL_DIR_WRITE_LOCK`:** ফ্র্যাপে বা ইআরপিনেক্সট সম্পর্কিত সমস্ত নতুন ফাইল তৈরি, কোড মডিফিকেশন বা স্ক্রিপ্ট শুধুমাত্র লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর ভেতরেই সম্পাদিত হতে হবে। এই ডিরেক্টরির বাইরে কোনো ফ্র্যাপে কোড লেখা সম্পূর্ণ নিষিদ্ধ।
-13. **`BLOCK_02_AUTHORITATIVE_DOC_INSPECTION_MANDATE`:** যেকোনো ফ্র্যাপে এপিআই বা কনফিগারেশন ব্যবহারের পূর্বে অফিসিয়াল Frappe Wiki-র সক্রিয় v16 ডকুমেন্টেশন ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/user/en/` (যা সরাসরি `docs.frappe.io/framework` থেকে ক্রিপ্টোগ্রাফিক চেকার সহ সিঙ্ক করা) পরিদর্শন করা বাধ্যতামূলক। একই স্ন্যাপশটের অন্তর্ভুক্ত লিগ্যাসি আর্কাইভ সাবডিরেক্টরি (`/v13/`, `/v14/`, `/v15/`) বা ডিপ্রিকেটেড `frappe/frappe_docs` থেকে v16 কোডের সিনট্যাক্স নেওয়া সম্পূর্ণ নিষিদ্ধ।
+13. **`BLOCK_02_AUTHORITATIVE_DOC_INSPECTION_MANDATE`:** `/user/en/` is the current active Frappe Framework documentation tree and is the primary documentation authority for current/v16 work (`/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/user/en/`, synced directly from `docs.frappe.io/framework`). Any attempt to draw syntax from archived `/v13/`, `/v14/`, `/v15/` directories or deprecated `frappe/frappe_docs` is strictly prohibited.
 14. **`BLOCK_03_LOCAL_V16_SOURCE_VERIFICATION`:** ডকটাইপ বা ক্লাস ইমপ্লিমেন্টেশনের ক্ষেত্রে লোকাল সোর্স কোড `/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` থেকে মেথড সিগনেচার যাচাই করা বাধ্যতামূলক।
 15. **`BLOCK_04_PROHIBITION_OF_V15_DOCSTATUS_INTEGER`:** ডকস্ট্যাটাস যাচাইয়ে v15-এর মতো ইন্টিজার (0, 1, 2) ব্যবহার সম্পূর্ণ নিষিদ্ধ; v16 `DocStatus` enum (`DocStatus.draft()`, `DocStatus.submitted()`, `DocStatus.cancelled()`) ব্যবহার করতে হবে।
 16. **`BLOCK_05_PROHIBITION_OF_CUR_FRM`:** জাভাস্ক্রিপ্ট কন্ট্রোলারে গ্লোবাল `cur_frm` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ফর্ম ইভেন্ট হ্যান্ডলারের স্ট্যান্ডার্ড `frm` আর্গুমেন্ট ব্যবহার বাধ্যতামূলক।
@@ -203,5 +207,5 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 38. **`BLOCK_27_PROHIBITION_OF_OBSOLETE_EMAIL_ALERTS`:** পুরনো ইমেইল অ্যালার্টের পরিবর্তে v16 আধুনিক নোটিফিকেশন ডকটাইপ ফ্রেমওয়ার্ক ব্যবহার বাধ্যতামূলক।
 39. **`BLOCK_28_MANDATORY_V16_TRANSLATION_FORMAT`:** ফ্র্যাপে v16 ট্রান্সলেশন সিনট্যাক্স ও ফাইল ফরম্যাট অক্ষুণ্ণ রাখা বাধ্যতামূলক।
 40. **`BLOCK_29_PROGRAMMATIC_PRE_TOOL_WRITE_INTERCEPT`:** ফ্র্যাপে সংক্রান্ত কোড তৈরির ক্ষেত্রে লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর বাইরে ফাইল লেখার যেকোনো প্রচেষ্টা প্রি-টুল চেকে স্বয়ংক্রিয়ভাবে ব্লক করা হবে।
-41. **`BLOCK_30_HARDENED_AUTOMATED_COMPLIANCE_GATE`:** উপরের প্রতিটি ব্লক (১২ থেকে ৪০) যাচাইয়ের জন্য স্বয়ংক্রিয় টেস্ট রানার স্ক্রিপ্টের মাধ্যমে ৩০/৩০ টেস্ট পাস প্রাপ্তি বাধ্যতামূলক।
+41. **`BLOCK_30_HARDENED_AUTOMATED_COMPLIANCE_GATE`:** উপরের প্রতিটি ব্লক (১২ থেকে ৪০) যাচাইয়ের জন্য স্বয়ংক্রিয় টেস্ট রানার স্ক্রিপ্টের মাধ্যমে ৩০/৩০ টেস্ট পাস প্রাপ্তি বাধ্যতামূলক। তবে ৩০/৩০ টেস্ট পাস দ্বারা এটি নিশ্চিত হয় যে সংজ্ঞায়িত ৩০টি টেস্ট শর্ত সফলভাবে সম্পন্ন হয়েছে; এটি টেস্ট সুইটের বাইরের কোনো সার্বজনীন বা অলৌকিক প্রুফ নির্দেশ করে না (Test suite assertion success != Universal proof)।
 
