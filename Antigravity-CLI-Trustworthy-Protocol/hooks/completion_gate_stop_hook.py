@@ -13,6 +13,7 @@ Enforces:
 """
 
 import sys
+import subprocess
 import os
 import json
 import time
@@ -267,6 +268,24 @@ def main():
         vec_key = f"V{i}"
         if vectors.get(vec_key) != "PASS":
             fail_closed(f"Vector {vec_key} is not marked PASS (found: '{vectors.get(vec_key)}').", {"vector": vec_key})
+            return
+
+    # 11. Mandatory Live Execution of Unified 72-Check Regression & Architecture Suite (Anti-Recursion Guarded)
+    reg_runner = "/home/azureuser/.agents/run_regression_suite.py"
+    if os.path.exists(reg_runner) and os.environ.get("AGY_IN_REGRESSION_RUN") != "1":
+        try:
+            sub_env = dict(os.environ)
+            sub_env["AGY_IN_REGRESSION_RUN"] = "1"
+            p_reg = subprocess.run([sys.executable, reg_runner], env=sub_env, capture_output=True, text=True, timeout=15)
+            if p_reg.returncode != 0:
+                fail_closed(
+                    "Unified 72-Check Regression & Architecture Suite FAILED at Stop Gate! "
+                    "You cannot claim completion until all 72 assertions pass (Frappe v16 + Adversarial + Alco Architecture).",
+                    {"returncode": p_reg.returncode, "stdout_tail": p_reg.stdout[-300:], "stderr_tail": p_reg.stderr[-300:]}
+                )
+                return
+        except Exception as e:
+            fail_closed(f"Failed to execute Unified Regression Runner at Stop Gate: {e}", {"error": str(e)})
             return
 
     # Mark nonce as consumed so it cannot be replayed
