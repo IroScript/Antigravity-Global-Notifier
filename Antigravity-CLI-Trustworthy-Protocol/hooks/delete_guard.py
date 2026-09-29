@@ -42,7 +42,9 @@ PROTECTED_CONFIG_PATTERNS = [
     r".*\.agents/hooks\.json$",
     r".*\.agents/rules/.*",
     r".*\.agents/verify_10_fold\.py$",
-    r".*\.agents/hooks/completion_gate_stop_hook\.py$",
+    r".*\.agents/hooks/.*",
+    r".*AGENTS\.md$",
+    r".*GEMINI\.md$",
     r".*\.agents/verification_state\.json$",
     r".*\.agents/\.verification_secret\.key$",
     r".*\.agents/consumed_nonces\.jsonl$",
@@ -94,8 +96,9 @@ def log_incident(tool_name, details, reason, rule_id):
 
 def is_path_protected_config(target_path):
     target = os.path.abspath(target_path)
+    real_target = os.path.realpath(target)
     for pat in PROTECTED_CONFIG_PATTERNS:
-        if re.search(pat, target):
+        if re.search(pat, target) or re.search(pat, real_target):
             return True
     return False
 
@@ -136,6 +139,34 @@ def inspect_command(command_str):
     # Wrapper execution attempts: eval 'rm...', sh -c 'rm...', bash -c 'rm...'
     if re.search(r'(?:eval|sh\s+-c|bash\s+-c)\s+.*?\b(?:rm|unlink|rmdir)\b', command_str):
         return True, "Indirect command wrapper invocation of deletion command is prohibited (Rule 1, 2)", "RULE_1_2_WRAPPER_DELETE"
+
+    # Rule 44: sed -i / sed --in-place tampering
+    if re.search(r'\bsed\b.*?(?:-[a-zA-Z]*i\b|--in-place)', command_str):
+        for tok in command_str.split():
+            tok_clean = tok.strip('\'"')
+            if is_path_protected_config(tok_clean):
+                return True, f"In-place file tampering via 'sed -i' on protected path '{tok_clean}' is strictly prohibited (Rule 38, 41)", "RULE_SED_INPLACE_DENIED"
+
+    # Rule 45: tee overwrite targeting protected path
+    if re.search(r'\btee\b', command_str):
+        for tok in command_str.split():
+            tok_clean = tok.strip('\'"')
+            if not tok_clean.startswith('-') and is_path_protected_config(tok_clean):
+                return True, f"Overwriting protected path '{tok_clean}' via 'tee' is strictly prohibited (Rule 38, 41)", "RULE_TEE_OVERWRITE_DENIED"
+
+    # Rule 46: perl -i tampering
+    if re.search(r'\bperl\b.*?(?:-[a-zA-Z]*i\b)', command_str):
+        for tok in command_str.split():
+            tok_clean = tok.strip('\'"')
+            if is_path_protected_config(tok_clean):
+                return True, f"In-place file tampering via 'perl -i' on protected path '{tok_clean}' is strictly prohibited (Rule 38, 41)", "RULE_PERL_INPLACE_DENIED"
+
+    # Rule 47: Python inline open write/append on protected config
+    if re.search(r'python[0-9.]*\s+-c\b.*?(?:open\s*\([^)]*[\'\"][wa\+]|write_text|write_bytes)', command_str):
+        for pat in PROTECTED_CONFIG_PATTERNS:
+            kw = pat.replace('.*', '').replace('$', '').replace('\\', '')
+            if kw and kw in command_str:
+                return True, f"Inline Python file overwrite targeting protected resource '{kw}' is prohibited (Rule 38, 41)", "RULE_PYTHON_FILE_WRITE_DENIED"
 
     # Rule 10: git clean
     if re.search(r'git\s+clean\b', command_str):
@@ -269,7 +300,10 @@ def main():
     elif tool_name == "replace_file_content":
         target_file = args.get("TargetFile", "")
         if is_path_protected_config(target_file):
-            reason = f"Modifying protected system/policy/archive target '{target_file}' via replace_file_content is strictly prohibited (Rule 35, 38)"
+            if os.path.basename(target_file) in ["AGENTS.md", "GEMINI.md"]:
+                pass
+            else:
+                reason = f"Modifying protected system/policy/archive target '{target_file}' via replace_file_content is strictly prohibited (Rule 35, 38)"
             inc = log_incident(tool_name, {"TargetFile": target_file}, reason, "RULE_38_POLICY_TAMPERING")
             print(json.dumps({
                 "decision": "deny",
