@@ -307,41 +307,48 @@ def format_bengali_whatsapp_report(now_dt, service_status, sync_props, about_dat
 
     sync_st_symbol = "🟢 সচল" if service_status == "active" else f"🔴 অচল ({service_status})"
 
-    svc_lines = "\n".join([f"  • {k}: {v}" for k, v in svc_status.items()])
-    agent_lines = "\n".join([f"  • {k}: {v}" for k, v in agents_status.items()])
+    svc_lines = "\n".join([f"  ✅ {k}: {v}" for k, v in svc_status.items()])
+    agent_lines = "\n".join([f"  ✅ {k}: {v}" for k, v in agents_status.items()])
 
     if failed_units:
         issues_str = "\n".join([f"  🔴 সার্ভিস ফেইলড: {u}" for u in failed_units])
     else:
-        issues_str = "  ✔️ কোনো সক্রিয় সিস্টেম ত্রুটি নেই (সবকিছু স্বাভাবিক)"
+        issues_str = "  ✅ কোনো সক্রিয় সিস্টেম ত্রুটি নেই (সবকিছু স্বাভাবিক)"
 
     clean_activity = recent_activity.strip()
     if len(clean_activity) > 120:
         clean_activity = clean_activity[-120:]
 
+    cpu_val = vm_res.get('cpu_pct', 0.0)
+    ram_pct_val = vm_res.get('ram_pct', 0.0)
+    cpu_arrow = "⬆️" if isinstance(cpu_val, (int, float)) and cpu_val >= 50 else "⬇️"
+    ram_arrow = "🔼" if isinstance(ram_pct_val, (int, float)) and ram_pct_val >= 70 else "🔽"
+
     report = (
         "«──────────────────────────────»\n"
-        "📊 *AGY · ডাইজেস্ট ও লাইভ সিঙ্ক রিপোর্ট*\n"
+        "📈 *AGY · ঘণ্টায় ডাইজেস্ট ও লাইভ সিঙ্ক রিপোর্ট*\n"
         "«──────────────────────────────»\n"
         f"সময়: *{time_str}*\n\n"
         "☁️ *গুগল ড্রাইভ লাইভ সিঙ্ক (Azure ➔ Google Drive):*\n"
-        f"  • সার্ভিস স্ট্যাটাস: {sync_st_symbol} (PID: {sync_props.get('MainPID', 'N/A')}, RAM: {sync_props.get('Memory', 'N/A')})\n"
-        f"  • ক্লাউড স্টোরেজ: ব্যবহৃত *{used_val}* / মোট {total_val} (খালি: {free_val})\n"
-        f"  • ব্যাকআপ অবজেক্ট: *{objects}*\n"
-        f"  • ব্যাকআপ ভলিউম: *{size_str}*\n"
-        f"  • সর্বশেষ সিঙ্ক লগ: `{clean_activity}`\n\n"
-        "💻 *এজুর ভিএম হেলথ ও পারফরম্যান্স:*\n"
-        f"  • CPU ব্যবহার: *{vm_res['cpu_pct']}%*\n"
-        f"  • RAM ব্যবহার: *{vm_res['ram_used_gb']} GB* / {vm_res['ram_total_gb']} GB ({vm_res['ram_pct']}%)\n"
-        f"  • NVMe ডিস্ক: *{vm_res['disk_used']}* / {vm_res['disk_total']} ({vm_res['disk_pct']})\n"
-        f"  • সিস্টেম আপটাইম: {vm_res['uptime_str']}\n\n"
+        f"  ✅ সার্ভিস স্ট্যাটাস: {sync_st_symbol} (PID: {sync_props.get('MainPID', 'N/A')}, RAM: {sync_props.get('Memory', 'N/A')})\n"
+        f"  ✅ ক্লাউড স্টোরেজ: ব্যবহৃত *{used_val}* / মোট {total_val} (খালি: {free_val})\n"
+        f"  ✅ ব্যাকআপ অবজেক্ট: *{objects}*\n"
+        f"  ✅ ব্যাকআপ ভলিউম: *{size_str}*\n"
+        f"  ✅ সর্বশেষ সিঙ্ক লগ: `{clean_activity}`\n\n"
+        "💻 *এজুর ভিএম হেলথ ও পারফরম্যান্স (লাইভ মেট্রিক্স):*\n"
+        f"  ✅ CPU ব্যবহার: *{vm_res['cpu_pct']}%* {cpu_arrow}\n"
+        f"  ✅ RAM ব্যবহার: *{vm_res['ram_used_gb']} GB* / {vm_res['ram_total_gb']} GB ({vm_res['ram_pct']}%) {ram_arrow}\n"
+        f"  ✅ NVMe ডিস্ক: *{vm_res['disk_used']}* / {vm_res['disk_total']} ({vm_res['disk_pct']})\n"
+        f"  ✅ সিস্টেম আপটাইম: *{vm_res['uptime_str']}*\n\n"
         "⚙️ *সিস্টেম সার্ভিস স্ট্যাটাস:*\n"
         f"{svc_lines}\n\n"
         "🤖 *এজিওয়াই এজেন্ট মনিটর:*\n"
         f"{agent_lines}\n\n"
         "⚠️ *লাইভ সমস্যা:*\n"
         f"{issues_str}\n\n"
-        "«──────────────────────────────»"
+        "«──────────────────────────────»\n"
+        "📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈\n"
+        "✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅"
     )
     return report
 
