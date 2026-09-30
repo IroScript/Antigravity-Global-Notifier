@@ -1600,7 +1600,7 @@ async function processSingleTranscript(transcriptPath) {
         }
       }
 
-      // ── 0. Thinking ──
+      // ── 0. Thinking (Ctrl+o Expanded Detail) ──
       if (step.type === 'PLANNER_RESPONSE' && step.thinking && step.thinking.length > 10) {
         tracker.currentTurnHasThinking = true;
         if (!tracker.currentTurnThinkingLength || step.thinking.length > tracker.currentTurnThinkingLength) {
@@ -1609,14 +1609,14 @@ async function processSingleTranscript(transcriptPath) {
         const thinkLines = step.thinking.trim().split('\n').filter(l => l.trim());
         let summary = thinkLines[0] || '';
         if (summary.startsWith('**')) summary = summary.replace(/\*\*/g, '');
-        if (summary.length > 80) summary = summary.substring(0, 75) + '...';
+        if (summary.length > 140) summary = summary.substring(0, 135) + '...';
         if (summary) {
-          await sendWhatsAppMessage(`> _🧠 ${summary}_`, { to: targetJid });
+          await sendWhatsAppMessage(`> 🧠 *[চিন্তাভাবনা · Ctrl+o]*\n> _${summary}_`, { to: targetJid });
           console.log(`[WA Bridge] 🧠 thinking ${stepIdx} (${targetWindow})`);
         }
       }
 
-      // ── 1. Tool Calls (ALL types) ──
+      // ── 1. Tool Calls (Ctrl+o Expanded: Diffs, Lines, Commands) ──
       if (step.tool_calls && Array.isArray(step.tool_calls) && step.tool_calls.length > 0) {
         for (const tc of step.tool_calls) {
           const action = tc.args?.toolAction || tc.args?.toolSummary || '';
@@ -1624,53 +1624,126 @@ async function processSingleTranscript(transcriptPath) {
 
           if (tc.name === 'run_command' && tc.args?.CommandLine) {
             const cmd = tc.args.CommandLine.replace(/^"/, '').replace(/"$/, '');
-            const shortCmd = cmd.length > 120 ? cmd.substring(0, 115) + '...' : cmd;
-            await sendWhatsAppMessage(`> _⚡ ${action || 'কমান্ড চালনা'}_\n> \`$ ${shortCmd}\``, { to: targetJid });
+            const shortCmd = cmd.length > 180 ? cmd.substring(0, 175) + '...' : cmd;
+            let msg = `> ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*\n> \`$ ${shortCmd}\``;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            tracker.pendingCommand = { cmd: shortCmd, stepIdx };
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] ⚡ cmd ${stepIdx} (${targetWindow})`);
 
-          } else if (tc.name === 'replace_file_content' || tc.name === 'write_to_file') {
+          } else if (tc.name === 'replace_file_content') {
             const file = (tc.args?.TargetFile || '').replace(/^"/, '').replace(/"$/, '');
-            const desc = tc.args?.Description || tc.args?.Instruction || '';
-            let msg = `> _📝 ফাইল আপডেট: \`${file}\`_`;
-            if (desc) msg += `\n> _${desc.substring(0, 120)}_`;
+            const sLine = tc.args?.StartLine;
+            const eLine = tc.args?.EndLine;
+            const inst = tc.args?.Instruction || tc.args?.Description || '';
+            const targetC = (tc.args?.TargetContent || '').trim();
+            const replaceC = (tc.args?.ReplacementContent || '').trim();
+
+            let msg = `> 📝 *[কোড এডিট · Ctrl+o]*\n> 📄 \`${file}\`${(sLine && eLine) ? ` (Lines ${sLine}–${eLine})` : ''}`;
+            if (inst) msg += `\n> 🎯 _${inst}_`;
+            if (targetC || replaceC) {
+              const shortTarget = targetC.length > 320 ? targetC.substring(0, 310) + '\n... [বাকি অংশ]' : targetC;
+              const shortReplace = replaceC.length > 320 ? replaceC.substring(0, 310) + '\n... [বাকি অংশ]' : replaceC;
+              if (shortTarget) msg += `\n> 🔻 *আগের কোড:*\n\`\`\`\n${shortTarget}\n\`\`\``;
+              if (shortReplace) msg += `\n> 🔺 *নতুন কোড:*\n\`\`\`\n${shortReplace}\n\`\`\``;
+            }
             await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] 📝 edit ${stepIdx} (${targetWindow})`);
 
+          } else if (tc.name === 'write_to_file') {
+            const file = (tc.args?.TargetFile || '').replace(/^"/, '').replace(/"$/, '');
+            const desc = tc.args?.Description || tc.args?.Instruction || '';
+            const code = (tc.args?.CodeContent || '').trim();
+            let msg = `> 📝 *[নতুন ফাইল তৈরি / লিখন · Ctrl+o]*\n> 📄 \`${file}\``;
+            if (desc) msg += `\n> 🎯 _${desc}_`;
+            if (code) {
+              const shortCode = code.length > 320 ? code.substring(0, 310) + '\n... [বাকি অংশ]' : code;
+              msg += `\n> 📄 *ফাইলের কোড:*\n\`\`\`\n${shortCode}\n\`\`\``;
+            }
+            await sendWhatsAppMessage(msg, { to: targetJid });
+            console.log(`[WA Bridge] 📝 write ${stepIdx} (${targetWindow})`);
+
           } else if (tc.name === 'view_file') {
             const file = (tc.args?.AbsolutePath || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _👁️ ফাইল পড়ছি: \`${file}\`_`, { to: targetJid });
+            const sLine = tc.args?.StartLine;
+            const eLine = tc.args?.EndLine;
+            const action = tc.args?.toolAction || tc.args?.toolSummary || '';
+            let lineInfo = '';
+            if (sLine && eLine) {
+              lineInfo = ` (Lines ${sLine}–${eLine})`;
+            } else if (sLine) {
+              lineInfo = ` (From Line ${sLine})`;
+            }
+            let msg = `> 👁️ *[ফাইল পরিদর্শন · Ctrl+o]*\n> 📄 \`${file}\`${lineInfo}`;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] 👁️ view ${stepIdx} (${targetWindow})`);
 
           } else if (tc.name === 'grep_search' || tc.name === 'find_by_name') {
             const query = (tc.args?.Query || tc.args?.Pattern || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _🔍 সার্চ: \`${query}\`_`, { to: targetJid });
+            const dir = (tc.args?.SearchPath || tc.args?.DirectoryPath || '').replace(/^"/, '').replace(/"$/, '');
+            let msg = `> 🔍 *[কোডবেস সার্চ · Ctrl+o]*\n> 🔎 \`${query}\`${dir ? ` in \`${dir}\`` : ''}`;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] 🔍 search ${stepIdx} (${targetWindow})`);
 
           } else if (tc.name === 'search_web') {
             const query = (tc.args?.query || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _🌐 ওয়েব সার্চ: \`${query}\`_`, { to: targetJid });
+            let msg = `> 🌐 *[ওয়েব সার্চ · Ctrl+o]*\n> 🔎 \`${query}\``;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] 🌐 web ${stepIdx} (${targetWindow})`);
+
+          } else if (tc.name === 'read_url_content') {
+            const url = (tc.args?.Url || '').replace(/^"/, '').replace(/"$/, '');
+            let msg = `> 🔗 *[URL পড়ছি · Ctrl+o]*\n> 🌐 \`${url.substring(0, 80)}\``;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
+            console.log(`[WA Bridge] 🔗 url ${stepIdx} (${targetWindow})`);
 
           } else if (tc.name === 'manage_task') {
             const a = (tc.args?.Action || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _⏱️ টাস্ক: \`${a}\`_`, { to: targetJid });
+            const tid = (tc.args?.TaskId || '').replace(/^"/, '').replace(/"$/, '');
+            let msg = `> ⏱️ *[টাস্ক ম্যানেজমেন্ট · Ctrl+o]*\n> ⚙️ অ্যাকশন: \`${a}\`${tid ? ` (Task: \`${tid}\`)` : ''}`;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] ⏱️ task ${stepIdx} (${targetWindow})`);
 
           } else if (tc.name === 'list_dir') {
             const dir = (tc.args?.DirectoryPath || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _📂 ডিরেক্টরি: \`${dir}\`_`, { to: targetJid });
+            let msg = `> 📂 *[ডিরেক্টরি পরিদর্শন · Ctrl+o]*\n> 📁 \`${dir}\``;
+            if (action) msg += `\n> 🎯 _${action}_`;
+            await sendWhatsAppMessage(msg, { to: targetJid });
             console.log(`[WA Bridge] 📂 dir ${stepIdx} (${targetWindow})`);
 
-          } else if (tc.name === 'read_url_content') {
-            const url = (tc.args?.Url || '').replace(/^"/, '').replace(/"$/, '');
-            await sendWhatsAppMessage(`> _🔗 URL পড়ছি: \`${url.substring(0, 80)}\`_`, { to: targetJid });
-            console.log(`[WA Bridge] 🔗 url ${stepIdx} (${targetWindow})`);
-
           } else {
-            await sendWhatsAppMessage(`> _🔧 ${action || tc.name}_`, { to: targetJid });
+            await sendWhatsAppMessage(`> 🔧 *[টুল এক্সিকিউশন · Ctrl+o]*\n> \`${tc.name}\`${action ? `\n> 🎯 _${action}_` : ''}`, { to: targetJid });
             console.log(`[WA Bridge] 🔧 ${tc.name} ${stepIdx} (${targetWindow})`);
           }
         }
+      }
+
+      // ── 2. Terminal Output Streaming (GENERIC step / Tool Output · Ctrl+o) ──
+      if ((step.type === 'GENERIC' || step.type === 'TOOL_RESPONSE') && step.content && tracker.pendingCommand) {
+        let rawOutput = step.content.trim();
+        let cleanOutput = '';
+        if (rawOutput.includes('Output:\n')) {
+          cleanOutput = rawOutput.split('Output:\n').slice(1).join('Output:\n').trim();
+        } else if (rawOutput.includes('The command exited with code')) {
+          const cLines = rawOutput.split('\n');
+          cleanOutput = cLines.slice(2).join('\n').trim();
+        } else {
+          cleanOutput = rawOutput;
+        }
+
+        if (cleanOutput && cleanOutput !== '(no output)' && !cleanOutput.startsWith('Created At:')) {
+          if (cleanOutput.length > 450) {
+            cleanOutput = cleanOutput.substring(0, 440) + '\n... [আউটপুট সংক্ষেপিত]';
+          }
+          await sendWhatsAppMessage(`> 💻 *[কমান্ড আউটপুট · Ctrl+o]*\n\`\`\`\n${cleanOutput}\n\`\`\``, { to: targetJid });
+          console.log(`[WA Bridge] 💻 cmd output ${stepIdx} (${targetWindow})`);
+        }
+        tracker.pendingCommand = null;
       }
 
       if (stepIdx > tracker.lastSeenStepIndex) tracker.lastSeenStepIndex = stepIdx;
