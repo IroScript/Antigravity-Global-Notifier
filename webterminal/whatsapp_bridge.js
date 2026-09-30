@@ -709,7 +709,7 @@ function getTargetInfoForTranscript(transcriptPath) {
   try {
     const out = execSync(`python3 -c "import sqlite3; conn=sqlite3.connect('/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db'); row=conn.execute('SELECT workspace_uris FROM conversation_summaries WHERE conversation_id=?', ('${convId}',)).fetchone(); print(row[0] if row else '')"`, { encoding: 'utf8', timeout: 1500 }).trim();
     if (out) {
-      if (out.includes('social-media/youtube')) {
+      if (out.includes('social-media/youtube') || out.includes('Social Media/youtube') || out.includes('/youtube')) {
         convWindowMap[convId] = 'agy:yt';
         convJidMap[convId] = '120363430650656655@g.us';
       } else if (out.includes('Frappe-erp-Alco')) {
@@ -919,7 +919,7 @@ async function processWaOutbox() {
       try {
         const raw = fs.readFileSync(jobPath, 'utf8');
         const job = JSON.parse(raw);
-        const target = normalizeJid(job.target || TARGET_JID);
+        const target = job.target || lastActiveJid || TARGET_JID;
 
         if (job.summary) {
           await sendWhatsAppMessage(job.summary, { to: target });
@@ -1326,7 +1326,7 @@ async function startBridge() {
         const targetWindow = getWindowForSender(sender);
         let projectCwd = '/home/azureuser';
         if (targetWindow === 'agy:yt') {
-          projectCwd = '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/social-media/youtube';
+          projectCwd = '/home/azureuser/IrakIroan/IroScript_Projects/Social Media/youtube';
         } else if (targetWindow === 'agy:frappe') {
           projectCwd = '/home/azureuser/Frappe-erp-Alco';
         } else if (targetWindow === 'agy:tg') {
