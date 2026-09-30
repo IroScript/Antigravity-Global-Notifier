@@ -12,6 +12,7 @@ const AUTH_DIR = '/home/azureuser/.webterminal/wa_auth';
 const TARGET_PHONE_FILE = '/home/azureuser/.webterminal/target_phone.txt';
 const PAIRING_FILE = '/home/azureuser/.webterminal/pairing_code.txt';
 const LATEST_REPLY_FILE = '/home/azureuser/.webterminal/latest_reply.json';
+const WA_OUTBOX_DIR = '/home/azureuser/.webterminal/wa_outbox';
 
 function getTargetPhone() {
   if (fs.existsSync(TARGET_PHONE_FILE)) {
@@ -22,7 +23,7 @@ function getTargetPhone() {
 }
 
 const TARGET_PHONE = getTargetPhone();
-const ALLOWED_NUMBERS = ['8801955333555', TARGET_PHONE];
+const ALLOWED_NUMBERS = ['8801955333555', '8801966608406', '206343935946909', '82935919157317', TARGET_PHONE];
 let TARGET_JID = `${TARGET_PHONE}@s.whatsapp.net`;
 
 const BRIDGE_START_TIME = Math.floor(Date.now() / 1000);
@@ -104,11 +105,13 @@ function getWindowForSender(sender) {
         if (k === 'rust') return 'agy:rust';
         if (k === 'article') return 'agy:article';
         if (k === 'game') return 'agy:game';
+        if (k === 'research') return 'agy:research';
       }
     }
+    return 'agy:0';
   }
+  // Personal 1-on-1 WhatsApp Chat is with Master Agent (agy:0)
   return 'agy:0';
-
 }
 
 function dispatchToTmux(promptText, targetWindow = 'agy:0') {
@@ -693,6 +696,12 @@ function getTargetInfoForTranscript(transcriptPath) {
         convJidMap[convId] = '120363412755041087@g.us';
         return { window: 'agy:game', jid: '120363412755041087@g.us' };
       }
+      if (content.includes('Ask & Research') || content.includes('Ask-And-Research') || content.includes('(research)')) {
+        convWindowMap[convId] = 'agy:research';
+        const pGroups = getProjectGroupMap();
+        convJidMap[convId] = (pGroups.research && pGroups.research.id) ? pGroups.research.id : TARGET_JID;
+        return { window: 'agy:research', jid: convJidMap[convId] };
+      }
     }
   } catch (e) {}
 
@@ -724,8 +733,11 @@ function getTargetInfoForTranscript(transcriptPath) {
       } else if (out.includes('3D-Game-Design-Studio')) {
         convWindowMap[convId] = 'agy:game';
         convJidMap[convId] = '120363412755041087@g.us';
+      } else if (out.includes('Ask-And-Research-Agent') || out.includes('Ask-and-research-agent')) {
+        convWindowMap[convId] = 'agy:research';
+        const pGroups = getProjectGroupMap();
+        convJidMap[convId] = (pGroups.research && pGroups.research.id && pGroups.research.id.endsWith('@g.us') && !pGroups.research.id.includes('pending')) ? pGroups.research.id : (lastPersonalLid || TARGET_JID);
       } else {
-
         convWindowMap[convId] = 'agy:0';
         convJidMap[convId] = lastPersonalLid || TARGET_JID;
       }
@@ -812,7 +824,7 @@ function isAllowedSender(sender, participant = '') {
     if (!isOurGroup) return false;
     const p = participant || '';
     if (ALLOWED_NUMBERS.some(num => p.includes(num))) return true;
-    if (p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406')) return true;
+    if (p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406') || p.includes('206343935946909')) return true;
     const meLid = sock?.authState?.creds?.me?.lid || '';
     if (meLid) {
       const cleanLid = meLid.split(':')[0].split('@')[0];
@@ -826,7 +838,7 @@ function isAllowedSender(sender, participant = '') {
     const cleanLid = meLid.split(':')[0].split('@')[0];
     if (cleanLid && sender.includes(cleanLid)) return true;
   }
-  if (sender.includes('82935919157317') || sender.includes('8801955333555')) return true;
+  if (sender.includes('82935919157317') || sender.includes('8801955333555') || sender.includes('8801966608406') || sender.includes('206343935946909')) return true;
   return false;
 }
 
@@ -864,6 +876,80 @@ async function sendWhatsAppMessage(text, options = {}) {
   }
 }
 
+async function sendWhatsAppDocument(filePath, fileName, caption = '', options = {}) {
+  if (!sock || !isWsConnected || !filePath || !fs.existsSync(filePath)) return null;
+  const target = options.to || lastActiveJid || TARGET_JID;
+  const buffer = fs.readFileSync(filePath);
+  const ext = path.extname(filePath).toLowerCase();
+  let mimetype = 'application/octet-stream';
+  if (ext === '.xlsx') mimetype = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+  else if (ext === '.xls') mimetype = 'application/vnd.ms-excel';
+  else if (ext === '.pdf') mimetype = 'application/pdf';
+  else if (ext === '.csv') mimetype = 'text/csv';
+  else if (ext === '.json') mimetype = 'application/json';
+
+  try {
+    const res = await sock.sendMessage(target, {
+      document: buffer,
+      mimetype: mimetype,
+      fileName: fileName || path.basename(filePath),
+      caption: caption || undefined
+    });
+    if (res && res.key && res.key.id) {
+      sentMessageIds.add(res.key.id);
+      console.log(`[WA Bridge] 📄 Sent document ${fileName || path.basename(filePath)} to ${target} (${buffer.length} bytes, msgId=${res.key.id})`);
+    }
+    return res;
+  } catch (err) {
+    console.error(`[WA Bridge] ❌ Error sending document to ${target}:`, err.message);
+    return null;
+  }
+}
+
+let isProcessingOutbox = false;
+async function processWaOutbox() {
+  if (isProcessingOutbox || !sock || !isWsConnected) return;
+  if (!fs.existsSync(WA_OUTBOX_DIR)) return;
+
+  isProcessingOutbox = true;
+  try {
+    const files = fs.readdirSync(WA_OUTBOX_DIR).filter(f => f.endsWith('.json'));
+    for (const f of files) {
+      const jobPath = path.join(WA_OUTBOX_DIR, f);
+      try {
+        const raw = fs.readFileSync(jobPath, 'utf8');
+        const job = JSON.parse(raw);
+        const target = normalizeJid(job.target || TARGET_JID);
+
+        if (job.summary) {
+          await sendWhatsAppMessage(job.summary, { to: target });
+          await new Promise(r => setTimeout(r, 600));
+        }
+
+        if (job.excel_path && fs.existsSync(job.excel_path)) {
+          await sendWhatsAppDocument(job.excel_path, job.excel_name, `📊 ${job.topic || 'Research Dossier'}`, { to: target });
+        }
+
+        const archiveDir = path.join(WA_OUTBOX_DIR, 'archive');
+        if (!fs.existsSync(archiveDir)) fs.mkdirSync(archiveDir, { recursive: true });
+        fs.renameSync(jobPath, path.join(archiveDir, `${Date.now()}_${f}`));
+        console.log(`[WA Bridge] ✅ Processed outbox job: ${f}`);
+      } catch (jobErr) {
+        console.error(`[WA Bridge] ❌ Error processing job ${f}:`, jobErr.message);
+        try {
+          const errDir = path.join(WA_OUTBOX_DIR, 'errors');
+          if (!fs.existsSync(errDir)) fs.mkdirSync(errDir, { recursive: true });
+          fs.renameSync(jobPath, path.join(errDir, f));
+        } catch (e) {}
+      }
+    }
+  } catch (e) {
+    console.error('[WA Bridge] Outbox scan error:', e.message);
+  } finally {
+    isProcessingOutbox = false;
+  }
+}
+
 function autoSanitizeAuth() {
   try {
     if (!fs.existsSync(AUTH_DIR)) return;
@@ -886,6 +972,79 @@ function autoSanitizeAuth() {
     }
   } catch (e) {
     console.error('[WA Bridge] Auto-sanitize error:', e.message);
+  }
+}
+
+async function ensureResearchGroup() {
+  try {
+    const pGroups = getProjectGroupMap();
+    const currentId = pGroups.research?.id;
+    const isPending = !currentId || currentId.includes('pending') || !currentId.endsWith('@g.us');
+
+    const groups = await sock.groupFetchAllParticipating();
+    const list = Object.values(groups).map(g => ({ id: g.id, subject: g.subject, participants: g.participants || [] }));
+    console.log('[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count:', list.length);
+
+    let matched = null;
+    for (const g of list) {
+      const s = (g.subject || '').toLowerCase();
+      const isMatch = /(?:ask\s*&?\s*research|research\s*agent|agy\s*·\s*ask)/i.test(s);
+      const hasTargetParticipant = g.participants.some(p => (p.id || '').includes('8801966608406'));
+      if (isMatch || hasTargetParticipant) {
+        matched = g;
+        break;
+      }
+    }
+
+    if (matched) {
+      console.log(`[WA Bridge] 🎯 Auto-linked Ask & Research Group: ${matched.subject} (${matched.id})`);
+      pGroups.research = {
+        id: matched.id,
+        name: matched.subject || 'AGY · Ask & Research',
+        key: 'research',
+        window: 'agy:research',
+        cwd: '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent'
+      };
+      fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
+      return;
+    }
+
+    if (isPending) {
+      console.log('[WA Bridge] 🚀 Creating dedicated group with 01966608406: "AGY · Ask & Research"...');
+      const participants = ['8801966608406@s.whatsapp.net'];
+      if (TARGET_PHONE && TARGET_PHONE !== '8801966608406') {
+        participants.push(`${TARGET_PHONE}@s.whatsapp.net`);
+      }
+      try {
+        const newGroup = await sock.groupCreate('AGY · Ask & Research', participants);
+        console.log('[WA Bridge] ✅ Group created successfully:', newGroup);
+        if (newGroup && newGroup.id) {
+          pGroups.research = {
+            id: newGroup.id,
+            name: 'AGY · Ask & Research',
+            key: 'research',
+            window: 'agy:research',
+            cwd: '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent'
+          };
+          fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
+
+          let inviteUrl = '';
+          try {
+            const code = await sock.groupInviteCode(newGroup.id);
+            inviteUrl = `https://chat.whatsapp.com/${code}`;
+          } catch (e) {}
+
+          await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n👑 *[AGY · ASK & RESEARCH AGENT]*\n━━━━━━━━━━━━━━━━━━━━━\n> 🎯 *উদ্দেশ্য:* অজানা, নতুন ও অপ্রচলিত বিষয়ে গভীর গবেষণা এবং স্বয়ংক্রিয় এক্সেল ডসিয়ার তৈরি।\n> 📱 *যুক্ত নম্বর:* +8801966608406\n> 📁 *রিসার্চ ডিরেক্টরি:* \`IroScript_Projects/Ask-And-Research-Agent\`\n> 🖥️ *টার্মিনাল সেশন:* \`tmux agy:research\`\n\n⚡ _এই গ্রুপে যেকোনো নতুন বিষয়ের নাম পাঠালে এআই তাৎক্ষণিকভাবে সাব-ফোল্ডার খুলে গবেষণা শুরু করবে এবং এক্সেল রিপোর্ট পাঠাবে।_\n══════════════════════`, { to: newGroup.id });
+
+          const personalTarget = lastPersonalLid || TARGET_JID;
+          await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n✅ *[Ask & Research Agent গ্রুপ তৈরি সম্পন্ন]*\n━━━━━━━━━━━━━━━━━━━━━\n> 👥 *গ্রুপের নাম:* AGY · Ask & Research\n> 📱 *যুক্ত নম্বর:* +8801966608406\n> 🔗 *গ্রুপ লিঙ্ক:* ${inviteUrl || 'অটো-অ্যাড সম্পন্ন'}\n\n⚡ _Ask & Research Agent এখন এই গ্রুপে লাইভ সংযুক্ত।_\n══════════════════════`, { to: personalTarget });
+        }
+      } catch (cgErr) {
+        console.error('[WA Bridge] ❌ Failed to create group via sock.groupCreate:', cgErr.message);
+      }
+    }
+  } catch (err) {
+    console.error('[WA Bridge] Failed in ensureResearchGroup:', err.message);
   }
 }
 
@@ -939,6 +1098,10 @@ async function startBridge() {
         lastActiveJid = meLid.replace(/:.*@/, '@');
         console.log('[WA Bridge] Set lastActiveJid to LID:', lastActiveJid);
       }
+
+      ensureResearchGroup().catch(err => {
+        console.error('[WA Bridge] ensureResearchGroup error:', err.message);
+      });
 
       try {
         let activeConsoleUrl = 'https://textiles-absolute-destinations-omaha.trycloudflare.com';
@@ -1141,6 +1304,9 @@ async function startBridge() {
       lastUserMsgKey = msg.key;
       lastUserMsg = msg;
       lastActiveJid = sender;
+      if (!sender.endsWith('@g.us')) {
+        lastPersonalLid = sender;
+      }
 
       // 1. Direct Terminal Screen Snapshot (/screen or /term)
       if (text === '/screen' || text === '/term' || text === '/tmux') {
@@ -1175,6 +1341,8 @@ async function startBridge() {
           projectCwd = '/home/azureuser/Article-Publishing-Platform';
         } else if (targetWindow === 'agy:game') {
           projectCwd = '/home/azureuser/3D-Game-Design-Studio';
+        } else if (targetWindow === 'agy:research') {
+          projectCwd = '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent';
         }
 
         const shellCmd = text.replace(/^(\$|!|\/sh\s*)/, '').trim();
@@ -1191,6 +1359,38 @@ async function startBridge() {
           await sendWhatsAppMessage(`💻 ══════════════════════ 💻\n⚡ *[সরাসরি শেল এক্সিকিউশন · ${targetWindow}]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📁 *ডিরেক্টরি:* \`${projectCwd}\`\n> ⚙️ *কমান্ড:* \`$ ${shellCmd}\`\n\n📦 *টার্মিনাল আউটপুট:*\n\`\`\`\n${displayOut}\n\`\`\`\n══════════════════════`, { quoted: msg });
         });
         continue;
+      }
+
+      // 2.35. Direct Master Orchestrator routing (/master, /agy0, /admin)
+      if (text.startsWith('/master ') || text.startsWith('/agy0 ') || text.startsWith('/admin ')) {
+        const masterPrompt = text.replace(/^(\/master|\/agy0|\/admin)\s*/i, '').trim();
+        lastUserMsgByWindow['agy:0'] = msg;
+        lastUserMsgKeyByWindow['agy:0'] = msg.key;
+        dispatchToTmux(masterPrompt, 'agy:0');
+        await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n👑 *[AGY MASTER ORCHESTRATOR · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${masterPrompt.substring(0, 80)}"\n\n⚡ _টার্মিনাল সেশন (tmux agy:0) কাজ শুরু করেছে..._\n══════════════════════`, { to: sender });
+        continue;
+      }
+
+      // 2.4. Direct Frappe routing (/frappe, frappe:)
+      if (text.startsWith('/frappe ') || text.toLowerCase().startsWith('frappe: ')) {
+        const frappePrompt = text.replace(/^(\/frappe|frappe:)\s*/i, '').trim();
+        lastUserMsgByWindow['agy:frappe'] = msg;
+        lastUserMsgKeyByWindow['agy:frappe'] = msg.key;
+        dispatchToTmux(frappePrompt, 'agy:frappe');
+        await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n🏢 *[AGY · Frappe ERP Alco · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${frappePrompt.substring(0, 80)}"\n\n⚡ _টার্মিনাল সেশন (tmux agy:frappe) কাজ শুরু করেছে..._\n══════════════════════`, { to: sender });
+        continue;
+      }
+
+      // 2.5. Direct Ask & Research Command (/ask, /research, ask:, research:)
+      if (text.startsWith('/ask ') || text.startsWith('/research ') || text.toLowerCase().startsWith('ask: ') || text.toLowerCase().startsWith('research: ')) {
+        const topic = text.replace(/^(\/ask|\/research|ask:|research:)\s*/i, '').trim();
+        if (topic) {
+          lastUserMsgByWindow['agy:research'] = msg;
+          lastUserMsgKeyByWindow['agy:research'] = msg.key;
+          dispatchToTmux(topic, 'agy:research');
+          await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n🤖 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📌 *বিষয়:* "${topic.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/Ask-And-Research-Agent\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:research) গবেষণা ও ডসিয়ার প্রস্তুত করছে..._\n══════════════════════`, { to: sender });
+          continue;
+        }
       }
 
       // 3. Media Download (Image, Document, etc.)
@@ -1286,8 +1486,10 @@ async function startBridge() {
       try {
         const firstLine = text.trim().split('\n')[0] || text;
         const shortPrompt = firstLine.length > 50 ? firstLine.substring(0, 48) + '...' : firstLine;
-        const headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`;
-        sendWhatsAppMessage(`⏳ ══════════════════════ ⏳\n${headerTitle}\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* "${shortPrompt}"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════`, { to: sender, quoted: msg }).catch(() => {});
+        const isResearch = targetWindow === 'agy:research';
+        const headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : (isResearch ? `🔬 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`);
+        const subMsg = isResearch ? `⚡ _আপনার ব্যক্তিগত রিসার্চ অ্যাসিস্ট্যান্ট গবেষণা ও ডসিয়ার প্রস্তুত করছে..._` : `⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._`;
+        sendWhatsAppMessage(`⏳ ══════════════════════ ⏳\n${headerTitle}\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* "${shortPrompt}"\n\n${subMsg}\n══════════════════════`, { to: sender }).catch(() => {});
       } catch (e) {}
     }
   });
@@ -1311,6 +1513,7 @@ async function startBridge() {
 // Watch transcript for real-time live streaming to WhatsApp
 // Design: Clean, minimal, WhatsApp-native formatting only
 const convTrackers = new Map();
+let lastToolNoticeTime = 0;
 
 const activeTranscriptJobs = new Set();
 
@@ -1561,6 +1764,10 @@ async function processSingleTranscript(transcriptPath) {
 function watchReplies() {
   setInterval(() => {
     if (!sock || !sock.authState.creds.registered) return;
+
+    processWaOutbox().catch(err => {
+      console.error('[WA Bridge] Outbox processing error:', err.message);
+    });
 
     try {
       const recentTranscripts = findRecentTranscripts();
