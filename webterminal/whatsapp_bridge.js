@@ -106,6 +106,7 @@ function getWindowForSender(sender) {
         if (k === 'article') return 'agy:article';
         if (k === 'game') return 'agy:game';
         if (k === 'research') return 'agy:research';
+        if (k === 'reporting') return 'agy:report';
       }
     }
     return 'agy:0';

@@ -1,0 +1,72 @@
+{
+  "yt": {
+    "id": "120363430650656655@g.us",
+    "name": "AGY · YouTube Pipeline",
+    "key": "yt",
+    "window": "agy:yt",
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Social Media/youtube"
+  },
+  "frappe": {
+    "id": "120363430126311832@g.us",
+    "name": "AGY · Frappe ERP Alco",
+    "key": "frappe",
+    "window": "agy:frappe",
+    "cwd": "/home/azureuser/Frappe-erp-Alco"
+  },
+  "tg": {
+    "id": "120363411604185129@g.us",
+    "name": "AGY · Telegram Bot",
+    "key": "tg",
+    "window": "agy:tg",
+    "cwd": "/home/azureuser/telegram-bot"
+  },
+  "history": {
+    "id": "120363429326945679@g.us",
+    "name": "AGY · Digital History",
+    "key": "history",
+    "window": "agy:history",
+    "cwd": "/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT"
+  },
+  "kids": {
+    "id": "120363428733621560@g.us",
+    "name": "AGY · Kids Tube",
+    "key": "kids",
+    "window": "agy:kids",
+    "cwd": "/home/azureuser/kids_tube_with_folder_seection"
+  },
+  "rust": {
+    "id": "120363430134546653@g.us",
+    "name": "AGY · Rust Task",
+    "key": "rust",
+    "window": "agy:rust",
+    "cwd": "/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note"
+  },
+  "article": {
+    "id": "120363412465134469@g.us",
+    "name": "AGY · Article Publishing",
+    "key": "article",
+    "window": "agy:article",
+    "cwd": "/home/azureuser/Article-Publishing-Platform"
+  },
+  "game": {
+    "id": "120363412755041087@g.us",
+    "name": "AGY · 3D Game Design",
+    "key": "game",
+    "window": "agy:game",
+    "cwd": "/home/azureuser/3D-Game-Design-Studio"
+  },
+  "research": {
+    "id": "120363413333339676@g.us",
+    "name": "AGY · Ask & Research",
+    "key": "research",
+    "window": "agy:research",
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent"
+  },
+  "reporting": {
+    "id": "120363430377910102@g.us",
+    "name": "AGY · Reporting Agent",
+    "key": "reporting",
+    "window": "agy:report",
+    "cwd": "/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent"
+  }
+}
