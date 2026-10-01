@@ -164,6 +164,10 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 ### Category XV: Rust Task APK Local High-Speed Delivery Standard (77)
 77. `SETTING_77_MANDATORY_LOCAL_APK_HIGH_SPEED_DOWNLOAD_LINK`: Whenever providing APK files, downloads, or build artifacts for the Rust Task project group (`AGY · Rust Task (rust)`), or upon any APK generation/verification, the agent MUST ALWAYS provide the local high-speed Cloudflare tunnel download link (`https://.../api/raw?path=.../output_apk/app-release.apk&download=1`) served directly from the local Azure VM filesystem. Providing GitHub raw or blob links as primary download source is strictly prohibited because local server downloads offer significantly higher transfer speeds (25+ MB/s) and zero CDN rate limiting. GitHub Actions and repo commits remain strictly for automated build logging and CI synchronization.
 
+### Category XVI: 10-Fold Hard-Locked Agent Perpetual Resilience Architecture (78)
+78. `SETTING_78_TEN_FOLD_HARD_LOCKED_AGENT_PERPETUAL_RESILIENCE`: All eleven (11) workspace agents operating within tmux session `agy` (`agy:0`, `agy:yt`, `agy:frappe`, `agy:tg`, `agy:history`, `agy:kids`, `agy:rust`, `agy:article`, `agy:game`, `agy:research`, `agy:report`) are strictly prohibited from stopping, terminating, idling at raw bash prompts, or remaining in inactive states under any circumstance. Perpetual 24/7 resilience is enforced through ten (10) hard-locked architectural guard systems: (1) Infinite Respawn Runner Wrapper (`agent_runner_wrapper.sh`) preventing raw shell fallbacks; (2) Autonomous Process Guardian & Self-Healing Watchdog (`agent_supervisor_watchdog.py`) probing all 11 agents every 10s and resurrecting unhandled exits; (3) Persistent Systemd User Service (`agy-agent-watchdog.service`) surviving reboots under linger; (4) Canonical Directory CWD Binding in `init_agy_sessions.sh`; (5) Workspace Folder Trust Pre-Seeding in `settings.json`; (6) WhatsApp Bridge Pre-Flight Verification preventing prompt leakage to bash; (7) Stale Git Lock & IPC Pipe Sanitization Protocol; (8) High-Fidelity Health State Telemetry (`agent_health_state.json`); (9) Sentinel Reporter Integration broadcasting real PID and RAM metrics to WhatsApp; and (10) Master Governance Setting 78 & Remote Git Synchronization Lock.
+
+
 ---
 
 ## SECTION 5: 10-FOLD VERIFICATION PROTOCOL & ALL-OR-NOTHING GATING
@@ -328,6 +332,42 @@ $$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrigh
    - প্রতিটি গবেষণা আউটপুটে এবং হোয়াটসঅ্যাপ কার্ডে ইংরেজি এবং বাংলা উভয় ভাষার উপাদানের জন্য পৃথক ১-ক্লিক মোবাইল ডাউনলোড লিংক প্রদান বাধ্যতামূলক:
      - **ইংরেজি সংস্করণ (English Core Tier):** ৬-ট্যাব এক্সেল ডসিয়ার (`.xlsx`) এবং কোর গবেষণা ডসিয়ার (`CORE_RESEARCH_EN.md`) ডাউনলোড লিংক।
      - **বাংলা সংস্করণ (Bangla Final Deliverable Tier):** অনুবাদিত পূর্ণাঙ্গ বাংলা গবেষণা প্রতিবেদন (`RESEARCH_REPORT_BN.md`) ডাউনলোড লিংক এবং মোবাইল ব্রাউজারে ইনলাইন পড়ার অনলাইন প্রিভিউ লিংক।
+
+---
+
+## SECTION 8: 10-FOLD HARD-LOCKED AGENT PERPETUAL RESILIENCE ARCHITECTURE
+
+### ১. প্রেক্ষাপট ও মূল উদ্দেশ্য (Context & Core Objective):
+ওয়ার্কস্পেসের কোনো এজেন্ট (`agy:0`, `agy:yt`, `agy:frappe`, `agy:tg`, `agy:history`, `agy:kids`, `agy:rust`, `agy:article`, `agy:game`, `agy:research`, `agy:report`) যাতে কোনো অবস্থাতেই বন্ধ না হয়, ক্র্যাশ না করে বা র টার্মিনালে `-bash` প্রম্পটে ড্রপ করে নিষ্ক্রিয় অবস্থায় পড়ে না থাকে—তা নিশ্চিত করতে ১০টি হার্ড-লকড স্থাপত্যীয় নিরাপত্তা ব্যবস্থা (10 Hard-Locked Architectural Guard Systems) স্থায়ীভাবে বলবৎ করা হলো।
+
+### ২. ১০টি হার্ড-লকড নিরাপত্তা ব্যবস্থা (The 10 Hard-Locked Systems):
+
+| নং | সিস্টেমের নাম | প্রযুক্তি ও বাস্তবায়ন পথ | কার্যপ্রণালী ও সুরক্ষা বৈশিষ্ট্য |
+| :--- | :--- | :--- | :--- |
+| **১** | **ইনফিনিট রেসপন রানার র‍্যাপার** | `/home/azureuser/.webterminal/agent_runner_wrapper.sh` | প্রতিটি এজেন্টের জন্য অনন্ত লুপ (`while true; do agy ...; done`), ক্র্যাশ/সিগন্যালে অবিলম্বে ১ সেকেন্ডে স্বয়ংক্রিয় রিস্টার্ট, এবং রপিড ক্র্যাশ গার্ড (<৩ সেকেন্ডে ড্রপ হলে ৪ সেকেন্ড ব্যাকঅফ)। |
+| **২** | **স্বয়ংক্রিয় প্রসেস গার্ডিয়ান ও ওয়াচডগ** | `/home/azureuser/.webterminal/agent_supervisor_watchdog.py` | প্রতি ১০ সেকেন্ড পর পর ১১টি এজেন্ট উইন্ডো ও সাব-প্রসেস অডিট; যদি কোনো এজেন্ট শেলে বা অচল অবস্থায় ড্রপ করে, অবিলম্বে টার্মিনালে র‍্যাপার ইনজেকশনের মাধ্যমে পুনরুজ্জীবন (<১০ সেকেন্ড রিকভারি)। |
+| **৩** | **স্থায়ী সিস্টেমড ইউজার সার্ভিস** | `~/.config/systemd/user/agy-agent-watchdog.service` | ওএস ও সিস্টেমড ব্যাকগ্রাউন্ড ডেমন (`Restart=always`, `RestartSec=3s`); ভিএম রিবুট বা সেশন লগআউটেও লিঙ্গার মোডে নিরবচ্ছিন্নভাবে স্বচালিত। |
+| **৪** | **স্ব-নিরাময়কারী মাস্টার সেশন ইনিশিয়ালাইজার** | `/home/azureuser/.webterminal/init_agy_sessions.sh` | উইন্ডো উপস্থিতি, ক্যানোনিকাল ডিরেক্টরি বাইন্ডিং (`cwd`), এবং উইন্ডো রিনেম লক (`allow-rename off`) নিশ্চিতকরণ। |
+| **৫** | **ওয়ার্কস্পেস ফোল্ডার ট্রাস্ট প্রি-সিডিং** | `/home/azureuser/.gemini/antigravity-cli/settings.json` | ১১টি এজেন্টের সকল পাথ `trustedWorkspaces`-এ অগ্রিম নিবন্ধিত; স্টার্টআপে কোনো ট্রাস্ট কনফার্মেশন প্রম্পট আটকে থাকার সুযোগ নেই। |
+| **৬** | **হোয়াটসঅ্যাপ ব্রিজ প্রি-ফ্লাইট ভেরিফিকেশন** | `/home/azureuser/.webterminal/whatsapp_bridge.js` | মেসেজ পাঠানোর পূর্বে এজেন্ট সক্রিয় আছে কিনা পরীক্ষা; শেলে ড্রপ থাকলে তাৎক্ষণিক রিস্টার্ট করে প্রম্পট বাফার ডেলিভারি নিশ্চিতকরণ। |
+| **৭** | **স্টেট লক ও পাইপ স্যানিটাইজেশন প্রোটোকল** | ডিলিট গার্ড নিরাপদ গ্লোবাল আর্কাইভ প্রোটোকল | রিস্টার্টের পূর্বে ৬০ সেকেন্ডের পুরনো `.git/index.lock` ফাইল নিরাপদে `GLOBAL-ARCHIVE/stale_git_locks/`-এ স্থানান্তর (শূন্য `rm`), ড্যাঙ্গলিং ফাইল মুক্ত রাখা। |
+| **৮** | **উচ্চ-নির্ভুল টেলিমেট্রি হার্টবিট ফাইল** | `/home/azureuser/.webterminal/agent_health_state.json` | প্রতি ১০ সেকেন্ডে পার-এজেন্ট পিআইডি, আরএসএস র‍্যাম মেমরি, আপটাইম, রিস্টার্ট কাউন্ট এবং লাইভ স্ট্যাটাস ধারণকারী স্থায়ী JSON ফাইল। |
+| **৯** | **সেন্টিনেল রিপোর্টার ও লাইভ হোয়াটসঅ্যাপ অ্যালার্ট** | `/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent/sentinel_reporter.py` | সেন্টিনেল প্রতি ৩০ মিনিটে `agent_health_state.json` রিড করে ১১টি এজেন্টের লাইভ পিআইডি ও মেমরি হোয়াটসঅ্যাপে সম্প্রচার করে এবং ব্যর্থতায় অ্যালার্ট নথিভুক্ত করে। |
+| **১০** | **মাস্টার গভর্নেন্স সেটিং ৭৮ ও রিমোট গিট লক** | `/home/azureuser/.gemini/AGENTS.md` ও গিট সিঙ্ক | একক নিয়ন্ত্রক নথিতে গভর্নেন্স লক, `unverified:` প্রিফিক্স সহ গিট কমিট এবং গিটহাব রিমোট `main` শাখায় এসএইচএ নিশ্চিতকরণ। |
+
+### ৩. ১১টি এজেন্টের ক্যানোনিকাল বাইন্ডিং ও সার্বক্ষণিক পর্যবেক্ষণ ম্যাট্রিক্স:
+1. `agy:0` (Master Agent) -> `/home/azureuser`
+2. `agy:yt` (YouTube Pipeline) -> `/home/azureuser/IrakIroan/IroScript_Projects/Social Media/youtube`
+3. `agy:frappe` (Frappe ERP) -> `/home/azureuser/Frappe-erp-Alco`
+4. `agy:tg` (Telegram Bot) -> `/home/azureuser/IrakIroan/IroScript_Projects/Social Media/telegram-bot`
+5. `agy:history` (Personal AI & History) -> `/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT`
+6. `agy:kids` (Kids Tube) -> `/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/kids_tube_with_folder_seection`
+7. `agy:rust` (Rust Task) -> `/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note`
+8. `agy:article` (Article Platform) -> `/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/Article-Publishing-Platform`
+9. `agy:game` (3D Game Studio) -> `/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/3D-Game-Design-Studio`
+10. `agy:research` (Ask & Research Agent) -> `/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent`
+11. `agy:report` (Reporting Agent) -> `/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent`
+
 
 
 
