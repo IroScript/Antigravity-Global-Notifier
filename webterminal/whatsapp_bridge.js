@@ -1793,7 +1793,12 @@ async function processSingleTranscript(transcriptPath) {
 
         const waContent = formatMarkdownForWhatsApp(cleanedContent);
         let body = `╭─ NEURAL RESPONSE ─╮\n${waContent}\n╰──────────────────╯`;
-        const completionAccent = '✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅\n\n';
+        let completionAccent = '✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅\n\n';
+        if (targetWindow === 'agy:yt' || targetWindow.includes('yt') || (targetJid && targetJid.includes('120363430650656655'))) {
+          completionAccent = '▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️\n\n';
+        } else if (targetWindow === 'agy:report' || targetWindow.includes('report') || (targetJid && targetJid.includes('120363430377910102'))) {
+          completionAccent = '📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈\n\n';
+        }
         const linkHeader = pasteUrl ? `🔗 ${pasteUrl}\n\n` : '';
         const footerAccent = '\n✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅';
         let fullReply = completionAccent + linkHeader + body + footer + footerAccent;
