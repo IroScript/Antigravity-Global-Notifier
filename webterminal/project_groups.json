@@ -32,14 +32,14 @@
     "name": "AGY · Kids Tube",
     "key": "kids",
     "window": "agy:kids",
-    "cwd": "/home/azureuser/kids_tube_with_folder_seection"
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/kids_tube_with_folder_seection"
   },
   "rust": {
     "id": "120363430134546653@g.us",
     "name": "AGY · Rust Task",
     "key": "rust",
     "window": "agy:rust",
-    "cwd": "/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note"
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note"
   },
   "article": {
     "id": "120363412465134469@g.us",
