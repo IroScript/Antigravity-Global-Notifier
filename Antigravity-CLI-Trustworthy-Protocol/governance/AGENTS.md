@@ -147,6 +147,20 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
     `▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️`
     followed by the title header, timestamp, problem statement / direct answer, and technical breakdown, mirroring the visual standard of the Reporting Agent (`📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈`). Omission of this header in any YouTube agent response is strictly prohibited.
 
+### Category XIV: Ask & Research Agent Dual-Mode Operational Governance & 8-Tier Research Taxonomy (76)
+76. `SETTING_76_ASK_AND_RESEARCH_DUAL_MODE_GOVERNANCE_AND_SUBTYPE_TAXONOMY`: The Ask & Research Agent (`agy:ask` / `agy:research`) operates under a strict dual-mode operational contract:
+    - **Default Ask Mode (সর্বদা প্রশ্নোত্তর মোড):** The agent MUST always function by default as an **Ask Agent** (answering direct queries, providing technical explanations, debugging assistance, architecture advice, and diagnostic summaries). It is strictly forbidden from initiating unsolicited heavy research pipelines, creating research subfolders, or generating multi-tab Excel workbooks unless explicitly instructed.
+    - **Research Mode Activation Condition (রিসার্চ মোড সক্রিয় করার শর্ত):** Research mode is triggered ONLY if the user explicitly writes the word "research" (or "রিসার্চ") or uses the slash command `/research` (or `/Research`) in their prompt.
+    - **8-Tier Research Taxonomy (৮টি সুনির্দিষ্ট রিসার্চ সাব-টাইপ):** When research mode is triggered, the agent executes according to the specified research subtype:
+      1. `/research deep` (Comprehensive Exhaustive Research): In-depth multi-file architectural analysis, theoretical formulations, root-cause autopsy, comprehensive 6-tab Excel workbook, and full research dossier.
+      2. `/research medium` (Standard Balanced Research): Focused component trace, comparative technology evaluation, and structured technical brief.
+      3. `/research light` (Quick Surface Lookup): Rapid syntax, definition, or single-function explanation without heavy multi-file artifacts.
+      4. `/research web` (Live Public & Web Docs Research): Live external web research, official docs, latest framework release notes, and GitHub repository analysis.
+      5. `/research forensic` (System Log & Process Forensic Research): Deep system journal (`journalctl`), process audit, background daemon status, and git commit history investigation.
+      6. `/research architecture` (System Design & Schema Research): Multi-service topologies, database schema models, service contracts, and boundary security audits.
+      7. `/research benchmark` (Performance & Resource Impact Research): CPU/RAM profiling, memory footprint, execution latency, throughput metrics, and hardware stress evaluation.
+      8. `/research adversarial` (Security & Failure-Mode Research): Edge-case discovery, attack surface evaluation, negative testing assertion, and fail-closed security boundary verification.
+
 ---
 
 ## SECTION 5: 10-FOLD VERIFICATION PROTOCOL & ALL-OR-NOTHING GATING
@@ -265,6 +279,30 @@ $$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrigh
 2. **চূড়ান্ত ফলাফল ও ব্যবহারকারী ইন্টারফেস (Tier 2: Final User Deliverable Translated to Bangla):**
    - ব্যবহারকারীর পাঠযোগ্য চূড়ান্ত গবেষণা প্রতিবেদন (`RESEARCH_REPORT_BN.md`), এক্সিকিউটিভ ডসিয়ার ব্রিফিং এবং হোয়াটসঅ্যাপ ও চ্যাট ইন্টারফেসের সমস্ত সরাসরি টেক্সট প্রমিত **বাংলা (Bangla)** ভাষায় প্রাঞ্জলভাবে অনূদিত ও উপস্থাপিত হবে।
    - আন্তর্জাতিক পরিভাষাগুলো প্রথমবার ব্যবহারের সময় বন্ধনীতে মূল ইংরেজি সহ উল্লেখ থাকবে।
+
+### ২. ডিফল্ট আস্ক মোড ও রিসার্চ অ্যাক্টিভেশন নিয়মাবলী (Default Ask Mode vs Explicit Research Trigger):
+1. **ডিফল্ট আস্ক মোড (Default Ask Mode):**
+   - Ask & Research Agent (`agy:ask` / `agy:research`) স্বাভাবিক অবস্থায় **সর্বদা আস্ক এজেন্ট (Asking Agent)** হিসেবে সক্রিয় থাকবে।
+   - ব্যবহারকারীর যেকোনো সরাসরি প্রশ্ন, সমস্যা সমাধান, কোড অডিট, ফাইল পাথ সম্পর্কিত জিজ্ঞাসা বা ডায়াগনস্টিক অনুসন্ধানের ক্ষেত্রে সরাসরি টু-দ্য-পয়েন্ট উত্তর প্রদান করবে।
+   - ডিফল্ট অবস্থায় কোনো অযাচিত গবেষণা সাবফোল্ডার সৃষ্টি, `research_topics/` ডিরেক্টরি তৈরি, বা ৬-ট্যাব এক্সেল ডসিয়ার জেনারেশন সম্পূর্ণ নিষিদ্ধ।
+2. **রিসার্চ মোড সক্রিয়করণ (Research Mode Triggering Rules):**
+   - এজেন্ট কেবল তখনই পূর্ণাঙ্গ গবেষণা পাইপলাইনে প্রবেশ করবে যখন ব্যবহারকারী তার প্রম্পটে সুস্পষ্টভাবে **"research"** (বা **"রিসার্চ"**) শব্দ ব্যবহার করবেন অথবা স্ল্যাশ কমান্ড **/research** (বা **/Research**) উল্লেখ করবেন।
+   - যদি প্রম্পটে "research" বা "/research" উল্লেখ না থাকে, তবে এজেন্ট বিশুদ্ধ **Ask Mode**-এ থেকে উত্তর প্রদান করবে।
+
+### ৩. ৮টি সুনির্দিষ্ট রিসার্চ সাব-টাইপ ও কার্যপ্রণালী (8-Tier Research Taxonomy):
+যখন ইউজার স্ল্যাশ কমান্ড বা রিসার্চের ধরন উল্লেখ করবেন, এজেন্ট নিচের ৮টি নির্দিষ্ট প্রোফাইল অনুযায়ী অনুসন্ধান পরিচালনা করবে:
+
+| কমান্ড সিনট্যাক্স | সাব-টাইপ ক্যাটাগরি | গবেষণার পরিধি ও ডেলভারবলস (Scope & Deliverables) |
+| :--- | :--- | :--- |
+| **`/research deep`** | গভীর ও বিশদ গবেষণা (Exhaustive Deep-Dive) | তাত্ত্বিক সমীকরণ, মাল্টি-ফাইল স্থাপত্য বিশ্লেষণ, রুট-কজ ময়নাতদন্ত, আন্তর্জাতিক লিটারেচার পেপার, ৬-ট্যাব এক্সেল ডসিয়ার (`.xlsx`), এবং দ্বি-স্তর বিশিষ্ট পূর্ণাঙ্গ রিপোর্ট। |
+| **`/research medium`** | ভারসাম্যপূর্ণ গবেষণা (Standard Balanced) | সুনির্দিষ্ট কম্পোনেন্ট ট্রেস, আধুনিক প্রযুক্তির তুলনামূলক বিশ্লেষণ, কার্যকারিতা ও সীমাবদ্ধতা অডিট, এবং কাঠামোগত টেকনিক্যাল ডসিয়ার। |
+| **`/research light`** | দ্রুত সারফেস লুকআপ (Rapid Surface Lookup) | সিনট্যাক্স, লাইব্রেরি ডেফিনিশন, একক ফাংশন/পদ্ধতির ব্যাখ্যা, দ্রুত সংক্ষিপ্ত সারসংক্ষেপ; ভারী কোনো এক্সেল বা ফাইল আর্কিটেকচার তৈরি হবে না। |
+| **`/research web`** | লাইভ ওয়েব ও পাবলিক ডক (Live Web & Official Docs) | ইন্টারনেট সার্চ, ফ্রেমওয়ার্কের সর্বশেষ রিলিজ নোট, গিটহাব অফিসিয়াল রিপোজিটরি, এবং ডিস্ট্রিবিউশন প্যাকেজ প্যাকেজ রেজিস্ট্রি সংক্রান্ত লাইভ তথ্য আহরণ। |
+| **`/research forensic`** | সিস্টেম ও লগ ফরেনসিক (Forensic & Log Investigation) | অপারেটিং সিস্টেম জার্নাল (`journalctl`), ব্যাকগ্রাউন্ড ডেমন স্ট্যাটাস, ইনসিডেন্ট ট্রেস, ক্র্যাশ ডাম্প, এবং গিট হিস্টোরি কমিট টাইমলাইন পুঙ্খানুপুঙ্খ অডিট। |
+| **`/research architecture`** | সিস্টেম স্থাপত্য ও স্কিমা (System Architecture & Schema) | মাল্টি-সার্ভিস মাইক্রোসার্ভিস আর্কিটেকচার, স্কিমা ডাটা মডেল, রিলেশনশিপ ডায়াগ্রাম, সিকিউরিটি বাউন্ডারি, এবং ফ্র্যাপে/সিস্টেম ডোমেইন বাউন্ডারি ডিজাইন। |
+| **`/research benchmark`** | পারফরম্যান্স ও প্রোফাইলিং (Performance & Profiling) | রিয়েল মেমরি ও সিপিইউ ইমপ্যাক্ট, থ্রুপুট, এক্সেস ল্যাটেন্সি সিলিং, সোয়াপ ও আই/ও থ্রটলিং, এবং হার্ডওয়্যার রিসোর্স বেঞ্চমার্কিং। |
+| **`/research adversarial`** | সিকিউরিটি ও বাউন্ডারি এক্সপ্লোরেশন (Security & Adversarial) | এজ-কেস টেস্ট, ফেইলিউর মোড, সিকিউরিটি অ্যাটাক সারফেস, ইনজেকশন ভেক্টর, এবং ডিলিট গার্ড ও ফেইল-ক্লোজড পলিসি স্ট্রেস অ্যানালিসিস। |
+
 
 
 
