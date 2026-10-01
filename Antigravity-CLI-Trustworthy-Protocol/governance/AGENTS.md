@@ -318,6 +318,11 @@ $$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrigh
 ৩. **রিসার্চ উপাদানসমূহের সম্পূর্ণতা (Completeness of All Research Elements):**
    - রিসার্চ মোডের ক্ষেত্রে পৃথক শিট বা পৃথক টপিক ডিরেক্টরি তৈরি হোক বা না হোক, গবেষণার অন্তত সমস্ত উপাদান (`executive_summary`, `theoretical_foundations`, `system_architecture`, `precursors_and_literature`, `feasibility_risk_matrix`, `realization_roadmap`, এবং `raw_elements_json`) বাধ্যতামূলকভাবে ডেটাবেজের `research_elements` টেবিলে সংরক্ষিত থাকবে।
 
+### ৫. সর্বদা মোবাইল-বান্ধব ডাউনলোড লিংক নিশ্চিতকরণ (Mandatory Mobile-Friendly Download Links Mandate):
+১. **বাধ্যতামূলক মোবাইল ডাউনলোড লিংক**: যখনই কোনো গবেষণা সম্পন্ন হবে, ফাইল তৈরি হবে বা ব্যবহারকারী ফাইলের বিষয়ে জানতে চাইবেন, এজেন্টের চূড়ান্ত টার্মিনাল রেসপন্স এবং হোয়াটসঅ্যাপ গ্রুপ ডেলিভারির মধ্যে অবশ্যই সক্রিয় ক্লাউডফ্লেয়ার টানেলের মাধ্যমে প্রস্তুতকৃত সরাসরি ১-ক্লিক মোবাইল ডাউনলোড লিংক (`https://.../api/raw?path=<filepath>&download=1`) প্রদান করতে হবে।
+২. **সকল মূল ফাইলের ডাউনলোড ও প্রিভিউ লিংক**: প্রধান ৬-ট্যাব এক্সেল ডসিয়ার (`.xlsx`)-এর পাশাপাশি কোর ইংরেজি গবেষণা ডসিয়ার (`CORE_RESEARCH_EN.md`) এবং অনুবাদিত বাংলা গবেষণা প্রতিবেদন (`RESEARCH_REPORT_BN.md`)-এর সরাসরি ডাউনলোড লিংক এবং ইনলাইন প্রিভিউ লিংক দৃশ্যমান ও ক্লিকযোগ্যভাবে উপস্থাপন করতে হবে।
+
+
 
 
 
