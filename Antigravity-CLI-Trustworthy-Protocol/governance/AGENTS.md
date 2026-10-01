@@ -161,6 +161,9 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
       7. `/research benchmark` (Performance & Resource Impact Research): CPU/RAM profiling, memory footprint, execution latency, throughput metrics, and hardware stress evaluation.
       8. `/research adversarial` (Security & Failure-Mode Research): Edge-case discovery, attack surface evaluation, negative testing assertion, and fail-closed security boundary verification.
 
+### Category XV: Rust Task APK Local High-Speed Delivery Standard (77)
+77. `SETTING_77_MANDATORY_LOCAL_APK_HIGH_SPEED_DOWNLOAD_LINK`: Whenever providing APK files, downloads, or build artifacts for the Rust Task project group (`AGY · Rust Task (rust)`), or upon any APK generation/verification, the agent MUST ALWAYS provide the local high-speed Cloudflare tunnel download link (`https://.../api/raw?path=.../output_apk/app-release.apk&download=1`) served directly from the local Azure VM filesystem. Providing GitHub raw or blob links as primary download source is strictly prohibited because local server downloads offer significantly higher transfer speeds (25+ MB/s) and zero CDN rate limiting. GitHub Actions and repo commits remain strictly for automated build logging and CI synchronization.
+
 ---
 
 ## SECTION 5: 10-FOLD VERIFICATION PROTOCOL & ALL-OR-NOTHING GATING
