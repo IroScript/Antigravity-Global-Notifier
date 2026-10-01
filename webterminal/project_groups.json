@@ -46,14 +46,14 @@
     "name": "AGY · Article Publishing",
     "key": "article",
     "window": "agy:article",
-    "cwd": "/home/azureuser/Article-Publishing-Platform"
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/Article-Publishing-Platform"
   },
   "game": {
     "id": "120363412755041087@g.us",
     "name": "AGY · 3D Game Design",
     "key": "game",
     "window": "agy:game",
-    "cwd": "/home/azureuser/3D-Game-Design-Studio"
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/3D-Game-Design-Studio"
   },
   "research": {
     "id": "120363413333339676@g.us",
