@@ -142,6 +142,11 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
     - **(4) In what manner it passed (কী উপায়ে টেস্ট পাস করলো):** Literal exit code (e.g. `rc=0`), stdout/stderr snippet, exact SHA-256 hashes, zero exception traces, and cryptographic state confirmation.
     This rule is a universal GLOBAL mandate applicable unconditionally to all AGY and WhatsApp agents operating in the workspace.
 
+### Category XIII: YouTube Agent Header & Visual Identity Standard (75)
+75. `SETTING_75_YOUTUBE_AGENT_PLAY_BUTTON_HEADER_STANDARD`: In every single reply, report, notification, and message sent by or on behalf of the YouTube Agent (`agy:yt`, YouTube Pipeline), the message MUST lead with the exact visual header containing thirteen play button emojis:
+    `▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️`
+    followed by the title header, timestamp, problem statement / direct answer, and technical breakdown, mirroring the visual standard of the Reporting Agent (`📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈`). Omission of this header in any YouTube agent response is strictly prohibited.
+
 ---
 
 ## SECTION 5: 10-FOLD VERIFICATION PROTOCOL & ALL-OR-NOTHING GATING
