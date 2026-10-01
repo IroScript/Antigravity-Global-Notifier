@@ -134,6 +134,14 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 ### Category XI: Azure VM Source Immutability & Unidirectional Sync Lock (73)
 73. `SETTING_73_IMMUTABLE_AZURE_VM_CORE_AND_UNIDIRECTIONAL_GDRIVE_MIRROR_LOCK`: The Azure VM core system, operating system, applications, configurations, databases, source codes, AGY files, Frappe files, system permissions, ownerships, services, processes, packages, environment variables, and user data are strictly IMMUTABLE for all synchronization and verification layers. The sync engine and verification engine operate under a strict unidirectional paradigm: `Azure VM (READ ONLY) -> Sync/Verify Engine -> Google Drive (WRITE/UPDATE/REPAIR)`. Under NO circumstances may any sync worker, daemon, script, or verifier modify, delete, rename, move, truncate, rewrite, chmod, chown, repair, or restore any source file on Azure VM. If repair is required due to disparity or missing files, repair is strictly applied to Google Drive ONLY. When a source file is deleted on Azure VM, Google Drive moves the destination file to `ARCHIVED_DELETIONS/` quarantine via `--backup-dir`; the sync engine and verifier must NEVER attempt to recreate, recover, or write back the deleted file onto Azure VM.
 
+### Category XII: Mandatory Empirical Test Methodology & Evidence Exposure in Every Reply (74)
+74. `SETTING_74_MANDATORY_EMPIRICAL_TEST_METHODOLOGY_AND_EVIDENCE_EXPOSURE`: In every substantive response across all workspace operations and for all WhatsApp agents (`agy:0`, `agy:report`, `agy:ask`, `agy:frappe`, `agy:yt`, `agy:tg`), the agent is strictly prohibited from presenting bare verdict summaries (such as merely outputting 'Vector 1..10 PASS') without transparently disclosing the empirical execution methodology. Every reply must explicitly detail:
+    - **(1) What was tested (কী টেস্ট করা হলো):** Exact names of targets, assertions, files, services, and security boundaries evaluated in the turn.
+    - **(2) How it was tested (কীভাবে টেস্ট করা হলো):** Verbatim machine command line, test runner script, API call, or network/filesystem probe executed in the turn.
+    - **(3) Why it was tested (কেন টেস্ট করা হলো):** Technical objective, rationale, failure-mode prevention, and specific user/system requirement being verified.
+    - **(4) In what manner it passed (কী উপায়ে টেস্ট পাস করলো):** Literal exit code (e.g. `rc=0`), stdout/stderr snippet, exact SHA-256 hashes, zero exception traces, and cryptographic state confirmation.
+    This rule is a universal GLOBAL mandate applicable unconditionally to all AGY and WhatsApp agents operating in the workspace.
+
 ---
 
 ## SECTION 5: 10-FOLD VERIFICATION PROTOCOL & ALL-OR-NOTHING GATING
