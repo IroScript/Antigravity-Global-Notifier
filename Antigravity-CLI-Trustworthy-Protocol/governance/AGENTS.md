@@ -303,6 +303,22 @@ $$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrigh
 | **`/research benchmark`** | পারফরম্যান্স ও প্রোফাইলিং (Performance & Profiling) | রিয়েল মেমরি ও সিপিইউ ইমপ্যাক্ট, থ্রুপুট, এক্সেস ল্যাটেন্সি সিলিং, সোয়াপ ও আই/ও থ্রটলিং, এবং হার্ডওয়্যার রিসোর্স বেঞ্চমার্কিং। |
 | **`/research adversarial`** | সিকিউরিটি ও বাউন্ডারি এক্সপ্লোরেশন (Security & Adversarial) | এজ-কেস টেস্ট, ফেইলিউর মোড, সিকিউরিটি অ্যাটাক সারফেস, ইনজেকশন ভেক্টর, এবং ডিলিট গার্ড ও ফেইল-ক্লোজড পলিসি স্ট্রেস অ্যানালিসিস। |
 
+### ৪. ডেটাবেজ পারসিসটেন্স ও রেস্ট এপিআই ইন্টিগ্রেশন (Database Persistence & REST API Architecture):
+১. **একক সেন্ট্রালাইজড ডাটাবেজ (`.db` SQLite File):**
+   - ব্যবহারকারী কী প্রশ্ন/আস্ক করলেন (`user_query`) এবং এজেন্ট কী উত্তর দিলো (`agent_response`), তা বাধ্যতামূলকভাবে একটি একক SQLite ডাটাবেজ ফাইলে সংরক্ষিত হবে:
+     `/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent/ask_and_research.db`
+২. **রেস্ট এপিআই এন্ডপয়েন্ট (REST API Service on Port 8095):**
+   - ডাটা সংরক্ষণ ও রিট্রিভাল অবশ্যই ডেডিকেটেড ব্যাকগ্রাউন্ড REST API (`http://127.0.0.1:8095/api/interactions`)-এর মাধ্যমে সম্পাদিত হবে।
+   - সিস্টেমড ইউজার সার্ভিস: `ask-research-api.service`।
+   - মূল এন্ডপয়েন্টস:
+     - `POST /api/interactions`: আস্ক ও রিসার্চ উভয় ইন্টারেকশন এবং সমস্ত রিসার্চ উপাদান ইনসার্ট।
+     - `GET /api/interactions`: ফিল্টারিং ও সার্চ সহ অতীত প্রশ্নোত্তর ও গবেষণার ইতিহাস পর্যবেক্ষণ।
+     - `GET /api/interactions/<id>`: সুনির্দিষ্ট ইন্টারেকশনের বিস্তারিত এবং রিসার্চ উপাদানের ফুল-ভিউ।
+     - `GET /api/stats`: আস্ক ও রিসার্চের ক্যাটাগরিভিত্তিক পরিসংখ্যান।
+৩. **রিসার্চ উপাদানসমূহের সম্পূর্ণতা (Completeness of All Research Elements):**
+   - রিসার্চ মোডের ক্ষেত্রে পৃথক শিট বা পৃথক টপিক ডিরেক্টরি তৈরি হোক বা না হোক, গবেষণার অন্তত সমস্ত উপাদান (`executive_summary`, `theoretical_foundations`, `system_architecture`, `precursors_and_literature`, `feasibility_risk_matrix`, `realization_roadmap`, এবং `raw_elements_json`) বাধ্যতামূলকভাবে ডেটাবেজের `research_elements` টেবিলে সংরক্ষিত থাকবে।
+
+
 
 
 
