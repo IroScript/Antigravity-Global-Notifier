@@ -4,69 +4,89 @@
     "name": "AGY · YouTube Pipeline",
     "key": "yt",
     "window": "agy:yt",
-    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube"
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube",
+    "git_remote": "git@github.com:IroScript/Youtube-Pipeline.git",
+    "whatsapp_status": "CONNECTED"
   },
   "frappe": {
     "id": "120363430126311832@g.us",
     "name": "AGY · Frappe ERP Alco",
     "key": "frappe",
     "window": "agy:frappe",
-    "cwd": "/home/azureuser/Frappe-erp-Alco"
+    "cwd": "/home/azureuser/Frappe-erp-Alco",
+    "git_remote": "",
+    "whatsapp_status": "CONNECTED"
   },
   "tg": {
     "id": "120363411604185129@g.us",
     "name": "AGY · Telegram Bot",
     "key": "tg",
     "window": "agy:tg",
-    "cwd": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot"
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot",
+    "git_remote": "",
+    "whatsapp_status": "CONNECTED"
   },
   "history": {
     "id": "120363429326945679@g.us",
     "name": "AGY · Digital History",
     "key": "history",
     "window": "agy:history",
-    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT",
+    "git_remote": "",
+    "whatsapp_status": "CONNECTED"
   },
   "kids": {
     "id": "120363428733621560@g.us",
     "name": "AGY · Kids Tube",
     "key": "kids",
     "window": "agy:kids",
-    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/kids_tube_with_folder_seection"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/kids_tube_with_folder_seection",
+    "git_remote": "git@github.com:IroScript/kids_tube_with_folder_seection.git",
+    "whatsapp_status": "CONNECTED"
   },
   "rust": {
     "id": "120363430134546653@g.us",
     "name": "AGY · Rust Task",
     "key": "rust",
     "window": "agy:rust",
-    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note",
+    "git_remote": "git@github.com:IroScript/Rust_Task_With_Time_Keeping_And_Live_Note.git",
+    "whatsapp_status": "CONNECTED"
   },
   "article": {
     "id": "120363412465134469@g.us",
     "name": "AGY · Article Publishing",
     "key": "article",
     "window": "agy:article",
-    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform"
+    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform",
+    "git_remote": "",
+    "whatsapp_status": "CONNECTED"
   },
   "game": {
     "id": "120363412755041087@g.us",
     "name": "AGY · 3D Game Design",
     "key": "game",
     "window": "agy:game",
-    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio"
+    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio",
+    "git_remote": "git@github.com:IroScript/3d-web-templates.git",
+    "whatsapp_status": "CONNECTED"
   },
   "research": {
     "id": "120363413333339676@g.us",
     "name": "AGY · Ask & Research",
     "key": "research",
     "window": "agy:research",
-    "cwd": "/home/azureuser/IroScript_Projects/Ask-And-Research-Agent"
+    "cwd": "/home/azureuser/IroScript_Projects/Ask-And-Research-Agent",
+    "git_remote": "",
+    "whatsapp_status": "CONNECTED"
   },
   "reporting": {
     "id": "120363430377910102@g.us",
     "name": "AGY · Reporting Agent",
     "key": "reporting",
     "window": "agy:report",
-    "cwd": "/home/azureuser/.webterminal/Agy Whatsapp Agents/Reporting-Agent"
+    "cwd": "/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Reporting-Agent",
+    "git_remote": "https://github.com/IroScript/Antigravity-Global-Notifier.git",
+    "whatsapp_status": "CONNECTED"
   }
 }
