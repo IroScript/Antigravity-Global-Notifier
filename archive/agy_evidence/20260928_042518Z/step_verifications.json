@@ -1,0 +1,130 @@
+{
+  "STEP_1": {
+    "name": "Cryptographic State Integrity (HMAC)",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS",
+      "V9": "PASS"
+    },
+    "V10": "VERIFIED_SUCCESS",
+    "remaining_risks": "Same-UID processes running as azureuser can read ~/.agents/.verification_secret.key because file owner is UID 1000. HMAC prevents blind forgery and tampering, but does not provide an inviolable security boundary against malicious code executing under UID 1000."
+  },
+  "STEP_2": {
+    "name": "State Binding and Target Integrity",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS",
+      "V9": "PASS"
+    },
+    "V10": "VERIFIED_SUCCESS",
+    "remaining_risks": "If a target file is deleted and re-created with identical content, hash check passes (legitimate idempotency). If workspace path changes, task must be re-verified in the new workspace."
+  },
+  "STEP_3": {
+    "name": "Stop Hook Hardening",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "FAIL",
+      "V9": "PASS"
+    },
+    "V10": "FAILED",
+    "remaining_risks": "Native AGY Go runner fails open if the hook process crashes (non-zero exit), times out (10s), or receives SIGKILL. While all internally handled Python exceptions return decision=continue, process-level crashes outside Python control cause AGY to terminate without verification."
+  },
+  "STEP_4": {
+    "name": "File Permission Hardening",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "FAIL",
+      "V9": "PASS"
+    },
+    "V10": "FAILED",
+    "remaining_risks": "Under Linux DAC, the file owner (azureuser) can always change permission bits via chmod. Setting 0555/0444 prevents accidental overwrites and default shell redirection, but an intentional script running as azureuser can execute chmod 755 to regain write access. chattr +i failed with [Errno 1] Operation not permitted (requires root CAP_LINUX_IMMUTABLE)."
+  },
+  "STEP_5": {
+    "name": "Delete-Guard Protection",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS",
+      "V9": "PASS"
+    },
+    "V10": "VERIFIED_SUCCESS",
+    "remaining_risks": "Delete Guard intercepts AGY tool calls (run_command, write_to_file, replace_file_content). However, external processes running in background terminals or outside AGY tool invocations do not pass through PreToolUse hooks."
+  },
+  "STEP_6": {
+    "name": "Global / CWD Independence",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "FAIL",
+      "V4": "PASS",
+      "V5": "FAIL",
+      "V6": "PASS",
+      "V7": "FAIL",
+      "V8": "FAIL",
+      "V9": "PASS"
+    },
+    "V10": "FAILED",
+    "remaining_risks": "CRITICAL ARCHITECTURAL LIMITATION: AGY v1.2.12 workspace discovery is strictly CWD-local. When AGY is invoked from /tmp, /dev/shm, or an unrelated subdirectory, it does not inherit ~/.agents/hooks.json or rules. Global CWD independence CANNOT be guaranteed with existing AGY native configuration alone unless explicitly invoked with --add-dir /home/azureuser or via a root-enforced wrapper."
+  },
+  "STEP_7": {
+    "name": "Git Safety",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS",
+      "V9": "PASS"
+    },
+    "V10": "VERIFIED_SUCCESS",
+    "remaining_risks": "Git safety rules block destructive git commands invoked through AGY tool calls. Direct git execution in an interactive terminal by azureuser without AGY tools is not subject to AGY PreToolUse hooks."
+  },
+  "STEP_8": {
+    "name": "Backup / Production Safety & Real Lifecycle",
+    "vectors": {
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS",
+      "V9": "PASS"
+    },
+    "V10": "VERIFIED_SUCCESS",
+    "remaining_risks": "Full lifecycle enforcement works reliably within the configured workspace (/home/azureuser). External trust boundary limitations (same-UID, hook crash fail-open, external CWD) remain as documented."
+  }
+}

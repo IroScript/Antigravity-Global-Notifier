@@ -1,0 +1,77 @@
+{
+  "all_protected_targets_blocked": true,
+  "tests": [
+    {
+      "description": "Project Dart Source Code",
+      "target_path": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/main.dart",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/mobile/lib/main.dart\nStatus: PERMA",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "Governance Python Script",
+      "target_path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/scripts/verify_10_fold.py",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/scripts/verify_10_fold.py\nStatus: PERMANENTLY DENIED ",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "Git Repository Config",
+      "target_path": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/.git/config",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/.git/config\nStatus: PERMANENTLY DE",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "Agent Rule File",
+      "target_path": "/home/azureuser/.agents/rules/01-safety-levels.md",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/.agents/rules/01-safety-levels.md\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-20260928062904-dc72d4\nReason",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "Gemini Hooks Config",
+      "target_path": "/home/azureuser/.gemini/config/hooks.json",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/.gemini/config/hooks.json\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-20260928062904-07b9a8\nReason: Target",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "HMAC Secret Key",
+      "target_path": "/home/azureuser/.agents/.verification_secret.key",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/.agents/.verification_secret.key\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-20260928062904-340dff\nReason:",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "SQLite Database",
+      "target_path": "/home/azureuser/IrakIroan/azure_file_explorer/metrics_history.db",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/IrakIroan/azure_file_explorer/metrics_history.db\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-2026092806290",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "Home Directory Root",
+      "target_path": "/home/azureuser",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-20260928062904-2bc6e7\nReason: Target '/home/azureuser' is a cr",
+      "status": "PASS (Blocked)"
+    },
+    {
+      "description": "System Root",
+      "target_path": "/",
+      "exit_code": 1,
+      "blocked": true,
+      "stderr_sample": "\ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: INC-DEL-20260928062904-85ecca\nReason: Target '/' is a critical system/user root\nSafe",
+      "status": "PASS (Blocked)"
+    }
+  ]
+}

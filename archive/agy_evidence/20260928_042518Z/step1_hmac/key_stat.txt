@@ -1,0 +1,1 @@
+-rw------- 1 azureuser azureuser 65 Sep 28 04:25 /home/azureuser/.agents/.verification_secret.key

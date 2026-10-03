@@ -1,0 +1,10 @@
+CWD: /home/azureuser/scratch_adversarial_test/deep_dir/sub1/sub2
+RC: 0
+Elapsed: 4.508154630661011s
+
+STDOUT:
+Yes, the 10-layer verification protocol is mandatory and required for completion under [05-ten-fold-verification-protocol.md](file:///home/azureuser/.gemini/config/rules/05-ten-fold-verification-protocol.md). Unverified completion is strictly forbidden.
+
+
+STDERR:
+

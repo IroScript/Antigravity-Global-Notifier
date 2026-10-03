@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "checks": {
+    "guard_safe_exit_0": true,
+    "guard_safe_allowed": true,
+    "stop_hook_exit_0": true,
+    "stop_hook_allowed_info_turn": true,
+    "verify_engine_exit_0": true,
+    "verify_engine_output_success": true
+  }
+}

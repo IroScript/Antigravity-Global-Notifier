@@ -1,0 +1,1 @@
+{"task_name": "b5_hash_tamper", "timestamp": 1790568354.195331, "V10": "VERIFIED_SUCCESS", "failed_vectors": [], "evidence": {"V6": {"/some/file": "0000000000000000000000000000000000000000000000000000000000000000"}}}

@@ -1,0 +1,5 @@
+=== TESTING HARDENING 3: STOP HOOK FAIL-CLOSED ===
+Test 7 (Missing state): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: You claimed completion, but NO machine verification record (/tmp/nonexistent_state_file_123.json) exists. You MUST execute verify_10_fold.py to produce signed empirical evidence."}
+Test 8a (Malformed state JSON): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Verification state is unreadable or malformed JSON: Expecting value: line 1 column 1 (char 0)"}
+Test 8b (Malformed stdin): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Failed to parse Stop hook payload: Expecting value: line 1 column 1 (char 0)"}
+Test 9a (Unreadable key permission error): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Failed to read HMAC key: [Errno 13] Permission denied: '/etc/shadow'"}

@@ -1,0 +1,209 @@
+[
+  {
+    "path": "/home/azureuser/.gemini/config/hooks.json",
+    "is_symlink": false,
+    "target": null,
+    "size": 547,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "0785458c001ebac72e8aa08c022d6f8f7e4c85f32ce77d116fc5d23d83805263"
+  },
+  {
+    "path": "/home/azureuser/.gemini/config/AGENTS.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 187,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "bf3fddeceb6b9a7ff2fd4d99fb61bcc1dde5007ac5f5656f23219bab080bb3ca"
+  },
+  {
+    "path": "/home/azureuser/.gemini/config/rules/05-ten-fold-verification-protocol.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 262,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "f608e11f1847c510be16f183b29b82ecc4003d6137d50040fdc42755884232d2"
+  },
+  {
+    "path": "/home/azureuser/.gemini/AGENTS.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 187,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "bf3fddeceb6b9a7ff2fd4d99fb61bcc1dde5007ac5f5656f23219bab080bb3ca"
+  },
+  {
+    "path": "/home/azureuser/.gemini/GEMINI.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 187,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "bf3fddeceb6b9a7ff2fd4d99fb61bcc1dde5007ac5f5656f23219bab080bb3ca"
+  },
+  {
+    "path": "/home/azureuser/AGENTS.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 7408,
+    "mode": "0o100644",
+    "owner": "1000:1000",
+    "sha256": "c2905cbb2b7b9dfb9dd99e7d02d91c5355b05362bd6fedb621d9dddfcdb30a92"
+  },
+  {
+    "path": "/home/azureuser/.agents/hooks.json",
+    "is_symlink": false,
+    "target": null,
+    "size": 547,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "0785458c001ebac72e8aa08c022d6f8f7e4c85f32ce77d116fc5d23d83805263"
+  },
+  {
+    "path": "/home/azureuser/.agents/hooks/delete_guard.py",
+    "is_symlink": false,
+    "target": null,
+    "size": 12032,
+    "mode": "0o100555",
+    "owner": "1000:1000",
+    "sha256": "4728367f746b833ce716677475c62de0fb0100de34c9772c1993f157e29ea786"
+  },
+  {
+    "path": "/home/azureuser/.agents/hooks/completion_gate_stop_hook.py",
+    "is_symlink": false,
+    "target": null,
+    "size": 7981,
+    "mode": "0o100555",
+    "owner": "1000:1000",
+    "sha256": "74747084038228b28fdb3d78f065c4678f85fab6cd50c1d4ebb17946aab447f0"
+  },
+  {
+    "path": "/home/azureuser/.agents/completion_gate_stop_hook.py",
+    "is_symlink": false,
+    "target": null,
+    "size": 4481,
+    "mode": "0o100755",
+    "owner": "1000:1000",
+    "sha256": "0d3e8e1c6ab46c9017317b5a6f76b62fccb0fc86576b5ee039a8e4fff6bd762a"
+  },
+  {
+    "path": "/home/azureuser/.agents/verify_10_fold.py",
+    "is_symlink": false,
+    "target": null,
+    "size": 11592,
+    "mode": "0o100555",
+    "owner": "1000:1000",
+    "sha256": "efd35f545d537e5854f6eef17d6bb5513ff667355ef0ec5a8200be0e04f6f533"
+  },
+  {
+    "path": "/home/azureuser/.agents/verification_state.json",
+    "is_symlink": false,
+    "target": null,
+    "size": 2150,
+    "mode": "0o100644",
+    "owner": "1000:1000",
+    "sha256": "09e1676589d9337e6febe78c49736c1c0c2e43d484fcbc0a71b7f9f393877895"
+  },
+  {
+    "path": "/home/azureuser/.agents/completion_gate_attempts.jsonl",
+    "is_symlink": false,
+    "target": null,
+    "size": 17060,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "8d464116f16f6b13b6de510fea516fdc11275dc416ca8bf14e0e4c907f4d011d"
+  },
+  {
+    "path": "/home/azureuser/.agents/.verification_secret.key",
+    "is_symlink": false,
+    "target": null,
+    "size": 65,
+    "mode": "0o100600",
+    "owner": "1000:1000",
+    "sha256": "7f2ea8a0dde3de579febb0def5242df238c14e17c83def96efed69c3ef3ffa2b"
+  },
+  {
+    "path": "/home/azureuser/.agents/settings.json",
+    "is_symlink": true,
+    "target": "/home/azureuser/.gemini/antigravity-cli/settings.json",
+    "size": 53,
+    "mode": "0o120777",
+    "owner": "1000:1000",
+    "sha256": null
+  },
+  {
+    "path": "/home/azureuser/.agents/mcp_config.json",
+    "is_symlink": false,
+    "target": null,
+    "size": 22,
+    "mode": "0o100664",
+    "owner": "1000:1000",
+    "sha256": "38935ac9bd01a9a91be32d16fc131d8b9d46fbcede88855e85c01f31c7347615"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/01-safety-levels.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 1082,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "f6f1e4d06e7a4b53a0c77ff4b8b5344e1fad48b152f97deb4415abd56b26f093"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/02-architecture-roles.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 773,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "1392bb17ab0b72a3c2bf3659ed21ae543082f8d671a16a22d275628e6fd5884e"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/03-delete-proof-guard.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 603,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "8f118ba7dfb9557ba10e6b8f7215dc70c88cc49391244900f7ec559226748c11"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/04-honesty-and-truth-verification.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 9386,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "9825918e16d3f4ce4b440b6e71cd1a7c61f4943293afcd72a291fddaf33eb145"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/05-ten-fold-verification-protocol.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 12817,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "741419046bb593d6172fcc9ed2638163969f77be24ef573f2669a38e7069a8e3"
+  },
+  {
+    "path": "/home/azureuser/.agents/rules/test_tiny.md",
+    "is_symlink": false,
+    "target": null,
+    "size": 41,
+    "mode": "0o100444",
+    "owner": "1000:1000",
+    "sha256": "acd21f053f58520a104c9daeba82f0b301db9e72b12d252fca114124318c8458"
+  },
+  {
+    "path": "/home/azureuser/AGY-MASTER/POLICIES/delete_guard.py",
+    "is_symlink": false,
+    "target": null,
+    "size": 10680,
+    "mode": "0o100755",
+    "owner": "1000:1000",
+    "sha256": "cfaac460eceb813d5210bd01d2aa86c67ed654d7fd52af3f06c322d3b75b5010"
+  }
+]

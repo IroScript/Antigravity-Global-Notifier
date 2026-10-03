@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "checks": {
+    "hooks_json_valid": true,
+    "rule05_has_always_on": true,
+    "rule05_has_100_settings": true,
+    "gov_has_50_truth_settings": true,
+    "gov_has_10_vectors": true,
+    "gitignore_blocks_secret_key": true,
+    "gitignore_blocks_state": true
+  }
+}

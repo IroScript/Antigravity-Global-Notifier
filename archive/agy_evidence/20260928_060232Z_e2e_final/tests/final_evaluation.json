@@ -1,0 +1,20 @@
+{
+  "scorecard": {
+    "V1_EXISTENCE": "PASS",
+    "V2_CONTENT_CONFIG": "PASS",
+    "V3_DISCOVERY": "PASS",
+    "V4_EXECUTION": "PASS",
+    "V5_ADVERSARIAL_NEGATIVE": "PASS",
+    "V6_INTEGRITY": "PASS",
+    "V7_PERSISTENCE": "PASS",
+    "V8_BYPASS_RESISTANCE": "PASS",
+    "V9_MACHINE_EVIDENCE": "PASS"
+  },
+  "all_9_pass": true,
+  "v10_mechanically_derived_verdict": "VERIFIED_SUCCESS",
+  "target_file": "/home/azureuser/agy_evidence/20260928_060232Z_e2e_final/work/system_health_report.json",
+  "target_sha256": "5713ef4aa5a05be5ba987d0efe43c5f3ab57e59ca0af056acfcc53d131e15e5c",
+  "hmac_verified": true,
+  "stop_decision": "allow",
+  "timestamp_utc": "2026-09-28T06:02:57Z"
+}

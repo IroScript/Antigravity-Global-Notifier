@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "details": {
+    "global_hooks_intercept_across_cwds": true,
+    "unpreventable_limitations": [
+      "Same-UID DAC access: Processes running under azureuser (UID 1000) outside AGY tool execution share access to readable files.",
+      "Native Go hook fail-open: If hook process crashes with SIGKILL or exceeds timeout (>10s), native AGY runner logs a warning and proceeds.",
+      "Non-root filesystem immutability: chattr +i cannot be applied without CAP_LINUX_IMMUTABLE (exit code 1)."
+    ]
+  }
+}

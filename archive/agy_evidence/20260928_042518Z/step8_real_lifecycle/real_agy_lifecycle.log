@@ -1,0 +1,27 @@
+Verifier output:
+ [*] Starting 10-Level Verification (v1.3.0) for task: real_lifecycle_chain
+    Workspace: /home/azureuser | Session: default_session
+  V1 (Existence): PASS
+  V2 (Content/Config): PASS
+  V3 (Discovery): PASS
+  V4 (Execution): PASS
+  V5 (Adversarial): PASS
+  V6 (Integrity): PASS
+  V7 (Persistence): PASS
+  V8 (Attack Surface): PASS
+  V9 (Evidence): PASS
+==========================================
+  V10 (Derived Verdict): VERIFIED_SUCCESS
+==========================================
+[+] Cryptographically signed state written to: /home/azureuser/.agents/verification_state.json
+[+] HMAC-SHA256 signature: 5346223c1e63d087...9164a9cc
+
+Verifier returncode: 0
+Signed V10: VERIFIED_SUCCESS
+HMAC: 5346223c1e63d087...
+Stop hook decision: {"decision": "allow"}
+
+Tampered disk Stop hook decision: {"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Target file '/home/azureuser/scratch_adversarial_test/real_lifecycle_target.txt' was TAMPERED on disk post-verification! Expected SHA: cd790a041938..., Actual Disk SHA: 18434d50e8b7..."}
+
+Restored disk Stop hook decision: {"decision": "allow"}
+

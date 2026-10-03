@@ -1,0 +1,129 @@
+{
+  "verdict": "PASS",
+  "items": [
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules",
+      "is_dir": true,
+      "exists": true
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks",
+      "is_dir": true,
+      "exists": true
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/scripts",
+      "is_dir": true,
+      "exists": true
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance",
+      "is_dir": true,
+      "exists": true
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules/01-safety-levels.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 1082,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules/02-architecture-roles.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 773,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules/03-delete-proof-guard.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 603,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules/04-honesty-and-truth-verification.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 9386,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/rules/05-ten-fold-verification-protocol.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 12817,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 547,
+      "mode": "0o100444",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/delete_guard.py",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 12032,
+      "mode": "0o100755",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/completion_gate_stop_hook.py",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 7981,
+      "mode": "0o100755",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/scripts/verify_10_fold.py",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 11592,
+      "mode": "0o100755",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 7408,
+      "mode": "0o100644",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 7408,
+      "mode": "0o100644",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/.gitignore",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 265,
+      "mode": "0o100664",
+      "owner": "1000:1000"
+    },
+    {
+      "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/README.md",
+      "is_file": true,
+      "exists": true,
+      "size_bytes": 1340,
+      "mode": "0o100664",
+      "owner": "1000:1000"
+    }
+  ]
+}

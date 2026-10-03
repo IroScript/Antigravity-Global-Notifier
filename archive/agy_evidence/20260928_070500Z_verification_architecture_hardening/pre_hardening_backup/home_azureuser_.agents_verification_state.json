@@ -1,0 +1,113 @@
+{
+  "protocol_version": "2.0",
+  "verifier_version": "1.3.0",
+  "task_name": "adversarial_audit_flaws_acknowledgement",
+  "session_id": "default_session",
+  "workspace_root": "/home/azureuser",
+  "target_files": [
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md",
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json"
+  ],
+  "file_hashes": {
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md": "c2905cbb2b7b9dfb9dd99e7d02d91c5355b05362bd6fedb621d9dddfcdb30a92",
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md": "c2905cbb2b7b9dfb9dd99e7d02d91c5355b05362bd6fedb621d9dddfcdb30a92",
+    "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json": "0785458c001ebac72e8aa08c022d6f8f7e4c85f32ce77d116fc5d23d83805263"
+  },
+  "timestamp": 1790578793.8948936,
+  "formatted_time": "2026-09-28T06:59:53Z",
+  "V10": "VERIFIED_SUCCESS",
+  "failed_vectors": [],
+  "vectors": {
+    "V1": "PASS",
+    "V2": "PASS",
+    "V3": "PASS",
+    "V4": "PASS",
+    "V5": "PASS",
+    "V6": "PASS",
+    "V7": "PASS",
+    "V8": "PASS",
+    "V9": "PASS"
+  },
+  "evidence": {
+    "V1": [
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+        "exists": true,
+        "size": 7408,
+        "mode": "0o100644"
+      },
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md",
+        "exists": true,
+        "size": 7408,
+        "mode": "0o100644"
+      },
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json",
+        "exists": true,
+        "size": 547,
+        "mode": "0o100444"
+      }
+    ],
+    "V2": [
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+        "line_count": 86,
+        "readable": true
+      },
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md",
+        "line_count": 86,
+        "readable": true
+      },
+      {
+        "path": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json",
+        "valid_json": true
+      }
+    ],
+    "V3": [],
+    "V4": {
+      "cmd": "test -f /home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "V5": {
+      "cmd": "rm -f /home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+      "rc": 1,
+      "contained": true,
+      "output": " \ud83d\uded1 [DELETE-PROOF HARD BLOCK]\nOperation: rm -f /home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md\nStatus: PERMANENTLY DENIED (Rule 1, 2)\nIncident: IN"
+    },
+    "V6": {
+      "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md": "c2905cbb2b7b9dfb9dd99e7d02d91c5355b05362bd6fedb621d9dddfcdb30a92",
+      "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md": "c2905cbb2b7b9dfb9dd99e7d02d91c5355b05362bd6fedb621d9dddfcdb30a92",
+      "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json": "0785458c001ebac72e8aa08c022d6f8f7e4c85f32ce77d116fc5d23d83805263"
+    },
+    "V7": {
+      "persisted_on_disk": true
+    },
+    "V8": [
+      {
+        "file": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+        "world_writable": false
+      },
+      {
+        "file": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/GEMINI.md",
+        "world_writable": false
+      },
+      {
+        "file": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/hooks.json",
+        "world_writable": false
+      }
+    ],
+    "V9": {
+      "timestamp": "2026-09-28T06:59:53Z",
+      "epoch": 1790578793.8947911,
+      "uid": 1000,
+      "gid": 1000,
+      "host": "FatehAli"
+    }
+  },
+  "hmac_signature": "f6a82f68f66220651d0d90bfcaa49c6a88e19eb4fbd7ad24c833fe7b11d7cdca"
+}

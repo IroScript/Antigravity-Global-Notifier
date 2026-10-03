@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .wt_last_tab_color
 .agy_evidence/
+webterminal/wa_outbox/

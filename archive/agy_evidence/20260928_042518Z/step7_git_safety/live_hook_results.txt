@@ -1,0 +1,8 @@
+Test Live Guard 13 (rm hooks.json): deny
+Test Live Guard 14 (write_to_file hooks.json): deny
+Test Live Guard 15 (chmod hooks.json): deny
+Test Live Guard 19 (git push --force): deny
+Test Live Guard 20 (git branch -D): deny
+Test Live Guard 21 (gh repo delete): deny
+Test Live Normal Git (git status): allow
+Test Live Normal Git (git commit): allow

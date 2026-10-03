@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "tests": [
+    {
+      "name": "Missing State File",
+      "expected_decision": "continue",
+      "actual_decision": "continue",
+      "passed": true
+    },
+    {
+      "name": "Tampered HMAC Signature",
+      "expected_decision": "continue",
+      "actual_decision": "continue",
+      "passed": true
+    },
+    {
+      "name": "Destructive git reset --hard Denial",
+      "expected_decision": "deny",
+      "actual_decision": "deny",
+      "passed": true
+    }
+  ]
+}

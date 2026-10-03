@@ -1,0 +1,17 @@
+{
+  "test-hook": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /home/azureuser/AGY-MASTER/POLICIES/hook_experiment/hook.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

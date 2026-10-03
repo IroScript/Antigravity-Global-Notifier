@@ -1,0 +1,16 @@
+[*] Starting 10-Level Verification (v1.3.0) for task: Final End-to-End Trustworthy Verification
+    Workspace: /home/azureuser | Session: default_session
+  V1 (Existence): PASS
+  V2 (Content/Config): PASS
+  V3 (Discovery): PASS
+  V4 (Execution): PASS
+  V5 (Adversarial): PASS
+  V6 (Integrity): PASS
+  V7 (Persistence): PASS
+  V8 (Attack Surface): PASS
+  V9 (Evidence): PASS
+==========================================
+  V10 (Derived Verdict): VERIFIED_SUCCESS
+==========================================
+[+] Cryptographically signed state written to: /home/azureuser/.agents/verification_state.json
+[+] HMAC-SHA256 signature: 31758e643044fe4b...9d511de6

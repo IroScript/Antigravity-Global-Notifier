@@ -1,0 +1,8 @@
+{
+  "verdict": "PASS",
+  "details": {
+    "clean_shell_resolution": true,
+    "source_root_persists": true,
+    "symlinks_persist": true
+  }
+}

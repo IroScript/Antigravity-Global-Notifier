@@ -1,0 +1,13 @@
+=== TESTING HARDENING 1: HMAC ===
+Test 1 (Forged state without HMAC): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Verification state has NO cryptographic HMAC signature (untrusted/forged)."}
+Verifier execution: rc=0
+Valid state HMAC present: True (c766b98f00b3704b...)
+Test 2 (Modified state after signing): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: HMAC signature verification FAILED. State has been tampered with post-verification."}
+Test 3 (Wrong signature): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: HMAC signature verification FAILED. State has been tampered with post-verification."}
+
+=== TESTING HARDENING 2: BINDING & TARGET INTEGRITY ===
+Clean baseline verification: rc=0, out={"decision": "allow"}
+Test 4 (Modified target on disk): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Target file '/home/azureuser/scratch_adversarial_test/target_h1_h2.txt' was TAMPERED on disk post-verification! Expected SHA: 2b080c5cb3e7..., Actual Disk SHA: b8e1f4f99b9d..."}
+Target content restored: rc=0, out={"decision": "allow"}
+Test 5 (Missing target file): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Target file '/tmp/missing_nonexistent_file_9999.txt' recorded in state no longer exists on disk."}
+Test 6 (Wrong workspace): rc=0, out={"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Workspace root '/nonexistent/phantom/workspace' recorded in verification state does not exist or is invalid."}

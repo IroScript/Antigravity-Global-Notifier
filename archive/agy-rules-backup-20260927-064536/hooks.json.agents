@@ -1,0 +1,17 @@
+{
+  "boundary-guard": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

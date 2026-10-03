@@ -1,0 +1,11 @@
+{
+  "input_payload": {
+    "terminationReason": "completed",
+    "finalModelOutput": "Task is completed and all tests passed."
+  },
+  "response": {
+    "decision": "allow"
+  },
+  "exit_code": 0,
+  "allowed": true
+}

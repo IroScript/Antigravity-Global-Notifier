@@ -3,10 +3,10 @@ const path = require('path');
 const https = require('https');
 const { execSync, exec } = require('child_process');
 
-const baileysPath = '/home/azureuser/.npm-global/lib/node_modules/@openclaw/whatsapp/node_modules/baileys';
+const baileysPath = path.join(__dirname, 'node_modules/@whiskeysockets/baileys');
 const baileys = require(baileysPath);
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = baileys;
-const pino = require(path.join(baileysPath, 'node_modules/pino'));
+const pino = require('pino');
 
 const AUTH_DIR = '/home/azureuser/.webterminal/wa_auth';
 const TARGET_PHONE_FILE = '/home/azureuser/.webterminal/target_phone.txt';

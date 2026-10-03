@@ -1,0 +1,6 @@
+RC: 0
+STDOUT:
+{"decision": "continue", "reason": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: Verification state has NO cryptographic HMAC signature (untrusted/forged)."}
+
+STDERR:
+

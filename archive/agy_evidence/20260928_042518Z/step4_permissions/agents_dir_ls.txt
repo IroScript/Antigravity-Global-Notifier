@@ -1,0 +1,28 @@
+total 76
+drwxrwxr-x  6 azureuser azureuser  4096 Sep 28 04:26 .
+drwxr-xr-x 21 azureuser azureuser  4096 Sep 28 04:25 ..
+-rw-------  1 azureuser azureuser    65 Sep 28 04:25 .verification_secret.key
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 28 04:26 __pycache__
+-rw-rw-r--  1 azureuser azureuser 15407 Sep 28 04:26 completion_gate_attempts.jsonl
+-rwxr-xr-x  1 azureuser azureuser  4481 Sep 28 03:50 completion_gate_stop_hook.py
+drwxr-xr-x  2 azureuser azureuser  4096 Sep 28 03:50 hooks
+-r--r--r--  1 azureuser azureuser   553 Sep 28 03:51 hooks.json
+-rw-rw-r--  1 azureuser azureuser    22 Sep 27 05:51 mcp_config.json
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 27 17:57 rules
+lrwxrwxrwx  1 azureuser azureuser    53 Sep 27 07:14 settings.json -> /home/azureuser/.gemini/antigravity-cli/settings.json
+drwxrwxr-x  2 azureuser azureuser  4096 Sep 27 05:51 skills
+-rw-r--r--  1 azureuser azureuser  1505 Sep 28 04:26 verification_state.json
+-r-xr-xr-x  1 azureuser azureuser 11592 Sep 28 04:26 verify_10_fold.py
+total 16
+drwxr-xr-x 2 azureuser azureuser 4096 Sep 28 03:50 .
+drwxrwxr-x 6 azureuser azureuser 4096 Sep 28 04:26 ..
+-r-xr-xr-x 1 azureuser azureuser 7981 Sep 28 04:26 completion_gate_stop_hook.py
+total 52
+drwxrwxr-x 2 azureuser azureuser  4096 Sep 27 17:57 .
+drwxrwxr-x 6 azureuser azureuser  4096 Sep 28 04:26 ..
+-r--r--r-- 1 azureuser azureuser  1082 Sep 27 07:06 01-safety-levels.md
+-r--r--r-- 1 azureuser azureuser   773 Sep 27 07:06 02-architecture-roles.md
+-r--r--r-- 1 azureuser azureuser   603 Sep 27 07:06 03-delete-proof-guard.md
+-r--r--r-- 1 azureuser azureuser  9386 Sep 28 03:51 04-honesty-and-truth-verification.md
+-r--r--r-- 1 azureuser azureuser 12817 Sep 28 03:51 05-ten-fold-verification-protocol.md
+-r--r--r-- 1 azureuser azureuser    41 Sep 27 17:57 test_tiny.md

@@ -1,0 +1,27 @@
+=== TESTING DISPOSABLE DELETE GUARD ENHANCEMENTS ===
+[PASS] Attack 13: rm protected file: decision=deny
+    Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_1_2_DIRECT_DELETE] Direct deletion command 'rm' is strictly prohib...
+[PASS] Attack 14a: write_to_file protected file: decision=deny
+    Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_38] Overwriting protected system/policy/archive target '/home/azur...
+[PASS] Attack 14b: replace_file_content protected file: decision=deny
+    Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_38] Modifying protected system/policy/archive target '/home/azureu...
+[FAIL] Attack 15a: chmod protected file: decision=allow
+[FAIL] Attack 15b: mv protected file: decision=allow
+[FAIL] Attack 15c: ln protected file: decision=allow
+[FAIL] Attack 19a: git push --force: decision=allow
+[FAIL] Attack 19b: git push -f: decision=allow
+[FAIL] Attack 19c: git push --force-with-lease: decision=allow
+[FAIL] Attack 19d: git push --delete: decision=allow
+[FAIL] Attack 20: git branch -D: decision=allow
+[PASS] Attack 21a: git reset --hard: decision=deny
+    Reason: 🛑 [DELETE-PROOF HARD DENIAL: RULE_11_GIT_RESET_HARD] Destructive 'git reset --hard' is prohibited in...
+[FAIL] Attack 21b: gh repo delete: decision=allow
+[PASS] Normal Git: git status: decision=allow
+[PASS] Normal Git: git add: decision=allow
+[PASS] Normal Git: git commit: decision=allow
+[PASS] Normal Git: git push (normal): decision=allow
+[PASS] Normal Git: git pull: decision=allow
+[PASS] Normal Git: git fetch: decision=allow
+[PASS] Normal Git: git checkout -b: decision=allow
+
+[+] All tests completed.

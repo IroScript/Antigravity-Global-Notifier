@@ -26,12 +26,12 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 
 ---
 
-## SECTION 3: 40-POINT DELETE-PROOF ARCHITECTURE GUARD
+## SECTION 3: DELETE FEATURE APPROVED ARCHITECTURE GUARD
 
-- **Global File Removal Prohibition**: Direct or indirect file removal operations are intercepted and denied by the PreToolUse hook (`delete_guard.py`).
-- **Zero Privilege Escalation**: Superuser commands are completely restricted.
-- **Safe Archiving Protocol**: When any file or artifact is retired, move it safely into `GLOBAL-ARCHIVE` using `safe_archive.py`.
-- **Runtime Hook**: The policy engine runs `delete_guard.py` at every tool execution step.
+- **Delete Feature Approved**: File removal operations (`rm`, `rmdir`, `unlink`, `shutil.rmtree`, `git clean`, etc.) requested by the user or required for workspace cleanup, refactoring, and maintenance are APPROVED and permitted across project workspaces.
+- **Delete Lock Lifted**: The legacy hard fail-closed delete lock has been replaced with user-authorized deletion across all workspaces.
+- **OS Root Protection**: Critical operating system root directories (`/etc`, `/boot`, `/usr`, `/bin`, `/sbin`, `/root`, `/`) remain protected from accidental destruction.
+- **Runtime Hook**: The policy engine runs `delete_guard.py` at tool execution with the delete feature approved.
 
 ---
 

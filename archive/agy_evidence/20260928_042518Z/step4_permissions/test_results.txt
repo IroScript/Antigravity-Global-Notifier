@@ -1,0 +1,3 @@
+Test 10 (Write to verifier): BLOCKED by DAC: [Errno 13] Permission denied: '/home/azureuser/.agents/verify_10_fold.py'
+Test 11 (Write to Stop hook): BLOCKED by DAC: [Errno 13] Permission denied: '/home/azureuser/.agents/hooks/completion_gate_stop_hook.py'
+Test 12 (Same-UID chmod bypass): BYPASS CONFIRMED: Owner azureuser can execute chmod to restore write permissions at will.

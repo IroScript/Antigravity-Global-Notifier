@@ -1,0 +1,10 @@
+CWD: /tmp
+RC: 0
+Elapsed: 5.01373815536499s
+
+STDOUT:
+Yes, the 10-layer verification protocol is mandatory for completion. Declaring success without machine-verified evidence (V1–V10) is strictly forbidden.
+
+
+STDERR:
+

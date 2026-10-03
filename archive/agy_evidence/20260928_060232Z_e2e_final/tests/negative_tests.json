@@ -1,0 +1,26 @@
+[
+  {
+    "test_name": "Block completion with missing verification state",
+    "expected_decision": "continue",
+    "actual_decision": "continue",
+    "reason_returned": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: You claimed completion, but NO machine verification record (/home/azureuser/.agents/verification_state.json) exists. You MUST execute verify_10_fold.py to produce signed empirical evidence.",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "test_name": "Delete Guard interception of destructive git reset --hard",
+    "expected_decision": "deny",
+    "actual_decision": "deny",
+    "reason_returned": "\ud83d\uded1 [DELETE-PROOF HARD DENIAL: RULE_11_GIT_RESET_HARD] Destructive 'git reset --hard' is prohibited in protected workspaces (Rule 11). Inc-ID: INC-DEL-20260928060257-dff95b.",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "test_name": "Block completion when HMAC signature is forged/tampered",
+    "expected_decision": "continue",
+    "actual_decision": "continue",
+    "reason_returned": "\ud83d\uded1 [STOP GATE FAIL-CLOSED]: HMAC signature verification FAILED. State has been tampered with post-verification.",
+    "exit_code": 0,
+    "pass": true
+  }
+]

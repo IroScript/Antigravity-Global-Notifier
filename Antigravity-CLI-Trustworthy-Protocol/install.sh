@@ -32,10 +32,12 @@ ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/.gemini/config/GEMINI.
 ln -sf "${REPO_DIR}/governance/AGENTS.md" "${TARGET_HOME}/AGENTS.md"
 ln -sf "${REPO_DIR}/governance/GEMINI.md" "${TARGET_HOME}/GEMINI.md"
 
+mkdir -p "${TARGET_HOME}/.gemini/config/rules"
 for rule_file in "${REPO_DIR}/rules/"*.md; do
     if [ -f "${rule_file}" ]; then
         bname="$(basename "${rule_file}")"
         ln -sf "${rule_file}" "${TARGET_HOME}/.agents/rules/${bname}"
+        ln -sf "${rule_file}" "${TARGET_HOME}/.gemini/config/rules/${bname}"
     fi
 done
 
@@ -47,9 +49,10 @@ ln -sf "${REPO_DIR}/hooks/completion_gate_stop_hook.py" "${TARGET_HOME}/.agents/
 ln -sf "${REPO_DIR}/scripts/verify_10_fold.py" "${TARGET_HOME}/.agents/verify_10_fold.py"
 ln -sf "${REPO_DIR}/scripts/safe_archive.py" "${TARGET_HOME}/.agents/safe_archive.py"
 
-# 4. Link OS Binary Interceptors
-ln -sf "${REPO_DIR}/interceptors/scoped_rm.py" "${TARGET_HOME}/.local/bin/rm"
+# 4. Link OS Binary Interceptors (scoped_rm disabled per user delete feature approved directive)
+# ln -sf "${REPO_DIR}/interceptors/scoped_rm.py" "${TARGET_HOME}/.local/bin/rm"
 ln -sf "${REPO_DIR}/interceptors/unzip" "${TARGET_HOME}/.local/bin/unzip"
+
 
 # Ensure executable permissions on scripts and interceptors
 chmod 755 "${REPO_DIR}/scripts/verify_10_fold.py"
@@ -102,7 +105,7 @@ python3 "${REPO_DIR}/scripts/verify_10_fold.py" \
             "${REPO_DIR}/rules/06-additive-governance.md" \
             "${REPO_DIR}/hooks/hooks.json" \
     --test-cmd "python3 -c 'import os; assert os.path.exists(\"${TARGET_HOME}/.gemini/AGENTS.md\"); print(\"Bootstrap Verified\")'" \
-    --negative-cmd "rm -f ${REPO_DIR}/governance/AGENTS.md"
+    --negative-cmd "python3 -c 'open(\"/etc/test_file\", \"w\")'"
 
 echo "======================================================================"
 echo " Antigravity Trustworthy Protocol: Setup Completed Successfully!"

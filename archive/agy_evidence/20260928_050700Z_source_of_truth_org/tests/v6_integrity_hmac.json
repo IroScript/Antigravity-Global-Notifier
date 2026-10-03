@@ -1,0 +1,9 @@
+{
+  "verdict": "PASS",
+  "details": {
+    "all_15_symlinks_sha_match": true,
+    "stored_hmac_matches_computed": true,
+    "stored_hmac": "257d9717183cf33ce7e5b42c8b0c0ee1083007cf749e984e585cf1dff865f9ad",
+    "computed_hmac": "257d9717183cf33ce7e5b42c8b0c0ee1083007cf749e984e585cf1dff865f9ad"
+  }
+}

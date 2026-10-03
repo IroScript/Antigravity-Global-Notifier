@@ -4,7 +4,7 @@
     "name": "AGY · YouTube Pipeline",
     "key": "yt",
     "window": "agy:yt",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Social Media/youtube"
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube"
   },
   "frappe": {
     "id": "120363430126311832@g.us",
@@ -18,49 +18,49 @@
     "name": "AGY · Telegram Bot",
     "key": "tg",
     "window": "agy:tg",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Social Media/telegram-bot"
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot"
   },
   "history": {
     "id": "120363429326945679@g.us",
     "name": "AGY · Digital History",
     "key": "history",
     "window": "agy:history",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT"
   },
   "kids": {
     "id": "120363428733621560@g.us",
     "name": "AGY · Kids Tube",
     "key": "kids",
     "window": "agy:kids",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/kids_tube_with_folder_seection"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/kids_tube_with_folder_seection"
   },
   "rust": {
     "id": "120363430134546653@g.us",
     "name": "AGY · Rust Task",
     "key": "rust",
     "window": "agy:rust",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note"
+    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note"
   },
   "article": {
     "id": "120363412465134469@g.us",
     "name": "AGY · Article Publishing",
     "key": "article",
     "window": "agy:article",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/Article-Publishing-Platform"
+    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform"
   },
   "game": {
     "id": "120363412755041087@g.us",
     "name": "AGY · 3D Game Design",
     "key": "game",
     "window": "agy:game",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Publishing Websites/3D-Game-Design-Studio"
+    "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio"
   },
   "research": {
     "id": "120363413333339676@g.us",
     "name": "AGY · Ask & Research",
     "key": "research",
     "window": "agy:research",
-    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent"
+    "cwd": "/home/azureuser/IroScript_Projects/Ask-And-Research-Agent"
   },
   "reporting": {
     "id": "120363430377910102@g.us",

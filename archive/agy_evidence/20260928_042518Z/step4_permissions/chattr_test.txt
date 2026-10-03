@@ -1,0 +1,3 @@
+=== TESTING CHATTR +I ===
+chattr: Operation not permitted while setting flags on /home/azureuser/.agents/verify_10_fold.py
+chattr exit code: 1

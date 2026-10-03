@@ -1,0 +1,55 @@
+{
+  "verdict": "PASS",
+  "runs": [
+    {
+      "label": "Home Workspace",
+      "cwd": "/home/azureuser",
+      "exit_code": 0,
+      "elapsed_sec": 4.44,
+      "stdout": "GOVERNANCE_RECOGNIZED",
+      "stderr": "",
+      "discovered": true,
+      "status": "PASS"
+    },
+    {
+      "label": "Temporary Dir",
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "elapsed_sec": 4.08,
+      "stdout": "GOVERNANCE_RECOGNIZED",
+      "stderr": "",
+      "discovered": true,
+      "status": "PASS"
+    },
+    {
+      "label": "Shared Memory",
+      "cwd": "/dev/shm",
+      "exit_code": 0,
+      "elapsed_sec": 4.55,
+      "stdout": "GOVERNANCE_RECOGNIZED",
+      "stderr": "",
+      "discovered": true,
+      "status": "PASS"
+    },
+    {
+      "label": "Deep Unrelated Dir",
+      "cwd": "/home/azureuser/agy_evidence/deep_dir/sub1/sub2",
+      "exit_code": 0,
+      "elapsed_sec": 7.7,
+      "stdout": "GOVERNANCE_RECOGNIZED",
+      "stderr": "",
+      "discovered": true,
+      "status": "PASS"
+    },
+    {
+      "label": "Real Project Dir",
+      "cwd": "/home/azureuser/Frappe-erp-Alco",
+      "exit_code": 0,
+      "elapsed_sec": 6.51,
+      "stdout": "GOVERNANCE_RECOGNIZED",
+      "stderr": "",
+      "discovered": true,
+      "status": "PASS"
+    }
+  ]
+}

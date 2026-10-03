@@ -1,0 +1,18 @@
+{
+  "task": "Final End-to-End System Health Telemetry",
+  "timestamp_utc": "2026-09-28T06:02:57Z",
+  "kernel": "Linux FatehAli 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux",
+  "memory_total": "16378920 kB",
+  "memory_available": "11428784 kB",
+  "services_monitored": {
+    "ttyd_web_terminal": "port 7681",
+    "redis_database": "port 11000",
+    "mysql_database": "port 3306"
+  },
+  "governance_links": {
+    "agents_md": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/governance/AGENTS.md",
+    "delete_guard": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/delete_guard.py",
+    "stop_hook": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/hooks/completion_gate_stop_hook.py",
+    "verifier": "/home/azureuser/IrakIroan/IroScript_Projects/Antigravity-CLI-Trustworthy-Protocol/scripts/verify_10_fold.py"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scorecard": {
+    "V1_EXISTENCE": "PASS",
+    "V2_CONTENT_CONFIG": "PASS",
+    "V3_DISCOVERY_CWDS": "PASS",
+    "V4_EXECUTION": "PASS",
+    "V5_ADVERSARIAL_NEGATIVE": "PASS",
+    "V6_INTEGRITY_HMAC": "PASS",
+    "V7_PERSISTENCE": "PASS",
+    "V8_BYPASS_RESISTANCE": "PASS",
+    "V9_MACHINE_EVIDENCE": "PASS"
+  },
+  "all_9_vectors_pass": true,
+  "v10_derived_verdict": "VERIFIED_SUCCESS",
+  "evidence_directory": "/home/azureuser/agy_evidence/20260928_050700Z_source_of_truth_org",
+  "timestamp_utc": "2026-09-28T05:10:24Z"
+}

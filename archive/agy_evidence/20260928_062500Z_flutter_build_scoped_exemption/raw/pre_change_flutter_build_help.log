@@ -1,0 +1,16 @@
+
+🛑 [DELETE-PROOF HARD BLOCK]
+Operation: rm -f /home/azureuser/flutter/version
+Status: PERMANENTLY DENIED (Rule 1, 2)
+Incident: INC-DEL-20260928062413-424d19
+Reason: AGY has no deletion capability. Deletions are forbidden.
+Safe Alternative: Run `/home/azureuser/AGY-MASTER/POLICIES/safe_archive.py <path>` to preserve to /home/azureuser/GLOBAL-ARCHIVE/.
+
+
+🛑 [DELETE-PROOF HARD BLOCK]
+Operation: rm -rf -- /home/azureuser/flutter/bin/cache/.upgrade_lock
+Status: PERMANENTLY DENIED (Rule 1, 2)
+Incident: INC-DEL-20260928062413-5d45f0
+Reason: AGY has no deletion capability. Deletions are forbidden.
+Safe Alternative: Run `/home/azureuser/AGY-MASTER/POLICIES/safe_archive.py <path>` to preserve to /home/azureuser/GLOBAL-ARCHIVE/.
+

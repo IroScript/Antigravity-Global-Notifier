@@ -1,0 +1,11 @@
+5edc1870a88a67b3020cae4af99afd261c0a24fb5e26dce17c9d4b8330c0f1ba  /home/azureuser/.agents/hooks.json
+0d3e8e1c6ab46c9017317b5a6f76b62fccb0fc86576b5ee039a8e4fff6bd762a  /home/azureuser/.agents/hooks/completion_gate_stop_hook.py
+24f7ec188dc1cefc04456be121fb099598333c170bc2e8c674be22ee4eb3f31a  /home/azureuser/.agents/verify_10_fold.py
+196be06c86fb610b85f38bc0d7e777d82a7a5832b99c7f9af8f5bd2f7dfae51a  /home/azureuser/.agents/verification_state.json
+cfaac460eceb813d5210bd01d2aa86c67ed654d7fd52af3f06c322d3b75b5010  /home/azureuser/AGY-MASTER/POLICIES/delete_guard.py
+f6f1e4d06e7a4b53a0c77ff4b8b5344e1fad48b152f97deb4415abd56b26f093  /home/azureuser/.agents/rules/01-safety-levels.md
+1392bb17ab0b72a3c2bf3659ed21ae543082f8d671a16a22d275628e6fd5884e  /home/azureuser/.agents/rules/02-architecture-roles.md
+8f118ba7dfb9557ba10e6b8f7215dc70c88cc49391244900f7ec559226748c11  /home/azureuser/.agents/rules/03-delete-proof-guard.md
+9825918e16d3f4ce4b440b6e71cd1a7c61f4943293afcd72a291fddaf33eb145  /home/azureuser/.agents/rules/04-honesty-and-truth-verification.md
+741419046bb593d6172fcc9ed2638163969f77be24ef573f2669a38e7069a8e3  /home/azureuser/.agents/rules/05-ten-fold-verification-protocol.md
+acd21f053f58520a104c9daeba82f0b301db9e72b12d252fca114124318c8458  /home/azureuser/.agents/rules/test_tiny.md
