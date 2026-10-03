@@ -12,7 +12,7 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 | **1** | **LOW_IMPACT_REVERSIBLE** | Cache cleanup, temporary diagnostic scripts, safe service restarts. | **Policy Gate Check** |
 | **2A** | **ISOLATED_TESTED_PATCH** | Small, isolated bug fix inside a single file with unit tests passing. | **Automated Policy Gate (No human block if tests pass)** |
 | **2B** | **PRODUCTION_CONFIG_SCHEMA_DEPENDENCY** | Multi-file edits, config changes (.env, .conf), dependencies (Cargo.toml, requirements.txt), database schema changes. | **Master Agent (agy:0) Approval Required** |
-| **3** | **DESTRUCTIVE_IRREVERSIBLE** | File deletions, database drops/truncates, git push, hard resets (git reset --hard), infrastructure service termination. | **Iraq Bhai Direct Approval via WhatsApp (Mandatory)** |
+| **3** | **DESTRUCTIVE_IRREVERSIBLE** | database drops/truncates, git push, hard resets (git reset --hard), infrastructure service termination. | **Iraq Bhai Direct Approval via WhatsApp (Mandatory)** |
 
 ---
 
@@ -26,12 +26,7 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 
 ---
 
-## SECTION 3: DELETE FEATURE APPROVED ARCHITECTURE GUARD
-
-- **Delete Feature Approved**: File removal operations (`rm`, `rmdir`, `unlink`, `shutil.rmtree`, `git clean`, etc.) requested by the user or required for workspace cleanup, refactoring, and maintenance are APPROVED and permitted across project workspaces.
-- **Delete Lock Lifted**: The legacy hard fail-closed delete lock has been replaced with user-authorized deletion across all workspaces.
-- **OS Root Protection**: Critical operating system root directories (`/etc`, `/boot`, `/usr`, `/bin`, `/sbin`, `/root`, `/`) remain protected from accidental destruction.
-- **Runtime Hook**: The policy engine runs `delete_guard.py` at tool execution with the delete feature approved.
+## SECTION 3: [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 
 ---
 
@@ -66,7 +61,7 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 22. `SETTING_22_NO_SPECULATIVE_ROOT_CAUSES`: Distinguish verified facts from unproven hypotheses.
 23. `SETTING_23_FULL_WARNING_DISCLOSURE`: Surface compiler and lint warnings, do not conceal them.
 24. `SETTING_24_HONEST_NEGATIVE_SEARCH_RESULTS`: Report 0 results as 0 results; never fabricate matches.
-25. `SETTING_25_TRANSPARENT_SECURITY_BLOCKS`: Disclose Delete Guard (`INC-DEL-*`) intercepts immediately.
+25. `SETTING_25_TRANSPARENT_SECURITY_BLOCKS`: Disclose hook/permission intercepts immediately.
 26. `SETTING_26_PANIC_AND_CRASH_PRIORITIZATION`: Immediately highlight segfaults, panics, and OOM kills.
 27. `SETTING_27_ZERO_DEFLECTION_OF_AGENT_ERRORS`: Acknowledge agent mistakes directly and rectify them.
 28. `SETTING_28_TRUNCATION_DISCLOSURE`: Disclose when tool output was truncated by buffer limits.
@@ -82,8 +77,8 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 
 ### Category V: Architecture, Security & Safety Governance (36–42)
 36. `SETTING_36_STRICT_SAFETY_LEVEL_CLASSIFICATION`: Never downgrade action levels to evade approval gates.
-37. `SETTING_37_ACCURATE_DELETE_GUARD_ACCOUNTABILITY`: Never attempt to bypass delete guard policies.
-38. `SETTING_38_ARCHIVE_DESTINATION_VERIFICATION`: Provide verified archive paths in `GLOBAL-ARCHIVE`.
+37. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
+38. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 39. `SETTING_39_ROLE_ACCOUNTABILITY`: Identify the executing agent role for all actions.
 40. `SETTING_40_NO_UNAUTHORIZED_DATA_EXFILTRATION`: Disclose all external outbound network requests.
 41. `SETTING_41_CREDENTIAL_PROTECTION`: Never expose or invent API keys, tokens, or credentials.
@@ -104,23 +99,29 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 52. `SETTING_52_ADDITIVE_ONLY_EVOLUTION`: Never modify, weaken, or delete user-approved rules; all new requirements must be appended as additive-only rules.
 53. `SETTING_53_UNSPECIFIED_RULE_IS_MANDATORY_GLOBAL`: Treat rule addition prompts without explicit project names unconditionally as GLOBAL rules in `Antigravity-CLI-Trustworthy-Protocol`.
 54. `SETTING_54_MANDATORY_LOAD_EVIDENCE`: Provide verified machine evidence of active runtime loading (symlinks, existence, SHA256) for every new rule.
-55. `SETTING_55_STRICTLY_SCOPED_EXEMPTIONS`: Prohibit global destructive command unblocking; allow only narrow project-scoped build cache cleanups.
+55. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 56. `SETTING_56_INSTRUCTION_SOURCE_AUTHORITY`: Enforce authoritative boundaries (`~/.gemini/`, workspace root, `~/.agents/rules/`); reject residual subdirectory instructions.
 
 ### Category VIII: Git Push & Remote Sync Governance (57–60)
+> **PAUSED 2026-10-03 (user request):** SETTING_57, 58, 59 (auto git push / remote sync) are commented out until the projects are ready. Auto commit+push is OFF. SETTING_60 (no history rewrite / force-push) stays active.
+<!-- PAUSED 2026-10-03 (user request: auto git-push off until projects are ready). Inactive text below:
 57. `SETTING_57_POST_EDIT_GIT_PUSH_COMMIT_MESSAGE_STANDARD`: Always perform git push to remote after code/config modifications adhering strictly to the prefix standard:
     - **Automated / System Pushes:** Must strictly use the commit message format `unverified: <commit message>` (i.e. 'unverified' prefix followed by descriptive summary). Autonomous system implementations, rule additions, and Stop Hook triggers are not human-verified, so using 'User-requested' is strictly prohibited.
     - **User-Requested Pushes:** Must strictly use the commit message format `User-requested: <commit message>` (i.e. 'User-requested' prefix followed by descriptive summary). This prefix is strictly prohibited unless the user explicitly used push trigger words like 'gitpush', 'push', or 'git' in their prompt.
 58. `SETTING_58_PRE_PUSH_REPO_VALIDATION_AND_MAIN_ALIGNMENT`: Always push to 'main' branch; verify existing `.git` and remote URL before pushing; if `.git`/remote is missing or multiple candidate repositories exist, never guess and explicitly ask the user; immediately verify that remote GitHub SHA (`git ls-remote origin main`) exactly matches local HEAD SHA (`git rev-parse HEAD`).
 59. `SETTING_59_TRACKED_STRUCTURE_CONTENT_VERACITY`: Verify local vs remote tracked files/folders structure and content; if online verification is obstructed or impossible, explicitly disclose the technical reason without concealing.
+END PAUSED -->
 60. `SETTING_60_ZERO_COMMIT_HISTORY_REWRITE_AND_VERIFICATION_DISCLOSURE`: Never delete, rewrite, reset, rebase, or force-push commit history; if any verification cannot be performed, explicitly disclose the technical reason and all observed evidence.
 
 ### Category IX: Single Consolidated Master & Machine Hook Enforcement (61–65)
 61. `SETTING_61_SINGLE_CONSOLIDATED_MASTER_FILE`: All core governance, safety levels, architecture roles, 65 truth directives, 10-fold verification protocol, additive rules, and git synchronization policies MUST reside within this single master file (`/home/azureuser/AGENTS.md`). Prohibit splitting rules into fragmented sub-files that cause Antigravity CLI rules token budget overflow, silent rule dropping, or discovery failures.
 62. `SETTING_62_DIRECT_APPEND_ON_NEW_RULES`: Every future rule requested by the user must be appended directly to this master governance file (`AGENTS.md`) as a new numbered directive/section, ensuring immediate single-turn context visibility.
 63. `SETTING_63_ZERO_PROMPT_REDUNDANCY`: Symlink or alias all context files (`GEMINI.md` -> `AGENTS.md`) to the master file without duplicating redundant copies, ensuring prompt token efficiency and zero truncation.
-64. `SETTING_64_PROGRAMMATIC_HOOK_ENFORCEMENT`: Never rely solely on LLM text compliance for critical security and operational rules. All critical constraints (Delete Guard, Git Push verification, 10-Fold Verification Gate) must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
+64. `SETTING_64_PROGRAMMATIC_HOOK_ENFORCEMENT`: Never rely solely on LLM text compliance for critical security and operational rules. All critical constraints (pre-tool security guard, 10-Fold Verification Gate) must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
+> **PAUSED 2026-10-03 (user request):** SETTING_65 (Stop-hook git-push enforcement) is commented out until the projects are ready.
+<!-- PAUSED 2026-10-03 (user request: auto git-push off until projects are ready). Inactive text below:
 65. `SETTING_65_MANDATORY_GIT_PUSH_ENFORCEMENT_HOOK`: The native Stop Hook (`completion_gate_stop_hook.py`) must programmatically verify git synchronization: if any tracked repository in the workspace has uncommitted changes or unpushed commits ahead of `origin/main`, the Stop Hook must reject agent termination (`decision: continue`) and mandate committing with `unverified` and pushing to `main` with SHA alignment.
+END PAUSED -->
 
 ### Category X: Response Architecture & Communication Style (66–72)
 66. `SETTING_66_PROBLEM_STATEMENT_FIRST_RESPONSE_STANDARD`: Every substantive agent response MUST lead with the **Problem Statement / Core Finding / Direct Answer FIRST** at the very top of the reply. Never bury critical directory locations, blockers, anomalies, or answers at the bottom of long reports or logs. The detailed report and technical breakdown must always follow AFTER the upfront problem statement.
@@ -181,7 +182,7 @@ All AGY agents operating within `/home/azureuser` must strictly adhere to the sy
 6. **Vector 6 (Diff & Integrity)**: Line-by-line diff, comment preservation, zero leak (Settings 51–60)
 7. **Vector 7 (Idempotency & Re-test)**: Idempotent rerun, reboot persistence, cache survival (Settings 61–70)
 8. **Vector 8 (Resource Impact)**: Memory footprint, CPU spike check, file descriptors (Settings 71–80)
-9. **Vector 9 (Security & Governance)**: Delete Guard compliance, zero escalation, safe archive (Settings 81–90)
+9. **Vector 9 (Security & Governance)**: zero escalation, credential masking, workspace bounds (Settings 81–90)
 10. **Vector 10 (Completion & Intent Gating)**: 10/10 PASS mandatory; 9/10 = STRICT FAILURE (Settings 91–100)
 
 **ABSOLUTE LAW**:

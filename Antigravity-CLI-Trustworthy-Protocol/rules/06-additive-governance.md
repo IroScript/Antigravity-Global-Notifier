@@ -47,9 +47,8 @@ This document establishes the mandatory governance protocols for adding, propaga
 
 ### SECTION 5: SCOPED PRIVILEGED OPERATIONS (NO GLOBAL UNBLOCKING)
 10. **Prohibition of Global Destructive Exemptions**:
-    No global unblocking of `rm`, `sudo`, or destructive shell operations is permissible.
-11. **Narrow Project-Scoped Exemptions Only**:
-    When a development tool (such as Flutter/Dart build engine) requires cache cleanup, exemptions must be strictly restricted to specific build output directories (`flutter/bin/cache/**`, `build/**`, `.dart_tool/**`, `/tmp/**`). All project source code, Git repositories, databases, and governance files remain 100% protected and immutable.
+    No global unblocking of `sudo` / privilege escalation is permissible. (`rm` part removed 2026-10-03 - user request)
+11. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 
 ---
 

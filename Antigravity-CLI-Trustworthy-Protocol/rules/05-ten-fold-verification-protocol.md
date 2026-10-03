@@ -124,15 +124,15 @@ For ANY user query, task, fix, or code execution, the agent must subject the wor
 
 ---
 
-### VECTOR 9: SECURITY, DELETE-GUARD & GOVERNANCE COMPLIANCE (Settings 81–90)
-81. **`V9_81_DELETE_GUARD_COMPLIANCE`**: Zero `rm` commands attempted; all file retirements must use `safe_archive.py`.
-82. **`V9_82_ZERO_INTERCEPTOR_INCIDENTS`**: Zero `INC-DEL-*` security intercept incidents triggered.
+### VECTOR 9: SECURITY & GOVERNANCE COMPLIANCE (Settings 81–90)
+81. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
+82. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 83. **`V9_83_SAFETY_LEVEL_AUDIT`**: Operations must conform to their assigned safety level (0, 1, 2A, 2B, 3).
 84. **`V9_84_ZERO_PRIVILEGE_ESCALATION`**: No unauthorized superuser or escalation commands invoked.
 85. **`V9_85_CREDENTIAL_MASKING`**: Zero exposed tokens, private keys, or credentials in outputs.
-86. **`V9_86_ARCHIVE_AUDIT_TRAIL`**: Retired files must have verified paths in `GLOBAL-ARCHIVE`.
+86. [REMOVED 2026-10-03 - user request: delete rules no longer needed]
 87. **`V9_87_TRUSTED_WORKSPACE_BOUNDS`**: All actions must remain strictly inside authorized workspace directories.
-88. **`V9_88_POLICY_PRE_TOOL_HOOK_PASS`**: Delete guard hook must execute and approve tool calls cleanly.
+88. **`V9_88_POLICY_PRE_TOOL_HOOK_PASS`**: Pre-tool security hook must execute and approve tool calls cleanly.
 89. **`V9_89_AUDIT_LOG_TIMESTAMP_ACCURACY`**: Audit records must contain accurate UTC ISO timestamps.
 90. **`V9_90_SECURITY_VECTOR_GATE`**: Vector 9 is marked FAIL if any of Settings 81–89 fails.
 

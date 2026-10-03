@@ -5,3 +5,7 @@ __pycache__/
 .wt_last_tab_color
 .agy_evidence/
 webterminal/wa_outbox/
+
+# WhatsApp session credentials - never track (added 2026-10-03)
+webterminal/wa_auth/
+webterminal/wa_auth_senderkeys_backup/

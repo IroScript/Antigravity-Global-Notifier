@@ -4,6 +4,8 @@ This document establishes the mandatory operational rules for remote Git synchro
 
 ---
 
+> **PAUSED 2026-10-03 (user request):** Sections 1-3 (auto push, pre-push validation, post-push SHA check) are commented out until the projects are ready. Section 4 (no force-push / history rewrite) stays active.
+<!-- PAUSED 2026-10-03 (user request: auto git-push off until projects are ready). Inactive text below:
 ### SECTION 1: POST-EDIT GIT PUSH & COMMIT MESSAGE SPECIFICATION
 1. **Mandatory Post-Edit Remote Push**:
    Following any code creation, modification, or configuration edit in tracked repositories, AGY must immediately commit and push the changes to the remote Git repository.
@@ -45,6 +47,7 @@ This document establishes the mandatory operational rules for remote Git synchro
     - The local fallback status and exact unverified vectors.
 
 ---
+END PAUSED -->
 
 ### SECTION 4: COMMIT HISTORY IMMUTABILITY & VERIFICATION EVIDENCE
 11. **Zero History Rewrite / Force-Push Ban**:

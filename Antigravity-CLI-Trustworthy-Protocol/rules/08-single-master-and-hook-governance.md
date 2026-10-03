@@ -18,12 +18,15 @@ This document establishes the mandatory architecture for maintaining all system 
 
 ### SECTION 2: HARD PROGRAMMATIC MACHINE HOOK ENFORCEMENT
 5. **Programmatic Hook Over Mere Text Guidance (`SETTING_64`)**:
-   Critical security, delete prevention, and synchronization constraints must never rely solely on LLM text comprehension. They must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
+   Critical security constraints must never rely solely on LLM text comprehension. They must be backed by hard programmatic Python hooks (`BeforeTool`, `Stop`) that intercept commands and fail closed.
+> **PAUSED 2026-10-03 (user request):** SETTING_65 (Stop-hook git-push enforcement) is commented out until the projects are ready.
+<!-- PAUSED 2026-10-03 (user request: auto git-push off until projects are ready). Inactive text below:
 6. **Mandatory Git Push Stop Hook Enforcement (`SETTING_65`)**:
    The native Stop Hook (`completion_gate_stop_hook.py`) must programmatically verify git synchronization across all tracked workspace repositories prior to allowing task completion. If uncommitted changes or unpushed commits exist:
    - The Stop Hook must reject agent termination (`decision: continue`).
    - AGY must commit changes with `unverified` and push to the `main` branch.
    - AGY must verify SHA alignment (`remote_SHA == local_SHA`) before completion is permitted.
+END PAUSED -->
 
 ---
 
