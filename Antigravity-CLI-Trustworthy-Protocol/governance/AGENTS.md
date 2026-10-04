@@ -144,7 +144,7 @@ END PAUSED -->
     This rule is a universal GLOBAL mandate applicable unconditionally to all AGY and WhatsApp agents operating in the workspace.
 
 ### Category XIII: YouTube Agent Header & Visual Identity Standard (75)
-75. `SETTING_75_YOUTUBE_AGENT_PLAY_BUTTON_HEADER_STANDARD`: In every single reply, report, notification, and message sent by or on behalf of the YouTube Agent (`agy:yt`, YouTube Pipeline), the message MUST lead with the exact visual header containing thirteen play button emojis:
+75. `SETTING_75_YOUTUBE_AGENT_PLAY_BUTTON_HEADER_STANDARD`: Transferred to project-local governance at [`/home/azureuser/IroScript_Projects/Social Media/youtube/AGENTS.md`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/AGENTS.md). In every single reply, report, notification, and message sent by or on behalf of the YouTube Agent (`agy:yt`, YouTube Pipeline), the message MUST lead with the exact visual header containing thirteen play button emojis:
     `▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️`
     followed by the title header, timestamp, problem statement / direct answer, and technical breakdown, mirroring the visual standard of the Reporting Agent (`📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈`). Omission of this header in any YouTube agent response is strictly prohibited.
 
@@ -190,88 +190,13 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 ---
 
-## SECTION 6: ERPNEXT & FRAPPE FRAMEWORK MANDATORY DIRECTIVES (VERSION 16+ ONLY) - FRAPPE SECTION SPECIFIC
+### SECTION 6 & 7: FRAPPE & ERPNEXT LOCAL GOVERNANCE (TRANSFERRED)
 
-> 🚨 **এই নিয়মগুলো শুধুমাত্র FRAPPE সেকশন ও ERPNEXT প্রজেক্টের জন্য প্রযোজ্য** 🚨
-
-#### 1. কোর ফ্র্যাপে ও ইআরপিনেক্সট নির্দেশিকা (Core Frappe Directives):
-1. **VERSION 16+ ONLY:** You must **ONLY** generate, modify, or suggest code written for **Frappe Framework Version 16+** and **ERPNext Version 16+**.
-2. **VERSION 15 & OLDER CODE IS STRICTLY PROHIBITED:** Under NO circumstances are you allowed to write code for **Version 15 (v15)**, Version 14 (v14), Version 13 (v13), or Version 12 (v12). Any attempt to output deprecated v15/older APIs, syntax, or patterns is completely invalid.
-3. **4-TIER AUTHORITY HIERARCHY (PUBLIC CONTRACT VS IMPLEMENTATION TRUTH):**
-   - **Tier 1 (Primary Public Usage Contract):** Current official `/user/en/` documentation (`/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/user/en/`, synced from `docs.frappe.io/framework`) is the current active Frappe Framework documentation tree and is the primary documentation authority for current/v16 work. AGY must adhere strictly to documented public APIs.
-   - **Tier 2 (Implementation Ground Truth):** Frappe Framework v16 source code (`/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` at release `v16.35.0`, commit `012667b9c4`) is the ground truth for how the implementation works internally, class structures, DocType definitions, and hook mechanics.
-   - **Conflict Resolution Rule:** If any conflict arises between Tier 1 documentation and Tier 2 source code, Tier 1 public documentation governs the public API contract. AGY is strictly prohibited from inventing public APIs by copying undocumented internal helper functions.
-   - **Internal vs Public API Principle:** সোর্স কোডে একটি মেথড বা ফাংশন বিদ্যমান থাকা মানেই তা স্বয়ংক্রিয়ভাবে পাবলিক এপিআই নয় ("source-এ আছে → তাই ব্যবহার করা যাবে" এটি সম্পূর্ণ অবৈধ অনুমান)। অফিসিয়াল ডকে ডকুমেণ্টেড থাকা মেথডই পাবলিক এপিআই ব্যবহারের সবচেয়ে শক্তিশালী প্রমাণ; সোর্সে আছে কিন্তু ডকে নেই এমন মেথড অভ্যন্তরীণ/আন-ডকুমেণ্টেড (Internal/Undocumented Helper) হিসেবে গণ্য হবে এবং বিশেষ যৌক্তিকতা ছাড়া পাবলিক প্রজেক্ট কোডে ব্যবহার নিষিদ্ধ।
-   - **Tier 3 (Historical Reference Only - Zero Authority):** Historical `/v13/`, `/v14/`, `/v15/` directories are strictly historical references and have ZERO authority for v16 syntax, APIs, or behaviors.
-   - **Tier 4 (App-Specific Domain Authority):** App-specific documentation (`docs.frappe.io/erpnext`, `docs.frappe.io/hr`) governs business logic outside core framework boundaries.
-4. **DO NOT GUESS API METHODS:** Verify exact class definitions, method signatures, hook definitions, and field names in Tier 1 public documentation and Tier 2 source code prior to implementation.
-5. **PYTHON STANDARD (PYTHON 3.14+ MANDATE):** Frappe Framework v16 and ERPNext v16 strictly require **Python 3.14+** (e.g. `requires-python = ">=3.14"` installed via `uv python install 3.14 --default`). Python 3.12 and 3.13 are obsolete for v16. Use Python 3.14+ features, strict typing annotations, and PyPika Query Builder (`frappe.qb`). Never use obsolete DB functions or raw unescaped SQL.
-6. **JAVASCRIPT STANDARD:** Use modern Frappe Form Controller patterns (`frappe.ui.form.on`), `frappe.ui.Dialog`, and `frappe.call`. Never use deprecated `cur_frm` or `cur_dialog`.
-
-### 2. ফ্রন্টএন্ড ও মোবাইল ফার্স্ট অগ্রাধিকার (Frontend & Mobile-First Mandate):
-7. **MOBILE IS FIRST PRIORITY (FRONTEND ONLY):** ফ্রন্টএন্ড UI/UX ডিজাইনে সর্বদা **Mobile is First Priority (মোবাইল ফার্স্ট)** নীতি অনুসরণ করতে হবে। প্রতিটি কার্ড, বাটন, ফন্ট সাইজ, টাচ টার্গেট এবং স্পেসিং সবার আগে মোবাইলের জন্য অপ্টিমাইজড হতে হবে।
-8. **DESKTOP COMPATIBILITY:** মোবাইল ফার্স্ট অগ্রাধিকারের পাশাপাশি ডেস্কটপ স্ক্রিনের ক্ষেত্রেও লেআউট পুরোপুরি সঠিক, সুন্দর ও রেসপনসিভ হতে হবে (ডেস্কটপেও কাজ করবে অবশ্যই)।
-9. **PRODUCT CARD SINGLE COLUMN ON MOBILE:** মোবাইল ডিভাইসে প্রোডাক্ট কার্ড সর্বদা **Single Column (১টি কলাম)** বিশিষ্ট হবে যাতে প্রতিটি কার্ড পূর্ণাঙ্গভাবে ও সহজে ব্যবহারযোগ্য দেখায়।
-
-### 3. প্রজেক্ট ডোমেন ও বাউন্ডারি লক (Project Boundary Lock):
-10. **STRICT PROJECT BOUNDARY:** ফ্র্যাপে এজেন্টের দায়িত্ব ও কাজের পরিধি শুধুমাত্র ফ্র্যাপে প্রজেক্ট ডিরেক্টরি (`/home/azureuser/Frappe-erp-Alco`)-এর মধ্যেই ১০০% কঠোরভাবে সীমাবদ্ধ থাকবে। ফ্র্যাপে এজেন্ট কেবল ফ্র্যাপেতেই সীমাবদ্ধ থাকবে; অন্য কোনো প্রজেক্টে তার প্রবেশাধিকার নেই (Permission Denied / Zero Cross-Project Access)।
-11. **RUNTIME VERSIONS STANDARD (NODE 24 & MARIADB 11.8):** Node.js runtime must be **Node.js 24** (installed via NVM: `nvm install 24`, with NPM and Yarn). MariaDB database server must target **MariaDB 11.8** (minimum 10.6.6+) configured with `character-set-server = utf8mb4` and `collation-server = utf8mb4_unicode_ci`. Package manager adopts `uv` (`uv tool install frappe-bench`) per project policy.
-
-### 4. ৩০টি বিকল্প হার্ড ব্লক ও লোকাল ডিরেক্টরি বাধ্যতামূলক নীতি (30 Alternative Hard Blocks for Local Dir & Version 16 Mandate):
-12. **`BLOCK_01_LOCAL_DIR_WRITE_LOCK`:** ফ্র্যাপে বা ইআরপিনেক্সট সম্পর্কিত সমস্ত নতুন ফাইল তৈরি, কোড মডিফিকেশন বা স্ক্রিপ্ট শুধুমাত্র লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর ভেতরেই সম্পাদিত হতে হবে। এই ডিরেক্টরির বাইরে কোনো ফ্র্যাপে কোড লেখা সম্পূর্ণ নিষিদ্ধ।
-13. **`BLOCK_02_AUTHORITATIVE_DOC_INSPECTION_MANDATE`:** `/user/en/` is the current active Frappe Framework documentation tree and is the primary documentation authority for current/v16 work (`/home/azureuser/Frappe-erp-Alco/frappe-v16-authoritative-docs/user/en/`, synced directly from `docs.frappe.io/framework`). Any attempt to draw syntax from archived `/v13/`, `/v14/`, `/v15/` directories or deprecated `frappe/frappe_docs` is strictly prohibited.
-14. **`BLOCK_03_LOCAL_V16_SOURCE_VERIFICATION`:** ডকটাইপ বা ক্লাস ইমপ্লিমেন্টেশনের ক্ষেত্রে লোকাল সোর্স কোড `/home/azureuser/Frappe-erp-Alco/frappe-framework-v16/` থেকে মেথড সিগনেচার যাচাই করা বাধ্যতামূলক।
-15. **`BLOCK_04_PROJECT_DOCSTATUS_ENUM_CONVENTION`:** প্রজেক্ট কোডে ডকস্ট্যাটাস ব্যবহারের ক্ষেত্রে `DocStatus` enum (`DocStatus.DRAFT`, `DocStatus.SUBMITTED`, `DocStatus.CANCELLED`) ব্যবহার করা প্রজেক্ট টাইপিং ও ক্লিন-কোড কনভেনশন হিসেবে বাধ্যতামূলক। তবে মনে রাখতে হবে যে `frappe/model/docstatus.py`-তে `DocStatus` ক্লাসটি ব্যাকওয়ার্ড কম্প্যাটিবিলিটির জন্য `int` সাবক্লাস করে, তাই কোর ইঞ্জিন ইন্টিজার কম্প্যারিজন সমর্থন করে।
-16. **`BLOCK_05_PROHIBITION_OF_CUR_FRM`:** জাভাস্ক্রিপ্ট কন্ট্রোলারে গ্লোবাল `cur_frm` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ফর্ম ইভেন্ট হ্যান্ডলারের স্ট্যান্ডার্ড `frm` আর্গুমেন্ট ব্যবহার বাধ্যতামূলক।
-17. **`BLOCK_06_PROHIBITION_OF_CUR_DIALOG`:** গ্লোবাল `cur_dialog` ব্যবহার সম্পূর্ণ নিষিদ্ধ; ডায়ালগ প্রদর্শনে `frappe.ui.Dialog` ইনস্ট্যান্স ব্যবহার বাধ্যতামূলক।
-18. **`BLOCK_07_PROHIBITION_OF_RAW_SQL_STRING_CONCAT`:** স্ট্রিং কনক্যাটেনেশন বা আন-এস্কেপড র SQL কুয়েরি সম্পূর্ণ নিষিদ্ধ; `frappe.qb` (PyPika Query Builder) ব্যবহার বাধ্যতামূলক।
-19. **`BLOCK_08_MANDATORY_PYTHON_314_SYNTAX`:** পাইথন ৩.১৪+ স্ট্যান্ডার্ড সিনট্যাক্স ও স্ট্রিক্ট টাইপ অ্যানোটেশন বাধ্যতামূলক; ৩.১২ বা তার পুরনো সিনট্যাক্স নিষিদ্ধ।
-20. **`BLOCK_09_V16_GET_LIST_AGGREGATION_SYNTAX`:** `frappe.db.get_list` এবং `frappe.db.get_all`-এ v16 ব্রেকিং চেঞ্জ অনুযায়ী অ্যাগ্রিগেশনের জন্য আধুনিক ডিকশনারি সিনট্যাক্স (`fields=[{'COUNT': 'name', 'as': 'count'}, ...]`) ব্যবহার প্রজেক্ট স্ট্যান্ডার্ড হিসেবে বাধ্যতামূলক। `frappe.get_doc` মেথডটি বর্তমান অফিশিয়াল ডকে সম্পূর্ণ অনুমোদিত এবং রেকমেন্ডেড কোর এপিআই (এটি মোটেও ডিপ্রিকেটেড নয়)।
-21. **`BLOCK_10_MANDATORY_V16_CLIENT_SCRIPT_NAMESPACES`:** ক্লায়েন্ট স্ক্রিপ্টে `frappe.ui.form.on` নেমস্পেস্ড ইভেন্ট বাইন্ডিং ব্যবহার বাধ্যতামূলক।
-22. **`BLOCK_11_MANDATORY_MOBILE_FIRST_GRID_LAYOUT`:** প্রোডাক্ট কার্ড ও ফ্রন্টএন্ড UI-তে মোবাইল ফার্স্ট সিঙ্গেল কলাম (`col-12` / single-column flex) লেআউট বাধ্যতামূলক।
-23. **`BLOCK_12_PROHIBITION_OF_DESKTOP_ONLY_STYLES`:** ফিক্সড-উইডথ ডেস্কটপ-অনলি সিএসএস বা মিডিয়া কুয়েরি ছাড়া স্টাইলিং নিষিদ্ধ; ফ্লুইড ও রেসপনসিভ গ্রিড বাধ্যতামূলক।
-24. **`BLOCK_13_MANDATORY_DOCFIELD_OPTIONS_SCHEMA_AUDIT`:** ডকফিল্ড ও স্কিমা রূপান্তরের ক্ষেত্রে লোকাল v16 DocType JSON স্কিমা নিশ্চিত করা বাধ্যতামূলক।
-25. **`BLOCK_14_MANDATORY_V16_HOOKS_DECLARATION`:** `hooks.py` ফাইলে v16 স্ট্যান্ডার্ড হুক ডেফিনিশন (`doctype_js`, `extend_doctype_class` / `override_doctype_class`) অনুসরণ বাধ্যতামূলক।
-26. **`BLOCK_15_PROHIBITION_OF_V15_BENCH_COMMANDS`:** ফ্র্যাপে v15 বা তার পুরনো ডিপ্রিকেটেড বেঞ্চ কমান্ড সম্পূর্ণ নিষিদ্ধ; v16 বেঞ্চ কমান্ড ব্যবহার করতে হবে।
-27. **`BLOCK_16_PROJECT_UV_PACKAGE_MANAGER_STANDARD`:** প্রজেক্ট পলিসি হিসেবে বেঞ্চ এবং পাইথন এনভায়রনমেন্টে `uv` (`uv tool install frappe-bench`, `uv python install 3.14 --default`) ব্যবহার বাধ্যতামূলক, যা ফ্র্যাপে v16 অফিসিয়াল ইনস্টলেশন গাইড দ্বারা রেকমেন্ডেড (এটি ফ্র্যাপে কোরের ইউনিভার্সাল হার্ড ম্যান্ডেট নয়, বরং প্রজেক্ট স্ট্যান্ডার্ড)।
-28. **`BLOCK_17_PROHIBITION_OF_ORPHAN_JSON_SCHEMA`:** কন্ট্রোলার `.py` বা `.js` বিহীন এতিম বা অসংলগ্ন ডকটাইপ JSON ফাইল প্রজেক্টে রাখা নিষিদ্ধ।
-29. **`BLOCK_18_MANDATORY_V16_WHITELIST_SECURITY`:** রিমোটলি কলযোগ্য এপিআই মেথডে `@frappe.whitelist(methods=['GET'])` বা `['POST']` নির্দিষ্ট করা বাধ্যতামূলক।
-30. **`BLOCK_19_MANDATORY_PERMISSION_CHECK_ON_DB_OPS`:** ডাটাবেজ অপারেশনের আগে ডকুমেন্ট লেভেল অনুমতি (`frappe.has_permission` বা `doc.check_permission`) যাচাই বাধ্যতামূলক।
-31. **`BLOCK_20_PROHIBITION_OF_GLOBAL_SCOPE_POLLUTION_JS`:** ব্রাউজার গ্লোবাল অবজেক্টে (`window` বা `frappe` রুটে) অননুমোদিত ভ্যারিয়েবল ডাম্পিং সম্পূর্ণ নিষিদ্ধ।
-32. **`BLOCK_21_MANDATORY_MARIADB_118_STANDARD`:** ডাটাবেজ কনফিগারেশনে অফিসিয়াল ফ্র্যাপে v16 টার্গেট **MariaDB 11.8** (মিনিমাম ১০.৬.৬+) এবং `utf8mb4_unicode_ci` কোলাশন ব্যবহার বাধ্যতামূলক।
-33. **`BLOCK_22_MANDATORY_NODE24_ESM_SYNTAX`:** ফ্রন্টএন্ড বিল্ড এবং নোড স্ক্রিপ্টে Node.js 24 এবং আধুনিক ESM মডিউল স্ট্যান্ডার্ড মেনে চলা বাধ্যতামূলক।
-34. **`BLOCK_23_PROHIBITION_OF_DEPRECATED_UI_DIALOG_CALLBACKS`:** ডায়ালগ হ্যান্ডলিংয়ে আধুনিক Promise-ভিত্তিক কন্ট্রোলার ব্যবহার বাধ্যতামূলক; সিনক্রোনাস ব্লকিং কলব্যাক নিষিদ্ধ।
-35. **`BLOCK_24_MANDATORY_ERROR_HANDLING_WITH_THROWS`:** ব্যাকএন্ড এক্সেপশন ও ত্রুটি ব্যবস্থাপনায় নির্দিষ্ট এক্সেপশন ক্লাস সহ `frappe.throw()` ব্যবহার বাধ্যতামূলক।
-36. **`BLOCK_25_MANDATORY_APP_ISOLATION`:** কাস্টম অ্যাপ `alco_ecommerce` শুধুমাত্র তার নির্ধারিত ডিরেক্টরিতে আইসোলেটেড থাকবে; কোনো বহিরাগত অ্যাপে অনুপ্রবেশ নিষিদ্ধ।
-37. **`BLOCK_26_MANDATORY_BENCH_CONTEXT_VERIFICATION`:** বেঞ্চ কমান্ড এক্সিকিউশনের পূর্বে রুট বেঞ্চ কনটেক্সট এবং পাথ অস্তিত্ব যাচাই বাধ্যতামূলক।
-38. **`BLOCK_27_PROHIBITION_OF_OBSOLETE_EMAIL_ALERTS`:** পুরনো ইমেইল অ্যালার্টের পরিবর্তে v16 আধুনিক নোটিফিকেশন ডকটাইপ ফ্রেমওয়ার্ক ব্যবহার বাধ্যতামূলক।
-39. **`BLOCK_28_MANDATORY_V16_TRANSLATION_FORMAT`:** ফ্র্যাপে v16 ট্রান্সলেশন সিনট্যাক্স ও ফাইল ফরম্যাট অক্ষুণ্ণ রাখা বাধ্যতামূলক।
-40. **`BLOCK_29_PROGRAMMATIC_PRE_TOOL_WRITE_INTERCEPT`:** ফ্র্যাপে সংক্রান্ত কোড তৈরির ক্ষেত্রে লোকাল ডিরেক্টরি `/home/azureuser/Frappe-erp-Alco/`-এর বাইরে ফাইল লেখার যেকোনো প্রচেষ্টা প্রি-টুল চেকে স্বয়ংক্রিয়ভাবে ব্লক করা হবে।
-41. **`BLOCK_30_HARDENED_AUTOMATED_COMPLIANCE_GATE`:** উপরের প্রতিটি ব্লক (১২ থেকে ৪০) যাচাইয়ের জন্য স্বয়ংক্রিয় টেস্ট রানার স্ক্রিপ্টের মাধ্যমে ৩০/৩০ টেস্ট পাস প্রাপ্তি বাধ্যতামূলক। তবে ৩০/৩০ টেস্ট পাস দ্বারা এটি নিশ্চিত হয় যে সংজ্ঞায়িত ৩০টি টেস্ট শর্ত সফলভাবে সম্পন্ন হয়েছে; এটি টেস্ট সুইটের বাইরের কোনো সার্বজনীন বা অলৌকিক প্রুফ নির্দেশ করে না (Test suite assertion success != Universal proof)। একইভাবে HMAC-SHA256 সিগনেচার শুধুমাত্র লোকাল স্টেট ও ননস ট্যাম্পার-প্রুফিং নিশ্চিত করে; এটি ফ্র্যাপের বাহ্যিক কোনো সার্বজনীন সত্যতা বা সার্টিফিকেশন নির্দেশ করে না।
-
----
-
-## SECTION 7: ALCO × FRAPPE V16 ARCHITECTURE COMPLIANCE GATE & 12-VECTOR MANDATE
-
-> 🚨 **এই সেকশনটি ALCO ECOMMERCE কাস্টম অ্যাপ এবং FRAPPE V16 কোর আর্কিটেকচার ইন্টিগ্রেশনের জন্য বাধ্যতামূলক ও অলঙ্ঘনীয়** 🚨
-
-### ১. আর্কিটেকচারাল শর্টকাট বনাম নেটিভ ফ্র্যাপে পাইপলাইন (Native Frappe Pipeline Mandate):
-ভবিষ্যতে AGY যখন Alco অ্যাপে নতুন কোনো ফিচার, ডকটাইপ, ডাটাবেজ ফিল্ড, এপিআই, রিপোর্ট বা ওয়ার্কফ্লো তৈরি বা পরিবর্তন করবে, তখন অবশ্যই ফ্র্যাপে v16-এর নেটিভ আর্কিটেকচারাল পাইপলাইন অনুসরণ করতে হবে:
-$$\text{Alco Requirement} \longrightarrow \text{Frappe DocType Design} \longrightarrow \text{DocType JSON} \longrightarrow \text{Controller / Hooks} \longrightarrow \text{Frappe Migration (bench migrate)} \longrightarrow \text{MariaDB Schema}$$
-
-### ২. ১২টি বাধ্যতামূলক আর্কিটেকচার কম্প্লায়েন্স ভেক্টর (12 Architecture Vectors):
-1. **`ARCH_01_MANDATORY_FRAPPE_NATIVE_EXTENSION_POINT`:** প্রতিটি নতুন বিজনেস এন্টিটি, ফিল্ড, ওয়ার্কফ্লো ও এপিআই ফ্র্যাপের নেটিভ এক্সটেনশন পয়েন্ট (DocType, Controller, Hooks, Server Scripts) দ্বারা বাস্তবায়িত হতে হবে। সমান্তরাল কোনো ডাটাবেজ (যেমন standalone SQLite) বা আন-ম্যানেজড স্টোরেজ ব্যবহার সম্পূর্ণ নিষিদ্ধ।
-2. **`ARCH_02_ZERO_STANDALONE_BYPASS`:** `run_alco_server.py`-এর মতো স্ক্রিপ্টগুলো কেবল ডায়াগনস্টিক ও সাময়িক টেস্টিং হারনেস হিসেবে সীমাবদ্ধ থাকবে; এগুলোকে কস্মিনকালেও প্রডাকশন আর্কিটেকচার হিসেবে দাবি করা যাবে না। মূল প্রডাকশন আর্কিটেকচার হবে Frappe Bench (`bench/apps/alco_ecommerce` -> `site` -> `MariaDB`)।
-3. **`ARCH_03_DOCTYPE_SCHEMA_AUTHORITY`:** ডাটাবেজ স্কিমার একক উৎস হবে `doctype/<name>/<name>.json` ফাইল। পাইথন কোডে বা স্ক্রিপ্টে সরাসরি DDL (`CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`) চালানো সম্পূর্ণ নিষিদ্ধ; স্কিমা সিনক্রোনাইজেশন ফ্র্যাপে বেঞ্চ মাইগ্রেশন বা `frappe.reload_doc()` দিয়ে সম্পন্ন করতে হবে।
-4. **`ARCH_04_CONTROLLER_CLASS_INHERITANCE`:** প্রতিটি ডকটাইপ কন্ট্রোলার অবশ্যই `frappe.model.document.Document` থেকে ইনহেরিট করবে এবং ফ্র্যাপে লাইফসাইকেল মেথড (`validate`, `before_save`, `on_submit`) মেনে চলবে।
-5. **`ARCH_05_CHILD_TABLE_INTEGRITY`:** চাইল্ড ডকটাইপে `"istable": 1` বিদ্যমান থাকতে হবে এবং প্যারেন্ট ডকটাইপের টেবিল ফিল্ডের `options` প্যারামিটার যথাযথ চাইল্ড ডকটাইপকে নির্দেশ করতে হবে।
-6. **`ARCH_06_HOOKS_DECLARATION_STANDARD`:** অ্যাপের কনফিগারেশন, মেটাডাটা ও ইভেন্ট হ্যান্ডলার স্ট্যান্ডার্ড `hooks.py`-এর মাধ্যমে ঘোষিত হতে হবে। অ্যাড-হক মাঙ্কি প্যাচিং সম্পূর্ণ নিষিদ্ধ।
-7. **`ARCH_07_FRAPPE_QUERY_BUILDER_STANDARD`:** কুয়েরি রচনার ক্ষেত্রে PyPika Query Builder (`frappe.qb`) অথবা ডকুমেন্ট ওআরএম মেথড (`frappe.get_doc`, `frappe.get_all`) ব্যবহার করতে হবে। র SQL স্ট্রিং কনক্যাটেনেশন সম্পূর্ণ নিষিদ্ধ।
-8. **`ARCH_08_MIGRATION_AND_PATCH_DISCIPLINE`:** স্কিমা ও ডাটা মাইগ্রেশন ইডেমপোটেন্ট হতে হবে এবং `patches.txt` অথবা ডকটাইপ রিলোডিং মেকানিজম মেনে চলতে হবে।
-9. **`ARCH_09_BENCH_SITE_REGISTRY_COMPLIANCE`:** বেঞ্চের সাইট রেজিস্ট্রি (`apps.txt` এবং `site_config.json`)-এ `frappe`, `erpnext`, এবং `alco_ecommerce`-এর সক্রিয় অন্তর্ভুক্তি নিশ্চিত থাকতে হবে।
-10. **`ARCH_10_PYTHON_314_AND_V16_STRICT_COMPLIANCE`:** কোডবেসের প্রতিটি অংশ পাইথন ৩.১৪+ (`requires-python = ">=3.14"`) এবং ফ্র্যাপে v16-এর সাথে সম্পূর্ণ সামঞ্জস্যপূর্ণ হতে হবে; পুরনো v15 ডিপ্রিকেটেড সিনট্যাক্স (`cur_frm`) নিষিদ্ধ।
-11. **`ARCH_11_AUTOMATED_12_VECTOR_ARCHITECTURE_GATE`:** প্রতিটি পরিবর্তনের পর `/home/azureuser/.agents/test_alco_frappe_architecture.py` স্ক্রিপ্টের মাধ্যমে ১২/১২ টেস্টের সফল বাস্তবায়ন ও এক্সিকিউশন এভিডেন্স সংগ্রহ বাধ্যতামূলক।
-12. **`ARCH_12_FAIL_CLOSED_ARCHITECTURE_ENFORCEMENT`:** ১২টি আর্কিটেকচার ভেক্টরের ১টিও যদি ফেইল করে (এমনকি ১১/১২ পাস হলেও), তবে পুরো পরিবর্তনটি তাৎক্ষণিকভাবে REJECTED / INVALID হিসেবে গণ্য হবে এবং স্টপ হুক কোনো অবস্থাতেই টাস্ক সমাপ্ত ঘোষণা করতে দেবে না।
+> **TRANSFERRED TO PROJECT-LOCAL GOVERNANCE (2026-10-04, user request):**
+> Frappe Framework & ERPNext v16 rules, 30 implementation directives (BLOCK_01..30), and the 12-vector architecture compliance gate have been transferred to the Frappe project workspace:
+> - Local Governance File: [`/home/azureuser/Frappe-erp-Alco/AGENTS.md`](file:///home/azureuser/Frappe-erp-Alco/AGENTS.md) (alias [`/home/azureuser/IroScript_Projects/Frappe-erp-Alco/AGENTS.md`](file:///home/azureuser/IroScript_Projects/Frappe-erp-Alco/AGENTS.md))
+> - Local Mirror & Enforcer: [`GEMINI.md`](file:///home/azureuser/Frappe-erp-Alco/GEMINI.md), `tools/frappe_latest_guard.py`, `tools/frappe_latest_lint.py`.
+> All AGY agents operating within Frappe directories are bound by that local authoritative document.
 
 ---
 
