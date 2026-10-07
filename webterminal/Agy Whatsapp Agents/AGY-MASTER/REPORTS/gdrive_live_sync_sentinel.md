@@ -1,16 +1,22 @@
 # Google Drive 24/7 Live Sync Sentinel Health Report
 **Reporting Agent (`agy:report`) Global Observability Record**
 
-- **Last Audit Timestamp:** `2026-09-26T19:45:55.950993+00:00`
-- **Service Status:** `ACTIVE`
+- **Last Audit Timestamp:** `2026-10-07T15:24:32.990963+00:00`
+- **Reporting Interval:** Every 30 minutes (Half-hourly)
+- **Service Status:** `` (PID: N/A, Memory: N/A)
 - **Remote Remote:** `personaldrive:Azure_VM_Live_Backup_Fateh_Ali`
-- **Total Backed Up Objects:** `16.544k`
-- **Total Backup Volume:** `57.685 GiB (61939222184 Byte)`
+- **Account Quota:** Used `N/A` / `N/A` (Free: `N/A`)
+- **Total Backed Up Objects:** `16.544k (last verified scan)`
+- **Total Backup Volume:** `57.685 GiB (61939222184 Byte) (last verified scan)`
+- **Recent Sync Daemon Activity:** `-- No entries --`
 
-## Raw Rclone Metric
+## Raw Diagnostic Data
 ```text
-Total objects: 16.544k (16544)
-Total size: 57.685 GiB (61939222184 Byte)
+[rclone about personaldrive:]
+{'error': 'Failed to create file system for "personaldrive:": didn\'t find section in config file'}
+
+[rclone size personaldrive:Azure_VM_Live_Backup_Fateh_Ali:]
+Failed to create file system for "personaldrive:Azure_VM_Live_Backup_Fateh_Ali": didn't find section in config file
 ```
 
 ---

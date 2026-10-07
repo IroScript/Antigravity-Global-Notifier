@@ -1,0 +1,66 @@
+[প্রজেক্ট গ্রুপ: AGY · Frappe ERP Alco (frappe)]: Agy-r ei reply theke "core structure intact" er kono guarantee paoya jay na. Oi reply ta shudhu eta prove kore je **password change kora hoyni** (file timestamp ar bench.log diye). Core code ba DB customization nie kichu bole ni. Ar shesh e je `verify_10_fold.py` / HMAC nonce / `VERIFIED_SUCCESS` ache, seta agy-r nijer script, nijer claim ke nijei verify korche. Eta independent proof na.
+
+Tai agy ke jiggesh korar age nijei check korun. Frappe er core mane `apps/frappe` ar `apps/erpnext`, duto-i git repo, tai modify hole git dhore felbe.
+
+**1. Core code check (sobcheye important)**
+
+```bash
+cd ~/Frappe-erp-Alco/frappe-bench
+bench version
+
+for app in apps/*; do
+  echo "== $app"
+  git -C $app status --short          # modified (M) ba notun (??) file
+  git -C $app diff --stat             # kon file e koto change
+  git -C $app log --oneline @{u}..HEAD  # upstream e nei emon local commit
+done
+```
+
+Sob app e output faka (kichu na) hole mane core code er tracked file e kono change nei, local commit-o nei.
+
+**2. Config check**
+
+```bash
+cat sites/common_site_config.json
+cat sites/alco.localhost/site_config.json
+```
+
+Dekhun kono ajana key ba changed value ache kina (db password paste korben na).
+
+**3. DB level customization check**
+
+```bash
+bench --site alco.localhost mariadb
+```
+```sql
+select name, dt, modified from `tabCustom Field` order by modified desc limit 20;
+select name, doc_type, modified from `tabProperty Setter` order by modified desc limit 20;
+select name, modified from `tabServer Script`;
+select name, modified from `tabClient Script`;
+```
+
+Ekhane 3 October er por er kono entry thakle sheta dekhar moto. (ERPNext nijei kichu Custom Field banay, tai purono entry normal.)
+
+**4. Sanity check**
+
+```bash
+bench --site alco.localhost doctor
+./env/bin/pip check
+```
+
+Ei output gulo ekhane paste korle ami porhe bolte parbo kothao dirty ache kina.
+
+**Agy ke prompt dewa nie:** dite paren, kintu shudhu "report" hishebe, ar oitar upor nirbhor korben na. Ekta chhoto prompt:
+
+```
+Read-only audit. Kono file, config ba DB change korba na.
+apps/frappe ar apps/erpnext e `git status --short`, `git diff --stat`,
+`git log --oneline @{u}..HEAD` chalao ar raw output hubohu paste koro.
+Kono summary ba "verified" claim korba na, shudhu raw command output dao.
+```
+
+Raw output ashle seta ekhane dien, ami mile dekhbo.
+
+Ekta side note: oi `bench.log` e admin password plain text e likha ache, ar ekhon ei chat e-o ache. VM jodi internet e open thake, kaj shesh hole `bench --site alco.localhost set-admin-password <notun-password>` diye change kore nen.
+
+Future e shurakkha er jonno: kaj shuru korar age `git commit`/`bench backup` kore nen, ar agy ke bole din `apps/frappe` ar `apps/erpnext` e kono edit korbe na, customization hobe nijer custom app e.

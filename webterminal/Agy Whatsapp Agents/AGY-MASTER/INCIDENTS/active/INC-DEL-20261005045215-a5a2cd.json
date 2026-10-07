@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005045215-a5a2cd",
+  "timestamp": "2026-10-05T04:52:15.893891+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"import os; os.remove('/home/azureuser/Frappe-erp-Alco/test.py')\""
+  },
+  "decision": "DENIED",
+  "reason": "Cross-project command violation: Agent [yt] cannot access [frappe] directory: /home/azureuser/Frappe-erp-Alco",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}

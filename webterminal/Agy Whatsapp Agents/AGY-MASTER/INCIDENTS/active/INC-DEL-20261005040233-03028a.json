@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005040233-03028a",
+  "timestamp": "2026-10-05T04:02:33.610286+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "su -c 'echo bad'"
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'su' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION"
+}

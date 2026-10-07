@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007080634-4d3370",
+  "timestamp": "2026-10-07T08:06:34.456075+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/tmp/tmpt3sxallj/symlink_hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting/modifying protected governance/hook/verifier target '/tmp/tmpt3sxallj/symlink_hooks.json' is strictly prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

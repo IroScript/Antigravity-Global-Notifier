@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005045029-a397b8",
+  "timestamp": "2026-10-05T04:50:29.034786+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 /home/azureuser/.agents/verify_10_fold.py \\\n  --conversation-id \"866ff071-da69-4142-bb06-75be70d733c6\" \\\n  --workspace \"/home/azureuser/IroScript_Projects/Social Media/youtube\" \\\n  --task-name \"YouTube Pipeline docker workers phase2 verification and mutmut coverage\" \\\n  --rules \"/home/azureuser/.gemini/AGENTS.md\" \\\n  --hooks \"/home/azureuser/.gemini/config/hooks.json\" \\\n  --files \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/flow_guards.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/test_flow_guards.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/Dockerfile.prompt_seo\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/docker-compose.yml\" \\\n  --test-cmd \"python3 -m pytest '/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/test_flow_guards.py' -q\" \\\n  --negative-cmd \"python3 -c \\\"import subprocess, json; p = subprocess.Popen(['/usr/bin/python3', '/home/azureuser/.agents/hooks/delete_guard.py'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True); out, _ = p.communicate(json.dumps({'toolCall': {'name': 'run_command', 'args': {'CommandLine': 'ls /home/azureuser/Frappe-erp-Alco', 'Cwd': '/home/azureuser/IroScript_Projects/Social Media/youtube'}}})); print(out)\\\"\""
+  },
+  "decision": "DENIED",
+  "reason": "Cross-project command violation: Agent [yt] cannot access [frappe] directory: /home/azureuser/Frappe-erp-Alco",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}

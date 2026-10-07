@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004150300-0953b5",
+  "timestamp": "2026-10-04T15:03:00.419758+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat << 'EOF' > /home/azureuser/IroScript_Projects/Whatsapp_Agy_Agents/Antigravity-Global-Notifier/Antigravity-CLI-Trustworthy-Protocol/hooks/truth_pre_invocation.py\n#!/usr/bin/env python3\n\"\"\"\nPreInvocation Truth Directive Injector Hook\nInjects mandatory 72 Truth Directives into the agent's context on every invocation.\nEnforces:\n1. Setting 01 & 02: Mandatory Ground Truth & Zero Mock Execution\n2. Setting 04: Exact Exit Code Fidelity\n3. Setting 67 & 68: Prohibition of Promotional Verdict Labels & Self-Praise\n4. Setting 91-100: Mandatory 10-Fold Verification for Completion\n\"\"\"\n\nimport sys\nimport json\n\ndef main():\n    try:\n        raw = sys.stdin.read()\n    except Exception:\n        pass\n\n    msg = (\n        \"\ud83d\uded1 [MANDATORY GROUND TRUTH ACTIVE - 72 TRUTH SETTINGS]:\\n\"\n        \"1. GROUND TRUTH MANDATE (Setting 01/02): Never claim system facts without executing verification tools in this turn. Zero mock/simulated execution.\\n\"\n        \"2. EXIT CODE FIDELITY (Setting 04/21): If a command exits with code != 0, report failure verbatim without sanitizing or deflection.\\n\"\n        \"3. FORBIDDEN VERDICTS (Setting 67/68): Do NOT use '\u09b8\u09ab\u09b2\u09ad\u09be\u09ac\u09c7' (successfully), '10/10 PASS', 'all tests passed', or '\u09ad\u09c7\u09b0\u09bf\u09ab\u09be\u0987\u09a1' unless signed machine verification was executed in this turn. State only factual action names and literal empirical outputs.\\n\"\n        \"4. COMPLETION GATE (Setting 91-100): Never say 'done', 'completed', or 'fixed' without executing verify_10_fold.py.\"\n    )\n\n    print(json.dumps({\n        \"injectSteps\": [\n            {\n                \"ephemeralMessage\": msg\n            }\n        ]\n    }))\n\nif __name__ == \"__main__\":\n    main()\nEOF\nchmod 755 /home/azureuser/IroScript_Projects/Whatsapp_Agy_Agents/Antigravity-Global-Notifier/Antigravity-CLI-Trustworthy-Protocol/hooks/truth_pre_invocation.py\n"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

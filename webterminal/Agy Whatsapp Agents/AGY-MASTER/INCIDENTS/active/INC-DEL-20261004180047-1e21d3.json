@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004180047-1e21d3",
+  "timestamp": "2026-10-04T18:00:47.871522+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chmod 777 /home/azureuser/.agents/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

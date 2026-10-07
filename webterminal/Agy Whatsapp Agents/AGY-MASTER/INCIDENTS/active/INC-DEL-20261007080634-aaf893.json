@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007080634-aaf893",
+  "timestamp": "2026-10-07T08:06:34.402250+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "git push --force origin main"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive git force push or delete is prohibited (Rule 39)",
+  "rule_id": "RULE_39_GIT_FORCE_PUSH"
+}

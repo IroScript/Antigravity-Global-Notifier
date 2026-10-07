@@ -1535,17 +1535,21 @@
           <svg viewBox="0 0 24 24" fill="#60cdff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
           <span>Azure User Home</span>
         </div>
-        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IrakIroan')">
-          <svg viewBox="0 0 24 24" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
-          <span>IrakIroan Workspace</span>
+        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IroScript_Projects')">
+          <svg viewBox="0 0 24 24" fill="#a6e3a1"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+          <span>IroScript Projects</span>
         </div>
-        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
-          <svg viewBox="0 0 24 24" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-          <span>GCP Backup Vault</span>
+        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IroScript_Projects/All_Backup')">
+          <svg viewBox="0 0 24 24" fill="#fab387"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+          <span>All_Backup Vault & ZIP</span>
         </div>
         <div class="sidebar-item" onclick="navigateTo('/home/azureuser/AGY-MASTER')">
           <svg viewBox="0 0 24 24" fill="#cba6f7"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19h-15L12 5.5z"/></svg>
           <span>AGY-MASTER Architecture</span>
+        </div>
+        <div class="sidebar-item" onclick="navigateTo('/home/azureuser/IrakIroan')">
+          <svg viewBox="0 0 24 24" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+          <span>IrakIroan Workspace</span>
         </div>
       </div>
 
@@ -1590,17 +1594,33 @@
             <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#60cdff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
             <div class="drive-details"><div class="drive-name">Azure User Home</div><div class="drive-meta">/home/azureuser</div></div>
           </div>
-          <div class="drive-card" onclick="navigateTo('/home/azureuser/IrakIroan')">
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/IroScript_Projects')">
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#a6e3a1"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div>
+            <div class="drive-details"><div class="drive-name">IroScript Projects</div><div class="drive-meta">/home/azureuser/IroScript_Projects</div></div>
+          </div>
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/IroScript_Projects/All_Backup')">
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#fab387"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg></div>
+            <div class="drive-details"><div class="drive-name">All_Backup Vault & ZIP</div><div class="drive-meta">43 GB Master Backup Archive</div></div>
+          </div>
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/IroScript_Projects/All_Backup/rclone_3_Oct_Extracted_Folders')">
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#a6e3a1"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div>
+            <div class="drive-details"><div class="drive-name">📂 Rclone Extracted Folders</div><div class="drive-meta">/All_Backup/rclone_3_Oct_Extracted_Folders</div></div>
+          </div>
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/IroScript_Projects/All_Backup/rclone_3_Oct')">
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#fab387"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg></div>
+            <div class="drive-details"><div class="drive-name">📦 Rclone Project ZIPs</div><div class="drive-meta">/All_Backup/rclone_3_Oct</div></div>
+          </div>
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/IroScript_Projects/All_Backup/Projects')">
             <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#f9e2af"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div>
-            <div class="drive-details"><div class="drive-name">IrakIroan Workspace</div><div class="drive-meta">/home/azureuser/IrakIroan</div></div>
+            <div class="drive-details"><div class="drive-name">Unpacked Projects Dir</div><div class="drive-meta">50 GB Extracted Live Files</div></div>
+          </div>
+          <div class="drive-card" onclick="navigateTo('/home/azureuser/AGY-MASTER')">
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#cba6f7"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19h-15L12 5.5z"/></svg></div>
+            <div class="drive-details"><div class="drive-name">AGY-MASTER Architecture</div><div class="drive-meta">Multi-Agent Swarm Hub</div></div>
           </div>
           <div class="drive-card" onclick="navigateTo('/home/azureuser/GCP_FULL_BACKUP')">
-            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#fab387"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#f38ba8"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
             <div class="drive-details"><div class="drive-name">GCP Backup Vault</div><div class="drive-meta">33 GB Archive</div></div>
-          </div>
-          <div class="drive-card" onclick="navigateTo('/home/azureuser/IrakIroan/Google_Drive_Backup/Extracted files/mdkamruzzamanirak_gmail_com')">
-            <div class="drive-icon"><svg viewBox="0 0 24 24" width="40" height="40" fill="#a6e3a1"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg></div>
-            <div class="drive-details"><div class="drive-name">GCP Extracted Live Files</div><div class="drive-meta">577,045 Files</div></div>
           </div>
         </div>
       </div>
@@ -1638,13 +1658,25 @@
         <div class="time-badge" id="last-update">আপডেট হচ্ছে...</div>
       </div>
 
+      <!-- Audit & Billing Transparency Banner -->
+      <div style="background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <span style="background: #238636; color: #fff; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 4px;">KERNEL RECONCILIATION: PASS</span>
+          <span style="background: #da3633; color: #fff; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 4px;">AZURE BILLING: NOT VERIFIED</span>
+          <span style="font-size: 0.75rem; color: #8b949e;">CPU Metric: <code>ps lifetime average</code> (Denominator: 400% / 4 vCPUs) · RAM: PSS Proportional (Zero Double-Count)</span>
+        </div>
+        <a href="/api/raw?path=/home/azureuser/IroScript_Projects/PROJECT_FOLDER_AND_GIT_MAPPING_AUDIT.md" target="_blank" style="background: #1f6feb; color: #fff; text-decoration: none; font-size: 0.75rem; font-weight: 600; padding: 5px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px;">
+          📄 সম্পূর্ণ অডিট ও সত্যতা রিপোর্ট দেখুন
+        </a>
+      </div>
+
       <!-- Section 1: System Metrics Cards (Always Live) -->
       <div class="mon-grid">
         <!-- CPU Card -->
         <div class="mon-card">
           <div class="mon-card-title">
             <span>সার্বিক CPU লোড</span>
-            <span id="cpu-cores-text">4 vCPUs</span>
+            <span id="cpu-cores-text">4 vCPUs (ps lifetime avg)</span>
           </div>
           <div class="mon-card-val" id="cpu-val" style="color:var(--yellow);">0.0%</div>
           <div class="mon-bar-bg">
@@ -1659,7 +1691,7 @@
             <span>RAM মেমোরি (ফিজিক্যাল)</span>
             <span id="ram-avail-text">ফ্রি: 0.0 GB</span>
           </div>
-          <div class="mon-card-val" id="ram-val" style="color:var(--accent-blue);">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 16.0 GB</span></div>
+          <div class="mon-card-val" id="ram-val" style="color:var(--accent-blue);">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 8.0 GB</span></div>
           <div class="mon-bar-bg">
             <div class="mon-bar-fill" id="ram-bar" style="width: 0%; background: var(--accent-blue);"></div>
           </div>
@@ -1672,7 +1704,7 @@
             <span>NVMe সোয়াপ (Swap)</span>
             <span style="color: var(--green);">সক্রিয়</span>
           </div>
-          <div class="mon-card-val" id="swap-val" style="color:var(--purple);">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 40.0 GB</span></div>
+          <div class="mon-card-val" id="swap-val" style="color:var(--purple);">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 19.0 GB</span></div>
           <div class="mon-bar-bg">
             <div class="mon-bar-fill" id="swap-bar" style="width: 0%; background: var(--purple);"></div>
           </div>
@@ -2838,9 +2870,10 @@
 
   function getYAxisConfig() {
     if (currentMode === 'ram') {
+      const ramMax = (currentStats && currentStats.ram && currentStats.ram.total_gb) ? Math.ceil(currentStats.ram.total_gb) : 8;
       return {
         min: 0,
-        max: 16,
+        max: ramMax,
         grid: { color: 'rgba(48, 54, 61, 0.4)' },
         ticks: {
           color: '#8b949e',
@@ -3214,12 +3247,32 @@
     }
   }
 
+  let _procRenderTick = 0;
   async function fetchStats() {
+    if (document.hidden) return;
     try {
       const res = await fetch('/api/stats');
       if (!res.ok) return;
       const data = await res.json();
       currentStats = data;
+
+      // Update Header Button Badge
+      const headerBadge = document.getElementById('headerCpuBadge');
+      if (headerBadge) {
+        headerBadge.innerText = data.cpu_overall.toFixed(1) + '%';
+        headerBadge.style.color = getBarColor(data.cpu_overall);
+      }
+
+      // Bottom CPU Badge Update
+      const bBadge = document.getElementById('bottomCpuBadge');
+      if (bBadge) {
+        bBadge.textContent = data.cpu_overall.toFixed(1) + '%';
+        bBadge.style.color = getBarColor(data.cpu_overall);
+        bBadge.style.borderColor = getBarColor(data.cpu_overall);
+      }
+
+      // If user is not on monitor tab, skip heavy DOM updates
+      if (activeTab !== 'monitor') return;
 
       // Header time
       const timeBadge = document.getElementById('last-update');
@@ -3234,22 +3287,26 @@
         cpuBar.style.background = getBarColor(data.cpu_overall);
       }
 
-      // Update Header Button Badge
-      const headerBadge = document.getElementById('headerCpuBadge');
-      if (headerBadge) {
-        headerBadge.innerText = data.cpu_overall.toFixed(1) + '%';
-        headerBadge.style.color = getBarColor(data.cpu_overall);
-      }
-
-      // Cores
+      // Cores - in place update to prevent layout shift & touch interruption
       const coreContainer = document.getElementById('core-bars');
       if (coreContainer && data.cpu_cores) {
-        coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
-          <div class="mon-core-item">
-            <div class="mon-core-lbl">C${i+1}</div>
-            <div class="mon-core-val" style="color: ${getBarColor(c)}">${c}%</div>
-          </div>
-        `).join('');
+        const items = coreContainer.querySelectorAll('.mon-core-item');
+        if (items.length === data.cpu_cores.length) {
+          data.cpu_cores.forEach((c, i) => {
+            const v = items[i].querySelector('.mon-core-val');
+            if (v) {
+              v.textContent = c + '%';
+              v.style.color = getBarColor(c);
+            }
+          });
+        } else {
+          coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
+            <div class="mon-core-item">
+              <div class="mon-core-lbl">C${i+1}</div>
+              <div class="mon-core-val" style="color: ${getBarColor(c)}">${c}%</div>
+            </div>
+          `).join('');
+        }
       }
 
       // RAM
@@ -3270,37 +3327,48 @@
         document.getElementById('swap-bar').style.width = data.swap.percent + '%';
       }
 
-      // Apps Rollup
+      // Apps Rollup - in-place update if count matches
       const appList = document.getElementById('app-list');
       if (appList && data.apps) {
-        appList.innerHTML = data.apps.map(a => `
-          <div class="mon-app-card">
-            <div class="mon-app-info">
-              <div class="mon-app-name">${a.app}</div>
-              <div class="mon-app-count">${a.count} টি প্রসেস সক্রিয়</div>
-            </div>
-            <div class="mon-app-cols">
-              <div class="mon-col-item">
-                <span class="mon-col-hdr">১ম · CPU</span>
-                <span style="font-size:0.95rem; font-weight:700; color:var(--yellow);">${a.cpu}%</span>
+        const cards = appList.querySelectorAll('.mon-app-card');
+        if (cards.length === data.apps.length) {
+          data.apps.forEach((a, idx) => {
+            const card = cards[idx];
+            const nameEl = card.querySelector('.mon-app-name');
+            if (nameEl && nameEl.textContent === a.app) {
+              const countEl = card.querySelector('.mon-app-count');
+              if (countEl) countEl.textContent = `${a.count} টি প্রসেস সক্রিয়`;
+              const vals = card.querySelectorAll('.mon-col-item span:last-child');
+              if (vals[0]) vals[0].textContent = `${a.cpu}%`;
+              if (vals[1]) vals[1].textContent = a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB';
+            }
+          });
+        } else {
+          appList.innerHTML = data.apps.map(a => `
+            <div class="mon-app-card">
+              <div class="mon-app-info">
+                <div class="mon-app-name">${a.app}</div>
+                <div class="mon-app-count">${a.count} টি প্রসেস সক্রিয়</div>
               </div>
-              <div class="mon-col-item">
-                <span class="mon-col-hdr">২য় · RAM</span>
-                <span style="font-size:0.95rem; font-weight:700; color:var(--accent-blue);">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
+              <div class="mon-app-cols">
+                <div class="mon-col-item">
+                  <span class="mon-col-hdr">১ম · CPU</span>
+                  <span style="font-size:0.95rem; font-weight:700; color:var(--yellow);">${a.cpu}%</span>
+                </div>
+                <div class="mon-col-item">
+                  <span class="mon-col-hdr">২য় · RAM</span>
+                  <span style="font-size:0.95rem; font-weight:700; color:var(--accent-blue);">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
+                </div>
               </div>
             </div>
-          </div>
-        `).join('');
+          `).join('');
+        }
       }
 
-      renderProcs();
-
-      // Bottom CPU Badge Update
-      const bBadge = document.getElementById('bottomCpuBadge');
-      if (bBadge) {
-        bBadge.textContent = data.cpu_overall.toFixed(1) + '%';
-        bBadge.style.color = getBarColor(data.cpu_overall);
-        bBadge.style.borderColor = getBarColor(data.cpu_overall);
+      // Throttle renderProcs: run every 3rd tick to avoid mobile scroll stutter
+      _procRenderTick++;
+      if (_procRenderTick % 3 === 0) {
+        renderProcs();
       }
 
       // Real-time incremental graph advance (Only for live minute-level views 1m, 5m, 15m, 30m)
@@ -3421,7 +3489,7 @@
       return;
     }
 
-    container.innerHTML = list.slice(0, 40).map(p => `
+    container.innerHTML = list.slice(0, 25).map(p => `
       <div class="mon-proc-card">
         <div class="mon-proc-top">
           <span>${p.name} <span style="font-size: 0.7rem; color: #8b949e;">(PID: ${p.pid})</span></span>
@@ -3436,13 +3504,13 @@
     `).join('');
   }
 
-  // Periodic Loops
-  setInterval(fetchStats, 1500);
+  // Periodic Loops (Optimized for smooth, jitter-free 60FPS mobile performance)
+  setInterval(fetchStats, 2500);
   setInterval(() => {
-    if (activeTab === 'monitor' && !isScrubbing) {
+    if (activeTab === 'monitor' && !isScrubbing && !document.hidden) {
       fetchHistory();
     }
-  }, 30000);
+  }, 45000);
 
   // Initial Startup
   window.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004153822-50e660",
+  "timestamp": "2026-10-04T15:38:22.235396+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm -f /etc/passwd"
+  },
+  "decision": "DENIED",
+  "reason": "Deletion on protected configuration '/etc/passwd' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_PROTECTED_CONFIG_DELETE"
+}

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004103543-56db64",
+  "timestamp": "2026-10-04T10:35:43.185063+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "sudo systemctl status azure-file-explorer"
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'sudo' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION"
+}

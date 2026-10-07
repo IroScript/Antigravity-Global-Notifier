@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004153822-4e7e81",
+  "timestamp": "2026-10-04T15:38:22.418778+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/home/azureuser/.gemini/config/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting/modifying protected governance/hook/verifier target '/home/azureuser/.gemini/config/hooks.json' is strictly prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

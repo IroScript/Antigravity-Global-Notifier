@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004153624-1e0337",
+  "timestamp": "2026-10-04T15:36:24.714685+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nwith open('/home/azureuser/IroScript_Projects/Whatsapp master/Antigravity-CLI-Trustworthy-Protocol/hooks/delete_guard.py') as f:\n    text = f.read()\n\ntarget_str = '''    # Direct rm / unlink / rmdir targeting Frappe-erp-Alco (A1, A2, A3, B1, B11)'''\nreplacement = '''    # Deletion targeting protected configuration or system files\n    if re.search(r'\\\\b(?:rm|unlink|rmdir)\\\\b', command_str):\n        for token in command_str.split():\n            if is_path_protected_config(token):\n                return True, f\\\"Deletion on protected configuration '{token}' is prohibited (Rule 38)\\\", \\\"RULE_38_PROTECTED_CONFIG_DELETE\\\"\n\n    # Direct rm / unlink / rmdir targeting Frappe-erp-Alco (A1, A2, A3, B1, B11)'''\n\nif target_str in text:\n    new_text = text.replace(target_str, replacement)\n    with open('/home/azureuser/IroScript_Projects/Whatsapp master/Antigravity-CLI-Trustworthy-Protocol/hooks/delete_guard.py', 'w') as f:\n        f.write(new_text)\n    print('Added protected config deletion check to delete_guard.py.')\nelse:\n    print('target_str not found!')\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Direct deletion in Frappe-erp-Alco is prohibited (Rule 1, 2)",
+  "rule_id": "RULE_1_2_DIRECT_DELETE"
+}

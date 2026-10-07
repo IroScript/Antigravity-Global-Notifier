@@ -1,0 +1,13 @@
+{
+  "research_id": "res_1791168049764_topological_phonon_polariton_lasers_in_van_der_waals_heteros",
+  "topic": "Topological Phonon Polariton Lasers in Van Der Waals Heterostructures",
+  "slug": "topological_phonon_polariton_lasers_in_van_der_waals_heteros",
+  "category": "Frontier Science",
+  "created_at": "2026-10-05T02:40:49.764907+00:00",
+  "files": {
+    "excel": "topological_phonon_polariton_lasers_in_van_der_waals_heteros_research_dossier.xlsx",
+    "core_en": "CORE_RESEARCH_EN.md",
+    "report_bn": "RESEARCH_REPORT_BN.md"
+  },
+  "status": "COMPLETED"
+}

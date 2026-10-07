@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005023403-d465a9",
+  "timestamp": "2026-10-05T02:34:03.668748+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "sudo touch /root/malicious.txt"
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'sudo' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION"
+}

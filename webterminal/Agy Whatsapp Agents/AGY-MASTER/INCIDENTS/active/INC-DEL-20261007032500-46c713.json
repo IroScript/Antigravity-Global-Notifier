@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007032500-46c713",
+  "timestamp": "2026-10-07T03:25:00.581799+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "mv /tmp/bad /home/azureuser/.agents/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive mv targeting protected path '/home/azureuser/.agents/hooks.json' is prohibited (Rule 6, 14)",
+  "rule_id": "RULE_6_7_14_MV_OVERWRITE"
+}

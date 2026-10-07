@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005023955-f8f2c8",
+  "timestamp": "2026-10-05T02:39:55.427698+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/home/azureuser/.local/bin/sqlite3"
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting/modifying protected governance/hook/verifier target '/home/azureuser/.local/bin/sqlite3' is strictly prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

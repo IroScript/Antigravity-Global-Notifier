@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005043531-d2bb0d",
+  "timestamp": "2026-10-05T04:35:31.504189+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "echo 'bad' > /home/azureuser/.agents/hooks/delete_guard.py"
+  },
+  "decision": "DENIED",
+  "reason": "Redirection/tee into protected path '/home/azureuser/.agents/hooks/delete_guard.py' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

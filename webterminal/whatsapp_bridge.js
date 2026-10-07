@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { execSync, exec } = require('child_process');
+const { execSync, exec, execFile } = require('child_process');
 
 const baileysPath = path.join(__dirname, 'node_modules/@whiskeysockets/baileys');
 const baileys = require(baileysPath);
@@ -61,6 +61,9 @@ let lastUserMsgKey = null;
 let lastUserMsg = null;
 const lastUserMsgByWindow = {};
 const lastUserMsgKeyByWindow = {};
+const lastUserPromptByWindow = {};
+const auditInProgressByWindow = {};
+const auditCycleByWindow = {};
 
 const windowBusy = {};
 const windowBusySince = {};
@@ -72,10 +75,10 @@ let mediaBatchTimer = null;
 function isAgyActuallyIdle(targetWindow = 'agy:0') {
   try {
     const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 2000 });
-    if (pane.includes('esc to cancel') || pane.includes('Working...') || pane.includes('Generating...') || pane.includes('Running command')) {
+    if (pane.includes('esc to cancel') || pane.includes('Working...') || pane.includes('Generating...') || pane.includes('Running command') || pane.includes('esc to interrupt') || pane.includes('◦ Working')) {
       return false;
     }
-    return pane.includes('? for shortcuts');
+    return pane.includes('? for shortcuts') || pane.includes('Ask Codex to do anything') || pane.includes('Your move, teammate.');
   } catch (e) {
     return false;
   }
@@ -107,6 +110,7 @@ function getWindowForSender(sender) {
         if (k === 'game') return 'agy:game';
         if (k === 'research') return 'agy:research';
         if (k === 'reporting') return 'agy:report';
+        if (k === 'codex') return 'agy:codex';
       }
     }
     return 'agy:0';
@@ -119,6 +123,16 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0') {
   const cleanPrompt = (promptText || '').trim();
   if (!cleanPrompt) return;
 
+  // Hold prompts while set_agy_model.sh has the /model picker open on this window
+  const modelLock = `/home/azureuser/.webterminal/model_switch_${targetWindow.replace(/[^a-zA-Z0-9]/g, '_')}.lock`;
+  try {
+    if (fs.existsSync(modelLock) && (Date.now() - fs.statSync(modelLock).mtimeMs) < 60000) {
+      console.log(`[WA Bridge] 🧠 Model switch in progress on ${targetWindow}; retrying prompt in 3s`);
+      setTimeout(() => dispatchToTmux(promptText, targetWindow), 3000);
+      return;
+    }
+  } catch (e) {}
+
   if (isWindowBusy(targetWindow)) {
     console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
     promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now() });
@@ -127,6 +141,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0') {
   windowBusy[targetWindow] = true;
   windowBusySince[targetWindow] = Date.now();
   lastWaDispatchedPromptByWindow[targetWindow] = cleanPrompt.replace(/\s+/g, ' ').trim();
+  if (!cleanPrompt.startsWith('[OpenAI Codex Peer-Review Audit]')) {
+    lastUserPromptByWindow[targetWindow] = cleanPrompt;
+    auditCycleByWindow[targetWindow] = 0;
+  }
   try {
     // Ensure target session and window exist before dispatching
     try {
@@ -222,16 +240,15 @@ function getVerifiedModelInfo(targetWindow = 'agy:0') {
   let modelName = 'Gemini 3.8 Flash';
   let modeName = 'HIGH';
 
-  if (rawChoice.includes('(') && rawChoice.includes(')')) {
-    const m = rawChoice.match(/^(.*?)\s*\((.*?)\)$/);
-    if (m) {
-      modelName = m[1].trim();
-      modeName = m[2].trim().toUpperCase();
-    }
-  } else if (rawChoice.includes('·')) {
+  // FIX 2026-10-03: check the tmux "·" format FIRST (status bar may contain "1 task(s)")
+  if (rawChoice.includes('·')) {
     const parts = rawChoice.split('·');
     modelName = parts[0].trim();
     modeName = (parts[1] || 'HIGH').trim().toUpperCase();
+  } else if (/^(.*?)\s*\((.*?)\)$/.test(rawChoice.trim())) {
+    const m = rawChoice.trim().match(/^(.*?)\s*\((.*?)\)$/);
+    modelName = m[1].trim();
+    modeName = m[2].trim().toUpperCase();
   } else {
     modelName = rawChoice.trim();
   }
@@ -781,6 +798,7 @@ function findNewestTranscript() {
 
 function uploadToPasteRs(text) {
   return new Promise((resolve) => {
+    if (!text || !String(text).trim()) return resolve(null);
     try {
       const req = https.request('https://paste.rs', {
         method: 'POST',
@@ -793,7 +811,16 @@ function uploadToPasteRs(text) {
         let body = '';
         res.setEncoding('utf8');
         res.on('data', chunk => body += chunk);
-        res.on('end', () => resolve(body.trim()));
+        res.on('end', () => {
+          const out = body.trim();
+          // FIX 2026-10-03: never use an HTML error page (e.g. 400) as the link
+          if (res.statusCode >= 200 && res.statusCode < 300 && /^https:\/\/paste\.rs\/\S+$/.test(out)) {
+            resolve(out);
+          } else {
+            console.log('[WA Bridge] paste.rs rejected upload: HTTP', res.statusCode, 'bytes', Buffer.byteLength(text));
+            resolve(null);
+          }
+        });
       });
 
       req.on('error', () => resolve(null));
@@ -1049,6 +1076,81 @@ async function ensureResearchGroup() {
   }
 }
 
+async function ensureCodexGroup() {
+  try {
+    const pGroups = getProjectGroupMap();
+    const currentId = pGroups.codex?.id;
+    const isPending = !currentId || currentId.includes('pending') || !currentId.endsWith('@g.us');
+
+    const groups = await sock.groupFetchAllParticipating();
+    const list = Object.values(groups).map(g => ({ id: g.id, subject: g.subject, participants: g.participants || [] }));
+
+    let matched = null;
+    for (const g of list) {
+      const s = (g.subject || '').toLowerCase();
+      const isMatch = /(?:openai\s*codex|codex|agy\s*·\s*codex)/i.test(s);
+      if (isMatch) {
+        matched = g;
+        break;
+      }
+    }
+
+    if (matched) {
+      console.log(`[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: ${matched.subject} (${matched.id})`);
+      pGroups.codex = {
+        id: matched.id,
+        name: matched.subject || 'AGY · OpenAI Codex',
+        key: 'codex',
+        window: 'agy:codex',
+        cwd: '/home/azureuser/IroScript_Projects/OpenAI_Codex',
+        git_remote: '',
+        whatsapp_status: 'CONNECTED'
+      };
+      fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
+      return;
+    }
+
+    if (isPending) {
+      console.log('[WA Bridge] 🚀 Creating dedicated group with 01966608406: "AGY · OpenAI Codex"...');
+      const participants = ['8801966608406@s.whatsapp.net'];
+      if (TARGET_PHONE && TARGET_PHONE !== '8801966608406') {
+        participants.push(`${TARGET_PHONE}@s.whatsapp.net`);
+      }
+      try {
+        const newGroup = await sock.groupCreate('AGY · OpenAI Codex', participants);
+        console.log('[WA Bridge] ✅ Codex Group created successfully:', newGroup);
+        if (newGroup && newGroup.id) {
+          pGroups.codex = {
+            id: newGroup.id,
+            name: 'AGY · OpenAI Codex',
+            key: 'codex',
+            window: 'agy:codex',
+            cwd: '/home/azureuser/IroScript_Projects/OpenAI_Codex',
+            git_remote: '',
+            whatsapp_status: 'CONNECTED'
+          };
+          fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
+
+          let inviteUrl = '';
+          try {
+            const code = await sock.groupInviteCode(newGroup.id);
+            inviteUrl = `https://chat.whatsapp.com/${code}`;
+          } catch (e) {}
+
+          await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n👑 *[AGY · OPENAI CODEX TERMINAL]*\n━━━━━━━━━━━━━━━━━━━━━\n> 🎯 *উদ্দেশ্য:* OpenAI Codex (GPT-6.1-sol) ডেডিকেটেড কোডিং ও অটোমেশন টার্মিনাল।\n> 📱 *যুক্ত নম্বর:* +8801966608406\n> 📁 *ওয়ার্কস্পেস ডিরেক্টরি:* \`IroScript_Projects/OpenAI_Codex\`\n> 🖥️ *টার্মিনাল সেশন:* \`tmux agy:codex\`\n\n⚡ _এই গ্রুপে পাঠানো যেকোনো প্রম্পট সরাসরি OpenAI Codex এক্সিকিউট করবে।_\n══════════════════════`, { to: newGroup.id });
+
+          const personalTarget = lastPersonalLid || TARGET_JID;
+          await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n✅ *[OpenAI Codex টার্মিনাল গ্রুপ তৈরি সম্পন্ন]*\n━━━━━━━━━━━━━━━━━━━━━\n> 👥 *গ্রুপের নাম:* AGY · OpenAI Codex\n> 📱 *যুক্ত নম্বর:* +8801966608406\n> 🔗 *গ্রুপ লিঙ্ক:* ${inviteUrl || 'অটো-অ্যাড সম্পন্ন'}\n\n⚡ _OpenAI Codex টার্মিনাল এখন এই গ্রুপে লাইভ সংযুক্ত।_\n══════════════════════`, { to: personalTarget });
+        }
+      } catch (cgErr) {
+        console.error('[WA Bridge] ❌ Failed to create group via sock.groupCreate:', cgErr.message);
+      }
+    }
+  } catch (err) {
+    console.error('[WA Bridge] Failed in ensureCodexGroup:', err.message);
+  }
+}
+
 async function startBridge() {
   autoSanitizeAuth();
   setInterval(autoSanitizeAuth, 15 * 60 * 1000);
@@ -1102,6 +1204,9 @@ async function startBridge() {
 
       ensureResearchGroup().catch(err => {
         console.error('[WA Bridge] ensureResearchGroup error:', err.message);
+      });
+      ensureCodexGroup().catch(err => {
+        console.error('[WA Bridge] ensureCodexGroup error:', err.message);
       });
 
       try {
@@ -1362,6 +1467,40 @@ async function startBridge() {
         continue;
       }
 
+      // 2.3. Model switch (/model [window] <model> [low|medium|high])  — handled by bridge, not the AI
+      if (/^\/models?(\s|$)/i.test(text)) {
+        const { execFile } = require('child_process');
+        const MODEL_SCRIPT = '/home/azureuser/.webterminal/set_agy_model.sh';
+        const knownWins = ['0', 'main', 'master', 'yt', 'frappe', 'tg', 'history', 'kids', 'rust', 'article', 'game', 'research', 'report', 'reporting', 'codex'];
+        const tokens = text.replace(/^\/models?\s*/i, '').trim().split(/\s+/).filter(Boolean);
+        let targetWindow = getWindowForSender(sender);
+        if (tokens.length && (knownWins.includes(tokens[0].toLowerCase()) || /^agy:/i.test(tokens[0]))) {
+          const w = tokens.shift().toLowerCase();
+          targetWindow = w.startsWith('agy:') ? w : ({ '0': 'agy:0', main: 'agy:0', master: 'agy:0', reporting: 'agy:report' }[w] || `agy:${w}`);
+        }
+        let effort = 'high';
+        if (tokens.length && /^(low|med|medium|high|max)$/i.test(tokens[tokens.length - 1])) effort = tokens.pop().toLowerCase();
+        const query = tokens.join(' ');
+        if (!query || query === 'status' || query === 'info' || query === 'current') {
+          execFile(MODEL_SCRIPT, ['--status', targetWindow], { timeout: 10000 }, async (err, stdout) => {
+            const cur = ((stdout || '') || (err ? err.message : '')).trim();
+            const help = targetWindow === 'agy:codex'
+              ? `\nCodex model বদলাতে:\n/model codex gpt-6.1-sol high\n/model codex gpt-6-astra high\n/model codex gpt-6-sol medium\n/model codex gpt-6-luna low\n/model codex gpt-5.6-sol high\n/model codex gpt-5.6-terra high\n/model codex gpt-5.6-luna low\n/model codex gpt-5.5 high\nEffort: low / medium / high`
+              : `\nপরিবর্তন করতে:\n/model opus high\n/model sonnet medium\n/model flash low\n/model 3.1 pro\n/model frappe opus high (অন্য agent)`;
+            await sendWhatsAppMessage(`🧠 *[মডেল স্ট্যাটাস]*\n> ${cur}${help}`, { to: sender, quoted: msg });
+          });
+          continue;
+        }
+        try { await sock.sendMessage(sender, { react: { text: '🧠', key: msg.key } }); } catch (e) {}
+        await sendWhatsAppMessage(`🧠 *[মডেল পরিবর্তন হচ্ছে]*\n> \`${targetWindow}\` → *${query}* · ${effort}\n_এজেন্ট ব্যস্ত থাকলে কাজ শেষ হলে পরিবর্তন হবে..._`, { to: sender, quoted: msg });
+        execFile(MODEL_SCRIPT, [targetWindow, query, effort, '900'], { timeout: 960000 }, async (err, stdout) => {
+          const out = ((stdout || '').trim() || (err ? err.message : '')).trim();
+          const ok = !err && out.startsWith('OK');
+          await sendWhatsAppMessage(`${ok ? '✅' : '❌'} *[মডেল ${ok ? 'পরিবর্তন সম্পন্ন' : 'পরিবর্তন ব্যর্থ'}]*\n> ${out}`, { to: sender });
+        });
+        continue;
+      }
+
       // 2.35. Direct Master Orchestrator routing (/master, /agy0, /admin)
       if (text.startsWith('/master ') || text.startsWith('/agy0 ') || text.startsWith('/admin ')) {
         const masterPrompt = text.replace(/^(\/master|\/agy0|\/admin)\s*/i, '').trim();
@@ -1384,12 +1523,30 @@ async function startBridge() {
 
       // 2.5. Direct Ask & Research Command (/ask, /research, ask:, research:)
       if (text.startsWith('/ask ') || text.startsWith('/research ') || text.toLowerCase().startsWith('ask: ') || text.toLowerCase().startsWith('research: ')) {
+        const isResearchCmd = /^\/research\b|^research:\s*/i.test(text);
         const topic = text.replace(/^(\/ask|\/research|ask:|research:)\s*/i, '').trim();
         if (topic) {
           lastUserMsgByWindow['agy:research'] = msg;
           lastUserMsgKeyByWindow['agy:research'] = msg.key;
-          dispatchToTmux(topic, 'agy:research');
-          await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n🤖 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📌 *বিষয়:* "${topic.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/Ask-And-Research-Agent\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:research) গবেষণা ও ডসিয়ার প্রস্তুত করছে..._\n══════════════════════`, { to: sender });
+          const promptToSend = isResearchCmd ? `/research ${topic}` : topic;
+          dispatchToTmux(promptToSend, 'agy:research');
+          if (isResearchCmd) {
+            await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n🤖 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📌 *বিষয়:* "${topic.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/Ask-And-Research-Agent\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:research) গবেষণা ও ডসিয়ার প্রস্তুত করছে..._\n══════════════════════`, { to: sender });
+          } else {
+            await sendWhatsAppMessage(`💬 ══════════════════════ 💬\n🤖 *[ASK & RESEARCH AGENT · আস্ক মোড]*\n━━━━━━━━━━━━━━━━━━━━━\n> ❓ *প্রশ্ন:* "${topic.substring(0, 80)}"\n\n⚡ _টার্মিনাল সেশন (tmux agy:research) উত্তর প্রস্তুত করছে..._\n══════════════════════`, { to: sender });
+          }
+          continue;
+        }
+      }
+
+      // 2.6. Direct OpenAI Codex Command (/codex, codex:)
+      if (text.startsWith('/codex ') || text.toLowerCase().startsWith('codex: ')) {
+        const codexPrompt = text.replace(/^(\/codex|codex:)\s*/i, '').trim();
+        if (codexPrompt) {
+          lastUserMsgByWindow['agy:codex'] = msg;
+          lastUserMsgKeyByWindow['agy:codex'] = msg.key;
+          dispatchToTmux(codexPrompt, 'agy:codex');
+          await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n👑 *[OPENAI CODEX · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${codexPrompt.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/OpenAI_Codex\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:codex) কোড ও টাস্ক প্রসেস করছে..._\n══════════════════════`, { to: sender });
           continue;
         }
       }
@@ -1488,8 +1645,9 @@ async function startBridge() {
         const firstLine = text.trim().split('\n')[0] || text;
         const shortPrompt = firstLine.length > 50 ? firstLine.substring(0, 48) + '...' : firstLine;
         const isResearch = targetWindow === 'agy:research';
-        const headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : (isResearch ? `🔬 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`);
-        const subMsg = isResearch ? `⚡ _আপনার ব্যক্তিগত রিসার্চ অ্যাসিস্ট্যান্ট গবেষণা ও ডসিয়ার প্রস্তুত করছে..._` : `⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._`;
+        const isCodex = targetWindow === 'agy:codex';
+        const headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : (isResearch ? `🔬 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*` : (isCodex ? `🤖 *[OPENAI CODEX · প্রসেসিং শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`));
+        const subMsg = isResearch ? `⚡ _আপনার ব্যক্তিগত রিসার্চ অ্যাসিস্ট্যান্ট গবেষণা ও ডসিয়ার প্রস্তুত করছে..._` : (isCodex ? `⚡ _নির্দেশনাটি Codex টার্মিনালে পাঠানো হয়েছে; Codex থেকে প্রকাশিত অগ্রগতি ও আউটপুট এলে এখানে পাঠানো হবে।_` : `⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._`);
         sendWhatsAppMessage(`⏳ ══════════════════════ ⏳\n${headerTitle}\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* "${shortPrompt}"\n\n${subMsg}\n══════════════════════`, { to: sender }).catch(() => {});
       } catch (e) {}
     }
@@ -1819,6 +1977,8 @@ async function processSingleTranscript(transcriptPath) {
         tracker.isSendingReply = false;
         windowBusy[targetWindow] = false;
 
+        // triggerCodexPeerReview disabled per user directive: Codex must not audit or dispatch to master agent
+
         while (promptQueue.length > 0) {
           const qIdx = promptQueue.findIndex(item => item.targetWindow === targetWindow);
           if (qIdx === -1) break;
@@ -1840,12 +2000,403 @@ async function processSingleTranscript(transcriptPath) {
   }
 }
 
+let lastCodexRolloutPath = null;
+let lastCodexLineCount = 0;
+let lastCodexKnownLineCount = 0;
+let lastCodexFileSize = -1;
+let lastCodexHeartbeatTime = 0;
+let lastCodexOutputTime = Date.now();
+let newestCodexRolloutScanTime = 0;
+let newestCodexRolloutCache = null;
+
+function findNewestCodexRollout() {
+  if (Date.now() - newestCodexRolloutScanTime < 1000) return newestCodexRolloutCache;
+  newestCodexRolloutScanTime = Date.now();
+  const baseDir = '/home/azureuser/.codex/sessions';
+  if (!fs.existsSync(baseDir)) return null;
+  let newest = null;
+  let maxMtime = 0;
+  function walk(dir) {
+    try {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const e of entries) {
+        const full = path.join(dir, e.name);
+        if (e.isDirectory()) {
+          walk(full);
+        } else if (e.isFile() && e.name.startsWith('rollout-') && e.name.endsWith('.jsonl')) {
+          try {
+            const m = fs.statSync(full).mtimeMs;
+            if (m > maxMtime) {
+              maxMtime = m;
+              newest = full;
+            }
+          } catch (err) {}
+        }
+      }
+    } catch (err) {}
+  }
+  walk(baseDir);
+  newestCodexRolloutCache = newest;
+  return newest;
+}
+
+function getCodexModelInfo() {
+  try {
+    const configPath = '/home/azureuser/.codex/config.toml';
+    if (fs.existsSync(configPath)) {
+      const content = fs.readFileSync(configPath, 'utf8');
+      const mMatch = content.match(/^model\s*=\s*"([^"]+)"/m);
+      const eMatch = content.match(/^model_reasoning_effort\s*=\s*"([^"]+)"/m);
+      if (mMatch) {
+        let slug = mMatch[1];
+        let name = slug;
+        if (slug === 'gpt-6-luna') name = 'GPT-6-Luna';
+        else if (slug === 'gpt-6.1-sol') name = 'GPT-6.1-Sol';
+        else if (slug === 'gpt-6-sol') name = 'GPT-6-Sol';
+        else if (slug === 'gpt-6-astra') name = 'GPT-6-Astra';
+        else if (slug === 'gpt-5.6-luna') name = 'GPT-5.6-Luna';
+        else if (slug === 'gpt-5.6-sol') name = 'GPT-5.6-Sol';
+        if (eMatch && eMatch[1]) {
+          name += ` (${eMatch[1]})`;
+        }
+        return name;
+      }
+    }
+  } catch (e) {}
+  return 'GPT-6-Luna (low)';
+}
+
+let activeCodexModelName = null;
+const sentCodexMsgIds = new Set();
+let isProcessingCodexRollout = false;
+let lastCodexPollTime = 0;
+const sentCodexChunkIds = new Set();
+let activeCodexTurnId = null;
+let lastCompletedCodexTurnId = null;
+const completedCodexTurnIds = new Set();
+const pendingCodexFinalReplies = new Map();
+
+function cleanCodexActivityText(value) {
+  return String(value ?? '')
+    .replace(/\x1B(?:\[[0-?]*[ -/]*[@-~]|\][^\x07]*(?:\x07|\x1B\\))/g, '')
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '');
+}
+
+function splitCodexWhatsAppText(value, maxChars = 12000) {
+  const chars = Array.from(cleanCodexActivityText(value));
+  if (chars.length <= maxChars) return [chars.join('')];
+  const chunks = [];
+  for (let start = 0; start < chars.length;) {
+    let end = Math.min(start + maxChars, chars.length);
+    if (end < chars.length) {
+      const newline = chars.lastIndexOf('\n', end - 1);
+      if (newline > start + Math.floor(maxChars * 0.7)) end = newline + 1;
+    }
+    chunks.push(chars.slice(start, end).join(''));
+    start = end;
+  }
+  return chunks.map((chunk, i) => '[' + (i + 1) + '/' + chunks.length + ']\n' + chunk);
+}
+
+async function sendCodexChunked(text, targets, eventId) {
+  const chunks = splitCodexWhatsAppText(text);
+  let delivered = true;
+  const stableId = String(eventId || Date.now());
+  for (const target of [...new Set((targets || []).filter(Boolean))]) {
+    for (let i = 0; i < chunks.length; i++) {
+      const deliveryId = stableId + '\u001f' + target + '\u001f' + i;
+      if (sentCodexChunkIds.has(deliveryId)) continue;
+      const result = await sendWhatsAppMessage(chunks[i], { to: target });
+      if (!result || !result.key) {
+        delivered = false;
+      } else {
+        sentCodexChunkIds.add(deliveryId);
+        if (sentCodexChunkIds.size > 30000) {
+          const oldest = sentCodexChunkIds.values().next().value;
+          sentCodexChunkIds.delete(oldest);
+        }
+      }
+    }
+  }
+  return delivered;
+}
+
+async function processCodexRollout() {
+  const now = Date.now();
+  if (isProcessingCodexRollout || now - lastCodexPollTime < 500) return;
+  lastCodexPollTime = now;
+  isProcessingCodexRollout = true;
+  try {
+    if (!sock || !isWsConnected) return;
+    const newest = findNewestCodexRollout();
+    if (!newest) return;
+
+    const pGroups = getProjectGroupMap();
+    const groupJid = (pGroups.codex && pGroups.codex.id && pGroups.codex.id.endsWith('@g.us') && !pGroups.codex.id.includes('pending')) ? pGroups.codex.id : null;
+    const codexTargets = groupJid ? [groupJid] : [];
+
+    const isInitialRollout = lastCodexRolloutPath === null;
+    if (newest !== lastCodexRolloutPath) {
+      lastCodexRolloutPath = newest;
+      lastCodexLineCount = 0;
+      lastCodexKnownLineCount = 0;
+      lastCodexFileSize = -1;
+    }
+
+    let content = '';
+    let rolloutSize = -1;
+    try {
+      const stat = fs.statSync(newest);
+      rolloutSize = stat.size;
+      if (!isInitialRollout && rolloutSize === lastCodexFileSize && lastCodexLineCount === lastCodexKnownLineCount) return;
+      content = fs.readFileSync(newest, 'utf8');
+    } catch (e) {
+      return;
+    }
+
+    const rawLines = content.split('\n');
+    if (!content.endsWith('\n')) rawLines.pop();
+    const allLines = rawLines.filter(Boolean);
+    if (isInitialRollout) {
+      // The bridge starts while Codex is idle; establish an EOF cursor and never replay old replies.
+      lastCodexLineCount = allLines.length;
+      lastCodexKnownLineCount = allLines.length;
+      lastCodexFileSize = rolloutSize;
+      return;
+    }
+    if (allLines.length <= lastCodexLineCount) {
+      lastCodexFileSize = rolloutSize;
+      lastCodexKnownLineCount = allLines.length;
+      return;
+    }
+
+    lastCodexOutputTime = Date.now();
+    const newLines = allLines.slice(lastCodexLineCount);
+    let retryAtLineIndex = null;
+
+    for (let newLineIndex = 0; newLineIndex < newLines.length; newLineIndex++) {
+      const l = newLines[newLineIndex];
+      try {
+        const obj = JSON.parse(l);
+        const p = obj.payload || {};
+
+        // Forward the real persisted task lifecycle event; this is not a generated progress message.
+        if (obj.type === 'event_msg' && p.type === 'task_started') {
+          const turnId = p.turn_id || p.root_turn_id || l;
+          activeCodexTurnId = turnId;
+          lastCompletedCodexTurnId = null;
+          const started = '▶️ [Codex turn started]' + (p.turn_id ? '\nturn id: ' + p.turn_id : '');
+          const delivered = await sendCodexChunked(started, codexTargets, turnId);
+          if (delivered) sentCodexMsgIds.add('task-start:' + turnId);
+          else retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+        }
+
+        // Forward real user-visible lifecycle and tool-start events from Codex.
+        if (obj.type === 'event_msg' && p.type === 'task_complete') {
+          const turnId = p.turn_id || p.root_turn_id || activeCodexTurnId || l;
+          const details = [
+            '[Codex turn complete]',
+            p.duration_ms !== undefined ? 'duration_ms: ' + p.duration_ms : '',
+            p.error ? 'error: ' + JSON.stringify(p.error) : ''
+          ].filter(Boolean).join('\n');
+          const completionId = 'task-complete:' + turnId;
+          let delivered = sentCodexMsgIds.has(completionId);
+          if (!delivered) {
+            delivered = await sendCodexChunked(details, codexTargets, completionId);
+            if (delivered) sentCodexMsgIds.add(completionId);
+          }
+          if (delivered) {
+            completedCodexTurnIds.add(turnId);
+            if (completedCodexTurnIds.size > 1000) completedCodexTurnIds.delete(completedCodexTurnIds.values().next().value);
+            lastCompletedCodexTurnId = turnId;
+            if (activeCodexTurnId === turnId) activeCodexTurnId = null;
+            const pendingReply = pendingCodexFinalReplies.get(turnId);
+            if (pendingReply) {
+              const replyDelivered = await sendCodexChunked(pendingReply.reply, codexTargets, pendingReply.msgId);
+              if (replyDelivered) {
+                sentCodexMsgIds.add(pendingReply.msgId);
+                pendingCodexFinalReplies.delete(turnId);
+                console.log('[WA Bridge] Codex final answer delivered after its turn-complete notice');
+              } else {
+                retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+              }
+            }
+          } else {
+            retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+          }
+        }
+
+        if (obj.type === 'event_msg' && (p.type === 'warning' || p.type === 'error')) {
+          const eventId = p.id || p.turn_id || (p.type + ':' + l);
+          const details = '[Codex ' + p.type + ']\n' + (p.message || (p.error && p.error.message) || JSON.stringify(p));
+          const delivered = await sendCodexChunked(details, codexTargets, eventId);
+          if (delivered) sentCodexMsgIds.add(eventId);
+          else retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+        }
+
+        if (obj.type === 'event_msg' && p.type === 'item_started' && p.item) {
+          const item = p.item;
+          if (['CommandExecution', 'McpToolCall', 'WebSearch', 'FileChange'].includes(item.type)) {
+            const activityId = (item.id || (item.type + ':' + l)) + ':started';
+            let details = '[Codex ' + item.type + ' started]\n';
+            if (item.type === 'CommandExecution') {
+              const cmd = Array.isArray(item.command) ? item.command.join(' ') : (item.command || '');
+              details += '$ ' + cmd + (item.cwd ? '\ncwd: ' + item.cwd : '');
+            } else {
+              details += JSON.stringify(item, null, 2);
+            }
+            const delivered = await sendCodexChunked(details, codexTargets, activityId);
+            if (delivered) sentCodexMsgIds.add(activityId);
+            else retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+          }
+        }
+
+        // 0. Turn Context (Active Model & Reasoning Effort)
+        if (obj.type === 'turn_context' && p) {
+          if (p.model) {
+            let mName = p.model;
+            if (mName === 'gpt-6-luna') mName = 'GPT-6-Luna';
+            else if (mName === 'gpt-6.1-sol') mName = 'GPT-6.1-Sol';
+            else if (mName === 'gpt-6-sol') mName = 'GPT-6-Sol';
+            else if (mName === 'gpt-6-astra') mName = 'GPT-6-Astra';
+            else if (mName === 'gpt-5.6-luna') mName = 'GPT-5.6-Luna';
+            else if (mName === 'gpt-5.6-sol') mName = 'GPT-5.6-Sol';
+            const eff = p.effort || (p.collaboration_mode && p.collaboration_mode.settings && p.collaboration_mode.settings.reasoning_effort);
+            if (eff) {
+              mName += ` (${eff})`;
+            }
+            activeCodexModelName = mName;
+          }
+        }
+
+        // Forward public assistant progress; intentionally exclude internal Reasoning items.
+        if (obj.type === 'response_item' && p.role === 'assistant' && p.phase === 'commentary' && Array.isArray(p.content)) {
+          lastCodexOutputTime = Date.now();
+          const progressId = p.id || l;
+          if (!sentCodexMsgIds.has(progressId)) {
+            const progress = p.content.map(c => c.text || '').filter(Boolean).join('\n').trim();
+            if (progress) {
+              const delivered = await sendCodexChunked('🧠 [Codex অগ্রগতি]\n' + progress, codexTargets, progressId);
+              if (delivered) {
+                sentCodexMsgIds.add(progressId);
+              } else {
+                retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+              }
+              if (delivered) {
+                console.log('[WA Bridge] Codex progress delivered');
+              }
+            }
+          }
+        }
+
+        // Codex persists full command output in this structured item when execution completes.
+        if (obj.type === 'event_msg' && p.type === 'item_completed' && p.item) {
+          const item = p.item;
+          if (item.type === 'CommandExecution') {
+            const execId = item.id || JSON.stringify(item.command);
+            if (!sentCodexMsgIds.has(execId)) {
+              const cmdArr = Array.isArray(item.command) ? item.command : [item.command || ''];
+              let cmd = cmdArr.join(' ');
+              if (cmdArr.length >= 3 && (cmdArr[0] === '/bin/bash' || cmdArr[0] === 'bash') && cmdArr[1] === '-lc') {
+                cmd = cmdArr.slice(2).join(' ');
+              }
+              const stdout = item.stdout || '';
+              const stderr = item.stderr || '';
+              const combinedOutput = (!stdout && !stderr) ? (item.aggregated_output || item.formatted_output || '') : '';
+              const report = [
+                '⚡ [Codex কমান্ড সম্পন্ন]',
+                '$ ' + cmd,
+                item.cwd ? 'cwd: ' + item.cwd : '',
+                item.status ? 'status: ' + item.status : '',
+                item.exit_code !== undefined ? 'exit code: ' + item.exit_code : '',
+                item.duration ? 'duration: ' + JSON.stringify(item.duration) : '',
+                stdout ? '--- stdout ---\n' + stdout : '',
+                stderr ? '--- stderr ---\n' + stderr : '',
+                combinedOutput ? '--- command output (Codex-aggregated; stdout/stderr not separated) ---\n' + combinedOutput : ''
+              ].filter(Boolean).join('\n');
+              const delivered = await sendCodexChunked(report, codexTargets, execId);
+              if (delivered) sentCodexMsgIds.add(execId);
+              else retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+              console.log('[WA Bridge] Codex command result bytes=' + (Buffer.byteLength(stdout) + Buffer.byteLength(stderr)) + ' delivered=' + delivered);
+            }
+          } else if (item.type === 'FileChange' || item.type === 'McpToolCall' || item.type === 'WebSearch') {
+            const activityId = item.id || (item.type + ':' + l);
+            if (!sentCodexMsgIds.has(activityId)) {
+              const delivered = await sendCodexChunked('[Codex ' + item.type + ' activity]\n' + JSON.stringify(item, null, 2), codexTargets, activityId);
+              if (delivered) sentCodexMsgIds.add(activityId);
+              else retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+              console.log('[WA Bridge] Codex ' + item.type + ' activity delivered=' + delivered);
+            }
+          }
+        }
+
+        // 3. Final Answer
+        if (obj.type === 'response_item' && p.role === 'assistant' && p.phase === 'final_answer' && Array.isArray(p.content)) {
+          const msgId = p.id || l;
+          if (!sentCodexMsgIds.has(msgId)) {
+            let reply = '';
+            for (const c of p.content) {
+              if (c.type === 'output_text' && c.text) {
+                const text = c.text.trim();
+                if (text.length > 0) {
+                  const now = new Date();
+                  const timeStr = now.toLocaleTimeString('bn-BD', { timeZone: 'Asia/Dhaka', hour: '2-digit', minute: '2-digit', hour12: true });
+                  const codexModelName = activeCodexModelName || getCodexModelInfo();
+                  let footer = '\n\n```\n';
+                  footer += '╭─ SESSION DATA ──────────────╮\n';
+                  footer += '│ 🕐 TIME  · ' + timeStr.padEnd(17) + '│\n';
+                  footer += '│ 🤖 MODEL · ' + codexModelName.padEnd(17) + '│\n';
+                  footer += '│ ⚡ ENGINE· OpenAI Codex CLI │\n';
+                  footer += '╰─────────────────────────────╯\n```';
+                  reply = '🤖 ══════════════════════ 🤖\n👑 *[AGY · OPENAI CODEX · রেসপন্স]*\n━━━━━━━━━━━━━━━━━━━━━\n\n' + text + footer + '\n══════════════════════';
+                }
+              }
+            }
+            if (reply) {
+              const turnId = activeCodexTurnId || lastCompletedCodexTurnId || p.turn_id || p.root_turn_id || msgId;
+              if (completedCodexTurnIds.has(turnId)) {
+                const replyDelivered = await sendCodexChunked(reply, codexTargets, msgId);
+                if (replyDelivered) {
+                  sentCodexMsgIds.add(msgId);
+                  console.log('[WA Bridge] Codex final answer delivered to configured WhatsApp targets');
+                } else {
+                  retryAtLineIndex = retryAtLineIndex === null ? newLineIndex : Math.min(retryAtLineIndex, newLineIndex);
+                  console.error('[WA Bridge] Codex final answer delivery incomplete for rollout event ' + msgId);
+                }
+              } else {
+                pendingCodexFinalReplies.set(turnId, { msgId, reply });
+                console.log('[WA Bridge] Holding Codex final answer until its turn-complete notice');
+              }
+            }
+          }
+        }
+      } catch (parseE) {}
+    }
+    lastCodexKnownLineCount = allLines.length;
+    lastCodexFileSize = rolloutSize;
+    lastCodexLineCount = retryAtLineIndex === null ? allLines.length : lastCodexLineCount + retryAtLineIndex;
+  } catch (err) {
+    console.error('[WA Bridge] Codex watcher error:', err.message);
+  } finally {
+    isProcessingCodexRollout = false;
+  }
+}
+
+async function triggerCodexPeerReview(targetWindow, targetJid, rawContent) {
+  // Disconnected per user directive: do not run codex peer reviews or dispatch codex reports to master agent
+  return;
+}
+
 function watchReplies() {
   setInterval(() => {
     if (!sock || !sock.authState.creds.registered) return;
 
     processWaOutbox().catch(err => {
       console.error('[WA Bridge] Outbox processing error:', err.message);
+    });
+
+    processCodexRollout().catch(err => {
+      console.error('[WA Bridge] Codex rollout watcher error:', err.message);
     });
 
     try {

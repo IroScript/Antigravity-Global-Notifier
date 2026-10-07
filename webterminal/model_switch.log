@@ -1,0 +1,24 @@
+[2026-10-04 05:38:55] Request: agy:0 -> 'status' (high), current: Gemini 3.8 Flash · high
+[2026-10-04 05:39:00] ERROR: no model matching 'status' in agy:0 picker
+[2026-10-04 06:17:38] Request: agy:0 -> 'gemini-3.1-pro-high' (high), current: Gemini 3.8 Flash · high
+[2026-10-04 06:17:44] ERROR: no model matching 'gemini-3.1-pro-high' in agy:0 picker
+[2026-10-04 06:19:20] Request: agy:0 -> '3.1 pro' (high), current: Gemini 3.8 Flash · high
+[2026-10-04 06:19:27] Done: agy:0 now 'Gemini 3.1 Pro · high' (confirm: 'Gemini 3.1 Pro (High)')
+[2026-10-04 10:12:43] Request: agy:0 -> 'opus' (high), current: Gemini 3.1 Pro · high
+[2026-10-04 10:12:51] Done: agy:0 now 'Claude Opus 5.5 · high' (confirm: 'Claude Opus 5.5 (High)')
+[2026-10-04 10:14:09] Request: agy:0 -> 'gemini' (high), current: Claude Opus 5.5 · high
+[2026-10-04 10:14:17] Done: agy:0 now 'Gemini 3.1 Pro · high' (confirm: 'Gemini 3.1 Pro (High)')
+[2026-10-04 10:14:41] Request: agy:0 -> 'gemini flash' (high), current: Gemini 3.1 Pro · high
+[2026-10-04 10:14:49] Done: agy:0 now 'Gemini 3.8 Flash · high' (confirm: 'Gemini 3.8 Flash (High)')
+[2026-10-05 05:19:57] Request: agy:codex -> 'astra' (high), current: GPT-6.1-Sol low
+[2026-10-05 05:20:04] Done: agy:codex now 'GPT-5.5 xhigh' (GPT-6-Astra high)
+[2026-10-05 05:20:28] Request: agy:codex -> 'astra' (high), current: GPT-6.1-Sol low
+[2026-10-05 05:20:34] Done: agy:codex now 'GPT-6-Astra high' (GPT-6-Astra high)
+[2026-10-05 05:20:37] Request: agy:codex -> 'sol' (low), current: GPT-6-Astra high
+[2026-10-05 05:20:43] Done: agy:codex now 'GPT-6.1-Sol low' (GPT-6.1-Sol low)
+[2026-10-07 09:16:39] Request: agy:codex -> 'gpt 6.1 sol' (low), current: GPT-6-Luna low
+[2026-10-07 09:16:45] Done: agy:codex now 'GPT-6-Sol low' (GPT-6-Sol low)
+[2026-10-07 09:18:34] Request: agy:codex -> 'gpt 6 luna' (low), current: GPT-6-Sol low
+[2026-10-07 09:18:40] Done: agy:codex now 'GPT-6-Luna low' (GPT-6-Luna low)
+[2026-10-07 09:20:09] Request: agy:codex -> 'gpt 6 luna' (low), current: GPT-6-Luna low
+[2026-10-07 09:20:15] Done: agy:codex now 'GPT-6-Luna low' (GPT-6-Luna low)

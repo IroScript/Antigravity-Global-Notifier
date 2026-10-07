@@ -1,0 +1,13 @@
+{
+  "message_type": "INCIDENT",
+  "incident_id": "INC-SYNC-20261005083533",
+  "project": "gdrive_sync",
+  "agent": "agy:report",
+  "severity": "CRITICAL",
+  "detector": "gdrive_live_sync_sentinel",
+  "evidence": {
+    "service_status": "",
+    "timestamp": "2026-10-05T08:35:33.062355+00:00"
+  },
+  "recommended_action": "Restart gdrive-live-sync service and verify logs"
+}

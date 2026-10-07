@@ -76,9 +76,7 @@
     "name": "AGY · Ask & Research",
     "key": "research",
     "window": "agy:research",
-    "cwd": "/home/azureuser/IroScript_Projects/Ask-And-Research-Agent",
-    "git_remote": "",
-    "whatsapp_status": "CONNECTED"
+    "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent"
   },
   "reporting": {
     "id": "120363430377910102@g.us",
@@ -87,6 +85,15 @@
     "window": "agy:report",
     "cwd": "/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Reporting-Agent",
     "git_remote": "https://github.com/IroScript/Antigravity-Global-Notifier.git",
+    "whatsapp_status": "CONNECTED"
+  },
+  "codex": {
+    "id": "120363433006199651@g.us",
+    "name": "AGY · OpenAI Codex",
+    "key": "codex",
+    "window": "agy:codex",
+    "cwd": "/home/azureuser/IroScript_Projects/OpenAI_Codex",
+    "git_remote": "",
     "whatsapp_status": "CONNECTED"
   }
 }

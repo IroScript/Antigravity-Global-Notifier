@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007024210-0a59b5",
+  "timestamp": "2026-10-07T02:42:10.139181+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat /home/azureuser/.agents/.verification_secret.key"
+  },
+  "decision": "DENIED",
+  "reason": "Direct reading, dumping, or exfiltration of the cryptographic verification secret key is strictly prohibited (Rule 41)",
+  "rule_id": "RULE_41_SECRET_KEY_READ_DENIED"
+}

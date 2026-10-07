@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261006152800-8b1c39",
+  "timestamp": "2026-10-06T15:28:00.824626+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm -rf /etc"
+  },
+  "decision": "DENIED",
+  "reason": "Catastrophic deletion of system root directory '/etc' is prohibited",
+  "rule_id": "CRITICAL_SYSTEM_ROOT_PROTECT"
+}

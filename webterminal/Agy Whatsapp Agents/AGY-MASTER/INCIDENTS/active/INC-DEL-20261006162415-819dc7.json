@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261006162415-819dc7",
+  "timestamp": "2026-10-06T16:24:15.094430+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nsh_content = '''#!/usr/bin/env bash\n# verify_trust_baseline.sh \u2014 Validates AGY trust baseline against disk files.\nset -euo pipefail\n\nSCRIPT_DIR=\\\"\\$(cd \\\"\\$(dirname \\\"\\${BASH_SOURCE[0]}\\\")\\\" && pwd)\\\"\nBASELINE_FILE=\\\"\\${SCRIPT_DIR}/TRUST_BASELINE.json\\\"\n\necho \\\"=== AGY TRUST BASELINE AUDIT ===\\\"\nif [ ! -f \\\"\\$BASELINE_FILE\\\" ]; then\n    echo \\\"[-] ERROR: Baseline file \\$BASELINE_FILE does not exist!\\\"\n    echo \\\"AGY TRUST BASELINE: FAIL\\\"\n    exit 1\nfi\n\npython3 -c \\\"\nimport json, sys, os, hashlib\n\nwith open('$BASELINE_FILE') as f:\n    items = json.load(f)\n\nfailures = 0\ntotal = len(items)\n\nfor item in items:\n    f_name = item['file']\n    dest = item['destination']\n    exp_sha = item['sha256']\n    req = item['required']\n\n    if not os.path.exists(dest):\n        if req:\n            print(f'[-] CRITICAL MISSING: {dest}')\n            failures += 1\n        else:\n            print(f'[*] OPTIONAL MISSING: {dest}')\n        continue\n\n    actual_sha = hashlib.sha256(open(dest, 'rb').read()).hexdigest()\n    if actual_sha != exp_sha:\n        print(f'[-] HASH MISMATCH on {dest}:')\n        print(f'    Expected: {exp_sha}')\n        print(f'    Actual:   {actual_sha}')\n        failures += 1\n    else:\n        print(f'[+] VERIFIED: {f_name} (SHA256 OK)')\n\nprint('----------------------------------------')\nprint(f'Total Files Evaluated: {total}')\nprint(f'Total Policy Failures: {failures}')\nprint('----------------------------------------')\n\nif failures > 0:\n    print('AGY TRUST BASELINE: FAIL')\n    sys.exit(1)\nelse:\n    print('AGY TRUST BASELINE: VERIFIED')\n    sys.exit(0)\n\\\"\n'''\n\nwith open('/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verify_trust_baseline.sh', 'w') as f:\n    f.write(sh_content)\n\" && chmod +x /home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verify_trust_baseline.sh"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

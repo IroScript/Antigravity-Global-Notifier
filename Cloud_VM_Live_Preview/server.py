@@ -102,8 +102,8 @@ def seed_metrics_history(conn):
             base_cpu = 32.0 if (8 <= hour_int <= 23) else 16.0
             cpu_val = round(base_cpu + random.uniform(-8.0, 18.0), 1)
             cpu_val = max(5.0, min(95.0, cpu_val))
-            ram_gb = round(random.uniform(9.1, 9.6), 2)
-            ram_pct = round((ram_gb / 13.27) * 100, 1)
+            ram_gb = round(random.uniform(3.8, 4.4), 2)
+            ram_pct = round((ram_gb / 7.76) * 100, 1)
             app1_cpu = round(cpu_val * 0.45, 1)
             app1_ram = round(random.uniform(0.20, 0.35), 2)
             app2_cpu = round(cpu_val * 0.25, 1)
@@ -181,8 +181,19 @@ def resolve_agent_identity(pid, cmd):
         return ('🔧 agy:action (Action Fixer)', 'agy:action')
     if 'youtube' in full_txt or 'promptdatabase' in full_txt or tty == '/dev/pts/3':
         return ('🎬 agy:yt (YouTube Pipeline)', 'agy:yt')
-    if 'frappe' in full_txt or 'alco' in full_txt or tty == '/dev/pts/4':
-        return ('💼 agy:frappe (ERPNext)', 'agy:frappe')
+    # Disaggregate Frappe components accurately
+    if 'esbuild' in full_txt:
+        return ('🛠️ Frappe Asset Watcher (esbuild)', 'frappe:esbuild')
+    if 'frappe serve' in full_txt or 'bench_helper' in full_txt or 'gunicorn' in full_txt:
+        return ('⚡ Frappe Web Server (frappe serve)', 'frappe:server')
+    if 'mariadb' in full_txt or 'mysqld' in full_txt:
+        return ('🗄️ MariaDB Database (mariadbd)', 'mariadb')
+    if 'redis' in full_txt:
+        return ('🔄 Redis Cache & Queue', 'redis')
+    if tty == '/dev/pts/4' or ('agy' in str(cmd) and 'frappe' in full_txt):
+        return ('💼 agy:frappe (CLI Agent)', 'agy:frappe')
+    if 'frappe' in full_txt or 'bench' in full_txt or 'alco' in full_txt:
+        return ('⚙️ Frappe Background Workers', 'frappe:worker')
     if 'telegram' in full_txt or tty == '/dev/pts/5':
         return ('🤖 agy:tg (Telegram Bot)', 'agy:tg')
     if 'personal ai' in full_txt or 'openrecall' in full_txt or tty == '/dev/pts/6':
@@ -255,18 +266,9 @@ def enrich_stats_data(data):
 _stats_cache = {"time": 0, "data": None}
 def get_system_stats():
     now = time.time()
-    if _stats_cache["data"] and (now - _stats_cache["time"] < 1.0):
+    if _stats_cache["data"] and (now - _stats_cache["time"] < 2.0):
         return _stats_cache["data"]
-    data = None
-    try:
-        req = urllib.request.Request("http://127.0.0.1:8090/api/stats")
-        with urllib.request.urlopen(req, timeout=1.5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-    except Exception:
-        pass
-    if not data:
-        data = get_fallback_stats()
-    
+    data = get_fallback_stats()
     data = enrich_stats_data(data)
     _stats_cache["time"] = now
     _stats_cache["data"] = data
@@ -277,7 +279,7 @@ _history_cache = {}
 def get_system_history(query_string=""):
     now = time.time()
     cache_key = query_string or "default"
-    if cache_key in _history_cache and (now - _history_cache[cache_key]["time"] < 2.0):
+    if cache_key in _history_cache and (now - _history_cache[cache_key]["time"] < 5.0):
         return _history_cache[cache_key]["data"]
 
     requested_range = "15m"
@@ -285,25 +287,6 @@ def get_system_history(query_string=""):
         if f"range={r}" in query_string:
             requested_range = r
             break
-
-    if requested_range in ["1m", "5m", "15m", "30m"]:
-        try:
-            url = f"http://127.0.0.1:8090/api/history?range={requested_range}"
-            req = urllib.request.Request(url)
-            with urllib.request.urlopen(req, timeout=1.5) as resp:
-                res_json = json.loads(resp.read().decode("utf-8"))
-                if res_json and isinstance(res_json, list) and len(res_json) > 0:
-                    for pt in res_json:
-                        if "cpu_400" not in pt:
-                            pt["cpu_400"] = round((pt.get("cpu", 0.0) / 100.0) * 400.0, 1) if pt.get("cpu", 0.0) <= 100.0 else pt.get("cpu", 0.0)
-                        if pt.get("app1", {}).get("name") == "🤖 AGY Coding Agent":
-                            pt["app1"]["name"] = "🧠 agy:0 (Master Agent)"
-                        if pt.get("app2", {}).get("name") == "🤖 AGY Coding Agent":
-                            pt["app2"]["name"] = "🎬 agy:yt (YouTube Pipeline)"
-                    _history_cache[cache_key] = {"time": now, "data": res_json}
-                    return res_json
-        except Exception:
-            pass
 
     init_metrics_db()
     data = []
@@ -433,8 +416,56 @@ def get_standalone_monitor_url():
             pass
     return "https://memories-birth-outer-speeches.trycloudflare.com"
 
+_prev_cpu_stat = {}
+
+def read_cpu_proc_stat():
+    global _prev_cpu_stat
+    try:
+        with open("/proc/stat", "r") as f:
+            lines = [l for l in f.readlines() if l.startswith("cpu")]
+        curr = {}
+        for l in lines:
+            parts = l.split()
+            name = parts[0]
+            vals = [float(x) for x in parts[1:]]
+            idle = vals[3] + vals[4]
+            total = sum(vals[:7])
+            curr[name] = (idle, total)
+        
+        if not _prev_cpu_stat:
+            _prev_cpu_stat = curr
+            load1, _, _ = os.getloadavg()
+            overall = round(min(load1 * 25.0, 100.0), 1)
+            return overall, [overall, overall, overall, overall]
+
+        cores = []
+        for name in sorted(curr.keys()):
+            if name == "cpu":
+                continue
+            prev_idle, prev_total = _prev_cpu_stat.get(name, (0.0, 0.0))
+            idle_d = curr[name][0] - prev_idle
+            total_d = curr[name][1] - prev_total
+            pct = round(100.0 * (1.0 - (idle_d / total_d)), 1) if total_d > 0 else 0.0
+            cores.append(max(0.0, min(100.0, pct)))
+
+        prev_overall_idle, prev_overall_total = _prev_cpu_stat.get("cpu", (0.0, 0.0))
+        overall_idle_d = curr["cpu"][0] - prev_overall_idle
+        overall_total_d = curr["cpu"][1] - prev_overall_total
+        overall_pct = round(100.0 * (1.0 - (overall_idle_d / overall_total_d)), 1) if overall_total_d > 0 else 0.0
+        overall = max(0.0, min(100.0, overall_pct))
+        
+        _prev_cpu_stat = curr
+        if not cores:
+            cores = [overall, overall, overall, overall]
+        return overall, cores
+    except Exception:
+        load1, _, _ = os.getloadavg()
+        overall = round(min(load1 * 25.0, 100.0), 1)
+        return overall, [overall, overall, overall, overall]
+
 def get_fallback_stats():
-    total_gb, used_gb, avail_gb, ram_pct = 15.62, 0.0, 0.0, 0.0
+    total_gb, used_gb, avail_gb, ram_pct = 7.76, 0.0, 0.0, 0.0
+    swap_total_gb, swap_used_gb, swap_pct = 0.0, 0.0, 0.0
     try:
         with open("/proc/meminfo", "r") as f:
             lines = f.readlines()
@@ -450,27 +481,68 @@ def get_fallback_stats():
         used_gb = round(used_kb / (1024 * 1024), 2)
         avail_gb = round(avail_kb / (1024 * 1024), 2)
         ram_pct = round((used_kb / total_kb) * 100, 1)
+
+        swap_total_kb = mem.get("SwapTotal", 0)
+        swap_free_kb = mem.get("SwapFree", 0)
+        swap_used_kb = swap_total_kb - swap_free_kb
+        swap_total_gb = round(swap_total_kb / (1024 * 1024), 2)
+        swap_used_gb = round(swap_used_kb / (1024 * 1024), 2)
+        swap_pct = round((swap_used_kb / swap_total_kb) * 100, 1) if swap_total_kb > 0 else 0.0
     except Exception:
         pass
 
+    cpu_overall, cpu_cores = read_cpu_proc_stat()
+
+    procs = []
     try:
-        load1, _, _ = os.getloadavg()
-        cpu_overall = round(min(load1 * 25.0, 100.0), 1)
-    except Exception:
-        cpu_overall = 0.0
+        cmd = ['ps', '-eo', 'pid,user,%cpu,%mem,comm,args', '--sort=-%cpu']
+        out = subprocess.check_output(cmd, text=True, errors='ignore').splitlines()
+        total_ram_mb = total_gb * 1024.0 if total_gb > 0 else 7946.0
+        for line in out[1:26]:
+            parts = line.split(None, 5)
+            if len(parts) >= 6:
+                pid, user, cpu_s, mem_s, comm, args = parts
+                try:
+                    cpu_f = float(cpu_s)
+                    mem_f = float(mem_s)
+                    pid_i = int(pid)
+                except ValueError:
+                    continue
+                ram_mb = round((mem_f / 100.0) * total_ram_mb, 1)
+                try:
+                    if os.path.exists(f'/proc/{pid_i}/smaps_rollup'):
+                        with open(f'/proc/{pid_i}/smaps_rollup', 'r') as srf:
+                            for sline in srf:
+                                if sline.startswith('Pss:'):
+                                    ram_mb = round(int(sline.split()[1]) / 1024.0, 1)
+                                    break
+                except Exception:
+                    pass
+                procs.append({
+                    "pid": pid_i,
+                    "user": user,
+                    "name": comm,
+                    "cmd": args[:140],
+                    "cpu": cpu_f,
+                    "ram_mb": ram_mb,
+                    "ram_pct": mem_f,
+                    "app": comm
+                })
+    except Exception as e:
+        sys.stderr.write(f"get_fallback_stats ps error: {e}\n")
 
     return {
         "cpu_overall": cpu_overall,
-        "cpu_cores": [cpu_overall, cpu_overall, cpu_overall, cpu_overall],
+        "cpu_cores": cpu_cores,
         "ram": {
             "used_gb": used_gb,
             "total_gb": total_gb,
             "percent": ram_pct,
             "avail_gb": avail_gb
         },
-        "swap": {"used_gb": 0.0, "total_gb": 0.0, "percent": 0.0},
+        "swap": {"used_gb": swap_used_gb, "total_gb": swap_total_gb, "percent": swap_pct},
         "apps": [],
-        "top_procs": []
+        "top_procs": procs
     }
 
 _properties_cache = {}
@@ -660,6 +732,11 @@ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
             self.send_json(get_system_history(parsed.query))
         elif path == "/api/monitor_url":
             self.send_json({"url": get_standalone_monitor_url()})
+        elif path == "/rclone-auth":
+            self.handle_rclone_auth_page()
+        elif path == "/api/rclone-submit":
+            code = params.get("code", [""])[0]
+            self.handle_rclone_submit(code)
         else:
             self.send_error(404, "Not Found")
 
@@ -699,6 +776,123 @@ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
         except Exception as e:
             self.send_error(500, f"Monitor proxy error: {e}")
 
+    def handle_rclone_auth_page(self):
+        state_file = "/home/azureuser/IroScript_Projects/All_Backup/rclone_auth_state.json"
+        google_url = "#"
+        state = ""
+        status = "unknown"
+        if os.path.exists(state_file):
+            try:
+                with open(state_file) as f:
+                    s = json.load(f)
+                    google_url = s.get("google_url", "#")
+                    state = s.get("state", "")
+                    status = s.get("status", "unknown")
+            except Exception:
+                pass
+        
+        html = f"""<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Drive Rclone Authorization</title>
+  <style>
+    body {{ background: #202020; color: #fff; font-family: 'Segoe UI', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }}
+    .card {{ background: #2d2d2d; border: 1px solid #454545; border-radius: 12px; max-width: 650px; width: 100%; padding: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }}
+    h1 {{ font-size: 22px; margin-top: 0; color: #60cdff; display: flex; align-items: center; gap: 10px; }}
+    p {{ line-height: 1.6; color: #ccc; font-size: 14px; }}
+    .btn {{ display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #0078d4; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: 0.2s; }}
+    .btn:hover {{ background: #1084d8; }}
+    .step {{ margin: 24px 0; padding: 16px; background: #262626; border-radius: 8px; border-left: 4px solid #60cdff; }}
+    .step-title {{ font-weight: 600; font-size: 15px; margin-bottom: 8px; color: #fff; }}
+    input[type=text] {{ width: 100%; box-sizing: border-box; padding: 12px; background: #1b1b1b; border: 1px solid #555; border-radius: 6px; color: #fff; font-size: 14px; margin-top: 8px; }}
+    #statusMsg {{ margin-top: 16px; font-weight: 600; font-size: 15px; }}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1><svg width="24" height="24" viewBox="0 0 24 24" fill="#60cdff"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg> Google Drive Rclone Authorization</h1>
+    <p>Azure VM-এর rclone অথেন্টিকেশন সম্পন্ন করতে নিচের ২টি সহজ ধাপ অনুসরণ করুন:</p>
+    
+    <div class="step">
+      <div class="step-title">ধাপ ১: গুগল একাউন্টে লগইন করে পারমিশন দিন</div>
+      <p>নিচের বাটনে ক্লিক করে নতুন ট্যাবে আপনার গুগল একাউন্টে লগইন করুন এবং Continue/Allow দিন:</p>
+      <a href="{google_url}" target="_blank" class="btn">🚀 Google-এ লগইন করুন (Click to Authorize)</a>
+    </div>
+
+    <div class="step">
+      <div class="step-title">ধাপ ২: রিডাইরেক্ট হওয়া ব্রাউজার লিঙ্ক বা কোড পেস্ট করুন</div>
+      <p>লগইন সম্পন্ন হলে ব্রাউজারে একটি এরর পেজ (127.0.0.1:53682) দেখতে পাবেন। ব্রাউজারের অ্যাড্রেস বার থেকে পুরো লিঙ্কটি কপি করে নিচে পেস্ট করুন:</p>
+      <input type="text" id="codeBox" placeholder="http://127.0.0.1:53682/?state=...&code=... অথবা শুধু কোড পেস্ট করুন">
+      <div style="margin-top: 12px;">
+        <button class="btn" style="background:#2ea043;" onclick="submitCode()">✅ সাবমিট করুন (Submit Code)</button>
+      </div>
+      <div id="statusMsg"></div>
+    </div>
+  </div>
+
+  <script>
+    async function submitCode() {{
+      const val = document.getElementById('codeBox').value.trim();
+      const msg = document.getElementById('statusMsg');
+      if (!val) {{ alert('দয়া করে লিঙ্ক বা কোড পেস্ট করুন!'); return; }}
+      msg.style.color = '#e3b341';
+      msg.textContent = 'অথেন্টিকেশন প্রসেস হচ্ছে... দয়া করে অপেক্ষা করুন...';
+      try {{
+        const res = await fetch('/api/rclone-submit?code=' + encodeURIComponent(val));
+        const data = await res.json();
+        if (data.success) {{
+          msg.style.color = '#3fb950';
+          msg.textContent = '🎉 সফল! ' + data.message;
+        }} else {{
+          msg.style.color = '#f85149';
+          msg.textContent = '❌ ব্যর্থ: ' + (data.error || 'Unknown error');
+        }}
+      }} catch (e) {{
+        msg.style.color = '#f85149';
+        msg.textContent = '❌ ত্রুটি: ' + e;
+      }}
+    }}
+  </script>
+</body>
+</html>"""
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(html.encode("utf-8"))))
+        self.end_headers()
+        self.wfile.write(html.encode("utf-8"))
+
+    def handle_rclone_submit(self, code_val):
+        state_file = "/home/azureuser/IroScript_Projects/All_Backup/rclone_auth_state.json"
+        state_param = ""
+        code_param = ""
+        code_val = code_val.strip()
+
+        if "code=" in code_val:
+            parsed = urllib.parse.urlparse(code_val)
+            qs = urllib.parse.parse_qs(parsed.query)
+            code_param = qs.get("code", [""])[0]
+            state_param = qs.get("state", [""])[0]
+        else:
+            code_param = code_val
+
+        if not state_param and os.path.exists(state_file):
+            try:
+                with open(state_file) as f:
+                    s = json.load(f)
+                    state_param = s.get("state", "")
+            except Exception:
+                pass
+
+        target = f"http://127.0.0.1:53682/?state={state_param}&code={code_param}"
+        try:
+            req = urllib.request.Request(target, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=5) as resp:
+                self.send_json({"success": True, "message": "Google Drive সফলভাবে রিকানেক্ট ও অথেন্টিকেট হয়েছে!"})
+        except Exception as e:
+            self.send_json({"success": False, "error": str(e)}, status=500)
+
     def handle_properties(self, target_path, force_refresh=False):
         data = get_item_properties(target_path, force_refresh=force_refresh)
         status = 404 if "error" in data else 200
@@ -737,12 +931,12 @@ class Windows11ExplorerHandler(BaseHTTPRequestHandler):
             with os.scandir(target_path) as it:
                 for entry in it:
                     try:
-                        is_dir = entry.is_dir(follow_symlinks=False)
+                        is_dir = entry.is_dir(follow_symlinks=True)
                         is_link = entry.is_symlink()
                         link_target = os.readlink(entry.path) if is_link else None
                         
                         try:
-                            stat = entry.stat(follow_symlinks=False)
+                            stat = entry.stat(follow_symlinks=True)
                             size = stat.st_size if not is_dir else None
                             mtime = stat.st_mtime
                             mtime_str = time.strftime("%Y-%m-%d %I:%M %p", time.localtime(mtime))

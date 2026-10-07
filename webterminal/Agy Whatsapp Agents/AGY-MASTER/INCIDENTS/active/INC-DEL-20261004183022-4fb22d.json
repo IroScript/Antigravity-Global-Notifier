@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004183022-4fb22d",
+  "timestamp": "2026-10-04T18:30:22.082889+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"import os; os.remove('/home/azureuser/test.py')\""
+  },
+  "decision": "DENIED",
+  "reason": "Python inline file/directory deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_OS_DELETE"
+}

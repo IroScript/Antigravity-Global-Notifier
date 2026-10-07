@@ -14,6 +14,31 @@
       }
     ]
   },
+  "tool-auditor": {
+    "enabled": true,
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /home/azureuser/.agents/hooks/tool_audit_hook.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "truth-injector": {
+    "enabled": true,
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "/usr/bin/python3 /home/azureuser/.agents/hooks/truth_pre_invocation.py",
+        "timeout": 5
+      }
+    ]
+  },
   "completion-gate": {
     "enabled": true,
     "Stop": [

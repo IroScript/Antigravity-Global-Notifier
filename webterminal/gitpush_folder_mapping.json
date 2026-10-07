@@ -1,151 +1,91 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-10-03T18:44:00Z",
-  "description": "Git push repository mapping, local directory structure, and WhatsApp connection status across all AGY project workspaces",
+  "version": "2.0.0",
+  "last_updated": "2026-10-07T10:34:39Z",
+  "derived_from": "Infrastructure-Source-of-Truth/projects/PROJECT_REGISTRY.json",
   "projects": [
     {
-      "key": "whatsapp",
-      "project_name": "Antigravity Global Notifier & WhatsApp Master",
+      "key": "whatsapp_master",
+      "project_uuid": "08371aa5-5f84-559d-835f-a9ee1ffef3f6",
       "folder_path": "/home/azureuser/IroScript_Projects/Whatsapp master",
       "git_remote_url": "https://github.com/IroScript/Antigravity-Global-Notifier.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "Global Broadcast & All Connected Groups",
-      "whatsapp_jid": "120363430377910102@g.us",
-      "tmux_window": "agy:1",
-      "notes": "Consolidated WhatsApp engine, Baileys bridge, multi-device sessions, protocol rules, and agents"
+      "enabled": true
     },
     {
-      "key": "yt",
-      "project_name": "AGY · YouTube Pipeline",
-      "folder_path": "/home/azureuser/IroScript_Projects/Social Media/youtube",
+      "key": "youtube_pipeline",
+      "project_uuid": "72501ab1-551a-5de3-a97c-6eeca0407fde",
+      "folder_path": "/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation",
       "git_remote_url": "git@github.com:IroScript/Youtube-Pipeline.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · YouTube Pipeline",
-      "whatsapp_jid": "120363430650656655@g.us",
-      "tmux_window": "agy:yt",
-      "notes": "YouTube automation, video rendering, transcript analysis, and upload pipeline"
+      "enabled": true
     },
     {
-      "key": "kids",
-      "project_name": "AGY · Kids Tube",
+      "key": "telegram_bot",
+      "project_uuid": "5010b796-6d94-59fd-b530-496b51bd9d60",
+      "folder_path": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot",
+      "git_remote_url": "https://github.com/IroScript/telegram-scraper-and-automation.git",
+      "enabled": true
+    },
+    {
+      "key": "personal_ai_agent",
+      "project_uuid": "98acf9e6-e1a2-51c2-8f03-d7216c2a102e",
+      "folder_path": "/home/azureuser/IroScript_Projects/Personal Life/PERSONAL AI AGENT",
+      "git_remote_url": "https://github.com/IroScript/personal_ai_agent.git",
+      "enabled": true
+    },
+    {
+      "key": "kids_tube",
+      "project_uuid": "c95f0287-e796-5c52-92cb-2e215617df0f",
       "folder_path": "/home/azureuser/IroScript_Projects/Personal Life/kids_tube_with_folder_seection",
       "git_remote_url": "git@github.com:IroScript/kids_tube_with_folder_seection.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Kids Tube",
-      "whatsapp_jid": "120363428733621560@g.us",
-      "tmux_window": "agy:kids",
-      "notes": "Kids video player and folder selection Android/Flutter mobile client"
+      "enabled": true
     },
     {
-      "key": "rust",
-      "project_name": "AGY · Rust Task",
+      "key": "rust_task",
+      "project_uuid": "21559166-0fae-5de8-aa80-feded01c2de7",
       "folder_path": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note",
       "git_remote_url": "git@github.com:IroScript/Rust_Task_With_Time_Keeping_And_Live_Note.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Rust Task",
-      "whatsapp_jid": "120363430134546653@g.us",
-      "tmux_window": "agy:rust",
-      "notes": "Rust Task with Time Keeping, Live Notes, and SQLite backend"
+      "enabled": true
     },
     {
-      "key": "game",
-      "project_name": "AGY · 3D Game Design",
+      "key": "three_d_game_studio",
+      "project_uuid": "c276193b-d6ef-5638-b08c-d7f532637aac",
       "folder_path": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio",
       "git_remote_url": "git@github.com:IroScript/3d-web-templates.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · 3D Game Design",
-      "whatsapp_jid": "120363412755041087@g.us",
-      "tmux_window": "agy:game",
-      "notes": "Three.js and WebGL interactive 3D studio, models, and game engine"
+      "enabled": true
     },
     {
-      "key": "article",
-      "project_name": "AGY · Article Publishing",
+      "key": "article_publishing_platform",
+      "project_uuid": "fb2ac384-10dd-52c7-9f01-361726c34a3e",
       "folder_path": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform",
-      "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Article Publishing",
-      "whatsapp_jid": "120363412465134469@g.us",
-      "tmux_window": "agy:article",
-      "notes": "Next.js & Payload CMS Article Publishing Platform; git remote currently blank"
+      "git_remote_url": "git@github.com:IroScript/Article-Publishing-Platform.git",
+      "enabled": true
     },
     {
-      "key": "tg",
-      "project_name": "AGY · Telegram Bot",
-      "folder_path": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot",
-      "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Telegram Bot",
-      "whatsapp_jid": "120363411604185129@g.us",
-      "tmux_window": "agy:tg",
-      "notes": "Telegram buyer detector and scraper bot; git remote currently blank"
-    },
-    {
-      "key": "history",
-      "project_name": "AGY · Digital History & Personal AI",
-      "folder_path": "/home/azureuser/IroScript_Projects/Personal Life/Digital History management/PERSONAL AI AGENT",
-      "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Digital History",
-      "whatsapp_jid": "120363429326945679@g.us",
-      "tmux_window": "agy:history",
-      "notes": "OpenRecall vault, digital history timeline, personal AI agent; git remote currently blank"
-    },
-    {
-      "key": "frappe",
-      "project_name": "AGY · Frappe ERP Alco",
+      "key": "frappe_erp_alco",
+      "project_uuid": "8d2d4d60-fd9b-5da2-afa8-64d84c8f9e39",
       "folder_path": "/home/azureuser/Frappe-erp-Alco",
-      "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Frappe ERP Alco",
-      "whatsapp_jid": "120363430126311832@g.us",
-      "tmux_window": "agy:frappe",
-      "notes": "Frappe ERP Next v16 core deployment; git remote currently blank as requested"
+      "git_remote_url": "https://github.com/IroScript/frappe-erp-alco-project",
+      "enabled": true
     },
     {
-      "key": "research",
-      "project_name": "AGY · Ask & Research",
+      "key": "ask_and_research",
+      "project_uuid": "73617410-dff6-5fc8-a44a-3c3acca4db1e",
       "folder_path": "/home/azureuser/IroScript_Projects/Ask-And-Research-Agent",
-      "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Ask & Research",
-      "whatsapp_jid": "120363413333339676@g.us",
-      "tmux_window": "agy:research",
-      "notes": "Dual-mode technical explanation and 8-tier research taxonomy; git remote currently blank"
-    },
-    {
-      "key": "reporting",
-      "project_name": "AGY · Reporting Agent",
-      "folder_path": "/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Reporting-Agent",
       "git_remote_url": "https://github.com/IroScript/Antigravity-Global-Notifier.git",
-      "git_branch": "main",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "AGY · Reporting Agent",
-      "whatsapp_jid": "120363430377910102@g.us",
-      "tmux_window": "agy:report",
-      "notes": "Automated 30-minute system telemetry and digest sentinel, tracked in Whatsapp Master repository"
+      "enabled": true
     },
     {
-      "key": "master",
-      "project_name": "AGY · Master Agent (Principal Supervisor)",
-      "folder_path": "/home/azureuser",
+      "key": "openai_codex",
+      "project_uuid": "aaf3f2fe-3155-538c-b49a-fab7be58f813",
+      "folder_path": "/home/azureuser/IroScript_Projects/OpenAI_Codex",
       "git_remote_url": "",
-      "git_branch": "",
-      "whatsapp_status": "CONNECTED",
-      "whatsapp_group_name": "Personal WhatsApp Direct Messages & All Groups Broadcast",
-      "whatsapp_jid": "TARGET_PHONE / 82935919157317@lid",
-      "tmux_window": "agy:0",
-      "notes": "Root system orchestrator and gatekeeper (agy:0)"
+      "enabled": true
+    },
+    {
+      "key": "infrastructure_source_of_truth",
+      "project_uuid": "ed2c5b92-5b89-528b-a3de-3c870eeab6c0",
+      "folder_path": "/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth",
+      "git_remote_url": "git@github.com:IroScript/Infrastructure-Source-of-Truth.git",
+      "enabled": true
     }
   ]
 }

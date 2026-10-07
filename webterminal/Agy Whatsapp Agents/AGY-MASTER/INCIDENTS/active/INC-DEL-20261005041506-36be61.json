@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005041506-36be61",
+  "timestamp": "2026-10-05T04:15:06.409058+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nimport subprocess, json\n\ndef test_guard(payload):\n    p = subprocess.Popen(\n        ['/usr/bin/python3', '/home/azureuser/.gemini/antigravity-cli/brain/fc185651-d603-4add-93e8-9e2bf865a059/scratch/guard_v4.py'],\n        stdin=subprocess.PIPE,\n        stdout=subprocess.PIPE,\n        stderr=subprocess.PIPE,\n        text=True\n    )\n    stdout, stderr = p.communicate(json.dumps(payload))\n    return json.loads(stdout.strip())\n\n# Test 1: Sudo command\nres1 = test_guard({'toolCall': {'name': 'run_command', 'args': {'CommandLine': 'sudo systemctl status frappe', 'Cwd': '/home/azureuser/Frappe-erp-Alco'}}})\nprint('Test 1 (Sudo in Frappe):', res1.get('decision'))\n\n# Test 2: Catastrophic deletion\nres2 = test_guard({'toolCall': {'name': 'run_command', 'args': {'CommandLine': 'rm -rf /etc', 'Cwd': '/home/azureuser'}}})\nprint('Test 2 (rm -rf /etc):', res2.get('decision'), res2.get('reason'))\n\n# Test 3: Cross project view_file\nres3 = test_guard({\n    'toolCall': {\n        'name': 'view_file',\n        'args': {'AbsolutePath': '/home/azureuser/Frappe-erp-Alco/site_config.json', 'Cwd': '/home/azureuser/IroScript_Projects/Social Media/youtube'}\n    }\n})\nprint('Test 3 (yt viewing frappe file):', res3.get('decision'), res3.get('reason'))\n\n# Test 4: Cross project run_command\nres4 = test_guard({\n    'toolCall': {\n        'name': 'run_command',\n        'args': {'CommandLine': 'ls /home/azureuser/Frappe-erp-Alco', 'Cwd': '/home/azureuser/IroScript_Projects/Social Media/youtube'}\n    }\n})\nprint('Test 4 (yt running command targeting frappe):', res4.get('decision'), res4.get('reason'))\n\n# Test 5: Same project operation\nres5 = test_guard({\n    'toolCall': {\n        'name': 'view_file',\n        'args': {'AbsolutePath': '/home/azureuser/IroScript_Projects/Social Media/youtube/README.md', 'Cwd': '/home/azureuser/IroScript_Projects/Social Media/youtube'}\n    }\n})\nprint('Test 5 (yt viewing yt file):', res5.get('decision'))\n\n# Test 6: Delete within own project\nres6 = test_guard({\n    'toolCall': {\n        'name': 'run_command',\n        'args': {'CommandLine': 'rm -rf target/', 'Cwd': '/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note'}\n    }\n})\nprint('Test 6 (rust deleting own target/):', res6.get('decision'))\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Deletion on protected configuration '['/usr/bin/python3',' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_PROTECTED_CONFIG_DELETE"
+}

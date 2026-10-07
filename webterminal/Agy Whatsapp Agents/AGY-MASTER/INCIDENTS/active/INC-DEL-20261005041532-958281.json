@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005041532-958281",
+  "timestamp": "2026-10-05T04:15:32.210491+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nimport subprocess, json\np = subprocess.Popen(['/usr/bin/python3', '/home/azureuser/.agents/hooks/delete_guard.py'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)\nout, _ = p.communicate(json.dumps({'toolCall': {'name': 'run_command', 'args': {'CommandLine': 'rm -rf /etc', 'Cwd': '/home/azureuser'}}}))\nprint('Catastrophic root check result:', out.strip())\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Deletion on protected configuration 'subprocess.Popen(['/usr/bin/python3',' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_PROTECTED_CONFIG_DELETE"
+}

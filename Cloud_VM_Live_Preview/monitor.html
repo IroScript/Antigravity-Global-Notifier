@@ -154,7 +154,7 @@
       <span>RAM মেমোরি (ফিজিক্যাল)</span>
       <span id="ram-avail-text">ফ্রি: 0.0 GB</span>
     </div>
-    <div class="card-val" id="ram-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 16.0 GB</span></div>
+    <div class="card-val" id="ram-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 8.0 GB</span></div>
     <div class="bar-bg">
       <div class="bar-fill" id="ram-bar" style="width: 0%; background: var(--accent);"></div>
     </div>
@@ -167,11 +167,11 @@
       <span>NVMe সোয়াপ (Swap)</span>
       <span style="color: var(--green);">সক্রিয়</span>
     </div>
-    <div class="card-val" id="swap-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 40.0 GB</span></div>
+    <div class="card-val" id="swap-val">0.0 GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ 19.0 GB</span></div>
     <div class="bar-bg">
       <div class="bar-fill" id="swap-bar" style="width: 0%; background: var(--purple);"></div>
     </div>
-    <div class="sub-text" id="swap-sub">মোট মেমোরি: 56.0 GB (16G + 40G)</div>
+    <div class="sub-text" id="swap-sub">মোট মেমোরি: 27.0 GB (8G + 19G)</div>
   </div>
 </div>
 
@@ -515,9 +515,10 @@ function updateChartDatasets() {
 
 function getMonitorYAxisConfig() {
   if (currentMode === 'ram') {
+    const ramMax = (currentStats && currentStats.ram && currentStats.ram.total_gb) ? Math.ceil(currentStats.ram.total_gb) : 8;
     return {
       min: 0,
-      max: 16,
+      max: ramMax,
       grid: { color: 'rgba(48, 54, 61, 0.4)' },
       ticks: {
         color: '#8b949e',
@@ -831,7 +832,9 @@ function renderChart() {
   }
 }
 
+let _procRenderTick = 0;
 async function fetchStats() {
+  if (document.hidden) return;
   try {
     const res = await fetch('/api/stats');
     if (!res.ok) return;
@@ -847,14 +850,27 @@ async function fetchStats() {
     cpuBar.style.width = Math.min(data.cpu_overall, 100) + '%';
     cpuBar.style.background = getBarColor(data.cpu_overall);
     
-    // Cores
+    // Cores - in place update to prevent layout shift & touch interruption
     const coreContainer = document.getElementById('core-bars');
-    coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
-      <div class="core-item">
-        <div class="core-lbl">C${i+1}</div>
-        <div class="core-val" style="color: ${getBarColor(c)}">${c}%</div>
-      </div>
-    `).join('');
+    if (coreContainer && data.cpu_cores) {
+      const items = coreContainer.querySelectorAll('.core-item');
+      if (items.length === data.cpu_cores.length) {
+        data.cpu_cores.forEach((c, i) => {
+          const v = items[i].querySelector('.core-val');
+          if (v) {
+            v.textContent = c + '%';
+            v.style.color = getBarColor(c);
+          }
+        });
+      } else {
+        coreContainer.innerHTML = data.cpu_cores.map((c, i) => `
+          <div class="core-item">
+            <div class="core-lbl">C${i+1}</div>
+            <div class="core-val" style="color: ${getBarColor(c)}">${c}%</div>
+          </div>
+        `).join('');
+      }
+    }
     
     // RAM
     document.getElementById('ram-val').innerHTML = `${data.ram.used_gb} GB <span style="font-size: 0.9rem; font-weight: 400; color: #8b949e;">/ ${data.ram.total_gb} GB</span>`;
@@ -869,30 +885,52 @@ async function fetchStats() {
     const swapBar = document.getElementById('swap-bar');
     swapBar.style.width = data.swap.percent + '%';
     
-    // App Rollup (CPU ১ম কলাম, RAM ২য় কলাম)
+    // App Rollup (CPU ১ম কলাম, RAM ২য় কলাম) - in-place update if count matches
     const appList = document.getElementById('app-list');
-    appList.innerHTML = data.apps.map(a => `
-      <div class="app-card">
-        <div class="app-info">
-          <div class="app-name">${a.app}</div>
-          <div class="app-count">${a.count} টি প্রসেস সক্রিয়</div>
-        </div>
-        <div class="app-cols">
-          <!-- ১ম কলাম: CPU -->
-          <div class="col-item">
-            <span class="col-hdr">১ম · CPU</span>
-            <span class="col-val-cpu">${a.cpu}%</span>
+    if (appList && data.apps) {
+      const cards = appList.querySelectorAll('.app-card');
+      if (cards.length === data.apps.length) {
+        data.apps.forEach((a, idx) => {
+          const card = cards[idx];
+          const nameEl = card.querySelector('.app-name');
+          if (nameEl && nameEl.textContent === a.app) {
+            const countEl = card.querySelector('.app-count');
+            if (countEl) countEl.textContent = `${a.count} টি প্রসেস সক্রিয়`;
+            const cpuVal = card.querySelector('.col-val-cpu');
+            if (cpuVal) cpuVal.textContent = `${a.cpu}%`;
+            const ramVal = card.querySelector('.col-val-ram');
+            if (ramVal) ramVal.textContent = a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB';
+          }
+        });
+      } else {
+        appList.innerHTML = data.apps.map(a => `
+          <div class="app-card">
+            <div class="app-info">
+              <div class="app-name">${a.app}</div>
+              <div class="app-count">${a.count} টি প্রসেস সক্রিয়</div>
+            </div>
+            <div class="app-cols">
+              <!-- ১ম কলাম: CPU -->
+              <div class="col-item">
+                <span class="col-hdr">১ম · CPU</span>
+                <span class="col-val-cpu">${a.cpu}%</span>
+              </div>
+              <!-- ২য় কলাম: RAM -->
+              <div class="col-item">
+                <span class="col-hdr">২য় · RAM</span>
+                <span class="col-val-ram">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
+              </div>
+            </div>
           </div>
-          <!-- ২য় কলাম: RAM -->
-          <div class="col-item">
-            <span class="col-hdr">২য় · RAM</span>
-            <span class="col-val-ram">${a.ram_gb >= 1.0 ? a.ram_gb + ' GB' : a.ram_mb + ' MB'}</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
+        `).join('');
+      }
+    }
     
-    renderProcs();
+    // Throttle renderProcs: run every 3rd tick to avoid mobile scroll stutter
+    _procRenderTick++;
+    if (_procRenderTick % 3 === 0) {
+      renderProcs();
+    }
 
     // Real-time incremental graph advance (Only for live minute-level views 1m, 5m, 15m, 30m)
     if (historyData && historyData.length > 0 && chartInstance && !isScrubbing && ['1m', '5m', '15m', '30m'].includes(currentRange)) {
@@ -981,7 +1019,7 @@ function renderProcs() {
     return;
   }
   
-  container.innerHTML = list.map(p => `
+  container.innerHTML = list.slice(0, 25).map(p => `
     <div class="proc-card">
       <div class="proc-top">
         <span>${p.name} <span style="font-size: 0.7rem; color: #8b949e;">(PID: ${p.pid})</span></span>
@@ -999,13 +1037,14 @@ function renderProcs() {
 // Initial calls
 fetchStats();
 fetchHistory();
-setInterval(fetchStats, 1500);
-// Background history sync every 30 seconds (no jitter or bouncing)
+// Periodic Loops (Optimized for smooth, jitter-free 60FPS mobile performance)
+setInterval(fetchStats, 2500);
+// Background history sync every 45 seconds (no jitter or bouncing)
 setInterval(() => {
-  if (!isScrubbing && (currentRange === '1m' || currentRange === '5m' || currentRange === '15m' || currentRange === '30m')) {
+  if (!isScrubbing && !document.hidden && (currentRange === '1m' || currentRange === '5m' || currentRange === '15m' || currentRange === '30m')) {
     fetchHistory();
   }
-}, 30000);
+}, 45000);
 </script>
 
 </body>

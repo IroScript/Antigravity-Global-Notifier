@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007080254-164959",
+  "timestamp": "2026-10-07T08:02:54.055484+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "perl -pi -e 's/boundary/fake/' /home/azureuser/.agents/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "In-place tampering on protected path '/home/azureuser/.agents/hooks.json' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

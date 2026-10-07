@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261003191404-1aff81",
+  "timestamp": "2026-10-03T19:14:04.102451+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "echo '{\"toolCall\":{\"name\":\"run_command\",\"args\":{\"CommandLine\":\"sudo -n true\"}}}' | /usr/bin/python3 ~/.agents/hooks/delete_guard.py; echo\necho '{\"toolCall\":{\"name\":\"run_command\",\"args\":{\"CommandLine\":\"git push --force origin main\"}}}' | /usr/bin/python3 ~/.agents/hooks/delete_guard.py; echo\ngrep -nE \"def |decision|git|ls-remote|verification_state|continue|allow\" ~/.agents/hooks/completion_gate_stop_hook.py | head -50"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive 'git push --force / -f / --delete' is strictly prohibited (Rule 39)",
+  "rule_id": "RULE_39_GIT_FORCE_PUSH"
+}

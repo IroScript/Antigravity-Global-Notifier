@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005022209-c14faf",
+  "timestamp": "2026-10-05T02:22:09.657469+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "echo 'malicious' | tee /home/azureuser/.agents/hooks.json"
+  },
+  "decision": "DENIED",
+  "reason": "Redirection/tee into protected path '/home/azureuser/.agents/hooks.json' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

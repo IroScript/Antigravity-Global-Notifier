@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005043531-5a60bf",
+  "timestamp": "2026-10-05T04:35:31.467815+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm -rf /boot"
+  },
+  "decision": "DENIED",
+  "reason": "Catastrophic deletion of system root directory '/boot' is prohibited",
+  "rule_id": "CRITICAL_SYSTEM_ROOT_PROTECT"
+}

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004155506-4c7b65",
+  "timestamp": "2026-10-04T15:55:06.366265+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rmdir /home/azureuser/Frappe-erp-Alco/some_dir"
+  },
+  "decision": "DENIED",
+  "reason": "Direct deletion in Frappe-erp-Alco is prohibited (Rule 1, 2)",
+  "rule_id": "RULE_1_2_DIRECT_DELETE"
+}

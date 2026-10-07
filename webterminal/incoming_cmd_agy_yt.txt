@@ -1,0 +1,32 @@
+[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: **হ্যাঁ, শুরু করুন।** লজিক লেয়ার এখন যথেষ্ট ভালো, আর বাকি ঝুঁকিগুলো কনটেইনারে না চালালে ধরা পড়বে না।
+
+**যা ভালো:** ৮টি লক্ষ্য মিউট্যান্ট (`>=`, `>i`, ১০২৫ হর, meminfo) মারা পড়েছে। RAM চেক এখন fail-closed। ৪২টি টেস্ট পাস। Docker ও ব্রাউজার আইটেম সৎভাবে NOT DONE, যা ঠিক কারণ Docker ইনস্টল আপনার কাজ।
+
+**যা রিপোর্ট চেপে গেছে:**
+- **mutation স্কোর আসলে পড়ে গেছে।** `flow_queue_manager.py` যোগ করায় মোট ১১৪৯টি, killed ৪৬৭, survived ২৬৩, **no_tests ৪১৮**। স্কোর মোটের ~৪১%, আর যেগুলো টেস্টে চলেছে তার ~৬৪%। আগের ৯১.৩% শুধু `flow_guards.py`-র ছিল। রিপোর্টে শতাংশ লেখাই নেই।
+- **৪১৮টা মিউট্যান্টে কোনো টেস্ট পৌঁছায় না।** runner শুধু `test_flow_guards.py` চালায়, আর claim/reclaim-এর অনেক লজিক সম্ভবত `test_veo_hardening_v3.py`-তে ঢাকা। এটা ব্লকার নয়, কনটেইনার canary-তে ধরা পড়বে। তবে প্রম্পটে দিয়ে দিলাম।
+- **গেট আবার হাস্যকর।** negative-cmd এখন `/dev/null`-কে `assert ok is True` করে, ভ্যালিডেটর ঠিক থাকলে সেটা ইচ্ছা করে ফেইল করে। আইডি আবার আর্গুমেন্টে। এই "VERIFIED_SUCCESS" ধরবেন না।
+
+**কনটেইনারের জন্য সবচেয়ে জরুরি:** Docker-এ `/proc/meminfo` সাধারণত **হোস্টের** RAM দেখায়, কন্টেইনারের `--memory` সীমা নয়। তাই এখনকার RAM preflight কনটেইনারে প্রায় অকেজো। cgroup v2 ফাইল (`memory.max`, `memory.current`) পড়তে হবে ([cgroup v2 ডক](https://docs.kernel.org/admin-guide/cgroup-v2.html)). এটা প্রম্পটের ১ নম্বরে রেখেছি।
+
+**আপনার আগে করণীয়:**
+1. [Docker ইনস্টল](https://docs.docker.com/engine/install/ubuntu/) (Ubuntu ধরে), তারপর `sudo usermod -aG docker $USER`, রি-লগইন, `docker run hello-world`।
+2. ধাপের ক্রম: আগে prompt/SEO ওয়ার্কার (১টি), তারপর Veo ১ জব, তারপর ৩ ওয়ার্কার। Veo-র আগে Bearer token expiry লাইভে পরীক্ষা করুন।
+3. ChatGPT ও Flow-এ UI অটোমেশনে অ্যাকাউন্ট ব্লকের ঝুঁকি আছে। প্রম্পটে স্টিলথ বাড়ানোর নির্দেশ নেই, challenge দেখলেই থামার নির্দেশ আছে।
+
+**AGY-কে প্রম্পট (ফেজ ২):**
+```
+Task: docker_workers_phase2
+
+নিয়ম: প্রতি ধাপে raw আউটপুট। না পারলে NOT DONE, [PASS] নয়। স্টিলথ/evasion বাড়াবে না। challenge বা captcha দেখলে থামবে। 10-fold গেট এই টাস্কে লাগবে না।
+
+0. docker --version, docker compose version, docker run hello-world দেখাও।
+1. RAM preflight: কনটেইনারে cgroup v2 (/sys/fs/cgroup/memory.max, memory.current) পড়ে সীমা মাপো। ফাইল না থাকলে /proc/meminfo-তে fallback। টেস্ট যোগ করো।
+2. prompt/SEO ওয়ার্কার, ১টি: Dockerfile + compose। non-root user, shm_size, mem_limit, restart policy, healthcheck, DB লোকাল bind mount (WAL), secrets ইমেজের বাইরে।
+3. কনটেইনারের ভেতরে ব্রাউজার চালু করে লোকাল মক challenge পেজে check_page_for_security_challenges_and_halt চালাও (আসল সাইটে নয়)।
+4. কাজের মাঝে docker kill -9, তারপর docker --memory OOM (exit 137)। restart ও lease reclaim, আগে-পরে DB state।
+5. Canary: ১ ওয়ার্কার, ১ prompt জব, লাইভ। লগসহ ফলাফল। ব্যর্থ হলে থামো, Veo-তে যেও না।
+6. mutmut-এর no_tests ৪১৮ ফাইলভিত্তিক ভাগ করে দেখাও, queue_manager-এর অপরীক্ষিত ফাংশনের টেস্ট লেখো। শতাংশ লেখো (লক্ষ্য: টেস্ট-চালানো মিউট্যান্টের ≥৮৫%)।
+```
+
+**বাস্তব উদাহরণ:** Toyota-র প্রতিষ্ঠাতা পরিবারের Sakichi Toyoda-র স্বয়ংক্রিয় তাঁত সুতা ছিঁড়লে নিজে থেমে যেত। এই ধারণা পরে Taiichi Ohno-র হাতে Toyota Production System-এর "jidoka" নীতি হয়: ত্রুটি দেখলেই লাইন থামাও, ত্রুটিপূর্ণ জিনিস সামনে পাঠিও না ([Toyota](https://global.toyota/en/company/vision-and-philosophy/production-system/)). আপনার detect-and-halt ঠিক এই নীতি, তাই challenge ধরা পড়লে থামাটাই সঠিক আচরণ।

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004182903-dbe773",
+  "timestamp": "2026-10-04T18:29:03.340551+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 /home/azureuser/.agents/verify_10_fold.py \\\n  --workspace \"/home/azureuser/IroScript_Projects/Social Media/youtube\" \\\n  --task-name \"youtube_pipeline_hardening_v3\" \\\n  --files \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/flow_guards.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/flow_queue_manager.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_workers/worker_server.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/test_veo_hardening_v3.py\" \\\n    \"/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers/test_flow_guards.py\" \\\n  --test-cmd 'python3 \"Youtube Automation/docker_flow_workers/test_veo_hardening_v3.py\"' \\\n  --negative-cmd 'python3 -c \"import sys, tempfile, os, struct; sys.path.insert(0, '\\''/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation/docker_flow_workers'\\''); from flow_guards import validate_mp4_box_structure; tf = tempfile.NamedTemporaryFile(suffix='\\''mp4'\\'', delete=False); tf.write(b'\\''\\x00\\x00\\x00\\x20ftypisom'\\'' + b'\\''\\x00'\\''*20); mdat_size = 150000 - 32; tf.write(struct.pack('\\''&gt;I'\\'', mdat_size) + b'\\''mdat'\\'' + b'\\''\\x00'\\''*(mdat_size - 8)); tf.close(); ok, msg, _ = validate_mp4_box_structure(tf.name); os.remove(tf.name); assert not ok; print('\\''BLOCKED: Corrupted MP4 denied by guard:'\\'', msg)\"'"
+  },
+  "decision": "DENIED",
+  "reason": "Python inline file/directory deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_OS_DELETE"
+}

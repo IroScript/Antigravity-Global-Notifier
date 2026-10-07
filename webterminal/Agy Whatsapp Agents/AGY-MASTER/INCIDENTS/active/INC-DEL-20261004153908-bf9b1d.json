@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004153908-bf9b1d",
+  "timestamp": "2026-10-04T15:39:08.286476+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "echo 'bad' > /home/azureuser/.agents/hooks/completion_gate_stop_hook.py"
+  },
+  "decision": "DENIED",
+  "reason": "Redirection/tee into protected path '/home/azureuser/.agents/hooks/completion_gate_stop_hook.py' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

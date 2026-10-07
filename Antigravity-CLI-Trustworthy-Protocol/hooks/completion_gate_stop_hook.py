@@ -60,9 +60,19 @@ def fail_closed(reason, details=None):
         "reason": f"🛑 [STOP GATE FAIL-CLOSED]: {reason}"
     }))
 
-def is_nonce_consumed(nonce: str) -> bool:
+def get_transcript_metric(t_path: str) -> int:
+    if t_path and os.path.isfile(t_path):
+        try:
+            with open(t_path, "rb") as tf:
+                return sum(1 for _ in tf)
+        except Exception:
+            pass
+    return 0
+
+def is_nonce_consumed(nonce: str, current_conv_id: str = "", t_lines: int = 0, exec_num: int = 0) -> bool:
     if not os.path.exists(CONSUMED_NONCES_FILE):
         return False
+    now = time.time()
     try:
         with open(CONSUMED_NONCES_FILE, "r", encoding="utf-8") as f:
             for line in f:
@@ -70,12 +80,22 @@ def is_nonce_consumed(nonce: str) -> bool:
                     continue
                 rec = json.loads(line)
                 if rec.get("nonce") == nonce:
+                    rec_conv = rec.get("conversation_id", "")
+                    rec_lines = rec.get("transcript_lines", -1)
+                    rec_exec = rec.get("execution_num", -1)
+                    rec_ts = rec.get("timestamp", 0)
+                    # Sibling hook within the exact same Stop event: same conversation, exact same transcript line count, same executionNum
+                    if (current_conv_id and rec_conv == current_conv_id 
+                        and t_lines > 0 and rec_lines == t_lines 
+                        and exec_num > 0 and rec_exec == exec_num
+                        and (now - rec_ts) < 10.0):
+                        continue
                     return True
     except Exception:
         pass
     return False
 
-def mark_nonce_consumed(nonce: str, task_name: str, conv_id: str):
+def mark_nonce_consumed(nonce: str, task_name: str, conv_id: str, t_lines: int = 0, exec_num: int = 0):
     try:
         os.makedirs(os.path.dirname(CONSUMED_NONCES_FILE), exist_ok=True)
         rec = {
@@ -83,10 +103,12 @@ def mark_nonce_consumed(nonce: str, task_name: str, conv_id: str):
             "formatted_time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             "nonce": nonce,
             "task_name": task_name,
-            "conversation_id": conv_id
+            "conversation_id": conv_id,
+            "transcript_lines": t_lines,
+            "execution_num": exec_num
         }
         with open(CONSUMED_NONCES_FILE, "a", encoding="utf-8") as f:
-            f.write(json.dumps(rec) + "\n")
+            f.write(json.dumps(rec) + chr(10))
     except Exception as e:
         sys.stderr.write(f"Warning: Failed to persist consumed nonce: {e}\n")
 
@@ -101,8 +123,45 @@ def main():
         fail_closed(f"Failed to parse Stop hook payload: {e}")
         return
 
-    final_output = payload.get("finalModelOutput", "") or payload.get("error", "")
+    def get_agent_last_response(p):
+        if p.get("finalModelOutput"):
+            return str(p["finalModelOutput"])
+        t_path = p.get("transcriptPath", "")
+        if t_path and os.path.isfile(t_path):
+            try:
+                last_text = ""
+                with open(t_path, "r", encoding="utf-8", errors="ignore") as tf:
+                    for line in tf:
+                        line = line.strip()
+                        if not line: continue
+                        try:
+                            item = json.loads(line)
+                            if item.get("source") == "MODEL" and item.get("type") in ("PLANNER_RESPONSE", "MODEL_RESPONSE", "GENERIC"):
+                                c = item.get("content", "")
+                                if c and isinstance(c, str):
+                                    last_text = c
+                        except Exception:
+                            continue
+                return last_text
+            except Exception:
+                pass
+        return ""
+
+    final_output = get_agent_last_response(payload) or payload.get("finalModelOutput", "") or payload.get("error", "")
     current_conv_id = payload.get("conversationId", "") or os.environ.get("CONVERSATION_ID", "")
+
+    # Anti-Lying Check 1: Forbidden Promotional / False Verdict Labels (SETTING_67 & SETTING_68)
+    forbidden_verdict_labels = [
+        "সফলভাবে",
+        "sofol vabe",
+        "কাজটি সফলভাবে সম্পন্ন",
+        "সব টেস্ট পাস",
+        "all tests passed",
+        "all tests verified",
+        "10/10 pass",
+        "10/10 verified"
+    ]
+    has_forbidden_label = any(lbl.lower() in final_output.lower() for lbl in forbidden_verdict_labels)
 
     completion_markers = [
         "verified_success",
@@ -127,8 +186,18 @@ def main():
     
     claims_completion = any(marker.lower() in final_output.lower() for marker in completion_markers)
 
-    if not claims_completion:
+    if not claims_completion and not has_forbidden_label:
         print(json.dumps({"decision": "allow"}))
+        return
+
+    # If forbidden verdict label is present without signed verification, block immediately
+    if has_forbidden_label and not os.path.exists(STATE_FILE):
+        fail_closed(
+            "🛑 [TRUTH HOOK HARD STOP - SETTING_67/68]: Forbidden promotional verdict label ('সফলভাবে', 'all tests passed') "
+            "detected in response without empirical machine verification proof. Under SETTING_67 and SETTING_68, "
+            "you are strictly prohibited from using promotional labels or self-praise. State ONLY factual actions and literal outputs.",
+            {"has_forbidden_label": True}
+        )
         return
 
     # 1. State file presence
@@ -200,7 +269,9 @@ def main():
         fail_closed("Verification state lacks required cryptographic nonce.", {"nonce": nonce})
         return
 
-    if is_nonce_consumed(nonce):
+    t_lines = get_transcript_metric(payload.get("transcriptPath", ""))
+    exec_num = payload.get("executionNum", 0)
+    if is_nonce_consumed(nonce, current_conv_id, t_lines, exec_num):
         fail_closed(
             f"Replay attack detected: nonce '{nonce}' has already been consumed in a prior turn. "
             "Fresh verification is mandatory.",

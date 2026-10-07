@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261005025324-a9559a",
+  "timestamp": "2026-10-05T02:53:24.387551+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/home/azureuser/.agents/hooks/delete_guard.py"
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting/modifying protected governance/hook/verifier target '/home/azureuser/.agents/hooks/delete_guard.py' is strictly prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

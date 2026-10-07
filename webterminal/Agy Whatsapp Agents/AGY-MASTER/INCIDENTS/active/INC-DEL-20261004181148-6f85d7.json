@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004181148-6f85d7",
+  "timestamp": "2026-10-04T18:11:48.709737+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "uname -a && id && sudo -n true && echo \"SUDO_OK\" || echo \"SUDO_FAILED\""
+  },
+  "decision": "DENIED",
+  "reason": "Privilege escalation via 'sudo' is prohibited for AGY (Rule 26, 27)",
+  "rule_id": "RULE_26_27_PRIV_ESCALATION"
+}

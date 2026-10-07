@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261006155117-cb5add",
+  "timestamp": "2026-10-06T15:51:17.177592+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "write_to_file",
+  "details": {
+    "TargetFile": "/home/azureuser/.agents/hooks/completion_gate_stop_hook.py"
+  },
+  "decision": "DENIED",
+  "reason": "Overwriting/modifying protected governance/hook/verifier target '/home/azureuser/.agents/hooks/completion_gate_stop_hook.py' is strictly prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

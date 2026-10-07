@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261004171628-f4a9a7",
+  "timestamp": "2026-10-04T17:16:28.486543+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"import shutil; shutil.rmtree('/home/azureuser/Frappe-erp-Alco')\""
+  },
+  "decision": "DENIED",
+  "reason": "Python inline file/directory deletion is prohibited (Rule 3)",
+  "rule_id": "RULE_3_PYTHON_OS_DELETE"
+}

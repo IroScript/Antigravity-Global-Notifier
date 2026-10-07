@@ -1,0 +1,289 @@
+2026-10-03T15:26:37Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-10-03T15:26:37Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-10-03T15:26:41Z INF +--------------------------------------------------------------------------------------------+
+2026-10-03T15:26:41Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-10-03T15:26:41Z INF |  https://aimed-trustee-competitive-breakdown.trycloudflare.com                             |
+2026-10-03T15:26:41Z INF +--------------------------------------------------------------------------------------------+
+2026-10-03T15:26:41Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-10-03T15:26:41Z INF Version 2026.9.3 (Checksum 77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2)
+2026-10-03T15:26:41Z INF GOOS: linux, GOVersion: go1.26.8, GoArch: amd64
+2026-10-03T15:26:41Z INF Settings: map[ha-connections:1 protocol:quic url:http://127.0.0.1:8088]
+2026-10-03T15:26:41Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-10-03T15:26:41Z INF Generated Connector ID: e3664e20-3079-4b28-b988-a618c14c5f20
+2026-10-03T15:26:41Z INF Initial protocol quic
+2026-10-03T15:26:41Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-03T15:26:41Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026/10/03 15:26:41 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-10-03T15:26:41Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-03T15:26:41Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026-10-03T15:26:41Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-10-03T15:26:41Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-10-03T15:26:41Z INF Registered tunnel connection connIndex=0 connection=c5012dc7-d02d-46d7-8f0d-34c21539f38d event=0 ip=198.41.192.107 location=iad15 protocol=quic
+2026-10-03T15:26:47Z INF +-------------------------------------------------------------------------------------+
+2026-10-03T15:26:47Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-10-03T15:26:47Z INF +-------------------------------------------------------------------------------------+
+2026-10-03T15:26:47Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-10-03T15:26:47Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-03T15:26:47Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-03T15:26:47Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-03T15:26:47Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-03T15:26:47Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-03T15:26:47Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-03T15:26:47Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-10-03T15:26:47Z INF |                                                                                     |
+2026-10-03T15:26:47Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-10-03T15:26:47Z INF +-------------------------------------------------------------------------------------+
+2026-10-03T15:26:47Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region1.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region2.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region1.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region2.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region1.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=region2.v2.argotunnel.com
+2026-10-03T15:26:47Z INF precheck component="Cloudflare API" details="API is reachable" run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 status=pass target=api.cloudflare.com:443
+2026-10-03T15:26:47Z INF precheck complete hard_fail=false run_id=46b2de93-ce0c-4715-b4a9-c26a506075a5 suggested_protocol=quic
+2026-10-03T16:28:45Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:28:45Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/stats event=0 ip=198.41.192.107 type=http
+2026-10-03T16:54:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:54:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/history?range=24h event=0 ip=198.41.192.107 type=http
+2026-10-03T16:54:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:54:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/stats event=0 ip=198.41.192.107 type=http
+2026-10-03T16:54:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:54:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/history?range=24h event=0 ip=198.41.192.107 type=http
+2026-10-03T16:54:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:54:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/history?range=24h event=0 ip=198.41.192.107 type=http
+2026-10-03T16:54:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-03T16:54:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/history?range=24h event=0 ip=198.41.192.107 type=http
+2026-10-04T10:46:00Z ERR  error="stream 14457 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T10:46:00Z ERR Request failed error="stream 14457 canceled by remote with error code 0" connIndex=0 dest=https://aimed-trustee-competitive-breakdown.trycloudflare.com/api/raw?path=/home/azureuser/IrakIroan/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1 event=0 ip=198.41.192.107 type=http
+2026-10-04T14:03:34Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-10-04T14:03:34Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-10-04T14:03:37Z INF +--------------------------------------------------------------------------------------------+
+2026-10-04T14:03:37Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-10-04T14:03:37Z INF |  https://individuals-practical-mile-bunny.trycloudflare.com                                |
+2026-10-04T14:03:37Z INF +--------------------------------------------------------------------------------------------+
+2026-10-04T14:03:37Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-10-04T14:03:37Z INF Version 2026.9.3 (Checksum 77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2)
+2026-10-04T14:03:37Z INF GOOS: linux, GOVersion: go1.26.8, GoArch: amd64
+2026-10-04T14:03:37Z INF Settings: map[ha-connections:1 protocol:quic url:http://127.0.0.1:8088]
+2026-10-04T14:03:37Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-10-04T14:03:37Z INF Generated Connector ID: 43b79d34-0051-4599-ad5a-ba13de846ead
+2026-10-04T14:03:37Z INF Initial protocol quic
+2026-10-04T14:03:37Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-04T14:03:37Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026/10/04 14:03:37 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-10-04T14:03:37Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-04T14:03:37Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026-10-04T14:03:37Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-10-04T14:03:37Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-10-04T14:03:38Z INF Registered tunnel connection connIndex=0 connection=9a7279ab-1b9c-4ffc-b12d-e958e780ff02 event=0 ip=198.41.200.23 location=iad05 protocol=quic
+2026-10-04T14:03:43Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T14:03:43Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-10-04T14:03:43Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T14:03:43Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-10-04T14:03:43Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T14:03:43Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T14:03:43Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T14:03:43Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T14:03:43Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T14:03:43Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T14:03:43Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-10-04T14:03:43Z INF |                                                                                     |
+2026-10-04T14:03:43Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-10-04T14:03:43Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T14:03:43Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region1.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region2.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region1.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region2.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region1.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=region2.v2.argotunnel.com
+2026-10-04T14:03:43Z INF precheck component="Cloudflare API" details="API is reachable" run_id=1d428375-3219-496e-8887-82c6d796b211 status=pass target=api.cloudflare.com:443
+2026-10-04T14:03:43Z INF precheck complete hard_fail=false run_id=1d428375-3219-496e-8887-82c6d796b211 suggested_protocol=quic
+2026-10-04T15:22:17Z WRN Serve tunnel error error="datagram manager error: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.23
+2026-10-04T15:22:17Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:22:17Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.23 type=http
+2026-10-04T15:22:17Z ERR  error="timeout: no recent network activity" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:22:17Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:22:17Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=15m event=0 ip=198.41.200.23 type=http
+2026-10-04T15:22:17Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.23
+2026-10-04T15:22:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.77
+2026-10-04T15:22:26Z INF Registered tunnel connection connIndex=0 connection=5c8b3b16-639c-434b-b6d6-7b8e1d42550d event=0 ip=198.41.192.77 location=iad02 protocol=quic
+2026-10-04T15:22:17Z ERR Request failed error="timeout: no recent network activity" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/ event=0 ip=198.41.200.23 type=http
+2026-10-04T15:25:07Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.77
+2026-10-04T15:25:07Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.77
+2026-10-04T15:25:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-10-04T15:25:13Z INF Registered tunnel connection connIndex=0 connection=f1e51cd5-844a-4570-9058-202a6509e3e0 event=0 ip=198.41.200.233 location=iad22 protocol=quic
+2026-10-04T15:26:18Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:18Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:18Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:18Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=15m event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:49Z ERR  error="stream 25 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:49Z ERR Request failed error="stream 25 canceled by remote with error code 0" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/ event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=15m event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.233
+2026-10-04T15:26:54Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.233
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:54Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:26:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-10-04T15:26:56Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:26:56Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.233 type=http
+2026-10-04T15:27:01Z INF Registered tunnel connection connIndex=0 connection=55de8d0e-f3c0-404b-a4c6-e2e7ef8f5208 event=0 ip=198.41.192.167 location=iad02 protocol=quic
+2026-10-04T15:28:41Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:28:41Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.192.167 type=http
+2026-10-04T15:30:19Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:30:19Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=5h event=0 ip=198.41.192.167 type=http
+2026-10-04T15:30:19Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:30:19Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:30:19Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=5h event=0 ip=198.41.192.167 type=http
+2026-10-04T15:30:19Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.192.167 type=http
+2026-10-04T15:37:16Z WRN Serve tunnel error error="datagram manager error: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.167
+2026-10-04T15:37:20Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.167
+2026-10-04T15:37:21Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.63
+2026-10-04T15:37:22Z INF Registered tunnel connection connIndex=0 connection=b6a63e6b-bc36-44b2-9ffe-817664237c1b event=0 ip=198.41.200.63 location=iad05 protocol=quic
+2026-10-04T15:42:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:42:35Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.63 type=http
+2026-10-04T15:42:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:42:35Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/history?range=5h event=0 ip=198.41.200.63 type=http
+2026-10-04T15:42:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:42:37Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/ event=0 ip=198.41.200.63 type=http
+2026-10-04T15:44:25Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T15:44:25Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://individuals-practical-mile-bunny.trycloudflare.com/api/stats event=0 ip=198.41.200.63 type=http
+2026-10-04T16:35:06Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-10-04T16:35:06Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-10-04T16:35:16Z INF +--------------------------------------------------------------------------------------------+
+2026-10-04T16:35:16Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-10-04T16:35:16Z INF |  https://added-predict-toe-kansas.trycloudflare.com                                        |
+2026-10-04T16:35:16Z INF +--------------------------------------------------------------------------------------------+
+2026-10-04T16:35:16Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-10-04T16:35:16Z INF Version 2026.9.3 (Checksum 77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2)
+2026-10-04T16:35:16Z INF GOOS: linux, GOVersion: go1.26.8, GoArch: amd64
+2026-10-04T16:35:16Z INF Settings: map[ha-connections:1 protocol:quic url:http://127.0.0.1:8088]
+2026-10-04T16:35:16Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-10-04T16:35:16Z INF Generated Connector ID: faf386e4-056c-4fae-b9f3-99f2e6a1b513
+2026-10-04T16:35:16Z INF Initial protocol quic
+2026-10-04T16:35:16Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-04T16:35:16Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026/10/04 16:35:16 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-10-04T16:35:16Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-04T16:35:16Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026-10-04T16:35:16Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-10-04T16:35:16Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-10-04T16:35:17Z INF Registered tunnel connection connIndex=0 connection=09ea23d0-f2f9-4a60-a893-d2accd8cf51f event=0 ip=198.41.192.37 location=iad02 protocol=quic
+2026-10-04T16:35:22Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T16:35:22Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-10-04T16:35:22Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T16:35:22Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-10-04T16:35:22Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T16:35:22Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T16:35:22Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T16:35:22Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T16:35:22Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T16:35:22Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T16:35:22Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-10-04T16:35:22Z INF |                                                                                     |
+2026-10-04T16:35:22Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-10-04T16:35:22Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T16:35:22Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region1.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region2.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region1.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region2.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region1.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=region2.v2.argotunnel.com
+2026-10-04T16:35:22Z INF precheck component="Cloudflare API" details="API is reachable" run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 status=pass target=api.cloudflare.com:443
+2026-10-04T16:35:22Z INF precheck complete hard_fail=false run_id=b0f81bfb-3853-499b-8b92-79004cb0e9e1 suggested_protocol=quic
+2026-10-04T17:58:28Z ERR  error="stream 1649 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T17:58:28Z ERR Request failed error="stream 1649 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1 event=0 ip=198.41.192.37 type=http
+2026-10-04T18:01:04Z ERR  error="stream 1677 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:01:04Z ERR Request failed error="stream 1677 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.37 type=http
+2026-10-04T18:06:36Z ERR  error="stream 1741 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:06:36Z ERR Request failed error="stream 1741 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1) event=0 ip=198.41.192.37 type=http
+2026-10-04T18:13:27Z ERR  error="stream 1761 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:13:27Z ERR Request failed error="stream 1761 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1) event=0 ip=198.41.192.37 type=http
+2026-10-04T18:13:39Z ERR  error="stream 1777 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:13:39Z ERR Request failed error="stream 1777 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/app/build/outputs/apk/debug/app-debug.apk&download=1) event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:35Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/stats event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:40Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/stats event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:40Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/stats event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:35Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:40Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/stats event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:36Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:36Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-04T18:19:41Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/history?range=15m event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:41Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/stats event=0 ip=198.41.192.37 type=http
+2026-10-04T18:19:36Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2026-10-04T18:19:41Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.37
+2026-10-04T18:19:41Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-10-04T18:19:42Z INF Registered tunnel connection connIndex=0 connection=2739c6eb-b1df-4969-849e-1a3440882b19 event=0 ip=198.41.192.7 location=iad10 protocol=quic
+2026-10-05T02:35:17Z ERR  error="stream 309 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:35:17Z ERR Request failed error="stream 309 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:36:22Z ERR  error="stream 313 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:36:22Z ERR Request failed error="stream 313 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:36:50Z ERR  error="stream 317 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:36:50Z ERR Request failed error="stream 317 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:38:30Z ERR  error="stream 325 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:38:30Z ERR Request failed error="stream 325 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:38:30Z ERR  error="stream 321 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:38:30Z ERR Request failed error="stream 321 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:44:53Z ERR  error="stream 329 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:44:53Z ERR Request failed error="stream 329 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-05T02:47:04Z ERR  error="stream 333 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-05T02:47:04Z ERR Request failed error="stream 333 canceled by remote with error code 0" connIndex=0 dest=https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1](https://added-predict-toe-kansas.trycloudflare.com/api/raw?path=/home/azureuser/IroScript_Projects/Personal%20Life/kids_tube_with_folder_seection/KidsTube-debug.apk&download=1) event=0 ip=198.41.192.7 type=http
+2026-10-06T15:24:10Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-10-06T15:24:10Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-10-06T15:24:19Z INF +--------------------------------------------------------------------------------------------+
+2026-10-06T15:24:19Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-10-06T15:24:19Z INF |  https://professional-shaft-mechanics-victor.trycloudflare.com                             |
+2026-10-06T15:24:19Z INF +--------------------------------------------------------------------------------------------+
+2026-10-06T15:24:19Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-10-06T15:24:19Z INF Version 2026.9.3 (Checksum 77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2)
+2026-10-06T15:24:19Z INF GOOS: linux, GOVersion: go1.26.8, GoArch: amd64
+2026-10-06T15:24:19Z INF Settings: map[ha-connections:1 protocol:quic url:http://127.0.0.1:8088]
+2026-10-06T15:24:19Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-10-06T15:24:19Z INF Generated Connector ID: 4cd0b199-a633-4c8c-a738-cda361fd1f1a
+2026-10-06T15:24:19Z INF Initial protocol quic
+2026-10-06T15:24:19Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-06T15:24:19Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026/10/06 15:24:19 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-10-06T15:24:19Z INF ICMP proxy will use 172.16.0.4 as source for IPv4
+2026-10-06T15:24:19Z INF ICMP proxy will use fe80::7e1e:52ff:fe0a:f4a0 in zone eth0 as source for IPv6
+2026-10-06T15:24:19Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-10-06T15:24:19Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-10-06T15:24:20Z INF Registered tunnel connection connIndex=0 connection=0896b855-bf01-43cc-b126-a49798f6901e event=0 ip=198.41.192.27 location=iad09 protocol=quic
+2026-10-06T15:24:25Z INF +-------------------------------------------------------------------------------------+
+2026-10-06T15:24:25Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-10-06T15:24:25Z INF +-------------------------------------------------------------------------------------+
+2026-10-06T15:24:25Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-10-06T15:24:25Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-06T15:24:25Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-06T15:24:25Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-06T15:24:25Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-06T15:24:25Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-06T15:24:25Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-06T15:24:25Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-10-06T15:24:25Z INF |                                                                                     |
+2026-10-06T15:24:25Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-10-06T15:24:25Z INF +-------------------------------------------------------------------------------------+
+2026-10-06T15:24:25Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region1.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region2.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region1.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region2.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region1.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=region2.v2.argotunnel.com
+2026-10-06T15:24:25Z INF precheck component="Cloudflare API" details="API is reachable" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=api.cloudflare.com:443
+2026-10-06T15:24:25Z INF precheck complete hard_fail=false run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa suggested_protocol=quic
+2026-10-07T15:24:20Z ERR update failed to apply error="open /usr/local/bin/cloudflared.new: permission denied"

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261003191428-913a39",
+  "timestamp": "2026-10-03T19:14:28.217852+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm -rf /usr/*"
+  },
+  "decision": "DENIED",
+  "reason": "Catastrophic deletion of system root directory '/usr' is prohibited",
+  "rule_id": "CRITICAL_SYSTEM_ROOT_PROTECT"
+}
