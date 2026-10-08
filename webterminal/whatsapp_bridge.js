@@ -159,6 +159,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow}. Message ${mId} held in queue until backup finishes.`);
       return false;
     }
+    if (gateAck && gateAck.status === 'DUPLICATE_REJECTED') {
+      console.log(`[WA Bridge] 🔁 Prompt ${mId} was already accepted/delivered. Duplicate dispatch suppressed.`);
+      return false;
+    }
     if (!gateAck || gateAck.status !== 'DELIVERED') {
       console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
       return false;
