@@ -119,7 +119,7 @@ function getWindowForSender(sender) {
   return 'agy:0';
 }
 
-function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null) {
+function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyContext = null) {
   const cleanPrompt = (promptText || '').trim();
   if (!cleanPrompt) return;
 
@@ -150,14 +150,14 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null) {
   try {
     if (fs.existsSync(modelLock) && (Date.now() - fs.statSync(modelLock).mtimeMs) < 60000) {
       console.log(`[WA Bridge] 🧠 Model switch in progress on ${targetWindow}; retrying prompt in 3s`);
-      setTimeout(() => dispatchToTmux(promptText, targetWindow), 3000);
+      setTimeout(() => dispatchToTmux(promptText, targetWindow, msgId, replyContext), 3000);
       return;
     }
   } catch (e) {}
 
   if (isWindowBusy(targetWindow)) {
     console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
-    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now() });
+    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now(), replyContext: replyContext });
     return;
   }
   windowBusy[targetWindow] = true;
@@ -178,28 +178,63 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null) {
       } catch (err) {}
     }
 
-    const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
-    const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
-    fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
-    const bufName = `wa_cmd_${safeTarget}`;
-    execSync(`tmux load-buffer -b ${bufName} "${cmdFile}" && tmux paste-buffer -p -r -b ${bufName} -t ${targetWindow}`);
-    setTimeout(() => {
+    const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(cleanPrompt);
+    if (isSlashCommand) {
+      // UNIVERSAL NATIVE COMMAND GATEWAY:
+      // Send string literally, emulating physical keyboard typing with zero shell injection risk
+      const { execFileSync } = require('child_process');
       try {
-        execSync(`tmux send-keys -t ${targetWindow} Enter`);
-        console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
+        execFileSync('tmux', ['send-keys', '-t', targetWindow, '-l', cleanPrompt]);
+        execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
+        console.log(`[WA Bridge] ⌨️ Forwarded native slash command to ${targetWindow} via literal keystroke: ${cleanPrompt}`);
       } catch (e) {
-        console.error(`[WA Bridge] ❌ Enter key send error on ${targetWindow}:`, e.message);
+        console.error(`[WA Bridge] ❌ Keystroke send error on ${targetWindow}:`, e.message);
       }
+      // Inspect for interactive TUI modals, menus, questions, or clear events:
+      setTimeout(async () => {
+        try {
+          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow}`, { encoding: 'utf8', timeout: 2000 });
+          const lines = paneText.split('\n').filter(l => l.trim());
+          const lastFew = lines.slice(-20).join('\n');
+          const isModalOpen = lastFew.includes('Available Commands') ||
+                              lastFew.includes('Settings') ||
+                              lastFew.includes('Keybindings') ||
+                              lastFew.includes('Antigravity CLI') ||
+                              lastFew.includes('Question') ||
+                              lastFew.includes('Run this command?') ||
+                              lastFew.includes('Navigate') ||
+                              lastFew.includes('Exited /');
+          if (isModalOpen && replyContext && replyContext.sender) {
+            await sendWhatsAppMessage(`🖥️ ══════════════════════ 🖥️\n📟 *[AGY TUI ইন্টারেক্টিভ আউটপুট · ${targetWindow}]*\n━━━━━━━━━━━━━━━━━━━━━\n\`\`\`\n${lastFew}\n\`\`\`\n> 💡 _নেভিগেট করতে: \`up\`, \`down\`, \`enter\`, \`tab\`, অথবা \`esc\` পাঠান_\n══════════════════════`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
+          } else if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
+            await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি সফলভাবে ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
+          }
+        } catch (err) {}
+      }, 600);
+    } else {
+      const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
+      const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
+      fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
+      const bufName = `wa_cmd_${safeTarget}`;
+      execSync(`tmux load-buffer -b ${bufName} "${cmdFile}" && tmux paste-buffer -p -r -b ${bufName} -t ${targetWindow}`);
       setTimeout(() => {
         try {
-          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
-          if (paneText.includes('> ') && !paneText.includes('esc to cancel') && !paneText.includes('Working...') && !paneText.includes('Loading...')) {
-            console.log(`[WA Bridge] ⚠️ Prompt still sitting in input prompt on ${targetWindow}, sending backup Enter...`);
-            execSync(`tmux send-keys -t ${targetWindow} Enter`);
-          }
-        } catch (e) {}
-      }, 500);
-    }, 250);
+          execSync(`tmux send-keys -t ${targetWindow} Enter`);
+          console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
+        } catch (e) {
+          console.error(`[WA Bridge] ❌ Enter key send error on ${targetWindow}:`, e.message);
+        }
+        setTimeout(() => {
+          try {
+            const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
+            if (paneText.includes('> ') && !paneText.includes('esc to cancel') && !paneText.includes('Working...') && !paneText.includes('Loading...')) {
+              console.log(`[WA Bridge] ⚠️ Prompt still sitting in input prompt on ${targetWindow}, sending backup Enter...`);
+              execSync(`tmux send-keys -t ${targetWindow} Enter`);
+            }
+          } catch (e) {}
+        }, 500);
+      }, 250);
+    }
   } catch (err) {
     console.error(`[WA Bridge] ❌ Tmux forward error on ${targetWindow}:`, err.message);
     windowBusy[targetWindow] = false;
@@ -1489,6 +1524,53 @@ async function startBridge() {
         continue;
       }
 
+      // 2.25. Interactive Terminal Keystroke Navigation (esc, enter, up, down, tab, left, right, c-c, or 1-9 for pickers)
+      const trimmedLower = text.trim().toLowerCase();
+      const navKeyMap = {
+        '/esc': 'Escape', 'esc': 'Escape', '/escape': 'Escape', 'cancel': 'Escape',
+        '/enter': 'Enter', 'enter': 'Enter',
+        '/up': 'Up', 'up': 'Up',
+        '/down': 'Down', 'down': 'Down',
+        '/left': 'Left', 'left': 'Left',
+        '/right': 'Right', 'right': 'Right',
+        '/tab': 'Tab', 'tab': 'Tab',
+        '/c-c': 'C-c', 'c-c': 'C-c', '/ctrl-c': 'C-c'
+      };
+      let navKey = navKeyMap[trimmedLower] || null;
+      if (!navKey && /^[1-9]$/.test(trimmedLower)) {
+        const checkWin = getWindowForSender(sender);
+        try {
+          const paneSnapshot = execSync(`tmux capture-pane -p -t ${checkWin} | tail -n 12`, { encoding: 'utf8', timeout: 1500 });
+          if (paneSnapshot.includes('Navigate') || paneSnapshot.includes('Question') || paneSnapshot.includes('Run this command?') || paneSnapshot.includes('> 1.') || paneSnapshot.includes('Select')) {
+            navKey = `NUMBER_${trimmedLower}`;
+          }
+        } catch (e) {}
+      }
+      if (navKey) {
+        const targetWin = getWindowForSender(sender);
+        try {
+          const { execFileSync } = require('child_process');
+          if (navKey.startsWith('NUMBER_')) {
+            const digit = navKey.split('_')[1];
+            execFileSync('tmux', ['send-keys', '-t', targetWin, digit]);
+            execFileSync('tmux', ['send-keys', '-t', targetWin, 'Enter']);
+          } else {
+            execFileSync('tmux', ['send-keys', '-t', targetWin, navKey]);
+          }
+          await sock.sendMessage(sender, { react: { text: '🎯', key: msg.key } }).catch(() => {});
+          setTimeout(async () => {
+            try {
+              const screen = execSync(`tmux capture-pane -p -t ${targetWin}`, { encoding: 'utf8', timeout: 2000 });
+              const cleanScreen = screen.split('\n').filter(l => l.trim()).slice(-20).join('\n');
+              await sendWhatsAppMessage(`🕹️ ══════════════════════ 🕹️\n⌨️ *[কীস্ট্রোক প্রেরিত: \`${navKey}\` · ${targetWin}]*\n━━━━━━━━━━━━━━━━━━━━━\n\`\`\`\n${cleanScreen}\n\`\`\`\n══════════════════════`, { quoted: msg });
+            } catch (err) {}
+          }, 400);
+        } catch (e) {
+          console.error(`[WA Bridge] Navigation key error:`, e.message);
+        }
+        continue;
+      }
+
       // 2.3. Model switch (/model [window] <model> [low|medium|high])  — handled by bridge, not the AI
       if (/^\/models?(\s|$)/i.test(text)) {
         const { execFile } = require('child_process');
@@ -1654,13 +1736,14 @@ async function startBridge() {
       lastUserMsgByWindow[targetWindow] = msg;
       lastUserMsgKeyByWindow[targetWindow] = msg.key;
 
+      const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(text.trim());
       let contextPrompt = text;
-      if (activeGroup) {
+      if (activeGroup && !isSlashCommand) {
         contextPrompt = `[প্রজেক্ট গ্রুপ: ${activeGroup.name} (${activeGroup.key})]: ${text}`;
       }
 
       // 1. Instant dispatch to tmux (zero delay, immediate millisecond execution)
-      dispatchToTmux(contextPrompt, targetWindow);
+      dispatchToTmux(contextPrompt, targetWindow, msgId, { sender, msg });
 
       // 2. Send acknowledgment asynchronously without blocking prompt execution
       try {
@@ -1668,8 +1751,12 @@ async function startBridge() {
         const shortPrompt = firstLine.length > 50 ? firstLine.substring(0, 48) + '...' : firstLine;
         const isResearch = targetWindow === 'agy:research';
         const isCodex = targetWindow === 'agy:codex';
-        const headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : (isResearch ? `🔬 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*` : (isCodex ? `🤖 *[OPENAI CODEX · প্রসেসিং শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`));
-        const subMsg = isResearch ? `⚡ _আপনার ব্যক্তিগত রিসার্চ অ্যাসিস্ট্যান্ট গবেষণা ও ডসিয়ার প্রস্তুত করছে..._` : (isCodex ? `⚡ _নির্দেশনাটি Codex টার্মিনালে পাঠানো হয়েছে; Codex থেকে প্রকাশিত অগ্রগতি ও আউটপুট এলে এখানে পাঠানো হবে।_` : `⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._`);
+        let headerTitle = activeGroup ? `🤖 *[${activeGroup.name} · এআই প্রসেসিং শুরু]*` : (isResearch ? `🔬 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*` : (isCodex ? `🤖 *[OPENAI CODEX · প্রসেসিং শুরু]*` : `🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*`));
+        let subMsg = isResearch ? `⚡ _আপনার ব্যক্তিগত রিসার্চ অ্যাসিস্ট্যান্ট গবেষণা ও ডসিয়ার প্রস্তুত করছে..._` : (isCodex ? `⚡ _নির্দেশনাটি Codex টার্মিনালে পাঠানো হয়েছে; Codex থেকে প্রকাশিত অগ্রগতি ও আউটপুট এলে এখানে পাঠানো হবে।_` : `⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._`);
+        if (isSlashCommand) {
+          headerTitle = `⚡ *[AGY NATIVE COMMAND · ${firstLine.split(/\s+/)[0]}]*`;
+          subMsg = `⌨️ _টার্মিনাল কীস্ট্রোক পাথ দিয়ে নেটিভভাবে এক্সিকিউট হচ্ছে..._`;
+        }
         sendWhatsAppMessage(`⏳ ══════════════════════ ⏳\n${headerTitle}\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* "${shortPrompt}"\n\n${subMsg}\n══════════════════════`, { to: sender }).catch(() => {});
       } catch (e) {}
     }
