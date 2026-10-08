@@ -163,8 +163,8 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       console.log(`[WA Bridge] 🔁 Prompt ${mId} was already accepted/delivered. Duplicate dispatch suppressed.`);
       return false;
     }
-    if (!gateAck || (gateAck.status !== 'DELIVERED' && gateAck.status !== 'DISPATCHING')) {
-      console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
+    if (!gateAck || (gateAck.status !== 'DELIVERED' && gateAck.status !== 'DISPATCHING' && gateAck.status !== 'ACCEPTED_FOR_DELIVERY')) {
+      console.warn(`[WA Bridge] 🛑 Prompt gate returned non-accepted status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
       return false;
     }
   } catch (e) {
@@ -197,6 +197,22 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
 
   // Activate Universal Autonomous Interaction Controller for this target terminal
   autoController.startTracking(targetWindow, cleanPrompt);
+
+  const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
+  const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
+  fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
+
+  // Single Delivery Owner Guard (Requirement 3):
+  // When SOT designates daemon ownership, only the daemon executes real tmux transport
+  if (gateAck && gateAck.delivery_owner === 'daemon') {
+    console.log(`[WA Bridge] 📦 Delivery owned by daemon for ${targetWindow}; skipping duplicate direct tmux delivery.`);
+    if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
+      setTimeout(async () => {
+        await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
+      }, 600);
+    }
+    return true;
+  }
 
   try {
     // Ensure target session and window exist before dispatching
