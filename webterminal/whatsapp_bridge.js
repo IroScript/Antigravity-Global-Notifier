@@ -814,6 +814,9 @@ function getTargetInfoForTranscript(transcriptPath) {
   return { window: 'agy:0', jid: lastPersonalLid || TARGET_JID };
 }
 
+let cachedConvDirs = [];
+let lastConvDirsCheck = 0;
+
 function findRecentTranscripts() {
   const brainDir = '/home/azureuser/.gemini/antigravity-cli/brain';
   if (!fs.existsSync(brainDir)) return [];
@@ -823,8 +826,11 @@ function findRecentTranscripts() {
   const threshold = now - 30 * 60 * 1000; // 30 minutes
 
   try {
-    const convDirs = fs.readdirSync(brainDir);
-    for (const d of convDirs) {
+    if (now - lastConvDirsCheck > 4000 || cachedConvDirs.length === 0) {
+      cachedConvDirs = fs.readdirSync(brainDir);
+      lastConvDirsCheck = now;
+    }
+    for (const d of cachedConvDirs) {
       const p = path.join(brainDir, d, '.system_generated/logs/transcript.jsonl');
       try {
         const stat = fs.statSync(p);
@@ -1199,16 +1205,25 @@ async function ensureCodexGroup() {
   }
 }
 
+let sanitizeIntervalStarted = false;
+
 async function startBridge() {
   autoSanitizeAuth();
-  setInterval(autoSanitizeAuth, 15 * 60 * 1000);
+  if (!sanitizeIntervalStarted) {
+    setInterval(autoSanitizeAuth, 15 * 60 * 1000);
+    sanitizeIntervalStarted = true;
+  }
   const { state, saveCreds } = await useMultiFileAuthState(AUTH_DIR);
 
   sock = makeWASocket({
     auth: state,
     logger: pino({ level: 'silent' }),
     printQRInTerminal: false,
-    browser: ['Ubuntu', 'Chrome', '122.0.0']
+    browser: ['Ubuntu', 'Chrome', '122.0.0'],
+    connectTimeoutMs: 60000,
+    keepAliveIntervalMs: 25000,
+    defaultQueryTimeoutMs: 60000,
+    retryRequestDelayMs: 250
   });
 
   sock.ev.on('creds.update', saveCreds);
@@ -2519,7 +2534,7 @@ function watchReplies() {
     } catch (err) {
       console.error('[WA Bridge] Watcher poll error:', err.message);
     }
-  }, 75);
+  }, 500);
 }
 
 startBridge();
