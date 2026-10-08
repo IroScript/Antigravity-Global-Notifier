@@ -4,15 +4,15 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/node /home/azureuser/.webterminal/whatsapp_bridge.js
+ExecStart=/usr/bin/flock -n %h/.webterminal/whatsapp_bridge.lock /usr/bin/node %h/.webterminal/whatsapp_bridge.js
 Restart=always
 RestartSec=5
-StandardOutput=append:/home/azureuser/.webterminal/whatsapp.log
-StandardError=append:/home/azureuser/.webterminal/whatsapp.log
-Environment=HOME=/home/azureuser
-Environment=PATH=/usr/local/bin:/usr/bin:/bin:/home/azureuser/.local/bin:/home/azureuser/.npm-global/bin
-Environment=TMPDIR=/home/azureuser/tmp
-WorkingDirectory=/home/azureuser
+StandardOutput=append:%h/.webterminal/whatsapp.log
+StandardError=append:%h/.webterminal/whatsapp.log
+Environment=HOME=%h
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:%h/.local/bin:%h/.npm-global/bin
+Environment=TMPDIR=%h/tmp
+WorkingDirectory=%h
 
 [Install]
 WantedBy=default.target

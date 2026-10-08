@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+const USER_HOME = process.env.HOME || os.homedir();
 const https = require('https');
 const { execSync, exec, execFile } = require('child_process');
 
@@ -9,11 +11,11 @@ const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = baile
 const pino = require('pino');
 const { defaultController: autoController } = require('./autonomous_interaction_controller');
 
-const AUTH_DIR = '/home/azureuser/.webterminal/wa_auth';
-const TARGET_PHONE_FILE = '/home/azureuser/.webterminal/target_phone.txt';
-const PAIRING_FILE = '/home/azureuser/.webterminal/pairing_code.txt';
-const LATEST_REPLY_FILE = '/home/azureuser/.webterminal/latest_reply.json';
-const WA_OUTBOX_DIR = '/home/azureuser/.webterminal/wa_outbox';
+const AUTH_DIR = path.join(USER_HOME, '.webterminal', 'wa_auth');
+const TARGET_PHONE_FILE = path.join(USER_HOME, '.webterminal', 'target_phone.txt');
+const PAIRING_FILE = path.join(USER_HOME, '.webterminal', 'pairing_code.txt');
+const LATEST_REPLY_FILE = path.join(USER_HOME, '.webterminal', 'latest_reply.json');
+const WA_OUTBOX_DIR = path.join(USER_HOME, '.webterminal', 'wa_outbox');
 
 function getTargetPhone() {
   if (fs.existsSync(TARGET_PHONE_FILE)) {
@@ -30,7 +32,7 @@ let TARGET_JID = `${TARGET_PHONE}@s.whatsapp.net`;
 const BRIDGE_START_TIME = Math.floor(Date.now() / 1000);
 const sentMessageIds = new Set();
 const processedIncomingMessageIds = new Set();
-const PROCESSED_MSG_FILE = '/home/azureuser/.webterminal/processed_msg_ids.json';
+const PROCESSED_MSG_FILE = path.join(USER_HOME, '.webterminal', 'processed_msg_ids.json');
 
 function loadProcessedMessageIds() {
   try {
@@ -69,7 +71,6 @@ const auditCycleByWindow = {};
 const windowBusy = {};
 const windowBusySince = {};
 const lastWaDispatchedPromptByWindow = {};
-const os = require('os');
 const QUEUE_FILE = process.env.PROMPT_QUEUE_FILE || path.join(os.homedir(), '.webterminal', 'prompt_queue.json');
 
 // Bangla notification constants (Authoritative from ORIGINAL_REQUEST.md & PROJECT.md)
@@ -133,8 +134,30 @@ function updateDurablePromptStatus(messageId, status, extra = {}) {
   }
 }
 
+function getInFlightLockFile(projectUuid) {
+  const stateRoot = process.env.STATE_ROOT || path.join(USER_HOME, '.agents');
+  const locksDir = path.join(stateRoot, 'backup_orchestrator', 'in_flight_locks');
+  try { fs.mkdirSync(locksDir, { recursive: true }); } catch (e) {}
+  const safeId = (projectUuid || 'default').replace(/[^a-zA-Z0-9_-]/g, '_');
+  return path.join(locksDir, `${safeId}.lock`);
+}
+
+function acquireInFlightLock(projectUuid) {
+  try {
+    const lockFile = getInFlightLockFile(projectUuid);
+    fs.writeFileSync(lockFile, JSON.stringify({ pid: process.pid, time: Date.now(), project: projectUuid }));
+  } catch (e) {}
+}
+
+function releaseInFlightLock(projectUuid) {
+  try {
+    const lockFile = getInFlightLockFile(projectUuid);
+    if (fs.existsSync(lockFile)) fs.unlinkSync(lockFile);
+  } catch (e) {}
+}
+
 function checkZipGate(targetWindow, projectUuid = null) {
-  const sotPath = process.env.SOT_PATH || '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
+  const sotPath = process.env.SOT_PATH || path.join(USER_HOME, 'IroScript_Projects', 'Infrastructure-Source-of-Truth', 'sot');
   if (!fs.existsSync(sotPath)) {
     // Daemon-Independent Ordinary Delivery: if SOT binary missing, default to ALLOW_NOW
     return { action: 'ALLOW_NOW', zip_gate: 'ZIP_GATE_OPEN' };
@@ -239,6 +262,10 @@ function getWindowForSender(sender) {
 }
 
 function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyContext = null) {
+  if (process.env.TASK_MODE === 'READ_ONLY') {
+    console.error(`[WA Bridge] 🚫 POLICY_VIOLATION_READ_ONLY: terminal injection to ${targetWindow} forbidden in READ_ONLY mode`);
+    return false;
+  }
   const cleanPrompt = (promptText || '').trim();
   if (!cleanPrompt) return false;
 
@@ -274,7 +301,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   }
 
   // Hold prompts while set_agy_model.sh has the /model picker open on this window
-  const modelLock = `/home/azureuser/.webterminal/model_switch_${targetWindow.replace(/[^a-zA-Z0-9]/g, '_')}.lock`;
+  const modelLock = `${USER_HOME}/.webterminal/model_switch_${targetWindow.replace(/[^a-zA-Z0-9]/g, '_')}.lock`;
   try {
     if (fs.existsSync(modelLock) && (Date.now() - fs.statSync(modelLock).mtimeMs) < 60000) {
       console.log(`[WA Bridge] 🧠 Model switch in progress on ${targetWindow}; retrying prompt in 3s`);
@@ -317,11 +344,14 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     reply_context: replyContext ? { sender: replyContext.sender } : null
   });
 
+  const projectUuid = (gateCheck && gateCheck.project_uuid) || targetWindow;
+  acquireInFlightLock(projectUuid);
+
   // Activate Universal Autonomous Interaction Controller for this target terminal
   autoController.startTracking(targetWindow, cleanPrompt);
 
   const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
-  const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
+  const cmdFile = `${USER_HOME}/.webterminal/incoming_cmd_${safeTarget}.txt`;
   try {
     fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
   } catch (e) {}
@@ -388,6 +418,8 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     windowBusy[targetWindow] = false;
     updateDurablePromptStatus(mId, 'RETRYING', { last_error: err.message, retry_count: 1 });
     return false;
+  } finally {
+    releaseInFlightLock(projectUuid);
   }
 }
 
@@ -412,7 +444,7 @@ function getVerifiedModelInfo(targetWindow = 'agy:0') {
 
   // 2. Way 2: Antigravity CLI Settings (settings.json)
   try {
-    const settingsPath = '/home/azureuser/.gemini/antigravity-cli/settings.json';
+    const settingsPath = path.join(USER_HOME, '.gemini', 'antigravity-cli', 'settings.json');
     if (fs.existsSync(settingsPath)) {
       const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf8'));
       if (settings.model) {
@@ -932,7 +964,7 @@ function getTargetInfoForTranscript(transcriptPath) {
 
   // 2. Database workspace check
   try {
-    const out = execSync(`python3 -c "import sqlite3; conn=sqlite3.connect('/home/azureuser/.gemini/antigravity-cli/conversation_summaries.db'); row=conn.execute('SELECT workspace_uris FROM conversation_summaries WHERE conversation_id=?', ('${convId}',)).fetchone(); print(row[0] if row else '')"`, { encoding: 'utf8', timeout: 1500 }).trim();
+    const out = execSync(`python3 -c "import sqlite3; conn=sqlite3.connect('${USER_HOME}/.gemini/antigravity-cli/conversation_summaries.db'); row=conn.execute('SELECT workspace_uris FROM conversation_summaries WHERE conversation_id=?', ('${convId}',)).fetchone(); print(row[0] if row else '')"`, { encoding: 'utf8', timeout: 1500 }).trim();
     if (out) {
       if (out.includes('social-media/youtube') || out.includes('Social Media/youtube') || out.includes('/youtube')) {
         convWindowMap[convId] = 'agy:yt';
@@ -977,7 +1009,7 @@ let cachedConvDirs = [];
 let lastConvDirsCheck = 0;
 
 function findRecentTranscripts() {
-  const brainDir = '/home/azureuser/.gemini/antigravity-cli/brain';
+  const brainDir = path.join(USER_HOME, '.gemini', 'antigravity-cli', 'brain');
   if (!fs.existsSync(brainDir)) return [];
 
   const recent = [];
@@ -1046,7 +1078,7 @@ function uploadToPasteRs(text) {
   });
 }
 
-const PROJECT_GROUPS_FILE = '/home/azureuser/.webterminal/project_groups.json';
+const PROJECT_GROUPS_FILE = path.join(USER_HOME, '.webterminal', 'project_groups.json');
 
 function getProjectGroupMap() {
   if (fs.existsSync(PROJECT_GROUPS_FILE)) {
@@ -1194,7 +1226,7 @@ async function processWaOutbox() {
 function autoSanitizeAuth() {
   try {
     if (!fs.existsSync(AUTH_DIR)) return;
-    const backupDir = '/home/azureuser/.webterminal/wa_auth_senderkeys_backup';
+    const backupDir = path.join(USER_HOME, '.webterminal', 'wa_auth_senderkeys_backup');
     if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
 
     const files = fs.readdirSync(AUTH_DIR);
@@ -1244,7 +1276,7 @@ async function ensureResearchGroup() {
         name: matched.subject || 'AGY · Ask & Research',
         key: 'research',
         window: 'agy:research',
-        cwd: '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent'
+        cwd: `${USER_HOME}/IrakIroan/IroScript_Projects/Ask-And-Research-Agent`
       };
       fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
       return;
@@ -1265,7 +1297,7 @@ async function ensureResearchGroup() {
             name: 'AGY · Ask & Research',
             key: 'research',
             window: 'agy:research',
-            cwd: '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent'
+            cwd: `${USER_HOME}/IrakIroan/IroScript_Projects/Ask-And-Research-Agent`
           };
           fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
 
@@ -1315,7 +1347,7 @@ async function ensureCodexGroup() {
         name: matched.subject || 'AGY · OpenAI Codex',
         key: 'codex',
         window: 'agy:codex',
-        cwd: '/home/azureuser/IroScript_Projects/OpenAI_Codex',
+        cwd: `${USER_HOME}/IroScript_Projects/OpenAI_Codex`,
         git_remote: '',
         whatsapp_status: 'CONNECTED'
       };
@@ -1338,7 +1370,7 @@ async function ensureCodexGroup() {
             name: 'AGY · OpenAI Codex',
             key: 'codex',
             window: 'agy:codex',
-            cwd: '/home/azureuser/IroScript_Projects/OpenAI_Codex',
+            cwd: `${USER_HOME}/IroScript_Projects/OpenAI_Codex`,
             git_remote: '',
             whatsapp_status: 'CONNECTED'
           };
@@ -1401,7 +1433,7 @@ async function startBridge() {
       } else {
         console.log('[WA Bridge] ⚠️ Session logged out (401). Clearing auth for re-pairing...');
         try {
-          const backupDir = `/home/azureuser/.webterminal/wa_auth_backup_${Date.now()}`;
+          const backupDir = `${USER_HOME}/.webterminal/wa_auth_backup_${Date.now()}`;
           if (fs.existsSync(AUTH_DIR)) {
             fs.renameSync(AUTH_DIR, backupDir);
             console.log('[WA Bridge] Backed up old auth to:', backupDir);
@@ -1457,7 +1489,7 @@ async function startBridge() {
 
       try {
         let activeConsoleUrl = 'https://textiles-absolute-destinations-omaha.trycloudflare.com';
-        const urlFile = '/home/azureuser/.webterminal/terminal_url.txt';
+        const urlFile = path.join(USER_HOME, '.webterminal', 'terminal_url.txt');
         if (fs.existsSync(urlFile)) {
           const readUrl = fs.readFileSync(urlFile, 'utf8').trim();
           if (readUrl) activeConsoleUrl = readUrl;
@@ -1646,25 +1678,25 @@ async function startBridge() {
       // 2. Direct Bash Shell Command execution (starting with $, !, or /sh)
       if (text.startsWith('$') || text.startsWith('!') || text.startsWith('/sh ')) {
         const targetWindow = getWindowForSender(sender);
-        let projectCwd = '/home/azureuser';
+        let projectCwd = USER_HOME;
         if (targetWindow === 'agy:yt') {
-          projectCwd = '/home/azureuser/IrakIroan/IroScript_Projects/Social Media/youtube';
+          projectCwd = `${USER_HOME}/IrakIroan/IroScript_Projects/Social Media/youtube`;
         } else if (targetWindow === 'agy:frappe') {
-          projectCwd = '/home/azureuser/Frappe-erp-Alco';
+          projectCwd = `${USER_HOME}/Frappe-erp-Alco`;
         } else if (targetWindow === 'agy:tg') {
-          projectCwd = '/home/azureuser/telegram-bot';
+          projectCwd = `${USER_HOME}/telegram-bot`;
         } else if (targetWindow === 'agy:history') {
-          projectCwd = '/home/azureuser/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT';
+          projectCwd = `${USER_HOME}/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT`;
         } else if (targetWindow === 'agy:kids') {
-          projectCwd = '/home/azureuser/kids_tube_with_folder_seection';
+          projectCwd = `${USER_HOME}/kids_tube_with_folder_seection`;
         } else if (targetWindow === 'agy:rust') {
-          projectCwd = '/home/azureuser/Rust_Task_With_Time_Keeping_And_Live_Note';
+          projectCwd = `${USER_HOME}/Rust_Task_With_Time_Keeping_And_Live_Note`;
         } else if (targetWindow === 'agy:article') {
-          projectCwd = '/home/azureuser/Article-Publishing-Platform';
+          projectCwd = `${USER_HOME}/Article-Publishing-Platform`;
         } else if (targetWindow === 'agy:game') {
-          projectCwd = '/home/azureuser/3D-Game-Design-Studio';
+          projectCwd = `${USER_HOME}/3D-Game-Design-Studio`;
         } else if (targetWindow === 'agy:research') {
-          projectCwd = '/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent';
+          projectCwd = `${USER_HOME}/IrakIroan/IroScript_Projects/Ask-And-Research-Agent`;
         }
 
         const shellCmd = text.replace(/^(\$|!|\/sh\s*)/, '').trim();
@@ -1733,7 +1765,7 @@ async function startBridge() {
       // 2.3. Model switch (/model [window] <model> [low|medium|high])  — handled by bridge, not the AI
       if (/^\/models?(\s|$)/i.test(text)) {
         const { execFile } = require('child_process');
-        const MODEL_SCRIPT = '/home/azureuser/.webterminal/set_agy_model.sh';
+        const MODEL_SCRIPT = path.join(USER_HOME, '.webterminal', 'set_agy_model.sh');
         const knownWins = ['0', 'main', 'master', 'yt', 'frappe', 'tg', 'history', 'kids', 'rust', 'article', 'game', 'research', 'report', 'reporting', 'codex'];
         const tokens = text.replace(/^\/models?\s*/i, '').trim().split(/\s+/).filter(Boolean);
         let targetWindow = getWindowForSender(sender);
@@ -1821,7 +1853,7 @@ async function startBridge() {
         } catch (e) {}
 
         try {
-          const mediaDir = '/home/azureuser/.webterminal/media';
+          const mediaDir = path.join(USER_HOME, '.webterminal', 'media');
           if (!fs.existsSync(mediaDir)) fs.mkdirSync(mediaDir, { recursive: true });
 
           const buffer = await baileys.downloadMediaMessage(
@@ -2268,7 +2300,7 @@ let newestCodexRolloutCache = null;
 function findNewestCodexRollout() {
   if (Date.now() - newestCodexRolloutScanTime < 1000) return newestCodexRolloutCache;
   newestCodexRolloutScanTime = Date.now();
-  const baseDir = '/home/azureuser/.codex/sessions';
+  const baseDir = path.join(USER_HOME, '.codex', 'sessions');
   if (!fs.existsSync(baseDir)) return null;
   let newest = null;
   let maxMtime = 0;
@@ -2298,7 +2330,7 @@ function findNewestCodexRollout() {
 
 function getCodexModelInfo() {
   try {
-    const configPath = '/home/azureuser/.codex/config.toml';
+    const configPath = path.join(USER_HOME, '.codex', 'config.toml');
     if (fs.existsSync(configPath)) {
       const content = fs.readFileSync(configPath, 'utf8');
       const mMatch = content.match(/^model\s*=\s*"([^"]+)"/m);
@@ -2707,6 +2739,8 @@ if (require.main === module) {
 }
 
 module.exports = {
+  acquireInFlightLock,
+  releaseInFlightLock,
   dispatchToTmux,
   getTargetPhone,
   loadProcessedMessageIds,
