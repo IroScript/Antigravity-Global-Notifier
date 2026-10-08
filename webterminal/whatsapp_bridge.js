@@ -119,9 +119,31 @@ function getWindowForSender(sender) {
   return 'agy:0';
 }
 
-function dispatchToTmux(promptText, targetWindow = 'agy:0') {
+function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null) {
   const cleanPrompt = (promptText || '').trim();
   if (!cleanPrompt) return;
+
+  // Coordinate with SOT PromptGateCoordinator (Section 45, 46)
+  try {
+    const sotPath = '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
+    if (fs.existsSync(sotPath)) {
+      const mId = msgId || `wa_${Date.now()}`;
+      const payloadB64 = Buffer.from(cleanPrompt).toString('base64');
+      const gateOut = execSync(`/usr/bin/python3 "${sotPath}" backup-orchestrator submit-prompt --route "${targetWindow}" --message-id "${mId}" --payload "${payloadB64}" --base64`, { encoding: 'utf8', timeout: 5000 });
+      const gateAck = JSON.parse(gateOut.trim());
+      if (gateAck && gateAck.status === 'HELD') {
+        console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow}. Message ${mId} held in queue until backup finishes.`);
+        return;
+      }
+      if (!gateAck || gateAck.status !== 'DELIVERED') {
+        console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
+        return;
+      }
+    }
+  } catch (e) {
+    console.error(`[WA Bridge] 🛑 Prompt gate check failed:`, e.message);
+    return; // Fail closed! Do not proceed to dispatch if gate check encounters an error!
+  }
 
   // Hold prompts while set_agy_model.sh has the /model picker open on this window
   const modelLock = `/home/azureuser/.webterminal/model_switch_${targetWindow.replace(/[^a-zA-Z0-9]/g, '_')}.lock`;
