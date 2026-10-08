@@ -122,28 +122,50 @@ function getWindowForSender(sender) {
 
 function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyContext = null) {
   const cleanPrompt = (promptText || '').trim();
-  if (!cleanPrompt) return;
+  if (!cleanPrompt) return false;
 
   // Coordinate with SOT PromptGateCoordinator (Section 45, 46)
   try {
-    const sotPath = '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
-    if (fs.existsSync(sotPath)) {
-      const mId = msgId || `wa_${Date.now()}`;
-      const payloadB64 = Buffer.from(cleanPrompt).toString('base64');
-      const gateOut = execSync(`/usr/bin/python3 "${sotPath}" backup-orchestrator submit-prompt --route "${targetWindow}" --message-id "${mId}" --payload "${payloadB64}" --base64`, { encoding: 'utf8', timeout: 5000 });
-      const gateAck = JSON.parse(gateOut.trim());
-      if (gateAck && gateAck.status === 'HELD') {
-        console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow}. Message ${mId} held in queue until backup finishes.`);
-        return;
+    const sotPath = process.env.SOT_PATH || '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
+    if (!fs.existsSync(sotPath)) {
+      console.error(`[WA Bridge] 🛑 SOT executable missing at ${sotPath}! Dispatch blocked (fail closed).`);
+      return false;
+    }
+    try {
+      const stat = fs.statSync(sotPath);
+      if (!stat.isFile()) {
+        console.error(`[WA Bridge] 🛑 SOT path is not a file at ${sotPath}! Dispatch blocked (fail closed).`);
+        return false;
       }
-      if (!gateAck || gateAck.status !== 'DELIVERED') {
-        console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
-        return;
-      }
+      fs.accessSync(sotPath, fs.constants.R_OK);
+    } catch (accErr) {
+      console.error(`[WA Bridge] 🛑 SOT executable inaccessible at ${sotPath}! Dispatch blocked (fail closed).`);
+      return false;
+    }
+    const mId = msgId || `wa_${Date.now()}`;
+    const payloadB64 = Buffer.from(cleanPrompt).toString('base64');
+    const { execFileSync } = require('child_process');
+    const gateOut = execFileSync('/usr/bin/python3', [
+      sotPath,
+      'backup-orchestrator',
+      'submit-prompt',
+      '--route', targetWindow,
+      '--message-id', mId,
+      '--payload', payloadB64,
+      '--base64'
+    ], { encoding: 'utf8', timeout: 5000 });
+    const gateAck = JSON.parse(gateOut.trim());
+    if (gateAck && gateAck.status === 'HELD') {
+      console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow}. Message ${mId} held in queue until backup finishes.`);
+      return false;
+    }
+    if (!gateAck || gateAck.status !== 'DELIVERED') {
+      console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
+      return false;
     }
   } catch (e) {
     console.error(`[WA Bridge] 🛑 Prompt gate check failed:`, e.message);
-    return; // Fail closed! Do not proceed to dispatch if gate check encounters an error!
+    return false; // Fail closed! Do not proceed to dispatch if gate check encounters an error!
   }
 
   // Hold prompts while set_agy_model.sh has the /model picker open on this window
@@ -152,14 +174,14 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     if (fs.existsSync(modelLock) && (Date.now() - fs.statSync(modelLock).mtimeMs) < 60000) {
       console.log(`[WA Bridge] 🧠 Model switch in progress on ${targetWindow}; retrying prompt in 3s`);
       setTimeout(() => dispatchToTmux(promptText, targetWindow, msgId, replyContext), 3000);
-      return;
+      return false;
     }
   } catch (e) {}
 
   if (isWindowBusy(targetWindow)) {
     console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
     promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now(), replyContext: replyContext });
-    return;
+    return false;
   }
   windowBusy[targetWindow] = true;
   windowBusySince[targetWindow] = Date.now();
@@ -229,7 +251,9 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   } catch (err) {
     console.error(`[WA Bridge] ❌ Tmux forward error on ${targetWindow}:`, err.message);
     windowBusy[targetWindow] = false;
+    return false;
   }
+  return true;
 }
 
 function getVerifiedModelInfo(targetWindow = 'agy:0') {
@@ -2537,5 +2561,14 @@ function watchReplies() {
   }, 500);
 }
 
-startBridge();
-watchReplies();
+if (require.main === module) {
+  startBridge();
+  watchReplies();
+}
+
+module.exports = {
+  dispatchToTmux,
+  getTargetPhone,
+  loadProcessedMessageIds,
+  saveProcessedMessageIds,
+};
