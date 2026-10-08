@@ -163,7 +163,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       console.log(`[WA Bridge] 🔁 Prompt ${mId} was already accepted/delivered. Duplicate dispatch suppressed.`);
       return false;
     }
-    if (!gateAck || gateAck.status !== 'DELIVERED') {
+    if (!gateAck || (gateAck.status !== 'DELIVERED' && gateAck.status !== 'DISPATCHING')) {
       console.warn(`[WA Bridge] 🛑 Prompt gate returned non-DELIVERED status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
       return false;
     }
