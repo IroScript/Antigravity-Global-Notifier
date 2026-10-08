@@ -69,9 +69,127 @@ const auditCycleByWindow = {};
 const windowBusy = {};
 const windowBusySince = {};
 const lastWaDispatchedPromptByWindow = {};
-let promptQueue = [];
+const os = require('os');
+const QUEUE_FILE = process.env.PROMPT_QUEUE_FILE || path.join(os.homedir(), '.webterminal', 'prompt_queue.json');
+
+// Bangla notification constants (Authoritative from ORIGINAL_REQUEST.md & PROJECT.md)
+const BANGLA_ZIP_HOLD_NOTICE = "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।";
+const BANGLA_ZIP_COMPLETE_NOTICE = "ZIP capture শেষ হয়েছে। অপেক্ষমান prompt পাঠানো হয়েছে।";
+const BANGLA_RECONNECT_TEMPLATE = "WhatsApp সংযোগ ফিরে এসেছে।\nঅপেক্ষমান {count}টি message আবার processing শুরু হয়েছে।";
+
+let promptQueue = []; // In-memory mirror for backward compatibility
 let mediaBatch = [];
 let mediaBatchTimer = null;
+
+function loadDurableQueue() {
+  try {
+    if (fs.existsSync(QUEUE_FILE)) {
+      const data = JSON.parse(fs.readFileSync(QUEUE_FILE, 'utf8'));
+      if (Array.isArray(data)) return data;
+    }
+  } catch (err) {
+    console.error('[WA Bridge] Error loading durable queue:', err.message);
+  }
+  return [];
+}
+
+function saveDurableQueue(queue) {
+  try {
+    const dir = path.dirname(QUEUE_FILE);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    const tmp = `${QUEUE_FILE}.${process.pid}.${Date.now()}.tmp`;
+    fs.writeFileSync(tmp, JSON.stringify(queue, null, 2), 'utf8');
+    fs.renameSync(tmp, QUEUE_FILE);
+  } catch (err) {
+    console.error('[WA Bridge] Error saving durable queue:', err.message);
+  }
+}
+
+function enqueueDurablePrompt(item) {
+  const queue = loadDurableQueue();
+  const existingIdx = queue.findIndex(q => q.message_id === item.message_id);
+  if (existingIdx !== -1) {
+    queue[existingIdx] = { ...queue[existingIdx], ...item, updated_at: new Date().toISOString() };
+  } else {
+    const maxSeq = queue.reduce((m, q) => Math.max(m, q.sequence || 0), 0);
+    queue.push({
+      ...item,
+      sequence: maxSeq + 1,
+      received_at: item.received_at || new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    });
+  }
+  saveDurableQueue(queue);
+}
+
+function updateDurablePromptStatus(messageId, status, extra = {}) {
+  const queue = loadDurableQueue();
+  const item = queue.find(q => q.message_id === messageId);
+  if (item) {
+    item.status = status;
+    item.updated_at = new Date().toISOString();
+    Object.assign(item, extra);
+    saveDurableQueue(queue);
+  }
+}
+
+function checkZipGate(targetWindow, projectUuid = null) {
+  const sotPath = process.env.SOT_PATH || '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
+  if (!fs.existsSync(sotPath)) {
+    // Daemon-Independent Ordinary Delivery: if SOT binary missing, default to ALLOW_NOW
+    return { action: 'ALLOW_NOW', zip_gate: 'ZIP_GATE_OPEN' };
+  }
+  try {
+    const { execFileSync } = require('child_process');
+    const args = ['backup-orchestrator', 'gate-check'];
+    if (projectUuid) {
+      args.push('--project-uuid', projectUuid);
+    } else {
+      args.push('--route', targetWindow);
+    }
+    args.push('--json');
+    const out = execFileSync('/usr/bin/python3', [sotPath, ...args], {
+      encoding: 'utf8',
+      timeout: 3000,
+      stdio: ['ignore', 'pipe', 'ignore']
+    });
+    const parsed = JSON.parse(out.trim());
+    return parsed || { action: 'ALLOW_NOW', zip_gate: 'ZIP_GATE_OPEN' };
+  } catch (err) {
+    // Daemon-Independent Ordinary Delivery:
+    // If sot CLI errors, times out, or backup daemon is stopped: default to ALLOW_NOW!
+    return { action: 'ALLOW_NOW', zip_gate: 'ZIP_GATE_OPEN' };
+  }
+}
+
+function drainNextPromptForWindow(targetWindow) {
+  const queue = loadDurableQueue();
+  const heldItems = queue.filter(item => item.target_window === targetWindow && item.status === 'HELD_FOR_ZIP');
+  if (heldItems.length > 0) {
+    const gateCheck = checkZipGate(targetWindow);
+    if (gateCheck && (gateCheck.action === 'ALLOW_NOW' || gateCheck.zip_gate === 'ZIP_GATE_OPEN')) {
+      console.log(`[WA Bridge] 🔓 ZIP capture finished for ${targetWindow}. Releasing ${heldItems.length} held prompts.`);
+      for (const item of heldItems) {
+        item.status = 'RECEIVED';
+        item.updated_at = new Date().toISOString();
+      }
+      saveDurableQueue(queue);
+
+      const recipient = lastActiveJid;
+      if (recipient) {
+        sendWhatsAppMessage(BANGLA_ZIP_COMPLETE_NOTICE, { to: recipient }).catch(() => {});
+      }
+    }
+  }
+
+  const nextItem = queue.find(item => item.target_window === targetWindow && (item.status === 'RECEIVED' || item.status === 'RETRYING'));
+  if (nextItem) {
+    console.log(`[WA Bridge] 🔄 Dequeuing durable prompt for ${targetWindow} (${nextItem.message_id}):`, (nextItem.prompt || '').substring(0, 60));
+    setTimeout(() => {
+      dispatchToTmux(nextItem.prompt, targetWindow, nextItem.message_id, nextItem.reply_context);
+    }, 100);
+  }
+}
 
 function isAgyActuallyIdle(targetWindow = 'agy:0') {
   try {
@@ -124,52 +242,35 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   const cleanPrompt = (promptText || '').trim();
   if (!cleanPrompt) return false;
 
-  // Coordinate with SOT PromptGateCoordinator (Section 45, 46)
-  try {
-    const sotPath = process.env.SOT_PATH || '/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/sot';
-    if (!fs.existsSync(sotPath)) {
-      console.error(`[WA Bridge] 🛑 SOT executable missing at ${sotPath}! Dispatch blocked (fail closed).`);
-      return false;
+  const mId = msgId || `wa_${Date.now()}`;
+
+  // 1. Duplicate suppression
+  if (msgId && processedIncomingMessageIds.has(msgId)) {
+    console.log(`[WA Bridge] 🔁 Prompt ${msgId} was already processed/delivered. Duplicate suppressed.`);
+    return false;
+  }
+
+  // 2. Gate Inspection (Non-blocking: fallback open if SOT offline or error)
+  const gateCheck = checkZipGate(targetWindow);
+  if (gateCheck && (gateCheck.action === 'HOLD_FOR_ZIP' || gateCheck.zip_gate === 'ZIP_GATE_CLOSED')) {
+    console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow} (project: ${gateCheck.project_uuid || targetWindow}). Holding prompt in durable queue.`);
+    enqueueDurablePrompt({
+      message_id: mId,
+      project_uuid: gateCheck.project_uuid || targetWindow,
+      target_window: targetWindow,
+      prompt: cleanPrompt,
+      status: 'HELD_FOR_ZIP',
+      reply_context: replyContext ? { sender: replyContext.sender } : null
+    });
+
+    const targetRecipient = (replyContext && replyContext.sender) || lastActiveJid;
+    if (targetRecipient) {
+      sendWhatsAppMessage(BANGLA_ZIP_HOLD_NOTICE, {
+        to: targetRecipient,
+        quoted: replyContext ? replyContext.msg : undefined
+      }).catch(err => console.error('[WA Bridge] Error sending Bangla ZIP hold notice:', err.message));
     }
-    try {
-      const stat = fs.statSync(sotPath);
-      if (!stat.isFile()) {
-        console.error(`[WA Bridge] 🛑 SOT path is not a file at ${sotPath}! Dispatch blocked (fail closed).`);
-        return false;
-      }
-      fs.accessSync(sotPath, fs.constants.R_OK);
-    } catch (accErr) {
-      console.error(`[WA Bridge] 🛑 SOT executable inaccessible at ${sotPath}! Dispatch blocked (fail closed).`);
-      return false;
-    }
-    const mId = msgId || `wa_${Date.now()}`;
-    const payloadB64 = Buffer.from(cleanPrompt).toString('base64');
-    const { execFileSync } = require('child_process');
-    const gateOut = execFileSync('/usr/bin/python3', [
-      sotPath,
-      'backup-orchestrator',
-      'submit-prompt',
-      '--route', targetWindow,
-      '--message-id', mId,
-      '--payload', payloadB64,
-      '--base64'
-    ], { encoding: 'utf8', timeout: 5000 });
-    const gateAck = JSON.parse(gateOut.trim());
-    if (gateAck && gateAck.status === 'HELD') {
-      console.log(`[WA Bridge] ⏸️ Prompt gate is CLOSED for ${targetWindow}. Message ${mId} held in queue until backup finishes.`);
-      return false;
-    }
-    if (gateAck && gateAck.status === 'DUPLICATE_REJECTED') {
-      console.log(`[WA Bridge] 🔁 Prompt ${mId} was already accepted/delivered. Duplicate dispatch suppressed.`);
-      return false;
-    }
-    if (!gateAck || (gateAck.status !== 'DELIVERED' && gateAck.status !== 'DISPATCHING' && gateAck.status !== 'ACCEPTED_FOR_DELIVERY')) {
-      console.warn(`[WA Bridge] 🛑 Prompt gate returned non-accepted status: ${gateAck ? gateAck.status : 'null'}. Dispatch blocked.`);
-      return false;
-    }
-  } catch (e) {
-    console.error(`[WA Bridge] 🛑 Prompt gate check failed:`, e.message);
-    return false; // Fail closed! Do not proceed to dispatch if gate check encounters an error!
+    return false;
   }
 
   // Hold prompts while set_agy_model.sh has the /model picker open on this window
@@ -182,11 +283,21 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     }
   } catch (e) {}
 
+  // 3. Busy coding agent handling (Safe input boundary queuing)
   if (isWindowBusy(targetWindow)) {
-    console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt:`, cleanPrompt.substring(0, 60));
-    promptQueue.push({ prompt: cleanPrompt, targetWindow: targetWindow, queuedAt: Date.now(), replyContext: replyContext });
+    console.log(`[WA Bridge] ⏳ AGY is currently busy on ${targetWindow}. Queued prompt into durable queue:`, cleanPrompt.substring(0, 60));
+    enqueueDurablePrompt({
+      message_id: mId,
+      project_uuid: (gateCheck && gateCheck.project_uuid) || targetWindow,
+      target_window: targetWindow,
+      prompt: cleanPrompt,
+      status: 'RECEIVED',
+      reply_context: replyContext ? { sender: replyContext.sender } : null
+    });
     return false;
   }
+
+  // 4. Sole Terminal Delivery Owner: Bridge directly executes terminal injection
   windowBusy[targetWindow] = true;
   windowBusySince[targetWindow] = Date.now();
   lastWaDispatchedPromptByWindow[targetWindow] = cleanPrompt.replace(/\s+/g, ' ').trim();
@@ -195,24 +306,25 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     auditCycleByWindow[targetWindow] = 0;
   }
 
+  // Record in durable queue as DELIVERING
+  enqueueDurablePrompt({
+    message_id: mId,
+    project_uuid: (gateCheck && gateCheck.project_uuid) || targetWindow,
+    target_window: targetWindow,
+    prompt: cleanPrompt,
+    status: 'DELIVERING',
+    last_attempt_at: new Date().toISOString(),
+    reply_context: replyContext ? { sender: replyContext.sender } : null
+  });
+
   // Activate Universal Autonomous Interaction Controller for this target terminal
   autoController.startTracking(targetWindow, cleanPrompt);
 
   const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
   const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
-  fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
-
-  // Single Delivery Owner Guard (Requirement 3):
-  // When SOT designates daemon ownership, only the daemon executes real tmux transport
-  if (gateAck && gateAck.delivery_owner === 'daemon') {
-    console.log(`[WA Bridge] 📦 Delivery owned by daemon for ${targetWindow}; skipping duplicate direct tmux delivery.`);
-    if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
-      setTimeout(async () => {
-        await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
-      }, 600);
-    }
-    return true;
-  }
+  try {
+    fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
+  } catch (e) {}
 
   try {
     // Ensure target session and window exist before dispatching
@@ -227,7 +339,6 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
 
     const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(cleanPrompt);
     if (isSlashCommand) {
-      // UNIVERSAL NATIVE COMMAND GATEWAY:
       // Send string literally, emulating physical keyboard typing with zero shell injection risk
       const { execFileSync } = require('child_process');
       try {
@@ -237,17 +348,13 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       } catch (e) {
         console.error(`[WA Bridge] ❌ Keystroke send error on ${targetWindow}:`, e.message);
       }
-      
-      // Clean /clear acknowledgment only; intermediate modals/questions are handled autonomously by autoController
+
       if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
         setTimeout(async () => {
           await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
         }, 600);
       }
     } else {
-      const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
-      const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
-      fs.writeFileSync(cmdFile, cleanPrompt, 'utf8');
       const bufName = `wa_cmd_${safeTarget}`;
       execSync(`tmux load-buffer -b ${bufName} "${cmdFile}" && tmux paste-buffer -p -r -b ${bufName} -t ${targetWindow}`);
       setTimeout(() => {
@@ -268,12 +375,20 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
         }, 500);
       }, 250);
     }
+
+    // Terminal transport successful: transition DELIVERING -> DELIVERED
+    updateDurablePromptStatus(mId, 'DELIVERED');
+    if (mId) {
+      processedIncomingMessageIds.add(mId);
+      saveProcessedMessageIds();
+    }
+    return true;
   } catch (err) {
     console.error(`[WA Bridge] ❌ Tmux forward error on ${targetWindow}:`, err.message);
     windowBusy[targetWindow] = false;
+    updateDurablePromptStatus(mId, 'RETRYING', { last_error: err.message, retry_count: 1 });
     return false;
   }
-  return true;
 }
 
 function getVerifiedModelInfo(targetWindow = 'agy:0') {
@@ -1316,6 +1431,30 @@ async function startBridge() {
         console.error('[WA Bridge] ensureCodexGroup error:', err.message);
       });
 
+      // Reconcile and recover waiting messages after Baileys reconnect (Section 10 & Milestone 2)
+      try {
+        const queue = loadDurableQueue();
+        const pendingItems = queue.filter(q => q.status === 'RECEIVED' || q.status === 'RETRYING' || q.status === 'HELD_FOR_ZIP');
+        if (pendingItems.length > 0) {
+          console.log(`[WA Bridge] 🔄 Baileys reconnected! Found ${pendingItems.length} waiting message(s) in durable queue.`);
+          const recoveryText = BANGLA_RECONNECT_TEMPLATE.replace('{count}', pendingItems.length);
+          const targetNoticeRecipient = lastActiveJid || (pendingItems[0].reply_context && pendingItems[0].reply_context.sender);
+          if (targetNoticeRecipient) {
+            sendWhatsAppMessage(recoveryText, { to: targetNoticeRecipient }).catch(err => {
+              console.error('[WA Bridge] Error sending reconnect recovery notice:', err.message);
+            });
+          }
+
+          // Resume pending delivery in FIFO order
+          const pendingWindows = new Set(pendingItems.map(p => p.target_window));
+          for (const win of pendingWindows) {
+            drainNextPromptForWindow(win);
+          }
+        }
+      } catch (recErr) {
+        console.error('[WA Bridge] Error in reconnect message reconciliation:', recErr.message);
+      }
+
       try {
         let activeConsoleUrl = 'https://textiles-absolute-destinations-omaha.trycloudflare.com';
         const urlFile = '/home/azureuser/.webterminal/terminal_url.txt';
@@ -1429,37 +1568,9 @@ async function startBridge() {
         continue;
       }
 
-      // 1. Anti-Stale / Anti-Pending Message Gate:
-      // Prevent stale, replayed, or pending messages (e.g. 1 hour old offline sync) from executing
-      const rawTimestamp = msg.messageTimestamp;
-      let msgSec = 0;
-      if (typeof rawTimestamp === 'number') {
-        msgSec = rawTimestamp;
-      } else if (rawTimestamp && typeof rawTimestamp === 'object' && rawTimestamp.low !== undefined) {
-        msgSec = Number(rawTimestamp.low);
-      } else if (rawTimestamp) {
-        msgSec = Number(rawTimestamp);
-      }
-
-      const nowSec = Math.floor(Date.now() / 1000);
-      if (msgSec > 0) {
-        const ageSec = nowSec - msgSec;
-        // Maximum allowed age: 90 seconds (1.5 minutes). Messages older than 90s are dropped!
-        if (ageSec > 90) {
-          console.log(`[WA Bridge] ⏱️ [REJECTED STALE/PENDING]: Message '${msgId}' is ${ageSec}s old (> 90s limit). Dropped.`);
-          processedIncomingMessageIds.add(msgId);
-          continue;
-        }
-        if (ageSec < -60) {
-          console.log(`[WA Bridge] ⏱️ [REJECTED CLOCK SKEW]: Message '${msgId}' has future timestamp (${ageSec}s). Dropped.`);
-          processedIncomingMessageIds.add(msgId);
-          continue;
-        }
-        if (msgSec < (BRIDGE_START_TIME - 15)) {
-          console.log(`[WA Bridge] ⏱️ [REJECTED PRE-BOOT]: Message '${msgId}' was sent before bridge start. Dropped.`);
-          processedIncomingMessageIds.add(msgId);
-          continue;
-        }
+      // Deduplicate strictly by message ID (Section 4 & Milestone 2: never drop messages by age)
+      if (processedIncomingMessageIds.has(msgId)) {
+        continue;
       }
 
       // 2. Meta AI & Bot Interception Filter:
@@ -1509,9 +1620,7 @@ async function startBridge() {
 
       // Mark message as processed to prevent any duplicate/re-synced execution
       processedIncomingMessageIds.add(msgId);
-      if (processedIncomingMessageIds.size % 20 === 0) {
-        saveProcessedMessageIds();
-      }
+      saveProcessedMessageIds();
 
       console.log(`[WA Bridge] 📩 Message from Iraq bhai (${sender}):`, text || `[Media: ${isImage ? 'Image' : 'File'}]`);
       lastUserMsgKey = msg.key;
@@ -2139,20 +2248,7 @@ async function processSingleTranscript(transcriptPath) {
 
         // triggerCodexPeerReview disabled per user directive: Codex must not audit or dispatch to master agent
 
-        while (promptQueue.length > 0) {
-          const qIdx = promptQueue.findIndex(item => item.targetWindow === targetWindow);
-          if (qIdx === -1) break;
-          const nextItem = promptQueue.splice(qIdx, 1)[0];
-          const queueAgeMs = Date.now() - (nextItem.queuedAt || 0);
-          // Anti-Stale: Drop if queued more than 90 seconds ago (prevents 1-hour old prompt pasting)
-          if (nextItem.queuedAt && queueAgeMs > 90000) {
-            console.log(`[WA Bridge] ⏱️ [DROPPED EXPIRED QUEUED PROMPT] (${Math.round(queueAgeMs/1000)}s old > 90s limit):`, nextItem.prompt.substring(0, 50));
-            continue;
-          }
-          console.log(`[WA Bridge] 🔄 Dequeuing fresh prompt for ${targetWindow} (${Math.round(queueAgeMs/1000)}s old):`, nextItem.prompt.substring(0, 60));
-          setTimeout(() => dispatchToTmux(nextItem.prompt, targetWindow), 100);
-          break;
-        }
+        drainNextPromptForWindow(targetWindow);
       }
     } catch (e) {
       console.error(`[WA Bridge] Step error on ${targetWindow}:`, e.message);
@@ -2581,9 +2677,33 @@ function watchReplies() {
   }, 500);
 }
 
+function startQueueWatchdog() {
+  setInterval(() => {
+    try {
+      const queue = loadDurableQueue();
+      // Reconcile and drain any HELD_FOR_ZIP items whose gate has opened
+      const heldWindows = new Set(queue.filter(q => q.status === 'HELD_FOR_ZIP').map(q => q.target_window));
+      for (const win of heldWindows) {
+        const gateCheck = checkZipGate(win);
+        if (gateCheck && (gateCheck.action === 'ALLOW_NOW' || gateCheck.zip_gate === 'ZIP_GATE_OPEN')) {
+          drainNextPromptForWindow(win);
+        }
+      }
+      // Reconcile any RECEIVED or RETRYING items for windows that are now idle
+      const pendingWindows = new Set(queue.filter(q => q.status === 'RECEIVED' || q.status === 'RETRYING').map(q => q.target_window));
+      for (const win of pendingWindows) {
+        if (!isWindowBusy(win)) {
+          drainNextPromptForWindow(win);
+        }
+      }
+    } catch (e) {}
+  }, 3000);
+}
+
 if (require.main === module) {
   startBridge();
   watchReplies();
+  startQueueWatchdog();
 }
 
 module.exports = {
@@ -2591,4 +2711,14 @@ module.exports = {
   getTargetPhone,
   loadProcessedMessageIds,
   saveProcessedMessageIds,
+  checkZipGate,
+  loadDurableQueue,
+  saveDurableQueue,
+  enqueueDurablePrompt,
+  updateDurablePromptStatus,
+  drainNextPromptForWindow,
+  startQueueWatchdog,
+  BANGLA_ZIP_HOLD_NOTICE,
+  BANGLA_ZIP_COMPLETE_NOTICE,
+  BANGLA_RECONNECT_TEMPLATE,
 };
