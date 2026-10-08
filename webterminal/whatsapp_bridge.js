@@ -7,6 +7,7 @@ const baileysPath = path.join(__dirname, 'node_modules/@whiskeysockets/baileys')
 const baileys = require(baileysPath);
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = baileys;
 const pino = require('pino');
+const { defaultController: autoController } = require('./autonomous_interaction_controller');
 
 const AUTH_DIR = '/home/azureuser/.webterminal/wa_auth';
 const TARGET_PHONE_FILE = '/home/azureuser/.webterminal/target_phone.txt';
@@ -167,6 +168,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     lastUserPromptByWindow[targetWindow] = cleanPrompt;
     auditCycleByWindow[targetWindow] = 0;
   }
+
+  // Activate Universal Autonomous Interaction Controller for this target terminal
+  autoController.startTracking(targetWindow, cleanPrompt);
+
   try {
     // Ensure target session and window exist before dispatching
     try {
@@ -190,27 +195,13 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       } catch (e) {
         console.error(`[WA Bridge] ❌ Keystroke send error on ${targetWindow}:`, e.message);
       }
-      // Inspect for interactive TUI modals, menus, questions, or clear events:
-      setTimeout(async () => {
-        try {
-          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow}`, { encoding: 'utf8', timeout: 2000 });
-          const lines = paneText.split('\n').filter(l => l.trim());
-          const lastFew = lines.slice(-20).join('\n');
-          const isModalOpen = lastFew.includes('Available Commands') ||
-                              lastFew.includes('Settings') ||
-                              lastFew.includes('Keybindings') ||
-                              lastFew.includes('Antigravity CLI') ||
-                              lastFew.includes('Question') ||
-                              lastFew.includes('Run this command?') ||
-                              lastFew.includes('Navigate') ||
-                              lastFew.includes('Exited /');
-          if (isModalOpen && replyContext && replyContext.sender) {
-            await sendWhatsAppMessage(`🖥️ ══════════════════════ 🖥️\n📟 *[AGY TUI ইন্টারেক্টিভ আউটপুট · ${targetWindow}]*\n━━━━━━━━━━━━━━━━━━━━━\n\`\`\`\n${lastFew}\n\`\`\`\n> 💡 _নেভিগেট করতে: \`up\`, \`down\`, \`enter\`, \`tab\`, অথবা \`esc\` পাঠান_\n══════════════════════`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
-          } else if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
-            await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি সফলভাবে ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
-          }
-        } catch (err) {}
-      }, 600);
+      
+      // Clean /clear acknowledgment only; intermediate modals/questions are handled autonomously by autoController
+      if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
+        setTimeout(async () => {
+          await sendWhatsAppMessage(`🧹 *[সেশন রিস্টার্ট/ক্লিয়ার]*\n> \`${targetWindow}\` সেশনটি ক্লিয়ার করা হয়েছে। নতুন প্রম্পট পাঠাতে পারেন।`, { to: replyContext.sender, quoted: replyContext.msg }).catch(() => {});
+        }, 600);
+      }
     } else {
       const safeTarget = targetWindow.replace(/[^a-zA-Z0-9]/g, '_');
       const cmdFile = `/home/azureuser/.webterminal/incoming_cmd_${safeTarget}.txt`;
@@ -2083,6 +2074,7 @@ async function processSingleTranscript(transcriptPath) {
         tracker.currentTurnThinkingLength = 0;
 
         console.log(`[WA Bridge] ✅ Reply delivered to ${targetJid} (${targetWindow})!`);
+        autoController.stopTracking(targetWindow);
         tracker.isSendingReply = false;
         windowBusy[targetWindow] = false;
 
