@@ -210,7 +210,7 @@ async function executeTerminalDelivery(item, handlers) {
 
   handlers.updateStatus(mId, DELIVERY_STATES.READY);
 
-  const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(cleanPrompt);
+  const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+.*)?$/.test(cleanPrompt) && cleanPrompt.length <= 500 && !cleanPrompt.includes('\n');
 
   if (isSlashCommand) {
     // Slash command fast path (literal keystroke typing)

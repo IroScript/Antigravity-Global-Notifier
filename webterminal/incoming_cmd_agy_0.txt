@@ -1,1 +1,809 @@
-/boost dekho zipping cholakale pending prompt asole paste hosse naa in tmux terminal
+/teamwork-preview "apply it for all projects, and confirm for future projects, PERMANENT GLOBAL AGY TRUSTWORTHINESS, ZERO-OMISSION & SOURCE-OF-TRUTH ENFORCEMENT
+
+MISSION
+
+You are assigned to engineer, implement, independently verify, and permanently integrate a global trustworthiness and task-completeness enforcement system for AGY CLI.
+
+This is an implementation assignment, not a documentation-only assignment.
+
+The ultimate objective:
+
+Every current and future AGY CLI session, every existing and future project, every newly created terminal session, and every automatically onboarded project must inherit a common, verifiable trustworthiness protocol.
+
+The system must prevent silent task omission, unsupported success claims, fabricated evidence, forgotten requirements, unverified implementation, and loss of mandatory governance during project creation or infrastructure migration.
+
+The existing authoritative repository is:
+
+https://github.com/IroScript/Infrastructure-Source-of-Truth
+
+This repository must remain the canonical authority for governance, agent rules, verification standards, project lifecycle, infrastructure recovery, and future-machine bootstrap.
+
+Do not create a competing Source of Truth.
+
+Do not replace existing trustworthy mechanisms.
+
+Extend, integrate, and repair only demonstrably missing capabilities.
+
+---
+
+1. NON-NEGOTIABLE SAFETY AND SCOPE
+
+Before modification:
+
+1. Discover the actual AGY CLI version, installation, global configuration, rules, hooks, precedence, and runtime behavior.
+2. Inspect the authoritative repository and its actual latest remote commit.
+3. Read "AGENT_ENTRYPOINT.md", "agent-manifest.json", "UNIVERSAL_AGENT_OPERATING_STANDARD.md", and applicable trust/governance documents.
+4. Run the available read-only diagnostic commands, including "./sot doctor --format json", where supported.
+5. Identify existing enforcement mechanisms and avoid duplicating them.
+6. Inspect dependencies before editing anything.
+7. Preserve all unrelated projects, sessions, services, queues, policies, and background agents.
+
+Production investigation must begin read-only.
+
+Implementation changes are authorized only within the necessary global AGY configuration, authoritative governance system, and directly associated enforcement components.
+
+Do not modify unrelated application code.
+
+Never delete, reset, overwrite, force-push, or destructively rebuild an existing environment.
+
+Preserve existing Git history, working-tree changes, and user data.
+
+Do not interrupt active agents or terminal sessions.
+
+Do not claim that a proposed mechanism is installed until its actual runtime activation is demonstrated.
+
+---
+
+2. SINGLE CANONICAL TRUST AUTHORITY
+
+The authoritative GitHub repository must govern:
+
+- Trustworthiness policy.
+- Agent operating standards.
+- Global and project rules.
+- Enforcement hooks.
+- Verification contracts.
+- Task evidence requirements.
+- Project onboarding.
+- Registry management.
+- Backup and recovery requirements.
+- Infrastructure portability.
+- Versioned rule packages.
+- Agent adapter configuration.
+- Audit and acceptance criteria.
+
+Discover actual ownership from the existing canonical registries.
+
+Do not invent replacement registries or manually edit generated derivatives.
+
+All installed global AGY configuration must be treated as deployed derivatives of versioned canonical governance artifacts.
+
+The implementation must maintain a traceable relationship:
+
+Canonical Git Commit → Validated Rule Package → Installed Global Configuration → Effective Runtime Behavior → Independent Evidence.
+
+A valid Git commit alone does not prove that the runtime actually follows the rule.
+
+A local configuration file alone does not prove that AGY loaded it.
+
+The system must verify the complete chain.
+
+---
+
+3. PERMANENT GLOBAL ENFORCEMENT
+
+Implement an always-active global governance entrypoint using the configuration mechanisms genuinely supported by the installed AGY CLI.
+
+Investigate and use appropriate supported locations, including:
+
+- "~/.gemini/AGENTS.md"
+- "~/.gemini/GEMINI.md"
+- "~/.gemini/config/rules/"
+- "~/.gemini/antigravity-cli/rules/"
+- "~/.gemini/config/hooks.json"
+
+Use only verified and compatible configuration schemas.
+
+Preserve existing configuration contents and precedence.
+
+Where appropriate, use a small always-active global rule that resolves the canonical policy package rather than embedding an enormous static policy.
+
+Enforce these invariants:
+
+1. Every session loads applicable global trust rules.
+2. Every future project inherits the mandatory baseline.
+3. Every delegated or parallel agent receives applicable task and verification requirements.
+4. Project-specific instructions cannot silently disable mandatory safety or truthfulness constraints.
+5. Missing or tampered mandatory rules produce a detectable failure.
+6. Global rules survive terminal restarts and new sessions.
+7. Canonical rule versions and hashes remain traceable.
+8. Runtime behavior, not configuration existence, determines activation success.
+
+Handle conflicts using the canonical precedence and policy contract.
+
+Do not claim absolute protection against privileged administrators or externally modified software.
+
+Implement the strongest practical tamper-evident and fail-closed enforcement supported by the runtime.
+
+---
+
+4. ZERO SILENT TASK OMISSION
+
+This is the central user requirement.
+
+No accepted user instruction may silently disappear, be forgotten, be falsely marked complete, or be omitted from the final result.
+
+Implement durable task accounting.
+
+For every accepted user request:
+
+- Preserve the original instruction.
+- Generate a unique task ID.
+- Identify the originating session and project identity.
+- Extract all actionable requirements.
+- Preserve explicit constraints and prohibitions.
+- Identify measurable acceptance criteria.
+- Track dependencies between requirements.
+- Track assigned workers and delegated subtasks.
+- Record execution state.
+- Record actual verification evidence.
+- Preserve unresolved and failed requirements.
+
+The system must distinguish:
+
+"RECEIVED"
+
+"DURABLY_RECORDED"
+
+"PLANNED"
+
+"IN_PROGRESS"
+
+"IMPLEMENTED"
+
+"UNDER_VERIFICATION"
+
+"VERIFIED"
+
+"FAILED"
+
+"BLOCKED"
+
+"INCONCLUSIVE"
+
+A user request containing ten requirements must not be considered completed after implementing only nine.
+
+The final completion gate must reconcile the original user instruction against every recorded requirement and its acceptance evidence.
+
+No requirement may be silently removed or marked irrelevant.
+
+Explicitly superseded requirements must retain an auditable link to the later instruction authorizing the change.
+
+Maintain a durable, recoverable record so that context compaction, session restart, subagent failure, or process interruption cannot silently erase accepted pending work.
+
+Do not pretend that an instruction was received if there is no verifiable ingestion record.
+
+Do not claim zero omissions without testing the actual supported ingestion paths and acknowledging their coverage limits.
+
+---
+
+5. MANDATORY TASK COMPLETENESS GATE
+
+Implement a deterministic completeness checker.
+
+The checker must:
+
+1. Read the immutable original request record.
+2. Retrieve the complete requirement manifest.
+3. Compare requirements with implementation artifacts.
+4. Validate evidence for each requirement.
+5. Identify unimplemented requirements.
+6. Identify requirements lacking verification.
+7. Identify failed checks.
+8. Identify unresolved dependencies.
+9. Inspect delegated-worker completion.
+10. Prevent unsupported final acceptance.
+
+A task can receive "VERIFIED" only when every mandatory acceptance condition has valid evidence.
+
+A textual statement such as "All tasks completed" must never satisfy this gate.
+
+A plan, checklist, or generated report is not itself proof of implementation.
+
+Use deterministic checks wherever technically possible.
+
+If semantic verification is necessary, supplement it with independent review rather than replacing deterministic checks.
+
+---
+
+6. REAL EVIDENCE — NOT PRINTED PASS
+
+A printed "PASS", "SUCCESS", "READY", or "VERIFIED" is not sufficient evidence.
+
+For each material verification, collect the applicable:
+
+- Actual executed command and arguments.
+- Working directory.
+- Start and completion timestamps.
+- Exit status.
+- Standard output and standard error.
+- Relevant input fixture.
+- Expected behavior.
+- Observed behavior.
+- Actual changed-file hashes.
+- Git base and resulting commits.
+- Runtime identity and version.
+- Relevant service/process observations.
+- Persistent artifact references.
+- Cryptographic integrity hashes.
+- Independent verification verdict.
+- Unresolved limitations.
+
+Evidence must correspond to real execution, not reconstructed narratives.
+
+The verifier must inspect the underlying data and test logic.
+
+It must distinguish implementation evidence from runtime enforcement evidence.
+
+Do not fabricate terminal output, log entries, timestamps, screenshots, hashes, or successful test results.
+
+Redact secrets and sensitive user data from evidence.
+
+Evidence must be reproducible when feasible, machine-readable, and resistant to accidental modification.
+
+Use the existing canonical task-evidence contract instead of inventing a parallel evidence format.
+
+---
+
+7. SEVEN-LEVEL TRUST VERIFICATION
+
+Respect and enforce the existing seven-level trust model:
+
+1. "DECLARED"
+2. "DISCOVERED"
+3. "PARSED"
+4. "LOADED"
+5. "RESOLVED"
+6. "ENFORCED"
+7. "ADVERSARIAL_VERIFIED"
+
+Do not collapse these into a single boolean.
+
+For critical global governance rules, require Level 7 unless the canonical policy explicitly provides a justified alternative.
+
+For example:
+
+A rule exists on disk.
+
+That proves only its existence.
+
+The installed CLI must load the rule.
+
+Then the effective configuration must be observed.
+
+Then a controlled test must demonstrate the required behavior.
+
+Finally, an adversarial test must demonstrate that a prohibited behavior is actually rejected.
+
+A failed, unsupported, or unexecuted required level must produce "NOT VERIFIED", "FAILED", or "INCONCLUSIVE", as appropriate.
+
+Never upgrade an inconclusive result to verified.
+
+---
+
+8. INDEPENDENT VERIFICATION
+
+The agent implementing a high-risk or critical change must not be the sole authority accepting its own work.
+
+Implement the builder/verifier role separation already required by the canonical governance standard.
+
+The verification workflow must:
+
+- Inspect the original task.
+- Inspect the implementation diff.
+- Validate evidence references.
+- Validate hashes.
+- Independently inspect relevant files.
+- Challenge the correctness of tests.
+- Execute independent deterministic checks.
+- Execute negative and adversarial checks.
+- Validate actual runtime behavior.
+- Produce a traceable verdict.
+
+A separate model is not automatically an independent verifier.
+
+Independence requires meaningful separation of evidence review and acceptance authority.
+
+If an authorized independent verifier is unavailable, preserve the work as pending verification.
+
+Never replace missing independent approval with self-approval.
+
+---
+
+9. AUTOMATIC GLOBAL PROJECT ONBOARDING
+
+Every newly created or discovered project must pass through the canonical onboarding workflow.
+
+When the user instructs AGY to create a new project:
+
+1. Load the global trust baseline.
+2. Resolve the authoritative SOT commit.
+3. Discover the applicable governance packages.
+4. Create the project in the authorized location.
+5. Establish durable project identity.
+6. Initialize or inspect Git correctly.
+7. Establish and verify the authorized remote where applicable.
+8. Register the project in the canonical registry.
+9. Generate required derivative mappings.
+10. Apply the relevant policy and verification configuration.
+11. Classify persistent data and secrets.
+12. Establish the required backup policy.
+13. Validate local and remote Git state.
+14. Verify trust-rule activation.
+15. Record onboarding evidence.
+16. Mark the project active only after all required gates pass.
+
+Use the canonical lifecycle rules, including any explicitly supported local-only exception.
+
+Failed onboarding must remain recoverably marked incomplete.
+
+Retries must be idempotent.
+
+Concurrent onboarding must not corrupt registries.
+
+No new project must require the user to manually remember and reissue the trust protocol.
+
+Do not hard-code project names, user identities, machine names, cloud providers, or deployment paths.
+
+---
+
+10. TERMINAL SESSION AND MESSAGE BRIDGE INTEGRATION
+
+The same protocol must apply when the user requests a new project connected to AGY through tmux and the existing WhatsApp bridge.
+
+Automatic onboarding must discover the actual supported integration, rather than inventing one.
+
+Verify:
+
+- The intended project identity.
+- The assigned terminal/session.
+- The target AGY process.
+- The actual routing configuration.
+- The applicable global rules.
+- The authoritative governance state.
+- The message ingestion and acknowledgment path.
+- The submission mechanism.
+- The observable completion path.
+
+A message being received by the bridge is not proof that AGY accepted it.
+
+Text appearing in a terminal is not proof that the instruction was submitted.
+
+The system must distinguish transport acknowledgment, terminal submission, agent acceptance, implementation, and verified completion.
+
+Preserve exact user content and native command semantics.
+
+Account for terminal paste timing, bracketed-paste handling, Enter submission, concurrency, acknowledgments, and retries.
+
+Never infer successful submission merely because a terminal paste command exited successfully.
+
+Do not duplicate previously accepted instructions during retry.
+
+Use durable pending-message tracking and idempotent recovery where supported.
+
+The bridge must not ask routine operational questions of the user.
+
+Resolve ordinary technical decisions autonomously using verified configuration, existing policy, and available evidence.
+
+A truly unavailable authorization or mandatory security decision must be reported as blocked, not bypassed.
+
+Critical isolation requirement:
+
+Normal user message transport must not depend on unrelated backup, upload, checksum, verification, or background workloads.
+
+Preserve any existing narrowly scoped critical-section rules.
+
+A failure in one project's verification or onboarding must not block unrelated project communication.
+
+Never shut down unrelated agents to implement this protocol.
+
+---
+
+11. NO FALSE AUTONOMY
+
+Autonomy must mean reliable execution, not unsupported assumption.
+
+For ordinary technical decisions:
+
+Investigate → Select a justified approach → Implement safely → Test → Verify → Record.
+
+Do not repeatedly ask the user to approve routine implementation details.
+
+Do not wait for user input when an existing policy or safe deterministic decision resolves the matter.
+
+However:
+
+- Never bypass mandatory authentication.
+- Never bypass external permission controls.
+- Never invent missing credentials.
+- Never silently accept destructive risk.
+- Never claim that an unavailable dependency is functioning.
+
+When a dependency cannot be resolved automatically, persist the exact blocker and continue independent safe work.
+
+Never mark the affected requirement complete.
+
+A blocked task must remain visible and recoverable.
+
+---
+
+12. STOP AND COMPLETION ENFORCEMENT
+
+Inspect and integrate supported AGY lifecycle hooks, including:
+
+"PreInvocation"
+
+"PreToolUse"
+
+"PostToolUse"
+
+"PostInvocation"
+
+"Stop"
+
+Use these only according to the actually installed CLI's documented event and output contracts.
+
+Implement deterministic guards where appropriate.
+
+The completion logic must check the durable task ledger before accepting a final completion claim.
+
+If an executable task remains unfinished and safe progress is possible, the agent should continue under the supported lifecycle contract.
+
+Do not implement uncontrolled infinite continuation loops.
+
+Bound retries and record exhaustion.
+
+Respect actual platform execution limits, termination reasons, and permission boundaries.
+
+If continued execution is impossible, preserve the incomplete state and accurately report it.
+
+A stopped process must not be interpreted as a completed task.
+
+---
+
+13. CONCURRENCY AND RECOVERY
+
+The system must support multiple simultaneous agents, projects, and terminal sessions.
+
+Requirements:
+
+- Unique task IDs.
+- Unique durable project identities.
+- Idempotent retries.
+- Atomic persistent writes.
+- Appropriate lock granularity.
+- No lost updates.
+- No silent overwrite of task records.
+- No cross-project state contamination.
+- No collision-prone temporary filenames.
+- Recoverable interruption states.
+- Explicit worker ownership and handoff.
+
+Parallel work must not be serialized globally without a demonstrated shared-resource reason.
+
+Do not use a single global busy flag to freeze unrelated activity.
+
+After a session or worker restart, pending and incomplete tasks must be discoverable from durable records.
+
+Recovery must distinguish incomplete work from completed-and-verified work.
+
+---
+
+14. PERMANENT LOCKING AND FUTURE-VM RECOVERY
+
+The global protocol must survive:
+
+- New conversations.
+- New projects.
+- New tmux sessions.
+- Agent restarts.
+- Context compaction.
+- Machine restarts.
+- CLI upgrades where compatible.
+- Migration to a fresh supported Linux machine.
+- Restoration under a different authorized OS user.
+
+The canonical policy and installation requirements must be committed to the authoritative Git repository.
+
+Global installation artifacts must be declared, versioned, checksum-validated, and automatically restorable.
+
+Use deployment profiles and path-independent bootstrap logic.
+
+Do not assume the original VM is permanently available.
+
+The trust protocol must be installable and verifiable using the canonical Source of Truth and authorized credentials.
+
+Implement tamper detection, drift reporting, and reproducible restoration.
+
+Do not equate file immutability with absolute security.
+
+The repository owner or privileged administrator can still alter controls; the objective is version-controlled, auditable, tamper-evident governance with mandatory runtime verification.
+
+Changes to mandatory governance must follow the canonical versioning, validation, review, deployment, and verification process.
+
+Never permit a future project template to silently omit mandatory trust rules.
+
+---
+
+15. MANDATORY ADVERSARIAL TEST MATRIX
+
+Run controlled isolated tests without corrupting production state.
+
+At minimum, test these scenarios:
+
+T01 — Global inheritance
+
+A fresh AGY session demonstrably loads mandatory global rules.
+
+T02 — Fresh project
+
+A newly initialized isolated project receives the required governance baseline.
+
+T03 — Missing requirement
+
+A request with multiple requirements has one deliberately omitted; the completion gate rejects full verification.
+
+T04 — Fake PASS
+
+A verifier emits "PASS" without supporting evidence; acceptance is rejected.
+
+T05 — Fabricated artifact
+
+Evidence references a nonexistent or tampered file; verification fails.
+
+T06 — Missing rule
+
+A required global rule is unavailable; the applicable enforcement gate detects it.
+
+T07 — Tampered rule
+
+A governance file is modified without valid canonical authorization; drift is detected.
+
+T08 — Runtime mismatch
+
+A rule exists on disk but is not active in the CLI; the test reports "NOT VERIFIED".
+
+T09 — Interrupted work
+
+A controlled worker is interrupted; incomplete work remains recoverable.
+
+T10 — Concurrent tasks
+
+Parallel tasks do not overwrite each other's records.
+
+T11 — Retry
+
+A repeated onboarding or message operation does not create unauthorized duplicate work.
+
+T12 — Git mismatch
+
+Local and remote commit identities differ; remote parity is not reported as verified.
+
+T13 — Unavailable verifier
+
+Required independent verification is unavailable; the builder cannot self-approve.
+
+T14 — Session restart
+
+A fresh session discovers its applicable rules and pending tasks.
+
+T15 — Terminal routing
+
+A controlled test message reaches the correct isolated terminal and is actually accepted, not merely pasted.
+
+T16 — Unrelated workload
+
+An unrelated background operation does not block normal message delivery.
+
+T17 — Governance conflict
+
+A conflicting lower-level instruction cannot silently bypass mandatory enforcement.
+
+T18 — Recovery
+
+A clean isolated deployment can restore and activate mandatory governance from canonical source.
+
+T19 — Forged test result
+
+A test script prints success while returning a failure exit code or checking the wrong condition; the evidence verifier detects the discrepancy.
+
+T20 — Requirement reconciliation
+
+The original instruction, subtasks, changed artifacts, and independent evidence agree before a complete verdict is issued.
+
+Each test must preserve:
+
+- Actual inputs.
+- Execution command.
+- Exit code.
+- Expected result.
+- Observed result.
+- Evidence location.
+- Evidence hash.
+- Final verdict.
+
+Run additional tests mandated by the existing canonical verification policy.
+
+Do not mark an unexecuted test as passed.
+
+---
+
+16. IMPLEMENTATION WORKFLOW
+
+Execute in the following order.
+
+Phase A — Discovery
+
+Perform a read-only investigation.
+
+Determine what already exists, what genuinely works, and what is missing.
+
+Produce an evidence-backed gap analysis.
+
+Phase B — Minimal architecture
+
+Design the smallest compatible extension of the existing governance framework.
+
+Explicitly identify changed components and risks.
+
+Avoid replacing functioning mechanisms.
+
+Phase C — Implementation
+
+Implement the required canonical governance changes, global adapters, task tracking, lifecycle enforcement, and onboarding integration.
+
+Keep changes tightly scoped.
+
+Phase D — Deterministic verification
+
+Execute real tests and collect actual evidence.
+
+Phase E — Independent verification
+
+Have a separate authorized verifier inspect the implementation, tests, and evidence.
+
+Phase F — Canonical persistence
+
+Record authorized changes in Git.
+
+Follow existing GitPush policy, including its commit-labeling and verification requirements.
+
+Never force-push.
+
+Verify actual remote object availability and commit SHA parity after pushing.
+
+Do not confuse an issued push command with confirmed remote persistence.
+
+Phase G — Fresh-context acceptance
+
+Start an isolated fresh AGY context and demonstrate that the mandatory global rules are loaded and enforced without copying this prompt into that context.
+
+Test a fresh project lifecycle.
+
+Prove that the system is independent of this conversation's memory.
+
+Phase H — Recovery acceptance
+
+Verify the canonical bootstrap and fresh-machine recovery contract as far as the available isolated environment allows.
+
+Identify any untested recovery conditions explicitly.
+
+---
+
+17. REQUIRED FINAL REPORT
+
+Do not deliver a narrative-only success report.
+
+Return a machine-grounded implementation and acceptance report containing:
+
+A. Canonical authority
+
+- Authoritative repository URL.
+- Actual inspected remote commit SHA.
+- Current canonical governance version.
+- Working-tree and remote parity status.
+
+B. Installed enforcement
+
+- Exact installed artifact paths.
+- Canonical source paths.
+- Artifact hashes.
+- Actual AGY CLI version.
+- Actual loaded rules and hooks.
+- Observed effective behavior.
+
+C. Task completeness
+
+- Task manifest identity.
+- Requirement count.
+- Implemented requirement count.
+- Verified requirement count.
+- Blocked and failed requirement count.
+- Exact unresolved requirements.
+
+D. Verification
+
+- Every required test.
+- Exact execution evidence.
+- Pass/fail/inconclusive result.
+- Evidence hashes.
+- Independent verifier findings.
+
+E. Future-proofing
+
+- Fresh-session result.
+- Fresh-project onboarding result.
+- New tmux/bridge integration result.
+- Canonical Git persistence result.
+- Recovery/bootstrap result.
+
+F. Final verdict
+
+Use only evidence-supported verdicts:
+
+"VERIFIED"
+
+"FAILED"
+
+"NOT VERIFIED"
+
+"INCONCLUSIVE"
+
+Do not use celebratory success claims without proof.
+
+If something is incomplete, identify precisely what is incomplete and why.
+
+---
+
+ABSOLUTE FINAL ACCEPTANCE CONTRACT
+
+The mission is complete only when all applicable acceptance gates demonstrate that:
+
+1. Global AGY governance is truly loaded and enforced.
+2. Accepted user requirements are durably tracked and reconciled.
+3. Silent omission is detected within the verified ingestion coverage.
+4. Unsupported claims cannot pass deterministic evidence validation.
+5. High-risk changes receive required independent verification.
+6. Newly created projects inherit canonical governance automatically.
+7. New terminal and bridge integrations preserve the protocol.
+8. Unrelated projects remain operational and isolated.
+9. Governance remains recoverable from the authoritative Git repository.
+10. A genuinely fresh session demonstrates the required behavior without relying on this initial prompt.
+
+The fundamental distinction:
+
+A rule being written is not proof.
+
+A file existing is not proof.
+
+A hook being configured is not proof.
+
+A test printing PASS is not proof.
+
+A commit existing is not proof of runtime activation.
+
+A task being attempted is not proof of completion.
+
+Only reproducible, inspected, independently challenged, runtime-grounded evidence can justify acceptance.
+
+Implement the actual system.
+
+Verify the actual system.
+
+Preserve the actual system.
+
+Do not silently skip any accepted requirement.
+
+Do not claim perfection beyond demonstrated coverage.
+
+BEGIN WITH READ-ONLY DISCOVERY, THEN EXECUTE THE AUTHORIZED IMPLEMENTATION AND VERIFICATION WORKFLOW."

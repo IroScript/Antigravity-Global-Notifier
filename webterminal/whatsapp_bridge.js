@@ -356,22 +356,30 @@ function checkZipGate(targetWindow, projectUuid = null) {
 }
 
 function drainNextPromptForWindow(targetWindow) {
+  // 1. If terminal is currently busy executing something, do not dequeue yet
+  if (isWindowBusy(targetWindow)) {
+    return;
+  }
+
+  // 2. Check gate first. If gate is closed (e.g. ZIP running), do NOT drain or dequeue prompts
+  const gateCheck = checkZipGate(targetWindow);
+  if (gateCheck && (gateCheck.action === 'HOLD_FOR_ZIP' || gateCheck.zip_gate === 'ZIP_GATE_CLOSED')) {
+    return;
+  }
+
   const queue = loadDurableQueue();
   const heldItems = queue.filter(item => item.target_window === targetWindow && item.status === 'HELD_FOR_ZIP');
   if (heldItems.length > 0) {
-    const gateCheck = checkZipGate(targetWindow);
-    if (gateCheck && (gateCheck.action === 'ALLOW_NOW' || gateCheck.zip_gate === 'ZIP_GATE_OPEN')) {
-      console.log(`[WA Bridge] 🔓 ZIP capture finished for ${targetWindow}. Releasing ${heldItems.length} held prompts.`);
-      for (const item of heldItems) {
-        item.status = 'RECEIVED';
-        item.updated_at = new Date().toISOString();
-      }
-      saveDurableQueue(queue);
+    console.log(`[WA Bridge] 🔓 ZIP capture finished for ${targetWindow}. Releasing ${heldItems.length} held prompts.`);
+    for (const item of heldItems) {
+      item.status = 'RECEIVED';
+      item.updated_at = new Date().toISOString();
+    }
+    saveDurableQueue(queue);
 
-      const recipient = lastActiveJid;
-      if (recipient) {
-        sendWhatsAppMessage(BANGLA_ZIP_COMPLETE_NOTICE, { to: recipient }).catch(() => {});
-      }
+    const recipient = lastActiveJid;
+    if (recipient) {
+      sendWhatsAppMessage(BANGLA_ZIP_COMPLETE_NOTICE, { to: recipient }).catch(() => {});
     }
   }
 
@@ -386,11 +394,21 @@ function drainNextPromptForWindow(targetWindow) {
 
 function isAgyActuallyIdle(targetWindow = 'agy:0') {
   try {
-    const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 2000 });
+    const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 25`, { encoding: 'utf8', timeout: 2000 });
     if (pane.includes('esc to cancel') || pane.includes('Working...') || pane.includes('Generating...') || pane.includes('Running command') || pane.includes('esc to interrupt') || pane.includes('◦ Working')) {
       return false;
     }
-    return pane.includes('? for shortcuts') || pane.includes('Ask Codex to do anything') || pane.includes('Your move, teammate.');
+    // Check for AGY CLI idle prompts
+    if (pane.includes('? for shortcuts') || pane.includes('Ask Codex to do anything') || pane.includes('Your move, teammate.') || pane.includes('Type a message') || /^\s*>\s*$/m.test(pane)) {
+      return true;
+    }
+    // Check for standard shell prompts if non-AGY or subshell
+    const nonBlankLines = pane.trim().split('\n').filter(l => l.trim().length > 0);
+    const lastLine = nonBlankLines.length > 0 ? nonBlankLines[nonBlankLines.length - 1] : '';
+    if (/[#$%>]\s*$/.test(lastLine)) {
+      return true;
+    }
+    return false;
   } catch (e) {
     return false;
   }
@@ -398,8 +416,8 @@ function isAgyActuallyIdle(targetWindow = 'agy:0') {
 
 function isWindowBusy(targetWindow = 'agy:0') {
   if (!windowBusy[targetWindow]) return false;
-  if (isAgyActuallyIdle(targetWindow) || (windowBusySince[targetWindow] && Date.now() - windowBusySince[targetWindow] > 180000)) {
-    console.log(`[WA Bridge] ℹ️ Detected AGY idle prompt in ${targetWindow} or timeout; clearing stale busy state`);
+  if (isAgyActuallyIdle(targetWindow) || (windowBusySince[targetWindow] && Date.now() - windowBusySince[targetWindow] > 60000)) {
+    console.log(`[WA Bridge] ℹ️ Detected idle prompt in ${targetWindow} or timeout; clearing stale busy state`);
     windowBusy[targetWindow] = false;
     return false;
   }
@@ -568,6 +586,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   const claim = acquireProjectDispatchClaim(projectUuid);
   if (!claim.acquired) {
     console.log(`[WA Bridge] ⏸️ Project prompt gate is CLOSED for ${projectUuid} (${claim.status}). Holding prompt in durable queue.`);
+    windowBusy[targetWindow] = false;
     enqueueDurablePrompt({
       message_id: mId,
       project_uuid: projectUuid,
@@ -611,7 +630,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       }
     }
 
-    const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(cleanPrompt);
+    const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+.*)?$/.test(cleanPrompt) && cleanPrompt.length <= 500 && !cleanPrompt.includes('\n');
     if (isSlashCommand) {
       // Send string literally, emulating physical keyboard typing with zero shell injection risk
       execFileSync('tmux', ['send-keys', '-t', targetWindow, '-l', cleanPrompt]);
@@ -629,6 +648,16 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       execFileSync('tmux', ['paste-buffer', '-p', '-r', '-b', bufName, '-t', targetWindow]);
       execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
       console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
+
+      setTimeout(() => {
+        try {
+          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
+          if (paneText.includes('> ') && !paneText.includes('esc to cancel') && !paneText.includes('Working...') && !paneText.includes('Generating...') && !paneText.includes('Running command')) {
+            console.log(`[WA Bridge] ⚠️ Prompt still sitting in input prompt on ${targetWindow}, sending backup Enter...`);
+            execSync(`tmux send-keys -t ${targetWindow} Enter`);
+          }
+        } catch (e) {}
+      }, 400);
     }
 
     // Terminal transport successful: transition DELIVERING -> DELIVERED
@@ -641,7 +670,15 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   } catch (err) {
     console.error(`[WA Bridge] ❌ Tmux forward error on ${targetWindow}:`, err.message);
     windowBusy[targetWindow] = false;
-    updateDurablePromptStatus(mId, 'RETRYING', { last_error: err.message, retry_count: 1 });
+    const queue = loadDurableQueue();
+    const existingItem = queue.find(q => q.message_id === mId);
+    const nextRetry = ((existingItem && existingItem.retry_count) || 0) + 1;
+    if (nextRetry >= 3) {
+      console.error(`[WA Bridge] ❌ Prompt ${mId} failed ${nextRetry} times on ${targetWindow}. Moving to FAILED to unblock queue:`, err.message);
+      updateDurablePromptStatus(mId, 'FAILED', { last_error: err.message, retry_count: nextRetry, failed_at: new Date().toISOString() });
+    } else {
+      updateDurablePromptStatus(mId, 'RETRYING', { last_error: err.message, retry_count: nextRetry });
+    }
     return false;
   } finally {
     releaseProjectDispatchClaim(projectUuid);
@@ -2155,7 +2192,7 @@ async function startBridge() {
       lastUserMsgByWindow[targetWindow] = msg;
       lastUserMsgKeyByWindow[targetWindow] = msg.key;
 
-      const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(text.trim());
+      const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+.*)?$/.test(text.trim()) && text.trim().length <= 500 && !text.trim().includes('\n');
       let contextPrompt = text;
       if (activeGroup && !isSlashCommand) {
         contextPrompt = `[প্রজেক্ট গ্রুপ: ${activeGroup.name} (${activeGroup.key})]: ${text}`;
@@ -2946,7 +2983,9 @@ function startQueueWatchdog() {
       for (const win of heldWindows) {
         const gateCheck = checkZipGate(win);
         if (gateCheck && (gateCheck.action === 'ALLOW_NOW' || gateCheck.zip_gate === 'ZIP_GATE_OPEN')) {
-          drainNextPromptForWindow(win);
+          if (!isWindowBusy(win)) {
+            drainNextPromptForWindow(win);
+          }
         }
       }
       // Reconcile any RECEIVED or RETRYING items for windows that are now idle
