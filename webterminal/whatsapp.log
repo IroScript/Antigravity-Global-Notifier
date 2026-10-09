@@ -21032,3 +21032,31 @@ Closing session: SessionEntry {
     remoteIdentityKey: <Buffer 05 1f 6f 05 78 f3 c7 be 15 86 a2 0b 87 02 3a a4 d1 52 b7 29 8a 24 3b c4 31 f1 f6 0a 0c 5d 0a f6 2f>
   }
 }
+Closing session: SessionEntry {
+  _chains: {
+    'BcfTITvOFAUcuMPfustIELaJHshEhvEJH/YUHJG1TMRb': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 807638967,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 c7 d3 21 3b ce 14 05 1c b8 c3 df ba cb 48 10 b6 89 1e c8 44 86 f1 09 1f f6 14 1c 91 b5 4c c4 5b>,
+      privKey: <Buffer 68 35 ce 80 c2 56 44 8f 8b e0 7d 82 bd d6 71 b8 41 7a 64 92 47 5e 66 5f e1 61 45 58 8e bc 51 48>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 c6 b9 ff 54 a4 fe f0 50 7a 3f f8 e4 e5 88 7d de 82 e4 84 28 20 5b a9 1a 3b 8b 72 1b b1 b0 4f 3c>,
+    previousCounter: 0,
+    rootKey: <Buffer 95 d0 8f f5 44 98 6f d8 f5 61 19 53 c4 cd 26 a6 7a 1f 8f 26 b0 1f 81 e1 b6 bc 50 1a b7 00 7e fa>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 68 d3 19 ad ef 70 7a cc 7a 5c 9f f8 35 f3 02 3c 78 2e 98 da e4 32 05 d9 ae 58 d7 bd 89 69 ec 32>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791582202175,
+    created: 1791582202175,
+    remoteIdentityKey: <Buffer 05 6b 21 6f 64 04 55 07 98 46 bb 69 a8 5a 7e fb 7e be 1a ae 4b cb f5 9c d7 e0 a1 ce 06 46 39 45 6a>
+  },
+  pendingPreKey: {
+    signedKeyId: 7292657,
+    baseKey: <Buffer 05 68 d3 19 ad ef 70 7a cc 7a 5c 9f f8 35 f3 02 3c 78 2e 98 da e4 32 05 d9 ae 58 d7 bd 89 69 ec 32>,
+    preKeyId: 11775023
+  }
+}
