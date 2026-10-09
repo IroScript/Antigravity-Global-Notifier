@@ -1021,3 +1021,56 @@
 [WA Bridge] Connection update: { receivedPendingNotifications: true }
 [WA Bridge] Connection update: { isOnline: true }
 [WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Video koyti ase?
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0323E423525FA3FDCEB)
+[WA Bridge] ⚡ cmd 1903 (agy:0)
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CBD7DCDE31DECB8C08)
+[WA Bridge] 💻 cmd output 1904 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0AB64230926BAA1C793)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03C1FA86ECC8DEDC8AD)
+[WA Bridge] ⚡ cmd 1906 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DF3E5D81519D6B4910)
+[WA Bridge] 💻 cmd output 1907 (agy:0)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 131
+[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03F4E13C8C99CCE112B)
+[WA Bridge] ⚡ cmd 26 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB04A909C1015281B6455)
+[WA Bridge] ⚡ cmd 1909 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB066F9C5E79A77B220D3)
+[WA Bridge] 💻 cmd output 27 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0115CBC3E13B0915240)
+[WA Bridge] 💻 cmd output 1910 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0EC207BA99D62E6454F)
+[WA Bridge] ⚡ cmd 29 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F7737279E3013A644A)
+[WA Bridge] 💻 cmd output 30 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02A85A82CE27E0C5B37)
+[WA Bridge] 🧠 thinking 32 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B414BC36E5C6B3C5D5)
+[WA Bridge] ⚡ cmd 32 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0CAF2A764921F49090F)
+[WA Bridge] 💻 cmd output 33 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:0 (step 1912)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 8357
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F43B6A6B6B9E27E501)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:0)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB088BC6D2FED1C9FBF73)
+[WA Bridge] 🧠 thinking 35 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 35)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5978
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D23D4D29237FCC61BA)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
