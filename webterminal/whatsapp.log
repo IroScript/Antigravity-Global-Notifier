@@ -19082,3 +19082,40 @@ Removing old closed session: SessionEntry {
 ══════════════════════
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0947C61491EC54F1EA2)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0460DB04FA5F6647CE2)
+[WA Bridge] ⚡ cmd 4843 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FCB3B19625E708B092)
+[WA Bridge] 💻 cmd output 4844 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08AE22BA0340D0B5E5B)
+[WA Bridge] ⚡ cmd 4846 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D2121EDB4758623E53)
+[WA Bridge] 💻 cmd output 4847 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+
+╭─ NEURAL RESPONSE ─╮
+হ্যালো! আমি সংযুক্ত আছি এবং সম্পূর্ণ প্রস্তুত।
+
+এই সার্ভারে *(Oracle 8 CPU 64 RAM)* আপনি কী কাজ বা কমান্ড পরিচালনা করতে চান, দয়া করে জানান।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🕐 TIME  · ১১:৪৭ PM         │
+│ 🤖 MODEL · accept-edits     │
+│ ⚡ MODE   · GEMINI 3.8 FLASH │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09F44CC496284BF79B2)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB022FF9121DCF78B2680)
+[WA Bridge] 🧠 thinking 4849 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DD4D5AFFD0D584D521)
+[WA Bridge] ⚡ cmd 4849 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08BB15C0DDF0AEC65C2)
+[WA Bridge] 💻 cmd output 4850 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB015C4193EB0681B2B65)
+[WA Bridge] ⚡ cmd 4852 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB012D735D71DCF01B9CB)
+[WA Bridge] 💻 cmd output 4853 (agy:0)
