@@ -4234,3 +4234,23 @@ Keep the response within 10 lines. No questions.
 [WA Bridge] ⚡ cmd 2732 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A33E194EEB1249B81B)
 [WA Bridge] 💻 cmd output 2733 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07902B3F526309EDED8)
+[WA Bridge] 🧠 thinking 2735 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03406940EB67221879C)
+[WA Bridge] ⚡ cmd 2735 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FBE5DF3A96343A5C1B)
+[WA Bridge] 💻 cmd output 2736 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 52244670054512@lid
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 52244670054512@lid
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 52244670054512@lid
+[WA Bridge] Ignored message from other sender: 120363378039870251@g.us 52244670054512@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0009F1C846AF034D6C9)
+[WA Bridge] 🧠 thinking 2738 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2738)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/jS9u2
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB018642F8687B9965FB8)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430650656655@g.us--82935919157317_1--8.json (35.3 KB) -> backed up
+[WA Bridge] Ignored message from other sender: 120363374062400743@g.us 52244670054512@lid
+[WA Bridge] Ignored message from other sender: 120363354219673386@g.us 52244670054512@lid
