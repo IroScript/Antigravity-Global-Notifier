@@ -2241,23 +2241,27 @@ async function startBridge() {
         const targetWindow = getWindowForSender(sender);
         let projectCwd = USER_HOME;
         if (targetWindow === 'agy:yt') {
-          projectCwd = `${USER_HOME}/IrakIroan/IroScript_Projects/Social Media/youtube`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Social Media/youtube`;
         } else if (targetWindow === 'agy:frappe') {
-          projectCwd = `${USER_HOME}/Frappe-erp-Alco`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Frappe-erp-Alco`;
         } else if (targetWindow === 'agy:tg') {
-          projectCwd = `${USER_HOME}/telegram-bot`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Social Media/telegram-bot`;
         } else if (targetWindow === 'agy:history') {
-          projectCwd = `${USER_HOME}/.openclaw/workspace/IROSCRIPT-CEO/PERSONAL AI AGENT`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Personal Life/PERSONAL AI AGENT`;
         } else if (targetWindow === 'agy:kids') {
-          projectCwd = `${USER_HOME}/kids_tube_with_folder_seection`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Personal Life/kids_tube_with_folder_seection`;
         } else if (targetWindow === 'agy:rust') {
-          projectCwd = `${USER_HOME}/Rust_Task_With_Time_Keeping_And_Live_Note`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note`;
         } else if (targetWindow === 'agy:article') {
-          projectCwd = `${USER_HOME}/Article-Publishing-Platform`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform`;
         } else if (targetWindow === 'agy:game') {
-          projectCwd = `${USER_HOME}/3D-Game-Design-Studio`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio`;
         } else if (targetWindow === 'agy:research') {
-          projectCwd = `${USER_HOME}/IrakIroan/IroScript_Projects/Ask-And-Research-Agent`;
+          projectCwd = `${USER_HOME}/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Ask-And-Research`;
+        } else if (targetWindow === 'agy:report') {
+          projectCwd = `${USER_HOME}/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Reporting-Agent`;
+        } else if (targetWindow === 'agy:codex') {
+          projectCwd = `${USER_HOME}/IroScript_Projects/OpenAI_Codex`;
         }
 
         const shellCmd = text.replace(/^(\$|!|\/sh\s*)/, '').trim();
@@ -2577,7 +2581,8 @@ async function processSingleTranscript(transcriptPath) {
   const targetInfo = getTargetInfoForTranscript(transcriptPath);
   let targetWindow = targetInfo.window;
   let targetJid = targetInfo.jid;
-  const lastMsgForWindow = lastUserMsgByWindow[targetWindow] || lastUserMsg;
+  // Strict 1:1 window isolation: never fallback to lastUserMsg of other windows!
+  const lastMsgForWindow = lastUserMsgByWindow[targetWindow];
   if (lastMsgForWindow?.key?.remoteJid) {
     targetJid = lastMsgForWindow.key.remoteJid;
   }
@@ -2836,9 +2841,10 @@ async function processSingleTranscript(transcriptPath) {
           fullReply = completionAccent + linkHeader + body + footer + footerAccent;
         }
 
-        const quoteMsg = lastUserMsgByWindow[targetWindow] || lastUserMsg;
+        // Strict 1:1 window isolation: never fallback to lastUserMsg of other windows!
+        const quoteMsg = lastUserMsgByWindow[targetWindow];
         const effectiveRecipientJid = (quoteMsg?.key?.remoteJid) || targetJid;
-        await sendWhatsAppMessage(fullReply, { to: effectiveRecipientJid, quoted: quoteMsg });
+        await sendWhatsAppMessage(fullReply, { to: effectiveRecipientJid, quoted: quoteMsg || undefined });
 
         tracker.currentTurnTools = [];
         tracker.currentTurnHasThinking = false;
