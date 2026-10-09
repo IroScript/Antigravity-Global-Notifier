@@ -19119,3 +19119,72 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 4852 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB012D735D71DCF01B9CB)
 [WA Bridge] 💻 cmd output 4853 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D78295C6B2F6E4CED4)
+[WA Bridge] ⚡ cmd 4855 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0324FC1577FE7BCCC2A)
+[WA Bridge] 💻 cmd output 4856 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07C9B293AF386FB2E82)
+[WA Bridge] ⚡ cmd 4858 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E41724FF859DC2A098)
+[WA Bridge] 💻 cmd output 4859 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BE844DE27E73B5BA54)
+[WA Bridge] ⚡ cmd 4861 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0ECF379CC5F2B6B8BB5)
+[WA Bridge] 💻 cmd output 4862 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F8274ECA026E5E059D)
+[WA Bridge] 🧠 thinking 4864 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4864)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0880FE76F2C88B238FB, seq: 319): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3056
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A24D7A9861BFC17F07)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB065BF7A8F37FAFA5E1A, seq: 320): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB011AED0AF78A03F5DA0)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 4865)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB065FAE27F588C4A9E51)
+[WA Bridge] 🧠 thinking 4867 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB074CD4E856EF705BF0A)
+[WA Bridge] ⚡ cmd 4867 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0702D43B5B8E9FE8FE0)
+[WA Bridge] 💻 cmd output 4868 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B4C10B17767945D6C6)
+[WA Bridge] ⚡ cmd 4870 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08A2396377DE3B227ED)
+[WA Bridge] 💻 cmd output 4871 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB009D623EFD53CAFB93F)
+[WA Bridge] ⚡ cmd 4873 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04376B51B490CF3E02C)
+[WA Bridge] 💻 cmd output 4874 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00CF943FE25E4C322BD)
+[WA Bridge] 🧠 thinking 4876 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4876)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3056
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EBB08C1B1A4300A0BE)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB018D2BCFECD7A0FF562)
+[WA Bridge] 🧠 thinking 4879 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09792B2814AF4EA86F8)
+[WA Bridge] ⚡ cmd 4879 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00B044DF0F8D79E53BD)
+[WA Bridge] 💻 cmd output 4880 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB048541E092997C2908B)
+[WA Bridge] ⚡ cmd 4882 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E4B88C72F6017ED476)
+[WA Bridge] 💻 cmd output 4883 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BE28E8BD8DD89DE961)
+[WA Bridge] ⚡ cmd 4885 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01430A386CA30666D18)
+[WA Bridge] 💻 cmd output 4886 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C17157BBF1842B5376)
+[WA Bridge] 🧠 thinking 4888 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4888)
