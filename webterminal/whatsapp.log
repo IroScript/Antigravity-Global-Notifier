@@ -19443,3 +19443,10 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 691 (agy:frappe)
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB028EE02E76FFEA5BC0B)
 [WA Bridge] 💻 cmd output 692 (agy:frappe)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 261065845813300@lid
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB074EEAB1B8C44BB1F4D)
+[WA Bridge] ⚡ cmd 694 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB017C25A06DBA273C476)
+[WA Bridge] 💻 cmd output 695 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB053B78FF1C6F442BB39)
+[WA Bridge] ⚡ cmd 697 (agy:frappe)
