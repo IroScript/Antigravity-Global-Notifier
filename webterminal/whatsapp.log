@@ -20992,3 +20992,12 @@ Closing session: SessionEntry {
 [WA Bridge] Connection update: close
 [WA Bridge] Connection closed, code: 503 error: Stream Errored (unknown)
 [WA Bridge] 🔄 Reconnecting in 2245ms (attempt #1, code: 503)...
+[WA Bridge] 🧹 Gracefully settling previous socket (re-initializing)...
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
