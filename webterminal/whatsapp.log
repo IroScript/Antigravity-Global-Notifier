@@ -9344,3 +9344,13 @@ Oracle access kore janao
 [WA Bridge] 🧠 thinking 134 (agy:frappe)
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB077E7F3578327B59A22)
 [WA Bridge] ⚡ cmd 134 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB09CC25F5E0D590BC398)
+[WA Bridge] 💻 cmd output 135 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0A9A8A3B9B876C018FC)
+[WA Bridge] 🧠 thinking 137 (agy:frappe)
+[WA Bridge] 📤 Turn done for agy:frappe (step 137)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4750
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0676670757212A078E9)
+[WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
