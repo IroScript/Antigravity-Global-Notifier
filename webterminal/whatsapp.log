@@ -10993,3 +10993,4 @@ PARITY PASS
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0D8FF108D716B6900BB)
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 105519075315739@lid
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430126311832@g.us--82935919157317_1--8.json (38.4 KB) -> backed up
