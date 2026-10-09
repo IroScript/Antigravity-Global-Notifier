@@ -18329,3 +18329,10 @@ Closing session: SessionEntry {
 [WA Bridge] 💻 cmd output 4730 (agy:0)
 [WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB06F660A2F11D4CF8DF9)
 [WA Bridge] ⚡ cmd 4732 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0814F7BA4766492E4A9)
+[WA Bridge] ⏱️ task 4735 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB060784404B8DDE77BDE, seq: 310): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
