@@ -889,3 +889,30 @@
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E92091D24E586D33A2)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🔓 Authorized message accepted in group 120363430126311832@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430126311832@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0D3D230C46CD47041EF)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0954E4E141A910ACA6E)
+[WA Bridge] 🧠 thinking 1822 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB037B3C23340BF5D447F)
+[WA Bridge] ⚡ cmd 1822 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB070A8F2060409CC2308)
+[WA Bridge] 💻 cmd output 1823 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05843A6C5823BBC422D)
+[WA Bridge] ⚡ cmd 1825 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ED4234A2F50E30875A)
+[WA Bridge] 💻 cmd output 1826 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BE1207E0802CAFB145)
+[WA Bridge] 🧠 thinking 1828 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00D4B0788467C8B005A)
+[WA Bridge] ⚡ cmd 1828 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FA94BF538875BFE93F)
+[WA Bridge] 💻 cmd output 1829 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 1831)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6107
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB042A4676EDDED46EC81)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
