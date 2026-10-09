@@ -209,10 +209,10 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
 
 ## SECTION 10: AGENT EXECUTION MODE GOVERNANCE
 
-### Category XVIII: Planning Mode Enforcement (80)
-80. `SETTING_80_DEFAULT_PLANNING_MODE_MANDATE`:
-    - **Default Execution Mode:** All AGY agents operating across the workspace (`agy:0`, `agy:yt`, `agy:frappe`, `agy:tg`, `agy:history`, `agy:kids`, `agy:rust`, `agy:article`, `agy:game`, `agy:research`) must operate by default in **Planning Mode** (`--mode plan`).
-    - **Operational Behavior:** In Planning Mode, agents focus on research, architectural decomposition, and structured plans before executing modifications.
+### Category XVIII: Agent Execution Mode Governance (80)
+80. `SETTING_80_DEFAULT_EXECUTION_MODE_MANDATE`:
+    - **Default Execution Mode:** Per user directive (2026-10-09), Planning Mode (`--mode plan`) is removed from all WhatsApp agents (`agy:0`, `agy:yt`, `agy:frappe`, `agy:tg`, `agy:history`, `agy:kids`, `agy:rust`, `agy:article`, `agy:game`, `agy:research`). Agents operate by default in direct execution mode.
+    - **Operational Behavior:** Agents execute tasks, tools, and user requests directly without requiring manual plan approval gates, unless explicitly asked with /plan.
     - **System Persistence:** Enforced in `~/.gemini/antigravity-cli/settings.json`, launcher scripts (`start_all_agents.sh`, `start_agy0.sh`), and live tmux sessions.
 
 
