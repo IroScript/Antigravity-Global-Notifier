@@ -4908,3 +4908,40 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Connection update: { receivedPendingNotifications: true }
 [WA Bridge] Connection update: { isOnline: true }
 [WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EF1E0D10C9F76BA05A)
+[WA Bridge] ⚡ cmd 2960 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02A2D48BCEC70B41268)
+[WA Bridge] 💻 cmd output 2961 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06C1ADAADCAB348AEAE)
+[WA Bridge] ⚡ cmd 2963 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08DC206E8626C216ABF)
+[WA Bridge] 💻 cmd output 2964 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0654C520DDE2E389A5A)
+[WA Bridge] 🧠 thinking 2966 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D40A31BCD746E39719)
+[WA Bridge] ⚡ cmd 2966 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02D6528FB8D541F1B8A)
+[WA Bridge] 💻 cmd output 2967 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EB1BC4D382A19FC758)
+[WA Bridge] 🧠 thinking 2969 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04F023F5EBF394687C6)
+[WA Bridge] ⚡ cmd 2969 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A82D95631EBA824905)
+[WA Bridge] 💻 cmd output 2970 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06061EEF2ECEBAFAE97)
+[WA Bridge] 🧠 thinking 2972 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07E2813C91F9DA565FB)
+[WA Bridge] 📝 write 2972 (agy:0)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 131
+[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E52BE2810F7AF77A65)
+[WA Bridge] ⚡ cmd 2975 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04FD1D137652776E1A7)
+[WA Bridge] 💻 cmd output 2976 (agy:0)
