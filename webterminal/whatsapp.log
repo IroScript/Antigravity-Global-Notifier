@@ -3308,3 +3308,23 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 2457 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0705BF5DD97CC278D51)
 [WA Bridge] 💻 cmd output 2458 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 146003554521326@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DCF394106C3C7F71B2)
+[WA Bridge] 🧠 thinking 2460 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09FC1EEA9EA34C309BA)
+[WA Bridge] 📝 write 2460 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08F2397F994A71E11A4)
+[WA Bridge] ⚡ cmd 2463 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0526C9149F7B137593E)
+[WA Bridge] 💻 cmd output 2464 (agy:0)
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Tumi ki sob guloi check korso naaki loop chalaba test er jonno?
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB017E252A31933A7F0FC)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB036E0BAF6C98697CC8D)
+[WA Bridge] 🧠 thinking 2466 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2466)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/o7GnT
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB067D619A734AAF513D8)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
