@@ -6323,3 +6323,5 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03367113A32FD08F7F1)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
 [WA Bridge] Ignored message from other sender: 120363400568877928@g.us 214804786577547@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0BD8B799E6ABFB4EC3B)
+[WA Bridge] ✅ Processed outbox job: report_1791556337.json
