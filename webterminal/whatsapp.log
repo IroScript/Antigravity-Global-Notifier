@@ -8533,3 +8533,12 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 1411 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00F240FC3D55E21F473)
 [WA Bridge] 💻 cmd output 1412 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0586621BEBB48BCA6F6)
+[WA Bridge] 🧠 thinking 1414 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1414)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 11261
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DF603C37A33E06C250)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] Ignored message from other sender: 120363406717016257@g.us 218434184966184@lid
