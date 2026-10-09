@@ -7426,3 +7426,82 @@ GitHub: [CloakHQ/CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
 [WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0305FAD7243913562E8)
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Tahole egulo ki? Aar. Kon project er sathe connected? [10/9, 8:52 PM] Irak Mahmud: ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+
+╭─ NEURAL RESPONSE ─╮
+*সরাসরি স্থিতি: সিস্টেম সক্রিয় এবং আইসোলেশন রানার প্রস্তুত*
+
+নমস্কার! সিস্টেমের বর্তমান লাইভ স্থিতি এবং পূর্ববর্তী কাজের অগ্রগতি নিম্নরূপ:
+
+---
+
+*১. বর্তমান রিয়েল-টাইম সিস্টেম স্থিতি (Ground Truth)*
+
+• *WhatsApp Bridge:* PID `318878` (PPID: `318875`) — অবিচ্ছিন্ন রানিং টাইম ৩৭+ মিনিট (Zero-Restart Mandate কার্যকর)।
+• *মেটা টিসিপি সকেট:* `172.16.0.4:58532 -> 57.144.181.32:443` (FD 22, সচল ও সক্রিয়)।
+• *হার্টবিট স্থিতি:* `ALIVE` (লগ টাইমস্ট্যাম্প: `2026-10-09T14:52:30.233Z`)।
+• *Watchdog:* কোনো প্রসেস কিল বা রিস্টার্ট লুপ নেই, কেবল টেলিমেট্রি লগিং সক্রিয়।
+
+---
+
+*২. সম্পন্ন কাজসমূহ*
+
+১. *Caller Identity Spoofing দূরীকরণ:* `delete_guard.py`-তে ব্যবহারকারীর দেওয়া `args.get("Cwd")` দিয়ে কলারের পরিচয় নির্ধারণ বাতিল করা হয়েছে। এখন প্রসেস ট্রির ওপর ভিত্তি করে কলার শনাক্ত হয়।  
+২. *Bubblewrap OS-Level Runner:* [`/home/azureuser/.webterminal/bwrap_agent_runner.sh`](file:///home/azureuser/.webterminal/bwrap_agent_runner.sh) স্ক্রিপ্টটি তৈরি করা হয়েছে, যা মাউন্ট, পিআইডি, আইপিসি এবং ইউজার নেইমস্পেস স্তরে এজেন্টদের একে অপরের ফাইল, সকেট এবং হোস্ট প্রসেস থেকে বিচ্ছিন্ন রাখে।  
+৩. *নেগেটিভ ও পজিটিভ টেস্ট:* পিয়ার প্রজেক্টে প্রবেশের চেষ্টা কার্নেল লেভেলে `No such file or directory` দিয়ে ব্লক হওয়া নিশ্চিত করা হয়েছে।
+
+---
+
+পরবর্তী কোনো সুনির্দিষ্ট প্রজেক্ট বা টাস্কে কাজ শুরু করতে চাইলে নির্দেশ দিন।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🕐 TIME  · ০৮:৫২ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+│ ⚡ MODE   · HIGH             │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[10/9, 8:53 PM] Irak Mahmud: Hi
+[10/9, 8:53 PM] Irak Mahmud: ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "Hi"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[10/9, 8:53 PM] Irak Mahmud: > 🧠 *[চিন্তাভাবনা · Ctrl+o]*
+> _The instruction is in Bengali, and I must respond in the same language. The message is a simple greeting. There's no immediately appare..._
+[10/9, 8:53 PM] Irak Mahmud: > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ ps -p 318878 -o pid,ppid,user,stat,etime,rss,args && ss -tupn -p | grep 318878 && free -h && df -h /`
+> 🎯 _"Probing process, sockets, and hardware metrics"_
+[10/9, 8:53 PM] Irak Mahmud: > 💻 *[কমান্ড আউটপুট · Ctrl+o]*
+```
+PID    PPID USER     STAT     ELAPSED   RSS COMMAND
+ 318878  318875 azureus+ Sl         38:19 215956 /usr/bin/node /home/azureuser/.
+tcp   ESTAB 0      0         172.16.0.4:58532   57.144.181.32:443   users:(("node",pid=318878,fd=22))      
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       3.2Gi       573Mi       3.9Mi       4.3Gi       4.6Gi
+Swap:           19Gi       1.4Gi
+... [আউটপুট সংক্ষেপিত]
+```
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02EDA3EE58C30ED8517)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F2219E89AF373B9F2D)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 3873)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08C97713C6BA0F68D16)
+[WA Bridge] 🧠 thinking 3875 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0641FF4C59EB23A8192)
+[WA Bridge] ⚡ cmd 3875 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0462E376903355C40A7)
+[WA Bridge] 💻 cmd output 3876 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB051E9CF8E697BBEBE84)
+[WA Bridge] 👁️ view 3878 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D5963B544BB04F9549)
+[WA Bridge] 🧠 thinking 3881 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C7B545E27B180D9984)
+[WA Bridge] ⚡ cmd 3881 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB004B0B2BAFA3DDF2487)
+[WA Bridge] 💻 cmd output 3882 (agy:0)
