@@ -20235,3 +20235,20 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB01568E97EFAECA4C9A5, seq: 346): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EDD6D3E0E8A93790DD)
+[WA Bridge] ⚡ cmd 5111 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01D66FE976D1FF8CF90)
+[WA Bridge] 💻 cmd output 5112 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 76610069913794@lid
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 76610069913794@lid
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 76610069913794@lid
+[WA Bridge] Ignored message from other sender: 120363378775353616@g.us 76610069913794@lid
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 76610069913794@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A5C69F87E6579F4AA9)
+[WA Bridge] ⚡ cmd 5114 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D0BDA659FA13850C6C)
+[WA Bridge] 💻 cmd output 5115 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01450DCC19C2DD8CE42)
+[WA Bridge] ⚡ cmd 5117 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04FFDDF5303A6B05D4F)
+[WA Bridge] 💻 cmd output 5118 (agy:0)
