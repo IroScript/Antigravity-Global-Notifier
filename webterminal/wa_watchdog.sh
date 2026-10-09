@@ -40,9 +40,18 @@ if [ -z "$BRIDGE_PID" ]; then
   exit 0
 fi
 
+# Check startup grace period (30s) so newly spawned bridge is not killed while writing initial heartbeat
+NOW_EPOCH="$(date +%s)"
+PID_START_EPOCH="$(stat -c %Y "/proc/$BRIDGE_PID" 2>/dev/null || echo "$NOW_EPOCH")"
+PID_AGE=$((NOW_EPOCH - PID_START_EPOCH))
+if [ "$PID_AGE" -lt 30 ]; then
+  # Process started less than 30s ago; allow startup grace period
+  exit 0
+fi
+
 # 2. Check if heartbeat file exists
 if [ ! -f "$HEARTBEAT_FILE" ]; then
-  restart_service "Heartbeat file $HEARTBEAT_FILE does not exist."
+  restart_service "Heartbeat file $HEARTBEAT_FILE does not exist (process age: ${PID_AGE}s)."
   exit 0
 fi
 
