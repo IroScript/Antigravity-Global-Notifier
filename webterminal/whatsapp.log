@@ -1220,3 +1220,25 @@
 [WA Bridge] ⚡ cmd 161 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0EABEE17214C8ACAE66)
 [WA Bridge] 💻 cmd output 162 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C13D61559CA1A54667)
+[WA Bridge] 🧠 thinking 164 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 164)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6172
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BB7A469B66AE178DB4)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F1BF4BBA5C93D2D142)
+[WA Bridge] 🧠 thinking 167 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C6B2EA8113B4C5067B)
+[WA Bridge] ⚡ cmd 167 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0286919A95E38091DEC)
+[WA Bridge] 💻 cmd output 168 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB062A224363008DB4EED)
+[WA Bridge] 🧠 thinking 170 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 170)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6358
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BC4A325BC50F9BE489)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
