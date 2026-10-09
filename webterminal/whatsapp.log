@@ -20380,3 +20380,30 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -rli \"azure\" /home/opc 2>/dev/null | grep -v \"/.gemini/\" | grep -v \"/.npm\" | head -n 40`
+> 🎯 _"Searching for Azure codes"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EEC2D3B88B781C56B3)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0345891F8589D9A6339)
+[WA Bridge] ⚡ cmd 5174 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0115FB299D630808C70)
+[WA Bridge] 💻 cmd output 5175 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ find /home/opc/backup_orchestrator -maxdepth 3`
+> 🎯 _"Checking backup_orchestrator"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CAE083E2F3E67D902E)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D20090FBC7B83B2C30)
+[WA Bridge] ⚡ cmd 5177 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB079203249C160E1B005)
+[WA Bridge] 💻 cmd output 5178 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc`
+> 🎯 _"Listing /home/opc"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00D3E9FABF97CE439EC)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E20605BB6F8CC6B942)
+[WA Bridge] ⚡ cmd 5180 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0356F7990E611F857FB)
+[WA Bridge] 💻 cmd output 5181 (agy:0)
