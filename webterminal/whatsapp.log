@@ -65959,3 +65959,411 @@ Proceed with the scoped investigation and repair.
 [WA Bridge] Failed in ensureCodexGroup: rate-overlimit
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A7E2B4BDFDB2AE500A)
 [WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F67A2FC0FE007BFC94)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 58)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 1 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D39A45ECD1A01B59A8)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🧠 thinking 60 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🔧 invoke_subagent 60 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 60)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 62
+[WA Bridge] paste.rs (mobile-wrapped): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high · 1 subagent(s)"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Connection update: connecting
+[WA Bridge] 📤 Turn done for agy:0 (step 63)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 3 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0794CB1F2933D40746A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 236
+[WA Bridge] paste.rs (mobile-wrapped): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high · 1 subagent(s)"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F352CD333FD2EFE01B)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E293366364DDED4387)
+[WA Bridge] 🧠 thinking 3 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 82935919157317@lid without options: Connection Closed
+[WA Bridge] ❌ Error sending message to 82935919157317@lid, enqueuing to outbox: Connection Closed
+[WA Bridge] 🔧 invoke_subagent 3 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 📤 Turn done for agy:0 (step 7)
+[WA Bridge] paste.rs rejected upload: HTTP 503 bytes 118
+[WA Bridge] paste.rs (mobile-wrapped): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high · 2 subagent(s)"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 66 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 3 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B3F15CAAD7C588710F)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BE7108E06DA2B79E8A)
+[WA Bridge] ⚡ cmd 5 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB023774640088E7483C1)
+[WA Bridge] 💻 cmd output 6 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 8 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 9 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 11 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 12 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🔧 manage_subagents 69 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🔍 search 14 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⏱️ task 72 (agy:0)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 7 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A3DB572F85F664B03B)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0572CB0E8296912ECBE)
+[WA Bridge] ⏱️ task 75 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B31614C1B4274177C1)
+[WA Bridge] 👁️ view 17 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BF4ACAB9FB84F70BD2)
+[WA Bridge] 👁️ view 20 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB028858B15295F574CBF)
+[WA Bridge] ⚡ cmd 79 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🔍 search 23 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 1 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D5AA4744C8BDEE0E83)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D801664569D7FB44CA)
+[WA Bridge] 🔍 search 26 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E14A5EF8C9B7018C2B)
+[WA Bridge] ⏱️ task 82 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⏱️ task 85 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 29 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 89 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 30 (agy:0)
+[WA Bridge] 💻 cmd output 90 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 92 (agy:0)
+[WA Bridge] ⚡ cmd 32 (agy:0)
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 7 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB032D0E7F65A88CE26A6)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D274842FF975C5251B)
+[WA Bridge] 💻 cmd output 93 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D93FBACA9641F9EB14)
+[WA Bridge] 💻 cmd output 33 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02C59D06D53453B1F53)
+[WA Bridge] 👁️ view 95 (agy:0)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 👁️ view 98 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 35 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 36 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🧠 thinking 101 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 👁️ view 101 (agy:0)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 7 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C8AFAD930179A92671)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D17B4F33DD4B4BED79)
+[WA Bridge] 👁️ view 104 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0297C1C4D6CA9BD257C)
+[WA Bridge] 🧠 thinking 38 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A8279BAF53D436E064)
+[WA Bridge] 👁️ view 38 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05B96266D33A29C4FAB)
+[WA Bridge] 👁️ view 107 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🧠 thinking 41 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 🔍 search 41 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 👁️ view 110 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 📤 Turn done for agy:0 (step 113)
+[WA Bridge] 🧠 thinking 44 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 👁️ view 44 (agy:0)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 5 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB098331A21E2B106C7A7)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] paste.rs (mobile-wrapped): https://paste.rs/hLljL
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high · 2 subagent(s)"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09F7BA0C149F4519A9B)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03D1D1F210CC856B977)
+[WA Bridge] 🔍 search 47 (agy:0)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03069BFDAAAF1B3E520)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB056C51D8C74A8B19C0A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 50 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 51 (agy:0)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 2 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB033C0B33FE85336C698)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04E86AF00B49A717CA7)
+[WA Bridge] ⚡ cmd 53 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0375E8AECA1F425370B)
+[WA Bridge] 💻 cmd output 54 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 56 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 57 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 59 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 60 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 2 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E094A7F2660D5D7822)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05FD404349A625EEBF6)
+[WA Bridge] 🧠 thinking 62 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB084ABA76E87DAC96BF8)
+[WA Bridge] ⚡ cmd 62 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0194386E37820B1D6A6)
+[WA Bridge] 💻 cmd output 63 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F026E0A76695DB45A9)
+[WA Bridge] ⚡ cmd 65 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04ADFF142878BE1A7C2)
+[WA Bridge] 💻 cmd output 66 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 68 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 69 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 2 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB013AB76024DF8DDE5F1)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09C44B231F4EF8F9A74)
+[WA Bridge] 🔍 search 71 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03BFDE8ED258273AEB9)
+[WA Bridge] 🔍 search 74 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 👁️ view 77 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 1 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB001B8CA23D0DD987EEC)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB074CEC03286B9DE6C0C)
+[WA Bridge] 🧠 thinking 80 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D99B1530281EEF23E3)
+[WA Bridge] ⚡ cmd 80 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08DBF9F9694F3CF4F8A)
+[WA Bridge] 💻 cmd output 81 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0586A2A695F6B20E954)
+[WA Bridge] ⚡ cmd 83 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B044CB2579D6453FAB)
+[WA Bridge] 💻 cmd output 84 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0719154AFF9A48DBF9C)
+[WA Bridge] ⚡ cmd 86 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0863EE3E3E0EB5B35AA)
+[WA Bridge] 💻 cmd output 87 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB055395FC7B548476CFA)
+[WA Bridge] ⚡ cmd 89 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0856FA4C97E02CC5E7F)
+[WA Bridge] 💻 cmd output 90 (agy:0)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 92 (agy:0)
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] 💻 cmd output 93 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] 💾 Offline: durably enqueued outbound notice to 82935919157317@lid
+[WA Bridge] ⚡ cmd 95 (agy:0)
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] 📤 Draining 3 queued offline outbound WhatsApp notice(s)...
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0874E4886ED5D477C8D)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05340143F59B365FF82)
+[WA Bridge] 💻 cmd output 96 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D541926DD7D2EEB6FC)
+[WA Bridge] ⚡ cmd 98 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0710A7612D4D1FB4527)
+[WA Bridge] 💻 cmd output 99 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C7FBADC4F047E99502)
+[WA Bridge] ⚡ cmd 101 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01DC5A2F3109F8773E0)
+[WA Bridge] 💻 cmd output 102 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0095FC6FD1079A7B256)
+[WA Bridge] ⚡ cmd 104 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00B7023A96DF004EA0D)
+[WA Bridge] 💻 cmd output 105 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07C49ED36788F800939)
+[WA Bridge] 🧠 thinking 107 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09DF5B26F737990ED03)
+[WA Bridge] 🔍 search 107 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AA4F69BFE8E9AD07E5)
+[WA Bridge] 🧠 thinking 110 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C86FB3CC725FBBCD63)
+[WA Bridge] ⚡ cmd 110 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0831186934B2BD2AD71)
+[WA Bridge] 💻 cmd output 111 (agy:0)
