@@ -20798,3 +20798,11 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 76610069913794@lid
 [WA Bridge] Ignored message from other sender: 120363380930947370@g.us 148494383878358@lid
 [WA Bridge] Ignored message from other sender: status@broadcast 9303016661079@lid
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0085B59DF81F5752D1A)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06685EF3AD089E1C8A5)
+[WA Bridge] ⚡ cmd 5297 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E2798059A9C3147EB9)
+[WA Bridge] 💻 cmd output 5298 (agy:0)
