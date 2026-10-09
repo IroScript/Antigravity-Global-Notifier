@@ -571,6 +571,7 @@ function getWindowForSender(sender) {
   if (!sender) return 'agy:0';
 
   const cleanSender = String(sender).trim().toLowerCase();
+  if (cleanSender === '120363430650656655@g.us') return 'agy:yt';
 
   // 1. Check project groups map (~/.webterminal/project_groups.json)
   try {
@@ -1522,14 +1523,22 @@ function isAllowedSender(sender, participant = '') {
   if (sender.endsWith('@g.us')) {
     const groups = getProjectGroupMap();
     const isOurGroup = Object.values(groups).some(g => g && g.id === sender);
-    if (!isOurGroup) return false;
     const p = participant || '';
-    if (ALLOWED_NUMBERS.some(num => p.includes(num))) return true;
-    if (p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406') || p.includes('206343935946909')) return true;
-    const meLid = sock?.authState?.creds?.me?.lid || '';
-    if (meLid) {
-      const cleanLid = meLid.split(':')[0].split('@')[0];
-      if (cleanLid && p.includes(cleanLid)) return true;
+    const isOwner = ALLOWED_NUMBERS.some(num => p.includes(num)) ||
+                    p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406') || p.includes('206343935946909');
+    if (isOurGroup) {
+      if (isOwner) return true;
+      const meLid = sock?.authState?.creds?.me?.lid || '';
+      if (meLid) {
+        const cleanLid = meLid.split(':')[0].split('@')[0];
+        if (cleanLid && p.includes(cleanLid)) return true;
+      }
+      return false;
+    }
+    // Hardened fallback: if participant is authorized owner or YouTube group, accept
+    if (isOwner || sender === '120363430650656655@g.us') {
+      console.log(`[WA Bridge] 🔓 Authorized message accepted in group ${sender} (${p})`);
+      return true;
     }
     return false;
   }
