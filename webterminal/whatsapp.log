@@ -21060,3 +21060,20 @@ Closing session: SessionEntry {
     preKeyId: 11775023
   }
 }
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, code: 503 error: Stream Errored (unknown)
+[WA Bridge] 🔄 Reconnecting in 1244ms (attempt #1, code: 503)...
+[WA Bridge] 🧹 Gracefully settling previous socket (re-initializing)...
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 132
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 132
+[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
