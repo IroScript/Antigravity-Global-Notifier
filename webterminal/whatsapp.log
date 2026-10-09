@@ -6127,3 +6127,19 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] ⚡ cmd 1069 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A714938504B03A6B17)
 [WA Bridge] 💻 cmd output 1070 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0748E738218906568FB)
+[WA Bridge] 🧠 thinking 1072 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E25F0BAE4D97B7CC66)
+[WA Bridge] ⚡ cmd 1072 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB084A2BDCFE062F3A903)
+[WA Bridge] 💻 cmd output 1073 (agy:yt)
+[WA Bridge] Ignored message from other sender: 120363400568877928@g.us 272039487262801@lid
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 34815592120415@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02465299C78F635F180)
+[WA Bridge] 🧠 thinking 1076 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1076)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5968
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 4 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FFCC4A76A56122915D)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
