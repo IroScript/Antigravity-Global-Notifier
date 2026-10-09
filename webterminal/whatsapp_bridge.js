@@ -1954,6 +1954,38 @@ let sanitizeIntervalStarted = false;
 
 let reconnectAttempts = 0;
 let reconnectTimer = null;
+let connReplacedConsecutiveCount = 0;
+let pendingSaveCredsPromise = null;
+
+async function cleanTeardownPreviousSocket(prevSock, reason = 'reconnect') {
+  if (!prevSock) return;
+  try {
+    console.log(`[WA Bridge] 🧹 Gracefully settling previous socket (${reason})...`);
+    // 1. Wait for in-flight credential writes to settle so no Signal pre-keys or creds are dropped
+    if (pendingSaveCredsPromise) {
+      await Promise.race([
+        pendingSaveCredsPromise,
+        new Promise(resolve => setTimeout(resolve, 2500))
+      ]);
+    }
+    // 2. Close socket cleanly
+    try {
+      prevSock.end?.(new Error(`Socket teardown: ${reason}`));
+      if (prevSock.ws) {
+        prevSock.ws.close?.();
+      }
+    } catch (e) {}
+    // 3. Remove event listeners only after socket close has settled to prevent dropping in-flight events
+    setTimeout(() => {
+      try {
+        prevSock.ev?.removeAllListeners();
+        prevSock.ws?.removeAllListeners?.();
+      } catch (e) {}
+    }, 600);
+  } catch (e) {
+    console.warn('[WA Bridge] Teardown warning:', e.message);
+  }
+}
 
 async function startBridge() {
   reconcileStartupState();
@@ -1963,17 +1995,9 @@ async function startBridge() {
     sanitizeIntervalStarted = true;
   }
 
-  // Teardown previous socket and listeners if re-initializing to prevent duplicate sockets and listener leaks
+  // Teardown previous socket gracefully waiting for pending creds to flush
   if (sock) {
-    try {
-      console.log('[WA Bridge] 🧹 Tearing down previous socket instance before re-initializing...');
-      sock.ev?.removeAllListeners();
-      sock.end?.();
-      if (sock.ws) {
-        sock.ws.removeAllListeners?.();
-        sock.ws.close?.();
-      }
-    } catch (e) {}
+    await cleanTeardownPreviousSocket(sock, 're-initializing');
     sock = null;
   }
 
@@ -1990,7 +2014,18 @@ async function startBridge() {
     retryRequestDelayMs: 250
   });
 
-  sock.ev.on('creds.update', saveCreds);
+  const safeSaveCreds = async () => {
+    try {
+      pendingSaveCredsPromise = saveCreds();
+      await pendingSaveCredsPromise;
+    } catch (e) {
+      console.error('[WA Bridge] Error saving auth credentials:', e.message);
+    } finally {
+      pendingSaveCredsPromise = null;
+    }
+  };
+
+  sock.ev.on('creds.update', safeSaveCreds);
 
   sock.ev.on('connection.update', async (update) => {
     const { connection, lastDisconnect } = update;
@@ -2012,10 +2047,20 @@ async function startBridge() {
         clearTimeout(reconnectTimer);
         reconnectTimer = setTimeout(startBridge, 300);
       } else if (isConnReplaced) {
-        // Another session took over; back off with jitter to avoid thrashing
-        console.log('[WA Bridge] ⚠️ Connection replaced (440). Backing off 8000ms...');
-        clearTimeout(reconnectTimer);
-        reconnectTimer = setTimeout(startBridge, 8000);
+        connReplacedConsecutiveCount++;
+        enforceSingleInstance();
+        if (connReplacedConsecutiveCount >= 4) {
+          console.error(`[WA Bridge] 🛑 CRITICAL: Connection replaced repeatedly (${connReplacedConsecutiveCount} times). Another active client session exists. Pausing auto-reconnect for 300s to avoid session ban.`);
+          recordHeartbeat('CONN_REPLACED_PAUSED');
+          clearTimeout(reconnectTimer);
+          reconnectTimer = setTimeout(startBridge, 300000);
+        } else {
+          // Bounded backoff with jitter (20s, 45s, 90s) to break ping-pong thrashing loops
+          const backoff440 = (connReplacedConsecutiveCount * 20000) + Math.floor(Math.random() * 5000);
+          console.warn(`[WA Bridge] ⚠️ Connection replaced (440, streak #${connReplacedConsecutiveCount}). Backing off ${backoff440}ms to avoid session collision...`);
+          clearTimeout(reconnectTimer);
+          reconnectTimer = setTimeout(startBridge, backoff440);
+        }
       } else if (!isLoggedOut) {
         // Standard network disconnect with bounded exponential backoff + jitter
         const backoffMs = Math.min(30000, (Math.pow(2, Math.min(reconnectAttempts, 5)) * 1000) + Math.floor(Math.random() * 1500));
@@ -2048,6 +2093,7 @@ async function startBridge() {
     } else if (connection === 'open') {
       isWsConnected = true;
       reconnectAttempts = 0;
+      connReplacedConsecutiveCount = 0;
       clearTimeout(reconnectTimer);
       reconnectTimer = null;
       recordHeartbeat('OPEN');
@@ -3379,23 +3425,18 @@ function enforceSingleInstance() {
   }
 }
 
-function handleGracefulShutdown(signal) {
+async function handleGracefulShutdown(signal) {
   console.log(`[WA Bridge] 🛑 Received ${signal}. Performing clean socket close & graceful exit...`);
   try {
     if (sock) {
-      sock.ev?.removeAllListeners();
-      sock.end?.(new Error(`Service shutdown (${signal})`));
-      if (sock.ws) {
-        sock.ws.removeAllListeners?.();
-        sock.ws.close?.();
-      }
+      await cleanTeardownPreviousSocket(sock, signal);
     }
   } catch (e) {}
   process.exit(0);
 }
 
-process.on('SIGTERM', () => handleGracefulShutdown('SIGTERM'));
-process.on('SIGINT', () => handleGracefulShutdown('SIGINT'));
+process.on('SIGTERM', () => { handleGracefulShutdown('SIGTERM'); });
+process.on('SIGINT', () => { handleGracefulShutdown('SIGINT'); });
 
 if (require.main === module) {
   enforceSingleInstance();
