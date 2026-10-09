@@ -720,3 +720,44 @@
 [WA Bridge] Connection update: { receivedPendingNotifications: true }
 [WA Bridge] Connection update: { isOnline: true }
 [WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0900DF7BDCD4578A4D5)
+[WA Bridge] ⚡ cmd 1756 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BCAB7C2261BFD5093F)
+[WA Bridge] 💻 cmd output 1757 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08FC70DA6AA429EB2F9)
+[WA Bridge] ⚡ cmd 1759 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0002C4747644C111D4C)
+[WA Bridge] 💻 cmd output 1760 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB011BD93E95CF8C6E0EE)
+[WA Bridge] ⚡ cmd 1762 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C2BA35892C0EBAACC1)
+[WA Bridge] 💻 cmd output 1763 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AB404AE8BEAD870AD8)
+[WA Bridge] ⚡ cmd 1765 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C7E1C66BE683BE1932)
+[WA Bridge] 💻 cmd output 1766 (agy:0)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 131
+[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB041BB6BA17D615B0DCD)
+[WA Bridge] ⚡ cmd 1768 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06F160EB9AFACA01059)
+[WA Bridge] 💻 cmd output 1769 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E2A249ED3B834EB42F)
+[WA Bridge] ⚡ cmd 1771 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00C085DF459ACEF848B)
+[WA Bridge] 💻 cmd output 1772 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ECEAC6BADBAD0FC08A)
+[WA Bridge] 🧠 thinking 1774 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 1774)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 10665
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB099E27C2E2B9391C301)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
