@@ -3329,3 +3329,32 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB067D619A734AAF513D8)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 23451058311315@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09A0C4C3720945C1420)
+[WA Bridge] 🧠 thinking 525 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A15E581EDB735196C6)
+[WA Bridge] ⚡ cmd 525 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03F184EA28C4A6A7CDA)
+[WA Bridge] 💻 cmd output 526 (agy:yt)
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Proceed
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB042483BE9E9A4BD521B)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08FC6FE762822DE01D3)
+[WA Bridge] 🧠 thinking 528 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09F74BA20442A82A0B2)
+[WA Bridge] ⚡ cmd 528 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02BF6FCE77155438494)
+[WA Bridge] 💻 cmd output 529 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D7C660775AD80025C8)
+[WA Bridge] 🧠 thinking 2469 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B8136506EA492FC3E0)
+[WA Bridge] 🧠 thinking 531 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 531)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07CDBBC836C3D75026B)
+[WA Bridge] ⚡ cmd 2469 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D00142577091DD93E6)
+[WA Bridge] 💻 cmd output 2470 (agy:0)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/5IXk6
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB050DBFC00C9813DF591)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
