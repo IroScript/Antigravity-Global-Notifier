@@ -19908,3 +19908,20 @@ Removing old closed session: SessionEntry {
 > 🎯 _"Checking system logs"_
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BA5EAE9989275E9301)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BBE7819328118C5F95)
+[WA Bridge] 🧠 thinking 5009 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00C8F582D41C4F64C02)
+[WA Bridge] ⚡ cmd 5009 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08F9640F2DE65DF745F)
+[WA Bridge] 💻 cmd output 5010 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ cat /home/opc/.webterminal/pairing_phone.txt 2>/dev/null; echo \"\"; cat /home/opc/.webterminal/target_phone.txt 2>/dev/null`
+> 🎯 _"Checking phone configs"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B09BEE5F32D5410729)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08F1505374F8053D24C)
+[WA Bridge] 🧠 thinking 5012 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB059578B25F1C66B4383)
+[WA Bridge] ⚡ cmd 5012 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01D254E374626F1B86E)
+[WA Bridge] 💻 cmd output 5013 (agy:0)
