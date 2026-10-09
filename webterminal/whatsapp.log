@@ -8217,3 +8217,40 @@ Closing session: SessionEntry {
 [WA Bridge] ⚡ cmd 1378 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0EDCDA9FFC4769EE8E4)
 [WA Bridge] 💻 cmd output 1379 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1381)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 8892
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB06353BA4AED17DED072)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): /home/azureuser/IroScript_Projects/All_Backup
+
+
+Delete
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A56C37DD5E85CB88C1)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06922C9E62176EE374F)
+[WA Bridge] 🧠 thinking 4026 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B076D45B907DE92723)
+[WA Bridge] ⚡ cmd 4026 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EEBB59F789A73E4936)
+[WA Bridge] 💻 cmd output 4027 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C9A2139372E5ED85C8)
+[WA Bridge] 👁️ view 4029 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB035249A04D49F386CCA)
+[WA Bridge] 👁️ view 4032 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB046F3B2258083627BC6)
+[WA Bridge] ⚡ cmd 4035 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0130C8095281DA1CC00)
+[WA Bridge] 💻 cmd output 4036 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0619ED9A2705B588341)
+[WA Bridge] ⚡ cmd 4038 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C2E4F102EEE2525E8C)
+[WA Bridge] 💻 cmd output 4039 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB078B0516727DBA1D491)
+[WA Bridge] ⚡ cmd 4041 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A87A1A34D62DA3C0D2)
+[WA Bridge] 💻 cmd output 4042 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C4FD87D3351F4D5AC8)
+[WA Bridge] ⚡ cmd 4044 (agy:0)
