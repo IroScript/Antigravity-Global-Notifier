@@ -4353,3 +4353,515 @@ Keep the response within 10 lines. No questions.
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0672E936C0FB54710E7)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): AGY CLI — AUTONOMOUS WHATSAPP CONNECTION ROOT-CAUSE INVESTIGATION & PERMANENT REPAIR
+
+MODE: EXECUTE, NOT PLAN ONLY.
+
+Your mission is to identify the real causes of recurring WhatsApp disconnections and implement verified, durable fixes without asking the user for decisions.
+
+1. Strict Scope and Safety
+
+- Scope: WhatsApp Bridge, Baileys authentication, connection lifecycle, relevant systemd service and directly related resources.
+- Do not modify unrelated projects, CLI agents, tmux sessions, global settings, infrastructure or backup systems.
+- Preserve all existing WhatsApp commands, routing, message queues, agent isolation, terminal integration and project mappings.
+- Never delete, reset or regenerate authentication credentials without verified necessity.
+- Never trigger logout, unlink the device or intentionally force QR reauthentication.
+- Never stop or interrupt unrelated agents.
+- User messages must not be blocked by diagnostics, maintenance, backups or unrelated work.
+- No user approval requests. Work autonomously within these safety limits.
+
+2. Challenge the Previous Diagnosis
+
+The previous report claims:
+
+- 32,558 authentication files.
+- 27,371 LID mapping files.
+- 838.4 MB peak memory.
+- SIGKILL indicates memory-related termination.
+- Deleting approximately 27,000 files will solve disconnections.
+- Memory will fall to 60–80 MB.
+
+Treat every statement as an unverified hypothesis.
+
+Specifically:
+
+1. A systemd SIGKILL message does not independently prove an OOM kill.
+2. MemoryPeak alone does not establish causation.
+3. LID mappings and Signal pre-keys cannot be assumed disposable based on age.
+4. File count alone does not establish excessive event-loop delay.
+5. Neither zero reauthentication nor a particular memory reduction can be guaranteed without testing.
+
+Find independent runtime evidence for every conclusion.
+
+3. Perform Real Root-Cause Analysis
+
+Inspect actual running processes, code, services, journal history and authentication behavior.
+
+Investigate:
+
+1. Connection close events, timestamps and exact Baileys disconnect codes.
+2. Process exits, crashes, service restarts and initiators.
+3. Kernel OOM events, systemd-oomd and cgroup memory limits.
+4. Node.js RSS, heap usage, external memory and event-loop delay.
+5. Auth file read/write latency, file counts, directory performance and concurrent writers.
+6. Credential corruption, Signal key persistence and transaction failures.
+7. WebSocket failures, network interruptions, DNS and heartbeat timeouts.
+8. Duplicate WhatsApp sockets, overlapping reconnect attempts and stale listeners.
+9. Unbounded caches, memory leaks, excessive history sync and repeated authentication writes.
+10. Message queue persistence, delivery failures and bridge-to-terminal acknowledgment behavior.
+
+Build an incident timeline correlating each observed disconnection with system, application and network evidence.
+
+Classify every suspected cause as VERIFIED, DISPROVED or UNRESOLVED.
+
+Do not claim a root cause merely because two events occurred close together.
+
+4. Implement Safe Permanent Repairs
+
+Fix only causes supported by evidence.
+
+If multi-file authentication is creating a measurable bottleneck, evaluate supported approaches:
+
+- Safe caching of Signal key reads.
+- Write serialization and atomic persistence.
+- Properly designed persistent authentication storage.
+- A database-backed auth store if its benefits and safe migration are demonstrated.
+
+Never blindly delete old "lid-mapping", "pre-key", "sender-key", "session", "identity-key", or app-state files.
+
+Before any auth-state mutation:
+
+1. Obtain a consistent recoverable backup of the complete authentication state.
+2. Restrict backup permissions and exclude credentials from Git and logs.
+3. Validate backup integrity and restoration capability.
+4. Test proposed changes with isolated data.
+5. Prove that existing mappings, sessions and cryptographic keys remain accessible.
+6. Establish an executable rollback path.
+
+If safe cleanup cannot be proven, do not delete those files. Implement a safer approach instead.
+
+5. Reconnection Reliability
+
+Implement or correct the following where necessary:
+
+- Explicit disconnect-reason classification.
+- Bounded exponential-backoff reconnection with jitter.
+- Prevention of simultaneous socket instances for the same session.
+- Listener and resource cleanup.
+- Correct credential persistence.
+- Connection health checks and observability.
+- Durable inbound message handling with deduplication and delivery acknowledgment.
+- Automatic recovery for recoverable disconnections.
+- Explicit handling of nonrecoverable authentication failures without destroying credentials.
+
+Do not create infinite rapid reconnect loops.
+
+WhatsApp receiving a message must not depend on an unrelated backup daemon, verification task or coding agent finishing its work.
+
+6. Production Deployment
+
+First perform read-only diagnostics.
+
+Apply the smallest evidence-supported patch.
+
+Run syntax checks, focused tests and isolated integration tests before deployment.
+
+Avoid restarting a healthy active connection unnecessarily.
+
+If a bridge restart is essential:
+
+- Preserve queued messages and delivery state.
+- Protect in-flight delivery with acknowledgments and deduplication.
+- Select a safe deployment boundary.
+- Restart only the affected WhatsApp service.
+- Verify automatic reconnection using existing credentials.
+- Restore the previous version immediately if regression is detected.
+
+Never restart or kill unrelated processes.
+
+7. Mandatory Independent Acceptance Tests
+
+Execute and provide evidence for:
+
+1. Existing authentication remains valid.
+2. WhatsApp connects successfully.
+3. Unexpected disconnect recovery works.
+4. Only one active socket owns the session.
+5. Repeated reconnect attempts do not leak listeners or resources.
+6. Signal keys remain readable and writable.
+7. Private and group messages route to the correct agents.
+8. Messages received during connection downtime are handled according to verified delivery guarantees.
+9. Existing native commands and terminal delivery remain functional.
+10. CPU, memory, file I/O and event-loop behavior improve or stay within measured acceptable bounds.
+
+Use isolated fault injection where possible. Do not deliberately break production merely to produce test results.
+
+Monitor the repaired service for a meaningful observation window. Do not fabricate long-term uptime evidence.
+
+8. Git and Infrastructure Integrity
+
+Preserve existing Infrastructure Source of Truth and global trust protocols.
+
+Do not change unrelated repositories or globally installed agent behavior.
+
+For authorized code changes, follow the existing safe Git workflow, including the required commit convention, remote verification and no force-push.
+
+Never commit credentials, authentication backups or secrets.
+
+9. Final Evidence Report
+
+Return:
+
+- Exact root cause or causes, with independent evidence.
+- Previous claims proven true or false.
+- Exact files and configurations changed.
+- Before/after measured resource consumption.
+- Authentication file counts and any justified retention changes.
+- Service status and actual reconnect observations.
+- Results of all 10 independent acceptance tests.
+- Any unresolved risks or untested long-term claims.
+- Rollback verification.
+- Git commit SHA and verified remote SHA, where applicable.
+
+PASS means independently demonstrated behavior, not merely that code exists or a test prints PASS.
+
+Do not request user decisions, do not expand scope, and do not stop after producing a plan.
+
+Investigate, safely repair, independently verify and report the actual result.
+
+START NOW.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (155ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05C14362EA873EE4CFC)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D86D3E33F14A9E34DB)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 2802)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB037C5100386805A9FFC)
+[WA Bridge] 🧠 thinking 2804 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03BB85ACB7FF62238C5)
+[WA Bridge] ⚡ cmd 2804 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04EBFFB9BFA6B812134)
+[WA Bridge] 💻 cmd output 2805 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 16205112979648@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB084F91F4FC6ECCB4A4A)
+[WA Bridge] ⚡ cmd 2807 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A970C8D250C4805FDE)
+[WA Bridge] 💻 cmd output 2808 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 16205112979648@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DB52961AD38C7E0227)
+[WA Bridge] 🧠 thinking 2810 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BBF6FE9C7E945CC013)
+[WA Bridge] ⚡ cmd 2810 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB050C85997FFBDA84F8D)
+[WA Bridge] 💻 cmd output 2811 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0221022D4180A75C343)
+[WA Bridge] ⚡ cmd 2813 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FE3AB94B9684B2DA21)
+[WA Bridge] 💻 cmd output 2814 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04F8CF8529B63091F1D)
+[WA Bridge] ⚡ cmd 2816 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB051EB7629754EBD76C2)
+[WA Bridge] 💻 cmd output 2817 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FD372572572AE2B4FE)
+[WA Bridge] ⚡ cmd 2819 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05E9461BC8C1284323A)
+[WA Bridge] 💻 cmd output 2820 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E5FA9DEDB8EE74B481)
+[WA Bridge] 🧠 thinking 2822 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C992837B81C48C0C1C)
+[WA Bridge] ⚡ cmd 2822 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0206163B44DEA3FBE21)
+[WA Bridge] 💻 cmd output 2823 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB048E2F57E8CB97B2117)
+[WA Bridge] ⚡ cmd 2825 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F10CABDA944867C124)
+[WA Bridge] 💻 cmd output 2826 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D5340979FCCAB0A318)
+[WA Bridge] ⚡ cmd 2828 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06EEA8A1A30F1929B79)
+[WA Bridge] 💻 cmd output 2829 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BB31D2E9CCB0A057A3)
+[WA Bridge] ⚡ cmd 2831 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AE9F0835D292CEF8EC)
+[WA Bridge] 💻 cmd output 2832 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB009D3E4DBD948856BFF)
+[WA Bridge] ⚡ cmd 2834 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB058E1A85043259F966A)
+[WA Bridge] 💻 cmd output 2835 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363401611811261@g.us 28652397969497@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DE08D46A4B6C85A65A)
+[WA Bridge] ⚡ cmd 2837 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CE30ADFB3E30255A55)
+[WA Bridge] 💻 cmd output 2838 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 13680091611295@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB010DE49485BA3D9038F)
+[WA Bridge] ⚡ cmd 2840 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F2470D90DCD9727121)
+[WA Bridge] 💻 cmd output 2841 (agy:0)
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Ami only youtube realted docker er kotha bolsi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D2B3268C9131EC1BCB)
+Closing session: SessionEntry {
+  _chains: {
+    BdCnuBlC6OBdQXIsI85EGIkd0fE8yUqgsEh1wAZqwQt8: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bd9K2NIpruOl0vC3qdO2iCBL/zJBBhZ254/jaQ28veZA': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYqWf2XV63JXjQDct1GffEuRL6TYPoCShHWYmLXll14k: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BcuMUa6iTxqbx1THfSDizaOTZIfVbBD+Eqg9bvMQ9U8z': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BTpRFxJ6qiC7kfe0mWIFSWAwfk4NSOutjq1qYB4XIp0f: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bckua5sosx1C85tslrMAfwt57hBPPntcLzE2Z2EAP+on': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BZj9RoU4vhRtswGdoPpus8qDxUDIDuFxnUchDmggwVo3: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 98 fd 46 85 38 be 14 6d b3 01 9d a0 fa 6e b3 ca 83 c5 40 c8 0e e1 71 9d 47 21 0e 68 20 c1 5a 37>,
+      privKey: <Buffer 30 a5 33 e5 85 95 4d be 8f 14 66 0e 9a 8d 76 47 0d 48 79 4c a1 88 7b 4a b6 a7 c9 99 38 63 59 6a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 c9 2e 6b 9b 28 b3 1d 42 f3 9b 6c 96 b3 00 7f 0b 79 ee 10 4f 3e 7b 5c 2f 31 36 67 61 00 3f ea 27>,
+    previousCounter: 16,
+    rootKey: <Buffer 29 8a 27 39 92 b6 93 e1 a2 57 d8 ba 0a 2d e6 7f fa 38 4f 19 d0 47 fa 4c 27 ae f8 36 91 ab 91 8c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ec a6 b7 e3 37 df 60 4c df 14 9a 09 54 5a 76 a7 13 4d 7b c5 13 45 0b 5e 73 26 66 5e 01 f4 8b 48>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791554669112,
+    created: 1791553690205,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BVgKqfl5l4ccJUDc07CFArwBA3VKFOpeGaWwRHzPplBX: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 58 0a a9 f9 79 97 87 1c 25 40 dc d3 b0 85 02 bc 01 03 75 4a 14 ea 5e 19 a5 b0 44 7c cf a6 50 57>,
+      privKey: <Buffer d0 d2 bf a3 44 ce 2b 0d 69 ec ee a9 f0 e9 2d 72 19 df c9 ed 08 4a 82 d4 bf 1c f4 76 1a 1f 04 5e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer f3 ab d9 d7 42 b9 cc 5a 82 64 83 7b 01 81 06 88 86 f1 6d 6d f7 a7 71 0b 7f f8 c6 96 a2 76 0f be>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 b6 54 58 c3 ad ed 69 e2 f3 51 1f 0e 20 15 c6 b8 62 93 51 b5 8a b0 3a 9e b3 06 56 0b 4b 95 bb 1c>,
+    baseKeyType: 1,
+    closed: 1791337448633,
+    used: 1791337448522,
+    created: 1791337448522,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 b6 54 58 c3 ad ed 69 e2 f3 51 1f 0e 20 15 c6 b8 62 93 51 b5 8a b0 3a 9e b3 06 56 0b 4b 95 bb 1c>,
+    preKeyId: 2097468
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BSZ8rey7Bm9o3bvRSRT0lf22km1VUo3WbfyWU7QUcpBy: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 26 7c ad ec bb 06 6f 68 dd bb d1 49 14 f4 95 fd b6 92 6d 55 52 8d d6 6d fc 96 53 b4 14 72 90 72>,
+      privKey: <Buffer 08 64 b2 1d 47 28 e3 71 3c 52 48 ff 1d e1 e8 87 28 2c 99 f4 b2 a5 62 87 bc 46 e9 be d9 ab 53 4e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 45 5b 13 79 59 ff 96 e1 60 47 f6 27 97 82 dd 1a 57 f7 6d 03 33 14 ba 2b f4 f1 5c 69 9e 68 62 8a>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 43 de cb d5 2b 5b 31 cf fe b9 db fd 91 5b ad 39 39 c2 ba 68 75 e5 16 79 59 66 8d 7f 84 ca b5 77>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791554708952,
+    created: 1791554708952,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 43 de cb d5 2b 5b 31 cf fe b9 db fd 91 5b ad 39 39 c2 ba 68 75 e5 16 79 59 66 8d 7f 84 ca b5 77>,
+    preKeyId: 2098149
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    Bf2vodZfKPQAvmzb8zUMWp6tA6EqELBiiYceveS3VE1E: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 fd af a1 d6 5f 28 f4 00 be 6c db f3 35 0c 5a 9e ad 03 a1 2a 10 b0 62 89 87 1e bd e4 b7 54 4d 44>,
+      privKey: <Buffer c8 33 e1 99 27 f1 5c 49 70 b5 b4 2c 00 52 dd 7e 92 03 69 ec 82 fe 8d 71 8b fc 95 3f 91 f4 2a 78>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer eb 6f 03 71 c0 2f 94 a8 b1 2d b2 c0 86 d7 c7 f7 30 9b e6 4b 70 6e b9 a0 c9 cc 96 d3 d3 9b ad f7>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 30 da 46 57 c0 74 2b 79 c3 25 65 1e 9a 99 8f f0 4a b7 82 7a 89 d1 69 1f e9 d2 bf 9c 0b 51 a0 52>,
+    baseKeyType: 1,
+    closed: 1791337448752,
+    used: 1791337448632,
+    created: 1791337448632,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 30 da 46 57 c0 74 2b 79 c3 25 65 1e 9a 99 8f f0 4a b7 82 7a 89 d1 69 1f e9 d2 bf 9c 0b 51 a0 52>,
+    preKeyId: 2097469
+  }
+}
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB034791950DBF18F7BD0)
+[WA Bridge] ⚡ cmd 2843 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00153F0EF77B4F86C83)
+[WA Bridge] 💻 cmd output 2844 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB094E2013CB729EB00C6)
+[WA Bridge] ⚡ cmd 668 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0170DF70985871F29F1)
+[WA Bridge] 💻 cmd output 669 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D55B794B88871E278B)
+[WA Bridge] 👁️ view 671 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B0DD5EA32A040387DE)
+[WA Bridge] 🧠 thinking 2846 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C324FCEA9FEDB4C641)
+[WA Bridge] ⚡ cmd 2846 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ED1AF8BE6E9D540E99)
+[WA Bridge] 💻 cmd output 2847 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01A6D463D39D6AA2FB4)
+[WA Bridge] 🧠 thinking 674 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00E62B4E834F893C349)
+[WA Bridge] ⚡ cmd 674 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DD625797D494E9F7F7)
+[WA Bridge] 💻 cmd output 675 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AD94CF4541D27AA2FA)
+[WA Bridge] ⚡ cmd 2849 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0305A8D257334BDBA7D)
+[WA Bridge] 💻 cmd output 2850 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AEAD389F119BA5749B)
+[WA Bridge] ⚡ cmd 2852 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB097ACDE552B89752754)
+[WA Bridge] 💻 cmd output 2853 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0234F51061544C043EF)
+[WA Bridge] ⚡ cmd 2855 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08E20AB514B1F5721C6)
+[WA Bridge] 💻 cmd output 2856 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A576854A46B90C11B0)
+[WA Bridge] 🧠 thinking 677 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 677)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/TfVvE
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03422CEDACDA8BD10FE)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00AFFC8F7EB53CC822E)
+[WA Bridge] 🧠 thinking 2858 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB086D1E61850E3EC1FE9)
+[WA Bridge] ⚡ cmd 2858 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09CEF96EF93EF56D6B1)
+[WA Bridge] 💻 cmd output 2859 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05DFDD266CA0FCCF6BC)
+[WA Bridge] ⚡ cmd 2861 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0763D812CFEF427D7F7)
+[WA Bridge] 💻 cmd output 2862 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FC3EEF2D1E7025281F)
+[WA Bridge] 🧠 thinking 680 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F1D16FED3041CC1C6D)
+[WA Bridge] ⚡ cmd 680 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0422000FBC9B297D5FF)
+[WA Bridge] 💻 cmd output 681 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09CD06D9EC723E15C57)
+[WA Bridge] 🧠 thinking 2864 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02E5A9D8584CA5EDA52)
+[WA Bridge] ⚡ cmd 2864 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EC609FC179A1A73CA6)
+[WA Bridge] 💻 cmd output 2865 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FFB55D5BC82B2E967D)
+[WA Bridge] 🧠 thinking 683 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E237F4E3D90542F82E)
+[WA Bridge] ⚡ cmd 683 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0AB86A3FC0BC4EF7048)
+[WA Bridge] 💻 cmd output 684 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D984F4A48297DA4681)
+[WA Bridge] ⚡ cmd 686 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FE72AE691EA3E57189)
+[WA Bridge] 💻 cmd output 687 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D9D727F92D252B19F2)
+[WA Bridge] 🧠 thinking 2867 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB064216D92C0972CA37B)
+[WA Bridge] ⚡ cmd 2867 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB015EC44DF8E523A6B07)
+[WA Bridge] 💻 cmd output 2868 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D3A2542F8A407EBE3A)
+[WA Bridge] ⚡ cmd 689 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E45C6131F46B69F7F5)
+[WA Bridge] 💻 cmd output 690 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 692)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/Dg36W
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B8D746C9244518197E)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB016AD81DB79B8E94FBD)
+[WA Bridge] 🧠 thinking 2870 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09C8FD1FC2C285B9B6A)
+[WA Bridge] ⚡ cmd 2870 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05CEA200E22812F0B95)
+[WA Bridge] 💻 cmd output 2871 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0115504E217699A5105)
+[WA Bridge] 🧠 thinking 2873 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00D0DE3A2F17C3A73C1)
+[WA Bridge] ⚡ cmd 2873 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CF5A333063C67CBCAB)
+[WA Bridge] 💻 cmd output 2874 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D606843BDE98A79DC7)
+[WA Bridge] 🧠 thinking 2876 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DCA179629140EBD47A)
+[WA Bridge] ⚡ cmd 2876 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0722375A887B5B3332A)
+[WA Bridge] 💻 cmd output 2877 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01B3A512CBB338348F6)
+[WA Bridge] 👁️ view 2879 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB083419BCCF30F69BBCF)
+[WA Bridge] 🧠 thinking 2882 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B9173544A72B88FAB5)
+[WA Bridge] 👁️ view 2882 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02CA7403637D7B451EC)
+[WA Bridge] 👁️ view 2885 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB008CE8EDCDBDFD0105D)
+[WA Bridge] 🧠 thinking 2888 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB093BD35D0F004E44894)
+[WA Bridge] ⚡ cmd 2888 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB063A842F5B44562E39C)
+[WA Bridge] 💻 cmd output 2889 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 240085115080752@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FABB05B7C71D50BBA4)
+[WA Bridge] 🧠 thinking 2891 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B38372D4613C93B358)
+[WA Bridge] ⚡ cmd 2891 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A4FC7EA156BCFED95E)
+[WA Bridge] 💻 cmd output 2892 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01FE64F8AAED1922E14)
+[WA Bridge] ⚡ cmd 2894 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BC53BBAE2194CC8584)
+[WA Bridge] 💻 cmd output 2895 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ECF361872CB951AE40)
+[WA Bridge] 👁️ view 2897 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363418681982552@g.us 28652397969497@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06594E1D50CDFDB5AFD)
+[WA Bridge] 👁️ view 2900 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB094AB96AFA9CC1E03B1)
+[WA Bridge] 👁️ view 2903 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 240085115080752@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A4A68DC0EA1FA6BEBD)
+[WA Bridge] 🧠 thinking 2906 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AED0A82F5B72C6A1CF)
+[WA Bridge] 👁️ view 2906 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E12692D23C4D419EFA)
+[WA Bridge] 👁️ view 2909 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D6327144858F750A06)
+[WA Bridge] 🧠 thinking 2912 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A0A08A006820414A41)
+[WA Bridge] 📝 edit 2912 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E96B0CAA7863158217)
+[WA Bridge] 👁️ view 2915 (agy:0)

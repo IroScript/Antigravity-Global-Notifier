@@ -1,1 +1,177 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Tomake bolsilam plan mode baad dite but amar somosto prompt e to plan mode e jasse
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] AGY CLI — AUTONOMOUS WHATSAPP CONNECTION ROOT-CAUSE INVESTIGATION & PERMANENT REPAIR
+
+MODE: EXECUTE, NOT PLAN ONLY.
+
+Your mission is to identify the real causes of recurring WhatsApp disconnections and implement verified, durable fixes without asking the user for decisions.
+
+1. Strict Scope and Safety
+
+- Scope: WhatsApp Bridge, Baileys authentication, connection lifecycle, relevant systemd service and directly related resources.
+- Do not modify unrelated projects, CLI agents, tmux sessions, global settings, infrastructure or backup systems.
+- Preserve all existing WhatsApp commands, routing, message queues, agent isolation, terminal integration and project mappings.
+- Never delete, reset or regenerate authentication credentials without verified necessity.
+- Never trigger logout, unlink the device or intentionally force QR reauthentication.
+- Never stop or interrupt unrelated agents.
+- User messages must not be blocked by diagnostics, maintenance, backups or unrelated work.
+- No user approval requests. Work autonomously within these safety limits.
+
+2. Challenge the Previous Diagnosis
+
+The previous report claims:
+
+- 32,558 authentication files.
+- 27,371 LID mapping files.
+- 838.4 MB peak memory.
+- SIGKILL indicates memory-related termination.
+- Deleting approximately 27,000 files will solve disconnections.
+- Memory will fall to 60–80 MB.
+
+Treat every statement as an unverified hypothesis.
+
+Specifically:
+
+1. A systemd SIGKILL message does not independently prove an OOM kill.
+2. MemoryPeak alone does not establish causation.
+3. LID mappings and Signal pre-keys cannot be assumed disposable based on age.
+4. File count alone does not establish excessive event-loop delay.
+5. Neither zero reauthentication nor a particular memory reduction can be guaranteed without testing.
+
+Find independent runtime evidence for every conclusion.
+
+3. Perform Real Root-Cause Analysis
+
+Inspect actual running processes, code, services, journal history and authentication behavior.
+
+Investigate:
+
+1. Connection close events, timestamps and exact Baileys disconnect codes.
+2. Process exits, crashes, service restarts and initiators.
+3. Kernel OOM events, systemd-oomd and cgroup memory limits.
+4. Node.js RSS, heap usage, external memory and event-loop delay.
+5. Auth file read/write latency, file counts, directory performance and concurrent writers.
+6. Credential corruption, Signal key persistence and transaction failures.
+7. WebSocket failures, network interruptions, DNS and heartbeat timeouts.
+8. Duplicate WhatsApp sockets, overlapping reconnect attempts and stale listeners.
+9. Unbounded caches, memory leaks, excessive history sync and repeated authentication writes.
+10. Message queue persistence, delivery failures and bridge-to-terminal acknowledgment behavior.
+
+Build an incident timeline correlating each observed disconnection with system, application and network evidence.
+
+Classify every suspected cause as VERIFIED, DISPROVED or UNRESOLVED.
+
+Do not claim a root cause merely because two events occurred close together.
+
+4. Implement Safe Permanent Repairs
+
+Fix only causes supported by evidence.
+
+If multi-file authentication is creating a measurable bottleneck, evaluate supported approaches:
+
+- Safe caching of Signal key reads.
+- Write serialization and atomic persistence.
+- Properly designed persistent authentication storage.
+- A database-backed auth store if its benefits and safe migration are demonstrated.
+
+Never blindly delete old "lid-mapping", "pre-key", "sender-key", "session", "identity-key", or app-state files.
+
+Before any auth-state mutation:
+
+1. Obtain a consistent recoverable backup of the complete authentication state.
+2. Restrict backup permissions and exclude credentials from Git and logs.
+3. Validate backup integrity and restoration capability.
+4. Test proposed changes with isolated data.
+5. Prove that existing mappings, sessions and cryptographic keys remain accessible.
+6. Establish an executable rollback path.
+
+If safe cleanup cannot be proven, do not delete those files. Implement a safer approach instead.
+
+5. Reconnection Reliability
+
+Implement or correct the following where necessary:
+
+- Explicit disconnect-reason classification.
+- Bounded exponential-backoff reconnection with jitter.
+- Prevention of simultaneous socket instances for the same session.
+- Listener and resource cleanup.
+- Correct credential persistence.
+- Connection health checks and observability.
+- Durable inbound message handling with deduplication and delivery acknowledgment.
+- Automatic recovery for recoverable disconnections.
+- Explicit handling of nonrecoverable authentication failures without destroying credentials.
+
+Do not create infinite rapid reconnect loops.
+
+WhatsApp receiving a message must not depend on an unrelated backup daemon, verification task or coding agent finishing its work.
+
+6. Production Deployment
+
+First perform read-only diagnostics.
+
+Apply the smallest evidence-supported patch.
+
+Run syntax checks, focused tests and isolated integration tests before deployment.
+
+Avoid restarting a healthy active connection unnecessarily.
+
+If a bridge restart is essential:
+
+- Preserve queued messages and delivery state.
+- Protect in-flight delivery with acknowledgments and deduplication.
+- Select a safe deployment boundary.
+- Restart only the affected WhatsApp service.
+- Verify automatic reconnection using existing credentials.
+- Restore the previous version immediately if regression is detected.
+
+Never restart or kill unrelated processes.
+
+7. Mandatory Independent Acceptance Tests
+
+Execute and provide evidence for:
+
+1. Existing authentication remains valid.
+2. WhatsApp connects successfully.
+3. Unexpected disconnect recovery works.
+4. Only one active socket owns the session.
+5. Repeated reconnect attempts do not leak listeners or resources.
+6. Signal keys remain readable and writable.
+7. Private and group messages route to the correct agents.
+8. Messages received during connection downtime are handled according to verified delivery guarantees.
+9. Existing native commands and terminal delivery remain functional.
+10. CPU, memory, file I/O and event-loop behavior improve or stay within measured acceptable bounds.
+
+Use isolated fault injection where possible. Do not deliberately break production merely to produce test results.
+
+Monitor the repaired service for a meaningful observation window. Do not fabricate long-term uptime evidence.
+
+8. Git and Infrastructure Integrity
+
+Preserve existing Infrastructure Source of Truth and global trust protocols.
+
+Do not change unrelated repositories or globally installed agent behavior.
+
+For authorized code changes, follow the existing safe Git workflow, including the required commit convention, remote verification and no force-push.
+
+Never commit credentials, authentication backups or secrets.
+
+9. Final Evidence Report
+
+Return:
+
+- Exact root cause or causes, with independent evidence.
+- Previous claims proven true or false.
+- Exact files and configurations changed.
+- Before/after measured resource consumption.
+- Authentication file counts and any justified retention changes.
+- Service status and actual reconnect observations.
+- Results of all 10 independent acceptance tests.
+- Any unresolved risks or untested long-term claims.
+- Rollback verification.
+- Git commit SHA and verified remote SHA, where applicable.
+
+PASS means independently demonstrated behavior, not merely that code exists or a test prints PASS.
+
+Do not request user decisions, do not expand scope, and do not stop after producing a plan.
+
+Investigate, safely repair, independently verify and report the actual result.
+
+START NOW.

@@ -772,7 +772,15 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       } catch (err) {
         throw new Error(`Target window ${targetWindow} not accessible: ${err.message}`);
       }
-    }
+    // Dismiss plan mode if active on target AGY window before sending prompt
+    try {
+      const paneMode = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 1500 });
+      if (paneMode.includes('plan ·') && (paneMode.includes('? for shortcuts') || paneMode.includes('shortcuts'))) {
+        console.log(`[WA Bridge] 🔄 Target ${targetWindow} is in plan mode. Cycling to normal execution mode via BTab...`);
+        execFileSync('tmux', ['send-keys', '-t', targetWindow, 'BTab']);
+        execFileSync('/usr/bin/python3', ['-c', 'import time; time.sleep(0.3)'], { timeout: 1000 });
+      }
+    } catch (e) {}
 
     const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+.*)?$/.test(cleanPrompt) && cleanPrompt.length <= 500 && !cleanPrompt.includes('\n');
     if (isSlashCommand) {
