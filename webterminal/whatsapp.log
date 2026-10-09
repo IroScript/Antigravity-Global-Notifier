@@ -18251,3 +18251,18 @@ Closing session: SessionEntry {
 [WA Bridge] ⚡ cmd 4683 (agy:0)
 [WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0FC70581D99433FC039)
 [WA Bridge] 💻 cmd output 4684 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4686)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5595
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0ADB183C7345D727F04)
+[WA Bridge] ✅ Reply delivered to 8801955333555@s.whatsapp.net (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (A54AA2B148A302FD7C16BDD32CA84291, seq: 216): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB04743DD5F3212770FA3, seq: 243): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
