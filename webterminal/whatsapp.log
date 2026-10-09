@@ -62592,3 +62592,15 @@ Proceed with the scoped investigation and repair.
 [WA Bridge] Sent ready notice to: 82935919157317@lid
 [WA Bridge] Connection update: close
 [WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AB90E26C0B1F41C7D9)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
