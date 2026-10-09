@@ -3849,3 +3849,7 @@ Keep the response within 10 lines. No questions.
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
 [WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08DD84A4C9B2A9702E0)
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D4FE6CD676503F092E)
