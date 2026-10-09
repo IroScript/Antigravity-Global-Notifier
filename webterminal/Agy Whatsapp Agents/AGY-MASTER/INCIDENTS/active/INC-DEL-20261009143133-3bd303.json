@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009143133-3bd303",
+  "timestamp": "2026-10-09T14:31:33.287083+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "view_file",
+  "details": {
+    "AbsolutePath": "/home/azureuser/IroScript_Projects/OpenAI_Codex/agent.py"
+  },
+  "decision": "DENIED",
+  "reason": "Agent [yt] attempted cross-project access to [codex] path: /home/azureuser/IroScript_Projects/OpenAI_Codex/agent.py",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}

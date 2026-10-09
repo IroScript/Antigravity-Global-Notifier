@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009143136-d6ef14",
+  "timestamp": "2026-10-09T14:31:36.854851+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "view_file",
+  "details": {
+    "AbsolutePath": "/home/azureuser/.gemini/antigravity-cli/brain/some-conv-id/transcript.jsonl"
+  },
+  "decision": "DENIED",
+  "reason": "Agent [yt] cannot inspect session transcripts or brain: /home/azureuser/.gemini/antigravity-cli/brain/some-conv-id/transcript.jsonl",
+  "rule_id": "RULE_79_BRAIN_ISOLATION"
+}
