@@ -1,1 +1,75 @@
-[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Tomake ami prompt fillup er jonno 5 ti worker aaar veo er jonno 5 ti worker sombolito docker khujte bolsi....eita delete kore dao....aar oi docker khujo.....from google drive, lical backups
+[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Thik ase,,,cloack browser must.....
+
+Aaar 5 ti,  5ti mot 10 ti prithok worker toiri koro for prompt, seo,,,,,and another one is for google veo extension video generation 
+
+আপনার প্রয়োজন একটি Docker পরিবেশে ৫টি আলাদা Chrome Automation Worker, যেখানে একটি Worker কাজ শেষ করলে পরেরটি কাজ শুরু করবে।
+
+প্রতিটি Worker-এর নিজস্ব IP, Browser Profile, Cookies, Session, Storage ও Configuration থাকবে। আর ব্রাউজার হিসেবে থাকবে GitHub-এর CloakBrowser।
+
+তবে গুরুত্বপূর্ণ বিষয়: ২৫টি সেটিংস ব্যবহার করেও ১০০% বট শনাক্তকরণ এড়ানোর নিশ্চয়তা নেই। কারণ ওয়েবসাইটগুলো শুধু IP নয়, নেটওয়ার্ক, ব্রাউজার ও আচরণগত সংকেতও বিশ্লেষণ করতে পারে।
+
+### ২৫টি কনফিগারেশন
+
+| #   | সেটিংস                   | উদ্দেশ্য                              |
+| --- | ------------------------ | ------------------------------------- |
+| ১   | পৃথক Public IP           | প্রত্যেক Worker-এর আলাদা বহির্গামী IP |
+| ২   | পৃথক Proxy               | Worker অনুযায়ী নেটওয়ার্ক সংযোগ        |
+| ৩   | Proxy Authentication     | আলাদা পরিচয়পত্র                       |
+| ৪   | DNS Configuration        | নির্দিষ্ট DNS Resolver                |
+| ৫   | WebRTC Network Policy    | অনিচ্ছাকৃত IP প্রকাশ নিয়ন্ত্রণ        |
+| ৬   | Browser Profile          | আলাদা ব্রাউজার পরিচিতি                |
+| ৭   | Cookie Jar               | কুকি পৃথক রাখা                        |
+| ৮   | Local Storage            | স্থানীয় তথ্য পৃথক রাখা                |
+| ৯   | IndexedDB                | ব্রাউজার ডাটাবেস পৃথক রাখা            |
+| ১০  | Cache Storage            | ক্যাশ পৃথক রাখা                       |
+| ১১  | User-Agent Compatibility | ব্রাউজার সংস্করণের সামঞ্জস্য          |
+| ১২  | Client Hints Consistency | ব্রাউজার তথ্যের সামঞ্জস্য             |
+| ১৩  | Screen Resolution        | নির্দিষ্ট প্রদর্শনমাত্রা              |
+| ১৪  | Device Pixel Ratio       | প্রদর্শনের ঘনত্ব                      |
+| ১৫  | Timezone                 | সময় অঞ্চল নির্ধারণ                    |
+| ১৬  | Locale                   | ভাষা ও অঞ্চল নির্ধারণ                 |
+| ১৭  | Accept-Language          | HTTP ভাষা সেটিং                       |
+| ১৮  | Fonts                    | প্রয়োজনীয় ফন্ট উপলব্ধতা               |
+| ১৯  | Canvas Compatibility     | গ্রাফিক্স সক্ষমতার সামঞ্জস্য          |
+| ২০  | WebGL Compatibility      | GPU ও গ্রাফিক্স সক্ষমতার সামঞ্জস্য    |
+| ২১  | Hardware Concurrency     | বরাদ্দকৃত CPU অনুযায়ী সামঞ্জস্য       |
+| ২২  | Memory Limits            | Worker অনুযায়ী RAM সীমা               |
+| ২৩  | Session Persistence      | কাজ শেষে Session সংরক্ষণ              |
+| ২৪  | Sequential Job Queue     | একটি শেষ হলে পরেরটি শুরু              |
+| ২৫  | Worker Health & Audit    | ব্যর্থতা, লগ ও পুনরুদ্ধার যাচাই       |
+
+এই তালিকা মূলত আইসোলেশন, সামঞ্জস্য ও নির্ভরযোগ্যতার জন্য। Canvas, WebGL বা Hardware তথ্য মিথ্যা দেখিয়ে শনাক্তকরণ ফাঁকি দেওয়ার নির্দেশনা নয়।
+
+### CloakBrowser দিয়ে কাঠামো
+
+Docker + CloakBrowser
+
+Sequential Queue Controller
+
+W1
+
+Profile 1
+
+W2
+
+Profile 2
+
+W3
+
+Profile 3
+
+W4
+
+Profile 4
+
+W5
+
+Profile 5
+
+W1 → W2 → W3 → W4 → W5 → পুনরাবৃত্তি
+
+যাচাইকৃত গুরুত্বপূর্ণ তথ্য: CloakBrowser-এর অফিসিয়াল GitHub-এ Docker image, পৃথক fingerprint seed, persistent profile ও proxy configuration সমর্থিত। তবে পাঁচটি আলাদা Public IP স্বয়ংক্রিয়ভাবে পাওয়া যায় না; তার জন্য পৃথক নেটওয়ার্ক ব্যবস্থা প্রয়োজন।
+
+GitHub: [CloakHQ/CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
+
+একটি বিষয় জানতে চাই: আপনার ৫টি Worker কি একই ওয়েবসাইটে ৫টি আলাদা অ্যাকাউন্ট চালাবে, নাকি ৫টি ভিন্ন ওয়েবসাইটে কাজ করবে? এটি জানলে কোন সেটিংস সত্যিই আলাদা রাখা প্রয়োজন, তা নির্ধারণ করা যাবে।
