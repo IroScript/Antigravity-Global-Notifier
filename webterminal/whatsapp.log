@@ -18992,3 +18992,45 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 4810 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB076A1C2E1910ED89121)
 [WA Bridge] 💻 cmd output 4811 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB07102E2C13BB8F5227C, seq: 315): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (A5F2E375781FF89F0E07C5F66BA35C7E, seq: 316): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D150761E1BF9E73D80)
+[WA Bridge] 🧠 thinking 4813 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4813)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/Ye4GD
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07F996175A5034148DB)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F7A550A1DC9E388955)
+[WA Bridge] 🧠 thinking 4816 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0717171A747AE4ED165)
+[WA Bridge] ⚡ cmd 4816 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04C1C6EBFFDFFCB642E)
+[WA Bridge] 💻 cmd output 4817 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BC8C3A2C9BD39B0D9A)
+[WA Bridge] ⚡ cmd 4819 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07E76281FF6F7382CE5)
+[WA Bridge] 💻 cmd output 4820 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BBE079A020F6AF6304)
+[WA Bridge] ⚡ cmd 4822 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DFB4C122275A0153D7)
+[WA Bridge] 💻 cmd output 4823 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB026EBB7C97EE4036669)
+[WA Bridge] 🧠 thinking 4825 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08A107C968E44229B90)
+[WA Bridge] ⚡ cmd 4825 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C5BAC77AC8A2AE85CB)
+[WA Bridge] 💻 cmd output 4826 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0666F75DEFE903B5F4B)
+[WA Bridge] 🧠 thinking 4828 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0677CC7968468A581B4)
+[WA Bridge] ⚡ cmd 4828 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09D349FD9B15823D8A3)
+[WA Bridge] 💻 cmd output 4829 (agy:0)
