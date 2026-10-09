@@ -11859,3 +11859,111 @@ Closing session: SessionEntry {
 [WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0AEF003C1176FA05B39)
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB062ABDB172AB4F3E337, seq: 126): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02228A894C778A8871B)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0559C2D532CE60E5CF4)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB067BD8642611CBB03D7, seq: 127): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): 💻 ══════════════════════ 💻
+👑 *[সিএলআই টার্মিনাল থেকে ইনপুট · agy:0]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ ps aux | grep \"[a]gy\"`
+> 🎯 _"Checking agy processes"_"
+
+⚡ _এআই প্রসেসিং শুরু করেছে..._
+══════════════════════
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0DF541A081827D99A51)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ ps aux | grep \"[a]gy\" || true`
+> 🎯 _"Checking AGY processes"_
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0A2983F11067A4A4747)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 4551)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): 💻 ══════════════════════ 💻
+👑 *[সিএলআই টার্মিনাল থেকে ইনপুট · agy:0]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ XDG_RUNTIME_DIR=/run/user/1000 systemctl --user status gitpush-watcher.service --no-pager && cat /home/azureuser/IroScript_Projects/..."
+
+⚡ _এআই প্রসেসিং শুরু করেছে..._
+══════════════════════
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0193532556B484564D8)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > 🧠 *[চিন্তাভাবনা · Ctrl+o]*
+> _পূর্ববর্তী কমান্ডের কার্যকারিতা বুঝতে হবে। সম্ভবত এটি একটি চলমান প্রক্রিয়ার বিস্তারিত তথ্য জানতে ব্যবহৃত হয়েছে। এই প্রক্রিয়ার প্রাসঙ..._
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "💻 ══════════════════════ 💻"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB0D3746B733B3280EE46
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🧠 thinking 4553 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 4553 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > 💻 *[কমান্ড আউটপুট · Ctrl+o]*
+```
+Unit gitpush-watcher.service could not be found.
+```
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
