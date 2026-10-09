@@ -56311,3 +56311,7 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Codex command result bytes=0 delivered=true
 [WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB00B543056AA35991FEE)
 [WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] Holding Codex final answer until its turn-complete notice
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB07CF1FAEDD41B474A90)
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB01243747021879537CC)
+[WA Bridge] Codex final answer delivered after its turn-complete notice
