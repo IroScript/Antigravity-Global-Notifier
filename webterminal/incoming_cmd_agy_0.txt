@@ -1,1 +1,1 @@
-[ছবি ইনপুট: /home/azureuser/.webterminal/media/media_1791557848197_A589DB62.jpeg]. ইউজারের ক্যাপশন/প্রশ্ন: "Egulo frappe agent er logs". অনুগ্রহ করে view_file("/home/azureuser/.webterminal/media/media_1791557848197_A589DB62.jpeg") ব্যবহার করে ছবিটি দেখুন এবং বিস্তারিত সঠিক উত্তর দিন।
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Tahole aar kon kon agent evabe vul configure. Kora?
