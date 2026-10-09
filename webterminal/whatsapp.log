@@ -18037,3 +18037,48 @@ Closing session: SessionEntry {
     remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
   }
 }
+[WA Bridge] 📩 Message from Iraq bhai (8801955333555@s.whatsapp.net): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0A237858F2199D4304A)
+[WA Bridge] 📤 Turn done for agy:0 (step 4617)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3323
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0024F40EABDBA2DD548)
+[WA Bridge] ✅ Reply delivered to 8801955333555@s.whatsapp.net (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB04EFCBACE7658D4D5C9, seq: 141): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📩 Message from Iraq bhai (8801955333555@s.whatsapp.net): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB05D4E09199EE1A321AB)
+[WA Bridge] 📩 Message from Iraq bhai (8801955333555@s.whatsapp.net): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] 📩 Message from Iraq bhai (8801955333555@s.whatsapp.net): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB03DF83A64FB5E86CC6B)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB02B5977A1CC4E6ABCB1)
