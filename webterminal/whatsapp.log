@@ -8260,3 +8260,30 @@ Delete
 [WA Bridge] ⚡ cmd 4050 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09507E8609878B3AE2A)
 [WA Bridge] 💻 cmd output 4051 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB033FEC6E78C8E1C3DE4)
+[WA Bridge] ⏱️ task 4053 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB082312E7BE6BBD24C9E)
+[WA Bridge] 🧠 thinking 4056 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4056)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 797
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0620C2AC44FB0296855)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D448D6A7916E4B95C0)
+[WA Bridge] ⚡ cmd 4059 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C8244A873F71A2631D)
+[WA Bridge] 💻 cmd output 4060 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C99F672BB3A8055C0D)
+[WA Bridge] 🧠 thinking 4062 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B7788E94A26DF11897)
+[WA Bridge] ⚡ cmd 4062 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06DAFF2A9BD73C3FD35)
+[WA Bridge] 💻 cmd output 4063 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01E3F47282A79B58B83)
+[WA Bridge] 🧠 thinking 4065 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4065)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/oG7E5
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D1970F38A069F9CBFC)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
