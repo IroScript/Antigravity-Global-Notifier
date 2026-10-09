@@ -1,7 +1,7 @@
 {
   "codex": {
     "id": "120363433006199651@g.us",
-    "name": "AGY \u00b7 OpenAI Codex",
+    "name": "AGY · OpenAI Codex",
     "key": "codex",
     "window": "agy:codex",
     "cwd": "/home/azureuser/IroScript_Projects/OpenAI_Codex",
@@ -10,73 +10,72 @@
   },
   "research": {
     "id": "120363413333339676@g.us",
-    "name": "AGY \u00b7 Ask & Research",
+    "name": "AGY · Ask & Research",
     "key": "research",
     "window": "agy:research",
     "cwd": "/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Ask-And-Research"
   },
   "yt": {
     "id": "120363430650656655@g.us",
-    "name": "AGY \u00b7 YouTube Pipeline",
+    "name": "AGY · YouTube Pipeline",
     "key": "yt",
     "window": "agy:yt",
-    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube",
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation",
     "git_remote": "git@github.com:IroScript/Youtube-Pipeline.git",
     "whatsapp_status": "CONNECTED"
   },
   "frappe": {
-    "id": "120363430126311832@g.us",
-    "name": "AGY \u00b7 Frappe & ERPNext",
+    "id": "120363183660021425@g.us",
+    "name": "PMD, PE, Alco",
     "key": "frappe",
     "window": "agy:frappe",
     "cwd": "/home/azureuser/IroScript_Projects/Frappe-erp-Alco"
   },
   "tg": {
     "id": "120363411604185129@g.us",
-    "name": "AGY \u00b7 Telegram Bot",
+    "name": "AGY · Telegram Bot",
     "key": "tg",
     "window": "agy:tg",
-    "cwd": "/home/azureuser/IroScript_Projects/Social Media/telegram-bot"
+    "cwd": "/home/azureuser/IroScript_Projects/Telegram-Bot"
   },
   "kids": {
     "id": "120363428733621560@g.us",
-    "name": "AGY \u00b7 Kids Tube",
+    "name": "AGY · Kids Tube",
     "key": "kids",
     "window": "agy:kids",
-    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/kids_tube_with_folder_seection"
+    "cwd": "/home/azureuser/IroScript_Projects/Kids-Tube"
   },
   "rust": {
-    "id": "120363430134546653@g.us",
-    "group_id": "120363399508280221@g.us",
-    "name": "AGY \u00b7 Rust Task",
+    "id": "120363399508280221@g.us",
+    "name": "TRUSTED BUY SELL COMMUNITY ✅",
     "key": "rust",
     "window": "agy:rust",
-    "cwd": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note"
+    "cwd": "/home/azureuser/IroScript_Projects/Rust_Task_With_Time_Keeping_And_Live_Note"
   },
   "history": {
     "id": "120363429326945679@g.us",
-    "name": "AGY \u00b7 Digital History",
+    "name": "AGY · Digital History",
     "key": "history",
     "window": "agy:history",
     "cwd": "/home/azureuser/IroScript_Projects/Personal Life/PERSONAL AI AGENT"
   },
   "article": {
     "id": "120363412465134469@g.us",
-    "name": "AGY \u00b7 Article Publishing",
+    "name": "AGY · Article Publishing",
     "key": "article",
     "window": "agy:article",
     "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform"
   },
   "game": {
     "id": "120363412755041087@g.us",
-    "name": "AGY \u00b7 3D Game Design",
+    "name": "AGY · 3D Game Design",
     "key": "game",
     "window": "agy:game",
     "cwd": "/home/azureuser/IroScript_Projects/Article_Publishing_Management/3D-Game-Design-Studio"
   },
   "report": {
     "id": "120363414179014429@g.us",
-    "name": "AGY \u00b7 Reporting Agent",
+    "name": "AGY · Reporting Agent",
     "key": "report",
     "window": "agy:report",
     "cwd": "/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/Agy Whatsapp Agents/Reporting-Agent"
