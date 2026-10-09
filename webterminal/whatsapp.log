@@ -11641,3 +11641,125 @@ Closing session: SessionEntry {
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
 [WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB0CDD604E908241EEAB4
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ uptime && free -h && df -h / && (ps -p 318878 -o pid,ppid,user,stat,etime,rss,args || true) && (ss -tupn -p | grep 318878 || true)`
+> 🎯 _"Collecting telemetry"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB0F8D3CE77D401FED128
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB09BE697024DB93814CE
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): 💻 ══════════════════════ 💻
+👑 *[সিএলআই টার্মিনাল থেকে ইনপুট · agy:0]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈"
+
+⚡ _টার্মিনাল কম..."
+
+⚡ _এআই প্রসেসিং শুরু করেছে..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB08D846014CAA0004EC0
+[WA Bridge] 🧠 thinking 4535 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 4535 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 4536 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > 🧠 *[চিন্তাভাবনা · Ctrl+o]*
+> _The system's load average is moderate, with a small number of users. Observing the resource utilization data is the next step to identi..._
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363430377910102@g.us, msgId=3EB028EA52005CE977A5C8
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB00892A9D4592B88EE9D)
+[WA Bridge] ⚡ cmd 4538 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 4539 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "> ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02A2D09E31E21499BCF)
+[WA Bridge] ⚡ cmd 4541 (agy:0)
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 4542 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈
+
+╭─ NEURAL RESPONSE ─╮
+টেলিমেট্রি পর্যালোচনা সম্পন্ন হয়েছে। পরবর্তী কমান্ড বা নির্দেশের অপেক্ষায় আছি।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🕐 TIME  · ১১:৩৩ PM         │
+│ 🤖 MODEL · accept-edits     │
+│ ⚡ MODE   · GEMINI 3.8 FLASH │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "> ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363430377910102@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363430377910102@g.us, enqueuing to outbox: rate-overlimit
