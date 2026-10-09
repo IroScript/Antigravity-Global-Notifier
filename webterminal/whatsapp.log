@@ -4107,3 +4107,63 @@ Keep the response within 10 lines. No questions.
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
 [WA Bridge] Ignored message from other sender: 120363423943512715@g.us 225993327390778@lid
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 202766127468744@lid
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Taake to ami youtube er docker dekhte bolsi....se ki article folder access kirese naaki? ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️
+
+🔗 https://paste.rs/2UjhI
+
+╭─ NEURAL RESPONSE ─╮
+▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️
+
+*সরাসরি উত্তর ও মূল ফাইন্ডিংস*
+*১. কন্টেইনারের বর্তমান রানটাইম অবস্থা:* বর্তমানে এই Azure VM-এ কোনো সক্রিয় বা রানিং ডকার কন্টেইনার নেই। সিস্টেমে সরাসরি `docker` কমান্ড পাওয়া যায়নি (`bash: docker: command not found`, `rc=127`)।
+
+*২. ডকার কন্টেইনার কনফিগারেশনগুলোর সন্ধান:* তবে YouTube Automation প্রজেক্টের ভেতরে কন্টেইনার আর্কিটেকচার, ডকারফাইল ও ডকার-কম্পোজ ফাইলগুলো পাওয়া গেছে।
+
+---
+
+*এগুলো কিসের উপরে তৈরি ছিল (What They Were Based On)*
+
+১. *ChatGPT অটোমেশন ও ডাটাবেজ ফিলআপ ওয়ার্কার (`db-fillup-worker-1`):*
+• *অবস্থান ও ফাইল:* [`docker_workers/Dockerfile`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_workers/Dockerfile), [`docker_workers/docker-compose.yml`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_workers/docker-compose.yml), এবং [`docker_workers/worker_server.py`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_workers/worker_server.py)।
+• *বেস ইমেজ:* `mcr.microsoft.com/playwright/python:v1.44.0-jammy`।
+• *উদ্দেশ্য:* Playwright ও ভার্চুয়াল ডিসপ্লে (`Xvfb :99`) ব্যবহার করে ChatGPT (`https://chatgpt.com`) থেকে স্বয়ংক্রিয়ভাবে ভিডিওর কনসেপ্ট আইডিয়া, প্রম্পট ও এসইও মেটাডাটা তৈরি করা এবং তা লোকাল SQLite ডাটাবেজে (`youtube_pipeline.db`) ইনসার্ট করা। এর ভেতরে Uvicorn/FastAPI সার্ভার পোর্ট `8000`-এ ইন্টারনাল এপিআই প্রদান করে।
+
+২. *Google Flow / Veo 3.1 ভিডিও জেনারেশন ওয়ার্কার ক্লাস্টার (`flow-worker-1` থেকে `flow-worker-5`):*
+• *অবস্থান ও ফাইল:* [`docker_flow_workers/Dockerfile`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/Dockerfile), [`docker_flow_workers/docker-compose.yml`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/docker-compose.yml), [`docker_flow_workers/flow_worker_server.py`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/flow_worker_server.py), এবং [`docker_flow_workers/flow_queue_manager.py`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/flow_queue_manager.py)।
+• *বেস আর্কিটেকচার:* Playwright হেডলেস ব্রাউজার + কাস্টম ক্রোম এক্সটেনশন ([`10SecNewExtension`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/10SecNewExtension)), `Xvfb :99`, এবং FastAPI সার্ভার (হোস্ট পোর্ট `8101`–`8105` থেকে কন্টেইনার পোর্ট `8102`)।
+• *উদ্দেশ্য:* Google Flow (`flow.google.com` - Veo 3.1 Ultra Tier) এ প্রম্পট সাবমিট করা, রিলেক্সড কিউ (Zero Credit) হ্যান্ডল করা, ব্রাউজার সুপারভিশন পরিচালনা করা এবং তৈরি হওয়া এমপি৪ ভিডিও ফাইল স্বয়ংক্রিয়ভাবে ডাউনলোড করে ডাটাবেজের সাথে সিঙ্ক করা।
+
+৩. *প্রম্পট ও এসইও ভ্যালিডেশন গার্ড ওয়ার্কার (`prompt-seo-worker`):*
+• *অবস্থান ও ফাইল:* [`docker_flow_workers/Dockerfile.prompt_seo`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/Dockerfile.prompt_seo), [`docker_flow_workers/flow_guards.py`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker_flow_workers/flow_guards.py)।
+• *উদ্দেশ্য:* পাইপলাইনের প্রম্পট ও মেটাডাটা ফিল্ডগুলোর কাঠামো ডাটাবেজে সঠিক ও সম্পূর্ণ আছে কি না তা ব্যাকগ্রাউন্ডে স্বয়ংক্রিয়ভাবে অডিট করা।
+
+৪. *সমন্বিত মাস্টার নেটওয়ার্ক কনফিগারেশন:*
+• *অবস্থান ও ফাইল:* [`docker-compose.all.yml`](file:///home/azureuser/IroScript_Projects/Social%20Media/youtube/Youtube%20Automation/docker-compose.all.yml)।
+• *উদ্দেশ্য:* ChatGPT মেটাডাটা ওয়ার্কার এবং Veo 3.1 ভিডিও ওয়ার্কারদের একটি ব্রিজ নেটওয়ার্কে (`youtube_pipeline_net`, সাবনেট `172.25.0.0/16`) একসাথে হোস্ট ও মাউন্ট করা।
+
+৫. *অন্যান্য প্রজেক্টের কন্টেইনার কনফিগারেশন:*
+   - [`Article-Publishing-Platform`](file:///home/azureuser/IroScript_Projects/Article_Publishing_Management/Article-Publishing-Platform/docker-compose.yml): Next.js ও Node.js ওয়েব অ্যাপ।
+   - [`telegram-bot`](file:///home/azureuser/IroScript_Projects/Social%20Media/telegram-bot/docker-compose.yml): টেলিগ্রাম বট সার্ভিস ও ডেডিকেটেড ডাটাবেজ এপিআই (`Dockerfile.db_api`)।
+
+---
+
+*এমপিরিক্যাল টেস্ট মেথডোলজি (Setting 74)*
+• *(১) কী টেস্ট করা হলো:* ডকার ডেমন/বাইনারির উপস্থিতি, রানিং কন্টেইনার তালিকা এবং ইউটিউব ও সংশ্লিষ্ট প্রজেক্টে বিদ্যমান ডকার কনফিগারেশন ফাইল ও ডকারফাইল।
+• *(২) কীভাবে টেস্ট করা হলো:* `docker ps -a`, `which docker`, `sudo dpkg -l | grep -i docker`, এবং ফাইলসিস্টেমে `find` ও `view_file` এক্সিকিউশন করে।
+• *(৩) কেন টেস্ট করা হলো:* ডকার কন্টেইনারগুলোর প্রকৃত উপস্থিতি এবং সেগুলোর প্রযুক্তিগত ভিত্তি ও উদ্দেশ্য নিশ্চিত করতে।
+• *(৪) কী উপায়ে টেস্ট ফলাফল নির্ধারিত হলো:* রানটাইম বাইনারি টেস্টে `rc=127` (ডকার হোস্ট মেশিনে সরাসরি অনুপস্থিত), এবং ফাইলসিস্টেম টেস্টে `rc=0` সহ নির্দিষ্ট কনফিগারেশন ও কোড ফাইলসমূহ সরাসরি প্রদর্শিত হয়েছে।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🕐 TIME  · ০৭:৫৬ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+│ ⚡ MODE   · HIGH             │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB097E7825CD5664B5307)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02874325947CE8DF81E)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 2688)
