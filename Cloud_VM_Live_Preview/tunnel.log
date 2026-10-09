@@ -374,3 +374,5 @@
 2026-10-09T10:32:19Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=aca76474-3ba3-461e-a409-2fa40dd9fb7f status=pass target=region2.v2.argotunnel.com
 2026-10-09T10:32:19Z INF precheck component="Cloudflare API" details="API is reachable" run_id=aca76474-3ba3-461e-a409-2fa40dd9fb7f status=pass target=api.cloudflare.com:443
 2026-10-09T10:32:19Z INF precheck complete hard_fail=false run_id=aca76474-3ba3-461e-a409-2fa40dd9fb7f suggested_protocol=quic
+2026-10-09T15:21:53Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-09T15:21:53Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://limiting-pursuit-gas-quizzes.trycloudflare.com/api/stats event=0 ip=198.41.192.7 type=http
