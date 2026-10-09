@@ -8579,3 +8579,9 @@ Kon kon file edit korte hoise?
 [WA Bridge] ⚡ cmd 1432 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BE79199D1C5872C0AC)
 [WA Bridge] 💻 cmd output 1433 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1435)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 9301
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB013E0D31E254CE37A92)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
