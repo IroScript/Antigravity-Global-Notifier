@@ -5306,3 +5306,18 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 3157 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02F87716F80C2952D41)
 [WA Bridge] 💻 cmd output 3158 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03EF4A2576FE60BDC64)
+[WA Bridge] ⚡ cmd 3160 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0355D2D59AE8EF247F1)
+[WA Bridge] 💻 cmd output 3161 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B4526AE48837078D1B)
+[WA Bridge] ⚡ cmd 3163 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB005050E910CB5748B93)
+[WA Bridge] 💻 cmd output 3164 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB089CCE73069B85D7286)
+[WA Bridge] ⏱️ task 801 (agy:yt)
+[WA Bridge] 🛑 Received SIGTERM. Performing clean socket close & graceful exit...
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
