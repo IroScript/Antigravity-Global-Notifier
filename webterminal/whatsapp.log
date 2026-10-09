@@ -2568,3 +2568,95 @@ Codex: লোকাল ফোল্ডার আছে, কিন্তু আ�
 [WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01342D4A29F4AA0A98B)
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ### নতুন অডিটে কী বের হয়েছে?
+
+আপনার দেওয়া রিপোর্ট অনুযায়ী, ১৩টির মধ্যে ৪টি প্রজেক্টের Git ব্যবস্থায় বিশেষ মনোযোগ প্রয়োজন।
+
+| প্রজেক্ট          | সমস্যা                   | প্রস্তাবিত সমাধান                        |
+| ----------------- | ------------------------ | ---------------------------------------- |
+| Ask & Research    | নিজস্ব Git নেই           | আলাদা GitHub রিপোজিটরি                   |
+| Sentinel Reporter | Master-এর সাবফোল্ডার     | Master-এর Git দিয়েই ব্যাকআপ নিশ্চিত করা |
+| OpenAI Codex      | লোকাল Git আছে, রিমোট নেই | GitHub রিমোট যুক্ত করা                   |
+| Frappe ERP        | মূল ফোল্ডারে Git নেই     | প্রকৃত অ্যাপের Git পাথ ম্যাপ করা         |
+
+### সবচেয়ে গুরুত্বপূর্ণ বিষয়
+
+১. একই GitHub ব্যবহার করা সবসময় সমস্যা নয়। Reporter যদি Master-এর অংশ হয়, তাহলে একই রিপোজিটরি ব্যবহার করাই স্বাভাবিক। অকারণে আলাদা Git তৈরি করা উচিত নয়।
+
+২. Research-এর আলাদা Git দরকার কি না, সেটি তার প্রকৃত আর্কিটেকচারের ওপর নির্ভর করে। আলাদা প্রজেক্ট হিসেবে পরিচালিত হলে নিজস্ব রিপোজিটরি যুক্তিযুক্ত।
+
+৩. Codex-এর GitHub রিমোট নেই, কিন্তু এর অর্থ সব কাজ হারিয়ে যাবে এমন নয়। অন্য ব্যাকআপ থাকতে পারে। তবে GitHub-এ স্বয়ংক্রিয় পুশের প্রমাণ নেই।
+
+৪. দশটি পরীক্ষায় PASS দেখানো হয়েছে, কিন্তু প্রকৃত WhatsApp → Terminal → Agent → WhatsApp এবং Local Git → GitHub কার্যক্রম সফল হয়েছে, এমন প্রমাণ রিপোর্টে নেই।
+
+### আমার পরামর্শ
+
+এখনই পরিকল্পনাটি বাস্তবায়ন না করে প্রথমে তিনটি বিষয় যাচাই করা উচিত:
+
+* বিদ্যমান কোনো Git বা ব্যাকআপ ব্যবস্থা নষ্ট হবে কি না।
+
+* প্রতিটি প্রজেক্টের সব প্রয়োজনীয় ফাইল GitHub-এ পৌঁছাচ্ছে কি না।
+
+* WhatsApp থেকে পাঠানো বাস্তব নির্দেশ সঠিক এজেন্টে পৌঁছে তার উত্তর একই গ্রুপে ফিরছে কি না।
+
+চূড়ান্ত রায়: সমস্যাগুলো শনাক্ত করা হয়েছে বলে রিপোর্টে দাবি আছে, কিন্তু সমাধান এখনো বাস্তবায়িত হয়নি। নতুন রিপোজিটরি তৈরি বা Git পরিবর্তনের আগে বিদ্যমান কাঠামোর নিরাপত্তা যাচাই জরুরি।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07A3AD0C75F1A0EB72D)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D3B3BB4F3D91DC4536)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 2283)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03E479D3F7641AFC984)
+[WA Bridge] 🧠 thinking 2285 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03660DE603F845EC17F)
+[WA Bridge] ⚡ cmd 2285 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09A6EC16D3EB16AEBC2)
+[WA Bridge] 💻 cmd output 2286 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AF8AF32625901392A5)
+[WA Bridge] ⚡ cmd 2288 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02605F7698945F1BF19)
+[WA Bridge] 💻 cmd output 2289 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB019F229AB8B9EC3AEEC)
+[WA Bridge] ⚡ cmd 2291 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DFCDB4B5EFEEECF0DB)
+[WA Bridge] 💻 cmd output 2292 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D7A4D25B9BABA9E03A)
+[WA Bridge] ⚡ cmd 2294 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05CDD147A01B9B08A36)
+[WA Bridge] 💻 cmd output 2295 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A48F5EF972C76C5442)
+[WA Bridge] ⚡ cmd 2297 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB081029804F852F780FD)
+[WA Bridge] 💻 cmd output 2298 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EAB417EAAF0ED3EBEA)
+[WA Bridge] ⚡ cmd 2300 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D23DB6E6CA1B56E325)
+[WA Bridge] 💻 cmd output 2301 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05B6F8EC801C1E5B816)
+[WA Bridge] 🧠 thinking 2303 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0114CAE2EBC71E45061)
+[WA Bridge] ⚡ cmd 2303 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06ACFDF8273F2ADC042)
+[WA Bridge] 💻 cmd output 2304 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FA5C0EC7F83DA655A3)
+[WA Bridge] 🧠 thinking 2306 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01C3261E7D818617D3B)
+[WA Bridge] ⚡ cmd 2306 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB088DE0ECB52F677ACC1)
+[WA Bridge] 💻 cmd output 2307 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06D66D517C67F7D18FB)
+[WA Bridge] ⚡ cmd 2309 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB072820266339AFCF725)
+[WA Bridge] 💻 cmd output 2310 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05BB5BA739B99A6949A)
+[WA Bridge] 🧠 thinking 2312 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C8288A3002CA984EC2)
+[WA Bridge] ⚡ cmd 2312 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ADB24BDDFF4F78B235)
+[WA Bridge] 💻 cmd output 2313 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06DAD9E682208C122BF)
+[WA Bridge] 🧠 thinking 2315 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2315)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/TVppU
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03891C741902CD9D955)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
