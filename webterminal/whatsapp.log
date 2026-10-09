@@ -6473,3 +6473,38 @@ Closing session: SessionEntry {
   }
 }
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 240085115080752@lid
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ### চূড়ান্ত রায়: `PARTIALLY SECURE`
+
+আপনার রিপোর্ট অনুযায়ী ৫টি সুরক্ষা স্তর থাকলেও সম্পূর্ণ এজেন্ট আইসোলেশন নিশ্চিত হয়নি। বিশেষ করে দুটি গুরুতর দুর্বলতা পাওয়া গেছে।
+
+| সমস্যা                         | ঝুঁকি                                                     | অগ্রাধিকার |
+| ------------------------------ | --------------------------------------------------------- | ---------- |
+| cwd_arg দিয়ে এজেন্ট শনাক্ত    | অন্য এজেন্টের পরিচয় গ্রহণ করে নিরাপত্তা এড়ানোর সম্ভাবনা | P0         |
+| Telegram ও Kids-এর পাথ অমিল    | অনুমোদিত ফোল্ডার ভুল শনাক্ত হতে পারে                      | P0         |
+| একই Linux ব্যবহারকারী          | হুক এড়িয়ে অন্যের ফাইল পড়া বা পরিবর্তনের সম্ভাবনা       | P0         |
+| একই tmux সার্ভার               | অন্য এজেন্টের টার্মিনাল দেখার বা নিয়ন্ত্রণের সম্ভাবনা    | P0         |
+| শুধু কোডে ১:১ WhatsApp ম্যাপিং | বাস্তবে ভুল গ্রুপে বার্তা যাওয়া অসম্ভব—এমন প্রমাণ নেই    | P1         |
+
+### সবচেয়ে গুরুত্বপূর্ণ সংশোধন
+
+এজেন্টের পরিচয় কখনো তার নিজের পাঠানো `cwd` বা কমান্ডের ওপর নির্ভর করে নির্ধারণ করা যাবে না। পরিচয় আসতে হবে বিশ্বস্ত সেশন পরিচয় বা OS-নির্ধারিত নিরাপত্তা পরিচয় থেকে।
+
+এছাড়া শুধু হুক দিয়ে ফাইল, প্রসেস ও tmux-এর সম্পূর্ণ বিচ্ছিন্নতা সম্ভব নয়। OS-স্তরের অনুমতি বা পৃথক স্যান্ডবক্স প্রয়োজন।
+
+সূত্র: [Linux namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html) · [Linux filesystem permissions](https://man7.org/linux/man-pages/man7/path_resolution.7.html) · [tmux manual](https://man7.org/linux/man-pages/man1/tmux.1.html)
+
+আমার সিদ্ধান্ত: বর্তমান সিস্টেমে দুটি নেগেটিভ পরীক্ষা সফল হয়েছে বলে দাবি করা হয়েছে, কিন্তু সব এজেন্টের পারস্পরিক বিচ্ছিন্নতা প্রমাণিত হয়নি। বিশেষ করে `cwd_arg` দুর্বলতা সংশোধন এবং OS-স্তরের বিচ্ছিন্নতা যাচাই ছাড়া `FULLY SECURE` ঘোষণা করা উচিত নয়।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07E05CE41E39862C5AC)
+[WA Bridge] Ignored message from other sender: 120363403514936510@g.us 138238438158511@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05BCFB3A30C6A01E438)
+[WA Bridge] 🧠 thinking 3490 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0292FAC77D77AE444F6)
+[WA Bridge] ⚡ cmd 3490 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB068B3329CD171C424DA)
+[WA Bridge] 💻 cmd output 3491 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB083462299DEB425F940)
+[WA Bridge] ⚡ cmd 3493 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05C829ED197EF3DEFB4)
+[WA Bridge] 💻 cmd output 3494 (agy:0)
