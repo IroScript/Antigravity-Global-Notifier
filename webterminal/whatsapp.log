@@ -7247,3 +7247,55 @@ GitHub: [CloakHQ/CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB00288CD5E4EE907E9D0)
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
+[WA Bridge] 🔓 Authorized message accepted in group 120363430126311832@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430126311832@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0E798499881DB969C92)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0A9F38842A8C3CCC93C)
+[WA Bridge] 🧠 thinking 3802 (agy:0)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB01CB22E3E972F3CAA14)
+[WA Bridge] ⚡ cmd 3802 (agy:0)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0AC1CB64C7D25CF58FA)
+[WA Bridge] 💻 cmd output 3803 (agy:0)
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0941BB010ABDE2CCEAA)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB010A3FEFF8641FFAA39)
+[WA Bridge] ⚡ cmd 3805 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DBA9D4C19130332A83)
+[WA Bridge] 💻 cmd output 3806 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB030C5CC3EC88F47A5D7)
+[WA Bridge] ⚡ cmd 3808 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AB62C3F47F4CC87193)
+[WA Bridge] 💻 cmd output 3809 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 3811)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3405
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DB9460E33CB2D3D47D)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (A509010661090DE99E47DF8154797841, seq: 94): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0656A97D45C45C261B4)
+[WA Bridge] 🧠 thinking 3814 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BA699F8D7E49B1BBEE)
+[WA Bridge] ⚡ cmd 3814 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C36CFCAFB83B50F21A)
+[WA Bridge] 💻 cmd output 3815 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C446479836CCFC4AA1)
+[WA Bridge] ⚡ cmd 3817 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B002744B1CE1CE80F5)
+[WA Bridge] 💻 cmd output 3818 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0404B757252382FB887)
+[WA Bridge] ⚡ cmd 3820 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CECDC0A5B5D6E895D6)
+[WA Bridge] 💻 cmd output 3821 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 3823)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3377
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F274910E139C37CB35)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
