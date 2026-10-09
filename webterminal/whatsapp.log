@@ -20166,3 +20166,9 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB039D3575F4D5EA14BB0, seq: 342): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08F89684FE8A9FC3AFC)
+[WA Bridge] 🧠 thinking 5075 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B411A3F2FF00F53F53)
+[WA Bridge] ⚡ cmd 5075 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FBBCEAE3C284E0D1A9)
+[WA Bridge] 💻 cmd output 5076 (agy:0)
