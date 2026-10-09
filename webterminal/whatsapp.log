@@ -580,3 +580,4 @@
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09513D60BE53BD5DCCD)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363430650656655@g.us 82935919157317@lid
