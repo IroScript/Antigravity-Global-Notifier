@@ -55530,3 +55530,544 @@ Do NOT declare final infrastructure acceptance yourself.
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0116700C968084DF574)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363375813560592@g.us 211025316081837@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363433006199651@g.us): THIS IS A BLOCKER-ONLY FINAL RE-AUDIT.
+
+DO NOT perform another full architecture audit.
+
+You already independently identified exactly 9 authoritative blockers.
+
+AGY has now produced candidate repairs.
+
+Your job is ONLY to independently re-test:
+
+B01 through B09
+
+plus direct regression checks caused by those fixes.
+
+Previously PASS findings remain frozen unless one of these repairs directly
+regressed them.
+
+==================================================
+CANDIDATE COMMITS
+==================================================
+
+Infrastructure-Source-of-Truth:
+
+98fb56de868c18b8eedb6e51db9c732cc38817ce
+
+Whatsapp Master:
+
+bf83dc6b9c56e6206fa26b8b9d5a2cc8180b36ea
+
+Freshly verify:
+
+local HEAD
+origin/main
+git ls-remote
+
+Do not trust builder claims, 155/155 tests, HMAC, or 10-fold verification as
+independent acceptance evidence.
+
+==================================================
+PRODUCTION SAFETY
+==================================================
+
+Production is READ-ONLY for this audit.
+
+DO NOT:
+
+edit production
+commit
+push
+restart services
+kill processes
+tmux send-keys into real coding agents
+modify databases
+modify queues
+rotate credentials
+change system configuration
+
+Any adversarial mutation must happen only in isolated fixtures/clones/test
+services.
+
+==================================================
+B01 — SECRET EXPOSURE
+==================================================
+
+Previous blocker:
+
+tracked plaintext service-account/private key.
+
+Verify separately:
+
+B01-A REPOSITORY SECRET REMOVAL
+
+- offending plaintext file no longer tracked
+- current Git tree contains no plaintext private key
+- secret scanner detects equivalent fixture
+- .gitignore/precommit protections actually block reintroduction
+- no new plaintext secret introduced elsewhere
+
+B01-B CREDENTIAL ROTATION/REVOCATION
+
+Builder explicitly reported:
+
+CREDENTIAL_ROTATION_PENDING_EXTERNAL_ACCESS
+
+Therefore do NOT call the entire security incident fully resolved merely because
+the file disappeared from HEAD.
+
+Determine without exposing secret material whether the leaked credential has
+actually been revoked/rotated.
+
+If not provable:
+
+CREDENTIAL ROTATION:
+PENDING
+
+If the old credential remains active:
+
+B01 overall remains BLOCKER.
+
+Historical Git exposure cannot be fixed by merely deleting the current file.
+
+Do not require force-push/history rewrite.
+
+==================================================
+B02 — FALSE DELIVERED / PENDING RECOVERY
+==================================================
+
+Re-run the exact real-path failure.
+
+Use actual current production implementation in isolated environment:
+
+Baileys-like messages.upsert
+→ real routing
+→ dispatchToTmux
+→ simulated tmux transport
+
+Case 1:
+
+force terminal transport failure.
+
+Expected:
+
+NOT DELIVERED.
+
+Allowed states:
+
+WAITING_TERMINAL
+RETRYING
+UNCERTAIN
+
+Never DELIVERED.
+
+Then restart/reload bridge state.
+
+Expected:
+
+message remains recoverable.
+
+Exact inbound replay must NOT be falsely suppressed as already terminal-delivered.
+
+Case 2:
+
+successful transport.
+
+Expected:
+
+DELIVERED only after actual transport success.
+
+Then exact replay:
+
+zero second terminal delivery.
+
+Case 3:
+
+abandoned/stale DELIVERING.
+
+Expected:
+
+watchdog/reconciler moves it into a truthful recoverable state.
+
+Case 4:
+
+WhatsApp outbound network unavailable.
+
+Expected:
+
+notice persists to durable outbox.
+
+After reconnect:
+
+outbox resumes automatically.
+
+PASS only if no silent loss and no false-delivered state exists.
+
+==================================================
+B03 — DISPATCH VS ZIP ATOMIC RACE
+==================================================
+
+Reproduce the previous actual race.
+
+Same project:
+
+1. bridge observes gate OPEN
+2. backup attempts to start ZIP simultaneously
+
+Expected:
+
+exactly one side owns the project boundary.
+
+If dispatch claim wins:
+
+ZIP cannot enter source capture until terminal delivery claim settles.
+
+If ZIP gate wins:
+
+prompt must become HELD_FOR_ZIP and cannot enter terminal.
+
+At no time may:
+
+.partial.zip exist
++
+ZIP_GATE_CLOSED
++
+new same-project terminal write occur.
+
+Use actual current bridge/gate implementation.
+
+Also verify different project remains unaffected.
+
+==================================================
+B04 — REAL READ_ONLY GUARD
+==================================================
+
+Use the ACTUAL installed canonical hook/PreToolUse path.
+
+Not a test-local replacement.
+
+Set:
+
+TASK_MODE=READ_ONLY
+
+Attempt in isolated fixture:
+
+file write
+git add
+git commit
+git push
+git checkout/reset mutation
+tmux send-keys
+tmux paste
+service restart
+process kill
+database write
+
+Expected:
+
+BLOCK
+POLICY_VIOLATION_READ_ONLY
+
+Then verify allowed reads still work:
+
+cat
+grep
+git status
+git diff
+git log
+ps
+tmux capture-pane
+read-only database query
+
+If production adapter bypasses canonical guard:
+
+FAIL.
+
+==================================================
+B05 — REAL PROJECT RECOVERY
+==================================================
+
+Reproduce previous fake-success case.
+
+Use nonexistent Git remote.
+
+Expected:
+
+NOT PROJECT_RESTORED.
+
+Must return:
+
+PROJECT_RESTORE_INCOMPLETE
+or equivalent truthful failure.
+
+Then use a real safe test repository.
+
+Expected:
+
+target exists
+.git exists
+remote identity matches
+branch/commit policy valid
+required source exists
+
+For compound recovery, no empty directory/stub-only success allowed.
+
+==================================================
+B06 — ALTERNATE ROOT PORTABILITY
+==================================================
+
+Use isolated:
+
+HOME=<temp>
+PROJECTS_ROOT=<temp>/projects
+STATE_ROOT=<temp>/state
+
+Old /home/azureuser must not be usable.
+
+Verify all registered backup project paths resolve under supplied deployment
+roots rather than old Azure paths.
+
+Also verify restoration metadata/templates for:
+
+WhatsApp bridge
+WhatsApp service
+GitPush watcher
+Backup service/config
+Frappe mappings
+project registry
+hooks/settings
+
+No hardcoded Azure dependency.
+
+==================================================
+B07 — FRAPPE NATIVE COMPLETION
+==================================================
+
+Reproduce previous exact failure.
+
+In isolated custom-app fixture add:
+
+import definitely_nonexistent_controller_dependency_427
+
+inside applicable controller.
+
+Run normal:
+
+sot profile verify
+
+Expected:
+
+non-zero / completion blocked
+CONTROLLER_IMPORT_ERROR or equivalent.
+
+Then restore valid controller.
+
+Expected PASS.
+
+Do not accept generic pytest as substitute.
+
+==================================================
+B08 — 100 PROJECT ROUTING
+==================================================
+
+Exercise the actual current:
+
+getWindowForSender()
+
+using at least 100 configured project/group mappings.
+
+Expected:
+
+registered project identities resolve to their configured target windows.
+
+They must NOT collapse to agy:0.
+
+Personal/unregistered fallback may use master only where explicit policy allows.
+
+Also verify:
+
+Project A ZIP/busy state cannot affect Project B route.
+
+==================================================
+B09 — LIVE GITPUSH WATCHER
+==================================================
+
+Read-only inspect live production service.
+
+Verify:
+
+service exists
+active/running
+correct executable
+single instance
+correct SOT version
+correct state/config roots
+
+Then use isolated fixture/test remote to verify functional behavior:
+
+file change
+→ ownership resolution
+→ correct commit policy
+→ push
+→ remote SHA verification
+
+Do not mutate production projects for this test.
+
+Also verify blank-VM bootstrap installs/restores watcher definition.
+
+==================================================
+DIRECT REGRESSION CHECKS ONLY
+==================================================
+
+Do NOT reopen previous architecture.
+
+Only verify these repairs did not directly break:
+
+WhatsApp real ingress
+same-project ZIP hold
+other-project non-blocking
+normal prompt delivery without backup daemon
+busy-agent prompt acceptance
+ZIP mutation invalidation
+generation safety
+local/remote latest-10 behavior
+Frappe official reference
+Frappe core guard
+project registry restore
+Git remote parity
+
+Run focused regression tests.
+
+One full deterministic suite may be run once as smoke.
+
+==================================================
+TEST QUALITY
+==================================================
+
+For each blocker distinguish:
+
+REAL PRODUCTION CODE PATH
+
+vs
+
+SIMULATOR / MOCK / TEST-LOCAL IMPLEMENTATION.
+
+A simulator-only PASS cannot close a blocker that previously failed on the real
+implementation.
+
+==================================================
+RCLONE
+==================================================
+
+Current known state:
+
+MIGRATION_REQUIRED
+
+Treat as:
+
+NON_BLOCKING_OPERATIONAL
+
+provided:
+
+local backups work
+ZIP gate behavior works
+WhatsApp delivery is unaffected
+remote failure remains retryable
+
+Do not reopen backup architecture because of rclone OAuth configuration.
+
+==================================================
+FINAL OUTPUT
+==================================================
+
+SOT SHA VERIFIED: PASS / FAIL
+WHATSAPP SHA VERIFIED: PASS / FAIL
+
+B01 REPOSITORY SECRET CLEAN: PASS / FAIL
+B01 SECRET REINTRODUCTION GUARD: PASS / FAIL
+B01 EXPOSED CREDENTIAL REVOKED/ROTATED: PASS / PENDING / FAIL
+B01 OVERALL: PASS / BLOCKER
+
+B02 FALSE DELIVERED: PASS / FAIL
+B02 ABANDONED DELIVERY RECOVERY: PASS / FAIL
+B02 OFFLINE OUTBOX RECOVERY: PASS / FAIL
+
+B03 DISPATCH-ZIP ATOMICITY: PASS / FAIL
+
+B04 REAL READ_ONLY GUARD: PASS / FAIL
+
+B05 REAL PROJECT RECOVERY: PASS / FAIL
+B05 FAKE SUCCESS REJECTED: PASS / FAIL
+
+B06 ALTERNATE ROOT PORTABILITY: PASS / FAIL
+B06 WHATSAPP/SERVICE RESTORE: PASS / FAIL
+
+B07 FRAPPE NATIVE COMPLETION: PASS / FAIL
+
+B08 100-PROJECT ROUTING: PASS / FAIL
+
+B09 LIVE GITPUSH WATCHER: PASS / FAIL
+B09 BLANK-VM WATCHER RESTORE: PASS / FAIL
+
+DIRECT REGRESSION CHECK:
+PASS / FAIL
+
+REAL-PATH TEST COVERAGE:
+PASS / FAIL
+
+RCLONE CLIENT CONFIG:
+PASS / MIGRATION_REQUIRED
+
+If a blocker fails:
+
+report ONLY:
+
+blocker ID
+exact reproduction
+exact evidence
+exact file/function
+minimal required fix
+
+Do not create a new architecture roadmap.
+
+==================================================
+ACCEPTANCE
+==================================================
+
+If B02-B09 all PASS and B01 repository protections PASS:
+
+TECHNICAL REMEDIATION ACCEPTED:
+YES
+
+If leaked credential is not yet revoked/rotated:
+
+SECURITY INCIDENT FULLY CLOSED:
+NO — CREDENTIAL ROTATION PENDING
+
+If credential is proven revoked/rotated too:
+
+SECURITY INCIDENT FULLY CLOSED:
+YES
+
+If all technical blockers PASS:
+
+BLOCKER DELTA AUDIT COMPLETE:
+YES
+
+BASELINE READY TO FREEZE:
+YES
+
+READY FOR GOOGLE VM RESTORE DRILL:
+YES
+
+Do NOT repair anything.
+Do NOT edit production.
+[WA Bridge] ℹ️ Detected AGY idle prompt in agy:codex or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:codex for task: "[প্রজেক্ট গ্রুপ: AGY · OpenAI Codex (codex)]: THIS IS A BLOC"
+[WA Bridge] ✅ Forwarded prompt to agy:codex via bracketed paste & pressed Enter!
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0315297C4B974DF8F1E)
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0D73C671D038E2DFF0A)
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB077511C306CCA007396)
+[WA Bridge] Codex progress delivered
