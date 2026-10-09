@@ -59138,3 +59138,368 @@ Proceed with the scoped investigation and repair.
 [WA Bridge] ⚡ cmd 484 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03645F615B500312B7E)
 [WA Bridge] 💻 cmd output 485 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB090A78327FCD3B34A28)
+[WA Bridge] 🧠 thinking 487 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B8C8FBABE96DCB5486)
+[WA Bridge] 📝 write 487 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BD37331FE31F9B8557)
+[WA Bridge] ⚡ cmd 490 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06CB8E58765C12B7471)
+[WA Bridge] ⏱️ task 493 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FB19F941E3AAE85A34)
+[WA Bridge] ⏱️ task 496 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04F2CD88FF665E18DAD)
+[WA Bridge] ⏱️ task 499 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BC804CC013EBF78B58)
+[WA Bridge] 🧠 thinking 502 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0777AA0DACBAC1D75C5)
+[WA Bridge] ⏱️ task 502 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04047C851AE238BD500)
+[WA Bridge] ⏱️ task 505 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05CC872F7E305D1BEB3)
+[WA Bridge] ⏱️ task 508 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B73844E950A369D09C)
+[WA Bridge] ⏱️ task 511 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ADDD92BF7E09705832)
+[WA Bridge] ⏱️ task 514 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D6B2F42B44D1E3F3E4)
+[WA Bridge] ⏱️ task 517 (agy:0)
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02500FA592DCDDE2D52)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0979C481C79C07ED17F)
+[WA Bridge] ✅ Processed outbox job: report_1791528824.json
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB076EB8417EADB080BE8)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A53D88AD1EC17AAB68)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F794E454D1F1DD880A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB007C2AE2B60ABA6F6B6)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F29E63FD317D893A4E)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FCBF66E22878F3161C)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F7EC03E9D8E8A1B7C0)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB085D2AFAB477BA1F57F)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09AB720570E6F1CA721)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB024E761875DBA4A12B1)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FADFD39E50C07B7EED)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09576B55DB43B4B066B)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 0
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08442C88AC712E1E829)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05FEC5CC0F87C431787)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB074496C9634B6627308)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03781B014CF0C2BA35C)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F782E746EF34C3440A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02CC83B8B42C108A63E)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F3CDB927317D0FB6F7)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A6D5B14DAE220AE552)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB027A43CF9FEEF615CE4)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06FF79A5001AA6466B5)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04B25646754E4A74E8D)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB001AF7CD1FAF81D736A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB019FE2B66D0FA7D1A1C)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
