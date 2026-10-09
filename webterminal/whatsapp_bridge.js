@@ -209,6 +209,7 @@ const QUEUE_FILE = process.env.PROMPT_QUEUE_FILE || path.join(os.homedir(), '.we
 const BANGLA_ZIP_HOLD_NOTICE = "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।";
 const BANGLA_ZIP_COMPLETE_NOTICE = "ZIP capture শেষ হয়েছে। অপেক্ষমান prompt পাঠানো হয়েছে।";
 const BANGLA_RECONNECT_TEMPLATE = "WhatsApp সংযোগ ফিরে এসেছে।\nঅপেক্ষমান {count}টি message আবার processing শুরু হয়েছে।";
+const BANGLA_MANDATE_INSTRUCTION = "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।]";
 
 const WA_OUTBOX_FILE = path.join(USER_HOME, '.webterminal', 'wa_outbox_queue.json');
 
@@ -2052,7 +2053,7 @@ async function startBridge() {
     if (captions) {
       multiPrompt += `ইউজারের ক্যাপশন/প্রশ্ন: "${captions.trim()}".\n`;
     }
-    multiPrompt += `অনুগ্রহ করে view_file ব্যবহার করে সবগুলো ফাইল পর্যবেক্ষণ করে বিস্তারিত উত্তর দিন।`;
+    multiPrompt += `অনুগ্রহ করে view_file ব্যবহার করে সবগুলো ফাইল পর্যবেক্ষণ করে বিস্তারিত উত্তর দিন। ${BANGLA_MANDATE_INSTRUCTION}`;
     dispatchToTmux(multiPrompt, batchTargetWindow);
   }
 
