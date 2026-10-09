@@ -7793,3 +7793,9 @@ Swap:           19Gi       1.4Gi
 [WA Bridge] 🧠 thinking 1252 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0506227797E0B168529)
 [WA Bridge] ⚡ cmd 1252 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1255)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 555
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 1 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0276946F2FBE3E68405)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
