@@ -2575,8 +2575,12 @@ async function processSingleTranscript(transcriptPath) {
   }
 
   const targetInfo = getTargetInfoForTranscript(transcriptPath);
-  const targetJid = targetInfo.jid;
-  const targetWindow = targetInfo.window;
+  let targetWindow = targetInfo.window;
+  let targetJid = targetInfo.jid;
+  const lastMsgForWindow = lastUserMsgByWindow[targetWindow] || lastUserMsg;
+  if (lastMsgForWindow?.key?.remoteJid) {
+    targetJid = lastMsgForWindow.key.remoteJid;
+  }
 
   let content = '';
   try {
@@ -2833,13 +2837,14 @@ async function processSingleTranscript(transcriptPath) {
         }
 
         const quoteMsg = lastUserMsgByWindow[targetWindow] || lastUserMsg;
-        await sendWhatsAppMessage(fullReply, { to: targetJid, quoted: quoteMsg });
+        const effectiveRecipientJid = (quoteMsg?.key?.remoteJid) || targetJid;
+        await sendWhatsAppMessage(fullReply, { to: effectiveRecipientJid, quoted: quoteMsg });
 
         tracker.currentTurnTools = [];
         tracker.currentTurnHasThinking = false;
         tracker.currentTurnThinkingLength = 0;
 
-        console.log(`[WA Bridge] ✅ Reply delivered to ${targetJid} (${targetWindow})!`);
+        console.log(`[WA Bridge] ✅ Reply delivered to ${effectiveRecipientJid} (${targetWindow})!`);
         autoController.stopTracking(targetWindow);
         tracker.isSendingReply = false;
         windowBusy[targetWindow] = false;
