@@ -2225,3 +2225,47 @@ Eita lock koro....5 ta way te.....aage existing system check koro......eita ase 
 [WA Bridge] ⚡ cmd 2213 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07273DD2BD8ACBCECFA)
 [WA Bridge] 💻 cmd output 2214 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B2947F7B19B52D1AE9)
+[WA Bridge] 🧠 thinking 2216 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2216)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 11568
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04548C69BBF3311141D)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A10CE582589F976C0F)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 2217)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B22B906AD71D357ECB)
+[WA Bridge] 🧠 thinking 2219 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A440BBF2744323F967)
+[WA Bridge] ⚡ cmd 2219 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BAF9100A0F87A557BF)
+[WA Bridge] 💻 cmd output 2220 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BABE6CF9EF27485BA3)
+[WA Bridge] ⚡ cmd 2222 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01596A9EAD8CAC30057)
+[WA Bridge] 💻 cmd output 2223 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB016AF762903DAFD9DB4)
+[WA Bridge] ⚡ cmd 2225 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04767DAFB8813371575)
+[WA Bridge] 💻 cmd output 2226 (agy:0)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0316E56E9368A42614B)
+[WA Bridge] ✅ Processed outbox job: report_1791550936.json
+[WA Bridge] 📤 Turn done for agy:0 (step 2228)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4689
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CFC9816AD6DC9D850A)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07C8D4FD0D055D4EAD5)
+[WA Bridge] 🧠 thinking 2231 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08DD8D3677D2B84B3E0)
+[WA Bridge] ⚡ cmd 2231 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E2D5E2946FBF4C927E)
+[WA Bridge] 💻 cmd output 2232 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2234)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4792
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EAC6A832671F24F9CA)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
