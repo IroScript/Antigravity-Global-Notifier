@@ -19397,3 +19397,8 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB095C7F4CF7C73E75890)
 [WA Bridge] 🧠 thinking 666 (agy:frappe)
 [WA Bridge] 📤 Turn done for agy:frappe (step 666)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3326
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 1 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB092FAFDDD0EDE4C75CF)
+[WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
