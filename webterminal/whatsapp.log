@@ -2698,3 +2698,8 @@ Codex: লোকাল ফোল্ডার আছে, কিন্তু আ�
 [WA Bridge] ⚡ cmd 2342 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08A5683C50F4D1FC404)
 [WA Bridge] 💻 cmd output 2343 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2345)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/4yjcU
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BCA03AE4D4CD80E8AC)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
