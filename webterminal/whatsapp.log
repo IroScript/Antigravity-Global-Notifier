@@ -3397,3 +3397,144 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05AB33074CA9940FFBD)
 [WA Bridge] 👁️ view 2503 (agy:0)
 [WA Bridge] Ignored message from other sender: 120363400498861248@g.us 234269662302425@lid
+[WA Bridge] Ignored message from other sender: 120363400498861248@g.us 234269662302425@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0354EDB7E09D4D94AAA)
+[WA Bridge] 🧠 thinking 2506 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB015845D68EFBA8A7AB9)
+[WA Bridge] ⚡ cmd 2506 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB090844AD696D8C8EA90)
+[WA Bridge] 💻 cmd output 2507 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB077C1865B045CF2065A)
+[WA Bridge] ⚡ cmd 2509 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B2E95FFC371FAD8565)
+[WA Bridge] 💻 cmd output 2510 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB001087E7756C318B34E)
+[WA Bridge] 🧠 thinking 2512 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A2C31D327F25D33699)
+[WA Bridge] ⚡ cmd 2512 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AB7C5747BE14768132)
+[WA Bridge] 💻 cmd output 2513 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FF8F3A104EE9A0F5EB)
+[WA Bridge] 👁️ view 2515 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06CAABFD02263A9174F)
+[WA Bridge] ⚡ cmd 2518 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2521)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/1E1O5
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high · 1 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04B597129D3FF8C46F2)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): FINAL MINIMAL YOUTUBE PIPELINE CHECK
+
+Perform ONLY 3 focused checks. No full recovery, no unnecessary audits.
+
+TEST 1 — JSON & DATABASE
+
+Loop through all relevant video folders and database records.
+
+For each video, validate:
+
+- Actual video exists and is valid.
+- Prompt JSON and YouTube SEO JSON exist in the same folder.
+- Both JSON files parse successfully and contain non-empty required fields.
+- Video identity, idea ID, prompt title, description, SEO title, SEO description, and tags match their corresponding authoritative database values.
+- Compare exactly where the fields represent the same value. Different-purpose descriptions may legitimately differ.
+- No unrelated video or JSON is assigned to the wrong idea.
+
+Verify the 213 claimed READY records. Reconcile the 348 generated-video records with 350 pipeline-state records, including any legitimate extra rows.
+
+READY is TRUE only when all required conditions pass.
+
+TEST 2 — NEXT GENERATION START
+
+Find the FIRST genuinely actionable NOT READY idea in authoritative sequence order.
+
+Important:
+
+- Already uploaded videos must not be regenerated merely because their local file is missing, provided publication is independently verified.
+- Keep PUBLISHED separate from YOUTUBE_READY.
+- Do not skip incomplete, unpublished ideas because their database status is "completed".
+- Do not assume "status = 'new'" is equivalent to NOT READY.
+- Explicitly verify ideas 1–38, including 25–32.
+- Confirm whether 38 is actually the first eligible unfinished idea.
+- Verify the real scheduler selects this same ID.
+
+TEST 3 — PERMANENT CORRECTNESS
+
+Ensure future runs use the same rules automatically.
+
+Make only essential, targeted fixes within this YouTube pipeline, with database backup and verification before and after changes.
+
+Do not start video generation now.
+
+Do not touch unrelated projects or services.
+
+FINAL OUTPUT — ONLY 5 RESULTS
+
+1. JSON/database exact-match test: PASS/FAIL
+2. Ready-status consistency: PASS/FAIL
+3. Next generation starts at Idea ID: ___
+4. Actual scheduler selects the same ID: YES/NO
+5. Final verdict: PASS/FAIL
+
+Show the actual executed verification results. No self-declared PASS without evidence.
+
+No questions. Execute autonomously.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02516A127ABAAE271ED)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0596411E6EAF3B3EADE)
+[WA Bridge] 🧠 thinking 534 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E06CF39EBFE59CA0CC)
+[WA Bridge] ⚡ cmd 534 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB05E961F1F3DA620C16D)
+[WA Bridge] 💻 cmd output 535 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A1CBB9B19976E5CFDF)
+[WA Bridge] 🧠 thinking 537 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB023D99356F630C81C57)
+[WA Bridge] ⚡ cmd 537 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0680EF13929A4A84296)
+[WA Bridge] 💻 cmd output 538 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08B662F4277E85E7FA2)
+[WA Bridge] 👁️ view 2524 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB001B5521C1D6C113BAD)
+[WA Bridge] 👁️ view 2527 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02AEF5F7EAC9ED82D5F)
+[WA Bridge] ⚡ cmd 540 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E0CBA761A0629E7588)
+[WA Bridge] 💻 cmd output 541 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0910F54E9D91691808F)
+[WA Bridge] 🧠 thinking 2530 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB098FE4F151B46F51D27)
+[WA Bridge] ⚡ cmd 2530 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05EB31AA936A7821FF4)
+[WA Bridge] 💻 cmd output 2531 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB06D30A2B480CDF82F66)
+[WA Bridge] 🧠 thinking 543 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB036D0EB242C4823B5BB)
+[WA Bridge] ⚡ cmd 543 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02ACCF727B20B3BF200)
+[WA Bridge] 💻 cmd output 544 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03FCC147E47924B9878)
+[WA Bridge] ⚡ cmd 2533 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B4DDF454BE8DAD3CAE)
+[WA Bridge] 💻 cmd output 2534 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0CBA3CE82472B7D2A80)
+[WA Bridge] ⚡ cmd 546 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02E10289C4B5C8B8B84)
+[WA Bridge] 💻 cmd output 547 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00D123B1CDCC372343C)
+[WA Bridge] ⚡ cmd 2536 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB065371C08DFB0E5CED8)
+[WA Bridge] 💻 cmd output 2537 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E4C317C44A01526F3C)
+[WA Bridge] ⚡ cmd 2539 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02AD9E7CBC1B1175496)
+[WA Bridge] 💻 cmd output 2540 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB001BE8D02AB73BA0374)
+[WA Bridge] 👁️ view 549 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DCB2546D6D16DA9AA4)
+[WA Bridge] 👁️ view 552 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02788FC4544D9F30451)
+[WA Bridge] 🧠 thinking 555 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB088C1D45CB0E7949ECF)
+[WA Bridge] 👁️ view 555 (agy:yt)

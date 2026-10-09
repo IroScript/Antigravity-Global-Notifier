@@ -1,1 +1,56 @@
-[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Tumi ki sob guloi check korso naaki loop chalaba test er jonno?
+[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] FINAL MINIMAL YOUTUBE PIPELINE CHECK
+
+Perform ONLY 3 focused checks. No full recovery, no unnecessary audits.
+
+TEST 1 — JSON & DATABASE
+
+Loop through all relevant video folders and database records.
+
+For each video, validate:
+
+- Actual video exists and is valid.
+- Prompt JSON and YouTube SEO JSON exist in the same folder.
+- Both JSON files parse successfully and contain non-empty required fields.
+- Video identity, idea ID, prompt title, description, SEO title, SEO description, and tags match their corresponding authoritative database values.
+- Compare exactly where the fields represent the same value. Different-purpose descriptions may legitimately differ.
+- No unrelated video or JSON is assigned to the wrong idea.
+
+Verify the 213 claimed READY records. Reconcile the 348 generated-video records with 350 pipeline-state records, including any legitimate extra rows.
+
+READY is TRUE only when all required conditions pass.
+
+TEST 2 — NEXT GENERATION START
+
+Find the FIRST genuinely actionable NOT READY idea in authoritative sequence order.
+
+Important:
+
+- Already uploaded videos must not be regenerated merely because their local file is missing, provided publication is independently verified.
+- Keep PUBLISHED separate from YOUTUBE_READY.
+- Do not skip incomplete, unpublished ideas because their database status is "completed".
+- Do not assume "status = 'new'" is equivalent to NOT READY.
+- Explicitly verify ideas 1–38, including 25–32.
+- Confirm whether 38 is actually the first eligible unfinished idea.
+- Verify the real scheduler selects this same ID.
+
+TEST 3 — PERMANENT CORRECTNESS
+
+Ensure future runs use the same rules automatically.
+
+Make only essential, targeted fixes within this YouTube pipeline, with database backup and verification before and after changes.
+
+Do not start video generation now.
+
+Do not touch unrelated projects or services.
+
+FINAL OUTPUT — ONLY 5 RESULTS
+
+1. JSON/database exact-match test: PASS/FAIL
+2. Ready-status consistency: PASS/FAIL
+3. Next generation starts at Idea ID: ___
+4. Actual scheduler selects the same ID: YES/NO
+5. Final verdict: PASS/FAIL
+
+Show the actual executed verification results. No self-declared PASS without evidence.
+
+No questions. Execute autonomously.
