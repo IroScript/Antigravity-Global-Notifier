@@ -7764,3 +7764,32 @@ Swap:           19Gi       1.4Gi
 [WA Bridge] ⚡ cmd 3993 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB061EF550B0475DEA7E6)
 [WA Bridge] 💻 cmd output 3994 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01967983ED347C79B89)
+[WA Bridge] 🧠 thinking 3996 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0ADF1EAE2223F0E317D)
+[WA Bridge] ⚡ cmd 3996 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB043DE781DC8F57E6369)
+[WA Bridge] 💻 cmd output 3997 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E826CB08FA01CE03B8)
+[WA Bridge] ⚡ cmd 3999 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EC82C27CD24823D58F)
+[WA Bridge] 💻 cmd output 4000 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 176626486796437@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CAF392077F4609182A)
+[WA Bridge] 🧠 thinking 4002 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4002)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4753
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB004D47380C3B86A3FCD)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A2DAE32C51457B1F65)
+[WA Bridge] 🧠 thinking 1246 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03BA2B143888F384245)
+[WA Bridge] 👁️ view 1246 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0CEF79053D45819A70B)
+[WA Bridge] 👁️ view 1249 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B692E311763DEB6A6B)
+[WA Bridge] 🧠 thinking 1252 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0506227797E0B168529)
+[WA Bridge] ⚡ cmd 1252 (agy:yt)
