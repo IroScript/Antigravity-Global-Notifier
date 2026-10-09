@@ -421,5 +421,86 @@
       "to": "120363430377910102@g.us"
     },
     "queued_at": "2026-10-09T17:34:21.157Z"
+  },
+  {
+    "id": "out_1791567262992_2ydej",
+    "target": "120363430377910102@g.us",
+    "text": "> ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*\n> `$ grep -rn \\\"send-keys\\\" /home/azureuser/.webterminal/whatsapp_bridge.js`\n> 🎯 _\"Searching send-keys in whatsapp_bridge.js\"_",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:22.992Z"
+  },
+  {
+    "id": "out_1791567263155_1lz2a",
+    "target": "120363430377910102@g.us",
+    "text": "> 💻 *[কমান্ড আউটপুট · Ctrl+o]*\n```\n781:        execFileSync('tmux', ['send-keys', '-t', targetWindow, 'BTab']);\r\n789:      execFileSync('tmux', ['send-keys', '-t', targetWindow, '-l', cleanPrompt]);\r\n790:      execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);\r\n811:      execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);\r\n824:            execSync(`tmux send-keys -t ${targetWindow} Enter`);\r\n2402:            execFileSync('tmux', ['send-keys',\n... [আউটপুট সংক্ষেপিত]\n```",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:23.155Z"
+  },
+  {
+    "id": "out_1791567266501_67q82",
+    "target": "120363430377910102@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"⏳ ══════════════════════ ⏳\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:26.501Z"
+  },
+  {
+    "id": "out_1791567267531_lqj9e",
+    "target": "120363430377910102@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:27.531Z"
+  },
+  {
+    "id": "out_1791567271915_d6og1",
+    "target": "120363430377910102@g.us",
+    "text": "> ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*\n> `$ python3 /home/azureuser/.agents/hooks/verify_10_fold.py \\\\\\n  --files \\\\\\n    \\\"/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/gitpush_watcher/config.py\\\" \\...`\n> 🎯 _\"Executing 10-fold verification for quoted prompt processing\"_",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:31.915Z"
+  },
+  {
+    "id": "out_1791567272076_drydo",
+    "target": "120363430377910102@g.us",
+    "text": "> 💻 *[কমান্ড আউটপুট · Ctrl+o]*\n```\n[*] Starting Hardened 10-Level Verification (v2.0.0) for task: Acknowledge and Process Quoted WhatsApp Bridge Message\r\n    Workspace: /home/azureuser | Conversation: 419149a3-c2a6-4f7a-94de-f6206d0ab1e1 | Session: default_session\r\n  V1 (Existence): PASS\r\n  V2 (Content/Config): PASS\r\n  V3 (Discovery): PASS\r\n  V4 (Execution): PASS\r\n  V5 (Adversarial): PASS\r\n  V6 (Integrity): PASS\r\n  V7 (Persistence): PASS\r\n  V8 (Attack Surface): PASS\r\n  V\n... [আউটপুট সংক্ষেপিত]\n```",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:32.076Z"
+  },
+  {
+    "id": "out_1791567274885_rr8pt",
+    "target": "120363430377910102@g.us",
+    "text": "> 💻 *[কমান্ড আউটপুট · Ctrl+o]*\n```\nPID    PPID     ELAPSED   RSS COMMAND\r\n 318878  318875    03:19:36 184468 /usr/bin/node /home/azureuser/.webterminal/wh\n```",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:34.885Z"
+  },
+  {
+    "id": "out_1791567276439_vatce",
+    "target": "120363430377910102@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"⏳ ══════════════════════ ⏳\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:36.439Z"
+  },
+  {
+    "id": "out_1791567288332_fid7h",
+    "target": "120363430377910102@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"⏳ ══════════════════════ ⏳\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363430377910102@g.us"
+    },
+    "queued_at": "2026-10-09T17:34:48.332Z"
   }
 ]
