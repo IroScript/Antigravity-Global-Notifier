@@ -6597,3 +6597,14 @@ Closing session: SessionEntry {
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB011332A1023E268B9A4)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 29833446875380@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB016D2AC779A5E49530F)
+[WA Bridge] 🧠 thinking 1104 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F88D98D619BA498430)
+[WA Bridge] ⚡ cmd 1104 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DC1C44444803A086F3)
+[WA Bridge] 💻 cmd output 1105 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1107)
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0920B8A191C7FD238B9)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
