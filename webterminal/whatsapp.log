@@ -20853,3 +20853,4 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
 [WA Bridge] Failed to send queued outbox notice (out_1791567339346_nn2ba): rate-overlimit
 [WA Bridge] Failed to send queued outbox notice (out_1791567341018_firtp): rate-overlimit
+[WA Bridge] Ignored message from other sender: 120363375813560592@g.us 234110698143970@lid
