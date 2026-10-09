@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007161912-ed995d",
+  "timestamp": "2026-10-07T16:19:12.837700+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat << 'EOF' > trust/verification/run_regression_suite.py\n#!/usr/bin/env python3\nimport subprocess\nimport sys\nfrom pathlib import Path\n\nSOT = Path(__file__).resolve().parents[2]\nchecks = [\n    [sys.executable, \"-m\", \"unittest\", \"discover\", \"-s\", str(SOT / \"verification/tests\"), \"-v\"],\n]\nwith open('/tmp/stop_hook_debug.log', 'w') as f:\n    f.write(f\"Running checks with SOT={SOT}\\n\")\n    for command in checks:\n        result = subprocess.run(command, cwd=SOT, capture_output=True, text=True)\n        f.write(f\"Command: {command}\\nRC: {result.returncode}\\nSTDOUT: {result.stdout}\\nSTDERR: {result.stderr}\\n\")\n        if result.returncode:\n            sys.exit(result.returncode)\nsys.exit(0)\nEOF\nchmod +x trust/verification/run_regression_suite.py\n"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

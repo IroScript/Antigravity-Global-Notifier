@@ -287,3 +287,4 @@
 2026-10-06T15:24:25Z INF precheck component="Cloudflare API" details="API is reachable" run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa status=pass target=api.cloudflare.com:443
 2026-10-06T15:24:25Z INF precheck complete hard_fail=false run_id=c3460ffc-0e1e-4d69-840c-ea652db83ffa suggested_protocol=quic
 2026-10-07T15:24:20Z ERR update failed to apply error="open /usr/local/bin/cloudflared.new: permission denied"
+2026-10-08T15:24:20Z ERR update failed to apply error="open /usr/local/bin/cloudflared.new: permission denied"

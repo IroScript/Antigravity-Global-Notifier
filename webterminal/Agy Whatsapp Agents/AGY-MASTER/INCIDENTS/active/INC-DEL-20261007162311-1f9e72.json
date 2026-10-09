@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007162311-1f9e72",
+  "timestamp": "2026-10-07T16:23:11.053582+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat << 'EOF' > /home/azureuser/.agents/run_regression_suite.py\n#!/usr/bin/env python3\nimport subprocess\nimport sys\nsys.exit(subprocess.run([sys.executable, \"/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verification/run_regression_suite.py\"], cwd=\"/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth\").returncode)\nEOF\nchmod +x /home/azureuser/.agents/run_regression_suite.py"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

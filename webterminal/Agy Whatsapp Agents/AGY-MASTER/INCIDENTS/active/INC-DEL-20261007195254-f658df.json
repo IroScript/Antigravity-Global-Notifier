@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007195254-f658df",
+  "timestamp": "2026-10-07T19:52:54.946606+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "rm -rf /"
+  },
+  "decision": "DENIED",
+  "reason": "Catastrophic deletion of system root directory '/' is prohibited",
+  "rule_id": "CRITICAL_SYSTEM_ROOT_PROTECT"
+}

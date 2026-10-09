@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20261008025258-6e75d0",
+  "timestamp": "2026-10-08T02:52:58.291529+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "replace_file_content",
+  "details": {
+    "TargetFile": "/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/verification/tests/test_frappe_enforcement.py",
+    "pattern": "@frappe\\.whitelist\\s*\\(\\s*\\)|@frappe\\.whitelist\\s*\\(\\s*allow_guest\\s*=\\s*True\\s*\\)"
+  },
+  "decision": "DENIED",
+  "reason": "Code contains outdated Frappe pattern matching '@frappe\\.whitelist\\s*\\(\\s*\\)|@frappe\\.whitelist\\s*\\(\\s*allow_guest\\s*=\\s*True\\s*\\)'. Recommendation: Whitelist requires explicit methods (e.g. methods=['GET']).",
+  "rule_id": "OUTDATED_FRAPPE_PATTERN"
+}

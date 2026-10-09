@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261008035121-49a61d",
+  "timestamp": "2026-10-08T03:51:21.302549+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chmod +x /home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verification/verify_agy_command.py && ln -sf /home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verification/verify_agy_command.py /home/azureuser/.local/bin/verify-agy-command"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

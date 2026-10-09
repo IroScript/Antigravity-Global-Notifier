@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261008051730-1bfd5e",
+  "timestamp": "2026-10-08T05:17:30.534987+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "chmod +x /home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verification/verify_autonomous_interaction.py && ln -sf /home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/trust/verification/verify_autonomous_interaction.py /home/azureuser/.local/bin/verify-autonomous-interaction"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

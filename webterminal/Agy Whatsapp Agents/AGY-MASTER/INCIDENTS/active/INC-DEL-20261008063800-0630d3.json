@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20261008063800-0630d3",
+  "timestamp": "2026-10-08T06:38:00.939623+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "replace_file_content",
+  "details": {
+    "TargetFile": "/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/verification/tests/test_frappe_enforcement.py",
+    "fabricated_api": "this_api_does_not_exist_427"
+  },
+  "decision": "DENIED",
+  "reason": "Method or attribute 'frappe.this_api_does_not_exist_427' is not a recognized official Frappe API.",
+  "rule_id": "UNKNOWN_FRAPPE_API"
+}

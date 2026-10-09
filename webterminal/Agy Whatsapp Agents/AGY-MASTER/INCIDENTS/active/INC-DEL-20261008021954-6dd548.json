@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261008021954-6dd548",
+  "timestamp": "2026-10-08T02:19:54.109050+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 /home/azureuser/.agents/hooks/delete_guard.py rm -rf /home/azureuser/.agents/hooks/delete_guard.py"
+  },
+  "decision": "DENIED",
+  "reason": "Deletion on protected configuration '/home/azureuser/.agents/hooks/delete_guard.py' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_PROTECTED_CONFIG_DELETE"
+}

@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20261008025048-e58057",
+  "timestamp": "2026-10-08T02:50:48.029812+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "replace_file_content",
+  "details": {
+    "TargetFile": "/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/project_profiles/frappe/reference.py",
+    "fabricated_api": "io"
+  },
+  "decision": "DENIED",
+  "reason": "Method or attribute 'frappe.io' is not a recognized official Frappe API.",
+  "rule_id": "UNKNOWN_FRAPPE_API"
+}

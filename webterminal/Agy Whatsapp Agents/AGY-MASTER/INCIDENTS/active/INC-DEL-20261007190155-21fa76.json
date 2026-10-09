@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007190155-21fa76",
+  "timestamp": "2026-10-07T19:01:55.026603+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cp trust/verification/verify_10_fold.py /home/azureuser/.agents/verify_10_fold.py && cp trust/verification/verify_10_fold.py /home/azureuser/.agents/hooks/verify_10_fold.py && cp trust/verification/run_regression_suite.py /home/azureuser/.agents/run_regression_suite.py && chmod 0755 /home/azureuser/.agents/verify_10_fold.py /home/azureuser/.agents/hooks/verify_10_fold.py /home/azureuser/.agents/run_regression_suite.py"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

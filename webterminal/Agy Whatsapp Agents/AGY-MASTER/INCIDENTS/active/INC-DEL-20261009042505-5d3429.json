@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009042505-5d3429",
+  "timestamp": "2026-10-09T04:25:05.446425+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nimport subprocess, json\n\nhook_path = '/home/azureuser/.agents/hooks/delete_guard.py'\n\ntest_cases = [\n    # (tool_name, args, expected_decision)\n    ('write_to_file', {'TargetFile': '/tmp/test.txt', 'CodeContent': 'hello'}, 'deny'),\n    ('replace_file_content', {'TargetFile': '/tmp/test.txt'}, 'deny'),\n    ('run_command', {'CommandLine': 'git commit -m \\\"foo\\\"'}, 'deny'),\n    ('run_command', {'CommandLine': 'git push origin main'}, 'deny'),\n    ('run_command', {'CommandLine': 'tmux send-keys -t agy:0 \\\"ls\\\" Enter'}, 'deny'),\n    ('run_command', {'CommandLine': 'systemctl restart agy-agents.service'}, 'deny'),\n    ('run_command', {'CommandLine': 'pkill -9 node'}, 'deny'),\n    ('run_command', {'CommandLine': 'echo \\\"hello\\\" > /tmp/foo.txt'}, 'deny'),\n    ('run_command', {'CommandLine': 'chmod 777 /tmp/foo'}, 'deny'),\n    ('run_command', {'CommandLine': 'git status'}, 'allow'),\n    ('run_command', {'CommandLine': 'cat /etc/hosts'}, 'allow'),\n    ('run_command', {'CommandLine': 'tmux capture-pane -p -t agy:0'}, 'allow'),\n    ('run_command', {'CommandLine': 'ps aux'}, 'allow'),\n    ('run_command', {'CommandLine': 'sqlite3 /tmp/test.db \\\"SELECT * FROM foo;\\\"'}, 'allow'),\n    ('run_command', {'CommandLine': 'sqlite3 /tmp/test.db \\\"INSERT INTO foo VALUES (1);\\\"'}, 'deny'),\n]\n\nenv = {'TASK_MODE': 'READ_ONLY', 'PATH': '/usr/bin:/bin'}\n\nall_passed = True\nfor tool_name, args, expected in test_cases:\n    payload = json.dumps({'toolCall': {'name': tool_name, 'args': args}})\n    p = subprocess.run(['python3', hook_path], input=payload, text=True, capture_output=True, env=env)\n    res = json.loads(p.stdout.strip()) if p.stdout.strip() else {}\n    decision = res.get('decision')\n    reason = res.get('reason', '')\n    if decision != expected:\n        print(f'FAIL: {tool_name} with {args} expected {expected}, got {decision}: {reason}')\n        all_passed = False\n    else:\n        if expected == 'deny' and 'POLICY_VIOLATION_READ_ONLY' not in reason:\n            print(f'FAIL: Reason missing POLICY_VIOLATION_READ_ONLY: {reason}')\n            all_passed = False\n        else:\n            print(f'PASS: {tool_name} {args.get(\\\"CommandLine\\\", \\\"\\\")} -> {decision}')\n\nif all_passed:\n    print('ALL READ_ONLY HOOK TESTS PASSED!')\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261007165226-b21b4b",
+  "timestamp": "2026-10-07T16:52:26.241048+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "sed -i 's/8e05d3a8-db6d-4cc4-b163-30c277139dae/99bb5492-97e3-4739-8787-7cf316e4da28/g' /home/azureuser/.agents/verification_state.json"
+  },
+  "decision": "DENIED",
+  "reason": "In-place tampering on protected path '/home/azureuser/.agents/verification_state.json' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}

@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-DEL-20261008025252-e9fde2",
+  "timestamp": "2026-10-08T02:52:52.285599+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "replace_file_content",
+  "details": {
+    "TargetFile": "/home/azureuser/IroScript_Projects/Infrastructure-Source-of-Truth/verification/tests/test_frappe_enforcement.py",
+    "pattern": "from\\s+frappe\\.model\\.document\\s+import\\s+get_doc"
+  },
+  "decision": "DENIED",
+  "reason": "Code contains outdated Frappe pattern matching 'from\\s+frappe\\.model\\.document\\s+import\\s+get_doc'. Recommendation: Use top-level frappe.get_doc instead of legacy removed module import.",
+  "rule_id": "OUTDATED_FRAPPE_PATTERN"
+}
