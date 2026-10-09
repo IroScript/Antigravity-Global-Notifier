@@ -44,7 +44,7 @@ for win in "${!agent_dirs[@]}"; do
   if [ -d "$dir" ]; then
     if ! tmux capture-pane -p -t "agy:$win" 2>/dev/null | grep -qE "Antigravity CLI|shortcuts|for shortcuts|esc to cancel|Switch Model"; then
       echo "Starting agy:$win in $dir..."
-      tmux send-keys -t "agy:$win" "cd '$dir' && ~/.local/bin/agy --mode plan --dangerously-skip-permissions" Enter
+      tmux send-keys -t "agy:$win" "cd '$dir' && ~/.local/bin/agy --dangerously-skip-permissions" Enter
     fi
   fi
 done
