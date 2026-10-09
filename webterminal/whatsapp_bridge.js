@@ -2960,7 +2960,31 @@ function startQueueWatchdog() {
   }, 3000);
 }
 
+function enforceSingleInstance() {
+  const currentPid = process.pid;
+  try {
+    const entries = fs.readdirSync('/proc');
+    for (const entry of entries) {
+      const pid = Number(entry);
+      if (!pid || pid === currentPid) continue;
+      try {
+        const comm = fs.readFileSync(`/proc/${pid}/comm`, 'utf8').trim();
+        if (comm === 'node') {
+          const cmdline = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8');
+          if (cmdline.includes('whatsapp_bridge.js')) {
+            console.error(`[WA Bridge] FATAL: Another whatsapp_bridge node instance is already running (PID: ${pid}). Exiting to prevent multi-device 440 session collision.`);
+            process.exit(1);
+          }
+        }
+      } catch (e) {}
+    }
+  } catch (err) {
+    console.warn('[WA Bridge] Could not inspect /proc for duplicate instances:', err.message);
+  }
+}
+
 if (require.main === module) {
+  enforceSingleInstance();
   startBridge();
   watchReplies();
   startQueueWatchdog();

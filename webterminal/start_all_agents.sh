@@ -19,11 +19,9 @@ if ! tmux capture-pane -p -t agy:0 2>/dev/null | grep -qE "Antigravity CLI|short
   tmux send-keys -t agy:0 "cd /home/azureuser && ~/.webterminal/start_agy0.sh" Enter
 fi
 
-# Window 1: Bash-Terminal (WhatsApp Bridge agy:1)
-if ! tmux capture-pane -p -t agy:1 2>/dev/null | grep -qE "WA Bridge|Baileys|Connecting to WhatsApp"; then
-  echo "Starting agy:1 (WhatsApp Bridge)..."
-  tmux send-keys -t agy:1 "cd /home/azureuser/.webterminal && source ~/.nvm/nvm.sh >/dev/null 2>&1 && while true; do node whatsapp_bridge.js; echo "Bridge exited, restarting in 5s..."; sleep 5; done" Enter
-fi
+# Window 1: Bash-Terminal (WhatsApp bridge runs as systemd service agy-whatsapp.service)
+tmux send-keys -t agy:1 "cd /home/azureuser" Enter
+XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user start agy-whatsapp.service 2>/dev/null || true
 
 # Window 2: Linux-Shell
 tmux send-keys -t agy:2 "cd /home/azureuser" Enter
