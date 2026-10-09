@@ -21077,3 +21077,31 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
 [WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 132
 [WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
+Closing session: SessionEntry {
+  _chains: {
+    'Ba32P/+zv3J+LRYv/eQtPXIAKYGsjZtdeXoOY7tlwexy': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 275323398,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 ad f6 3f ff b3 bf 72 7e 2d 16 2f fd e4 2d 3d 72 00 29 81 ac 8d 9b 5d 79 7a 0e 63 bb 65 c1 ec 72>,
+      privKey: <Buffer b0 fd 9e 35 1b 64 c5 e3 28 78 34 53 09 a8 38 b0 94 ec ac 13 55 b2 be 5a 46 c9 24 cf da f6 67 4a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 f4 4a 38 cf df 84 84 1f e4 43 21 05 45 82 c6 3e 83 37 cf ad d1 74 5a 5a 5b 54 50 83 fe 9d f8 63>,
+    previousCounter: 0,
+    rootKey: <Buffer 57 46 ad 1d 16 48 8c 6a 6e d7 10 dc 35 5a ff cc 8a b6 84 7a 3c 48 20 c8 06 68 b6 dd 2f 1a 1c 05>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 4c 88 7b 66 e2 b3 28 01 cb 6d 91 f6 2d e8 d9 89 fc b6 f8 e5 5b 40 e6 3e c1 9d 43 80 4d ba 32 60>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791582718880,
+    created: 1791582718880,
+    remoteIdentityKey: <Buffer 05 04 fe 53 42 0b a8 ba 55 0c 2a 4d d0 f5 81 cd 8c a1 14 67 91 01 bb a6 13 52 24 66 2e 31 45 b5 24>
+  },
+  pendingPreKey: {
+    signedKeyId: 8729059,
+    baseKey: <Buffer 05 4c 88 7b 66 e2 b3 28 01 cb 6d 91 f6 2d e8 d9 89 fc b6 f8 e5 5b 40 e6 3e c1 9d 43 80 4d ba 32 60>,
+    preKeyId: 14425450
+  }
+}
