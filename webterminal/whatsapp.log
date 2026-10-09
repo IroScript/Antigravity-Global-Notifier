@@ -20061,3 +20061,83 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5054 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B36E5A6B28C21FEA74)
 [WA Bridge] 💻 cmd output 5055 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03B1605ACA14BD0F97F)
+[WA Bridge] ⚡ cmd 5057 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00D1B5B2C3CC704CA5E)
+[WA Bridge] 💻 cmd output 5058 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01BF6616B77CED30066)
+[WA Bridge] 🧠 thinking 5060 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5060)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+হোয়াটসঅ্যাপ ব্রিজ এবং মাস্টার কনসোলে লুপ (Echo Cascade Loop) হওয়ার মূল কারণগুলো চিহ্নিত করা হয়েছে এবং [whatsapp_bridge.js](file:///home/opc/.webterminal/whatsapp_bridge.js)-এ প্রয়োজনীয় কোড প্যাচ করে স্থায়ী সমাধান সম্পন্ন করা হয়েছে।
+
+---
+
+### 🔍 লুপটি কেন হচ্ছিল (Root Cause Analysis):
+
+১. **ব্লককোট প্রিফিক্স অমিল (Blockquote Prefix Mismatch in `isBotOutput`):**
+   - হোয়াটসঅ্যাপ গ্রুপে যখন লাইভ টার্মিনাল নোটিফিকেশন ও চিন্তাভাবনার লগ পাঠানো হচ্ছিল (যেমন: `> ⚡ *[টার্মিনাল কমান্ড]*`, `> 📝 *[কোড এডিট/ফাইল]*`, `> 💬 *আপনার নির্দেশনা:*`, `> 🧠 *[চিন্তাভাবনা]*`), মেসেজগুলো শুরু হচ্ছিল মার্কডাউন কোট চিহ্ন (`> `) দিয়ে।
+   - পূর্বের ফিল্টারে শর্ত ছিল:
+     ```javascript
+     text.startsWith('⚡') || text.startsWith('📈') || text.startsWith('🤖')
+     ```
+   - যেহেতু টেক্সটগুলোর শুরুতে `>` এবং স্পেস ছিল, তাই জাভাস্ক্রিপ্ট `false` রিটার্ন করত। ফলে ফিল্টারটি বটের মেসেজকে ইউজার মেসেজ ভেবে ভুল করছিল।
+
+২. **ডুয়েল-বট ইকো ক্যাসকেড (Multi-Bot Feedback Loop):**
+   - একই হোয়াটসঅ্যাপ গ্রুপে Azure বা অন্যান্য নোডের ব্রি
+<truncated 2163 bytes>
+া নেওয়া হয়েছে:
+
+১. **হোলিস্টিক প্রিফিক্স ট্রিম ও ফিল্টার জোরদার:**
+   - [whatsapp_bridge.js](file:///home/opc/.webterminal/whatsapp_bridge.js)-এ `cleanPrefixText` যোগ করে যেকোনো উদ্ধৃতি চিহ্ন (`>`), স্পেস বা ট্যাব স্বয়ংক্রিয়ভাবে ট্রিম করার ব্যবস্থা করা হয়েছে:
+     ```javascript
+     const cleanPrefixText = text.replace(/^[>\s\t\r\n]+/, '');
+     ```
+   - `⚡`, `📝`, `👁️`, `💻`, `💬`, `🧠`, `আপনার নির্দেশনা`, `টার্মিনাল কমান্ড`, `কোড এডিট/ফাইল` ইত্যাদি সকল ধরনের স্বয়ংক্রিয় আউটপুট তাৎক্ষণিকভাবে বাতিল (Drop) করার ব্যবস্থা কার্যকর করা হয়েছে।
+
+২. **টাইমস্ট্যাম্প গার্ড (Stale Message Filter):**
+   - `bridgeStartTime` ভ্যালিডেশন যুক্ত করা হয়েছে, যার ফলে ব্রিজ চালু হওয়ার পূর্বের বা ১৫ সেকেন্ডের বেশি পুরনো কোনো ব্যাকলগ মেসেজ টার্মিনালে পুশ হবে না।
+
+৩. **সার্ভিস রিস্টার্ট ও স্থিতি পরীক্ষা:**
+   - স্ক্রিপ্টের সিনট্যাক্স যাচাই করে `agy-whatsapp.service` সফলভাবে পুনরায় চালু করা হয়েছে।
+   - বর্তমানে সার্ভিসটি সম্পূর্ণ স্থিতিশীল রয়েছে এবং কোনো লুপ ছাড়াই স্বাভাবিকভাবে কাজ করছে।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ১২:০৩ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4577
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AC182D700061E3FE53)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB006C46DFA8EF08E9F66)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB024B7BCBA4C2EE37A03, seq: 337): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB005FE66D955AE675E26, seq: 338): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0D17F617565A1C92A0D, seq: 339): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00A4BB23CAB0837C812)
+[WA Bridge] ⚡ cmd 5063 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09D4DA8C868E7BE60A9)
+[WA Bridge] 💻 cmd output 5064 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D90886D82060E55082)
+[WA Bridge] ⚡ cmd 5066 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0435640BCA100F815A6)
+[WA Bridge] 💻 cmd output 5067 (agy:0)
