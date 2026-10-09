@@ -10633,3 +10633,62 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 261065845813300@lid
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 261065845813300@lid
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 261065845813300@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363430126311832@g.us): এবার বিষয়টা পরিষ্কার। AGY-এর forensic report অনুযায়ী আগের blocker-এর কারণ পাওয়া গেছে।
+
+banking/yarn.lock-এর পরিবর্তনটি Alco Ecommerce-এর custom development নয়। Report-এর evidence অনুযায়ী ERPNext-এর postinstall:
+
+postinstall → cd banking && yarn install
+
+চলার পর lockfile পরিবর্তিত হয়েছে। Timing-ও সেই ব্যাখ্যার সঙ্গে মেলে—clone-এর প্রায় ১ মিনিট ২২ সেকেন্ড পর পরিবর্তন হয়েছে, এবং একই সময় banking build artifacts-ও তৈরি হয়েছে।
+
+তবে একটা ছোট distinction রাখব: “অকাট্যভাবে ঠিক কোন command (yarn install নাকি bench setup requirements) এটি trigger করেছে”—শুধু এই evidence দিয়ে সেটা ১০০% বলা যায় না। কিন্তু postinstall-জনিত dependency installation side-effect হওয়ার evidence বেশ শক্ত।
+
+এখন আমি কী করতাম
+
+তোমার মূল requirement যেহেতু:
+
+> Local-এর tested Frappe/ERPNext/Alco state → VM-এ reproducibly একই state
+
+
+
+তাই Clean Parity নিতাম।
+
+অর্থাৎ শুধু এই generated lockfile-টি HEAD অবস্থায় ফেরানো:
+
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext restore banking/yarn.lock
+
+তারপর অবশ্যই আবার verification:
+
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext status --short
+
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext rev-parse HEAD
+
+Expected:
+
+status --short → কোনো output নেই
+
+HEAD →
+af63cde4941570ec7b9e12422c68302762cfcf91
+
+কিন্তু এখানেই একটা মজার ফাঁদ আছে: পরবর্তী setup-এ যদি একই yarn install আবার lockfile mutate করে, তাহলে VM-1 আবার dirty হয়ে যেতে পারে। তাই Phase 4 শেষে শুধু SHA match দেখলে চলবে না; git status --short-ও আবার পরীক্ষা করতে হবে।
+
+সুতরাং acceptance হওয়া উচিত:
+
+Local ERPNext:
+SHA = af63cde...
+Working tree = CLEAN
+
+VM-1 ERPNext:
+SHA = af63cde...
+Working tree = CLEAN
+
+        ↓
+
+PARITY PASS
+
+এটা হলে Phase 3—VM-2 MariaDB setup—এ যাওয়া যৌক্তিক।
+
+আর একটা জিনিস ভালো হয়েছে: AGY তোমার নির্দেশ মেনে নিজে থেকে file restore করেনি। আগে evidence বের করেছে এবং destructive/working-tree-changing decision তোমার কাছে এনেছে। এই ধরনের gate production migration-এ রাখা ভালো।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:frappe for task: "[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: স"
+[WA Bridge] ✅ Forwarded prompt to agy:frappe via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB07B9B130B803AB408BB)

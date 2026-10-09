@@ -1,132 +1,56 @@
-[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] হ্যাঁ। সে মূলত একটা problem-ই পেয়েছে, আর তোমার prompt-এর safety rule মেনে সেখানেই deployment থামিয়েছে।
+[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] এবার বিষয়টা পরিষ্কার। AGY-এর forensic report অনুযায়ী আগের blocker-এর কারণ পাওয়া গেছে।
 
-সমস্যাটা কী?
+banking/yarn.lock-এর পরিবর্তনটি Alco Ecommerce-এর custom development নয়। Report-এর evidence অনুযায়ী ERPNext-এর postinstall:
 
-তোমার local ERPNext পুরোপুরি clean নয়:
+postinstall → cd banking && yarn install
 
-ERPNext
-HEAD = af63cde...
-Version = 16.37.0
+চলার পর lockfile পরিবর্তিত হয়েছে। Timing-ও সেই ব্যাখ্যার সঙ্গে মেলে—clone-এর প্রায় ১ মিনিট ২২ সেকেন্ড পর পরিবর্তন হয়েছে, এবং একই সময় banking build artifacts-ও তৈরি হয়েছে।
 
-কিন্তু:
-banking/yarn.lock = MODIFIED
+তবে একটা ছোট distinction রাখব: “অকাট্যভাবে ঠিক কোন command (yarn install নাকি bench setup requirements) এটি trigger করেছে”—শুধু এই evidence দিয়ে সেটা ১০০% বলা যায় না। কিন্তু postinstall-জনিত dependency installation side-effect হওয়ার evidence বেশ শক্ত।
 
-অর্থাৎ Git-এর official/current commit বলছে banking/yarn.lock একরকম হওয়া উচিত, কিন্তু তোমার local machine-এ file-টা অন্যরকম।
+এখন আমি কী করতাম
 
-পরিবর্তনটা মূলত dependency version:
+তোমার মূল requirement যেহেতু:
 
-আগে:
-follow-redirects 1.15.11
-proxy-from-env 1.1.0
+> Local-এর tested Frappe/ERPNext/Alco state → VM-এ reproducibly একই state
 
-Local-এ এখন:
-follow-redirects 1.16.1
-proxy-from-env 2.1.0
 
-তাই বর্তমানে:
 
-Local ERPNext
-= Git commit af63cde...
-+ অতিরিক্ত uncommitted yarn.lock change
+তাই Clean Parity নিতাম।
 
-কিন্তু নতুন VM-এ শুধু:
+অর্থাৎ শুধু এই generated lockfile-টি HEAD অবস্থায় ফেরানো:
 
-git checkout af63cde...
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext restore banking/yarn.lock
 
-করলে ওই অতিরিক্ত change আসবে না।
+তারপর অবশ্যই আবার verification:
 
-ফলে তোমার সবচেয়ে গুরুত্বপূর্ণ requirement—
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext status --short
 
-> Local যেটা চলছে, VM-এ হুবহু সেটাই থাকবে
+git -C /home/azureuser/Frappe-erp-Alco/frappe-bench/apps/erpnext rev-parse HEAD
 
+Expected:
 
+status --short → কোনো output নেই
 
-—প্রমাণ করা যাবে না।
+HEAD →
+af63cde4941570ec7b9e12422c68302762cfcf91
 
+কিন্তু এখানেই একটা মজার ফাঁদ আছে: পরবর্তী setup-এ যদি একই yarn install আবার lockfile mutate করে, তাহলে VM-1 আবার dirty হয়ে যেতে পারে। তাই Phase 4 শেষে শুধু SHA match দেখলে চলবে না; git status --short-ও আবার পরীক্ষা করতে হবে।
 
----
+সুতরাং acceptance হওয়া উচিত:
 
-কেন সে তোমাকে প্রশ্ন করেছে?
+Local ERPNext:
+SHA = af63cde...
+Working tree = CLEAN
 
-আমাদের prompt-এই বলা ছিল:
+VM-1 ERPNext:
+SHA = af63cde...
+Working tree = CLEAN
 
-> local repository dirty হলে deployment STOP করবে; নিজে থেকে change delete করবে না।
+        ↓
 
+PARITY PASS
 
+এটা হলে Phase 3—VM-2 MariaDB setup—এ যাওয়া যৌক্তিক।
 
-সুতরাং এখানে AGY ঠিক কাজ করেছে।
-
-সে নিজে যদি চালাত:
-
-git checkout banking/yarn.lock
-
-তাহলে তোমার local working state পরিবর্তন করে ফেলত।
-
-আবার নিজে থেকে commit করলেও সে সিদ্ধান্ত নিত যে change-টা intentional।
-
-দুটোই আমাদের protocol-এর বিরুদ্ধে।
-
-
----
-
-কিন্তু AGY-এর রিপোর্টে একটা দুর্বল জায়গা আছে
-
-সে লিখেছে:
-
-> “পূর্বে লোকাল frontend build বা package installation-এর সময় Yarn dependency lockfile update হয়েছিল।”
-
-
-
-এই কারণটা report থেকে প্রমাণিত নয়।
-
-Diff দেখে আমরা বলতে পারি dependency lock বদলেছে। কিন্তু কখন, কোন command-এ, কেন বদলেছে—শুধু Git diff দেখে নিশ্চিত হওয়া যায় না।
-
-এখন আসল investigation হওয়া উচিত:
-
-এই yarn.lock change কি—
-
-A. Alco/Frappe চালানোর জন্য সত্যিই প্রয়োজনীয়?
-
-নাকি
-
-B. accidental generated change?
-
-এটা না জেনে A/B কোনো option-ই নেওয়া উচিত নয়।
-
-
----
-
-আরও একটা গুরুত্বপূর্ণ ব্যাপার
-
-banking/yarn.lock path-টা একটু interesting।
-
-তোমার report অনুযায়ী repository:
-
-apps/erpnext
-
-কিন্তু modified:
-
-banking/yarn.lock
-
-তাই আমি AGY-কে আগে এই file-এর ownership/context এবং dependency কেন পরিবর্তিত হয়েছে যাচাই করতে বলতাম।
-
-যদি প্রমাণ হয় accidental:
-
-restore original
-→ ERPNext clean
-→ exact SHA deploy
-
-আর যদি প্রমাণ হয় local runtime সত্যিই এই modified lockfile-এর উপর নির্ভরশীল:
-
-change preserve/version-control
-→ নতুন reproducible commit/state
-→ Local ও VM দুটোতেই একই state
-
-Blindly checkout নয়, blindly commit-ও নয়।
-
-
----
-
-বাকি report অনুযায়ী বড় কোনো blocker সে দেখায়নি। Frappe clean, Alco clean, exact SHAs পেয়েছে, local docs match বলেছে, MariaDB/Redis/runtime inventory করেছে এবং target VM IP-ও ঠিক করেছে। একমাত্র deployment gate এখন এই ERPNext dirty working tree।
-
-আমি চাইলে তোমাকে এখন একটা AGY prompt লিখে দিতে পারি যেটা কোনো modification না করে forensicভাবে বের করবে banking/yarn.lock change-টা accidental নাকি Alco/Frappe-এর জন্য genuinely required।
+আর একটা জিনিস ভালো হয়েছে: AGY তোমার নির্দেশ মেনে নিজে থেকে file restore করেনি। আগে evidence বের করেছে এবং destructive/working-tree-changing decision তোমার কাছে এনেছে। এই ধরনের gate production migration-এ রাখা ভালো।
