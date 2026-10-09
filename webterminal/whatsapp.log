@@ -57783,3 +57783,678 @@ No production changes.
 [WA Bridge] Ignored message from other sender: 120363418612097009@g.us 76610069913794@lid
 [WA Bridge] Ignored message from other sender: 120363418612097009@g.us 76610069913794@lid
 [WA Bridge] Ignored message from other sender: 120363400568877928@g.us 168689622085761@lid
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): /boost CRITICAL: FIX WHATSAPP → TMUX → CODEX/AGY PROMPT DELIVERY
+
+You are an independent engineer responsible for diagnosing and fixing ONE specific subsystem: WhatsApp prompt delivery into existing Codex CLI and Antigravity CLI tmux sessions.
+
+1. THE ACTUAL PROBLEM
+
+The WhatsApp Bridge currently uses a pattern similar to:
+
+execFileSync('tmux', ['load-buffer', '-b', bufName, cmdFile]);
+execFileSync('tmux', ['paste-buffer', '-p', '-r', '-b', bufName, '-t', targetWindow]);
+execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
+
+A real approximately 14 KB WhatsApp prompt was loaded and pasted, but Codex did not begin executing it.
+
+The previous investigation suggested a bracketed-paste timing race.
+
+However, this root cause has NOT been independently proven.
+
+Your job is to establish the actual cause, implement the minimum safe permanent repair, and verify its behavior.
+
+2. ABSOLUTE SCOPE RESTRICTION
+
+Work ONLY on the WhatsApp Bridge prompt-delivery subsystem and directly necessary tests.
+
+Primary investigation target:
+
+"/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/whatsapp_bridge.js"
+
+You MUST NOT modify:
+
+- Codex CLI source or configuration
+- Antigravity CLI source or configuration
+- Global tmux configuration
+- Backup Orchestrator
+- GitPush watcher
+- Frappe/ERPNext
+- Other projects or autonomous agents
+- Existing project data
+- Unrelated services or infrastructure
+
+Do not restart, kill, suspend, or interrupt existing coding agents.
+
+Do not touch production prompt queues destructively.
+
+Preserve existing WhatsApp group routing, terminal assignments, native slash commands, session state, and existing project-specific ZIP-capture restrictions.
+
+You may modify directly relevant bridge code and isolated tests only.
+
+If an out-of-scope issue is discovered, document it without changing that subsystem.
+
+3. ABSOLUTE USER REQUIREMENT
+
+ZERO USER DECISIONS.
+
+The WhatsApp Bridge must never ask the user:
+
+- Whether to retry Enter
+- Whether the prompt was submitted
+- Whether to continue
+- Whether recovery should start
+- Whether to retry prompt delivery
+- Whether to select a recovery strategy
+
+All routine decisions must be handled autonomously using deterministic rules and observable evidence.
+
+But autonomy does NOT authorize duplicate execution, destructive recovery, or unsupported guesses.
+
+If safe recovery is impossible, preserve the message, mark the exact failure state, and report it automatically without requesting human input.
+
+4. INVESTIGATE THE REAL ROOT CAUSE FIRST
+
+Trace the complete actual path:
+
+WhatsApp message received
+→ bridge parsing
+→ group/session routing
+→ queue
+→ temporary prompt file
+→ tmux load-buffer
+→ tmux paste-buffer
+→ bracketed-paste processing
+→ submit key
+→ CLI composer
+→ execution started
+→ bridge acknowledgement.
+
+Determine:
+
+1. Whether the complete original message arrived.
+2. Whether UTF-8 content was preserved.
+3. Whether the temporary file contains the complete prompt.
+4. Whether tmux loaded the correct bytes.
+5. Whether the correct pane received the paste.
+6. Whether bracketed paste is enabled and handled correctly.
+7. Whether Enter was sent before Codex finished processing the paste.
+8. Whether Codex received Enter as submission or text.
+9. Whether existing queue, lock, backup gate, or session routing contributed.
+10. Whether the bridge falsely marked the message as delivered.
+
+Collect timestamps, relevant logs, byte counts, hashes, tmux state and CLI state.
+
+Do NOT claim a root cause without evidence.
+
+5. IMPLEMENT AUTONOMOUS DELIVERY STATE MACHINE
+
+Introduce or improve the existing delivery lifecycle without unnecessarily replacing working architecture.
+
+Required logical states:
+
+RECEIVED
+→ PERSISTED
+→ ROUTED
+→ READY
+→ PASTING
+→ PASTED
+→ SUBMITTING
+→ SUBMISSION_CONFIRMED
+→ EXECUTING
+→ COMPLETED
+
+Additional states:
+
+- WAITING_FOR_SAME_PROJECT_ZIP_CAPTURE
+- RETRYABLE_FAILURE
+- RECOVERY_IN_PROGRESS
+- EXECUTION_UNCERTAIN
+- TERMINAL_UNAVAILABLE
+- FAILED_WITH_EVIDENCE
+
+A successful tmux command exit must NOT automatically mean Codex has accepted or started executing the prompt.
+
+Distinguish transport success, confirmed acceptance and observed execution.
+
+If the installed CLI does not expose reliable acceptance evidence, explicitly retain the appropriate uncertainty state rather than inventing confirmation.
+
+6. FIX BRACKETED-PASTE / ENTER RACE
+
+Preserve file-based tmux buffer delivery for large prompts.
+
+Investigate whether post-paste settling time is required for the installed Codex and AGY versions.
+
+Implement a configurable, asynchronous, bounded settling strategy supported by isolated measurements.
+
+Requirements:
+
+- Do not hardcode 300 ms as universally safe.
+- Do not assume 1500 ms is always enough.
+- Do not use synchronous sleeps that block WhatsApp message reception.
+- Serialize delivery actions per target pane.
+- Permit unrelated terminal queues to progress concurrently.
+- Support large multiline Unicode prompts.
+- Confirm that special characters and line endings are handled safely.
+- Preserve exact user content except for explicitly documented transport normalization.
+
+Do not use timing alone as evidence of successful submission.
+
+7. EXECUTION VERIFICATION
+
+Build the strongest available verification mechanism for each supported CLI.
+
+Prefer authoritative structured events, documented CLI interfaces, or reliable session telemetry where available.
+
+Use tmux capture-pane and visual state patterns only as supporting evidence unless their reliability is established by testing.
+
+Test:
+
+- Idle composer
+- Multiline draft
+- Working state
+- Tool execution state
+- Completed response
+- Session not ready
+- Terminal disconnected
+- Session restarted
+- Ambiguous state
+
+Do not assume that the appearance or absence of "Working..." is sufficient proof.
+
+Avoid interpreting ordinary terminal output as authoritative execution evidence.
+
+8. SAFE AUTOMATIC RECOVERY
+
+Recovery must be autonomous AND duplicate-safe.
+
+Critical rule:
+
+NEVER blindly send repeated Enter keys.
+
+Before any retry, determine whether submission may already have occurred.
+
+If submission is definitely absent and the original prompt is still safely recoverable, retry the minimum necessary delivery operation.
+
+If execution may already have started, never replay the prompt merely because acknowledgement is missing.
+
+Use a durable unique message ID, terminal identity, attempt history, and available execution evidence.
+
+Prevent concurrent submissions to the same target pane.
+
+If the underlying CLI cannot guarantee idempotent submission, do not claim exactly-once execution.
+
+Instead, implement the strongest achievable duplicate prevention and preserve uncertainty explicitly.
+
+Never clear an unknown composer, kill a CLI process, or restart a terminal as a shortcut.
+
+9. PRESERVE EXISTING BACKUP INVARIANT
+
+Normal WhatsApp prompt delivery must NEVER depend on whether Backup Orchestrator is running.
+
+The ONLY permitted transport hold is when the SAME PROJECT is ACTUALLY inside its source ZIP CAPTURE critical section.
+
+Not while:
+
+- Backup is pending
+- Quiet timer is running
+- Checksums are being calculated
+- Upload is running
+- Remote verification is running
+- Another project is being backed up
+- Another coding agent is busy
+
+During the actual same-project ZIP capture, hold that project's prompt safely.
+
+Once the critical section ends, release it automatically in order.
+
+Do not modify the Backup Orchestrator to achieve this.
+
+10. ISOLATED END-TO-END TESTING
+
+Use disposable test sessions, mocks, or isolated terminals.
+
+Never inject test prompts into active production agents.
+
+Test at least:
+
+1. Short single-line prompt
+2. 14 KB multiline prompt
+3. 100 KB prompt
+4. 1 MB prompt, within verified CLI limits
+5. Bengali and Unicode text
+6. Special characters
+7. Embedded multiline commands as inert prompt text
+8. Slow TUI paste processing
+9. Delayed execution acknowledgement
+10. Temporary terminal unavailability
+11. Bridge interruption during delivery
+12. Two messages targeting the same terminal
+13. Parallel messages targeting different terminals
+14. Same-project active ZIP capture
+15. Backup daemon stopped while no ZIP capture is active
+16. Submission succeeds but acknowledgement is lost
+17. Repeated Enter would cause duplicate execution
+18. Native AGY slash-command delivery
+
+Verify that unsupported payload sizes fail safely without truncation or false success.
+
+Include negative and failure-injection tests.
+
+For every test, report:
+
+Expected → Actual → Evidence → PASS/FAIL.
+
+A test is not PASS merely because the bridge function returned successfully.
+
+11. SAFETY AND CHANGE CONTROL
+
+Before editing:
+
+- Record existing behavior.
+- Review dependencies.
+- Identify the smallest required code changes.
+- Establish rollback capability.
+- Keep all production agents uninterrupted.
+
+After editing:
+
+- Run syntax checks.
+- Run isolated tests.
+- Run regression tests.
+- Compare behavior against the original bridge contract.
+- Check for unintended changes.
+- Verify preservation of group routing and slash commands.
+- Verify recovery safety and duplicate prevention.
+
+Do not run unverified test payloads in production.
+
+Do not claim production end-to-end success from isolated tests alone.
+
+12. FINAL ACCEPTANCE CRITERIA
+
+The solution is acceptable only if evidence supports the following:
+
+- Complete prompt preservation.
+- Correct target routing.
+- Safe large-prompt paste handling.
+- Reliable submission handling within supported conditions.
+- Evidence-based state transitions.
+- No false DELIVERED acknowledgement.
+- No blind Enter retry.
+- No automatic duplicate execution in tested failure scenarios.
+- Durable recovery state.
+- No routine user decisions.
+- No dependence on Backup Orchestrator except the actual same-project ZIP capture.
+- No unrelated project modifications.
+- No interruption of existing autonomous agents.
+
+Any unverified property must remain explicitly UNVERIFIED.
+
+13. FINAL REPORT
+
+Report:
+
+1. Actual root cause and evidence.
+2. Incorrect previous assumptions.
+3. Exact files and lines changed.
+4. Implemented delivery architecture.
+5. Autonomous recovery behavior.
+6. Duplicate-prevention guarantees and limitations.
+7. Complete test matrix.
+8. Production deployment/verification status.
+9. Remaining risks.
+
+Important:
+
+You are responsible for investigating, implementing, and testing the scoped fix autonomously.
+
+DO NOT ask the user questions.
+
+DO NOT require user decisions.
+
+DO NOT expand scope.
+
+DO NOT confuse a successful paste with a successful execution.
+
+DO NOT declare FULL PASS without direct supporting evidence.
+
+Proceed with the scoped investigation and repair.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "/boost CRITICAL: FIX WHATSAPP → TMUX → CODEX/AGY PROMPT DELI"
+[WA Bridge] ⌨️ Forwarded native slash command to agy:0 via literal keystroke: /boost CRITICAL: FIX WHATSAPP → TMUX → CODEX/AGY PROMPT DELIVERY
+
+You are an independent engineer responsible for diagnosing and fixing ONE specific subsystem: WhatsApp prompt delivery into existing Codex CLI and Antigravity CLI tmux sessions.
+
+1. THE ACTUAL PROBLEM
+
+The WhatsApp Bridge currently uses a pattern similar to:
+
+execFileSync('tmux', ['load-buffer', '-b', bufName, cmdFile]);
+execFileSync('tmux', ['paste-buffer', '-p', '-r', '-b', bufName, '-t', targetWindow]);
+execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
+
+A real approximately 14 KB WhatsApp prompt was loaded and pasted, but Codex did not begin executing it.
+
+The previous investigation suggested a bracketed-paste timing race.
+
+However, this root cause has NOT been independently proven.
+
+Your job is to establish the actual cause, implement the minimum safe permanent repair, and verify its behavior.
+
+2. ABSOLUTE SCOPE RESTRICTION
+
+Work ONLY on the WhatsApp Bridge prompt-delivery subsystem and directly necessary tests.
+
+Primary investigation target:
+
+"/home/azureuser/IroScript_Projects/Whatsapp master/webterminal/whatsapp_bridge.js"
+
+You MUST NOT modify:
+
+- Codex CLI source or configuration
+- Antigravity CLI source or configuration
+- Global tmux configuration
+- Backup Orchestrator
+- GitPush watcher
+- Frappe/ERPNext
+- Other projects or autonomous agents
+- Existing project data
+- Unrelated services or infrastructure
+
+Do not restart, kill, suspend, or interrupt existing coding agents.
+
+Do not touch production prompt queues destructively.
+
+Preserve existing WhatsApp group routing, terminal assignments, native slash commands, session state, and existing project-specific ZIP-capture restrictions.
+
+You may modify directly relevant bridge code and isolated tests only.
+
+If an out-of-scope issue is discovered, document it without changing that subsystem.
+
+3. ABSOLUTE USER REQUIREMENT
+
+ZERO USER DECISIONS.
+
+The WhatsApp Bridge must never ask the user:
+
+- Whether to retry Enter
+- Whether the prompt was submitted
+- Whether to continue
+- Whether recovery should start
+- Whether to retry prompt delivery
+- Whether to select a recovery strategy
+
+All routine decisions must be handled autonomously using deterministic rules and observable evidence.
+
+But autonomy does NOT authorize duplicate execution, destructive recovery, or unsupported guesses.
+
+If safe recovery is impossible, preserve the message, mark the exact failure state, and report it automatically without requesting human input.
+
+4. INVESTIGATE THE REAL ROOT CAUSE FIRST
+
+Trace the complete actual path:
+
+WhatsApp message received
+→ bridge parsing
+→ group/session routing
+→ queue
+→ temporary prompt file
+→ tmux load-buffer
+→ tmux paste-buffer
+→ bracketed-paste processing
+→ submit key
+→ CLI composer
+→ execution started
+→ bridge acknowledgement.
+
+Determine:
+
+1. Whether the complete original message arrived.
+2. Whether UTF-8 content was preserved.
+3. Whether the temporary file contains the complete prompt.
+4. Whether tmux loaded the correct bytes.
+5. Whether the correct pane received the paste.
+6. Whether bracketed paste is enabled and handled correctly.
+7. Whether Enter was sent before Codex finished processing the paste.
+8. Whether Codex received Enter as submission or text.
+9. Whether existing queue, lock, backup gate, or session routing contributed.
+10. Whether the bridge falsely marked the message as delivered.
+
+Collect timestamps, relevant logs, byte counts, hashes, tmux state and CLI state.
+
+Do NOT claim a root cause without evidence.
+
+5. IMPLEMENT AUTONOMOUS DELIVERY STATE MACHINE
+
+Introduce or improve the existing delivery lifecycle without unnecessarily replacing working architecture.
+
+Required logical states:
+
+RECEIVED
+→ PERSISTED
+→ ROUTED
+→ READY
+→ PASTING
+→ PASTED
+→ SUBMITTING
+→ SUBMISSION_CONFIRMED
+→ EXECUTING
+→ COMPLETED
+
+Additional states:
+
+- WAITING_FOR_SAME_PROJECT_ZIP_CAPTURE
+- RETRYABLE_FAILURE
+- RECOVERY_IN_PROGRESS
+- EXECUTION_UNCERTAIN
+- TERMINAL_UNAVAILABLE
+- FAILED_WITH_EVIDENCE
+
+A successful tmux command exit must NOT automatically mean Codex has accepted or started executing the prompt.
+
+Distinguish transport success, confirmed acceptance and observed execution.
+
+If the installed CLI does not expose reliable acceptance evidence, explicitly retain the appropriate uncertainty state rather than inventing confirmation.
+
+6. FIX BRACKETED-PASTE / ENTER RACE
+
+Preserve file-based tmux buffer delivery for large prompts.
+
+Investigate whether post-paste settling time is required for the installed Codex and AGY versions.
+
+Implement a configurable, asynchronous, bounded settling strategy supported by isolated measurements.
+
+Requirements:
+
+- Do not hardcode 300 ms as universally safe.
+- Do not assume 1500 ms is always enough.
+- Do not use synchronous sleeps that block WhatsApp message reception.
+- Serialize delivery actions per target pane.
+- Permit unrelated terminal queues to progress concurrently.
+- Support large multiline Unicode prompts.
+- Confirm that special characters and line endings are handled safely.
+- Preserve exact user content except for explicitly documented transport normalization.
+
+Do not use timing alone as evidence of successful submission.
+
+7. EXECUTION VERIFICATION
+
+Build the strongest available verification mechanism for each supported CLI.
+
+Prefer authoritative structured events, documented CLI interfaces, or reliable session telemetry where available.
+
+Use tmux capture-pane and visual state patterns only as supporting evidence unless their reliability is established by testing.
+
+Test:
+
+- Idle composer
+- Multiline draft
+- Working state
+- Tool execution state
+- Completed response
+- Session not ready
+- Terminal disconnected
+- Session restarted
+- Ambiguous state
+
+Do not assume that the appearance or absence of "Working..." is sufficient proof.
+
+Avoid interpreting ordinary terminal output as authoritative execution evidence.
+
+8. SAFE AUTOMATIC RECOVERY
+
+Recovery must be autonomous AND duplicate-safe.
+
+Critical rule:
+
+NEVER blindly send repeated Enter keys.
+
+Before any retry, determine whether submission may already have occurred.
+
+If submission is definitely absent and the original prompt is still safely recoverable, retry the minimum necessary delivery operation.
+
+If execution may already have started, never replay the prompt merely because acknowledgement is missing.
+
+Use a durable unique message ID, terminal identity, attempt history, and available execution evidence.
+
+Prevent concurrent submissions to the same target pane.
+
+If the underlying CLI cannot guarantee idempotent submission, do not claim exactly-once execution.
+
+Instead, implement the strongest achievable duplicate prevention and preserve uncertainty explicitly.
+
+Never clear an unknown composer, kill a CLI process, or restart a terminal as a shortcut.
+
+9. PRESERVE EXISTING BACKUP INVARIANT
+
+Normal WhatsApp prompt delivery must NEVER depend on whether Backup Orchestrator is running.
+
+The ONLY permitted transport hold is when the SAME PROJECT is ACTUALLY inside its source ZIP CAPTURE critical section.
+
+Not while:
+
+- Backup is pending
+- Quiet timer is running
+- Checksums are being calculated
+- Upload is running
+- Remote verification is running
+- Another project is being backed up
+- Another coding agent is busy
+
+During the actual same-project ZIP capture, hold that project's prompt safely.
+
+Once the critical section ends, release it automatically in order.
+
+Do not modify the Backup Orchestrator to achieve this.
+
+10. ISOLATED END-TO-END TESTING
+
+Use disposable test sessions, mocks, or isolated terminals.
+
+Never inject test prompts into active production agents.
+
+Test at least:
+
+1. Short single-line prompt
+2. 14 KB multiline prompt
+3. 100 KB prompt
+4. 1 MB prompt, within verified CLI limits
+5. Bengali and Unicode text
+6. Special characters
+7. Embedded multiline commands as inert prompt text
+8. Slow TUI paste processing
+9. Delayed execution acknowledgement
+10. Temporary terminal unavailability
+11. Bridge interruption during delivery
+12. Two messages targeting the same terminal
+13. Parallel messages targeting different terminals
+14. Same-project active ZIP capture
+15. Backup daemon stopped while no ZIP capture is active
+16. Submission succeeds but acknowledgement is lost
+17. Repeated Enter would cause duplicate execution
+18. Native AGY slash-command delivery
+
+Verify that unsupported payload sizes fail safely without truncation or false success.
+
+Include negative and failure-injection tests.
+
+For every test, report:
+
+Expected → Actual → Evidence → PASS/FAIL.
+
+A test is not PASS merely because the bridge function returned successfully.
+
+11. SAFETY AND CHANGE CONTROL
+
+Before editing:
+
+- Record existing behavior.
+- Review dependencies.
+- Identify the smallest required code changes.
+- Establish rollback capability.
+- Keep all production agents uninterrupted.
+
+After editing:
+
+- Run syntax checks.
+- Run isolated tests.
+- Run regression tests.
+- Compare behavior against the original bridge contract.
+- Check for unintended changes.
+- Verify preservation of group routing and slash commands.
+- Verify recovery safety and duplicate prevention.
+
+Do not run unverified test payloads in production.
+
+Do not claim production end-to-end success from isolated tests alone.
+
+12. FINAL ACCEPTANCE CRITERIA
+
+The solution is acceptable only if evidence supports the following:
+
+- Complete prompt preservation.
+- Correct target routing.
+- Safe large-prompt paste handling.
+- Reliable submission handling within supported conditions.
+- Evidence-based state transitions.
+- No false DELIVERED acknowledgement.
+- No blind Enter retry.
+- No automatic duplicate execution in tested failure scenarios.
+- Durable recovery state.
+- No routine user decisions.
+- No dependence on Backup Orchestrator except the actual same-project ZIP capture.
+- No unrelated project modifications.
+- No interruption of existing autonomous agents.
+
+Any unverified property must remain explicitly UNVERIFIED.
+
+13. FINAL REPORT
+
+Report:
+
+1. Actual root cause and evidence.
+2. Incorrect previous assumptions.
+3. Exact files and lines changed.
+4. Implemented delivery architecture.
+5. Autonomous recovery behavior.
+6. Duplicate-prevention guarantees and limitations.
+7. Complete test matrix.
+8. Production deployment/verification status.
+9. Remaining risks.
+
+Important:
+
+You are responsible for investigating, implementing, and testing the scoped fix autonomously.
+
+DO NOT ask the user questions.
+
+DO NOT require user decisions.
+
+DO NOT expand scope.
+
+DO NOT confuse a successful paste with a successful execution.
+
+DO NOT declare FULL PASS without direct supporting evidence.
+
+Proceed with the scoped investigation and repair.
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01015A0E2D4F949EE1B)
+[WA Bridge] Ignored message from other sender: 120363378039870251@g.us 168689622085761@lid
