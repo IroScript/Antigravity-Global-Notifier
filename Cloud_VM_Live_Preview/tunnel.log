@@ -376,3 +376,5 @@
 2026-10-09T10:32:19Z INF precheck complete hard_fail=false run_id=aca76474-3ba3-461e-a409-2fa40dd9fb7f suggested_protocol=quic
 2026-10-09T15:21:53Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
 2026-10-09T15:21:53Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://limiting-pursuit-gas-quizzes.trycloudflare.com/api/stats event=0 ip=198.41.192.7 type=http
+2026-10-09T15:35:24Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
+2026-10-09T15:35:24Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://limiting-pursuit-gas-quizzes.trycloudflare.com/api/properties?path=%2Fhome%2Fazureuser event=0 ip=198.41.192.7 type=http
