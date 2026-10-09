@@ -8321,3 +8321,197 @@ Delete
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B4A3E862BF92E580CF)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB04668C53FF8501541C6)
+[WA Bridge] ✅ Processed outbox job: report_1791559938.json
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): ### CloakBrowser রিপোর্টের প্রযুক্তিগত অডিট
+
+রায়: `PARTIALLY VERIFIED — RUNTIME UNVERIFIED`
+
+আপনার রিপোর্টে ১০–১২০ সেকেন্ড বিরতির কোড দেখানো হয়েছে। কিন্তু আগের ব্রাউজার সম্পূর্ণ বন্ধ হওয়ার পরেই পরবর্তী ব্রাউজার চালু হচ্ছে—এটি এখনও প্রমাণিত নয়।
+
+বিশেষ করে তিনটি সমস্যা রয়েছে:
+
+* `is_busy == False` মানেই ব্রাউজার বন্ধ নয়। Worker নিষ্ক্রিয় থাকলেও Chromium চালু থাকতে পারে।
+
+* `py_compile` সফল মানেই কার্যক্রম সফল নয়। এটি কোডের সিনট্যাক্স পরীক্ষা করে, প্রকৃত সেশন হ্যান্ডঅফ নয়।
+
+* ১০–১২০ সেকেন্ড বিরতি CloakBrowser-এর বাধ্যতামূলক নিয়ম নয়। এটি আপনার নিজস্ব নির্ধারিত বিরতি। বট শনাক্তকরণ এড়ানোর নিশ্চয়তাও দেয় না।
+
+### অফিসিয়াল সোর্স থেকে অতিরিক্ত যাচাই
+
+| রিপোর্টের দাবি                                 | ফলাফল                            |
+| ---------------------------------------------- | -------------------------------- |
+| get_session_seats() দিয়ে লাইসেন্স সিট দেখা যায় | নিশ্চিত                          |
+| Free লাইসেন্সে সার্ভারের সিট কাউন্ট পাওয়া যায়  | সাধারণ ডায়াগনস্টিকে পাওয়া যায় না |
+| ক্র্যাশের পর সেশন আটকে থাকতে পারে              | নিশ্চিত                          |
+| is_busy=False হলেই লাইসেন্স মুক্ত              | নিশ্চিত নয়                       |
+| ১০–১২০ সেকেন্ড বিরতি বাস্তবে কার্যকর           | লাইভ প্রমাণ নেই                  |
+
+সূত্র: [অফিসিয়াল সোর্স কোড](https://github.com/CloakHQ/CloakBrowser/blob/main/cloakbrowser/__main__.py) · [সেশন রিলিজ আলোচনা](https://github.com/CloakHQ/CloakBrowser/discussions/490)।
+
+আরেকটি গুরুত্বপূর্ণ সমস্যা: রিপোর্টে দেখানো `run_controller_loop()`-এ `dispatch_prompt_job()` কাজ শেষ হওয়া পর্যন্ত অপেক্ষা করে কি না, তা স্পষ্ট নয়। যদি এটি শুধু কাজ পাঠিয়ে ফিরে আসে, তাহলে আগের কাজ শেষ হওয়ার আগেই পরবর্তী Worker চালুর ঝুঁকি আছে।
+
+### চূড়ান্ত সিদ্ধান্ত
+
+আপনার ১০টি Docker-এর জন্য গ্রহণযোগ্য শর্ত:
+
+আগের কাজ শেষ → ব্রাউজার বন্ধ → Chromium প্রসেস বন্ধ নিশ্চিত → লাইসেন্স সিট মুক্ত নিশ্চিত (যেখানে যাচাইযোগ্য) → ১০–১২০ সেকেন্ড অপেক্ষা → পরবর্তী Worker।
+
+এই সম্পূর্ণ ক্রমের বাস্তব লগ ও পরীক্ষার ফল ছাড়া `FINAL ACCEPTED` দেওয়া যাবে না।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00D7F3C443ED3C76A45)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0524031368DBE311E0F)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:yt to WhatsApp (step 1382)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03620F25A169BC095BF)
+[WA Bridge] 🧠 thinking 1384 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E653B40587970FDD12)
+[WA Bridge] 👁️ view 1384 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0EB45AAC0F733FB405D)
+[WA Bridge] 🧠 thinking 1387 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB022A4079801600EF343)
+[WA Bridge] 👁️ view 1387 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08BC7B9C728A1870195)
+[WA Bridge] 👁️ view 1390 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FEE1B1AE8F3C1C08C9)
+[WA Bridge] 👁️ view 1393 (agy:yt)
+[WA Bridge] 📩 Message from Iraq bhai (120363430126311832@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:frappe for task: "[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: স"
+[WA Bridge] ✅ Forwarded prompt to agy:frappe via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB09E986809CD22826C8C)
+Closing session: SessionEntry {
+  _chains: {
+    'BfUh/sofQa16XAWboT3cZ4Xk8QsnaLasUB5fZAJm4MNV': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Be3LmwX7MthTS0wI6hq0gDq6Go9uwWyXBOj8grUFn24h: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BWwZGn/H5v8Kj99dvbtJ1pznwnBqMxvbW7B/Jij4aHYE': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 6c 19 1a 7f c7 e6 ff 0a 8f df 5d bd bb 49 d6 9c e7 c2 70 6a 33 1b db 5b b0 7f 26 28 f8 68 76 04>,
+      privKey: <Buffer a0 d1 b6 28 8a 2e e5 72 5f 03 68 b3 03 13 3b 92 27 de c1 a2 b4 0e 0c a8 0e dc c9 70 85 fd 3b 4d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 ed cb 9b 05 fb 32 d8 53 4b 4c 08 ea 1a b4 80 3a ba 1a 8f 6e c1 6c 97 04 e8 fc 82 b5 05 9f 6e 21>,
+    previousCounter: 53,
+    rootKey: <Buffer 36 70 60 d9 18 ca b3 12 ed 03 98 82 8f 81 2f e5 0b f1 1d b6 bc ac f7 e8 a1 b1 c7 fc b5 24 6a 37>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 0b 56 e8 f9 89 6d a8 1f e8 53 f4 99 5d c9 ae b3 0c 51 8c df 54 1a d8 1f 2d f6 63 71 27 6e f3 78>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791559365705,
+    created: 1791559107161,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    Bdv2epxtZmuapCLwcXX6fFV8jZqcOiSBjbyT6gIm4eU1: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 db f6 7a 9c 6d 66 6b 9a a4 22 f0 71 75 fa 7c 55 7c 8d 9a 9c 3a 24 81 8d bc 93 ea 02 26 e1 e5 35>,
+      privKey: <Buffer e8 9e 48 19 ce 9e d6 e6 aa 99 c9 c0 ad 7a 44 13 e5 1a 22 c9 62 57 a1 dc 2b 3a ba a3 84 1b a2 49>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer e2 ea 3f b6 d0 48 6e 55 33 36 98 be d3 f0 47 d2 68 d6 40 1e 80 c9 30 6c f7 16 0d fc ff 02 60 5c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 17 7a e2 16 33 b7 47 04 38 8d 86 86 04 65 ae 06 bc f9 46 48 c6 61 34 0a c5 4a 4b 83 ba 18 70 1f>,
+    baseKeyType: 1,
+    closed: 1791337592354,
+    used: 1791337449209,
+    created: 1791337449209,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 17 7a e2 16 33 b7 47 04 38 8d 86 86 04 65 ae 06 bc f9 46 48 c6 61 34 0a c5 4a 4b 83 ba 18 70 1f>,
+    preKeyId: 2097474
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BWCs3z0YcpsxdMWC1eF+bOsNlIr6E4p1ShqFvAZxqw89': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 60 ac df 3d 18 72 9b 31 74 c5 82 d5 e1 7e 6c eb 0d 94 8a fa 13 8a 75 4a 1a 85 bc 06 71 ab 0f 3d>,
+      privKey: <Buffer f0 5c 96 18 42 ed 4c 5f e6 25 b7 1e 5c 8e d4 d7 fd b4 bd 26 4f f3 52 54 bb 51 9d 5b 4a 4e 39 63>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 4e 84 29 92 df 82 06 c6 ab be 1d dc 71 6a 04 c1 4d fe 17 61 f7 97 01 39 2f 02 0a 33 fd 9e d3 47>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 05 d3 70 8e a2 1a fa 3a 13 be d7 da 58 f2 03 c7 94 7a 12 b9 29 96 3f 60 04 b9 21 3d 2f b8 41 7e>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791559963788,
+    created: 1791559963788,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 05 d3 70 8e a2 1a fa 3a 13 be d7 da 58 f2 03 c7 94 7a 12 b9 29 96 3f 60 04 b9 21 3d 2f b8 41 7e>,
+    preKeyId: 2098163
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BWHoFWlsj4uDIa7WlDVNP+HaeJqQC9Wx0RakiH7euP1p': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BSGszfa54qmhqMPTaBdsYa7DglnkSyOI0OrgXSPC4Nd1: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BY+FiagkpaurD0l64K5+v8Ao+kNBacrsQgzftGPrOGgi': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZxCHt0U5jM5KWgbmoESTUBA35R2UBgKqg/SLr3f1wpq': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bb1a3Y+p9YtwDYgIA+GPNWfZEgUMH5JFxRVMCNn6sXUM': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BWbTqz4RNOadH8MspTKv+i7UkPhBSjXHVvg5C+Ttz6dF': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BR2W9TecQs2sa9xVouyyDpoxjTyGffGK48K1rDyR8qxt: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXSqtsQH9rmqkTad6hZ7sqRO2l/8nqzL8uYVcksdkUF9': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYvCWIHZFnGwLtEugarjVyBvS4fcto4vnQhvrZjVZ8oY: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Ba68RgnXTSofqMVxlLliOrWR67W8PdvspPww2OuFJEZr: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Bau9vnExnKXOnLpL0WaWkbylzedGGZWDeq0Q2IFs7SlN: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXIRcP6Djdq9asSkvRE/JTR7Kfilq6h8v7HK1fHb5Pct': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BfICv+fhY8w8kPuPG8SO8T5BcXIqFsVkMkAvEhd264At': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BWP9yOx8X/TDk2yI+3j4pWLfEa8F4MNrZZc8uUBqaVUg': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BaKkQJZFZ1zSnBamICjX2N8RXTXn6tQmeBlTiGl67uoy: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 a2 a4 40 96 45 67 5c d2 9c 16 a6 20 28 d7 d8 df 11 5d 35 e7 ea d4 26 78 19 53 88 69 7a ee ea 32>,
+      privKey: <Buffer 40 47 84 9e 11 62 12 fe a0 c8 39 4b 5b d6 a7 3f 26 82 d4 a4 dc 20 4d b3 51 fa fa e0 7a 77 7f 65>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 63 fd c8 ec 7c 5f f4 c3 93 6c 88 fb 78 f8 a5 62 df 11 af 05 e0 c3 6b 65 97 3c b9 40 6a 69 55 20>,
+    previousCounter: 200,
+    rootKey: <Buffer fc f9 4f d0 f6 6b 70 76 2d e4 46 d4 52 53 49 48 25 76 34 06 2a 49 1a ce 31 c3 be 59 ec 3b dc 0e>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 23 c8 3f 3c 63 b6 1e 4e 27 38 9b 0b 21 ae 38 cf 11 a6 77 d3 af 03 2a cd 1e 51 a8 05 77 fe 98 48>,
+    baseKeyType: 2,
+    closed: 1791343828671,
+    used: 1791343606365,
+    created: 1791337592355,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0674BEFBD3301D3C870)
+[WA Bridge] 🧠 thinking 2 (agy:frappe)
+[WA Bridge] 📤 Turn done for agy:frappe (step 2)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 423
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB046EF42F533002928AD)
+[WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FB706D74F971D9CA20)
+[WA Bridge] 🧠 thinking 1396 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E1DF7787AB9BE3946D)
+[WA Bridge] 📝 write 1396 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D8A21C389BBB9B4D48)
+[WA Bridge] ⚡ cmd 1399 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09914EA273A13B27FBC)
+[WA Bridge] 💻 cmd output 1400 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB017B19C5E381B7B620A)
+[WA Bridge] ⚡ cmd 1402 (agy:yt)
