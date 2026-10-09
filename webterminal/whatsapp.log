@@ -79,3 +79,8 @@
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08843F63A136F5126AA)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): All whatsapp agents are not active,   ensure 3 alternative ways that they get never diactive again
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "All whatsapp agents are not active,   ensure 3 alternative w"
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05A62E717D136313895)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
