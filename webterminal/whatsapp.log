@@ -2843,3 +2843,341 @@ Codex: লোকাল ফোল্ডার আছে, কিন্তু আ�
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BA589E7804FA824719)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 195928489218060@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): MINIMAL YOUTUBE READINESS & GENERATION CONTINUITY TEST
+
+Perform a minimal, autonomous, evidence-based verification of the existing YouTube pipeline.
+
+Do not perform another full recovery or backup search. Do not ask the user questions.
+
+TEST 1 — VERIFY EVERY VIDEO FOLDER
+
+Loop through EVERY video record and its corresponding folder.
+
+A video is "YOUTUBE_READY = TRUE" ONLY when the SAME video folder contains:
+
+1. A real, valid video file.
+2. "prompt.json" — valid, non-empty, correctly structured JSON.
+3. "youtube_seo_metadata.json" — valid, non-empty, correctly structured JSON.
+
+Discover actual filenames and schemas before testing.
+
+For EVERY JSON file:
+
+- Parse its complete contents.
+- Reject empty files, "{}", "[]", null-only content, malformed JSON, and missing required fields.
+- Validate prompt title, description, and actual generation prompt.
+- Validate YouTube SEO title, description, and non-empty, properly structured tags.
+- Reject empty required values even when JSON parsing succeeds.
+- Ensure all files belong to the SAME logical video.
+
+File existence alone NEVER means YouTube Ready.
+
+TEST 2 — EXACT DATABASE CONSISTENCY
+
+Inspect the actual SQLite schema and existing readiness fields.
+
+For EVERY video, compare:
+
+- Video identity and folder identity.
+- Video title.
+- "prompt.json" title and description.
+- YouTube SEO JSON title, description, and tags.
+- Corresponding database values and relationships.
+- Physical video path and its actual file.
+
+Use exact comparisons for fields representing the same authoritative value.
+
+Do not incorrectly require different-purpose fields, such as a visual generation prompt and a YouTube SEO description, to contain identical text.
+
+Never accept a title match as proof of video identity.
+
+If any required file, field, relationship, or expected database value is missing, empty, invalid, or mismatched:
+
+"YOUTUBE_READY = FALSE"
+
+If everything matches:
+
+"YOUTUBE_READY = TRUE"
+
+Correct incorrect readiness markings using the existing database mechanism.
+
+Do not invent metadata or silently overwrite conflicting values.
+
+Before changing database values, create a consistent backup. Use targeted transactions and verify the committed results.
+
+TEST 3 — FIND THE EXACT NEXT GENERATION START
+
+This is the MOST IMPORTANT TEST.
+
+Determine the real generation sequence from the authoritative database and pipeline ordering.
+
+Inspect records in actual generation order, NOT simply database insertion order.
+
+Find the FIRST video where:
+
+"YOUTUBE_READY != TRUE"
+
+That video must be the NEXT GENERATION START.
+
+Example:
+
+Video 1–120: READY
+Video 121: NOT READY
+Video 122–150: READY
+
+NEXT GENERATION START = 121.
+
+NEVER automatically start at 151.
+
+If video 121 already has a valid video but lacks JSON, generate only the missing required artifacts when the normal generation workflow resumes.
+
+If its video is missing or corrupted, it requires video regeneration.
+
+Do not regenerate already verified assets unnecessarily.
+
+Do not skip an incomplete video simply because later videos are ready.
+
+Inspect the actual generation scheduler, queue, resume state, and database cursor.
+
+Correct any persistent next-generation pointer that would skip the first incomplete video.
+
+Do not start an actual generation job during this test.
+
+Ensure future generation also follows this same readiness-based rule rather than relying on the highest existing ID.
+
+MINIMAL ACCEPTANCE
+
+Execute only:
+
+1. One complete loop over every video and both JSON files.
+2. One database consistency and readiness reconciliation.
+3. One independent verification of the calculated next-generation starting point.
+
+No unnecessary additional audits.
+
+No unrelated code changes, project modifications, or service restarts.
+
+FINAL REPORT — KEEP IT SHORT
+
+Report:
+
+- Total video records:
+- Fully YouTube Ready:
+- Not Ready:
+- Missing/invalid video:
+- Missing/empty/invalid prompt JSON:
+- Missing/empty/invalid SEO JSON:
+- Metadata/database mismatches:
+- Readiness markings corrected:
+- Next generation video ID:
+- Next generation folder:
+- Reason this video is next:
+- Actual persistent generation pointer verified/corrected:
+- Final verdict: PASS / PARTIAL / FAIL
+
+Show actual database query results and file-validation evidence supporting the next-generation ID.
+
+Never claim PASS from conversation history or self-reported results alone.
+
+Execute autonomously. Preserve existing correct data.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0634416D84B0A7AC31A)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB047C07003BA382E5252)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:yt to WhatsApp (step 472)
+Closing session: SessionEntry {
+  _chains: {
+    BX5yJfXAF6xXHKHSrd5EgY1jRj48p4oRpkTUpCnmQEcV: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BSemIiUXXMFUr1emtyEAUs5TtFer1jzmWdfnefKT1T9A: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQHf0ituPW8CGgM9COPhy/V6Vl5YpxqH3GST1F8GzB4k': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQqIanL/gSMFgpQgUPyUnO1Ua0WcFQr4rul8VZBBbSZ2': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYxuSHwAVgTrwT5tmOU6LdyHxlpLdIcsGwYehD74U8AU: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSmPB5/8zkVVkK8Mmc6RIdsicBKWyY2qjb1VgUZp66wZ': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVX6KNKezoG/Lo+bIojMhv50Z5LgaY54tGSN7cRvXeNr': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BRlvrVyEfW6gJ5fKgBPFPhgMl2AAOGeOHK9U/vOxNsV9': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BdH0sf4Bgd5lIic0hdejNdfNUQwtad1CRDYYm70zNNEN: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BewBBn5zxKJvTe4BH85Xfcb/L2LSf2DvPo9zOD9Ejgw8': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 ec 01 06 7e 73 c4 a2 6f 4d ee 01 1f ce 57 7d c6 ff 2f 62 d2 7f 60 ef 3e 8f 73 38 3f 44 8e 0c 3c>,
+      privKey: <Buffer 28 34 39 f7 b9 b4 ce d3 5b 7b c3 01 d2 40 65 a0 37 40 7e cd 61 51 10 94 65 13 d6 49 e4 b9 a5 54>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 d1 f4 b1 fe 01 81 de 65 22 27 34 85 d7 a3 35 d7 cd 51 0c 2d 69 dd 42 44 36 18 9b bd 33 34 d1 0d>,
+    previousCounter: 107,
+    rootKey: <Buffer cf 41 f0 b7 75 29 83 9c b1 4d 49 21 2d 5e 98 ec 19 11 0c 42 04 4b a6 09 a8 b1 02 ac ab 5f 29 7e>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 10 f1 fc fc f9 63 67 f5 f5 55 28 75 3b 58 1e 3b dc 90 9b f6 8a 1c 79 d1 11 69 9f ea ec dc e7 35>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791553113053,
+    created: 1791550353625,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BYmi+HXXJVgH5jZNnTg3MCUXgCPRP//V44HbJT2uEgR5': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 89 a2 f8 75 d7 25 58 07 e6 36 4d 9d 38 37 30 25 17 80 23 d1 3f ff d5 e3 81 db 25 3d ae 12 04 79>,
+      privKey: <Buffer b8 ee c1 b3 d8 f4 ae e3 a7 bb eb 69 ad b3 50 4a 30 d1 9d 46 c8 11 c4 9d 4b b7 fe 83 aa 77 bb 51>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer fe 3f 51 8d a5 16 f8 88 75 6f b3 19 21 cf 98 83 69 55 8d 1d c1 b0 bb 02 cc 20 69 6c e8 c9 9a 74>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 cb a3 77 18 bd 26 27 53 ff a5 36 cb c7 13 be 60 da e8 3e bc 40 84 e1 2d b5 d3 95 32 28 2e a1 77>,
+    baseKeyType: 1,
+    closed: 1791337448066,
+    used: 1791337447939,
+    created: 1791337447939,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 cb a3 77 18 bd 26 27 53 ff a5 36 cb c7 13 be 60 da e8 3e bc 40 84 e1 2d b5 d3 95 32 28 2e a1 77>,
+    preKeyId: 2097463
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BSy7Ts0JEWi30LhXC1hx3DbMorC3ii/cDd2X02CL7lsx': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2c bb 4e cd 09 11 68 b7 d0 b8 57 0b 58 71 dc 36 cc a2 b0 b7 8a 2f dc 0d dd 97 d3 60 8b ee 5b 31>,
+      privKey: <Buffer 40 16 99 f0 b8 0c 24 41 34 05 07 36 95 48 e2 6b a3 a1 d2 af 33 31 52 41 9e 87 e5 5b bb 65 15 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer b6 d8 5b fa b1 4b 76 29 65 50 1c 42 0d 41 e6 e1 3a 92 00 c0 84 5e 90 32 fc 5f e8 04 81 87 72 49>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 6e c3 58 40 69 83 d1 fa 1b 20 15 bd 8f cd 28 f9 10 d7 2c a9 70 d9 7e 0e 56 06 3e 14 44 b0 ef 7e>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791553165647,
+    created: 1791553165646,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 6e c3 58 40 69 83 d1 fa 1b 20 15 bd 8f cd 28 f9 10 d7 2c a9 70 d9 7e 0e 56 06 3e 14 44 b0 ef 7e>,
+    preKeyId: 2098140
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BcjUsUmVpZbNfaBQoxmv3oBnDIUzMRFQUolQLV3h7g8q: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 c8 d4 b1 49 95 a5 96 cd 7d a0 50 a3 19 af de 80 67 0c 85 33 31 11 50 52 89 50 2d 5d e1 ee 0f 2a>,
+      privKey: <Buffer 88 61 46 e0 5b 49 50 52 3c 9b ec b7 41 5c 2d ae 8b 1e 69 ef 00 70 f0 64 ea 1d 8f c8 1c 7a 19 71>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 1b 11 c1 72 46 75 34 bc 47 5c e8 5d 8a 53 9e d1 b4 b2 09 32 33 5d 9d 92 2b 5f 53 3f 22 62 ad 84>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 51 b1 6e e2 6a 12 36 b3 72 27 e8 75 0b dc 53 da e1 a2 e2 dd 35 51 aa 05 46 be 90 db 54 1c 2c 72>,
+    baseKeyType: 1,
+    closed: 1791337448178,
+    used: 1791337448065,
+    created: 1791337448065,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 51 b1 6e e2 6a 12 36 b3 72 27 e8 75 0b dc 53 da e1 a2 e2 dd 35 51 aa 05 46 be 90 db 54 1c 2c 72>,
+    preKeyId: 2097464
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BbAhiYSG/20b2AMwghU8Qc0pajHvqyYcuNnzg/VaAklw': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 b0 21 89 84 86 ff 6d 1b d8 03 30 82 15 3c 41 cd 29 6a 31 ef ab 26 1c b8 d9 f3 83 f5 5a 02 49 70>,
+      privKey: <Buffer a8 fd 01 6b c3 b7 da a5 c5 37 a9 a3 89 67 64 b4 3b cf 01 20 2f 03 90 da b6 9f 89 60 cf 6d ef 57>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 3d a8 1d 52 a7 23 39 90 f3 f6 1e 71 d1 af 60 77 89 d2 80 fb 3f 59 1d db 28 6c bc 5f 08 79 b0 63>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 04 f3 ba f9 46 6e c7 4e e2 0f dd 6d 88 33 9b 1e fc 44 19 9e 30 0d bd 84 69 be 5d 18 70 e4 34 63>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791553166649,
+    created: 1791553166649,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 04 f3 ba f9 46 6e c7 4e e2 0f dd 6d 88 33 9b 1e fc 44 19 9e 30 0d bd 84 69 be 5d 18 70 e4 34 63>,
+    preKeyId: 2098141
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BeN89MXRLiXy79vnar6TTn9lAOFFG3ueS0D9nUb3olNw: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 e3 7c f4 c5 d1 2e 25 f2 ef db e7 6a be 93 4e 7f 65 00 e1 45 1b 7b 9e 4b 40 fd 9d 46 f7 a2 53 70>,
+      privKey: <Buffer 50 8e f2 72 f5 33 1d 68 95 34 d9 7c f7 d4 62 94 50 ca 7d 9d a2 b5 ec a9 11 f5 02 51 49 dd 26 51>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer a4 b4 d3 3d 3f 7b 3a 8b 29 8c bd 46 d9 a2 7d f9 12 de 5c 85 b5 17 be c7 16 af a0 a1 fc a0 43 af>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 f0 15 e8 bb c7 93 15 95 b0 a6 bb 0c 0a 04 c2 d3 fe 17 35 8d ec 9a 02 8f 82 58 6b 66 93 92 63 42>,
+    baseKeyType: 1,
+    closed: 1791337448296,
+    used: 1791337448177,
+    created: 1791337448177,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 f0 15 e8 bb c7 93 15 95 b0 a6 bb 0c 0a 04 c2 d3 fe 17 35 8d ec 9a 02 8f 82 58 6b 66 93 92 63 42>,
+    preKeyId: 2097465
+  }
+}
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0946DF9EEAF3273B033)
+[WA Bridge] 🧠 thinking 474 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BF5E9FF177673C8B15)
+[WA Bridge] ⚡ cmd 474 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB096D0F7741696DCB5DB)
+[WA Bridge] 💻 cmd output 475 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB011CC9ED0C19417D628)
+[WA Bridge] ⚡ cmd 477 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BB423BE0F01C89D124)
+[WA Bridge] 💻 cmd output 478 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0AE40F514A8242FB336)
+[WA Bridge] 👁️ view 480 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B3557939C64CE765A8)
+[WA Bridge] 🧠 thinking 483 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB015F6512CA61F19C785)
+[WA Bridge] ⚡ cmd 483 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E6B6214C3558B037F0)
+[WA Bridge] 💻 cmd output 484 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E85D57D5CE05974DDF)
+[WA Bridge] 🧠 thinking 486 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D1E472342F75F41F79)
+[WA Bridge] ⚡ cmd 486 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A9D13FBCAA0DDFB341)
+[WA Bridge] 💻 cmd output 487 (agy:yt)
