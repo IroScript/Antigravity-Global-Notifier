@@ -10294,3 +10294,4 @@ Never replace missing evidence with assumptions.
 [WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB01C5AB43C0280E6E1CC)
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 71297061130339@lid
