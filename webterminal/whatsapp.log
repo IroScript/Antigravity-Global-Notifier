@@ -20989,3 +20989,6 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
 [WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 132
 [WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, code: 503 error: Stream Errored (unknown)
+[WA Bridge] 🔄 Reconnecting in 2245ms (attempt #1, code: 503)...
