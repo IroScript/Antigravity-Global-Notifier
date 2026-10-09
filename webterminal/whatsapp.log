@@ -573,3 +573,10 @@
 [WA Bridge] 👁️ view 1636 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07F4D2698CC38007AC4)
 [WA Bridge] 📝 edit 1639 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363425234182052@g.us 98286870503473@lid
+[WA Bridge] 📤 Turn done for agy:0 (step 1642)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 7753
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09513D60BE53BD5DCCD)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
