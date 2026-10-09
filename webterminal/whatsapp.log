@@ -18878,3 +18878,49 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB092B87969FC5647BE95)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB059B20B3AACF07AE39F)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[Oracle 8 CPU 64 RAM · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "Hi"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C9F8CD974DC43406D4)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 115371411529964@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08C5CCA5929D5F72629)
+[WA Bridge] 🧠 thinking 4763 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F30C013053408A5907)
+[WA Bridge] ⚡ cmd 4763 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03A192746ACA4DED12F)
+[WA Bridge] 💻 cmd output 4764 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+
+╭─ NEURAL RESPONSE ─╮
+হ্যালো! *Oracle 8 CPU 64 RAM (oracle8)* সার্ভারে আপনাকে স্বাগতম।
+
+সিস্টেম সম্পূর্ণ স্থিতিশীল এবং প্রস্তুত রয়েছে। আজ আপনাকে কীভাবে সাহায্য করতে পারি? আপনার কাঙ্ক্ষিত কাজের বিবরণ বা কমান্ড প্রদান করুন।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🕐 TIME  · ১১:৪১ PM         │
+│ 🤖 MODEL · accept-edits     │
+│ ⚡ MODE   · GEMINI 3.8 FLASH │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CFC32B86088268C1AC)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB087D944493ECA00EB5F)
+[WA Bridge] ⚡ cmd 4766 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB093BE44D046073EF33F)
+[WA Bridge] 💻 cmd output 4767 (agy:0)
