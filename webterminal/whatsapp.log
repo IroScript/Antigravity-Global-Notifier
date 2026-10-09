@@ -19674,3 +19674,161 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB074C6C6711C0693A332)
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CF0AFFA39CA70295AD)
+[WA Bridge] 🧠 thinking 4939 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB011BB1C509456211DD7)
+[WA Bridge] ⚡ cmd 4939 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB033C484A7581B685140)
+[WA Bridge] 💻 cmd output 4940 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user cat agy-whatsapp.service; journalctl --user -u agy-whatsapp.service -n 30 --no-pager`
+> 🎯 _"Inspecting agy-whatsapp.service"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB080440E8C7D9A363CE7)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ tail -n 60 /home/opc/.webterminal/whatsapp.log`
+> 🎯 _"Checking whatsapp.log"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05955308F6084A33D8B)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB035BBD84DED32A281DE)
+[WA Bridge] ⚡ cmd 4942 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C124A2FFD5B6393EA3)
+[WA Bridge] 💻 cmd output 4943 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 👁️ *[ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading whatsapp_bridge.js"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05F68E88BCB645875E2)
+[WA Bridge] ⚡ cmd 4945 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00C414C349790A93B94)
+[WA Bridge] 💻 cmd output 4946 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01021B71D8221E15CAF)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB097515F19B38FBB54BD)
+[WA Bridge] 🧠 thinking 4948 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06DCFA46111A67FE1D0)
+[WA Bridge] ⚡ cmd 4948 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FF8C82FF1DB849A8A4)
+[WA Bridge] 💻 cmd output 4949 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 👁️ *[ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading more of whatsapp_bridge.js"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03829B57CC0E0906B1B)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 👁️ *[ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading loop filter in bridge"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB062D73559C68A82CD58, seq: 327): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C693CDA305DC030EF9)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04086FAA26B00902A46)
+[WA Bridge] 🧠 thinking 4951 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00F140B486601AD57A9)
+[WA Bridge] ⚡ cmd 4951 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C77F94A291AA733802)
+[WA Bridge] 💻 cmd output 4952 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB090EF2C4E88B5A53BB1)
+[WA Bridge] ⚡ cmd 4954 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0115A4B61D4F9B9674A)
+[WA Bridge] 💻 cmd output 4955 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ tmux capture-pane -p -t agy:0 | tail -n 40`
+> 🎯 _"Capturing tmux pane"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DBA3F903128F3F3238)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ head -n 100 /home/opc/.webterminal/whatsapp.log`
+> 🎯 _"Checking initial whatsapp.log entries"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04C4CACCB2343A19020)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F55FD4717CDD63743A)
+[WA Bridge] 🧠 thinking 4957 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E8AC67AE760677CBFD)
+[WA Bridge] ⚡ cmd 4957 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04752E9019588E68992)
+[WA Bridge] 💻 cmd output 4958 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 👁️ *[ফাইল পরিদর্শন]*: `transcript.jsonl`
+> 🎯 _"Checking transcript.jsonl entries"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0831778DBAE4EF8324D)
+[WA Bridge] 📤 Turn done for agy:0 (step 4960)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/zTiUf
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0371DDCD6817E5F0FF7)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0B4E721B4D6A4D1ED3B, seq: 328): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08ABC4125ACD48BC170)
+[WA Bridge] ⚡ cmd 4963 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.webterminal; cat /home/opc/.webterminal/incoming_prompt.txt 2>/dev/null || true`
+> 🎯 _"Checking webterminal directory"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB090A07C974718A346DA)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ cat /home/opc/.webterminal/processed_msg_ids.json | head -n 30`
+> 🎯 _"Checking processed msg ids"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB015A0B11E24B37C77F2)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB009D6EBEBBB927C446B)
+[WA Bridge] ⏱️ task 4966 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB08352119B1C1BDCE7AE, seq: 329): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ cat /home/opc/.webterminal/init_agy_sessions.sh; echo \"---\"; cat /home/opc/.webterminal/start_agy0.sh`
+> 🎯 _"Viewing startup scripts"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0934F994A103B0787FD)
+[WA Bridge] ⚡ cmd 4970 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00ABE03370EC8D054F5)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FAE8E2BD5CEE2EB6F2)
+[WA Bridge] 💻 cmd output 4971 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363401208934906@g.us 76610069913794@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B2E1061A9BF5381061)
+[WA Bridge] ⚡ cmd 4973 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363380930947370@g.us 76610069913794@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB097873920019CE676C9)
+[WA Bridge] 💻 cmd output 4974 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363401208934906@g.us 76610069913794@lid
+[WA Bridge] Ignored message from other sender: 120363380930947370@g.us 76610069913794@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05B55E65598CFF48376)
+[WA Bridge] ⚡ cmd 4976 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F82C73748362AF8273)
+[WA Bridge] 💻 cmd output 4977 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ cd /home/opc/.webterminal && (git log -p -n 5 whatsapp_bridge.js 2>/dev/null || echo \"Not a git repo\")`
+> 🎯 _"Checking git history in webterminal"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A2DAC99583C429D95D)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09B0575065B1FD96E51)
+[WA Bridge] ⚡ cmd 4979 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01DB82D9AB057C5B5EB)
+[WA Bridge] 💻 cmd output 4980 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ tail -n 80 /home/opc/.bash_history`
+> 🎯 _"Checking bash history"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BCA6E60B1E81E565F6)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03CAAB54361ECE4918A)
+[WA Bridge] ⚡ cmd 4982 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB086AD8ADF599CC2CE0A)
+[WA Bridge] 💻 cmd output 4983 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB045864DD04282BAF3B1)
+[WA Bridge] ⚡ cmd 4985 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB018E959E479DADDB78E)
+[WA Bridge] 💻 cmd output 4986 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ find /home/opc -maxdepth 3 -mmin -60 -ls 2>/dev/null`
+> 🎯 _"Finding recently modified files"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E4320E6456F686AA61)

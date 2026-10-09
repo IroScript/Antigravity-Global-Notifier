@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ tmux ls 2>&1 || true; crontab -l 2>&1 || true; systemctl --user list-units --type=service --state=running 2>&1 || true; ps aux | grep -v \"\\]$\"...`
-> 🎯 _"Investigating running processes"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > 👁️ *[ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading whatsapp_bridge.js"_
