@@ -20482,3 +20482,16 @@ Removing old closed session: SessionEntry {
 > 🎯 _"Listing opt and tmp"_
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05A786AF914757B7284)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ cat /etc/hosts; cat /home/opc/.ssh/known_hosts 2>/dev/null || true`
+> 🎯 _"Checking hosts and known_hosts"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB021FB8F0D10E0889BE8)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DEAAC24E09E1C54F87)
+[WA Bridge] ⚡ cmd 5198 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F8B574EB1864111FA8)
+[WA Bridge] 💻 cmd output 5199 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0772A59A83BEDBDC386)
+[WA Bridge] ⚡ cmd 5201 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DF511B8C9E99113282)
+[WA Bridge] 💻 cmd output 5202 (agy:0)
