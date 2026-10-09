@@ -20044,3 +20044,20 @@ Removing old closed session: SessionEntry {
 > 🎯 _"Fixing syntax error"_
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0292509317779D01323)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AD40A6AB945C70F6B7)
+[WA Bridge] 🧠 thinking 5051 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02E2298E47FD3AA02AF)
+[WA Bridge] ⚡ cmd 5051 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DB3601623DDB0B9B90)
+[WA Bridge] 💻 cmd output 5052 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && tail -n 20 /home/opc/.webterminal/whatsapp.log`
+> 🎯 _"Checking whatsapp.log output"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09A9819E43EBE57F25E)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09E632F353D49EBD872)
+[WA Bridge] 🧠 thinking 5054 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB012CB2AC73C671D9B70)
+[WA Bridge] ⚡ cmd 5054 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B36E5A6B28C21FEA74)
+[WA Bridge] 💻 cmd output 5055 (agy:0)
