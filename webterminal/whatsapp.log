@@ -6216,3 +6216,35 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] 🧠 thinking 3418 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0996665319887134428)
 [WA Bridge] 👁️ view 3418 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01055981A08E104213B)
+[WA Bridge] 🧠 thinking 3421 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00C92B29D8BB3E8F3E8)
+[WA Bridge] ⚡ cmd 3421 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03E25CF8F3FCD890842)
+[WA Bridge] ⚡ cmd 3424 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BAAB6698B20DCF4C8B)
+[WA Bridge] 💻 cmd output 3425 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 214804786577547@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00FBBE1B131C08E5A74)
+[WA Bridge] 🧠 thinking 3427 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E42D741B0818E8E7A3)
+[WA Bridge] ⚡ cmd 3427 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01D4190F4ED404B27C8)
+[WA Bridge] 💻 cmd output 3428 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB096FA4369A87D876E70)
+[WA Bridge] 🧠 thinking 3430 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09D661E083020987FD7)
+[WA Bridge] ⚡ cmd 3430 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB001832376F40260A96F)
+[WA Bridge] 💻 cmd output 3431 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04D2D1E42F90817E69D)
+[WA Bridge] ⚡ cmd 3433 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E3CBD119FD78AABB20)
+[WA Bridge] 💻 cmd output 3434 (agy:0)
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430650656655@g.us--82935919157317_1--8.json (51.9 KB) -> backed up
+[WA Bridge] 📤 Turn done for agy:0 (step 3436)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 9506
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A5CF9C49BC3523E92B)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
