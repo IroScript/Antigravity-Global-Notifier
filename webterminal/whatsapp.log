@@ -9423,3 +9423,5 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB02813799045A93D7DC2)
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02E79746FB5FB671BFC)
+[WA Bridge] ✅ Processed outbox job: report_1791563539.json
