@@ -6823,3 +6823,31 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0314D9D82A3EA69EC5C)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB047A3DBBEB4858924B7)
+[WA Bridge] 👁️ view 3655 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB055B38FCC3B1152F0DE)
+[WA Bridge] 👁️ view 3658 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D917AD21F3219796E3)
+[WA Bridge] 👁️ view 3661 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D41755519D7F54CA59)
+[WA Bridge] 👁️ view 3664 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05163D7AD26D5FB864D)
+[WA Bridge] ⚡ cmd 3667 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DA5DED2D8FCB7762FB)
+[WA Bridge] 💻 cmd output 3668 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05AEA1656D02E0DDC79)
+[WA Bridge] ⚡ cmd 3670 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EA291846270C56B0FE)
+[WA Bridge] 💻 cmd output 3671 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B6B46CC0DEA08897A2)
+[WA Bridge] 🧠 thinking 3673 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F62EFD052056CDF491)
+[WA Bridge] ⚡ cmd 3673 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB091C3BDD8A714E23A31)
+[WA Bridge] 💻 cmd output 3674 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 3676)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 9628
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB072D3E2C5A0CD897F3E)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
