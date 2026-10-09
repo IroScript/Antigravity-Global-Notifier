@@ -18134,3 +18134,29 @@ Closing session: SessionEntry {
 [WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0D0CDFB6C800AC5E1D3, seq: 156): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB084EC87DD77C0734EA2)
+[WA Bridge] 🧠 thinking 4638 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB00D904E2A1D6BFB23BE)
+[WA Bridge] ⚡ cmd 4638 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB09955124961B52C7571)
+[WA Bridge] 💻 cmd output 4639 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0BD2C51A6C2C9D54F05)
+[WA Bridge] ⚡ cmd 4641 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB08C782FF2900669908F)
+[WA Bridge] 💻 cmd output 4642 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4644)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3375
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0BF2082CF1E31407B57)
+[WA Bridge] ✅ Reply delivered to 8801955333555@s.whatsapp.net (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB02893D14583F7B3BF40, seq: 163): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB055D3100E5C797E1D5E)
+[WA Bridge] 🧠 thinking 4647 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0ED6E86C72BC1779B66)
+[WA Bridge] ⚡ cmd 4647 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB087793973F6328F37FB)
+[WA Bridge] 💻 cmd output 4648 (agy:0)
