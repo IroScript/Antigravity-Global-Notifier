@@ -20786,3 +20786,4 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05541D4F884661618D7)
 [WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
 [WA Bridge] Ignored message from other sender: 120363378039870251@g.us 280771373826299@lid
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--8.json (95.5 KB) -> backed up
