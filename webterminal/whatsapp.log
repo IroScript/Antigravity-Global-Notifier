@@ -6608,3 +6608,59 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0920B8A191C7FD238B9)
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ### চূড়ান্ত মূল্যায়ন: পরিকল্পনা ভালো, কিন্তু এখনো নিরাপদ নয়
+
+আপনার দেওয়া মাইগ্রেশন পরিকল্পনায় ৫টি গুরুত্বপূর্ণ প্রযুক্তিগত সমস্যা রয়েছে।
+
+| বিষয়                 | সমস্যা                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| ১. Caller Identity    | /proc/$PPID/cwd ও TMUX_PANE একা বিশ্বস্ত পরিচয়ের নিশ্চয়তা দেয় না।                                        |
+| ২. tmux Socket        | একই Linux UID দিয়ে পৃথক সকেট তৈরি করলেই অন্য এজেন্টের প্রবেশ বন্ধ হয় না।                                  |
+| ৩. Namespace          | শুধু Mount/PID Namespace যথেষ্ট নয়; ফাইল, সকেট, নেটওয়ার্ক ও অনুমতির সব পথ বিবেচনা করতে হবে।               |
+| ৪. Zero Downtime      | চলমান tmux প্রসেসকে সরাসরি নতুন namespace-এ স্থানান্তর করা যায় না। নতুন স্যান্ডবক্সে প্রসেস চালু করতে হবে। |
+| ৫. Automatic Fallback | নিরাপত্তা ব্যর্থ হলে পুরোনো অনিরাপদ ব্যবস্থায় স্বয়ংক্রিয়ভাবে ফিরে যাওয়া বিপজ্জনক।                       |
+
+### সবচেয়ে গুরুতর সমস্যা
+
+একই UID + পৃথক tmux Socket ≠ নিরাপদ আইসোলেশন।
+
+একই ব্যবহারকারীর অধীনে চলা এজেন্টগুলোকে শুধু আলাদা সকেট ও ফোল্ডার দিয়ে সম্পূর্ণ বিচ্ছিন্ন করা যাবে না। উপযুক্ত OS-স্তরের নিরাপত্তা নীতি প্রয়োজন।
+
+সূত্র: [Linux Namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html) · [Bubblewrap](https://github.com/containers/bubblewrap) · [tmux](https://man7.org/linux/man-pages/man1/tmux.1.html)
+
+### সঠিক বাস্তবায়নের শর্ত
+
+1\. প্রতিটি এজেন্টের জন্য পৃথক নিরাপত্তা পরিচয় ও কার্যকর OS-স্তরের বিচ্ছিন্নতা।
+
+2\. WhatsApp Bridge হবে একমাত্র অনুমোদিত বার্তা পরিবহনকারী।
+
+3\. অন্য এজেন্টের ফাইল, প্রসেস, টার্মিনাল, সেশন ও গোপন তথ্য অ্যাক্সেসের সব বিকল্প পথ বন্ধ।
+
+4\. নতুন ব্যবস্থা পরীক্ষায় সফল না হওয়া পর্যন্ত পুরোনো চলমান ব্যবস্থা অপরিবর্তিত থাকবে।
+
+5\. মাইগ্রেশনের সময় বার্তা হারানো বা ভুল এজেন্টে পৌঁছানো ঠেকাতে স্থায়ী বার্তা সারি, স্বতন্ত্র বার্তা পরিচয় এবং ডেলিভারি যাচাই।
+
+সবচেয়ে গুরুত্বপূর্ণ সিদ্ধান্ত: বর্তমান `V10: VERIFIED_SUCCESS` কেবল পরিকল্পনা যাচাইয়ের দাবি। এটি বাস্তব আইসোলেশন কার্যকর হওয়ার প্রমাণ নয়।
+
+আর চলমান এজেন্টগুলোর জন্য কোনো বিরতি ছাড়াই সম্পূর্ণ নিরাপত্তা মাইগ্রেশন সম্ভব—এমন নিশ্চয়তাও এখনো নেই।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F0C86F08F8720C4B14)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E0C5651920A2E44E83)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 3521)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CA72E8DD6A3BEA8F8E)
+[WA Bridge] 🧠 thinking 3523 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05A465CC2F202107E09)
+[WA Bridge] ⚡ cmd 3523 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0163C9F2AE8F4FF483C)
+[WA Bridge] 💻 cmd output 3524 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CD22F3B218D4DC58B0)
+[WA Bridge] 🧠 thinking 3526 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F8400972E86ACDFAA7)
+[WA Bridge] ⚡ cmd 3526 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C0CEFF17D1BA1A8DD9)
+[WA Bridge] 💻 cmd output 3527 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03D6C6322852D264E6B)
+[WA Bridge] ⚡ cmd 3529 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08412D6F09250EAEBA7)
+[WA Bridge] 💻 cmd output 3530 (agy:0)
