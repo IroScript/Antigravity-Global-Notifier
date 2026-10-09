@@ -19066,3 +19066,19 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04BD9957D7EC38DFBAE)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07F22001799B017DC4B)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[Oracle 8 CPU 64 RAM · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "Hi"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0947C61491EC54F1EA2)
