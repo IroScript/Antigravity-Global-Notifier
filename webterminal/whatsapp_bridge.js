@@ -103,6 +103,84 @@ const BANGLA_ZIP_HOLD_NOTICE = "এই project-এর ZIP backup চলছে।
 const BANGLA_ZIP_COMPLETE_NOTICE = "ZIP capture শেষ হয়েছে। অপেক্ষমান prompt পাঠানো হয়েছে।";
 const BANGLA_RECONNECT_TEMPLATE = "WhatsApp সংযোগ ফিরে এসেছে।\nঅপেক্ষমান {count}টি message আবার processing শুরু হয়েছে।";
 
+const WA_OUTBOX_FILE = path.join(USER_HOME, '.webterminal', 'wa_outbox_queue.json');
+
+function loadOutboxQueue() {
+  try {
+    if (fs.existsSync(WA_OUTBOX_FILE)) {
+      const data = JSON.parse(fs.readFileSync(WA_OUTBOX_FILE, 'utf8'));
+      if (Array.isArray(data)) return data;
+    }
+  } catch (e) {}
+  return [];
+}
+
+function saveOutboxQueue(q) {
+  try {
+    const dir = path.dirname(WA_OUTBOX_FILE);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(WA_OUTBOX_FILE, JSON.stringify(q, null, 2), 'utf8');
+  } catch (e) {}
+}
+
+function enqueueOutboxMessage(target, text, options = {}) {
+  const q = loadOutboxQueue();
+  q.push({
+    id: `out_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+    target,
+    text,
+    options,
+    queued_at: new Date().toISOString()
+  });
+  saveOutboxQueue(q);
+}
+
+async function drainOutboxQueue() {
+  if (!sock || !isWsConnected) return;
+  const q = loadOutboxQueue();
+  if (q.length === 0) return;
+  console.log(`[WA Bridge] 📤 Draining ${q.length} queued offline outbound WhatsApp notice(s)...`);
+  const remaining = [];
+  for (const item of q) {
+    try {
+      const isGroup = item.target.endsWith('@g.us');
+      const cleanOptions = {};
+      if (!isGroup && item.options && item.options.quoted) {
+        cleanOptions.quoted = item.options.quoted;
+      }
+      const res = await sock.sendMessage(item.target, { text: (item.text || '').trim() }, cleanOptions);
+      if (res && res.key && res.key.id) {
+        sentMessageIds.add(res.key.id);
+      }
+    } catch (err) {
+      console.warn(`[WA Bridge] Failed to send queued outbox notice (${item.id}):`, err.message);
+      remaining.push(item);
+    }
+  }
+  saveOutboxQueue(remaining);
+}
+
+function reconcileStartupState() {
+  try {
+    const queue = loadDurableQueue();
+    let modified = false;
+    for (const item of queue) {
+      if (item.status === 'DELIVERING') {
+        item.status = 'UNCERTAIN';
+        item.uncertain_at = new Date().toISOString();
+        item.uncertain_reason = 'Process restarted while prompt was in DELIVERING status';
+        modified = true;
+        console.log(`[WA Bridge] ⚠️ Reconciled abandoned DELIVERING prompt ${item.message_id} -> UNCERTAIN`);
+      }
+    }
+    if (modified) {
+      saveDurableQueue(queue);
+    }
+  } catch (e) {
+    console.error('[WA Bridge] Error reconciling startup queue state:', e.message);
+  }
+}
+
 let promptQueue = []; // In-memory mirror for backward compatibility
 let mediaBatch = [];
 let mediaBatchTimer = null;
@@ -179,6 +257,73 @@ function releaseInFlightLock(projectUuid) {
     const lockFile = getInFlightLockFile(projectUuid);
     if (fs.existsSync(lockFile)) fs.unlinkSync(lockFile);
   } catch (e) {}
+}
+
+function acquireProjectDispatchClaim(projectUuid) {
+  const sotPath = process.env.SOT_PATH || path.join(USER_HOME, 'IroScript_Projects', 'Infrastructure-Source-of-Truth', 'sot');
+  if (fs.existsSync(sotPath)) {
+    try {
+      const { execFileSync } = require('child_process');
+      const out = execFileSync('/usr/bin/python3', [
+        sotPath,
+        'backup-orchestrator',
+        'in-flight-lock',
+        '--sub-action', 'acquire',
+        '--project-uuid', projectUuid
+      ], {
+        encoding: 'utf8',
+        timeout: 3000,
+        stdio: ['ignore', 'pipe', 'ignore']
+      });
+      const parsed = JSON.parse(out.trim());
+      if (parsed && parsed.acquired) {
+        return { acquired: true, status: 'CLAIM_ACQUIRED' };
+      }
+      return {
+        acquired: false,
+        status: parsed?.status || 'GATE_CLOSED',
+        action: parsed?.action || 'HOLD_FOR_ZIP',
+        reason: parsed?.reason || 'Gate closed or capture active'
+      };
+    } catch (e) {
+      if (e.stdout) {
+        try {
+          const parsed = JSON.parse(e.stdout.toString().trim());
+          if (parsed && !parsed.acquired) {
+            return {
+              acquired: false,
+              status: parsed.status || 'GATE_CLOSED',
+              action: parsed.action || 'HOLD_FOR_ZIP',
+              reason: parsed.reason || 'Gate closed'
+            };
+          }
+        } catch (pe) {}
+      }
+    }
+  }
+  acquireInFlightLock(projectUuid);
+  return { acquired: true, status: 'CLAIM_ACQUIRED' };
+}
+
+function releaseProjectDispatchClaim(projectUuid) {
+  const sotPath = process.env.SOT_PATH || path.join(USER_HOME, 'IroScript_Projects', 'Infrastructure-Source-of-Truth', 'sot');
+  if (fs.existsSync(sotPath)) {
+    try {
+      const { execFileSync } = require('child_process');
+      execFileSync('/usr/bin/python3', [
+        sotPath,
+        'backup-orchestrator',
+        'in-flight-lock',
+        '--sub-action', 'release',
+        '--project-uuid', projectUuid
+      ], {
+        encoding: 'utf8',
+        timeout: 3000,
+        stdio: 'ignore'
+      });
+    } catch (e) {}
+  }
+  releaseInFlightLock(projectUuid);
 }
 
 function checkZipGate(targetWindow, projectUuid = null) {
@@ -263,26 +408,74 @@ function isWindowBusy(targetWindow = 'agy:0') {
 
 function getWindowForSender(sender) {
   if (!sender) return 'agy:0';
-  if (sender.endsWith('@g.us')) {
+
+  const cleanSender = String(sender).trim().toLowerCase();
+
+  // 1. Check project groups map (~/.webterminal/project_groups.json)
+  try {
     const groups = getProjectGroupMap();
     for (const [k, g] of Object.entries(groups)) {
-      if (g && g.id === sender) {
-        if (k === 'yt') return 'agy:yt';
-        if (k === 'frappe') return 'agy:frappe';
-        if (k === 'tg') return 'agy:tg';
-        if (k === 'history') return 'agy:history';
-        if (k === 'kids') return 'agy:kids';
-        if (k === 'rust') return 'agy:rust';
-        if (k === 'article') return 'agy:article';
-        if (k === 'game') return 'agy:game';
-        if (k === 'research') return 'agy:research';
+      if (!g) continue;
+      const candidates = [
+        g.id, g.group_id, g.jid, g.project_uuid, g.project_id, k, g.key, g.name
+      ].filter(Boolean).map(x => String(x).trim().toLowerCase());
+
+      if (candidates.includes(cleanSender)) {
+        if (g.window) return g.window;
+        if (g.target_window) return g.target_window;
+        if (g.agent_name) return g.agent_name;
         if (k === 'reporting') return 'agy:report';
-        if (k === 'codex') return 'agy:codex';
+        return `agy:${g.key || k}`;
       }
     }
-    return 'agy:0';
-  }
-  // Personal 1-on-1 WhatsApp Chat is with Master Agent (agy:0)
+  } catch (e) {}
+
+  // 2. Check WHATSAPP_CONNECTIONS.json
+  try {
+    const sotRoot = process.env.SOT_ROOT || path.join(USER_HOME, 'IroScript_Projects', 'Infrastructure-Source-of-Truth');
+    const connPath = process.env.WHATSAPP_CONNECTIONS_PATH || path.join(sotRoot, 'connections', 'WHATSAPP_CONNECTIONS.json');
+    if (fs.existsSync(connPath)) {
+      const connData = JSON.parse(fs.readFileSync(connPath, 'utf8'));
+      const conns = connData.connections || [];
+      for (const c of conns) {
+        if (!c) continue;
+        const candidates = [
+          c.group_id, c.group_jid, c.id, c.project_id, c.project_uuid, c.name
+        ].filter(Boolean).map(x => String(x).trim().toLowerCase());
+
+        if (candidates.includes(cleanSender)) {
+          if (c.agent_name) return c.agent_name;
+          if (c.window) return c.window;
+          if (c.target_window) return c.target_window;
+          if (c.agent_route) return c.agent_route;
+          return `agy:${c.project_id}`;
+        }
+      }
+    }
+  } catch (e) {}
+
+  // 3. Check PROJECT_REGISTRY.json
+  try {
+    const sotRoot = process.env.SOT_ROOT || path.join(USER_HOME, 'IroScript_Projects', 'Infrastructure-Source-of-Truth');
+    const regPath = path.join(sotRoot, 'projects', 'PROJECT_REGISTRY.json');
+    if (fs.existsSync(regPath)) {
+      const regData = JSON.parse(fs.readFileSync(regPath, 'utf8'));
+      const projs = regData.projects || [];
+      for (const p of projs) {
+        if (!p) continue;
+        const candidates = [
+          p.project_id, p.project_uuid, p.display_name, p.connections?.whatsapp?.group_id
+        ].filter(Boolean).map(x => String(x).trim().toLowerCase());
+
+        if (candidates.includes(cleanSender)) {
+          if (p.connections?.whatsapp?.agent_route) return p.connections.whatsapp.agent_route;
+          if (p.runtime?.tmux_window) return p.runtime.tmux_window.split(',')[0].trim();
+          return `agy:${p.project_id}`;
+        }
+      }
+    }
+  } catch (e) {}
+
   return 'agy:0';
 }
 
@@ -370,7 +563,29 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   });
 
   const projectUuid = (gateCheck && gateCheck.project_uuid) || targetWindow;
-  acquireInFlightLock(projectUuid);
+
+  // Acquire project dispatch claim atomically before terminal transport begins (Blocker-03)
+  const claim = acquireProjectDispatchClaim(projectUuid);
+  if (!claim.acquired) {
+    console.log(`[WA Bridge] ⏸️ Project prompt gate is CLOSED for ${projectUuid} (${claim.status}). Holding prompt in durable queue.`);
+    enqueueDurablePrompt({
+      message_id: mId,
+      project_uuid: projectUuid,
+      target_window: targetWindow,
+      prompt: cleanPrompt,
+      status: 'HELD_FOR_ZIP',
+      reply_context: replyContext ? { sender: replyContext.sender } : null
+    });
+
+    const targetRecipient = (replyContext && replyContext.sender) || lastActiveJid;
+    if (targetRecipient) {
+      sendWhatsAppMessage(BANGLA_ZIP_HOLD_NOTICE, {
+        to: targetRecipient,
+        quoted: replyContext ? replyContext.msg : undefined
+      }).catch(err => console.error('[WA Bridge] Error sending Bangla ZIP hold notice:', err.message));
+    }
+    return false;
+  }
 
   // Activate Universal Autonomous Interaction Controller for this target terminal
   autoController.startTracking(targetWindow, cleanPrompt);
@@ -382,27 +597,26 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   } catch (e) {}
 
   try {
+    const { execFileSync } = require('child_process');
     // Ensure target session and window exist before dispatching
     try {
-      execSync(`tmux list-panes -t ${targetWindow}`, { stdio: 'ignore' });
+      execFileSync('tmux', ['list-panes', '-t', targetWindow], { stdio: 'ignore' });
     } catch (e) {
       console.log(`[WA Bridge] 🔄 Target ${targetWindow} not ready! Running init_agy_sessions.sh...`);
       try {
-        execSync(`/bin/bash /home/azureuser/.webterminal/init_agy_sessions.sh`, { stdio: 'ignore' });
-      } catch (err) {}
+        execFileSync('/bin/bash', [`${USER_HOME}/.webterminal/init_agy_sessions.sh`], { stdio: 'ignore' });
+        execFileSync('tmux', ['list-panes', '-t', targetWindow], { stdio: 'ignore' });
+      } catch (err) {
+        throw new Error(`Target window ${targetWindow} not accessible: ${err.message}`);
+      }
     }
 
     const isSlashCommand = /^\/[a-zA-Z0-9_-]+(\s+[\s\S]*)?$/.test(cleanPrompt);
     if (isSlashCommand) {
       // Send string literally, emulating physical keyboard typing with zero shell injection risk
-      const { execFileSync } = require('child_process');
-      try {
-        execFileSync('tmux', ['send-keys', '-t', targetWindow, '-l', cleanPrompt]);
-        execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
-        console.log(`[WA Bridge] ⌨️ Forwarded native slash command to ${targetWindow} via literal keystroke: ${cleanPrompt}`);
-      } catch (e) {
-        console.error(`[WA Bridge] ❌ Keystroke send error on ${targetWindow}:`, e.message);
-      }
+      execFileSync('tmux', ['send-keys', '-t', targetWindow, '-l', cleanPrompt]);
+      execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
+      console.log(`[WA Bridge] ⌨️ Forwarded native slash command to ${targetWindow} via literal keystroke: ${cleanPrompt}`);
 
       if (cleanPrompt.startsWith('/clear') && replyContext && replyContext.sender) {
         setTimeout(async () => {
@@ -411,24 +625,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       }
     } else {
       const bufName = `wa_cmd_${safeTarget}`;
-      execSync(`tmux load-buffer -b ${bufName} "${cmdFile}" && tmux paste-buffer -p -r -b ${bufName} -t ${targetWindow}`);
-      setTimeout(() => {
-        try {
-          execSync(`tmux send-keys -t ${targetWindow} Enter`);
-          console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
-        } catch (e) {
-          console.error(`[WA Bridge] ❌ Enter key send error on ${targetWindow}:`, e.message);
-        }
-        setTimeout(() => {
-          try {
-            const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
-            if (paneText.includes('> ') && !paneText.includes('esc to cancel') && !paneText.includes('Working...') && !paneText.includes('Loading...')) {
-              console.log(`[WA Bridge] ⚠️ Prompt still sitting in input prompt on ${targetWindow}, sending backup Enter...`);
-              execSync(`tmux send-keys -t ${targetWindow} Enter`);
-            }
-          } catch (e) {}
-        }, 500);
-      }, 250);
+      execFileSync('tmux', ['load-buffer', '-b', bufName, cmdFile]);
+      execFileSync('tmux', ['paste-buffer', '-p', '-r', '-b', bufName, '-t', targetWindow]);
+      execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
+      console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
     }
 
     // Terminal transport successful: transition DELIVERING -> DELIVERED
@@ -444,7 +644,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     updateDurablePromptStatus(mId, 'RETRYING', { last_error: err.message, retry_count: 1 });
     return false;
   } finally {
-    releaseInFlightLock(projectUuid);
+    releaseProjectDispatchClaim(projectUuid);
   }
 }
 
@@ -1141,8 +1341,13 @@ function isAllowedSender(sender, participant = '') {
 }
 
 async function sendWhatsAppMessage(text, options = {}) {
-  if (!sock || !isWsConnected || !text) return;
   const target = options.to || lastActiveJid || TARGET_JID;
+  if (!text) return;
+  if (!sock || !isWsConnected) {
+    console.log(`[WA Bridge] 💾 Offline: durably enqueued outbound notice to ${target}`);
+    enqueueOutboxMessage(target, text, options);
+    return;
+  }
   const isGroup = target.endsWith('@g.us');
 
   // CRITICAL: NEVER pass 'quoted' to group messages!
@@ -1169,7 +1374,8 @@ async function sendWhatsAppMessage(text, options = {}) {
       }
       return fallbackRes;
     } catch (e) {
-      console.error(`[WA Bridge] ❌ Error sending message to ${target}:`, e.message);
+      console.error(`[WA Bridge] ❌ Error sending message to ${target}, enqueuing to outbox:`, e.message);
+      enqueueOutboxMessage(target, text, options);
     }
   }
 }
@@ -1424,6 +1630,7 @@ async function ensureCodexGroup() {
 let sanitizeIntervalStarted = false;
 
 async function startBridge() {
+  reconcileStartupState();
   autoSanitizeAuth();
   if (!sanitizeIntervalStarted) {
     setInterval(autoSanitizeAuth, 15 * 60 * 1000);
@@ -1471,6 +1678,9 @@ async function startBridge() {
     } else if (connection === 'open') {
       isWsConnected = true;
       console.log('[WA Bridge] 🟢 WhatsApp connection is OPEN!');
+      drainOutboxQueue().catch(err => {
+        console.error('[WA Bridge] drainOutboxQueue error:', err.message);
+      });
       try {
         if (fs.existsSync(PAIRING_FILE)) fs.unlinkSync(PAIRING_FILE);
       } catch (e) {}

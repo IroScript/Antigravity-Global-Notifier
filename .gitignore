@@ -9,3 +9,11 @@ webterminal/wa_outbox/
 # WhatsApp session credentials - never track (added 2026-10-03)
 webterminal/wa_auth/
 webterminal/wa_auth_senderkeys_backup/
+
+# Sensitive media attachments and credentials - never track
+webterminal/media/*.json
+*.key
+*.pem
+*.p12
+*service_account*.json
+*client_secret*.json
