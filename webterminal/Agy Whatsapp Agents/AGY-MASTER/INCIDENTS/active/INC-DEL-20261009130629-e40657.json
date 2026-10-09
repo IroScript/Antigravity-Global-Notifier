@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009130629-e40657",
+  "timestamp": "2026-10-09T13:06:29.673011+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "grep -i \"Rice_Titan\" /home/azureuser/.gemini/antigravity-cli/brain/e0a5059d-091e-45a5-8dbb-9c878f4b271f/scratch/gdrive_mp4_files.txt || true"
+  },
+  "decision": "DENIED",
+  "reason": "Agent [yt] cannot access session brain or conversation transcripts: grep -i \"Rice_Titan\" /home/azureuser/.gemini/antigravity-cli/brain/e0a5059d-091e-45a5-8dbb-9c878f4b271f/scratch/gdrive_mp4_files.txt || true",
+  "rule_id": "RULE_79_BRAIN_ISOLATION"
+}
