@@ -1,25 +1,98 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] রায়: আগের তুলনায় সমাধান অনেক ভালো, কিন্তু এখনই `PERMANENTLY FIXED` বলা যাবে না।
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] CRITICAL — WHATSAPP ZERO-RESTART ARCHITECTURE
 
-রিপোর্ট অনুযায়ী:
+This is a mandatory architecture correction.
 
-* OOM-এর প্রমাণ পাওয়া যায়নি।
+ABSOLUTE RULE: NEVER RESTART, STOP OR KILL THE RUNNING WHATSAPP BRIDGE.
 
-* অথেনটিকেশন ফাইল মুছে ফেলা হয়নি।
+The existing authenticated WhatsApp connection must be preserved.
 
-* `SIGTERM` হ্যান্ডলার ও সকেট পরিষ্কারের ব্যবস্থা যুক্ত হয়েছে।
+1. Forbidden Actions
 
-* বিদ্যমান WhatsApp সেশন পুনরায় সংযুক্ত হয়েছে।
+No agent, watchdog, timer, automation or maintenance script may execute:
 
-তবে ৪টি বিষয় এখনও যাচাই করা জরুরি।
+- "systemctl restart agy-whatsapp.service"
+- "systemctl stop agy-whatsapp.service"
+- "systemctl try-restart agy-whatsapp.service"
+- "systemctl kill agy-whatsapp.service"
+- "kill", "pkill" or equivalent termination against the bridge
+- Any indirect command that terminates or replaces the running bridge process
 
-1\. কে বারবার `systemctl restart` দিচ্ছে? রিপোর্টে বলা হয়েছে বিভিন্ন স্ক্রিপ্ট ও এজেন্ট রিস্টার্ট করছে, কিন্তু সেগুলোর নির্দিষ্ট উৎস শনাক্ত ও বন্ধ করার প্রমাণ নেই।
+Do not restart the bridge to test this policy.
 
-2\. ৪৪০ (`connectionReplaced`) হলে পুনঃসংযোগ: অন্য সক্রিয় সেশন সংযোগ প্রতিস্থাপন করলে শুধু ৮ সেকেন্ড অপেক্ষা করে পুনঃসংযোগ করা যথেষ্ট নাও হতে পারে। [Baileys](https://baileys.wiki/docs/api/enumerations/DisconnectReason/)
+2. Fix the Watchdog
 
-3\. `removeAllListeners()` নিরাপত্তা: পুরোনো সকেটের প্রয়োজনীয় ইভেন্ট, অসম্পূর্ণ মেসেজ ও অথেনটিকেশন আপডেট সঠিকভাবে সামলানো হচ্ছে কি না যাচাই প্রয়োজন। [Node.js](https://nodejs.org/api/events.html#emitterremovealllistenerseventname)
+Investigate "wa-watchdog.timer" and "wa_watchdog.sh".
 
-4\. ১০/১০ PASS: এই ফলাফল প্রকৃত WhatsApp বার্তা পাঠানো, গ্রহণ, পুনঃসংযোগ এবং দীর্ঘমেয়াদি স্থিতিশীলতা প্রমাণ করে না।
+Replace restart-based recovery with observation and non-destructive diagnostics.
 
-আমার সিদ্ধান্ত: আপাতত নতুন কোনো পরিবর্তন না করে AGY-কে স্বাধীনভাবে যাচাই করতে বলুন—বিশেষ করে কোন এজেন্ট বা স্ক্রিপ্ট সার্ভিস রিস্টার্ট করছে এবং কেন।
+A missing or stale heartbeat must NEVER trigger a service restart.
 
-সবচেয়ে গুরুত্বপূর্ণ হলো, WhatsApp ব্রিজ নিজে ঠিক থাকলেও অন্য এজেন্ট যদি বারবার সার্ভিস রিস্টার্ট করে, তাহলে সংযোগ আবার বিচ্ছিন্ন হবে।
+Distinguish:
+
+- Process alive
+- Event loop responsive
+- WhatsApp WebSocket connected
+- WhatsApp authentication valid
+- Message delivery functional
+
+If the process is alive but disconnected, recovery must happen inside the existing Node.js process through Baileys reconnection logic.
+
+If the process is dead, report the condition accurately. Do not claim in-process recovery is possible after process death.
+
+3. Internal Self-Recovery
+
+Implement or verify:
+
+- Automatic socket-level reconnection
+- Bounded exponential backoff
+- Safe socket teardown without terminating Node.js
+- Credential persistence
+- Duplicate socket prevention
+- Recovery from transient network failures
+- Durable message queue handling
+- No forced QR reauthentication
+
+Never replace the entire process merely to repair its WhatsApp socket.
+
+4. Protect Against External Interference
+
+Identify all scripts, agents, timers, hooks and deployment routines capable of restarting the bridge.
+
+Remove unauthorized restart behavior from those paths without disrupting unrelated functionality.
+
+Implement enforceable protection where technically feasible.
+
+Do not falsely claim absolute protection against privileged administrators, kernel failures or machine reboot.
+
+5. Code Updates Without Restart
+
+Future code modifications must not automatically restart the running bridge.
+
+Changes requiring process reload must remain pending until an explicitly authorized maintenance operation.
+
+Never claim that changed source code has been loaded into an already-running Node.js process without runtime evidence.
+
+6. Mandatory Verification
+
+Perform read-only production inspection and isolated tests.
+
+Verify:
+
+1. Existing bridge PID remains unchanged.
+2. Existing WhatsApp connection remains active.
+3. Watchdog cannot initiate a restart.
+4. Agents cannot initiate unauthorized restart through managed workflows.
+5. Missing heartbeat produces diagnostics, not termination.
+6. Stale heartbeat produces diagnostics, not termination.
+7. Socket-level recovery works without process restart in isolated testing.
+8. Authentication remains intact.
+9. Existing message routing and agent isolation remain unchanged.
+10. No unrelated project or service is modified.
+
+Do not perform destructive fault injection on production.
+
+No user questions. No production restart. No process termination. No unrelated changes.
+
+Implement only safe changes that do not require replacing the live process. Report any changes that cannot take effect until a future authorized maintenance window.
+
+Provide actual evidence for every PASS.

@@ -5523,3 +5523,104 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
 [WA Bridge] Ignored message from other sender: 120363420075947938@g.us 32024031178804@lid
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 186148865503275@lid
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): CRITICAL — WHATSAPP ZERO-RESTART ARCHITECTURE
+
+This is a mandatory architecture correction.
+
+ABSOLUTE RULE: NEVER RESTART, STOP OR KILL THE RUNNING WHATSAPP BRIDGE.
+
+The existing authenticated WhatsApp connection must be preserved.
+
+1. Forbidden Actions
+
+No agent, watchdog, timer, automation or maintenance script may execute:
+
+- "systemctl restart agy-whatsapp.service"
+- "systemctl stop agy-whatsapp.service"
+- "systemctl try-restart agy-whatsapp.service"
+- "systemctl kill agy-whatsapp.service"
+- "kill", "pkill" or equivalent termination against the bridge
+- Any indirect command that terminates or replaces the running bridge process
+
+Do not restart the bridge to test this policy.
+
+2. Fix the Watchdog
+
+Investigate "wa-watchdog.timer" and "wa_watchdog.sh".
+
+Replace restart-based recovery with observation and non-destructive diagnostics.
+
+A missing or stale heartbeat must NEVER trigger a service restart.
+
+Distinguish:
+
+- Process alive
+- Event loop responsive
+- WhatsApp WebSocket connected
+- WhatsApp authentication valid
+- Message delivery functional
+
+If the process is alive but disconnected, recovery must happen inside the existing Node.js process through Baileys reconnection logic.
+
+If the process is dead, report the condition accurately. Do not claim in-process recovery is possible after process death.
+
+3. Internal Self-Recovery
+
+Implement or verify:
+
+- Automatic socket-level reconnection
+- Bounded exponential backoff
+- Safe socket teardown without terminating Node.js
+- Credential persistence
+- Duplicate socket prevention
+- Recovery from transient network failures
+- Durable message queue handling
+- No forced QR reauthentication
+
+Never replace the entire process merely to repair its WhatsApp socket.
+
+4. Protect Against External Interference
+
+Identify all scripts, agents, timers, hooks and deployment routines capable of restarting the bridge.
+
+Remove unauthorized restart behavior from those paths without disrupting unrelated functionality.
+
+Implement enforceable protection where technically feasible.
+
+Do not falsely claim absolute protection against privileged administrators, kernel failures or machine reboot.
+
+5. Code Updates Without Restart
+
+Future code modifications must not automatically restart the running bridge.
+
+Changes requiring process reload must remain pending until an explicitly authorized maintenance operation.
+
+Never claim that changed source code has been loaded into an already-running Node.js process without runtime evidence.
+
+6. Mandatory Verification
+
+Perform read-only production inspection and isolated tests.
+
+Verify:
+
+1. Existing bridge PID remains unchanged.
+2. Existing WhatsApp connection remains active.
+3. Watchdog cannot initiate a restart.
+4. Agents cannot initiate unauthorized restart through managed workflows.
+5. Missing heartbeat produces diagnostics, not termination.
+6. Stale heartbeat produces diagnostics, not termination.
+7. Socket-level recovery works without process restart in isolated testing.
+8. Authentication remains intact.
+9. Existing message routing and agent isolation remain unchanged.
+10. No unrelated project or service is modified.
+
+Do not perform destructive fault injection on production.
+
+No user questions. No production restart. No process termination. No unrelated changes.
+
+Implement only safe changes that do not require replacing the live process. Report any changes that cannot take effect until a future authorized maintenance window.
+
+Provide actual evidence for every PASS.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BCE86F79BF7C23D237)
