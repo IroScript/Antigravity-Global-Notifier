@@ -9288,3 +9288,19 @@ Oracle access kore janao
 [WA Bridge] ⚡ cmd 118 (agy:frappe)
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB054B6D275B03A09844D)
 [WA Bridge] ⏱️ task 121 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0A40E08B51BFCF353C5)
+[WA Bridge] ⚡ cmd 125 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB01F056CB34A9BB9E6FE)
+[WA Bridge] 💻 cmd output 126 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0AC8D56311F9F825200)
+[WA Bridge] ⚡ cmd 128 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB02B7827646C545612E8)
+[WA Bridge] 💻 cmd output 129 (agy:frappe)
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB0CDCC4340540F395399)
+[WA Bridge] 🧠 thinking 131 (agy:frappe)
+[WA Bridge] 📤 Turn done for agy:frappe (step 131)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5279
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB01C512EC8374124EE4A)
+[WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
