@@ -18206,3 +18206,13 @@ Closing session: SessionEntry {
 [WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0295095A78D929CFC87, seq: 184): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB03414A4D84B6C55E48E)
+[WA Bridge] ⚡ cmd 4665 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0E9C4C4F1A53445FB8F)
+[WA Bridge] 💻 cmd output 4666 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB08530C2ACE0585CA89A)
+[WA Bridge] 🧠 thinking 4668 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0E439A813140A9C413D)
+[WA Bridge] ⚡ cmd 4668 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB036843B7E070354CE52)
+[WA Bridge] 💻 cmd output 4669 (agy:0)
