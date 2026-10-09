@@ -56165,3 +56165,90 @@ Do NOT edit production.
 [WA Bridge] Codex command result bytes=0 delivered=true
 [WA Bridge] Ignored message from other sender: 120363378039870251@g.us 258192378433737@lid
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 258192378433737@lid
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB07949480E4AF067F5BA)
+[WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 258192378433737@lid
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB03EB3F872B75440FDD4)
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB042CCDAF0612A797727)
+[WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0037DF4E8CA078E7195)
+[WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] Ignored message from other sender: 120363403514936510@g.us 107533414973632@lid
+[WA Bridge] Ignored message from other sender: 120363403514936510@g.us 107533414973632@lid
+[WA Bridge] Ignored message from other sender: 120363401208934906@g.us 258192378433737@lid
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 258192378433737@lid
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363433006199651@g.us--82935919157317_1--8.json (33.8 KB) -> backed up
+[WA Bridge] Ignored message from other sender: 120363380930947370@g.us 258192378433737@lid
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB04EA81F4E517E371C4B)
+[WA Bridge] Codex progress delivered
+Closing session: SessionEntry {
+  _chains: {
+    'BQ4EzMlHC1PkFyceh9bbbZanP8P+CklFUOr00n1fP2wf': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BT8XaOqCG9+tT817PCgM2eQAiww2mgVxwPbEUN2fphNV': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BUwBZKGSgYzRmDMBtagjwodiSmUwvfZ4pO2Cetmv7TUl: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BdbgDuSN7gWusTx8FvQB30AX8sfSybwcwBX4DInjgZM6: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUq9e7Pczzc1q2ULtwM/Do84WTdpIO226uNhSNMDMU9K': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVfEHtYOj/JRDHN2OWDIljvk9F8vfLMGYfCrqe/zQK9i': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BU37owtnMF8kXgis9t9ZSlUIxSMcYrdZ3kzrwA92Bn5S: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQTyOrWo94gDIbn/f4XIbhFqnIdeGLS+0kzG+qRS8Lpo': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BYH/FynSD4SrxSKw2b8ycsauS36qWE+w2nia1EMQQ0o/': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BXYT6iXNIuv6gV3Nqit5a2DaQpIZ9VQlEydW5OMXYBkf: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXaN+PFlc0wjXZ18SI1LCkdDrutkgIaLcQK5RXqg2q5C': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 76 8d f8 f1 65 73 4c 23 5d 9d 7c 48 8d 4b 0a 47 43 ae eb 64 80 86 8b 71 02 b9 45 7a a0 da ae 42>,
+      privKey: <Buffer 30 2a e2 29 78 8a 33 42 e9 10 02 0a 98 3c 88 96 cb 2a 3e 7d a1 9b 6c a9 ac e3 65 fa 45 1b fb 51>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 76 13 ea 25 cd 22 eb fa 81 5d cd aa 2b 79 6b 60 da 42 92 19 f5 54 25 13 27 56 e4 e3 17 60 19 1f>,
+    previousCounter: 1555,
+    rootKey: <Buffer 9d af e7 66 df 1a e8 02 dc 82 63 76 3e 35 6d c6 79 01 20 e8 bf ea 2d 56 1c 7c 52 59 16 f2 30 8b>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a3 65 b8 a7 f5 ac 80 fc 60 4c ae f8 b9 df 8d 94 53 a7 c0 9b 06 ae 0e 95 79 7a b7 4c 80 82 ac 34>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791521656682,
+    created: 1791462290895,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BRydTTuJiO+EdtX05dTzCzREgEE6Z+xC1MXrcPum2gkL': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 1c 9d 4d 3b 89 88 ef 84 76 d5 f4 e5 d4 f3 0b 34 44 80 41 3a 67 ec 42 d4 c5 eb 70 fb a6 da 09 0b>,
+      privKey: <Buffer 68 74 5b 23 50 8d 4c 93 dd 26 92 00 b9 e9 cf 82 85 a5 71 88 52 3f d8 59 73 38 27 e8 7b 8e b1 63>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 62 4c 25 14 65 63 de b3 be a0 8f ed 54 75 02 e3 e8 d8 d2 31 a4 09 92 b6 16 29 13 db 2b 86 59 8c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 9f 4a fa 84 0e 76 c6 08 32 12 3b d8 1e b5 a7 93 f3 8e 79 61 82 7a c6 33 6f f1 80 b4 5b 66 72 7c>,
+    baseKeyType: 1,
+    closed: 1791337447826,
+    used: 1791337447709,
+    created: 1791337447709,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 9f 4a fa 84 0e 76 c6 08 32 12 3b d8 1e b5 a7 93 f3 8e 79 61 82 7a c6 33 6f f1 80 b4 5b 66 72 7c>,
+    preKeyId: 2097461
+  }
+}
+[WA Bridge] Ignored message from other sender: 120363366858730929@g.us 258192378433737@lid
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 68591198171285@lid
+[WA Bridge] Ignored message from other sender: 120363378775353616@g.us 258192378433737@lid
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB08B5F0F15264FFC53E5)
+[WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0CCFB34DABE33E28735)
+[WA Bridge] Codex command result bytes=0 delivered=true
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 258192378433737@lid
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0C03D37217A18138E00)
+[WA Bridge] Codex command result bytes=0 delivered=true
