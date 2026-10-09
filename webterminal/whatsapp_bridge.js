@@ -1865,6 +1865,82 @@ async function ensureCodexGroup() {
   }
 }
 
+async function ensureAllProjectGroups() {
+  try {
+    const pGroups = getProjectGroupMap();
+    const groups = await sock.groupFetchAllParticipating();
+    const list = Object.values(groups).map(g => ({ id: g.id, subject: g.subject || '', participants: g.participants || [] }));
+    console.log('[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery:', list.length);
+
+    // 1. YouTube Pipeline (120363430650656655@g.us)
+    const ytMatched = list.find(g => g.id === '120363430650656655@g.us' || /(?:youtube|pipeline)/i.test(g.subject));
+    if (ytMatched) {
+      console.log(`[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: ${ytMatched.subject} (${ytMatched.id})`);
+      pGroups.yt = {
+        id: ytMatched.id,
+        name: ytMatched.subject || 'AGY · YouTube Pipeline',
+        key: 'yt',
+        window: 'agy:yt',
+        cwd: `${USER_HOME}/IroScript_Projects/Social Media/youtube/Youtube Automation`,
+        git_remote: 'git@github.com:IroScript/Youtube-Pipeline.git',
+        whatsapp_status: 'CONNECTED'
+      };
+    }
+
+    // 2. Frappe ERP
+    const frappeMatched = list.find(g => /(?:frappe|alco)/i.test(g.subject));
+    if (frappeMatched) {
+      pGroups.frappe = {
+        id: frappeMatched.id,
+        name: frappeMatched.subject || 'AGY · Frappe ERP',
+        key: 'frappe',
+        window: 'agy:frappe',
+        cwd: `${USER_HOME}/IroScript_Projects/Frappe-erp-Alco`
+      };
+    }
+
+    // 3. Telegram
+    const tgMatched = list.find(g => /(?:telegram|tg\b)/i.test(g.subject));
+    if (tgMatched) {
+      pGroups.tg = {
+        id: tgMatched.id,
+        name: tgMatched.subject || 'AGY · Telegram Bot',
+        key: 'tg',
+        window: 'agy:tg',
+        cwd: `${USER_HOME}/IroScript_Projects/Telegram-Bot`
+      };
+    }
+
+    // 4. Kids Tube
+    const kidsMatched = list.find(g => /(?:kids\s*tube|kids)/i.test(g.subject));
+    if (kidsMatched) {
+      pGroups.kids = {
+        id: kidsMatched.id,
+        name: kidsMatched.subject || 'AGY · Kids Tube',
+        key: 'kids',
+        window: 'agy:kids',
+        cwd: `${USER_HOME}/IroScript_Projects/Kids-Tube`
+      };
+    }
+
+    // 5. Rust Task
+    const rustMatched = list.find(g => /(?:rust\s*task|rust)/i.test(g.subject));
+    if (rustMatched) {
+      pGroups.rust = {
+        id: rustMatched.id,
+        name: rustMatched.subject || 'AGY · Rust Task',
+        key: 'rust',
+        window: 'agy:rust',
+        cwd: `${USER_HOME}/IroScript_Projects/Rust_Task_With_Time_Keeping_And_Live_Note`
+      };
+    }
+
+    fs.writeFileSync(PROJECT_GROUPS_FILE, JSON.stringify(pGroups, null, 2), 'utf8');
+  } catch (err) {
+    console.error('[WA Bridge] Failed in ensureAllProjectGroups:', err.message);
+  }
+}
+
 let sanitizeIntervalStarted = false;
 
 let reconnectAttempts = 0;
@@ -1950,6 +2026,9 @@ async function startBridge() {
       });
       ensureCodexGroup().catch(err => {
         console.error('[WA Bridge] ensureCodexGroup error:', err.message);
+      });
+      ensureAllProjectGroups().catch(err => {
+        console.error('[WA Bridge] ensureAllProjectGroups error:', err.message);
       });
 
       // Reconcile and recover waiting messages after Baileys reconnect (Section 10 & Milestone 2)
