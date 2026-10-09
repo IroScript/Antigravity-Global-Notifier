@@ -5833,3 +5833,141 @@ Provide actual evidence for every PASS.
 [WA Bridge] 💻 cmd output 931 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00FC0B570B77C328925)
 [WA Bridge] ⚡ cmd 933 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C63FAFE15708DC25EE)
+[WA Bridge] ⏱️ task 936 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0332C3F3447431E3B53)
+[WA Bridge] ⏱️ task 939 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB04DB4AA2883A5315761)
+[WA Bridge] ⚡ cmd 943 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08B6566DBFD0C11B617)
+[WA Bridge] 💻 cmd output 944 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB047F34BFEC28CD13CB9)
+[WA Bridge] ⚡ cmd 946 (agy:yt)
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): রায়: Zero-Restart Architecture বাস্তবায়নের ভালো প্রমাণ পাওয়া গেছে, কিন্তু `100% VERIFIED` বলা যাচ্ছে না। কারণ রিপোর্টে কয়েকটি গুরুত্বপূর্ণ দুর্বলতা আছে।
+
+| বিষয়                           | আমার মূল্যায়ন                     |
+| ------------------------------ | --------------------------------- |
+| PID 318878 অপরিবর্তিত          | ইতিবাচক প্রমাণ                    |
+| Watchdog থেকে Restart সরানো    | রিপোর্ট অনুযায়ী সম্পন্ন           |
+| একই প্রসেসে Socket Reconnect   | বিচ্ছিন্ন পরীক্ষায় সফল            |
+| AGENTS.md দিয়ে Restart নিষিদ্ধ | নীতিগত সুরক্ষা, প্রযুক্তিগত লক নয় |
+| HEALTHY_ALL_VECTORS_PASS       | অতিরিক্ত আত্মবিশ্বাসী সিদ্ধান্ত   |
+
+### এখনও ৪টি সমস্যা
+
+1\. `AGENTS.md` প্রকৃত নিরাপত্তা লক নয়। কোনো এজেন্ট নিয়ম অমান্য করলে অথবা অন্য স্ক্রিপ্ট সরাসরি `systemctl restart` চালালে এটি আটকাতে পারবে না।
+
+2\. `active_socket_count: 59` অস্পষ্ট। এটি ৫৯টি TCP সকেট, ফাইল ডিসক্রিপ্টর, নাকি WhatsApp সংযোগ—তা শনাক্ত করা প্রয়োজন। শুধু সংখ্যাটি দেখে সকেট লিক বলা যাবে না।
+
+3\. `latest_reply_age_sec: -1` নির্দেশ করে সর্বশেষ উত্তরের বয়স নির্ণয় হয়নি। তাই `Delivery Functional` নিশ্চিতভাবে PASS বলা যায় না।
+
+4\. `registered: true` মানেই লাইভ অথেনটিকেশন সফল নয়। এটি সংরক্ষিত ক্রেডেনশিয়ালের একটি অবস্থা; প্রকৃত সংযোগ ও বার্তা আদান-প্রদান আলাদাভাবে যাচাই করতে হবে।
+
+### সবচেয়ে গুরুত্বপূর্ণ সিদ্ধান্ত
+
+আপনার কাঙ্ক্ষিত ব্যবস্থা হবে:
+
+WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ংক্রিয় Reconnect → আগের মেসেজ ও এজেন্ট সংযোগ অক্ষত।
+
+কোনো `restart`, `stop`, `kill` নয়।
+
+এখন AGY-কে নতুন কোড পরিবর্তন না করিয়ে শুধু Read-Only Independent Audit করানো উচিত। বিশেষ করে প্রকৃত Restart Prevention, Socket Count এবং End-to-End Message Delivery যাচাই করতে হবে।
+
+সূত্র: [Node.js Process](https://nodejs.org/api/process.html) · [Baileys Connection](https://baileys.wiki/docs/socket/connecting/)
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E61DD9AF2785938F40)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB04E240044DB88B8E351)
+[WA Bridge] 💻 cmd output 947 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0AE0E709B5C83AB18B2)
+[WA Bridge] ⚡ cmd 949 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F65AB5DF470F4BA81B)
+[WA Bridge] 💻 cmd output 950 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08F10DCF019A66B97ED)
+[WA Bridge] 🧠 thinking 3328 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0037109C98B9C9F4F41)
+[WA Bridge] ⚡ cmd 952 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DA0971D3C9EE413B60)
+[WA Bridge] ⚡ cmd 3328 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04D95A8182D9D608BAC)
+[WA Bridge] 💻 cmd output 3329 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B56F25C39BAD85E523)
+[WA Bridge] 💻 cmd output 953 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00D66D237519119D621)
+[WA Bridge] ⚡ cmd 3331 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E0CF633C780D140350)
+[WA Bridge] ⚡ cmd 955 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B758252A77C4241D74)
+[WA Bridge] 💻 cmd output 3332 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CDAFFC1BDF061CA0B4)
+[WA Bridge] ⚡ cmd 3334 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0315818E71281F66759)
+[WA Bridge] 💻 cmd output 3335 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB054C7FC371A3A5BF453)
+[WA Bridge] ⏱️ task 958 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08368E1D72F9681FCEB)
+[WA Bridge] ⚡ cmd 3337 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A5EF1E6ED0EE555425)
+[WA Bridge] 💻 cmd output 3338 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07392B0B16495FD6631)
+[WA Bridge] ⚡ cmd 961 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05B5E49C35714D8F647)
+[WA Bridge] ⚡ cmd 3340 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08AEF70D7A0BFF4CA72)
+[WA Bridge] 💻 cmd output 3341 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0490291DCE30710477C)
+[WA Bridge] ⚡ cmd 3343 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EF796D4F9F64D04F34)
+[WA Bridge] 💻 cmd output 3344 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DCC776F65FDB2B6960)
+[WA Bridge] ⏱️ task 964 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04822FE0C53E14D0110)
+[WA Bridge] 👁️ view 3346 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01F4ABF599FD0606AB1)
+[WA Bridge] ⏱️ task 967 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E940E803A31C58CDC4)
+[WA Bridge] ⚡ cmd 3349 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C9A79C1E018E443355)
+[WA Bridge] 💻 cmd output 3350 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09E5F8F462F9445B17E)
+[WA Bridge] ⏱️ task 970 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00ECD6A7A3FAF2D84D6)
+[WA Bridge] ⚡ cmd 973 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09C890081E961599F76)
+[WA Bridge] 💻 cmd output 974 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A0227828F339ADBBE7)
+[WA Bridge] 👁️ view 976 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A74F3DA47B3BE32D74)
+[WA Bridge] 🧠 thinking 3352 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0EA7F37CFE10AAC6A43)
+[WA Bridge] ⚡ cmd 3352 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F9133331BBFD1D6C9A)
+[WA Bridge] 💻 cmd output 3353 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB086A6F4E7A5CBF576E6)
+[WA Bridge] ⚡ cmd 979 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04129616A73E48E19E8)
+[WA Bridge] 🧠 thinking 3355 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07278823FF6C33A07CD)
+[WA Bridge] ⚡ cmd 3355 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02241CE587A0CCCCF1B)
+[WA Bridge] 💻 cmd output 3356 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01BAED7AF8092757FC8)
+[WA Bridge] ⏱️ task 983 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09B3E5F2AF9F1795769)
+[WA Bridge] 🧠 thinking 3358 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B682CEBE856D5F8143)
+[WA Bridge] ⚡ cmd 3358 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C0FB7C67D3F4A53D10)
+[WA Bridge] 💻 cmd output 3359 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB020CA36BC25B80B0D20)
+[WA Bridge] ⏱️ task 986 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0EB9BEDD6355608DCA2)
+[WA Bridge] ⚡ cmd 989 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B84DE96E069150FF60)
+[WA Bridge] 🧠 thinking 3361 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03AA3592DA8317E6C00)
+[WA Bridge] ⚡ cmd 3361 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A7B37BDD021CFA94FC)
+[WA Bridge] 💻 cmd output 3362 (agy:0)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB06233B6929D7376F0BB)
+[WA Bridge] 💻 cmd output 990 (agy:yt)
