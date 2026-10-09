@@ -1,720 +1,132 @@
-[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] THIS IS A PRODUCTION-GRADE TWO-VM FRAPPE/ERPNEXT/ALCO DEPLOYMENT TASK.
+[প্রজেক্ট গ্রুপ: AGY · Frappe & ERPNext (frappe)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] হ্যাঁ। সে মূলত একটা problem-ই পেয়েছে, আর তোমার prompt-এর safety rule মেনে সেখানেই deployment থামিয়েছে।
 
-READ EVERYTHING BEFORE MAKING ANY CHANGE.
+সমস্যাটা কী?
 
-==================================================
-PRIMARY GOAL
-==================================================
+তোমার local ERPNext পুরোপুরি clean নয়:
 
-Build a two-VM architecture in which the production environment reproduces
-the CURRENT WORKING LOCAL FRAPPE ENVIRONMENT AS EXACTLY AS PRACTICALLY POSSIBLE.
+ERPNext
+HEAD = af63cde...
+Version = 16.37.0
 
-The local environment is the authoritative runtime reference.
+কিন্তু:
+banking/yarn.lock = MODIFIED
 
-DO NOT casually install "latest".
-DO NOT upgrade Frappe.
-DO NOT upgrade ERPNext.
-DO NOT upgrade the custom app.
-DO NOT substitute package versions merely because newer versions exist.
+অর্থাৎ Git-এর official/current commit বলছে banking/yarn.lock একরকম হওয়া উচিত, কিন্তু তোমার local machine-এ file-টা অন্যরকম।
 
-The production environment must use the SAME tested versions/revisions as local.
+পরিবর্তনটা মূলত dependency version:
 
-Architecture:
+আগে:
+follow-redirects 1.15.11
+proxy-from-env 1.1.0
 
-VM-1 = APPLICATION VM
-VM-2 = DATABASE VM
+Local-এ এখন:
+follow-redirects 1.16.1
+proxy-from-env 2.1.0
 
-VM-1 must contain:
+তাই বর্তমানে:
 
-- Frappe Bench
-- exact local Frappe revision
-- exact local ERPNext revision
-- exact local Alco Ecommerce revision
-- Python environment
-- Redis services required by Frappe
-- Frappe web processes
-- workers
-- scheduler
-- Nginx / supported production web layer
-- Node/Yarn/build tools only as required by this exact Frappe version
-- application assets
+Local ERPNext
+= Git commit af63cde...
++ অতিরিক্ত uncommitted yarn.lock change
 
-VM-2 must contain:
+কিন্তু নতুন VM-এ শুধু:
 
-- MariaDB Server
-- database storage
-- MariaDB native service management
-- no Frappe application runtime unless an official technical dependency proves
-  it is actually required
+git checkout af63cde...
 
-VM-1 must connect to VM-2 over the private network.
+করলে ওই অতিরিক্ত change আসবে না।
 
-MariaDB port 3306 MUST NOT be exposed publicly.
+ফলে তোমার সবচেয়ে গুরুত্বপূর্ণ requirement—
 
-==================================================
-ABSOLUTE RULE: LOCAL IS THE VERSION SOURCE OF TRUTH
-==================================================
+> Local যেটা চলছে, VM-এ হুবহু সেটাই থাকবে
 
-Before installing ANYTHING on either VM, audit the existing LOCAL working
-Frappe environment.
 
-Do not infer versions from branch names such as:
 
-version-16
-develop
-main
+—প্রমাণ করা যাবে না।
 
-A branch name is NOT sufficient.
 
-Capture the exact state.
+---
 
-For every installed app capture at least:
+কেন সে তোমাকে প্রশ্ন করেছে?
 
-1. app name
-2. app path
-3. git remote
-4. current branch
-5. exact HEAD commit SHA
-6. git status
-7. whether tracked files are modified
-8. whether untracked files exist
-9. app version exposed by Frappe/Bench
-10. whether the local commit exists on the configured remote
+আমাদের prompt-এই বলা ছিল:
 
-At minimum inspect:
+> local repository dirty হলে deployment STOP করবে; নিজে থেকে change delete করবে না।
 
-- frappe
-- erpnext
-- alco_ecommerce
-- every other app installed on the actual site
 
-Use evidence such as:
 
-git rev-parse HEAD
-git status --short
-git remote -v
-git branch --show-current
+সুতরাং এখানে AGY ঠিক কাজ করেছে।
 
-and appropriate Bench/Frappe commands.
+সে নিজে যদি চালাত:
 
-DO NOT claim parity using only a human-readable version such as 16.x.x.
+git checkout banking/yarn.lock
 
-Exact commit SHA is required whenever the app is Git-managed.
+তাহলে তোমার local working state পরিবর্তন করে ফেলত।
 
-==================================================
-LOCAL DOCUMENTATION RULE
-==================================================
+আবার নিজে থেকে commit করলেও সে সিদ্ধান্ত নিত যে change-টা intentional।
 
-The machine already contains local Frappe documentation/source documentation.
+দুটোই আমাদের protocol-এর বিরুদ্ধে।
 
-Locate it first.
 
-Determine whether that documentation corresponds to the SAME locally installed
-Frappe revision/version.
+---
 
-If yes:
+কিন্তু AGY-এর রিপোর্টে একটা দুর্বল জায়গা আছে
 
-LOCAL VERSION-MATCHED FRAPPE DOCUMENTATION IS THE PRIMARY DOCUMENTATION SOURCE.
+সে লিখেছে:
 
-Use official online Frappe/MariaDB documentation only:
+> “পূর্বে লোকাল frontend build বা package installation-এর সময় Yarn dependency lockfile update হয়েছিল।”
 
-- when local documentation does not cover something,
-- to validate behaviour,
-- or to confirm installation/deployment requirements.
 
-Never silently replace version-specific local instructions with instructions
-from a different/latest Frappe version.
 
-Document:
+এই কারণটা report থেকে প্রমাণিত নয়।
 
-LOCAL DOC PATH
-LOCAL FRAPPE SHA
-DOC VERSION/REVISION IF DETERMINABLE
-MATCH VERDICT = PASS / FAIL / UNKNOWN
+Diff দেখে আমরা বলতে পারি dependency lock বদলেছে। কিন্তু কখন, কোন command-এ, কেন বদলেছে—শুধু Git diff দেখে নিশ্চিত হওয়া যায় না।
 
-Do NOT copy documentation to production merely for the sake of runtime parity.
+এখন আসল investigation হওয়া উচিত:
 
-Documentation itself is not a runtime dependency.
+এই yarn.lock change কি—
 
-==================================================
-DO NOT BLINDLY COPY THE LOCAL BENCH
-==================================================
+A. Alco/Frappe চালানোর জন্য সত্যিই প্রয়োজনীয়?
 
-"HUBOHU LOCAL → VM" means FUNCTIONAL AND VERSION PARITY.
+নাকি
 
-It does NOT mean blindly rsync/copying:
+B. accidental generated change?
 
-- Python virtualenv
-- node_modules
-- compiled native libraries
-- cache
-- logs
-- sockets
-- PID files
-- Redis runtime state
-- temporary files
+এটা না জেনে A/B কোনো option-ই নেওয়া উচিত নয়।
 
-Those can be machine/OS specific.
 
-Instead reproduce them correctly from the captured versions and dependency
-definitions.
+---
 
-The following MUST be preserved/reproduced:
+আরও একটা গুরুত্বপূর্ণ ব্যাপার
 
-- exact Frappe commit
-- exact ERPNext commit
-- exact custom app commit
-- all legitimate custom source files
-- DocType definitions
-- hooks
-- fixtures
-- patches
-- frontend source
-- application configuration shape
-- required Python dependencies
-- required Node/Yarn dependencies
-- customizations required by the site
-- database schema/data as required for the requested deployment
-- exact installed-app relationship
+banking/yarn.lock path-টা একটু interesting।
 
-If local contains uncommitted changes, STOP THE NORMAL DEPLOYMENT PATH.
+তোমার report অনুযায়ী repository:
 
-Do not discard them.
+apps/erpnext
 
-Report exactly:
+কিন্তু modified:
 
-- repository
-- modified files
-- untracked files
-- diff summary
+banking/yarn.lock
 
-Determine whether those changes are intentional source code that must first be
-made reproducible/version-controlled.
+তাই আমি AGY-কে আগে এই file-এর ownership/context এবং dependency কেন পরিবর্তিত হয়েছে যাচাই করতে বলতাম।
 
-Never silently deploy a different state.
+যদি প্রমাণ হয় accidental:
 
-==================================================
-PHASE 1 — LOCAL FORENSIC INVENTORY
-==================================================
-
-READ ONLY.
+restore original
+→ ERPNext clean
+→ exact SHA deploy
 
-Do not modify the local working system during this phase.
+আর যদি প্রমাণ হয় local runtime সত্যিই এই modified lockfile-এর উপর নির্ভরশীল:
 
-Capture at least:
+change preserve/version-control
+→ নতুন reproducible commit/state
+→ Local ও VM দুটোতেই একই state
 
-A. OS
-- distribution
-- version
-- architecture
+Blindly checkout নয়, blindly commit-ও নয়।
 
-B. Python
-- Python version
-- pip version
-- Bench version
-- virtualenv path
-- relevant installed Python dependencies
 
-C. Node frontend toolchain
-- Node version
-- npm version
-- Yarn version
-- package manager lockfiles
+---
 
-D. Frappe applications
-- exact commits
-- branches
-- remotes
-- dirty/clean state
-- installed app list
+বাকি report অনুযায়ী বড় কোনো blocker সে দেখায়নি। Frappe clean, Alco clean, exact SHAs পেয়েছে, local docs match বলেছে, MariaDB/Redis/runtime inventory করেছে এবং target VM IP-ও ঠিক করেছে। একমাত্র deployment gate এখন এই ERPNext dirty working tree।
 
-E. Database
-- MariaDB version
-- character set/collation
-- important configuration required by Frappe
-- site database name
-- do not print secrets unnecessarily
-
-F. Redis/Frappe processes
-- Redis roles/config
-- workers
-- scheduler
-- web process
-- production process management method
-
-G. Site
-- site path
-- installed apps
-- site_config.json keys
-- common_site_config.json keys
-- redact passwords/secrets from reports
-
-H. Custom app
-- DocTypes
-- custom fields/customizations
-- fixtures
-- hooks.py
-- patches.txt
-- Python dependencies
-- JS dependencies
-- asset entry points
-
-I. Database migration state
-- verify current site successfully migrates or determine current migration state
-- do NOT mutate merely to obtain proof unless safe and required
-
-Produce:
-
-LOCAL_RUNTIME_MANIFEST.md
-LOCAL_APP_COMMITS.json
-LOCAL_DEPENDENCIES.json
-LOCAL_SITE_MANIFEST.json
-
-These manifests are evidence, not assumptions.
-
-==================================================
-PHASE 2 — PARITY DESIGN
-==================================================
-
-Before installing anything, create:
-
-TARGET_PARITY_PLAN.md
-
-It must map:
-
-LOCAL COMPONENT                TARGET COMPONENT
-----------------------------------------------------------
-Frappe SHA             -> VM-1 same SHA
-ERPNext SHA            -> VM-1 same SHA
-Alco SHA               -> VM-1 same SHA
-Python version         -> VM-1 compatible/same version
-Node version           -> VM-1 compatible/same version
-Yarn version           -> VM-1 compatible/same version
-MariaDB version        -> VM-2 same compatible version
-Redis requirements     -> VM-1
-Workers                -> VM-1
-Scheduler              -> VM-1
-Nginx                  -> VM-1
-Database               -> VM-2
-
-For every difference between local and target, explicitly state:
-
-- difference
-- reason
-- impact
-- whether parity is still valid
-
-A difference cannot be silently accepted.
-
-==================================================
-PHASE 3 — VM-2 DATABASE SERVER
-==================================================
-
-Prepare VM-2 first.
-
-Install ONLY the required MariaDB server stack and operating-system dependencies.
-
-Prefer the exact locally tested MariaDB version when supported by the target OS.
-
-If exact binary/version parity is impossible:
-
-STOP and report the incompatibility before substituting another version.
-
-Configure MariaDB for remote access ONLY through the VM private network.
-
-Create the required database/user privileges for the Frappe site.
-
-Do not expose MariaDB to:
-
-0.0.0.0/0
-public Internet
-arbitrary hosts
-
-Restrict database network access to VM-1 private IP/network.
-
-Verify:
-
-- mariadb.service is running
-- boot enablement
-- active restart policy
-- listening address
-- port
-- firewall/security rules
-- authentication
-- private connectivity
-
-Inspect, do not assume:
-
-systemctl status mariadb
-systemctl show mariadb.service -p Restart -p RestartSec
-systemctl cat mariadb.service
-
-Do NOT invent custom restart daemons if native MariaDB/systemd behaviour is
-sufficient.
-
-Document actual state.
-
-==================================================
-PHASE 4 — VM-1 APPLICATION SERVER
-==================================================
-
-Install the OS/runtime prerequisites appropriate for the EXACT Frappe version
-captured locally.
-
-Do not use "latest Frappe installation" instructions unless they exactly match
-the local version.
-
-Create the Bench.
-
-Fetch Frappe at the exact captured commit.
-
-Fetch ERPNext at the exact captured commit.
-
-Fetch Alco Ecommerce at the exact captured commit.
-
-For example, conceptually:
-
-clone repository
-checkout EXACT_SHA
-verify HEAD == EXPECTED_SHA
-
-Do this for every app.
-
-Never finish with:
-
-"version 16 matched"
-
-The PASS condition is:
-
-EXPECTED_SHA == ACTUAL_SHA
-
-for every Git-managed application.
-
-==================================================
-PHASE 5 — CONNECT FRAPPE TO VM-2
-==================================================
-
-Configure the Frappe site so the database host is VM-2's PRIVATE address.
-
-Use Frappe-supported database configuration keys.
-
-Conceptually:
-
-db_host = <VM2_PRIVATE_IP>
-db_port = 3306
-
-Use the actual credentials securely.
-
-Do not commit passwords to Git.
-
-Verify from VM-1:
-
-- VM-2 resolves/reaches
-- TCP 3306 is reachable privately
-- authenticated MariaDB connection works
-- Frappe can connect
-
-Do not declare PASS merely because port 3306 responds.
-
-Authenticated DB access must succeed.
-
-==================================================
-PHASE 6 — DATABASE / SITE TRANSFER STRATEGY
-==================================================
-
-Determine the requested production data source.
-
-There are TWO different things:
-
-A. SOFTWARE PARITY
-B. SITE DATA PARITY
-
-Do not confuse them.
-
-Software parity means:
-
-same Frappe
-same ERPNext
-same Alco
-same source/configuration logic
-
-Data parity means:
-
-same site database/files/private files/public files as a selected source.
-
-If the intention is to reproduce the existing local site exactly, then use a
-proper Frappe-supported backup/restore procedure rather than manually copying
-MariaDB data directories.
-
-Preserve:
-
-- database
-- public files
-- private files
-- site configuration as appropriate
-
-Secrets must be handled securely.
-
-If this is instead a fresh production site, create a fresh site against VM-2
-and install the same apps in the same required order.
-
-Do not decide silently between FRESH SITE and CLONED SITE.
-
-Infer it only if existing requirements make it unambiguous; otherwise report
-the choice before destructive execution.
-
-==================================================
-PHASE 7 — MIGRATION / SCHEMA FITTING
-==================================================
-
-Once the exact application code is in VM-1 and the site uses VM-2:
-
-run the appropriate Frappe migration for the target site.
-
-The important architecture is:
-
-VM-1:
-Frappe migration code executes
-
-VM-2:
-MariaDB schema/data receives the database changes
-
-Verify:
-
-- migration completes
-- installed app list is correct
-- DocTypes sync
-- custom fields/customizations sync
-- patches complete
-- fixtures sync
-- no pending migration error
-
-Do not claim database parity just because the website opens.
-
-==================================================
-PHASE 8 — FRONTEND FITTING
-==================================================
-
-Reproduce frontend dependencies from the local project definitions.
-
-Do not randomly update packages.
-
-Use the project's lockfiles/package definitions.
-
-Build Frappe assets using the command appropriate for the exact installed
-Frappe version.
-
-Verify resulting assets are served correctly.
-
-Do not install extra frontend libraries unless they exist in the local working
-version or are explicitly required.
-
-==================================================
-PHASE 9 — PRODUCTION PROCESSES
-==================================================
-
-Configure the supported production runtime for this exact Frappe version.
-
-Verify independently:
-
-- web
-- Redis
-- required Redis queues
-- workers
-- scheduler
-- Nginx/reverse proxy
-- static assets
-- database connectivity
-
-Do not confuse:
-
-PROCESS RUNNING
-
-with
-
-APPLICATION WORKING.
-
-Both must be verified.
-
-==================================================
-PHASE 10 — END-TO-END TEST
-==================================================
-
-Perform functional verification.
-
-At minimum:
-
-1. site opens
-2. login works
-3. Frappe Desk opens
-4. ERPNext opens
-5. Alco Ecommerce loads
-6. required DocTypes exist
-7. old records can be read if restoring an existing site
-8. a controlled test record can be created
-9. database record actually appears on VM-2
-10. update works
-11. controlled deletion/cleanup works where safe
-12. Redis-dependent operations work
-13. background worker receives and executes a safe test job
-14. scheduler status is correct
-15. asset loading has no critical failures
-16. API works
-17. relevant Alco workflow works
-
-For an INSERT test, prove the chain:
-
-CLIENT
-→ VM-1
-→ FRAPPE
-→ ALCO/ERPNEXT LOGIC
-→ VM-2 MARIADB
-→ COMMIT
-→ FRAPPE RESPONSE
-
-Do not merely say PASS.
-
-Show evidence.
-
-==================================================
-EXACT LOCAL VS VM PARITY GATE
-==================================================
-
-Before FINAL ACCEPTED, produce this table:
-
-Component | Local | VM | Verdict
-------------------------------------------
-Frappe SHA
-ERPNext SHA
-Alco SHA
-Bench version
-Python version
-Node version
-Yarn version
-MariaDB version
-Installed apps
-App order/dependencies
-Relevant Python deps
-Relevant JS deps
-DocTypes/schema
-Patches
-Fixtures
-Site config structure
-Redis roles
-Workers
-Scheduler
-Assets
-
-Verdict rules:
-
-PASS = demonstrated parity
-JUSTIFIED DIFFERENCE = difference exists and is technically required/explained
-FAIL = unexplained difference
-UNKNOWN = evidence unavailable
-
-FINAL ACCEPTED is forbidden if any critical row is FAIL or UNKNOWN.
-
-==================================================
-INFRASTRUCTURE SOURCE OF TRUTH
-==================================================
-
-Repository:
-
-https://github.com/IroScript/Infrastructure-Source-of-Truth
-
-This repository is NOT a runtime dependency of Frappe or MariaDB.
-
-Use it as infrastructure/recovery Source of Truth.
-
-Record the final reproducible architecture there, following its existing
-protocol and structure.
-
-Do not put secrets in Git.
-
-Record enough non-secret information that a future blank VM can reproduce:
-
-VM-1 role
-VM-2 role
-exact versions/SHAs
-required packages
-network model
-ports
-service layout
-database connection model
-deployment sequence
-migration sequence
-backup/restore process
-verification process
-
-Do not rewrite or redesign the existing Source-of-Truth framework unless
-strictly necessary.
-
-Preserve compatibility with its current conventions.
-
-==================================================
-AGY CLI POLICY
-==================================================
-
-AGY CLI is NOT a Frappe dependency.
-AGY CLI is NOT a MariaDB dependency.
-
-VM-2 must NOT receive AGY merely because MariaDB runs there.
-
-If AGY is already intentionally used for infrastructure management, keep that
-as a separate operational layer.
-
-Do not add an autonomous coding agent to the production database VM unless
-there is an explicit operational requirement.
-
-The MariaDB VM should remain minimal.
-
-==================================================
-SAFETY RULES
-==================================================
-
-Never:
-
-- install latest merely for convenience
-- upgrade Frappe without explicit requirement
-- upgrade ERPNext without explicit requirement
-- discard local uncommitted changes
-- force push
-- delete production data
-- manually edit MariaDB system tables without documented need
-- expose 3306 publicly
-- store secrets in Git
-- claim parity using only major/minor version labels
-- declare PASS based only on process status
-- modify Frappe/ERPNext core to solve something already supported by configuration
-- invent a custom watchdog when native mechanisms are sufficient
-
-==================================================
-FINAL REQUIRED OUTPUT
-==================================================
-
-Return:
-
-1. LOCAL SOURCE-OF-TRUTH INVENTORY
-2. TWO-VM ARCHITECTURE
-3. EXACT VERSION/COMMIT PARITY TABLE
-4. VM-1 SERVICE INVENTORY
-5. VM-2 SERVICE INVENTORY
-6. NETWORK/PORT VERIFICATION
-7. DATABASE CONNECTION PROOF
-8. MIGRATION PROOF
-9. FRONTEND BUILD PROOF
-10. WORKER/REDIS/SCHEDULER PROOF
-11. END-TO-END INSERT/READ TEST
-12. SOURCE-OF-TRUTH UPDATE STATUS
-13. ALL DEVIATIONS FROM LOCAL
-14. ALL UNRESOLVED RISKS
-
-The final status may be only one of:
-
-FINAL ACCEPTED
-PARTIALLY VERIFIED
-FAILED
-
-FINAL ACCEPTED requires actual evidence for every critical layer.
-
-Never replace missing evidence with assumptions.
+আমি চাইলে তোমাকে এখন একটা AGY prompt লিখে দিতে পারি যেটা কোনো modification না করে forensicভাবে বের করবে banking/yarn.lock change-টা accidental নাকি Alco/Frappe-এর জন্য genuinely required।
