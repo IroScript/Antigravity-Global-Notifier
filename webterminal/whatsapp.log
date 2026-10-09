@@ -19563,3 +19563,16 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 4897 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09D883B7B37DC7245C6)
 [WA Bridge] 💻 cmd output 4898 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AA9CB71899EA7EAB6A)
+[WA Bridge] ⚡ cmd 4900 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04964C283C271B2D32B)
+[WA Bridge] 💻 cmd output 4901 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01599F47931B50A64A2)
+[WA Bridge] ⚡ cmd 4903 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04566F94B971FC1F253)
+[WA Bridge] 💻 cmd output 4904 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CE04B342A8816B3E56)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
