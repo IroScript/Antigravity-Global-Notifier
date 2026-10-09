@@ -8144,3 +8144,52 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 💻 cmd output 1343 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07388CDCD198C8239B6)
 [WA Bridge] ⚡ cmd 1345 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1348)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 540
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB042E455A0376AAC3800)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB050C2483B4F006C753F)
+[WA Bridge] ⚡ cmd 1351 (agy:yt)
+Closing session: SessionEntry {
+  _chains: {
+    'BSAKLdwgSTo9bmLe6OsS/NztLJ41TvTlWk0ooSdlau5N': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BaZBXl4oXH+tgeRZ1w4LPb360/JCxaboLhnlKg6haX8t': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 393085233,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 a6 41 5e 5e 28 5c 7f ad 81 e4 59 d7 0e 0b 3d bd fa d3 f2 42 c5 a6 e8 2e 19 e5 2a 0e a1 69 7f 2d>,
+      privKey: <Buffer 60 12 cf c9 b9 ea c7 33 ae d3 46 07 05 30 31 59 8c 40 fd 73 66 c9 4f e5 c8 7e c9 3c 4f ef 38 69>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 20 0a 2d dc 20 49 3a 3d 6e 62 de e8 eb 12 fc dc ed 2c 9e 35 4e f4 e5 5a 4d 28 a1 27 65 6a ee 4d>,
+    previousCounter: 0,
+    rootKey: <Buffer 66 cb 84 c3 e3 2f cf 04 8e d9 c9 89 ee 7d ef c3 5e 0a dd f3 19 26 30 a1 ac 0a fa d0 af 2f 67 30>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 b9 8e 5d 24 fb 7f a1 ff 8f 42 14 ed 95 23 71 1d bb 1b 90 ac b3 ea 29 f1 13 0d ce 10 4c c5 a7 45>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791300299748,
+    created: 1791300299748,
+    remoteIdentityKey: <Buffer 05 7c 24 43 88 f5 2d 96 dc ae a3 df 30 32 87 69 cb 76 e8 10 8f 6d 7e 3a fa 1a bf 45 10 b7 84 3a 4b>
+  }
+}
+[WA Bridge] 📤 Turn done for agy:yt (step 1354)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 337
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09F6B4DF19455BF1E8B)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03A13E620CB66986D67)
+[WA Bridge] ⚡ cmd 1357 (agy:yt)
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 71790948782267@lid
+[WA Bridge] 📤 Turn done for agy:yt (step 1360)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 391
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB017B649CB1DC2F19AE9)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB002351846E02E24FB3A)
+[WA Bridge] ⚡ cmd 1363 (agy:yt)
