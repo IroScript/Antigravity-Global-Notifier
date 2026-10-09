@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009125920-1f5d65",
+  "timestamp": "2026-10-09T12:59:20.505875+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nimport json, subprocess\n\npayload = {\n    'toolCall': {\n        'name': 'view_file',\n        'args': {\n            'AbsolutePath': '/home/azureuser/Frappe-erp-Alco/some_file.py'\n        }\n    }\n}\n\np = subprocess.Popen(['python3', '/home/azureuser/.agents/hooks/delete_guard.py'], \n                     stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)\nout, err = p.communicate(input=json.dumps(payload))\nprint('Exit code:', p.returncode)\nprint('Output:', out)\nif err: print('Error:', err)\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Cross-project command violation: Agent [yt] cannot access [frappe] directory: /home/azureuser/Frappe-erp-Alco",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}
