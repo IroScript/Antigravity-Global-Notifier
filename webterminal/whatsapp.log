@@ -3817,3 +3817,35 @@ Closing session: SessionEntry {
 [WA Bridge] ⚡ cmd 2612 (agy:0)
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB073CC6C0BD137FCE0B6)
 [WA Bridge] 💻 cmd output 2613 (agy:0)
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Worked for 34s
+
+রায়: আপাতত গ্রহণযোগ্য। রিপোর্ট অনুযায়ী পরবর্তী নতুন ভিডিও জেনারেশন আইডিয়া ৩৮ — Ironwood Deep-Root Excavator থেকে শুরু হবে। শিডিউলারও ৩৮ নির্বাচন করেছে। [সূত্র](https://paste.rs/xHSbO)
+
+তবে দুটি বিষয় পরিষ্কার হওয়া দরকার:
+
+* ২১৩ বনাম ২৩৬: ২১৩টি ভিডিও সম্পূর্ণ প্রস্তুত, অথচ ২৩৬টি রেকর্ডে `all_fields_validated = 1`। এই পার্থক্য স্বাভাবিক কি না নিশ্চিত হওয়া দরকার।
+
+* শিডিউলারের নিয়ম: ৩৮ হলো প্রথম `status = 'new'` আইডিয়া। কিন্তু তার আগের কোনো অপ্রকাশিত, অসম্পূর্ণ ভিডিও থাকলে সেটি বাদ যাচ্ছে কি না নিশ্চিত হওয়া দরকার।
+
+শেষ একটি ছোট প্রম্পট:
+
+Perform ONLY TWO final read-only checks:
+
+1. Explain the exact difference between 213 fully YouTube Ready videos and 236 records marked all_fields_validated=1. Confirm no false YouTube Ready markings.
+
+2. Verify that no unpublished, NOT READY, actionable idea before ID 38 is being skipped by the actual generation scheduler.
+
+Use live SQL results and actual scheduler logic.
+
+Do not modify anything. No extended audit.
+
+If both checks pass, declare FINAL ACCEPTED and confirm ID 38 as the next generation starting point.
+
+Otherwise report the exact failing IDs and reasons.
+
+Keep the response within 10 lines. No questions.
+
+এই দুটো পরীক্ষাও পাস করলে আপনার চাওয়া সীমিত যাচাইয়ের জন্য আর পরীক্ষা বাড়ানোর প্রয়োজন দেখছি না।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08DD84A4C9B2A9702E0)
