@@ -56691,3 +56691,14 @@ Prompt atke "
 [WA Bridge] Ignored message from other sender: 120363418612097009@g.us 76610069913794@lid
 [WA Bridge] ✅ Processed outbox job: report_1791525302.json
 [WA Bridge] Ignored message from other sender: 120363354219673386@g.us 52244670054512@lid
+[WA Bridge] Ignored message from other sender: 120363374062400743@g.us 52244670054512@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 428 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02514CAE2A0D4F517DC)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
