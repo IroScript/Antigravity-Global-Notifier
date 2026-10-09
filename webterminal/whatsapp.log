@@ -6815,3 +6815,11 @@ Closing session: SessionEntry {
 [WA Bridge] ⚡ cmd 3649 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB097FE84FF3DDE304AC8)
 [WA Bridge] 💻 cmd output 3650 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0883D0420439E59CF2F)
+[WA Bridge] 🧠 thinking 3652 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 3652)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 11819
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0314D9D82A3EA69EC5C)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
