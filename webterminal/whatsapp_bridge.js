@@ -1186,11 +1186,17 @@ function wrapParagraph(text, firstLineWidth, nextLineWidth) {
   let curLimit = firstLineWidth;
 
   for (const word of words) {
+    const isUrl = /^https?:\/\//i.test(word) || /^ftp:\/\//i.test(word);
     if (word.length > curLimit) {
       if (currentLine) {
         lines.push(currentLine);
         currentLine = '';
         curLimit = nextLineWidth;
+      }
+      if (isUrl) {
+        lines.push(word);
+        curLimit = nextLineWidth;
+        continue;
       }
       const chunks = breakLongToken(word, curLimit);
       for (let i = 0; i < chunks.length - 1; i++) {
@@ -1220,6 +1226,9 @@ function wrapParagraph(text, firstLineWidth, nextLineWidth) {
 }
 
 function breakLongToken(token, maxLen) {
+  if (/^https?:\/\//i.test(token) || /^ftp:\/\//i.test(token)) {
+    return [token];
+  }
   const chunks = [];
   let remaining = token;
 
@@ -2698,8 +2707,8 @@ async function processSingleTranscript(transcriptPath) {
 
         const cleanedContent = cleanModelOutput(finalContent);
         const mobileContent = wrapForMobile(cleanedContent, 48);
-        const pasteUrl = await uploadToPasteRs(mobileContent);
-        console.log('[WA Bridge] paste.rs (mobile-wrapped):', pasteUrl);
+        const pasteUrl = await uploadToPasteRs(cleanedContent);
+        console.log('[WA Bridge] paste.rs (raw-markdown):', pasteUrl);
 
         const { modelName, modeName } = getVerifiedModelInfo(targetWindow);
         const now = new Date();

@@ -13,6 +13,13 @@ mkdir -p /home/azureuser/.webterminal
         echo "$url" > "/home/azureuser/.webterminal/windows_explorer_url.txt"
         echo "$url" > "/home/azureuser/windows_explorer_url.txt"
         echo "$url" > "$DIR/../webterminal/windows_explorer_url.txt" 2>/dev/null
+        echo "${url}/monitor" > "/home/azureuser/.webterminal/live_monitor_url.txt"
+        cat <<EOF > "/home/azureuser/.webterminal/pinned_links.md"
+# Live System Pinned Links
+
+- **File Explorer & Web Dashboard:** ${url}/
+- **Dedicated CPU & Resource Monitor:** ${url}/monitor
+EOF
         echo "LIVE_WINDOWS_11_EXPLORER_URL: $url"
     fi
 done
