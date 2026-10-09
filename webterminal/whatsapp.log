@@ -19925,3 +19925,25 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5012 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01D254E374626F1B86E)
 [WA Bridge] 💻 cmd output 5013 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -rn \"processed_msg_ids\" /home/opc/.webterminal/whatsapp_bridge.js 2>/dev/null || echo \"Not found in js\"`
+> 🎯 _"Checking persistence in bridge"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02BBE00128A755DE2B3)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A99E6A0BF8D22ACBDF)
+[WA Bridge] 🧠 thinking 5015 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB076FB5A95CA682E9904)
+[WA Bridge] ⚡ cmd 5015 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07AD31680CB71586ABD)
+[WA Bridge] 💻 cmd output 5016 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04468B96F6074931007)
+[WA Bridge] 🧠 thinking 5018 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03907C166B73AA1BF39)
+[WA Bridge] ⚡ cmd 5018 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ node -e \"\nconst text1 = '> ⚡ *[টার্মিনাল কমান্ড]*: ls';\nconst text2 = '> 💬 *আপনার নির্দেশনা:* \\\"📈 📈\\\"';\nconst isBotOutput = (t) => (\n...`
+> 🎯 _"Testing filter logic"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CCF1A66AF0C002F5F0)
+[WA Bridge] 💻 cmd output 5019 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F2E150086FC689E29A)
