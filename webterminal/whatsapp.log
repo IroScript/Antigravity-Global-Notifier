@@ -21105,3 +21105,5 @@ Closing session: SessionEntry {
     preKeyId: 14425450
   }
 }
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0164F8793FBE8467C32)
+[WA Bridge] ✅ Processed outbox job: report_1791583343.json
