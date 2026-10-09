@@ -1,7 +1,7 @@
 {
   "codex": {
     "id": "120363433006199651@g.us",
-    "name": "AGY · OpenAI Codex",
+    "name": "AGY \u00b7 OpenAI Codex",
     "key": "codex",
     "window": "agy:codex",
     "cwd": "/home/azureuser/IroScript_Projects/OpenAI_Codex",
@@ -10,9 +10,18 @@
   },
   "research": {
     "id": "120363413333339676@g.us",
-    "name": "AGY · Ask & Research",
+    "name": "AGY \u00b7 Ask & Research",
     "key": "research",
     "window": "agy:research",
     "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent"
+  },
+  "yt": {
+    "id": "120363430650656655@g.us",
+    "name": "AGY \u00b7 YouTube Pipeline",
+    "key": "yt",
+    "window": "agy:yt",
+    "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation",
+    "git_remote": "git@github.com:IroScript/Youtube-Pipeline.git",
+    "whatsapp_status": "CONNECTED"
   }
 }
