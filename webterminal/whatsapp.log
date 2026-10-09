@@ -6143,3 +6143,76 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 4 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FFCC4A76A56122915D)
 [WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): বর্তমান রায়: `PARTIALLY VERIFIED` — সঠিক। তবে রিপোর্ট অনুযায়ী WhatsApp Bridge এখন চালু আছে এবং PID অপরিবর্তিত রয়েছে।
+
+এখন সবচেয়ে গুরুত্বপূর্ণ অসম্পূর্ণ কাজ হলো প্রযুক্তিগতভাবে অননুমোদিত রিস্টার্ট আটকানো, যাতে অন্য এজেন্ট ভুল করে সংযোগ বিচ্ছিন্ন করতে না পারে।
+
+তিনটি বিষয় খেয়াল রাখতে হবে:
+
+1\. `RefuseManualStop=yes` একা যথেষ্ট নয়। এটি সরাসরি ম্যানুয়াল স্টপ/রিস্টার্ট প্রতিরোধে সাহায্য করে, কিন্তু সব ধরনের প্রসেস টার্মিনেশন আটকায় না। [systemd](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html)
+
+2\. `delete_guard.py`-তে কমান্ড ব্লকিং যোগ করা প্রয়োজন, তবে শুধু `systemctl restart` লেখা খুঁজলেই হবে না। পরোক্ষ কমান্ড, স্ক্রিপ্ট এবং অন্যান্য টার্মিনেশন পথও বিবেচনা করতে হবে।
+
+3\. ২,০৩১টি `Sent` লগ প্রকৃত ডেলিভারির চূড়ান্ত প্রমাণ নয়। প্রেরণ, সার্ভার স্বীকৃতি এবং প্রাপকের কাছে পৌঁছানো আলাদা অবস্থা। [Baileys](https://baileys.wiki/docs/socket/handling-messages/)
+
+আমার পরামর্শ: এখন আর WhatsApp Bridge-এর চলমান প্রসেসে হাত দেবেন না। প্রথমে পৃথক পরীক্ষামূলক পরিবেশে রিস্টার্ট-ব্লকিং ব্যবস্থা যাচাই করুন। তারপর কেবল এমন সুরক্ষা পরিবর্তন প্রয়োগ করুন, যেগুলোর জন্য বর্তমান PID `318878` বন্ধ বা রিস্টার্ট করতে হয় না।
+
+এতে চলমান সংযোগ অক্ষত রেখেই সুরক্ষা বাড়ানো সম্ভব।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB050700088636B70F270)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB027A6C79870536EDDA9)
+[WA Bridge] ⏱️ task 1079 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0277DE65BC62C844F56)
+[WA Bridge] ⏱️ task 1082 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB053E284DA117BBFFD86)
+[WA Bridge] 🧠 thinking 3400 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E78EDE416524544104)
+[WA Bridge] ⚡ cmd 3400 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A9FD1C4ACE1601958F)
+[WA Bridge] 💻 cmd output 3401 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D01BC3A6398771007E)
+[WA Bridge] ⚡ cmd 1086 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB048958CEFBF628831E7)
+[WA Bridge] 💻 cmd output 1087 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0759B55B4252B2EF7F2)
+[WA Bridge] 👁️ view 3403 (agy:0)
+[WA Bridge] 📤 Turn done for agy:yt (step 1089)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02D9C2264ABE7137C69)
+[WA Bridge] 🧠 thinking 3406 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B4BE87A4C4F647D2B5)
+[WA Bridge] 👁️ view 3406 (agy:0)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3605
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 2 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01A04542675E85FEC31)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0ADCE9760034763B54F)
+[WA Bridge] 🧠 thinking 1092 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C71991F5A762B079A7)
+[WA Bridge] ⚡ cmd 1092 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0562E40595BC615E432)
+[WA Bridge] 💻 cmd output 1093 (agy:yt)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E630DEA922614D8F21)
+[WA Bridge] 🧠 thinking 3409 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E129B1C322E4E42577)
+[WA Bridge] ⚡ cmd 3409 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0725D6631EAF1B66EC2)
+[WA Bridge] 💻 cmd output 3410 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
+[WA Bridge] 📤 Turn done for agy:yt (step 1095)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/J8qYN
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 2 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F73585D92B7DA5B95D)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB02917D5C0C18551D2CA)
+[WA Bridge] 📝 write 3412 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07D905E63C9D3304CBD)
+[WA Bridge] ⚡ cmd 3415 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A1D3436C9E50E1F21F)
+[WA Bridge] 💻 cmd output 3416 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0537F69AB1E3D08C506)
+[WA Bridge] 🧠 thinking 3418 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0996665319887134428)
+[WA Bridge] 👁️ view 3418 (agy:0)
