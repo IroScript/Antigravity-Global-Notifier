@@ -1,15 +1,1 @@
-[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] এই নতুন রিপোর্ট আগের তুলনায় বেশি বাস্তবসম্মত। তবে `PARTIALLY VERIFIED` অবস্থাই সঠিক। এখানে চারটি গুরুত্বপূর্ণ প্রযুক্তিগত সংশোধন প্রয়োজন।
-
-1\. CloakBrowser-এর সেশন সীমা: ফ্রি সংস্করণে একটি সমসাময়িক সেশনের কথা বলা হয়েছে। কিন্তু এই সীমা পুরো VM, Docker ক্লাস্টার, নাকি নির্দিষ্ট লাইসেন্সের জন্য প্রযোজ্য—সেটি নিশ্চিত না হয়ে পুরো ক্লাস্টারে একটিই সেশন বাধ্যতামূলক বলা যাবে না। [CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
-
-2\. RAM হিসাব: ১০ × ১.৫ GB = ১৫ GB হলো কনফিগার করা মেমরি সীমার যোগফল, প্রকৃত ব্যবহার নয়। ১০টি কন্টেইনার চালু হলেই OOM হবে—এমন দাবি ভুল। আবার একটি ব্রাউজার চললেও মোট RAM অবশ্যই ১.৫ GB-এর নিচে থাকবে, সেটিও নিশ্চিত নয়। [Docker Memory](https://docs.docker.com/engine/containers/resource_constraints/)
-
-3\. IP আইসোলেশন: Docker-এর আলাদা Internal IP মানেই আলাদা Public IP নয়। পাঁচটি Worker-এর জন্য পাঁচটি Public IP চাইলে পৃথক প্রক্সি বা অন্য বহির্গামী নেটওয়ার্ক পথ লাগবে। তবে পাঁচটি Worker-এর জন্য দশটি Public IP বাধ্যতামূলক নয়। [Docker Networking](https://docs.docker.com/engine/network/)
-
-4\. Sequential Pipeline: `Prompt W1 → Veo W1 → Prompt W2` কাঠামো কার্যকর হতে পারে। কিন্তু প্রতিটি ধাপে ব্রাউজার বন্ধ, Session Persistence, Job Acknowledgement এবং ব্যর্থতার পর পুনরুদ্ধার পরীক্ষা করতে হবে। শুধু `verify_10_fold.py` সফল হলেই সম্পূর্ণ পাইপলাইন যাচাইকৃত হয় না। [Docker Compose](https://docs.docker.com/compose/)
-
-আরেকটি গুরুত্বপূর্ণ বিষয়: রিপোর্টে `libatk` অনুপস্থিতির ত্রুটি পাওয়া গেছে। এটি হোস্টে ব্রাউজার চালু না হওয়ার প্রমাণ, কিন্তু Docker ইমেজেও একই সমস্যা হবে—এমন প্রমাণ নয়।
-
-চূড়ান্ত রায়: `CONFIGURATION PRESENT — RUNTIME NOT VERIFIED`।
-
-এখন মূল কাজ হলো বিদ্যমান প্রোডাকশন সিস্টেম স্পর্শ না করে একটি বিচ্ছিন্ন পরীক্ষামূলক পরিবেশে CloakBrowser চালু, Worker Isolation, Queue Handoff, Memory Usage এবং Session Persistence যাচাই করা।
+[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Cookie dot json gulo paiso? Aar cloaxk browser eita kobe update korse?

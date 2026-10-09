@@ -7925,3 +7925,17 @@ Swap:           19Gi       1.4Gi
 [WA Bridge] Ignored message from other sender: status@broadcast 71790948782267@lid
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 71790948782267@lid
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 121737308057731@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Cookie dot json gulo paiso? Aar cloaxk browser eita kobe update korse?
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0808D19B5728D8B4FD6)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03448F6F0B0DEAF5CDB)
+[WA Bridge] 🧠 thinking 1312 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0426093F6D40CB89B6D)
+[WA Bridge] ⚡ cmd 1312 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 1315)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 642
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 1 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0CFE3BFC0A18C71D87F)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
