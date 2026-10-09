@@ -7977,3 +7977,170 @@ Swap:           19Gi       1.4Gi
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 26367575982237@lid
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 176626486796437@lid
 [WA Bridge] Ignored message from other sender: 120363420665285586@g.us 71790948782267@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Osubidha nai, ekta worker er kaaj shesh holei pore ra shuru hobe......ektar por arekta 10 second to 2 minute er random delay te shuru hobe,,,,,,,,CloakBrowser-এর অফিসিয়াল ডকুমেন্টেশন যাচাই করে উত্তর: প্রথম সেশন সঠিকভাবে বন্ধ হলে পরের সেশন চালানোর জন্য নির্দিষ্ট সময় অপেক্ষা করার প্রয়োজন নেই। তবে লাইসেন্স সার্ভারে আগের সেশন মুক্ত হওয়া নিশ্চিত করতে হবে।
+
+| পরিস্থিতি           | পরবর্তী সেশন কখন চালাবেন        |
+| ------------------- | ------------------------------- |
+| browser.close() সফল | লাইসেন্স সেশন মুক্ত হলেই        |
+| context.close() সফল | লাইসেন্স সেশন মুক্ত হলেই        |
+| Docker হঠাৎ বন্ধ    | পুরোনো সেশনের লিজ মেয়াদ শেষ হলে |
+| ব্রাউজার ক্র্যাশ    | লিজ মেয়াদ শেষ হলে               |
+| SIGKILL / মেমরি শেষ | লিজ মেয়াদ শেষ হলে               |
+
+CloakBrowser-এর নির্মাতা নিশ্চিত করেছেন, স্বাভাবিকভাবে বন্ধ করলে সেশন তাৎক্ষণিক মুক্ত হওয়ার কথা। অস্বাভাবিকভাবে বন্ধ হলে স্বয়ংক্রিয়ভাবে লিজের মেয়াদ শেষে মুক্ত হয়। কিন্তু সেই মেয়াদ কত সেকেন্ড বা মিনিট, তা প্রকাশিত উত্তরে নির্দিষ্ট করা হয়নি।
+
+### আপনার ১০টি Docker-এর জন্য
+
+সবচেয়ে নির্ভরযোগ্য পদ্ধতি:
+
+`Docker 1 → Browser চালু → কাজ শেষ → Browser বন্ধ → লাইসেন্সে 0/1 নিশ্চিত → Docker 2 চালু`
+
+এভাবে ধারাবাহিকভাবে ১০টি Docker ব্যবহার করা সম্ভব, যদি প্রতিবার আগের লাইসেন্স সেশন মুক্ত হয়।
+
+লাইসেন্সের সক্রিয় সেশন দেখতে:
+
+```python
+from cloakbrowser.license import get_active_session_count
+
+print(get_active_session_count(LICENSE_KEY))
+```
+
+সূত্র: [CloakBrowser নির্মাতার সরাসরি ব্যাখ্যা](https://github.com/CloakHQ/CloakBrowser/discussions/490)।
+
+সিদ্ধান্ত: ৩০ সেকেন্ড, ১ মিনিট কিংবা ৫ মিনিট অপেক্ষা বাধ্যতামূলক নয়। সময় নয়, আগের সেশন সত্যিই মুক্ত হয়েছে কি না—সেটিই মূল শর্ত।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+Closing session: SessionEntry {
+  _chains: {
+    'BXblEFuEn6h6lfHcP+1Fy2sK7yzP5wpfzIPUW5wtiyBs': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZDGzuBw19lNwwMu3P5O+Vk9Q6Yvdf7enRskeQ+TdDw+': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bflz3AxSdtG8hvOVbQ2v6IfAGRpQhoG/ki4/PxQc3Vtk': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BYLzjcja77PJgwdBMu95YkoEATB5V/Vkm9EWwYqzUNlV': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVYK4QQcC4SYy73PhOzFgKnCXq/Rcv073ea6rBigHEss': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BeZPitc+umSir7hUM8e/K7syEWB+YPj9qX2woIYhGxoC': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVGUwYzL++8YBOcpcE8rz2QHcLhLa1hmh/ZkV/AFWHM/': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BZGoCiHFpruMtZ9l1nzqIVndN7C1dYdaq7WXyBbxvd8F: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BaQkxqu4CcVYSu4FQ9bqQoBRRGl5ir9APOkbNXaTMN1Q: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZlQvAfgcXW/tiijn7YziBrc/a9LJQYVmsor1J0v8dAt': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BS99ygvnmF9Gzjy28ixq9NtY4AiDoj21/p3GmuIlgBJE': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2f 7d ca 0b e7 98 5f 46 ce 3c b6 f2 2c 6a f4 db 58 e0 08 83 a2 3d b5 fe 9d c6 9a e2 25 80 12 44>,
+      privKey: <Buffer 80 a9 85 e9 81 ac 2a 20 fc b0 dc de 8c bc b6 00 d5 de 5a e3 c0 2c 00 cc 0b 55 63 39 3c 2e 7a 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 99 50 bc 07 e0 71 75 bf b6 28 a3 9f b6 33 88 1a dc fd af 4b 25 06 15 9a ca 2b d4 9d 2f f1 d0 2d>,
+    previousCounter: 65,
+    rootKey: <Buffer 25 f2 aa a1 fd 59 1d 59 12 56 12 23 84 ea 4c a8 fd a0 d5 0b 11 95 b9 9c 54 a2 87 97 ff 00 83 95>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 5e cf 51 b8 39 74 19 a6 15 57 e9 92 4c 3b 4a d2 0a 5e 3e f7 7b 11 a6 72 39 94 f7 30 d5 21 15 07>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791558164269,
+    created: 1791556433274,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB008E60E33A79529660F)
+Closing session: SessionEntry {
+  _chains: {
+    'BaosoWyDR5t6rZGL5i1svM2TBrd+OKUmdlMchv9ETahm': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 aa 2c a1 6c 83 47 9b 7a ad 91 8b e6 2d 6c bc cd 93 06 b7 7e 38 a5 26 76 53 1c 86 ff 44 4d a8 66>,
+      privKey: <Buffer 58 e9 fa a0 37 d4 b3 3b 59 6d a7 be 34 61 d9 91 0f 07 ab 23 3d ef aa a0 9f c3 6b d0 8d 5d cd 7b>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer ee 33 bb 73 9e 36 61 5d 9a 7f 4f e1 1c e8 b9 f0 9b db 36 c5 ee 2d 81 94 a5 76 a8 f6 fe 6f f7 1a>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 c4 b0 72 00 7f 94 1d dc d2 f2 06 46 a4 a8 dd 1e 79 48 65 15 0b ba 6f 50 17 29 d0 f4 0b e5 de 74>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791559106386,
+    created: 1791559106386,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 c4 b0 72 00 7f 94 1d dc d2 f2 06 46 a4 a8 dd 1e 79 48 65 15 0b ba 6f 50 17 29 d0 f4 0b e5 de 74>,
+    preKeyId: 2098161
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BWIFXCSYHpBFkCGtKg5vDbMpNHw5GM49zF3WY1SctEJy: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 62 05 5c 24 98 1e 90 45 90 21 ad 2a 0e 6f 0d b3 29 34 7c 39 18 ce 3d cc 5d d6 63 54 9c b4 42 72>,
+      privKey: <Buffer 48 d4 6e ac 32 52 30 44 f3 2d c9 25 75 2b 1e f0 60 3f 6e 33 29 42 cb 29 d6 cd a1 fa 6b 11 2b 61>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 6d 45 9c ae 6f eb 9b 3f 38 65 8b 90 78 10 a3 e6 c4 7b 59 50 8f f6 58 90 a8 f6 0e 85 f2 53 40 45>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 7d cb 1b 59 15 6f 93 cd 21 a8 31 b1 e1 37 61 1f 9f ee 5c e2 26 70 69 0c 37 04 65 ec 30 41 cb 48>,
+    baseKeyType: 1,
+    closed: 1791337449096,
+    used: 1791337448980,
+    created: 1791337448980,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 7d cb 1b 59 15 6f 93 cd 21 a8 31 b1 e1 37 61 1f 9f ee 5c e2 26 70 69 0c 37 04 65 ec 30 41 cb 48>,
+    preKeyId: 2097472
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BaSQz0kYoZwrb4JzKmySoRiggOgJMIbq/Lp6/B0Ofuph': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 a4 90 cf 49 18 a1 9c 2b 6f 82 73 2a 6c 92 a1 18 a0 80 e8 09 30 86 ea fc ba 7a fc 1d 0e 7e ea 61>,
+      privKey: <Buffer 10 d8 d6 ad 30 b2 ff f2 78 d1 5b 4b 28 3d 6b af a7 f5 ed 0c 54 13 65 4e e9 ed 03 29 7d cd 86 72>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 24 53 32 66 04 7d f0 79 3a 90 bb 23 e2 4b 6c b8 c6 84 7e 7a 5e cc d7 81 4a d3 c3 a4 63 cc 76 5f>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 58 31 c3 6a 97 b1 8d e4 12 9f 8c a2 92 f3 28 ad 1d 96 2a 97 ec 35 7b e3 4f f8 83 33 2d 76 d7 4f>,
+    baseKeyType: 1,
+    closed: 1791337449210,
+    used: 1791337449095,
+    created: 1791337449095,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 58 31 c3 6a 97 b1 8d e4 12 9f 8c a2 92 f3 28 ad 1d 96 2a 97 ec 35 7b e3 4f f8 83 33 2d 76 d7 4f>,
+    preKeyId: 2097473
+  }
+}
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F8FD853D4D869594B7)
+[WA Bridge] 🧠 thinking 1336 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D21FAD3949FB5C7886)
+[WA Bridge] ⚡ cmd 1336 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0279157850B80FD193C)
+[WA Bridge] 💻 cmd output 1337 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB065E51DE70F395B5AF1)
+[WA Bridge] ⚡ cmd 1339 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0CA3696058A505372EF)
+[WA Bridge] 💻 cmd output 1340 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F4D24C8E73E9D7C657)
+[WA Bridge] ⚡ cmd 1342 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB05ADA7EC18607B54C7C)
+[WA Bridge] 💻 cmd output 1343 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07388CDCD198C8239B6)
+[WA Bridge] ⚡ cmd 1345 (agy:yt)
