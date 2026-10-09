@@ -1921,3 +1921,4 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01F7ED6A64FF57E78A9)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 211871441416342@lid
