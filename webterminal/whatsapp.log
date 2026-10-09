@@ -20855,3 +20855,4 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Failed to send queued outbox notice (out_1791567341018_firtp): rate-overlimit
 [WA Bridge] Ignored message from other sender: 120363375813560592@g.us 234110698143970@lid
 [WA Bridge] Ignored message from other sender: 120363375813560592@g.us 234110698143970@lid
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
