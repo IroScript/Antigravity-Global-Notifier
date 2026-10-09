@@ -21107,3 +21107,31 @@ Closing session: SessionEntry {
 }
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0164F8793FBE8467C32)
 [WA Bridge] ✅ Processed outbox job: report_1791583343.json
+Closing session: SessionEntry {
+  _chains: {
+    BZWcFfC53nKyIyoUkJsEf8P20hfGosSAu8KdrxoEoXZu: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 263848237,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 95 9c 15 f0 b9 de 72 b2 23 2a 14 90 9b 04 7f c3 f6 d2 17 c6 a2 c4 80 bb c2 9d af 1a 04 a1 76 6e>,
+      privKey: <Buffer b8 13 15 b7 8f 02 0e ad 95 bf 01 6d 7a 34 c9 56 e5 c6 5c 41 2f ed 10 8e ef b9 a7 69 3a 9c 13 52>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 73 62 d8 61 3e c7 f0 f9 44 02 b2 c3 9a c6 25 49 47 82 15 7f f1 ea 88 c2 a3 89 ab d3 f9 91 be 51>,
+    previousCounter: 0,
+    rootKey: <Buffer 84 4f af 0a 27 cf e0 2e 32 36 cd 15 31 72 b8 79 d3 82 f5 62 04 b4 ca 38 0b e6 04 5b 65 ad 2b 1c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 42 60 e5 56 64 6b 99 5f 53 c2 b2 2f c9 34 ed 78 e8 d3 1d 2b 4d de d5 73 62 73 af 35 53 5e 94 4f>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791583198163,
+    created: 1791583198163,
+    remoteIdentityKey: <Buffer 05 90 8c ab 3c 9f 12 77 c2 e5 3e 09 8a 25 21 97 31 7c 37 98 6f 90 59 13 f3 70 11 f9 b2 83 5e 33 2d>
+  },
+  pendingPreKey: {
+    signedKeyId: 10889446,
+    baseKey: <Buffer 05 42 60 e5 56 64 6b 99 5f 53 c2 b2 2f c9 34 ed 78 e8 d3 1d 2b 4d de d5 73 62 73 af 35 53 5e 94 4f>,
+    preKeyId: 11869438
+  }
+}
