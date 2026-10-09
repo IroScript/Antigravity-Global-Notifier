@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009174903-fa51cd",
+  "timestamp": "2026-10-09T17:49:03.315269+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "ssh -i /home/azureuser/oracle_vm_credentials/oracle_vm2.key opc@129.225.92.68 \"sudo fallocate -l 8G /swapfile_8g && sudo chmod 600 /swapfile_8g && sudo mkswap /swapfile_8g && sudo swapon /swapfile_8g && free -h && swapon --show\""
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}
