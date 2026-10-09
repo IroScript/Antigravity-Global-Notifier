@@ -1246,3 +1246,287 @@
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 171979147632786@lid
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 240085115080752@lid
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 240085115080752@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): AUTONOMOUS YOUTUBE VIDEO RECOVERY, DEDUPLICATION & DATABASE RECONCILIATION
+
+You are the independent forensic investigator, recovery engineer, and final verifier.
+
+MISSION: Ensure every recoverable video is correctly identified, stored in the proper active location without unnecessary duplication, and accurately linked to its real metadata and database record.
+
+Operate autonomously. Do not ask the user to make routine decisions. Resolve technically provable cases yourself and report genuinely ambiguous cases without guessing.
+
+1. Discover the actual system
+
+Inspect the existing YouTube pipeline architecture, database schema, generated video records, file naming conventions, packaging logic, metadata sources, and storage configuration.
+
+Known investigation leads:
+
+- Canonical database: "youtube_pipeline.db"
+- Table: "generated_videos"
+- Historical database entries: approximately 325
+- Active workspace: approximately 57 videos
+- Local backup: approximately 389 video-sized files
+- Google Drive: approximately 217 packaged MP4 files
+
+These are historical reported counts, NOT verified current facts.
+
+Discover actual locations and schemas. Never assume that reported files are unique or valid.
+
+Limit all changes strictly to the video reconciliation scope.
+
+2. Build a complete forensic inventory
+
+Recursively inspect all relevant active, archived, backed-up, restored, and Google Drive video locations.
+
+Collect for each candidate:
+
+- Absolute path or remote object identifier
+- Source location and provenance
+- File name and size
+- SHA-256 content hash when local bytes are available
+- Remote checksum where supported
+- Duration, dimensions, codec, and stream properties
+- File validity and decoding errors
+- Folder identifier and generation identifier
+- Available title, description, and video IDs
+- Relevant database relationships
+
+Distinguish:
+
+1. Unique logical videos
+2. Byte-identical duplicate copies
+3. Possible re-encoded or visually duplicated videos
+4. Invalid files masquerading as MP4
+5. Missing database-linked files
+6. Valid files missing from the database
+7. Metadata conflicts
+8. Remote-only recoverable videos
+
+Never equate the number of physical files with the number of unique videos.
+
+3. Enforce deterministic video identity
+
+Determine the actual canonical identity scheme used by the application.
+
+Keep separate:
+
+- Database primary key
+- Internal generation ID
+- Folder/sequence ID
+- Published YouTube video ID, if one exists
+- Physical file hash
+- Logical video identity
+
+Never treat these identifiers as interchangeable.
+
+For each logical video, establish an evidence-backed mapping:
+
+"Canonical ID → Title → Description → Physical Content → Active Path → Backup Locations"
+
+Use original generation manifests, authoritative metadata files, database relationships, pipeline logs, and authenticated platform records where available.
+
+A matching filename or title alone is insufficient.
+
+A matching SHA-256 hash proves byte identity, NOT correctness of the associated title or description.
+
+If two sources conflict, investigate their provenance and historical relationships before modifying any record.
+
+Never manufacture missing titles, descriptions, or video IDs.
+
+4. Detect and prevent duplicates
+
+Use multiple independent checks:
+
+A. Exact SHA-256 comparison.
+
+B. Canonical logical-identity comparison.
+
+C. Metadata and generation-history comparison.
+
+D. Duration, stream, and media-structure comparison.
+
+E. Frame/audio fingerprint analysis where useful for identifying possible re-encoded duplicates.
+
+Treat perceptual similarity as a candidate signal, not conclusive proof.
+
+Prevent duplicate active placement for the same verified logical video.
+
+Do not merge different logical videos simply because their content is identical.
+
+Preserve existing backup copies. Do not delete, overwrite, or destructively consolidate backups.
+
+5. Validate video file integrity
+
+Do not assume that an ".mp4" extension means a real video exists.
+
+Use file identification, "ffprobe", and FFmpeg decoding checks.
+
+Detect HTML error pages, truncated downloads, invalid containers, missing streams, and decoding failures.
+
+Where feasible, perform complete decoding of candidate canonical files rather than validating headers alone.
+
+Record the actual command, result, and exit status.
+
+Never restore an invalid file into the active video collection.
+
+6. Verify and repair missing database paths
+
+For every database record:
+
+1. Read its current path.
+2. Check actual file existence and accessibility.
+3. Validate its media content.
+4. Confirm its canonical identity.
+5. Confirm title and description relationships.
+
+If its path is invalid, search every available recovery source.
+
+Accept a replacement only when its identity is supported by sufficient independent evidence.
+
+If only a Google Drive copy exists, restore it into the appropriate active location when necessary and safely possible.
+
+Verify the restored bytes and identity before changing the database.
+
+Update the affected database rows directly using verified values.
+
+Do not ask the user to manually edit the database.
+
+If no candidate meets the evidence threshold, preserve the original record and report "UNRESOLVED_MISSING_VIDEO".
+
+Never invent a path merely to make validation pass.
+
+7. Safe database reconciliation
+
+First discover the real database engine, schema, indexes, constraints, and concurrent-writer behavior.
+
+Before modifying anything:
+
+- Create a consistent, restorable database backup.
+- Record baseline row counts and affected row IDs.
+- Preserve existing metadata and relationships.
+- Prepare the exact proposed changes.
+- Confirm that each change has adequate supporting evidence.
+
+For SQLite, use a safe online backup mechanism and transactions with appropriate locking and rollback handling.
+
+Only perform targeted, parameterized updates.
+
+Do not recreate the database or replace unrelated records.
+
+Never overwrite valid metadata with inferred metadata.
+
+Do not modify database structure unless essential, compatibility-tested, and safely reversible.
+
+8. Correct physical placement
+
+Discover the pipeline's actual expected folder hierarchy.
+
+Ensure that:
+
+- Each recovered video maps to its intended logical record.
+- Videos are not placed into unrelated sequence folders.
+- File and folder IDs do not silently conflict.
+- Active paths match what the application actually consumes.
+- No existing valid video is overwritten.
+- Restored files are verified before becoming authoritative.
+
+Use atomic placement where supported, including temporary staging, verification, and safe final publication.
+
+Do not move or delete original backup files.
+
+Respect available disk space.
+
+9. Make the recovery idempotent
+
+The operation must be safe to run repeatedly.
+
+First execution: discover, recover, reconcile, and verify.
+
+Second execution: repeat the entire validation independently.
+
+Expected result:
+
+- Zero new unnecessary active copies
+- Zero duplicate database insertions
+- Zero unnecessary metadata changes
+- Zero unnecessary path changes
+- Zero broken previously verified relationships
+
+If the second execution produces unexpected differences, investigate and correct the implementation before declaring success.
+
+10. Independent final acceptance audit
+
+Perform these independent checks:
+
+1. Database integrity and foreign-key checks where applicable.
+2. Canonical identity uniqueness and consistency.
+3. Exact file-hash duplicate analysis.
+4. Possible re-encoded duplicate analysis.
+5. All active database paths resolve.
+6. All accepted canonical video files pass media validation.
+7. Every repaired row has before/after evidence.
+8. Titles and descriptions match authoritative metadata.
+9. Google Drive or backup restores match verified source content.
+10. A complete second run introduces no unnecessary changes.
+
+Do not declare a check PASS solely because a script printed PASS.
+
+Provide the actual evidence: commands, outputs, checksums, database queries, row IDs, paths, and comparison results.
+
+For claims of full verification, identify the exact population tested and its coverage.
+
+When a source is unavailable or verification is impossible, mark the affected check "UNVERIFIED", not "PASS".
+
+11. Autonomous execution rules
+
+Do not stop after investigating or writing a plan.
+
+Execute the complete recovery and verification workflow without requiring routine user approvals.
+
+Do not ask the user to choose among duplicate candidates. Use the evidence-based selection rules.
+
+If candidates remain genuinely ambiguous, leave the affected records unchanged, log the unresolved conflict, and continue with all other safe work.
+
+Do not fabricate evidence to finish the task.
+
+Do not alter other projects, agents, bridges, global settings, unrelated services, or unrelated databases.
+
+Do not delete original videos or backups.
+
+Avoid disrupting active video-production jobs. Handle concurrent modifications safely.
+
+12. Final report
+
+Return:
+
+- Total database video records
+- Total discovered physical video files
+- Total verified unique logical videos
+- Total exact duplicate copies
+- Total possible semantic duplicates
+- Total invalid files
+- Total initially broken paths
+- Total successfully recovered videos
+- Total corrected database rows
+- Total unresolved cases
+- Total validated active paths
+- Final independently verified test results
+- Second-run idempotency results
+
+Provide a machine-readable reconciliation ledger showing:
+
+"record_id | title | description_reference | old_path | verified_path | content_hash | evidence | action | status"
+
+Use "VERIFIED", "REPAIRED", "UNRESOLVED", or "FAILED" with truthful meanings.
+
+FINAL SUCCESS CONDITION:
+
+Every recoverable, independently identifiable video is correctly represented without unnecessary active duplication; every repaired database path points to verified content; metadata relationships are supported by evidence; and repeated reconciliation does not introduce changes.
+
+Do not report complete success while unresolved mismatches are being concealed.
+
+START WITH LIVE DISCOVERY, THEN EXECUTE, THEN INDEPENDENTLY VERIFY.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (206ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB001716B3781EE698C0F)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB079BEB2A07C6D35D2A0)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:yt to WhatsApp (step 171)
