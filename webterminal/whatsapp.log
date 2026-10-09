@@ -10620,3 +10620,6 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:frappe): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB083B9B6F2AD082EB168)
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
+[WA Bridge] Ignored message from other sender: 120363366858730929@g.us 148494383878358@lid
+[WA Bridge] Ignored message from other sender: 120363378039870251@g.us 148494383878358@lid
+[WA Bridge] Ignored message from other sender: 120363320477752369@g.us 148494383878358@lid
