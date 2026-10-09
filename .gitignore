@@ -6,14 +6,38 @@ __pycache__/
 .agy_evidence/
 webterminal/wa_outbox/
 
-# WhatsApp session credentials - never track (added 2026-10-03)
+# WhatsApp session credentials and rolling snapshots - never track
 webterminal/wa_auth/
+webterminal/wa_auth_snapshots/
 webterminal/wa_auth_senderkeys_backup/
 
-# Sensitive media attachments and credentials - never track
+# Sensitive media attachments, credentials, and databases - never track
 webterminal/media/*.json
 *.key
 *.pem
 *.p12
 *service_account*.json
 *client_secret*.json
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and runtime queues
+*.log
+*.log.*
+webterminal/*.log*
+webterminal/*.lock
+webterminal/*.lock.*
+webterminal/prompt_queue.json
+webterminal/wa_outbox_queue.json
+webterminal/wa_heartbeat.json
+webterminal/wa_watchdog.log
+webterminal/delivered_msg_ids.json
+webterminal/processed_msg_ids.json
+webterminal/incoming_cmd_*.txt
+webterminal/latest_reply.json
+webterminal/model_switch.log
+webterminal/model_switch_*.lock.flock
+webterminal/*.bak*
+Cloud_VM_Live_Preview/*.db
+Cloud_VM_Live_Preview/*.log

@@ -11,11 +11,118 @@ const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = baile
 const pino = require('pino');
 const { defaultController: autoController } = require('./autonomous_interaction_controller');
 
+// ==============================================================================
+// 10-LAYER RESILIENCE ARCHITECTURE: GLOBAL CRASH SHIELD & RESILIENCE HOOKS
+// ==============================================================================
+process.on('uncaughtException', (err) => {
+  console.error('[WA Bridge] 🛡️ Shielded uncaughtException:', err?.message || err, err?.stack || '');
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[WA Bridge] 🛡️ Shielded unhandledRejection at:', promise, 'reason:', reason);
+});
+
 const AUTH_DIR = path.join(USER_HOME, '.webterminal', 'wa_auth');
+const SNAPSHOT_DIR = path.join(USER_HOME, '.webterminal', 'wa_auth_snapshots');
+const HEARTBEAT_FILE = path.join(USER_HOME, '.webterminal', 'wa_heartbeat.json');
 const TARGET_PHONE_FILE = path.join(USER_HOME, '.webterminal', 'target_phone.txt');
 const PAIRING_FILE = path.join(USER_HOME, '.webterminal', 'pairing_code.txt');
 const LATEST_REPLY_FILE = path.join(USER_HOME, '.webterminal', 'latest_reply.json');
 const WA_OUTBOX_DIR = path.join(USER_HOME, '.webterminal', 'wa_outbox');
+
+function recordHeartbeat(status = 'RUNNING') {
+  try {
+    const payload = {
+      timestamp: Date.now(),
+      iso: new Date().toISOString(),
+      pid: process.pid,
+      isWsConnected: typeof isWsConnected !== 'undefined' ? !!isWsConnected : false,
+      status: status
+    };
+    fs.writeFileSync(HEARTBEAT_FILE, JSON.stringify(payload, null, 2), 'utf8');
+  } catch (e) {}
+}
+setInterval(() => recordHeartbeat('ALIVE'), 15000);
+recordHeartbeat('INITIALIZING');
+
+function createAuthSnapshot() {
+  try {
+    if (!fs.existsSync(AUTH_DIR)) return;
+    const credsFile = path.join(AUTH_DIR, 'creds.json');
+    if (!fs.existsSync(credsFile)) return;
+    if (!fs.existsSync(SNAPSHOT_DIR)) fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
+
+    const snap1 = path.join(SNAPSHOT_DIR, 'snapshot_1');
+    const snap2 = path.join(SNAPSHOT_DIR, 'snapshot_2');
+    const snap3 = path.join(SNAPSHOT_DIR, 'snapshot_3');
+
+    if (fs.existsSync(snap2)) {
+      try { execSync(`rm -rf "${snap3}" && cp -r "${snap2}" "${snap3}"`); } catch (e) {}
+    }
+    if (fs.existsSync(snap1)) {
+      try { execSync(`rm -rf "${snap2}" && cp -r "${snap1}" "${snap2}"`); } catch (e) {}
+    }
+    execSync(`rm -rf "${snap1}" && cp -r "${AUTH_DIR}" "${snap1}"`);
+    console.log('[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1');
+  } catch (e) {
+    console.error('[WA Bridge] Auth snapshot error:', e.message);
+  }
+}
+
+function restoreAuthSnapshot() {
+  try {
+    for (let i = 1; i <= 3; i++) {
+      const snapPath = path.join(SNAPSHOT_DIR, `snapshot_${i}`);
+      const creds = path.join(snapPath, 'creds.json');
+      if (fs.existsSync(creds)) {
+        console.log(`[WA Bridge] 🔄 Restoring auth from snapshot_${i}...`);
+        if (!fs.existsSync(AUTH_DIR)) fs.mkdirSync(AUTH_DIR, { recursive: true });
+        execSync(`cp -r "${snapPath}/." "${AUTH_DIR}/"`);
+        return true;
+      }
+    }
+  } catch (e) {
+    console.error('[WA Bridge] Restore auth snapshot error:', e.message);
+  }
+  return false;
+}
+
+function checkMemoryUsage() {
+  try {
+    const mem = process.memoryUsage();
+    const rssMB = Math.round(mem.rss / 1024 / 1024);
+    if (rssMB > 500) {
+      console.log(`[WA Bridge] ⚠️ Memory RSS high: ${rssMB} MB. Checking idle state for clean recycle...`);
+      if (typeof isProcessingOutbox !== 'undefined' && !isProcessingOutbox) {
+        console.log('[WA Bridge] 🔄 Idle state confirmed. Triggering clean restart for heap refresh...');
+        recordHeartbeat('RECYCLING');
+        process.exit(0);
+      }
+    }
+  } catch (e) {}
+}
+setInterval(checkMemoryUsage, 5 * 60 * 1000);
+
+function checkLogSize() {
+  try {
+    const logPath = path.join(USER_HOME, '.webterminal', 'whatsapp.log');
+    if (fs.existsSync(logPath)) {
+      const stats = fs.statSync(logPath);
+      const sizeMB = stats.size / (1024 * 1024);
+      if (sizeMB > 20) {
+        const rotated1 = path.join(USER_HOME, '.webterminal', 'whatsapp.log.1');
+        const rotated2 = path.join(USER_HOME, '.webterminal', 'whatsapp.log.2');
+        if (fs.existsSync(rotated1)) {
+          try { fs.renameSync(rotated1, rotated2); } catch (e) {}
+        }
+        try { fs.renameSync(logPath, rotated1); } catch (e) {}
+        fs.writeFileSync(logPath, `[WA Bridge] --- Rotated log at ${new Date().toISOString()} ---\n`, 'utf8');
+        console.log('[WA Bridge] 📜 whatsapp.log rotated cleanly (>20MB)');
+      }
+    }
+  } catch (e) {}
+}
+setInterval(checkLogSize, 15 * 60 * 1000);
 
 function getTargetPhone() {
   if (fs.existsSync(TARGET_PHONE_FILE)) {
@@ -1547,6 +1654,9 @@ function autoSanitizeAuth() {
     if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
 
     const files = fs.readdirSync(AUTH_DIR);
+    let preKeyCount = 0;
+    const preKeys = [];
+
     for (const f of files) {
       if (f.startsWith('sender-key-')) {
         const fullPath = path.join(AUTH_DIR, f);
@@ -1558,6 +1668,29 @@ function autoSanitizeAuth() {
             console.log(`[WA Bridge] 🛡️ Auto-sanitized bloated sender key: ${f} (${sz.toFixed(1)} KB) -> backed up`);
           }
         } catch (e) {}
+      } else if (f.startsWith('pre-key-')) {
+        preKeyCount++;
+        preKeys.push(f);
+      }
+    }
+
+    // Prune obsolete pre-keys if bloated beyond 500 files
+    if (preKeyCount > 500) {
+      const now = Date.now();
+      const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+      let pruned = 0;
+      for (const pk of preKeys) {
+        try {
+          const fullPath = path.join(AUTH_DIR, pk);
+          const st = fs.statSync(fullPath);
+          if ((now - st.mtimeMs) > SEVEN_DAYS_MS) {
+            fs.unlinkSync(fullPath);
+            pruned++;
+          }
+        } catch (e) {}
+      }
+      if (pruned > 0) {
+        console.log(`[WA Bridge] 🛡️ Pruned ${pruned} obsolete pre-keys (>7 days old). Remaining: ${preKeyCount - pruned}`);
       }
     }
   } catch (e) {
@@ -1715,6 +1848,8 @@ async function ensureCodexGroup() {
 
 let sanitizeIntervalStarted = false;
 
+let reconnectAttempts = 0;
+
 async function startBridge() {
   reconcileStartupState();
   autoSanitizeAuth();
@@ -1743,26 +1878,40 @@ async function startBridge() {
 
     if (connection === 'close') {
       isWsConnected = false;
+      recordHeartbeat('DISCONNECTED');
       const statusCode = lastDisconnect?.error?.output?.statusCode;
       const shouldReconnect = statusCode !== DisconnectReason.loggedOut;
       console.log('[WA Bridge] Connection closed, reason:', statusCode, 'reconnecting:', shouldReconnect);
       if (shouldReconnect) {
-        setTimeout(startBridge, 3000);
+        const backoffMs = Math.min(30000, (Math.pow(2, Math.min(reconnectAttempts, 5)) * 1000) + Math.floor(Math.random() * 1500));
+        reconnectAttempts++;
+        console.log(`[WA Bridge] 🔄 Reconnecting in ${backoffMs}ms (attempt #${reconnectAttempts})...`);
+        setTimeout(startBridge, backoffMs);
       } else {
-        console.log('[WA Bridge] ⚠️ Session logged out (401). Clearing auth for re-pairing...');
-        try {
-          const backupDir = `${USER_HOME}/.webterminal/wa_auth_backup_${Date.now()}`;
-          if (fs.existsSync(AUTH_DIR)) {
-            fs.renameSync(AUTH_DIR, backupDir);
-            console.log('[WA Bridge] Backed up old auth to:', backupDir);
+        console.log('[WA Bridge] ⚠️ Session logged out (401). Attempting snapshot rollback before re-pairing...');
+        const restored = restoreAuthSnapshot();
+        if (restored) {
+          console.log('[WA Bridge] 🛡️ Rolled back auth from healthy snapshot. Retrying connection in 3000ms...');
+          setTimeout(startBridge, 3000);
+        } else {
+          console.log('[WA Bridge] ⚠️ No valid snapshot available. Backing up auth for re-pairing...');
+          try {
+            const backupDir = `${USER_HOME}/.webterminal/wa_auth_backup_${Date.now()}`;
+            if (fs.existsSync(AUTH_DIR)) {
+              fs.renameSync(AUTH_DIR, backupDir);
+              console.log('[WA Bridge] Backed up old auth to:', backupDir);
+            }
+          } catch (e) {
+            console.error('[WA Bridge] Backup auth error:', e.message);
           }
-        } catch (e) {
-          console.error('[WA Bridge] Backup auth error:', e.message);
+          setTimeout(startBridge, 2000);
         }
-        setTimeout(startBridge, 2000);
       }
     } else if (connection === 'open') {
       isWsConnected = true;
+      reconnectAttempts = 0;
+      recordHeartbeat('OPEN');
+      createAuthSnapshot();
       console.log('[WA Bridge] 🟢 WhatsApp connection is OPEN!');
       drainOutboxQueue().catch(err => {
         console.error('[WA Bridge] drainOutboxQueue error:', err.message);
