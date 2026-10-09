@@ -6316,3 +6316,10 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] ⚡ cmd 3484 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04DE2D4C4E707F63B21)
 [WA Bridge] 💻 cmd output 3485 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 3487)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 10908
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03367113A32FD08F7F1)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363400568877928@g.us 214804786577547@lid
