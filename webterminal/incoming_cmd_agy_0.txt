@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -rli \"azure\" /home/opc 2>/dev/null | grep -v \"/.gemini/\" | grep -v \"/.npm\" | head -n 40`
-> 🎯 _"Searching for Azure codes"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ find /home/opc/backup_orchestrator -maxdepth 3`
+> 🎯 _"Checking backup_orchestrator"_
