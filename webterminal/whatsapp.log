@@ -11028,3 +11028,81 @@ Closing session: SessionEntry {
   }
 }
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 176033663836397@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB06F99C1F35DE2CA931F)
+[WA Bridge] ✅ Processed outbox job: report_1791567140.json
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈 📈"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0449F0B345A303B38AB)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0C282043493B94F5AD7)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0C8AB5991E21F6C0C2A)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): > 🧠 *[চিন্তাভাবনা · Ctrl+o]*
+> _বিষয়টি বুঝতে হবে। ব্যবহারকারীর অনুরোধটি বাংলা লিপিতে দেওয়ার নির্দেশ রয়েছে এবং বাংলিশ ব্যবহার করা যাবে না। নিশ্চিত করতে হবে উত্তরটি য..._
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB06708CD37A39C9F7EAD)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB065C952BECF6C1FD08C)
+[WA Bridge] 🧠 thinking 4511 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB096DF3DD54620187843)
+[WA Bridge] ⚡ cmd 4511 (agy:0)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02CCD9CBD33BBD4C9FA)
+[WA Bridge] 💻 cmd output 4512 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02F3637B48AA735CBA8)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "⏳ ══════════════════════ ⏳"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363430377910102@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430377910102@g.us): ⏳ ══════════════════════ ⏳
+🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*
+━━━━━━━━━━━━━━━━━━━━━
+> 💬 *আপনার নির্দেশনা:* "> 🧠 *[চিন্তাভাবনা · Ctrl+o]*"
+
+⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._
+══════════════════════
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB05B6000B2BBC796ED50)
