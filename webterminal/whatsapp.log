@@ -18872,3 +18872,9 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 4757 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F825A2591B3555AE9F)
 [WA Bridge] 💻 cmd output 4758 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4760)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5280
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB092B87969FC5647BE95)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
