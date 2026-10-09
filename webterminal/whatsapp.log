@@ -1819,3 +1819,24 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 331 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D045C72567B29D27E4)
 [WA Bridge] 💻 cmd output 332 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07DF6497F893F4F40BF)
+[WA Bridge] 🧠 thinking 334 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FB0A0111D2D33B9A46)
+[WA Bridge] ⚡ cmd 334 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB04BFB9629BF29F2D07C)
+[WA Bridge] 💻 cmd output 335 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07DFF4C9898FDCBDBE4)
+[WA Bridge] ⚡ cmd 337 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E87C7D3A107F45048D)
+[WA Bridge] 💻 cmd output 338 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB055355B223EABE79935)
+[WA Bridge] 🧠 thinking 340 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 340)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/IaP09
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00D79A98A7003BB5CCC)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ??
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0DAD24242D40D320DB6)
