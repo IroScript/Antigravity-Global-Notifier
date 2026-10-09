@@ -18231,3 +18231,9 @@ Closing session: SessionEntry {
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB0AEFE2B45D9DD4BFCF2)
+[WA Bridge] 🧠 thinking 4674 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB02E9CF65792CECE494B)
+[WA Bridge] ⚡ cmd 4674 (agy:0)
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB00DB85676AA6861A4B1)
+[WA Bridge] 💻 cmd output 4675 (agy:0)
