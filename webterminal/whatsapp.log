@@ -19041,3 +19041,6 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CCC29736C330BAB024)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430377910102@g.us--82935919157317_1--13.json (47.4 KB) -> backed up
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430377910102@g.us--82935919157317_1--8.json (61.2 KB) -> backed up
+[WA Bridge] 🛡️ Pruned 470 obsolete pre-keys (>7 days old). Remaining: 1008
