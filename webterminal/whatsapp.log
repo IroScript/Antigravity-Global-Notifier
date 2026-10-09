@@ -84,3 +84,32 @@
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05A62E717D136313895)
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ..
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: ".."
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0727E8EB8F510A76CE3)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06A0D973625B8A2C121)
+[WA Bridge] ⚡ cmd 1246 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08AFA491670ED2580D0)
+[WA Bridge] 💻 cmd output 1247 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F04EBCB1B62585E516)
+[WA Bridge] ⚡ cmd 1249 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB016F0C59DD6C57939A4)
+[WA Bridge] 💻 cmd output 1250 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F7829CDCB13D76D266)
+[WA Bridge] ⚡ cmd 1252 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08916DD017869AA566F)
+[WA Bridge] 💻 cmd output 1253 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00675BF55E9E35AE1E7)
+[WA Bridge] 🧠 thinking 1255 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB00EFA7BC78C96DA5D50)
+[WA Bridge] ⚡ cmd 1255 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB098E64F3AC02E698896)
+[WA Bridge] 💻 cmd output 1256 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 1258)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2316
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB002CA8C6AE61922B9B8)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
