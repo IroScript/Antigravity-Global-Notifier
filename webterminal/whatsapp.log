@@ -3,3 +3,48 @@
 [WA Bridge] Connection update: { receivedPendingNotifications: true }
 [WA Bridge] Connection update: { isOnline: true }
 [WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BEBA74A283252D526E)
+[WA Bridge] ⚡ cmd 1193 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FFECDA38427DA56E65)
+[WA Bridge] ⚡ cmd 1197 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB084C81454D6F38339A6)
+[WA Bridge] 💻 cmd output 1198 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D8443B0BB260CF4978)
+[WA Bridge] ⚡ cmd 1200 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E043CB161A0FF2C295)
+[WA Bridge] 💻 cmd output 1201 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04BF6D49563B0FD03C1)
+[WA Bridge] ⚡ cmd 1203 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A4F8AD04DED51795B6)
+[WA Bridge] 💻 cmd output 1204 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0138DDA5141A8087298)
+[WA Bridge] ⚡ cmd 1206 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E207EF45EA740F675C)
+[WA Bridge] 💻 cmd output 1207 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C875776ED25816C30E)
+[WA Bridge] ⚡ cmd 1209 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB052CE6BF0699005CE78)
+[WA Bridge] 💻 cmd output 1210 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05D7127AC329C012234)
+[WA Bridge] ⚡ cmd 1212 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BEEE98360DEFBAF5F5)
+[WA Bridge] 💻 cmd output 1213 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB043C7CE511233AB0BEE)
+[WA Bridge] ⚡ cmd 1215 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A84328311E363682D0)
+[WA Bridge] 💻 cmd output 1216 (agy:0)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F30D0186C55C70C0D8)
+[WA Bridge] 🧠 thinking 1218 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0289DCA4DA40D03A9C3)
+[WA Bridge] ⚡ cmd 1218 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B00518122766DAAC4A)
+[WA Bridge] 💻 cmd output 1219 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A3F9A36537E6C8FC1C)
+[WA Bridge] ⚡ cmd 1221 (agy:0)
