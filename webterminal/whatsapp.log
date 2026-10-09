@@ -20189,3 +20189,15 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB03E0CD4AD45CEA5DADB, seq: 344): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00B4E50EBC5A63758AF)
+[WA Bridge] ⚡ cmd 5087 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01A9CAF802C423B87D4)
+[WA Bridge] 💻 cmd output 5088 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F86BE08B6D3FD24F5E)
+[WA Bridge] ⚡ cmd 5090 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB063E0FD46BE338822B4)
+[WA Bridge] 💻 cmd output 5091 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05E8BD82B594F71219F)
+[WA Bridge] ⚡ cmd 5093 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB077D14D30C07C714281)
+[WA Bridge] 💻 cmd output 5094 (agy:0)
