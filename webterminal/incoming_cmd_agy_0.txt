@@ -1,2 +1,3 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > 🧠 *[চিন্তাভাবনা · Ctrl+o]*
-> _The recent messages indicate an attempt to gather system information, likely related to resource utilization and process status within ..._
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড · Ctrl+o]*
+> `$ uptime && free -h && df -h / && (ps -p 318878 -o pid,ppid,user,stat,etime,rss,args || true) && (ss -tupn -p | grep 318878 || true)`
+> 🎯 _"Collecting telemetry"_
