@@ -21146,3 +21146,12 @@ Closing session: SessionEntry {
 [WA Bridge] Connection update: { receivedPendingNotifications: true }
 [WA Bridge] Connection update: { isOnline: true }
 [WA Bridge] Connection update: open
+[WA Bridge] 🛡️ Auth credential snapshot created at snapshot_1
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Connection ready (welcome banner suppressed).
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count for project discovery: 132
+[WA Bridge] 🎯 Auto-linked YouTube Pipeline Group: AGY · YouTube Pipeline (120363430650656655@g.us)
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 132
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
