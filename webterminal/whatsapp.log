@@ -21138,3 +21138,11 @@ Closing session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 54417537654906@lid
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0732FB8ECC056648813)
 [WA Bridge] ✅ Processed outbox job: report_1791585143.json
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, code: 428 error: Connection Terminated
+[WA Bridge] 🔄 Reconnecting in 2480ms (attempt #1, code: 428)...
+[WA Bridge] 🧹 Gracefully settling previous socket (re-initializing)...
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
