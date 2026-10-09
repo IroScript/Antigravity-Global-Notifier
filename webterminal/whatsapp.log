@@ -1655,3 +1655,126 @@ START WITH LIVE DISCOVERY, THEN EXECUTE, THEN INDEPENDENTLY VERIFY.
 [WA Bridge] 💻 cmd output 273 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB055FF4864D1E984BC0C)
 [WA Bridge] ⚡ cmd 275 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01BBC69CCDBFEDA6A83)
+[WA Bridge] ⏱️ task 278 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E86CFA7BD018735529)
+[WA Bridge] 👁️ view 281 (agy:yt)
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363430650656655@g.us--82935919157317_1--8.json (44.7 KB) -> backed up
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB06080ACA774F27CA79E)
+[WA Bridge] ⏱️ task 284 (agy:yt)
+Closing session: SessionEntry {
+  _chains: {
+    'BXdkuq3aIVGH9oguj4i749fUV+jVFaGx4ru92AwuuBwr': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BT1E7DlkrXjUTBTaywvPbcb/S8hB/EZe9UHJnRtzXZxF': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BYhJWf+p522ywfH5/A9+SEpdK+LveAaQCvKRQxHOKDEQ': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BQmdXNSUC4DKeyShnJsD2NTjHvpazO6qObQJ1eaOWXA5: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZuTJK5l+DdlA26D/BcTEW1exCNOX2RfcDyHlcbYPu5G': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BWn8CCF7IKNnjmClQ5lyqafHXVRfVeuir9RZ1raF481G: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BcpSf0BVnSmjeiUWP1CYe6tnor8qk64LHI3MjTeKxB5e: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVYpCePAR1I75idoXVxjkMz33EejM6OI+G5p6q99yE0n': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BX3E9BoFK1BLL+LeVh3fLNva32vLCEyVAMum5+UTYaNg': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BbRdBwU6bYqvrYxYUuA7hRbP8WlDNC7SUwOWDcj3Jjoi: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BVj9DPhvTuEV3KykXxISeOnCjmfO0MySmM3IQ6DRppgB: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BU6Y1uONwVzOLvHIEsHr4yYMJZBi6uW9FDeFl9vq9HEV: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bb4l5en4r93BhfDXJh2YsZ5Y3MF9FctMMt5T4b3cZ+EG': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bdr3SGkDUkL2hSM0CTWzGwGBB3xcwAdJppY/tUzVBHRF': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BX2O56fq8ADD70dOWb8uArRqVxuCYtrdZkMla6orlsde: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BYwSFe5S4lGoKpofuRGrRCeXLGodGRY8/p3uYyuZyONi': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bc/EfAywNSzqH2VCRVN3D5NZfFmOIaPXDh+NuA1hKVB9': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bfq/1BwK0C9GQbmXUbxxcNm0+S1zZ45+HenKAjny3NRw': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BdSjHZHUpT8WrnfoRQmiB+H5uE+ag37FY62w4WAI/T9Z': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQLDNpcN9cTPNmMKXi501XC0/0m7Ef+MxQXfqPSVxvd2': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BRZOxCFjRTYenI7c+UL+1pHHVVvcMu66ue/qWg4UWf0X': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BXIzDaXykcijEXuHaHwdeGH3WHfYCITK7fmuenkUltxf: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BRb/h5ywYfSfqZLZUAxu/NNwjeC2HvNGZXj67DY5ThQt': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYRTCwW5CQJP0xLb3XBbD0XeLWB2PCqWn6lVxT1rFhYp: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVxAi8fypiiCqgWbHGPFGBos50LwMdfMItJ6XKLw+2V1': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYJwbTBexVhT2RJr9gqpElP3KXtrkMbMgCDfANTSllZj: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BWMuao6ICGC8jRRRqXu12LlkatwGs0PorFmrYBjPGKwf: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUMqhmhjJRfUq1lKZ/x2xKYk5c5bmyHLdvXwTwclyngu': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BeDPJpuZLXn94yajo1MyOR9FaPF9jbD+88Rs66Cmq1Jp': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Ba4v3nstx6dlfh1eyXMj/j4+3jD0SD7DhkfQTPvAUVZU': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZ8CR22XjZpnf/lN2njuxABPuEwzf0gi7wHYa+8uwL8u': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXCQdbeoP1vaBslZk+0ZuE406hpcKXUQRdAHjH8vszhs': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BeAmCneG2pWIBbonwcUsmUsIBUlMQJuOQatJ9zVV6zYq: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQWCiVwo13FruOy9Ezzbet73HmlL2/W7z44SksntzutU': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BeinUfA62Aga5y69KMeuRgcJLlJwrlqzCJNQZfL3d3FX: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BVAd6PtaadFYa6SxBogEVVFds0FqU8HIj2TIWFpuMQRE: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BaxSqM/ZGau8UxCwzTxCBOkbjUQndNU5E0Lrk6yn4RA3': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Bd01939aMNV4AHAn0XKQgfSk7ealKJPvnMzrj4CGFaw3: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BeQNt2iUeHRUAlPxqD2m/RYdW4U0Hn81YNA87gbL3us9': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BeYH8TjdYcTYEIsatFZExSIQ6jPquPwFYxKdqBt41HA4: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSyDgVGK1GLfHNcFIvy1yuC7lKRt+o4qxqE8iT3fF3Az': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZ5JLDyn6Krbq9RxgSgr2+d1il5jfwVFmpmE/9BnJ7A0': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BaMCq3CkkBtUrxVB9JRWa4Gy9iJFu89zynUDLfbZK8tc: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Be8oCdYZNRDEaDMKmFeHTNPqrlX/UNsovN0YqqrMFHgJ': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BejBtKbiE51lQ4lKe7JZFUrQ88opJWD+uKRtCwpV+3Zp': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQa/nGNUHAiTyDXOuKAzvvcO9lmhjfqhAbJgOw5ujB49': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 06 bf 9c 63 54 1c 08 93 c8 35 ce b8 a0 33 be f7 0e f6 59 a1 8d fa a1 01 b2 60 3b 0e 6e 8c 1e 3d>,
+      privKey: <Buffer e0 a4 54 20 3e 35 39 1a 32 c7 4c 90 90 f4 6d 24 a6 e2 93 97 75 c0 13 9a f6 3d ff 69 09 c4 7b 66>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 e8 c1 b4 a6 e2 13 9d 65 43 89 4a 7b b2 59 15 4a d0 f3 ca 29 25 60 fe b8 a4 6d 0b 0a 55 fb 76 69>,
+    previousCounter: 73,
+    rootKey: <Buffer 17 02 29 03 c3 9e af 3b 7d 64 3e fa 77 53 b8 d1 3b d2 7c 11 c0 19 0f ad 7e 96 0b 1a 17 70 92 65>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 60 ce a4 44 fc e6 50 af 72 09 5a 88 0a 91 37 07 b9 e8 90 10 27 11 d4 18 fc d0 47 9d 39 d6 f3 29>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791549363389,
+    created: 1791521932307,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BZbEf3t8C0lwdPt23zhfMNxEdh/mUnWHJPzCC8WjJfYB': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 96 c4 7f 7b 7c 0b 49 70 74 fb 76 df 38 5f 30 dc 44 76 1f e6 52 75 87 24 fc c2 0b c5 a3 25 f6 01>,
+      privKey: <Buffer 28 9e de 27 bf 38 94 53 42 e0 a3 bb ce af 9e a2 41 9e c9 31 57 0e 9e 30 10 d1 29 e9 24 9e 0b 43>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer c8 44 41 c2 ca ea 5a f3 38 24 e8 a6 7f 58 06 de 6f 60 43 20 86 f2 e5 ca eb d0 d2 ab 10 38 f8 65>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 bf 23 b7 40 5e 22 72 76 4a 4b 6b 9e 78 d8 dc 27 75 a7 fd 8d a4 f3 af f3 cf e5 ae 9a ff 83 9a 0c>,
+    baseKeyType: 1,
+    closed: 1791337447941,
+    used: 1791337447825,
+    created: 1791337447825,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 bf 23 b7 40 5e 22 72 76 4a 4b 6b 9e 78 d8 dc 27 75 a7 fd 8d a4 f3 af f3 cf e5 ae 9a ff 83 9a 0c>,
+    preKeyId: 2097462
+  }
+}
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DAA2822E718BE2E31F)
+[WA Bridge] ⚡ cmd 288 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB09A947CD6867FD3557B)
+[WA Bridge] 💻 cmd output 289 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DE96681EE2112F038A)
+[WA Bridge] ⚡ cmd 291 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0009EAB587E5837732A)
+[WA Bridge] 💻 cmd output 292 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB08097844349DFE89C00)
+[WA Bridge] 🧠 thinking 294 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D04D746EAAC669CB79)
+[WA Bridge] ⚡ cmd 294 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C884E78C8B631CEAAA)
+[WA Bridge] 💻 cmd output 295 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A1CD8E2ECC4B6F0793)
+[WA Bridge] 🧠 thinking 297 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0F612ABA234163CFD73)
+[WA Bridge] ⚡ cmd 297 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB00F3C57444EA057EFCE)
+[WA Bridge] 💻 cmd output 298 (agy:yt)
