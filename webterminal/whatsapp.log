@@ -5042,3 +5042,46 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 762 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0E5CDB1A9A1FD3D7F9D)
 [WA Bridge] 💻 cmd output 763 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 765)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/IyBkr
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB03899C783CDC0E56D4A)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): রায়: আগের তুলনায় সমাধান অনেক ভালো, কিন্তু এখনই `PERMANENTLY FIXED` বলা যাবে না।
+
+রিপোর্ট অনুযায়ী:
+
+* OOM-এর প্রমাণ পাওয়া যায়নি।
+
+* অথেনটিকেশন ফাইল মুছে ফেলা হয়নি।
+
+* `SIGTERM` হ্যান্ডলার ও সকেট পরিষ্কারের ব্যবস্থা যুক্ত হয়েছে।
+
+* বিদ্যমান WhatsApp সেশন পুনরায় সংযুক্ত হয়েছে।
+
+তবে ৪টি বিষয় এখনও যাচাই করা জরুরি।
+
+1\. কে বারবার `systemctl restart` দিচ্ছে? রিপোর্টে বলা হয়েছে বিভিন্ন স্ক্রিপ্ট ও এজেন্ট রিস্টার্ট করছে, কিন্তু সেগুলোর নির্দিষ্ট উৎস শনাক্ত ও বন্ধ করার প্রমাণ নেই।
+
+2\. ৪৪০ (`connectionReplaced`) হলে পুনঃসংযোগ: অন্য সক্রিয় সেশন সংযোগ প্রতিস্থাপন করলে শুধু ৮ সেকেন্ড অপেক্ষা করে পুনঃসংযোগ করা যথেষ্ট নাও হতে পারে। [Baileys](https://baileys.wiki/docs/api/enumerations/DisconnectReason/)
+
+3\. `removeAllListeners()` নিরাপত্তা: পুরোনো সকেটের প্রয়োজনীয় ইভেন্ট, অসম্পূর্ণ মেসেজ ও অথেনটিকেশন আপডেট সঠিকভাবে সামলানো হচ্ছে কি না যাচাই প্রয়োজন। [Node.js](https://nodejs.org/api/events.html#emitterremovealllistenerseventname)
+
+4\. ১০/১০ PASS: এই ফলাফল প্রকৃত WhatsApp বার্তা পাঠানো, গ্রহণ, পুনঃসংযোগ এবং দীর্ঘমেয়াদি স্থিতিশীলতা প্রমাণ করে না।
+
+আমার সিদ্ধান্ত: আপাতত নতুন কোনো পরিবর্তন না করে AGY-কে স্বাধীনভাবে যাচাই করতে বলুন—বিশেষ করে কোন এজেন্ট বা স্ক্রিপ্ট সার্ভিস রিস্টার্ট করছে এবং কেন।
+
+সবচেয়ে গুরুত্বপূর্ণ হলো, WhatsApp ব্রিজ নিজে ঠিক থাকলেও অন্য এজেন্ট যদি বারবার সার্ভিস রিস্টার্ট করে, তাহলে সংযোগ আবার বিচ্ছিন্ন হবে।
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] 🔄 Target agy:0 is in plan mode. Cycling to normal execution mode via BTab...
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB071A5475405ECFCD175)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0958B4FA0FE570D9A58)
+[WA Bridge] 🧠 thinking 2981 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05471DC10F62EA36DA2)
+[WA Bridge] ⚡ cmd 2981 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 2984)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/Fdf5v
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high · 1 task(s) · /tasks"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AC6C31C9BAA61C48E5)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
