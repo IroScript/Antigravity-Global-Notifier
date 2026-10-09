@@ -11003,3 +11003,27 @@ PARITY PASS
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 212498003267607@lid
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 67788207046674@lid
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 67788207046674@lid
+Closing session: SessionEntry {
+  _chains: {
+    'BRUFBWP8sgihT8uPwMDdXl2d9u952jL6bqGaYprVJzd+': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bbag/MoGdsAZOsQUzf1AhaF5ycqbRwyirV9N9n50uqZL': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 1273612999,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 b6 a0 fc ca 06 76 c0 19 3a c4 14 cd fd 40 85 a1 79 c9 ca 9b 47 0c a2 ad 5f 4d f6 7e 74 ba a6 4b>,
+      privKey: <Buffer a8 a2 32 fa 1d 81 55 39 33 f3 93 b3 78 4f d0 a9 ab a5 43 94 ca 18 c2 87 ec 0a a1 57 f1 c0 4b 49>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 15 05 05 63 fc b2 08 a1 4f cb 8f c0 c0 dd 5e 5d 9d f6 ef 79 da 32 fa 6e a1 9a 62 9a d5 27 37 7e>,
+    previousCounter: 0,
+    rootKey: <Buffer c7 64 ea 78 ca 41 79 0f 21 a5 f8 24 30 3a d5 b5 34 04 e1 b5 a9 60 dd 29 65 f6 9d f9 68 55 ec b8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 79 38 55 f9 8b 70 d0 33 fa 31 59 36 b7 f8 5a 68 b5 6d 4a 72 ce 1e 7d 99 5b b3 3d d7 7f 76 39 46>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791055231151,
+    created: 1791055231151,
+    remoteIdentityKey: <Buffer 05 13 60 05 cf f2 ac ba 3e c1 37 3f f2 aa 32 e9 84 91 af 87 3b 51 68 f1 52 be ed ac 6e 43 f2 73 4b>
+  }
+}
