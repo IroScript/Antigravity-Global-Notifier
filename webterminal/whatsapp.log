@@ -9224,3 +9224,18 @@ Oracle access kore janao
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04CF3CF1773A71CEB56)
 [WA Bridge] 🧠 thinking 4499 (agy:0)
 [WA Bridge] 📤 Turn done for agy:0 (step 4499)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4962
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06F8F33BD563099B636)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08F44F25B3EE27AC2FF)
+[WA Bridge] 🧠 thinking 4502 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06E77C920DCC36ACEE1)
+[WA Bridge] ⚡ cmd 4502 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C557DF195D9BCF6496)
+[WA Bridge] 💻 cmd output 4503 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A9D0A8275E21348E91)
+[WA Bridge] ⚡ cmd 4505 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB075767E3AA0B33075E7)
+[WA Bridge] 💻 cmd output 4506 (agy:0)
