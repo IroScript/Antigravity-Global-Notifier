@@ -823,3 +823,9 @@
 [WA Bridge] ⚡ cmd 1786 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB021E2DAD5C3220A4B94)
 [WA Bridge] 💻 cmd output 1787 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 1789)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6348
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0677A0547439AC08D71)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
