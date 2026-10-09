@@ -215,3 +215,13 @@ If 9 vectors pass and even 1 vector fails (9/10), the status is **UNSUCCESSFUL**
     - **Operational Behavior:** In Planning Mode, agents focus on research, architectural decomposition, and structured plans before executing modifications.
     - **System Persistence:** Enforced in `~/.gemini/antigravity-cli/settings.json`, launcher scripts (`start_all_agents.sh`, `start_agy0.sh`), and live tmux sessions.
 
+
+---
+
+## SECTION 11: LANGUAGE & COMMUNICATION GOVERNANCE
+
+### Category XIX: Mandatory Standard Bengali (বাংলা) & Zero Banglish Mandate (81)
+81. `SETTING_81_MANDATORY_STANDARD_BENGALI_SCRIPT_AND_ZERO_BANGLISH`:
+    - **Language Mandate:** All agents (`agy:0`, `agy:ask`, `agy:report`, `agy:action`, subagents, OpenAI Codex, and WhatsApp agents) must strictly communicate, respond, and explain in standard Bengali script (বাংলা বর্ণমালা ও লিপি).
+    - **Zero Banglish:** Writing Bengali words using English/Latin alphabet (Banglish, e.g., "Ami kaj ta korechi") is strictly prohibited across all interaction channels.
+    - **Technical Syntax Exemption:** Programming code, terminal commands, file paths, JSON keys/schemas, URLs, verification hashes, and raw technical traces must remain in standard English syntax.
