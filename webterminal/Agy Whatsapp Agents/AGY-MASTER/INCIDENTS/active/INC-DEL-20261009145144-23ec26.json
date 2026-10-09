@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009145144-23ec26",
+  "timestamp": "2026-10-09T14:51:44.854095+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat /home/azureuser/IroScript_Projects/OpenAI_Codex/secrets.env"
+  },
+  "decision": "DENIED",
+  "reason": "Cross-project command violation: Agent [tg] cannot access [codex] directory: /home/azureuser/IroScript_Projects/OpenAI_Codex",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}

@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009145150-e2b3f8",
+  "timestamp": "2026-10-09T14:51:50.363917+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "view_file",
+  "details": {
+    "AbsolutePath": "/home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/Cargo.toml"
+  },
+  "decision": "DENIED",
+  "reason": "Agent [kids] attempted cross-project access to [rust] path: /home/azureuser/IroScript_Projects/Personal Life/Rust_Task_With_Time_Keeping_And_Live_Note/cargo.toml",
+  "rule_id": "RULE_79_INTER_AGENT_ISOLATION"
+}
