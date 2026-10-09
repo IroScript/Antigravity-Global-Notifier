@@ -47,9 +47,13 @@ class AutonomousInteractionController {
 
     console.log(`[AutonomousController] 🚀 Initialized zero-question tracking on ${targetWindow} for task: "${(taskPrompt || '').substring(0, 60)}"`);
 
-    this.monitors[targetWindow] = setInterval(() => {
+    const timer = setInterval(() => {
       this.pollTerminal(targetWindow);
     }, this.pollIntervalMs);
+    if (timer && typeof timer.unref === 'function') {
+      timer.unref();
+    }
+    this.monitors[targetWindow] = timer;
   }
 
   /**

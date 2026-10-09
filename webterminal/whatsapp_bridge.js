@@ -56,6 +56,31 @@ function saveProcessedMessageIds() {
 
 loadProcessedMessageIds();
 
+const deliveredMessageIds = new Set();
+const DELIVERED_MSG_FILE = path.join(USER_HOME, '.webterminal', 'delivered_msg_ids.json');
+
+function loadDeliveredMessageIds() {
+  try {
+    if (fs.existsSync(DELIVERED_MSG_FILE)) {
+      const data = JSON.parse(fs.readFileSync(DELIVERED_MSG_FILE, 'utf8'));
+      if (Array.isArray(data)) {
+        data.forEach(id => deliveredMessageIds.add(id));
+      }
+    }
+  } catch (e) {
+    console.warn('[WA Bridge] Could not load delivered_msg_ids.json:', e.message);
+  }
+}
+
+function saveDeliveredMessageIds() {
+  try {
+    const list = Array.from(deliveredMessageIds).slice(-3000);
+    fs.writeFileSync(DELIVERED_MSG_FILE, JSON.stringify(list), 'utf8');
+  } catch (e) {}
+}
+
+loadDeliveredMessageIds();
+
 let sock = null;
 let lastActiveJid = '82935919157317@lid';
 let lastPersonalLid = '82935919157317@lid';
@@ -272,7 +297,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   const mId = msgId || `wa_${Date.now()}`;
 
   // 1. Duplicate suppression
-  if (msgId && processedIncomingMessageIds.has(msgId)) {
+  if (msgId && deliveredMessageIds.has(msgId)) {
     console.log(`[WA Bridge] 🔁 Prompt ${msgId} was already processed/delivered. Duplicate suppressed.`);
     return false;
   }
@@ -409,8 +434,8 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     // Terminal transport successful: transition DELIVERING -> DELIVERED
     updateDurablePromptStatus(mId, 'DELIVERED');
     if (mId) {
-      processedIncomingMessageIds.add(mId);
-      saveProcessedMessageIds();
+      deliveredMessageIds.add(mId);
+      saveDeliveredMessageIds();
     }
     return true;
   } catch (err) {
@@ -2745,6 +2770,8 @@ module.exports = {
   getTargetPhone,
   loadProcessedMessageIds,
   saveProcessedMessageIds,
+  loadDeliveredMessageIds,
+  saveDeliveredMessageIds,
   checkZipGate,
   loadDurableQueue,
   saveDurableQueue,
