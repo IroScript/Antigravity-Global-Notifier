@@ -19962,3 +19962,28 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E9E3BF32D18B39C275)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 📝 *[কোড এডিট/ফাইল]*: `whatsapp_bridge.js`
+> 🎯 _"Hardening loop shield"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C3FB6EA26916966FFA)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB066F88472EA5AA93633)
+[WA Bridge] 🧠 thinking 5030 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05BED6A83D6BC9BE88E)
+[WA Bridge] ⚡ cmd 5030 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AC03E82AFF7F52EBCC)
+[WA Bridge] 💻 cmd output 5031 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 👁️ *[ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Checking message timestamp logic"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0805C5817AA8EEE9FCE)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06835F1BB11F0BA4648)
+[WA Bridge] ⚡ cmd 5033 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04B4A93F731F6018216)
+[WA Bridge] 💻 cmd output 5034 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > 📝 *[কোড এডিট/ফাইল]*: `whatsapp_bridge.js`
+> 🎯 _"Adding stale message check"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E06007B96EC58A2E72)
