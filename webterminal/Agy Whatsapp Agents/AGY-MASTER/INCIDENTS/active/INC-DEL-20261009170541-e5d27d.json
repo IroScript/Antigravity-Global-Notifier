@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009170541-e5d27d",
+  "timestamp": "2026-10-09T17:05:41.180656+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "ssh -i /home/azureuser/oracle_vm_credentials/oracle_vm2.key opc@129.225.92.68 \"sudo bash -c 'cat << \\\"EOF\\\" > /etc/yum.repos.d/mariadb.repo\n# MariaDB 11.8 RedHat repository list - created 2026-10-09\n# https://mariadb.org/download/\n[mariadb]\nname = MariaDB\nbaseurl = https://rpm.mariadb.org/11.8/rhel/9/x86_64\nmodule_hotfixes = 1\ngpgkey = https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB\ngpgcheck = 1\nEOF\n' && cat /etc/yum.repos.d/mariadb.repo\""
+  },
+  "decision": "DENIED",
+  "reason": "Redirection/tee into protected path '/etc/yum.repos.d/mariadb.repo' is prohibited (Rule 38)",
+  "rule_id": "RULE_38_POLICY_TAMPERING"
+}
