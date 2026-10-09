@@ -20761,3 +20761,27 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AD290DA1DBE1E1A9C8)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 5283)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B7C11DE0BFED0B75AE)
+[WA Bridge] 🧠 thinking 5285 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C16D76B980014727B8)
+[WA Bridge] ⚡ cmd 5285 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB093CAC8D2483E83227A)
+[WA Bridge] 💻 cmd output 5286 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06A380BCBB3C0B71E94)
+[WA Bridge] ⚡ cmd 5288 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EBFC6573AC9D720241)
+[WA Bridge] 💻 cmd output 5289 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB098AF061529CD2DED83)
+[WA Bridge] ⚡ cmd 5291 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05ADB50A3CD700F51C7)
+[WA Bridge] 💻 cmd output 5292 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01F0754C46DB027248D)
+[WA Bridge] 🧠 thinking 5294 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5294)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 4750
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05541D4F884661618D7)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
