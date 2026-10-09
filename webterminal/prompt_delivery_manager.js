@@ -142,17 +142,18 @@ function inspectPaneState(targetWindow) {
     });
     const isExecuting = pane.includes('Working...') ||
                         pane.includes('Thinking...') ||
-                        pane.includes('Generating...') ||
+                        pane.includes('Generating') ||
                         pane.includes('◦ Working') ||
                         pane.includes('• Working') ||
                         pane.includes('esc to interrupt') ||
                         pane.includes('esc to cancel') ||
                         /[⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏]/.test(pane);
 
-    const isIdle = pane.includes('› Ask Codex to do anything') ||
-                   pane.includes('Your move, teammate.') ||
-                   pane.includes('? for shortcuts') ||
-                   /(?:^|\n)\s*>\s*$/.test(pane);
+    const isIdle = (pane.includes('› Ask Codex to do anything') ||
+                    pane.includes('Your move, teammate.') ||
+                    pane.includes('? for shortcuts') ||
+                    /(?:^|\n)\s*>\s*$/.test(pane) ||
+                    /[#$%>›]\s*$/.test(pane.trim())) && !isExecuting;
 
     const hasPastedPill = pane.includes('[Pasted Content ') || pane.includes('chars]');
 

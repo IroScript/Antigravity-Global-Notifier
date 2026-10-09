@@ -356,17 +356,14 @@ function checkZipGate(targetWindow, projectUuid = null) {
 }
 
 function drainNextPromptForWindow(targetWindow) {
-  // 1. If terminal is currently busy executing something, do not dequeue yet
-  if (isWindowBusy(targetWindow)) {
-    return;
-  }
-
-  // 2. Check gate first. If gate is closed (e.g. ZIP running), do NOT drain or dequeue prompts
+  // 1. Check gate first. If gate is closed (e.g. ZIP running), do NOT drain or dequeue prompts
   const gateCheck = checkZipGate(targetWindow);
   if (gateCheck && (gateCheck.action === 'HOLD_FOR_ZIP' || gateCheck.zip_gate === 'ZIP_GATE_CLOSED')) {
     return;
   }
 
+  // 2. Gate is OPEN: Unhold any HELD_FOR_ZIP items immediately!
+  // Unholding is a ZIP-gate event, independent of whether the terminal is currently busy.
   const queue = loadDurableQueue();
   const heldItems = queue.filter(item => item.target_window === targetWindow && item.status === 'HELD_FOR_ZIP');
   if (heldItems.length > 0) {
@@ -377,35 +374,73 @@ function drainNextPromptForWindow(targetWindow) {
     }
     saveDurableQueue(queue);
 
-    const recipient = lastActiveJid;
+    const recipient = lastActiveJid || (heldItems[0].reply_context && heldItems[0].reply_context.sender);
     if (recipient) {
       sendWhatsAppMessage(BANGLA_ZIP_COMPLETE_NOTICE, { to: recipient }).catch(() => {});
     }
   }
 
-  const nextItem = queue.find(item => item.target_window === targetWindow && (item.status === 'RECEIVED' || item.status === 'RETRYING'));
+  // 3. If an item is currently in DELIVERING status for this window, do not dequeue another item
+  const deliveringItem = queue.find(item => item.target_window === targetWindow && item.status === 'DELIVERING');
+  if (deliveringItem) {
+    // If delivery is stuck for > 60s, reconcile to UNCERTAIN to prevent wedging
+    if (deliveringItem.last_attempt_at && (Date.now() - new Date(deliveringItem.last_attempt_at).getTime() > 60000)) {
+      console.warn(`[WA Bridge] ⚠️ Prompt ${deliveringItem.message_id} stuck in DELIVERING >60s on ${targetWindow}, marking UNCERTAIN`);
+      deliveringItem.status = 'UNCERTAIN';
+      deliveringItem.uncertain_at = new Date().toISOString();
+      deliveringItem.uncertain_reason = 'Delivery timed out in DELIVERING status (>60s)';
+      saveDurableQueue(queue);
+    } else {
+      return;
+    }
+  }
+
+  // 4. Now check if terminal is currently busy executing something.
+  // If busy, do not dequeue into terminal yet; pending RECEIVED items will drain once idle.
+  if (isWindowBusy(targetWindow)) {
+    return;
+  }
+
+  // 4. Find the next pending prompt in strict FIFO order (by sequence)
+  const pendingItems = queue
+    .filter(item => item.target_window === targetWindow && (item.status === 'RECEIVED' || item.status === 'RETRYING'))
+    .sort((a, b) => (a.sequence || 0) - (b.sequence || 0));
+
+  const nextItem = pendingItems[0];
   if (nextItem) {
-    console.log(`[WA Bridge] 🔄 Dequeuing durable prompt for ${targetWindow} (${nextItem.message_id}):`, (nextItem.prompt || '').substring(0, 60));
-    setTimeout(() => {
-      dispatchToTmux(nextItem.prompt, targetWindow, nextItem.message_id, nextItem.reply_context);
-    }, 100);
+    console.log(`[WA Bridge] 🔄 Dequeuing durable prompt for ${targetWindow} (${nextItem.message_id}, seq: ${nextItem.sequence}):`, (nextItem.prompt || '').substring(0, 60));
+    // Direct synchronous invocation eliminates the 100ms window where concurrent callers could dequeue the same item
+    dispatchToTmux(nextItem.prompt, targetWindow, nextItem.message_id, nextItem.reply_context);
   }
 }
 
 function isAgyActuallyIdle(targetWindow = 'agy:0') {
   try {
     const pane = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 25`, { encoding: 'utf8', timeout: 2000 });
-    if (pane.includes('esc to cancel') || pane.includes('Working...') || pane.includes('Generating...') || pane.includes('Running command') || pane.includes('esc to interrupt') || pane.includes('◦ Working')) {
+    // Active execution indicators across AGY CLI, Codex, and bash jobs
+    if (pane.includes('esc to cancel') ||
+        pane.includes('Working...') ||
+        pane.includes('Generating') ||
+        pane.includes('Thinking...') ||
+        pane.includes('Running command') ||
+        pane.includes('esc to interrupt') ||
+        pane.includes('◦ Working') ||
+        pane.includes('• Working') ||
+        /[⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏]/.test(pane)) {
       return false;
     }
-    // Check for AGY CLI idle prompts
-    if (pane.includes('? for shortcuts') || pane.includes('Ask Codex to do anything') || pane.includes('Your move, teammate.') || pane.includes('Type a message') || /^\s*>\s*$/m.test(pane)) {
+    // Check for AGY CLI and Codex idle prompts
+    if (pane.includes('? for shortcuts') ||
+        pane.includes('Ask Codex to do anything') ||
+        pane.includes('Your move, teammate.') ||
+        pane.includes('Type a message') ||
+        /^\s*>\s*$/m.test(pane)) {
       return true;
     }
     // Check for standard shell prompts if non-AGY or subshell
     const nonBlankLines = pane.trim().split('\n').filter(l => l.trim().length > 0);
     const lastLine = nonBlankLines.length > 0 ? nonBlankLines[nonBlankLines.length - 1] : '';
-    if (/[#$%>]\s*$/.test(lastLine)) {
+    if (/[#$%>›]\s*$/.test(lastLine)) {
       return true;
     }
     return false;
@@ -643,16 +678,30 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
         }, 600);
       }
     } else {
-      const bufName = `wa_cmd_${safeTarget}`;
+      const bufName = `wa_cmd_${safeTarget}_${Date.now()}`;
       execFileSync('tmux', ['load-buffer', '-b', bufName, cmdFile]);
       execFileSync('tmux', ['paste-buffer', '-p', '-r', '-b', bufName, '-t', targetWindow]);
+      try { execFileSync('tmux', ['delete-buffer', '-b', bufName]); } catch (e) {}
+
+      // Settling delay: allow bracketed paste to be completely absorbed before pressing Enter.
+      // Short prompts: 150ms, larger prompts up to 400ms.
+      const settlingMs = Math.min(400, Math.max(150, Math.ceil(cleanPrompt.length / 50)));
+      try {
+        execFileSync('/usr/bin/python3', ['-c', `import time; time.sleep(${settlingMs / 1000.0})`], { timeout: 1000 });
+      } catch (e) {}
+
       execFileSync('tmux', ['send-keys', '-t', targetWindow, 'Enter']);
-      console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste & pressed Enter!`);
+      console.log(`[WA Bridge] ✅ Forwarded prompt to ${targetWindow} via bracketed paste (${settlingMs}ms settling) & pressed Enter!`);
 
       setTimeout(() => {
         try {
-          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 6`, { encoding: 'utf8', timeout: 2000 });
-          if (paneText.includes('> ') && !paneText.includes('esc to cancel') && !paneText.includes('Working...') && !paneText.includes('Generating...') && !paneText.includes('Running command')) {
+          const paneText = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 12`, { encoding: 'utf8', timeout: 2000 });
+          const isStillUnsubmitted = (paneText.includes('> ') || paneText.includes('› ') || /^\s*>\s*$/m.test(paneText) || /[#$%>›]\s*$/m.test(paneText)) &&
+                                     !paneText.includes('esc to cancel') &&
+                                     !paneText.includes('Working...') &&
+                                     !paneText.includes('Generating') &&
+                                     !paneText.includes('Running command');
+          if (isStillUnsubmitted) {
             console.log(`[WA Bridge] ⚠️ Prompt still sitting in input prompt on ${targetWindow}, sending backup Enter...`);
             execSync(`tmux send-keys -t ${targetWindow} Enter`);
           }
@@ -2983,15 +3032,15 @@ function startQueueWatchdog() {
       for (const win of heldWindows) {
         const gateCheck = checkZipGate(win);
         if (gateCheck && (gateCheck.action === 'ALLOW_NOW' || gateCheck.zip_gate === 'ZIP_GATE_OPEN')) {
-          if (!isWindowBusy(win)) {
-            drainNextPromptForWindow(win);
-          }
+          // Gate is open: unhold all HELD_FOR_ZIP items immediately, and drain if idle
+          drainNextPromptForWindow(win);
         }
       }
       // Reconcile any RECEIVED or RETRYING items for windows that are now idle
       const pendingWindows = new Set(queue.filter(q => q.status === 'RECEIVED' || q.status === 'RETRYING').map(q => q.target_window));
       for (const win of pendingWindows) {
-        if (!isWindowBusy(win)) {
+        const hasDelivering = queue.some(q => q.target_window === win && q.status === 'DELIVERING');
+        if (!hasDelivering && !isWindowBusy(win)) {
           drainNextPromptForWindow(win);
         }
       }
@@ -3045,6 +3094,9 @@ module.exports = {
   updateDurablePromptStatus,
   drainNextPromptForWindow,
   startQueueWatchdog,
+  isWindowBusy,
+  isAgyActuallyIdle,
+  getWindowForSender,
   BANGLA_ZIP_HOLD_NOTICE,
   BANGLA_ZIP_COMPLETE_NOTICE,
   BANGLA_RECONNECT_TEMPLATE,
