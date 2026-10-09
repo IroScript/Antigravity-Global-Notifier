@@ -6248,3 +6248,4 @@ WhatsApp Disconnect → একই Node.js প্রসেসে স্বয়ং�
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A5CF9C49BC3523E92B)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 214804786577547@lid
