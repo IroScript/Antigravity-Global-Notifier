@@ -1,1 +1,1 @@
-[ছবি ইনপুট: /home/azureuser/.webterminal/media/media_1791527282750_A564C114.jpeg]. ইউজারের ক্যাপশন/প্রশ্ন: "Tomar nijer test ei to eita aschhe,...tahole ei reporting skip korle keno? No code edit". অনুগ্রহ করে view_file("/home/azureuser/.webterminal/media/media_1791527282750_A564C114.jpeg") ব্যবহার করে ছবিটি দেখুন এবং বিস্তারিত সঠিক উত্তর দিন।
+Etar solution ki? Aagei logic chhilo je trillions of texts holeo seta pasted hobe from whatsapp to tmux
