@@ -61865,3 +61865,221 @@ Proceed with the scoped investigation and repair.
 [WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
 [WA Bridge] Connection update: close
 [WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0218E81B26719E36BFD)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] 🎯 Auto-linked OpenAI Codex Group: AGY · OpenAI Codex (120363433006199651@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03270688EEA61431422)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09E4C91E3A43FFDAACF)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B375C6553B1A7CE16A)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E2686FC66640B35442)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB004CCFC4745E97822F9)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09A135D0FD0E5D245CB)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D62D8FC7253DEE8C42)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB086D81C1000D301763F)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0471AC53F734B5DA915)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB086654CF273C3835EF7)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05AA9EAE0BCFA859987)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0467D1DEFF7C3E88F41)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📋 ALL_PARTICIPATING_GROUPS count: 131
+[WA Bridge] 🎯 Auto-linked Ask & Research Group: AGY · Ask & Research (120363413333339676@g.us)
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0260FBA33B4E67A4915)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F2F6533AC6064483F9)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06C6BEB153EF7456B5E)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB06E546BCAB9067D9332)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
+[WA Bridge] 🟢 WhatsApp connection is OPEN!
+[WA Bridge] Set lastActiveJid to LID: 82935919157317@lid
+[WA Bridge] Failed in ensureResearchGroup: rate-overlimit
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0351858311564B64756)
+[WA Bridge] Sent ready notice to: 82935919157317@lid
+[WA Bridge] Failed in ensureCodexGroup: rate-overlimit
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, reason: 440 reconnecting: true
