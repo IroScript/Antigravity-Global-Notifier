@@ -1723,15 +1723,8 @@ async function startBridge() {
       }
 
       try {
-        let activeConsoleUrl = 'https://textiles-absolute-destinations-omaha.trycloudflare.com';
-        const urlFile = path.join(USER_HOME, '.webterminal', 'terminal_url.txt');
-        if (fs.existsSync(urlFile)) {
-          const readUrl = fs.readFileSync(urlFile, 'utf8').trim();
-          if (readUrl) activeConsoleUrl = readUrl;
-        }
-        const welcomeText = `╔══════════════════════════╗\n   👑 *ইরাক ভাইয়ার পার্সোনাল ক্লাউড এআই* 👑\n╚══════════════════════════╝\n\n> 🟢 *সার্ভার স্ট্যাটাস:* সক্রিয় (24/7 Cloud Online)\n> 🚀 *ইঞ্জিন:* Antigravity CLI\n> 🛡️ *সুরক্ষা:* এন্ড-টু-এন্ড এনক্রিপ্টেড মাল্টি-ডিভাইস\n\n💎 *শর্টকাট ফিচার:*\n• ⚡ \`$ <কমান্ড>\` ➔ সরাসরি লিনাক্স কমান্ড রান (যেমন: \`$ uptime\`)\n• 📸 \`/screen\` ➔ লাইভ টার্মিনাল স্ক্রিনশট\n• 🌐 *ওয়েব কনসোল:* ${activeConsoleUrl}\n══════════════════════════`;
-        await sendWhatsAppMessage(welcomeText);
-        console.log('[WA Bridge] Sent ready notice to:', lastActiveJid);
+        // Welcome banner suppressed per user request
+        console.log('[WA Bridge] Connection ready (welcome banner suppressed).');
       } catch (err) {
         console.error('[WA Bridge] Ready message error:', err.message);
       }
