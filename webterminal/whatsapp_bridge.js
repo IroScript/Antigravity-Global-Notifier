@@ -772,6 +772,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       } catch (err) {
         throw new Error(`Target window ${targetWindow} not accessible: ${err.message}`);
       }
+    }
     // Dismiss plan mode if active on target AGY window before sending prompt
     try {
       const paneMode = execSync(`tmux capture-pane -p -t ${targetWindow} | tail -n 8`, { encoding: 'utf8', timeout: 1500 });
@@ -1952,6 +1953,7 @@ async function ensureAllProjectGroups() {
 let sanitizeIntervalStarted = false;
 
 let reconnectAttempts = 0;
+let reconnectTimer = null;
 
 async function startBridge() {
   reconcileStartupState();
@@ -1960,6 +1962,21 @@ async function startBridge() {
     setInterval(autoSanitizeAuth, 15 * 60 * 1000);
     sanitizeIntervalStarted = true;
   }
+
+  // Teardown previous socket and listeners if re-initializing to prevent duplicate sockets and listener leaks
+  if (sock) {
+    try {
+      console.log('[WA Bridge] 🧹 Tearing down previous socket instance before re-initializing...');
+      sock.ev?.removeAllListeners();
+      sock.end?.();
+      if (sock.ws) {
+        sock.ws.removeAllListeners?.();
+        sock.ws.close?.();
+      }
+    } catch (e) {}
+    sock = null;
+  }
+
   const { state, saveCreds } = await useMultiFileAuthState(AUTH_DIR);
 
   sock = makeWASocket({
@@ -1983,36 +2000,56 @@ async function startBridge() {
       isWsConnected = false;
       recordHeartbeat('DISCONNECTED');
       const statusCode = lastDisconnect?.error?.output?.statusCode;
-      const shouldReconnect = statusCode !== DisconnectReason.loggedOut;
-      console.log('[WA Bridge] Connection closed, reason:', statusCode, 'reconnecting:', shouldReconnect);
-      if (shouldReconnect) {
+      const isRestartReq = statusCode === DisconnectReason.restartRequired; // 515
+      const isConnReplaced = statusCode === DisconnectReason.connectionReplaced; // 440
+      const isLoggedOut = statusCode === DisconnectReason.loggedOut; // 401
+
+      console.log('[WA Bridge] Connection closed, code:', statusCode, 'error:', lastDisconnect?.error?.message || 'none');
+
+      if (isRestartReq) {
+        // WhatsApp explicitly requested immediate restart (515)
+        console.log('[WA Bridge] ⚡ Restart required by WhatsApp server (515). Reconnecting in 300ms...');
+        clearTimeout(reconnectTimer);
+        reconnectTimer = setTimeout(startBridge, 300);
+      } else if (isConnReplaced) {
+        // Another session took over; back off with jitter to avoid thrashing
+        console.log('[WA Bridge] ⚠️ Connection replaced (440). Backing off 8000ms...');
+        clearTimeout(reconnectTimer);
+        reconnectTimer = setTimeout(startBridge, 8000);
+      } else if (!isLoggedOut) {
+        // Standard network disconnect with bounded exponential backoff + jitter
         const backoffMs = Math.min(30000, (Math.pow(2, Math.min(reconnectAttempts, 5)) * 1000) + Math.floor(Math.random() * 1500));
         reconnectAttempts++;
-        console.log(`[WA Bridge] 🔄 Reconnecting in ${backoffMs}ms (attempt #${reconnectAttempts})...`);
-        setTimeout(startBridge, backoffMs);
+        console.log(`[WA Bridge] 🔄 Reconnecting in ${backoffMs}ms (attempt #${reconnectAttempts}, code: ${statusCode})...`);
+        clearTimeout(reconnectTimer);
+        reconnectTimer = setTimeout(startBridge, backoffMs);
       } else {
         console.log('[WA Bridge] ⚠️ Session logged out (401). Attempting snapshot rollback before re-pairing...');
         const restored = restoreAuthSnapshot();
         if (restored) {
           console.log('[WA Bridge] 🛡️ Rolled back auth from healthy snapshot. Retrying connection in 3000ms...');
-          setTimeout(startBridge, 3000);
+          clearTimeout(reconnectTimer);
+          reconnectTimer = setTimeout(startBridge, 3000);
         } else {
-          console.log('[WA Bridge] ⚠️ No valid snapshot available. Backing up auth for re-pairing...');
+          console.log('[WA Bridge] ⚠️ No valid snapshot available. Backing up auth for re-pairing (credentials preserved in backup)...');
           try {
             const backupDir = `${USER_HOME}/.webterminal/wa_auth_backup_${Date.now()}`;
             if (fs.existsSync(AUTH_DIR)) {
-              fs.renameSync(AUTH_DIR, backupDir);
-              console.log('[WA Bridge] Backed up old auth to:', backupDir);
+              execSync(`cp -r "${AUTH_DIR}" "${backupDir}"`);
+              console.log('[WA Bridge] Safely copied auth to backup before re-pairing:', backupDir);
             }
           } catch (e) {
             console.error('[WA Bridge] Backup auth error:', e.message);
           }
-          setTimeout(startBridge, 2000);
+          clearTimeout(reconnectTimer);
+          reconnectTimer = setTimeout(startBridge, 2000);
         }
       }
     } else if (connection === 'open') {
       isWsConnected = true;
       reconnectAttempts = 0;
+      clearTimeout(reconnectTimer);
+      reconnectTimer = null;
       recordHeartbeat('OPEN');
       createAuthSnapshot();
       console.log('[WA Bridge] 🟢 WhatsApp connection is OPEN!');
@@ -3341,6 +3378,24 @@ function enforceSingleInstance() {
     console.warn('[WA Bridge] Could not inspect /proc for duplicate instances:', err.message);
   }
 }
+
+function handleGracefulShutdown(signal) {
+  console.log(`[WA Bridge] 🛑 Received ${signal}. Performing clean socket close & graceful exit...`);
+  try {
+    if (sock) {
+      sock.ev?.removeAllListeners();
+      sock.end?.(new Error(`Service shutdown (${signal})`));
+      if (sock.ws) {
+        sock.ws.removeAllListeners?.();
+        sock.ws.close?.();
+      }
+    }
+  } catch (e) {}
+  process.exit(0);
+}
+
+process.on('SIGTERM', () => handleGracefulShutdown('SIGTERM'));
+process.on('SIGINT', () => handleGracefulShutdown('SIGINT'));
 
 if (require.main === module) {
   enforceSingleInstance();
