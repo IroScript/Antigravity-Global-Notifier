@@ -9425,3 +9425,4 @@ Closing session: SessionEntry {
 [WA Bridge] ✅ Reply delivered to 120363430126311832@g.us (agy:frappe)!
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB02E79746FB5FB671BFC)
 [WA Bridge] ✅ Processed outbox job: report_1791563539.json
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
