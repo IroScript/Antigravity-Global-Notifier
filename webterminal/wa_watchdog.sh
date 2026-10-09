@@ -1,70 +1,18 @@
 #!/bin/bash
 # ==============================================================================
-# Independent Out-of-Process Watchdog for AGY WhatsApp Bridge
-# Verifies PID alive status and heartbeat timestamp freshness.
+# Non-Destructive Observational Watchdog for AGY WhatsApp Bridge
+# ZERO-RESTART ARCHITECTURE:
+# Pure diagnostic and telemetry collection. NEVER restarts, kills, or stops the bridge.
+# Distinguishes: Process Alive | Event Loop Responsive | WebSocket Connected | Auth Valid | Delivery Functional
 # ==============================================================================
-set -u
+set -euo pipefail
 
 USER_HOME="${HOME:-/home/azureuser}"
-HEARTBEAT_FILE="$USER_HOME/.webterminal/wa_heartbeat.json"
-WATCHDOG_LOG="$USER_HOME/.webterminal/wa_watchdog.log"
-SERVICE_NAME="agy-whatsapp.service"
-MAX_STALE_SECONDS=120
+DIAG_SCRIPT="$USER_HOME/.webterminal/wa_diagnostics.py"
 
-export XDG_RUNTIME_DIR="/run/user/$(id -u)"
-export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
-
-log_msg() {
-  local msg="$1"
-  local now
-  now="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
-  echo "[$now] [WATCHDOG] $msg" >> "$WATCHDOG_LOG"
-}
-
-restart_service() {
-  local reason="$1"
-  log_msg "TRIGGERING RESTART of $SERVICE_NAME. Reason: $reason"
-  systemctl --user restart "$SERVICE_NAME"
-  local rc=$?
-  if [ $rc -eq 0 ]; then
-    log_msg "Restart command dispatched successfully (rc=0)."
-  else
-    log_msg "Restart command failed with exit code $rc."
-  fi
-}
-
-# 1. Check if the process is running
-BRIDGE_PID="$(pgrep -f "node.*whatsapp_bridge\.js" | head -n 1)"
-if [ -z "$BRIDGE_PID" ]; then
-  restart_service "No running node process matching whatsapp_bridge.js found."
+if [ -f "$DIAG_SCRIPT" ]; then
+  exec /usr/bin/python3 "$DIAG_SCRIPT"
+else
+  echo "[WATCHDOG] Diagnostic script $DIAG_SCRIPT not found." >&2
   exit 0
 fi
-
-# Check startup grace period (30s) so newly spawned bridge is not killed while writing initial heartbeat
-NOW_EPOCH="$(date +%s)"
-PID_START_EPOCH="$(stat -c %Y "/proc/$BRIDGE_PID" 2>/dev/null || echo "$NOW_EPOCH")"
-PID_AGE=$((NOW_EPOCH - PID_START_EPOCH))
-if [ "$PID_AGE" -lt 30 ]; then
-  # Process started less than 30s ago; allow startup grace period
-  exit 0
-fi
-
-# 2. Check if heartbeat file exists
-if [ ! -f "$HEARTBEAT_FILE" ]; then
-  restart_service "Heartbeat file $HEARTBEAT_FILE does not exist (process age: ${PID_AGE}s)."
-  exit 0
-fi
-
-# 3. Check heartbeat freshness
-NOW_EPOCH="$(date +%s)"
-HB_TIMESTAMP_MS="$(python3 -c "import json; data=json.load(open('$HEARTBEAT_FILE')); print(int(data.get('timestamp', 0)))" 2>/dev/null || echo 0)"
-HB_EPOCH=$((HB_TIMESTAMP_MS / 1000))
-AGE=$((NOW_EPOCH - HB_EPOCH))
-
-if [ "$AGE" -gt "$MAX_STALE_SECONDS" ]; then
-  restart_service "Heartbeat is stale ($AGE seconds old > $MAX_STALE_SECONDS max)."
-  exit 0
-fi
-
-# Everything healthy
-exit 0
