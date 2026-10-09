@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261009170844-384f55",
+  "timestamp": "2026-10-09T17:08:44.463727+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "python3 -c \"\nwith open('/home/azureuser/.gemini/antigravity-cli/brain/a842ac16-8e5b-41c9-b98a-2066f384ea69/.system_generated/tasks/task-471.log') as f:\n    for line in f:\n        if 'Replay attack detected' in line:\n            print(line[:200])\n\""
+  },
+  "decision": "DENIED",
+  "reason": "Agent [frappe] cannot access session brain or conversation transcripts: python3 -c \"\nwith open('/home/azureuser/.gemini/antigravity-cli/brain/a842ac16-8e5b-41c9-b98a-2066f384ea69/.system_generated/tasks/task-471.log') as f:\n    for line in f:\n        if 'Replay attack detected' in line:\n            print(line[:200])\n\"",
+  "rule_id": "RULE_79_BRAIN_ISOLATION"
+}
