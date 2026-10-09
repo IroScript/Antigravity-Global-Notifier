@@ -18336,3 +18336,119 @@ Closing session: SessionEntry {
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 155860470882397@lid
+[WA Bridge] 📨 Sent to 8801955333555@s.whatsapp.net (isGroup=false, msgId=3EB01747910D5AEF99E25A)
+[WA Bridge] ⏱️ task 4738 (agy:0)
+Closing open session in favor of incoming prekey bundle
+Closing session: SessionEntry {
+  _chains: {
+    'BReYVY4NiwwSz/nVrEDOnff4HmJP+eqc39+RlrRdcl9B': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'Be1OyF2mCqvAIsYQaBGOQ7lz+QvQASnEu2xQ4AEHTJtG': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BSOUnDHzt6MhBQXerZrK7eDXd/xfbz3Ca6ffqw3qgTp3': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 23 94 9c 31 f3 b7 a3 21 05 05 de ad 9a ca ed e0 d7 77 fc 5f 6f 3d c2 6b a7 df ab 0d ea 81 3a 77>,
+      privKey: <Buffer 60 bd ae c6 34 75 3a ba f6 0c a0 9f 83 3e 9c 41 98 72 77 a7 0b b1 34 fd c4 8c d1 29 18 cc 58 56>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 ed 4e c8 5d a6 0a ab c0 22 c6 10 68 11 8e 43 b9 73 f9 0b d0 01 29 c4 bb 6c 50 e0 01 07 4c 9b 46>,
+    previousCounter: 17,
+    rootKey: <Buffer 12 9c 3b 83 fd fb 06 6d 61 4a b2 e0 01 af c5 19 64 81 fa ba 29 e4 99 be 6f 88 50 71 8b e8 b7 cf>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 b9 a1 b6 2f 82 8e 36 c1 bb 81 75 67 12 2a 63 c0 91 47 3d 7c e9 7a ef 2c ca 53 e8 ff cd c5 1b 63>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791567340605,
+    created: 1791567337908,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ⚡ ══════════════════════ ⚡
+👑 *[ORACLE 8 CPU 64 RAM এআই এজেন্ট]*
+━━━━━━━━━━━━━━━━━━━━━
+> 🎯 *উদ্দেশ্য:* হাই-পারফরম্যান্স ওরাকল ক্লাউড নোড (8 Core AMD EPYC, 64GB RAM) ডেডিকেটেড এজেন্ট।
+> 🖥️ *টার্মিনাল সেশন:* `tmux agy:0`
+> 🤖 *মডেল:* Gemini 3.8 Flash (High)
+> 📱 *যুক্ত নম্বর:* +8801966608406 ও +8801955333555
+
+⚡ _এই গ্রুপে যেকোনো প্রম্পট পাঠালে Oracle 8 CPU এজেন্ট তাৎক্ষণিকভাবে এক্সিকিউট করবে।_
+══════════════════════
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): ⚡ ══════════════════════ ⚡
+✅ *[Oracle 8 CPU 64 RAM গ্রুপ তৈরি সম্পন্ন]*
+━━━━━━━━━━━━━━━━━━━━━
+> 👥 *গ্রুপের নাম:* Oracle 8 CPU 64 RAM
+> 🔗 *গ্রুপ লিঙ্ক:* https://chat.whatsapp.com/CURVqk0Yfc46AvlE4MHn09
+
+⚡ _Oracle 8 CPU এআই এজেন্ট এখন এই গ্রুপে সম্পূর্ণ লাইভ সংযুক্ত।_
+══════════════════════
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DAFA467E15515A2AB5)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03F1841E190AE69BB2A)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04709EB3360D67FEE49)
+[WA Bridge] 🧠 thinking 4742 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0B61C6E3A9F397B4590)
+[WA Bridge] ⚡ cmd 4742 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E8DD6E6D0D4DFA252C)
+[WA Bridge] 💻 cmd output 4743 (agy:0)
+Closing session: SessionEntry {
+  _chains: {
+    'BdLN61P4DwVkqHYiipLRz5/hQO0SrHA3IB8j9Wf0XcJe': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BXRleMCc70VSE4FupEbZEsejA9FENEO7v5flVy1sZ2ka: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 74 65 78 c0 9c ef 45 52 13 81 6e a4 46 d9 12 c7 a3 03 d1 44 34 43 bb bf 97 e5 57 2d 6c 67 69 1a>,
+      privKey: <Buffer a8 5e 57 3e 80 fe 4c a7 d8 0a 4a a8 81 84 dc cf 6b 5d dd f9 8b 11 c0 69 f7 99 e6 63 16 78 36 52>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 d2 cd eb 53 f8 0f 05 64 a8 76 22 8a 92 d1 cf 9f e1 40 ed 12 ac 70 37 20 1f 23 f5 67 f4 5d c2 5e>,
+    previousCounter: 0,
+    rootKey: <Buffer 14 76 22 c7 da 28 92 ee e0 b1 8c 2b 63 49 8e 02 bd ed 7b 22 cf c6 38 4a c0 39 59 5c 28 b9 6c cd>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 eb 05 bf e1 f4 49 a5 0b 58 af 9a c2 f6 01 41 58 20 5c b5 30 b6 20 0c f0 04 f6 bb 48 a9 8e fb 36>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791567584200,
+    created: 1791567584200,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BVPuD3e+wywILmVa5qDewaGeMJtS8avKhc7bHMWkcHF9': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 53 ee 0f 77 be c3 2c 08 2e 65 5a e6 a0 de c1 a1 9e 30 9b 52 f1 ab ca 85 ce db 1c c5 a4 70 71 7d>,
+      privKey: <Buffer a0 48 d3 ae 84 67 59 e7 51 73 03 7f 4a 24 62 35 c8 ca d2 6c 7f db b2 53 2a c1 8f 73 a2 01 ab 67>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 91 14 04 2e c6 aa 71 7f 0e 43 34 51 15 69 4c 7f 9a a8 5a 66 51 82 49 5e 36 ca 0d 21 fc 20 fe c8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 86 a5 09 b0 a5 c7 0b ec 3e f6 29 77 6b c1 ef 25 db 7c b0 56 6e 88 f9 39 06 82 4e ed 9f 8b 17 48>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567587626,
+    created: 1791567587626,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 86 a5 09 b0 a5 c7 0b ec 3e f6 29 77 6b c1 ef 25 db 7c b0 56 6e 88 f9 39 06 82 4e ed 9f 8b 17 48>,
+    preKeyId: 443
+  }
+}
