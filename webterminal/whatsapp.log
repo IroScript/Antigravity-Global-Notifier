@@ -56737,3 +56737,629 @@ Prompt atke "
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03BFE82EB1BF9393E48)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 235596689739887@lid
+[WA Bridge] 📩 Message from Iraq bhai (120363433006199651@g.us): THIS IS A CLAIM-VERIFICATION-ONLY AUDIT.
+
+DO NOT repair anything.
+DO NOT edit anything.
+DO NOT commit.
+DO NOT push.
+DO NOT restart services.
+DO NOT kill processes.
+DO NOT inject prompts into real production coding agents.
+DO NOT mutate production databases or queues.
+
+Your only job is to determine whether the following AGY claims are actually true
+in the CURRENT live system.
+
+Treat every AGY statement as an UNTRUSTED CLAIM until independently proven.
+
+Use:
+
+- live process inspection
+- systemd status
+- read-only logs
+- git history / git ls-remote
+- read-only SQLite queries
+- source inspection
+- isolated fixtures
+- isolated tmux test sessions
+- temporary test repositories
+- temporary fake project roots
+
+Never mutate production.
+
+==================================================
+CLAIM GROUP A — ALWAYS GITPUSH
+==================================================
+
+AGY claims:
+
+1. gitpush-watcher.service is currently active/running.
+
+2. It is actually using inotify.
+
+3. It automatically detects project file changes.
+
+4. It resolves project ownership correctly.
+
+5. It automatically commits changes.
+
+6. It automatically pushes them to the correct canonical remote.
+
+7. It verifies remote SHA parity.
+
+8. It is not merely updating its own watcher state file repeatedly.
+
+9. It covers the intended registered projects, not only SOT.
+
+10. It survives/restarts correctly and is enabled for reboot.
+
+Verify LIVE service state.
+
+Then use an ISOLATED temporary Git repository + temporary remote to prove:
+
+file mutation
+→ watcher detects
+→ ownership resolves
+→ commit created
+→ correct commit prefix used
+→ push succeeds
+→ remote SHA matches
+
+Do not mutate production repositories for the functional test.
+
+Also inspect whether the reported memory usage / child git / ssh activity actually
+corresponds to real watcher work rather than a loop or runaway process.
+
+Return:
+
+GITPUSH WATCHER LIVE: TRUE / FALSE / PARTIAL
+INOTIFY REAL: TRUE / FALSE
+AUTO COMMIT: TRUE / FALSE
+AUTO PUSH: TRUE / FALSE
+REMOTE SHA VERIFY: TRUE / FALSE
+MULTI-PROJECT COVERAGE: TRUE / FALSE
+REBOOT RESTORE: TRUE / FALSE
+
+==================================================
+CLAIM GROUP B — FRAPPE OFFICIAL/NATIVE ENFORCEMENT
+==================================================
+
+AGY claims:
+
+1. AGY is forced to follow Frappe v16 official/native architecture.
+
+2. apps/frappe and apps/erpnext core changes are blocked.
+
+3. custom app changes are allowed only under normal policy.
+
+4. fabricated APIs are blocked.
+
+5. deprecated/outdated patterns are blocked.
+
+6. invalid controller imports are blocked.
+
+7. broken DocType/controller linkage is blocked.
+
+8. official Frappe reference integrity/version checking is enforced.
+
+9. these protections apply to the REAL coding-agent completion path,
+   not only direct linter/unit-test invocation.
+
+Verify each claim independently.
+
+IMPORTANT:
+
+Do not assume a rule is correct merely because the rule file says so.
+
+Check whether the current rule itself is technically correct for Frappe v16.
+
+For example, independently inspect whether each claimed anti-pattern rule is
+actually supported by official/current Frappe behavior.
+
+Specifically verify the claims concerning:
+
+- frappe.db.sql usage
+- frappe.qb
+- @frappe.whitelist(...)
+- transaction handling
+- direct DDL
+- import paths
+
+Do NOT blindly accept AGY's explanation of these APIs.
+
+Use current local official reference / pinned Frappe source where applicable.
+
+Mandatory isolated adversarial tests:
+
+A. staged Frappe core change
+B. unstaged ERPNext core change
+C. untracked custom-app file
+D. fabricated Frappe API
+E. outdated import
+F. syntax error
+G. nonexistent controller dependency
+H. valid modern custom-app change
+
+Run through the SAME canonical gate that an actual AGY coding completion uses.
+
+Return:
+
+FRAPPE CORE GUARD: TRUE / FALSE
+FABRICATED API BLOCK: TRUE / FALSE
+OUTDATED API BLOCK: TRUE / FALSE
+CONTROLLER IMPORT CONTRACT: TRUE / FALSE
+DOCTYPE LINKAGE CONTRACT: TRUE / FALSE
+OFFICIAL REFERENCE ENFORCEMENT: TRUE / FALSE
+REAL AGENT PATH ENFORCEMENT: TRUE / FALSE
+
+If any AGY-described Frappe rule itself is technically wrong,
+state exactly which claim is wrong.
+
+==================================================
+CLAIM GROUP C — ZIP PROMPT HOLD BEHAVIOR
+==================================================
+
+AGY claims:
+
+1. A user prompt is held ONLY when the SAME PROJECT is inside the actual ZIP
+   source-capture critical section.
+
+2. Project A ZIP does not block Project B.
+
+3. Held prompts are persisted, not dropped.
+
+4. User receives a ZIP-wait notification.
+
+5. When source capture finishes, the gate opens automatically.
+
+6. Held prompts are automatically released in FIFO order.
+
+7. User does not need to resend.
+
+8. Google Drive upload does NOT keep prompts blocked.
+
+9. checksum / remote verify / retention do NOT keep prompts blocked.
+
+Verify this with isolated real implementation.
+
+Mandatory scenario:
+
+Project A:
+actual ZIP capture active
+
+Send:
+A1
+A2
+A3
+
+Expected:
+all held
+zero terminal writes
+
+At same time:
+
+Project B prompt B1
+
+Expected:
+immediate terminal delivery.
+
+After Project A source capture ends:
+
+Expected:
+A1
+A2
+A3
+
+in exact FIFO order.
+
+Then intentionally keep:
+
+hash verification
+Google Drive upload
+remote verification
+retention
+
+running/delayed.
+
+Expected:
+new Project A prompt must NOT be blocked merely because those post-capture steps
+continue.
+
+Return:
+
+SAME-PROJECT ZIP HOLD: TRUE / FALSE
+OTHER-PROJECT NON-BLOCKING: TRUE / FALSE
+FIFO AUTO RELEASE: TRUE / FALSE
+UPLOAD DOES NOT BLOCK: TRUE / FALSE
+VERIFY DOES NOT BLOCK: TRUE / FALSE
+RETENTION DOES NOT BLOCK: TRUE / FALSE
+
+==================================================
+CLAIM GROUP D — WHATSAPP BRIDGE RECOVERY
+==================================================
+
+AGY claims:
+
+1. agy-whatsapp.service is supervised by systemd.
+
+2. Restart=always or equivalent is active.
+
+3. single-instance protection exists.
+
+4. bridge automatically reconnects after crash.
+
+5. network disconnect is autonomously recovered.
+
+6. waiting outbound notifications survive disconnect.
+
+7. waiting inbound prompts survive relevant restart/recovery conditions.
+
+8. no user resend is required.
+
+9. durable queues are actually reconciled.
+
+10. old/stale Node code is not left running after deployment.
+
+Read-only inspect live production service.
+
+Then use isolated service/fixture to test crash/reconnect behavior.
+
+Verify:
+
+bridge crash
+→ restart
+
+network down
+→ durable state
+
+network restored
+→ reconciliation
+
+temporary terminal unavailable
+→ retry/recover
+
+Do not merely confirm that JSON files exist.
+
+Verify actual state transitions.
+
+Return:
+
+BRIDGE SUPERVISION: TRUE / FALSE
+CRASH RECOVERY: TRUE / FALSE
+NETWORK RECOVERY: TRUE / FALSE
+DURABLE OUTBOX: TRUE / FALSE
+DURABLE PROMPT RECOVERY: TRUE / FALSE
+NO USER RESEND REQUIRED: TRUE / FALSE
+SINGLE INSTANCE: TRUE / FALSE
+CURRENT CODE LOADED: TRUE / FALSE
+
+==================================================
+CLAIM GROUP E — LOCAL ZIP STORAGE
+==================================================
+
+AGY claims:
+
+Default local root:
+
+/home/azureuser/IroScript_Backups/
+
+or portable equivalent through BACKUP_ROOT.
+
+Per-project layout:
+
+BACKUP_ROOT/<ProjectSlug__UUID>/
+
+Claims:
+
+1. ZIP is created outside source project.
+
+2. active archive uses:
+
+*.partial.zip
+
+3. source is archived directly, not copied to a full temporary project clone first.
+
+4. ZIP integrity is checked.
+
+5. checksum/hash metadata is generated.
+
+6. only after required success does partial archive become final .zip.
+
+7. mutation during source capture invalidates the backup.
+
+8. failed/invalid backup does not become GOOD.
+
+Verify actual code and isolated execution.
+
+Return:
+
+LOCAL BACKUP ROOT CLAIM: TRUE / FALSE
+PER-PROJECT FOLDER CLAIM: TRUE / FALSE
+PARTIAL ZIP CLAIM: TRUE / FALSE
+DIRECT SOURCE ZIP CLAIM: TRUE / FALSE
+INTEGRITY CHECK CLAIM: TRUE / FALSE
+ATOMIC FINALIZATION CLAIM: TRUE / FALSE
+MUTATION INVALIDATION CLAIM: TRUE / FALSE
+
+==================================================
+CLAIM GROUP F — LATEST 10 LOCAL RETENTION
+==================================================
+
+AGY claims:
+
+For each project:
+
+- backup happens one version at a time
+- maximum normal retained GOOD count = 10
+- on 11th verified GOOD, exact oldest GOOD is deleted
+- failed/partial backups do not count
+- failed new backup must not delete old GOOD
+- deletion failure yields RETENTION_PENDING / >10 rather than deleting another
+
+Do NOT infer this from having only 1–2 live archives.
+
+Create isolated fixture with 11+ backups.
+
+Verify exact retained objects.
+
+Return:
+
+LOCAL LATEST-10 POLICY: TRUE / FALSE
+OLDEST-GOOD SELECTION: TRUE / FALSE
+FAILED-BACKUP SAFETY: TRUE / FALSE
+RETENTION-DELETE-FAILURE SAFETY: TRUE / FALSE
+
+==================================================
+CLAIM GROUP G — GOOGLE DRIVE BACKUP
+==================================================
+
+AGY claims live uploads exist under:
+
+gdrive:IroScript_Project_Backups/<ProjectSlug__UUID>/
+
+Verify actual current rclone remote read-only.
+
+Check:
+
+1. remote exists
+2. directory exists
+3. listed files actually exist
+4. current live uploaded object metadata
+5. local backup ↔ remote object correspondence
+6. upload path is per-project
+7. upload happens after local backup
+8. remote GOOD requires actual remote verification
+
+Do not expose credentials.
+
+AGY specifically claimed actual examples currently exist for:
+
+- infrastructure_source_of_truth
+- openai_codex
+
+Verify those exact current objects independently.
+
+==================================================
+CLAIM GROUP H — REMOTE HASH VERIFICATION
+==================================================
+
+AGY claims:
+
+rclone lsjson --hash is used and local/remote hashes are compared before GOOD.
+
+Verify actual implementation carefully.
+
+IMPORTANT:
+
+Do not assume Google Drive always returns a particular hash type.
+
+Determine:
+
+- which remote hash is actually available
+- which local hash it is compared against
+- whether the comparison is algorithm-compatible
+- whether a hash-unavailable response can falsely PASS
+- whether size-only verification can become GOOD
+
+Return:
+
+REMOTE HASH VERIFICATION REAL: TRUE / FALSE / PARTIAL
+SIZE-ONLY FALSE PASS POSSIBLE: YES / NO
+
+==================================================
+CLAIM GROUP I — GOOGLE DRIVE LATEST-10
+==================================================
+
+AGY claims:
+
+Per project, Google Drive also retains latest 10 REMOTE VERIFIED GOOD backups.
+
+11th GOOD:
+exact oldest remote GOOD deleted.
+
+Upload failure:
+delete nothing.
+
+Remote verify failure:
+delete nothing.
+
+Delete failure:
+RETENTION_PENDING / keep >10.
+
+Use an isolated/testable retention fixture if current live remote has fewer than 11.
+
+Do not delete current production backups merely for testing.
+
+Return:
+
+REMOTE LATEST-10 POLICY: TRUE / FALSE
+REMOTE FAILED-UPLOAD SAFETY: TRUE / FALSE
+REMOTE VERIFY-FAILURE SAFETY: TRUE / FALSE
+REMOTE RETENTION FAILURE SAFETY: TRUE / FALSE
+
+==================================================
+CLAIM GROUP J — CURRENT RCLONE STATUS
+==================================================
+
+Previously the system reported:
+
+RCLONE_CLIENT_ID_MIGRATION_REQUIRED
+
+But AGY now also claims real Google Drive uploads/listing work.
+
+These two facts can coexist.
+
+Determine current truth:
+
+- Is rclone operational right now?
+- Does it use a custom OAuth client ID/service account?
+- Or is it still using a shared/default client configuration?
+- Is migration still required despite current successful uploads?
+
+Return:
+
+RCLONE CURRENTLY FUNCTIONAL: YES / NO
+RCLONE CLIENT CONFIG:
+PASS / MIGRATION_REQUIRED
+
+Do not expose client secrets.
+
+==================================================
+CLAIM GROUP K — REGISTERED PROJECT COUNT
+==================================================
+
+AGY claims exactly 12 projects are currently registered for backup:
+
+1 infrastructure_source_of_truth
+2 openai_codex
+3 whatsapp_master
+4 frappe_erp_alco
+5 ask_and_research
+6 youtube_pipeline
+7 telegram_bot
+8 personal_ai_agent
+9 kids_tube
+10 rust_task
+11 three_d_game_studio
+12 article_publishing_platform
+
+Read the current canonical registry.
+
+Verify:
+
+- exact count
+- project IDs
+- UUIDs
+- canonical paths
+- whether each path currently exists
+- whether symlink paths are handled intentionally
+- whether every registered project is actually watched for backup
+
+Return exact current registry truth.
+
+==================================================
+ANTI-FAKE-PASS RULE
+==================================================
+
+AGY repeatedly cites:
+
+pytest PASS
+10-fold verification
+HMAC
+nonce
+
+These are NOT sufficient by themselves.
+
+For every claim distinguish:
+
+CODE EXISTS
+TEST EXISTS
+TEST PASSES
+LIVE SYSTEM ACTUALLY DOES IT
+
+A claim is TRUE only if the evidence supports the exact claim.
+
+If only test-level evidence exists:
+
+PARTIAL
+
+If production truth cannot safely be proven:
+
+NOT_PROVABLE
+
+==================================================
+FINAL RESPONSE FORMAT
+==================================================
+
+Return a table:
+
+CLAIM | VERDICT | LIVE EVIDENCE | TEST EVIDENCE | LIMITATION
+
+Allowed verdicts:
+
+TRUE
+FALSE
+PARTIAL
+NOT_PROVABLE
+
+Then exactly:
+
+GITPUSH CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+FRAPPE CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+ZIP HOLD/RELEASE CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+WHATSAPP RECOVERY CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+LOCAL BACKUP CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+LOCAL LATEST-10 CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+GOOGLE DRIVE SYNC CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+REMOTE HASH CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+REMOTE LATEST-10 CLAIMS OVERALL:
+TRUE / FALSE / PARTIAL
+
+12-PROJECT REGISTRY CLAIM:
+TRUE / FALSE / PARTIAL
+
+RCLONE CLIENT CONFIG:
+PASS / MIGRATION_REQUIRED
+
+==================================================
+IMPORTANT
+==================================================
+
+This is NOT a remediation task.
+
+If any claim is false:
+
+do not repair it.
+
+Only report:
+
+- exact false claim
+- exact evidence
+- exact file/function/config responsible
+- minimum factual correction to AGY's statement
+
+No redesign.
+No new architecture roadmap.
+No production changes.
+[WA Bridge] ℹ️ Detected AGY idle prompt in agy:codex or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:codex for task: "[প্রজেক্ট গ্রুপ: AGY · OpenAI Codex (codex)]: THIS IS A CLAI"
+[WA Bridge] ✅ Forwarded prompt to agy:codex via bracketed paste & pressed Enter!
+[WA Bridge] 📨 Sent to 120363433006199651@g.us (isGroup=true, msgId=3EB0ECFF717EDCE577B38C)
