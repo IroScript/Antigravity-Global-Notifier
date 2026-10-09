@@ -5501,3 +5501,24 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 891 (agy:yt)
 [WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0649652A3E849A15647)
 [WA Bridge] 💻 cmd output 892 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB088C88FB0049D597785)
+[WA Bridge] ⚡ cmd 894 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0404C73E12E98F381E0)
+[WA Bridge] 💻 cmd output 895 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B360FF8126859AE969)
+[WA Bridge] 🧠 thinking 897 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0FC44FEE5C305F6FF4E)
+[WA Bridge] ⚡ cmd 897 (agy:yt)
+[WA Bridge] Ignored message from other sender: 120363200931828618@g.us 89365837533401@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB059207254516E443174)
+[WA Bridge] 💻 cmd output 898 (agy:yt)
+[WA Bridge] Ignored message from other sender: 120363420075947938@g.us 32024031178804@lid
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C3F41D581525EB5317)
+[WA Bridge] 🧠 thinking 900 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 900)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6352
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0DDA32E2398E3C2C0B9)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] Ignored message from other sender: 120363420075947938@g.us 32024031178804@lid
