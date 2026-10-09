@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ find / -name \"*whatsapp_bridge*\" 2>/dev/null || true`
-> 🎯 _"Finding all whatsapp_bridge files"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ sudo journalctl -u user@1000.service --since \"17:15:00\" --no-pager | tail -n 50`
+> 🎯 _"Checking system logs"_
