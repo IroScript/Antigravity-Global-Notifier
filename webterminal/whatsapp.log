@@ -6851,3 +6851,11 @@ Closing session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB072D3E2C5A0CD897F3E)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Connection update: close
+[WA Bridge] Connection closed, code: 503 error: Stream Errored (unknown)
+[WA Bridge] 🔄 Reconnecting in 2380ms (attempt #1, code: 503)...
+[WA Bridge] 🧹 Gracefully settling previous socket (re-initializing)...
+[WA Bridge] Connection update: connecting
+[WA Bridge] Connection update: { receivedPendingNotifications: true }
+[WA Bridge] Connection update: { isOnline: true }
+[WA Bridge] Connection update: open
