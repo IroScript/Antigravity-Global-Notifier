@@ -20495,3 +20495,56 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5201 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DF511B8C9E99113282)
 [WA Bridge] 💻 cmd output 5202 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+বর্তমান **Oracle Cloud VM (Oracle 8 CPU 64 RAM / ইউজার: `opc`)** সার্ভারটি পুঙ্খানুপুঙ্খ অডিট করা হয়েছে। ফলাফল নিম্নরূপ:
+
+---
+
+### 🔍 অডিট ও ফাইল অনুসন্ধান ফলাফল:
+
+১. **লোকাল ড্রাইভে কোনো Azure ফাইল নেই:**
+   - পুরো `/home/opc` এবং সিস্টেম ডিরেক্টরিতে অনুসন্ধান চালিয়ে নিশ্চিত করা হয়েছে যে এই মেশিনে Azure সম্পর্কিত কোনো সোর্স কোড, স্ক্রিপ্ট বা ডিরেক্টরি (যেমন: `/home/azureuser`, `IroScript_Projects`, `gitpush_watcher` বা `.agents`) সংরক্ষিত **নেই**।
+
+২. **পূর্বে কেন Azure কোড দেখা যাচ্ছিল:**
+   - কিছুক্ষণ পূর্বে যে নোটিফিকেশন লুপটি (Echo Cascade) হয়েছিল, সে সময় মূল Azure সার্ভার থেকে WhatsApp গ্রুপে আসা লাইভ লগ ও টার্মিনাল আউটপুটগুলো চ্যাট মেসেজ আকারে এখানে রিলে হচ্ছিল।
+   - এগুলো কেবলমাত্র চ্যাট কনসোলে টেক্সট হিসেবে প্রদর্শিত হয়েছিল; সার্ভারের ডিস্কে কোনো ফাইল তৈরি বা ডাউনলোড করা হয়নি।
+
+৩. **হোয়াটসঅ্যাপ ব্রিজ সম্পূর্ণ ক্লিন:**
+   - লোকাল ব্রিজের কনফিগারেশন [whatsapp_bridge.js](file:///home/opc/.webterminal/whatsapp_bridge.js)-এ কোনো Azure রেফারেন্স নেই এবং এটি বর্তমানে সম্পূর্ণ বিচ্ছিন্ন ও সুরক্ষিত অবস্থায় শুধুমাত্র এই Oracle 8 CPU সার্ভারের সাথে সংযুক্ত।
+
+---
+
+📌 **সিদ্ধান্ত:**
+এই **Oracle সার্ভারটি সম্পূর্ণ পরিচ্ছন্ন** এবং এখানে মুছে ফেলার মতো কোনো Azure কোড নেই। 
+
+আপনি যদি মূল **Azure সার্ভার (`azureuser`)** থেকে কোনো নির্দিষ্ট ফাইল বা প্রোজেক্ট ডিলিট করতে চান, অনুগ্রহ করে সংশ্লিষ্ট Azure টার্মিনালে নির্দেশ দিন। আর এই Oracle সার্ভারে নতুন কোনো কাজ থাকলে কমান্ড প্রদান করুন।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ১২:০৯ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08CE168F5664F3F1CF9)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0625BA853B32ED8D70E)
+[WA Bridge] ⚡ cmd 5204 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB033B85949E9D4B8CD35)
+[WA Bridge] 💻 cmd output 5205 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB016B0B70139FF856103)
+[WA Bridge] 🧠 thinking 5207 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5207)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3792
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C13A21AB5A3EE77127)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB02A2DA154718E454288, seq: 357): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] Ignored message from other sender: 120363378775353616@g.us 76610069913794@lid
