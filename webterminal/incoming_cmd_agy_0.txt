@@ -1,1 +1,1 @@
-[ছবি ইনপুট: /home/azureuser/.webterminal/media/media_1791548907556_A5EB2FEA.jpeg]. অনুগ্রহ করে view_file("/home/azureuser/.webterminal/media/media_1791548907556_A5EB2FEA.jpeg") ব্যবহার করে ছবিটি দেখুন এবং বিস্তারিত সঠিক উত্তর দিন।
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Hi

@@ -761,3 +761,65 @@
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB099E27C2E2B9391C301)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0FAF4DD8CF45CD4A910)
+[WA Bridge] ✅ Processed outbox job: report_1791549136.json
+[WA Bridge] 📩 Message from Iraq bhai (120363430650656655@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:yt for task: "[প্রজেক্ট গ্রুপ: AGY · YouTube Pipeline (yt)]: [নিয়ম: সর্বদ"
+[WA Bridge] ✅ Forwarded prompt to agy:yt via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0D551B198172D56374F)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0A880160C716D757A6F)
+[WA Bridge] 🧠 thinking 2 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0013A406B1CD073C765)
+[WA Bridge] ⚡ cmd 2 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB07A244B40141AEC8346)
+[WA Bridge] 💻 cmd output 3 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB033AC22ACB0889B75FB)
+[WA Bridge] ⚡ cmd 5 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0792061D9226A822A1A)
+[WA Bridge] 💻 cmd output 6 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B4CA417DB022141F14)
+[WA Bridge] ⚡ cmd 8 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0BCC2E94A004AE3AE3F)
+[WA Bridge] 💻 cmd output 9 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0B41802FB4C65FA5B10)
+[WA Bridge] ⚡ cmd 11 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB02A2625010778E9B84A)
+[WA Bridge] 💻 cmd output 12 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0871148059D69CC24A8)
+[WA Bridge] ⚡ cmd 14 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB070266EAB3F7B9B3CB3)
+[WA Bridge] 💻 cmd output 15 (agy:yt)
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB0C8B67A30284B3FC0FC)
+[WA Bridge] 🧠 thinking 17 (agy:yt)
+[WA Bridge] 📤 Turn done for agy:yt (step 17)
+[WA Bridge] 🔓 Authorized message accepted in group 120363430126311832@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363430126311832@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363430126311832@g.us (isGroup=true, msgId=3EB04CBC915C843784D702)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB01021864E4B3806DA4F)
+[WA Bridge] 🧠 thinking 1777 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CAACD9E150725948C7)
+[WA Bridge] ⚡ cmd 1777 (agy:0)
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:yt): [{"source":"tmux","val":"plan · Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => plan [GEMINI 3.8 FLASH]
+[WA Bridge] 📨 Sent to 120363430650656655@g.us (isGroup=true, msgId=3EB01FE806CEE23B01AC43)
+[WA Bridge] ✅ Reply delivered to 120363430650656655@g.us (agy:yt)!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB039D25212686D1E1650)
+[WA Bridge] 💻 cmd output 1778 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB010BD620E388F0FE8C5)
+[WA Bridge] ⚡ cmd 1780 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A6F92FE14DEB0F3C9E)
+[WA Bridge] 💻 cmd output 1781 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04610CD407953F650D4)
+[WA Bridge] 🧠 thinking 1783 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03EC5FA635D7E84C35B)
+[WA Bridge] ⚡ cmd 1783 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0391609366F2F58B9B4)
+[WA Bridge] 💻 cmd output 1784 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB07EA44239902219D64F)
+[WA Bridge] 🧠 thinking 1786 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB04B3304B0DAC8D3A8DD)
+[WA Bridge] ⚡ cmd 1786 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB021E2DAD5C3220A4B94)
+[WA Bridge] 💻 cmd output 1787 (agy:0)
