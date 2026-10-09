@@ -18452,3 +18452,407 @@ Closing session: SessionEntry {
     preKeyId: 443
   }
 }
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB057B1871D18A848C26A)
+[WA Bridge] 🧠 thinking 4745 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB083E67C21ACEEFC8F86)
+[WA Bridge] ⚡ cmd 4745 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB08343C46ED12E54F98A)
+[WA Bridge] 💻 cmd output 4746 (agy:0)
+Closing session: SessionEntry {
+  _chains: {
+    'BfyymzQ0KdItTqDO9EtypJGjipDR47UX/1ISLbBC2PAn': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 fc b2 9b 34 34 29 d2 2d 4e a0 ce f4 4b 72 a4 91 a3 8a 90 d1 e3 b5 17 ff 52 12 2d b0 42 d8 f0 27>,
+      privKey: <Buffer 30 be c8 bc 2f fe 04 9f 13 48 2b 8d 49 73 29 43 93 f5 6d ff 1e 22 3c 00 89 5d 30 d4 c7 44 01 4f>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer e6 9a 74 89 2c bf 27 aa 03 74 d5 2f 43 c0 14 04 5b a4 5a c5 d5 9f d5 29 98 01 f6 01 88 39 19 e8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ee 7b 1d b8 44 13 ad 73 fd 5e 82 b8 67 df ad 0e 15 50 b3 84 8b a0 ba f6 4e 05 c4 66 d0 08 e0 60>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567588644,
+    created: 1791567588644,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 ee 7b 1d b8 44 13 ad 73 fd 5e 82 b8 67 df ad 0e 15 50 b3 84 8b a0 ba f6 4e 05 c4 66 d0 08 e0 60>,
+    preKeyId: 444
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BaIyhZtaXd83YzWwdQjVcHE8VdOxaB9JgY7lcpnmDVEh: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BQt3eg45DeJtGKezX3i6Fq1hQM5Id1x9S3NFuwRPzmtU: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    BawIozI8Bypjy5MgJJqF5YtlWLmug5mtodmX3wxqmvZu: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BYCtBoE4KvAuztFS0zA4Wvc+djs0C47EjGkuMYaw3Cl1': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BVTVZwS7AXqQdJ6SaG6+ui18prHlfYjleT2PSHwntaAn': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVMuSwa39mt0FN3G/NItVHzsdkd2VLqSk9FQr5tMNdpL': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 53 2e 4b 06 b7 f6 6b 74 14 dd c6 fc d2 2d 54 7c ec 76 47 76 54 ba 92 93 d1 50 af 9b 4c 35 da 4b>,
+      privKey: <Buffer b0 6d 16 15 5b e7 44 61 0c 9a ef 44 f3 0b f0 c2 89 91 45 05 71 79 a5 8d 5c 37 89 49 e2 6a c5 66>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 54 d5 67 04 bb 01 7a 90 74 9e 92 68 6e be ba 2d 7c a6 b1 e5 7d 88 e5 79 3d 8f 48 7c 27 b5 a0 27>,
+    previousCounter: 1,
+    rootKey: <Buffer 4f 1e 33 10 46 3e 22 c8 a3 60 4f a1 f0 c5 2e be 5e 30 f2 95 5d 2e 56 82 91 b0 1f 0a 34 b6 bf 4c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 8f e6 14 16 60 df 20 7b dc 62 b2 f9 ab 49 12 24 b4 91 24 41 41 cd 44 27 9b a5 22 03 06 d4 dc 43>,
+    baseKeyType: 1,
+    closed: 1791567281089,
+    used: 1791567280017,
+    created: 1791567140969,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BRsVx7wcPh3n55okQYcD2NZsgfWnqMRP4us/uGLFTflU': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 1b 15 c7 bc 1c 3e 1d e7 e7 9a 24 41 87 03 d8 d6 6c 81 f5 a7 a8 c4 4f e2 eb 3f b8 62 c5 4d f9 54>,
+      privKey: <Buffer 88 49 f2 da ff c9 48 6c 19 b3 80 9f 19 ec d7 35 cd a5 77 e9 36 11 80 7d 78 af f2 4b 6c ba 19 52>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer ff c2 55 44 d7 87 8b c3 45 70 ea c5 32 0d 8b f1 ae 4c 67 c7 0c 0e 39 fb 3c 25 8e 1d e5 82 f8 12>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 e0 37 07 d4 1b c5 a5 12 ba 91 eb 00 9d 70 f0 4c ac 0f 36 06 23 de 7a 0b 14 fb 8e 14 84 ee 6c 33>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567593938,
+    created: 1791567593938,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 e0 37 07 d4 1b c5 a5 12 ba 91 eb 00 9d 70 f0 4c ac 0f 36 06 23 de 7a 0b 14 fb 8e 14 84 ee 6c 33>,
+    preKeyId: 445
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BbY8/AzVxrI+6xgi8ePPtuEMc0OCY1TRwxbUXnDicQw4': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 b6 3c fc 0c d5 c6 b2 3e eb 18 22 f1 e3 cf b6 e1 0c 73 43 82 63 54 d1 c3 16 d4 5e 70 e2 71 0c 38>,
+      privKey: <Buffer 90 bb 73 d7 32 c7 e3 86 f1 9e a8 db 86 12 44 25 b6 2d ee e2 bb f2 21 1d d7 3e 48 f8 90 b2 9a 56>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer ac bf 7f c9 63 b7 bc 56 2f b0 1c bc 67 23 19 bc 3a 2f d8 15 33 dc 3b 6a 42 75 b4 a3 ea 45 a9 68>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 3d ee fb 0e 7b 81 23 ab ab d9 74 d6 3a 1c ce 64 af 8b e1 44 0b db af d8 aa 76 43 63 d8 6f fc 04>,
+    baseKeyType: 1,
+    closed: 1791567281447,
+    used: 1791567281088,
+    created: 1791567281088,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 3d ee fb 0e 7b 81 23 ab ab d9 74 d6 3a 1c ce 64 af 8b e1 44 0b db af d8 aa 76 43 63 d8 6f fc 04>,
+    preKeyId: 413
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BZy0HmeHh2KhMzHAd0yKZQ27bs7r55/nwgyHfmmcQKgl': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 9c b4 1e 67 87 87 62 a1 33 31 c0 77 4c 8a 65 0d bb 6e ce eb e7 9f e7 c2 0c 87 7e 69 9c 40 a8 25>,
+      privKey: <Buffer 60 1a 9b bc 86 83 8d 97 83 ec 7b 42 c4 3e 4a 1f ef 37 16 df 4c 8e e1 19 f3 64 4b 35 ca c4 c7 79>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 3c 66 94 7c 64 c5 2e 83 1d 80 6b 85 0a 8f 12 6a f7 c7 23 a3 be a0 88 eb c9 a8 1f 75 41 2c ff cf>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 da 3e 04 29 fc b8 32 64 04 08 8c fb ab 35 91 a8 34 4a f5 4d 16 88 6a 25 de 2e e1 44 d9 b2 ef 7c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567594233,
+    created: 1791567594233,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 da 3e 04 29 fc b8 32 64 04 08 8c fb ab 35 91 a8 34 4a f5 4d 16 88 6a 25 de 2e e1 44 d9 b2 ef 7c>,
+    preKeyId: 446
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BRQNuDZcgMIRrpu2/iD39rpS4fkrsEGlh3qGijTIF0w0': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 14 0d b8 36 5c 80 c2 11 ae 9b b6 fe 20 f7 f6 ba 52 e1 f9 2b b0 41 a5 87 7a 86 8a 34 c8 17 4c 34>,
+      privKey: <Buffer 80 6e 8c 00 fa 57 ed 4c ee 60 2d 50 84 5b 7c 3d 3f 0e ec 95 63 26 ad cf 89 6b 3a 80 ec 88 0e 4c>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer e3 53 57 f5 a7 69 01 45 b6 8c 0d 45 89 1f 74 89 f6 7c 49 c0 e5 ea e5 8c 90 11 63 47 fd 74 3f 3a>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 57 d6 bc fa 54 d2 87 b7 a5 22 03 ed 2f ef 85 2b 71 40 b7 41 19 e9 a0 97 68 d0 df 4f 34 20 1d 5f>,
+    baseKeyType: 1,
+    closed: 1791567281671,
+    used: 1791567281446,
+    created: 1791567281446,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 57 d6 bc fa 54 d2 87 b7 a5 22 03 ed 2f ef 85 2b 71 40 b7 41 19 e9 a0 97 68 d0 df 4f 34 20 1d 5f>,
+    preKeyId: 414
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BRA4d8m1ExIayHnHYAU8iL5dQKwUUAlyydMqEmd1FiFj: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 10 38 77 c9 b5 13 12 1a c8 79 c7 60 05 3c 88 be 5d 40 ac 14 50 09 72 c9 d3 2a 12 67 75 16 21 63>,
+      privKey: <Buffer d0 86 fb 2c a5 c5 aa d0 a6 98 b2 5a a8 8c 74 b0 e2 7e 60 88 a0 d1 29 31 d6 5c 13 92 20 12 17 52>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 98 eb de d7 d6 17 50 d7 43 a1 dc ca 71 17 28 c6 e6 1c c8 03 eb 7c 3a 3a 10 57 ac d1 a2 62 81 60>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 d1 b0 34 50 73 03 fd 9f bf ab a6 5a 33 5a 37 b1 79 98 aa 83 d8 31 08 d9 8d ff e2 84 88 30 ff 43>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567594507,
+    created: 1791567594507,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 d1 b0 34 50 73 03 fd 9f bf ab a6 5a 33 5a 37 b1 79 98 aa 83 d8 31 08 d9 8d ff e2 84 88 30 ff 43>,
+    preKeyId: 447
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'Bck1j4NKVlMdFUSJOH0lxGmdT/F8RtX7hAy0Tv0i+gkn': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 c9 35 8f 83 4a 56 53 1d 15 44 89 38 7d 25 c4 69 9d 4f f1 7c 46 d5 fb 84 0c b4 4e fd 22 fa 09 27>,
+      privKey: <Buffer e0 4e 8b c3 87 70 44 15 5e 62 14 ff 17 e2 5c 51 e7 e8 8d f5 03 7b d3 bf b3 a3 54 48 bb b9 6f 4e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 24 2e 98 06 bc 91 9f 15 c0 7d f0 87 a3 ab d9 49 7e a5 8a 7b 42 e3 4e 34 02 2e e1 b7 55 af 1d 40>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 30 77 94 dd 0b 87 e3 18 6d 09 1a 2e 28 a4 fe 1c fb 07 a6 5c 87 bc d6 ec 24 95 49 a9 18 f9 ea 0d>,
+    baseKeyType: 1,
+    closed: 1791567282817,
+    used: 1791567281670,
+    created: 1791567281670,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 30 77 94 dd 0b 87 e3 18 6d 09 1a 2e 28 a4 fe 1c fb 07 a6 5c 87 bc d6 ec 24 95 49 a9 18 f9 ea 0d>,
+    preKeyId: 415
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BWv27M6LP06MKH9teZYPnglkYZa16/WhFOgRVqlnNvcX': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 6b f6 ec ce 8b 3f 4e 8c 28 7f 6d 79 96 0f 9e 09 64 61 96 b5 eb f5 a1 14 e8 11 56 a9 67 36 f7 17>,
+      privKey: <Buffer 80 21 a1 4e 21 41 f6 5e c7 31 d4 43 2b 61 8a d3 b3 57 e1 c5 c1 bc f8 b0 ed d4 54 95 36 ce 1c 44>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer fc 33 1e 32 49 96 84 26 d9 9a f8 49 61 86 c8 b5 d7 1a 3c a9 1c b1 ef b8 83 ae a3 a6 ea d4 18 33>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 0a 9f f9 3f 61 cb 98 1f 88 36 7f fd d2 21 57 e7 4b f1 ac 56 d9 88 06 a0 30 2c 5b 91 f8 e2 01 79>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567594780,
+    created: 1791567594780,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 0a 9f f9 3f 61 cb 98 1f 88 36 7f fd d2 21 57 e7 4b f1 ac 56 d9 88 06 a0 30 2c 5b 91 f8 e2 01 79>,
+    preKeyId: 448
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BXDg5J5KNqG6567Ue0gzxy49ocRWHQ2QkUtfqn9yIVkQ: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BYXfUnT34u/x8sDS+5TQZYAAbo4N3bSioogR/xvUSAg5': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 85 df 52 74 f7 e2 ef f1 f2 c0 d2 fb 94 d0 65 80 00 6e 8e 0d dd b4 a2 a2 88 11 ff 1b d4 48 08 39>,
+      privKey: <Buffer 90 7e de 7d dd 0a f4 02 b0 dc 43 44 0a 72 f1 c8 b2 5f 56 e7 5b 59 47 df ff e8 d4 79 13 bb 6a 54>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 70 e0 e4 9e 4a 36 a1 ba e7 ae d4 7b 48 33 c7 2e 3d a1 c4 56 1d 0d 90 91 4b 5f aa 7f 72 21 59 10>,
+    previousCounter: 0,
+    rootKey: <Buffer f7 b4 ee 46 14 aa 7e 20 b9 8b 94 84 27 d5 c3 3d 3d 0d f1 02 0e 7b be 00 a3 b2 2d 54 c6 e5 80 13>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 05 ae 7e c7 56 07 86 e7 83 af f9 3f 58 00 3f 69 8b bc a8 51 95 52 d5 59 22 1c 6b 88 88 90 76 41>,
+    baseKeyType: 2,
+    closed: 1791567283252,
+    used: 1791567282818,
+    created: 1791567282818,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BfYjG2bd2dkb/bpAil4KcEZ55Ro+tqz1UoNowvaejWUn': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 f6 23 1b 66 dd d9 d9 1b fd ba 40 8a 5e 0a 70 46 79 e5 1a 3e b6 ac f5 52 83 68 c2 f6 9e 8d 65 27>,
+      privKey: <Buffer d0 a6 d8 50 8e 57 b4 60 48 ae fc a2 0e 41 e9 fb ea 24 64 54 3f 41 00 88 10 57 bd 5c 0c 25 1b 54>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 19 95 ac 93 4e 14 a6 8e 07 1a 03 d4 e5 c0 b3 8b 7b 50 4c a6 a6 2c 4c c1 69 dd ae fa 3d d3 d3 69>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a3 7d 82 e1 43 1f e8 49 21 c2 a7 77 14 49 14 74 cb 65 07 b6 46 5e 9d d7 cc 8b 52 89 78 92 4f 29>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567595088,
+    created: 1791567595088,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 a3 7d 82 e1 43 1f e8 49 21 c2 a7 77 14 49 14 74 cb 65 07 b6 46 5e 9d d7 cc 8b 52 89 78 92 4f 29>,
+    preKeyId: 449
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BfOyG+NgKc6lvue3bpM5jcez1YR1D9UOTGFVYrCVyJIu': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BVNcNfJmGjXj54xF+vlvDxDZ9hHMO6gRbwjLQudyOH0f': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BTNkdvC/wfO1CJgX+28GJbD+XC5Vy/4JcWSAke9gMDRu': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'Bbd4NDft359SBDsid79g/k4ZuEk9drd7jJiO6nSp0rZL': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BfjOuj14YyaqnCOiTVOh4rBM2ktfER/bRaTo5E8UWpEi': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    BalpDP9sCHXn3D3WdoJni0LOlST5yvJ8Sh7ghLBtoiYa: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BXGE4SODURg+QULBpK1nc6H3usJEgjzuOWn97Hsh6DgV': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 71 84 e1 23 83 51 18 3e 41 42 c1 a4 ad 67 73 a1 f7 ba c2 44 82 3c ee 39 69 fd ec 7b 21 e8 38 15>,
+      privKey: <Buffer 88 2a 0c 34 84 56 57 10 bb 18 82 90 9b ec 3c 8a 35 d3 40 9e 5a a7 c5 fc 0f f0 31 95 54 75 f5 78>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 69 0c ff 6c 08 75 e7 dc 3d d6 76 82 67 8b 42 ce 95 24 f9 ca f2 7c 4a 1e e0 84 b0 6d a2 26 1a>,
+    previousCounter: 27,
+    rootKey: <Buffer 4e 2a 1d c6 96 b8 86 cb e5 c9 55 a2 3c ef ab 3f 05 f2 9e 13 c5 04 5c 97 d1 91 d6 f2 56 5f 2e f7>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 4f 4c 01 2f 2d 88 ae 81 1f ad a1 fd 19 df dc 45 64 12 c5 d3 93 7c 93 61 61 74 62 5e 6d 2e 9d 28>,
+    baseKeyType: 1,
+    closed: 1791567291781,
+    used: 1791567296120,
+    created: 1791567283249,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BebQ0Rkr4uYZLTlgzHJ0N5Z1RPZpYE1DNbs5GRoMKI8n: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 e6 d0 d1 19 2b e2 e6 19 2d 39 60 cc 72 74 37 96 75 44 f6 69 60 4d 43 35 bb 39 19 1a 0c 28 8f 27>,
+      privKey: <Buffer b8 0e 8c 0e 77 37 43 0b 26 ec de 69 96 46 a5 dc 4e 40 ce f2 d5 86 63 68 3e f0 d7 76 b4 bd f6 7a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer f3 57 b2 1d bd f0 63 17 5d e7 09 7f 86 97 53 17 91 e5 1e 03 53 bf 16 66 bb 84 9f 44 d3 77 c2 a6>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 95 06 e0 b1 01 9c d4 27 de 60 c4 3d 2e 09 2e 74 47 25 35 18 a3 68 74 c2 f9 40 19 04 cb 1f 3d 08>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791567595387,
+    created: 1791567595387,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 95 06 e0 b1 01 9c d4 27 de 60 c4 3d 2e 09 2e 74 47 25 35 18 a3 68 74 c2 f9 40 19 04 cb 1f 3d 08>,
+    preKeyId: 450
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BalpDP9sCHXn3D3WdoJni0LOlST5yvJ8Sh7ghLBtoiYa: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BfNO7V4Sgk3qVzAMkg4kWk6z/MGicTzy9UrBjXI416VC': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 f3 4e ed 5e 12 82 4d ea 57 30 0c 92 0e 24 5a 4e b3 fc c1 a2 71 3c f2 f5 4a c1 8d 72 38 d7 a5 42>,
+      privKey: <Buffer f0 e6 db 08 23 7b c1 ab b4 66 fb a2 26 0f 40 4b e9 27 bc 9b e6 32 b5 e6 66 92 eb 3e b2 23 f9 6e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 69 0c ff 6c 08 75 e7 dc 3d d6 76 82 67 8b 42 ce 95 24 f9 ca f2 7c 4a 1e e0 84 b0 6d a2 26 1a>,
+    previousCounter: 1,
+    rootKey: <Buffer 6a c4 75 d8 d8 52 78 77 af f0 bc 8a 80 99 23 40 05 a3 65 1a 50 ac 44 42 90 49 b7 b4 5e 2c 7e 85>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a1 59 de d6 5c 77 58 82 18 35 e3 3c 04 cd 17 e9 d2 a2 7f c0 cf 28 2e 39 59 64 da c3 1a c4 13 62>,
+    baseKeyType: 1,
+    closed: 1791567296210,
+    used: 1791567291780,
+    created: 1791567291780,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 a1 59 de d6 5c 77 58 82 18 35 e3 3c 04 cd 17 e9 d2 a2 7f c0 cf 28 2e 39 59 64 da c3 1a c4 13 62>,
+    preKeyId: 417
+  }
+}
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB05280898B0AC3860BC0)
+[WA Bridge] 🧠 thinking 4748 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 4748)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 7450
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0A1D61BB1AD95338924)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
