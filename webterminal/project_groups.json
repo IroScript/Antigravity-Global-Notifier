@@ -1,7 +1,7 @@
 {
   "codex": {
     "id": "120363433006199651@g.us",
-    "name": "AGY · OpenAI Codex",
+    "name": "AGY \u00b7 OpenAI Codex",
     "key": "codex",
     "window": "agy:codex",
     "cwd": "/home/azureuser/IroScript_Projects/OpenAI_Codex",
@@ -10,14 +10,14 @@
   },
   "research": {
     "id": "120363413333339676@g.us",
-    "name": "AGY · Ask & Research",
+    "name": "AGY \u00b7 Ask & Research",
     "key": "research",
     "window": "agy:research",
     "cwd": "/home/azureuser/IrakIroan/IroScript_Projects/Ask-And-Research-Agent"
   },
   "yt": {
     "id": "120363430650656655@g.us",
-    "name": "AGY · YouTube Pipeline",
+    "name": "AGY \u00b7 YouTube Pipeline",
     "key": "yt",
     "window": "agy:yt",
     "cwd": "/home/azureuser/IroScript_Projects/Social Media/youtube/Youtube Automation",
@@ -25,29 +25,29 @@
     "whatsapp_status": "CONNECTED"
   },
   "frappe": {
-    "id": "120363183660021425@g.us",
-    "name": "PMD, PE, Alco",
+    "id": "120363430126311832@g.us",
+    "name": "AGY \u00b7 Frappe & ERPNext",
     "key": "frappe",
     "window": "agy:frappe",
     "cwd": "/home/azureuser/IroScript_Projects/Frappe-erp-Alco"
   },
   "tg": {
     "id": "120363411604185129@g.us",
-    "name": "AGY · Telegram Bot",
+    "name": "AGY \u00b7 Telegram Bot",
     "key": "tg",
     "window": "agy:tg",
     "cwd": "/home/azureuser/IroScript_Projects/Telegram-Bot"
   },
   "kids": {
     "id": "120363428733621560@g.us",
-    "name": "AGY · Kids Tube",
+    "name": "AGY \u00b7 Kids Tube",
     "key": "kids",
     "window": "agy:kids",
     "cwd": "/home/azureuser/IroScript_Projects/Kids-Tube"
   },
   "rust": {
     "id": "120363399508280221@g.us",
-    "name": "TRUSTED BUY SELL COMMUNITY ✅",
+    "name": "TRUSTED BUY SELL COMMUNITY \u2705",
     "key": "rust",
     "window": "agy:rust",
     "cwd": "/home/azureuser/IroScript_Projects/Rust_Task_With_Time_Keeping_And_Live_Note"
