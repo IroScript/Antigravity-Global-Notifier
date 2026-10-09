@@ -56538,3 +56538,22 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⏱️ task 12548 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E904D82CF29A1CAEA5)
 [WA Bridge] ⚡ cmd 12553 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E11976E757D11AAC5E)
+[WA Bridge] 💻 cmd output 12554 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0C9C55A54ACD2B8C9F6)
+[WA Bridge] ⚡ cmd 12556 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0FCF99B6C395796CC73)
+[WA Bridge] 💻 cmd output 12557 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0653D9C5F7FAFB9DB2F)
+[WA Bridge] ⚡ cmd 12559 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0533478A52F523FD7B6)
+[WA Bridge] 💻 cmd output 12560 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03D81B225F202605187)
+[WA Bridge] 🧠 thinking 12562 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 12562)
+[WA Bridge] Ignored message from other sender: 120363423943512715@g.us 2654977683648@lid
+[WA Bridge] paste.rs (mobile-wrapped): https://paste.rs/lpma9
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB096AF66EE6CC6AFEC88)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] Ignored message from other sender: 120363429422678366@g.us 263668646289474@lid
