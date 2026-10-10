@@ -34737,3 +34737,9 @@ Execute autonomously within this strictly defined scope. Do not request routine 
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F33D8BF18D2733EA4B)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0408120199626D46712)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sed -n '775,825p' /home/opc/live_preview/server.py`
+> 🎯 _"Checking server.py lines 775-825"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02630216198EF4EFBA9)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F12D04E5604C60338F)
