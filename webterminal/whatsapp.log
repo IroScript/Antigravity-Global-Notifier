@@ -30020,3 +30020,8 @@ Contain the live loop, find the exact technical root cause, implement the minima
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AF980A22422EE5E01A)
 [WA Bridge] 🧠 thinking 6936 (agy:0)
 [WA Bridge] 📤 Turn done for agy:0 (step 6936)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 8680
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C96B9BC65D772728A3)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
