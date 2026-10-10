@@ -25725,3 +25725,865 @@ THIS IS ONLY A SURGICAL AZURE WEBTERMINAL / WHATSAPP ROUTING CORRECTION.
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F6B0AF94C0CE5FD7D7)
 [WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): THIS IS A STRICTLY SCOPED CORRECTION TASK ON ORACLE AGY:0.
+
+READ THE ENTIRE INSTRUCTION BEFORE MAKING ANY CHANGE.
+
+A previous CLI incorrectly mixed/copied Azure WhatsApp/WebTerminal architecture into this Oracle VM.
+
+This task is NOT a general cleanup.
+
+This task is NOT a credential cleanup.
+
+This task is NOT a project cleanup.
+
+This task is NOT a tmux cleanup.
+
+The ONLY objective is:
+
+REMOVE AZURE FROM ORACLE'S ACTIVE WEBTERMINAL / WHATSAPP RUNTIME BEHAVIOR.
+
+IMPORTANT:
+
+DO NOT DELETE Azure-related code.
+
+COMMENT OUT / DISABLE ONLY the proven Azure-specific runtime logic.
+
+Preserve the original code in place for forensic inspection and possible rollback.
+
+==================================================
+ABSOLUTE NODE BOUNDARY
+
+THIS NODE = ORACLE.
+
+Oracle and Azure are independent systems.
+
+DO NOT:
+
+- SSH into Azure
+- SCP to/from Azure
+- RSYNC to/from Azure
+- inspect Azure remotely
+- modify Azure
+- execute commands on Azure
+- query Azure for comparison
+- use Azure as a repair source
+
+Everything must be determined from LOCAL Oracle evidence.
+
+==================================================
+AUTHORIZED SCOPE
+
+Primary authorized scope:
+
+/home/opc/.webterminal/
+
+and ONLY directly related Oracle WhatsApp/WebTerminal runtime configuration.
+
+READ-ONLY inspection is allowed where necessary to understand dependencies.
+
+DO NOT modify unrelated locations.
+
+==================================================
+DO NOT TOUCH
+
+DO NOT modify/delete:
+
+- ~/.ssh/
+- SSH credentials
+- cloud credentials
+- WhatsApp credentials/authentication unless absolutely required for normal bridge operation
+- wa_auth/
+- ~/.gemini/ unless READ-ONLY inspection is required
+- AGY configuration unrelated to WhatsApp transport
+- project directories
+- Git repositories unrelated to WebTerminal
+- tmux topology
+- unrelated services
+- system configuration
+- backup systems
+- package environments
+- application projects
+
+DO NOT delete:
+
+/home/opc/.agents
+
+DO NOT kill tmux windows.
+
+DO NOT recreate deleted project windows.
+
+DO NOT attempt broad recovery during this task.
+
+==================================================
+VERY IMPORTANT — CURRENT ORACLE BRIDGE
+
+The current Oracle bridge was previously rewritten as an approximately 12 KB standalone:
+
+/home/opc/.webterminal/whatsapp_bridge.js
+
+DO NOT automatically delete or replace this file.
+
+DO NOT replace it with Azure's bridge.
+
+DO NOT recreate Azure's large multi-project bridge.
+
+Audit the CURRENT file first.
+
+If the current bridge is already genuinely Oracle-specific and contains no active Azure dependency:
+
+LEAVE IT ALONE.
+
+Do not modify code merely to make the task appear successful.
+
+==================================================
+TARGET QUESTION
+
+Inside Oracle WebTerminal / WhatsApp runtime:
+
+"What Azure-specific code, configuration, routing, assumptions, project mappings, paths, or cross-node behavior remains ACTIVE?"
+
+Find exactly that.
+
+==================================================
+SEARCH FOR AZURE CONTAMINATION
+
+Within the authorized scope, inspect for references such as:
+
+Azure
+azure
+azureuser
+/home/azureuser
+FatehAli
+FatehAli2
+ssh azure
+Host azure
+Azure project mappings
+Azure WhatsApp group IDs
+Azure tmux mappings
+Azure project names introduced by copied bridge architecture
+Azure-specific queues/controllers
+cross-node routing
+cross-node SSH
+remote command execution
+Azure-specific filesystem paths
+Azure-specific systemd assumptions
+Azure-specific project routing
+
+Also identify generic code that may have originated from Azure but is now legitimately required for Oracle's LOCAL WhatsApp → agy:0 transport.
+
+Do NOT disable generic functionality merely because similar code exists on Azure.
+
+==================================================
+PROVENANCE RULE
+
+Every suspicious block must be classified:
+
+A = PROVEN Azure-specific contamination
+
+B = legitimate Oracle-local functionality
+
+C = uncertain origin/purpose
+
+ACTION:
+
+A → COMMENT OUT / safely disable.
+
+B → LEAVE UNCHANGED.
+
+C → LEAVE UNCHANGED AND REPORT.
+
+Never classify based solely on matching filenames.
+
+==================================================
+CRITICAL RULE — COMMENT OUT, DO NOT DELETE
+
+For JavaScript/shell/code:
+
+DO NOT DELETE proven Azure-specific code.
+
+COMMENT IT OUT.
+
+Use a clear marker:
+
+// ============================================================
+// DISABLED: AZURE CROSS-NODE LOGIC
+// Reason: Oracle and Azure are independent nodes.
+// Original implementation preserved for forensic/rollback use.
+// Disabled on: <timestamp>
+// ============================================================
+
+Then preserve the original lines as comments.
+
+For shell scripts use equivalent "#" comments.
+
+==================================================
+CONFIG FILE RULE
+
+If Azure-specific behavior exists in JSON or another format that does not support comments:
+
+DO NOT make the file invalid.
+
+Use the schema's supported disable mechanism if one exists.
+
+If no safe disable mechanism exists:
+
+DO NOT DELETE THE ENTRY.
+
+Report it as requiring a separate configuration-safe change.
+
+==================================================
+ORACLE'S REQUIRED RUNTIME
+
+The intended Oracle path is ONLY:
+
+AUTHORIZED WHATSAPP MESSAGE
+↓
+ORACLE LOCAL WHATSAPP BRIDGE
+↓
+LOCAL Oracle agy:0
+↓
+LOCAL AGY RESPONSE
+↓
+SAME ORACLE WHATSAPP DESTINATION
+
+Everything in this chain must remain functional.
+
+==================================================
+NO AZURE DEPENDENCY
+
+Oracle WhatsApp processing must NOT require:
+
+Azure SSH
+Azure filesystem
+Azure tmux
+Azure queues
+Azure project mapping
+Azure controllers
+Azure AGY
+Azure WebTerminal
+Azure systemd
+Azure network availability
+
+Oracle must continue working even if Azure is completely powered off.
+
+==================================================
+DO NOT REMOVE ORACLE FEATURES
+
+Do NOT disable something merely because Azure has a similar implementation.
+
+For example, if Oracle legitimately needs:
+
+- Baileys connection
+- wa_auth
+- local transcript reading
+- local tmux delivery
+- local agy:0
+- duplicate-message protection
+- loop protection
+- local response delivery
+- local reconnect logic
+
+these are NOT Azure contamination merely because Azure also uses them.
+
+Preserve them.
+
+==================================================
+VERY IMPORTANT — NO PROJECT/TMUX CLEANUP
+
+The previous CLI already performed destructive actions involving tmux windows and "/home/opc/.agents".
+
+DO NOT repeat that.
+
+This task must NOT:
+
+tmux kill-window
+tmux kill-session
+pkill
+killall
+rm -rf /home/opc/.agents
+rm -rf /home/opc/.webterminal
+
+Do not touch unrelated Oracle projects.
+
+==================================================
+NO CREDENTIAL CLEANUP
+
+This task is NOT about credentials.
+
+DO NOT:
+
+delete SSH keys
+delete WhatsApp auth
+re-pair WhatsApp
+delete sender keys
+delete pre-keys
+purge wa_auth
+regenerate credentials
+modify cloud credentials
+
+Leave credentials alone.
+
+==================================================
+NO HISTORICAL CLEANUP
+
+Do NOT purge logs merely because they mention Azure.
+
+Historical evidence is useful.
+
+Do NOT delete:
+
+whatsapp.log
+historical message IDs
+transcripts
+brain history
+
+An old log mentioning Azure is NOT an active Azure dependency.
+
+Distinguish:
+
+HISTORICAL REFERENCE
+
+from
+
+ACTIVE EXECUTABLE DEPENDENCY.
+
+Only active executable Azure-specific behavior is the target.
+
+==================================================
+CHECK CURRENT BRIDGE CAREFULLY
+
+Audit:
+
+/home/opc/.webterminal/whatsapp_bridge.js
+
+Determine whether it contains:
+
+1. Azure hostname/IP.
+2. "/home/azureuser".
+3. SSH to Azure.
+4. Azure group IDs.
+5. Azure project routing.
+6. Azure tmux targets.
+7. Azure controllers.
+8. Azure queue dependencies.
+9. remote Azure command execution.
+10. cross-node synchronization.
+
+If NONE exist:
+
+DO NOT modify whatsapp_bridge.js.
+
+Report:
+
+NO ACTIVE AZURE DEPENDENCY FOUND IN CURRENT BRIDGE.
+
+That is a valid successful result.
+
+==================================================
+LOCAL AGY:0 RULE
+
+All valid Oracle WhatsApp prompts must terminate locally at:
+
+agy:0
+
+Verify that the bridge cannot dynamically redirect the message to:
+
+another VM
+another SSH host
+Azure
+remote tmux
+remote AGY
+
+The target must be the LOCAL Oracle tmux session.
+
+==================================================
+LOOP ISOLATION
+
+Verify that Oracle only accepts the intended Oracle WhatsApp destination/group.
+
+Azure WhatsApp groups must NOT be accepted.
+
+Unknown groups must NOT fall back into Oracle agy:0 merely because the sender is the owner.
+
+Do not solve this with broad text-content filtering if reliable destination/group isolation already provides the boundary.
+
+Node/group identity should be the primary isolation boundary.
+
+==================================================
+CHANGE PROCEDURE
+
+PHASE 1 — READ ONLY
+
+Inspect everything relevant.
+
+Produce internally:
+
+- references found
+- executable vs historical
+- A/B/C classification
+- exact proposed changes
+
+PHASE 2 — SURGICAL CHANGE
+
+Modify ONLY Category A active Azure-specific logic.
+
+COMMENT OUT rather than delete.
+
+PHASE 3 — STATIC VERIFICATION
+
+Verify syntax.
+
+For JavaScript at minimum:
+
+node --check /home/opc/.webterminal/whatsapp_bridge.js
+
+PHASE 4 — RUNTIME VERIFICATION
+
+Determine whether a restart is actually required.
+
+Do NOT restart anything unnecessarily.
+
+If activation genuinely requires restart:
+
+restart ONLY:
+
+agy-whatsapp.service
+
+Do NOT restart AGY.
+
+Do NOT restart tmux.
+
+Do NOT restart unrelated services.
+
+==================================================
+REQUIRED TEST MATRIX
+
+Run deterministic local tests where possible.
+
+TEST A:
+
+Oracle authorized group
+Expected:
+LOCAL Oracle agy:0
+
+TEST B:
+
+Azure group/reference
+Expected:
+BLOCKED / NOT ROUTED
+
+TEST C:
+
+Unknown group from owner
+Expected:
+BLOCKED / NOT ROUTED
+
+TEST D:
+
+Oracle bridge output itself
+Expected:
+NOT REPROCESSED AS USER INPUT
+
+TEST E:
+
+Local agy:0 response
+Expected:
+returns to intended Oracle WhatsApp destination exactly once
+
+TEST F:
+
+Azure unavailable/unreachable
+Expected:
+Oracle WhatsApp runtime remains independent.
+
+Do NOT contact Azure to perform Test F.
+
+Prove from dependency/runtime inspection that Azure is not required.
+
+==================================================
+MANDATORY SAFETY ASSERTIONS
+
+At completion verify:
+
+Azure contacted: NO
+
+Azure SSH attempted: NO
+
+Credentials modified: NO
+
+wa_auth modified intentionally: NO
+
+tmux topology changed: NO
+
+Oracle projects modified: NO
+
+~/.agents modified: NO
+
+unrelated service modified: NO
+
+Azure-specific active runtime dependency: NONE, or list unresolved evidence.
+
+==================================================
+FINAL REPORT
+
+Return exactly these sections:
+
+1. ORACLE WEBTERMINAL AZURE REFERENCES FOUND
+
+For each:
+
+file
+line/function
+reference
+historical or executable
+A/B/C classification
+
+2. ACTIVE AZURE LOGIC FOUND
+
+List only executable Azure-specific dependencies.
+
+3. COMMENTED OUT / DISABLED
+
+Show exact before/after diff.
+
+Do NOT merely say "fixed".
+
+4. AZURE REFERENCES PRESERVED AS HISTORY
+
+List logs/comments/transcripts that were intentionally NOT deleted because they are historical evidence rather than executable contamination.
+
+5. ORACLE FUNCTIONALITY PRESERVED
+
+Prove:
+
+WhatsApp
+→ local Oracle bridge
+→ local agy:0
+→ response
+→ intended WhatsApp destination
+
+6. ROUTING MATRIX
+
+Oracle authorized group → LOCAL agy:0
+Azure group → BLOCKED
+Unknown group → BLOCKED
+Bridge's own output → NOT REPROCESSED
+
+7. SIDE-EFFECT AUDIT
+
+Credentials modified: NO
+SSH config modified: NO
+wa_auth intentionally modified: NO
+tmux topology modified: NO
+~/.agents modified: NO
+projects modified: NO
+Azure contacted: NO
+
+8. FILES ACTUALLY MODIFIED
+
+Exact list.
+
+9. SERVICES ACTUALLY RESTARTED
+
+Exact list.
+
+If none:
+
+NONE.
+
+10. FINAL VERDICT
+
+Use one of:
+
+CLEAN — NO ACTIVE AZURE DEPENDENCY
+
+CLEAN — PROVEN AZURE LOGIC COMMENTED OUT
+
+PARTIAL — UNRESOLVED AZURE DEPENDENCY EXISTS
+
+INCONCLUSIVE — INSUFFICIENT EVIDENCE
+
+==================================================
+FINAL INVARIANT
+
+THIS IS NOT A CLEANUP OF ORACLE.
+
+THIS IS NOT A CREDENTIAL TASK.
+
+THIS IS NOT A TMUX TASK.
+
+THIS IS NOT A PROJECT TASK.
+
+THIS IS NOT A REBUILD.
+
+THE ONLY JOB IS:
+
+FIND ACTIVE AZURE-SPECIFIC LOGIC INSIDE ORACLE'S WEBTERMINAL / WHATSAPP RUNTIME AND COMMENT IT OUT SAFELY.
+
+DO NOT DELETE IT.
+
+DO NOT CONTACT AZURE.
+
+PRESERVE ORACLE'S LOCAL WHATSAPP ↔ LOCAL agy:0 FUNCTIONALITY.
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (249ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB078E86051A19FC3B4A8)
+Closing session: SessionEntry {
+  _chains: {
+    BRYnRvtyB6tXKqa2X76pKC53nsulUSky5caG90W52zV5: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BU/H1NpMVqxeO3YD0gpqzuCyP6XsK0xYc9sND0X57BJj': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BceebXuLspLBuOwhrT3PbJ14g25ZUENb/AnxKkYrfeI5': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BbhWeBNqlAeLUuMPE3kEpgDgfYl/i5b8HvkbRm7E3JN5': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Bcf4z9DD59ufLGd8HRxtvDZFQTtXbe1daVFIsvsT1CpH: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BabJGkqaUlU6QkBw9LQwNRzimwLMJEx0Ubv5LsbiYOwY: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BS8jW279YmBHVzanzYCFoRs9EjgijNTCZ+DV1NlZwgU+': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2f 23 5b 6e fd 62 60 47 57 36 a7 cd 80 85 a1 1b 3d 12 38 22 8c d4 c2 67 e0 d5 d4 d9 59 c2 05 3e>,
+      privKey: <Buffer 88 36 d0 f8 7d 2f c2 3d 1d db 47 51 cc cc 44 16 b3 1c 60 f4 11 c9 38 f0 c1 b0 e7 82 7d 01 d0 6d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a6 c9 1a 4a 9a 52 55 3a 42 40 70 f4 b4 30 35 1c e2 9b 02 cc 24 4c 74 51 bb f9 2e c6 e2 60 ec 18>,
+    previousCounter: 9,
+    rootKey: <Buffer f3 32 82 fb df e2 d5 c7 f2 a2 75 89 9f f2 7c f8 9a 1b c5 59 dd f6 df b1 a6 05 50 61 3e f9 bd 28>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 93 1d 1c 9b 09 2d 81 60 a4 3c 49 26 76 9b db 09 88 5e a5 08 4e 33 a5 e7 0c 11 af aa e8 f1 85 5c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791599766680,
+    created: 1791594510029,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BRah3a9AQV/SyGR4DljIAm5iysMcg/vhSJrYOT+bZ301': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUyWJ8SLI2ZNJMzX9+y+djQTa6ST5VGd8LyK+ocht7Fv': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BfU6LA254ZO41nAEFoOq0n6wx1wLdxD1aUPt0lDlIFhV: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 f5 3a 2c 0d b9 e1 93 b8 d6 70 04 16 83 aa d2 7e b0 c7 5c 0b 77 10 f5 69 43 ed d2 50 e5 20 58 55>,
+      privKey: <Buffer 80 5a 74 0c e2 14 73 b6 70 40 23 dc a7 36 68 3e cc 72 d4 5b 2f 73 75 32 61 7f fa 65 8d 79 06 78>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 4c 96 27 c4 8b 23 66 4d 24 cc d7 f7 ec be 76 34 13 6b a4 93 e5 51 9d f0 bc 8a fa 87 21 b7 b1 6f>,
+    previousCounter: 23,
+    rootKey: <Buffer 07 e0 ba 29 7a 4d 46 b0 97 46 9b 6f b0 d2 3c d5 a0 ae 63 0d d8 1e 9d 8d 54 95 80 f6 bc 5c 87 56>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 c8 32 c3 62 ef 91 17 2b c5 e7 78 94 87 3d e3 65 43 e2 d0 cd 87 af 7c d0 5f 6d 84 47 aa 8e 57 20>,
+    baseKeyType: 1,
+    closed: 1791381347356,
+    used: 1791380734761,
+    created: 1791371663938,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BcPR1XEM77pvBtSYKe3Dn+OPWmSaacNlhhQssCAMgx0S': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVTm2/JcCjCQWEGfByVnZnYNPiNHbIW89Gv/NLxYCKdF': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 54 e6 db f2 5c 0a 30 90 58 41 9f 07 25 67 66 76 0d 3e 23 47 6c 85 bc f4 6b ff 34 bc 58 08 a7 45>,
+      privKey: <Buffer d0 f2 e4 e3 a7 ed 84 a4 0e dc 04 d6 fb 07 53 c5 88 83 d2 b3 85 57 7b ff 67 81 f2 a8 99 bf 9b 56>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 c3 d1 d5 71 0c ef ba 6f 06 d4 98 29 ed c3 9f e3 8f 5a 64 9a 69 c3 65 86 14 2c b0 20 0c 83 1d 12>,
+    previousCounter: 2,
+    rootKey: <Buffer 50 2d 44 34 47 ba c1 85 74 11 10 c8 55 67 32 6e 9c f5 43 86 81 75 be de 1d 44 e2 c4 59 f0 d1 3e>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 da 6c 88 96 94 9f 78 98 f0 4e 8c 9f 15 38 26 9d 8f 2b 37 30 7e f4 a7 cf 86 bc 66 33 7a f7 27 3e>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791594515718,
+    created: 1791594510663,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00C1538A5AB18427AD8)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 6287)
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BQRX2PCb3vn7iqgF0VeA1ous6q+XKp5MYjJLmGZrJc8X': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BVqtvx2ZkDM2y/APo4dtunTT7hZg1JUogtsgYVobqQtD': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 5a ad bf 1d 99 90 33 36 cb f0 0f a3 87 6d ba 74 d3 ee 16 60 d4 95 28 82 db 20 61 5a 1b a9 0b 43>,
+      privKey: <Buffer 80 eb a7 58 d9 22 9a db 1d 55 d0 29 5b 40 b1 9c 85 72 82 54 23 4a f6 8c cf c7 5e 46 7c 0d a5 6e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 04 57 d8 f0 9b de f9 fb 8a a8 05 d1 57 80 d6 8b ac ea af 97 2a 9e 4c 62 32 4b 98 66 6b 25 cf 17>,
+    previousCounter: 1,
+    rootKey: <Buffer 8f a7 db fa 0f b2 a9 72 ec 40 46 c7 aa eb e6 72 4e 14 34 2f 7b 14 0d 55 bf db 90 dd d4 7a 07 6f>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 5d 3a 35 5e 58 b1 80 4e 70 33 e8 76 97 0a 8e b9 df e3 5e 73 4b 66 07 a8 65 f8 99 4a 33 12 cd 0d>,
+    baseKeyType: 1,
+    closed: 1791567301034,
+    used: 1791567300531,
+    created: 1791567300531,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 5d 3a 35 5e 58 b1 80 4e 70 33 e8 76 97 0a 8e b9 df e3 5e 73 4b 66 07 a8 65 f8 99 4a 33 12 cd 0d>,
+    preKeyId: 424
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BWw9xRMX8CfXGDa12PYpk027V13gUxF65Jx08Nb/kiQ2': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 6c 3d c5 13 17 f0 27 d7 18 36 b5 d8 f6 29 93 4d bb 57 5d e0 53 11 7a e4 9c 74 f0 d6 ff 92 24 36>,
+      privKey: <Buffer 80 76 f2 94 8e 6b 54 5c e6 ac 00 ac 98 15 0d da c3 a7 4b bf 16 0a 84 bd b6 a5 fd 87 5b d7 1d 5d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer c6 91 99 48 76 a9 4a e2 ba f8 52 7a ba 8a 15 a7 c8 b2 9f 63 92 52 84 4b d1 b0 67 42 09 63 f9 f2>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 59 7a 1e 74 47 6a 3c 0b 56 28 58 e7 a5 da 2a 2a 0b 8f a6 0d 8d 17 f9 fc f1 4e da b7 82 d8 75 6c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791599768087,
+    created: 1791599768087,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 59 7a 1e 74 47 6a 3c 0b 56 28 58 e7 a5 da 2a 2a 0b 8f a6 0d 8d 17 f9 fc f1 4e da b7 82 d8 75 6c>,
+    preKeyId: 504
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BQRX2PCb3vn7iqgF0VeA1ous6q+XKp5MYjJLmGZrJc8X': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BRdmUpzWO9i1h68OsUZxfDOh5aLqcOzXMseOzGaIdsIK: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 17 66 52 9c d6 3b d8 b5 87 af 0e b1 46 71 7c 33 a1 e5 a2 ea 70 ec d7 32 c7 8e cc 66 88 76 c2 0a>,
+      privKey: <Buffer 28 a5 39 1f 54 51 1b fb d9 15 0b 67 87 24 a2 24 0b f8 84 c5 86 fe 0f e9 4c d2 55 d3 4b e9 da 4e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 04 57 d8 f0 9b de f9 fb 8a a8 05 d1 57 80 d6 8b ac ea af 97 2a 9e 4c 62 32 4b 98 66 6b 25 cf 17>,
+    previousCounter: 1,
+    rootKey: <Buffer a3 84 64 c1 5a 21 c8 ff 15 55 86 83 72 77 8c 48 75 89 ba 01 7f d2 91 5c 90 db 0e 31 89 78 e3 3b>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 6f fc 9b 2a 7c 8b 29 9f 2d 89 ec 20 a8 a5 31 06 4f 58 af 75 98 23 52 d9 fe 63 04 70 ee 13 43 02>,
+    baseKeyType: 1,
+    closed: 1791567301227,
+    used: 1791567301033,
+    created: 1791567301033,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 6f fc 9b 2a 7c 8b 29 9f 2d 89 ec 20 a8 a5 31 06 4f 58 af 75 98 23 52 d9 fe 63 04 70 ee 13 43 02>,
+    preKeyId: 425
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BbSz7c5db7F0I9kdNhqkNBEPHkrqzuqOTcuBhjT9dKcY: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 b4 b3 ed ce 5d 6f b1 74 23 d9 1d 36 1a a4 34 11 0f 1e 4a ea ce ea 8e 4d cb 81 86 34 fd 74 a7 18>,
+      privKey: <Buffer 90 d1 65 53 6e 1a fb 34 00 36 dc 2a e8 d5 6f 67 f6 71 a4 fd b0 2f d4 1b 1e 48 48 4f c0 2c d5 4b>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer 15 30 64 96 8a a3 9a fe 8d 6e 8f bd 15 66 36 b9 a6 a1 5b 59 c7 2e bb 1a 22 32 f8 11 c1 e4 17 e8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 f7 95 28 c8 db c2 27 ed 88 4c 88 b5 72 fa b8 3b 04 06 f4 26 b9 2f 62 39 ba f9 ed 87 0d bb 93 10>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791599767532,
+    created: 1791599767532,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 f7 95 28 c8 db c2 27 ed 88 4c 88 b5 72 fa b8 3b 04 06 f4 26 b9 2f 62 39 ba f9 ed 87 0d bb 93 10>,
+    preKeyId: 2098211
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    BfbLlOatlq32ZpBxNQqdfnGXUJnsSgxVu6pIn1KVFoRe: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Be9h9Hfem56AaCk7Lp1Cwn3QedXTQbtx5h/5wWQvfwh4': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 ef 61 f4 77 de 9b 9e 80 68 29 3b 2e 9d 42 c2 7d d0 79 d5 d3 41 bb 71 e6 1f f9 c1 64 2f 7f 08 78>,
+      privKey: <Buffer 40 a0 6f 29 1a de 96 de a6 78 cb cd 63 ea 10 57 10 0f 61 7d 2f 32 c5 08 8a 6e 8d f5 f1 bb 97 44>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 f6 cb 94 e6 ad 96 ad f6 66 90 71 35 0a 9d 7e 71 97 50 99 ec 4a 0c 55 bb aa 48 9f 52 95 16 84 5e>,
+    previousCounter: 1,
+    rootKey: <Buffer 3f 84 54 f2 a9 72 3c ab d3 57 ff a9 61 a0 53 1c 24 3d 9c fb e0 71 cd 24 d7 db 99 06 47 2b 38 f8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 91 08 b9 4a cd ac c4 58 17 07 cf 2c 2d 54 44 74 1f dd 56 35 20 d8 4b a4 84 ea 2f 9e 3b 15 fd 4a>,
+    baseKeyType: 1,
+    closed: 1791383222194,
+    used: 1791382527702,
+    created: 1791381347354,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0406E8542D651231A7F)
+[WA Bridge] ⚡ cmd 6289 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0626BCFFFD196F65700)
+[WA Bridge] 💻 cmd output 6290 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08C3E684EFBD2B0BF87)
+[WA Bridge] 🧠 thinking 6292 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04956721EAC35094E90)
+[WA Bridge] ⚡ cmd 6292 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AFBDA4E04032CC4EF2)
+[WA Bridge] 💻 cmd output 6293 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+Oracle `agy:0`-এর জন্য কঠোরভাবে সীমাবদ্ধ (Strictly Scoped) সংশোধনী টাস্কের নির্দেশ গৃহীত হয়েছে। 
+
+আমি সম্পূর্ণ প্রস্তুত আছি। আপনার সুনির্দিষ্ট সংশোধনের বিবরণ, লক্ষ্য এবং নির্দেশনা প্রদান করুন; আমি তা নির্ভুলভাবে সম্পাদন করব।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৮:৩৬ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04945015A6871951A80)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C2001A9772D42F056F)
+[WA Bridge] 🧠 thinking 6295 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6295)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2768
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FA48F9110BE0F0FF5B)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB02C9EE8D038A113DEE1, seq: 689): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
