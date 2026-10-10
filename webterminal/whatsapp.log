@@ -28217,3 +28217,322 @@ Closing session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363366858730929@g.us 136791050973354@lid
 [WA Bridge] Ignored message from other sender: 120363378039870251@g.us 136791050973354@lid
 [WA Bridge] Ignored message from other sender: 120363421520495622@g.us 216845130965081@lid
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A32A700DF2DAD98D93)
+Closing session: SessionEntry {
+  _chains: {
+    'BTS7l1skk8DawBGa2N60B9GFOqOCPtJgN0T+RfYSID4v': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQS5JAhB9c5Y65n5erj6P87k/3mFgP/qqdHkpvHJvLgU': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTn7QeUBa/hpQdI+MZNcQxlg1V/O/V9ePdRa1uYPy0U8': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUWJ/4lRaTv8hqorCjS6G67B6McUZ37DOLbiRlSvfPw7': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 45 89 ff 89 51 69 3b fc 86 aa 2b 0a 34 ba 1b ae c1 e8 c7 14 67 7e c3 38 b6 e2 46 54 af 7c fc 3b>,
+      privKey: <Buffer 70 68 b4 d4 5d 0b d8 74 f8 d4 a6 43 30 a1 1d 81 b1 92 17 d4 e0 05 37 83 eb 50 e1 02 af 14 b2 67>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 39 fb 41 e5 01 6b f8 69 41 d2 3e 31 93 5c 43 19 60 d5 5f ce fd 5f 5e 3d d4 5a d6 e6 0f cb 45 3c>,
+    previousCounter: 0,
+    rootKey: <Buffer 5a 16 14 c7 52 4f c5 a6 f6 e6 dc 26 eb 03 a1 14 77 ac 9b cd 95 2b 87 f6 f5 2e 7c 7b 70 f4 f2 b0>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 6e af d9 be 0a 4d 1f 06 c2 ca a3 70 42 00 72 7c 8e d0 8a b0 f5 84 be 26 be d5 b2 c7 21 c3 af 23>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791609381382,
+    created: 1791599768458,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BVEaJc1BH0gjpJ+MyyiuX2IDyHWi5Wgh0vhuBeo5QANL': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 51 1a 25 cd 41 1f 48 23 a4 9f 8c cb 28 ae 5f 62 03 c8 75 a2 e5 68 21 d2 f8 6e 05 ea 39 40 03 4b>,
+      privKey: <Buffer d8 25 f5 ad ee d6 14 57 93 f4 34 29 5a 01 51 ef 37 27 7e e2 b3 69 58 eb 85 7c f8 84 d6 81 d5 59>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer ff a1 88 7b a0 1d 39 7c e4 03 17 d7 d2 c3 93 e6 7b e9 c7 3a 31 5c 6e 77 32 8b 84 9b f2 8d e5 5d>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 9b 7e 09 9b cc 21 28 29 b5 ec 68 aa 86 a5 26 28 b5 3c aa 73 fb 9a 5f e7 54 7b 0d 99 68 42 dd 29>,
+    baseKeyType: 1,
+    closed: 1791383222954,
+    used: 1791383222193,
+    created: 1791383222193,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 9b 7e 09 9b cc 21 28 29 b5 ec 68 aa 86 a5 26 28 b5 3c aa 73 fb 9a 5f e7 54 7b 0d 99 68 42 dd 29>,
+    preKeyId: 2097972
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BbDQ/taTvZ96GxVMTeTZEz59FNCqZWkgylX5vy89ZFMk': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BSnDLNekJe767bJX89cvat0JKO1bBtQRSy2oRU3YUDwx: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 29 c3 2c d7 a4 25 ee fa ed b2 57 f3 d7 2f 6a dd 09 28 ed 5b 06 d4 11 4b 2d a8 45 4d d8 50 3c 31>,
+      privKey: <Buffer b0 b1 06 2c eb ff 4f 34 1b 98 c2 b4 4e d1 54 4d fe 77 5a fd d5 bc 0c 0b ff 29 52 17 64 ee 9c 54>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b0 d0 fe d6 93 bd 9f 7a 1b 15 4c 4d e4 d9 13 3e 7d 14 d0 aa 65 69 20 ca 55 f9 bf 2f 3d 64 53 24>,
+    previousCounter: 2,
+    rootKey: <Buffer b6 ca 33 35 55 a2 c0 f3 c6 60 b7 97 9d 72 bc b1 c8 10 a2 94 8f 39 30 fc 4d 9e 9e ba 30 4e 94 55>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 3e 78 2d 92 51 ce 5c ad 10 49 15 32 d7 93 61 bf e7 23 9f f4 d5 fc 46 a3 a2 91 26 df 55 2d 8a 30>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791599776372,
+    created: 1791599768306,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BQRX2PCb3vn7iqgF0VeA1ous6q+XKp5MYjJLmGZrJc8X': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BQbJwyIbgEJprX2ZwMNjHkd+RnZ4ozzPyo7QUY3TCDMk': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 06 c9 c3 22 1b 80 42 69 ad 7d 99 c0 c3 63 1e 47 7e 46 76 78 a3 3c cf ca 8e d0 51 8d d3 08 33 24>,
+      privKey: <Buffer 88 92 a9 cf 85 74 bc 1f fb 88 77 de b3 64 3a 91 e0 14 e2 7f 22 92 41 f3 46 58 35 5d ba 76 e7 50>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 04 57 d8 f0 9b de f9 fb 8a a8 05 d1 57 80 d6 8b ac ea af 97 2a 9e 4c 62 32 4b 98 66 6b 25 cf 17>,
+    previousCounter: 1,
+    rootKey: <Buffer 13 6d 65 bf 03 21 9a 98 42 96 07 e5 69 f9 ce d4 f5 c7 17 32 2d 86 e9 10 31 a2 74 b8 1a 49 81 12>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 b0 9d 5b c8 07 d6 90 9f 27 bc e6 0c 14 17 41 a7 52 a8 fe e6 ce 82 28 59 f8 35 55 df b0 6f ff 6a>,
+    baseKeyType: 1,
+    closed: 1791567301483,
+    used: 1791567301227,
+    created: 1791567301227,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 b0 9d 5b c8 07 d6 90 9f 27 bc e6 0c 14 17 41 a7 52 a8 fe e6 ce 82 28 59 f8 35 55 df b0 6f ff 6a>,
+    preKeyId: 426
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BZt7dwZProZAjP/r+/vcCELGnzTay++RHuG79aHjEwcH': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 9b 7b 77 06 4f ae 86 40 8c ff eb fb fb dc 08 42 c6 9f 34 da cb ef 91 1e e1 bb f5 a1 e3 13 07 07>,
+      privKey: <Buffer 10 fc a6 4f 04 b6 9c 63 2c 86 a4 c7 f9 61 3c 01 d7 82 eb 55 38 29 d9 62 97 f1 ed df 39 b7 45 76>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 36 40 e0 25 c9 28 61 a0 50 de 23 d4 ac c5 97 be 30 f2 34 78 a4 0d f7 33 0d 3e a1 e2 a6 c0 1b 47>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 b1 e6 62 31 65 6d 24 90 6c 14 a5 ee 0f 3c c3 b4 31 b3 7d d5 b4 7d 0e ca ca f4 55 da 7c 2d 67 34>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791609382878,
+    created: 1791609382878,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 b1 e6 62 31 65 6d 24 90 6c 14 a5 ee 0f 3c c3 b4 31 b3 7d d5 b4 7d 0e ca ca f4 55 da 7c 2d 67 34>,
+    preKeyId: 545
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BQRX2PCb3vn7iqgF0VeA1ous6q+XKp5MYjJLmGZrJc8X': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BfHHPm4+DedZnEwkYzKnt1ET9VKRjDMs7DIzR78JKVAv': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 f1 c7 3e 6e 3e 0d e7 59 9c 4c 24 63 32 a7 b7 51 13 f5 52 91 8c 33 2c ec 32 33 47 bf 09 29 50 2f>,
+      privKey: <Buffer c0 e3 a3 a0 0c dc 06 85 a9 16 50 ac 61 ff 72 7f 36 d7 3b db c9 ad 49 e3 f4 3b 15 6f f2 09 ee 41>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 04 57 d8 f0 9b de f9 fb 8a a8 05 d1 57 80 d6 8b ac ea af 97 2a 9e 4c 62 32 4b 98 66 6b 25 cf 17>,
+    previousCounter: 3,
+    rootKey: <Buffer 68 99 aa 93 88 03 50 c0 a4 1d 3b cb 7b 9d b5 d8 c7 6e 22 c1 4d 0e 27 01 23 4c 09 f9 3b c5 fb ad>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 30 21 e8 6c 9e f6 e8 3a e5 f9 15 2b cc 1b 51 76 31 67 06 34 72 f3 d8 b0 7f 01 99 3c d4 63 b4 70>,
+    baseKeyType: 1,
+    closed: 1791567301706,
+    used: 1791567301480,
+    created: 1791567301480,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 30 21 e8 6c 9e f6 e8 3a e5 f9 15 2b cc 1b 51 76 31 67 06 34 72 f3 d8 b0 7f 01 99 3c d4 63 b4 70>,
+    preKeyId: 427
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'Bd9wqwIOseaAU+NV2YohYJF1D+pab9aY+/Tx4wO1rgp+': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 df 70 ab 02 0e b1 e6 80 53 e3 55 d9 8a 21 60 91 75 0f ea 5a 6f d6 98 fb f4 f1 e3 03 b5 ae 0a 7e>,
+      privKey: <Buffer 28 d1 a8 0b 36 d4 90 23 67 cb 3e a9 07 dc ce 18 e0 ed 50 26 a4 34 6f d8 38 ea 49 ea d8 eb 8e 79>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b3 dc 6e 9a 10 40 82 a2 74 c7 f6 a9 cc b1 99 7a 1c 2e b0 95 b5 13 18 e9 22 35 89 c8 de 1d 7a 48>,
+    previousCounter: 0,
+    rootKey: <Buffer d2 69 5a 81 8a b3 76 c4 91 33 0c 6e e7 97 9b d2 c4 cb a1 c8 ea eb 75 f6 55 56 ff e9 ef 34 49 02>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 be 11 7c b9 89 34 04 6b 5f a0 31 3e 85 af 35 1e 04 d1 e9 02 38 ab ac 07 e6 9c 37 61 9d 41 94 30>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791609382376,
+    created: 1791609382376,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  },
+  pendingPreKey: {
+    signedKeyId: 13843617,
+    baseKey: <Buffer 05 be 11 7c b9 89 34 04 6b 5f a0 31 3e 85 af 35 1e 04 d1 e9 02 38 ab ac 07 e6 9c 37 61 9d 41 94 30>,
+    preKeyId: 2098229
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    Bf9DkTlRtrNsUqd7Y6Qly1ivTTUM1yp8XJYkY7BbgZ5h: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTnVJe2ck4+GdOnzRaOct8K/v0ro/MS4TUfXJDJ0UO5/': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BdcMSydC8cx8BYLNg575Ljif52Ke8swk+7DkeGgNlWcQ': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BW74mFVISICvOPLeK0TcxKID6GF0XUF83zxtO+jqRBo0': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUwwqJlh816oVp3aR51ewLvOwyfeTt1yFVjBiM+wyLdy': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXkiv0WhPrY6nCFaqBiM2BrYfj4spJqV5/CvKrK/k5w6': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BbezBMRhlMt5xzhpccjqZ/W0Hfw/yzw0WA4Xh6gD7/Yh': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BeKVIBXG03oOOTqdmcujp8A2xQbU9uBsJL8mZyU4D+g4': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 9692120,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 e2 95 20 15 c6 d3 7a 0e 39 3a 9d 99 cb a3 a7 c0 36 c5 06 d4 f6 e0 6c 24 bf 26 67 25 38 0f e8 38>,
+      privKey: <Buffer c8 a9 4a 74 be e5 b9 11 7b 30 42 4d eb 69 9d 8d 9e 8a a3 e7 76 4c d6 2a 94 3f 78 53 ba 0d 0f 5a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 b7 b3 04 c4 61 94 cb 79 c7 38 69 71 c8 ea 67 f5 b4 1d fc 3f cb 3c 34 58 0e 17 87 a8 03 ef f6 21>,
+    previousCounter: 88,
+    rootKey: <Buffer aa d8 76 92 53 40 c8 e7 a9 84 2f 0e 77 e8 f5 a7 e7 2d 01 dc 1a d6 6f ae 76 9a 77 e7 58 86 01 fd>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a4 fe 1c 5d 16 0c 3b 3c 4d 08 86 a2 a8 78 9c 53 ae 95 d1 0d 3a 93 fb ec 70 a7 f4 ab 41 0d c1 46>,
+    baseKeyType: 1,
+    closed: 1791391924574,
+    used: 1791389542256,
+    created: 1791383222952,
+    remoteIdentityKey: <Buffer 05 3b 72 3c 49 81 68 d1 87 af 44 07 3a 0f cd 55 3d 88 1d 9f 42 8e e1 fe 20 c9 30 e9 d4 0b 21 26 2b>
+  }
+}
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB031D58A1F8FEAF6010F)
+[WA Bridge] ⚡ cmd 6589 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00BEF6AA77B4E1506CF)
+[WA Bridge] 💻 cmd output 6590 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6592)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 175
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00C2C721782B5F5839D)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D227720FF341BCB20A)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0B87C57BB0D4CE6EF98, seq: 782): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EB6B6DE014713372F4)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -E \"node|python|webterminal\" | grep -v grep`
+> 🎯 _"Checking active runtime processes"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0545161383B368BA937)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB091C6F67C307DFDEF92)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DD9182BCFB36C2E433)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CBF92046B4E2610745)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB090627343843B4F36CD)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08BAB3BB28D58F5EB64)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB014A78454C4FE7D9CF5)
+[WA Bridge] ⚡ cmd 6595 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01EC569AD33E5C628F4)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0147A032BAA0E536A56)
+[WA Bridge] 💻 cmd output 6596 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D41CF32168AE1ADE63)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D6698FD3E15A6949DA)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B68403B518C196B0C6)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -in \"azure\" /home/opc/live_preview/server.py 2>/dev/null || true`
+> 🎯 _"Checking azure in live_preview/server.py"_
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
