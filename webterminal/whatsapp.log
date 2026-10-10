@@ -35683,3 +35683,27 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 7643 (agy:0)
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0DC661AD9CEED3C33BC)
 [WA Bridge] 💻 cmd output 7644 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ tail -n 50 /home/opc/.webterminal/whatsapp.log || true`
+> 🎯 _"Checking whatsapp.log"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E19B6C0422A1808664)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB09395BD4F89520D7B3B)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB02FF24CAF6878555D2E)
+[WA Bridge] ⚡ cmd 7646 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0A1A4F8291F051F269A)
+[WA Bridge] 💻 cmd output 7647 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Checking isBotOutput function"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0C942BF8509B73A6F5B)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB04D8F85D4F7FC2D1EFE)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B16D386E08A3BE7242)
+[WA Bridge] 🧠 thinking 7649 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB03F43BCAD72E6D99A53)
+[WA Bridge] ⚡ cmd 7649 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB08FFF6E9F41E20C1CB8)
+[WA Bridge] 💻 cmd output 7650 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
