@@ -28010,3 +28010,27 @@ SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
 [WA Bridge] Ignored message from other sender: 120363345202211514@g.us 9660153225444@lid
 [WA Bridge] Ignored message from other sender: 120363421520495622@g.us 124399533453360@lid
 [WA Bridge] Ignored message from other sender: 120363421520495622@g.us 124399533453360@lid
+Closing session: SessionEntry {
+  _chains: {
+    'BdUHokbOsMO4SNcfpY7Ft2oNRcqzz9sfxtrc0pY+D0Ze': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTFLzCpsO+lE4swZm2quyvfICP3ASvfhijn7ECpxYg5E': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 2123527823,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 31 4b cc 2a 6c 3b e9 44 e2 cc 19 9b 6a ae ca f7 c8 08 fd c0 4a f7 e1 8a 39 fb 10 2a 71 62 0e 44>,
+      privKey: <Buffer c0 07 8d fc 67 e4 60 7c 71 cb b6 53 a7 0c c6 b9 4e 7e de 36 5a 66 f6 a7 ef 68 2a 15 24 9a bd 4a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 d5 07 a2 46 ce b0 c3 b8 48 d7 1f a5 8e c5 b7 6a 0d 45 ca b3 cf db 1f c6 da dc d2 96 3e 0f 46 5e>,
+    previousCounter: 0,
+    rootKey: <Buffer 9c e6 d4 e7 d7 c8 5b 7b b4 b2 71 dd 64 63 09 04 36 80 10 9b 3e fe 90 f2 13 3e bf 56 f1 a8 61 1f>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 28 66 3f 94 6e c1 a9 2c c8 6c 34 46 2b fb 19 98 ba 09 9b a7 6f 70 0c d3 6d 1e 0d a2 fa 5e d6 02>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791000121782,
+    created: 1791000121782,
+    remoteIdentityKey: <Buffer 05 cf 43 f5 07 84 ff 10 6b f6 06 dc 06 37 85 46 43 20 97 86 97 c6 69 42 74 f6 8a 46 70 37 06 d1 69>
+  }
+}
