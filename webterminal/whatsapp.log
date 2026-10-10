@@ -35707,3 +35707,21 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 💻 cmd output 7650 (agy:0)
 [WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
 [WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · কোড এডিট/ফাইল]*: `whatsapp_bridge.js`
+> 🎯 _"Updating isBotOutput"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB078936DC669777C2BCE)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0D2EBEB447E3673EFB6)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ systemctl --user status agy-whatsapp.service --no-pager`
+> 🎯 _"Checking bridge status"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0D74B34EDD83D2C2AA1)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0693CE2839DA0284D59)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ journalctl --user-unit=agy-whatsapp.service -n 20 --no-pager`
+> 🎯 _"Reading recent logs"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB094FDDE33E7173DCB06)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CC755CE3F0D40C92DC)
