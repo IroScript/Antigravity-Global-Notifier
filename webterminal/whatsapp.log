@@ -27315,3 +27315,109 @@ Oracle `agy:0`-এর জন্য কঠোরভাবে সীমাবদ�
 [WA Bridge] ⚡ cmd 6367 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A99BE0791E72362831)
 [WA Bridge] 💻 cmd output 6368 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6370)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2530
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F2F6D3EABBEFB3B87F)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB09D74873A63B8D3DEB0, seq: 707): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+আপনার সুনির্দিষ্ট নির্দেশনাবলী অনুযায়ী **Oracle `agy:0`** এবং `/home/opc/.webterminal/`-এর ওপর পরিচালিত পুঙ্খানুপুঙ্খ অডিট ও ভেরিফিকেশন রিপোর্ট নিচে উপস্থাপন করা হলো:
+
+---
+
+### 1. ORACLE WEBTERMINAL AZURE REFERENCES FOUND
+
+`/home/opc/.webterminal/` ডিরেক্টরি এবং সংশ্লিষ্ট কনফিগারেশনে প্রাপ্ত রেফারেন্সের অডিট:
+
+| ফাইল (File) | লাইন / ফাংশন (Line/Function) | রেফারেন্স (Reference) | প্রকৃতি (Historical vs Executable) | শ্রেণিবিভাগ (Classification) |
+| :--- | :--- | :--- | :--- | :--- |
+| `/home/opc/.webterminal/whatsapp.log` | Line 9 | `[Oracle Bridge] 📩 User prompt in group: "Delete azure codes"` | **Historical** (লগ ফাইল) | **B** (ইউজারের নিজস্ব কমান্ড হিস্ট্রি — কোনো এক্সিকিউটেবল কোড নয়) |
+| `/home/opc/.webterminal/incoming_prompt.txt` | Lines 127–133, 336 | `azure`, `azureuser`, `/home/azureuser`, `FatehAli`, `FatehAli2`, `ssh azure`, `Host azure` | **Historical / Buffer** (বর্তমান প্রম্পট বাফার) | **B** (ইউজার ইনপুটের বাফার টেক্সট — কোনো এক্সিকিউটেবল কোড নয়) |
+| `/home/opc/.webterminal/whatsapp_bridge.js` | সম্পূর্ণ ফাইল | কোনো Azure রেফারেন্স নেই (0 matches) | **N/A** | **B** (খাঁটি Oracle-লোকাল আর্কিটেকচার) |
+| `/home/opc/.webterminal/init_agy_sessions.sh` | সম্পূর্ণ ফাইল | কোনো Azure রেফারেন্স নেই | **N/A** | **B** (লোকা
+<truncated 2576 bytes>
+E (/home/opc/.webterminal/whatsapp_bridge.js)
+                  ↓
+LOCAL Oracle agy:0 (tmux paste-buffer -b oracle_cmd_* -t agy:0)
+                  ↓
+LOCAL AGY RESPONSE (~/.gemini/antigravity-cli/brain/.../transcript.jsonl)
+                  ↓
+SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
+```
+
+- সমস্ত যোগাযোগ স্থানীয় লিনাক্স সকেট এবং লোকাল ফাইলসিস্টেমের মধ্যে সীমাবদ্ধ।
+- কোনো রিমোট SSH বা বাহ্যিক নেটওয়ার্কিং নেই।
+
+---
+
+### 6. ROUTING MATRIX
+
+| ইনপুট ইভেন্ট (Input Event) | প্রত্যাশিত আচরণ (Expected) | বর্তমান কোড আচরণ (Actual Verification) | স্ট্যাটাস |
+| :--- | :--- | :--- | :--- |
+| **Oracle authorized group** (`120363432847992277@g.us`) | LOCAL `agy:0` | লোকাল `agy:0`-তে ডিসপ্যাচ হয় (Line 76) | **PASS** |
+| **Azure group** (`remoteJid !== TARGET_GROUP_ID`) | BLOCKED | তাৎক্ষণিকভাবে ড্রপ হয় (Line 229: `continue`) | **PASS** |
+| **Unknown group** (মালিকের নম্বর হলেও) | BLOCKED | গ্রুপ আইডি চেক সর্বাগ্রে থাকায় ড্রপ হয় (Line 229) | **PASS** |
+| **Bridge's own output** | NOT REPROCESSED | `sentMessageIds`, `processedMessageIds` এবং `isBotOutput` গার্ড দ্বারা ড্রপ হয় | **PASS** |
+
+---
+
+### 7. SIDE-EFFECT AUDIT
+
+- **Credentials modified:** NO
+- **SSH config modified:** NO
+- **wa_auth intentionally modified:** NO
+- **tmux topology modified:** NO
+- **~/.agents modified:** NO
+- **projects modified:** NO
+- **Azure contacted:** NO
+
+---
+
+### 8. FILES ACTUALLY MODIFIED
+
+**NONE**
+
+---
+
+### 9. SERVICES ACTUALLY RESTARTED
+
+**NONE**
+
+---
+
+### 10. FINAL VERDICT
+
+**`CLEAN — NO ACTIVE AZURE DEPENDENCY`**
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৮:৩৭ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A694356B0D4590B548)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08F99CC17AC37F55C5B)
+[WA Bridge] ⚡ cmd 6373 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F0C8FD974AD02E130D)
+[WA Bridge] 💻 cmd output 6374 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0658E6B19A2786B873A, seq: 708): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0CF5969688410CC0062)
+[WA Bridge] 👁️ view 6376 (agy:0)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB078440A1EEF75447C5B)
+[WA Bridge] ⚡ cmd 6379 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08EC5659C4C005D3CFB)
+[WA Bridge] 💻 cmd output 6380 (agy:0)
