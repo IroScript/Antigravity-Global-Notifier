@@ -34491,3 +34491,5 @@ Closing session: SessionEntry {
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0453C0F535AD019C39E)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A94FCC02D3F92E817F)
+[WA Bridge] Ignored message from other sender: 120363400568877928@g.us 108225156378795@lid
+[WA Bridge] Ignored message from other sender: 120363401208934906@g.us 102143600128247@lid
