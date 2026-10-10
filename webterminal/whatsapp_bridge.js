@@ -2636,7 +2636,7 @@ async function startBridge() {
         const masterPrompt = text.replace(/^(\/master|\/agy0|\/admin)\s*/i, '').trim();
         lastUserMsgByWindow['agy:0'] = msg;
         lastUserMsgKeyByWindow['agy:0'] = msg.key;
-        dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${masterPrompt}`, 'agy:0');
+        dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${masterPrompt}`, 'agy:0', msgId, { sender, msg, origin: 'HUMAN_VERIFIED' }, provenanceData);
         await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n👑 *[AGY MASTER ORCHESTRATOR · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${masterPrompt.substring(0, 80)}"\n\n⚡ _টার্মিনাল সেশন (tmux agy:0) কাজ শুরু করেছে..._\n══════════════════════`, { to: sender });
         continue;
       }
@@ -2646,7 +2646,7 @@ async function startBridge() {
         const frappePrompt = text.replace(/^(\/frappe|frappe:)\s*/i, '').trim();
         lastUserMsgByWindow['agy:frappe'] = msg;
         lastUserMsgKeyByWindow['agy:frappe'] = msg.key;
-        dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${frappePrompt}`, 'agy:frappe');
+        dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${frappePrompt}`, 'agy:frappe', msgId, { sender, msg, origin: 'HUMAN_VERIFIED' }, provenanceData);
         await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n🏢 *[AGY · Frappe ERP Alco · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${frappePrompt.substring(0, 80)}"\n\n⚡ _টার্মিনাল সেশন (tmux agy:frappe) কাজ শুরু করেছে..._\n══════════════════════`, { to: sender });
         continue;
       }
@@ -2659,7 +2659,7 @@ async function startBridge() {
           lastUserMsgByWindow['agy:research'] = msg;
           lastUserMsgKeyByWindow['agy:research'] = msg.key;
           const promptToSend = isResearchCmd ? `/research ${BANGLA_MANDATE_INSTRUCTION} ${topic}` : `${BANGLA_MANDATE_INSTRUCTION} ${topic}`;
-          dispatchToTmux(promptToSend, 'agy:research');
+          dispatchToTmux(promptToSend, 'agy:research', msgId, { sender, msg, origin: 'HUMAN_VERIFIED' }, provenanceData);
           if (isResearchCmd) {
             await sendWhatsAppMessage(`🔬 ══════════════════════ 🔬\n🤖 *[ASK & RESEARCH AGENT · গবেষণা শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📌 *বিষয়:* "${topic.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/Ask-And-Research-Agent\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:research) গবেষণা ও ডসিয়ার প্রস্তুত করছে..._\n══════════════════════`, { to: sender });
           } else {
@@ -2675,7 +2675,7 @@ async function startBridge() {
         if (codexPrompt) {
           lastUserMsgByWindow['agy:codex'] = msg;
           lastUserMsgKeyByWindow['agy:codex'] = msg.key;
-          dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${codexPrompt}`, 'agy:codex');
+          dispatchToTmux(`${BANGLA_MANDATE_INSTRUCTION} ${codexPrompt}`, 'agy:codex', msgId, { sender, msg, origin: 'HUMAN_VERIFIED' }, provenanceData);
           await sendWhatsAppMessage(`🤖 ══════════════════════ 🤖\n👑 *[OPENAI CODEX · প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *নির্দেশনা:* "${codexPrompt.substring(0, 80)}"\n> 📁 *লোকেশন:* \`IroScript_Projects/OpenAI_Codex\`\n\n⚡ _টার্মিনাল সেশন (tmux agy:codex) কোড ও টাস্ক প্রসেস করছে..._\n══════════════════════`, { to: sender });
           continue;
         }
@@ -2728,7 +2728,9 @@ async function startBridge() {
             isDocument: isDocument,
             caption: text,
             sender: sender,
-            msg: msg
+            msg: msg,
+            msgId: msgId,
+            provenance: provenanceData
           });
 
           // Debounce: wait 1500ms for other files in this batch
@@ -2774,7 +2776,7 @@ async function startBridge() {
       }
 
       // 1. Instant dispatch to tmux (zero delay, immediate millisecond execution)
-      dispatchToTmux(contextPrompt, targetWindow, msgId, { sender, msg });
+      dispatchToTmux(contextPrompt, targetWindow, msgId, { sender, msg, origin: 'HUMAN_VERIFIED' }, provenanceData);
 
       // 2. Send acknowledgment asynchronously without blocking prompt execution
       try {
