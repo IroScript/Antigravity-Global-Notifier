@@ -33613,3 +33613,5 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ✅ Processed outbox job: report_1791612148.json
 [WA Bridge] Ignored message from other sender: 120363400568877928@g.us 108225156378795@lid
 [WA Bridge] Ignored message from other sender: 120363354219673386@g.us 3574151032924@lid
+[WA Bridge] Ignored message from other sender: 120363320477752369@g.us 3574151032924@lid
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 3574151032924@lid
