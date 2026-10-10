@@ -1,24 +1,24 @@
 {
-  "timestamp": "2026-10-10T00:55:54Z",
-  "epoch": 1791593754,
+  "timestamp": "2026-10-10T00:56:59Z",
+  "epoch": 1791593819,
   "verdict": "HEALTHY_ALL_VECTORS_PASS",
   "recovery_action": "None required; all 5 operational vectors nominal.",
   "zero_restart_policy": "ENFORCED",
   "vectors": {
     "process_alive": true,
     "pid": 318878,
-    "process_uptime_sec": 38457,
-    "process_rss_kb": 224236,
+    "process_uptime_sec": 38522,
+    "process_rss_kb": 208620,
     "event_loop_responsive": true,
     "heartbeat_exists": true,
     "heartbeat_status": "ALIVE",
-    "heartbeat_age_sec": 6.5,
+    "heartbeat_age_sec": 11.45,
     "ws_connected": true,
-    "active_socket_count": 56,
+    "active_socket_count": 51,
     "auth_valid": true,
     "auth_registered": true,
     "auth_size_bytes": 7926,
-    "pending_queue_count": 0,
+    "pending_queue_count": 8,
     "latest_reply_age_sec": -1
   }
 }
