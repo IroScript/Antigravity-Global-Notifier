@@ -27985,3 +27985,20 @@ SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A1E58485758793FED7)
 [WA Bridge] 🧠 thinking 6580 (agy:0)
 [WA Bridge] 📤 Turn done for agy:0 (step 6580)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3891
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB099FDA3A7A0B1EC7D46)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04854BB31BE6BBAE224)
+[WA Bridge] 🧠 thinking 6583 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0192A775D7CEFF0F19B)
+[WA Bridge] ⚡ cmd 6583 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EEF6BF3998C7B23EA3)
+[WA Bridge] 💻 cmd output 6584 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6586)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 5098
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0357AC1516420D0E44F)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
