@@ -24418,3 +24418,63 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5844 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EA3074E0169405426E)
 [WA Bridge] 💻 cmd output 5845 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04BC2142E425A6E5C77)
+[WA Bridge] ⚡ cmd 5847 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB084DD85CA5740EB0859)
+[WA Bridge] 💻 cmd output 5848 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+আপনার নির্দেশ অনুযায়ী [Cloud_VM_Live_Preview](https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/Cloud_VM_Live_Preview)-এর হুবহু আর্কিটেকচার অনুযায়ী **Oracle 8 CPU 64 RAM** সার্ভারের জন্য ডেডিকেটেড **Windows 11 লাইভ ফাইল এক্সপ্লোরার** এবং **৮ কোর সিপিইউ/রিসোর্স লাইভ মনিটর** সম্পূর্ণ কনফিগার করে চালু করা হয়েছে।
+
+---
+
+### 🌐 ওরাকল লাইভ অ্যাক্সেস লিঙ্কসমূহ (Oracle Live Pinned Links)
+
+নিচের সুরক্ষিত ক্লাউডফ্লেয়ার টানেল লিঙ্কগুলোর মাধ্যমে সরাসরি এই ওরাকল সার্ভার লাইভ পর্যবেক্ষণ করতে পারেন:
+
+- 🖥️ **File Explorer & Web Dashboard (ফাইল ভিউয়ার ও ব্রাউজার):**  
+  👉 **[https://spot-fields-barely-provides.trycloudflare.com/](https://spot-fields-barely-provides.trycloudflare.com/)**  
+  *(এখানে ক্লিক করে ড্রাইভ C: রুট ও ড্রাইভ D: ওরাকল হোম ব্রাউজ, ফাইল কন্টেন্ট ভিউ এবং ডাউনলোড করতে পারবেন)*
+
+- 📈 **Dedicated 8 CPU & RAM Resource Monitor (লাইভ গ্রাফ ও মেট্রিক্স):**  
+  👉 **[https://spot-fields-barely-provides.trycloudflare.com/monitor](https://spot-fields-barely-provides.trycloudflare.com/monitor)**  
+  *(৮টি কোর, র৵াম, সোয়াপ এবং শীর্ষ ব্যাকগ্রাউন্ড প্রসেসগুলোর লাইভ গ্রাফিক্যাল চার্ট ও ইতিহাস)*
+
+---
+
+### ⚙️ সিস্টেমে যা যা বাস্তবায়ন করা হয়েছে:
+
+১. **ক্লাউডফ্লেয়ার টানেল ইন্টিগ্রেশন:**
+   - সার্ভারে `/usr/local/bin/cloudflared` ইনস্টল করা হয়েছে এবং লোকাল পোর্ট `8088`-এর সাথে সুরক্ষিত এসএসএল টানেল সংযুক্ত করা হয়েছে।
+
+২. **ওরাকল হার্ডওয়্যার ও পাথের জন্য অপ্টিমাইজেশন:**
+   - [server.py](file:///home/opc/live_preview/server.py) এবং [monitor.html](file:///home/opc/live_preview/monitor.html)-এ ওরাকল পাথ (`/home/opc`), SQLite ডাটাবেস মেট্রিক্স এবং ৮টি AMD EPYC কোরের ডায়নামিক সিপিইউ স্কেলিং সংযুক্ত করা হয়েছে।
+   - ভার্চুয়াল ড্রাইভ হিসেবে `Local Disk (C: OS Root)` এবং `Data Disk (D: Oracle Home)` কনফিগার করা হয়েছে।
+
+৩. **অবিচ্ছিন্ন ব্যাকগ্রাউন্ড সিস্টেমড সার্ভিস (Zero-Downtime Daemons):**
+   - `oracle-file-explorer.service`: ওয়েব সার্ভার ডেমন।
+   - `oracle-file-explorer-tunnel.service`: ক্লাউডফ্লেয়ার অটো-টানেল ডেমন।
+   - উভয় সার্ভিস `systemctl --user` মোডে সচল রয়েছে, ফলে রিবুট হলেও স্বয়ংক্রিয়ভাবে পুনরায় চালু থাকবে।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৭:১২ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D21F2716AFCBAEA016)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📤 Turn done for agy:0 (step 5850)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3876
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01AD0E3F485D9F04DD1)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB022D277F70B92D36694, seq: 477): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
