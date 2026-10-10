@@ -32277,3 +32277,61 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Fallback sent to 120363432847992277@g.us, msgId=3EB06EBF89E1142912F3D6
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+আপনার নির্দেশ অনুযায়ী বর্তমান **Oracle সার্ভারটিতে (`/home/opc`)** পুঙ্খানুপুঙ্খ অডিট সম্পন্ন করা হয়েছে যাতে কোনো Azure ক্রেডেনশিয়াল বা কনফিগারেশন অবশিষ্ট না থাকে।
+
+🔍 **ক্রেডেনশিয়াল অডিট ফলাফল:**
+
+১. **Azure CLI ও ডিরেক্টরি (`~/.azure`):** 
+   - সার্ভারে কোনো `~/.azure` ডিরেক্টরি বা Azure ক্লাউড অথেন্টিকেশন টোকেন বিদ্যমান নেই।
+
+২. **SSH ক্রেডেনশিয়ালস (`~/.ssh/`):** 
+   - `~/.ssh/`-এ কোনো Azure সম্পর্কিত প্রাইভেট কি, কনফিগ (`Host azure`), বা অ্যাক্সেস ক্রেডেনশিয়াল নেই।
+
+৩. **এনভায়রনমেন্ট ভেরিয়েবল ও শেল প্রোফাইল (`.bashrc`, `.bash_profile`):** 
+   - শেল বা সিস্টেমে কোনো `AZURE_` সম্পর্কিত সিক্রেট বা এনভায়রনমেন্ট ভেরিয়েবল নেই।
+
+৪. **ক্লাউড স্টোরেজ ও Rclone কনফিগ (`~/.config/rclone/`):** 
+   - কোনো Azure Blob বা রিমোট ক্রেডেনশিয়াল কনফিগারেশন ফাইল নেই।
+
+৫. **গিট ও সিক্রেট ফাইলস:** 
+   - `~/.git-credentials` বা অন্যান্য সিক্রেট ফাইলে কোনো Azure লগইন সংরক্ষিত নেই।
+
+---
+
+📌 **সারসংক্ষেপ:**
+এই **Oracle সার্ভারটি সম্পূর্ণ পরিচ্ছন্ন (Clean)** এবং এখানে মুছে ফেলার মতো কোনো ধরনের **Azure ক্রেডেনশিয়াল (Credentials), টোকেন বা সিক্রেট কি সংরক্ষিত নেই**। সিস্টেম সম্পূর্ণ নিরাপদ এবং নিজস্ব ওরাকল আর্কিটেকচারে সচল রয়েছে।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ১১:৫৭ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08030B3C0D87585C2B5)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB077FA91CDFB8343EC23)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+ব্যাকআপ ও কিউ নোটিফিকেশন গৃহীত হয়েছে। সিস্টেম সম্পূর্ণ সচল ও প্রস্তুত রয়েছে; আপনার পরবর্তী নির্দেশনার অপেক্ষায় আছি।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ১১:৫৭ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB003044E91283ADFD7B2)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FEB77C6843BECF7436)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
