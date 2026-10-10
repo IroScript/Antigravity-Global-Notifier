@@ -25711,3 +25711,7 @@ THIS IS ONLY A SURGICAL AZURE WEBTERMINAL / WHATSAPP ROUTING CORRECTION.
 [WA Bridge] Ignored message from other sender: 120363420075947938@g.us 174341983629546@lid
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0500D807FE50B76380B)
 [WA Bridge] ✅ Processed outbox job: report_1791599546.json
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB034B7C2C08F445F5B87)
