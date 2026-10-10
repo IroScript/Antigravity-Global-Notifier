@@ -2414,28 +2414,35 @@ async function startBridge() {
     for (const msg of messages) {
       if (!msg.message) continue;
       const msgId = msg.key.id;
-      if (!msgId || sentMessageIds.has(msgId) || processedIncomingMessageIds.has(msgId)) continue;
+
+      // ── TRUST MODEL: Explicit Provenance Classifier (All-or-Nothing Fail-Closed) ──
+      const { classification, dropReason } = classifyMessageProvenance(msg, sock);
+      if (classification !== 'HUMAN_VERIFIED') {
+        recordDroppedEvent(msg, classification, dropReason);
+        if (msgId) {
+          processedIncomingMessageIds.add(msgId);
+          saveProcessedMessageIds();
+        }
+        continue;
+      }
+
+      // Mark message as processed to prevent any duplicate/re-synced execution
+      processedIncomingMessageIds.add(msgId);
+      saveProcessedMessageIds();
 
       const sender = msg.key.remoteJid || '';
       const participant = msg.key.participant || msg.participant || '';
-      if (!isAllowedSender(sender, participant)) {
-        console.log('[WA Bridge] Ignored message from other sender:', sender, participant);
-        continue;
-      }
 
-      // Deduplicate strictly by message ID (Section 4 & Milestone 2: never drop messages by age)
-      if (processedIncomingMessageIds.has(msgId)) {
-        continue;
-      }
-
-      // 2. Meta AI & Bot Interception Filter:
-      // Exclude messages targeting Meta AI or third-party bots
-      const isMetaAiJid = sender.includes('13135550002') || sender.toLowerCase().includes('meta') || sender.includes('@bot') || sender.startsWith('0@s.whatsapp.net');
-      if (isMetaAiJid) {
-        console.log(`[WA Bridge] 🤖 [REJECTED META AI JID]: Message target is Meta AI (${sender}). Dropped.`);
-        processedIncomingMessageIds.add(msgId);
-        continue;
-      }
+      // Layer 5: Origin Propagation (Immutable Provenance Metadata)
+      const provenanceData = {
+        origin: 'HUMAN_VERIFIED',
+        message_id: msgId,
+        sender: sender,
+        participant: participant,
+        received_at: new Date().toISOString(),
+        source_group: sender.endsWith('@g.us') ? sender : null,
+        verification_result: 'HUMAN_VERIFIED'
+      };
 
       // Unwrap all message wrappers (documentWithCaptionMessage, ephemeralMessage, viewOnce)
       const unwrapped = unwrapMessage(msg.message);
@@ -2449,7 +2456,7 @@ async function startBridge() {
       const hasMetaAiMention = mentionedJids.some(jid => jid.includes('13135550002') || jid.toLowerCase().includes('meta'));
       if (hasMetaAiMention) {
         console.log(`[WA Bridge] 🤖 [REJECTED META AI MENTION]: Message mentions Meta AI (${mentionedJids.join(', ')}). Dropped.`);
-        processedIncomingMessageIds.add(msgId);
+        recordDroppedEvent(msg, 'BOT', 'Message mentions Meta AI');
         continue;
       }
 
@@ -2469,37 +2476,9 @@ async function startBridge() {
 
       if (text.toLowerCase().startsWith('@meta') || text.toLowerCase().startsWith('@meta ai')) {
         console.log(`[WA Bridge] 🤖 [REJECTED META AI PROMPT]: Message addresses Meta AI explicitly. Dropped.`);
-        processedIncomingMessageIds.add(msgId);
+        recordDroppedEvent(msg, 'BOT', 'Message addresses Meta AI explicitly');
         continue;
       }
-
-      // Filter out automated bot terminal logs, thoughts, file inspections, and echoed status cards
-      const cleanCheck = text.replace(/^[>\s]+/, '').trim();
-      const isBotTelemetry = (
-        text.startsWith('> ⚡ *[টার্মিনাল কমান্ড]*') ||
-        text.startsWith('> 🎯') ||
-        text.startsWith('> 👁️ *[ফাইল পরিদর্শন]*') ||
-        text.startsWith('> 📝 *[কোড এডিট') ||
-        text.startsWith('> 🧠 *[চিন্তাভাবনা]*') ||
-        text.startsWith('🤖 ══════════════════════ 🤖') ||
-        text.startsWith('🖥️ ══════════════════════ 🖥️') ||
-        text.startsWith('💻 ══════════════════════ 💻') ||
-        text.startsWith('⏳ ══════════════════════ ⏳') ||
-        cleanCheck.startsWith('⚡ *[টার্মিনাল কমান্ড]*') ||
-        cleanCheck.startsWith('👁️ *[ফাইল পরিদর্শন]*') ||
-        cleanCheck.startsWith('📝 *[কোড এডিট') ||
-        cleanCheck.startsWith('🧠 *[চিন্তাভাবনা]*') ||
-        cleanCheck.startsWith('🎯 _"')
-      );
-      if (isBotTelemetry) {
-        console.log(`[WA Bridge] 🤖 [REJECTED BOT TELEMETRY LOG]: Dropped echo message (${msgId}).`);
-        processedIncomingMessageIds.add(msgId);
-        continue;
-      }
-
-      // Mark message as processed to prevent any duplicate/re-synced execution
-      processedIncomingMessageIds.add(msgId);
-      saveProcessedMessageIds();
 
       console.log(`[WA Bridge] 📩 Message from Iraq bhai (${sender}):`, text || `[Media: ${isImage ? 'Image' : 'File'}]`);
       lastUserMsgKey = msg.key;
