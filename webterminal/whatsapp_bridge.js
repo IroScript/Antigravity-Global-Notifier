@@ -1688,52 +1688,19 @@ function getProjectGroupMap() {
 
 function isAllowedSender(sender, participant = '') {
   if (!sender) return false;
+  // Bot self identity must NEVER be accepted as human sender
+  if (isSelfIdentity(sender, participant)) return false;
+
   if (sender.endsWith('@g.us')) {
     const groups = getProjectGroupMap();
     const isOurGroup = Object.values(groups).some(g => g && g.id === sender);
-    const p = participant || '';
-    const isOwner = ALLOWED_NUMBERS.some(num => p.includes(num)) ||
-                    p.includes('82935919157317') || p.includes('8801955333555') || p.includes('8801966608406') || p.includes('206343935946909');
-    if (isOurGroup) {
-      if (isOwner) return true;
-      const meLid = sock?.authState?.creds?.me?.lid || '';
-      if (meLid) {
-        const cleanLid = meLid.split(':')[0].split('@')[0];
-        if (cleanLid && p.includes(cleanLid)) return true;
-      }
+    if (!isOurGroup) {
       return false;
     }
-    // ============================================================
-    // DISABLED: ORACLE CROSS-NODE WHATSAPP LOGIC
-    // Reason: Azure and Oracle are independent nodes.
-    // Unmapped external groups (e.g. Oracle VM group 120363432847992277@g.us)
-    // must NOT be authorized merely because participant is owner.
-    // Disabled on: 2026-10-10T01:30:00Z
-    // Original code preserved below for forensic/recovery purposes.
-    // ============================================================
-    /*
-    // Hardened fallback: if participant is authorized owner or YouTube group, accept
-    if (isOwner || sender === '120363430650656655@g.us') {
-      console.log(`[WA Bridge] 🔓 Authorized message accepted in group ${sender} (${p})`);
-      return true;
-    }
-    */
-    // Strict Inter-Agent Isolation: Only registered Azure project groups are accepted.
-    // Unmapped external groups (e.g. Oracle VM group 120363432847992277@g.us) are strictly rejected.
-    if (sender === '120363430650656655@g.us' && isOwner) {
-      return true;
-    }
-    console.log(`[WA Bridge] 🛑 [INTER-AGENT ISOLATION]: Rejected unmapped external group ${sender} (${p})`);
-    return false;
+    return isAuthorizedHumanSender(sender, participant);
   }
-  if (ALLOWED_NUMBERS.some(num => sender.includes(num))) return true;
-  const meLid = sock?.authState?.creds?.me?.lid || '';
-  if (meLid) {
-    const cleanLid = meLid.split(':')[0].split('@')[0];
-    if (cleanLid && sender.includes(cleanLid)) return true;
-  }
-  if (sender.includes('82935919157317') || sender.includes('8801955333555') || sender.includes('8801966608406') || sender.includes('206343935946909')) return true;
-  return false;
+
+  return isAuthorizedHumanSender(sender, participant);
 }
 
 async function sendWhatsAppMessage(text, options = {}) {
