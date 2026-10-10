@@ -24482,3 +24482,20 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5853 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A98978EBC815125294)
 [WA Bridge] 💻 cmd output 5854 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB046EA10AAF5E0F8A6E5)
+[WA Bridge] ⚡ cmd 5856 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F2113A7F09B03BD04E)
+[WA Bridge] 💻 cmd output 5857 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A2459C95D91514CC26)
+[WA Bridge] ⚡ cmd 5859 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C75C506A134720F080)
+[WA Bridge] 💻 cmd output 5860 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5862)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3697
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB023E2755D993FE22332)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB07265F9C92FF997EC5B, seq: 478): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
