@@ -28006,3 +28006,4 @@ SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
 [WA Bridge] Ignored message from other sender: 120363375813560592@g.us 237206849507456@lid
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0752C73678A10AEC286)
 [WA Bridge] ✅ Processed outbox job: report_1791601346.json
+[WA Bridge] Ignored message from other sender: 120363239910684526@g.us 61091866538186@lid
