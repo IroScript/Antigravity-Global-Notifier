@@ -34881,3 +34881,5 @@ CLEAN — NO ACTIVE AZURE DEPENDENCY
 [WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--13.json (26.0 KB) -> backed up
 [WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--8.json (37.9 KB) -> backed up
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 219752689578217@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0918D4A58BA80278F5F)
+[WA Bridge] ✅ Processed outbox job: report_1791633752.json
