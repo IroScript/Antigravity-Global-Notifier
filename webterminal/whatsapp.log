@@ -29780,3 +29780,23 @@ Contain the live loop, find the exact technical root cause, implement the minima
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB014C515B3BC1E1AAD58)
 [WA Bridge] 💻 cmd output 6805 (agy:0)
 [WA Bridge] 📤 Turn done for agy:0 (step 6807)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2831
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09237453D8890DFD470)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB04FF4336E0C32D750D8, seq: 824): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F7A72C9A25C1EA736F)
+[WA Bridge] ⚡ cmd 6810 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03D5FE92ACB985A31DC)
+[WA Bridge] 💻 cmd output 6811 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06C2B1181A4210B3A30)
+[WA Bridge] ⚡ cmd 6813 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B22C972B6828FC20AB)
+[WA Bridge] 💻 cmd output 6814 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01E4157031DF817ED2B)
+[WA Bridge] ⚡ cmd 6816 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB00E92CBC353107699C5)
+[WA Bridge] 💻 cmd output 6817 (agy:0)
