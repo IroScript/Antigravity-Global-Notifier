@@ -34695,3 +34695,9 @@ Execute autonomously within this strictly defined scope. Do not request routine 
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02E71A3A1094EFBF786)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09DE0C24FE06ED6F15D)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ echo \"=== 1. Checking /home/opc/live_preview ===\"\nfind /home/opc/live_preview -name \"*azure*\" 2>/dev/null\ngrep -rIn \"azure\" /home/opc/liv...`
+> 🎯 _"Running deep discovery scan"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D8B91B94C5D0B51188)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C2E0CC967C92B605CE)
