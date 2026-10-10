@@ -34601,3 +34601,91 @@ Closing session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 240085115080752@lid
 [WA Bridge] Ignored message from other sender: 120363320477752369@g.us 48800089514082@lid
 [WA Bridge] Ignored message from other sender: 120363200931828618@g.us 194270262763520@lid
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): CRITICAL — PERMANENT AZURE DATA PURGE FROM ORACLE VM3
+
+Execute a comprehensive, evidence-based, permanent removal of all Azure-related information from the LOCAL Oracle VM3 environment.
+
+1. ABSOLUTE SCOPE
+
+- Target: LOCAL ORACLE VM3 ONLY.
+- NEVER connect to Azure.
+- NEVER execute SSH commands against Azure.
+- NEVER modify, stop, restart, or delete anything on Azure.
+- Do not touch any other VM.
+- Do not delete unrelated Oracle projects, credentials, or configurations.
+
+2. DEEP DISCOVERY
+
+Inspect all relevant local locations for Azure-related information, including:
+
+- Azure credentials, tokens, SSH keys, and authentication references.
+- Azure IP addresses, hostnames, usernames, and connection strings.
+- Azure filesystem paths and mount references.
+- Azure-specific environment variables.
+- Azure-related configuration files.
+- WhatsApp Bridge mappings, routing, queues, and agent configurations.
+- tmux configuration and persistent session state.
+- systemd units, scripts, cron jobs, and automation hooks.
+- Local caches, temporary files, logs, and terminal history.
+- Local project documentation, manifests, and infrastructure inventories.
+- Azure-specific references in locally controlled Git repositories.
+
+Discover additional relevant locations rather than assuming this list is complete.
+
+3. PERMANENT REMOVAL
+
+For every confirmed Azure-specific item:
+
+1. Identify its exact location and purpose.
+2. Determine whether it is exclusively Azure-related or shared.
+3. Permanently remove Azure-exclusive local credentials, configuration, and connection information.
+4. For shared files, remove only Azure-specific entries while preserving unrelated functionality.
+5. Remove Azure-specific routing, pending messages, and persistent state without deleting unrelated messages.
+6. Remove locally stored Azure references from relevant caches and histories where safely possible.
+7. Prevent automatic regeneration or reintroduction of removed Azure information.
+
+Do not delete entire shared files, directories, repositories, or databases merely because they contain Azure references.
+
+Do not rewrite Git history, force-push, destroy backups, or delete forensic evidence outside the explicitly authorized local Azure-data scope.
+
+4. SAFETY AND VERIFICATION
+
+- Create an exact deletion inventory before execution.
+- Distinguish verified Azure-specific items from ambiguous matches.
+- Do not delete ambiguous or shared credentials without proving ownership.
+- Preserve Oracle VM3's operational functionality.
+- Validate configuration syntax and service dependencies after changes.
+- Perform independent post-deletion scans.
+- Check for remaining Azure references, active connections, routing entries, and regeneration mechanisms.
+- Test WhatsApp Bridge and affected local services without contacting Azure.
+- Report inaccessible, immutable, externally retained, or unrecoverable-to-purge copies honestly.
+- Never claim secure physical erasure of SSD/cloud storage without verifiable provider-level evidence.
+
+5. REQUIRED FINAL REPORT
+
+Provide:
+
+- Exact files and entries deleted.
+- Exact shared files modified.
+- Credentials removed.
+- Azure paths and references removed.
+- Services and configurations affected.
+- Evidence of successful functional tests.
+- Remaining Azure-related references, if any.
+- Items that could not safely be removed.
+- Evidence supporting every PASS or FAIL.
+
+Do not report "FULLY CLEAN" unless every in-scope, accessible Azure-specific item has been removed and independently verified.
+
+FINAL INVARIANT
+
+ORACLE VM3 MUST HAVE NO UNNECESSARY AZURE-SPECIFIC CREDENTIALS, CONNECTIONS, ROUTES, PATHS, OR STORED REFERENCES.
+
+AZURE VM ITSELF MUST REMAIN COMPLETELY UNTOUCHED.
+
+Execute autonomously within this strictly defined scope. Do not request routine user decisions. For ambiguous or potentially destructive operations affecting unrelated data, preserve the data and report the blocker instead of guessing.
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FCAC96A2E3D23C740D)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F6E5E670C3124C9103)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
