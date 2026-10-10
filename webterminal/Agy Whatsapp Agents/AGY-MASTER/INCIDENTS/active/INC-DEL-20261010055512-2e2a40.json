@@ -1,0 +1,13 @@
+{
+  "incident_id": "INC-DEL-20261010055512-2e2a40",
+  "timestamp": "2026-10-10T05:55:12.894288+00:00",
+  "severity": "CRITICAL",
+  "detector": "DELETE_GUARD_PRETOOLUSE",
+  "tool": "run_command",
+  "details": {
+    "CommandLine": "cat << 'EOF' > /tmp/tmux_wrapper.sh\n#!/bin/bash\n# High-Assurance Tmux Loop Guard Wrapper\n# Intercepts paste-buffer to prevent any recursive feedback echo from entering CLI windows\n\nis_paste=0\nfor arg in \"$@\"; do\n    if [ \"$arg\" = \"paste-buffer\" ]; then\n        is_paste=1\n        break\n    fi\ndone\n\nif [ \"$is_paste\" -eq 1 ]; then\n    buf_text=$(/usr/bin/tmux show-buffer 2>/dev/null || true)\n    if echo \"$buf_text\" | grep -qE \"\u256d\u2500 NEURAL RESPONSE \u2500\u256e|NODE  \u00b7 Oracle|NODE \u00b7 Oracle|> \u26a1 \\*\\[\u099f\u09be\u09b0\u09cd\u09ae\u09bf\u09a8\u09be\u09b2 \u0995\u09ae\u09be\u09a8\u09cd\u09a1\\]\\*|120363432847992277@g.us|SESSION DATA\"; then\n        /usr/bin/tmux delete-buffer 2>/dev/null || true\n        exit 0\n    fi\nfi\n\nexec /usr/bin/tmux \"$@\"\nEOF\nchmod +x /tmp/tmux_wrapper.sh\nsudo cp /tmp/tmux_wrapper.sh /usr/local/bin/tmux\nsudo chmod 755 /usr/local/bin/tmux\nls -l /usr/local/bin/tmux"
+  },
+  "decision": "DENIED",
+  "reason": "Destructive chmod on protected configuration is prohibited (Rule 15)",
+  "rule_id": "RULE_15_CHMOD_STRIP"
+}
