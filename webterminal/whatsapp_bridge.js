@@ -800,7 +800,7 @@ function getWindowForSender(sender) {
   return 'agy:0';
 }
 
-function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyContext = null) {
+function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyContext = null, provenance = null) {
   if (process.env.TASK_MODE === 'READ_ONLY') {
     console.error(`[WA Bridge] 🚫 POLICY_VIOLATION_READ_ONLY: terminal injection to ${targetWindow} forbidden in READ_ONLY mode`);
     return false;
@@ -809,6 +809,20 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   if (!cleanPrompt) return false;
 
   const mId = msgId || `wa_${Date.now()}`;
+
+  // LAYER 6 — FINAL CLI EXECUTION GATE (Hard programmatic boundary)
+  const jobOrigin = provenance?.origin || replyContext?.origin || null;
+  if (jobOrigin !== 'HUMAN_VERIFIED') {
+    console.error(`[WA Bridge] 🛑 EXECUTION_GATE_BLOCKED: Prompt ${mId} rejected. Origin must be HUMAN_VERIFIED, got: "${jobOrigin}"`);
+    recordDroppedEvent({ key: { id: mId, remoteJid: replyContext?.sender } }, 'UNKNOWN', `Final CLI execution gate rejected unverified origin: ${jobOrigin}`);
+    return false;
+  }
+
+  // Layer 7: Set active human execution context for causal recursion tracking
+  currentActiveHumanMsgId = mId;
+  if (!causalExecutionMap.has(mId)) {
+    causalExecutionMap.set(mId, new Set());
+  }
 
   // 1. Duplicate suppression
   if (msgId && deliveredMessageIds.has(msgId)) {
@@ -825,8 +839,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       project_uuid: gateCheck.project_uuid || targetWindow,
       target_window: targetWindow,
       prompt: cleanPrompt,
+      origin: 'HUMAN_VERIFIED',
+      provenance: provenance || { origin: 'HUMAN_VERIFIED' },
       status: 'HELD_FOR_ZIP',
-      reply_context: replyContext ? { sender: replyContext.sender } : null
+      reply_context: replyContext ? { sender: replyContext.sender, origin: 'HUMAN_VERIFIED' } : { origin: 'HUMAN_VERIFIED' }
     });
 
     const targetRecipient = (replyContext && replyContext.sender) || lastActiveJid;
@@ -844,7 +860,7 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
   try {
     if (fs.existsSync(modelLock) && (Date.now() - fs.statSync(modelLock).mtimeMs) < 60000) {
       console.log(`[WA Bridge] 🧠 Model switch in progress on ${targetWindow}; retrying prompt in 3s`);
-      setTimeout(() => dispatchToTmux(promptText, targetWindow, msgId, replyContext), 3000);
+      setTimeout(() => dispatchToTmux(promptText, targetWindow, msgId, replyContext, provenance), 3000);
       return false;
     }
   } catch (e) {}
@@ -857,8 +873,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       project_uuid: (gateCheck && gateCheck.project_uuid) || targetWindow,
       target_window: targetWindow,
       prompt: cleanPrompt,
+      origin: 'HUMAN_VERIFIED',
+      provenance: provenance || { origin: 'HUMAN_VERIFIED' },
       status: 'RECEIVED',
-      reply_context: replyContext ? { sender: replyContext.sender } : null
+      reply_context: replyContext ? { sender: replyContext.sender, origin: 'HUMAN_VERIFIED' } : { origin: 'HUMAN_VERIFIED' }
     });
     return false;
   }
