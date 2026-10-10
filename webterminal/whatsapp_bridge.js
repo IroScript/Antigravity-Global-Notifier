@@ -659,9 +659,16 @@ function drainNextPromptForWindow(targetWindow) {
 
   const nextItem = pendingItems[0];
   if (nextItem) {
+    // LAYER 6: Verify origin before dispatching from durable queue
+    if (nextItem.origin !== 'HUMAN_VERIFIED') {
+      console.error(`[WA Bridge] 🛑 QUEUE_DRAIN_REJECTED: Prompt ${nextItem.message_id} rejected. Origin was "${nextItem.origin}"`);
+      updateDurablePromptStatus(nextItem.message_id, 'REJECTED_UNVERIFIED_ORIGIN');
+      recordDroppedEvent({ key: { id: nextItem.message_id, remoteJid: nextItem.reply_context?.sender } }, 'UNKNOWN', `Queue drain rejected unverified origin: ${nextItem.origin}`);
+      return;
+    }
     console.log(`[WA Bridge] 🔄 Dequeuing durable prompt for ${targetWindow} (${nextItem.message_id}, seq: ${nextItem.sequence}):`, (nextItem.prompt || '').substring(0, 60));
     // Direct synchronous invocation eliminates the 100ms window where concurrent callers could dequeue the same item
-    dispatchToTmux(nextItem.prompt, targetWindow, nextItem.message_id, nextItem.reply_context);
+    dispatchToTmux(nextItem.prompt, targetWindow, nextItem.message_id, nextItem.reply_context, { origin: nextItem.origin });
   }
 }
 
@@ -1745,7 +1752,7 @@ async function sendWhatsAppMessage(text, options = {}) {
   try {
     const res = await sock.sendMessage(target, { text: text.trim() }, cleanOptions);
     if (res && res.key && res.key.id) {
-      sentMessageIds.add(res.key.id);
+      recordSentMessageId(res.key.id);
       console.log(`[WA Bridge] 📨 Sent to ${target} (isGroup=${isGroup}, msgId=${res.key.id})`);
     }
     return res;
@@ -1754,7 +1761,7 @@ async function sendWhatsAppMessage(text, options = {}) {
       console.warn(`[WA Bridge] ⚠️ Retrying fallback send to ${target} without options: ${err.message}`);
       const fallbackRes = await sock.sendMessage(target, { text: text.trim() });
       if (fallbackRes && fallbackRes.key && fallbackRes.key.id) {
-        sentMessageIds.add(fallbackRes.key.id);
+        recordSentMessageId(fallbackRes.key.id);
         console.log(`[WA Bridge] 📨 Fallback sent to ${target}, msgId=${fallbackRes.key.id}`);
       }
       return fallbackRes;
@@ -1785,7 +1792,7 @@ async function sendWhatsAppDocument(filePath, fileName, caption = '', options = 
       caption: caption || undefined
     });
     if (res && res.key && res.key.id) {
-      sentMessageIds.add(res.key.id);
+      recordSentMessageId(res.key.id);
       console.log(`[WA Bridge] 📄 Sent document ${fileName || path.basename(filePath)} to ${target} (${buffer.length} bytes, msgId=${res.key.id})`);
     }
     return res;
