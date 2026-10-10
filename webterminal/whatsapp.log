@@ -34551,3 +34551,9 @@ Closing session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363378775353616@g.us 264751129092123@lid
 [WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB06EC3D5D50F3212685E)
 [WA Bridge] ✅ Processed outbox job: report_1791631951.json
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0716A6BB56A8F97E9AB)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB053B65512E5F0479D92)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
