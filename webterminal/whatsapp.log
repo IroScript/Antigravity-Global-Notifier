@@ -35573,3 +35573,113 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB088D747521A49A46E51)
 [WA Bridge] 💻 cmd output 7620 (agy:0)
 [WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB042D45463E2F7FF779A)
+[WA Bridge] ⚡ cmd 7622 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0FBB4D6EC8D57D0CA55)
+[WA Bridge] 💻 cmd output 7623 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading whatsapp_bridge.js"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B1A7B53EB271BFFFD9)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0AE063CD11A2DB8C465)
+[WA Bridge] 🔓 ZIP capture finished for agy:0. Releasing 1 held prompts.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0DA9373F327AA49388C)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0FD96F2C75AD1654DE6)
+[WA Bridge] ⚡ cmd 7625 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0875149E9C8D636369D)
+[WA Bridge] 💻 cmd output 7626 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Reading rest of whatsapp_bridge.js"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB006BE35D6F41E61D19E)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0194099DE0DC96563FE)
+[WA Bridge] ⚡ cmd 7628 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB06EB8DAFFF24ECE05AB)
+[WA Bridge] 💻 cmd output 7629 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · ফাইল পরিদর্শন]*: `whatsapp_bridge.js`
+> 🎯 _"Checking incoming message logic"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0AF560BB87AB017C714)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB010DB058C537AE3CED1)
+[WA Bridge] 🧠 thinking 7631 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB057769E1A9BD0DACE9A)
+[WA Bridge] ⚡ cmd 7631 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0BA41BF21F9C170E7B1)
+[WA Bridge] 💻 cmd output 7632 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · NEURAL RESPONSE]*
+╭──────────────────╮
+🤖 *[Oracle 8 CPU · Oracle VM3]*
+
+আপনার প্রেরিত কমান্ড আউটপুটে একটি বাহ্যিক ডেবিয়ান সিস্টেম (`FatehAli2`, ব্যবহারকারী: `azureuser`) এর `~/.ssh` ডিরেক্টরির ফাইল তালিকা দেখা যাচ্ছে (যেমন: `authorized_keys`, `config`, `id_ed25519`, `id_ed25519.pub`)।
+
+**পরিবেশ ও আইসোলেশন সংক্রান্ত তথ্য:**
+- বর্তমান পরিবেশটি হলো **Oracle VM3 (OCI · Oracle Linux Server 9.6, aarch64)**।
+- কঠোর সিস্টেম আইসোলেশন নীতি অনুযায়ী, কোনো বাহ্যিক ক্লাউড বা Azure পরিবেশে সরাসরি কমান্ড চালানো বা দূরবর্তী সংযোগ স্থাপন করা এখানে সম্পূর্ণ সীমাবদ্ধ।
+
+আপনি কি এই SSH কি (SSH Key) অথবা কনফিগারেশন সংক্রান্ত কোনো নিরাপত্তা বা পারমিশন যাচাই করতে চান, নাকি স্থানীয় এই **Oracle VM3** মেশিনে কোনো নির্দিষ্ট কাজ পরিচালনা করতে চাচ্ছেন? অনুগ্রহ করে আপনার প্রয়োজনীয়তা বিস্তারিত জানান।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৬:৩৪ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] ⏸️ Project prompt gate is CLOSED for whatsapp_master (GATE_CLOSED). Holding prompt in durable queue.
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0D515C543652D11FDD5)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0453447038F779C26F2)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CCCF65B33E25CF7CD0)
+[WA Bridge] 🧠 thinking 7634 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 7634)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/8nXXm
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB05B0A1E5B70B4A189AF)
+[WA Bridge] ✅ Reply delivered to 120363412648151758@g.us (agy:0)!
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ systemctl --user status agy-whatsapp.service --no-pager || true`
+> 🎯 _"Checking bridge service status"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 🔓 ZIP capture finished for agy:0. Releasing 2 held prompts.
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0064753FB8D86C11C15, seq: 858): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0437F32D4CD0EFDAF46)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB04B6B493AF55F81DCA7)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0466D190835DD0C2F58)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B47ED63E36A364988B)
+[WA Bridge] 🧠 thinking 7637 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CF35E7D12114F29523)
+[WA Bridge] ⚡ cmd 7637 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0238FFEDAAB01DA03D3)
+[WA Bridge] 💻 cmd output 7638 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ journalctl --user-unit=agy-whatsapp.service -n 50 --no-pager`
+> 🎯 _"Checking bridge logs"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0ED391167D72EFAB2F3)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB01FF94ED75B64F58D4A)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB09DB93683C35186D722)
+[WA Bridge] 🧠 thinking 7640 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B261122B79A09263DB)
+[WA Bridge] 👁️ view 7640 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0F6AC2AA13A274FCF1B)
+[WA Bridge] ⚡ cmd 7643 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0DC661AD9CEED3C33BC)
+[WA Bridge] 💻 cmd output 7644 (agy:0)
