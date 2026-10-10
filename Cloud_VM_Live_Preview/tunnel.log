@@ -378,3 +378,4 @@
 2026-10-09T15:21:53Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://limiting-pursuit-gas-quizzes.trycloudflare.com/api/stats event=0 ip=198.41.192.7 type=http
 2026-10-09T15:35:24Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8088
 2026-10-09T15:35:24Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://limiting-pursuit-gas-quizzes.trycloudflare.com/api/properties?path=%2Fhome%2Fazureuser event=0 ip=198.41.192.7 type=http
+2026-10-10T10:32:13Z ERR update failed to apply error="open /usr/local/bin/cloudflared.new: permission denied"
