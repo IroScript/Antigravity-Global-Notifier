@@ -35725,3 +35725,123 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB094FDDE33E7173DCB06)
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CC755CE3F0D40C92DC)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0C6D3FA49F0F884BF63)
+[WA Bridge] 🧠 thinking 7653 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0F642EE36C9D90887EA)
+[WA Bridge] ⚡ cmd 7653 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB04D9AAFDFB87F87F693)
+[WA Bridge] 💻 cmd output 7654 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · টার্মিনাল কমান্ড]*: `$ tail -n 10 /home/opc/.webterminal/whatsapp.log || true`
+> 🎯 _"Checking whatsapp.log"_
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0D643966600E80C1EAF)
+[WA Bridge] ⚡ cmd 7656 (agy:0)
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CAF682F3A98128880D)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0C512C448CB4BA8B298)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CC5D5254B08E1F8A9A)
+[WA Bridge] 💻 cmd output 7657 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB07D6EA96740599F9FA0)
+[WA Bridge] ⚡ cmd 7659 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0C31FD0A78307A5C9C4)
+[WA Bridge] 💻 cmd output 7660 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · NEURAL RESPONSE]*
+╭──────────────────╮
+🤖 *[Oracle 8 CPU · Oracle VM3]*
+
+বাহ্যিক Azure VM এবং এই Oracle VM3 নোডের মধ্যে হোয়াটসঅ্যাপ গ্রুপের মাধ্যমে যে ক্রস-নোড ফিডব্যাক লুপ (cross-node feedback loop) তৈরি হয়েছিল, তা সফলভাবে প্রতিহত করা হয়েছে।
+
+**গৃহীত পদক্ষেপ:**
+1. `whatsapp_bridge.js` ফাইলের `isBotOutput` ফিল্টারিং ব্যবস্থা আপডেট করা হয়েছে, যাতে বাহ্যিক বট থেকে আসা আউটপুট, লগ ও কমান্ড (যেমন: `Ctrl+o`, `কমান্ড আউটপুট`, `চিন্তাভাবনা`, `azureuser`, `[WA Bridge]` ইত্যাদি) স্বয়ংক্রিয়ভাবে বাতিল করা হয়।
+2. `agy-whatsapp.service` সফলভাবে পুনঃসূচনা (restart) করা হয়েছে এবং বর্তমানে তা স্বাভাবিকভাবে চলমান রয়েছে।
+
+সিস্টেমের পূর্ণ আইসোলেশন ও অ্যান্টি-লুপ সুরক্ষা নিশ্চিত করা হয়েছে। আপনার কোনো নির্দেশ বা কাজ থাকলে জানান।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৬:৩৪ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CB780657EA583CD0A7)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB08C72DBB18A606BD3B9)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0933FC111065FD08351)
+[WA Bridge] 🧠 thinking 7662 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB012BB1B24E18CC95BC5)
+[WA Bridge] ⚡ cmd 7662 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB06D3E64D3B13E17EB45)
+[WA Bridge] 💻 cmd output 7663 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0337FE74059EC1BDF96)
+[WA Bridge] ⚡ cmd 7665 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB01092726ABA242E2085)
+[WA Bridge] 💻 cmd output 7666 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E17846C20DD474A323)
+[WA Bridge] ⚡ cmd 7668 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0837821BBE5AF291DF9)
+[WA Bridge] 💻 cmd output 7669 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0DB925B5EB0F0CEA111)
+[WA Bridge] ⚡ cmd 7671 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0098AE0E635F97BAD98)
+[WA Bridge] 💻 cmd output 7672 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB09B8CCF5949659673F1)
+[WA Bridge] ⚡ cmd 7674 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB00EA2AA3291CCB20968)
+[WA Bridge] 💻 cmd output 7675 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0CF5E3F3998B595C2A5)
+[WA Bridge] ⚡ cmd 7677 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB05412E1E7D7E9300383)
+[WA Bridge] 💻 cmd output 7678 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB06E4119C808A726994C)
+[WA Bridge] 👁️ view 7680 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB047C2C08A6C6B18B9D7)
+[WA Bridge] 🧠 thinking 7683 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0FC30E1F5F6A593BEAA)
+[WA Bridge] ⚡ cmd 7683 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E4A794175118303142)
+[WA Bridge] 💻 cmd output 7684 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0A3FF05D21BFBE0AD14)
+[WA Bridge] 🧠 thinking 7686 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0772458E7CB42E75CD9)
+[WA Bridge] ⚡ cmd 7686 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB082BABA9C22B1235DF2)
+[WA Bridge] 💻 cmd output 7687 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB04D9ABCD8CFAFFC5F0F)
+[WA Bridge] 👁️ view 7689 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB07FED039D724E7926E5)
+[WA Bridge] 👁️ view 7692 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB095BBBD18654838E627)
+[WA Bridge] 🧠 thinking 7695 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E3F4C14148E5C1788C)
+[WA Bridge] 👁️ view 7695 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB045C1353DF172124622)
+[WA Bridge] 🧠 thinking 7698 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0678229CFB5B67BC72B)
+[WA Bridge] ⚡ cmd 7698 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB060F09FE566A78BFBA9)
+[WA Bridge] 💻 cmd output 7699 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB01C998249969534D388)
+[WA Bridge] 🧠 thinking 7701 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0DD5F251B5D7B9C2C79)
+[WA Bridge] ⚡ cmd 7701 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0F09FA0886E88E41484)
+[WA Bridge] 💻 cmd output 7702 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB08857BDF51CA416C75F)
+[WA Bridge] 🧠 thinking 7704 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB047989EBD5ED2E7E617)
+[WA Bridge] ⚡ cmd 7704 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B2A86A4F420E7D6C81)
+[WA Bridge] 💻 cmd output 7705 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB08B3A448C53C3115391)
+[WA Bridge] ⚡ cmd 7707 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E6D905649D01722719)
+[WA Bridge] 💻 cmd output 7708 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0904268E100EF29D973)
+[WA Bridge] 👁️ view 7710 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0B42D0289D1CAD8BB96)
+[WA Bridge] 👁️ view 7713 (agy:0)
