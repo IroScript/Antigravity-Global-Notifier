@@ -29855,3 +29855,30 @@ Contain the live loop, find the exact technical root cause, implement the minima
 [WA Bridge] ⚡ cmd 6840 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E557AA62DBE31D6CDD)
 [WA Bridge] 💻 cmd output 6841 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 136962899980462@lid
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 136962899980462@lid
+[WA Bridge] 📤 Turn done for agy:0 (step 6843)
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 136962899980462@lid
+[WA Bridge] Ignored message from other sender: 120363414179014429@g.us 136962899980462@lid
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3161
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E9F983524F0103DA85)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0BF99F143CEFEC6471D, seq: 847): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06F8FE5458CCCAA285F)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 6844)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03DBCAA155038C9AD9F)
+[WA Bridge] ⚡ cmd 6846 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0582EE3D721C08C5BEA)
+[WA Bridge] 💻 cmd output 6847 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB050C8020C6CACCA6168)
+[WA Bridge] ⚡ cmd 6849 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09032432286DEB7C6AA)
+[WA Bridge] 💻 cmd output 6850 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0ADA31ACF323D924D8B)
+[WA Bridge] ⚡ cmd 6852 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E53EB9D8580EFC4850)
+[WA Bridge] 💻 cmd output 6853 (agy:0)
