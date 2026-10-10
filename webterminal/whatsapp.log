@@ -33759,3 +33759,5 @@ Closing session: SessionEntry {
     baseKey: <Buffer 05 ad 50 f1 8f 4d a7 59 1b 66 34 3e b6 c8 ec 4d f2 92 fe 11 44 84 c5 38 f3 a3 f7 04 3c cd 54 b4 02>
   }
 }
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0EB3626848F1A4C88DF)
+[WA Bridge] ✅ Processed outbox job: report_1791617549.json
