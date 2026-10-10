@@ -34689,3 +34689,9 @@ Execute autonomously within this strictly defined scope. Do not request routine 
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FCAC96A2E3D23C740D)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F6E5E670C3124C9103)
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ find /home/opc -name \"*azure*\" 2>/dev/null; grep -rli \"azure\" /home/opc 2>/dev/null | grep -v \"/\\.gemini/\" | grep -v \"/\\.npm\" | grep -v...`
+> 🎯 _"Scanning for all Azure files and references"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02E71A3A1094EFBF786)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09DE0C24FE06ED6F15D)
