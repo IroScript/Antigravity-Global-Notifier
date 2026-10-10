@@ -28069,3 +28069,27 @@ Closing session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363425234182052@g.us 66207659114571@lid
 [WA Bridge] Ignored message from other sender: 120363375813560592@g.us 175299157307466@lid
 [WA Bridge] Ignored message from other sender: 120363421520495622@g.us 268156786446378@lid
+Closing session: SessionEntry {
+  _chains: {
+    'BQNLe/SsLE4KICJZbsMQhqCxrjavpfQy2pub5uK0Tngd': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BaJJPWbWKI/LyDSE69obVQp6ScIqdQjKlF5YXHH1/ngN': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 2054076495,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 a2 49 3d 66 d6 28 8f cb c8 34 84 eb da 1b 55 0a 7a 49 c2 2a 75 08 ca 94 5e 58 5c 71 f5 fe 78 0d>,
+      privKey: <Buffer 40 a3 6d 5a a5 94 a4 4c 3f 2d b0 c7 d4 23 4d 48 79 bc ab 57 48 0d f0 3d 67 e6 21 1f 7c c5 30 5a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 03 4b 7b f4 ac 2c 4e 0a 20 22 59 6e c3 10 86 a0 b1 ae 36 af a5 f4 32 da 9b 9b e6 e2 b4 4e 78 1d>,
+    previousCounter: 0,
+    rootKey: <Buffer c3 9a f8 9b c4 45 66 66 6b 1c e7 a2 21 02 a5 91 3d 4f a7 af 52 81 36 80 ae 2c 3b 24 bd df 5c d0>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a6 d6 bd 08 5f 71 97 21 57 f5 24 54 58 19 fe 1a df 2c d0 91 f4 4a 7b 96 8d 3f a6 a9 33 e1 c2 51>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791300289711,
+    created: 1791300289711,
+    remoteIdentityKey: <Buffer 05 95 31 eb 6d 10 4d c2 ec c7 c8 19 a6 e9 f9 2a 77 28 2f 7a 79 e4 14 0b 80 7a 2a 7d c2 e1 27 4a 2e>
+  }
+}
