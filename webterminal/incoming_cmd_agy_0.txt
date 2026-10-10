@@ -1,2 +1,190 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ git clone --depth 1 https://github.com/IroScript/Antigravity-Global-Notifier.git /tmp/Antigravity-Global-Notifier && cp -r /tmp/Antigravity-Globa...`
-> 🎯 _"Cloning Cloud_VM_Live_Preview files"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] THIS TASK RUNS LOCALLY ON AZURE ONLY.
+
+You are running inside the Azure VM.
+
+Oracle and Azure are COMPLETELY SEPARATE systems.
+
+A previous CLI mistakenly mixed/copied architecture, WhatsApp logic, configuration, project mappings, or other state between Azure and Oracle.
+
+YOUR JOB:
+
+Find and remove ONLY Oracle-origin contamination that was mistakenly introduced into THIS Azure VM.
+
+==================================================
+ABSOLUTE NODE BOUNDARY
+
+THIS NODE = AZURE.
+
+DO NOT:
+
+- SSH into Oracle
+- SCP from/to Oracle
+- RSYNC from/to Oracle
+- inspect Oracle remotely
+- modify Oracle
+- use Oracle as a repair source
+- copy anything from Oracle
+
+Work ONLY with local Azure evidence.
+
+==================================================
+DO NOT DAMAGE LEGITIMATE AZURE STATE
+
+Azure existed before the Oracle setup.
+
+Therefore the default assumption is:
+
+EXISTING AZURE COMPONENTS ARE LEGITIMATE UNTIL PROVEN OTHERWISE.
+
+Do NOT delete something merely because Oracle has a similar file.
+
+Do NOT delete based on filename similarity.
+
+Do NOT simplify Azure architecture merely because Oracle is supposed to be simple.
+
+Do NOT kill existing Azure projects, tmux windows, agents, queues, services, controllers, WhatsApp routing, backups, or automation unless there is direct evidence that the specific component was introduced from Oracle by the recent erroneous operation.
+
+==================================================
+FORENSIC FIRST
+
+Before modifying anything, inspect local evidence:
+
+- Antigravity transcripts
+- command/tool execution history
+- shell history
+- ~/.gemini/antigravity-cli/brain/
+- filesystem timestamps
+- Git history/status/reflog where applicable
+- ~/.webterminal/
+- systemd user units
+- WhatsApp logs
+- tmux state
+- configuration files
+- recently created/modified files
+
+Search specifically for Oracle contamination such as:
+
+- Oracle hostnames
+- Oracle SSH aliases
+- Oracle-only paths
+- /home/opc references
+- Oracle-specific group configuration
+- "Oracle 8 CPU 64 RAM"
+- oracle3 / oracle8 references
+- Oracle-specific project mappings
+- code copied back from Oracle
+- Oracle-only bridge assumptions
+
+==================================================
+CLASSIFICATION
+
+Classify every suspicious component:
+
+A = PROVEN Oracle-origin contamination introduced by the bad operation
+
+B = PROVEN legitimate Azure component
+
+C = uncertain
+
+ACTION:
+
+A → safely remove/revert.
+
+B → NEVER TOUCH.
+
+C → NEVER DELETE; report it.
+
+==================================================
+CRITICAL PRESERVATION RULE
+
+Do NOT reset Azure WhatsApp architecture to a minimal Oracle-style bridge.
+
+Do NOT replace the existing Azure bridge simply because another bridge looks cleaner.
+
+Do NOT destroy Azure multi-project functionality.
+
+Do NOT delete Azure project mappings merely because Oracle should not have them.
+
+Azure must retain its legitimate pre-existing architecture.
+
+==================================================
+SAFE REMOVAL
+
+Before removing/reverting any category-A item:
+
+1. prove its Oracle origin;
+2. show the evidence;
+3. determine its dependency/impact;
+4. preserve recoverability;
+5. then remove/revert only that exact contamination.
+
+NO broad rm -rf.
+
+NO wildcard cleanup of important directories.
+
+NO deletion of ~/.webterminal, ~/.gemini, project roots, Git repositories, authentication state, or tmux architecture.
+
+==================================================
+POST-CLEANUP VERIFICATION
+
+After cleanup verify locally:
+
+1. Azure AGY "agy:0" works.
+2. Existing legitimate Azure tmux windows remain intact.
+3. Existing Azure projects remain intact.
+4. Existing Azure WhatsApp functionality remains intact.
+5. Existing queues/controllers remain intact unless individually proven contaminated.
+6. No Oracle-only paths remain in active Azure configuration.
+7. No Oracle-only group mapping remains unless proven intentionally configured.
+8. No Oracle SSH/runtime dependency exists.
+9. Git repositories have no unintended cleanup modifications.
+10. No unrelated service/process/project was changed.
+
+==================================================
+REPORT
+
+Return:
+
+AZURE NODE: VERIFIED LOCAL NODE
+
+PROVEN ORACLE CONTAMINATION:
+[path/component + evidence]
+
+REMOVED/REVERTED:
+[exact actions]
+
+LEGITIMATE AZURE COMPONENTS PRESERVED:
+[list]
+
+UNCERTAIN ITEMS LEFT UNTOUCHED:
+[list]
+
+FILES MODIFIED:
+[list]
+
+FILES DELETED:
+[list]
+
+SERVICES CHANGED:
+[list]
+
+TMUX CHANGES:
+[list]
+
+GIT DIFF:
+[exact evidence]
+
+FINAL STATUS:
+CLEAN / PARTIALLY CLEAN / NOT CLEAN / INCONCLUSIVE
+
+Do NOT claim CLEAN merely because searches returned zero results.
+
+Provide the actual commands/results that establish the conclusion.
+
+Most important invariant:
+
+AZURE MUST CONTAIN AZURE'S LEGITIMATE SYSTEM.
+
+ONLY PROVEN ORACLE CONTAMINATION MAY BE REMOVED.
+
+NEVER ACCESS ORACLE DURING THIS TASK.
