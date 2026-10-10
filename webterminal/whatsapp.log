@@ -28132,3 +28132,4 @@ Closing session: SessionEntry {
     remoteIdentityKey: <Buffer 05 0b b7 e0 38 a8 fd 72 c6 70 f7 cc 6d c6 30 8f 99 d5 0a e1 9d 91 4b dc 13 8c e8 ec 8a 5b 45 7c 62>
   }
 }
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 109921383247922@lid
