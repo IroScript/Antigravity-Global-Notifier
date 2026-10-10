@@ -196,14 +196,22 @@ function isSelfIdentity(sender, participant, socketInstance = null) {
   const s = socketInstance || (typeof sock !== 'undefined' ? sock : null);
   const meJid = s?.authState?.creds?.me?.id || '';
   const meLid = s?.authState?.creds?.me?.lid || '';
-  const cleanMeJid = meJid ? meJid.split(':')[0].split('@')[0] : '';
-  const cleanMeLid = meLid ? meLid.split(':')[0].split('@')[0] : '';
 
   const check = (jid) => {
     if (!jid) return false;
-    const clean = jid.split(':')[0].split('@')[0];
-    if (cleanMeJid && clean === cleanMeJid) return true;
-    if (cleanMeLid && clean === cleanMeLid) return true;
+    if (meJid && jid === meJid) return true;
+    if (meLid && jid === meLid) return true;
+    // Check if device index matches bot companion device (e.g. :8)
+    if (meJid && meJid.includes(':')) {
+      const botDevice = meJid.split('@')[0].split(':')[1];
+      const jidParts = jid.split('@')[0].split(':');
+      if (botDevice && jidParts[1] === botDevice) {
+        const num = jidParts[0];
+        if (meJid.startsWith(num) || (meLid && meLid.startsWith(num))) {
+          return true;
+        }
+      }
+    }
     return false;
   };
 
@@ -246,10 +254,7 @@ function classifyMessageProvenance(msg, socketInstance = null) {
     return { classification: 'DUPLICATE', dropReason: 'Message ID was already processed or delivered' };
   }
 
-  // Layer 1: Self message filter
-  if (msg.key?.fromMe) {
-    return { classification: 'SELF_OUTBOUND', dropReason: 'Message key has fromMe === true' };
-  }
+  // Layer 1: Self message filter (checks local bot companion device identity)
   if (isSelfIdentity(msg.key?.remoteJid, msg.key?.participant || msg.participant, socketInstance)) {
     return { classification: 'SELF_OUTBOUND', dropReason: 'Sender or participant matches local bot identity' };
   }
