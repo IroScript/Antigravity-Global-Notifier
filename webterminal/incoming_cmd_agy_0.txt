@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > 👁️ *[ফাইল পরিদর্শন]*: `pinned_links.md`
-> 🎯 _"Viewing pinned_links.md"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -EIn \"azure|FatehAli|ssh azure|Host azure\" /home/opc/.webterminal/processed_msg_ids.json || echo \"No matches\"`
+> 🎯 _"Checking processed_msg_ids.json"_
