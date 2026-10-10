@@ -2302,6 +2302,30 @@ async function startBridge() {
         continue;
       }
 
+      // Filter out automated bot terminal logs, thoughts, file inspections, and echoed status cards
+      const cleanCheck = text.replace(/^[>\s]+/, '').trim();
+      const isBotTelemetry = (
+        text.startsWith('> ⚡ *[টার্মিনাল কমান্ড]*') ||
+        text.startsWith('> 🎯') ||
+        text.startsWith('> 👁️ *[ফাইল পরিদর্শন]*') ||
+        text.startsWith('> 📝 *[কোড এডিট') ||
+        text.startsWith('> 🧠 *[চিন্তাভাবনা]*') ||
+        text.startsWith('🤖 ══════════════════════ 🤖') ||
+        text.startsWith('🖥️ ══════════════════════ 🖥️') ||
+        text.startsWith('💻 ══════════════════════ 💻') ||
+        text.startsWith('⏳ ══════════════════════ ⏳') ||
+        cleanCheck.startsWith('⚡ *[টার্মিনাল কমান্ড]*') ||
+        cleanCheck.startsWith('👁️ *[ফাইল পরিদর্শন]*') ||
+        cleanCheck.startsWith('📝 *[কোড এডিট') ||
+        cleanCheck.startsWith('🧠 *[চিন্তাভাবনা]*') ||
+        cleanCheck.startsWith('🎯 _"')
+      );
+      if (isBotTelemetry) {
+        console.log(`[WA Bridge] 🤖 [REJECTED BOT TELEMETRY LOG]: Dropped echo message (${msgId}).`);
+        processedIncomingMessageIds.add(msgId);
+        continue;
+      }
+
       // Mark message as processed to prevent any duplicate/re-synced execution
       processedIncomingMessageIds.add(msgId);
       saveProcessedMessageIds();

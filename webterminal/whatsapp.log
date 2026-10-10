@@ -22267,3 +22267,22 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5478 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0802E949E96B60B98A2)
 [WA Bridge] 💻 cmd output 5479 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB080BE91B3F94C6BB0D2)
+[WA Bridge] 🧠 thinking 5481 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07923ACEB4BE545C325)
+[WA Bridge] 👁️ view 5481 (agy:0)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB04F2E195DCB6B75B4CC, seq: 385): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B2F4655171AAE82C89)
+[WA Bridge] 📝 edit 5484 (agy:0)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03932505AC9B655012F)
+[WA Bridge] ⚡ cmd 5487 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06E04A0B76BBE42F412)
+[WA Bridge] 💻 cmd output 5488 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07FB4F4CB9E1C421EB1)
+[WA Bridge] ⚡ cmd 5490 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB006F76E8ACA80A068BC)
+[WA Bridge] 💻 cmd output 5491 (agy:0)
