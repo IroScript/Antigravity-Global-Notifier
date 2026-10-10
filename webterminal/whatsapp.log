@@ -21625,3 +21625,296 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
 [WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0E921C7AB07DC2727BC)
+[WA Bridge] 🧠 thinking 5393 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C18BF4C498A6C17159)
+[WA Bridge] ⚡ cmd 5393 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F5926977E9E3AC0F96)
+[WA Bridge] 💻 cmd output 5394 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04CBC889B285AE51D9E)
+[WA Bridge] ⚡ cmd 5396 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09BD1A1D0EA503ACAFB)
+[WA Bridge] 💻 cmd output 5397 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07526A6053B55B57374)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB092A4B229198B608C1C)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] 📩 Message from Iraq bhai (82935919157317@lid): Hi
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03AA98B2257C6D4ABAF)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB010172D591DEF552194)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09A534DABF171361A67)
+[WA Bridge] 🧠 thinking 5399 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0371ED1F232D1DC153B)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0E77DB27B30042020FD)
+[WA Bridge] ⚡ cmd 5399 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0D42302B92655C19D63)
+[WA Bridge] 💻 cmd output 5400 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/tunnel_url.txt\"`
+> 🎯 _"Fetching tunnel_url.txt"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5402 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5403 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C9E093867C97D6C1CC)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5405 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5406 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05F1A76974164A6CCC6)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] 📨 Fallback sent to 120363432847992277@g.us, msgId=3EB0A75AC386025EDC2742
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/start_tunnel.sh\"`
+> 🎯 _"Fetching start_tunnel.sh"_
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 👁️ view 5408 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 👁️ view 5411 (agy:0)
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/azure-file-explorer.se...`
+> 🎯 _"Fetching service definition"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0760FF08D359D384F89)
+[WA Bridge] 🧠 thinking 5414 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5414 (agy:0)
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB093650AAA179D2525AA)
+[WA Bridge] 💻 cmd output 5415 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05B8D6D13FE85AA6A89)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5417 (agy:0)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5418 (agy:0)
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F188E9DDACB5875E5C)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://api.github.com/repos/IroScript/Antigravity-Global-Notifier/contents/\"`
+> 🎯 _"Checking repo root contents"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🧠 thinking 5420 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5420 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB066F39F7E6FA61E05C3)
+[WA Bridge] 💻 cmd output 5421 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0669027930D4C2F4160)
+[WA Bridge] 👁️ view 5423 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02DEE27732153C65E4A)
+[WA Bridge] 👁️ view 5426 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5429 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5430 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which cloudflared 2>&1 || true; python3 -m pip list 2>&1 | head -n 20`
+> 🎯 _"Checking cloudflared and python tools"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BE7FE042C3E8FD67D7)
+[WA Bridge] ⚡ cmd 5432 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5433 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB028D1659423C074F092)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03585ED8A854FE759A1)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB06B75FF774395EC86F1, seq: 377): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -s --max-time 10 \"https://raw.githubusercontent.com/IroScript/Antigravity-Global-Notifier/main/Cloud_VM_Live_Preview/server.py\" | head -n 80`
+> 🎯 _"Reading server.py header"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A7D506CE64FD56530F)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0D8F913AA672BB0CE87)
+[WA Bridge] 🧠 thinking 5435 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5435)
