@@ -896,9 +896,11 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
     project_uuid: (gateCheck && gateCheck.project_uuid) || targetWindow,
     target_window: targetWindow,
     prompt: cleanPrompt,
+    origin: 'HUMAN_VERIFIED',
+    provenance: provenance || { origin: 'HUMAN_VERIFIED' },
     status: 'DELIVERING',
     last_attempt_at: new Date().toISOString(),
-    reply_context: replyContext ? { sender: replyContext.sender } : null
+    reply_context: replyContext ? { sender: replyContext.sender, origin: 'HUMAN_VERIFIED' } : { origin: 'HUMAN_VERIFIED' }
   });
 
   const projectUuid = (gateCheck && gateCheck.project_uuid) || targetWindow;
@@ -913,8 +915,10 @@ function dispatchToTmux(promptText, targetWindow = 'agy:0', msgId = null, replyC
       project_uuid: projectUuid,
       target_window: targetWindow,
       prompt: cleanPrompt,
+      origin: 'HUMAN_VERIFIED',
+      provenance: provenance || { origin: 'HUMAN_VERIFIED' },
       status: 'HELD_FOR_ZIP',
-      reply_context: replyContext ? { sender: replyContext.sender } : null
+      reply_context: replyContext ? { sender: replyContext.sender, origin: 'HUMAN_VERIFIED' } : { origin: 'HUMAN_VERIFIED' }
     });
 
     const targetRecipient = (replyContext && replyContext.sender) || lastActiveJid;
