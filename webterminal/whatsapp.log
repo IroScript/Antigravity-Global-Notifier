@@ -22567,3 +22567,7 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0BEAF0AAFF0498E2ED0)
 [WA Bridge] 🧠 thinking 5656 (agy:0)
 [WA Bridge] 📤 Turn done for agy:0 (step 5656)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/upSyJ
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB03C8768B890DF6825C7)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
