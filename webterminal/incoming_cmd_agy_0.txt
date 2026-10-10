@@ -1,1 +1,1 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Gotokal oracle er sathe co:nect korte giye local cli sob vul bosoto master. Cli agy0 sob ulta palta kore felse..jemon hi likhle ei message gulo aschhe
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Eivabe report dao https://github.com/IroScript/Antigravity-Global-Notifier/tree/main/Cloud_VM_Live_Preview
