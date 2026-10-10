@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.webterminal/`
-> 🎯 _"Listing .webterminal files"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -EIn \"azure|FatehAli|ssh azure|Host azure\" /home/opc/.webterminal/* /home/opc/.config/systemd/user/* 2>/dev/null || true`
+> 🎯 _"Scanning for Azure references"_
