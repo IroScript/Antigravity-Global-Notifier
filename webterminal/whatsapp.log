@@ -24661,3 +24661,11 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5934 (agy:0)
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0CA064C1A867BEC6A48)
 [WA Bridge] 💻 cmd output 5935 (agy:0)
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--13.json (47.5 KB) -> backed up
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--8.json (60.0 KB) -> backed up
+[WA Bridge] 📤 Turn done for agy:0 (step 5937)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 3997
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0AD556D80DD619F1B94)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
