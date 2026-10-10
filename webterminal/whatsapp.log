@@ -36127,3 +36127,12 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB06F4963456E6F7FDC43)
 [WA Bridge] ✅ Reply delivered to 120363412648151758@g.us (agy:0)!
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0C935427FD5A1EA6EA9)
+[WA Bridge] ⚡ cmd 7809 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB05659A9DAE98128CCF2)
+[WA Bridge] 💻 cmd output 7810 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 7812)
+[WA Bridge] paste.rs (raw-markdown): https://paste.rs/TicOc
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0F2E69BE9F8EEDD2238)
+[WA Bridge] ✅ Reply delivered to 120363412648151758@g.us (agy:0)!
