@@ -35378,3 +35378,9 @@ Removing old closed session: SessionEntry {
 [WA Bridge] Ignored message from other sender: 120363263028014038@g.us 131640781193345@lid
 [WA Bridge] Ignored message from other sender: 120363263028014038@g.us 131640781193345@lid
 [WA Bridge] Ignored message from other sender: 120363263028014038@g.us 197830572568658@lid
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04AE199FEE1B66C66E3)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09259D572C7AB4B5E3F)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
