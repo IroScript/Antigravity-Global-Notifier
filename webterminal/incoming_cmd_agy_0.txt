@@ -1,1 +1,368 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] Hi
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] THIS IS A STRICTLY SCOPED CORRECTION TASK ON AZURE AGY:0.
+
+IMPORTANT CLARIFICATION:
+
+The previous task went outside the user's intended scope.
+
+The user is NOT asking you to clean Oracle credentials, SSH configuration, historical queues, projects, tmux windows, services, or general Azure state.
+
+The ONLY target of this task is:
+
+AZURE ".webterminal" / WHATSAPP BRIDGE CODE AND CONFIGURATION.
+
+The objective is:
+
+Remove Oracle from Azure's WhatsApp/WebTerminal runtime behavior WITHOUT deleting the Oracle-related code.
+
+Oracle-related WhatsApp/WebTerminal code must be COMMENTED OUT / DISABLED, not deleted.
+
+==================================================
+ABSOLUTE SCOPE
+
+AUTHORIZED SCOPE:
+
+/home/azureuser/.webterminal/
+
+and ONLY directly related WhatsApp/WebTerminal configuration used by that runtime.
+
+DO NOT TOUCH:
+
+- ~/.ssh/
+- SSH credentials
+- Oracle credentials
+- cloud credentials
+- ~/.agents/ except READ-ONLY inspection if required to understand the existing isolation hook
+- project directories
+- Git repositories unrelated to WebTerminal
+- tmux topology
+- other services
+- backup system
+- Infrastructure Source of Truth
+- system configuration
+- Oracle VM
+- any other VM
+
+DO NOT SSH INTO ORACLE.
+
+==================================================
+IMPORTANT EXISTING ARCHITECTURE
+
+An isolation mechanism/hook has already been established.
+
+DO NOT remove it.
+
+DO NOT redesign it.
+
+DO NOT replace it.
+
+DO NOT disable legitimate Azure protections.
+
+First inspect READ-ONLY and understand:
+
+/home/azureuser/.agents/hooks/completion_gate_stop_hook.py
+
+and any directly relevant existing hook/policy responsible for node isolation.
+
+The purpose of this inspection is ONLY to avoid conflicting with existing protection.
+
+Do not modify those hooks during this task.
+
+==================================================
+TARGET QUESTION
+
+Inside Azure WebTerminal / WhatsApp bridge:
+
+"What Oracle-specific logic was introduced that allows Oracle messages, Oracle group IDs, Oracle routing, Oracle paths, or Oracle-specific behavior to participate in Azure WhatsApp processing?"
+
+Find those exact sections.
+
+==================================================
+WHAT TO SEARCH
+
+Within ".webterminal", search for:
+
+- Oracle
+- oracle
+- oracle1
+- oracle2
+- oracle3
+- oracle8
+- Oracle group IDs
+- Oracle-specific WhatsApp group mappings
+- /home/opc
+- Oracle-specific routing
+- Oracle-specific aliases
+- Oracle-specific fallback handling
+- Oracle → agy:0 routing
+- code added specifically to support the Oracle VM
+- comments/configuration identifying Oracle
+- any special case allowing the Oracle WhatsApp group to reach Azure agy:0
+
+Also inspect the previously identified fallback behavior around:
+
+whatsapp_bridge.js
+
+especially logic equivalent to:
+
+if (isOwner) return true
+
+Determine whether that fallback can cause an UNMAPPED group to reach Azure agy:0.
+
+==================================================
+CRITICAL RULE — COMMENT OUT, DO NOT DELETE
+
+If Oracle-specific executable logic exists:
+
+DO NOT DELETE IT.
+
+COMMENT IT OUT.
+
+Preserve the original code immediately in place so it can later be reviewed or restored.
+
+Use a clearly marked block such as:
+
+// ============================================================
+// DISABLED: ORACLE CROSS-NODE WHATSAPP LOGIC
+// Reason: Azure and Oracle are independent nodes.
+// Disabled on: <timestamp>
+// Original code preserved below for forensic/recovery purposes.
+// ============================================================
+
+Then comment out the relevant code.
+
+For JSON/config where comments are impossible:
+
+DO NOT corrupt the JSON.
+
+Instead disable the Oracle mapping using the safest schema-supported method.
+
+If no safe disable mechanism exists:
+
+STOP and REPORT it.
+
+Do not delete the entry merely to satisfy the task.
+
+==================================================
+DO NOT COMMENT GENERIC AZURE LOGIC
+
+Be extremely careful.
+
+If a function is shared by:
+
+Azure projects
+AND
+Oracle
+
+do NOT comment out the whole function.
+
+Disable ONLY the Oracle-specific branch/mapping/condition.
+
+Azure's existing projects must continue working.
+
+==================================================
+OWNER FALLBACK
+
+Investigate the owner fallback carefully.
+
+The required invariant is:
+
+Being the owner MUST NOT automatically authorize an unknown/unmapped WhatsApp GROUP to reach Azure agy:0.
+
+But legitimate Azure direct-message behavior must not accidentally be broken.
+
+Therefore distinguish:
+
+OWNER DIRECT MESSAGE
+
+from
+
+OWNER MESSAGE INSIDE UNKNOWN GROUP.
+
+Desired principle:
+
+Known Azure mapped group
+→ process normally.
+
+Legitimate explicitly supported Azure direct message
+→ preserve existing intended behavior.
+
+Unknown/unmapped group
+→ DO NOT route to Azure agy:0 merely because sender is owner.
+
+Oracle group
+→ MUST NOT route to Azure agy:0.
+
+Do not redesign more than necessary to enforce this.
+
+==================================================
+NO HISTORICAL DATA CLEANUP
+
+Do NOT touch:
+
+prompt_queue.json
+wa_outbox_queue.json
+processed message history
+historical logs
+
+unless a current pending Oracle item would execute after this change.
+
+Even then:
+
+DO NOT delete historical records.
+
+Report the pending item first and use the minimum safe runtime-disable mechanism.
+
+==================================================
+NO CREDENTIAL WORK
+
+This task has NOTHING to do with Oracle credentials.
+
+Do not delete, edit, regenerate, revoke, move, or inspect credentials beyond what is absolutely necessary for the scoped WebTerminal analysis.
+
+Do not modify ~/.ssh/config.
+
+==================================================
+NO SERVICE RESTART BY DEFAULT
+
+First determine whether the bridge supports safe reload or whether code changes require restart.
+
+Do NOT restart automatically just because code changed.
+
+If a restart is technically required to activate the corrected bridge:
+
+verify that restarting ONLY agy-whatsapp.service will not affect unrelated systems.
+
+Then restart ONLY that service.
+
+Do not restart AGY.
+
+Do not restart tmux.
+
+Do not restart other services.
+
+==================================================
+REQUIRED VERIFICATION
+
+After the scoped correction prove:
+
+TEST 1:
+Azure's legitimate WhatsApp mappings still exist.
+
+TEST 2:
+Existing Azure project groups still route to their correct Azure tmux targets.
+
+TEST 3:
+Azure agy:0 remains operational.
+
+TEST 4:
+Oracle-specific WhatsApp group/configuration cannot route to Azure agy:0.
+
+TEST 5:
+An unknown/unmapped group cannot reach agy:0 merely because the sender is owner.
+
+TEST 6:
+Legitimate intended owner direct-message behavior remains unchanged, if it existed before this incident.
+
+TEST 7:
+No Azure project mapping was deleted.
+
+TEST 8:
+No tmux window was changed/killed.
+
+TEST 9:
+No credentials were touched.
+
+TEST 10:
+No SSH configuration was touched.
+
+TEST 11:
+No ~/.agents hook was modified.
+
+TEST 12:
+No Oracle VM/network connection was made.
+
+==================================================
+IMPORTANT VERIFICATION METHOD
+
+Do NOT send a real Oracle message to Azure for testing.
+
+Use local deterministic tests against the routing/authorization logic where possible.
+
+Show:
+
+INPUT
+EXPECTED ROUTE
+ACTUAL ROUTE
+PASS/FAIL
+
+At minimum test:
+
+A. known Azure mapped group
+B. Oracle group
+C. arbitrary unknown group from owner
+D. legitimate owner DM, if supported
+
+==================================================
+CHANGE REPORT
+
+At completion report EXACTLY:
+
+1. ORACLE REFERENCES FOUND IN WEBTERMINAL
+
+file
+line/function
+purpose
+active/inactive before change
+
+2. CHANGES MADE
+
+Show before/after diff.
+
+3. COMMENTED-OUT ORACLE LOGIC
+
+Show exactly which blocks were disabled.
+
+4. PRESERVED AZURE LOGIC
+
+Show evidence that normal Azure routing remains.
+
+5. EXISTING ISOLATION HOOK
+
+State whether it remains unchanged.
+
+Provide hash/mtime/diff evidence where possible.
+
+6. OUT-OF-SCOPE STATE
+
+Explicitly confirm:
+
+Credentials touched: NO
+SSH config touched: NO
+tmux topology changed: NO
+project files touched: NO
+Oracle contacted: NO
+.agent hooks modified: NO
+
+7. ROUTING MATRIX
+
+Known Azure group → expected target → actual target
+Oracle group → BLOCKED
+Unknown owner group → BLOCKED
+Legitimate owner DM → existing intended behavior
+
+==================================================
+FINAL RULE
+
+DO NOT DELETE ORACLE CODE FROM THE WHATSAPP BRIDGE.
+
+COMMENT OUT / DISABLE ONLY THE ORACLE-SPECIFIC RUNTIME PATH.
+
+DO NOT CLEAN THE WHOLE MACHINE.
+
+DO NOT TOUCH CREDENTIALS.
+
+DO NOT TOUCH ORACLE.
+
+DO NOT CHANGE THE EXISTING ISOLATION HOOK.
+
+THIS IS ONLY A SURGICAL AZURE WEBTERMINAL / WHATSAPP ROUTING CORRECTION.
