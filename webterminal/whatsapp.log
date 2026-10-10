@@ -33606,3 +33606,4 @@ Removing old closed session: SessionEntry {
     remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
   }
 }
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 124429547917382@lid
