@@ -22397,3 +22397,7 @@ Removing old closed session: SessionEntry {
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB042753F1D370297E8ED)
+[WA Bridge] 🧠 thinking 5544 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB029AEE0038A0A9045C7)
+[WA Bridge] 👁️ view 5544 (agy:0)
