@@ -34574,3 +34574,27 @@ Closing session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0391F9656481584BBDC)
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B89001D18B625B1CE0)
+Closing session: SessionEntry {
+  _chains: {
+    'BR8ZdKZiB45YcZj4GKngIAdQX2wFVrT6XyIATnj+32tV': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZCK5z/sdxkl1N28+NjSyG4YjXaiFGNkBJ253pQGpuBm': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 367371571,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 90 8a e7 3f ec 77 19 25 d4 dd bc f8 d8 d2 c8 6e 18 8d 76 a2 14 63 64 04 9d b9 de 94 06 a6 e0 66>,
+      privKey: <Buffer a8 79 e7 d7 4a eb 40 0f cf 60 3c 09 48 95 4b 4c ed be 76 c7 67 95 0b 0c 72 4b e5 3e 07 0d 0a 44>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1f 19 74 a6 62 07 8e 58 71 98 f8 18 a9 e0 20 07 50 5f 6c 05 56 b4 fa 5f 22 00 4e 78 fe df 6b 55>,
+    previousCounter: 0,
+    rootKey: <Buffer 21 2f 3a 8a 47 36 29 b2 af b1 f0 21 ca 76 ad 57 1a 28 fd 03 82 4a fc ea b1 02 4c 28 37 2e 4d 37>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 66 9f 55 fa d2 25 98 1e 57 04 3b a4 57 16 c2 a6 8d 09 43 36 63 41 47 e1 fd 55 fa 85 df 73 5a 07>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1791301415286,
+    created: 1791301415286,
+    remoteIdentityKey: <Buffer 05 4c 9f 8c d5 d8 e7 cc 9f a5 f2 79 9d ca de 8c 74 32 1e 77 85 52 f0 c7 93 59 81 30 18 10 f6 d6 61>
+  }
+}
