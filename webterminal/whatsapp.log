@@ -34539,3 +34539,5 @@ Closing session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB04E100372A25D61AE0B)
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BD0FC3BA24815A1DBD)
+[WA Bridge] Ignored message from other sender: 120363420665285586@g.us 264751129092123@lid
+[WA Bridge] Ignored message from other sender: 120363403627926128@g.us 273122020331751@lid
