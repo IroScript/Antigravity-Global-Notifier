@@ -1544,11 +1544,12 @@ function isAllowedSender(sender, participant = '') {
       }
       return false;
     }
-    // Hardened fallback: if participant is authorized owner or YouTube group, accept
-    if (isOwner || sender === '120363430650656655@g.us') {
-      console.log(`[WA Bridge] 🔓 Authorized message accepted in group ${sender} (${p})`);
+    // Strict Inter-Agent Isolation: Only registered Azure project groups are accepted.
+    // Unmapped external groups (e.g. Oracle VM group 120363432847992277@g.us) are strictly rejected.
+    if (sender === '120363430650656655@g.us' && isOwner) {
       return true;
     }
+    console.log(`[WA Bridge] 🛑 [INTER-AGENT ISOLATION]: Rejected unmapped external group ${sender} (${p})`);
     return false;
   }
   if (ALLOWED_NUMBERS.some(num => sender.includes(num))) return true;
