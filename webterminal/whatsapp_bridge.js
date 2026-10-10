@@ -638,6 +638,22 @@ function getWindowForSender(sender) {
     }
   } catch (e) {}
 
+  // If sender is an unmapped group (@g.us), it must NOT route to Azure agy:0
+  if (cleanSender.endsWith('@g.us')) {
+    // ============================================================
+    // DISABLED: ORACLE CROSS-NODE WHATSAPP LOGIC
+    // Reason: Azure and Oracle are independent nodes.
+    // Unmapped groups (including Oracle VM group 120363432847992277@g.us)
+    // must NOT route to Azure agy:0.
+    // Disabled on: 2026-10-10T01:30:00Z
+    // Original code preserved below for forensic/recovery purposes.
+    // ============================================================
+    /*
+    return 'agy:0';
+    */
+    return null;
+  }
+
   return 'agy:0';
 }
 
@@ -1544,6 +1560,21 @@ function isAllowedSender(sender, participant = '') {
       }
       return false;
     }
+    // ============================================================
+    // DISABLED: ORACLE CROSS-NODE WHATSAPP LOGIC
+    // Reason: Azure and Oracle are independent nodes.
+    // Unmapped external groups (e.g. Oracle VM group 120363432847992277@g.us)
+    // must NOT be authorized merely because participant is owner.
+    // Disabled on: 2026-10-10T01:30:00Z
+    // Original code preserved below for forensic/recovery purposes.
+    // ============================================================
+    /*
+    // Hardened fallback: if participant is authorized owner or YouTube group, accept
+    if (isOwner || sender === '120363430650656655@g.us') {
+      console.log(`[WA Bridge] 🔓 Authorized message accepted in group ${sender} (${p})`);
+      return true;
+    }
+    */
     // Strict Inter-Agent Isolation: Only registered Azure project groups are accepted.
     // Unmapped external groups (e.g. Oracle VM group 120363432847992277@g.us) are strictly rejected.
     if (sender === '120363430650656655@g.us' && isOwner) {
