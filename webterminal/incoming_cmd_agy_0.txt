@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -n -E \"(ssh|azure|remote|http|exec|tmux|120363)\" /home/opc/.webterminal/whatsapp_bridge.js`
-> 🎯 _"Auditing whatsapp_bridge.js for external calls"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ cat /home/opc/.webterminal/init_agy_sessions.sh; echo \"---\"; cat /home/opc/.webterminal/start_agy0.sh`
+> 🎯 _"Inspecting startup scripts"_
