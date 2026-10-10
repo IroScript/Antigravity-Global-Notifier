@@ -35427,3 +35427,27 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0142E1E16BA06D6F735)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB066CE96FFE9437604E5)
 [WA Bridge] Ignored message from other sender: 120363263028014038@g.us 131640781193345@lid
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): Hi
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB002646691DA576BF35A)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB03F4E1C3759D0A66400)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): 🤖 *[Oracle 8 CPU · NEURAL RESPONSE]*
+╭──────────────────╮
+হ্যালো! কোনো নির্দিষ্ট কাজ, স্ক্রিপ্ট বা কমান্ড চালাতে চাইলে জানাতে পারেন। আমি প্রস্তুত আছি।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৬:১৫ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DD3FDDD5BCD27C2105)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BE1E6DEA58CA2DCCD8)
