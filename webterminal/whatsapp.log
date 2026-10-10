@@ -34743,3 +34743,4 @@ Execute autonomously within this strictly defined scope. Do not request routine 
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02630216198EF4EFBA9)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F12D04E5604C60338F)
+[WA Bridge] Ignored message from other sender: 120363421520495622@g.us 174513245409412@lid
