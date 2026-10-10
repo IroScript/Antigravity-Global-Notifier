@@ -34725,3 +34725,9 @@ Execute autonomously within this strictly defined scope. Do not request routine 
 [WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09748068C7A9B98AC35)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0ECFC6B744E93ACA844)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sudo find /etc /opt /var -iname \"*azure*\" 2>/dev/null || echo \"None found\"`
+> 🎯 _"Searching system directories for azure"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01D60DA1E32C02D817D)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08BD3529C2CDD712218)
