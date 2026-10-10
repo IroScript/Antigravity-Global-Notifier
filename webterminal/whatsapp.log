@@ -25715,3 +25715,13 @@ THIS IS ONLY A SURGICAL AZURE WEBTERMINAL / WHATSAPP ROUTING CORRECTION.
 [AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
 [WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
 [WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB034B7C2C08F445F5B87)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0535764ED84FE52E802)
+[WA Bridge] ⚡ cmd 6283 (agy:0)
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB09089541F8F1CA86B3E)
+[WA Bridge] 💻 cmd output 6284 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6286)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 169
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 82935919157317@lid (isGroup=false, msgId=3EB0F6B0AF94C0CE5FD7D7)
+[WA Bridge] ✅ Reply delivered to 82935919157317@lid (agy:0)!
