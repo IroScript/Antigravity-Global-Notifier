@@ -32942,3 +32942,23 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BF91F4DC48FBB829E3)
 [WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+সিস্টেম স্ট্যান্ডবাই অবস্থায় রয়েছে। নির্দেশনার অপেক্ষায় আছি।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ১১:৫৯ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0930C5768A982041A6D)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EF63C8BE50D96AEBED)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--13.json (35.2 KB) -> backed up
+[WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--8.json (54.6 KB) -> backed up
