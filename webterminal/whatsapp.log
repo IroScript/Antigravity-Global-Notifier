@@ -29084,3 +29084,28 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 6651 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A083AD95ADF9D0113E)
 [WA Bridge] 💻 cmd output 6652 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F1DD2DFC7971C5ADC3)
+[WA Bridge] ⚡ cmd 6654 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB028674679EFEC768289)
+[WA Bridge] 💻 cmd output 6655 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB05FFC9FEAD8DBE738D3)
+[WA Bridge] ⚡ cmd 6657 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0442B49F5CD25F26F2B)
+[WA Bridge] 💻 cmd output 6658 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6660)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 1412
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0ACCB91EA2CC2D110AE)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB02DAB0144D8FBC09BEF, seq: 795): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0B38DB0E55B9630F1B0)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 6661)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06EFA5DD9665B7768BC)
+[WA Bridge] 🧠 thinking 6663 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB091ED614505A7A8275A)
+[WA Bridge] ⚡ cmd 6663 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB07719DB182ACE3B0CDC)
+[WA Bridge] 💻 cmd output 6664 (agy:0)
