@@ -35254,3 +35254,99 @@ Removing old closed session: SessionEntry {
     remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
   }
 }
+Closing open session in favor of incoming prekey bundle
+Closing session: SessionEntry {
+  _chains: {
+    'BSwUh51PQEpNE//IsCGBYg5CLZF9b1HxQw59PCI+lpo8': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2c 14 87 9d 4f 40 4a 4d 13 ff c8 b0 21 81 62 0e 42 2d 91 7d 6f 51 f1 43 0e 7d 3c 22 3e 96 9a 3c>,
+      privKey: <Buffer e8 6a dc e3 95 28 ea 57 26 14 e6 5c 21 55 f0 77 46 fa a7 4d 66 15 3b 0d 34 38 0c 50 1e 32 a6 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 a9 d4 7b 71 a2 a3 e9 a1 19 59 71 8c 8c 82 ed eb 10 24 61 a2 bb 3e e6 3f b4 df b0 7c b2 fe 97 77>,
+    previousCounter: 0,
+    rootKey: <Buffer 87 7c 4b 6c 83 50 25 52 bb 07 ca 99 41 3e d9 38 5a 6c ac 3f a6 d5 50 87 f3 02 3c 67 9c 4a d9 3c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 f5 4f 84 5e 2f eb a5 d7 dd 2f 1a e8 eb ad e8 25 84 d8 3d 55 14 8f 61 1b 6a f4 54 74 71 d4 0e 00>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1791633850312,
+    created: 1791633850312,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 f5 4f 84 5e 2f eb a5 d7 dd 2f 1a e8 eb ad e8 25 84 d8 3d 55 14 8f 61 1b 6a f4 54 74 71 d4 0e 00>,
+    preKeyId: 636
+  }
+}
+Removing old closed session: SessionEntry {
+  _chains: {
+    'BcsTo2ITkZpKFmDErLwXGiNimCgJGqZUjd0j05j+PA9O': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bd3v1FlYkrZLzH3o3FUSbHX/y6g9p3gzdr+96/KDRwsW': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 169,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 dd ef d4 59 58 92 b6 4b cc 7d e8 dc 55 12 6c 75 ff cb a8 3d a7 78 33 76 bf bd eb f2 83 47 0b 16>,
+      privKey: <Buffer 28 7f 07 73 84 7d a7 b4 5c 31 49 a9 09 d1 e3 71 41 6c 46 a7 8f a9 75 4e 0b 21 5b 21 a8 d5 1b 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 cb 13 a3 62 13 91 9a 4a 16 60 c4 ac bc 17 1a 23 62 98 28 09 1a a6 54 8d dd 23 d3 98 fe 3c 0f 4e>,
+    previousCounter: 0,
+    rootKey: <Buffer 74 5e dc 16 64 1a de 18 c5 db 4d f5 26 11 c1 a8 cb 66 4b d9 a0 b6 69 11 e1 8a 3b 57 41 9a 95 e6>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 61 93 e9 26 25 7e fe 9b 37 8f c8 2a 80 d5 34 f0 04 4b 92 d0 94 0c 01 2f f5 6d 8b e1 6d fb 49 7c>,
+    baseKeyType: 2,
+    closed: 1791567314614,
+    used: 1791567314603,
+    created: 1791567314603,
+    remoteIdentityKey: <Buffer 05 30 4d e3 0c e2 53 73 42 a1 84 a3 33 bb f4 4c 28 c7 22 83 ee 32 c0 86 0d d3 98 7a 51 3b e0 7f 64>
+  }
+}
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ uptime; echo \"--- Memory ---\"; free -h; echo \"--- Disk ---\"; df -h /; echo \"--- Oracle Processes ---\"; ps aux | grep -E -i 'ora_|oracle' | ...`
+> 🎯 _"Checking server status"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB08286473990E72684EE)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0DF5040CBE42B468B4D)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ which sqlplus 2>&1; systemctl is-active oracle-cloud-agent`
+> 🎯 _"Checking Oracle DB or services"_
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0BDCD009B68B8F0D6BD)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AF1F5C7098E578BD21)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): ╭─ NEURAL RESPONSE ─╮
+বর্তমান ওরাকল ক্লাউড (OCI) সার্ভারটি সম্পূর্ণ সচল এবং অত্যন্ত স্থিতিশীল অবস্থায় রয়েছে। বিস্তারিত বিবরণ নিচে দেওয়া হলো:
+
+* **আপটাইম (Uptime):** সার্ভারটি গত ১৯ ঘণ্টা ৫৪ মিনিট ধরে নিরবচ্ছিন্নভাবে চলছে।
+* **সিপিইউ লোড (Load Average):** `0.02, 0.08, 0.08` (সিপিইউ ব্যবহার খুবই কম এবং স্বাভাবিক)।
+* **মেমোরি / র‍্যাম (RAM):**
+  * মোট মেমোরি: `62 GiB`
+  * ব্যবহৃত: `1.8 GiB`
+  * উপলব্ধ (Available): প্রায় `60 GiB` ফাঁকা রয়েছে।
+* **ডিস্ক স্পেস (Disk Usage):** 
+  * রুট ড্রাইভের মোট ধারণক্ষমতা: `30 GB`
+  * ব্যবহৃত: `14 GB` (৪৫%)
+  * অবশিষ্ট ফাঁকা: `17 GB`
+* **ওরাকল সার্ভিস (Oracle Cloud Agent):** 
+  * `oracle-cloud-agent` সার্ভিসটি সক্রিয় (`active`) রয়েছে এবং এর সমস্ত ব্যাকগ্রাউন্ড প্রসেস সঠিকভাবে চলছে।
+  * সার্ভারে কোনো আলাদা ওরাকল ডাটাবেজ (Oracle Database) ইনস্টল করা নেই।
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৬:০৪ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏸️ Prompt gate is CLOSED for agy:0 (project: whatsapp_master). Holding prompt in durable queue.
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0694DBCB1C3D97F64EB)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02FC25143B659A7C963)
