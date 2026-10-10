@@ -2378,11 +2378,11 @@ async function startBridge() {
       if (item.isImage) {
         await sendWhatsAppMessage(`📷 ══════════════════════ 📷\n🤖 *[ছবি ইনপুট গ্রহণ করা হয়েছে]*\n━━━━━━━━━━━━━━━━━━━━━\n> 🖼️ *ফাইল:* \`${item.originalName}\`\n> 💬 *ক্যাপশন:* "${item.caption || '(কোনো ক্যাপশন নেই)'}"\n\n⚡ _এআই ছবিটি বিশ্লেষণ করে উত্তর প্রস্তুত করছে..._\n══════════════════════`, { to: itemSender, quoted: item.msg });
         const prompt = `[ছবি ইনপুট: ${item.filePath}].${cleanCaption} অনুগ্রহ করে view_file("${item.filePath}") ব্যবহার করে ছবিটি দেখুন এবং বিস্তারিত সঠিক উত্তর দিন।`;
-        dispatchToTmux(prompt, targetWindow);
+        dispatchToTmux(prompt, targetWindow, item.msgId, { sender: itemSender, msg: item.msg, origin: 'HUMAN_VERIFIED' }, item.provenance || { origin: 'HUMAN_VERIFIED' });
       } else {
         await sendWhatsAppMessage(`📁 ══════════════════════ 📁\n🤖 *[ফাইল ইনপুট গ্রহণ করা হয়েছে]*\n━━━━━━━━━━━━━━━━━━━━━\n> 📄 *ফাইল:* \`${item.originalName}\` (\`${formatBytes(item.size)}\`)\n> 💬 *ক্যাপশন:* "${item.caption || '(কোনো ক্যাপশন নেই)'}"\n\n⚡ _এআই ফাইলটি পর্যবেক্ষণ করছে..._\n══════════════════════`, { to: itemSender, quoted: item.msg });
         const prompt = `[ফাইল ইনপুট: ${item.filePath}]. মূল ফাইলের নাম: "${item.originalName}".${cleanCaption} অনুগ্রহ করে view_file("${item.filePath}") ব্যবহার করে ফাইলটি পর্যবেক্ষণ করুন এবং বিস্তারিত সঠিক উত্তর দিন।`;
-        dispatchToTmux(prompt, targetWindow);
+        dispatchToTmux(prompt, targetWindow, item.msgId, { sender: itemSender, msg: item.msg, origin: 'HUMAN_VERIFIED' }, item.provenance || { origin: 'HUMAN_VERIFIED' });
       }
       return;
     }
@@ -2409,7 +2409,7 @@ async function startBridge() {
       multiPrompt += `ইউজারের ক্যাপশন/প্রশ্ন: "${captions.trim()}".\n`;
     }
     multiPrompt += `অনুগ্রহ করে view_file ব্যবহার করে সবগুলো ফাইল পর্যবেক্ষণ করে বিস্তারিত উত্তর দিন। ${BANGLA_MANDATE_INSTRUCTION}`;
-    dispatchToTmux(multiPrompt, batchTargetWindow);
+    dispatchToTmux(multiPrompt, batchTargetWindow, lastItem.msgId, { sender: batchSender, msg: lastItem.msg, origin: 'HUMAN_VERIFIED' }, lastItem.provenance || { origin: 'HUMAN_VERIFIED' });
   }
 
   // Handle incoming messages from Iraq bhai
