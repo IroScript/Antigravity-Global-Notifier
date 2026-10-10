@@ -1,2 +1,2 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ sudo -n true && echo \"Sudo OK\" || echo \"No passwordless sudo\"`
-> 🎯 _"Checking sudo permissions"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sL --fail -o /tmp/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && sudo install -m...`
+> 🎯 _"Installing cloudflared"_

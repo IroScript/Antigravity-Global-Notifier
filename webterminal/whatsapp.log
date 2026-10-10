@@ -24509,3 +24509,34 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⚡ cmd 5865 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0AF91FC9E245912AAA8)
 [WA Bridge] 💻 cmd output 5866 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB005252B500CCD81823A)
+[WA Bridge] ⚡ cmd 5868 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0966A72AE8A6D8715C5)
+[WA Bridge] 💻 cmd output 5869 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5871)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0A3997AB69A743CB940, seq: 481): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB085F09FCC053A1B5EA3)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB08558CEE8E80F80C97B, seq: 482): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB02EFC297AA0B6F13103, seq: 489): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB010A6C17EE7C7ADD2E1)
+[WA Bridge] ⚡ cmd 5874 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F884F1F5F4921850C7)
+[WA Bridge] 💻 cmd output 5875 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0F6A4ABFD1C010F6F2A)
+[WA Bridge] ⚡ cmd 5877 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C8618B102D2C2A8119)
+[WA Bridge] 💻 cmd output 5878 (agy:0)
