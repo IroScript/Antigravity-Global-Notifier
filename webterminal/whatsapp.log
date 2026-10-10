@@ -28004,3 +28004,5 @@ SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
 [WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
 [WA Bridge] 🛡️ Auto-sanitized bloated sender key: sender-key-120363432847992277@g.us--82935919157317_1--8.json (47.3 KB) -> backed up
 [WA Bridge] Ignored message from other sender: 120363375813560592@g.us 237206849507456@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB0752C73678A10AEC286)
+[WA Bridge] ✅ Processed outbox job: report_1791601346.json
