@@ -28133,3 +28133,5 @@ Closing session: SessionEntry {
   }
 }
 [WA Bridge] Ignored message from other sender: 120363418612097009@g.us 109921383247922@lid
+[WA Bridge] 📨 Sent to 120363430377910102@g.us (isGroup=true, msgId=3EB039E152DC197A6A3EFA)
+[WA Bridge] ✅ Processed outbox job: report_1791604947.json
