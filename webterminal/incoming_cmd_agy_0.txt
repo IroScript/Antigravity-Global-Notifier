@@ -1,2 +1,78 @@
-[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] > ⚡ *[টার্মিনাল কমান্ড]*: `$ node --check /home/opc/.webterminal/whatsapp_bridge.js`
-> 🎯 _"Running static syntax check"_
+[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই বাংলিশ (Banglish) লিখবেন না। কোড ও কমান্ড ইংরেজিতে থাকবে।] ╭─ NEURAL RESPONSE ─╮
+আপনার সুনির্দিষ্ট নির্দেশনাবলী অনুযায়ী **Oracle `agy:0`** এবং `/home/opc/.webterminal/`-এর ওপর পরিচালিত পুঙ্খানুপুঙ্খ অডিট ও ভেরিফিকেশন রিপোর্ট নিচে উপস্থাপন করা হলো:
+
+---
+
+### 1. ORACLE WEBTERMINAL AZURE REFERENCES FOUND
+
+`/home/opc/.webterminal/` ডিরেক্টরি এবং সংশ্লিষ্ট কনফিগারেশনে প্রাপ্ত রেফারেন্সের অডিট:
+
+| ফাইল (File) | লাইন / ফাংশন (Line/Function) | রেফারেন্স (Reference) | প্রকৃতি (Historical vs Executable) | শ্রেণিবিভাগ (Classification) |
+| :--- | :--- | :--- | :--- | :--- |
+| `/home/opc/.webterminal/whatsapp.log` | Line 9 | `[Oracle Bridge] 📩 User prompt in group: "Delete azure codes"` | **Historical** (লগ ফাইল) | **B** (ইউজারের নিজস্ব কমান্ড হিস্ট্রি — কোনো এক্সিকিউটেবল কোড নয়) |
+| `/home/opc/.webterminal/incoming_prompt.txt` | Lines 127–133, 336 | `azure`, `azureuser`, `/home/azureuser`, `FatehAli`, `FatehAli2`, `ssh azure`, `Host azure` | **Historical / Buffer** (বর্তমান প্রম্পট বাফার) | **B** (ইউজার ইনপুটের বাফার টেক্সট — কোনো এক্সিকিউটেবল কোড নয়) |
+| `/home/opc/.webterminal/whatsapp_bridge.js` | সম্পূর্ণ ফাইল | কোনো Azure রেফারেন্স নেই (0 matches) | **N/A** | **B** (খাঁটি Oracle-লোকাল আর্কিটেকচার) |
+| `/home/opc/.webterminal/init_agy_sessions.sh` | সম্পূর্ণ ফাইল | কোনো Azure রেফারেন্স নেই | **N/A** | **B** (লোকা
+<truncated 2576 bytes>
+E (/home/opc/.webterminal/whatsapp_bridge.js)
+                  ↓
+LOCAL Oracle agy:0 (tmux paste-buffer -b oracle_cmd_* -t agy:0)
+                  ↓
+LOCAL AGY RESPONSE (~/.gemini/antigravity-cli/brain/.../transcript.jsonl)
+                  ↓
+SAME ORACLE WHATSAPP DESTINATION (TARGET_GROUP_ID: 120363432847992277@g.us)
+```
+
+- সমস্ত যোগাযোগ স্থানীয় লিনাক্স সকেট এবং লোকাল ফাইলসিস্টেমের মধ্যে সীমাবদ্ধ।
+- কোনো রিমোট SSH বা বাহ্যিক নেটওয়ার্কিং নেই।
+
+---
+
+### 6. ROUTING MATRIX
+
+| ইনপুট ইভেন্ট (Input Event) | প্রত্যাশিত আচরণ (Expected) | বর্তমান কোড আচরণ (Actual Verification) | স্ট্যাটাস |
+| :--- | :--- | :--- | :--- |
+| **Oracle authorized group** (`120363432847992277@g.us`) | LOCAL `agy:0` | লোকাল `agy:0`-তে ডিসপ্যাচ হয় (Line 76) | **PASS** |
+| **Azure group** (`remoteJid !== TARGET_GROUP_ID`) | BLOCKED | তাৎক্ষণিকভাবে ড্রপ হয় (Line 229: `continue`) | **PASS** |
+| **Unknown group** (মালিকের নম্বর হলেও) | BLOCKED | গ্রুপ আইডি চেক সর্বাগ্রে থাকায় ড্রপ হয় (Line 229) | **PASS** |
+| **Bridge's own output** | NOT REPROCESSED | `sentMessageIds`, `processedMessageIds` এবং `isBotOutput` গার্ড দ্বারা ড্রপ হয় | **PASS** |
+
+---
+
+### 7. SIDE-EFFECT AUDIT
+
+- **Credentials modified:** NO
+- **SSH config modified:** NO
+- **wa_auth intentionally modified:** NO
+- **tmux topology modified:** NO
+- **~/.agents modified:** NO
+- **projects modified:** NO
+- **Azure contacted:** NO
+
+---
+
+### 8. FILES ACTUALLY MODIFIED
+
+**NONE**
+
+---
+
+### 9. SERVICES ACTUALLY RESTARTED
+
+**NONE**
+
+---
+
+### 10. FINAL VERDICT
+
+**`CLEAN — NO ACTIVE AZURE DEPENDENCY`**
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৮:৩৭ AM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
