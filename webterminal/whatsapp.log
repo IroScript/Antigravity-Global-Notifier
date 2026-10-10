@@ -29716,3 +29716,33 @@ Contain the live loop, find the exact technical root cause, implement the minima
 [WA Bridge] ⚡ cmd 6780 (agy:0)
 [WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06B07B9AE18FC2275C0)
 [WA Bridge] 💻 cmd output 6781 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6783)
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2741
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB049EFC498A30BD904A6)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0F18E7B0FE3345FB4AD, seq: 819): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB015AFB43848C4489B65)
+[WA Bridge] ⚡ cmd 6786 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB059169E0102B92AAA2A)
+[WA Bridge] 💻 cmd output 6787 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 6789)
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 136962899980462@lid
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 2821
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 136962899980462@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0A9BB7C5FF1BCB5AF59)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB0E1A3D67DBC67844A44, seq: 820): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 136962899980462@lid
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09890C39AF889D225CE)
+[WA Bridge] ⚡ cmd 6792 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0878BF3546FC88E01FD)
+[WA Bridge] 💻 cmd output 6793 (agy:0)
+[WA Bridge] Ignored message from other sender: 120363418612097009@g.us 136962899980462@lid
