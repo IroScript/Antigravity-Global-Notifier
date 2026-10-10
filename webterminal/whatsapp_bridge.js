@@ -140,6 +140,149 @@ const BRIDGE_START_TIME = Math.floor(Date.now() / 1000);
 const sentMessageIds = new Set();
 const processedIncomingMessageIds = new Set();
 const PROCESSED_MSG_FILE = path.join(USER_HOME, '.webterminal', 'processed_msg_ids.json');
+const SENT_MSG_FILE = path.join(USER_HOME, '.webterminal', 'sent_msg_ids.json');
+const REJECTED_EVENTS_LOG = path.join(USER_HOME, '.webterminal', 'rejected_events.jsonl');
+
+// Layer 4 & Layer 7: Outbound message tracking & Causal Recursion Circuit Breaker
+const causalExecutionMap = new Map(); // humanMsgId -> Set<outboundMsgIds>
+let currentActiveHumanMsgId = null;
+
+function loadSentMessageIds() {
+  try {
+    if (fs.existsSync(SENT_MSG_FILE)) {
+      const data = JSON.parse(fs.readFileSync(SENT_MSG_FILE, 'utf8'));
+      if (Array.isArray(data)) {
+        data.forEach(id => sentMessageIds.add(id));
+      }
+    }
+  } catch (e) {
+    console.warn('[WA Bridge] Could not load sent_msg_ids.json:', e.message);
+  }
+}
+
+function recordSentMessageId(msgId) {
+  if (!msgId) return;
+  sentMessageIds.add(msgId);
+  if (currentActiveHumanMsgId && causalExecutionMap.has(currentActiveHumanMsgId)) {
+    causalExecutionMap.get(currentActiveHumanMsgId).add(msgId);
+  }
+  try {
+    const list = Array.from(sentMessageIds).slice(-3000);
+    fs.writeFileSync(SENT_MSG_FILE, JSON.stringify(list), 'utf8');
+  } catch (e) {}
+}
+
+loadSentMessageIds();
+
+// Structured diagnostic evidence logger for rejected events (No silent message loss)
+function recordDroppedEvent(msg, classification, dropReason) {
+  try {
+    const event = {
+      timestamp: new Date().toISOString(),
+      message_id: msg?.key?.id || 'unknown',
+      sender: msg?.key?.remoteJid || '',
+      participant: msg?.key?.participant || msg?.participant || '',
+      from_me: !!(msg?.key?.fromMe),
+      classification: classification,
+      drop_reason: dropReason
+    };
+    fs.appendFileSync(REJECTED_EVENTS_LOG, JSON.stringify(event) + '\n', 'utf8');
+    console.log(`[ProvenanceGuard] 🛑 [DROPPED ${classification}]: ${dropReason} (msgId: ${event.message_id}, sender: ${event.sender}, p: ${event.participant})`);
+  } catch (e) {}
+}
+
+// Bot Self Identity Matcher: Checks if sender/participant is the bridge bot itself
+function isSelfIdentity(sender, participant, socketInstance = null) {
+  const s = socketInstance || (typeof sock !== 'undefined' ? sock : null);
+  const meJid = s?.authState?.creds?.me?.id || '';
+  const meLid = s?.authState?.creds?.me?.lid || '';
+  const cleanMeJid = meJid ? meJid.split(':')[0].split('@')[0] : '';
+  const cleanMeLid = meLid ? meLid.split(':')[0].split('@')[0] : '';
+
+  const check = (jid) => {
+    if (!jid) return false;
+    const clean = jid.split(':')[0].split('@')[0];
+    if (cleanMeJid && clean === cleanMeJid) return true;
+    if (cleanMeLid && clean === cleanMeLid) return true;
+    return false;
+  };
+
+  return check(sender) || check(participant);
+}
+
+// Layer 2: Authorized Human Sender Validator
+function isAuthorizedHumanSender(sender, participant) {
+  const isGroup = sender && sender.endsWith('@g.us');
+  const humanId = isGroup ? participant : sender;
+  if (!humanId) return false;
+
+  const clean = humanId.split(':')[0].split('@')[0];
+  return ALLOWED_NUMBERS.some(num => clean === num || clean.includes(num));
+}
+
+// Trust Model: Explicit Provenance Classifier (All-or-Nothing Fail-Closed)
+function classifyMessageProvenance(msg, socketInstance = null) {
+  if (!msg || !msg.message) {
+    return { classification: 'UNKNOWN', dropReason: 'Empty or missing message payload' };
+  }
+
+  const msgId = msg.key?.id;
+  if (!msgId) {
+    return { classification: 'UNKNOWN', dropReason: 'Missing message ID' };
+  }
+
+  // Layer 4 & Layer 7: Outbound message ID tracking & causal recursion check
+  if (sentMessageIds.has(msgId)) {
+    return { classification: 'SELF_OUTBOUND', dropReason: 'Message ID was locally generated outbound' };
+  }
+  for (const [hId, outSet] of causalExecutionMap.entries()) {
+    if (outSet && outSet.has(msgId)) {
+      return { classification: 'TELEMETRY', dropReason: `Message ID was outbound consequence of human task ${hId}` };
+    }
+  }
+
+  // Layer 3: Message ID deduplication
+  if (processedIncomingMessageIds.has(msgId) || deliveredMessageIds.has(msgId)) {
+    return { classification: 'DUPLICATE', dropReason: 'Message ID was already processed or delivered' };
+  }
+
+  // Layer 1: Self message filter
+  if (msg.key?.fromMe) {
+    return { classification: 'SELF_OUTBOUND', dropReason: 'Message key has fromMe === true' };
+  }
+  if (isSelfIdentity(msg.key?.remoteJid, msg.key?.participant || msg.participant, socketInstance)) {
+    return { classification: 'SELF_OUTBOUND', dropReason: 'Sender or participant matches local bot identity' };
+  }
+
+  const sender = msg.key?.remoteJid || '';
+  const participant = msg.key?.participant || msg.participant || '';
+  const isGroup = sender.endsWith('@g.us');
+
+  // Bot & Meta AI Interception
+  if (sender.includes('13135550002') || sender.toLowerCase().includes('meta') || sender.includes('@bot') || sender.startsWith('0@s.whatsapp.net')) {
+    return { classification: 'BOT', dropReason: 'Sender matches Meta AI or bot JID' };
+  }
+  if (participant.includes('13135550002') || participant.toLowerCase().includes('meta') || participant.includes('@bot')) {
+    return { classification: 'BOT', dropReason: 'Participant matches Meta AI or bot JID' };
+  }
+
+  // Layer 2: Authorized human sender allowlist check
+  if (!isAuthorizedHumanSender(sender, participant)) {
+    return { classification: 'BOT', dropReason: `Sender/Participant (${isGroup ? participant : sender}) is not an authorized human` };
+  }
+
+  // Strict Group Authorization: Unmapped groups must fail-closed
+  if (isGroup) {
+    const groups = getProjectGroupMap();
+    const isOurGroup = Object.values(groups).some(g => g && g.id === sender);
+    if (!isOurGroup) {
+      return { classification: 'UNKNOWN', dropReason: `Group ${sender} is not in registered project_groups.json` };
+    }
+  }
+
+  // If all orthogonal verification layers pass:
+  return { classification: 'HUMAN_VERIFIED', dropReason: null };
+}
 
 function loadProcessedMessageIds() {
   try {
