@@ -35544,3 +35544,32 @@ Removing old closed session: SessionEntry {
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0E858907B243FD16059)
 [WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB0BEDC088F5041D67164)
 [WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 🔓 ZIP capture finished for agy:0. Releasing 143 held prompts.
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (A58CE4B43D3D094FB459C1004E2F7924, seq: 857): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB09BCD6C56B8C7ADD15D)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363412648151758@g.us): 🤖 *[Oracle 8 CPU · NEURAL RESPONSE]*
+╭──────────────────╮
+🤖 *[Oracle 8 CPU · Oracle VM3]*
+
+হ্যালো! বলুন, আজ আপনাকে কী বিষয়ে সাহায্য করতে পারি?
+╰──────────────────╯
+
+```
+╭─ SESSION DATA ──────────────╮
+│ 🖥️ NODE  · Oracle 8 CPU 64G │
+│ 🕐 TIME  · ০৬:৩৩ PM         │
+│ 🤖 MODEL · Gemini 3.8 Flash │
+╰─────────────────────────────╯
+```
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB05FC7B8295C45D93F22)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB094774BE894B2E38923)
+[WA Bridge] ⚡ cmd 7619 (agy:0)
+[WA Bridge] 📨 Sent to 120363412648151758@g.us (isGroup=true, msgId=3EB088D747521A49A46E51)
+[WA Bridge] 💻 cmd output 7620 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363412648151758@g.us (82935919157317@lid)
