@@ -1247,5 +1247,422 @@
       "to": "120363432847992277@g.us"
     },
     "queued_at": "2026-10-10T05:17:28.502Z"
+  },
+  {
+    "id": "out_1791611807719_o80ov",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zi...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:47.719Z"
+  },
+  {
+    "id": "out_1791611807790_7x7zg",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB0ADD5D18BA72FD4D9C0",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611806,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zip | grep -v grep || echo \\\"No active zip process found\\\"`\n> 🎯 _\"Checking active zip processes\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "vHo2CwtDcleyFhUMgEPgk6vl6PLOaZDkgVfTv2Sx/54="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:47.790Z"
+  },
+  {
+    "id": "out_1791611807863_9r7f4",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zi...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:47.863Z"
+  },
+  {
+    "id": "out_1791611808451_awu2n",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB027FD76D66388213334",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611806,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zip | grep -v grep || echo \\\"No active zip process found\\\"`\n> 🎯 _\"Checking active zip processes\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "ib3RoXLiW6jRCmpvlA91ElNqmg7M/8Rp609IVcaLrwg="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:48.451Z"
+  },
+  {
+    "id": "out_1791611808595_3fjz0",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB02669627797C625EE10",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611807,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zip | grep -v grep || echo \\\"No active zip process found\\\"`\n> 🎯 _\"Checking active zip processes\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "P91Az1nHcXFcrSjsRX6f/i/Vhuzw9S0R3h0kUfuOTHE="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:48.595Z"
+  },
+  {
+    "id": "out_1791611808667_e8ku2",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zi...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:48.667Z"
+  },
+  {
+    "id": "out_1791611808884_9i1ly",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB06B5555ACB38AE1D84B",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611807,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zip | grep -v grep || echo \\\"No active zip process found\\\"`\n> 🎯 _\"Checking active zip processes\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "uT2xpb5tw3l4s9dlbyHbiGCykvKk7yjuHrXV6lcROYk="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:48.884Z"
+  },
+  {
+    "id": "out_1791611808955_donjs",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ps aux | grep -i zi...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:48.955Z"
+  },
+  {
+    "id": "out_1791611812517_g1hn7",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.g...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:52.517Z"
+  },
+  {
+    "id": "out_1791611812734_khipr",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB07BC99D4941006DA8AA",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611811,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.git-credentials /home/opc/.netrc /home/opc/.config/gh 2>/dev/null || echo \\\"No standard git credentials\\\"; \\\\\\nfind /home/opc -...`\n> 🎯 _\"Checking credential files\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "GLF5mJk/3OSQY4PVsKWu8LhLy2I9MrHUYMxtbQ2g5RA="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:52.734Z"
+  },
+  {
+    "id": "out_1791611812878_ah9h6",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.g...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:52.878Z"
+  },
+  {
+    "id": "out_1791611813364_gsjbe",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.g...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:53.364Z"
+  },
+  {
+    "id": "out_1791611813725_sh2vd",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB021C8B5D25EA4BEADC6",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611812,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.git-credentials /home/opc/.netrc /home/opc/.config/gh 2>/dev/null || echo \\\"No standard git credentials\\\"; \\\\\\nfind /home/opc -...`\n> 🎯 _\"Checking credential files\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "x/HRqXuNTv34v4Tc6J62zI3juUsAfmPlpSJiXOsirlg="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:56:53.725Z"
+  },
+  {
+    "id": "out_1791611813869_nc01o",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.g...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:53.869Z"
+  },
+  {
+    "id": "out_1791611814307_ojzbo",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ ls -la /home/opc/.g...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:54.307Z"
+  },
+  {
+    "id": "out_1791611819945_x659o",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:56:59.945Z"
+  },
+  {
+    "id": "out_1791611820452_eon1y",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB0AF1B1C67604F5C36D0",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611819,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /home/opc/.bashrc /home/opc/.bash_profile 2>/dev/null || echo \\\"No azure in shell profiles\\\"`\n> 🎯 _\"Checking shell profiles\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "igpAfEZv2BG057hgi5uCjy4kXmofQYfCHy43ehP0d1A="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:57:00.452Z"
+  },
+  {
+    "id": "out_1791611820775_5qo38",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB0BA113F23083BE8A0B0",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611819,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /home/opc/.bashrc /home/opc/.bash_profile 2>/dev/null || echo \\\"No azure in shell profiles\\\"`\n> 🎯 _\"Checking shell profiles\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "ZerXMStbtAndzlPFFLe+Tr0y6hqGfx/lOg3YaROY4gA="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:57:00.775Z"
+  },
+  {
+    "id": "out_1791611820849_5gd1i",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:57:00.849Z"
+  },
+  {
+    "id": "out_1791611821386_rodp7",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:57:01.386Z"
+  },
+  {
+    "id": "out_1791611821676_zuzqa",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB0B0AA1F3E3C1B0B47AD",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611820,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /home/opc/.bashrc /home/opc/.bash_profile 2>/dev/null || echo \\\"No azure in shell profiles\\\"`\n> 🎯 _\"Checking shell profiles\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "n6pMDhe1pNkio9Fi4Bnp54I6QobDlYY7Y/KpGOekMLU="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:57:01.676Z"
+  },
+  {
+    "id": "out_1791611821777_0evze",
+    "target": "120363432847992277@g.us",
+    "text": "⏳ ══════════════════════ ⏳\n🤖 *[মাস্টার কনসোল · এআই প্রসেসিং শুরু]*\n━━━━━━━━━━━━━━━━━━━━━\n> 💬 *আপনার নির্দেশনা:* \"> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /...\"\n\n⚡ _টার্মিনাল কমান্ড ও আউটপুট লাইভ নিচে দেখতে পাবেন..._\n══════════════════════",
+    "options": {
+      "to": "120363432847992277@g.us"
+    },
+    "queued_at": "2026-10-10T05:57:01.777Z"
+  },
+  {
+    "id": "out_1791611821993_pdet0",
+    "target": "120363432847992277@g.us",
+    "text": "এই project-এর ZIP backup চলছে।\nআপনার prompt নিরাপদে queued আছে।\nZIP capture শেষ হলেই স্বয়ংক্রিয়ভাবে পাঠানো হবে।",
+    "options": {
+      "to": "120363432847992277@g.us",
+      "quoted": {
+        "key": {
+          "remoteJid": "120363432847992277@g.us",
+          "fromMe": true,
+          "id": "3EB0D3DFD8B5BD9A0708DA",
+          "participant": "82935919157317@lid",
+          "addressingMode": "lid"
+        },
+        "messageTimestamp": 1791611821,
+        "pushName": "Irak Mahmud",
+        "broadcast": false,
+        "status": 2,
+        "message": {
+          "extendedTextMessage": {
+            "text": "> ⚡ *[টার্মিনাল কমান্ড]*: `$ grep -i \\\"azure\\\" /home/opc/.bashrc /home/opc/.bash_profile 2>/dev/null || echo \\\"No azure in shell profiles\\\"`\n> 🎯 _\"Checking shell profiles\"_"
+          },
+          "messageContextInfo": {
+            "messageSecret": "OM8iVg3Xh+r4HhltNichexNluc0mKR0BI2rDm0j4Vc0="
+          }
+        }
+      }
+    },
+    "queued_at": "2026-10-10T05:57:01.993Z"
   }
 ]
