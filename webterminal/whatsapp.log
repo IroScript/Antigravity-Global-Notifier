@@ -24265,3 +24265,156 @@ Removing old closed session: SessionEntry {
 [WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
 [WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
 [WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06578406D47C5C12A1F)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01AB7B329EFAEF4D7A9)
+[WA Bridge] 🧠 thinking 5838 (agy:0)
+[WA Bridge] 📤 Turn done for agy:0 (step 5838)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0FFF1CDDC86D969EFE9)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB09BCF5530CE4D30164D)
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] 📨 Fallback sent to 120363432847992277@g.us, msgId=3EB0A5939D8FAB2359E750
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ systemctl --user restart oracle-file-explorer-tunnel.service && sleep 4 && systemctl --user status oracle-file-explorer-tunnel.service --no-pager`
+> 🎯 _"Restarting tunnel service"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] paste.rs rejected upload: HTTP 400 bytes 6201
+[WA Bridge] paste.rs (raw-markdown): null
+[WA Bridge] 🎯 3-Way Model Verification (agy:0): [{"source":"tmux","val":"Gemini 3.8 Flash · high"},{"source":"settings","val":"Gemini 3.8 Flash (High)"},{"source":"log","val":"Gemini 3.8 Flash (High)"}] => Gemini 3.8 Flash [HIGH]
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB036960EAEB459768679)
+[WA Bridge] ✅ Reply delivered to 120363432847992277@g.us (agy:0)!
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB06F661641EBE6BC3D89, seq: 474): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB01AEBE385CE045D4E13)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB04E3633F463857732E8, seq: 475): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB096EC199BF298912BDD)
+[WA Bridge] 💻 Forwarded CLI user prompt for agy:0 to WhatsApp (step 5839)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ sleep 2 && cat /home/opc/live_preview/tunnel_url.txt 2>/dev/null || cat /home/opc/live_preview/tunnel.log | tail -n 25`
+> 🎯 _"Fetching live Cloudflare URL"_
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0175FE345F55E2CB047)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB02D90E981690D945A0C)
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ℹ️ Detected idle prompt in agy:0 or timeout; clearing stale busy state
+[WA Bridge] 🔄 Dequeuing durable prompt for agy:0 (3EB061EB0BC97DDB6CBCEE, seq: 476): [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[AutonomousController] 🚀 Initialized zero-question tracking on agy:0 for task: "[নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই "
+[WA Bridge] ✅ Forwarded prompt to agy:0 via bracketed paste (150ms settling) & pressed Enter!
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C76335C3652DB36F52)
+[WA Bridge] ⚠️ Prompt still sitting in input prompt on agy:0, sending backup Enter...
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB06DFF2454106349CF15)
+[WA Bridge] 🧠 thinking 5841 (agy:0)
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] ⚡ cmd 5841 (agy:0)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0C4A4360F088610AA22)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 💻 cmd output 5842 (agy:0)
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB023C4E6A488EC8FBD39)
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 🔓 Authorized message accepted in group 120363432847992277@g.us (82935919157317@lid)
+[WA Bridge] 📩 Message from Iraq bhai (120363432847992277@g.us): > ⚡ *[টার্মিনাল কমান্ড]*: `$ curl -sI https://spot-fields-barely-provides.trycloudflare.com/ | head -n 5; echo \"\"; \\\ncurl -sI https://spot-fields-barely-provides.trycloud...`
+> 🎯 _"Verifying live endpoints"_
+[WA Bridge] ⏳ AGY is currently busy on agy:0. Queued prompt into durable queue: [নিয়ম: সর্বদা শুদ্ধ বাংলা লিপিতে উত্তর দিন; কোনো অবস্থাতেই 
+[WA Bridge] ⚠️ Retrying fallback send to 120363432847992277@g.us without options: rate-overlimit
+[WA Bridge] ❌ Error sending message to 120363432847992277@g.us, enqueuing to outbox: rate-overlimit
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB054008B0B84218BC9E2)
+[WA Bridge] ⚡ cmd 5844 (agy:0)
+[WA Bridge] 📨 Sent to 120363432847992277@g.us (isGroup=true, msgId=3EB0EA3074E0169405426E)
+[WA Bridge] 💻 cmd output 5845 (agy:0)
